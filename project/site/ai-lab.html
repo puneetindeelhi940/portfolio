@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Lab — Puneet Arora</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .featured-card {
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    border-radius: 2px;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 480px;
+  }
+  .featured-card__media {
+    background:
+      radial-gradient(ellipse at 30% 30%, color-mix(in oklch, var(--signal) 10%, transparent) 0%, transparent 55%),
+      radial-gradient(ellipse at 70% 70%, color-mix(in oklch, var(--signal) 6%, transparent) 0%, transparent 50%),
+      var(--bg-2);
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid var(--rule);
+    padding: 28px;
+  }
+  .featured-card__url {
+    position: absolute; top: 18px; left: 18px;
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--dim); border: 1px solid var(--rule); padding: 4px 10px; border-radius: 999px;
+    background: var(--bg);
+  }
+  .featured-card__caption {
+    position: absolute; bottom: 18px; left: 18px; right: 18px;
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+    color: var(--faint); text-transform: uppercase;
+    display: flex; justify-content: space-between;
+  }
+  /* sketch a mini app screenshot inside the media area */
+  .mini-app {
+    margin: 32px auto 0;
+    width: 84%;
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,.4);
+  }
+  .mini-app__bar {
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 10px; border-bottom: 1px solid var(--rule);
+    background: var(--surface);
+  }
+  .mini-app__bar .dot { width: 7px; height: 7px; border-radius: 999px; background: var(--rule-2); }
+  .mini-app__bar .url {
+    flex: 1; margin-left: 8px; font-family: var(--f-mono); font-size: 9px;
+    color: var(--dim); letter-spacing: 0.08em;
+  }
+  .mini-app__body { padding: 18px; }
+  .mini-app__h {
+    font-family: var(--f-sans); font-size: 17px; color: var(--ink); font-weight: 500;
+    letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .mini-app__sub { font-size: 10px; color: var(--dim); letter-spacing: 0.1em; margin-bottom: 16px; }
+  .mini-app__grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+  }
+  .mini-app__tile {
+    padding: 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface);
+    min-height: 86px; display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .mini-app__tile .frame {
+    font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.12em; color: var(--signal);
+  }
+  .mini-app__tile .name {
+    font-family: var(--f-sans); font-size: 11px; color: var(--ink); font-weight: 500;
+  }
+  .featured-card__body { padding: 36px 32px 32px; display: flex; flex-direction: column; }
+  .featured-card__body h3 {
+    font-family: var(--f-sans); font-size: 30px; font-weight: 500; letter-spacing: -0.018em;
+    line-height: 1.1; color: var(--ink); margin: 14px 0 12px;
+  }
+  .featured-card__body .lede { font-family: var(--f-sans); font-size: 15px; line-height: 1.65; color: var(--dim); margin-bottom: 16px; }
+  .feature-points { padding: 0; margin: 14px 0 20px; list-style: none; display: grid; gap: 8px; }
+  .feature-points li {
+    display: grid; grid-template-columns: 22px 1fr;
+    font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.5;
+  }
+  .feature-points li::before {
+    content: "▸"; color: var(--signal); font-size: 11px;
+  }
+
+  /* Vigyan Setu */
+  .setu {
+    background: var(--bg-2);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .setu-hero {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px;
+    padding: 72px var(--pad-x);
+    align-items: center;
+  }
+  .setu-vis {
+    position: relative;
+    aspect-ratio: 5/4;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    padding: 28px;
+  }
+  .setu-vis svg { display: block; width: 100%; height: 100%; }
+  .chakra-list {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 0;
+    margin-top: 28px;
+    border: 1px solid var(--rule); border-radius: 2px;
+  }
+  .chakra-list .row {
+    display: grid; grid-template-columns: 32px 1fr;
+    padding: 14px 16px;
+    border-top: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .chakra-list .row:first-child, .chakra-list .row:nth-child(2) { border-top: none; }
+  .chakra-list .row:nth-child(odd) { border-right: 1px solid var(--rule); }
+  .chakra-list .n { color: var(--signal); font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; }
+  .chakra-list .h { font-family: var(--f-sans); font-size: 14px; color: var(--ink); font-weight: 500; }
+  .chakra-list .d { font-family: var(--f-sans); font-size: 11.5px; color: var(--dim); margin-top: 2px; line-height: 1.4; }
+
+  @media (max-width: 1100px) {
+    .featured-card { grid-template-columns: 1fr; }
+    .featured-card__media { border-right: none; border-bottom: 1px solid var(--rule); }
+    .setu-hero { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>P.ARORA</b>
+    <span class="slash">/ DESIGN.PORTFOLIO</span>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">BIO</a>
+    <a href="work.html">CASE STUDIES</a>
+    <a href="ai-lab.html" class="is-current">AI LAB</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="live">OPEN TO RIGHT ROLE</span>
+    <span id="clock">IST 11:47</span>
+    <span>v.2026.06</span>
+  </div>
+</header>
+
+<div class="ribbon" style="grid-template-columns: repeat(4, 1fr);">
+  <div class="cell"><span class="k">PAGE</span><span class="v">/AI_LAB</span></div>
+  <div class="cell"><span class="k">CHARTER</span><span class="v">PROTOTYPES &amp; PROVOCATIONS</span></div>
+  <div class="cell"><span class="k">COUNT</span><span class="v">02 ACTIVE</span></div>
+  <div class="cell"><span class="k">CYCLE</span><span class="v">VIBE-CODED · 2025–26</span></div>
+</div>
+
+<!-- HERO -->
+<section class="gut" style="padding-top: 64px; padding-bottom: 32px;">
+  <div class="flex gap-12" style="align-items: center; margin-bottom: 24px;">
+    <span class="tag">§ 01 · LAB</span>
+    <span class="faint mono" style="font-size: 11px;">// vibe-coded experiments &amp; UX provocations on AI</span>
+  </div>
+  <h1 class="display" style="font-size: 68px; line-height: 0.98; letter-spacing: -0.028em; margin: 0 0 24px; max-width: 1100px;">
+    Working prototypes,<br>
+    <em>not workshop decks.</em>
+  </h1>
+  <p class="lede" style="max-width: 720px; margin: 0;">
+    A small bench of things I&rsquo;ve built &mdash; or designed alongside &mdash; to keep my
+    own AI reps up. Each one ships with a &ldquo;why this matters&rdquo; paragraph: the
+    strategic reason this prototype exists at all.
+  </p>
+</section>
+
+<!-- FEATURED — Design Intelligence Portal -->
+<section class="gut" style="padding-bottom: 56px;">
+  <article class="featured-card">
+    <div class="featured-card__media">
+      <div class="featured-card__url">pa9401.vercel.app</div>
+
+      <div class="mini-app">
+        <div class="mini-app__bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">pa9401.vercel.app/frameworks</span>
+        </div>
+        <div class="mini-app__body">
+          <div class="mini-app__h">Design Intelligence Portal</div>
+          <div class="mini-app__sub mono">PROMPT FRAMEWORKS · LEARNING PATHS</div>
+          <div class="mini-app__grid">
+            <div class="mini-app__tile">
+              <div class="frame">CO·STAR</div>
+              <div class="name">Context · Objective · Style · Tone · Audience · Response</div>
+            </div>
+            <div class="mini-app__tile">
+              <div class="frame">R·T·F</div>
+              <div class="name">Role · Task · Format</div>
+            </div>
+            <div class="mini-app__tile">
+              <div class="frame">CoT</div>
+              <div class="name">Chain-of-Thought reasoning</div>
+            </div>
+            <div class="mini-app__tile">
+              <div class="frame">SCQA</div>
+              <div class="name">Situation · Complication · Question · Answer</div>
+            </div>
+            <div class="mini-app__tile">
+              <div class="frame">5W·1H</div>
+              <div class="name">Discovery framing</div>
+            </div>
+            <div class="mini-app__tile">
+              <div class="frame">+ MORE</div>
+              <div class="name">Curated for design orgs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-card__caption">
+        <span>FIG.A · APP PREVIEW</span>
+        <span>VIBE-CODED · LIVE 2025</span>
+      </div>
+    </div>
+
+    <div class="featured-card__body">
+      <div class="flex gap-12" style="align-items: center;">
+        <span class="signal mono" style="font-size: 11px; letter-spacing: 0.14em;">X.01 · LIVE</span>
+        <span class="faint mono" style="font-size: 10px; letter-spacing: 0.14em;">FEATURED PROJECT</span>
+      </div>
+      <h3>Design Intelligence Portal</h3>
+      <p class="lede">
+        A working hub for AI prompt engineering inside design organisations. CO-STAR, RTF, and
+        Chain-of-Thought made operational for design teams &mdash; not a course, a tool people
+        actually open.
+      </p>
+
+      <ul class="feature-points">
+        <li><span>Curated prompt frameworks for design tasks: discovery, critique, IA, copy, research synthesis.</span></li>
+        <li><span>Learning paths that meet a designer where they are &mdash; not a generic prompt-engineering 101.</span></li>
+        <li><span>Vibe-coded end-to-end. Lovable + Vercel. The build was itself an experiment in design-led shipping.</span></li>
+        <li><span>Tied conceptually to the AI-Design &amp; Innovation CoE (case D.003).</span></li>
+      </ul>
+
+      <div class="panel panel--deep" style="padding: 16px 18px; margin-top: auto;">
+        <div class="eyebrow" style="margin-bottom: 8px;">// WHY THIS MATTERS</div>
+        <div class="body" style="font-size: 13.5px; line-height: 1.6;">
+          Most &ldquo;AI for designers&rdquo; content is a video. Design upskilling sticks when
+          it&rsquo;s embedded in the actual task. This portal is a small bet on that idea.
+        </div>
+      </div>
+
+      <div class="flex gap-12" style="margin-top: 20px;">
+        <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">
+          OPEN THE PORTAL <span>↗</span>
+        </a>
+        <a href="contact.html" class="btn btn--ghost">REQUEST A WALK-THROUGH</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- VIGYAN SETU -->
+<section id="vigyan-setu" class="setu">
+  <div class="shead">
+    <div class="shead__left">
+      <span class="shead__n">§ 02</span>
+      <span class="shead__title">VIGYAN SETU — UX CASE</span>
+      <span class="shead__sub">// IndiaAI Impact Summit 2026 · read as a design problem</span>
+    </div>
+    <div class="shead__right">FEB 19–20 · BHARAT MANDAPAM</div>
+  </div>
+
+  <div class="setu-hero">
+    <div>
+      <p class="lede">
+        India is hosting <strong style="color: var(--ink);">IndiaAI Impact Summit 2026</strong>
+        &mdash; a flagship global convening on responsible AI for the public interest. The
+        organising idea, <em style="color: var(--signal); font-style: italic; font-weight: 300;">Vigyan
+        Setu</em> (&ldquo;bridge of science&rdquo;), frames the event around
+        <strong style="color: var(--ink);">three sutras</strong> &mdash; <em>People, Planet,
+        Progress</em> &mdash; and <strong style="color: var(--ink);">seven chakras</strong> of
+        action.
+      </p>
+      <p class="body" style="margin-top: 18px;">
+        I&rsquo;ve been reading this as a UX case in itself: the design problem of making a
+        seven-track, eleven-ministry, citizen-facing convening
+        <strong>legible to a non-specialist</strong> &mdash; without simplifying the policy
+        underneath. What follows is my read of the design problem, the frame, and what a
+        thoughtful UX response would look like.
+      </p>
+
+      <div class="chakra-list">
+        <div class="row"><div class="n">01</div><div><div class="h">Human Capital</div><div class="d">AI talent, skilling, livelihoods at the scale of a billion.</div></div></div>
+        <div class="row"><div class="n">02</div><div><div class="h">Inclusion</div><div class="d">Multilingual, accessible, equitable AI for every Indian.</div></div></div>
+        <div class="row"><div class="n">03</div><div><div class="h">Safe &amp; Trusted AI</div><div class="d">Evaluation, guardrails, content authenticity.</div></div></div>
+        <div class="row"><div class="n">04</div><div><div class="h">Science &amp; Research</div><div class="d">Frontier work in foundation models, biology, climate, materials.</div></div></div>
+        <div class="row"><div class="n">05</div><div><div class="h">Resilience</div><div class="d">Compute, energy, supply, security &mdash; the substrate.</div></div></div>
+        <div class="row"><div class="n">06</div><div><div class="h">Democratising Resources</div><div class="d">Open compute, datasets, models accessible to startups, academia, government.</div></div></div>
+        <div class="row"><div class="n">07</div><div><div class="h">AI for Growth</div><div class="d">Productivity, MSMEs, agriculture, services &mdash; economic uplift.</div></div></div>
+      </div>
+    </div>
+
+    <div class="setu-vis">
+      <!-- Three Sutras + Seven Chakras radial visualization -->
+      <svg viewBox="0 0 540 432" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="setuGlow" cx="50%" cy="55%" r="50%">
+            <stop offset="0%" stop-color="oklch(82% 0.14 78)" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="oklch(82% 0.14 78)" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="540" height="432" fill="url(#setuGlow)"/>
+
+        <!-- Three sutras as outer arcs -->
+        <text x="270" y="32" text-anchor="middle" fill="oklch(82% 0.14 78)" font-family="'Roboto Mono'" font-size="11" letter-spacing="2">SUTRA · PEOPLE</text>
+        <text x="60" y="408" text-anchor="middle" fill="oklch(82% 0.14 78)" font-family="'Roboto Mono'" font-size="11" letter-spacing="2">PLANET</text>
+        <text x="480" y="408" text-anchor="middle" fill="oklch(82% 0.14 78)" font-family="'Roboto Mono'" font-size="11" letter-spacing="2">PROGRESS</text>
+
+        <!-- Outer triangle (sutras) -->
+        <polygon points="270,68 60,388 480,388" fill="none" stroke="oklch(34% 0.025 175)" stroke-width="1" stroke-dasharray="3 4"/>
+
+        <!-- Seven chakras orbit ring -->
+        <circle cx="270" cy="232" r="125" fill="none" stroke="oklch(34% 0.025 175)" stroke-width="0.6"/>
+        <circle cx="270" cy="232" r="90" fill="none" stroke="oklch(34% 0.025 175)" stroke-width="0.6"/>
+        <circle cx="270" cy="232" r="55" fill="none" stroke="oklch(34% 0.025 175)" stroke-width="0.6"/>
+
+        <!-- Chakras: seven nodes -->
+        <g font-family="'Roboto Mono'" font-size="10" fill="oklch(96% 0.01 175)" letter-spacing="1.5">
+          <!-- 01 top -->
+          <circle cx="270" cy="107" r="14" fill="oklch(22% 0.022 175)" stroke="oklch(82% 0.14 78)" stroke-width="1.4"/>
+          <text x="270" y="111" text-anchor="middle" fill="oklch(82% 0.14 78)" font-size="9">01</text>
+
+          <!-- 02 upper right -->
+          <circle cx="380" cy="160" r="12" fill="oklch(22% 0.022 175)" stroke="oklch(72% 0.02 175)" stroke-width="1"/>
+          <text x="380" y="164" text-anchor="middle" font-size="9">02</text>
+
+          <!-- 03 right -->
+          <circle cx="395" cy="270" r="12" fill="oklch(22% 0.022 175)" stroke="oklch(72% 0.02 175)" stroke-width="1"/>
+          <text x="395" y="274" text-anchor="middle" font-size="9">03</text>
+
+          <!-- 04 lower right -->
+          <circle cx="335" cy="350" r="12" fill="oklch(22% 0.022 175)" stroke="oklch(72% 0.02 175)" stroke-width="1"/>
+          <text x="335" y="354" text-anchor="middle" font-size="9">04</text>
+
+          <!-- 05 lower left -->
+          <circle cx="205" cy="350" r="12" fill="oklch(22% 0.022 175)" stroke="oklch(72% 0.02 175)" stroke-width="1"/>
+          <text x="205" y="354" text-anchor="middle" font-size="9">05</text>
+
+          <!-- 06 left -->
+          <circle cx="145" cy="270" r="12" fill="oklch(22% 0.022 175)" stroke="oklch(72% 0.02 175)" stroke-width="1"/>
+          <text x="145" y="274" text-anchor="middle" font-size="9">06</text>
+
+          <!-- 07 upper left -->
+          <circle cx="160" cy="160" r="12" fill="oklch(22% 0.022 175)" stroke="oklch(72% 0.02 175)" stroke-width="1"/>
+          <text x="160" y="164" text-anchor="middle" font-size="9">07</text>
+        </g>
+
+        <!-- Bridge in the centre -->
+        <g>
+          <circle cx="270" cy="232" r="30" fill="oklch(17% 0.022 175)" stroke="oklch(82% 0.14 78)" stroke-width="1.5"/>
+          <circle cx="270" cy="232" r="22" fill="none" stroke="oklch(82% 0.14 78)" stroke-width="0.5" stroke-dasharray="2 3"/>
+          <text x="270" y="226" text-anchor="middle" fill="oklch(96% 0.01 175)" font-family="'Roboto'" font-style="italic" font-size="18" font-weight="400">setu</text>
+          <text x="270" y="244" text-anchor="middle" fill="oklch(82% 0.14 78)" font-family="'Roboto Mono'" font-size="8" letter-spacing="2">THE BRIDGE</text>
+        </g>
+
+        <!-- caption -->
+        <text x="30" y="412" fill="oklch(48% 0.018 175)" font-family="'Roboto Mono'" font-size="9" letter-spacing="2">FIG.01 · THREE SUTRAS · SEVEN CHAKRAS · ONE BRIDGE</text>
+        <text x="510" y="412" text-anchor="end" fill="oklch(48% 0.018 175)" font-family="'Roboto Mono'" font-size="9" letter-spacing="2">CONCEPT · 2026</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Why this matters / what I'd design -->
+  <div class="gut" style="padding-bottom: 64px;">
+    <div class="grid-2" style="gap: 32px;">
+      <div class="panel" style="padding: 22px;">
+        <div class="eyebrow" style="margin-bottom: 14px;">// THE DESIGN PROBLEM</div>
+        <div class="body">
+          <p style="margin: 0 0 14px;">
+            Seven tracks, eleven ministries, hundreds of citizen-facing services, two days at
+            Bharat Mandapam, and a global press audience. The risk is that every track speaks
+            its own language, every demo lives on its own URL, and the citizen leaves with a
+            slogan instead of a map.
+          </p>
+          <p style="margin: 0;">
+            The design opportunity is the same as Dell.com&rsquo;s, at a different scale:
+            <strong>multiple buyers, one URL</strong>. Researchers, policymakers, founders, and
+            citizens are all in the audience. Each needs a different entry point, but they
+            need to walk away believing in the same story.
+          </p>
+        </div>
+      </div>
+
+      <div class="panel" style="padding: 22px;">
+        <div class="eyebrow" style="margin-bottom: 14px;">// THE UX RESPONSE I&rsquo;D BUILD</div>
+        <ul class="thinlist" style="gap: 12px;">
+          <li><span>An <strong style="color: var(--ink);">editorial spine</strong> — three sutras as the navigational frame, not seven competing tracks.</span></li>
+          <li><span>A <strong style="color: var(--ink);">role-aware entry</strong> — researcher, policymaker, founder, citizen. The same content reframed for each.</span></li>
+          <li><span><strong style="color: var(--ink);">Demos as artefacts</strong>, not slides — every chakra surfaced through a working citizen-facing experience.</span></li>
+          <li><span>A <strong style="color: var(--ink);">post-summit afterlife</strong>: the demos become a public catalogue, not a one-day spectacle.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rule mt-32" style="padding-top: 24px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
+      <div class="faint mono" style="font-size: 11px; letter-spacing: 0.14em;">
+        REFERENCE · <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener" class="signal">impact.indiaai.gov.in ↗</a>
+      </div>
+      <a href="contact.html" class="btn btn--ghost">DISCUSS THIS CASE</a>
+    </div>
+  </div>
+</section>
+
+<!-- ON THE BENCH -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 03</span>
+    <span class="shead__title">ON THE BENCH</span>
+    <span class="shead__sub">// next-up experiments</span>
+  </div>
+</div>
+<div class="grid-3 gut" style="padding-bottom: 64px;">
+  <div class="card">
+    <div class="signal mono" style="font-size: 11px; letter-spacing: 0.14em; margin-bottom: 14px;">X.03 · DRAFT</div>
+    <div class="sans ink" style="font-size: 20px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 10px;">Prompt-evaluation harness</div>
+    <div class="dim" style="font-family: var(--f-sans); font-size: 13.5px; line-height: 1.6;">
+      A small evaluation harness for prompt drift &mdash; the thing I wish I&rsquo;d had on day
+      one at Dell. Versioned eval cases, side-by-side diffs, rubric scoring.
+    </div>
+    <div class="mt-24 faint mono" style="font-size: 11px; letter-spacing: 0.14em;">WHY · PROMPTS ARE DESIGN ARTEFACTS</div>
+  </div>
+  <div class="card">
+    <div class="signal mono" style="font-size: 11px; letter-spacing: 0.14em; margin-bottom: 14px;">X.04 · DRAFT</div>
+    <div class="sans ink" style="font-size: 20px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 10px;">Behavioural-nudge library</div>
+    <div class="dim" style="font-family: var(--f-sans); font-size: 13.5px; line-height: 1.6;">
+      A documented library of behavioural-science nudges with the ethical guardrails baked in.
+      Not a manipulation cookbook &mdash; a referee&rsquo;s manual.
+    </div>
+    <div class="mt-24 faint mono" style="font-size: 11px; letter-spacing: 0.14em;">WHY · NUDGES, NOT STEERS</div>
+  </div>
+  <div class="card">
+    <div class="signal mono" style="font-size: 11px; letter-spacing: 0.14em; margin-bottom: 14px;">X.05 · IDEA</div>
+    <div class="sans ink" style="font-size: 20px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 10px;">Critique-as-a-Service</div>
+    <div class="dim" style="font-family: var(--f-sans); font-size: 13.5px; line-height: 1.6;">
+      An agent that gives a designer the kind of critique a senior would, scored against their
+      team&rsquo;s in-house rubric. Useful when the senior isn&rsquo;t in the room.
+    </div>
+    <div class="mt-24 faint mono" style="font-size: 11px; letter-spacing: 0.14em;">WHY · SENIORITY-AS-A-SERVICE</div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="foot__nav">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">BIO</a>
+    <a href="work.html">CASE STUDIES</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div>© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · v.2026.06</div>
+</footer>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

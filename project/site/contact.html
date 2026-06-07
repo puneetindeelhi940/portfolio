@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Puneet Arora</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 56px;
+    padding: 72px var(--pad-x);
+    align-items: start;
+  }
+  .channel {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+    gap: 18px;
+    transition: padding-left .14s;
+  }
+  .channel:hover { padding-left: 8px; }
+  .channel:hover .channel__arrow { color: var(--signal); transform: translateX(4px); }
+  .channel__icon {
+    color: var(--signal);
+    font-family: var(--f-mono);
+    font-size: 13px;
+  }
+  .channel__main .label {
+    color: var(--faint); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .channel__main .value {
+    color: var(--ink); font-family: var(--f-sans); font-size: 17px; letter-spacing: -0.005em;
+  }
+  .channel__arrow {
+    color: var(--dim); font-family: var(--f-mono); font-size: 13px;
+    transition: color .12s, transform .14s;
+  }
+
+  @media (max-width: 1100px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>P.ARORA</b>
+    <span class="slash">/ DESIGN.PORTFOLIO</span>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">BIO</a>
+    <a href="work.html">CASE STUDIES</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="contact.html" class="is-current">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="live">OPEN TO RIGHT ROLE</span>
+    <span id="clock">IST 11:47</span>
+    <span>v.2026.06</span>
+  </div>
+</header>
+
+<div class="ribbon" style="grid-template-columns: repeat(4, 1fr);">
+  <div class="cell"><span class="k">PAGE</span><span class="v">/CONTACT</span></div>
+  <div class="cell"><span class="k">RESPONSE</span><span class="v">USUALLY &lt; 24H</span></div>
+  <div class="cell"><span class="k">LOCATION</span><span class="v">BANGALORE · IN</span></div>
+  <div class="cell"><span class="k">AVAILABILITY</span><span class="v">OPEN TO RIGHT ROLE</span></div>
+</div>
+
+<section class="contact-grid">
+  <div>
+    <div class="flex gap-12" style="align-items: center; margin-bottom: 28px;">
+      <span class="tag">§ 01 · REACH</span>
+      <span class="faint mono" style="font-size: 11px;">// the fastest ways to get a reply</span>
+    </div>
+
+    <h1 class="display" style="font-size: 64px; line-height: 0.98; letter-spacing: -0.028em; margin: 0 0 28px;">
+      Let&rsquo;s build<br>
+      <em>meaningful products</em><br>
+      and experiences.
+    </h1>
+
+    <p class="lede" style="max-width: 560px; margin: 0 0 24px;">
+      I&rsquo;m open to the right role &mdash; principal IC, senior design management, or
+      a design leadership seat at the intersection of enterprise, AI and personalization.
+      Recruiters, hiring managers, and fellow design leaders: a short note is enough.
+    </p>
+
+    <p class="body" style="max-width: 560px; margin: 0 0 12px;">
+      The most reliable channels:
+    </p>
+
+    <div class="rule" style="border-top: 1px solid var(--rule); margin-top: 8px;">
+      <a id="email-channel" href="mailto:puneetindelhi@yahoo.com" class="channel">
+        <div class="channel__icon">@</div>
+        <div class="channel__main">
+          <div class="label">EMAIL</div>
+          <div class="value">puneetindelhi@yahoo.com</div>
+        </div>
+        <div class="channel__arrow">COMPOSE →</div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/puneetar/" target="_blank" rel="noopener" class="channel">
+        <div class="channel__icon">in</div>
+        <div class="channel__main">
+          <div class="label">LINKEDIN · PREFERRED FOR RECRUITERS</div>
+          <div class="value">linkedin.com/in/puneetar</div>
+        </div>
+        <div class="channel__arrow">OPEN ↗</div>
+      </a>
+
+      <a href="tel:+919886281671" class="channel">
+        <div class="channel__icon">☎</div>
+        <div class="channel__main">
+          <div class="label">PHONE · WHATSAPP</div>
+          <div class="value">+91 98862 81671</div>
+        </div>
+        <div class="channel__arrow">CALL →</div>
+      </a>
+
+      <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="channel" style="border-bottom: none;">
+        <div class="channel__icon">↗</div>
+        <div class="channel__main">
+          <div class="label">SIDE PROJECT</div>
+          <div class="value">Design Intelligence Portal</div>
+        </div>
+        <div class="channel__arrow">VISIT ↗</div>
+      </a>
+    </div>
+  </div>
+
+  <aside>
+    <div class="panel" style="padding: 24px;">
+      <div class="eyebrow" style="margin-bottom: 14px;">FOR HIRING MANAGERS</div>
+      <div class="body" style="font-size: 14px; line-height: 1.65; margin-bottom: 18px;">
+        A line about the role, the scope, and the timeline gets the fastest response.
+        I prefer <strong>LinkedIn DM</strong> for first contact &mdash; happy to move to
+        email or a call after.
+      </div>
+      <a href="https://www.linkedin.com/in/puneetar/" target="_blank" rel="noopener" class="btn btn--primary" style="width: 100%; justify-content: center;">
+        MESSAGE ON LINKEDIN ↗
+      </a>
+    </div>
+
+    <div class="panel" style="padding: 24px; margin-top: 16px;">
+      <div class="eyebrow" style="margin-bottom: 14px;">FOR RECRUITERS</div>
+      <div class="body" style="font-size: 14px; line-height: 1.65; margin-bottom: 18px;">
+        Resume is <strong>shared on request</strong> after a quick intro &mdash; helps me
+        understand the role context first. Drop me a note and I&rsquo;ll respond with a
+        tailored summary within a day.
+      </div>
+      <a id="recruiter-email" href="mailto:puneetindelhi@yahoo.com?subject=Role%20discussion%20%E2%80%94%20[your%20company]%20%E2%97%8B%20[role]&body=Hi%20Puneet%2C%0A%0AI%27m%20%5Bname%5D%20at%20%5Bcompany%5D%2C%20reaching%20out%20about%20a%20%5Brole%5D%20opening%20in%20our%20design%20org.%0A%0ARole%20summary%3A%0AScope%3A%0ATimeline%3A%0ALocation%3A%0A%0AHappy%20to%20share%20a%20full%20JD%20%26%20schedule%20a%20short%20intro.%0A%0AThanks%2C%0A%5Bname%5D" class="btn btn--ghost" style="width: 100%; justify-content: center;">
+        EMAIL WITH ROLE BRIEF →
+      </a>
+    </div>
+
+    <div class="panel panel--deep" style="padding: 22px; margin-top: 16px;">
+      <div class="eyebrow" style="margin-bottom: 14px;">// WHAT I&rsquo;M LOOKING FOR</div>
+      <ul class="thinlist">
+        <li><span>Enterprise / B2B at meaningful scale</span></li>
+        <li><span>An AI or personalization mandate I can actually own</span></li>
+        <li><span>Org maturity to invest in design as a system, not a service</span></li>
+        <li><span>Bangalore-based or relocation-friendly</span></li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+<!-- bottom strip -->
+<div class="rule gut" style="padding-top: 48px; padding-bottom: 56px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px;">
+  <div>
+    <div class="eyebrow" style="margin-bottom: 8px;">LOCATION</div>
+    <div class="ink" style="font-family: var(--f-sans); font-size: 18px;">Bangalore, India</div>
+    <div class="dim mt-8" style="font-family: var(--f-sans); font-size: 13px;">Open to relocation for the right opportunity.</div>
+  </div>
+  <div>
+    <div class="eyebrow" style="margin-bottom: 8px;">TIME ZONE</div>
+    <div class="ink" style="font-family: var(--f-sans); font-size: 18px;">IST (UTC+5:30)</div>
+    <div class="dim mt-8" style="font-family: var(--f-sans); font-size: 13px;">Happy to take calls in EU or US Pacific evenings.</div>
+  </div>
+  <div>
+    <div class="eyebrow" style="margin-bottom: 8px;">LANGUAGES</div>
+    <div class="ink" style="font-family: var(--f-sans); font-size: 18px;">English · Hindi</div>
+    <div class="dim mt-8" style="font-family: var(--f-sans); font-size: 13px;">Work in English; comfortable across global teams.</div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="foot__nav">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">BIO</a>
+    <a href="work.html">CASE STUDIES</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div>© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · v.2026.06</div>
+</footer>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
