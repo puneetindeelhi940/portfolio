@@ -1,6 +1,6 @@
 # Puneet Arora — Portfolio
 
-Private, invite-only working portfolio for Puneet Arora — Principal UX Designer / Sr. Design Manager (Strategist).
+Private, invite-only working portfolio for Puneet Arora — Principal Product Designer.
 
 **Live (when deployed):** see GitHub Pages settings.
 **Default passcode:** `growthecore` (rotate before sharing — see below).
