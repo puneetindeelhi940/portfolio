@@ -3,17 +3,23 @@
  */
 
 :root {
+  /* ── Dark theme (default) — slate ground, gold accent ──
+   * Accent: --signal oklch(83% 0.14 85) — warm gold.
+   * Contrast vs --bg (L17): ~12:1  (passes WCAG AAA for normal text).
+   * Contrast vs --signal-ink (L18) on gold pills/buttons: ~11:1 (AAA).
+   * Accent reads as gold-on-graphite, not green.
+   */
   --bg:        oklch(17% 0.022 175);
   --bg-2:     oklch(15% 0.02 175);
   --surface:  oklch(20% 0.02 175);
   --surface-2: oklch(22% 0.022 175);
   --ink:      oklch(96% 0.01 175);
   --dim:      oklch(72% 0.02 175);
-  --faint:    oklch(48% 0.018 175);
+  --faint:    oklch(56% 0.018 175);
   --rule:     oklch(28% 0.02 175);
   --rule-2:   oklch(32% 0.025 175);
-  --signal:   oklch(82% 0.14 78);
-  --signal-ink: oklch(20% 0.04 80);
+  --signal:   oklch(83% 0.14 85);
+  --signal-ink: oklch(18% 0.04 85);
   --warn:     oklch(74% 0.13 35);
 
   --pad-x: 56px;
@@ -25,41 +31,47 @@
   --f-serif: 'Roboto Serif', Georgia, serif;
 }
 
-/* ───────── Theme: Forest (dark green + white) ─────────
- * Pure-white ink on a deep forest-green ground.
- * Tokens designed to keep WCAG AA contrast across all text:
- *   ink/bg     ≈ 14.5:1   (AAA)
- *   dim/bg     ≈  9.1:1   (AAA)
- *   faint/bg   ≈  5.0:1   (AA — used only for tiny meta labels)
- *   signal/bg  ≈  9.3:1   (AAA — accent stays warm gold)
+/* ───────── Theme: Light (white paper + deep green ink) ─────────
+ * Inversion of the dark default. Forest-green ink on near-white
+ * paper. Tokens tuned to keep WCAG AA contrast on every text pair.
+ * (Internally still uses [data-theme="forest"] so saved prefs survive.)
  */
 [data-theme="forest"] {
-  --bg:        oklch(22% 0.045 150);
-  --bg-2:      oklch(18% 0.04 150);
-  --surface:   oklch(26% 0.045 150);
-  --surface-2: oklch(30% 0.05 150);
-  --ink:       oklch(99% 0.005 150);
-  --dim:       oklch(88% 0.018 150);
-  --faint:     oklch(70% 0.03 150);
-  --rule:      oklch(38% 0.04 150);
-  --rule-2:    oklch(46% 0.045 150);
-  --signal:    oklch(88% 0.16 92);
-  --signal-ink: oklch(22% 0.05 150);
-  --warn:      oklch(78% 0.14 35);
+  --bg:        oklch(99% 0.003 150);
+  --bg-2:      oklch(97% 0.008 150);
+  --surface:   oklch(96% 0.013 150);
+  --surface-2: oklch(93% 0.020 150);
+  --ink:       oklch(28% 0.075 150);
+  --dim:       oklch(40% 0.070 150);
+  --faint:     oklch(48% 0.060 150);
+  --rule:      oklch(86% 0.022 150);
+  --rule-2:    oklch(78% 0.035 150);
+  --signal:    oklch(42% 0.16 145);
+  --signal-ink: oklch(98% 0.005 150);
+  --warn:      oklch(48% 0.18 28);
 }
-/* In forest mode the prose-tinted helpers (.lede / .body / portrait label)
- * use hardcoded oklch tints that don't pick up the new vars — re-tint them
- * here so body copy stays bright white on green.
+/* Re-tint hardcoded-color helpers so prose, portraits, and the gate
+ * submit hover state all flip correctly under the light theme.
  */
 [data-theme="forest"] .lede,
 [data-theme="forest"] .hero__sub,
 [data-theme="forest"] .bio-prose {
-  color: oklch(96% 0.008 150);
+  color: oklch(32% 0.07 150);
 }
 [data-theme="forest"] .timeline__row .what {
-  color: oklch(94% 0.008 150);
+  color: oklch(34% 0.07 150);
 }
 [data-theme="forest"] .bio-hero__portrait img { filter: none; }
+[data-theme="forest"] .bio-hero__portrait .label {
+  background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
+  color: var(--ink);
+}
+[data-theme="forest"] .gate__submit:hover {
+  background: oklch(36% 0.16 145);
+}
+[data-theme="forest"] .topbar {
+  background: color-mix(in oklch, var(--bg) 88%, transparent);
+}
 
 /* ───────── Theme toggle (segmented control) ───────── */
 .theme-toggle {
@@ -176,7 +188,7 @@ img { display: block; max-width: 100%; }
   background: var(--signal); border-radius: 1px;
   box-shadow: 0 0 14px color-mix(in oklch, var(--signal) 60%, transparent);
 }
-.topbar__brand b { font-weight: 700; letter-spacing: 0.20em; }
+.topbar__brand b { font-weight: 700; letter-spacing: 0.02em; }
 .topbar__brand .slash { color: var(--faint); margin-left: 4px; }
 .topbar__nav {
   flex: 1;
@@ -408,7 +420,7 @@ img { display: block; max-width: 100%; }
 }
 .gate__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 56px; }
 .gate__brand .dot { width: 8px; height: 8px; background: var(--signal); border-radius: 1px; box-shadow: 0 0 16px var(--signal); }
-.gate__brand b { font-weight: 700; letter-spacing: 0.22em; font-size: 11px; }
+.gate__brand b { font-weight: 700; letter-spacing: 0.02em; font-size: 12px; }
 .gate__brand .slash { color: var(--faint); font-size: 11px; letter-spacing: 0.16em; }
 .gate__title {
   font-family: var(--f-sans);
@@ -452,7 +464,7 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.20em;
   transition: background .15s;
 }
-.gate__submit:hover { background: oklch(86% 0.14 78); }
+.gate__submit:hover { background: oklch(76% 0.15 85); }
 .gate__hint {
   margin-top: 14px;
   display: flex;
