@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boeing TAAM — Designing the cockpit for the airspace · Case Study</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* page-local */
+  .casechip {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 12px; border-radius: 999px;
+    background: var(--surface); border: 1px solid var(--rule);
+    font-size: 11px; letter-spacing: 0.12em; color: var(--dim);
+  }
+  .stat-strip {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  }
+  .stat-strip .cell {
+    padding: 24px 28px; border-left: 1px solid var(--rule);
+  }
+  .stat-strip .cell:first-child { border-left: none; }
+  .stat-strip .n {
+    font-family: var(--f-sans); font-size: 36px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1; margin-bottom: 8px;
+  }
+  .stat-strip .k { color: var(--signal); font-size: 10px; letter-spacing: 0.18em; margin-bottom: 6px; }
+  .stat-strip .d { color: var(--dim); font-size: 11px; line-height: 1.5; }
+
+  .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .twocol .panel { padding: 22px; }
+
+  /* Process strip — the 8-step product design process from the original deck */
+  .flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--bg-2);
+  }
+  .flow .step {
+    padding: 22px 18px 20px;
+    border-left: 1px solid var(--rule);
+    border-top: 1px solid var(--rule);
+    position: relative;
+    min-height: 168px;
+  }
+  .flow .step:nth-child(4n+1) { border-left: none; }
+  .flow .step:nth-child(-n+4) { border-top: none; }
+  .flow .step .n { color: var(--signal); font-size: 11px; letter-spacing: 0.18em; margin-bottom: 12px; font-family: var(--f-mono); }
+  .flow .step .h {
+    font-family: var(--f-sans);
+    font-size: 16px; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; margin-bottom: 8px;
+  }
+  .flow .step .d { color: var(--dim); font-size: 12px; line-height: 1.55; }
+
+  /* Stakeholder bubbles — what BA, PM, Dev said */
+  .quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .quotes .quote {
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 2px;
+    padding: 22px 22px 20px;
+    position: relative;
+  }
+  .quotes .quote .who { color: var(--signal); font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em; margin-bottom: 14px; }
+  .quotes .quote .said { color: var(--ink); font-family: var(--f-sans); font-size: 15px; line-height: 1.55; font-style: italic; font-weight: 300; margin-bottom: 12px; }
+  .quotes .quote .said::before { content: '“'; color: var(--signal); margin-right: 2px; font-size: 22px; line-height: 0; vertical-align: -6px; }
+  .quotes .quote .said::after { content: '”'; color: var(--signal); margin-left: 2px; font-size: 22px; line-height: 0; vertical-align: -6px; }
+  .quotes .quote .role { color: var(--faint); font-size: 11px; letter-spacing: 0.06em; }
+
+  /* Problem chips — BP vs UP categorisation */
+  .chip-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip {
+    padding: 7px 14px; border-radius: 999px;
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.04em;
+    border: 1px solid var(--rule); color: var(--dim);
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .chip.bp { border-color: color-mix(in oklch, var(--signal) 60%, var(--rule)); color: var(--signal); }
+  .chip.up { border-color: var(--rule-2); color: var(--ink); }
+  .chip .tag-mini { font-size: 9px; padding: 1px 6px; border: 1px solid currentColor; border-radius: 2px; letter-spacing: 0.14em; opacity: 0.85; }
+
+  /* Persona cards */
+  .personas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .persona {
+    border: 1px solid var(--rule); border-radius: 2px; background: var(--surface);
+    padding: 22px 20px 20px;
+  }
+  .persona .id { color: var(--faint); font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em; margin-bottom: 14px; }
+  .persona .nm { font-family: var(--f-sans); font-size: 18px; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; margin-bottom: 6px; }
+  .persona .ti { color: var(--signal); font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; margin-bottom: 14px; }
+  .persona .blurb { color: var(--dim); font-family: var(--f-sans); font-size: 13px; line-height: 1.55; margin-bottom: 14px; }
+  .persona ul { list-style: none; margin: 0; padding: 0; }
+  .persona li { font-family: var(--f-mono); font-size: 11px; color: var(--dim); padding: 4px 0; border-top: 1px dashed var(--rule); display: flex; gap: 8px; }
+  .persona li::before { content: '·'; color: var(--signal); }
+
+  /* Journey strip */
+  .journey {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+    background: var(--bg-2);
+  }
+  .journey .node { padding: 22px 18px; border-left: 1px solid var(--rule); position: relative; }
+  .journey .node:first-child { border-left: none; }
+  .journey .node .step-n { color: var(--signal); font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em; margin-bottom: 10px; }
+  .journey .node .step-t { font-family: var(--f-sans); font-size: 14px; color: var(--ink); margin-bottom: 6px; font-weight: 500; }
+  .journey .node .step-d { color: var(--dim); font-size: 11px; line-height: 1.5; }
+  .journey .node .arrow {
+    position: absolute; right: -8px; top: 50%; transform: translateY(-50%);
+    color: var(--signal); font-family: var(--f-mono); font-size: 14px; background: var(--bg-2);
+    padding: 2px 0; z-index: 1;
+  }
+  .journey .node:last-child .arrow { display: none; }
+
+  /* Visual showcase */
+  .visual {
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--bg-2);
+  }
+  .visual img { display: block; width: 100%; height: auto; }
+  .visual .cap {
+    padding: 12px 18px;
+    border-top: 1px solid var(--rule);
+    display: flex; justify-content: space-between; gap: 16px;
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+    color: var(--faint); text-transform: uppercase;
+  }
+  .visual .cap .lbl { color: var(--signal); }
+
+  /* Before-after split */
+  .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 1100px) {
+    .ba-grid { grid-template-columns: 1fr; }
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+    .stat-strip .cell:nth-child(2n+1) { border-left: none; }
+    .twocol { grid-template-columns: 1fr; }
+    .quotes { grid-template-columns: 1fr; }
+    .personas { grid-template-columns: repeat(2, 1fr); }
+    .flow { grid-template-columns: repeat(2, 1fr); }
+    .flow .step:nth-child(4n+1) { border-left: 1px solid var(--rule); }
+    .flow .step:nth-child(2n+1) { border-left: none; }
+    .flow .step:nth-child(-n+4) { border-top: 1px solid var(--rule); }
+    .flow .step:nth-child(-n+2) { border-top: none; }
+    .journey { grid-template-columns: 1fr; }
+    .journey .node { border-left: none; border-top: 1px solid var(--rule); }
+    .journey .node:first-child { border-top: none; }
+    .journey .node .arrow { display: none; }
+  }
+  @media (max-width: 700px) {
+    .personas { grid-template-columns: 1fr; }
+  }
+
+  /* Outcome metrics */
+  .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--rule); border-radius: 2px; overflow: hidden; }
+  .metric-grid .m { padding: 26px 22px 20px; border-left: 1px solid var(--rule); }
+  .metric-grid .m:first-child { border-left: none; }
+  .metric-grid .m .v { font-family: var(--f-sans); font-size: 40px; font-weight: 500; color: var(--signal); letter-spacing: -0.025em; line-height: 1; margin-bottom: 8px; }
+  .metric-grid .m .l { color: var(--ink); font-family: var(--f-sans); font-size: 15px; margin-bottom: 6px; }
+  .metric-grid .m .s { color: var(--dim); font-size: 11px; line-height: 1.5; font-family: var(--f-mono); letter-spacing: 0.06em; }
+  @media (max-width: 1100px) { .metric-grid { grid-template-columns: 1fr; } .metric-grid .m { border-left: none; border-top: 1px solid var(--rule); } .metric-grid .m:first-child { border-top: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+    <span class="slash">PORTFOLIO</span>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="work.html" class="is-current">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener">RESUME</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="live">OPEN TO RIGHT ROLE</span>
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+    <span id="clock">IST 11:47</span>
+    <span>v.2026.06</span>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="ribbon" style="grid-template-columns: 1fr auto;">
+  <div class="cell">
+    <span class="k">CASE FILE</span>
+    <span class="v"><a href="work.html" style="color: var(--dim);">/CASE_STUDIES</a> · D.002 · BOEING · TAAM</span>
+  </div>
+  <div class="cell" style="border-left: 1px solid var(--rule);">
+    <span class="k">STATUS</span><span class="v">PORTFOLIO · ARCHIVED ARTEFACTS</span>
+  </div>
+</div>
+
+<!-- CASE HERO -->
+<section class="case-hero" data-screen-label="case-hero">
+  <div>
+    <div class="flex gap-12" style="align-items: center; margin-bottom: 28px; flex-wrap: wrap;">
+      <span class="casechip"><span class="signal">●</span> D.002 · FULL CASE</span>
+      <span class="casechip">PLATFORM · AVIATION OPS</span>
+      <span class="casechip">2016 — 2018</span>
+      <span class="casechip">BOEING INDIA · TAAM</span>
+    </div>
+
+    <div class="eyebrow">TOTAL AIRSPACE &amp; AIRPORT MODELLER · FLAGSHIP REVAMP</div>
+
+    <h1 class="case-hero__title">
+      Dragging a 90s<br>
+      simulation cockpit<br>
+      <em>into the sky.</em>
+    </h1>
+
+    <p class="case-hero__sub">
+      TAAM is the engine airline planners use to simulate years of runway, taxiway, and
+      airspace operations in days. By 2016 the shell wrapping that engine hadn&rsquo;t been
+      touched in two decades — the planners loved the math and tolerated the chrome. This
+      case is the story of the revamp: how I moved a Windows-98-era landing page into
+      something Boeing-branded, customisable, and demonstrably faster to learn — without
+      breaking the muscle memory of the planners who already lived in it.
+    </p>
+  </div>
+
+  <aside class="panel" style="padding: 22px;">
+    <div class="eyebrow" style="margin-bottom: 16px;">MY ROLE</div>
+    <div class="kv-grid">
+      <div class="kv-row"><span class="k">title</span><span class="v">Senior Product Designer · UX Specialist</span></div>
+      <div class="kv-row"><span class="k">team</span><span class="v">Sole UX designer · Boeing India</span></div>
+      <div class="kv-row"><span class="k">products</span><span class="v">TAAM · Fuel Efficiency Solutions</span></div>
+      <div class="kv-row"><span class="k">partners</span><span class="v">PM · BA · Dev team · TUG SMEs</span></div>
+      <div class="kv-row"><span class="k">stack</span><span class="v">Sketch · InVision · whiteboard · paper</span></div>
+      <div class="kv-row" style="border-bottom:none;"><span class="k">duration</span><span class="v">1 yr 7 mo</span></div>
+    </div>
+    <div class="mt-16 flex gap-8" style="flex-wrap: wrap;">
+      <span class="tag">AVIATION SIM</span>
+      <span class="tag">HIGH STAKES · LOW TOLERANCE</span>
+    </div>
+  </aside>
+</section>
+
+<!-- KEY STATS -->
+<div class="stat-strip">
+  <div class="cell">
+    <div class="n">20</div>
+    <div class="k">YEARS NO REFRESH</div>
+    <div class="d">first UX-led revamp since the product&rsquo;s late-90s shell</div>
+  </div>
+  <div class="cell">
+    <div class="n">3</div>
+    <div class="k">STAKEHOLDER LENSES</div>
+    <div class="d">Product Manager · Business Analyst · Development team</div>
+  </div>
+  <div class="cell">
+    <div class="n">4</div>
+    <div class="k">PERSONAS</div>
+    <div class="d">Airport · Navigation · Simulation · Authority consultants</div>
+  </div>
+  <div class="cell">
+    <div class="n">8 → 3</div>
+    <div class="k">CRAZY-8 → SHORTLIST</div>
+    <div class="d">narrowed by PM super-vote after a day-long DT workshop</div>
+  </div>
+</div>
+
+<!-- TOC -->
+<nav class="toc">
+  <a href="#summary">01 · SUMMARY</a>
+  <a href="#context">02 · CONTEXT</a>
+  <a href="#stakeholders">03 · STAKEHOLDERS</a>
+  <a href="#process">04 · PROCESS</a>
+  <a href="#research">05 · RESEARCH</a>
+  <a href="#workshop">06 · WORKSHOP</a>
+  <a href="#design">07 · DESIGN</a>
+  <a href="#outcome">08 · OUTCOME</a>
+  <a href="#reflection">09 · REFLECTION</a>
+</nav>
+
+<div class="case-body">
+
+<!-- 01 SUMMARY -->
+<section id="summary" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 01</div>
+    <h2>Summary</h2>
+    <div class="sub">the case in 90 seconds</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      <strong>TAAM</strong> — Total Airport and Airspace Modeller — is Boeing&rsquo;s
+      gold-standard fast-time simulation platform for airline ops planners, civil aviation
+      authorities, and aerodrome consultants. It models years of runway, gate, taxiway
+      and airspace operations in days. The simulation engine is world-class. The shell
+      around it had not been refreshed in two decades and felt, in the words of one
+      planner, &ldquo;like a Windows-98 dialog box pretending to be a flight deck.&rdquo;
+    </p>
+    <p>
+      I led the end-to-end UX revamp of the TAAM landing page and core navigation as
+      the sole UX designer on the Boeing India team. The work spanned research, stakeholder
+      alignment, a day-long Design Thinking workshop, lo-fi and hi-fi prototypes, and
+      restricted usability testing with the TAAM User Group (TUG). The brief was small —
+      &ldquo;revamp the landing page&rdquo; — but the real job was reframing what the
+      landing page <em>was for</em>: not a launchpad, but a first impression that had to
+      carry Boeing&rsquo;s brand into a product the world had stopped expecting brand from.
+    </p>
+    <div class="pullquote">
+      &ldquo;Grow the core, while adding some more.&rdquo;<br>
+      <span style="font-size: 13px; color: var(--dim); font-style: normal; letter-spacing: 0.06em;">— the principle I used to negotiate every visual change with the planners who&rsquo;d lived inside the old shell for 15+ years.</span>
+    </div>
+  </div>
+</section>
+
+<!-- 02 CONTEXT -->
+<section id="context" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 02</div>
+    <h2>Context</h2>
+    <div class="sub">what TAAM is, who uses it, and why the chrome was a liability</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      TAAM is used by hub-scale airports, ANSPs, and consultancies to answer questions
+      with eight-figure capex implications: <em>will a new runway at HND clear the 2030
+      schedule?</em> · <em>what does the GRU expansion do to ground-stop propagation?</em>
+      · <em>can SFO sequence a fourth daily A380 wave without taxi conflicts?</em>
+      A planner&rsquo;s working session is often 6–10 hours long. The landing page is the
+      first surface they see every morning.
+    </p>
+    <p>
+      In 2016 that surface looked like this:
+    </p>
+
+    <div class="visual mt-24">
+      <img src="assets/cases/boeing-taam/current-state.png" alt="TAAM landing page, original 2016 state — light-blue Jeppesen-branded Windows 7-era interface with six large tile buttons">
+      <div class="cap">
+        <span><span class="lbl">FIG. 01</span> · TAAM v2017.1.0 landing page, as inherited</span>
+        <span>Captured Jan 2016</span>
+      </div>
+    </div>
+
+    <p class="mt-24">
+      Five things were true about it at once. It was <strong>functionally complete</strong>
+      — the planners knew where every button was. It was <strong>visually inert</strong> —
+      a light-blue glass treatment that read as Windows 7 control panel, not aviation tool.
+      It carried <strong>Jeppesen branding</strong> (TAAM&rsquo;s pre-acquisition lineage),
+      not Boeing&rsquo;s. It was <strong>not customisable</strong> — every operator saw the
+      same six tiles in the same order, regardless of how they actually started their day.
+      And it was the <strong>only screen prospects saw in product demos</strong>, which
+      meant the sales team was opening every conversation with a 90s control panel.
+    </p>
+
+    <div class="kv-grid mt-24 panel" style="padding: 22px;">
+      <div class="kv-row"><span class="k">product</span><span class="v">TAAM — Total Airport and Airspace Modeller (fast-time simulation)</span></div>
+      <div class="kv-row"><span class="k">parent</span><span class="v">Boeing Global Services · Jeppesen lineage</span></div>
+      <div class="kv-row"><span class="k">user base</span><span class="v">~600 licensed planners across ~85 organisations</span></div>
+      <div class="kv-row"><span class="k">last UX refresh</span><span class="v">~1997 (visual) · ~2008 (functional)</span></div>
+      <div class="kv-row"><span class="k">session length</span><span class="v">average 6–10 hours · power users 12+</span></div>
+      <div class="kv-row" style="border-bottom:none;"><span class="k">criticality</span><span class="v">high — outputs inform capex of $50M+ in some studies</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 STAKEHOLDERS -->
+<section id="stakeholders" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 03</div>
+    <h2>Stakeholders</h2>
+    <div class="sub">three voices, one product, very different definitions of &ldquo;the problem&rdquo;</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      Before drawing a single pixel I ran a virtual whiteboard with the Product Manager,
+      Business Analyst, and two engineers from the dev team. The opening question was
+      deliberately blunt: <em>what&rsquo;s wrong with the landing page, in your words?</em>
+      The answers split cleanly along three axes, and they were not the same problem.
+    </p>
+
+    <div class="quotes mt-32">
+      <div class="quote">
+        <div class="who">BUSINESS ANALYST</div>
+        <div class="said">Customers are not happy with the design and colours. They want something fresh. They can&rsquo;t do much with the current page in terms of flexibility — what they see on day one is what they see on day 800.</div>
+        <div class="role">Daily contact with the TAAM User Group · owns the customer-feedback log</div>
+      </div>
+      <div class="quote">
+        <div class="who">PRODUCT MANAGER</div>
+        <div class="said">Brand Boeing is not visible anywhere. People can&rsquo;t make out that this is coming from The Boeing Company. Give them something forward-looking. Give them something they can play with.</div>
+        <div class="role">Owns the product roadmap · sets future direction</div>
+      </div>
+      <div class="quote">
+        <div class="who">DEVELOPMENT TEAM</div>
+        <div class="said">Even we don&rsquo;t like it. It looks more like a Windows-98 page than a simulation product. Whatever you design, give us components we can reuse, not a custom one-off for every screen.</div>
+        <div class="role">Owns the Java/Swing rendering layer · has seen three failed refreshes</div>
+      </div>
+    </div>
+
+    <p class="mt-32">
+      I categorised every stated issue as either a <strong style="color: var(--signal);">Business
+      Problem (BP)</strong> — about brand, sales, market positioning — or a
+      <strong>User Problem (UP)</strong> — about flexibility, learnability, daily friction.
+      This separation was important: BP and UP problems get fixed by very different
+      moves, and conflating them is how landing-page redesigns turn into year-long
+      thrashes.
+    </p>
+
+    <div class="chip-grid mt-24">
+      <span class="chip bp"><span class="tag-mini">BP</span> Brand Boeing not visible</span>
+      <span class="chip bp"><span class="tag-mini">BP</span> No USP vs. competitor (CAST)</span>
+      <span class="chip bp"><span class="tag-mini">BP</span> Looks like Windows-98</span>
+      <span class="chip bp"><span class="tag-mini">BP</span> Not as per latest trends</span>
+      <span class="chip up"><span class="tag-mini">UP</span> No flexibility</span>
+      <span class="chip up"><span class="tag-mini">UP</span> Not customisable</span>
+      <span class="chip up"><span class="tag-mini">UP</span> Very static page</span>
+      <span class="chip up"><span class="tag-mini">UP</span> Dull / boring</span>
+      <span class="chip up"><span class="tag-mini">UP</span> No colour</span>
+      <span class="chip up"><span class="tag-mini">UP</span> Not futuristic</span>
+    </div>
+
+    <p class="mt-32">
+      I then ran a <strong>5-WHYs</strong> drill against each cluster. The five sentences
+      below were what the PM and BA could both sign their name to at the end of the session
+      — the brief in their own words.
+    </p>
+
+    <ul class="thinlist mt-16">
+      <li><span></span><span>Current look-and-feel is very old.</span></li>
+      <li><span></span><span>Need something jazzy and aligned with current designs — clean interface, breathing room.</span></li>
+      <li><span></span><span>Need something aviation-ish and simulation-ish — it should look like a tool that runs the sky, not a spreadsheet.</span></li>
+      <li><span></span><span>Want something that can be customised — let planners arrange their own morning.</span></li>
+      <li><span></span><span>Want something that gives more to the user — surprise, density, ambient information, a sense that the product is alive.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 04 PROCESS -->
+<section id="process" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 04</div>
+    <h2>Process</h2>
+    <div class="sub">the eight-step loop I used to keep stakeholders in the room and the brief honest</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      The biggest risk on a 20-year-old product is not bad design — it&rsquo;s
+      <em>bad alignment</em>. Planners had been promised a refresh three times before
+      and each one died in committee. I committed up front to a closed-loop process
+      where every step ended with a written sign-off from the PM and BA, and where
+      stakeholders saw the work as it evolved rather than as a finished reveal.
+    </p>
+
+    <div class="flow mt-24">
+      <div class="step">
+        <div class="n">01</div>
+        <div class="h">Problem statement</div>
+        <div class="d">Bringing stakeholders to a common platform. One sentence everyone signed.</div>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <div class="h">Refine the problem</div>
+        <div class="d">Closing the loop with stakeholders. 5-WHYs, BP/UP categorisation, clustering.</div>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <div class="h">Research</div>
+        <div class="d">Primary (interviews, SUS), secondary (forums, feedback sheets), competitive (CAST).</div>
+      </div>
+      <div class="step">
+        <div class="n">04</div>
+        <div class="h">Competitive analysis</div>
+        <div class="d">Looking for common pain-points across CAST and aviation modelling forums.</div>
+      </div>
+      <div class="step">
+        <div class="n">05</div>
+        <div class="h">Propose &amp; get feedback</div>
+        <div class="d">Connecting the dots. Day-long DT workshop, Crazy-8s, PM super-vote.</div>
+      </div>
+      <div class="step">
+        <div class="n">06</div>
+        <div class="h">Prototype</div>
+        <div class="d">Lo-fi (paper, whiteboard, wireframe) then hi-fi (visual designs, style guide).</div>
+      </div>
+      <div class="step">
+        <div class="n">07</div>
+        <div class="h">Usability test</div>
+        <div class="d">Restricted UT with TUG SMEs — Think-Aloud, first-click, SUS scoring.</div>
+      </div>
+      <div class="step">
+        <div class="n">08</div>
+        <div class="h">Iterate</div>
+        <div class="d">Keeping stakeholders in the loop while designing. Apply, measure, ship.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 RESEARCH -->
+<section id="research" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 05</div>
+    <h2>Research</h2>
+    <div class="sub">personas, mental models, and the four planners I designed for</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      I didn&rsquo;t have direct access to customers — TAAM&rsquo;s install base is small,
+      sensitive, and gated by sales relationships. The BA had already prepared four
+      personas from her years on the customer-feedback log. I pressure-tested them against
+      product SMEs, forum threads, and the few internal planners who&rsquo;d previously
+      worked at airline operators. Below is the working set I used to build scenarios.
+    </p>
+
+    <div class="personas mt-32">
+      <div class="persona">
+        <div class="id">P.01</div>
+        <div class="nm">Mei-Lin</div>
+        <div class="ti">AIRPORT CONSULTANT · HUB</div>
+        <div class="blurb">Runs 30–60 day &ldquo;what-if&rdquo; studies for hub airports. Lives in resource modelling and scheduling. Wants the landing page to surface her most recent study with one click.</div>
+        <ul>
+          <li><span></span><span>opens TAAM 5×/day</span></li>
+          <li><span></span><span>juggles 4 active studies</span></li>
+          <li><span></span><span>top action: Restore last layout</span></li>
+        </ul>
+      </div>
+      <div class="persona">
+        <div class="id">P.02</div>
+        <div class="nm">Devansh</div>
+        <div class="ti">NAVIGATION CONSULTANT</div>
+        <div class="blurb">Airspace structure and procedure design. Detail-oriented, lives in Viewer and Reporter, rarely opens new studies. Wants quiet, dense, information-rich screens.</div>
+        <ul>
+          <li><span></span><span>opens TAAM 1–2×/day</span></li>
+          <li><span></span><span>session: 8–12 hours</span></li>
+          <li><span></span><span>top action: Open Viewer</span></li>
+        </ul>
+      </div>
+      <div class="persona">
+        <div class="id">P.03</div>
+        <div class="nm">Petra</div>
+        <div class="ti">SIMULATION ENGINEER</div>
+        <div class="blurb">Builds and validates the simulation packages other planners run. Power user. Annoyed by tile chrome that takes vertical space she&rsquo;d rather use for a console.</div>
+        <ul>
+          <li><span></span><span>fastest learner of the four</span></li>
+          <li><span></span><span>wants keyboard shortcuts</span></li>
+          <li><span></span><span>top action: Create new project</span></li>
+        </ul>
+      </div>
+      <div class="persona">
+        <div class="id">P.04</div>
+        <div class="nm">Olu</div>
+        <div class="ti">AUTHORITY CONSULTANT</div>
+        <div class="blurb">Regulatory-side reviewer. Opens TAAM monthly to validate consultancy submissions. Learnability is the killer — every visit is effectively first-use.</div>
+        <ul>
+          <li><span></span><span>occasional user</span></li>
+          <li><span></span><span>highest training cost / hour</span></li>
+          <li><span></span><span>top action: Open Reporter</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="mt-32">
+      The personas&rsquo; <strong>mental models</strong> were synthesised from <em>Think-Aloud</em>
+      sessions with two internal SMEs. The common journey across all four was strikingly
+      linear, and the landing page sat at both ends of it — entry and re-entry. That was
+      the first design insight: the landing page is not a launcher; it&rsquo;s a
+      <em>resumption surface</em>.
+    </p>
+
+    <div class="journey mt-24">
+      <div class="node">
+        <div class="step-n">01</div>
+        <div class="step-t">Open TAAM</div>
+        <div class="step-d">Landing page · choose a study or restore the last one.</div>
+        <div class="arrow">→</div>
+      </div>
+      <div class="node">
+        <div class="step-n">02</div>
+        <div class="step-t">Pick a tool</div>
+        <div class="step-d">Simulation, Viewer, Reporter, or GTool — the four core verbs.</div>
+        <div class="arrow">→</div>
+      </div>
+      <div class="node">
+        <div class="step-n">03</div>
+        <div class="step-t">Run / inspect</div>
+        <div class="step-d">Long-running operation. Planner often steps away for 20+ minutes.</div>
+        <div class="arrow">→</div>
+      </div>
+      <div class="node">
+        <div class="step-n">04</div>
+        <div class="step-t">Save &amp; annotate</div>
+        <div class="step-d">Pin a layout, write a note, prepare for tomorrow&rsquo;s session.</div>
+        <div class="arrow">→</div>
+      </div>
+      <div class="node">
+        <div class="step-n">05</div>
+        <div class="step-t">Return next day</div>
+        <div class="step-d">Back to step 1 — but the landing page should remember.</div>
+        <div class="arrow">→</div>
+      </div>
+    </div>
+
+    <div class="twocol mt-32">
+      <div class="panel">
+        <div class="eyebrow" style="margin-bottom: 14px;">CONCEPT MAP</div>
+        <div class="body" style="font-size: 14px;">
+          The seven first-class objects in TAAM&rsquo;s mental model. Every navigation
+          decision in the redesign maps back to one of these.
+        </div>
+        <ul class="thinlist mt-16">
+          <li><span></span><span><strong style="color: var(--ink);">Home</strong> · the resumption surface</span></li>
+          <li><span></span><span><strong style="color: var(--ink);">Simulation</strong> · time-stepped engine</span></li>
+          <li><span></span><span><strong style="color: var(--ink);">Scheduling</strong> · flight schedule import &amp; edit</span></li>
+          <li><span></span><span><strong style="color: var(--ink);">Resource Planning</strong> · gates · stands · taxiways</span></li>
+          <li><span></span><span><strong style="color: var(--ink);">Resource Modelling</strong> · the underlying graph</span></li>
+          <li><span></span><span><strong style="color: var(--ink);">Reports</strong> · the Reporter sub-tool</span></li>
+          <li><span></span><span><strong style="color: var(--ink);">Dashboard</strong> · ambient health of the active study</span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="eyebrow" style="margin-bottom: 14px;">RESEARCH STACK</div>
+        <div class="kv-grid">
+          <div class="kv-row"><span class="k">primary</span><span class="v">2 SME interviews · 4 questionnaires · 1 SUS round</span></div>
+          <div class="kv-row"><span class="k">secondary</span><span class="v">TUG feedback log · aviation forums · product guides</span></div>
+          <div class="kv-row"><span class="k">competitive</span><span class="v">CAST (FAA) · Simmod (ATAC) · CAST-Aim</span></div>
+          <div class="kv-row"><span class="k">techniques</span><span class="v">Think-Aloud · First-Click · SUS · Crazy-8 · 5-WHYs</span></div>
+          <div class="kv-row" style="border-bottom:none;"><span class="k">internal SMEs</span><span class="v">3 ex-airline planners on Boeing payroll</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 WORKSHOP -->
+<section id="workshop" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 06</div>
+    <h2>Workshop</h2>
+    <div class="sub">a day-long Design Thinking session — Crazy-8s, PM super-vote, three shortlisted directions</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      A redesign that goes straight from research to mockups is a redesign that ships
+      the designer&rsquo;s taste. I ran a day-long Design Thinking workshop with PM, BA,
+      and the dev lead instead. The goal was not to find <em>the</em> answer — it was to
+      make the stakeholders themselves draw eight wild possibilities and discover which
+      directions they could and could not defend.
+    </p>
+
+    <div class="twocol mt-32">
+      <div class="panel">
+        <div class="eyebrow" style="margin-bottom: 14px;">WORKSHOP PARTICIPANTS</div>
+        <div class="body" style="font-size: 14px; margin-bottom: 14px;">
+          Each person came with a different super-power and was the final voice on a
+          different thing.
+        </div>
+        <div class="kv-grid">
+          <div class="kv-row"><span class="k">PM</span><span class="v">final say on alternatives (super-vote)</span></div>
+          <div class="kv-row"><span class="k">BA</span><span class="v">final say on customer-language fidelity</span></div>
+          <div class="kv-row"><span class="k">Dev lead</span><span class="v">final say on rendering feasibility</span></div>
+          <div class="kv-row" style="border-bottom:none;"><span class="k">Me</span><span class="v">facilitator + final say on consistency</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="eyebrow" style="margin-bottom: 14px;">CRAZY-8 — EIGHT SCENARIOS</div>
+        <ul class="thinlist">
+          <li><span></span><span>A Star-Wars-themed launcher (deliberately wild)</span></li>
+          <li><span></span><span>A video-game-style mission select</span></li>
+          <li><span></span><span>Borrow CAST&rsquo;s tabular density (compete on parity)</span></li>
+          <li><span></span><span>Maintain memory-recall — fresh skin, same layout grid <strong style="color: var(--signal);">★</strong></span></li>
+          <li><span></span><span>Distraction-less — max 2 colours (white &amp; blue)</span></li>
+          <li><span></span><span>Plug-and-play customisable tiles <strong style="color: var(--signal);">★</strong></span></li>
+          <li><span></span><span>Start from scratch — break with all current products</span></li>
+          <li><span></span><span>Cross-platform — Desktop &amp; Tablet from day one <strong style="color: var(--signal);">★</strong></span></li>
+        </ul>
+        <div class="mt-16 mono" style="font-size: 11px; letter-spacing: 0.10em; color: var(--faint);">★ = PM&rsquo;s three super-votes</div>
+      </div>
+    </div>
+
+    <p class="mt-32">
+      The PM&rsquo;s three super-votes locked the directional brief. They were also
+      mutually compatible — which is rarer than it sounds. <em>Memory-recall</em> said
+      keep the six-tile grid. <em>Plug-and-play</em> said let the planner reorder it.
+      <em>Cross-platform</em> said design at touch density from day one. That triplet
+      became the design constraints I carried into prototyping.
+    </p>
+  </div>
+</section>
+
+<!-- 07 DESIGN -->
+<section id="design" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 07</div>
+    <h2>Design</h2>
+    <div class="sub">paper → wireframe → hi-fi, kept in the open with weekly TUG check-ins</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      I built the visual system before any screen. Two colours (Boeing blue + neutral
+      slate), one typeface (a clean grotesque to replace the legacy Verdana), 8-pt grid,
+      48-pt touch targets. Then I went from paper to whiteboard to wireframe to hi-fi
+      in two-week rounds, walking the BA and PM through every iteration before deciding.
+    </p>
+
+    <h3 style="font-family: var(--f-sans); font-size: 22px; font-weight: 500; color: var(--ink); letter-spacing: -0.015em; margin: 32px 0 16px;">Lo-fidelity wireframe</h3>
+    <p>
+      The wireframe locked the page anatomy: a left rail of six verbs, a content well
+      for personal shortcuts (the &ldquo;plug-and-play&rdquo; promise), a Recent Projects
+      panel, and a brand mark instead of a Jeppesen wordmark. It also pinned an
+      explicit slot for <em>brand identity</em> — non-negotiable for the PM, but I
+      wanted it pre-allocated so it never became a fight at the visual stage.
+    </p>
+
+    <div class="visual mt-24">
+      <img src="assets/cases/boeing-taam/lofi-wireframe.png" alt="Hand-drawn lo-fi wireframe of the new TAAM landing page, showing left-rail verbs, four customizable image tiles, a brand-logo slot, and a Recent Projects panel.">
+      <div class="cap">
+        <span><span class="lbl">FIG. 02</span> · Lo-fi wireframe · paper · approved by PM/BA wk 03</span>
+        <span>Apr 2017</span>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-size: 22px; font-weight: 500; color: var(--ink); letter-spacing: -0.015em; margin: 40px 0 16px;">Hi-fidelity directions</h3>
+    <p>
+      I designed four hi-fi alternatives across the brief&rsquo;s three constraints, each
+      pushing on a different lever — pure brand fidelity, atmospheric depth, customisable
+      density, and tablet-first. All four shared the same nav, IA, and grid; the
+      <em>aesthetic</em> was the variable. The TUG sat through a 90-minute review and
+      voted with sticky-dots — the dawn and dusk variants tied for first.
+    </p>
+
+    <div class="ba-grid mt-24">
+      <div class="visual">
+        <img src="assets/cases/boeing-taam/hifi-day.png" alt="Hi-fi alternative — Boeing-branded dark landing page, tile grid laid out in three vertical columns.">
+        <div class="cap">
+          <span><span class="lbl">DIRECTION A</span> · Boeing-dark · maximum brand fidelity</span>
+          <span>Hi-fi · May 2017</span>
+        </div>
+      </div>
+      <div class="visual">
+        <img src="assets/cases/boeing-taam/hifi-dusk.png" alt="Hi-fi alternative — sky background with customisable tile grid and cloud horizon.">
+        <div class="cap">
+          <span><span class="lbl">DIRECTION B</span> · Sky-clouds · ambient atmosphere</span>
+          <span>Hi-fi · May 2017</span>
+        </div>
+      </div>
+      <div class="visual">
+        <img src="assets/cases/boeing-taam/hifi-dawn.png" alt="Hi-fi alternative — dusk image of an aircraft taking off, full-bleed background with content panels.">
+        <div class="cap">
+          <span><span class="lbl">DIRECTION C</span> · Dusk takeoff · cinematic depth</span>
+          <span>Hi-fi · Jun 2017</span>
+        </div>
+      </div>
+      <div class="visual">
+        <img src="assets/cases/boeing-taam/showcase.png" alt="Composite mockup showing four landing-page variations stacked at perspective on a black background.">
+        <div class="cap">
+          <span><span class="lbl">SHOWCASE</span> · Four directions · perspective stack for review</span>
+          <span>Jun 2017</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-size: 22px; font-weight: 500; color: var(--ink); letter-spacing: -0.015em; margin: 40px 0 16px;">What carried through to v1</h3>
+    <p>
+      The shipped landing page kept Direction A&rsquo;s nav and chrome (the planners&rsquo;
+      muscle memory) and adopted Direction C&rsquo;s atmospheric background as a per-user
+      preference. The customisable tile region — the heart of the
+      &ldquo;plug-and-play&rdquo; brief — replaced the six fixed buttons with an
+      &ldquo;Add Shortcut&rdquo; affordance: any tool, any study, any saved layout could
+      become a tile, drag-reorderable, and the panel remembered its order per user.
+    </p>
+    <p>
+      The Recent Projects rail (right side) became the resumption surface I&rsquo;d
+      identified in the journey work — Mei-Lin&rsquo;s top action <em>and</em>
+      Olu&rsquo;s top action both became one click from the landing page.
+    </p>
+  </div>
+</section>
+
+<!-- 08 OUTCOME -->
+<section id="outcome" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 08</div>
+    <h2>Outcome</h2>
+    <div class="sub">measured against the three success metrics defined with the TUG up front</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      We defined three success metrics with the TUG before any visual decision was
+      made: <strong>feature discoverability</strong>, <strong>learning curve for the
+      revamped design</strong>, and <strong>user delight</strong>. The restricted
+      usability programme — two rounds of moderated Think-Aloud + first-click + SUS,
+      seven planners total — produced the deltas below.
+    </p>
+
+    <div class="metric-grid mt-24">
+      <div class="m">
+        <div class="v">+38%</div>
+        <div class="l">First-click accuracy</div>
+        <div class="s">six top tasks · 5/12 → 9/12 correct first click</div>
+      </div>
+      <div class="m">
+        <div class="v">–47%</div>
+        <div class="l">Time to first action</div>
+        <div class="s">~22s → ~12s on landing-page tasks (n=7)</div>
+      </div>
+      <div class="m">
+        <div class="v">71 → 84</div>
+        <div class="l">SUS score</div>
+        <div class="s">moved from &ldquo;OK&rdquo; to &ldquo;Excellent&rdquo; band</div>
+      </div>
+    </div>
+
+    <p class="mt-32">
+      Qualitatively, two things shifted that didn&rsquo;t show in the numbers. First,
+      the sales team stopped opening prospect demos with an apology — the landing page
+      now <em>led</em> the demo instead of being skipped past. Second, the dev team
+      adopted the visual system on the Reporter and Viewer modules without being asked,
+      because the component library had survived the rendering layer&rsquo;s constraints.
+      That was the moment the work stopped being a landing-page revamp and became a
+      product-wide refresh, which was always the real prize.
+    </p>
+
+    <div class="kv-grid mt-32 panel" style="padding: 22px;">
+      <div class="kv-row"><span class="k">shipped</span><span class="v">Landing page v2 + nav · TAAM v2018.1.0</span></div>
+      <div class="kv-row"><span class="k">downstream</span><span class="v">Reporter &amp; Viewer adopted the component library voluntarily</span></div>
+      <div class="kv-row"><span class="k">tug sentiment</span><span class="v">Q3 2018 feedback log · 4 of 5 mentions positive · 0 negative</span></div>
+      <div class="kv-row" style="border-bottom:none;"><span class="k">sister project</span><span class="v">Carried the same system into Fuel Efficiency Solutions (FES) mobile + dashboard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 REFLECTION -->
+<section id="reflection" class="case-section">
+  <div class="case-section__head">
+    <div class="n">§ 09</div>
+    <h2>Reflection</h2>
+    <div class="sub">what I&rsquo;d do differently · what I&rsquo;d keep</div>
+  </div>
+  <div class="case-section__body body">
+    <p>
+      <strong>What I&rsquo;d keep.</strong> The BP/UP split. The PM-super-vote ritual in
+      Crazy-8s. The pre-allocated brand slot in the wireframe. The
+      memory-recall-plus-customisation triplet. The decision to invest in a component
+      system before the first screen — that&rsquo;s what bought the downstream Reporter
+      and Viewer adoption for free.
+    </p>
+    <p>
+      <strong>What I&rsquo;d do differently.</strong> I&rsquo;d run a quantitative
+      benchmark of the <em>old</em> page before redesigning. We had the SUS at the end;
+      we did not have a clean SUS at the start. The 71-baseline number above is from
+      session two, retrospectively. A clean pre-baseline would have made the case for the
+      next refresh (and the next budget) materially easier.
+    </p>
+    <p>
+      <strong>Lessons that have stuck.</strong> Three of them.
+      <em>One:</em> aviation users tolerate ugly far more than they tolerate
+      inconsistency — match the chrome to the engine, not to the trend.
+      <em>Two:</em> when stakeholders disagree, force them to draw, not talk —
+      Crazy-8 reveals what was hiding in the language.
+      <em>Three:</em> on a 20-year-old product, the brief is never &ldquo;redesign the
+      landing page&rdquo; — it is &ldquo;earn the right to redesign everything else,
+      using the landing page as proof.&rdquo;
+    </p>
+    <div class="pullquote">
+      &ldquo;You don&rsquo;t refresh a 20-year-old product. You earn it.&rdquo;
+    </div>
+  </div>
+</section>
+
+</div><!-- /case-body -->
+
+<!-- NEXT -->
+<section class="gut" style="padding: 56px var(--pad-x); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
+  <div>
+    <div class="eyebrow" style="margin-bottom: 14px;">// NEXT IN THE ATLAS</div>
+    <h2 class="display" style="font-size: 40px; letter-spacing: -0.022em; line-height: 1.04; margin: 0 0 22px;">
+      Read the Dell GenAI<br>
+      <em>case in full.</em>
+    </h2>
+    <p class="dim" style="font-family: var(--f-sans); font-size: 15px; line-height: 1.65; max-width: 480px; margin: 0 0 24px;">
+      The pan-Dell personalization initiative I&rsquo;ve been leading since 2022 — prompt
+      libraries, intent estimation, multi-modal adaptive layouts.
+    </p>
+    <div class="flex gap-12">
+      <a href="case-dell-genai.html" class="btn btn--primary">READ D.001 · DELL →</a>
+      <a href="work.html" class="btn btn--ghost">BACK TO ATLAS</a>
+    </div>
+  </div>
+  <div style="align-self: end;">
+    <div class="panel" style="padding: 22px;">
+      <div class="eyebrow" style="margin-bottom: 14px;">CASE FILE</div>
+      <div class="kv-grid">
+        <div class="kv-row"><span class="k">id</span><span class="v">D.002 · BOEING TAAM</span></div>
+        <div class="kv-row"><span class="k">window</span><span class="v">2016 — 2018 · 1 yr 7 mo</span></div>
+        <div class="kv-row"><span class="k">my role</span><span class="v">Sole UX designer · sprint-led</span></div>
+        <div class="kv-row"><span class="k">techniques</span><span class="v">DT workshop · Crazy-8 · 5-WHYs · Think-Aloud · SUS</span></div>
+        <div class="kv-row" style="border-bottom:none;"><span class="k">sister project</span><span class="v">Fuel Efficiency Solutions (mobile + dashboard)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__nav">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener">RESUME</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div>© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · v.2026.06</div>
+</footer>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
