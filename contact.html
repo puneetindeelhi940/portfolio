@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
 <link rel="stylesheet" href="assets/site.css">
 <style>
   .contact-grid {
@@ -70,6 +71,10 @@
   </nav>
   <div class="topbar__meta">
     <span class="live">OPEN TO RIGHT ROLE</span>
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Teal theme">TEAL</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Forest (dark green) theme">FOREST</button>
+    </span>
     <span id="clock">IST 11:47</span>
     <span>v.2026.06</span>
   </div>

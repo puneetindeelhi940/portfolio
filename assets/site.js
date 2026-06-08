@@ -6,6 +6,46 @@
 (function () {
   'use strict';
 
+  // ── Theme (Teal default / Forest) ─────────────────────────
+  // Persisted in localStorage. A tiny inline <script> in each page's
+  // <head> applies the attribute BEFORE first paint to prevent FOUC;
+  // this block handles the toggle UI + cross-tab sync.
+  const THEME_KEY = 'pa-theme';
+  const THEMES = ['default', 'forest'];
+
+  function getTheme() {
+    try {
+      const t = localStorage.getItem(THEME_KEY);
+      return THEMES.indexOf(t) >= 0 ? t : 'default';
+    } catch (e) { return 'default'; }
+  }
+  function applyTheme(t) {
+    if (t === 'forest') document.documentElement.setAttribute('data-theme', 'forest');
+    else document.documentElement.removeAttribute('data-theme');
+  }
+  function setTheme(t) {
+    if (THEMES.indexOf(t) < 0) return;
+    try { localStorage.setItem(THEME_KEY, t); } catch (e) {}
+    applyTheme(t);
+    syncToggles(t);
+  }
+  function syncToggles(t) {
+    const opts = document.querySelectorAll('[data-theme-set]');
+    opts.forEach(b => {
+      b.classList.toggle('is-active', b.getAttribute('data-theme-set') === t);
+      b.setAttribute('aria-checked', b.getAttribute('data-theme-set') === t ? 'true' : 'false');
+    });
+  }
+  window.__paTheme = { get: getTheme, set: setTheme };
+
+  // Cross-tab sync
+  window.addEventListener('storage', function (e) {
+    if (e.key === THEME_KEY) {
+      applyTheme(getTheme());
+      syncToggles(getTheme());
+    }
+  });
+
   // ── Soft gate ─────────────────────────────────────────────
   // Default passcode is the namesake quote, lowercased + no spaces:
   //   "Grow the core, while adding some more" → "growthecore"
@@ -63,6 +103,14 @@
 
   // ── Gate page wiring ──────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function () {
+    // Theme toggle buttons (gate + topbar, wherever present)
+    syncToggles(getTheme());
+    document.querySelectorAll('[data-theme-set]').forEach(b => {
+      b.addEventListener('click', function () {
+        setTheme(b.getAttribute('data-theme-set'));
+      });
+    });
+
     const form = document.getElementById('gate-form');
     if (form) {
       const inp = document.getElementById('gate-input');

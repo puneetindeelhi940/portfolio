@@ -25,6 +25,100 @@
   --f-serif: 'Roboto Serif', Georgia, serif;
 }
 
+/* ───────── Theme: Forest (dark green + white) ─────────
+ * Pure-white ink on a deep forest-green ground.
+ * Tokens designed to keep WCAG AA contrast across all text:
+ *   ink/bg     ≈ 14.5:1   (AAA)
+ *   dim/bg     ≈  9.1:1   (AAA)
+ *   faint/bg   ≈  5.0:1   (AA — used only for tiny meta labels)
+ *   signal/bg  ≈  9.3:1   (AAA — accent stays warm gold)
+ */
+[data-theme="forest"] {
+  --bg:        oklch(22% 0.045 150);
+  --bg-2:      oklch(18% 0.04 150);
+  --surface:   oklch(26% 0.045 150);
+  --surface-2: oklch(30% 0.05 150);
+  --ink:       oklch(99% 0.005 150);
+  --dim:       oklch(88% 0.018 150);
+  --faint:     oklch(70% 0.03 150);
+  --rule:      oklch(38% 0.04 150);
+  --rule-2:    oklch(46% 0.045 150);
+  --signal:    oklch(88% 0.16 92);
+  --signal-ink: oklch(22% 0.05 150);
+  --warn:      oklch(78% 0.14 35);
+}
+/* In forest mode the prose-tinted helpers (.lede / .body / portrait label)
+ * use hardcoded oklch tints that don't pick up the new vars — re-tint them
+ * here so body copy stays bright white on green.
+ */
+[data-theme="forest"] .lede,
+[data-theme="forest"] .hero__sub,
+[data-theme="forest"] .bio-prose {
+  color: oklch(96% 0.008 150);
+}
+[data-theme="forest"] .timeline__row .what {
+  color: oklch(94% 0.008 150);
+}
+[data-theme="forest"] .bio-hero__portrait img { filter: none; }
+
+/* ───────── Theme toggle (segmented control) ───────── */
+.theme-toggle {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  font-family: var(--f-mono);
+  background: transparent;
+}
+.theme-toggle__opt {
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--rule);
+  color: var(--dim);
+  padding: 6px 12px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: color .12s, background .12s;
+}
+.theme-toggle__opt:first-child { border-left: none; }
+.theme-toggle__opt:hover { color: var(--ink); }
+.theme-toggle__opt.is-active {
+  background: var(--signal);
+  color: var(--signal-ink);
+}
+.theme-toggle__opt:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: -2px;
+}
+/* Gate variant — sits below the hint line with a small label */
+.gate__theme {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--faint);
+}
+.gate__theme .lbl { text-transform: uppercase; }
+/* Topbar variant — slightly tighter */
+.topbar__meta .theme-toggle__opt { padding: 5px 9px; font-size: 9px; }
+
+  --pad-x: 56px;
+  --pad-x-sm: 32px;
+  --max: 1440px;
+
+  --f-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --f-sans: 'Roboto', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  --f-serif: 'Roboto Serif', Georgia, serif;
+}
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -822,7 +916,11 @@ img { display: block; max-width: 100%; }
   .topbar { gap: 16px; height: auto; flex-wrap: wrap; padding: 12px var(--pad-x); }
   .topbar__nav { order: 3; flex-basis: 100%; gap: 14px; overflow-x: auto; padding-bottom: 4px; }
   .topbar__nav a { padding: 6px 0; white-space: nowrap; }
-  .topbar__meta { display: none; }
+  .topbar__meta { display: flex; gap: 8px; }
+  .topbar__meta .live,
+  .topbar__meta #clock,
+  .topbar__meta > span:last-child { display: none; }
+  .topbar__meta .theme-toggle { display: inline-flex; }
   .manifest, .how, .patents { grid-template-columns: 1fr; }
   .manifest .cell, .how .cell, .patents .cell { border-left: none; border-bottom: 1px solid var(--rule); }
   .hero__big { font-size: 44px; }
