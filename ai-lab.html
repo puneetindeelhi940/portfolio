@@ -19,7 +19,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    min-height: 480px;
+    min-height: 600px;
   }
   .featured-card__media {
     background:
@@ -202,35 +202,56 @@
       <div class="mini-app">
         <div class="mini-app__bar">
           <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="url">pa9401.vercel.app/frameworks</span>
+          <span class="url">pa9401.vercel.app · Design Intelligence Portal</span>
         </div>
         <div class="mini-app__body">
-          <div class="mini-app__h">Design Intelligence Portal</div>
-          <div class="mini-app__sub mono">PROMPT FRAMEWORKS · LEARNING PATHS</div>
+          <!-- Top nav tabs -->
+          <div style="display: flex; gap: 0; border-bottom: 1px solid oklch(28% 0.02 175); margin: -18px -18px 14px; padding: 0 14px;">
+            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(82% 0.14 78); border-bottom: 1.5px solid oklch(82% 0.14 78);">DASHBOARD</div>
+            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(48% 0.018 175);">PROMPT LIBRARY</div>
+            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(48% 0.018 175);">LEADERBOARD</div>
+            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(48% 0.018 175);">BENCHMARKS</div>
+          </div>
+          <!-- Stat row -->
+          <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; margin-bottom: 12px;">
+            <div style="padding: 9px 10px; background: oklch(20% 0.02 175); border: 1px solid oklch(28% 0.02 175); border-radius: 3px;">
+              <div style="font-family: 'Roboto Mono', monospace; font-size: 16px; color: oklch(82% 0.14 78); font-weight: 500;">847</div>
+              <div style="font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.1em; margin-top: 2px;">PROMPTS SHARED</div>
+            </div>
+            <div style="padding: 9px 10px; background: oklch(20% 0.02 175); border: 1px solid oklch(28% 0.02 175); border-radius: 3px;">
+              <div style="font-family: 'Roboto Mono', monospace; font-size: 16px; color: oklch(82% 0.14 78); font-weight: 500;">94%</div>
+              <div style="font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.1em; margin-top: 2px;">TEAM ADOPTION</div>
+            </div>
+            <div style="padding: 9px 10px; background: oklch(20% 0.02 175); border: 1px solid oklch(28% 0.02 175); border-radius: 3px;">
+              <div style="font-family: 'Roboto Mono', monospace; font-size: 16px; color: oklch(82% 0.14 78); font-weight: 500;">4.2×</div>
+              <div style="font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.1em; margin-top: 2px;">OUTPUT QUALITY</div>
+            </div>
+          </div>
+          <!-- Prompt framework tiles -->
           <div class="mini-app__grid">
             <div class="mini-app__tile">
               <div class="frame">CO·STAR</div>
-              <div class="name">Context · Objective · Style · Tone · Audience · Response</div>
+              <div class="name">Context · Objective · Style · Tone</div>
             </div>
             <div class="mini-app__tile">
               <div class="frame">R·T·F</div>
               <div class="name">Role · Task · Format</div>
             </div>
-            <div class="mini-app__tile">
+            <div class="mini-app__tile" style="background: color-mix(in oklch, oklch(82% 0.14 78) 8%, oklch(20% 0.02 175)); border-color: color-mix(in oklch, oklch(82% 0.14 78) 30%, oklch(28% 0.02 175));">
               <div class="frame">CoT</div>
               <div class="name">Chain-of-Thought reasoning</div>
             </div>
-            <div class="mini-app__tile">
-              <div class="frame">SCQA</div>
-              <div class="name">Situation · Complication · Question · Answer</div>
+          </div>
+          <!-- Leaderboard mini strip -->
+          <div style="margin-top: 10px; border: 1px solid oklch(28% 0.02 175); border-radius: 3px; overflow: hidden;">
+            <div style="padding: 5px 10px; background: oklch(22% 0.022 175); font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.12em;">TOP CONTRIBUTORS THIS WEEK</div>
+            <div style="display: flex; justify-content: space-between; padding: 5px 10px; border-top: 1px solid oklch(28% 0.02 175);">
+              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(82% 0.14 78);">#1 · A.SHARMA</span>
+              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(72% 0.02 175);">38 prompts · 4.9★</span>
             </div>
-            <div class="mini-app__tile">
-              <div class="frame">5W·1H</div>
-              <div class="name">Discovery framing</div>
-            </div>
-            <div class="mini-app__tile">
-              <div class="frame">+ MORE</div>
-              <div class="name">Curated for design orgs</div>
+            <div style="display: flex; justify-content: space-between; padding: 5px 10px; border-top: 1px solid oklch(28% 0.02 175);">
+              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(96% 0.01 175);">#2 · P.ARORA</span>
+              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(72% 0.02 175);">31 prompts · 4.8★</span>
             </div>
           </div>
         </div>
@@ -242,34 +263,74 @@
       </div>
     </div>
 
-    <div class="featured-card__body">
+    <div class="featured-card__body" style="padding: 32px 32px 28px; overflow-y: auto;">
       <div class="flex gap-12" style="align-items: center;">
         <span class="signal mono" style="font-size: 11px; letter-spacing: 0.14em;">X.01 · LIVE</span>
-        <span class="faint mono" style="font-size: 10px; letter-spacing: 0.14em;">FEATURED PROJECT</span>
+        <span class="faint mono" style="font-size: 10px; letter-spacing: 0.14em;">FEATURED PROJECT · VIBE-CODED 2025</span>
       </div>
-      <h3>Design Intelligence Portal</h3>
-      <p class="lede">
-        A working hub for AI prompt engineering inside design organisations. CO-STAR, RTF, and
-        Chain-of-Thought made operational for design teams &mdash; not a course, a tool people
-        actually open.
+      <h3 style="font-size: 26px; margin: 12px 0 8px;">Design Intelligence Portal</h3>
+      <p class="lede" style="font-size: 14px; margin-bottom: 18px;">
+        A Design AI Intelligence Platform that helps teams learn prompt engineering, optimize AI usage,
+        benchmark performance, and <strong style="color: var(--ink);">measure organizational AI maturity</strong>
+        &mdash; turning a fragmented individual skill into a scaled organizational capability.
       </p>
 
-      <ul class="feature-points">
-        <li><span>Curated prompt frameworks for design tasks: discovery, critique, IA, copy, research synthesis.</span></li>
-        <li><span>Learning paths that meet a designer where they are &mdash; not a generic prompt-engineering 101.</span></li>
-        <li><span>Vibe-coded end-to-end. Lovable + Vercel. The build was itself an experiment in design-led shipping.</span></li>
-        <li><span>Tied conceptually to the AI-Design &amp; Innovation CoE (case D.003).</span></li>
-      </ul>
+      <!-- 5 USPs as compact panels -->
+      <div style="display: grid; gap: 9px; margin-bottom: 18px;">
 
-      <div class="panel panel--deep" style="padding: 16px 18px; margin-top: auto;">
-        <div class="eyebrow" style="margin-bottom: 8px;">// WHY THIS MATTERS</div>
-        <div class="body" style="font-size: 13.5px; line-height: 1.6;">
-          Most &ldquo;AI for designers&rdquo; content is a video. Design upskilling sticks when
-          it&rsquo;s embedded in the actual task. This portal is a small bet on that idea.
+        <div style="border: 1px solid var(--rule); border-radius: 2px; padding: 12px 14px; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start;">
+          <span class="signal mono" style="font-size: 11px; padding-top: 1px;">01</span>
+          <div>
+            <div style="font-family: var(--f-sans); font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 3px;">Prompt as Org Capability, Not Individual Skill</div>
+            <div style="font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5;">Centralised learning + execution: discover, reuse, and improve prompts collectively. Reduces duplication. Standardises best practices. Accelerates designer onboarding.</div>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); border-radius: 2px; padding: 12px 14px; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; background: color-mix(in oklch, var(--signal) 4%, var(--surface));">
+          <span class="signal mono" style="font-size: 11px; padding-top: 1px;">02</span>
+          <div>
+            <div style="font-family: var(--f-sans); font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 3px;">AI Usage Visibility — The Leadership Dashboard</div>
+            <div style="font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5;">Prompt usage trends, team adoption rates, model efficiency scores, and high-performing patterns — all surfaced for leaders. Shifts the portal from &ldquo;tool&rdquo; to <em>management intelligence system</em>. Answers the question every exec asks: &ldquo;Are we investing in AI effectively?&rdquo;</div>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); border-radius: 2px; padding: 12px 14px; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start;">
+          <span class="signal mono" style="font-size: 11px; padding-top: 1px;">03</span>
+          <div>
+            <div style="font-family: var(--f-sans); font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 3px;">Gamified Adoption via Leaderboards &amp; Performance Signals</div>
+            <div style="font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5;">Best prompt creators, AI efficiency champions, top contributors — surfaced through recognition and healthy competition. Turns AI learning into culture, not compliance. Enterprise change management gold.</div>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); border-radius: 2px; padding: 12px 14px; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start;">
+          <span class="signal mono" style="font-size: 11px; padding-top: 1px;">04</span>
+          <div>
+            <div style="font-family: var(--f-sans); font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 3px;">Prompt Coaching — From Average to Expert Prompting</div>
+            <div style="font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5;">Benchmarks prompt effectiveness, suggests better structures, compares outputs across models. Less trial-and-error → faster outputs → measurable quality gain. No expensive training required.</div>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); border-radius: 2px; padding: 12px 14px; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start;">
+          <span class="signal mono" style="font-size: 11px; padding-top: 1px;">05</span>
+          <div>
+            <div style="font-family: var(--f-sans); font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 3px;">Enterprise AI ROI &amp; Governance for Design Teams</div>
+            <div style="font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5;">Which models deliver value? Where are inefficiencies? Which teams are getting ROI? Brings visibility, accountability, and measurable governance to enterprise AI adoption — not anecdotes.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel panel--deep" style="padding: 14px 16px; background: color-mix(in oklch, var(--signal) 6%, var(--surface));">
+        <div class="eyebrow" style="margin-bottom: 6px; color: var(--signal);">// STRATEGIC LENS · WHY THIS EXISTS</div>
+        <div style="font-family: var(--f-sans); font-size: 13px; line-height: 1.6; color: var(--dim);">
+          This portal is the executable version of what I led inside Dell&rsquo;s Experience Design Group as
+          the <strong style="color: var(--ink);">AI-Design &amp; Innovation CoE</strong>. The insight: most enterprise
+          AI adoption fails not from lack of tools, but from lack of shared standards, visibility, and
+          behavioural incentives. Stop scattered prompting &mdash; build an AI-native design culture.
         </div>
       </div>
 
-      <div class="flex gap-12" style="margin-top: 20px;">
+      <div class="flex gap-12" style="margin-top: 18px;">
         <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">
           OPEN THE PORTAL <span>↗</span>
         </a>
