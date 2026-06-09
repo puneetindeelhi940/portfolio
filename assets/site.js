@@ -91,6 +91,17 @@
     const yr = document.getElementById('year');
     if (yr) yr.textContent = String(new Date().getFullYear());
 
+    // Visitor counter (home page only)
+    const vcEl = document.getElementById('visitor-count');
+    if (vcEl) {
+      fetch('https://api.countapi.xyz/hit/puneetindeelhi940.github.io/portfolio-visits')
+        .then(r => r.json())
+        .then(data => {
+          vcEl.textContent = Number(data.value).toLocaleString();
+        })
+        .catch(() => { vcEl.textContent = '—'; });
+    }
+
     // Theme toggle
     const toggleOpts = document.querySelectorAll('[data-theme-set]');
     if (toggleOpts.length) {
