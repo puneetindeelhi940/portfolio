@@ -199,67 +199,199 @@
     <div class="featured-card__media">
       <div class="featured-card__url">pa9401.vercel.app</div>
 
-      <div class="mini-app">
-        <div class="mini-app__bar">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="url">pa9401.vercel.app · Design Intelligence Portal</span>
+      <!-- Real portal UI recreation from screenshot -->
+      <div class="mini-app" style="display: flex; flex-direction: row; height: 380px; overflow: hidden;">
+
+        <!-- Sidebar -->
+        <div style="width: 130px; flex-shrink: 0; background: #1a3a2e; display: flex; flex-direction: column; padding: 12px 0; border-right: 1px solid #2d5a42;">
+          <div style="padding: 0 12px 12px; border-bottom: 1px solid #2d5a42; margin-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px;">
+              <div style="width: 18px; height: 18px; background: #22c55e; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                <span style="color: white; font-size: 9px; font-weight: 700;">DI</span>
+              </div>
+              <span style="font-family: 'Roboto', sans-serif; font-size: 10px; font-weight: 600; color: #f0fdf4;">Design Intel</span>
+            </div>
+            <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #86efac; padding-left: 24px;">AI · by Puneet Arora</div>
+          </div>
+          <nav style="display: flex; flex-direction: column; gap: 1px; padding: 0 6px; flex: 1;">
+            <div style="padding: 6px 8px; background: #166534; border-radius: 5px; display: flex; align-items: center; gap: 6px;">
+              <span style="font-size: 9px;">🏠</span>
+              <span style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #f0fdf4;">Dashboard</span>
+            </div>
+            <div style="padding: 6px 8px; border-radius: 5px; display: flex; align-items: center; gap: 6px;">
+              <span style="font-size: 9px;">🔍</span>
+              <span style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #86efac;">Vibe Search</span>
+            </div>
+            <div style="padding: 6px 8px; border-radius: 5px; display: flex; align-items: center; gap: 6px; justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 9px;">✨</span>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #86efac;">Prompt Gen</span>
+              </div>
+              <span style="color: #86efac; font-size: 8px;">›</span>
+            </div>
+            <div style="padding: 6px 8px; border-radius: 5px; display: flex; align-items: center; gap: 6px; justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 9px;">⚡</span>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #86efac;">AI Efficiency</span>
+              </div>
+              <span style="color: #86efac; font-size: 8px;">›</span>
+            </div>
+            <div style="padding: 6px 8px; border-radius: 5px; display: flex; align-items: center; gap: 6px;">
+              <span style="font-size: 9px;">📊</span>
+              <span style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #86efac;">Analytics</span>
+            </div>
+            <div style="padding: 6px 8px; border-radius: 5px; display: flex; align-items: center; gap: 6px; justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 9px;">👤</span>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #86efac;">For You</span>
+              </div>
+              <span style="color: #86efac; font-size: 8px;">›</span>
+            </div>
+          </nav>
+          <div style="padding: 8px 14px 0; border-top: 1px solid #2d5a42; margin-top: 8px;">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span style="font-size: 9px;">⚙️</span>
+              <span style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #86efac;">Settings</span>
+            </div>
+          </div>
         </div>
-        <div class="mini-app__body">
-          <!-- Top nav tabs -->
-          <div style="display: flex; gap: 0; border-bottom: 1px solid oklch(28% 0.02 175); margin: -18px -18px 14px; padding: 0 14px;">
-            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(82% 0.14 78); border-bottom: 1.5px solid oklch(82% 0.14 78);">DASHBOARD</div>
-            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(48% 0.018 175);">PROMPT LIBRARY</div>
-            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(48% 0.018 175);">LEADERBOARD</div>
-            <div style="padding: 8px 12px; font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: oklch(48% 0.018 175);">BENCHMARKS</div>
-          </div>
-          <!-- Stat row -->
-          <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; margin-bottom: 12px;">
-            <div style="padding: 9px 10px; background: oklch(20% 0.02 175); border: 1px solid oklch(28% 0.02 175); border-radius: 3px;">
-              <div style="font-family: 'Roboto Mono', monospace; font-size: 16px; color: oklch(82% 0.14 78); font-weight: 500;">847</div>
-              <div style="font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.1em; margin-top: 2px;">PROMPTS SHARED</div>
+
+        <!-- Main content -->
+        <div style="flex: 1; background: #f8fafc; overflow-y: auto; padding: 14px 14px;">
+          <div style="font-family: 'Roboto', sans-serif; font-size: 13px; font-weight: 700; color: #111; margin-bottom: 2px;">Welcome back, Designer</div>
+          <div style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #64748b; margin-bottom: 12px;">Your central hub for AI prompt engineering and learning</div>
+
+          <!-- Stat cards -->
+          <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 7px; margin-bottom: 12px;">
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 10px;">
+              <div style="font-size: 10px; margin-bottom: 4px;">⚡</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 700; color: #111;">247</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #64748b;">Prompts Generated</div>
             </div>
-            <div style="padding: 9px 10px; background: oklch(20% 0.02 175); border: 1px solid oklch(28% 0.02 175); border-radius: 3px;">
-              <div style="font-family: 'Roboto Mono', monospace; font-size: 16px; color: oklch(82% 0.14 78); font-weight: 500;">94%</div>
-              <div style="font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.1em; margin-top: 2px;">TEAM ADOPTION</div>
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 10px;">
+              <div style="font-size: 10px; margin-bottom: 4px;">🎯</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 700; color: #111;">89%</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #64748b;">Success Rate</div>
             </div>
-            <div style="padding: 9px 10px; background: oklch(20% 0.02 175); border: 1px solid oklch(28% 0.02 175); border-radius: 3px;">
-              <div style="font-family: 'Roboto Mono', monospace; font-size: 16px; color: oklch(82% 0.14 78); font-weight: 500;">4.2×</div>
-              <div style="font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.1em; margin-top: 2px;">OUTPUT QUALITY</div>
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 10px;">
+              <div style="font-size: 10px; margin-bottom: 4px;">📖</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 700; color: #111;">5</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #64748b;">Frameworks Learned</div>
             </div>
-          </div>
-          <!-- Prompt framework tiles -->
-          <div class="mini-app__grid">
-            <div class="mini-app__tile">
-              <div class="frame">CO·STAR</div>
-              <div class="name">Context · Objective · Style · Tone</div>
-            </div>
-            <div class="mini-app__tile">
-              <div class="frame">R·T·F</div>
-              <div class="name">Role · Task · Format</div>
-            </div>
-            <div class="mini-app__tile" style="background: color-mix(in oklch, oklch(82% 0.14 78) 8%, oklch(20% 0.02 175)); border-color: color-mix(in oklch, oklch(82% 0.14 78) 30%, oklch(28% 0.02 175));">
-              <div class="frame">CoT</div>
-              <div class="name">Chain-of-Thought reasoning</div>
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 10px;">
+              <div style="font-size: 10px; margin-bottom: 4px;">🏅</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 13px; font-weight: 700; color: #111;">Green Belt</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #64748b;">Current Level</div>
             </div>
           </div>
-          <!-- Leaderboard mini strip -->
-          <div style="margin-top: 10px; border: 1px solid oklch(28% 0.02 175); border-radius: 3px; overflow: hidden;">
-            <div style="padding: 5px 10px; background: oklch(22% 0.022 175); font-family: 'Roboto Mono', monospace; font-size: 8px; color: oklch(48% 0.018 175); letter-spacing: 0.12em;">TOP CONTRIBUTORS THIS WEEK</div>
-            <div style="display: flex; justify-content: space-between; padding: 5px 10px; border-top: 1px solid oklch(28% 0.02 175);">
-              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(82% 0.14 78);">#1 · A.SHARMA</span>
-              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(72% 0.02 175);">38 prompts · 4.9★</span>
+
+          <!-- Quick Actions -->
+          <div style="font-family: 'Roboto', sans-serif; font-size: 10px; font-weight: 600; color: #111; margin-bottom: 7px;">Quick Actions</div>
+          <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 7px; margin-bottom: 12px;">
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 9px;">
+              <div style="width: 20px; height: 20px; background: #22c55e; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;">
+                <span style="font-size: 10px;">✨</span>
+              </div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #111; margin-bottom: 2px;">Generate Prompt</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8; line-height: 1.3;">Create AI prompts using our builder</div>
             </div>
-            <div style="display: flex; justify-content: space-between; padding: 5px 10px; border-top: 1px solid oklch(28% 0.02 175);">
-              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(96% 0.01 175);">#2 · P.ARORA</span>
-              <span style="font-family: 'Roboto Mono', monospace; font-size: 9px; color: oklch(72% 0.02 175);">31 prompts · 4.8★</span>
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 9px;">
+              <div style="width: 20px; height: 20px; background: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;">
+                <span style="font-size: 10px;">📚</span>
+              </div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #111; margin-bottom: 2px;">Learn Frameworks</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8; line-height: 1.3;">Master CO-STAR, RTF, CoT</div>
+            </div>
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 9px;">
+              <div style="width: 20px; height: 20px; background: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;">
+                <span style="font-size: 10px;">📊</span>
+              </div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #111; margin-bottom: 2px;">View Analytics</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8; line-height: 1.3;">Track prompting performance</div>
+            </div>
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 9px;">
+              <div style="width: 20px; height: 20px; background: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;">
+                <span style="font-size: 10px;">🎯</span>
+              </div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #111; margin-bottom: 2px;">Your Progress</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8; line-height: 1.3;">Continue your learning journey</div>
+            </div>
+          </div>
+
+          <!-- Bottom split: Recent Prompts + Learning Progress -->
+          <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 8px;">
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px;">
+              <div style="font-family: 'Roboto', sans-serif; font-size: 10px; font-weight: 600; color: #111; margin-bottom: 2px;">Recent Prompts</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8; margin-bottom: 8px;">Your latest prompt engineering work</div>
+              <div style="display: flex; flex-direction: column; gap: 5px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border: 1px solid #f1f5f9; border-radius: 5px;">
+                  <div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 500; color: #111;">UI Component Generator</div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8;">CO-STAR</div>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #22c55e;">94%</div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8;">success</div>
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border: 1px solid #f1f5f9; border-radius: 5px;">
+                  <div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 500; color: #111;">User Research Summary</div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8;">RTF</div>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #22c55e;">87%</div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8;">success</div>
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border: 1px solid #f1f5f9; border-radius: 5px;">
+                  <div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 500; color: #111;">Design System Audit</div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8;">Chain-of-Thought</div>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #22c55e;">91%</div>
+                    <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8;">success</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px;">
+              <div style="font-family: 'Roboto', sans-serif; font-size: 10px; font-weight: 600; color: #111; margin-bottom: 2px;">Learning Progress</div>
+              <div style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #94a3b8; margin-bottom: 8px;">Your journey to Black Belt</div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                <span style="font-family: 'Roboto', sans-serif; font-size: 9px; color: #374151;">Overall Progress</span>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: #22c55e;">65%</span>
+              </div>
+              <div style="background: #e2e8f0; border-radius: 999px; height: 5px; margin-bottom: 10px; overflow: hidden;">
+                <div style="width: 65%; height: 100%; background: #22c55e; border-radius: 999px;"></div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 5px; margin-bottom: 10px;">
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #374151;">CO-STAR Framework</span>
+                  <span style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #22c55e; font-weight: 600;">Complete</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #374151;">RTF Framework</span>
+                  <span style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #22c55e; font-weight: 600;">Complete</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #374151;">Chain-of-Thought</span>
+                  <span style="font-family: 'Roboto', sans-serif; font-size: 8px; color: #f59e0b; font-weight: 600;">In Progress</span>
+                </div>
+              </div>
+              <div style="background: #22c55e; border-radius: 6px; padding: 7px; text-align: center;">
+                <span style="font-family: 'Roboto', sans-serif; font-size: 9px; font-weight: 600; color: white;">Continue Learning</span>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="featured-card__caption">
-        <span>FIG.A · APP PREVIEW</span>
-        <span>VIBE-CODED · LIVE 2025</span>
+        <span>FIG.A · LIVE APP · pa9401.vercel.app</span>
+        <span>VIBE-CODED · 2025</span>
       </div>
     </div>
 
