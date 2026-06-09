@@ -187,6 +187,11 @@ img { display: block; max-width: 100%; }
   width: 8px; height: 8px;
   background: var(--signal); border-radius: 1px;
   box-shadow: 0 0 14px color-mix(in oklch, var(--signal) 60%, transparent);
+  animation: blink-dot 1.2s ease-in-out infinite;
+}
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 .topbar__brand b { font-weight: 700; letter-spacing: 0.02em; }
 .topbar__brand .slash { color: var(--faint); margin-left: 4px; }
@@ -232,7 +237,7 @@ img { display: block; max-width: 100%; }
   gap: 10px;
 }
 .ribbon .cell:first-child { border-left: none; }
-.ribbon .cell .k { color: var(--faint); }
+.ribbon .cell .k { color: var(--faint); font-weight: 700; }
 .ribbon .cell .v { color: var(--ink); }
 
 /* ───────── Tags & buttons ───────── */
@@ -419,7 +424,7 @@ img { display: block; max-width: 100%; }
   padding: 0 28px;
 }
 .gate__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 56px; }
-.gate__brand .dot { width: 8px; height: 8px; background: var(--signal); border-radius: 1px; box-shadow: 0 0 16px var(--signal); }
+.gate__brand .dot { width: 8px; height: 8px; background: var(--signal); border-radius: 1px; box-shadow: 0 0 16px var(--signal); animation: blink-dot 1.2s ease-in-out infinite; }
 .gate__brand b { font-weight: 700; letter-spacing: 0.02em; font-size: 12px; }
 .gate__brand .slash { color: var(--faint); font-size: 11px; letter-spacing: 0.16em; }
 .gate__title {
@@ -619,7 +624,7 @@ img { display: block; max-width: 100%; }
   font-size: 10px;
   color: var(--dim);
   padding: 3px 8px;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--rule-2);
   border-radius: 2px;
   letter-spacing: 0.06em;
 }
