@@ -271,6 +271,7 @@ img { display: block; max-width: 100%; }
   border-radius: 2px;
   text-decoration: none;
   border: 1px solid transparent;
+  white-space: nowrap;
   transition: transform .12s, background .15s, color .15s;
 }
 .btn--primary { background: var(--signal); color: var(--signal-ink); }
@@ -547,7 +548,7 @@ img { display: block; max-width: 100%; }
   margin: 0 0 36px;
 }
 .hero__sub .prompt { color: var(--signal); margin-right: 6px; }
-.hero__ctas { display: flex; gap: 14px; margin-bottom: 56px; }
+.hero__ctas { display: flex; gap: 14px; margin-bottom: 56px; flex-wrap: wrap; }
 .hero__trust {
   display: flex;
   gap: 28px;
