@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dell.com — Generative AI Chatbot · Case Study</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* page-local */
+  .casechip {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 12px; border-radius: 999px;
+    background: var(--surface); border: 1px solid var(--rule);
+    font-size: 11px; letter-spacing: 0.12em; color: var(--dim);
+  }
+  .stat-strip {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  }
+  .stat-strip .cell { padding: 24px 28px; border-left: 1px solid var(--rule); }
+  .stat-strip .cell:first-child { border-left: none; }
+  .stat-strip .n {
+    font-family: var(--f-sans); font-size: 36px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1; margin-bottom: 8px;
+  }
+  .stat-strip .k { color: var(--signal); font-size: 10px; letter-spacing: 0.18em; margin-bottom: 6px; }
+  .stat-strip .d { color: var(--dim); font-size: 11px; line-height: 1.5; }
+
+  .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .twocol .panel { padding: 22px; }
+  .twocol .eyebrow { margin-bottom: 14px; }
+
+  .team-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .team-tag {
+    border: 1px solid var(--rule); border-radius: 999px;
+    padding: 7px 14px; font-family: var(--f-sans); font-size: 12px;
+    color: var(--ink); background: var(--surface);
+  }
+  .team-tag span { color: var(--dim); font-weight: 400; margin-left: 4px; }
+
+  /* Problem split */
+  .problem-split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 12px; }
+  .problem-box { border: 1px solid var(--rule); border-radius: 2px; padding: 22px 24px; background: var(--surface); }
+  .problem-box .head { color: var(--signal); font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; margin-bottom: 14px; }
+  .problem-box ul { list-style: none; padding: 0; margin: 0; }
+  .problem-box li {
+    display: grid; grid-template-columns: 18px 1fr; gap: 8px;
+    font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.55;
+    margin-bottom: 10px;
+  }
+  .problem-box li::before { content: "→"; color: var(--signal); }
+
+  /* Goal banner */
+  .goal-banner {
+    margin-top: 22px; border: 1px solid var(--signal); border-radius: 2px;
+    padding: 22px 26px; background: color-mix(in oklch, var(--signal) 6%, var(--surface));
+    color: var(--ink); font-family: var(--f-sans); font-size: 15.5px; line-height: 1.55;
+  }
+  .goal-banner strong { color: var(--signal); font-weight: 500; }
+
+  /* Double Diamond overview */
+  .dd-overview {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--rule); border-radius: 2px;
+    background: var(--bg-2);
+  }
+  .dd-overview .ph {
+    padding: 26px 22px; border-left: 1px solid var(--rule);
+  }
+  .dd-overview .ph:first-child { border-left: none; }
+  .dd-overview .ph .n {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    color: var(--signal); margin-bottom: 10px;
+  }
+  .dd-overview .ph .name {
+    font-family: var(--f-sans); font-size: 18px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .dd-overview .ph .sub {
+    font-family: var(--f-sans); font-size: 12px; color: var(--dim);
+  }
+
+  /* HAX grid */
+  .hax-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 18px; }
+  .hax-card {
+    border: 1px solid var(--rule); border-radius: 2px; padding: 18px 16px;
+    background: var(--surface);
+  }
+  .hax-card .ph {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+    color: var(--signal); margin-bottom: 10px;
+  }
+  .hax-card .pts {
+    font-family: var(--f-sans); font-size: 12.5px; color: var(--dim); line-height: 1.55;
+  }
+
+  /* Comp stats */
+  .comp-stats { display: flex; gap: 14px; flex-wrap: wrap; margin: 14px 0 20px; }
+  .comp-stat {
+    flex: 1; min-width: 140px; border: 1px solid var(--rule); border-radius: 2px;
+    background: color-mix(in oklch, var(--signal) 4%, var(--surface));
+    padding: 18px 22px; text-align: center;
+  }
+  .comp-stat .num {
+    font-family: var(--f-sans); font-size: 28px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1;
+  }
+  .comp-stat .lbl {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+    color: var(--signal); margin-top: 8px;
+  }
+
+  /* Pattern list */
+  .pattern-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+  .pattern-item {
+    display: grid; grid-template-columns: 16px 1fr; gap: 10px;
+    border-left: 2px solid var(--signal);
+    padding: 12px 14px; background: var(--surface);
+    font-family: var(--f-sans); font-size: 13px; color: var(--dim); line-height: 1.55;
+  }
+  .pattern-item::before { content: "▸"; color: var(--signal); }
+
+  /* Outcome row */
+  .outcome-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 12px; }
+  .outcome-box {
+    border: 1px solid var(--rule); border-radius: 2px; padding: 20px 22px;
+    background: var(--surface);
+  }
+  .outcome-box .who {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--signal); margin-bottom: 10px;
+  }
+  .outcome-box p { font-family: var(--f-sans); font-size: 13px; color: var(--dim); line-height: 1.55; margin: 0; }
+
+  /* Chips */
+  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .pill {
+    border: 1px solid var(--rule); border-radius: 999px;
+    padding: 5px 13px; font-family: var(--f-sans); font-size: 12px;
+    color: var(--dim); background: var(--surface);
+  }
+
+  /* Metric pills row */
+  .metrics-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; }
+  .metric-pill {
+    flex: 1; min-width: 150px; border: 1px solid var(--rule); border-radius: 2px;
+    padding: 18px 22px; text-align: center; background: var(--surface);
+  }
+  .metric-pill .num {
+    font-family: var(--f-sans); font-size: 28px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1;
+  }
+  .metric-pill .desc {
+    font-family: var(--f-sans); font-size: 11.5px; color: var(--dim);
+    margin-top: 8px; line-height: 1.45;
+  }
+
+  /* Brand journey */
+  .brand-journey { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+  .brand-step {
+    border: 1px solid var(--rule); border-radius: 2px; padding: 22px;
+    background: var(--surface);
+  }
+  .brand-step .step-num {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--signal); margin-bottom: 12px;
+  }
+  .brand-step h4 {
+    font-family: var(--f-sans); font-size: 15px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.01em; margin: 0 0 8px;
+  }
+  .brand-step p { font-family: var(--f-sans); font-size: 12.5px; color: var(--dim); line-height: 1.55; margin: 0; }
+
+  /* Winner card */
+  .winner-card {
+    margin-top: 18px; border: 1px solid var(--signal); border-radius: 2px;
+    padding: 32px 36px; text-align: center;
+    background: color-mix(in oklch, var(--signal) 8%, var(--surface));
+  }
+  .winner-card .pct {
+    font-family: var(--f-sans); font-size: 64px; font-weight: 500;
+    color: var(--signal); letter-spacing: -0.03em; line-height: 1;
+  }
+  .winner-card h4 {
+    font-family: var(--f-sans); font-size: 20px; font-weight: 500; color: var(--ink);
+    margin: 14px 0 10px; letter-spacing: -0.015em;
+  }
+  .winner-card p { font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.6; margin: 0; max-width: 580px; margin-left: auto; margin-right: auto; }
+
+  /* Before / After */
+  .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+  .ba-box { border: 1px solid var(--rule); border-radius: 2px; padding: 18px 22px; background: var(--surface); }
+  .ba-box .lbl { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; margin-bottom: 8px; }
+  .ba-before .lbl { color: var(--dim); }
+  .ba-after  .lbl { color: var(--signal); }
+  .ba-box .val { font-family: var(--f-sans); font-size: 30px; font-weight: 500; color: var(--ink); letter-spacing: -0.02em; line-height: 1; margin-bottom: 6px; }
+  .ba-box .desc { font-family: var(--f-sans); font-size: 12px; color: var(--dim); }
+
+  /* Test metrics — 5 cells */
+  .test-metrics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 18px; }
+  .test-metric {
+    border: 1px solid var(--rule); border-radius: 2px; padding: 18px 14px;
+    text-align: center; background: var(--surface);
+  }
+  .test-metric .pct {
+    font-family: var(--f-sans); font-size: 30px; font-weight: 500;
+    color: var(--signal); letter-spacing: -0.02em; line-height: 1;
+  }
+  .test-metric .desc {
+    font-family: var(--f-sans); font-size: 11px; color: var(--dim);
+    margin-top: 8px; line-height: 1.45;
+  }
+
+  /* Quote wall */
+  .quote-wall { columns: 3; gap: 14px; margin-top: 18px; }
+  .quote-item {
+    break-inside: avoid; border: 1px solid var(--rule); border-radius: 2px;
+    padding: 12px 14px; margin-bottom: 12px;
+    font-family: var(--f-sans); font-size: 12.5px; color: var(--dim);
+    line-height: 1.55; font-style: italic; background: var(--surface);
+  }
+
+  /* Enhancement cards */
+  .enhancement { border: 1px solid var(--rule); border-radius: 2px; margin-bottom: 18px; overflow: hidden; background: var(--surface); }
+  .enh-head {
+    padding: 14px 22px; border-bottom: 1px solid var(--rule);
+    display: flex; align-items: center; gap: 14px;
+    background: color-mix(in oklch, var(--signal) 3%, var(--surface));
+  }
+  .enh-head .num { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--signal); }
+  .enh-head h4 { font-family: var(--f-sans); font-size: 15px; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; margin: 0; }
+  .enh-body { padding: 20px 22px; font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.65; }
+  .enh-body p { margin: 0 0 10px; }
+  .enh-body p:last-child { margin-bottom: 0; }
+  .enh-body strong { color: var(--ink); font-weight: 500; }
+
+  /* Modalities */
+  .modality-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+  .mod-card {
+    border: 1px solid var(--rule); border-radius: 2px; padding: 24px;
+    background: var(--surface); border-top: 3px solid var(--signal);
+  }
+  .mod-card h4 { font-family: var(--f-sans); font-size: 16px; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; margin: 0 0 10px; }
+  .mod-card p { font-family: var(--f-sans); font-size: 12.5px; color: var(--dim); line-height: 1.6; margin: 0; }
+  .mod-card .signal-strong { color: var(--signal); font-weight: 500; font-size: 12px; }
+  .mod-card .signals { margin-top: 14px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* Expansion grid */
+  .expansion-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+  .exp-card {
+    border: 1px solid var(--rule); border-radius: 2px; padding: 22px;
+    background: var(--surface);
+  }
+  .exp-card .tag-row {
+    display: inline-block; font-family: var(--f-mono); font-size: 10px;
+    letter-spacing: 0.16em; padding: 3px 10px; border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  .exp-live { background: color-mix(in oklch, var(--signal) 12%, transparent); color: var(--signal); }
+  .exp-planned { background: var(--bg-2); color: var(--dim); border: 1px solid var(--rule); }
+  .exp-card h4 { font-family: var(--f-sans); font-size: 15px; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; margin: 0 0 8px; }
+  .exp-card p { font-family: var(--f-sans); font-size: 12.5px; color: var(--dim); line-height: 1.6; margin: 0; }
+
+  /* Impact grid */
+  .impact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 20px; }
+  .impact-card {
+    border: 1px solid var(--rule); border-radius: 2px;
+    padding: 24px 20px; text-align: center;
+    background: color-mix(in oklch, var(--signal) 4%, var(--surface));
+  }
+  .impact-card .ic-num {
+    font-family: var(--f-sans); font-size: 28px; font-weight: 500;
+    color: var(--signal); letter-spacing: -0.02em; line-height: 1;
+  }
+  .impact-card .ic-desc {
+    font-family: var(--f-sans); font-size: 11.5px; color: var(--dim);
+    margin-top: 10px; line-height: 1.5;
+  }
+
+  /* Next cards */
+  .next-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+  .next-card {
+    border: 1px solid var(--rule); border-radius: 2px; padding: 22px;
+    background: var(--surface);
+  }
+  .next-card h4 { font-family: var(--f-sans); font-size: 15px; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; margin: 0 0 8px; }
+  .next-card p { font-family: var(--f-sans); font-size: 12.5px; color: var(--dim); line-height: 1.6; margin: 0; }
+
+  /* Belief banner */
+  .belief-banner {
+    border: 1px solid var(--signal); border-radius: 2px;
+    padding: 28px 36px; text-align: center; margin: 14px 0 22px;
+    background: color-mix(in oklch, var(--signal) 5%, var(--surface));
+  }
+  .belief-banner p {
+    font-family: var(--f-sans); font-size: 19px; font-weight: 300; font-style: italic;
+    color: var(--signal); margin: 0; letter-spacing: -0.01em;
+  }
+
+  /* Inline lists */
+  .ul-tight { list-style: none; padding: 0; margin: 8px 0 0; }
+  .ul-tight li { display: grid; grid-template-columns: 16px 1fr; gap: 8px; font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.6; margin-bottom: 6px; }
+  .ul-tight li::before { content: "▸"; color: var(--signal); }
+  .ul-tight strong { color: var(--ink); font-weight: 500; }
+
+  @media (max-width: 1100px) {
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+    .stat-strip .cell:nth-child(2n+1) { border-left: none; }
+    .twocol, .problem-split, .before-after { grid-template-columns: 1fr; }
+    .hax-grid, .test-metrics { grid-template-columns: repeat(2, 1fr); }
+    .brand-journey, .modality-cards, .expansion-grid, .next-cards, .outcome-row { grid-template-columns: 1fr; }
+    .dd-overview { grid-template-columns: repeat(2, 1fr); }
+    .dd-overview .ph:nth-child(2n+1) { border-left: none; }
+    .impact-grid { grid-template-columns: repeat(2, 1fr); }
+    .quote-wall { columns: 2; }
+  }
+  @media (max-width: 700px) {
+    .pattern-grid { grid-template-columns: 1fr; }
+    .quote-wall { columns: 1; }
+    .impact-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="work.html" class="is-current">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener">RESUME</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+    <span id="clock">IST 11:47</span>
+  </div>
+</header>
+
+<!-- CASE HERO -->
+<section class="case-hero">
+  <div>
+    <div class="flex gap-12" style="align-items: center; margin-bottom: 28px; flex-wrap: wrap;">
+      <span class="casechip"><span class="signal">●</span> D.001 · LIVE</span>
+      <span class="casechip">ENTERPRISE × GENAI</span>
+      <span class="casechip">DELL TECHNOLOGIES</span>
+      <span class="casechip">MVP · Q3 FY25</span>
+    </div>
+
+    <div class="eyebrow">DELL.COM · GENERATIVE AI CHATBOT</div>
+
+    <h1 class="case-hero__title">
+      Dell&rsquo;s first<br>
+      <em>GenAI</em> Virtual<br>
+      Assistant.
+    </h1>
+
+    <p class="case-hero__sub">
+      How the AI Experience Team transformed a fragmented chatbot landscape into a unified,
+      branded, and trusted GenAI shopping companion &mdash; across Dell.com and beyond.
+    </p>
+  </div>
+
+  <aside class="panel" style="padding: 22px;">
+    <div class="eyebrow" style="margin-bottom: 16px;">MY ROLE</div>
+    <div class="kv-grid">
+      <div class="kv-row"><span class="k">title</span><span class="v">Senior Manager, AI Experience Team</span></div>
+      <div class="kv-row"><span class="k">team</span><span class="v">AI Experience Team · Dell</span></div>
+      <div class="kv-row"><span class="k">mvp launch</span><span class="v">Q3 FY25</span></div>
+      <div class="kv-row"><span class="k">framework</span><span class="v">Double Diamond</span></div>
+      <div class="kv-row"><span class="k">surfaces</span><span class="v">Shop · My Account · Support</span></div>
+      <div class="kv-row" style="border-bottom:none;"><span class="k">expanded to</span><span class="v">Premier Connect · Alienware</span></div>
+    </div>
+    <div class="mt-16 flex gap-8" style="flex-wrap: wrap;">
+      <span class="tag">PRESIDENT AWARD</span>
+      <span class="tag">GAME CHANGER</span>
+    </div>
+  </aside>
+</section>
+
+<!-- KEY STATS -->
+<div class="stat-strip">
+  <div class="cell">
+    <div class="n">4.4% &rarr; 80%</div>
+    <div class="k">ENGAGEMENT LIFT</div>
+    <div class="d">from design improvements alone</div>
+  </div>
+  <div class="cell">
+    <div class="n">14%</div>
+    <div class="k">CONVERSION UPLIFT</div>
+    <div class="d">on UPD pages, post-MVP</div>
+  </div>
+  <div class="cell">
+    <div class="n">900+</div>
+    <div class="k">USABILITY TESTS</div>
+    <div class="d">across 45+ studies, 90+ hours unmoderated</div>
+  </div>
+  <div class="cell">
+    <div class="n">26+</div>
+    <div class="k">COMPONENTS PUBLISHED</div>
+    <div class="d">to the AI Design CoE for org-wide reuse</div>
+  </div>
+</div>
+
+<!-- TOC -->
+<nav class="toc">
+  <a href="#team">01 · TEAM</a>
+  <a href="#challenge">02 · CHALLENGE</a>
+  <a href="#discover">03 · DISCOVER</a>
+  <a href="#define">04 · DEFINE</a>
+  <a href="#develop">05 · DEVELOP</a>
+  <a href="#deliver">06 · DELIVER</a>
+  <a href="#impact">07 · IMPACT</a>
+  <a href="#next">08 · NEXT</a>
+</nav>
+
+<div class="case-body">
+
+<!-- TEAM -->
+<section id="team" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 01 · THE TEAM</div>
+    <h2>The people behind the work.</h2>
+    <div class="sub">// AI Experience Team · Dell Technologies</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      A cross-functional team of designers, engineers, and design leaders came together to
+      build Dell&rsquo;s first GenAI-powered conversational experience. Senior leadership
+      protected the room, principal engineers built the system, and the design team shaped
+      every component, every state, every word.
+    </p>
+    <div class="team-tags">
+      <span class="team-tag">Karsten Baker<span>· Senior Director</span></span>
+      <span class="team-tag">Paul Sturrs<span>· Director</span></span>
+      <span class="team-tag">Puneet Arora<span>· Senior Manager</span></span>
+      <span class="team-tag">Aaron Marr<span>· Senior Consultant</span></span>
+      <span class="team-tag">Matt Walton<span>· Technical Staff, UI Engineering</span></span>
+      <span class="team-tag">Adam Davis<span>· UI Senior Principal Engineer</span></span>
+      <span class="team-tag">Chad Roberts<span>· UI Principal Engineer</span></span>
+      <span class="team-tag">Nisha Pillai<span>· UI Senior Engineer</span></span>
+      <span class="team-tag">Kritika Jindal<span>· UI Engineer</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGE -->
+<section id="challenge" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 02 · THE CHALLENGE</div>
+    <h2>What problem were we solving?</h2>
+    <div class="sub">// the starting point</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      As Dell scaled digital support and product guidance experiences, customers encountered
+      multiple disconnected virtual assistants &mdash; each tied to a specific domain or entry
+      point. This created friction for both users and the business.
+    </p>
+
+    <div class="problem-split">
+      <div class="problem-box">
+        <div class="head">BUSINESS PROBLEM</div>
+        <ul>
+          <li>Missed conversion opportunities from users who don&rsquo;t receive timely, relevant product guidance</li>
+          <li>Increased contact center load due to easily answerable queries escalating unnecessarily</li>
+          <li>Inconsistent branding and experience across touchpoints reduces user trust</li>
+        </ul>
+      </div>
+      <div class="problem-box">
+        <div class="head">USER PROBLEM</div>
+        <ul>
+          <li>Fragmented experiences lead to confusion &mdash; users don&rsquo;t know which assistant can help with what</li>
+          <li>Users repeat themselves and feel frustrated when switching channels or getting routed without context</li>
+          <li>Low confidence in self-service options due to lack of clarity or follow-through</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="goal-banner">
+      Our goal: create <strong>one unified, scalable AI assistant</strong> to guide users
+      across any entry point, reduce friction, and build consistency, trust, and clarity.
+    </div>
+
+    <h3 style="margin-top: 32px; font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink);">The Double Diamond approach</h3>
+    <p style="margin-top: 10px;">
+      Our process followed the Double Diamond &mdash; diverging to explore broadly, then
+      converging to act decisively. Each phase built on the last, from early research all the
+      way through to global rollout.
+    </p>
+
+    <div class="dd-overview" style="margin-top: 14px;">
+      <div class="ph">
+        <div class="n">PHASE 01</div>
+        <div class="name">Discover</div>
+        <div class="sub">Research &amp; explore</div>
+      </div>
+      <div class="ph">
+        <div class="n">PHASE 02</div>
+        <div class="name">Define</div>
+        <div class="sub">Synthesise &amp; frame</div>
+      </div>
+      <div class="ph">
+        <div class="n">PHASE 03</div>
+        <div class="name">Develop</div>
+        <div class="sub">Design &amp; test</div>
+      </div>
+      <div class="ph">
+        <div class="n">PHASE 04</div>
+        <div class="name">Deliver</div>
+        <div class="sub">Launch &amp; scale</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCOVER -->
+<section id="discover" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 03 · DISCOVER</div>
+    <h2>Understanding the landscape.</h2>
+    <div class="sub">// AI patterns, competitive signals, current state</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      Before we could design for AI, we needed to truly understand it. The team grounded
+      itself in real-world AI design principles, competitive signals, and the existing product
+      experience.
+    </p>
+
+    <div class="belief-banner">
+      <p>&ldquo;If we&rsquo;re designing for AI, we need to truly understand it.&rdquo;</p>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 24px;">AI Patterns &amp; Design Principles</h3>
+    <p style="margin-top: 10px;">
+      For the MVP, the team studied real-world AI design principles &mdash; including the
+      <strong>Microsoft HAX Toolkit</strong> &mdash; to understand how the most successful
+      systems create user trust, set realistic expectations, and handle uncertainty with care.
+      Guidelines covering Goal Clarity, Failure Transparency, and Experience Grounding helped
+      us look beyond functionality and into the behaviour and communication of AI systems.
+    </p>
+    <p style="margin-top: 12px;"><strong>Key takeaways from the research:</strong></p>
+    <ul class="ul-tight">
+      <li>Clearly state what the assistant can and can&rsquo;t do, up front and clearly</li>
+      <li>When the system explains itself in the moment, users know what to expect and trust grows</li>
+      <li>Users want to understand why the AI is making a recommendation &mdash; not just what it recommends</li>
+    </ul>
+
+    <div class="hax-grid">
+      <div class="hax-card">
+        <div class="ph">INITIALLY</div>
+        <div class="pts">Make clear what the system can do · Make clear how well it can do it · Convey consequences of user actions</div>
+      </div>
+      <div class="hax-card">
+        <div class="ph">DURING INTERACTION</div>
+        <div class="pts">Time services based on context · Show contextually relevant information · Make clear why the system did what it did</div>
+      </div>
+      <div class="hax-card">
+        <div class="ph">WHEN WRONG</div>
+        <div class="pts">Support efficient correction · Scope services when in doubt · Mitigate social biases · Match relevant social norms</div>
+      </div>
+      <div class="hax-card">
+        <div class="ph">OVER TIME</div>
+        <div class="pts">Remember recent interactions · Learn from user behaviour · Update and adapt cautiously · Notify users about changes</div>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Competitive Analysis</h3>
+    <p style="margin-top: 10px;">
+      In parallel, the team ran a competitive analysis to understand how different companies
+      approach conversational commerce.
+    </p>
+
+    <div class="comp-stats">
+      <div class="comp-stat"><div class="num">30+</div><div class="lbl">BRANDS REVIEWED</div></div>
+      <div class="comp-stat"><div class="num">6</div><div class="lbl">INDUSTRIES</div></div>
+      <div class="comp-stat"><div class="num">25+</div><div class="lbl">AI CHATBOTS ANALYSED</div></div>
+    </div>
+
+    <p style="margin-top: 4px;"><strong>Four key patterns worth studying &mdash; and gaps worth solving:</strong></p>
+    <div class="pattern-grid">
+      <div class="pattern-item"><span>The tone of the assistant sounds more like a friendly expert, not robotic</span></div>
+      <div class="pattern-item"><span>Bring clarity in both the system&rsquo;s capabilities and limitations</span></div>
+      <div class="pattern-item"><span>Build trust by showing reasoning behind each response</span></div>
+      <div class="pattern-item"><span>Ensure the experience feels distinctly AI, yet still on-brand for Dell</span></div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Evaluating the Current State</h3>
+    <p style="margin-top: 10px;">
+      To ground the work, the team evaluated the current experience already in production
+      &mdash; a lightweight Proof-of-Concept (PoC) live on the Unified Product Display (UPD)
+      pages. The team assessed the existing flow and identified areas for improvement in both
+      the user interface and in how effectively the assistant responded to user needs.
+    </p>
+    <p style="margin-top: 12px;"><strong>Three friction points were identified:</strong></p>
+    <ul class="ul-tight">
+      <li><strong>Lack of Clarity</strong> &mdash; users didn&rsquo;t understand what the assistant could do</li>
+      <li><strong>Poor Engagement</strong> &mdash; interaction rates were low, starting at just 4.4%</li>
+      <li><strong>Missed Conversion Opportunities</strong> &mdash; the assistant wasn&rsquo;t driving purchasing decisions</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DEFINE -->
+<section id="define" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 04 · DEFINE</div>
+    <h2>Framing the opportunity.</h2>
+    <div class="sub">// scope, outcomes, philosophy</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      Research insights converged into a clear problem framing. The team aligned on scope,
+      objectives, and expected outcomes &mdash; creating a shared north star for everything
+      that followed.
+    </p>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 22px;">MVP Scope &amp; Objective</h3>
+    <ul class="ul-tight">
+      <li>Create a seamless and unified customer experience to minimise contacts arising from easily answerable quick questions and from misrouted inquiries due to mixed intents across various domains</li>
+      <li>Monitor the experience to ensure a balance between the need to drive self-service and a premium customer experience</li>
+      <li>Enable an experience that can be scaled to other customer types (e.g. ISG) and journeys (e.g. Premier)</li>
+    </ul>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 28px;">Expected Outcomes</h3>
+    <p style="margin-top: 8px;">The team framed success from three perspectives:</p>
+    <div class="outcome-row">
+      <div class="outcome-box">
+        <div class="who">AS A CUSTOMER</div>
+        <p>I access the right tool, answer, or resource regardless of my entry point or current location at any online Dell platform.</p>
+      </div>
+      <div class="outcome-box">
+        <div class="who">AS AN AGENT</div>
+        <p>I get routed the appropriate customer need and have context as to what they experienced online to best assist them.</p>
+      </div>
+      <div class="outcome-box">
+        <div class="who">AS A SYSTEM</div>
+        <p>I can spot where customers are having trouble and figure out where to improve the experience.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 28px;">Design Philosophy</h3>
+    <p style="margin-top: 8px;">
+      With the problem and scope defined, one core belief shaped everything that came next:
+      the team was committed to being grounded in research and learning this evolution of
+      technology &mdash; not just on how to build a GenAI-powered conversational experience,
+      but how to build one that is intuitive and that users can trust.
+    </p>
+    <div class="chip-row">
+      <span class="pill">Goal Clarity</span>
+      <span class="pill">Failure Transparency</span>
+      <span class="pill">Experience Grounding</span>
+      <span class="pill">Intent Routing</span>
+      <span class="pill">User Trust</span>
+      <span class="pill">Self-Service Balance</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOP -->
+<section id="develop" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 05 · DEVELOP</div>
+    <h2>Designing, iterating &amp; testing.</h2>
+    <div class="sub">// six stages, end-to-end</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      With a clear brief in hand, the team began designing &mdash; starting with lightweight
+      UI improvements, then evolving into a fully branded system, tested extensively with
+      real users.
+    </p>
+
+    <!-- Stage 1 — UI improvements -->
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 24px;">Stage 1 &mdash; Lightweight UI improvements</h3>
+    <p style="margin-top: 10px;">
+      The initial focus was on lightweight UI improvements aimed at simplifying the user
+      journey, enhancing readability, and improving response clarity &mdash; essential elements
+      that build user trust and encourage engagement with AI.
+    </p>
+    <p style="margin-top: 14px;"><strong>Chat Initiation Screen improvements:</strong></p>
+    <ul class="ul-tight">
+      <li><strong>Improved Minimize Icon</strong> &mdash; updated the minimize icon design to make it more intuitive</li>
+      <li><strong>Clear Chat Capabilities</strong> &mdash; made the assistant&rsquo;s purpose more prominent so users instantly understand what the AI can help with</li>
+      <li><strong>Transparency Placement</strong> &mdash; moved the transparency disclaimer higher for better visibility before users begin chatting</li>
+      <li><strong>Refined Chat Guidelines Box</strong> &mdash; updated the appearance to feel more integrated and readable, rather than a popup overlay</li>
+      <li><strong>Clickable Prompt Buttons</strong> &mdash; replaced text links with buttons; users found them easier to notice and interact with during testing</li>
+      <li><strong>Character Counter Enhancement</strong> &mdash; added a live character count to help users track input as they type</li>
+    </ul>
+    <p style="margin-top: 18px;"><strong>End Chat &amp; Survey Screen improvements:</strong></p>
+    <ul class="ul-tight">
+      <li><strong>Removed question mark from header</strong> &mdash; to make the heading clearer and more direct</li>
+      <li><strong>Simplified the survey</strong> &mdash; eliminated the binary &ldquo;Yes/No&rdquo; question to reduce friction</li>
+      <li><strong>New primary action: &ldquo;Begin Survey&rdquo;</strong> &mdash; prominent button to let users know there is a way to share feedback</li>
+      <li><strong>Feedback textbox shown upfront</strong> &mdash; the optional feedback field is now visible before the rating is selected</li>
+      <li><strong>Changed experience rating to CSAT</strong> &mdash; reframed the question using a 1 to 5 scale from Poor to Excellent</li>
+    </ul>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 32px;">Validating the Design Hypothesis</h3>
+    <p style="margin-top: 10px;">
+      Design changes made a measurable impact &mdash; engagement rose from
+      <strong>4.4% to 80%</strong>. The improvements confirmed that better readability,
+      simpler flows, and clearer responses drive meaningful user engagement.
+    </p>
+    <div class="metrics-row">
+      <div class="metric-pill"><div class="num">14%</div><div class="desc">Uplift in conversions on UPD pages</div></div>
+      <div class="metric-pill"><div class="num">10%</div><div class="desc">Increase in revenue per visit (RPV)</div></div>
+      <div class="metric-pill"><div class="num">59%</div><div class="desc">Of VA responses receive a &ldquo;Helpful&rdquo; upvote</div></div>
+      <div class="metric-pill"><div class="num">16%</div><div class="desc">More users type in a question</div></div>
+    </div>
+
+    <!-- Stage 2 — Branding -->
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Stage 2 &mdash; Branding the AI experience</h3>
+    <p style="margin-top: 10px;">
+      Even after early improvements, the experience didn&rsquo;t visually reflect
+      intelligence, trust, or personality. This opened the door for a deeper exploration into
+      branding &mdash; a strategic opportunity to go beyond aesthetics and signal clarity,
+      trust, and innovation through how the assistant looks.
+    </p>
+
+    <div class="brand-journey">
+      <div class="brand-step">
+        <div class="step-num">STEP 01</div>
+        <h4>The Challenge</h4>
+        <p>The assistant didn&rsquo;t feel &ldquo;intelligent&rdquo; or &ldquo;trustworthy&rdquo; at a glance &mdash; a critical gap, even after early improvements. Branding wasn&rsquo;t in the original scope, but the team saw a chance to elevate user perception.</p>
+      </div>
+      <div class="brand-step">
+        <div class="step-num">STEP 02</div>
+        <h4>Exploration</h4>
+        <p>The team began testing palettes, gradients, and treatments &mdash; shaping how the AI experience feels while aligning with tone and voice. All visual explorations stayed grounded in the Dell Design System (DDS), while pushing toward a more expressive and futuristic AI personality.</p>
+      </div>
+      <div class="brand-step">
+        <div class="step-num">STEP 03</div>
+        <h4>The Question</h4>
+        <p>One question shaped the visual strategy: do we stay with Dell&rsquo;s classic blues, or explore new visual territory that signals AI? The team knew branding influences how users perceive intelligence, trust, and innovation.</p>
+      </div>
+    </div>
+
+    <div class="winner-card">
+      <div class="pct">90%</div>
+      <h4>The purple gradient won.</h4>
+      <p>After countless explorations, critiques, and rounds of feedback, the purple AI gradient emerged as the clear winner in user testing. Users described it as &ldquo;fresh and modern,&rdquo; &ldquo;feels like AI without even reading anything,&rdquo; &ldquo;visually stands out on Dell.com,&rdquo; and &ldquo;feels smarter.&rdquo; The branding wasn&rsquo;t just a preference &mdash; it was clarity: users instantly recognised the gradient as something &ldquo;AI-powered,&rdquo; making the assistant feel distinct yet connected to the Dell ecosystem.</p>
+    </div>
+
+    <!-- Stage 3 — Icon -->
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Stage 3 &mdash; Designing the AI icon</h3>
+    <p style="margin-top: 10px;">
+      The next challenge was choosing the right icon &mdash; something that signals AI clearly
+      and confidently. Initial options leaned on existing DDS assets or reused icons from the
+      PoC, but they fell flat in testing.
+    </p>
+    <div class="before-after">
+      <div class="ba-box ba-before">
+        <div class="lbl">INITIAL ICONS</div>
+        <div class="val">95%</div>
+        <div class="desc">of users associated existing icons with a standard chat experience</div>
+      </div>
+      <div class="ba-box ba-after">
+        <div class="lbl">NEW SPARKLE ICON</div>
+        <div class="val">100%</div>
+        <div class="desc">of users instantly identified the new dedicated AI icon as AI</div>
+      </div>
+    </div>
+    <p style="margin-top: 14px;">
+      The team took a bold step and designed a new, dedicated AI icon &mdash; crafted to
+      reflect intelligence and innovation. The sparkle icon was officially adopted into the
+      <strong>Dell Design System (DDS)</strong>, a major milestone for the team.
+    </p>
+
+    <!-- Stage 4 — Naming -->
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Stage 4 &mdash; Naming the chatbot</h3>
+    <p style="margin-top: 10px;">
+      The team explored potential names through two separate studies to understand what
+      resonates most with users globally and internally.
+    </p>
+    <div class="twocol" style="margin-top: 14px;">
+      <div class="panel">
+        <div class="eyebrow">USER STUDY · BRANDING TEAM</div>
+        <p style="font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.6; margin: 0;">
+          Across 4 regions. &ldquo;<strong style="color: var(--ink);">Dell Virtual Assistant</strong>&rdquo; was the top choice in most regions, scoring the highest preference across China, the US, Germany, and Japan. It was valued for building clarity and trust.
+        </p>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">USER STUDY · AI DESIGN TEAM</div>
+        <p style="font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.6; margin: 0;">
+          &ldquo;<strong style="color: var(--ink);">Dell AI</strong>&rdquo; emerged as the top choice for modern and tech-forward appeal &mdash; scoring highest both when prompted and when users were asked unprompted what they&rsquo;d call a Dell chatbot.
+        </p>
+      </div>
+    </div>
+    <div class="pullquote" style="margin-top: 20px;">
+      &ldquo;Dell Virtual Assistant&rdquo; is clear and easy to understand globally, while
+      &ldquo;Dell AI&rdquo; feels sleek, modern, and comes up naturally in user responses.
+      Both insights were kept in mind as plans for the chatbot&rsquo;s future identity took shape.
+    </div>
+
+    <!-- Stage 5 — Usability Testing -->
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Stage 5 &mdash; Extensive usability testing</h3>
+    <p style="margin-top: 10px;">
+      As this involved a new technology with new design principles, the team didn&rsquo;t just
+      test the flow &mdash; they tested each and every component.
+    </p>
+
+    <div class="comp-stats">
+      <div class="comp-stat"><div class="num">45+</div><div class="lbl">USABILITY TESTS</div></div>
+      <div class="comp-stat"><div class="num">900+</div><div class="lbl">PARTICIPANTS ACROSS THE US</div></div>
+      <div class="comp-stat"><div class="num">90+</div><div class="lbl">HOURS UNMODERATED</div></div>
+    </div>
+
+    <p style="margin-top: 4px;"><strong>Primary evaluation areas:</strong></p>
+    <ul class="ul-tight">
+      <li><strong>Cross-device layout</strong> &mdash; ensure a smooth experience on desktop and mobile</li>
+      <li><strong>Input types</strong> &mdash; test typed, guided, and voice flows for ease and clarity</li>
+      <li><strong>Component behaviour</strong> &mdash; assess buttons, chips, links, and timing of interactions</li>
+      <li><strong>Brand &amp; trust recall</strong> &mdash; check how quickly users associate the refreshed branding as AI</li>
+      <li><strong>Error handling</strong> &mdash; review fallback responses for unclear or invalid queries</li>
+      <li><strong>LLM content</strong> &mdash; evaluate tone, structure, and relevance of AI responses</li>
+    </ul>
+
+    <div class="test-metrics">
+      <div class="test-metric"><div class="pct">98%</div><div class="desc">find the overall interface visually intuitive and reassuring</div></div>
+      <div class="test-metric"><div class="pct">97%</div><div class="desc">move through the flow without friction, start to follow-up</div></div>
+      <div class="test-metric"><div class="pct">95%</div><div class="desc">recognise prompts as helpful, well-placed, and feel confident to begin</div></div>
+      <div class="test-metric"><div class="pct">96%</div><div class="desc">find the assistant&rsquo;s voice smart, helpful, and never overwhelming</div></div>
+      <div class="test-metric"><div class="pct">96%</div><div class="desc">report a positive experience, citing strong balance of AI innovation and usability</div></div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 32px;">What users had to say</h3>
+    <div class="quote-wall">
+      <div class="quote-item">easy and user friendly experience</div>
+      <div class="quote-item">Fantastic experience</div>
+      <div class="quote-item">The experience was great &mdash; it is attractive and visually aesthetic</div>
+      <div class="quote-item">not confusing</div>
+      <div class="quote-item">its simple and easy to understand</div>
+      <div class="quote-item">helpful responses</div>
+      <div class="quote-item">Helpful and straight forward</div>
+      <div class="quote-item">experience was good, clear and easy to understand</div>
+      <div class="quote-item">WOW!</div>
+      <div class="quote-item">pretty easy to understand</div>
+      <div class="quote-item">completely in line with my expectations</div>
+      <div class="quote-item">I love that there are pre-selected topics</div>
+      <div class="quote-item">attractive and intuitive</div>
+      <div class="quote-item">I loved the gradient &mdash; this feels so AI</div>
+      <div class="quote-item">very well designed looks so neat</div>
+      <div class="quote-item">Looks so fluent</div>
+      <div class="quote-item">well-designed and works in the way I expected it to work</div>
+      <div class="quote-item">I have seen this gradient, this is AI</div>
+    </div>
+
+    <!-- Stage 6 — Component Library -->
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Stage 6 &mdash; Building the component library</h3>
+    <p style="margin-top: 10px;">
+      As the experience came together &mdash; screen by screen, state by state &mdash; it
+      became clear that this wasn&rsquo;t just a one-off build. What the team created was a
+      system. A system that works. A system that tests well. A system that is ready to scale.
+    </p>
+    <p style="margin-top: 12px;">
+      With many designers and product teams reaching out to build their own AI-powered PoCs,
+      the team transformed this fully tested experience into a <strong>centralised component
+      library</strong> &mdash; built for reuse, consistency, and speed.
+    </p>
+
+    <div class="comp-stats">
+      <div class="comp-stat"><div class="num">26+</div><div class="lbl">COMPONENTS DESIGNED</div></div>
+      <div class="comp-stat"><div class="num">All</div><div class="lbl">AVAILABLE TO ANY DESIGNER ACROSS DELL</div></div>
+      <div class="comp-stat"><div class="num">Multi</div><div class="lbl">DESKTOP, MOBILE &amp; MULTIPLE PRODUCT LINES</div></div>
+    </div>
+
+    <p style="margin-top: 4px;">
+      Publishing the library wasn&rsquo;t just documentation &mdash; it was a key milestone in
+      productising the experience for long-term growth. The component library was added to the
+      <strong>AI Design Center of Excellence (CoE)</strong> &mdash; a shared hub for the AI
+      Experience Team &mdash; to scale faster and ensure consistency across touchpoints.
+    </p>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 28px;">AI Design Center of Excellence</h3>
+    <p style="margin-top: 10px;">
+      To drive adoption, the team showcased the MVP at the <strong>APJC Managers Meet</strong>
+      &mdash; one of the most pivotal moments in the journey. After the session, more than
+      <strong>15 teams</strong> started reaching out for demos, eager to explore how the
+      assistant could adapt to their use cases. The flow was called out as scalable,
+      future-forward, and became a reference for good AI UX at Dell.
+    </p>
+    <p style="margin-top: 10px;">
+      The work also gained recognition during the EDG leadership visit to India in Q4 FY25,
+      with senior leaders in the room &mdash; a moment of validation for the entire team.
+    </p>
+  </div>
+</section>
+
+<!-- DELIVER -->
+<section id="deliver" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 06 · DELIVER</div>
+    <h2>Launching, measuring &amp; scaling.</h2>
+    <div class="sub">// MVP, production metrics, enhancements, expansion</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      The Unified AI Assistant launched in <strong>Q3 FY25</strong>. After tracking production
+      metrics, the team iterated with post-MVP enhancements and expanded the assistant across
+      the Dell.com ecosystem.
+    </p>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 22px;">MVP Launch &mdash; Q3 FY25</h3>
+    <p style="margin-top: 10px;">The Unified AI Assistant launched across three key domains:</p>
+
+    <div class="modality-cards">
+      <div class="mod-card">
+        <h4>Shop &amp; Learn</h4>
+        <p>The Chat Initiation screen sets clear expectations upfront &mdash; highlighting what the assistant can help with, dynamically tailored to each page. It includes Dell&rsquo;s transparency statement and pre-suggested prompts to guide users.</p>
+      </div>
+      <div class="mod-card">
+        <h4>My Account</h4>
+        <p>Response screen includes feedback and accessibility tools. Users can rate responses with thumbs up or down to improve future answers, and use the speak-aloud feature for enhanced accessibility and ease of use.</p>
+      </div>
+      <div class="mod-card">
+        <h4>Support</h4>
+        <p>The end chat screen sets clear expectations and encourages feedback. Users are informed upfront that the chat won&rsquo;t be saved or resumed. Before exiting, they&rsquo;re invited to take a quick survey &mdash; helping gather valuable feedback to improve the experience.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 32px;">Production Metrics After Launch</h3>
+    <p style="margin-top: 10px;">
+      User interaction and feedback were tracked in <strong>Q4 FY25</strong> following the MVP
+      release, highlighting what worked well and what needed improvement.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 18px;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 12px;">USAGE &amp; SCALE</div>
+        <div class="metrics-row" style="flex-direction: column; gap: 10px;">
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">38.1K</div>
+            <div class="desc">Unique users engaged with VA</div>
+          </div>
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">49.9K</div>
+            <div class="desc">Chats across Dell.com</div>
+          </div>
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">2</div>
+            <div class="desc">Questions per session</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom: 12px;">EXPERIENCE SPREAD</div>
+        <div class="metrics-row" style="flex-direction: column; gap: 10px;">
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">75%</div>
+            <div class="desc">In Shop CSG &mdash; largest share of usage</div>
+          </div>
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">21%</div>
+            <div class="desc">In My Account</div>
+          </div>
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">4%</div>
+            <div class="desc">In Support</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom: 12px;">FEEDBACK SIGNALS</div>
+        <div class="metrics-row" style="flex-direction: column; gap: 10px;">
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">45%</div>
+            <div class="desc">Thumbs-up feedback on responses</div>
+          </div>
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">3/5</div>
+            <div class="desc">Average satisfaction score (chat survey)</div>
+          </div>
+          <div class="metric-pill" style="text-align: left; padding: 14px 18px;">
+            <div class="num" style="font-size: 22px;">3%</div>
+            <div class="desc">Users submitted post-chat surveys</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Post-MVP Enhancements</h3>
+    <p style="margin-top: 10px;">
+      After reviewing production metrics, clear opportunities emerged to improve the
+      experience. Some gaps called for deeper user feedback, while others revealed the need
+      for better conversation design. This led to a mix of metric-driven and design-led
+      enhancements.
+    </p>
+
+    <div class="enhancement" style="margin-top: 18px;">
+      <div class="enh-head">
+        <span class="num">METRIC-DRIVEN · 01</span>
+        <h4>Thumbs Up / Down Feedback Redesign</h4>
+      </div>
+      <div class="enh-body">
+        <p>In the MVP, thumbs up/down responses were simply recorded as binary feedback. When 55% of users marked responses as not helpful, the team needed more context. The feedback flow was redesigned so users can now select a specific reason (e.g., irrelevant answer, inaccurate information, other) and optionally leave comments. This gives the team actionable insight and helps tune the model for better output quality.</p>
+        <p><strong>Breakdown of thumbs-down feedback categories:</strong> Irrelevant answer · Inaccurate information · Other &mdash; providing targeted insight to prioritise fixes and refine AI responses in real-world use.</p>
+      </div>
+    </div>
+
+    <div class="enhancement">
+      <div class="enh-head">
+        <span class="num">METRIC-DRIVEN · 02</span>
+        <h4>End Chat Survey &mdash; Embedded Flow</h4>
+      </div>
+      <div class="enh-body">
+        <p>The MVP experience required users to click &ldquo;Begin Survey&rdquo; after ending the chat. This additional step significantly reduced participation. To improve feedback volume, the end-chat experience was reimagined &mdash; the survey is now embedded directly into the flow, reducing friction and encouraging more users to share their experience.</p>
+        <div class="before-after">
+          <div class="ba-box ba-before">
+            <div class="lbl">BEFORE</div>
+            <div class="val">3%</div>
+            <div class="desc">Survey completion rate</div>
+          </div>
+          <div class="ba-box ba-after">
+            <div class="lbl">AFTER</div>
+            <div class="val">21%</div>
+            <div class="desc">Survey completion rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enhancement">
+      <div class="enh-head">
+        <span class="num">DESIGN-LED · 01</span>
+        <h4>Post-Response Prompts</h4>
+      </div>
+      <div class="enh-body">
+        <p>The team identified the need for follow-up prompts during contextual research, where it was noticed that assistants offering relevant next steps increased depth of engagement. This design enhancement adds contextual follow-up suggestions after each response &mdash; placing users towards meaningful next steps, increasing overall conversation engagement. In user testing, more than <strong>85%</strong> of participants tagged this feature as very useful and said it helped them do more of what they came to do next.</p>
+        <p style="color: var(--faint); font-style: italic;">Note: This feature is currently in the backlog and planned for rollout soon.</p>
+      </div>
+    </div>
+
+    <div class="enhancement">
+      <div class="enh-head">
+        <span class="num">DESIGN-LED · 02</span>
+        <h4>AI-Powered Product Recommendations</h4>
+      </div>
+      <div class="enh-body">
+        <p>Product recommendations were included in the design roadmap early on, knowing the VA would evolve into a shopping assistant. The team studied how industry-leading assistants structured their recommendations and analysed how LLMs typically respond to such prompts. Through multiple iterations and A/B testing, the team learned that users don&rsquo;t just want product suggestions &mdash; they want to understand why something is being recommended.</p>
+        <p>Three rounds of usability testing were conducted, experimenting with different layouts, content depth, and tone. A standout feature was the <strong>&ldquo;Why Choose It&rdquo;</strong> section &mdash; which clearly explained the reasoning behind each suggestion. In the final design:</p>
+        <ul class="ul-tight">
+          <li><strong>96% of users</strong> said the &ldquo;Why Choose It&rdquo; section made decision-making easier and helped them feel more confident about choosing the right product</li>
+          <li>Users preferred scannable, visually organised responses over dense text lists</li>
+          <li>The final design balanced product imagery, key specs, price, and contextual reasoning</li>
+        </ul>
+        <p style="color: var(--faint); font-style: italic;">Note: This feature is currently in the backlog and planned for rollout soon.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Beyond the chatbot &mdash; new modalities</h3>
+    <p style="margin-top: 10px;">
+      After the MVP launched, a clear pattern emerged: users didn&rsquo;t want the assistant
+      to disappear when they moved between pages. This became a key turning point &mdash; the
+      assistant needed to be a companion. The team began exploring leading brands tackling
+      similar challenges and reimagined new interaction models that could feel fluid,
+      flexible, and always available.
+    </p>
+
+    <div class="modality-cards">
+      <div class="mod-card">
+        <h4>Side Panel</h4>
+        <p>A full-height side panel assistant that keeps support present and helpful without disrupting the flow of the page. Offers contextual recommendations through rich product cards, more conversational space, and summarised guidance to speed up decision-making. Tested with users from IT, Finance, and Operations.</p>
+        <div class="signals">
+          <span class="signal-strong">90% reported high satisfaction</span>
+          <span class="signal-strong">90% preferred right-side placement</span>
+        </div>
+      </div>
+      <div class="mod-card">
+        <h4>Full-Screen Experience</h4>
+        <p>An immersive chat mode designed for deeper collaboration, discovery, and guided workflows. Built for higher-effort use cases like research, decision-making, or long-form guidance. Same conversation, same assistant &mdash; but now optimised for focus and ease of thinking.</p>
+        <div class="signals">
+          <span class="signal-strong">70% wanted richer visuals integrated into chat</span>
+        </div>
+      </div>
+      <div class="mod-card">
+        <h4>Canvas Experience</h4>
+        <p>A visual workspace built into the assistant &mdash; letting users open and compare multiple products side by side, view rich content like PDFs, videos, and interactive cards, and stay in context while exploring, without needing to switch tabs or lose their conversation.</p>
+        <div class="signals">
+          <span class="signal-strong">Use cases: 3D Viewer · GenAI Summariser · PDF Viewer · Media Links · Success Stories</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Guided Conversations</h3>
+    <p style="margin-top: 10px;">
+      As user journeys became more complex, so did the need for structure and clarity. What
+      began as open-ended chat interfaces evolved into <strong>guided conversations</strong>
+      &mdash; purposeful, goal-driven flows designed to reduce decision fatigue, surface
+      relevant options, and offer just the right amount of support at every step.
+    </p>
+    <p style="margin-top: 12px;"><strong>Guided conversations enable:</strong></p>
+    <ul class="ul-tight">
+      <li><strong>Intent-Based Navigation</strong> &mdash; users get help finding the right path without needing to know exactly what they&rsquo;re looking for</li>
+      <li><strong>Personalised Recommendations</strong> &mdash; the assistant adapts to user type (e.g., business, IT, creative) and offers tailored solutions</li>
+      <li><strong>Natural Interaction</strong> &mdash; users engage through intuitive dialogue, like asking a trusted advisor</li>
+      <li><strong>Business Outcomes</strong> &mdash; designed to be more accurate upstream, reduce downstream returns, and decrease post-purchase support</li>
+    </ul>
+    <p style="margin-top: 12px;">
+      After early research and iterative conversation design testing, a repeatable framework
+      was identified &mdash; a guided conversational loop that starts by uncovering the
+      user&rsquo;s needs, navigates them through targeted AI-related topics, and progressively
+      builds toward actionable recommendations.
+    </p>
+
+    <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Pan-Dell Expansion</h3>
+    <p style="margin-top: 10px;">
+      A natural progression in the journey was expanding the assistant across key pages
+      &mdash; meeting users where they are with contextual support, tailored guidance, and
+      seamless entry points throughout the shopping and discovery flow.
+    </p>
+
+    <div class="expansion-grid">
+      <div class="exp-card">
+        <span class="tag-row exp-live">LIVE</span>
+        <h4>Premier Connect</h4>
+        <p>A next-generation self-service experience for commercial customers, now live across more than <strong>26,000 US Premier Stores</strong>. Blends conversational AI with human expertise, unifying support across CSG, ISG, and Account domains. Customer research revealed the need for a hybrid experience &mdash; quick AI-driven answers for simple queries and smooth handoffs to Sales for complex needs.</p>
+      </div>
+      <div class="exp-card">
+        <span class="tag-row exp-live">LIVE</span>
+        <h4>Alienware</h4>
+        <p>Following the success of UAI on Dell.com, the team extended the assistant to Alienware &mdash; launched in Q1 FY26. Reused foundational logic and interaction patterns from the UAI component library. The UI was customised to reflect Alienware&rsquo;s visual identity (teal and purple palette), while maintaining trust, accessibility, and performance standards consistent with the core UAI experience.</p>
+      </div>
+      <div class="exp-card">
+        <span class="tag-row exp-planned">PLANNED</span>
+        <h4>GenAI-Powered Search</h4>
+        <p>Many users begin their journey with vague or ambiguous search terms, quickly becoming overwhelmed by options &mdash; leading to decision fatigue early in the experience. The team began using AI to better understand user intent, deliver more relevant results, and guide users toward confident decisions, reducing overwhelm and making the experience more intuitive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 07 · IMPACT</div>
+    <h2>The impact of design.</h2>
+    <div class="sub">// overall outcomes</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      The Unified AI Assistant journey shows how design can drive real business outcomes
+      &mdash; from boosting user satisfaction and feedback loops to improving conversions and
+      building trust through thoughtful branding.
+    </p>
+
+    <div class="impact-grid">
+      <div class="impact-card"><div class="ic-num">4.4% &rarr; 80%</div><div class="ic-desc">Engagement rate lift from design improvements alone</div></div>
+      <div class="impact-card"><div class="ic-num">14%</div><div class="ic-desc">Uplift in conversions on UPD pages</div></div>
+      <div class="impact-card"><div class="ic-num">3% &rarr; 21%</div><div class="ic-desc">Improvement in post-chat survey completion</div></div>
+      <div class="impact-card"><div class="ic-num">26K+</div><div class="ic-desc">US Premier Stores served by the live assistant</div></div>
+      <div class="impact-card"><div class="ic-num">26+</div><div class="ic-desc">Components published in the shared design system</div></div>
+      <div class="impact-card"><div class="ic-num">15+</div><div class="ic-desc">Teams reached out after APJC presentation for demos</div></div>
+      <div class="impact-card"><div class="ic-num">96%</div><div class="ic-desc">Of users said &ldquo;Why Choose It&rdquo; made decisions easier</div></div>
+      <div class="impact-card"><div class="ic-num">100%</div><div class="ic-desc">Of users instantly identified the new sparkle icon as AI</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT -->
+<section id="next" class="case-section">
+  <header class="case-section__head">
+    <div class="n">§ 08 · NEXT</div>
+    <h2>Designed to grow.</h2>
+    <div class="sub">// looking ahead</div>
+  </header>
+  <div class="case-section__body body">
+    <p>
+      With a validated experience in production and a centralised component system in place,
+      the foundation is set for scale &mdash; across domains, regions, and teams. What started
+      as a chat assistant is evolving into a unified, AI-powered layer across Dell.com.
+    </p>
+
+    <div class="next-cards">
+      <div class="next-card">
+        <h4>New Modalities</h4>
+        <p>Exploring multimodal interactions &mdash; voice AI, AR, and cross-platform memory &mdash; to meet users where they are with richer, more intuitive assistance across every moment of the shopping journey.</p>
+      </div>
+      <div class="next-card">
+        <h4>Richer Domains</h4>
+        <p>Expanding the assistant beyond Shop &amp; Learn into deeper parts of the Dell ecosystem &mdash; designing not just what the assistant says, but how it shows up: contextually, intelligently, and with personality.</p>
+      </div>
+      <div class="next-card">
+        <h4>Agentic Experiences</h4>
+        <p>As the assistant expands across the Dell.com ecosystem, upcoming work focuses on capabilities, page integrations, and user behaviours &mdash; moving closer to a seamless, intelligent, and truly agentic experience.</p>
+      </div>
+    </div>
+
+    <div class="pullquote" style="margin-top: 32px;">
+      This is just the beginning. As the assistant expands across the Dell.com ecosystem,
+      every evolution brings us closer to a seamless, intelligent, and truly agentic experience.
+    </div>
+  </div>
+</section>
+
+</div><!-- /case-body -->
+
+<footer class="foot">
+  <div class="foot__nav">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener">RESUME</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div style="font-size: 11px; color: var(--faint); margin-top: 10px; max-width: 720px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+    Based on internal design documentation from the AI Experience Team at Dell Technologies.
+    Shared with permission. Production metrics current as of Q4 FY25.
+  </div>
+  <div style="margin-top: 14px;">© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · v.2026.06</div>
+</footer>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
