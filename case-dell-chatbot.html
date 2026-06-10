@@ -312,21 +312,6 @@
   .ul-tight li::before { content: "▸"; position: absolute; left: 0; top: 0; color: var(--signal); }
   .ul-tight strong { color: var(--ink); font-weight: 500; }
 
-  /* Case study figures */
-  .case-fig { margin: 22px 0 4px; }
-  .case-fig img {
-    display: block; width: 100%; height: auto;
-    border: 1px solid var(--rule); border-radius: 2px;
-    background: var(--surface);
-  }
-  .case-fig figcaption {
-    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em;
-    color: var(--faint); text-transform: uppercase;
-    margin-top: 10px; padding-left: 12px; border-left: 2px solid var(--rule);
-  }
-  .case-fig--tight { margin-top: 14px; }
-  .case-fig--inline { margin: 14px 0 0; }
-
   @media (max-width: 1100px) {
     .stat-strip { grid-template-columns: repeat(2, 1fr); }
     .stat-strip .cell:nth-child(2n+1) { border-left: none; }
@@ -411,11 +396,6 @@
   </aside>
 </section>
 
-<figure class="case-fig" style="max-width: 1280px; margin: 8px auto 32px;">
-  <img src="assets/purpose.PNG" alt="Case study purpose — Conversational GenAI is transforming how customers shop. The following case study takes you behind the scenes of how Dell built its first unified GenAI shopping companion experience.">
-  <figcaption>The brief — what this case study covers</figcaption>
-</figure>
-
 <!-- KEY STATS -->
 <div class="stat-strip">
   <div class="cell">
@@ -468,17 +448,6 @@
       protected the room, principal engineers built the system, and the design team shaped
       every component, every state, every word.
     </p>
-
-    <figure class="case-fig">
-      <img src="assets/ai experience team.PNG" alt="AI Experience leaders — portraits of Aaron Marr (Senior Consultant), Karsten Baker (Senior Director), Paul Sturrs (Director), Puneet Arora (Senior Manager), Matt Walton, Adam Davis, and Chad Roberts.">
-      <figcaption>AI Experience Leaders &mdash; the people who drove the first unified GenAI chatbot at Dell</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/ai experience team 2.PNG" alt="UI Engineering — Nisha Pillai (User Interface Senior Engineer) and Kritika Jindal (User Interface Engineer 2).">
-      <figcaption>UI Engineering &mdash; bringing the assistant to life across surfaces</figcaption>
-    </figure>
-
     <div class="team-tags">
       <span class="team-tag">Karsten Baker<span>· Senior Director</span></span>
       <span class="team-tag">Paul Sturrs<span>· Director</span></span>
@@ -507,11 +476,6 @@
       point. This created friction for both users and the business.
     </p>
 
-    <figure class="case-fig">
-      <img src="assets/mvp scope and objective.PNG" alt="Pre-redesign chatbot landscape — screenshots of AI Product Chat, Connect Edited, and Dell Virtual Assistant, showing fragmented experiences across Dell.com.">
-      <figcaption>Before — fragmented chatbots across Dell.com, each tied to a domain</figcaption>
-    </figure>
-
     <div class="problem-split">
       <div class="problem-box">
         <div class="head">BUSINESS PROBLEM</div>
@@ -530,11 +494,6 @@
         </ul>
       </div>
     </div>
-
-    <figure class="case-fig">
-      <img src="assets/problems with current journey.PNG" alt="Current shopping journey — Homepage to Broad Category Page to Complex Filters to Technical Comparison to Unclear Decision or Drop-off — a linear, rigid flow that fails to adapt to user needs.">
-      <figcaption>Why a shift was needed &mdash; today&rsquo;s e-commerce journey is linear, rigid, and not adaptive to user needs</figcaption>
-    </figure>
 
     <div class="goal-banner">
       Our goal: create <strong>one unified, scalable AI assistant</strong> to guide users
@@ -587,11 +546,6 @@
       experience.
     </p>
 
-    <figure class="case-fig">
-      <img src="assets/discovery and framing behind the vision.PNG" alt="Discovery and framing radar — Near Innovations (Guided Conversations, Better Discoverability, Multimodal Design, Cross-Platform Memory) and Future Innovations (Automations, Full-System Recommendations, Deep Research, Voice AI) — converging research, inspiration, and user needs into a Now-vs-Future roadmap.">
-      <figcaption>Discovery synthesis &mdash; a Now vs Future lens, blending internal deep-dives with external signals (Deloitte, Forrester, NNG)</figcaption>
-    </figure>
-
     <div class="belief-banner">
       <p>&ldquo;If we&rsquo;re designing for AI, we need to truly understand it.&rdquo;</p>
     </div>
@@ -630,11 +584,6 @@
       </div>
     </div>
 
-    <figure class="case-fig">
-      <img src="assets/new rules of experience design.PNG" alt="Microsoft HAX Toolkit full framework — guideline cards spanning Initially, During interaction, When wrong, and Over time, covering goal clarity, failure transparency, experience grounding, and user trust.">
-      <figcaption>The full Microsoft HAX Toolkit &mdash; the source artefact behind the team&rsquo;s distilled principles above</figcaption>
-    </figure>
-
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Competitive Analysis</h3>
     <p style="margin-top: 10px;">
       In parallel, the team ran a competitive analysis to understand how different companies
@@ -647,17 +596,7 @@
       <div class="comp-stat"><div class="num">25+</div><div class="lbl">AI CHATBOTS ANALYSED</div></div>
     </div>
 
-    <figure class="case-fig">
-      <img src="assets/competitive analysis workshop.PNG" alt="Competitive analysis workshop — logo grid of 11 leading conversational AI platforms reviewed: Meta, Microsoft Copilot, Siri, watsonx.ai, Amazon, Gemini, Walmart, Lenovo, Microsoft, HP, and OpenAI.">
-      <figcaption>Brands studied &mdash; 11 platforms across consumer AI, enterprise, and retail</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/competitive analysis.PNG" alt="Competitive analysis matrix — detailed comparison tables across 30+ brands, 6 industries, and 25+ AI chatbots, evaluating tone, transparency, reasoning, and brand fit.">
-      <figcaption>The full competitive matrix &mdash; 30+ brands, 25+ AI chatbots benchmarked side-by-side</figcaption>
-    </figure>
-
-    <p style="margin-top: 14px;"><strong>Four key patterns worth studying &mdash; and gaps worth solving:</strong></p>
+    <p style="margin-top: 4px;"><strong>Four key patterns worth studying &mdash; and gaps worth solving:</strong></p>
     <div class="pattern-grid">
       <div class="pattern-item"><span>The tone of the assistant sounds more like a friendly expert, not robotic</span></div>
       <div class="pattern-item"><span>Bring clarity in both the system&rsquo;s capabilities and limitations</span></div>
@@ -704,11 +643,6 @@
 
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 28px;">Expected Outcomes</h3>
     <p style="margin-top: 8px;">The team framed success from three perspectives:</p>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/expected outcomes.PNG" alt="Expected outcomes diagram — three personas: As a customer, As an agent, and As a system — each with an illustrative diagram showing the intended experience.">
-    </figure>
-
     <div class="outcome-row">
       <div class="outcome-box">
         <div class="who">AS A CUSTOMER</div>
@@ -772,12 +706,6 @@
       <li><strong>Clickable Prompt Buttons</strong> &mdash; replaced text links with buttons; users found them easier to notice and interact with during testing</li>
       <li><strong>Character Counter Enhancement</strong> &mdash; added a live character count to help users track input as they type</li>
     </ul>
-
-    <figure class="case-fig">
-      <img src="assets/current state - old experience.PNG" alt="Chat Initiation Screen — Old Experience vs Improved Design, side-by-side with callouts for the minimize icon, clear chat capabilities, transparency placement, refined chat guidelines box, clickable prompt buttons, and character counter.">
-      <figcaption>Chat Initiation Screen &mdash; old experience (left) vs improved design (right) with annotated changes</figcaption>
-    </figure>
-
     <p style="margin-top: 18px;"><strong>End Chat &amp; Survey Screen improvements:</strong></p>
     <ul class="ul-tight">
       <li><strong>Removed question mark from header</strong> &mdash; to make the heading clearer and more direct</li>
@@ -786,11 +714,6 @@
       <li><strong>Feedback textbox shown upfront</strong> &mdash; the optional feedback field is now visible before the rating is selected</li>
       <li><strong>Changed experience rating to CSAT</strong> &mdash; reframed the question using a 1 to 5 scale from Poor to Excellent</li>
     </ul>
-
-    <figure class="case-fig">
-      <img src="assets/key usability issues.PNG" alt="End Chat and Survey screens — Old Experience vs Improved Design, with annotations covering removed question mark, revised informational text, new Begin Survey primary action, removed Yes/No question, new conversational headline, feedback textbox shown upfront, and CSAT rating change.">
-      <figcaption>End Chat &amp; Survey screens &mdash; old experience vs improved design with annotated rationale</figcaption>
-    </figure>
 
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 32px;">Validating the Design Hypothesis</h3>
     <p style="margin-top: 10px;">
@@ -825,14 +748,6 @@
         <h4>Exploration</h4>
         <p>The team began testing palettes, gradients, and treatments &mdash; shaping how the AI experience feels while aligning with tone and voice. All visual explorations stayed grounded in the Dell Design System (DDS), while pushing toward a more expressive and futuristic AI personality.</p>
       </div>
-      <figure class="case-fig" style="grid-column: 1 / -1; margin-top: 8px;">
-        <img src="assets/designing identity - how we began.PNG" alt="Designing identity moodboard — wall of inspiration spanning consumer AI (Apple Intelligence, Galaxy AI, Meta AI), enterprise (Copilot, watsonx.ai, Amazon Q), and retail conversational UIs.">
-        <figcaption>Moodboard &mdash; inspiration across consumer AI, enterprise, and retail conversational interfaces</figcaption>
-      </figure>
-      <figure class="case-fig case-fig--tight" style="grid-column: 1 / -1;">
-        <img src="assets/visual identity.PNG" alt="Visual identity exploration — multiple Dell AI brand variations across red, blue, purple, and mixed gradient treatments, applied to chat patterns and onboarding screens.">
-        <figcaption>Palette &amp; gradient exploration &mdash; testing classic Dell blues against new AI-signalling colourways</figcaption>
-      </figure>
       <div class="brand-step">
         <div class="step-num">STEP 03</div>
         <h4>The Question</h4>
@@ -845,16 +760,6 @@
       <h4>The purple gradient won.</h4>
       <p>After countless explorations, critiques, and rounds of feedback, the purple AI gradient emerged as the clear winner in user testing. Users described it as &ldquo;fresh and modern,&rdquo; &ldquo;feels like AI without even reading anything,&rdquo; &ldquo;visually stands out on Dell.com,&rdquo; and &ldquo;feels smarter.&rdquo; The branding wasn&rsquo;t just a preference &mdash; it was clarity: users instantly recognised the gradient as something &ldquo;AI-powered,&rdquo; making the assistant feel distinct yet connected to the Dell ecosystem.</p>
     </div>
-
-    <figure class="case-fig">
-      <img src="assets/Clear winner - user quotes.PNG" alt="Visual identity user testing — purple gradient swatches (Blue 700, Berry 800, Purple 900), a video frame from a participant choosing the purple gradient over blue, and seven user quotes affirming the purple gradient feels modern, smart, and instantly signals AI.">
-      <figcaption>User testing &mdash; 90% preferred the purple gradient over the standard blue, with consistent qualitative validation</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/visual identity - user reactions .PNG" alt="User reactions cloud — chip-style quotes including I know this color, Amazing colors, WOW!, easy to use, attractive and intuitive, I loved the gradient this feels so AI, and many more positive responses.">
-      <figcaption>What users said about the new identity &mdash; consistent signals of clarity, AI recognition, and trust</figcaption>
-    </figure>
 
     <!-- Stage 3 — Icon -->
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Stage 3 &mdash; Designing the AI icon</h3>
@@ -880,11 +785,6 @@
       reflect intelligence and innovation. The sparkle icon was officially adopted into the
       <strong>Dell Design System (DDS)</strong>, a major milestone for the team.
     </p>
-
-    <figure class="case-fig">
-      <img src="assets/visual refinements.PNG" alt="Visual refinements — the old chat icon (95% of users identified it as a standard chat) replaced by the new sparkle AI icon (100% of users instantly identified it as AI), with a screenshot of the dds2_sparkles entry officially added to the Dell Design System.">
-      <figcaption>Sparkle icon &mdash; from 95% read as &ldquo;standard chat&rdquo; to 100% read as &ldquo;AI&rdquo;, then adopted into DDS</figcaption>
-    </figure>
 
     <!-- Stage 4 — Naming -->
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Stage 4 &mdash; Naming the chatbot</h3>
@@ -935,11 +835,6 @@
       <li><strong>LLM content</strong> &mdash; evaluate tone, structure, and relevance of AI responses</li>
     </ul>
 
-    <figure class="case-fig">
-      <img src="assets/usability insights.PNG" alt="Usability insights — six tested screens (onboarding, chat initiation, default state, response, citations, and end chat) with the five evaluation metrics: 98% find the interface intuitive, 97% move through the flow without friction, 95% recognise prompts as helpful, 96% find the tone balanced, 96% report a positive overall experience.">
-      <figcaption>Six tested screens &mdash; the headline metrics below summarise testing across each</figcaption>
-    </figure>
-
     <div class="test-metrics">
       <div class="test-metric"><div class="pct">98%</div><div class="desc">find the overall interface visually intuitive and reassuring</div></div>
       <div class="test-metric"><div class="pct">97%</div><div class="desc">move through the flow without friction, start to follow-up</div></div>
@@ -989,12 +884,7 @@
       <div class="comp-stat"><div class="num">Multi</div><div class="lbl">DESKTOP, MOBILE &amp; MULTIPLE PRODUCT LINES</div></div>
     </div>
 
-    <figure class="case-fig">
-      <img src="assets/chat component library AI DDS.PNG" alt="Unified AI Chat Figma component library — Digital Communications POD library card with 26 components and 2 styles, plus thumbnails of individual chat components ready for any designer to use.">
-      <figcaption>Unified AI Chat &mdash; 26+ components published as a shared Figma library for org-wide reuse</figcaption>
-    </figure>
-
-    <p style="margin-top: 14px;">
+    <p style="margin-top: 4px;">
       Publishing the library wasn&rsquo;t just documentation &mdash; it was a key milestone in
       productising the experience for long-term growth. The component library was added to the
       <strong>AI Design Center of Excellence (CoE)</strong> &mdash; a shared hub for the AI
@@ -1009,20 +899,10 @@
       assistant could adapt to their use cases. The flow was called out as scalable,
       future-forward, and became a reference for good AI UX at Dell.
     </p>
-    <figure class="case-fig">
-      <img src="assets/library to AI design coe.PNG" alt="AI Design Center of Excellence SharePoint home — landing page introducing the CoE&rsquo;s vision and mission, with sections covering Why an AI Design CoE is critical, How it is being implemented, AI Chat Patterns, and Resources.">
-      <figcaption>AI Design CoE &mdash; a shared hub for AI experience teams across Dell</figcaption>
-    </figure>
-
-    <p style="margin-top: 14px;">
+    <p style="margin-top: 10px;">
       The work also gained recognition during the EDG leadership visit to India in Q4 FY25,
       with senior leaders in the room &mdash; a moment of validation for the entire team.
     </p>
-
-    <figure class="case-fig">
-      <img src="assets/Digital communications POD - milestones.PNG" alt="Milestones bookmarks — two illustrated bookmarks titled AI Powered (Paradigm Shift, Unified AI) and Digital Communications POD with team avatars, presented as a gift to leadership during the EDG India visit in Q4 FY25.">
-      <figcaption>More than a bookmark &mdash; a mark of the journey, gifted to leaders in gratitude</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -1043,11 +923,6 @@
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 22px;">MVP Launch &mdash; Q3 FY25</h3>
     <p style="margin-top: 10px;">The Unified AI Assistant launched across three key domains:</p>
 
-    <figure class="case-fig">
-      <img src="assets/MVP launch across 3 domains - FY 25.PNG" alt="MVP launch announcement — Unified AI Assistant launches in Q3 FY25 across three key domains: Shop & Learn, My Account, and Support, shown on a Dell laptop and mobile device with the Chat Initiation screen on a product page.">
-      <figcaption>Shop &amp; Learn &mdash; chat initiation screen on the Dell Laptop Computers page, setting clear expectations upfront</figcaption>
-    </figure>
-
     <div class="modality-cards">
       <div class="mod-card">
         <h4>Shop &amp; Learn</h4>
@@ -1062,16 +937,6 @@
         <p>The end chat screen sets clear expectations and encourages feedback. Users are informed upfront that the chat won&rsquo;t be saved or resumed. Before exiting, they&rsquo;re invited to take a quick survey &mdash; helping gather valuable feedback to improve the experience.</p>
       </div>
     </div>
-
-    <figure class="case-fig">
-      <img src="assets/MVP launch 2.PNG" alt="MVP launch — My Account surface, showing the Dell.com account overview page with the Virtual Assistant providing payment method guidance on both mobile and desktop, including thumbs-up/down feedback and speak-aloud controls.">
-      <figcaption>My Account &mdash; response screen with feedback and accessibility tools (thumbs, speak-aloud)</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/MVP launch 3.PNG" alt="MVP launch — Support surface, showing the Welcome to Dell Support page with the Virtual Assistant&rsquo;s End Chat screen on both desktop and mobile, inviting users to take a quick survey before exiting.">
-      <figcaption>Support &mdash; end chat screen with clear expectations and a survey invitation</figcaption>
-    </figure>
 
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 32px;">Production Metrics After Launch</h3>
     <p style="margin-top: 10px;">
@@ -1149,10 +1014,6 @@
       <div class="enh-body">
         <p>In the MVP, thumbs up/down responses were simply recorded as binary feedback. When 55% of users marked responses as not helpful, the team needed more context. The feedback flow was redesigned so users can now select a specific reason (e.g., irrelevant answer, inaccurate information, other) and optionally leave comments. This gives the team actionable insight and helps tune the model for better output quality.</p>
         <p><strong>Breakdown of thumbs-down feedback categories:</strong> Irrelevant answer · Inaccurate information · Other &mdash; providing targeted insight to prioritise fixes and refine AI responses in real-world use.</p>
-        <figure class="case-fig case-fig--inline">
-          <img src="assets/metric and KPI driven design enhancements.PNG" alt="Thumbs up/down feedback redesign — old binary thumbs response on the left, new feedback flow with category chips (Irrelevant answer 21%, Inaccurate information 15%, Other 10%) and an optional comment field on the right, with a bar chart showing the production breakdown.">
-          <figcaption>Old binary feedback (left) vs new categorised feedback (right), with production breakdown of thumbs-down reasons</figcaption>
-        </figure>
       </div>
     </div>
 
@@ -1175,10 +1036,6 @@
             <div class="desc">Survey completion rate</div>
           </div>
         </div>
-        <figure class="case-fig case-fig--inline">
-          <img src="assets/metric driven enhancement - chatbot feedback.PNG" alt="End Chat VoCaaS feedback redesign — before (separate Begin Survey button, 3% completion) vs after (rating embedded in the end-chat screen, 21% completion).">
-          <figcaption>Embedding the survey into the end-chat flow lifted completion from 3% to 21%</figcaption>
-        </figure>
       </div>
     </div>
 
@@ -1189,10 +1046,6 @@
       </div>
       <div class="enh-body">
         <p>The team identified the need for follow-up prompts during contextual research, where it was noticed that assistants offering relevant next steps increased depth of engagement. This design enhancement adds contextual follow-up suggestions after each response &mdash; placing users towards meaningful next steps, increasing overall conversation engagement. In user testing, more than <strong>85%</strong> of participants tagged this feature as very useful and said it helped them do more of what they came to do next.</p>
-        <figure class="case-fig case-fig--inline">
-          <img src="assets/design led enhancements.PNG" alt="Post-response prompts — Virtual Assistant chat showing a laptop recommendation followed by three contextual follow-up suggestions: Tell me more about Dell 16 Plus, Is this laptop good for gaming, and Suggest me more options.">
-          <figcaption>Post-response prompts &mdash; contextual follow-ups keep the conversation moving toward useful next steps</figcaption>
-        </figure>
         <p style="color: var(--faint); font-style: italic;">Note: This feature is currently in the backlog and planned for rollout soon.</p>
       </div>
     </div>
@@ -1204,20 +1057,12 @@
       </div>
       <div class="enh-body">
         <p>Product recommendations were included in the design roadmap early on, knowing the VA would evolve into a shopping assistant. The team studied how industry-leading assistants structured their recommendations and analysed how LLMs typically respond to such prompts. Through multiple iterations and A/B testing, the team learned that users don&rsquo;t just want product suggestions &mdash; they want to understand why something is being recommended.</p>
-        <figure class="case-fig case-fig--inline">
-          <img src="assets/design led enhancements 2.PNG" alt="AI-powered product recommendations — three columns of recommendation card iterations showing different layouts, content depth, and tone tested across multiple usability rounds.">
-          <figcaption>Three rounds of usability testing &mdash; iterations across layout, content depth, and tone</figcaption>
-        </figure>
         <p>Three rounds of usability testing were conducted, experimenting with different layouts, content depth, and tone. A standout feature was the <strong>&ldquo;Why Choose It&rdquo;</strong> section &mdash; which clearly explained the reasoning behind each suggestion. In the final design:</p>
         <ul class="ul-tight">
           <li><strong>96% of users</strong> said the &ldquo;Why Choose It&rdquo; section made decision-making easier and helped them feel more confident about choosing the right product</li>
           <li>Users preferred scannable, visually organised responses over dense text lists</li>
           <li>The final design balanced product imagery, key specs, price, and contextual reasoning</li>
         </ul>
-        <figure class="case-fig case-fig--inline">
-          <img src="assets/final design feedback.PNG" alt="Final recommendation design — annotated chat showing two XPS 16 Laptop product cards with callouts for Laptop Rating &amp; Reviews, Media Gallery, Color Swatch Display, Dynamic Product Highlights, and the standout Why Choose It section that summarises the reasoning behind each suggestion.">
-          <figcaption>The final design &mdash; the &ldquo;Why Choose It&rdquo; section drove 96% confidence in decisions</figcaption>
-        </figure>
         <p style="color: var(--faint); font-style: italic;">Note: This feature is currently in the backlog and planned for rollout soon.</p>
       </div>
     </div>
@@ -1230,21 +1075,6 @@
       similar challenges and reimagined new interaction models that could feel fluid,
       flexible, and always available.
     </p>
-
-    <figure class="case-fig">
-      <img src="assets/future of ai assistant.PNG" alt="The future of the AI Assistant — Identification of Opportunity to Facilitation of Solution loop, with a portrait at the centre, illustrating the insight that the assistant should persist with the user rather than appear only at one entry point.">
-      <figcaption>The turning-point insight &mdash; the assistant needed to be a companion, not a momentary interaction</figcaption>
-    </figure>
-
-    <figure class="case-fig">
-      <img src="assets/evolving explorations.PNG" alt="Evolving Interactions — three intersecting circles labelled Guided Conversations, Pan-Dell Expansion, and GenAI Modalities, meeting at POC Learnings — the three pillars scaling from early proof-of-concept work.">
-      <figcaption>Evolving interactions &mdash; scaling POC learnings into three pillars: Guided Conversations, Modalities, and Pan-Dell Expansion</figcaption>
-    </figure>
-
-    <figure class="case-fig">
-      <img src="assets/learning from industry experts.PNG" alt="Learning from industry experts — side-panel research showing Microsoft Copilot for Windows, an outdoor retail site with a Copilot side panel, and Webgility AI&rsquo;s Shopify side panel — examples of small, helpful AI surfaces that don&rsquo;t take over the page.">
-      <figcaption>Side-panel research &mdash; how Notion AI, Microsoft Copilot, and Shopify built low-friction, always-with-you experiences</figcaption>
-    </figure>
 
     <div class="modality-cards">
       <div class="mod-card">
@@ -1271,31 +1101,6 @@
       </div>
     </div>
 
-    <figure class="case-fig">
-      <img src="assets/chatbot - right side panel experience.PNG" alt="Right-Side Panel Experience — annotated side-panel mockup with callouts for Side Panel Action, Full Screen Experience, Minimise, More Menu, Onboarding copy with Transparency Statement, Question to Understand Users&rsquo; Goals, and Suggestion Prompts Based on the Question.">
-      <figcaption>Side Panel &mdash; annotated design that stays present without disrupting the page flow</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/creating immersive conversational experience.PNG" alt="Immersive conversational experience — detailed side-panel UI annotations covering Suggestion Prompts, Full-Screen View, Dynamic Conversational Cues, and Recommendation Cards as users scroll and engage.">
-      <figcaption>Immersive side-panel experience &mdash; suggestion prompts, dynamic cues, and rich recommendations</figcaption>
-    </figure>
-
-    <figure class="case-fig">
-      <img src="assets/canvas experience - beyond conversations.PNG" alt="Beyond Conversation — Introducing The Canvas Experience — narrative slide explaining how canvas turns the assistant into a visual workspace for comparing products, viewing PDFs and videos, and staying in context.">
-      <figcaption>Canvas Experience &mdash; a visual workspace built into the assistant for multi-step exploration</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/canvas experience value addition.PNG" alt="Canvas use case — Dell PowerEdge R660 3D Viewer running inside the Virtual Assistant in canvas mode on a Dell laptop, with the Why Choose It and Products and Services panel visible alongside.">
-      <figcaption>Canvas use case &mdash; interactive 3D product models bridge digital and physical exploration</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/handling media in canvas experience.PNG" alt="Canvas use case — City of Amarillo Success Story shown as a media link with video preview in canvas mode, on both a Dell laptop and a mobile device, with the Virtual Assistant&rsquo;s reasoning and follow-up actions on the right.">
-      <figcaption>Canvas use case &mdash; media links and success-story snapshots inspire confidence with real-world evidence</figcaption>
-    </figure>
-
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Guided Conversations</h3>
     <p style="margin-top: 10px;">
       As user journeys became more complex, so did the need for structure and clarity. What
@@ -1310,37 +1115,12 @@
       <li><strong>Natural Interaction</strong> &mdash; users engage through intuitive dialogue, like asking a trusted advisor</li>
       <li><strong>Business Outcomes</strong> &mdash; designed to be more accurate upstream, reduce downstream returns, and decrease post-purchase support</li>
     </ul>
-    <figure class="case-fig">
-      <img src="assets/defining guided conversations.PNG" alt="Defining Guided Conversations — explanatory slide with bullets on intent-based navigation, personalised recommendations, natural interaction, and business outcomes, with a sample chat showing the assistant asking what the user hopes to achieve with AI.">
-      <figcaption>Guided conversations &mdash; AI-powered, structured dialogues that lead users step-by-step toward the right solution</figcaption>
-    </figure>
-
-    <p style="margin-top: 14px;">
+    <p style="margin-top: 12px;">
       After early research and iterative conversation design testing, a repeatable framework
       was identified &mdash; a guided conversational loop that starts by uncovering the
       user&rsquo;s needs, navigates them through targeted AI-related topics, and progressively
       builds toward actionable recommendations.
     </p>
-
-    <figure class="case-fig">
-      <img src="assets/defining guided conversations - conversational contrsuct.PNG" alt="Conversational Construct flow diagram — User Engages to Understand Intent to four Topics to Recommend AI Solutions to Convert to Qualified Lead, with feedback loops back into intent understanding.">
-      <figcaption>The conversational construct &mdash; a repeatable loop balancing business goals with user intent</figcaption>
-    </figure>
-
-    <figure class="case-fig">
-      <img src="assets/early explorations.PNG" alt="Early explorations — two proof-of-concept experiences: Conversational Commerce (a full-screen side-by-side product discovery flow) and Conversational ISG AI Journey (a guided GenAI experience for enterprise users with structured handoffs).">
-      <figcaption>Early POCs &mdash; Conversational Commerce and Conversational ISG laid the groundwork for the guided loop</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/chatbot user onboarding.PNG" alt="Conversational ISG journey, first half — Onboarding The Users, Persona Selection (I&rsquo;m an Ideator, Evaluator, or Implementor), and Helping Users Choose A Topic.">
-      <figcaption>ISG flow &mdash; onboarding, persona selection, and topic discovery (steps 1&ndash;3)</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/chatbot personalized recommendations.PNG" alt="Conversational ISG journey, second half — Guiding Users Towards Their Personalised Recommendation, Recommending Solutions (Digital Assistants), and Summarizing The Conversation with a tailored AI solutions package.">
-      <figcaption>ISG flow &mdash; guiding toward recommendation, recommending solutions, and summarising the conversation (steps 4&ndash;6)</figcaption>
-    </figure>
 
     <h3 style="font-family: var(--f-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin-top: 36px;">Pan-Dell Expansion</h3>
     <p style="margin-top: 10px;">
@@ -1366,16 +1146,6 @@
         <p>Many users begin their journey with vague or ambiguous search terms, quickly becoming overwhelmed by options &mdash; leading to decision fatigue early in the experience. The team began using AI to better understand user intent, deliver more relevant results, and guide users toward confident decisions, reducing overwhelm and making the experience more intuitive.</p>
       </div>
     </div>
-
-    <figure class="case-fig">
-      <img src="assets/b2b chatbot - live in 26,000 US Dell premier stores.PNG" alt="Premier Unified AI Assistant — now live in 26,000+ US Premier Stores. Four Premier Connect chat screens showing tailored solutions, sales-team handoff, chat summary with customer details, and a list view of active conversations.">
-      <figcaption>Premier Connect &mdash; live across 26,000+ US Premier Stores with hybrid AI + Sales handoff</figcaption>
-    </figure>
-
-    <figure class="case-fig case-fig--tight">
-      <img src="assets/reimagining dell search with Canvas experience.PNG" alt="Reimagining Search with GenAI — Dell laptop showing a GenAI-powered category breakdown above traditional search filters: the Virtual Assistant proactively organises results into Everyday, Business, High Performance, and Gaming categories with relevant brand suggestions.">
-      <figcaption>GenAI-powered search &mdash; proactive category guidance reduces decision fatigue at the start of the journey</figcaption>
-    </figure>
   </div>
 </section>
 
