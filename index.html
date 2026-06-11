@@ -14,7 +14,9 @@
 </head>
 <body>
 <main id="gate-root" class="gate">
-  <div class="gate__bg"></div>
+  <div class="gate__bg">
+    <canvas id="gate-fx" class="gate__fx" aria-hidden="true"></canvas>
+  </div>
 
   <div class="gate__inner">
     <div class="gate__brand">
@@ -72,5 +74,6 @@
 </main>
 
 <script src="assets/site.js"></script>
+<script src="assets/gate-fx.js" defer></script>
 </body>
 </html>

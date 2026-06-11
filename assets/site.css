@@ -417,6 +417,12 @@ img { display: block; max-width: 100%; }
     radial-gradient(ellipse at 20% 80%, color-mix(in oklch, var(--signal) 5%, transparent) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 20%, color-mix(in oklch, var(--signal) 4%, transparent) 0%, transparent 45%);
 }
+.gate__fx {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  display: block;
+  pointer-events: none;
+}
 .gate__inner {
   position: relative;
   z-index: 1;
