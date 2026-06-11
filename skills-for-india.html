@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills for India — Puneet Arora</title>
+<meta name="author" content="Puneet Arora">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* ── Tricolor accents layered onto the Intelligence Terminal system ── */
+  :root {
+    --saffron: #ff9933;
+    --india-white: #f7f5ee;
+    --india-green: #138808;
+    --chakra-blue: #6c8fd6;
+    --f-display: 'Instrument Serif', 'Roboto Serif', Georgia, serif;
+    --f-deva: 'Tiro Devanagari Hindi', 'Roboto', serif;
+  }
+  [data-theme="forest"] {
+    --saffron: #c95d00;
+    --india-green: #0f6b06;
+    --chakra-blue: #2546a3;
+  }
+
+  .display-serif {
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.01em;
+    line-height: 0.96;
+  }
+  .display-serif em { font-style: italic; color: var(--signal); font-weight: 400; }
+  .deva { font-family: var(--f-deva); font-weight: 400; }
+
+  /* ── Tricolor rule strip ── */
+  .tri-rule {
+    height: 2px;
+    background: linear-gradient(to right,
+      var(--saffron) 0 33.3%,
+      var(--india-white) 33.3% 66.6%,
+      var(--india-green) 66.6% 100%);
+    border-radius: 1px;
+    opacity: .85;
+  }
+  .tri-rule--thin { height: 1px; opacity: .55; }
+
+  /* ── Hero ── */
+  .sfi-hero {
+    padding: 72px var(--pad-x) 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  .sfi-hero__bg {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 50% 40% at 85% 20%, color-mix(in oklch, var(--signal) 6%, transparent), transparent 70%),
+      radial-gradient(ellipse 40% 35% at 15% 85%, rgba(19,136,8,.05), transparent 70%);
+  }
+  .sfi-hero__bg svg {
+    position: absolute; right: -60px; top: 40px; width: 360px; opacity: .14;
+  }
+  .sfi-hero__inner { position: relative; max-width: 1100px; }
+  .sfi-hero h1 {
+    font-size: clamp(54px, 8.5vw, 108px);
+    margin: 20px 0 24px;
+  }
+  .sfi-hero .saffron { color: var(--saffron); }
+  .sfi-hero .green { color: var(--india-green); }
+  .sfi-hero .lede { max-width: 680px; }
+
+  .stat-strip {
+    margin-top: 44px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    border: 1px solid var(--rule); border-radius: 2px;
+  }
+  .stat-strip .cell {
+    padding: 18px 22px;
+    border-left: 1px solid var(--rule);
+  }
+  .stat-strip .cell:first-child { border-left: none; }
+  .stat-strip .v {
+    font-family: var(--f-display);
+    font-size: 40px; line-height: 1;
+    color: var(--ink);
+  }
+  .stat-strip .l {
+    font-family: var(--f-mono); font-size: 10px;
+    letter-spacing: 0.18em; color: var(--faint);
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+  .stat-strip .cell:nth-child(1) .v { color: var(--saffron); }
+  .stat-strip .cell:nth-child(3) .v { color: var(--india-green); }
+
+  /* ── Search bar ── */
+  .search-row {
+    padding: 0 var(--pad-x) 24px;
+    display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center;
+  }
+  .search {
+    display: flex; align-items: center;
+    border: 1px solid var(--rule); border-radius: 2px;
+    background: var(--surface);
+    padding: 10px 14px;
+    gap: 12px;
+  }
+  .search:focus-within { border-color: var(--signal); }
+  .search svg { width: 14px; height: 14px; flex-shrink: 0; color: var(--dim); }
+  .search input {
+    background: transparent; border: 0; outline: none; color: var(--ink);
+    font-family: var(--f-mono); font-size: 13px; flex: 1;
+    letter-spacing: 0.03em;
+  }
+  .search input::placeholder { color: var(--faint); }
+  .filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 7px 11px; border: 1px solid var(--rule); border-radius: 999px;
+    color: var(--dim); cursor: pointer; background: transparent;
+    transition: all .14s;
+  }
+  .chip.is-active { color: var(--signal-ink); background: var(--signal); border-color: var(--signal); }
+  .chip:hover:not(.is-active) { color: var(--ink); border-color: var(--rule-2); }
+
+  /* ── Category sections ── */
+  .cat-section { padding: 28px var(--pad-x) 8px; }
+  .cat-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 18px; flex-wrap: wrap; margin-bottom: 18px;
+  }
+  .cat-head__title {
+    font-family: var(--f-display);
+    font-size: 34px; color: var(--ink);
+  }
+  .cat-head__title .num {
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em;
+    color: var(--signal); margin-right: 12px; vertical-align: middle;
+  }
+  .cat-head__title .deva-mark {
+    font-family: var(--f-deva); color: var(--dim);
+    margin-left: 14px; font-size: 22px;
+  }
+  .cat-head__meta { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--faint); text-transform: uppercase; }
+
+  /* skill cards grid */
+  .skill-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);
+  }
+  .skill {
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 22px 22px 20px;
+    background: var(--surface);
+    position: relative;
+    display: flex; flex-direction: column; gap: 10px;
+    min-height: 220px;
+    transition: background .18s, transform .18s;
+  }
+  .skill::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+    background: var(--accent, var(--signal));
+    opacity: 0; transition: opacity .18s;
+  }
+  .skill:hover { background: var(--surface-2); transform: translateY(-1px); }
+  .skill:hover::before { opacity: 1; }
+  .skill.tri-saffron { --accent: var(--saffron); }
+  .skill.tri-green { --accent: var(--india-green); }
+  .skill.tri-white { --accent: var(--india-white); }
+  .skill.tri-blue { --accent: var(--chakra-blue); }
+
+  .skill__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .skill__id {
+    font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.18em;
+    color: var(--accent, var(--signal)); text-transform: uppercase;
+  }
+  .skill__plat {
+    font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.16em;
+    color: var(--faint); text-transform: uppercase;
+    border: 1px solid var(--rule); padding: 3px 7px; border-radius: 2px;
+  }
+  .skill__name {
+    font-family: var(--f-sans); font-size: 17px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.005em; line-height: 1.25;
+  }
+  .skill__name .hi {
+    font-family: var(--f-deva); font-weight: 400; color: var(--dim);
+    font-size: 14px; margin-left: 6px;
+  }
+  .skill__desc {
+    font-family: var(--f-sans); font-size: 12.5px; color: var(--dim);
+    line-height: 1.55; flex: 1;
+  }
+  .skill__foot {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    padding-top: 8px; margin-top: 4px;
+    border-top: 1px dashed var(--rule);
+  }
+  .skill__foot .tag {
+    font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.14em;
+    color: var(--faint); text-transform: uppercase;
+    padding: 3px 7px; background: var(--bg-2); border-radius: 2px;
+  }
+
+  /* ── How to use ── */
+  .how {
+    background: var(--bg-2);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 64px var(--pad-x);
+    margin-top: 48px;
+  }
+  .how__inner { max-width: 1180px; }
+  .how h2 {
+    font-family: var(--f-display);
+    font-size: 56px; margin: 12px 0 32px;
+    line-height: 0.98;
+  }
+  .how__grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0;
+    border: 1px solid var(--rule);
+  }
+  .how__step {
+    padding: 24px 22px;
+    border-left: 1px solid var(--rule);
+  }
+  .how__step:first-child { border-left: none; }
+  .how__step .n {
+    font-family: var(--f-display);
+    font-size: 44px; color: var(--signal); line-height: 1;
+  }
+  .how__step h3 {
+    font-family: var(--f-sans); font-size: 15px; font-weight: 500;
+    color: var(--ink); margin: 10px 0 8px;
+  }
+  .how__step p {
+    font-family: var(--f-sans); font-size: 12.5px; color: var(--dim);
+    line-height: 1.6; margin: 0;
+  }
+  .how__step code {
+    font-family: var(--f-mono); font-size: 11px;
+    background: var(--bg); padding: 2px 6px; border-radius: 2px;
+    color: var(--signal); border: 1px solid var(--rule);
+  }
+
+  /* ── Closer ── */
+  .closer {
+    padding: 72px var(--pad-x);
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center;
+  }
+  .closer h2 {
+    font-family: var(--f-display); font-size: 64px; line-height: 0.98;
+    margin: 14px 0 22px;
+  }
+  .closer .lede { max-width: 540px; }
+  .closer__side {
+    border: 1px solid var(--rule); padding: 28px; border-radius: 2px;
+    background: var(--surface);
+  }
+  .closer__side .eyebrow { color: var(--saffron); }
+  .closer__side ul {
+    list-style: none; padding: 0; margin: 14px 0 0;
+    display: grid; gap: 10px;
+  }
+  .closer__side li {
+    font-family: var(--f-sans); font-size: 13px; color: var(--dim);
+    display: grid; grid-template-columns: 16px 1fr; gap: 8px; align-items: baseline;
+  }
+  .closer__side li::before {
+    content: "▸"; color: var(--india-green); font-size: 10px;
+  }
+
+  /* ── Chakra ornament ── */
+  .chakra-ring { display: inline-block; vertical-align: middle; }
+
+  @media (max-width: 980px) {
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+    .stat-strip .cell:nth-child(3) { border-left: none; border-top: 1px solid var(--rule); }
+    .stat-strip .cell:nth-child(4) { border-top: 1px solid var(--rule); }
+    .closer { grid-template-columns: 1fr; }
+    .search-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="bio.html">ABOUT</a>
+    <a href="home.html">HOME</a>
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="vibe-magic.html" class="is-current">VIBE MAGIC</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+    <span id="clock">IST 11:47</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="sfi-hero">
+  <div class="sfi-hero__bg">
+    <svg viewBox="0 0 200 200" class="chakra-ring" aria-hidden="true">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--chakra-blue)"/>
+      <circle cx="100" cy="100" r="14" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--chakra-blue)"/>
+      <g stroke="currentColor" stroke-width="1.2" style="color:var(--chakra-blue)">
+        <!-- 24 spokes -->
+        <g id="spokes"></g>
+      </g>
+    </svg>
+  </div>
+  <div class="sfi-hero__inner">
+    <div class="flex gap-12" style="align-items: center; margin-bottom: 18px;">
+      <span class="tag" style="background: color-mix(in oklch, var(--saffron) 14%, transparent); color: var(--saffron); border-color: color-mix(in oklch, var(--saffron) 40%, transparent);">§ 01 · DIRECTORY</span>
+      <span class="faint mono" style="font-size: 11px;">// claude skills, tuned for the indian context</span>
+    </div>
+
+    <h1 class="display-serif">
+      Skills <span class="saffron">for</span><br>
+      <em>India.</em>
+    </h1>
+
+    <div class="tri-rule" style="max-width: 320px; margin: 4px 0 26px;"></div>
+
+    <p class="lede" style="margin: 0;">
+      A working directory of Claude skills built for Indian use-cases — GST returns,
+      UPI receipts, Devanagari and South-Indian language work, RTI drafts, NCERT
+      explainers, IRCTC PNRs, GeM tenders. The same idea as
+      <strong style="color: var(--ink);">MSkill</strong>, narrowed to the
+      problems we actually run into here. Each skill ships with a one-line install,
+      a sample prompt, and a &ldquo;why this matters here&rdquo; note.
+    </p>
+
+    <div class="stat-strip">
+      <div class="cell">
+        <div class="v" data-count="36">0</div>
+        <div class="l">Skills indexed</div>
+      </div>
+      <div class="cell">
+        <div class="v" data-count="6">0</div>
+        <div class="l">Categories</div>
+      </div>
+      <div class="cell">
+        <div class="v" data-count="12">0</div>
+        <div class="l">Languages covered</div>
+      </div>
+      <div class="cell">
+        <div class="v deva">v 1.0</div>
+        <div class="l">Updated · Jun 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH + FILTERS -->
+<div class="search-row">
+  <label class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search skills · try &ldquo;GST&rdquo;, &ldquo;UPI&rdquo;, &ldquo;Aadhaar&rdquo;, &ldquo;Tamil&rdquo;…" autocomplete="off">
+  </label>
+  <div class="filter-chips" role="tablist">
+    <button class="chip is-active" data-filter="all">All</button>
+    <button class="chip" data-filter="finance">Finance</button>
+    <button class="chip" data-filter="language">Language</button>
+    <button class="chip" data-filter="civic">Civic</button>
+    <button class="chip" data-filter="commerce">Commerce</button>
+    <button class="chip" data-filter="travel">Travel</button>
+    <button class="chip" data-filter="education">Education</button>
+  </div>
+</div>
+
+<!-- ===== CATEGORY: FINANCE ===== -->
+<section class="cat-section" data-cat="finance">
+  <div class="cat-head">
+    <div class="cat-head__title">
+      <span class="num">§ 02 · A</span>Finance &amp; tax<span class="deva-mark">वित्त</span>
+    </div>
+    <div class="cat-head__meta">GST · UPI · ITR · RBI · MUTUAL FUNDS</div>
+  </div>
+  <div class="tri-rule tri-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill tri-saffron" data-tags="gst tax filing finance">
+      <div class="skill__top">
+        <div class="skill__id">SK.01 · GST</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">GSTR-3B Drafter <span class="hi">जीएसटी</span></div>
+      <div class="skill__desc">
+        Reads your sales and purchase registers (CSV or pasted), summarises outward and inward supplies,
+        and drafts a return-ready GSTR-3B JSON with ITC reconciliations flagged.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/gst-3b</span><span class="tag">CSV-in</span><span class="tag">CA-tested</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="upi receipts expense finance">
+      <div class="skill__top">
+        <div class="skill__id">SK.02 · UPI</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">UPI Statement Tidier</div>
+      <div class="skill__desc">
+        Drop a PhonePe / GPay / Paytm statement; out comes a clean monthly expense table
+        with merchant categories, recurring subscriptions surfaced, and a Hindi+English summary.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/upi-tidy</span><span class="tag">PDF</span><span class="tag">multilingual</span>
+      </div>
+    </article>
+
+    <article class="skill tri-saffron" data-tags="itr tax finance">
+      <div class="skill__top">
+        <div class="skill__id">SK.03 · ITR</div>
+        <div class="skill__plat">API</div>
+      </div>
+      <div class="skill__name">ITR-1 Explainer</div>
+      <div class="skill__desc">
+        Translates your Form 16, AIS, and 26AS into a plain-language ITR draft.
+        Surfaces deductions you missed under 80C / 80D / HRA and explains the why.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/itr-1</span><span class="tag">form-16</span><span class="tag">salaried</span>
+      </div>
+    </article>
+
+    <article class="skill tri-blue" data-tags="rbi policy regulator finance">
+      <div class="skill__top">
+        <div class="skill__id">SK.04 · RBI</div>
+        <div class="skill__plat">CLAUDE CODE</div>
+      </div>
+      <div class="skill__name">RBI Circular Reader</div>
+      <div class="skill__desc">
+        Fetches the latest RBI master directions on a topic — NBFC, payments, FX — and gives a
+        one-page brief: what changed, who is affected, what to do by when.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/rbi-brief</span><span class="tag">regulator</span><span class="tag">compliance</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="mutual fund sip finance">
+      <div class="skill__top">
+        <div class="skill__id">SK.05 · MF</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">SIP Portfolio Auditor</div>
+      <div class="skill__desc">
+        Paste a CAMS / KFintech consolidated statement. Get overlap, sector concentration,
+        expense-ratio bloat, and a &ldquo;what would happen if I stopped this SIP&rdquo; sketch.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/mf-audit</span><span class="tag">CAMS</span><span class="tag">SEBI-aware</span>
+      </div>
+    </article>
+
+    <article class="skill tri-saffron" data-tags="tds salary finance">
+      <div class="skill__top">
+        <div class="skill__id">SK.06 · TDS</div>
+        <div class="skill__plat">CLAUDE CODE</div>
+      </div>
+      <div class="skill__name">TDS Reconciler</div>
+      <div class="skill__desc">
+        Matches Form 26AS against your books, flags TDS mismatches before they become notices.
+        Generates a polite seller-side follow-up draft for the deductor.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/tds-recon</span><span class="tag">26AS</span><span class="tag">b2b</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== CATEGORY: LANGUAGE ===== -->
+<section class="cat-section" data-cat="language">
+  <div class="cat-head">
+    <div class="cat-head__title">
+      <span class="num">§ 02 · B</span>Language &amp; script<span class="deva-mark">भाषा</span>
+    </div>
+    <div class="cat-head__meta">HI · TA · TE · BN · GU · MR · PA · KN · ML · UR · OR · AS</div>
+  </div>
+  <div class="tri-rule tri-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill tri-white" data-tags="hindi hinglish language">
+      <div class="skill__top">
+        <div class="skill__id">SK.07 · HIN</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Hinglish Normaliser <span class="hi">हिन्दी</span></div>
+      <div class="skill__desc">
+        Cleans mixed-script social copy into one of three lanes: pure Devanagari,
+        polished romanised Hindi, or English. Holds tone and idiom; doesn&rsquo;t flatten voice.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/hi-norm</span><span class="tag">copy</span><span class="tag">marketing</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="tamil south language">
+      <div class="skill__top">
+        <div class="skill__id">SK.08 · TAM</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Tamil Formal Writer</div>
+      <div class="skill__desc">
+        Drafts formal Tamil — government letters, legal notices, school circulars — in
+        respectful register, with the right honorifics by recipient role.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/tam-formal</span><span class="tag">gov</span><span class="tag">register-aware</span>
+      </div>
+    </article>
+
+    <article class="skill tri-blue" data-tags="ocr devanagari language">
+      <div class="skill__top">
+        <div class="skill__id">SK.09 · OCR</div>
+        <div class="skill__plat">API</div>
+      </div>
+      <div class="skill__name">Devanagari OCR Helper</div>
+      <div class="skill__desc">
+        Reads photographed Devanagari documents — Aadhaar, marksheets, certificates — and
+        returns clean text plus a structured JSON of fields. Conjunct-cluster aware.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/deva-ocr</span><span class="tag">vision</span><span class="tag">forms</span>
+      </div>
+    </article>
+
+    <article class="skill tri-saffron" data-tags="translate multi language">
+      <div class="skill__top">
+        <div class="skill__id">SK.10 · X-LANG</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">12-Language Round-Tripper</div>
+      <div class="skill__desc">
+        Source-to-target across the eight schedule languages plus Hindi, English, Urdu,
+        Punjabi. Round-trips to flag idiom loss and offers two alternates per ambiguous line.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/multi-lang</span><span class="tag">QA</span><span class="tag">schedule-8</span>
+      </div>
+    </article>
+
+    <article class="skill tri-white" data-tags="bengali poetry language">
+      <div class="skill__top">
+        <div class="skill__id">SK.11 · BEN</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Bengali Editorial Polish</div>
+      <div class="skill__desc">
+        Edits long-form Bengali prose for cadence and clarity without flattening literary
+        register. Useful for op-eds, school essays, and academic abstracts.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/ben-edit</span><span class="tag">literary</span><span class="tag">longform</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="speech transliterate language">
+      <div class="skill__top">
+        <div class="skill__id">SK.12 · TRNS</div>
+        <div class="skill__plat">CLAUDE CODE</div>
+      </div>
+      <div class="skill__name">Code-Mixed Transliterator</div>
+      <div class="skill__desc">
+        Roman-to-native and back, with phonetic guardrails for proper nouns, brand names,
+        and ASR transcripts that mix English with two Indian languages mid-sentence.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/transliterate</span><span class="tag">ASR</span><span class="tag">brand-safe</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== CATEGORY: CIVIC ===== -->
+<section class="cat-section" data-cat="civic">
+  <div class="cat-head">
+    <div class="cat-head__title">
+      <span class="num">§ 02 · C</span>Civic &amp; governance<span class="deva-mark">नागरिक</span>
+    </div>
+    <div class="cat-head__meta">RTI · AADHAAR · SCHEMES · VOTER · LEGAL</div>
+  </div>
+  <div class="tri-rule tri-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill tri-saffron" data-tags="rti governance civic">
+      <div class="skill__top">
+        <div class="skill__id">SK.13 · RTI</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">RTI Drafter</div>
+      <div class="skill__desc">
+        Drafts a precise, well-scoped Right-to-Information request. Asks you the four
+        questions that matter, picks the right PIO, and flags exempted sections to avoid
+        rejection on technicalities.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/rti</span><span class="tag">PIO-routing</span><span class="tag">2005 Act</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="scheme welfare civic">
+      <div class="skill__top">
+        <div class="skill__id">SK.14 · SCHEME</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Scheme Eligibility Checker</div>
+      <div class="skill__desc">
+        Tell it your state, age, income band, and category. Returns central and state
+        schemes you qualify for, the documents needed, and where to apply.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/scheme</span><span class="tag">state-aware</span><span class="tag">PM-aware</span>
+      </div>
+    </article>
+
+    <article class="skill tri-blue" data-tags="aadhaar form civic">
+      <div class="skill__top">
+        <div class="skill__id">SK.15 · AADHR</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Aadhaar Form Walkthrough</div>
+      <div class="skill__desc">
+        Walks a non-tech-fluent user through update / correction forms in their language.
+        Pre-fills what it can, explains photo and biometric steps in plain words.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/aadhaar</span><span class="tag">a11y</span><span class="tag">low-literacy</span>
+      </div>
+    </article>
+
+    <article class="skill tri-saffron" data-tags="voter election civic">
+      <div class="skill__top">
+        <div class="skill__id">SK.16 · VOTER</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Voter-Roll Checker</div>
+      <div class="skill__desc">
+        Verifies your name on the rolls, finds your polling booth, and explains what each
+        EPIC field means. For first-time voters, runs through Form 6 step by step.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/voter</span><span class="tag">ECI</span><span class="tag">form-6</span>
+      </div>
+    </article>
+
+    <article class="skill tri-white" data-tags="legal notice civic">
+      <div class="skill__top">
+        <div class="skill__id">SK.17 · LEGAL</div>
+        <div class="skill__plat">API</div>
+      </div>
+      <div class="skill__name">Consumer-Court Notice Drafter</div>
+      <div class="skill__desc">
+        Drafts a Consumer Protection Act notice from your complaint. Cites the right sections,
+        the appropriate forum (district / state / national), and a court-fee estimate.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/consumer-notice</span><span class="tag">CPA-2019</span><span class="tag">draft</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="dpdpa privacy civic">
+      <div class="skill__top">
+        <div class="skill__id">SK.18 · DPDPA</div>
+        <div class="skill__plat">CLAUDE CODE</div>
+      </div>
+      <div class="skill__name">DPDPA Compliance Checker</div>
+      <div class="skill__desc">
+        Reviews a product&rsquo;s consent flow against the Digital Personal Data Protection
+        Act, 2023. Flags consent-bundling, dark patterns, and notice-language gaps.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/dpdpa</span><span class="tag">privacy</span><span class="tag">ux-audit</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== CATEGORY: COMMERCE ===== -->
+<section class="cat-section" data-cat="commerce">
+  <div class="cat-head">
+    <div class="cat-head__title">
+      <span class="num">§ 02 · D</span>Commerce &amp; MSME<span class="deva-mark">वाणिज्य</span>
+    </div>
+    <div class="cat-head__meta">GEM · MARKETPLACE · INVOICING · MSME</div>
+  </div>
+  <div class="tri-rule tri-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill tri-saffron" data-tags="gem tender commerce">
+      <div class="skill__top">
+        <div class="skill__id">SK.19 · GEM</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">GeM Tender Reader</div>
+      <div class="skill__desc">
+        Summarises a Government e-Marketplace tender into a one-page sheet: scope, EMD,
+        eligibility, evaluation criteria, and the three reasons most bids get rejected.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/gem</span><span class="tag">tender</span><span class="tag">MSME</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="marketplace seller commerce">
+      <div class="skill__top">
+        <div class="skill__id">SK.20 · LSTNG</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Listing Polish for D2C</div>
+      <div class="skill__desc">
+        Rewrites Amazon.in and Flipkart product listings — title, bullets, A+ copy — with
+        SEO that respects Indian search habits and category-policy guardrails.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/listing</span><span class="tag">d2c</span><span class="tag">seo-india</span>
+      </div>
+    </article>
+
+    <article class="skill tri-blue" data-tags="invoice msme commerce">
+      <div class="skill__top">
+        <div class="skill__id">SK.21 · INV</div>
+        <div class="skill__plat">CLAUDE CODE</div>
+      </div>
+      <div class="skill__name">E-Invoice Validator</div>
+      <div class="skill__desc">
+        Validates your B2B invoice JSON against the GST e-invoicing schema before you upload.
+        Catches HSN, place-of-supply and reverse-charge mistakes before the portal rejects them.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/e-inv</span><span class="tag">schema</span><span class="tag">pre-flight</span>
+      </div>
+    </article>
+
+    <article class="skill tri-saffron" data-tags="msme udyam commerce">
+      <div class="skill__top">
+        <div class="skill__id">SK.22 · UDYAM</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Udyam Onboarder</div>
+      <div class="skill__desc">
+        Holds an MSME founder&rsquo;s hand through Udyam registration. Asks for the right
+        numbers in plain language, drafts the NIC code list, and explains what changes after.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/udyam</span><span class="tag">onboarding</span><span class="tag">MSME</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== CATEGORY: TRAVEL ===== -->
+<section class="cat-section" data-cat="travel">
+  <div class="cat-head">
+    <div class="cat-head__title">
+      <span class="num">§ 02 · E</span>Travel &amp; everyday<span class="deva-mark">यात्रा</span>
+    </div>
+    <div class="cat-head__meta">IRCTC · METRO · MONUMENTS · WEATHER</div>
+  </div>
+  <div class="tri-rule tri-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill tri-green" data-tags="irctc rail travel">
+      <div class="skill__top">
+        <div class="skill__id">SK.23 · PNR</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">IRCTC PNR Decoder</div>
+      <div class="skill__desc">
+        Reads a PNR string, explains the quota, waitlist position, and chart-prep timeline.
+        Suggests alternate trains on the same route with similar arrival windows.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/pnr</span><span class="tag">rail</span><span class="tag">tatkal-aware</span>
+      </div>
+    </article>
+
+    <article class="skill tri-saffron" data-tags="monument culture travel">
+      <div class="skill__top">
+        <div class="skill__id">SK.24 · ASI</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Monument Field Guide</div>
+      <div class="skill__desc">
+        For any ASI-protected site, gives you a 5-minute pre-visit brief: who built it,
+        what to look for, where the inscriptions are, and what most tourists miss.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/asi</span><span class="tag">heritage</span><span class="tag">offline</span>
+      </div>
+    </article>
+
+    <article class="skill tri-blue" data-tags="metro fare travel">
+      <div class="skill__top">
+        <div class="skill__id">SK.25 · METRO</div>
+        <div class="skill__plat">API</div>
+      </div>
+      <div class="skill__name">Metro Route Planner</div>
+      <div class="skill__desc">
+        Cross-city metro planner — Delhi, Bengaluru, Mumbai, Chennai, Hyderabad, Kolkata.
+        Fare, interchanges, and the &ldquo;last-mile metro feeder&rdquo; that nobody talks about.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/metro</span><span class="tag">6-cities</span><span class="tag">last-mile</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="weather monsoon travel">
+      <div class="skill__top">
+        <div class="skill__id">SK.26 · IMD</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Monsoon Window Predictor</div>
+      <div class="skill__desc">
+        Reads IMD nowcasts and gives you a plain-English &ldquo;is the next four hours
+        rideable&rdquo; answer for a coordinate. Tuned for delivery and field-work crews.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/imd</span><span class="tag">nowcast</span><span class="tag">field-ops</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== CATEGORY: EDUCATION ===== -->
+<section class="cat-section" data-cat="education">
+  <div class="cat-head">
+    <div class="cat-head__title">
+      <span class="num">§ 02 · F</span>Education &amp; coaching<span class="deva-mark">शिक्षा</span>
+    </div>
+    <div class="cat-head__meta">NCERT · BOARDS · JEE · NEET · UPSC</div>
+  </div>
+  <div class="tri-rule tri-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill tri-saffron" data-tags="ncert school education">
+      <div class="skill__top">
+        <div class="skill__id">SK.27 · NCERT</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">NCERT Concept Explainer</div>
+      <div class="skill__desc">
+        Tied to NCERT chapters by class and subject. Explains a concept in two registers
+        — &ldquo;older sibling&rdquo; and &ldquo;exam-paper-ready&rdquo; — and quizzes you.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/ncert</span><span class="tag">CBSE</span><span class="tag">quiz</span>
+      </div>
+    </article>
+
+    <article class="skill tri-green" data-tags="board exam education">
+      <div class="skill__top">
+        <div class="skill__id">SK.28 · BRD</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">Board-Exam Answer Coach</div>
+      <div class="skill__desc">
+        Marks your sample answer the way a CBSE / state-board examiner would: step marks,
+        keyword credit, and the diagram-rubric most students forget about.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/board</span><span class="tag">marking-scheme</span><span class="tag">class-10-12</span>
+      </div>
+    </article>
+
+    <article class="skill tri-blue" data-tags="jee neet education">
+      <div class="skill__top">
+        <div class="skill__id">SK.29 · JEE</div>
+        <div class="skill__plat">CLAUDE CODE</div>
+      </div>
+      <div class="skill__name">JEE/NEET Doubt-Solver</div>
+      <div class="skill__desc">
+        Shows the working, not just the answer. Cites the NCERT chapter the question came
+        from and links the trick to the previous-year-paper it usually appears in.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/jee</span><span class="tag">working-shown</span><span class="tag">PYQ-aware</span>
+      </div>
+    </article>
+
+    <article class="skill tri-saffron" data-tags="upsc current education">
+      <div class="skill__top">
+        <div class="skill__id">SK.30 · UPSC</div>
+        <div class="skill__plat">CLAUDE.AI</div>
+      </div>
+      <div class="skill__name">UPSC Current-Affairs Brief</div>
+      <div class="skill__desc">
+        Daily 12-minute read on what matters for Prelims and Mains. Static-syllabus tag on
+        every story so revision week actually connects to the source chapter.
+      </div>
+      <div class="skill__foot">
+        <span class="tag">/upsc</span><span class="tag">prelims+mains</span><span class="tag">syllabus-tag</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="how">
+  <div class="how__inner">
+    <div class="flex gap-12" style="align-items: center;">
+      <span class="tag" style="background: color-mix(in oklch, var(--india-green) 14%, transparent); color: var(--india-green); border-color: color-mix(in oklch, var(--india-green) 40%, transparent);">§ 03 · USAGE</span>
+      <span class="faint mono" style="font-size: 11px;">// four ways to put these skills to work</span>
+    </div>
+    <h2 class="display-serif">How to use<br><em>Skills for India.</em></h2>
+    <div class="how__grid">
+      <div class="how__step">
+        <div class="n">1</div>
+        <h3>In Claude.ai</h3>
+        <p>Open a new chat, click the skills picker, and pick a <code>SK.NN</code> by ID. Drop in your file or pasted text. The skill prompts you for the few inputs it needs.</p>
+      </div>
+      <div class="how__step">
+        <div class="n">2</div>
+        <h3>In Claude Code</h3>
+        <p>Install from the marketplace: <code>claude-code skills add sfi/<i>name</i></code>. Skills run inside your repo and can read project files, write outputs, and call your tools.</p>
+      </div>
+      <div class="how__step">
+        <div class="n">3</div>
+        <h3>Via the API</h3>
+        <p>Each skill ships a system prompt and a JSON schema. Wire it into your stack with <code>tools=[…]</code> on Anthropic&rsquo;s messages endpoint. Indian context stays in the prompt.</p>
+      </div>
+      <div class="how__step">
+        <div class="n">4</div>
+        <h3>Build your own</h3>
+        <p>Use Anthropic&rsquo;s Skill Creator and add the &ldquo;India context pack&rsquo;&rsquo; — calendars, currency, address formats, languages. PR a new skill back to this directory.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSER -->
+<section class="closer">
+  <div>
+    <span class="signal mono" style="font-size: 11px; letter-spacing: 0.18em;">// WHY THIS EXISTS</span>
+    <h2 class="display-serif">
+      Global skills are great.<br>
+      <em>Local skills</em> are <span style="color: var(--saffron);">better.</span>
+    </h2>
+    <p class="lede">
+      A skill that summarises a PDF is useful. A skill that summarises an
+      <strong style="color: var(--ink);">RBI Master Direction</strong> on FX is
+      <em>load-bearing</em> for the team that has to act on it Monday. This directory
+      is built around that distinction — skills that know GST returns close in Hindi
+      every 20th, that monsoon nowcasts mean different things in Mumbai and Mussoorie,
+      and that the most polite version of a sentence in Tamil is not its most direct one.
+    </p>
+    <div class="flex gap-12" style="margin-top: 24px;">
+      <a href="vibe-magic.html" class="btn btn--ghost">← BACK TO VIBE MAGIC</a>
+      <a href="contact.html" class="btn btn--primary">SUGGEST A SKILL <span>↗</span></a>
+    </div>
+  </div>
+  <aside class="closer__side">
+    <div class="eyebrow mono" style="font-size: 11px; letter-spacing: 0.18em;">// ROADMAP · Q3 2026</div>
+    <ul>
+      <li>UDISE+ school-data explainer for state ed-departments.</li>
+      <li>FSSAI label-compliance checker for D2C food brands.</li>
+      <li>Ayushman Bharat hospital-eligibility lookup, voice-first.</li>
+      <li>Account Aggregator consent summariser, all 22 schedule languages.</li>
+      <li>Open contribution model — propose a skill via a one-page brief.</li>
+    </ul>
+    <div class="tri-rule" style="margin-top: 20px;"></div>
+    <div class="mono faint" style="margin-top: 12px; font-size: 10px; letter-spacing: 0.18em;">CURATED · BANGALORE · v1.0</div>
+  </aside>
+</section>
+
+<footer class="foot">
+  <div class="foot__nav">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="vibe-magic.html">VIBE MAGIC</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div>© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · BUILT BY PUNEET ARORA</div>
+</footer>
+
+</div>
+
+<script src="assets/site.js"></script>
+<script>
+  // chakra spokes
+  (function(){
+    var g = document.getElementById('spokes'); if (!g) return;
+    var html = '';
+    for (var i = 0; i < 24; i++) {
+      var a = (i * 15) * Math.PI / 180;
+      var x1 = 100 + Math.cos(a) * 16, y1 = 100 + Math.sin(a) * 16;
+      var x2 = 100 + Math.cos(a) * 90, y2 = 100 + Math.sin(a) * 90;
+      html += '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>';
+    }
+    g.innerHTML = html;
+  })();
+
+  // count-up
+  (function(){
+    var els = document.querySelectorAll('.stat-strip .v[data-count]');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        io.unobserve(e.target);
+        var t = +e.target.dataset.count, start = performance.now(), dur = 1100;
+        (function tick(now){
+          var p = Math.min((now - start) / dur, 1);
+          e.target.textContent = Math.round(t * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(tick);
+        })(start);
+      });
+    }, { threshold: 0.4 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+
+  // search + filter
+  (function(){
+    var q = document.getElementById('q');
+    var chips = document.querySelectorAll('.chip');
+    var cards = document.querySelectorAll('.skill');
+    var sections = document.querySelectorAll('.cat-section');
+    var activeFilter = 'all';
+
+    function apply(){
+      var term = (q.value || '').trim().toLowerCase();
+      sections.forEach(function(sec){
+        var cat = sec.dataset.cat;
+        var anyVisible = false;
+        sec.querySelectorAll('.skill').forEach(function(card){
+          var matchesCat = (activeFilter === 'all' || activeFilter === cat);
+          var hay = (card.textContent + ' ' + (card.dataset.tags || '')).toLowerCase();
+          var matchesTerm = !term || hay.indexOf(term) !== -1;
+          var show = matchesCat && matchesTerm;
+          card.style.display = show ? '' : 'none';
+          if (show) anyVisible = true;
+        });
+        sec.style.display = anyVisible ? '' : 'none';
+      });
+    }
+    q && q.addEventListener('input', apply);
+    chips.forEach(function(c){
+      c.addEventListener('click', function(){
+        chips.forEach(function(x){ x.classList.remove('is-active'); });
+        c.classList.add('is-active');
+        activeFilter = c.dataset.filter;
+        apply();
+      });
+    });
+  })();
+</script>
+</body>
+</html>

@@ -10,6 +10,92 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
 <link rel="stylesheet" href="assets/site.css">
+<style>
+  :root {
+    --saffron: #ff9933;
+    --india-green: #138808;
+    --chakra-blue: #6c8fd6;
+  }
+  [data-theme="forest"] {
+    --saffron: #c95d00;
+    --india-green: #0f6b06;
+    --chakra-blue: #2546a3;
+  }
+  .vm-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);
+  }
+  .vm-card {
+    border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    background: var(--surface); padding: 0;
+    display: flex; flex-direction: column;
+    position: relative; overflow: hidden;
+    text-decoration: none; color: inherit;
+    transition: background .2s, transform .2s;
+  }
+  .vm-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+    background: var(--accent, var(--signal));
+    opacity: .8;
+  }
+  .vm-card:hover { background: var(--surface-2); transform: translateY(-2px); }
+  .vm-card.live { --accent: var(--saffron); }
+  .vm-card.draft { --accent: var(--india-green); }
+  .vm-card__media {
+    aspect-ratio: 16 / 9;
+    background:
+      radial-gradient(ellipse at 30% 30%, rgba(255,153,51,0.10), transparent 60%),
+      radial-gradient(ellipse at 75% 75%, rgba(19,136,8,0.08), transparent 60%),
+      var(--bg-2);
+    border-bottom: 1px solid var(--rule);
+    position: relative; overflow: hidden;
+    padding: 22px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .vm-card__media .ornament svg { width: 160px; height: auto; opacity: .9; }
+  .vm-card__media .corner {
+    position: absolute; top: 12px; left: 14px;
+    font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.18em;
+    color: var(--accent); text-transform: uppercase;
+  }
+  .vm-card__media .corner-r {
+    position: absolute; top: 12px; right: 14px;
+    font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.16em;
+    color: var(--faint); text-transform: uppercase;
+  }
+  .vm-card__media .tri {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(to right,
+      var(--saffron) 0 33.3%,
+      #f7f5ee 33.3% 66.6%,
+      var(--india-green) 66.6% 100%);
+    opacity: .9;
+  }
+  .vm-card__body { padding: 22px 22px 22px; display: flex; flex-direction: column; gap: 10px; }
+  .vm-card__title {
+    font-family: var(--f-sans); font-size: 22px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.012em; line-height: 1.15;
+  }
+  .vm-card__desc {
+    font-family: var(--f-sans); font-size: 13px; line-height: 1.6;
+    color: var(--dim); margin: 0;
+  }
+  .vm-card__foot {
+    margin-top: 8px;
+    display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    padding-top: 12px; border-top: 1px dashed var(--rule);
+  }
+  .vm-card__foot .tag {
+    font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--faint);
+    border: 1px solid var(--rule); padding: 3px 7px; border-radius: 2px;
+  }
+  .vm-card__foot .open {
+    margin-left: auto;
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    color: var(--accent); text-transform: uppercase;
+  }
+</style>
 </head>
 <body>
 <div class="page">
@@ -37,21 +123,99 @@
 </header>
 
 <!-- HERO -->
-<section class="gut" style="padding-top: 64px; padding-bottom: 48px;">
+<section class="gut" style="padding-top: 64px; padding-bottom: 32px;">
   <div class="flex gap-12" style="align-items: center; margin-bottom: 24px;">
     <span class="tag">§ 01 · VIBE</span>
     <span class="faint mono" style="font-size: 11px;">// side quests, sketches, prompts that surprised me</span>
   </div>
   <h1 class="display" style="font-size: 68px; line-height: 0.98; letter-spacing: -0.028em; margin: 0 0 24px; max-width: 1100px;">
     Vibe Magic.<br>
-    <em>Coming soon.</em>
+    <em>The bench.</em>
   </h1>
   <p class="lede" style="max-width: 720px; margin: 0;">
     A bench for the playful, the unfinished, and the &ldquo;just-because.&rdquo;
     Experiments, side quests, and prompts that surprised me &mdash; the things that
-    don&rsquo;t fit a case study but are too good to lose. More soon.
+    don&rsquo;t fit a case study but are too good to lose.
   </p>
 </section>
+
+<!-- CARD GRID -->
+<section class="gut" style="padding-bottom: 64px;">
+  <div class="vm-grid">
+
+    <a href="skills-for-india.html" class="vm-card live">
+      <div class="vm-card__media">
+        <span class="corner">VM.01 · LIVE</span>
+        <span class="corner-r">DIRECTORY · 2026</span>
+        <div class="ornament" aria-hidden="true">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="84" fill="none" stroke="#6c8fd6" stroke-width="1.6"/>
+            <circle cx="100" cy="100" r="14" fill="none" stroke="#6c8fd6" stroke-width="1.6"/>
+            <g stroke="#6c8fd6" stroke-width="1.2" id="vm-spokes-1"></g>
+            <text x="100" y="106" text-anchor="middle" fill="#f7f5ee" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="22">India</text>
+          </svg>
+        </div>
+        <div class="tri"></div>
+      </div>
+      <div class="vm-card__body">
+        <div class="vm-card__title">Skills for India</div>
+        <p class="vm-card__desc">
+          A directory of Claude skills built for Indian use-cases &mdash; GST returns,
+          UPI receipts, Devanagari and South-Indian language work, RTI drafts, NCERT
+          explainers. 30 skills, six categories, searchable, with install lines and a
+          &ldquo;why this matters here&rdquo; note on every entry.
+        </p>
+        <div class="vm-card__foot">
+          <span class="tag">CLAUDE SKILLS</span>
+          <span class="tag">INDIA</span>
+          <span class="tag">DIRECTORY</span>
+          <span class="open">OPEN ↗</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="vm-card draft">
+      <div class="vm-card__media">
+        <span class="corner">VM.02 · DRAFT</span>
+        <span class="corner-r">NEXT UP</span>
+        <div class="ornament" aria-hidden="true">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="40" width="120" height="120" fill="none" stroke="#138808" stroke-width="1.4" stroke-dasharray="4 5" transform="rotate(15 100 100)"/>
+            <rect x="60" y="60" width="80" height="80" fill="none" stroke="#138808" stroke-width="1.4" transform="rotate(-15 100 100)"/>
+            <text x="100" y="108" text-anchor="middle" fill="#f7f5ee" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="22">soon</text>
+          </svg>
+        </div>
+        <div class="tri"></div>
+      </div>
+      <div class="vm-card__body">
+        <div class="vm-card__title">More on the bench</div>
+        <p class="vm-card__desc">
+          Two more side-quests in flight &mdash; a behavioural-nudge sandbox and a critique-as-a-service
+          agent. Both showing up here when they cross the &ldquo;worth-showing&rdquo; line.
+        </p>
+        <div class="vm-card__foot">
+          <span class="tag">IN PROGRESS</span>
+          <span class="open">WATCH THIS SPACE</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  (function(){
+    var g = document.getElementById('vm-spokes-1'); if (!g) return;
+    var html = '';
+    for (var i = 0; i < 24; i++) {
+      var a = (i * 15) * Math.PI / 180;
+      var x1 = 100 + Math.cos(a) * 16, y1 = 100 + Math.sin(a) * 16;
+      var x2 = 100 + Math.cos(a) * 82, y2 = 100 + Math.sin(a) * 82;
+      html += '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>';
+    }
+    g.innerHTML = html;
+  })();
+</script>
 
 <footer class="foot">
   <div class="foot__nav">
