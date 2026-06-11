@@ -168,9 +168,9 @@
 
   function fillOcean() {
     var g = ctx.createRadialGradient(cx - R * 0.35, cy - R * 0.35, R * 0.1, cx, cy, R);
-    g.addColorStop(0, 'rgba(72, 120, 120, 0.30)');
-    g.addColorStop(0.7, 'rgba(40, 80, 90, 0.20)');
-    g.addColorStop(1, 'rgba(18, 38, 48, 0.10)');
+    g.addColorStop(0, 'rgba(85, 85, 90, 0.32)');
+    g.addColorStop(0.7, 'rgba(50, 50, 55, 0.22)');
+    g.addColorStop(1, 'rgba(22, 22, 26, 0.12)');
     ctx.fillStyle = g;
     ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.fill();
   }
@@ -283,10 +283,10 @@
       if (p[1] < minY) minY = p[1]; if (p[1] > maxY) maxY = p[1];
     }
     var grad = ctx.createLinearGradient(0, minY, 0, maxY);
-    grad.addColorStop(0,    'rgba(255, 150, 45, 0.78)');  // brighter saffron, north
-    grad.addColorStop(0.45, 'rgba(255, 175, 70, 0.62)');  // warm middle
-    grad.addColorStop(0.75, 'rgba(220, 175, 90, 0.45)');  // muted
-    grad.addColorStop(1,    'rgba(85, 165, 90, 0.55)');   // green, south
+    grad.addColorStop(0,    'rgba(245, 140, 45, 0.55)');  // saffron, north (toned down)
+    grad.addColorStop(0.45, 'rgba(220, 160, 75, 0.45)');  // warm middle
+    grad.addColorStop(0.75, 'rgba(180, 165, 90, 0.40)');  // muted
+    grad.addColorStop(1,    'rgba(70, 150, 80, 0.60)');   // green, south
     ctx.fillStyle = grad;
     ctx.fillRect(minX - 8, minY - 8, (maxX - minX) + 16, (maxY - minY) + 16);
     ctx.restore();
@@ -309,8 +309,8 @@
     ctx.clip();
     var grad = ctx.createLinearGradient(sxSW, sySW, sxNE, syNE);
     grad.addColorStop(0,    'rgba(18, 70, 35, 0)');
-    grad.addColorStop(0.55, 'rgba(18, 70, 35, 0.18)');
-    grad.addColorStop(1,    'rgba(12, 55, 28, 0.78)');
+    grad.addColorStop(0.5,  'rgba(18, 70, 35, 0.30)');
+    grad.addColorStop(1,    'rgba(10, 50, 25, 0.88)');
     ctx.fillStyle = grad;
     var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
     for (var i = 0; i < pts.length; i++) {
@@ -342,8 +342,8 @@
     }
     var grad = ctx.createRadialGradient(csx, csy, maxRad * 0.45, csx, csy, maxRad * 1.05);
     grad.addColorStop(0,   'rgba(20, 80, 35, 0)');
-    grad.addColorStop(0.7, 'rgba(20, 80, 35, 0.20)');
-    grad.addColorStop(1,   'rgba(10, 55, 25, 0.55)');
+    grad.addColorStop(0.6, 'rgba(20, 80, 35, 0.32)');
+    grad.addColorStop(1,   'rgba(10, 55, 25, 0.72)');
     ctx.fillStyle = grad;
     ctx.fillRect(csx - maxRad * 1.2, csy - maxRad * 1.2, maxRad * 2.4, maxRad * 2.4);
     ctx.restore();
@@ -409,7 +409,7 @@
     for (var i = 0; i < land.length; i++) drawFeatureFill(land[i], rotY, tilt, 'rgba(58, 92, 58, 0.55)');
 
     // India layered fill
-    drawFeatureFill(indiaFeature, rotY, tilt, 'rgba(255, 140, 50, 0.45)'); // bright saffron base
+    drawFeatureFill(indiaFeature, rotY, tilt, 'rgba(255, 140, 50, 0.32)'); // saffron base (toned down)
     drawIndiaGradient(rotY, tilt);                                          // saffron→green vertical
     drawIndiaBorderWash(rotY, tilt);                                        // darker green at the edges
     drawNorthEastGreenWash(rotY, tilt);                                     // strong dark green N + NE
@@ -429,7 +429,7 @@
     drawFeatureStroke(indiaFeature, rotY, tilt, 'rgba(255, 255, 255, 0.40)', 2.4);
     ctx.restore();
     // Crisp dark-green outline on top of everything
-    drawFeatureStroke(indiaFeature, rotY, tilt, 'rgba(35, 100, 50, 0.95)', 1.2);
+    drawFeatureStroke(indiaFeature, rotY, tilt, 'rgba(30, 90, 45, 0.98)', 1.3);
     ctx.restore();
   }
 
@@ -472,7 +472,7 @@
       paths[idx].lineTo(B.x, B.y);
     }
     ctx.lineCap = 'round';
-    ctx.lineWidth = 1.4 * DPR;
+    ctx.lineWidth = 1.7 * DPR;
     for (var bi = 0; bi < BUCKETS; bi++) {
       if (!paths[bi]) continue;
       var aOut = ((bi + 0.5) / BUCKETS);
@@ -533,9 +533,9 @@
     drawLand(rotY, tilt);
     strokeSphere();
 
-    // Persistent faint base arcs
+    // Persistent base arcs — prominent so the connections always read
     for (var j = 0; j < ARC_TARGETS.length; j++) {
-      drawArcWithAlpha(C.bengaluru, C[ARC_TARGETS[j]], rotY, tilt, 1.0, 170, 235, 175, function () { return 0.22; });
+      drawArcWithAlpha(C.bengaluru, C[ARC_TARGETS[j]], rotY, tilt, 1.0, 120, 230, 140, function () { return 0.50; });
     }
     // Animated pulses (skipped under reduce-motion)
     if (!reduceMotion) {
