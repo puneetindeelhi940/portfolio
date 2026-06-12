@@ -3,356 +3,814 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Puneet Arora — Principal Product Designer & AI Design Leader</title>
-<meta name="description" content="Principal Product Designer & AI Design Leader shaping intelligent enterprise experiences. 20 years across Dell, Boeing, HP, Software AG. Personalization at scale, GenAI, design leadership.">
+<title>Puneet Arora — Designing intelligent enterprise experiences for the AI era</title>
+<meta name="description" content="UX leadership for the AI-first enterprise. Twenty years across Dell, Boeing, HP and Software AG — leading enterprise UX, AI-enabled experiences, personalization at scale, and design transformation.">
 <meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0a0a0b">
+<script>document.documentElement.className+=' js';</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
-<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
-<link rel="stylesheet" href="assets/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;450;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   PUNEET ARORA — Executive UX Leadership
+   Premium black & white system. Apple keynote × OpenAI × Linear.
+   Self-contained: tokens, layout, motion. Dark, cinematic, calm.
+   ============================================================ */
+
+:root{
+  --bg:#09090a;
+  --bg-2:#0e0e10;
+  --bg-3:#131316;
+  --ink:#f6f6f4;
+  --ink-soft:rgba(246,246,244,.74);
+  --dim:rgba(246,246,244,.56);
+  --faint:rgba(246,246,244,.38);
+  --ghost:rgba(246,246,244,.16);
+  --line:rgba(255,255,255,.085);
+  --line-2:rgba(255,255,255,.14);
+  --silver:#c8ccd2;
+  --accent:#7aa2ff;          /* subtle electric blue, used sparingly */
+  --accent-soft:rgba(122,162,255,.16);
+  --glass:rgba(255,255,255,.025);
+
+  --f-serif:"Fraunces", Georgia, serif;
+  --f-sans:"Inter", system-ui, -apple-system, sans-serif;
+
+  --maxw:1180px;
+  --pad:clamp(20px, 5vw, 64px);
+  --r:18px;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--f-sans);
+  font-weight:400;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  letter-spacing:-0.005em;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent-soft);color:#fff}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+h1,h2,h3,h4,p{margin:0}
+
+/* film-grain + vignette overlay across the whole page */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:60;
+  background:
+    radial-gradient(120% 80% at 50% -10%, transparent 55%, rgba(0,0,0,.45) 100%);
+  mix-blend-mode:multiply;opacity:.7;
+}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+/* small caps eyebrow / labels */
+.eyebrow{
+  font-size:11px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--faint);
+}
+.eyebrow .i{color:var(--accent)}
+
+.serif{font-family:var(--f-serif);font-weight:340;letter-spacing:-0.01em}
+
+/* ---------- NAV ---------- */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px var(--pad);
+  transition:background .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.nav.is-stuck{
+  background:rgba(9,9,10,.72);
+  backdrop-filter:blur(16px) saturate(1.2);
+  -webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border-bottom:1px solid var(--line);
+}
+.nav__brand{display:flex;align-items:center;gap:11px;font-weight:500;font-size:15px;letter-spacing:-0.01em}
+.nav__dot{width:7px;height:7px;border-radius:50%;background:var(--ink);
+  box-shadow:0 0 0 0 var(--accent);animation:pulse 4.5s var(--ease) infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(122,162,255,.0)}50%{box-shadow:0 0 0 5px rgba(122,162,255,.10)}}
+.nav__brand small{color:var(--faint);font-weight:400;font-size:11.5px;letter-spacing:.06em}
+.nav__links{display:flex;align-items:center;gap:30px}
+.nav__links a{font-size:13px;color:var(--dim);transition:color .25s}
+.nav__links a:hover{color:var(--ink)}
+.nav__cta{
+  font-size:12.5px;letter-spacing:.02em;color:var(--ink);
+  padding:9px 17px;border:1px solid var(--line-2);border-radius:100px;
+  transition:border-color .25s, background .25s;
+}
+.nav__cta:hover{border-color:var(--ink-soft);background:var(--glass)}
+.nav__menu{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:8px}
+@media(max-width:860px){
+  .nav__links{display:none}
+  .nav__menu{display:block}
+}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:14px;font-weight:450;letter-spacing:-0.005em;
+  padding:14px 24px;border-radius:100px;cursor:pointer;
+  transition:transform .3s var(--ease), background .3s, border-color .3s, color .3s;
+  border:1px solid transparent;white-space:nowrap;
+}
+.btn .arr{transition:transform .35s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn--solid{background:var(--ink);color:#0a0a0a;font-weight:500}
+.btn--solid:hover{transform:translateY(-2px);background:#fff}
+.btn--ghost{border-color:var(--line-2);color:var(--ink-soft)}
+.btn--ghost:hover{border-color:var(--ink-soft);color:var(--ink);background:var(--glass)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;
+  padding-top:120px;padding-bottom:80px;overflow:hidden;
+}
+/* cinematic aurora field — slow, restrained */
+.hero__field{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero__field span{
+  position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;
+  will-change:transform;
+}
+.hero__field .a{width:62vw;height:62vw;left:-14vw;top:-22vw;
+  background:radial-gradient(circle,rgba(122,162,255,.22),transparent 62%);
+  animation:drift1 26s var(--ease) infinite alternate}
+.hero__field .b{width:48vw;height:48vw;right:-10vw;top:8vw;
+  background:radial-gradient(circle,rgba(120,130,160,.16),transparent 60%);
+  animation:drift2 32s var(--ease) infinite alternate}
+.hero__field .c{width:40vw;height:40vw;left:24vw;bottom:-18vw;
+  background:radial-gradient(circle,rgba(200,204,210,.08),transparent 60%);
+  animation:drift3 30s var(--ease) infinite alternate}
+@keyframes drift1{to{transform:translate(8vw,6vw) scale(1.12)}}
+@keyframes drift2{to{transform:translate(-6vw,4vw) scale(1.08)}}
+@keyframes drift3{to{transform:translate(4vw,-5vw) scale(1.1)}}
+/* fine grid + grain over the field */
+.hero__field::before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(to right, var(--line) 1px, transparent 1px) 0 0/72px 72px,
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px) 0 0/72px 72px;
+  -webkit-mask-image:radial-gradient(120% 90% at 50% 30%, #000 20%, transparent 72%);
+  mask-image:radial-gradient(120% 90% at 50% 30%, #000 20%, transparent 72%);
+  opacity:.5;
+}
+.hero__field::after{
+  content:"";position:absolute;inset:-50%;
+  background:linear-gradient(180deg, transparent, rgba(9,9,10,.9) 92%);
+}
+.hero .wrap{position:relative;z-index:2;width:100%}
+
+.hero__kicker{display:flex;align-items:center;gap:14px;margin-bottom:34px}
+.hero__kicker .ln{height:1px;width:46px;background:var(--line-2)}
+.hero__title{
+  font-family:var(--f-serif);
+  font-weight:300;
+  font-size:clamp(40px, 6.6vw, 92px);
+  line-height:1.02;
+  letter-spacing:-0.028em;
+  max-width:16ch;
+}
+.hero__title em{font-style:italic;color:var(--silver);font-weight:340}
+.hero__title .grad{
+  background:linear-gradient(100deg,#fff 10%,var(--accent) 130%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  font-style:italic;
+}
+.hero__sub{
+  margin-top:30px;max-width:60ch;font-size:clamp(15.5px,1.7vw,18.5px);
+  line-height:1.62;color:var(--ink-soft);font-weight:350;
+}
+.hero__sub b{color:var(--ink);font-weight:500}
+.hero__ctas{display:flex;gap:14px;margin-top:40px;flex-wrap:wrap}
+.hero__trust{
+  margin-top:64px;padding-top:26px;border-top:1px solid var(--line);
+  display:flex;align-items:center;gap:14px 34px;flex-wrap:wrap;
+}
+.hero__trust .lbl{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
+.hero__trust .org{font-size:13px;letter-spacing:.04em;color:var(--dim);font-weight:450}
+
+.scrollcue{
+  position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:3;
+  font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--faint);
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+}
+.scrollcue .bar{width:1px;height:36px;background:linear-gradient(var(--ghost),transparent);
+  position:relative;overflow:hidden}
+.scrollcue .bar::after{content:"";position:absolute;top:-50%;left:0;width:100%;height:50%;
+  background:var(--accent);animation:cue 2.4s var(--ease) infinite}
+@keyframes cue{0%{top:-50%}60%,100%{top:120%}}
+@media(max-width:680px){.scrollcue{display:none}}
+
+/* ============================================================
+   SECTION SHELL
+   ============================================================ */
+.section{position:relative;padding:clamp(80px,11vw,150px) 0}
+.section--alt{background:linear-gradient(180deg,var(--bg-2),var(--bg))}
+.sechead{margin-bottom:clamp(44px,6vw,76px);max-width:760px}
+.sechead .eyebrow{display:block;margin-bottom:20px}
+.sechead h2{
+  font-family:var(--f-serif);font-weight:320;
+  font-size:clamp(30px,4.4vw,52px);line-height:1.08;letter-spacing:-0.022em;
+}
+.sechead h2 em{font-style:italic;color:var(--silver)}
+.sechead p{margin-top:20px;font-size:16.5px;color:var(--dim);max-width:62ch;font-weight:350}
+
+/* ---------- EXECUTIVE SNAPSHOT ---------- */
+.metrics{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  background:var(--glass);
+}
+.metrics .m{padding:30px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metrics .m .n{font-family:var(--f-serif);font-weight:300;font-size:clamp(34px,4.6vw,50px);
+  letter-spacing:-0.03em;line-height:1}
+.metrics .m .n sup{font-size:.45em;color:var(--accent);vertical-align:super;font-family:var(--f-sans)}
+.metrics .m .k{margin-top:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.metrics .m .d{margin-top:7px;font-size:13px;color:var(--dim);line-height:1.5}
+@media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.metrics{grid-template-columns:1fr}}
+
+.snapgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.snap{
+  padding:28px 26px;border:1px solid var(--line);border-radius:var(--r);
+  background:var(--glass);transition:border-color .4s,transform .4s var(--ease),background .4s;
+}
+.snap:hover{border-color:var(--line-2);transform:translateY(-3px);background:rgba(255,255,255,.04)}
+.snap .ic{font-size:11px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:16px}
+.snap h3{font-size:17.5px;font-weight:500;letter-spacing:-0.01em;margin-bottom:9px}
+.snap p{font-size:13.5px;color:var(--dim);line-height:1.55;font-weight:350}
+@media(max-width:820px){.snapgrid{grid-template-columns:1fr}}
+
+/* ---------- SIGNATURE WORK ---------- */
+.story{
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  background:linear-gradient(180deg,var(--glass),transparent);
+  margin-bottom:22px;transition:border-color .4s;
+}
+.story:hover{border-color:var(--line-2)}
+.story__head{
+  display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:start;
+  padding:34px clamp(22px,3.6vw,44px);cursor:pointer;
+}
+.story__idx{font-family:var(--f-serif);font-size:15px;color:var(--faint);font-style:italic;padding-top:6px}
+.story__meta .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:block}
+.story__meta h3{font-family:var(--f-serif);font-weight:330;font-size:clamp(22px,2.9vw,32px);
+  line-height:1.12;letter-spacing:-0.018em}
+.story__meta .client{margin-top:10px;font-size:13.5px;color:var(--dim)}
+.story__toggle{
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line-2);
+  display:flex;align-items:center;justify-content:center;color:var(--ink-soft);
+  transition:transform .45s var(--ease),background .3s,border-color .3s;flex-shrink:0;
+}
+.story__toggle svg{width:16px;height:16px;transition:transform .45s var(--ease)}
+.story:hover .story__toggle{border-color:var(--ink-soft);background:var(--glass)}
+.story.is-open .story__toggle svg{transform:rotate(45deg)}
+
+.story__body{
+  display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease);
+}
+.story.is-open .story__body{grid-template-rows:1fr}
+.story__inner{overflow:hidden}
+.story__pad{padding:0 clamp(22px,3.6vw,44px) 38px}
+.arc{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:26px}
+.arc .beat{background:var(--bg-2);padding:20px 22px}
+.arc .beat .lbl{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);
+  display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.arc .beat .lbl .step{color:var(--faint)}
+.arc .beat p{font-size:14px;color:var(--ink-soft);line-height:1.58;font-weight:350}
+.arc .beat--wide{grid-column:1 / -1}
+@media(max-width:760px){.arc{grid-template-columns:1fr}.arc .beat--wide{grid-column:auto}}
+.story__foot{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.story__outcome{display:flex;gap:30px;flex-wrap:wrap}
+.story__outcome .o .v{font-family:var(--f-serif);font-size:24px;font-weight:320;letter-spacing:-0.02em}
+.story__outcome .o .l{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-top:4px}
+@media(max-width:640px){
+  .story__head{grid-template-columns:1fr auto;gap:16px}
+  .story__idx{display:none}
+}
+
+/* ---------- HOW I LEAD ---------- */
+.lead{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(34px,5vw,72px);align-items:center}
+.lead__portrait{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);
+  background:var(--bg-3);aspect-ratio:5/6}
+.lead__portrait img{width:100%;height:100%;object-fit:cover;object-position:center top;
+  filter:grayscale(1) contrast(1.04);transition:filter .8s var(--ease),transform 1.2s var(--ease)}
+.lead__portrait:hover img{filter:grayscale(.55) contrast(1.05);transform:scale(1.03)}
+.lead__portrait::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 50%,rgba(9,9,10,.55))}
+.lead__quote{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;
+  font-family:var(--f-serif);font-style:italic;font-weight:330;font-size:18px;line-height:1.4;color:var(--ink)}
+.leadlist{list-style:none;padding:0;margin:0}
+.leadlist li{padding:20px 0;border-bottom:1px solid var(--line);display:grid;
+  grid-template-columns:auto 1fr;gap:20px;align-items:baseline}
+.leadlist li:first-child{padding-top:0}
+.leadlist .num{font-family:var(--f-serif);font-style:italic;color:var(--accent);font-size:14px}
+.leadlist h4{font-size:16.5px;font-weight:500;letter-spacing:-0.01em;margin-bottom:6px}
+.leadlist p{font-size:13.5px;color:var(--dim);line-height:1.55;font-weight:350}
+@media(max-width:880px){.lead{grid-template-columns:1fr}.lead__portrait{max-width:420px}}
+
+/* ---------- POV ---------- */
+.povgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pov{
+  padding:30px 28px;border:1px solid var(--line);border-radius:var(--r);
+  background:var(--glass);position:relative;overflow:hidden;
+  transition:border-color .4s,transform .4s var(--ease);min-height:210px;
+  display:flex;flex-direction:column;
+}
+.pov:hover{border-color:var(--line-2);transform:translateY(-3px)}
+.pov .no{font-family:var(--f-serif);font-style:italic;font-size:13px;color:var(--faint);margin-bottom:auto}
+.pov h3{font-family:var(--f-serif);font-weight:330;font-size:21px;line-height:1.18;letter-spacing:-0.015em;margin:24px 0 12px}
+.pov p{font-size:13.5px;color:var(--dim);line-height:1.55;font-weight:350}
+.pov::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--accent);
+  transition:width .6s var(--ease)}
+.pov:hover::before{width:100%}
+@media(max-width:880px){.povgrid{grid-template-columns:1fr}}
+
+/* ---------- PRINCIPLES ---------- */
+.princ{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.princ .p{background:var(--bg);padding:34px 30px;transition:background .4s}
+.princ .p:hover{background:var(--bg-2)}
+.princ .p .k{font-family:var(--f-serif);font-style:italic;font-size:13px;color:var(--accent);margin-bottom:18px}
+.princ .p h3{font-size:19px;font-weight:500;letter-spacing:-0.012em;line-height:1.2;margin-bottom:10px}
+.princ .p p{font-size:13.5px;color:var(--dim);line-height:1.55;font-weight:350}
+@media(max-width:820px){.princ{grid-template-columns:1fr}}
+
+/* ---------- ABOUT ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,72px);align-items:start}
+.about__body p{font-size:16.5px;line-height:1.66;color:var(--ink-soft);font-weight:350;margin-bottom:22px}
+.about__body p:last-child{margin-bottom:0}
+.about__body strong{color:var(--ink);font-weight:500}
+.about__lead{font-family:var(--f-serif)!important;font-style:italic;font-weight:330;
+  font-size:clamp(20px,2.4vw,26px)!important;line-height:1.4!important;color:var(--ink)!important}
+.passions{margin-top:30px;display:flex;flex-wrap:wrap;gap:9px}
+.passions span{font-size:12.5px;color:var(--dim);padding:7px 15px;border:1px solid var(--line);
+  border-radius:100px;transition:border-color .3s,color .3s}
+.passions span:hover{border-color:var(--line-2);color:var(--ink)}
+.about__side{border-left:1px solid var(--line);padding-left:clamp(20px,3vw,40px)}
+.about__side .row{padding:16px 0;border-bottom:1px solid var(--line)}
+.about__side .row:first-child{padding-top:0}
+.about__side .row:last-child{border-bottom:0}
+.about__side .l{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:5px}
+.about__side .v{font-size:14.5px;color:var(--ink-soft)}
+@media(max-width:880px){.about{grid-template-columns:1fr}.about__side{border-left:0;padding-left:0;
+  border-top:1px solid var(--line);padding-top:28px}}
+
+/* ---------- FINAL CTA ---------- */
+.cta{position:relative;overflow:hidden;text-align:center;
+  padding:clamp(90px,13vw,170px) 0}
+.cta__field{position:absolute;inset:0;z-index:0}
+.cta__field span{position:absolute;border-radius:50%;filter:blur(80px);opacity:.42}
+.cta__field .a{width:50vw;height:50vw;left:50%;top:30%;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(122,162,255,.2),transparent 62%);
+  animation:drift1 28s var(--ease) infinite alternate}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--f-serif);font-weight:300;
+  font-size:clamp(32px,5.2vw,64px);line-height:1.08;letter-spacing:-0.026em;max-width:18ch;margin:0 auto}
+.cta h2 em{font-style:italic;color:var(--silver)}
+.cta p{margin:26px auto 0;max-width:54ch;font-size:17px;color:var(--dim);font-weight:350}
+.cta__btns{display:flex;gap:14px;justify-content:center;margin-top:40px;flex-wrap:wrap}
+.cta__chs{margin-top:46px;display:flex;gap:12px 36px;justify-content:center;flex-wrap:wrap;
+  font-size:13px;color:var(--dim)}
+.cta__chs a{color:var(--ink-soft);border-bottom:1px solid var(--ghost);padding-bottom:2px;transition:border-color .3s}
+.cta__chs a:hover{border-color:var(--ink-soft)}
+
+/* ---------- FOOTER ---------- */
+.foot{border-top:1px solid var(--line);padding:34px 0 40px}
+.foot .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.foot__nav{display:flex;gap:24px;flex-wrap:wrap}
+.foot__nav a{font-size:12.5px;color:var(--dim);transition:color .25s}
+.foot__nav a:hover{color:var(--ink)}
+.foot__meta{font-size:11.5px;color:var(--faint);letter-spacing:.04em}
+
+/* ---------- REVEAL (progressive enhancement: only hide when JS is active) ---------- */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+.reveal[data-d="3"]{transition-delay:.24s}
+.reveal[data-d="4"]{transition-delay:.32s}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero__field span{animation:none}
+}
+</style>
 </head>
 <body>
-<div class="page">
 
-<!-- TOPBAR -->
-<header class="topbar" data-screen-label="topbar">
-  <a href="home.html" class="topbar__brand">
-    <span class="dot"></span>
-    <b>Puneet Arora</b>
-    
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="home.html" class="nav__brand">
+    <span class="nav__dot"></span>
+    Puneet Arora <small>UX LEADERSHIP</small>
   </a>
-  <nav class="topbar__nav" aria-label="Primary">
-    <a href="bio.html">ABOUT</a>
-    <a href="home.html" class="is-current">HOME</a>
-    <a href="work.html">WORK</a>
-    <a href="ai-lab.html">AI LAB</a>
-    <a href="vibe-magic.html">VIBE MAGIC</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
-  <div class="topbar__meta">
-    
-    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
-      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
-      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
-    </span>
-    <span id="clock">IST 11:47</span>
-    
+  <div class="nav__links">
+    <a href="#work">Signature Work</a>
+    <a href="#lead">How I Lead</a>
+    <a href="#thinking">Thinking</a>
+    <a href="#about">About</a>
+    <a href="#connect" class="nav__cta">Let's Connect</a>
   </div>
+  <button class="nav__menu" aria-label="Menu" onclick="document.querySelector('.nav__links').scrollIntoView();location.hash='#connect'">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+</nav>
+
+<!-- ============================ HERO ============================ -->
+<header class="hero">
+  <div class="hero__field" aria-hidden="true">
+    <span class="a"></span><span class="b"></span><span class="c"></span>
+  </div>
+  <div class="wrap">
+    <div class="hero__kicker reveal">
+      <span class="ln"></span>
+      <span class="eyebrow">Enterprise UX · AI Experience · Design Transformation</span>
+    </div>
+    <h1 class="hero__title reveal" data-d="1">
+      Designing intelligent<br>
+      enterprise experiences<br>
+      for the <span class="grad">AI-first future.</span>
+    </h1>
+    <p class="hero__sub reveal" data-d="2">
+      Twenty years leading product thinking, enterprise UX, AI-enabled experiences, personalization,
+      and strategic transformation across complex ecosystems. I turn ambiguity into systems
+      <b>people trust</b> and <b>businesses scale</b> — currently leading Personalization at Scale for Dell.com.
+    </p>
+    <div class="hero__ctas reveal" data-d="3">
+      <a href="#work" class="btn btn--solid">View Signature Work <span class="arr">→</span></a>
+      <a href="#lead" class="btn btn--ghost">Leadership Philosophy</a>
+    </div>
+    <div class="hero__trust reveal" data-d="4">
+      <span class="lbl">Trusted across</span>
+      <span class="org">Dell Technologies</span>
+      <span class="org">Boeing</span>
+      <span class="org">Software AG</span>
+      <span class="org">HP</span>
+    </div>
+  </div>
+  <div class="scrollcue"><span>Scroll</span><span class="bar"></span></div>
 </header>
 
-<!-- HERO -->
-<section class="hero" data-screen-label="hero">
-  <div>
-    <div class="flex gap-12" style="align-items: center; margin-bottom: 36px;">
-      <span class="faint mono" style="font-size: 11px; letter-spacing: 0.18em;">PRINCIPAL PRODUCT DESIGNER · AI DESIGN LEADER · ENTERPRISE TRANSFORMATION</span>
+<!-- ===================== EXECUTIVE SNAPSHOT ===================== -->
+<section class="section" id="snapshot">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow"><span class="i">§</span> &nbsp;Executive Snapshot</span>
+      <h2>Two decades of <em>enterprise scale</em>, delivered.</h2>
+      <p>A senior design leader operating where AI, business strategy, and human behaviour intersect —
+         building experiences and the teams that sustain them.</p>
     </div>
 
-    <h1 class="hero__big">
-      Designing intelligent<br>
-      <em>enterprise experiences</em><br>
-      for the AI era.
-    </h1>
-
-    <p class="hero__sub">
-      Twenty years shaping scalable, human-centered enterprise ecosystems across
-      <strong>AI, personalization, behavioural science,</strong> and enterprise complexity.
-      Currently leading <strong>Personalization at Scale</strong> for Dell.com.
-      Previously Boeing, Software AG, HP.
-    </p>
-
-    <div class="hero__ctas">
-      <a href="work.html" class="btn btn--primary">EXPLORE STRATEGIC WORK <span>→</span></a>
-      <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost">DOWNLOAD RESUME</a>
-      <a href="contact.html" class="btn btn--ghost">CONNECT FOR CONVERSATION</a>
+    <div class="metrics reveal">
+      <div class="m"><div class="n">20<sup>+</sup></div><div class="k">Years</div><div class="d">Product · enterprise · AI · platform</div></div>
+      <div class="m"><div class="n">4</div><div class="k">Fortune-500</div><div class="d">Dell · Boeing · Software AG · HP</div></div>
+      <div class="m"><div class="n">33</div><div class="k">Designers led</div><div class="d">Across five time zones</div></div>
+      <div class="m"><div class="n">8</div><div class="k">Patents</div><div class="d">+ 8 technical publications</div></div>
     </div>
 
-    <div class="hero__trust">
-      <span class="lbl">TRUSTED ACROSS</span>
-      <span class="org">DELL TECHNOLOGIES</span>
-      <span class="org">BOEING INDIA</span>
-      <span class="org">SOFTWARE AG</span>
-      <span class="org">HP R&amp;D</span>
-    </div>
-  </div>
-
-  <!-- Profile card -->
-  <aside class="panel" style="padding: 18px; align-self: start;">
-    <div class="flex" style="justify-content: space-between; border-bottom: 1px solid var(--rule); padding-bottom: 10px; margin-bottom: 14px; font-size: 11px;">
-      <span class="dim mono" style="letter-spacing: 0.14em;">AT A GLANCE</span>
-      <span class="signal">● OPEN TO ROLE</span>
-    </div>
-    <div class="kv-grid">
-      <div class="kv-row"><span class="k">name</span><span class="v">Puneet Arora</span></div>
-      <div class="kv-row"><span class="k">role</span><span class="v">Principal Product Designer</span></div>
-      <div class="kv-row"><span class="k">experience</span><span class="v">20 years</span></div>
-      <div class="kv-row"><span class="k">based</span><span class="v">Bangalore · open globally</span></div>
-      <div class="kv-row"><span class="k">focus</span><span class="v">enterprise · AI · B2B + B2C</span></div>
-      <div class="kv-row"><span class="k">currently</span><span class="v">Personalization at Scale, Dell</span></div>
-      <div class="kv-row"><span class="k">leads</span><span class="v">33 designers · 5 time zones</span></div>
-      <div class="kv-row"><span class="k">awards</span><span class="v">Dell President · ET Digital ’22 · HP Director</span></div>
-      <div class="kv-row" style="border-bottom: none;"><span class="k">patents</span><span class="v">8 granted · 8 publications</span></div>
-    </div>
-  </aside>
-</section>
-
-<!-- HOW I HELP ORGANIZATIONS -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 02</span>
-    <span class="shead__title">HOW I HELP ORGANIZATIONS</span>
-    <span class="shead__sub">// making AI useful, scalable, and trusted</span>
-  </div>
-</div>
-<div class="help" style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
-  <div class="cell" style="padding: 32px var(--pad-x); border-left: 1px solid var(--rule);">
-    <div class="mono signal" style="font-size: 11px; letter-spacing: 0.16em; margin-bottom: 16px;">01 · STRATEGY</div>
-    <div class="sans ink" style="font-size: 22px; font-weight: 500; letter-spacing: -0.015em; margin-bottom: 12px; line-height: 1.2;">AI Experience Strategy</div>
-    <div class="dim sans" style="font-size: 14px; line-height: 1.6;">Turning emerging AI capabilities into enterprise-ready experiences — from prompt frameworks to evaluation rubrics to shipping product.</div>
-  </div>
-  <div class="cell" style="padding: 32px var(--pad-x); border-left: 1px solid var(--rule);">
-    <div class="mono signal" style="font-size: 11px; letter-spacing: 0.16em; margin-bottom: 16px;">02 · SCALE</div>
-    <div class="sans ink" style="font-size: 22px; font-weight: 500; letter-spacing: -0.015em; margin-bottom: 12px; line-height: 1.2;">Personalization at Scale</div>
-    <div class="dim sans" style="font-size: 14px; line-height: 1.6;">Designing intelligent systems grounded in behavioural science — adaptive layouts, intent estimation, multi-modal interfaces serving millions.</div>
-  </div>
-  <div class="cell" style="padding: 32px var(--pad-x); border-left: 1px solid var(--rule);">
-    <div class="mono signal" style="font-size: 11px; letter-spacing: 0.16em; margin-bottom: 16px;">03 · TRANSFORM</div>
-    <div class="sans ink" style="font-size: 22px; font-weight: 500; letter-spacing: -0.015em; margin-bottom: 12px; line-height: 1.2;">Enterprise Transformation</div>
-    <div class="dim sans" style="font-size: 14px; line-height: 1.6;">Creating clarity across ambiguity, stakeholders, and systems — building org-level design capability that outlasts any single project.</div>
-  </div>
-</div>
-
-<!-- PROOF / CREDIBILITY -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 03</span>
-    <span class="shead__title">CREDIBILITY</span>
-    <span class="shead__sub">// the proof, at a scan</span>
-  </div>
-</div>
-<div class="manifest">
-  <div class="cell">
-    <div class="n">20</div>
-    <div class="k">YEARS</div>
-    <div class="d">product · enterprise · AI · platform</div>
-  </div>
-  <div class="cell">
-    <div class="n">4</div>
-    <div class="k">FORTUNE-500</div>
-    <div class="d">Dell · Boeing · Software AG · HP</div>
-  </div>
-  <div class="cell">
-    <div class="n">33</div>
-    <div class="k">DESIGNERS LED</div>
-    <div class="d">across 5 time zones at Dell EDG</div>
-  </div>
-  <div class="cell">
-    <div class="n">8</div>
-    <div class="k">PATENTS</div>
-    <div class="d">+ 8 technical publications</div>
-  </div>
-  <div class="cell">
-    <div class="n">40%</div>
-    <div class="k">COST TAKEOUT</div>
-    <div class="d">HP GBUs · Director Award (APJ)</div>
-  </div>
-  <div class="cell">
-    <div class="n">4</div>
-    <div class="k">EXPERIENCES</div>
-    <div class="d">led concurrently at Dell.com</div>
-  </div>
-</div>
-
-<!-- STRATEGIC DOSSIERS -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 04</span>
-    <span class="shead__title">STRATEGIC DOSSIERS</span>
-    <span class="shead__sub">// selected case work</span>
-  </div>
-  <div class="shead__right">03 OF 03 VISIBLE · <a href="work.html" class="signal">SEE ALL →</a></div>
-</div>
-<div class="row-list">
-
-  <a href="case-dell-genai.html" class="dossier">
-    <div>
-      <div class="dossier__id">D.001</div>
-      <div class="dossier__year">2022–26</div>
-    </div>
-    <div>
-      <div class="dossier__client">Dell Technologies</div>
-      <div class="dossier__tag">ENTERPRISE × GENAI</div>
-    </div>
-    <div>
-      <div class="dossier__title">Dell.com — Generative personalization at scale</div>
-      <div class="dossier__blurb">Led the pan-Dell initiative to embed GenAI, analytics, and behavioural-science nudges into the .com experience. Prompt libraries, intent estimation, multi-modal adaptive layouts. President &amp; Game Changer awards.</div>
-      <div class="dossier__scope">
-        <span>AI research</span>
-        <span>prompt libraries</span>
-        <span>intent estimation</span>
-        <span>adaptive layouts</span>
-        <span>33 designers · 5 tz</span>
+    <div class="snapgrid">
+      <div class="snap reveal" data-d="1">
+        <div class="ic">01 · Enterprise UX Leadership</div>
+        <h3>Experiences at scale</h3>
+        <p>Leading B2B and B2C product design across Dell.com and complex enterprise platforms serving millions of customers and tens of thousands of stores.</p>
       </div>
-    </div>
-    <div class="dossier__outcome">
-      <div class="lbl">RECOGNITION</div>
-      <div class="v">Dell President Award<br>Dell Game Changer Award</div>
-    </div>
-    <div class="dossier__open">OPEN →</div>
-  </a>
-
-  <a href="case-boeing-taam.html" class="dossier">
-    <div>
-      <div class="dossier__id">D.002</div>
-      <div class="dossier__year">2016–18</div>
-    </div>
-    <div>
-      <div class="dossier__client">Boeing India</div>
-      <div class="dossier__tag">PLATFORM · OPS</div>
-    </div>
-    <div>
-      <div class="dossier__title">TAAM &mdash; the runway simulation cockpit, revamped</div>
-      <div class="dossier__blurb">End-to-end UX for the Total Airspace and Airport Modeller (TAAM) &mdash; Boeing&rsquo;s fast-time simulation platform for hub airports, ANSPs, and aerodrome consultancies. Day-long DT workshop, Crazy-8s, lo-fi&rarr;hi-fi, restricted UT with the TAAM User Group.</div>
-      <div class="dossier__scope">
-        <span>DT workshop</span>
-        <span>Crazy-8 · 5-WHYs</span>
-        <span>hi-fi prototyping</span>
-        <span>Think-Aloud · SUS</span>
+      <div class="snap reveal" data-d="2">
+        <div class="ic">02 · AI &amp; Personalization</div>
+        <h3>Intelligence, made usable</h3>
+        <p>GenAI experiences, prompt frameworks, intent estimation, and adaptive personalization grounded in behavioural science — not novelty, but trusted utility.</p>
       </div>
-    </div>
-    <div class="dossier__outcome">
-      <div class="lbl">OUTCOME</div>
-      <div class="v">SUS 71 &rarr; 84<br>&minus;47% time-to-first-action</div>
-    </div>
-    <div class="dossier__open">OPEN →</div>
-  </a>
-
-  <a href="work.html#coe" class="dossier">
-    <div>
-      <div class="dossier__id">D.003</div>
-      <div class="dossier__year">2023–26</div>
-    </div>
-    <div>
-      <div class="dossier__client">Dell · EDG</div>
-      <div class="dossier__tag">DESIGN LEADERSHIP</div>
-    </div>
-    <div>
-      <div class="dossier__title">AI-Design &amp; Innovation CoE</div>
-      <div class="dossier__blurb">Conceptualised and led the AI-Design &amp; Innovation Centre of Excellence for Dell&rsquo;s Experience Design Group. Internal practice for AI fluency: prompt rituals, evaluation rubrics, sandbox tools — design as an org capability, not a workshop deck.</div>
-      <div class="dossier__scope">
-        <span>org capability</span>
-        <span>AI fluency</span>
-        <span>rubrics</span>
-        <span>sandbox tooling</span>
+      <div class="snap reveal" data-d="3">
+        <div class="ic">03 · Product Strategy</div>
+        <h3>From vision to roadmap</h3>
+        <p>Translating fuzzy executive intent into design strategy, measurable outcomes, and shippable product — across ambiguity and competing priorities.</p>
       </div>
-    </div>
-    <div class="dossier__outcome">
-      <div class="lbl">OUTCOME</div>
-      <div class="v">CoE established<br>cross-EDG adoption</div>
-    </div>
-    <div class="dossier__open">PREVIEW →</div>
-  </a>
-
-</div>
-
-<!-- AI LAB STRIP -->
-<div style="background: var(--surface-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-top: 0;">
-  <div class="shead">
-    <div class="shead__left">
-      <span class="shead__n">§ 05</span>
-      <span class="shead__title">AI · LAB</span>
-      <span class="shead__sub">// working prototypes from the workbench</span>
-    </div>
-    <div class="shead__right"><a href="ai-lab.html" class="signal">ENTER LAB →</a></div>
-  </div>
-
-  <div style="padding: 0 var(--pad-x) 56px;">
-    <div class="grid-2" style="gap: 24px;">
-      <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="card card--link">
-        <div class="flex" style="justify-content: space-between; margin-bottom: 24px;">
-          <span class="signal mono" style="font-size: 11px; letter-spacing: 0.14em;">X.01 · LIVE</span>
-          <span class="mono dim" style="font-size: 10px; letter-spacing: 0.18em;">VIBE-CODED · 2025</span>
-        </div>
-        <div class="sans ink" style="font-size: 24px; font-weight: 500; letter-spacing: -0.015em; margin-bottom: 10px;">
-          Design Intelligence Portal
-        </div>
-        <div class="dim" style="font-family: var(--f-sans); font-size: 14px; line-height: 1.6;">
-          A working hub for AI prompt engineering inside design organisations. CO-STAR, RTF
-          and Chain-of-Thought frameworks made operational for design teams — not a course,
-          a tool.
-        </div>
-        <div class="mt-24 mono signal" style="font-size: 11px; letter-spacing: 0.16em;">VISIT pa9401.vercel.app →</div>
-      </a>
-
-      <a href="ai-lab.html#vigyan-setu" class="card card--link">
-        <div class="flex" style="justify-content: space-between; margin-bottom: 24px;">
-          <span class="signal mono" style="font-size: 11px; letter-spacing: 0.14em;">X.02 · UX CASE</span>
-          <span class="mono dim" style="font-size: 10px; letter-spacing: 0.18em;">PUBLIC AI · 2026</span>
-        </div>
-        <div class="sans ink" style="font-size: 24px; font-weight: 500; letter-spacing: -0.015em; margin-bottom: 10px;">
-          Vigyan Setu — IndiaAI Impact Summit
-        </div>
-        <div class="dim" style="font-family: var(--f-sans); font-size: 14px; line-height: 1.6;">
-          A UX case study on India&rsquo;s flagship convening on responsible AI (Feb 2026 ·
-          Bharat Mandapam). Three sutras, seven chakras, citizen-facing demos — read as a
-          design problem.
-        </div>
-        <div class="mt-24 mono signal" style="font-size: 11px; letter-spacing: 0.16em;">READ CASE →</div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- CTA FOOT -->
-<section style="padding: 64px var(--pad-x) 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
-  <div>
-    <div class="eyebrow" style="margin-bottom: 16px;">§ 06 · LET&rsquo;S TALK</div>
-    <div class="display" style="font-size: 44px; letter-spacing: -0.022em; line-height: 1.04; margin-bottom: 22px;">
-      Building the future of<br>
-      <em>AI experiences?</em>
-    </div>
-    <p class="body" style="max-width: 520px; margin: 0 0 28px;">If you&rsquo;re hiring for AI, personalization, UX strategy, or enterprise transformation — let&rsquo;s talk.</p>
-    <div class="flex gap-12" style="flex-wrap: wrap;">
-      <a href="contact.html" class="btn btn--primary">SCHEDULE A CONVERSATION →</a>
-      <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost">DOWNLOAD RESUME</a>
-      <a href="https://www.linkedin.com/in/puneetar/" target="_blank" rel="noopener" class="btn btn--ghost">LINKEDIN</a>
-    </div>
-  </div>
-  <div class="grid-2" style="gap: 24px; align-self: end;">
-    <div class="rule" style="padding-top: 12px;">
-      <div class="faint mono" style="font-size: 10px; letter-spacing: 0.16em; margin-bottom: 6px;">EMAIL</div>
-      <div class="ink" style="font-size: 14px; font-family: var(--f-sans);">puneetindelhi@yahoo.com</div>
-    </div>
-    <div class="rule" style="padding-top: 12px;">
-      <div class="faint mono" style="font-size: 10px; letter-spacing: 0.16em; margin-bottom: 6px;">LINKEDIN</div>
-      <div class="ink" style="font-size: 14px; font-family: var(--f-sans);">/in/puneetar</div>
-    </div>
-    <div class="rule" style="padding-top: 12px;">
-      <div class="faint mono" style="font-size: 10px; letter-spacing: 0.16em; margin-bottom: 6px;">LOCATION</div>
-      <div class="ink" style="font-size: 14px; font-family: var(--f-sans);">Bangalore · open to relocation</div>
-    </div>
-    <div class="rule" style="padding-top: 12px;">
-      <div class="faint mono" style="font-size: 10px; letter-spacing: 0.16em; margin-bottom: 6px;">AVAILABILITY</div>
-      <div class="ink" style="font-size: 14px; font-family: var(--f-sans);">Open to right opportunity</div>
+      <div class="snap reveal" data-d="1">
+        <div class="ic">04 · Cross-functional Leadership</div>
+        <h3>Influence without authority</h3>
+        <p>Aligning engineering, product, research, and the C-suite around a shared experience vision — and the tradeoffs required to get there.</p>
+      </div>
+      <div class="snap reveal" data-d="2">
+        <div class="ic">05 · Systems Thinking</div>
+        <h3>Scalable by design</h3>
+        <p>Design systems, AI design operations, and centres of excellence that turn one good outcome into a repeatable organisational capability.</p>
+      </div>
+      <div class="snap reveal" data-d="3">
+        <div class="ic">06 · Recognition</div>
+        <h3>Proven at the top</h3>
+        <p>Dell President &amp; Game Changer Awards, ET Digital ’22, HP Director Award (APJ) for 40% cost takeout. Trusted with the company’s hardest problems.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ======================= SIGNATURE WORK ======================= -->
+<section class="section section--alt" id="work">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow"><span class="i">§</span> &nbsp;Signature Work</span>
+      <h2>Four <em>transformation stories</em>.</h2>
+      <p>Not case studies — the arc of how complexity became clarity. Challenge, complexity, the
+         strategic call, the leadership, the execution, the outcome, and what it taught me.</p>
+    </div>
+
+    <!-- STORY 1 -->
+    <article class="story reveal">
+      <div class="story__head" data-story>
+        <span class="story__idx">01</span>
+        <div class="story__meta">
+          <span class="tag">AI · Future-State Experience Design</span>
+          <h3>Building Dell’s AI-Design &amp; Innovation Centre of Excellence</h3>
+          <div class="client">Dell Technologies · Experience Design Group · 2023–26</div>
+        </div>
+        <span class="story__toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="story__body"><div class="story__inner"><div class="story__pad">
+        <div class="arc">
+          <div class="beat"><div class="lbl"><span class="step">01</span> Challenge</div><p>AI arrived faster than design could absorb it. Teams were experimenting in silos with no shared craft, evaluation, or point of view on what “good” looked like for AI experiences.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">02</span> Complexity</div><p>Hundreds of designers, multiple business units, competing tools, and an industry narrative that changed monthly. The risk wasn’t inaction — it was scattered, low-trust adoption.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">03</span> Strategic Thinking</div><p>Treat AI fluency as an organisational capability, not a workshop. Build a CoE that makes the right way the easy way — prompt rituals, evaluation rubrics, and sandbox tooling embedded into how design actually works.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">04</span> Leadership</div><p>Conceptualised and led the CoE end to end — securing executive sponsorship, recruiting practitioners, and earning trust across EDG without formal authority over those teams.</p></div>
+          <div class="beat beat--wide"><div class="lbl"><span class="step">05</span> Execution</div><p>Shipped a working practice: prompt libraries, CO-STAR and Chain-of-Thought frameworks operationalised for designers, evaluation rubrics, and a sandbox portal — adopted across the Experience Design Group rather than presented as a deck.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">06</span> Outcome</div><p>An established centre of excellence with cross-EDG adoption, raising AI design maturity from ad-hoc experimentation to a repeatable, trusted craft.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">07</span> Reflection</div><p>The lasting work wasn’t a feature — it was capability. Build the system that keeps producing good outcomes after you’ve moved on.</p></div>
+        </div>
+        <div class="story__foot">
+          <div class="story__outcome">
+            <div class="o"><div class="v">Org-level</div><div class="l">capability built</div></div>
+            <div class="o"><div class="v">Cross-EDG</div><div class="l">adoption</div></div>
+          </div>
+          <a href="ai-lab.html" class="btn btn--ghost">Enter the AI Lab <span class="arr">→</span></a>
+        </div>
+      </div></div></div>
+    </article>
+
+    <!-- STORY 2 -->
+    <article class="story reveal">
+      <div class="story__head" data-story>
+        <span class="story__idx">02</span>
+        <div class="story__meta">
+          <span class="tag">GenAI · Conversational Experience</span>
+          <h3>Dell.com — a GenAI assistant customers actually trust</h3>
+          <div class="client">Dell Technologies · 2022–26</div>
+        </div>
+        <span class="story__toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="story__body"><div class="story__inner"><div class="story__pad">
+        <div class="arc">
+          <div class="beat"><div class="lbl"><span class="step">01</span> Challenge</div><p>Embed generative AI into one of the world’s largest commerce experiences — helping customers navigate complex product decisions — without eroding the trust Dell.com depends on.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">02</span> Complexity</div><p>Hallucination risk, B2B and B2C journeys, 26,000+ Dell Premier stores, recommendation accuracy, and the design of conversation itself — guided flows, media, and a canvas beyond simple chat.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">03</span> Strategic Thinking</div><p>Design for trust before delight. Guided conversational constructs, transparent recommendations, and a canvas experience that moves beyond the chat box to reimagine search and discovery.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">04</span> Leadership</div><p>Led the AI experience design team and aligned engineering, research, and business stakeholders on a personalization-driven recommendation model and an MVP that could ship credibly.</p></div>
+          <div class="beat beat--wide"><div class="lbl"><span class="step">05</span> Execution</div><p>Built the chat component library and AI design system, onboarding flows, right-panel and canvas experiences, and metric-driven enhancements informed by live usability feedback — taking the B2B chatbot live across 26,000 US Dell Premier stores.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">06</span> Outcome</div><p>An MVP launched across three domains with measurable usability gains, personalized recommendations, and a clear winner in user preference testing — recognised with Dell President &amp; Game Changer Awards.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">07</span> Reflection</div><p>People don’t adopt AI because it’s clever. They adopt it when it’s honest about what it knows and stays useful when it doesn’t.</p></div>
+        </div>
+        <div class="story__foot">
+          <div class="story__outcome">
+            <div class="o"><div class="v">26,000+</div><div class="l">stores live</div></div>
+            <div class="o"><div class="v">3 domains</div><div class="l">MVP launch</div></div>
+            <div class="o"><div class="v">President</div><div class="l">Award winner</div></div>
+          </div>
+          <a href="case-dell-chatbot.html" class="btn btn--ghost">Read the full story <span class="arr">→</span></a>
+        </div>
+      </div></div></div>
+    </article>
+
+    <!-- STORY 3 -->
+    <article class="story reveal">
+      <div class="story__head" data-story>
+        <span class="story__idx">03</span>
+        <div class="story__meta">
+          <span class="tag">Platform · Product Transformation</span>
+          <h3>TAAM — modernising Boeing’s airspace simulation cockpit</h3>
+          <div class="client">Boeing · Total Airspace &amp; Airport Modeller · 2016–18</div>
+        </div>
+        <span class="story__toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="story__body"><div class="story__inner"><div class="story__pad">
+        <div class="arc">
+          <div class="beat"><div class="lbl"><span class="step">01</span> Challenge</div><p>TAAM — Boeing’s fast-time simulation platform for hub airports, air navigation service providers, and aerodrome consultancies — carried decades of capability behind an interface that experts tolerated rather than trusted.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">02</span> Complexity</div><p>A small, expert global user base; immense domain depth; and the high stakes of aviation planning, where a confusing control isn’t an inconvenience — it’s a costly modelling error.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">03</span> Strategic Thinking</div><p>Respect the expertise, redesign the friction. Anchor the work in real user mental models through a structured discovery before touching a pixel.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">04</span> Leadership</div><p>Ran a day-long design-thinking workshop with stakeholders — Crazy-8s, 5-Whys — to build shared ownership of the problem before proposing a single solution.</p></div>
+          <div class="beat beat--wide"><div class="lbl"><span class="step">05</span> Execution</div><p>Moved from lo-fi wireframes to high-fidelity prototypes across day, dawn, and dusk modes, validated through restricted usability testing with the TAAM User Group using Think-Aloud protocols and SUS scoring.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">06</span> Outcome</div><p>System usability rose from an SUS of 71 to 84, with a 47% reduction in time-to-first-action — measurable proof that elegance and expert software belong together.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">07</span> Reflection</div><p>Enterprise users don’t want their tools dumbed down. They want the complexity organised, so their expertise has room to work.</p></div>
+        </div>
+        <div class="story__foot">
+          <div class="story__outcome">
+            <div class="o"><div class="v">71 → 84</div><div class="l">SUS score</div></div>
+            <div class="o"><div class="v">−47%</div><div class="l">time-to-first-action</div></div>
+          </div>
+          <a href="case-boeing-taam.html" class="btn btn--ghost">Read the full story <span class="arr">→</span></a>
+        </div>
+      </div></div></div>
+    </article>
+
+    <!-- STORY 4 -->
+    <article class="story reveal">
+      <div class="story__head" data-story>
+        <span class="story__idx">04</span>
+        <div class="story__meta">
+          <span class="tag">Strategic Systems Thinking</span>
+          <h3>Personalization at Scale across Dell.com</h3>
+          <div class="client">Dell Technologies · 2022–present</div>
+        </div>
+        <span class="story__toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="story__body"><div class="story__inner"><div class="story__pad">
+        <div class="arc">
+          <div class="beat"><div class="lbl"><span class="step">01</span> Challenge</div><p>Make a vast commerce experience feel personal to every visitor — at the scale of millions of sessions — without fragmenting the brand or overwhelming the customer.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">02</span> Complexity</div><p>Multiple businesses, four concurrent experiences, data and privacy constraints, and the perennial tension between personalization that helps and personalization that unsettles.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">03</span> Strategic Thinking</div><p>Treat personalization as a system, not a set of features — intent estimation, adaptive layouts, and behavioural-science nudges governed by a shared model of customer trust.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">04</span> Leadership</div><p>Led 33 designers across five time zones running four experiences concurrently, holding a coherent vision while empowering teams to own their domains.</p></div>
+          <div class="beat beat--wide"><div class="lbl"><span class="step">05</span> Execution</div><p>Operationalised prompt libraries, intent estimation, multi-modal adaptive layouts, and a measurement discipline that tied design decisions to KPI movement rather than opinion.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">06</span> Outcome</div><p>A personalization practice grounded in behavioural science and trust, recognised internally and adopted as a model for how Dell.com adapts to its customers.</p></div>
+          <div class="beat"><div class="lbl"><span class="step">07</span> Reflection</div><p>Scale is a design material. The discipline is keeping the experience human while the system underneath grows more intelligent.</p></div>
+        </div>
+        <div class="story__foot">
+          <div class="story__outcome">
+            <div class="o"><div class="v">4</div><div class="l">experiences led</div></div>
+            <div class="o"><div class="v">5 zones</div><div class="l">global team</div></div>
+            <div class="o"><div class="v">Millions</div><div class="l">of customers</div></div>
+          </div>
+          <a href="case-dell-genai.html" class="btn btn--ghost">Read the full story <span class="arr">→</span></a>
+        </div>
+      </div></div></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========================= HOW I LEAD ========================= -->
+<section class="section" id="lead">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow"><span class="i">§</span> &nbsp;How I Lead</span>
+      <h2>Quiet confidence, <em>compounding trust</em>.</h2>
+    </div>
+    <div class="lead">
+      <div class="lead__portrait reveal">
+        <img src="assets/portrait.png" alt="Puneet Arora" loading="lazy">
+        <div class="lead__quote">“The best design leaders are remembered for the people they grew, not just the products they shipped.”</div>
+      </div>
+      <ol class="leadlist reveal" data-d="1">
+        <li><span class="num">i.</span><div><h4>I mentor designers into leaders</h4><p>Coaching individuals from execution to judgement — the difference between someone who can do the work and someone who can decide what work matters.</p></div></li>
+        <li><span class="num">ii.</span><div><h4>I influence stakeholders, not just deliverables</h4><p>Bringing engineering, product, and the C-suite to a shared experience vision — and to the tradeoffs it demands.</p></div></li>
+        <li><span class="num">iii.</span><div><h4>I lead cross-functionally</h4><p>Thirty-three designers across five time zones, four concurrent experiences — alignment held through clarity, not control.</p></div></li>
+        <li><span class="num">iv.</span><div><h4>I build for design maturity</h4><p>Systems, rituals, and centres of excellence that raise the whole organisation’s craft, long after any single project ends.</p></div></li>
+        <li><span class="num">v.</span><div><h4>I build trust before I ask for it</h4><p>Credibility compounds. I earn the right to lead hard conversations by being reliable in the easy ones.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT I'M THINKING ===================== -->
+<section class="section section--alt" id="thinking">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow"><span class="i">§</span> &nbsp;What I’m Thinking About</span>
+      <h2>The questions shaping <em>the next decade</em>.</h2>
+      <p>Working notes on where intelligent enterprise experience is heading — and what design owes the people who’ll live inside it.</p>
+    </div>
+    <div class="povgrid">
+      <div class="pov reveal"><div class="no">01</div><h3>AI-native experiences</h3><p>What does a product look like when intelligence is the substrate, not a feature bolted on? Designing for systems that reason, not just respond.</p></div>
+      <div class="pov reveal" data-d="1"><div class="no">02</div><h3>Human–AI trust</h3><p>Trust is the real interface. Calibrating confidence, transparency, and graceful failure so people rely on AI without over-trusting it.</p></div>
+      <div class="pov reveal" data-d="2"><div class="no">03</div><h3>The future of personalization</h3><p>Moving from “people like you” to “you, right now” — adaptive experiences that feel attentive rather than surveilled.</p></div>
+      <div class="pov reveal"><div class="no">04</div><h3>Enterprise experience transformation</h3><p>How large organisations move from shipping features to cultivating capability — and why design maturity is a board-level concern.</p></div>
+      <div class="pov reveal" data-d="1"><div class="no">05</div><h3>Agentic systems</h3><p>When software acts on our behalf, the design question shifts from screens to delegation, oversight, and the limits of autonomy.</p></div>
+      <div class="pov reveal" data-d="2"><div class="no">06</div><h3>Intelligent ecosystems</h3><p>No experience is an island. Designing the connective tissue between agents, services, and people across an entire enterprise.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== PRINCIPLES ====================== -->
+<section class="section" id="principles">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow"><span class="i">§</span> &nbsp;Principles I Lead By</span>
+      <h2>How the hard calls get made.</h2>
+    </div>
+    <div class="princ reveal">
+      <div class="p"><div class="k">i.</div><h3>Design for outcomes, not outputs</h3><p>A beautiful screen that moves no metric is a liability. We ship change, not artefacts.</p></div>
+      <div class="p"><div class="k">ii.</div><h3>Simplicity scales</h3><p>Complexity compounds quietly. The discipline is removing it before anyone notices it was there.</p></div>
+      <div class="p"><div class="k">iii.</div><h3>Trust compounds</h3><p>Every honest interaction earns the next one. Trust is the only moat that gets stronger with use.</p></div>
+      <div class="p"><div class="k">iv.</div><h3>Enterprise deserves elegance</h3><p>Serious software for serious work should still feel considered. Internal tools have users too.</p></div>
+      <div class="p"><div class="k">v.</div><h3>AI should augment, not replace</h3><p>The goal is amplified human judgement — technology that makes people more capable, not redundant.</p></div>
+      <div class="p"><div class="k">vi.</div><h3>Strategy means tradeoffs</h3><p>Saying yes to everything is the absence of strategy. Leadership is choosing what not to do.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= ABOUT ========================= -->
+<section class="section section--alt" id="about">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow"><span class="i">§</span> &nbsp;About</span>
+      <h2>The person behind <em>the work</em>.</h2>
+    </div>
+    <div class="about">
+      <div class="about__body reveal">
+        <p class="about__lead">For twenty years I’ve been fascinated by the same question: why do people trust some experiences and abandon others?</p>
+        <p>That question has taken me from <strong>HP’s R&amp;D labs</strong> to <strong>Boeing’s simulation platforms</strong> to leading <strong>AI and personalization at Dell.com</strong> — but the throughline never changed. The best experiences aren’t the most advanced; they’re the ones that understand people.</p>
+        <p>I read widely outside design — psychology and behavioural science for how decisions are really made, history for how systems rise and fall, and the frontier of AI for where it all goes next. I believe storytelling is an executive skill, that intelligent systems should feel humane, and that the most strategic thing a leader can do is stay genuinely curious.</p>
+        <p>Based in Bangalore, working globally, and most energised by the hardest, most ambiguous problems in the room.</p>
+        <div class="passions">
+          <span>Psychology</span><span>Behavioural science</span><span>Artificial intelligence</span>
+          <span>Storytelling</span><span>Intelligent systems</span><span>History</span><span>Human behaviour</span>
+        </div>
+      </div>
+      <aside class="about__side reveal" data-d="1">
+        <div class="row"><div class="l">Currently</div><div class="v">Personalization at Scale, Dell.com</div></div>
+        <div class="row"><div class="l">Previously</div><div class="v">Boeing · Software AG · HP R&amp;D</div></div>
+        <div class="row"><div class="l">Leads</div><div class="v">33 designers across 5 time zones</div></div>
+        <div class="row"><div class="l">Recognition</div><div class="v">Dell President &amp; Game Changer · ET Digital ’22 · HP Director Award (APJ)</div></div>
+        <div class="row"><div class="l">Patents</div><div class="v">8 granted · 8 publications</div></div>
+        <div class="row"><div class="l">Based</div><div class="v">Bangalore · open globally</div></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FINAL CTA ======================= -->
+<section class="cta" id="connect">
+  <div class="cta__field" aria-hidden="true"><span class="a"></span></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Let’s build what’s next</span>
+    <h2 class="reveal" data-d="1" style="margin-top:22px">Reimagining enterprise experience through <em>AI, systems thinking, and human-centered design?</em></h2>
+    <p class="reveal" data-d="2">If you’re shaping senior design teams or AI-enabled transformation and want a leader who’s done it at scale — I’d welcome the conversation.</p>
+    <div class="cta__btns reveal" data-d="3">
+      <a href="mailto:puneetindelhi@yahoo.com" class="btn btn--solid">Let’s Connect <span class="arr">→</span></a>
+      <a href="https://www.linkedin.com/in/puneetar/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+    </div>
+    <div class="cta__chs reveal" data-d="4">
+      <a href="mailto:puneetindelhi@yahoo.com">puneetindelhi@yahoo.com</a>
+      <a href="https://www.linkedin.com/in/puneetar/" target="_blank" rel="noopener">/in/puneetar</a>
+      <span>Bangalore · open globally</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
 <footer class="foot">
-  <div class="foot__nav">
-    <a href="home.html">HOME</a>
-    <a href="bio.html">ABOUT</a>
-    <a href="work.html">WORK</a>
-    <a href="ai-lab.html">AI LAB</a>
-    <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener">RESUME</a>
-    <a href="contact.html">CONTACT</a>
+  <div class="wrap">
+    <div class="foot__nav">
+      <a href="#work">Work</a>
+      <a href="#lead">Leadership</a>
+      <a href="#thinking">Thinking</a>
+      <a href="#about">About</a>
+      <a href="ai-lab.html">AI Lab</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot__meta">© <span id="year">2026</span> · Puneet Arora · Bangalore</div>
   </div>
-  <div>© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · v.2026.06</div>
 </footer>
 
-</div><!-- /page -->
-
 <script src="assets/site.js"></script>
+<script>
+(function(){
+  // Sticky nav state
+  var nav=document.getElementById('nav');
+  var onScroll=function(){ nav.classList.toggle('is-stuck', window.scrollY>40); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Scroll reveal
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // Signature-work accordions
+  document.querySelectorAll('[data-story]').forEach(function(head){
+    head.addEventListener('click', function(){ head.closest('.story').classList.toggle('is-open'); });
+  });
+
+  // Smooth-scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id=a.getAttribute('href'); if(id.length<2) return;
+      var t=document.querySelector(id); if(!t) return;
+      e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  var yr=document.getElementById('year'); if(yr) yr.textContent=new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
