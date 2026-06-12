@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills for Global Builders — Puneet Arora</title>
+<meta name="author" content="Puneet Arora">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<style>
+  :root {
+    --gb-1: #6b8cff;   /* electric blue */
+    --gb-2: #9b6bff;   /* violet */
+    --gb-3: #6bd8c3;   /* mint */
+    --gb-4: #ffb86b;   /* amber */
+    --f-display: 'Instrument Serif', 'Roboto Serif', Georgia, serif;
+  }
+  [data-theme="forest"] {
+    --gb-1: #2546a3;
+    --gb-2: #5a2da3;
+    --gb-3: #047a64;
+    --gb-4: #b8650b;
+  }
+
+  .display-serif { font-family: var(--f-display); font-weight: 400; letter-spacing: -0.01em; line-height: 0.96; }
+  .display-serif em { font-style: italic; color: var(--signal); font-weight: 400; }
+
+  .gb-rule {
+    height: 2px;
+    background: linear-gradient(to right, var(--gb-1), var(--gb-2), var(--gb-3), var(--gb-4));
+    border-radius: 1px; opacity: .8;
+  }
+  .gb-rule--thin { height: 1px; opacity: .45; }
+
+  /* ── Hero ── */
+  .gb-hero { padding: 72px var(--pad-x) 48px; position: relative; overflow: hidden; }
+  .gb-hero__bg {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 50% 40% at 85% 20%, rgba(107,140,255,.07), transparent 70%),
+      radial-gradient(ellipse 40% 35% at 15% 85%, rgba(155,107,255,.05), transparent 70%);
+  }
+  .gb-hero__bg svg { position: absolute; right: -40px; top: 30px; width: 380px; opacity: .18; }
+  .gb-hero__inner { position: relative; max-width: 1100px; }
+  .gb-hero h1 { font-size: clamp(54px, 8.5vw, 108px); margin: 20px 0 24px; }
+  .gb-hero .accent { color: var(--gb-1); }
+  .gb-hero .lede { max-width: 680px; }
+
+  .stat-strip {
+    margin-top: 44px;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--rule); border-radius: 2px;
+  }
+  .stat-strip .cell { padding: 18px 22px; border-left: 1px solid var(--rule); }
+  .stat-strip .cell:first-child { border-left: none; }
+  .stat-strip .v { font-family: var(--f-display); font-size: 40px; line-height: 1; color: var(--ink); }
+  .stat-strip .l {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    color: var(--faint); text-transform: uppercase; margin-top: 8px;
+  }
+  .stat-strip .cell:nth-child(1) .v { color: var(--gb-1); }
+  .stat-strip .cell:nth-child(3) .v { color: var(--gb-3); }
+
+  /* ── Telemetry strip ── */
+  .telem { padding: 0 var(--pad-x); margin-top: 28px; }
+  .telem-row {
+    display: grid; grid-template-columns: 160px 1fr; align-items: center; gap: 18px;
+    padding: 12px 0; border-top: 1px dashed var(--rule);
+  }
+  .telem-row:last-child { border-bottom: 1px dashed var(--rule); }
+  .telem-row__label {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    color: var(--faint); text-transform: uppercase;
+  }
+  .telem-row__label .pulse {
+    display: inline-block; width: 6px; height: 6px; border-radius: 999px;
+    background: var(--gb-3); margin-right: 8px; vertical-align: middle;
+    box-shadow: 0 0 8px var(--gb-3);
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:1} }
+  .telem-row__pills { display: flex; gap: 6px; flex-wrap: wrap; }
+  .telem-pill {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+    color: var(--dim); text-transform: uppercase;
+    padding: 5px 9px; border: 1px solid var(--rule); border-radius: 2px;
+    background: var(--surface); cursor: pointer;
+    transition: color .15s, border-color .15s;
+  }
+  .telem-pill:hover { color: var(--ink); border-color: var(--signal); }
+  .telem-pill .arrow { color: var(--gb-1); margin-right: 6px; }
+  .telem-pill .delta { color: var(--gb-3); margin-left: 6px; }
+  .telem-pill .new { color: var(--gb-4); margin-left: 6px; }
+
+  /* ── Search bar ── */
+  .search-row {
+    padding: 28px var(--pad-x) 24px;
+    display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center;
+  }
+  .search {
+    display: flex; align-items: center;
+    border: 1px solid var(--rule); border-radius: 2px;
+    background: var(--surface);
+    padding: 10px 14px; gap: 12px;
+  }
+  .search:focus-within { border-color: var(--signal); }
+  .search svg { width: 14px; height: 14px; flex-shrink: 0; color: var(--dim); }
+  .search input {
+    background: transparent; border: 0; outline: none; color: var(--ink);
+    font-family: var(--f-mono); font-size: 13px; flex: 1; letter-spacing: 0.03em;
+  }
+  .search input::placeholder { color: var(--faint); }
+  .filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 7px 11px; border: 1px solid var(--rule); border-radius: 999px;
+    color: var(--dim); cursor: pointer; background: transparent;
+    transition: all .14s;
+  }
+  .chip.is-active { color: var(--signal-ink); background: var(--signal); border-color: var(--signal); }
+  .chip:hover:not(.is-active) { color: var(--ink); border-color: var(--rule-2); }
+
+  /* ── Category sections ── */
+  .cat-section { padding: 28px var(--pad-x) 8px; }
+  .cat-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 18px; flex-wrap: wrap; margin-bottom: 18px;
+  }
+  .cat-head__title { font-family: var(--f-display); font-size: 34px; color: var(--ink); }
+  .cat-head__title .num {
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em;
+    color: var(--signal); margin-right: 12px; vertical-align: middle;
+  }
+  .cat-head__meta {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--faint); text-transform: uppercase;
+  }
+
+  /* skill cards grid */
+  .skill-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);
+  }
+  .skill {
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface);
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: background .18s;
+  }
+  .skill::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+    background: var(--accent, var(--signal));
+    opacity: 0; transition: opacity .18s;
+  }
+  .skill.is-open { background: var(--surface-2); }
+  .skill.is-open::before, .skill:hover::before { opacity: 1; }
+  .skill.acc-1 { --accent: var(--gb-1); }
+  .skill.acc-2 { --accent: var(--gb-2); }
+  .skill.acc-3 { --accent: var(--gb-3); }
+  .skill.acc-4 { --accent: var(--gb-4); }
+
+  .skill__head { padding: 20px 22px 16px; cursor: pointer; user-select: none; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .skill__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .skill__id {
+    font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.18em;
+    color: var(--accent, var(--signal)); text-transform: uppercase;
+  }
+  .skill__plat {
+    font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.16em;
+    color: var(--faint); text-transform: uppercase;
+    border: 1px solid var(--rule); padding: 3px 7px; border-radius: 2px;
+  }
+  .skill__name {
+    font-family: var(--f-sans); font-size: 17px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.005em; line-height: 1.25;
+  }
+  .skill__desc { font-family: var(--f-sans); font-size: 12.5px; color: var(--dim); line-height: 1.55; }
+  .skill__tags { display: flex; gap: 6px; flex-wrap: wrap; padding-top: 8px; border-top: 1px dashed var(--rule); }
+  .skill__tags .tag {
+    font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.14em;
+    color: var(--faint); text-transform: uppercase;
+    padding: 3px 7px; background: var(--bg-2); border-radius: 2px;
+  }
+  .skill__expand {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 22px 14px;
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--accent, var(--signal)); text-transform: uppercase;
+  }
+  .skill__expand .caret { transition: transform .2s; }
+  .skill.is-open .skill__expand .caret { transform: rotate(180deg); }
+
+  .skill__drawer {
+    border-top: 1px solid var(--rule);
+    padding: 0 22px;
+    max-height: 0; overflow: hidden;
+    background: var(--bg-2);
+    transition: max-height .35s ease, padding .35s ease;
+  }
+  .skill.is-open .skill__drawer { max-height: 900px; padding: 18px 22px 22px; }
+  .drawer-row { display: grid; grid-template-columns: 110px 1fr; gap: 14px; margin-bottom: 12px; align-items: start; }
+  .drawer-row__label {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--faint); text-transform: uppercase; padding-top: 3px;
+  }
+  .drawer-row__value { font-family: var(--f-sans); font-size: 12.5px; color: var(--ink); line-height: 1.55; }
+  .drawer-row__value.mono { font-family: var(--f-mono); font-size: 11.5px; color: var(--signal); }
+  .drawer-row__value .why { color: var(--dim); font-size: 12px; font-style: italic; }
+  .drawer-input-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .drawer-input-list .pill {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.12em;
+    color: var(--dim); border: 1px solid var(--rule); border-radius: 2px;
+    padding: 3px 8px; background: var(--surface);
+  }
+  .drawer-prompt {
+    font-family: var(--f-mono); font-size: 11.5px; line-height: 1.55;
+    color: var(--ink); background: var(--surface);
+    border: 1px solid var(--rule); border-radius: 2px;
+    padding: 12px 14px; white-space: pre-wrap;
+  }
+  .drawer-actions {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: 16px; padding-top: 14px;
+    border-top: 1px dashed var(--rule);
+  }
+  .drawer-btn {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 9px 14px; border-radius: 2px; cursor: pointer;
+    border: 1px solid var(--rule); background: var(--surface); color: var(--dim);
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all .14s;
+  }
+  .drawer-btn:hover { color: var(--ink); border-color: var(--rule-2); }
+  .drawer-btn--primary {
+    background: var(--accent, var(--signal)); color: var(--signal-ink);
+    border-color: var(--accent, var(--signal));
+  }
+  .drawer-btn--primary:hover { filter: brightness(1.08); color: var(--signal-ink); }
+  .drawer-btn .ok { display: none; color: var(--gb-3); }
+  .drawer-btn.is-ok .label { display: none; }
+  .drawer-btn.is-ok .ok { display: inline; }
+
+  /* ── How to use ── */
+  .how { padding: 72px var(--pad-x); }
+  .how__inner { max-width: 1180px; }
+  .how h2 { font-family: var(--f-display); font-size: 56px; margin: 12px 0 32px; line-height: 0.98; }
+  .how__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); border: 1px solid var(--rule); }
+  .how__step { padding: 24px 22px; border-left: 1px solid var(--rule); }
+  .how__step:first-child { border-left: none; }
+  .how__step .n { font-family: var(--f-display); font-size: 44px; color: var(--gb-1); line-height: 1; }
+  .how__step h3 { font-family: var(--f-sans); font-size: 15px; font-weight: 500; color: var(--ink); margin: 10px 0 8px; }
+  .how__step p { font-family: var(--f-sans); font-size: 12.5px; color: var(--dim); line-height: 1.6; margin: 0; }
+  .how__step code {
+    font-family: var(--f-mono); font-size: 11px;
+    background: var(--bg); padding: 2px 6px; border-radius: 2px;
+    color: var(--signal); border: 1px solid var(--rule);
+  }
+
+  /* ── Closer ── */
+  .closer { padding: 72px var(--pad-x); display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+  .closer h2 { font-family: var(--f-display); font-size: 64px; line-height: 0.98; margin: 14px 0 22px; }
+  .closer .lede { max-width: 540px; }
+  .closer__side { border: 1px solid var(--rule); padding: 28px; border-radius: 2px; background: var(--surface); }
+  .closer__side .eyebrow { color: var(--gb-1); }
+  .closer__side ul { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 10px; }
+  .closer__side li {
+    font-family: var(--f-sans); font-size: 13px; color: var(--dim);
+    display: grid; grid-template-columns: 16px 1fr; gap: 8px; align-items: baseline;
+  }
+  .closer__side li::before { content: "▸"; color: var(--gb-3); font-size: 10px; }
+
+  /* ── Toast ── */
+  .toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--surface); border: 1px solid var(--gb-3);
+    color: var(--ink);
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 12px 18px; border-radius: 2px;
+    opacity: 0; pointer-events: none;
+    transition: opacity .2s, transform .25s;
+    z-index: 200;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 980px) {
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+    .stat-strip .cell:nth-child(3) { border-left: none; border-top: 1px solid var(--rule); }
+    .stat-strip .cell:nth-child(4) { border-top: 1px solid var(--rule); }
+    .closer { grid-template-columns: 1fr; }
+    .search-row { grid-template-columns: 1fr; }
+    .telem-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="bio.html">ABOUT</a>
+    <a href="home.html">HOME</a>
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="vibe-magic.html" class="is-current">VIBE MAGIC</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+    <span id="clock">IST 11:47</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="gb-hero">
+  <div class="gb-hero__bg">
+    <svg viewBox="0 0 200 200" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" style="color: var(--gb-1)">
+        <circle cx="100" cy="100" r="90"/>
+        <circle cx="100" cy="100" r="70"/>
+        <circle cx="100" cy="100" r="50"/>
+        <circle cx="100" cy="100" r="30"/>
+      </g>
+      <g stroke="currentColor" stroke-width="0.8" style="color: var(--gb-2); opacity: .6" id="gb-rays"></g>
+    </svg>
+  </div>
+  <div class="gb-hero__inner">
+    <div class="flex gap-12" style="align-items: center; margin-bottom: 18px;">
+      <span class="tag" style="background: color-mix(in oklch, var(--gb-1) 14%, transparent); color: var(--gb-1); border-color: color-mix(in oklch, var(--gb-1) 40%, transparent);">§ 01 · DIRECTORY</span>
+      <span class="faint mono" style="font-size: 11px;">// claude skills for builders shipping AI features in production</span>
+    </div>
+    <h1 class="display-serif">Skills for<br>Global <em>Builders.</em></h1>
+    <div class="gb-rule" style="max-width: 360px; margin: 4px 0 26px;"></div>
+    <p class="lede" style="margin: 0;">
+      A working directory of Claude skills built for the people shipping AI features &mdash;
+      engineers, PMs, designers, researchers, growth and docs. Each card opens with the
+      system prompt, inputs, install line, and a <strong style="color: var(--ink);">downloadable
+      skill package</strong> &mdash; a real ZIP you can drop into Claude.ai or Claude Code.
+      The directory is opinionated about one thing: a skill earns its place by reducing a
+      step from your day, not by impressing on a screenshot.
+    </p>
+    <div class="stat-strip">
+      <div class="cell">
+        <div class="v" data-count="30">0</div>
+        <div class="l">Skills indexed</div>
+      </div>
+      <div class="cell">
+        <div class="v" data-count="6">0</div>
+        <div class="l">Categories</div>
+      </div>
+      <div class="cell">
+        <div class="v" data-count="4">0</div>
+        <div class="l">Surfaces (Web, Code, API, MCP)</div>
+      </div>
+      <div class="cell">
+        <div class="v">v 1.0</div>
+        <div class="l">Updated · Jun 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TELEMETRY -->
+<div class="telem">
+  <div class="telem-row">
+    <div class="telem-row__label"><span class="pulse"></span>Most used · 30 days</div>
+    <div class="telem-row__pills">
+      <span class="telem-pill" data-jump="GB.01"><span class="arrow">↑</span>GB.01 · PR Reviewer<span class="delta">+31%</span></span>
+      <span class="telem-pill" data-jump="GB.07"><span class="arrow">↑</span>GB.07 · PRD Drafter<span class="delta">+22%</span></span>
+      <span class="telem-pill" data-jump="GB.13"><span class="arrow">↑</span>GB.13 · A11y Auditor<span class="delta">+15%</span></span>
+      <span class="telem-pill" data-jump="GB.19"><span class="arrow">↑</span>GB.19 · Interview Synth<span class="delta">+11%</span></span>
+      <span class="telem-pill" data-jump="GB.25"><span class="arrow">↑</span>GB.25 · Changelog Writer<span class="delta">+8%</span></span>
+    </div>
+  </div>
+  <div class="telem-row">
+    <div class="telem-row__label">Recently added</div>
+    <div class="telem-row__pills">
+      <span class="telem-pill" data-jump="GB.04">GB.04 · Migration Planner<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.10">GB.10 · North-Star Definer<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.18">GB.18 · Token Sync<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.30">GB.30 · Decision Log Curator<span class="new">NEW</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH + FILTERS -->
+<div class="search-row">
+  <label class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search skills · try &ldquo;PR&rdquo;, &ldquo;PRD&rdquo;, &ldquo;a11y&rdquo;, &ldquo;runbook&rdquo;…" autocomplete="off">
+  </label>
+  <div class="filter-chips" role="tablist">
+    <button class="chip is-active" data-filter="all">All</button>
+    <button class="chip" data-filter="engineering">Engineering</button>
+    <button class="chip" data-filter="product">Product</button>
+    <button class="chip" data-filter="design">Design</button>
+    <button class="chip" data-filter="research">Research</button>
+    <button class="chip" data-filter="growth">Growth</button>
+    <button class="chip" data-filter="knowledge">Knowledge</button>
+  </div>
+</div>
+
+<!-- ===== ENGINEERING ===== -->
+<section class="cat-section" data-cat="engineering">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · A</span>Engineering</div>
+    <div class="cat-head__meta">REVIEW · MIGRATION · OBSERVABILITY · TESTING · API</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.01" data-tags="review pr code engineering"
+      data-inputs="PR diff or branch URL, Repo language stack, House style guide (optional)"
+      data-prompt="Review this PR for correctness, simplification, and reuse. Skip nits unless they hide a real bug. Surface anything that would surprise a reviewer cold."
+      data-output="A prioritised review: blocking issues first, then high-confidence simplifications, then judgment calls — each with the file:line citation."
+      data-install="claude skills add gb/pr-reviewer"
+      data-why="Most reviews drown the real find in nits. This skill flips the order — surprises first, style last — so the actual bugs get attention.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.01 · ENG</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">PR Reviewer</div>
+        <div class="skill__desc">Reads a diff, returns a prioritised review — blocking correctness bugs first, then reuse/simplification cleanups, finally judgment calls. House-style aware.</div>
+        <div class="skill__tags"><span class="tag">/pr-review</span><span class="tag">diff-in</span><span class="tag">house-style</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.02" data-tags="error stacktrace engineering"
+      data-inputs="Stack trace, Last 200 log lines, Repo path"
+      data-prompt="Triage this error. Tell me the proximate cause, the upstream cause, the smallest reproducer, and the patch I should ship today vs the fix I should plan this quarter."
+      data-output="Proximate cause + upstream cause + minimal repro + patch-now vs plan-later split."
+      data-install="claude skills add gb/error-triage"
+      data-why="The patch and the fix are different work items. The skill makes the distinction visible so you don't ship one and forget the other.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.02 · ENG</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Error Triage</div>
+        <div class="skill__desc">Reads a stack trace + recent logs and separates the proximate cause from the upstream one. Splits the response into a same-day patch and a next-quarter fix.</div>
+        <div class="skill__tags"><span class="tag">/triage</span><span class="tag">trace-in</span><span class="tag">patch+plan</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.03" data-tags="test coverage engineering"
+      data-inputs="Function or module under test, Existing test file (optional)"
+      data-prompt="Write a focused test suite for this. Cover the happy path, the two failure modes that matter, and one boundary that would catch a future refactor. Skip the obvious."
+      data-output="A minimal-but-load-bearing test file with named cases, no padding."
+      data-install="claude skills add gb/test-author"
+      data-why="A 40-case test file is noise. A 6-case file that catches the actual regressions is the unit of value. The skill is built for the second.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.03 · ENG</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Test Author</div>
+        <div class="skill__desc">Writes the 5–8 tests that actually matter for a function — happy path, the two failure modes, one boundary — and stops there. No coverage padding.</div>
+        <div class="skill__tags"><span class="tag">/test</span><span class="tag">no-padding</span><span class="tag">refactor-safe</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.04" data-tags="migration schema engineering"
+      data-inputs="Source schema / API, Target schema / API, Live traffic shape (optional)"
+      data-prompt="Plan the migration from {source} to {target}. Phase it so we can roll back at every step. Tell me the read-path, write-path, and dual-write windows separately."
+      data-output="A phased migration plan, a rollback matrix, and the three queries to run during each phase to catch drift."
+      data-install="claude skills add gb/migration-planner"
+      data-why="Migrations fail at the seam between phases, not inside them. The skill is built around the seams.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.04 · ENG</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Migration Planner</div>
+        <div class="skill__desc">Plans a schema or API migration in phases that each support rollback. Read-path, write-path, dual-write windows separated. Includes drift checks per phase.</div>
+        <div class="skill__tags"><span class="tag">/migration</span><span class="tag">rollback-safe</span><span class="tag">phased</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-1" data-id="GB.05" data-tags="api docs openapi engineering"
+      data-inputs="OpenAPI / GraphQL schema, Audience (internal / partners / public)"
+      data-prompt="Write API docs for this {schema} aimed at {audience}. Include an &lsquo;in 60 seconds&rsquo; section, a &lsquo;production-ready&rsquo; section, and a fast-track for the three most common integrations."
+      data-output="A three-tier doc — 60-second, production-ready, fast-track — with copy-paste code samples per language."
+      data-install="claude skills add gb/api-docs"
+      data-why="Most API docs lose the reader in the first 200 words. The skill writes for the impatient reader first, then layers in detail.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.05 · ENG</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">API Docs Author</div>
+        <div class="skill__desc">Turns a schema into three-tier documentation — &lsquo;in 60 seconds&rsquo;, &lsquo;production-ready&rsquo;, &lsquo;fast-track&rsquo; — with working code samples per language.</div>
+        <div class="skill__tags"><span class="tag">/api-docs</span><span class="tag">three-tier</span><span class="tag">code-first</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== PRODUCT ===== -->
+<section class="cat-section" data-cat="product">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · B</span>Product</div>
+    <div class="cat-head__meta">PRD · ROADMAP · METRICS · DISCOVERY</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.06" data-tags="prd product writing"
+      data-inputs="One-line product idea, Customer + problem statement, Constraints"
+      data-prompt="Write a PRD for this. Open with the customer + problem in one paragraph. Decisions, not options. End with the three things we are explicitly not doing."
+      data-output="A PRD with goal, decisions, non-goals, success metric, risks, and an open-question list — under 800 words."
+      data-install="claude skills add gb/prd-drafter"
+      data-why="A PRD that lists options instead of making decisions is a half-written PRD. The skill is opinionated about that.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.06 · PRD</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">PRD Drafter</div>
+        <div class="skill__desc">Drafts a tight, decision-led PRD — one-paragraph problem, explicit non-goals, a single success metric, and a numbered open-question list. No option-shopping.</div>
+        <div class="skill__tags"><span class="tag">/prd</span><span class="tag">decision-led</span><span class="tag">non-goals</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.07" data-tags="prd product writing"
+      data-inputs="Last quarter's roadmap, This quarter's commitments, Big bets"
+      data-prompt="Reframe this roadmap as a story instead of a list. Lead with the one bet that defines the quarter. Demote the maintenance items. Surface the dependencies that block the bet."
+      data-output="A roadmap with a single thesis, three to five bets ordered by leverage, and an explicit dependency graph."
+      data-install="claude skills add gb/roadmap-reframer"
+      data-why="A roadmap is a story about what the team believes. The skill is built around that frame, not around the spreadsheet.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.07 · ROAD</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Roadmap Reframer</div>
+        <div class="skill__desc">Turns a roadmap spreadsheet into a quarterly story — one thesis, three to five bets ranked by leverage, dependencies surfaced. Stops reading like a backlog.</div>
+        <div class="skill__tags"><span class="tag">/roadmap</span><span class="tag">thesis-first</span><span class="tag">leverage-ranked</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.08" data-tags="metric north-star product"
+      data-inputs="Product description, Current input metrics, Top-line goal"
+      data-prompt="Help me define a north-star metric. Test it against the four checks: directional, predictive, durable, defensible. Tell me where it breaks and propose a backup."
+      data-output="A candidate metric with the four-check audit, the breakage scenarios, and a secondary metric to hedge against gaming."
+      data-install="claude skills add gb/north-star"
+      data-why="A north-star metric is easy to invent and hard to defend. The skill makes the defence part explicit.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.08 · METR</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">North-Star Definer</div>
+        <div class="skill__desc">Helps define a north-star metric and stress-tests it on four checks (directional, predictive, durable, defensible). Surfaces gaming risks and a backup metric.</div>
+        <div class="skill__tags"><span class="tag">/north-star</span><span class="tag">four-checks</span><span class="tag">anti-gaming</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.09" data-tags="discovery problem product"
+      data-inputs="Problem hypothesis, Target user description, Signals collected so far"
+      data-prompt="Audit my problem framing. Pressure-test the hypothesis. Tell me which signals are evidence and which are confirmation. Suggest the cheapest experiment that would change my mind."
+      data-output="A pressure-tested hypothesis, a signal-vs-confirmation table, and a minimum-viable invalidation experiment."
+      data-install="claude skills add gb/discovery-audit"
+      data-why="Most discovery work confirms the team's instinct. The skill is built to push back, not nod along.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.09 · DISC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Discovery Audit</div>
+        <div class="skill__desc">Pressure-tests a problem hypothesis — separates evidence from confirmation, names the cheapest experiment that could disprove it. Built to push back, not validate.</div>
+        <div class="skill__tags"><span class="tag">/discovery</span><span class="tag">disconfirming</span><span class="tag">cheap-experiment</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-1" data-id="GB.10" data-tags="competitive teardown product"
+      data-inputs="Competitor URL or product, Our positioning, Specific area to compare"
+      data-prompt="Tear down {competitor} on {area}. Skip the marketing surface. Focus on the three structural choices they made and the one we should copy, the one we should oppose, and the one to ignore."
+      data-output="A structural teardown, three positioning recommendations, and the one feature we shouldn't bother building."
+      data-install="claude skills add gb/competitive-teardown"
+      data-why="Competitive analyses tend to be feature-lists. The skill makes you pick — copy, oppose, ignore — which is the only useful output.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.10 · COMP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Competitive Teardown</div>
+        <div class="skill__desc">Tears down a competitor on a chosen axis. Forces a copy/oppose/ignore call per structural choice instead of producing yet another feature-comparison table.</div>
+        <div class="skill__tags"><span class="tag">/competitive</span><span class="tag">structural</span><span class="tag">opinion-required</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== DESIGN ===== -->
+<section class="cat-section" data-cat="design">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · C</span>Design</div>
+    <div class="cat-head__meta">A11Y · TOKENS · COMPONENTS · COPY · CRITIQUE</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-3" data-id="GB.11" data-tags="component library design"
+      data-inputs="Library URL or component list, Figma frame (optional)"
+      data-prompt="Audit this component library. Show me the components that are duplicates, the ones that drift between products, and the ones that should be merged. No vibes — cite the evidence."
+      data-output="A duplicate map, a drift report, and a merge plan ranked by usage."
+      data-install="claude skills add gb/component-audit"
+      data-why="Component duplication compounds quietly. The skill catches it at the audit moment, not at the next migration.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.11 · CMP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Component Library Auditor</div>
+        <div class="skill__desc">Audits a component library for duplicates and drift, returns a merge plan ranked by usage. Evidence-cited — no &ldquo;feels redundant&rdquo; calls.</div>
+        <div class="skill__tags"><span class="tag">/components</span><span class="tag">duplicates</span><span class="tag">drift</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-1" data-id="GB.12" data-tags="a11y accessibility design"
+      data-inputs="Page URL or component, Target WCAG level, User-flow description"
+      data-prompt="Audit this against WCAG {level}. Skip the colour-contrast easy wins. Focus on the four things that actually break for keyboard, screen-reader, and reduced-motion users."
+      data-output="Four-area audit (focus, semantics, motion, announcements) with severity, code-level fixes, and a re-test step."
+      data-install="claude skills add gb/a11y-audit"
+      data-why="A11y audits stop at colour. The skill is built around the harder four — focus traps, semantic structure, motion, live regions.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.12 · A11Y</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">A11y Auditor</div>
+        <div class="skill__desc">Goes past colour contrast to the four hard ones — focus traps, semantic structure, motion, live regions. Returns code-level fixes and a re-test step.</div>
+        <div class="skill__tags"><span class="tag">/a11y</span><span class="tag">WCAG-2.2</span><span class="tag">code-fixes</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.13" data-tags="design tokens sync"
+      data-inputs="Figma variables export, Codebase token file (CSS / Tailwind / SD)"
+      data-prompt="Sync these design tokens between Figma and code. Flag every name mismatch, every value drift, and every token defined in one place but not the other."
+      data-output="A mismatch table grouped by severity, a rename map, and a diff-ready code patch."
+      data-install="claude skills add gb/token-sync"
+      data-why="Token drift is invisible until a designer ships a button that the engineer can't reproduce. The skill makes drift loud, early.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.13 · TKN</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Design Token Sync</div>
+        <div class="skill__desc">Diffs Figma variables against code-side tokens. Flags name mismatches and value drift. Produces a rename map plus a diff-ready code patch.</div>
+        <div class="skill__tags"><span class="tag">/tokens</span><span class="tag">figma↔code</span><span class="tag">drift</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.14" data-tags="copy ui voice design"
+      data-inputs="Screen / flow, Voice + tone guide, Audience"
+      data-prompt="Rewrite the UI copy on this screen. Keep the voice guide. Cut words by 40%. Convert all &lsquo;we&rsquo; phrasing to &lsquo;you&rsquo; phrasing. Flag any sentence that does two jobs at once."
+      data-output="A screen-by-screen rewrite with diffs, a word-count delta, and a list of sentences that need to be split."
+      data-install="claude skills add gb/ui-copy-polish"
+      data-why="UI copy fails by being two sentences pretending to be one. The skill is built to split those, not to soften them.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.14 · UIC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">UI Copy Polish</div>
+        <div class="skill__desc">Cuts UI copy by ~40% while holding voice. Converts &lsquo;we&rsquo; to &lsquo;you&rsquo;, flags double-jobber sentences, and shows the diff per screen.</div>
+        <div class="skill__tags"><span class="tag">/copy</span><span class="tag">voice-hold</span><span class="tag">diff</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.15" data-tags="critique review design"
+      data-inputs="Screenshot or Figma frame, House style snippets, Critique level"
+      data-prompt="Give me a senior-IC design critique on this screen. Lead with the one structural issue. Then three craft notes. Skip nits unless they hide a structural problem."
+      data-output="A critique structured as &lsquo;one structural issue + three craft notes&rsquo;, with the rationale per note."
+      data-install="claude skills add gb/design-critique"
+      data-why="A 25-bullet critique loses the structural fish in the nit-pond. The skill enforces a structure-first read.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.15 · CRIT</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Senior Critique</div>
+        <div class="skill__desc">Structure-first design critique — one structural issue, three craft notes, no nit-storms. Rationale required on every note.</div>
+        <div class="skill__tags"><span class="tag">/critique</span><span class="tag">structure-first</span><span class="tag">senior-IC</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== RESEARCH ===== -->
+<section class="cat-section" data-cat="research">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · D</span>Research</div>
+    <div class="cat-head__meta">INTERVIEWS · SYNTHESIS · LONGITUDINAL · ANALYTICS</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.16" data-tags="interview synth research"
+      data-inputs="Interview transcripts (N participants), Research question, Quote-pull guidance"
+      data-prompt="Synthesize {N} interview transcripts. Surface the three themes that recur, the one outlier worth following, and a quote per theme. Distinguish what is said from what is meant."
+      data-output="Three themes with frequency + verbatim, one outlier with reasoning, and a &lsquo;said vs meant&rsquo; column per theme."
+      data-install="claude skills add gb/interview-synth"
+      data-why="Synthesis flattens nuance into bullet points. The skill keeps the &lsquo;said vs meant&rsquo; column so the nuance survives.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.16 · INTV</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Interview Synth</div>
+        <div class="skill__desc">Synthesizes interview transcripts into three themes + one outlier, with verbatim quotes and a &lsquo;said vs meant&rsquo; column to keep nuance intact.</div>
+        <div class="skill__tags"><span class="tag">/synth</span><span class="tag">said-vs-meant</span><span class="tag">verbatim</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.17" data-tags="longitudinal cohort research"
+      data-inputs="Cohort definition, Time-series data, Hypothesis"
+      data-prompt="Look at this cohort over {months} months. Tell me what changed, what stayed, and which change is real signal vs survivorship. Show me the cohort cut that disproves my hypothesis."
+      data-output="A change/stay/survivorship breakdown, a disproving cut, and the cleanest visualisation description for a stakeholder deck."
+      data-install="claude skills add gb/longitudinal"
+      data-why="Most longitudinal reads are survivorship bias in a costume. The skill is built to call that out, not paper over it.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.17 · LONG</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Longitudinal Reader</div>
+        <div class="skill__desc">Reads cohort data over time and separates real change from survivorship. Surfaces the cut that disproves the stated hypothesis.</div>
+        <div class="skill__tags"><span class="tag">/longitudinal</span><span class="tag">survivorship</span><span class="tag">disproving</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.18" data-tags="analytics funnel research"
+      data-inputs="Funnel data, Step definitions, Comparable cohort"
+      data-prompt="Read this funnel. Tell me the drop-off that is the obvious problem, the drop-off that is the actually-load-bearing problem, and one drop-off that is a feature, not a bug."
+      data-output="Three drop-offs with diagnosis, an &lsquo;obvious vs actual&rsquo; framing, and one drop-off explicitly defended as healthy."
+      data-install="claude skills add gb/funnel-read"
+      data-why="A funnel always has the loud problem and the load-bearing one. They are rarely the same step. The skill is built to make that visible.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.18 · FNL</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Funnel Reader</div>
+        <div class="skill__desc">Reads a funnel and separates the obvious drop-off from the load-bearing one. Defends one drop-off as healthy so the team doesn&rsquo;t over-optimise.</div>
+        <div class="skill__tags"><span class="tag">/funnel</span><span class="tag">obvious-vs-actual</span><span class="tag">healthy-drop</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.19" data-tags="survey free-text research"
+      data-inputs="Free-text survey responses, Code-frame seed (optional)"
+      data-prompt="Code these free-text responses. Build the code frame from the data, not from priors. Surface the codes that are statistically significant and the ones that are emotionally significant."
+      data-output="An emergent code frame, frequency counts, and an emotionally-significant column distinct from frequency."
+      data-install="claude skills add gb/survey-coder"
+      data-why="The most-frequent code is often not the most-load-bearing code. The skill makes both visible.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.19 · SRV</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Survey Coder</div>
+        <div class="skill__desc">Codes free-text survey responses with an emergent frame. Separates statistical significance from emotional significance so neither overrides the other.</div>
+        <div class="skill__tags"><span class="tag">/survey</span><span class="tag">emergent</span><span class="tag">stat+emo</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== GROWTH ===== -->
+<section class="cat-section" data-cat="growth">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · E</span>Growth &amp; GTM</div>
+    <div class="cat-head__meta">RELEASES · LIFECYCLE · LANDING · POSITIONING</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-2" data-id="GB.20" data-tags="changelog release growth"
+      data-inputs="Git log range, PR titles, Marketing thesis"
+      data-prompt="Turn this changelog into a release note. Lead with the one shipped thing that moves the marketing thesis. Demote the chores. Add a developer-readable section at the end."
+      data-output="A thesis-led release note, a chores section, and a dev-changelog appendix."
+      data-install="claude skills add gb/release-note"
+      data-why="Most release notes are bullet salad. The skill writes the &lsquo;what changed for me&rsquo; story first, the inventory list second.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.20 · REL</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Release Note Writer</div>
+        <div class="skill__desc">Converts a changelog into a thesis-led release note — story first, inventory second. Adds a dev-changelog appendix for the engineers reading along.</div>
+        <div class="skill__tags"><span class="tag">/release</span><span class="tag">thesis-led</span><span class="tag">dev-appendix</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-1" data-id="GB.21" data-tags="lifecycle email growth"
+      data-inputs="User segment, Behavioural trigger, Voice + tone guide"
+      data-prompt="Draft a {N}-step lifecycle email sequence for {segment} triggered by {event}. Each email has one job. Don't pad. End every sequence with a clean opt-out."
+      data-output="N emails, each labelled with its single job, subject + body + CTA + opt-out."
+      data-install="claude skills add gb/lifecycle"
+      data-why="A lifecycle email with two jobs has zero. The skill enforces one-job-per-email, which is the only durable way to write a sequence.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.21 · LIFE</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Lifecycle Sequence</div>
+        <div class="skill__desc">Drafts a lifecycle email sequence — one job per email, clean opt-out, labelled subjects. Refuses the &ldquo;and also&hellip;&rdquo; second job that kills conversion.</div>
+        <div class="skill__tags"><span class="tag">/lifecycle</span><span class="tag">one-job</span><span class="tag">opt-out</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.22" data-tags="landing copy growth"
+      data-inputs="Product, Audience, Top-line claim, Three proof points"
+      data-prompt="Write landing copy for this product. Open with the claim. Stack proof — quote, number, screenshot caption. Skip the &lsquo;hero / features / pricing&rsquo; pattern unless we earn it."
+      data-output="A landing page with hero claim, proof stack, three structured sections, and a FAQ. Avoids template clichés."
+      data-install="claude skills add gb/landing-copy"
+      data-why="Most landing pages copy the same five-section template. The skill writes for the claim first, lets the structure follow.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.22 · LND</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Landing Copy</div>
+        <div class="skill__desc">Writes landing copy claim-first, proof-stacked. Skips template default-sections unless they earn their place. Returns a FAQ as part of the page, not as an afterthought.</div>
+        <div class="skill__tags"><span class="tag">/landing</span><span class="tag">claim-first</span><span class="tag">proof-stack</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.23" data-tags="positioning narrative growth"
+      data-inputs="Product description, Three closest alternatives, Three customer quotes"
+      data-prompt="Position this product. Use the four-axis frame: who, against what alternative, what they get, what they give up. Force a give-up — anti-positioning is the whole point."
+      data-output="A four-axis positioning statement, an explicit anti-positioning line, and one paragraph for each axis."
+      data-install="claude skills add gb/positioning"
+      data-why="Positioning without an &lsquo;against what&rsquo; and a &lsquo;give up&rsquo; is marketing copy. The skill insists on both.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.23 · POS</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Positioning Builder</div>
+        <div class="skill__desc">Four-axis positioning — who, against what, what they get, what they give up. Refuses to ship until the give-up axis is filled in. Anti-positioning is the whole point.</div>
+        <div class="skill__tags"><span class="tag">/positioning</span><span class="tag">four-axis</span><span class="tag">anti-pos</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.24" data-tags="support triage growth"
+      data-inputs="Inbound support email, Account context, Severity SLA"
+      data-prompt="Triage this support email. Classify severity, draft the reply, attach the runbook link, and flag if the underlying bug should be a Jira ticket. Reply tone matches the customer's."
+      data-output="A severity rating, a draft reply in the customer's register, a runbook link, and a Jira-ticket flag with proposed title."
+      data-install="claude skills add gb/support-triage"
+      data-why="Support replies fail when they mirror the company's voice instead of the customer's. The skill matches the customer's tone by default.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.24 · SUP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Support Triage</div>
+        <div class="skill__desc">Classifies severity, drafts a reply in the customer&rsquo;s tone (not the brand&rsquo;s), pulls the right runbook, and proposes a Jira title if the issue points to a bug.</div>
+        <div class="skill__tags"><span class="tag">/support</span><span class="tag">tone-match</span><span class="tag">jira-flag</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== KNOWLEDGE ===== -->
+<section class="cat-section" data-cat="knowledge">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · F</span>Knowledge &amp; ops</div>
+    <div class="cat-head__meta">RFC · RUNBOOK · ONBOARDING · DECISIONS · CHANGELOG</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.25" data-tags="changelog ops knowledge"
+      data-inputs="Git log range, Reader (eng / leadership / customer)"
+      data-prompt="Write a changelog for {audience}. Group by intent, not by file. Each entry is one sentence. Lead with what changed for the reader, not who shipped it."
+      data-output="A changelog grouped by intent (added / fixed / shipped / decided), one sentence per entry, audience-tuned tone."
+      data-install="claude skills add gb/changelog-writer"
+      data-why="Engineering changelogs sound the same as customer changelogs. The skill enforces audience-tuned tone so neither reader feels like they're reading the other's.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.25 · CHL</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Changelog Writer</div>
+        <div class="skill__desc">Drafts a changelog grouped by intent, not by file. One sentence per entry. Tone adapts to the reader — engineering, leadership, or customer.</div>
+        <div class="skill__tags"><span class="tag">/changelog</span><span class="tag">intent-grouped</span><span class="tag">audience-tone</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.26" data-tags="rfc design knowledge"
+      data-inputs="Problem statement, Two real options, Constraints"
+      data-prompt="Draft an RFC. Make the recommended option visible up front, not buried after a long compare. Include the rejected options and the reason each lost — not just &lsquo;less elegant&rsquo;."
+      data-output="An RFC with recommendation, options table (chosen + rejected), reasoning per rejection, and an open-questions list."
+      data-install="claude skills add gb/rfc-drafter"
+      data-why="RFCs that bury the recommendation lose the reviewer's attention. The skill leads with the decision, defends it on the rejected paths.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.26 · RFC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">RFC Drafter</div>
+        <div class="skill__desc">Drafts an RFC with the recommendation up front, the rejected options defended explicitly, and an open-question list. No buried leads.</div>
+        <div class="skill__tags"><span class="tag">/rfc</span><span class="tag">recommendation-first</span><span class="tag">rejected-defended</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.27" data-tags="runbook incident knowledge"
+      data-inputs="Incident kind, Detection signal, Known mitigations"
+      data-prompt="Write a runbook for {incident}. Lead with the &lsquo;you have 90 seconds&rsquo; section. Then diagnosis, then mitigation, then rollback. Every step has a copy-paste command."
+      data-output="A four-section runbook (90-sec, diagnosis, mitigation, rollback) with copy-paste commands and a paging escalation."
+      data-install="claude skills add gb/runbook"
+      data-why="Runbooks fail at 2am when the reader has 90 seconds. The skill writes for that reader, not for the wiki search bar.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.27 · RUN</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Runbook Writer</div>
+        <div class="skill__desc">Writes a four-section runbook (90-second action, diagnosis, mitigation, rollback) with copy-paste commands. Built for 2am, not for the wiki search.</div>
+        <div class="skill__tags"><span class="tag">/runbook</span><span class="tag">90-sec</span><span class="tag">copy-paste</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.28" data-tags="onboarding doc knowledge"
+      data-inputs="Role, Codebase entry points, Three first tasks"
+      data-prompt="Write the first-week guide for a new {role}. Each day has one outcome. Cover repo orientation, stakeholder map, and the three tasks they'll actually do. Skip the welcome lunch section."
+      data-output="A five-day plan with one outcome per day, stakeholder map, and the three first-week tasks scoped to be shippable."
+      data-install="claude skills add gb/onboarding"
+      data-why="Onboarding docs that don't end with a shipped artefact don't onboard. The skill ends every plan with something the new hire shipped.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.28 · ONB</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">First-Week Plan</div>
+        <div class="skill__desc">Builds a role-specific first-week plan that ends with a shipped artefact. Stakeholder map included. Welcome-lunch section explicitly skipped.</div>
+        <div class="skill__tags"><span class="tag">/onboarding</span><span class="tag">ship-week-one</span><span class="tag">stakeholder-map</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-1" data-id="GB.29" data-tags="decision log knowledge"
+      data-inputs="Decision context, Options considered, Decision date"
+      data-prompt="Write this as a decision-log entry. Title is the decision, not the topic. Capture the context, the call, the cost we accept, and the trigger that would reopen it."
+      data-output="A decision entry with title-as-decision, context, call, accepted cost, and a reopen-trigger condition."
+      data-install="claude skills add gb/decision-log"
+      data-why="Decision logs decay when entries describe topics, not decisions. The skill enforces title-as-decision so future-you can find the call.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.29 · DEC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Decision Log Entry</div>
+        <div class="skill__desc">Writes a durable decision-log entry — title is the decision, body captures context, call, accepted cost, and the trigger that would reopen the decision.</div>
+        <div class="skill__tags"><span class="tag">/decision</span><span class="tag">title-as-decision</span><span class="tag">reopen-trigger</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.30" data-tags="decision log knowledge"
+      data-inputs="Existing decision-log corpus, Window (months)"
+      data-prompt="Audit the decision log for the last {N} months. Surface decisions that have outlived their context, decisions whose reopen-trigger is met, and decisions that contradict each other."
+      data-output="Three lists — stale, reopen-met, contradictions — with one-line action per entry."
+      data-install="claude skills add gb/decision-curator"
+      data-why="Most decision logs are write-only. The skill is built to make them read-back, which is where the value lives.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.30 · DLC</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Decision Log Curator</div>
+        <div class="skill__desc">Audits an existing decision log — surfaces stale entries, reopen-trigger hits, and contradictions. Turns a write-only log into a read-back one.</div>
+        <div class="skill__tags"><span class="tag">/curator</span><span class="tag">stale</span><span class="tag">contradictions</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="how">
+  <div class="how__inner">
+    <div class="flex gap-12" style="align-items: center;">
+      <span class="tag" style="background: color-mix(in oklch, var(--gb-1) 14%, transparent); color: var(--gb-1); border-color: color-mix(in oklch, var(--gb-1) 40%, transparent);">§ 03 · USAGE</span>
+      <span class="faint mono" style="font-size: 11px;">// four ways to put these skills to work</span>
+    </div>
+    <h2 class="display-serif">How to use<br><em>Skills for Global Builders.</em></h2>
+    <div class="how__grid">
+      <div class="how__step">
+        <div class="n">1</div>
+        <h3>In Claude.ai</h3>
+        <p>Open a new chat, click the skills picker, and pick a <code>GB.NN</code> by ID. Drop in your file or pasted text. The skill prompts you for the few inputs it needs.</p>
+      </div>
+      <div class="how__step">
+        <div class="n">2</div>
+        <h3>In Claude Code</h3>
+        <p>Run the install line in the card drawer, e.g. <code>claude skills add gb/&lt;name&gt;</code>. Skills run inside your repo and can read project files, write outputs, and call your tools.</p>
+      </div>
+      <div class="how__step">
+        <div class="n">3</div>
+        <h3>Via the API or MCP</h3>
+        <p>Download the skill ZIP. It contains a system prompt, input schema, and example prompts. Wire it into your stack with <code>tools=[…]</code> or expose it via an MCP server.</p>
+      </div>
+      <div class="how__step">
+        <div class="n">4</div>
+        <h3>Fork &amp; remix</h3>
+        <p>Every ZIP is a starter kit. Use Anthropic&rsquo;s Skill Creator to adapt one for your team's voice guide, your runbook style, or your component library.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSER -->
+<section class="closer">
+  <div>
+    <span class="signal mono" style="font-size: 11px; letter-spacing: 0.18em;">// THE BAR</span>
+    <h2 class="display-serif">A skill earns its place<br>by <em>removing a step</em>, not by <span style="color: var(--gb-1);">adding a feature.</span></h2>
+    <p class="lede">
+      Every skill in here passes the same test: does it remove a step from a builder&rsquo;s day, every time
+      they use it? If the answer is &ldquo;sometimes&rdquo; or &ldquo;impressively&rdquo;, it doesn&rsquo;t belong here.
+      The directory is opinionated, narrow, and built to grow only along the edge where work is actually slow.
+    </p>
+    <div class="flex gap-12" style="margin-top: 24px;">
+      <a href="vibe-magic.html" class="btn btn--ghost">← BACK TO VIBE MAGIC</a>
+      <a href="skills-for-india.html" class="btn btn--ghost">SKILLS FOR INDIA →</a>
+    </div>
+  </div>
+  <aside class="closer__side">
+    <div class="eyebrow mono" style="font-size: 11px; letter-spacing: 0.18em;">// ROADMAP · Q3 2026</div>
+    <ul>
+      <li>Live-code reviewer that learns your house style from accepted PRs.</li>
+      <li>Eval harness for prompts — versioned cases, side-by-side outputs, rubric scoring.</li>
+      <li>Retro facilitator — turns a 90-minute meeting into a decision-led summary.</li>
+      <li>Capacity-aware sprint planner that respects on-call and PTO honestly.</li>
+      <li>Open contribution model — fork any skill, PR it back if it improves the bar.</li>
+    </ul>
+    <div class="gb-rule" style="margin-top: 20px;"></div>
+    <div class="mono faint" style="margin-top: 12px; font-size: 10px; letter-spacing: 0.18em;">CURATED · BANGALORE · v1.0</div>
+  </aside>
+</section>
+
+<footer class="foot">
+  <div class="foot__nav">
+    <a href="home.html">HOME</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="vibe-magic.html">VIBE MAGIC</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div>© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · BUILT BY PUNEET ARORA</div>
+</footer>
+
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="assets/site.js"></script>
+<script>
+  // hero rays
+  (function(){
+    var g = document.getElementById('gb-rays'); if (!g) return;
+    var html = '';
+    for (var i = 0; i < 36; i++) {
+      var a = (i * 10) * Math.PI / 180;
+      var x1 = 100 + Math.cos(a) * 30, y1 = 100 + Math.sin(a) * 30;
+      var x2 = 100 + Math.cos(a) * 90, y2 = 100 + Math.sin(a) * 90;
+      html += '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>';
+    }
+    g.innerHTML = html;
+  })();
+
+  // count-up
+  (function(){
+    var els = document.querySelectorAll('.stat-strip .v[data-count]');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        io.unobserve(e.target);
+        var t = +e.target.dataset.count, start = performance.now(), dur = 1100;
+        (function tick(now){
+          var p = Math.min((now - start) / dur, 1);
+          e.target.textContent = Math.round(t * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(tick);
+        })(start);
+      });
+    }, { threshold: 0.4 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+
+  // ── Drawer + ZIP + Copy (shared logic) ──
+  function escapeHtml(s){ return (s || '').replace(/[&<>"']/g, function(c){
+    return ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[c];
+  }); }
+
+  function buildDrawer(card) {
+    var inputs = (card.dataset.inputs || '').split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+    var prompt = card.dataset.prompt || '';
+    var output = card.dataset.output || '';
+    var install = card.dataset.install || '';
+    var why = card.dataset.why || '';
+    var inputsHtml = inputs.map(function(i){ return '<span class="pill">'+escapeHtml(i)+'</span>'; }).join('');
+    return '' +
+      '<div class="drawer-row"><div class="drawer-row__label">Inputs</div><div class="drawer-row__value"><div class="drawer-input-list">'+inputsHtml+'</div></div></div>' +
+      '<div class="drawer-row"><div class="drawer-row__label">Sample prompt</div><div class="drawer-row__value"><div class="drawer-prompt">'+escapeHtml(prompt)+'</div></div></div>' +
+      '<div class="drawer-row"><div class="drawer-row__label">Output</div><div class="drawer-row__value">'+escapeHtml(output)+'</div></div>' +
+      '<div class="drawer-row"><div class="drawer-row__label">Install</div><div class="drawer-row__value mono">'+escapeHtml(install)+'</div></div>' +
+      '<div class="drawer-row"><div class="drawer-row__label">Why it&rsquo;s here</div><div class="drawer-row__value"><span class="why">'+escapeHtml(why)+'</span></div></div>' +
+      '<div class="drawer-actions">' +
+        '<button class="drawer-btn drawer-btn--primary" data-action="zip"><span class="label">↓ Download .zip</span><span class="ok">✓ Downloaded</span></button>' +
+        '<button class="drawer-btn" data-action="copy-prompt"><span class="label">Copy prompt</span><span class="ok">✓ Copied</span></button>' +
+        '<button class="drawer-btn" data-action="copy-install"><span class="label">Copy install</span><span class="ok">✓ Copied</span></button>' +
+      '</div>';
+  }
+
+  function toggleDrawer(card) {
+    var open = !card.classList.contains('is-open');
+    if (open) {
+      var drawer = card.querySelector('.skill__drawer');
+      if (!drawer.dataset.built) {
+        drawer.innerHTML = buildDrawer(card);
+        drawer.dataset.built = '1';
+      }
+    }
+    card.classList.toggle('is-open', open);
+    var expandText = card.querySelector('.skill__expand span:first-child');
+    if (expandText) expandText.textContent = open ? 'Close details' : 'Open details';
+  }
+
+  function showToast(msg) {
+    var t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+  }
+
+  function flashOK(btn) {
+    btn.classList.add('is-ok');
+    setTimeout(function(){ btn.classList.remove('is-ok'); }, 1600);
+  }
+
+  async function downloadZip(card) {
+    if (typeof JSZip === 'undefined') { showToast('ZIP library failed to load'); return; }
+    var id = card.dataset.id || 'GB';
+    var name = (card.querySelector('.skill__name') || {}).textContent || 'skill';
+    name = name.replace(/[^\w\s-]/g, '').trim();
+    var slug = name.toLowerCase().replace(/\s+/g, '-');
+    var desc = (card.querySelector('.skill__desc') || {}).textContent || '';
+    var inputs = (card.dataset.inputs || '').split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+    var prompt = card.dataset.prompt || '';
+    var output = card.dataset.output || '';
+    var install = card.dataset.install || '';
+    var why = card.dataset.why || '';
+
+    var skillMd = '' +
+      '# ' + name + '\n' +
+      '> Skill ID: `' + id + '` · Part of **Skills for Global Builders** · v1.0\n\n' +
+      '## What it does\n' + desc.trim() + '\n\n' +
+      '## Inputs\n' + inputs.map(function(i){ return '- ' + i; }).join('\n') + '\n\n' +
+      '## Output\n' + output.trim() + '\n\n' +
+      '## Why it earns its place\n' + why.trim() + '\n\n' +
+      '## Install\n```bash\n' + install + '\n```\n\n' +
+      '## Sample prompt\n```\n' + prompt + '\n```\n\n' +
+      '---\n' +
+      '_Curated by Puneet Arora · Bangalore · 2026_\n';
+
+    var systemPrompt = '' +
+      'You are the "' + name + '" skill from the Skills for Global Builders directory (ID ' + id + ').\n\n' +
+      'Goal: ' + desc.trim() + '\n\n' +
+      'Operating principles:\n' +
+      '1. Lead with the load-bearing answer; demote the supporting detail.\n' +
+      '2. Distinguish opinion from observation; never blur the two.\n' +
+      '3. Prefer fewer, sharper findings over a long bullet list.\n' +
+      '4. Cite the evidence (file:line, screenshot region, transcript row) for every claim.\n' +
+      '5. Stop early. The skill is judged by whether it removed a step, not by length of output.\n\n' +
+      'Why this skill earns its place:\n' + why.trim() + '\n\n' +
+      'When invoked, restate the inputs you actually have, ask for the single most important missing input, then produce the output described in OUTPUT.md.\n';
+
+    var examplePrompts = '' +
+      '# Example Prompts · ' + name + '\n\n' +
+      '## 1 — Cold start\n```\n' + prompt + '\n```\n\n' +
+      '## 2 — Minimal\n```\nRun skill ' + id + ' on the attached input.\n```\n\n' +
+      '## 3 — Constrained\n```\n' + prompt.replace(/\.$/, '') + '. Keep the response under 400 words and lead with the load-bearing finding.\n```\n';
+
+    var schema = {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": id + " · " + name,
+      "type": "object",
+      "properties": inputs.reduce(function(acc, i){
+        var key = i.replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '').toLowerCase();
+        acc[key] = { "type": "string", "description": i };
+        return acc;
+      }, {}),
+      "required": inputs.slice(0, Math.max(1, Math.min(2, inputs.length))).map(function(i){
+        return i.replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '').toLowerCase();
+      })
+    };
+
+    var outputMd = '' +
+      '# Output spec · ' + name + '\n\n' + output.trim() + '\n\n' +
+      '## Format\n- Markdown by default, JSON on request.\n- Lead with the headline finding.\n- Evidence cited per claim.\n- Stop early; never pad.\n';
+
+    var manifest = {
+      "id": id.toLowerCase().replace(/\./g, '-'),
+      "name": name,
+      "version": "1.0.0",
+      "category": (card.closest('section') || {}).dataset?.cat || "general",
+      "platform": ((card.querySelector('.skill__plat') || {}).textContent || "").trim(),
+      "install": install,
+      "files": [ "SKILL.md", "system-prompt.txt", "example-prompts.md", "output.md", "schema.json" ],
+      "author": "Puneet Arora",
+      "directory": "Skills for Global Builders",
+      "url": "https://puneetindeelhi940.github.io/portfolio/skills-for-global-builders.html"
+    };
+
+    var zip = new JSZip();
+    var folder = zip.folder('gb-' + slug);
+    folder.file('SKILL.md', skillMd);
+    folder.file('system-prompt.txt', systemPrompt);
+    folder.file('example-prompts.md', examplePrompts);
+    folder.file('output.md', outputMd);
+    folder.file('schema.json', JSON.stringify(schema, null, 2));
+    folder.file('manifest.json', JSON.stringify(manifest, null, 2));
+
+    var blob = await zip.generateAsync({ type: 'blob' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'gb-' + slug + '.zip';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    showToast('Downloaded · gb-' + slug + '.zip');
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    ta.remove();
+    return Promise.resolve();
+  }
+
+  document.addEventListener('click', function(ev){
+    var head = ev.target.closest('.skill__head, .skill__expand');
+    if (head) {
+      var card = head.closest('.skill');
+      if (card) { toggleDrawer(card); return; }
+    }
+    var btn = ev.target.closest('.drawer-btn');
+    if (btn) {
+      ev.stopPropagation();
+      var card = btn.closest('.skill');
+      var action = btn.dataset.action;
+      if (action === 'zip') downloadZip(card).then(function(){ flashOK(btn); });
+      else if (action === 'copy-prompt') copyText(card.dataset.prompt || '').then(function(){ flashOK(btn); showToast('Prompt copied'); });
+      else if (action === 'copy-install') copyText(card.dataset.install || '').then(function(){ flashOK(btn); showToast('Install line copied'); });
+      return;
+    }
+  });
+
+  document.querySelectorAll('.telem-pill[data-jump]').forEach(function(p){
+    p.addEventListener('click', function(){
+      var id = p.dataset.jump;
+      var card = document.querySelector('.skill[data-id="'+id+'"]');
+      if (!card) return;
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (!card.classList.contains('is-open')) toggleDrawer(card);
+    });
+  });
+
+  (function(){
+    var q = document.getElementById('q');
+    var chips = document.querySelectorAll('.chip');
+    var sections = document.querySelectorAll('.cat-section');
+    var activeFilter = 'all';
+
+    function apply(){
+      var term = (q.value || '').trim().toLowerCase();
+      sections.forEach(function(sec){
+        var cat = sec.dataset.cat;
+        var anyVisible = false;
+        sec.querySelectorAll('.skill').forEach(function(card){
+          var matchesCat = (activeFilter === 'all' || activeFilter === cat);
+          var hay = (card.textContent + ' ' + (card.dataset.tags || '')).toLowerCase();
+          var matchesTerm = !term || hay.indexOf(term) !== -1;
+          var show = matchesCat && matchesTerm;
+          card.style.display = show ? '' : 'none';
+          if (show) anyVisible = true;
+        });
+        sec.style.display = anyVisible ? '' : 'none';
+      });
+    }
+    q && q.addEventListener('input', apply);
+    chips.forEach(function(c){
+      c.addEventListener('click', function(){
+        chips.forEach(function(x){ x.classList.remove('is-active'); });
+        c.classList.add('is-active');
+        activeFilter = c.dataset.filter;
+        apply();
+      });
+    });
+  })();
+</script>
+</body>
+</html>
