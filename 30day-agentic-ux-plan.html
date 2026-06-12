@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Puneet Arora">
+<title>30-Day Agentic UX Mastery — Puneet Arora</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07130e;--bg-card:#0d1f17;--bg-elev:#122619;
+  --sg1:#2d6a4f;--sg2:#40916c;--sg3:#52b788;--sg4:#74c69d;--sg5:#95d5b2;
+  --text:#edfff4;--tsub:#95d5b2;--tdim:#52b788;--tvdim:#2d6a4f;
+  --bdr:rgba(82,183,136,.14);--bdrhi:rgba(82,183,136,.35);
+}
+body{background:var(--bg);color:var(--text);font-family:'Roboto',sans-serif;line-height:1.6;min-height:100vh}
+#topbar{position:fixed;top:0;left:0;right:0;height:3px;background:var(--bdr);z-index:1000}
+#topfill{height:100%;width:0;background:linear-gradient(90deg,var(--sg1),var(--sg4));transition:width .5s ease}
+.hero{max-width:1200px;margin:0 auto;padding:60px 40px 28px}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--sg3);margin-bottom:16px}
+.hero h1{font-size:clamp(30px,5.5vw,66px);font-weight:900;line-height:1.04;letter-spacing:-2px;margin-bottom:10px}
+.hero h1 em{color:var(--sg4);font-style:normal}
+.hero-sub{font-size:15px;color:var(--tsub);font-weight:300;margin-bottom:32px}
+.stats{display:flex;gap:36px;flex-wrap:wrap;margin-bottom:12px}
+.stat-v{font-size:42px;font-weight:900;color:var(--sg4);line-height:1;font-family:'Roboto Mono',monospace}
+.stat-l{font-size:9px;color:var(--tvdim);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px}
+.hero-note{font-size:12px;color:var(--tvdim);letter-spacing:.5px;margin-top:4px}
+.rhythm-wrap{max-width:1120px;margin:32px 40px 52px}
+.rhythm{background:var(--bg-elev);border:1px solid var(--bdr);border-radius:12px;padding:28px 32px;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.rb{padding:0 24px 0 0}
+.rb+.rb{border-left:1px solid var(--bdr);padding:0 24px 0 24px}
+.rb:last-child{padding-right:0}
+.rb-icon{font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--sg3);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.rb-hrs{background:var(--sg1);color:var(--sg4);border-radius:4px;padding:2px 8px;font-size:10px;font-weight:700;letter-spacing:.5px}
+.rb-title{font-size:17px;font-weight:700;margin-bottom:4px}
+.rb-desc{font-size:12.5px;color:var(--tsub);font-weight:300;line-height:1.55}
+.weeks{max-width:1200px;margin:0 auto;padding:0 40px 60px}
+.week{margin-bottom:48px}
+.whead{display:flex;align-items:center;gap:16px;padding:20px 26px;background:var(--bg-card);border-radius:12px;border-left:5px solid;cursor:pointer;transition:background .2s;margin-bottom:18px;user-select:none}
+.whead:hover{background:var(--bg-elev)}
+.wnum{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;opacity:.35;white-space:nowrap}
+.wmeta{flex:1}
+.wtitle{font-size:21px;font-weight:900;letter-spacing:-.5px}
+.wsub{font-size:11.5px;color:var(--tsub);font-style:italic;margin-top:2px}
+.wbadge{background:var(--bdr);border-radius:20px;padding:3px 13px;font-size:11px;color:var(--tsub);font-family:'Roboto Mono',monospace;white-space:nowrap}
+.wchev{color:var(--tdim);font-size:16px;transition:transform .25s;flex-shrink:0}
+.dgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.dcard{background:var(--bg-card);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;transition:border-color .2s,transform .15s;cursor:pointer}
+.dcard:hover{border-color:var(--bdrhi);transform:translateY(-1px)}
+.dcard.done{border-color:rgba(64,145,108,.28)}
+.dhead{display:flex;align-items:center;gap:10px;padding:14px 18px}
+.dnum{font-size:50px;font-weight:900;opacity:.09;line-height:1;min-width:58px;font-family:'Roboto Mono',monospace;flex-shrink:0}
+.dcard.done .dnum{opacity:.05}
+.dinfo{flex:1;min-width:0}
+.dlbl{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--tvdim);margin-bottom:1px}
+.dfocus{font-size:15.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dcard.done .dfocus{color:var(--tsub)}
+.dstatus{font-size:18px;flex-shrink:0}
+.dbody{display:none;padding:0 18px 18px}
+.dbody.open{display:block}
+.tblock{margin-top:11px;padding:12px 14px;background:rgba(0,0,0,.22);border-radius:8px;border-left:3px solid}
+.tblock.learn{border-color:var(--sg2)}
+.tblock.build{border-color:var(--sg4)}
+.tblock.reflect{border-color:var(--sg1)}
+.tblock.res{border-color:rgba(82,183,136,.25);background:rgba(82,183,136,.04)}
+.tbh{font-size:8.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:6px}
+.tblock.learn .tbh{color:var(--sg3)}
+.tblock.build .tbh{color:var(--sg5)}
+.tblock.reflect .tbh{color:var(--sg2)}
+.tblock.res .tbh{color:var(--sg3)}
+.ttext{font-size:12.5px;color:var(--tsub);line-height:1.65}
+.res-list{display:flex;flex-direction:column;gap:7px}
+.res-item{}
+.res-item a{font-size:12.5px;color:var(--sg4);text-decoration:none;font-weight:500;display:block;line-height:1.4}
+.res-item a:hover{color:var(--sg5);text-decoration:underline}
+.res-note{font-size:11px;color:var(--tvdim);line-height:1.4;margin-top:1px;display:block}
+.done-btn{margin-top:14px;width:100%;padding:9px;border:1px solid var(--bdrhi);background:transparent;color:var(--sg3);border-radius:6px;font-family:'Roboto',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.done-btn:hover{background:rgba(82,183,136,.1)}
+.done-btn.active{color:var(--tvdim);border-color:var(--bdr);background:rgba(82,183,136,.04)}
+.dlv-sec{max-width:1200px;margin:0 auto;padding:0 40px 60px}
+.sec-label{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--sg3);margin-bottom:18px}
+.dlv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
+.dlv{display:flex;gap:13px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--bdr);border-radius:8px;padding:13px 15px}
+.dlv-ico{font-size:20px;flex-shrink:0;padding-top:1px}
+.dlv-name{font-size:13.5px;font-weight:700;margin-bottom:2px}
+.dlv-day{font-size:11.5px;color:var(--tdim)}
+footer{text-align:center;padding:28px 40px;font-size:10px;color:var(--tvdim);border-top:1px solid var(--bdr);letter-spacing:2px;text-transform:uppercase}
+@media(max-width:760px){
+  .hero{padding:44px 20px 22px}
+  .rhythm-wrap{margin:24px 20px 36px}
+  .rhythm{grid-template-columns:1fr;gap:20px}
+  .rb,.rb+.rb{border-left:none;padding:0;border-top:1px solid var(--bdr);padding-top:16px}
+  .rb:first-child{border-top:none;padding-top:0}
+  .weeks{padding:0 20px 40px}
+  .dgrid{grid-template-columns:1fr}
+  .dlv-sec{padding:0 20px 40px}
+  .dlv-grid{grid-template-columns:1fr}
+  .stats{gap:20px}
+}
+</style>
+</head>
+<body>
+<div id="topbar"><div id="topfill"></div></div>
+<header class="hero">
+  <div class="eyebrow">Puneet Arora · Job Search Accelerator · June 2026</div>
+  <h1>From AI-Curious<br>to <em>Agent Architect.</em></h1>
+  <p class="hero-sub">30 days · Technical depth · Agentic UX · MCP · 10 portfolio-grade deliverables</p>
+  <div class="stats">
+    <div><div class="stat-v" id="cnt">0</div><div class="stat-l">Days Done</div></div>
+    <div><div class="stat-v">30</div><div class="stat-l">Total Days</div></div>
+    <div><div class="stat-v">3–5</div><div class="stat-l">Hours / Day</div></div>
+    <div><div class="stat-v">10</div><div class="stat-l">Deliverables</div></div>
+  </div>
+  <p class="hero-note">Click any day to expand it. Mark days done to track your progress ↓</p>
+</header>
+<div class="rhythm-wrap">
+  <div class="rhythm">
+    <div class="rb">
+      <div class="rb-icon">🌅 Morning<span class="rb-hrs">1.5 hrs</span></div>
+      <div class="rb-title">Deep Learning</div>
+      <div class="rb-desc">Papers, docs, architecture studies. No building yet. Absorb first, build second. The quality of your builds depends entirely on this block.</div>
+    </div>
+    <div class="rb">
+      <div class="rb-icon">⚒️ Build<span class="rb-hrs">2–3 hrs</span></div>
+      <div class="rb-title">Ship Something Real</div>
+      <div class="rb-desc">Agents, MCP servers, frameworks, artifacts. Commit to GitHub every single day. Shipping daily is not optional — it's the entire point.</div>
+    </div>
+    <div class="rb">
+      <div class="rb-icon">✍️ Evening<span class="rb-hrs">30 min</span></div>
+      <div class="rb-title">Write &amp; Reach</div>
+      <div class="rb-desc">Reflect, draft LinkedIn content, DM connections, update your portfolio narrative. Visibility is a skill, not a personality trait.</div>
+    </div>
+  </div>
+</div>
+<div class="weeks" id="weeks-root"></div>
+<div class="dlv-sec">
+  <div class="sec-label">10 Deliverables by Day 30</div>
+  <div class="dlv-grid" id="dlv-root"></div>
+</div>
+<footer>30-Day Agentic UX Mastery Plan &nbsp;·&nbsp; Built by Puneet Arora &nbsp;·&nbsp; 2026</footer>
+<script>
+const W=[
+ {num:"01",title:"AGENT ANATOMY",sub:"Learn the machine before you design the soul",
+  days:[
+   {d:1,f:"Agent Architecture",
+    learn:"Read Anthropic's tool use documentation + the ReAct paper (Yao et al, 2022). Map the 3 core agent paradigms: ReAct (reason-act cycles), Plan-and-Execute, and Multi-agent orchestration. Understand what separates an orchestrator from an executor — this distinction matters for UX.",
+    build:"Build a visual 'Agent Architecture Atlas' — a one-page, portfolio-quality diagram showing how LLMs, tools, memory layers, and orchestration layers connect. Use your design skills. Make it something you'd show in a senior interview as proof of systems-level thinking.",
+    reflect:"Write 5 raw UX questions about agents: 'As a designer, what confuses me most about how agents work?' Your honest confusion is a content goldmine and the seed of every good article.",
+    res:[
+     {l:"ReAct: Synergizing Reasoning and Acting in LLMs (Yao et al, 2022)",u:"https://arxiv.org/abs/2210.03629",n:"The foundational paper. Read sections 1–3 and all examples carefully."},
+     {l:"LLM Powered Autonomous Agents — Lilian Weng",u:"https://lilianweng.github.io/posts/2023-06-23-agent/",n:"The single best overview of agent architectures. Bookmark this and re-read it weekly."},
+     {l:"A Survey of LLM-Based Autonomous Agents",u:"https://arxiv.org/abs/2308.11432",n:"Skim sections on planning, memory, and tool use. Use as a reference map."},
+     {l:"Anthropic Tool Use — Overview",u:"https://docs.anthropic.com/en/docs/tool-use",n:"Your primary API reference throughout this entire plan. Read it fully today."}
+    ]
+   },
+   {d:2,f:"MCP Protocol",
+    learn:"Read the MCP specification end-to-end at modelcontextprotocol.io. Focus on the server architecture, the client-server-tool contract, and how tool schemas are defined. Understand the protocol first, the SDK second.",
+    build:"Set up your MCP dev environment. Run the official quickstart. Then sketch the mental model of client → server → tool as a UX interaction diagram. Make the protocol visual for a non-technical audience — that's a rare and valuable skill.",
+    reflect:"Note 3 design decisions in MCP's architecture you'd either challenge or applaud — and exactly why. Specificity here becomes future article credibility.",
+    res:[
+     {l:"MCP Official Specification",u:"https://modelcontextprotocol.io/specification",n:"Read end-to-end. Pay close attention to the message lifecycle and tool call flow."},
+     {l:"MCP Introduction & Core Concepts",u:"https://modelcontextprotocol.io/introduction",n:"Start here if the spec feels dense. Good conceptual grounding."},
+     {l:"MCP Architecture Overview",u:"https://modelcontextprotocol.io/docs/concepts/architecture",n:"Focus on the host, client, and server relationship. Draw it as you read."},
+     {l:"Anthropic MCP Launch Announcement",u:"https://www.anthropic.com/news/model-context-protocol",n:"Context on why MCP exists, where it's headed, and the ecosystem vision."}
+    ]
+   },
+   {d:3,f:"First MCP Server",
+    learn:"Study 3 reference MCP servers on GitHub: filesystem, fetch, and sequential-thinking. Focus on how tools are named, described, and structured. Tool names and descriptions ARE the UX of an MCP server — discoverability is a design problem.",
+    build:"Build your first MCP server themed around 'Design Research Tools'. Minimum 3 tools: fetch_competitor_info, analyze_ux_patterns, summarize_audit_findings. Python or Node — your call. Make it work end-to-end.",
+    reflect:"Document the developer experience honestly. Where did you get stuck? What would you design differently about the SDK itself? This becomes a case study paragraph or a LinkedIn anecdote.",
+    res:[
+     {l:"MCP Quickstart — Build Your First Server",u:"https://modelcontextprotocol.io/quickstart/server",n:"Follow every step. Do not skip the inspector setup — it's essential for debugging."},
+     {l:"MCP Python SDK",u:"https://github.com/modelcontextprotocol/python-sdk",n:"Primary SDK if using Python. Study the examples/ folder thoroughly."},
+     {l:"MCP TypeScript SDK",u:"https://github.com/modelcontextprotocol/typescript-sdk",n:"For Node-based servers. Has cleaner type-safety for complex schemas."},
+     {l:"MCP Reference Servers Repository",u:"https://github.com/modelcontextprotocol/servers",n:"Your best study material. Read the filesystem and fetch server source code entirely."}
+    ]
+   },
+   {d:4,f:"Tool Use Mastery",
+    learn:"Master Anthropic's function calling API end-to-end: tool definitions, parallel tool use, tool result handling, error paths, and stop reasons. Read the full tool use cookbook. Know every edge case — senior roles expect this.",
+    build:"Build a 3-tool competitive design agent: input = product URL → output = UX patterns detected + dark patterns flagged + improvement recommendations. Use your Trust framework as the evaluation lens. This is demo-worthy.",
+    reflect:"Write a short piece: 'Tool interface design as a UX discipline.' A JSON schema IS an API contract — that's a designer's domain. You've noticed this before most designers will.",
+    res:[
+     {l:"Anthropic Tool Use — Full Documentation",u:"https://docs.anthropic.com/en/docs/tool-use",n:"Read every section including error handling and parallel tool use — those parts are typically skipped and they matter most."},
+     {l:"Anthropic Cookbook — Tool Use Examples",u:"https://github.com/anthropics/anthropic-cookbook/tree/main/tool_use",n:"Run all examples. Modify each one to understand the boundaries."},
+     {l:"Building Effective Agents — Anthropic",u:"https://www.anthropic.com/research/building-effective-agents",n:"Required reading for this entire plan. The tool design section maps directly to your UX work."},
+     {l:"Toolformer: Language Models Can Teach Themselves to Use Tools",u:"https://arxiv.org/abs/2302.04761",n:"20-minute read. Understanding the 'why' behind tool use adds depth to how you design with it."}
+    ]
+   },
+   {d:5,f:"Orchestration Patterns",
+    learn:"Study LangGraph's state machine model and CrewAI's role-based architecture. Focus on orchestration patterns — not implementation details. What does control flow look like from a user's perspective? Where do people get lost?",
+    build:"Build a minimal 2-agent pipeline: Researcher agent → Synthesizer agent. Implement proper state passing and a clean handoff. Test it with real input. Document the state object schema — that schema is a UX decision.",
+    reflect:"Map the UX mental model challenges. How does a user understand 2 agents running in sequence? Where does clarity break? Sketch the ideal progress UI on paper before building anything.",
+    res:[
+     {l:"LangGraph Documentation",u:"https://langchain-ai.github.io/langgraph/",n:"Focus on: state graphs, reducers, and conditional edges. These are the core orchestration primitives."},
+     {l:"LangGraph Multi-Agent Collaboration Tutorial",u:"https://langchain-ai.github.io/langgraph/tutorials/multi_agent/multi-agent-collaboration/",n:"Build this example, then modify it. Building beats reading for this topic."},
+     {l:"CrewAI Documentation",u:"https://docs.crewai.com/",n:"Study the role/goal/backstory agent design — it maps directly to UX persona methodology you already know."},
+     {l:"Building Effective Agents — Orchestration Patterns",u:"https://www.anthropic.com/research/building-effective-agents",n:"Anthropic's view on when multi-agent helps vs. when it adds complexity without value."}
+    ]
+   },
+   {d:6,f:"Agentic Products Audit",
+    learn:"Spend 30+ minutes each inside Cursor, Perplexity Deep Research, and one more agentic product — as a power user, not a casual browser. Notice every friction point, every trust signal, every moment of unexpected behavior.",
+    build:"Create your 'Agentic UX Audit Rubric'. Extend your dark pattern framework to cover agent interactions. Score each product across: transparency, user control, trust signaling, failure recovery, and autonomy calibration.",
+    reflect:"Draft a LinkedIn post: 'I spent a day using AI agents as a UX researcher. 5 patterns I noticed.' Save it — you'll refine and publish it with far more authority in Week 3.",
+    res:[
+     {l:"Google PAIR Guidebook",u:"https://pair.withgoogle.com/guidebook",n:"Full read over this week. Chapters on feedback, oversight, and errors are most relevant for today's audit."},
+     {l:"Microsoft HAX Toolkit",u:"https://www.microsoft.com/en-us/haxtoolkit/",n:"Download the full toolkit PDF. Compare their 18 guidelines against what you observe in the products you audit."},
+     {l:"Nielsen Norman Group — AI UX Articles",u:"https://www.nngroup.com/topic/ai/",n:"Filter to the last 12 months. Pick 3 that relate directly to what you'll audit today."},
+     {l:"Apple Human Interface Guidelines — Machine Learning",u:"https://developer.apple.com/design/human-interface-guidelines/machine-learning",n:"Study their calibration and feedback principles — they apply directly to agent trust design."}
+    ]
+   },
+   {d:7,f:"Week 1 Synthesis",
+    learn:"Run everything you built this week. Identify your biggest remaining knowledge gap — name it specifically. Vague discomfort is not actionable. A named gap can be closed.",
+    build:"Push all code to GitHub with proper READMEs. Create a one-page 'Week 1 Learnings' document. Treat it as a portfolio piece, not a notebook entry. It should stand completely alone.",
+    reflect:"Update your job search narrative in 3 sentences. How has your understanding of agents shifted this week? Who are you becoming — and is that person clearly visible in your current portfolio?",
+    res:[
+     {l:"How to Write Great READMEs — GitHub Docs",u:"https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",n:"Your READMEs are portfolio pieces. Read this today and apply it to everything you push."},
+     {l:"Awesome LLM Agents — Curated Resource List",u:"https://github.com/kaushikb11/awesome-llm-agents",n:"Use this to discover reference projects and benchmark your own architecture choices."},
+     {l:"Anthropic Prompt Engineering Guide",u:"https://docs.anthropic.com/en/docs/prompt-engineering",n:"Review the system prompt and XML structuring techniques — you'll need these throughout Week 2 builds."}
+    ]
+   }
+  ]
+ },
+ {num:"02",title:"BUILD DEPTH",sub:"Ship artifacts, not slides",
+  days:[
+   {d:8,f:"Research Agent Design",
+    learn:"Map how a senior UX researcher actually works: what sources they use, how they synthesize information, what outputs stakeholders actually need. This becomes your agent's job description — the system prompt IS a job description.",
+    build:"Spec and build a 'UX Research Synthesis Agent'. Tools: web_search, read_pdf, synthesize_findings, generate_insight_report. System prompt = expert UX researcher persona with your specific methodology baked in as constraints.",
+    reflect:"Document your agent persona design decisions. What values, constraints, and tone did you encode? Why those choices? This paragraph is already a case study section — write it like one.",
+    res:[
+     {l:"Anthropic System Prompts — Best Practices",u:"https://docs.anthropic.com/en/docs/system-prompts",n:"Focus on persona construction, hard constraints, and output formatting. These are the three levers of agent behavior design."},
+     {l:"Building Effective Agents — Workflow Design",u:"https://www.anthropic.com/research/building-effective-agents",n:"Re-read the prompt chaining and parallelization sections with your research agent in mind."},
+     {l:"Anthropic Cookbook — Agents Examples",u:"https://github.com/anthropics/anthropic-cookbook/tree/main/agents",n:"Study the customer service agent example — structurally closest to a research agent."},
+     {l:"Chain-of-Thought Prompting (Wei et al, 2022)",u:"https://arxiv.org/abs/2201.11903",n:"Understanding CoT is essential for designing reliable agent reasoning chains. 20-minute read."}
+    ]
+   },
+   {d:9,f:"Agents + The Real World",
+    learn:"Study how agents handle authentication, pagination, rate limits, and API errors in production. Real tools break in real ways. Your agent must degrade gracefully — and that's a UX design problem, not just an engineering one.",
+    build:"Extend your research agent with real data sources. Then deliberately break it: kill the API mid-task, send malformed queries, exceed rate limits. Document every failure mode. Failure taxonomy is portfolio gold.",
+    reflect:"Write '5 UX Patterns for Agent Failure States'. What does good recovery look like from a designer's perspective? This is original, immediately usable content nobody else has published clearly yet.",
+    res:[
+     {l:"LangSmith — Agent Observability and Debugging",u:"https://smith.langchain.com/",n:"Set this up for your agent today. Seeing traces is worth 10x more than reading about error handling."},
+     {l:"Patterns for Building LLM Applications — Eugene Yan",u:"https://eugeneyan.com/writing/llm-patterns/",n:"Read the 'evals' and 'fallback' sections specifically. Practical patterns, not theory."},
+     {l:"Anthropic — Long Context Cookbook",u:"https://github.com/anthropics/anthropic-cookbook/tree/main/long_context",n:"Applies directly to agents that must read large research documents without losing coherence."},
+     {l:"Microsoft Promptflow — Testing & Evaluation",u:"https://microsoft.github.io/promptflow/",n:"Skim the evaluation and testing philosophy. Adapt the thinking, not the framework."}
+    ]
+   },
+   {d:10,f:"Production MCP Server",
+    learn:"Study MCP server patterns for multi-tool architectures. Focus on: tool discoverability, description quality, schema clarity, and backward compatibility. A well-described tool is a well-designed tool — this is where UX writing meets API design.",
+    build:"Build 'Design Intelligence MCP Server' — minimum 6 tools: competitor_analysis, heuristic_audit, dark_pattern_scan, pattern_lookup, trend_synthesis, accessibility_check. Production-grade. This is a portfolio centerpiece.",
+    reflect:"Write about 'tool description as microcopy'. Writing an MCP tool schema requires UX writing skills. This is a bridge only you can see clearly — because you're both a writer and a builder.",
+    res:[
+     {l:"MCP Server Debugging & Inspector Tool",u:"https://modelcontextprotocol.io/docs/tools/debugging",n:"Set up the MCP inspector before you build. It saves hours when your server misbehaves."},
+     {l:"FastMCP — High-level Python MCP Framework",u:"https://github.com/jlowin/fastmcp",n:"If Python is your stack, FastMCP reduces boilerplate significantly. Study its decorator patterns."},
+     {l:"MCP Specification — Tools Section",u:"https://modelcontextprotocol.io/specification",n:"Re-read the tools specification with your 6-tool server design in mind. The inputSchema field and annotations are critical."},
+     {l:"MCP Reference Servers — Study the Fetch Server",u:"https://github.com/modelcontextprotocol/servers",n:"The fetch server is the clearest example of multi-tool design. Read its source fully before writing yours."}
+    ]
+   },
+   {d:11,f:"Pattern Library v0",
+    learn:"Read Google PAIR Guidebook, Microsoft HAX Toolkit, and Nielsen's AI UX principles. Catalog every existing agentic interaction pattern you find. The gaps in the literature are exactly where you build your authority.",
+    build:"Build the 'Agentic UX Pattern Library' as a published interactive HTML artifact. Minimum 12 patterns, each with: problem statement, solution approach, real-world example, and anti-pattern. This is your biggest visibility asset this month.",
+    reflect:"Name 3 patterns missing from existing literature. Own those names. A pattern with your name attached is a citation waiting to happen — and a question in every future senior interview.",
+    res:[
+     {l:"Google PAIR Guidebook — Full Read",u:"https://pair.withgoogle.com/guidebook",n:"Map every PAIR pattern to an agent context. Where do they apply? Where do they fundamentally break down?"},
+     {l:"Microsoft HAX Toolkit — All 18 Guidelines",u:"https://www.microsoft.com/en-us/haxtoolkit/",n:"Download the guidelines PDF. Work through each one systematically for agentic contexts."},
+     {l:"Nielsen Norman Group — AI Interaction Patterns",u:"https://www.nngroup.com/topic/ai/",n:"Filter to interaction pattern articles. Map findings to your library taxonomy."},
+     {l:"Deceptive Design Patterns Reference",u:"https://www.deceptive.design/",n:"Essential for your anti-patterns section. Know the dark side as deeply as you know the right patterns."}
+    ]
+   },
+   {d:12,f:"Glass Cockpit v2",
+    learn:"Revisit your Glass Cockpit concept from Deloitte prep. Study aviation HMI principles: situation awareness, mode confusion, control handoff, and out-of-the-loop syndrome. Each concept has a direct and specific agent UX parallel that nobody is naming yet.",
+    build:"Expand Glass Cockpit into a full 'Agentic UX Framework' with 5 named pillars: Situational Awareness, Control Handoff, Progress Transparency, Graceful Failure, Trust Calibration. One-pager. Beautiful enough to share cold.",
+    reflect:"Draft your 3-sentence framework elevator pitch. A framework with a name, 5 pillars, and real examples is quotable in articles and memorable in interviews. Make yours quotable.",
+    res:[
+     {l:"Endsley's Situation Awareness in Dynamic Systems (1995)",u:"https://www.tandfonline.com/doi/abs/10.1207/s15327108ijh0801_3",n:"The foundational SA paper. Focus on levels 1/2/3 — they map perfectly to agent state visibility UX."},
+     {l:"Mode Confusion in Aviation — NASA Technical Report",u:"https://ntrs.nasa.gov/citations/19960010637",n:"Mode confusion is the #1 agent UX problem designers aren't naming yet. This is the source material."},
+     {l:"Microsoft HAX — Transparency Guidelines",u:"https://www.microsoft.com/en-us/haxtoolkit/toolkit/transparency/",n:"Align your framework pillars against their transparency patterns. Where do you agree? Where do you extend?"},
+     {l:"Out-of-the-Loop Syndrome — Parasuraman & Manzey",u:"https://journals.sagepub.com/doi/10.1518/001872010X12765702217751",n:"The academic basis for why users lose situational awareness in automated systems. Directly applicable to agents."}
+    ]
+   },
+   {d:13,f:"3-Agent Pipeline",
+    learn:"Study state management across multi-agent systems. How does context degrade as it passes between agents? Where do instructions drift? Context degradation is a design problem with measurable UX consequences.",
+    build:"Build a 3-agent 'Design Sprint Intelligence System': Researcher → Pattern Analyzer → Recommendation Writer. Implement the full UX flow including progress indicators, handoff signals, and user decision checkpoints.",
+    reflect:"Document every human-in-the-loop decision point in your pipeline. Where did you instinctively want to pause and ask the user something? That list IS your answer to 'how do you design human-AI collaboration?'",
+    res:[
+     {l:"LangGraph — Agent Supervisor Pattern Tutorial",u:"https://langchain-ai.github.io/langgraph/tutorials/multi_agent/agent_supervisor/",n:"The supervisor pattern maps directly to your Researcher → Analyzer → Writer architecture."},
+     {l:"LangGraph — Persistence and State Management",u:"https://langchain-ai.github.io/langgraph/concepts/persistence/",n:"State schema design is a UX decision. Read how LangGraph handles state and then design yours intentionally."},
+     {l:"Building Effective Agents — Multi-Agent Networks",u:"https://www.anthropic.com/research/building-effective-agents",n:"Anthropic's guidance on when parallelization helps and when it adds complexity without value."},
+     {l:"Guidelines for Human-AI Interaction (Amershi et al, 2019)",u:"https://dl.acm.org/doi/10.1145/3290605.3300233",n:"The academic basis for designing human-agent collaboration checkpoints — HITL design with a research grounding."}
+    ]
+   },
+   {d:14,f:"Week 2 Synthesis",
+    learn:"Record yourself explaining your best build in 5 minutes (Loom). Watch it back without flinching. What you can't explain clearly, you don't understand well enough yet.",
+    build:"Publish the Pattern Library to GitHub Pages. Update your portfolio to link all 3 builds. Write a single strong LinkedIn-ready one-liner for each project. Test every demo on your phone.",
+    reflect:"Send 5 genuine DMs to AI/UX people on LinkedIn — share an interesting observation from your work, not a job request. Real conversations open real doors. Templates close them.",
+    res:[
+     {l:"GitHub Pages — Deploy Your Pattern Library",u:"https://pages.github.com/",n:"Deploy today. Custom domain optional but recommended if you have one."},
+     {l:"Loom — Screen and Walkthrough Recording",u:"https://www.loom.com/",n:"Record your 5-minute build walkthrough. This becomes your demo reel for interviews."},
+     {l:"Make a README — Structure Guide",u:"https://www.makeareadme.com/",n:"Structure: badges → demo GIF → installation → usage → architecture. Every repo needs this today."}
+    ]
+   }
+  ]
+ },
+ {num:"03",title:"FRAMEWORKS & LEADERSHIP",sub:"Your 15 years becomes your unfair advantage",
+  days:[
+   {d:15,f:"The UX Manifesto",
+    learn:"Study how landmark design frameworks were written: Nielsen's 10 heuristics, Norman's 7 stages of action, Dieter Rams' 10 principles. What makes a framework endure? Specificity, stakes, and the courage of a named position.",
+    build:"Write '10 Principles for Designing Agentic AI Experiences' — your original manifesto. Format it as a publishable, shareable HTML or PDF document. Lead with the principle you'd stake your professional reputation on.",
+    reflect:"Which principle goes first? The answer reveals what you believe most deeply about this domain. A manifesto without a defensible conviction is just a listicle with a pretentious title.",
+    res:[
+     {l:"Nielsen's 10 Usability Heuristics — Original",u:"https://www.nngroup.com/articles/ten-usability-heuristics/",n:"Study the format and specificity. Each heuristic is actionable without being prescriptive. That's your model."},
+     {l:"Dieter Rams — 10 Principles of Good Design",u:"https://www.vitsoe.com/us/about/good-design",n:"The gold standard for design principle writing. Notice the economy and precision of every word."},
+     {l:"Norman's 7 Stages of Action",u:"https://www.interaction-design.org/literature/article/user-centred-design-7-stages-of-action",n:"Map these stages to agent task initiation and outcome interpretation. The gulf of evaluation is entirely new in agents."},
+     {l:"Stanford HAI — Human-Centered AI Principles",u:"https://hai.stanford.edu/news/new-framework-aims-help-design-human-centered-ai",n:"Recent position paper. Read it, then identify where your manifesto is more specific, more actionable, or more design-native."}
+    ]
+   },
+   {d:16,f:"Trust & Agent Dark Patterns",
+    learn:"Deep-dive into automation bias, appropriate reliance, and calibrated trust research (Parasuraman, Lee, Muir). When do people over-trust agents? When do they under-trust? What are the documented costs of each error type?",
+    build:"Extend your Trust & Dark Pattern Intelligence GPT with 10 agent-specific dark patterns: ghost agency, false certainty, invisible override suppression, permission creep, action laundering, confidence theater. Add all to your Pattern Library.",
+    reflect:"Write 3 paragraphs: 'Why UX designers are the last line of defense in the agentic age.' Don't edit. Just write. This becomes the opening of your long-form article.",
+    res:[
+     {l:"Trust in Automation: Designing for Appropriate Reliance (Lee & See, 2004)",u:"https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392",n:"The canonical paper. Study the taxonomy of trust antecedents — each is a design lever you can pull."},
+     {l:"Automation Bias: A Systematic Review (Goddard et al, 2012)",u:"https://pubmed.ncbi.nlm.nih.gov/22392598/",n:"Focus on the conditions that amplify automation bias. Designers create those conditions — often without knowing it."},
+     {l:"Deceptive Design — Hall of Shame",u:"https://www.deceptive.design/",n:"Catalog the most applicable dark patterns for your agent extensions. Confirmshaming, hidden information, disguised ads — what are their agent equivalents?"},
+     {l:"Anthropic AI Safety & Alignment Research",u:"https://www.anthropic.com/research",n:"Read the alignment and interpretability papers relevant to trust. This is your academic grounding for trust design work."}
+    ]
+   },
+   {d:17,f:"VANTAGE → Agent Mode",
+    learn:"Study how existing strategic intelligence tools work at their ceiling. Where does a static analysis engine end and a living agent begin? That boundary is a design decision — not a technical constraint.",
+    build:"Architect and ship VANTAGE v2 as a true agentic system. Add real tool use: web_search for live market data, persistent memory for drift detection, a proper debate-model with actual competing agent turns. Major portfolio upgrade.",
+    reflect:"Document the evolution as a case study: 'How I turned a static GPT into a living strategic intelligence engine.' The before/after contrast IS the story. Write those two paragraphs today.",
+    res:[
+     {l:"LangGraph — Persistence and Memory Architecture",u:"https://langchain-ai.github.io/langgraph/concepts/persistence/",n:"State persistence is the foundation of drift detection. Understand checkpointers before architecting VANTAGE v2."},
+     {l:"Anthropic Cookbook — Summarization and Context Management",u:"https://github.com/anthropics/anthropic-cookbook/tree/main/skills/summarization",n:"How to compress and manage context for long-running agents — essential for VANTAGE's multi-session memory."},
+     {l:"AI Safety via Debate (Irving et al, 2018)",u:"https://arxiv.org/abs/1805.00899",n:"The academic basis for your debate-model architecture. A quick read adds theoretical weight to a design decision."},
+     {l:"Building Effective Agents — Augmenting LLMs",u:"https://www.anthropic.com/research/building-effective-agents",n:"The augmented LLM section describes exactly the pattern you're implementing in VANTAGE v2."}
+    ]
+   },
+   {d:18,f:"UX Evaluation Framework",
+    learn:"Study agent evaluation approaches: RAGAS, LLM-as-judge, behavioral testing suites. Understand what 'good' means in agent systems from both engineering and user-centered perspectives. The gap between those two views is your design space.",
+    build:"Create the 'UX Evaluation Framework for Agentic Systems'. This doesn't exist yet in the literature. Dimensions: task completion rate, trust calibration accuracy, cognitive load, failure recovery success, perceived control satisfaction. Include a scoring rubric.",
+    reflect:"This framework doesn't exist in the literature. That's not an oversight — it's a gap you're uniquely qualified to fill. Treat it as a research contribution, not a deliverable checkbox.",
+    res:[
+     {l:"RAGAS — RAG and Agent Evaluation Framework",u:"https://docs.ragas.io/",n:"Study their evaluation dimensions. Identify which map to UX metrics and which are purely technical performance."},
+     {l:"Judging LLM-as-a-Judge: MT-Bench and Chatbot Arena (Zheng et al, 2023)",u:"https://arxiv.org/abs/2306.05685",n:"LLM-as-judge methodology for quality assessment. Adapt this approach for UX quality scoring."},
+     {l:"HELM — Holistic Evaluation of Language Models",u:"https://crfm.stanford.edu/helm/",n:"Study the evaluation taxonomy. Map it to user-centered dimensions. The gaps in their taxonomy become your contribution."},
+     {l:"Measuring Human-AI Task Performance (ACM CHI collection)",u:"https://dl.acm.org/doi/search?query=human+AI+evaluation+UX",n:"Search CHI 2022–2024 papers on human-AI task evaluation. These become your academic references."}
+    ]
+   },
+   {d:19,f:"Portfolio Case Study",
+    learn:"Study 3 strong UX case studies from real product teams. What makes them memorable? Notice: problem framing specificity, key insight clarity, decision + tradeoff honesty, and measured outcome. What's missing from your current portfolio?",
+    build:"Write the full case study for your best agent build. Include the agent-specific UX challenges you solved, the tradeoffs you made consciously, and what you'd do differently knowing what you know now. Honesty is credibility.",
+    reflect:"Get feedback from 1 design peer and 1 non-designer. The non-designer represents your hiring manager. What confused them? Fix those things before anything else.",
+    res:[
+     {l:"UX Portfolio Case Studies — Nielsen Norman Group",u:"https://www.nngroup.com/articles/ux-portfolio-case-study/",n:"The standard structure. You're going to exceed it — but understand it thoroughly first."},
+     {l:"Writing About Design Decisions (A List Apart)",u:"https://alistapart.com/article/the-language-of-modular-design/",n:"The key distinction: documenting process vs explaining decisions. Senior case studies are about decisions, not process."},
+     {l:"How to Write a Senior-Level UX Case Study (Career Foundry)",u:"https://careerfoundry.com/en/blog/ux-design/ux-design-portfolio/",n:"Good contrast between junior and senior case study structure. Know which one you're writing."}
+    ]
+   },
+   {d:20,f:"Company Intelligence",
+    learn:"Research your top 10 target companies' agent and AI products in depth. Use VANTAGE v2 if it's live. Know their current agent UX better than their own product team does. This is table stakes for a senior-level interview.",
+    build:"For your top 5 companies: write a one-page 'how I'd improve their agentic UX' brief using Glass Cockpit as your analytical lens. These become your interview answers — specific, frameworks-driven, and instantly impressive.",
+    reflect:"Practice 'How would you redesign their agent experience?' out loud. Record yourself. The first answer will be mediocre. The fifth will be interview-ready.",
+    res:[
+     {l:"Perplexity Deep Research — Use It on Your Targets",u:"https://www.perplexity.ai/",n:"Use Perplexity to research each company's AI product strategy. Note the agent UX as you use the tool itself."},
+     {l:"CB Insights — AI Market Intelligence",u:"https://www.cbinsights.com/research/artificial-intelligence/",n:"Free tier gives you funding data and market maps for target company competitive context."},
+     {l:"LinkedIn — Target Company Job Postings",u:"https://www.linkedin.com/jobs/",n:"Recent AI/design job postings reveal team priorities, stack preferences, and org structure. Read them like research documents."}
+    ]
+   },
+   {d:21,f:"Week 3 Synthesis",
+    learn:"Name 2 things you still don't understand well enough — specifically. Vague discomfort is not actionable. Decide: close the gap in Week 4, or consciously de-prioritize it.",
+    build:"Write and schedule your LinkedIn post: 'I spent 3 weeks deep in agentic UX. Here's what I found — and what the existing literature is missing.' This is your signal flare. Make the hook undeniable.",
+    reflect:"DM 3 hiring managers or senior design leaders with something genuinely interesting from your work. A framework observation or a pointed question. Not a job ask — a conversation starter.",
+    res:[
+     {l:"LinkedIn Algorithm Report 2024 (Richard van der Blom)",u:"https://www.linkedin.com/posts/richardvanderblom_linkedin-algorithm-report-edition-2023-activity-7053449295911993345-UoRr/",n:"Understand what makes posts spread on LinkedIn before writing your Week 3 signal flare."},
+     {l:"How to Write on LinkedIn for Thought Leadership",u:"https://www.laraacosta.com/",n:"Best practical framework for thought leadership content aimed at senior professional audiences."},
+     {l:"Building a Technical Audience Online — Swyx (shawn wang)",u:"https://www.swyx.io/learn-in-public",n:"The 'learn in public' framework. Your 30-day plan IS this, executed at senior level."}
+    ]
+   }
+  ]
+ },
+ {num:"04",title:"VISIBILITY & LANDING",sub:"Make them find you, not the other way around",
+  days:[
+   {d:22,f:"Portfolio Overhaul",
+    learn:"Audit your current portfolio against 5 actual job descriptions you want. Score the gap honestly on a 1–5 scale for each JD requirement. This is strategic gap analysis, not self-critique.",
+    build:"Add all 3 agent projects to your portfolio as interactive cards with live demos. Test on mobile. Everything must load and impress in under 30 seconds — that's all the attention you'll get from a hiring manager.",
+    reflect:"Update LinkedIn Featured section with the Pattern Library link and your best Loom demo. These are first-impression assets. Optimize them like a landing page, not an afterthought.",
+    res:[
+     {l:"AI Design Roles — LinkedIn Job Search",u:"https://www.linkedin.com/jobs/search/?keywords=AI+UX+Lead",n:"Read 10 JDs this morning. Extract the 5 most repeated requirements. Gap-map your portfolio against exactly those."},
+     {l:"UX Portfolio Checklist — Nielsen Norman Group",u:"https://www.nngroup.com/articles/ux-portfolio/",n:"Use as a baseline audit, then add your agent-specific criteria on top."},
+     {l:"GitHub Pages — Live Portfolio Hosting",u:"https://pages.github.com/",n:"If your portfolio isn't live and fast-loading on mobile, that's the first fix today."}
+    ]
+   },
+   {d:23,f:"The Long-Form Article",
+    learn:"Study the top 5 AI/design articles that spread on LinkedIn in the last 3 months. What made them travel? Specificity of insight, a contrarian position, or a framework people could immediately apply in their own work?",
+    build:"Write 'Designing for the Age of Agents: A Framework for the World After Chatbots' (~1800 words). This is not a blog post — it's a position paper. Lead with your most defensible, most specific insight. No hedging.",
+    reflect:"Schedule publication for Day 28. Send to 3 trusted readers first. A great article published on Day 28 beats a perfect one that never ships.",
+    res:[
+     {l:"Writing Well — Paul Graham",u:"http://www.paulgraham.com/writing44.html",n:"The most practical advice on writing that spreads. 20 minutes that will reshape how you approach the article."},
+     {l:"LinkedIn Articles — How They Index and Spread",u:"https://www.linkedin.com/pulse/",n:"Articles index on Google; posts get more immediate reach. For a 1800-word position paper, articles are the right format."},
+     {l:"Substack — Cross-posting for Long-term Ownership",u:"https://substack.com/",n:"Publish on LinkedIn for reach, then mirror on Substack for ownership. Build the email list from Day 1."}
+    ]
+   },
+   {d:24,f:"Speaking Opportunities",
+    learn:"Map AI/design conferences, UX community talks, and company design meetups in the next 6 months. Build a list of 10 realistic submission targets. Speaking is the highest-credibility signal per unit of effort.",
+    build:"Prepare a 20-minute talk proposal: 'The Glass Cockpit: Designing Trust and Control in Agentic AI.' Write the abstract, 3 key audience takeaways, and your speaker bio. Make it specific enough that a program committee can fully visualize the talk.",
+    reflect:"Submit to 3 CFPs. DM 3 community organizers with the proposal directly. Speaking beats writing beats posting — in that order, on credibility signal per hour invested.",
+    res:[
+     {l:"Sessionize — Conference CFP Aggregator",u:"https://sessionize.com/",n:"The best single source for open CFPs across tech and design conferences globally. Set up your speaker profile here."},
+     {l:"PaperCall — CFP Discovery and Submission",u:"https://www.papercall.io/cfps",n:"Filter for UX, design, and AI conferences. Bookmark 10 with upcoming deadlines."},
+     {l:"Notist — Free Speaker Portfolio",u:"https://noti.st/",n:"Build a speaker profile that links to all your talks and proposals from a single shareable URL."}
+    ]
+   },
+   {d:25,f:"The Target 20 Roles",
+    learn:"Deep-read 5 JDs from your target companies. Map every bullet point to something you've built or shipped in the last 25 days. Anything you can't map is a gap — address it or consciously de-prioritize that role.",
+    build:"Tailor your resume narrative and portfolio intro paragraph for your top 5 roles. Write each cover note as if it's the only one you're sending today — because to that specific reader, it is.",
+    reflect:"Apply to all 5. Send them today. No more refining. Launched imperfectly beats perfected and sitting in drafts forever. Momentum is a competitive advantage in job searches.",
+    res:[
+     {l:"LinkedIn Jobs — AI Experience Lead Roles",u:"https://www.linkedin.com/jobs/search/?keywords=AI+Experience+Lead",n:"Primary hunting ground. Set up job alerts for: AI Experience Lead, AI UX, Design Strategist AI."},
+     {l:"Wellfound (AngelList) — AI-native Companies",u:"https://wellfound.com/",n:"Best source for AI-native startups with design leadership roles that won't appear on LinkedIn."},
+     {l:"Levels.fyi — Compensation Benchmarking",u:"https://www.levels.fyi/",n:"Know the market before you negotiate. Don't enter compensation conversations blind."}
+    ]
+   },
+   {d:26,f:"Network Activation",
+    learn:"Map your 10 warmest connections at target companies: past colleagues, mutual LinkedIn connections, people you've exchanged messages with before. Warm beats cold by at least a factor of 10.",
+    build:"Write a personalized outreach note for each. Structure: reference something specific about their recent work → share one genuinely interesting observation from yours → leave a natural opening. No job asks in the first message. Ever.",
+    reflect:"Send all 10. Same day. You've met the quality bar. Now play the numbers. The job search is a numbers game with a quality filter — not a quality game with unlimited time.",
+    res:[
+     {l:"LinkedIn InMail That Gets Responses — LinkedIn Guide",u:"https://www.linkedin.com/business/sales/blog/linkedin-tips/9-tips-for-writing-inmails-that-get-responses",n:"Framework: personalization → specific value → clear soft ask. No job ask in message 1."},
+     {l:"The 5-Minute Favor — Adam Grant",u:"https://adamgrant.net/article/give-and-take/",n:"The reciprocity principle applied to networking. Share before you ask. You've been building — share something genuinely useful."},
+     {l:"Your LinkedIn Network — Connection Search",u:"https://www.linkedin.com/search/results/people/",n:"Filter by company + connection degree. Find 2nd-degree connections at target companies and ask your mutual for a warm intro."}
+    ]
+   },
+   {d:27,f:"GitHub as Portfolio",
+    learn:"Study the GitHub profiles of 5 AI/design engineers you respect. What do their READMEs do that yours don't? How do they make a technical repo feel like a designed object worth exploring?",
+    build:"Write compelling READMEs for your 3 agent projects. Create a public 'AI + UX Frameworks' repo containing your Pattern Library, Evaluation Framework, and Manifesto. Pin your 6 best repos at the top of your profile.",
+    reflect:"GitHub is the résumé of builders. This repo must exist before your next interview. It proves you didn't just think about this — you built it, documented it, and shipped it publicly.",
+    res:[
+     {l:"GitHub Profile README — How to Create One",u:"https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme",n:"Your profile README is your GitHub homepage. Make it reflect the agentic UX work you've shipped this month."},
+     {l:"Awesome GitHub Profile READMEs — Inspiration",u:"https://github.com/abhisheknaiidu/awesome-github-profile-readme",n:"Browse for builder profiles, not just developer ones. Notice how designers who code present differently."},
+     {l:"Shields.io — README Badges",u:"https://shields.io/",n:"Add tech stack, license, and live status badges to your project READMEs. Signals professionalism and currency immediately."}
+    ]
+   },
+   {d:28,f:"Demo Day",
+    learn:"Study the best product demo videos — not feature tours. Notice: clear narrative arc, design decisions explained rather than features listed, and a strong 'so what' that lands in the first 60 seconds.",
+    build:"Record a 7-minute Loom of your most impressive agent build. Narrate design decisions and tradeoffs, not just what it does. Post on LinkedIn. Publish your long-form article today too — both on the same day.",
+    reflect:"Reply personally to every comment on both the article and the demo video. The conversation IS the visibility — and compound interest applies to conversations too.",
+    res:[
+     {l:"Loom — Screen Recording with Face Bubble",u:"https://www.loom.com/",n:"Use full-screen capture with face bubble. Slow your speaking pace — designers who talk slower are perceived as more considered and confident."},
+     {l:"How to Give a Great Product Demo — UIE",u:"https://articles.uie.com/product_demos/",n:"The principle of narrating decisions rather than features applies directly to your build demo."},
+     {l:"LinkedIn Video Best Practices",u:"https://www.linkedin.com/help/linkedin/answer/a527692",n:"Square format (1:1), add captions, hook in first 3 seconds. These details affect algorithm reach meaningfully."}
+    ]
+   },
+   {d:29,f:"Interview War Room",
+    learn:"Practice 10 agentic UX design questions cold: 'How would you design an agent for X?', 'How do you handle trust calibration?', 'What's your framework for agent transparency?' Record each answer. Listen back without mercy.",
+    build:"Write your differentiated hiring narrative — 3 tight paragraphs: who you are specifically → why agentic UX is precisely your domain (not just 'AI') → why this company, this role, now. Zero generic language.",
+    reflect:"Run a mock interview with a peer. Ask them to push back hard on every answer. The interview you dread is the one that prepares you most. Debrief for 20 minutes after — write down the gaps.",
+    res:[
+     {l:"Design Leadership Interview Prep — Nielsen Norman Group",u:"https://www.nngroup.com/articles/design-leadership-interview/",n:"Base set of questions. Extend with agentic UX-specific questions you'd want to be asked if you were the interviewer."},
+     {l:"Designing ML Products — Chip Huyen",u:"https://huyenchip.com/machine-learning-systems-design/toc.html",n:"Some interviewers at AI companies ask system design questions. Know the vocabulary and tradeoffs."},
+     {l:"The Mom Test — Rob Fitzpatrick (Free Summary)",u:"https://www.momtestbook.com/",n:"The framework for asking questions that reveal the real problem. Use it in reverse — predict what your interviewer actually needs, not what they're asking for."}
+    ]
+   },
+   {d:30,f:"Launch Day",
+    learn:"One honest final review: what did you build, learn, and ship this month? Write 5 bullet points. Growth only compounds when you document it clearly — otherwise it evaporates.",
+    build:"Send your portfolio update to everyone in active job conversations. Subject: 'I've been building — here's what I shipped.' Include your best demo link, the Pattern Library, and your article. Make it easy to forward.",
+    reflect:"You are no longer 'a UX leader interested in AI.' You are the designer who actually ships agents, publishes frameworks, and understands MCP from the inside. That is a different person with a different market value. Own it.",
+    res:[
+     {l:"Your Portfolio — Puneet Arora",u:"https://puneetindelhi940.github.io/portfolio",n:"Do one final review. Does it tell the story of the person you became in 30 days? If not, update the headline and featured section today."},
+     {l:"Anthropic Careers — AI/UX Roles",u:"https://www.anthropic.com/careers",n:"You've been building with Anthropic tools for 30 days. You know the stack. This is a natural application that most candidates can't make honestly."},
+     {l:"Wellfound — AI-native Company Roles",u:"https://wellfound.com/",n:"Your final sweep for roles that haven't been on your radar yet. A 30-day agent-building sprint opens doors at companies that didn't exist 3 years ago."}
+    ]
+   }
+  ]
+ }
+];
+
+const WC=["#2d6a4f","#40916c","#52b788","#74c69d"];
+
+const DLV=[
+ {i:"🏗️",n:"Design Intelligence MCP Server",d:"6+ production-grade tools. Shipped by Day 10."},
+ {i:"🤖",n:"3-Agent Design Sprint Pipeline",d:"Researcher → Analyzer → Writer. Day 13."},
+ {i:"📚",n:"Agentic UX Pattern Library",d:"12+ patterns, published to GitHub Pages. Day 11."},
+ {i:"✈️",n:"Glass Cockpit v2 Framework",d:"5 pillars, shareable one-pager. Day 12."},
+ {i:"📊",n:"UX Evaluation Framework for Agents",d:"5 dimensions + scoring rubric. Day 18."},
+ {i:"📝",n:"Portfolio Case Study: Agent UX",d:"Decision-driven, outcome-measured. Day 19."},
+ {i:"🧭",n:"Agentic UX Manifesto",d:"10 original principles. Published Day 15."},
+ {i:"⚡",n:"VANTAGE v2 — Agent Mode",d:"Live tools + drift memory. Day 17."},
+ {i:"📣",n:"Long-Form Article + Demo Video",d:"1800-word position paper + Loom. Day 28."},
+ {i:"🎤",n:"Glass Cockpit Talk Proposal",d:"20-min CFP-ready submission. Day 24."}
+];
+
+let done=new Set(JSON.parse(localStorage.getItem('pa-agent-done')||'[]'));
+let expanded=new Set();
+
+function render(){
+ const root=document.getElementById('weeks-root');
+ root.innerHTML='';
+ W.forEach((wk,wi)=>{
+  const col=WC[wi];
+  const dc=wk.days.filter(d=>done.has(d.d)).length;
+  const tot=wk.days.length;
+  const el=document.createElement('div');
+  el.className='week';
+  el.innerHTML=`
+   <div class="whead" style="border-color:${col}" onclick="toggleWeek(${wi})">
+    <span class="wnum">Week ${wk.num}</span>
+    <div class="wmeta">
+     <div class="wtitle">${wk.title}</div>
+     <div class="wsub">"${wk.sub}"</div>
+    </div>
+    <span class="wbadge" id="wb${wi}">${dc}/${tot} done</span>
+    <span class="wchev" id="wc${wi}">▾</span>
+   </div>
+   <div class="dgrid" id="wg${wi}">${wk.days.map(day=>dayHTML(day)).join('')}</div>`;
+  root.appendChild(el);
+ });
+ document.getElementById('dlv-root').innerHTML=DLV.map(d=>`
+  <div class="dlv">
+   <span class="dlv-ico">${d.i}</span>
+   <div><div class="dlv-name">${d.n}</div><div class="dlv-day">${d.d}</div></div>
+  </div>`).join('');
+ updateMeta();
+}
+
+function dayHTML(day){
+ const isDone=done.has(day.d);
+ const isOpen=expanded.has(day.d);
+ const resHTML=day.res&&day.res.length?`
+  <div class="tblock res">
+   <div class="tbh">🔗 Learning Resources</div>
+   <div class="res-list">${day.res.map(r=>`
+    <div class="res-item">
+     <a href="${r.u}" target="_blank" rel="noopener noreferrer">${r.l}</a>
+     ${r.n?`<span class="res-note">${r.n}</span>`:''}
+    </div>`).join('')}
+   </div>
+  </div>`:'';
+ return `
+  <div class="dcard${isDone?' done':''}" id="dc${day.d}">
+   <div class="dhead" onclick="toggleDay(${day.d})">
+    <div class="dnum">${String(day.d).padStart(2,'0')}</div>
+    <div class="dinfo">
+     <div class="dlbl">Day ${day.d}</div>
+     <div class="dfocus">${day.f}</div>
+    </div>
+    <div class="dstatus">${isDone?'✅':'○'}</div>
+   </div>
+   <div class="dbody${isOpen?' open':''}" id="db${day.d}">
+    <div class="tblock learn"><div class="tbh">📚 Learn</div><div class="ttext">${day.learn}</div></div>
+    <div class="tblock build"><div class="tbh">⚒️ Build</div><div class="ttext">${day.build}</div></div>
+    <div class="tblock reflect"><div class="tbh">✍️ Reflect</div><div class="ttext">${day.reflect}</div></div>
+    ${resHTML}
+    <button class="done-btn${isDone?' active':''}" onclick="event.stopPropagation();toggleDone(${day.d})">${isDone?'✓ Completed':'Mark as Done'}</button>
+   </div>
+  </div>`;
+}
+
+function toggleDay(d){
+ if(expanded.has(d))expanded.delete(d);else expanded.add(d);
+ const b=document.getElementById('db'+d);
+ if(b)b.classList.toggle('open',expanded.has(d));
+}
+
+function toggleWeek(wi){
+ const g=document.getElementById('wg'+wi);
+ const c=document.getElementById('wc'+wi);
+ if(!g)return;
+ const hidden=g.style.display==='none';
+ g.style.display=hidden?'grid':'none';
+ if(c)c.style.transform=hidden?'':'rotate(-90deg)';
+}
+
+function toggleDone(d){
+ if(done.has(d))done.delete(d);else done.add(d);
+ localStorage.setItem('pa-agent-done',JSON.stringify([...done]));
+ const card=document.getElementById('dc'+d);
+ if(!card)return;
+ const isDone=done.has(d);
+ card.classList.toggle('done',isDone);
+ const s=card.querySelector('.dstatus');if(s)s.textContent=isDone?'✅':'○';
+ const btn=card.querySelector('.done-btn');
+ if(btn){btn.textContent=isDone?'✓ Completed':'Mark as Done';btn.classList.toggle('active',isDone);}
+ W.forEach((wk,wi)=>{
+  const b=document.getElementById('wb'+wi);
+  if(b){const dc=wk.days.filter(x=>done.has(x.d)).length;b.textContent=`${dc}/${wk.days.length} done`;}
+ });
+ updateMeta();
+}
+
+function updateMeta(){
+ const c=document.getElementById('cnt');if(c)c.textContent=done.size;
+ const f=document.getElementById('topfill');if(f)f.style.width=`${(done.size/30)*100}%`;
+}
+
+render();
+</script>
+</body>
+</html>
