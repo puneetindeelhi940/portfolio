@@ -1,30 +1,13 @@
 /* Puneet Arora — portfolio shared JS.
  * Soft access gate + small chrome utilities.
- * NOTE: The gate is light obfuscation, not security. Hash is for UX, not auth.
+ * NOTE: The gate is a landing screen, not security. No passcode required.
  */
 
 (function () {
   'use strict';
 
   // ── Soft gate ─────────────────────────────────────────────
-  // Default passcode is the namesake quote, lowercased + no spaces:
-  //   "Grow the core, while adding some more" → "growthecore"
-  // Change PASS_HASH below to rotate.
-  // Hash is SHA-256(passcode), hex. Computed once and pasted here so we
-  // don't ship the plaintext.
-  // To rotate: open browser console, run
-  //   await window.__hashGatePass('your-new-pass')
-  // then paste the returned hex into PASS_HASH.
-  const PASS_HASH = 'c6bc99f7251959aded2db23e9482c8daa997e0c92d6f210915a86ba3b666130a';
   const SESSION_KEY = 'pa-gate-2026';
-
-  async function sha256Hex(text) {
-    const enc = new TextEncoder().encode(text);
-    const buf = await crypto.subtle.digest('SHA-256', enc);
-    return Array.from(new Uint8Array(buf))
-      .map(b => b.toString(16).padStart(2, '0')).join('');
-  }
-  window.__hashGatePass = sha256Hex; // expose helper for rotation
 
   // Pages that require the gate (everything except the gate itself):
   function isProtected() {
@@ -65,26 +48,15 @@
   document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('gate-form');
     if (form) {
-      const inp = document.getElementById('gate-input');
       const rem = document.getElementById('gate-remember');
-      const root = document.getElementById('gate-root');
-      form.addEventListener('submit', async function (e) {
+      form.addEventListener('submit', function (e) {
         e.preventDefault();
-        const raw = (inp.value || '').trim().toLowerCase().replace(/\s+/g, '');
-        const h = await sha256Hex(raw);
-        if (h === PASS_HASH) {
-          grantAccess(rem && rem.checked);
-          // Redirect to ?to=... or home.html
-          const params = new URLSearchParams(location.search);
-          const to = params.get('to');
-          location.replace(to ? decodeURIComponent(to) : 'home.html');
-        } else {
-          root.classList.add('is-err');
-          inp.value = '';
-          inp.focus();
-        }
+        grantAccess(rem && rem.checked);
+        // Redirect to ?to=... or home.html
+        const params = new URLSearchParams(location.search);
+        const to = params.get('to');
+        location.replace(to ? decodeURIComponent(to) : 'home.html');
       });
-      inp && inp.focus();
     }
 
     // Year stamp

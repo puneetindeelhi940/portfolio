@@ -400,7 +400,7 @@ img { display: block; max-width: 100%; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .grid-6 { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; }
 
-/* ───────── Soft gate (entry passcode) ───────── */
+/* ───────── Soft gate (entry landing) ───────── */
 .gate {
   min-height: 100vh;
   display: flex;
@@ -419,14 +419,13 @@ img { display: block; max-width: 100%; }
     radial-gradient(ellipse at 20% 80%, color-mix(in oklch, var(--signal) 4%, transparent) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 20%, color-mix(in oklch, var(--signal) 3%, transparent) 0%, transparent 45%);
 }
-.gate__globe, .gate__fx {
+.gate__globe {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   display: block;
   pointer-events: none;
+  z-index: 0;
 }
-.gate__globe { z-index: 0; }
-.gate__fx { z-index: 1; }
 .gate__inner {
   position: relative;
   z-index: 1;
@@ -502,24 +501,13 @@ img { display: block; max-width: 100%; }
   .gate__title em { font-size: 48px; }
 }
 .gate__form { display: flex; gap: 0; border: 1px solid var(--rule); border-radius: 2px; overflow: hidden; }
-.gate__input {
-  flex: 1;
-  background: var(--surface);
-  border: none;
-  padding: 14px 16px;
-  color: var(--ink);
-  font-family: var(--f-mono);
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  outline: none;
-}
-.gate__input::placeholder { color: var(--faint); }
-.gate__input:focus { background: var(--surface-2); }
 .gate__submit {
+  flex: 1;
   background: var(--signal);
   color: var(--signal-ink);
   border: none;
-  padding: 0 22px;
+  cursor: pointer;
+  padding: 14px 22px;
   font-family: var(--f-mono);
   font-size: 11px;
   font-weight: 700;
@@ -538,16 +526,6 @@ img { display: block; max-width: 100%; }
 }
 .gate__hint a { color: var(--dim); }
 .gate__hint a:hover { color: var(--signal); }
-.gate__err {
-  margin-top: 14px;
-  color: var(--warn);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  display: none;
-}
-.gate.is-err .gate__err { display: block; }
-.gate.is-err .gate__form { border-color: var(--warn); }
 
 .gate__foot {
   position: absolute;

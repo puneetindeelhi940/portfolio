@@ -16,7 +16,6 @@
 <main id="gate-root" class="gate">
   <div class="gate__bg">
     <canvas id="gate-globe" class="gate__globe" aria-hidden="true"></canvas>
-    <canvas id="gate-fx" class="gate__fx" aria-hidden="true"></canvas>
   </div>
 
   <div class="gate__inner">
@@ -31,21 +30,12 @@
     </h1>
     <p class="gate__tagline">Portfolio for an AI-driven future</p>
     <p class="gate__lede">
-      You have been sent a passcode. Enter it to continue. If you don&rsquo;t have one, reach
+      Step inside to explore the work. Want to talk? Reach
       out on <a href="https://www.linkedin.com/in/puneetar/" target="_blank" rel="noopener" style="color: var(--signal);">LinkedIn</a>
       or via <a href="mailto:puneetindelhi@yahoo.com" style="color: var(--signal);">email</a>.
     </p>
 
     <form id="gate-form" class="gate__form" autocomplete="off" novalidate>
-      <input
-        id="gate-input"
-        type="password"
-        class="gate__input"
-        placeholder="passcode"
-        autocapitalize="off"
-        autocorrect="off"
-        spellcheck="false"
-        required>
       <button type="submit" class="gate__submit">ENTER →</button>
     </form>
 
@@ -54,9 +44,8 @@
         <input type="checkbox" id="gate-remember" style="accent-color: var(--signal);">
         REMEMBER ON THIS DEVICE
       </label>
-      <span class="mono">Soft gate · client-side</span>
+      <span class="mono">No passcode needed</span>
     </div>
-    <div class="gate__err">Incorrect passcode. Try again.</div>
 
     <div class="gate__theme">
       <span class="lbl">DISPLAY</span>
@@ -75,7 +64,6 @@
 </main>
 
 <script src="assets/site.js"></script>
-<script src="assets/gate-fx.js" defer></script>
 <script src="assets/globe-fx.js" defer></script>
 </body>
 </html>
