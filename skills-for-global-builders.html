@@ -291,7 +291,45 @@
   }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+  /* ── Submit form ── */
+  .submit {
+    padding: 72px var(--pad-x);
+    background: var(--bg-2);
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  }
+  .submit__inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: start; max-width: 1180px; }
+  .submit h2 { font-family: var(--f-display); font-size: 48px; line-height: 0.98; margin: 14px 0 18px; }
+  .submit .lede { max-width: 460px; }
+  .submit form {
+    border: 1px solid var(--rule); border-radius: 2px;
+    padding: 28px; background: var(--surface);
+    display: grid; gap: 14px;
+  }
+  .submit label { display: grid; gap: 6px; }
+  .submit label > span {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    color: var(--faint); text-transform: uppercase;
+  }
+  .submit input, .submit textarea, .submit select {
+    background: var(--bg); border: 1px solid var(--rule); border-radius: 2px;
+    padding: 10px 12px; color: var(--ink);
+    font-family: var(--f-sans); font-size: 13px;
+    outline: none;
+  }
+  .submit input:focus, .submit textarea:focus, .submit select:focus { border-color: var(--gb-1); }
+  .submit textarea { resize: vertical; min-height: 90px; }
+  .submit__row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .submit__success {
+    display: none; padding: 12px 14px;
+    border: 1px solid var(--gb-3); border-radius: 2px;
+    background: color-mix(in oklch, var(--gb-3) 12%, transparent);
+    font-family: var(--f-mono); font-size: 11px; color: var(--gb-3);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .submit__success.show { display: block; }
+
   @media (max-width: 980px) {
+    .submit__inner { grid-template-columns: 1fr; }
     .stat-strip { grid-template-columns: repeat(2, 1fr); }
     .stat-strip .cell:nth-child(3) { border-left: none; border-top: 1px solid var(--rule); }
     .stat-strip .cell:nth-child(4) { border-top: 1px solid var(--rule); }
@@ -1618,6 +1656,69 @@
   </div>
 </section>
 
+<!-- SUBMIT A SKILL -->
+<section class="submit">
+  <div class="submit__inner">
+    <div>
+      <div class="flex gap-12" style="align-items: center;">
+        <span class="tag" style="background: color-mix(in oklch, var(--gb-1) 14%, transparent); color: var(--gb-1); border-color: color-mix(in oklch, var(--gb-1) 40%, transparent);">§ 04 · CONTRIBUTE</span>
+        <span class="faint mono" style="font-size: 11px;">// propose a skill</span>
+      </div>
+      <h2 class="display-serif">Hit a step in your day<br><em>worth removing?</em></h2>
+      <p class="lede">
+        This directory grows the same way it shipped &mdash; one earned skill at a time.
+        If you&rsquo;ve found a recurring step in your work that a Claude skill could compress
+        from minutes to seconds, propose it. Promising ones get built, credited, and added
+        to a future version with a link back to you.
+      </p>
+      <div class="mono faint" style="font-size: 11px; letter-spacing: 0.18em; margin-top: 18px;">
+        OR EMAIL DIRECTLY · <a href="contact.html" class="signal">contact ↗</a>
+      </div>
+    </div>
+    <!--
+      Submit form backend:
+      Set window.GB_FORMSPREE_ID below to your Formspree form ID (after /f/).
+      Falls back to the user's mail client when blank.
+    -->
+    <form id="submit-form" action="https://formspree.io/f/" method="POST">
+      <div class="submit__row">
+        <label><span>Your name</span><input type="text" name="name" required></label>
+        <label><span>Email</span><input type="email" name="email" required></label>
+      </div>
+      <label>
+        <span>Skill name</span>
+        <input type="text" name="skill" placeholder="e.g. Standup-notes Triager" required>
+      </label>
+      <label>
+        <span>Category</span>
+        <select name="category">
+          <option>Engineering</option>
+          <option>Product</option>
+          <option>Design</option>
+          <option>Research</option>
+          <option>Growth &amp; GTM</option>
+          <option>Knowledge &amp; ops</option>
+          <option>UI Design</option>
+          <option>MCP Builder</option>
+          <option>Skill Creator</option>
+          <option>GIF Generator</option>
+          <option>Internal Communications</option>
+          <option>Growth Hacking</option>
+          <option>Cold Email</option>
+          <option>Competitive Analysis</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>
+        <span>What step does it remove? (3 lines)</span>
+        <textarea name="description" placeholder="The input, the output, and the step in your day this skill would compress." required></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary" style="justify-self: start;">SUBMIT PROPOSAL <span>↗</span></button>
+      <div id="submit-success" class="submit__success">✓ Proposal noted · I'll reach out within 72 hours</div>
+    </form>
+  </div>
+</section>
+
 <!-- CLOSER -->
 <section class="closer">
   <div>
@@ -1910,6 +2011,81 @@
         activeFilter = c.dataset.filter;
         apply();
       });
+    });
+  })();
+
+  // ── Submit form ──
+  // Configure: paste your Formspree form ID below (the part after /f/).
+  // If left blank, the form falls back to the user's mail client (mailto:).
+  window.GB_FORMSPREE_ID = "";
+  window.GB_FALLBACK_EMAIL = "hello@puneetarora.in";
+
+  (function(){
+    var form = document.getElementById('submit-form');
+    var ok = document.getElementById('submit-success');
+    if (!form) return;
+
+    function showSuccess(msg) {
+      ok.textContent = msg;
+      ok.classList.add('show');
+      setTimeout(function(){ ok.classList.remove('show'); }, 8000);
+    }
+
+    async function postToFormspree(id, payload) {
+      var res = await fetch('https://formspree.io/f/' + id, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error('Formspree responded ' + res.status);
+      return res.json();
+    }
+
+    function mailtoFallback(payload) {
+      var body = 'Name: ' + payload.name + '\n'
+               + 'Email: ' + payload.email + '\n'
+               + 'Skill: ' + payload.skill + '\n'
+               + 'Category: ' + payload.category + '\n\n'
+               + (payload.description || '');
+      var mail = 'mailto:' + window.GB_FALLBACK_EMAIL
+               + '?subject=' + encodeURIComponent('[Skills for Global Builders] Proposal: ' + payload.skill)
+               + '&body=' + encodeURIComponent(body);
+      window.location.href = mail;
+    }
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      var data = new FormData(form);
+      var payload = {
+        name: data.get('name'),
+        email: data.get('email'),
+        skill: data.get('skill'),
+        category: data.get('category'),
+        description: data.get('description'),
+        _subject: '[Skills for Global Builders] Proposal: ' + data.get('skill'),
+        _source: 'skills-for-global-builders.html'
+      };
+      var id = (window.GB_FORMSPREE_ID || '').trim();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalLabel = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = 'SENDING…'; }
+
+      if (id) {
+        try {
+          await postToFormspree(id, payload);
+          form.reset();
+          showSuccess('✓ Proposal received · I will reach out within 72 hours');
+        } catch (err) {
+          showToast('Send failed · opening your mail client as a fallback');
+          mailtoFallback(payload);
+        }
+      } else {
+        mailtoFallback(payload);
+        form.reset();
+        showSuccess('✓ Mail client opened · finish sending to confirm the proposal');
+      }
+
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = originalLabel; }
     });
   })();
 </script>

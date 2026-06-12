@@ -42,17 +42,17 @@
   .vm-card.live { --accent: var(--saffron); }
   .vm-card.draft { --accent: var(--india-green); }
   .vm-card__media {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 6.5;
     background:
       radial-gradient(ellipse at 30% 30%, rgba(255,153,51,0.10), transparent 60%),
       radial-gradient(ellipse at 75% 75%, rgba(19,136,8,0.08), transparent 60%),
       var(--bg-2);
     border-bottom: 1px solid var(--rule);
     position: relative; overflow: hidden;
-    padding: 22px;
+    padding: 16px;
     display: flex; align-items: center; justify-content: center;
   }
-  .vm-card__media .ornament svg { width: 160px; height: auto; opacity: .9; }
+  .vm-card__media .ornament svg { width: 116px; height: auto; opacity: .9; }
   .vm-card__media .corner {
     position: absolute; top: 12px; left: 14px;
     font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.18em;
@@ -71,19 +71,19 @@
       var(--india-green) 66.6% 100%);
     opacity: .9;
   }
-  .vm-card__body { padding: 22px 22px 22px; display: flex; flex-direction: column; gap: 10px; }
+  .vm-card__body { padding: 18px 20px 18px; display: flex; flex-direction: column; gap: 8px; }
   .vm-card__title {
-    font-family: var(--f-sans); font-size: 22px; font-weight: 500;
+    font-family: var(--f-sans); font-size: 19px; font-weight: 500;
     color: var(--ink); letter-spacing: -0.012em; line-height: 1.15;
   }
   .vm-card__desc {
-    font-family: var(--f-sans); font-size: 13px; line-height: 1.6;
+    font-family: var(--f-sans); font-size: 12.5px; line-height: 1.55;
     color: var(--dim); margin: 0;
   }
   .vm-card__foot {
-    margin-top: 8px;
+    margin-top: 4px;
     display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
-    padding-top: 12px; border-top: 1px dashed var(--rule);
+    padding-top: 10px; border-top: 1px dashed var(--rule);
   }
   .vm-card__foot .tag {
     font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.16em;
@@ -180,14 +180,50 @@
         <span class="corner-r">DIRECTORY · 2026</span>
         <div class="ornament" aria-hidden="true">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" stroke="#138808" stroke-width="1.4">
-              <circle cx="100" cy="100" r="84"/>
-              <circle cx="100" cy="100" r="62"/>
-              <circle cx="100" cy="100" r="40"/>
-              <circle cx="100" cy="100" r="18"/>
+            <defs>
+              <radialGradient id="globe-sheen" cx="38%" cy="34%" r="64%">
+                <stop offset="0%" stop-color="#bcd1ff" stop-opacity=".22"/>
+                <stop offset="60%" stop-color="#6c8fd6" stop-opacity=".05"/>
+                <stop offset="100%" stop-color="#0a0a14" stop-opacity="0"/>
+              </radialGradient>
+              <clipPath id="globe-clip">
+                <circle cx="100" cy="100" r="80"/>
+              </clipPath>
+            </defs>
+            <!-- sphere base -->
+            <circle cx="100" cy="100" r="80" fill="url(#globe-sheen)" stroke="#6c8fd6" stroke-width="1.6"/>
+            <!-- meridians + parallels, clipped to the sphere -->
+            <g clip-path="url(#globe-clip)" fill="none" stroke="#6c8fd6" stroke-width="0.9" opacity=".75">
+              <!-- equator -->
+              <line x1="20" y1="100" x2="180" y2="100"/>
+              <!-- parallels (arcs) -->
+              <path d="M22 78 Q100 60 178 78"/>
+              <path d="M22 122 Q100 140 178 122"/>
+              <path d="M38 58 Q100 46 162 58"/>
+              <path d="M38 142 Q100 154 162 142"/>
+              <!-- prime meridian -->
+              <line x1="100" y1="20" x2="100" y2="180"/>
+              <!-- meridians (ellipses suggesting curvature) -->
+              <ellipse cx="100" cy="100" rx="26" ry="80"/>
+              <ellipse cx="100" cy="100" rx="52" ry="80"/>
             </g>
-            <g stroke="#138808" stroke-width="0.9" opacity=".7" id="vm-spokes-2"></g>
-            <text x="100" y="108" text-anchor="middle" fill="#f7f5ee" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="22">build</text>
+            <!-- subtle continent dots -->
+            <g clip-path="url(#globe-clip)" fill="#138808" opacity=".45">
+              <circle cx="124" cy="92" r="3.5"/>
+              <circle cx="132" cy="100" r="2.5"/>
+              <circle cx="118" cy="106" r="2"/>
+              <circle cx="74" cy="86" r="3"/>
+              <circle cx="80" cy="98" r="2"/>
+              <circle cx="108" cy="124" r="2.5"/>
+              <circle cx="142" cy="114" r="2"/>
+            </g>
+            <!-- pin marker -->
+            <g>
+              <circle cx="124" cy="92" r="6" fill="none" stroke="#ff9933" stroke-width="1.4"/>
+              <circle cx="124" cy="92" r="2" fill="#ff9933"/>
+            </g>
+            <!-- label -->
+            <text x="100" y="186" text-anchor="middle" fill="#f7f5ee" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="14" opacity=".85">global</text>
           </svg>
         </div>
         <div class="tri"></div>
@@ -215,17 +251,15 @@
 
 <script>
   (function(){
-    [['vm-spokes-1', 24, 16, 82], ['vm-spokes-2', 16, 18, 84]].forEach(function(cfg){
-      var g = document.getElementById(cfg[0]); if (!g) return;
-      var html = '';
-      for (var i = 0; i < cfg[1]; i++) {
-        var a = (i * (360 / cfg[1])) * Math.PI / 180;
-        var x1 = 100 + Math.cos(a) * cfg[2], y1 = 100 + Math.sin(a) * cfg[2];
-        var x2 = 100 + Math.cos(a) * cfg[3], y2 = 100 + Math.sin(a) * cfg[3];
-        html += '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>';
-      }
-      g.innerHTML = html;
-    });
+    var g = document.getElementById('vm-spokes-1'); if (!g) return;
+    var html = '';
+    for (var i = 0; i < 24; i++) {
+      var a = (i * 15) * Math.PI / 180;
+      var x1 = 100 + Math.cos(a) * 16, y1 = 100 + Math.sin(a) * 16;
+      var x2 = 100 + Math.cos(a) * 82, y2 = 100 + Math.sin(a) * 82;
+      html += '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>';
+    }
+    g.innerHTML = html;
   })();
 </script>
 

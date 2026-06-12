@@ -51,6 +51,73 @@
   @media (max-width: 1100px) {
     .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   }
+
+  /* ── Contact form ── */
+  .write {
+    padding: 64px var(--pad-x);
+    background: var(--bg-2);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .write__inner {
+    max-width: 1180px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: start;
+  }
+  .write h2 {
+    font-family: var(--f-sans); font-size: 44px; font-weight: 500;
+    letter-spacing: -0.02em; line-height: 1.02;
+    margin: 14px 0 18px;
+  }
+  .write h2 em { font-style: italic; color: var(--signal); font-weight: 400; }
+  .write .lede { max-width: 460px; }
+  .write form {
+    border: 1px solid var(--rule); border-radius: 2px;
+    padding: 28px; background: var(--surface);
+    display: grid; gap: 14px;
+  }
+  .write label { display: grid; gap: 6px; }
+  .write label > span {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    color: var(--faint); text-transform: uppercase;
+  }
+  .write input, .write textarea, .write select {
+    background: var(--bg); border: 1px solid var(--rule); border-radius: 2px;
+    padding: 10px 12px; color: var(--ink);
+    font-family: var(--f-sans); font-size: 13px;
+    outline: none;
+  }
+  .write input:focus, .write textarea:focus, .write select:focus { border-color: var(--signal); }
+  .write textarea { resize: vertical; min-height: 110px; }
+  .write__row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .write__meta {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 12px; flex-wrap: wrap;
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--faint); text-transform: uppercase;
+  }
+  .write__success {
+    display: none; padding: 12px 14px;
+    border: 1px solid var(--signal); border-radius: 2px;
+    background: color-mix(in oklch, var(--signal) 14%, transparent);
+    font-family: var(--f-mono); font-size: 11px; color: var(--signal);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .write__success.show { display: block; }
+  .write-toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--surface); border: 1px solid var(--signal);
+    color: var(--ink);
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 12px 18px; border-radius: 2px;
+    opacity: 0; pointer-events: none;
+    transition: opacity .2s, transform .25s;
+    z-index: 200;
+  }
+  .write-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 1100px) {
+    .write__inner { grid-template-columns: 1fr; gap: 28px; }
+  }
 </style>
 </head>
 <body>
@@ -180,6 +247,71 @@
   </aside>
 </section>
 
+<!-- WRITE -->
+<section class="write">
+  <div class="write__inner">
+    <div>
+      <div class="flex gap-12" style="align-items: center; margin-bottom: 14px;">
+        <span class="tag">§ 02 · WRITE</span>
+        <span class="faint mono" style="font-size: 11px;">// for everything that doesn&rsquo;t need a call</span>
+      </div>
+      <h2>Send a note <em>here.</em></h2>
+      <p class="lede">
+        For role conversations, project enquiries, speaking invitations, or
+        &ldquo;I read your work and have a question&rdquo; &mdash; this form is the
+        fastest way in. I read every message and reply within a day, two if the
+        weekend is involved.
+      </p>
+      <div class="mono faint" style="font-size: 11px; letter-spacing: 0.18em; margin-top: 18px;">
+        PREFER EMAIL · <a href="mailto:puneetindelhi@yahoo.com" class="signal">puneetindelhi@yahoo.com ↗</a>
+      </div>
+    </div>
+    <!--
+      Form backend:
+      Set window.PA_FORMSPREE_ID below to your Formspree form ID (the part after /f/).
+      Sign up at https://formspree.io/, create a form, copy the ID, and paste it
+      between the quotes. If left blank, the form falls back to the user's mail client.
+    -->
+    <form id="write-form" action="https://formspree.io/f/" method="POST">
+      <div class="write__row">
+        <label><span>Your name</span><input type="text" name="name" required></label>
+        <label><span>Email</span><input type="email" name="email" required></label>
+      </div>
+      <div class="write__row">
+        <label>
+          <span>I&rsquo;m writing about</span>
+          <select name="topic">
+            <option>A role</option>
+            <option>A project / contract</option>
+            <option>Speaking / panel</option>
+            <option>Press / podcast</option>
+            <option>A question about your work</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>
+          <span>Company / org (optional)</span>
+          <input type="text" name="company" placeholder="e.g. Acme">
+        </label>
+      </div>
+      <label>
+        <span>Subject</span>
+        <input type="text" name="subject" placeholder="One line that&rsquo;ll make me open this first" required>
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" placeholder="Scope, timeline, the question, whatever you have. Three to ten lines is plenty." required></textarea>
+      </label>
+      <div class="write__meta">
+        <span>Replies within 24h on weekdays · 48h on weekends</span>
+        <span>Bangalore · IST (UTC+5:30)</span>
+      </div>
+      <button type="submit" class="btn btn--primary" style="justify-self: start;">SEND <span>↗</span></button>
+      <div id="write-success" class="write__success">✓ Note received · I&rsquo;ll reach out within a day</div>
+    </form>
+  </div>
+</section>
+
 <!-- bottom strip -->
 <div class="rule gut" style="padding-top: 48px; padding-bottom: 56px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px;">
   <div>
@@ -212,6 +344,96 @@
 </footer>
 
 </div>
+
+<div id="write-toast" class="write-toast"></div>
+
 <script src="assets/site.js"></script>
+<script>
+  // ── Contact form ──
+  // Configure: paste your Formspree form ID below (the part after /f/).
+  // Sign up at https://formspree.io/, create a new form, copy the ID, paste here.
+  // If left blank, the form falls back to opening the user's mail client.
+  window.PA_FORMSPREE_ID = "";
+  window.PA_FALLBACK_EMAIL = "puneetindelhi@yahoo.com";
+
+  (function(){
+    var form = document.getElementById('write-form');
+    var ok = document.getElementById('write-success');
+    if (!form) return;
+
+    function showToast(msg) {
+      var t = document.getElementById('write-toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(function(){ t.classList.remove('show'); }, 2400);
+    }
+
+    function showSuccess(msg) {
+      ok.textContent = msg;
+      ok.classList.add('show');
+      setTimeout(function(){ ok.classList.remove('show'); }, 8000);
+    }
+
+    async function postToFormspree(id, payload) {
+      var res = await fetch('https://formspree.io/f/' + id, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error('Formspree responded ' + res.status);
+      return res.json();
+    }
+
+    function mailtoFallback(payload) {
+      var body = 'Name: ' + payload.name + '\n'
+               + 'Email: ' + payload.email + '\n'
+               + 'Topic: ' + payload.topic + '\n'
+               + 'Company: ' + (payload.company || '—') + '\n\n'
+               + (payload.message || '');
+      var subj = '[' + payload.topic + '] ' + payload.subject;
+      var mail = 'mailto:' + window.PA_FALLBACK_EMAIL
+               + '?subject=' + encodeURIComponent(subj)
+               + '&body=' + encodeURIComponent(body);
+      window.location.href = mail;
+    }
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      var data = new FormData(form);
+      var payload = {
+        name: data.get('name'),
+        email: data.get('email'),
+        topic: data.get('topic'),
+        company: data.get('company'),
+        subject: data.get('subject'),
+        message: data.get('message'),
+        _subject: '[' + data.get('topic') + '] ' + data.get('subject'),
+        _source: 'contact.html'
+      };
+      var id = (window.PA_FORMSPREE_ID || '').trim();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalLabel = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = 'SENDING…'; }
+
+      if (id) {
+        try {
+          await postToFormspree(id, payload);
+          form.reset();
+          showSuccess('✓ Note received · I will reach out within a day');
+        } catch (err) {
+          showToast('Send failed · opening your mail client as a fallback');
+          mailtoFallback(payload);
+        }
+      } else {
+        mailtoFallback(payload);
+        form.reset();
+        showSuccess('✓ Mail client opened · finish sending to deliver the note');
+      }
+
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = originalLabel; }
+    });
+  })();
+</script>
 </body>
 </html>
