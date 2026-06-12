@@ -112,7 +112,17 @@ body::after{
 .nav__cta:hover{border-color:var(--ink-soft);background:var(--glass)}
 .nav__menu{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:8px}
 @media(max-width:860px){
-  .nav__links{display:none}
+  .nav__links{
+    display:none;position:fixed;top:62px;left:14px;right:14px;z-index:49;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:rgba(14,14,16,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border:1px solid var(--line-2);border-radius:16px;padding:10px;
+    box-shadow:0 24px 60px rgba(0,0,0,.5);
+  }
+  .nav.menu-open .nav__links{display:flex}
+  .nav__links a{font-size:15px;color:var(--ink-soft);padding:14px 16px;border-radius:10px}
+  .nav__links a:active{background:var(--glass)}
+  .nav__links .nav__cta{border:0;margin-top:4px;background:var(--ink);color:#0a0a0a;text-align:center;font-weight:500}
   .nav__menu{display:block}
 }
 
@@ -419,14 +429,14 @@ body::after{
     <span class="nav__dot"></span>
     Puneet Arora <small>UX LEADERSHIP</small>
   </a>
-  <div class="nav__links">
+  <div class="nav__links" id="nav-links">
     <a href="#work">Signature Work</a>
     <a href="#lead">How I Lead</a>
     <a href="#thinking">Thinking</a>
     <a href="#about">About</a>
     <a href="#connect" class="nav__cta">Let's Connect</a>
   </div>
-  <button class="nav__menu" aria-label="Menu" onclick="document.querySelector('.nav__links').scrollIntoView();location.hash='#connect'">
+  <button class="nav__menu" id="nav-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
   </button>
 </nav>
@@ -788,6 +798,20 @@ body::after{
   var nav=document.getElementById('nav');
   var onScroll=function(){ nav.classList.toggle('is-stuck', window.scrollY>40); };
   onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile menu toggle
+  var menuBtn=document.getElementById('nav-menu-btn');
+  var setMenu=function(open){
+    nav.classList.toggle('menu-open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+  };
+  menuBtn.addEventListener('click', function(){ setMenu(!nav.classList.contains('menu-open')); });
+  document.querySelectorAll('.nav__links a').forEach(function(a){
+    a.addEventListener('click', function(){ setMenu(false); });
+  });
+  document.addEventListener('click', function(e){
+    if(nav.classList.contains('menu-open') && !nav.contains(e.target)) setMenu(false);
+  });
 
   // Scroll reveal
   var io=new IntersectionObserver(function(es){
