@@ -51,10 +51,17 @@
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         grantAccess(true);
-        // Redirect to ?to=... or home.html
+        // Redirect to ?to=... or home.html, after the gate fades out
         const params = new URLSearchParams(location.search);
         const to = params.get('to');
-        location.replace(to ? decodeURIComponent(to) : 'home.html');
+        const dest = to ? decodeURIComponent(to) : 'home.html';
+        const root = document.getElementById('gate-root');
+        if (root) {
+          root.classList.add('is-leaving');
+          setTimeout(function () { location.replace(dest); }, 500);
+        } else {
+          location.replace(dest);
+        }
       });
     }
 

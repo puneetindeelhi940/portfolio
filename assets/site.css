@@ -411,7 +411,9 @@ img { display: block; max-width: 100%; }
   background: #1a1612; /* warm dark grey-brown, gate-specific */
   position: relative;
   overflow: hidden;
+  transition: opacity .5s ease;
 }
+.gate.is-leaving { opacity: 0; pointer-events: none; }
 :root[data-theme="forest"] .gate { background: var(--bg); }
 .gate__bg {
   position: absolute; inset: 0; pointer-events: none;
@@ -431,7 +433,13 @@ img { display: block; max-width: 100%; }
   z-index: 1;
   width: 100%;
   max-width: 640px;
-  padding: 0 28px 0 0;
+  padding: 44px 48px;
+  background: color-mix(in srgb, var(--surface) 30%, transparent);
+  backdrop-filter: blur(16px) saturate(1.15);
+  -webkit-backdrop-filter: blur(16px) saturate(1.15);
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 .gate__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 56px; }
 .gate__brand .dot {
@@ -497,17 +505,6 @@ img { display: block; max-width: 100%; }
   transition: background .15s;
 }
 .gate__submit:hover { background: oklch(76% 0.15 85); }
-.gate__hint {
-  margin-top: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 11px;
-  color: var(--faint);
-  letter-spacing: 0.10em;
-}
-.gate__hint a { color: var(--dim); }
-.gate__hint a:hover { color: var(--signal); }
 
 .gate__foot {
   position: absolute;
