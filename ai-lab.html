@@ -10,7 +10,85 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
 <link rel="stylesheet" href="assets/site.css">
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <style>
+  /* On-The-Bench drawer */
+  .bench-card { display: flex; flex-direction: column; cursor: pointer; transition: background .18s; }
+  .bench-card:hover { background: var(--surface-2); }
+  .bench-card.is-open { background: var(--surface-2); }
+  .bench-card__expand {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 16px; padding-top: 12px;
+    border-top: 1px dashed var(--rule);
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--signal); text-transform: uppercase;
+  }
+  .bench-card__expand .caret { transition: transform .2s; }
+  .bench-card.is-open .bench-card__expand .caret { transform: rotate(180deg); }
+  .bench-drawer {
+    max-height: 0; overflow: hidden;
+    transition: max-height .35s ease, margin-top .35s ease, padding .35s ease;
+    background: var(--bg-2);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 0 16px;
+  }
+  .bench-card.is-open .bench-drawer {
+    max-height: 700px;
+    margin-top: 14px;
+    padding: 16px 16px 18px;
+    border-color: var(--rule);
+  }
+  .bench-row { display: grid; grid-template-columns: 92px 1fr; gap: 12px; margin-bottom: 10px; align-items: start; }
+  .bench-row__l {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--faint); text-transform: uppercase; padding-top: 3px;
+  }
+  .bench-row__v {
+    font-family: var(--f-sans); font-size: 12.5px; color: var(--ink); line-height: 1.55;
+  }
+  .bench-row__v.mono { font-family: var(--f-mono); font-size: 11.5px; color: var(--signal); }
+  .bench-row__v.dim { color: var(--dim); font-style: italic; font-size: 12px; }
+  .bench-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .bench-tags .pill {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.12em;
+    color: var(--dim); border: 1px solid var(--rule); border-radius: 2px;
+    padding: 3px 8px; background: var(--surface);
+  }
+  .bench-actions {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: 14px; padding-top: 12px;
+    border-top: 1px dashed var(--rule);
+  }
+  .bench-btn {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 9px 14px; border-radius: 2px; cursor: pointer;
+    border: 1px solid var(--rule); background: var(--surface); color: var(--dim);
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all .14s;
+  }
+  .bench-btn:hover { color: var(--ink); border-color: var(--rule-2); }
+  .bench-btn--primary {
+    background: var(--signal); color: var(--signal-ink);
+    border-color: var(--signal);
+  }
+  .bench-btn--primary:hover { filter: brightness(1.08); color: var(--signal-ink); }
+  .bench-btn .ok { display: none; color: var(--signal); }
+  .bench-btn.is-ok .label { display: none; }
+  .bench-btn.is-ok .ok { display: inline; }
+  .bench-toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--surface); border: 1px solid var(--signal);
+    color: var(--ink);
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 12px 18px; border-radius: 2px;
+    opacity: 0; pointer-events: none;
+    transition: opacity .2s, transform .25s;
+    z-index: 200;
+  }
+  .bench-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
   .featured-card {
     border: 1px solid var(--rule);
     background: var(--surface);
@@ -852,7 +930,16 @@
   </div>
 </div>
 <div class="grid-3 gut" style="padding-bottom: 64px;">
-  <div class="card">
+
+  <article class="card bench-card" data-id="X.04" data-status="DRAFT"
+    data-problem="Prompts ship without version control. Drift is invisible until output quality collapses. Most teams discover drift via a customer complaint, not a regression check."
+    data-approach="A small harness — YAML eval cases versioned in-repo, side-by-side diff of model outputs across prompt iterations, a rubric scorer that distinguishes &lsquo;structurally wrong&rsquo; from &lsquo;stylistically different&rsquo;."
+    data-inputs="Prompt versions (string or .md files), Eval cases (YAML), Rubric (4–6 dimensions), Optional: a golden output per case"
+    data-stack="Python + pytest harness, OpenAI/Anthropic compatible, Markdown report, CI-friendly exit codes"
+    data-status-line="Local prototype in use across two of my own projects. Public release pending a cleaner CLI."
+    data-next="Cleaner CLI, support for tool-calling evals, a small web viewer for the diff report."
+    data-tags="prompt-eval, harness, rubric, ci, versioning"
+    data-install="claude skills add lab/prompt-eval-harness  # (preview)">
     <div class="signal mono" style="font-size: 11px; letter-spacing: 0.14em; margin-bottom: 14px;">X.04 · DRAFT</div>
     <div class="sans ink" style="font-size: 20px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 10px;">Prompt-evaluation harness</div>
     <div class="dim" style="font-family: var(--f-sans); font-size: 13.5px; line-height: 1.6;">
@@ -860,8 +947,19 @@
       one at Dell. Versioned eval cases, side-by-side diffs, rubric scoring.
     </div>
     <div class="mt-24 faint mono" style="font-size: 11px; letter-spacing: 0.14em;">WHY · PROMPTS ARE DESIGN ARTEFACTS</div>
-  </div>
-  <div class="card">
+    <div class="bench-card__expand"><span>Open concept brief</span><span class="caret">▾</span></div>
+    <div class="bench-drawer"></div>
+  </article>
+
+  <article class="card bench-card" data-id="X.05" data-status="DRAFT"
+    data-problem="Behavioural-science nudges are scattered across academic papers and growth blogs. Teams who want to use them either over-reach into manipulation, or under-use them and ship interfaces that lack any intent."
+    data-approach="A documented library — each nudge has the mechanism, the ethical guardrail, three positive examples, two anti-patterns, and a measurement plan. Indexed by the user-state it acts on (uncertainty, fatigue, overload, anchoring)."
+    data-inputs="Nudge name or user-state, Product context, Audience (consumer / enterprise / regulated), Ethical posture"
+    data-stack="Markdown corpus, JSON schema per nudge, optional integration into a critique GPT that surfaces nudge candidates from a screen"
+    data-status-line="Corpus drafted (24 nudges). Awaiting an editorial pass before a public release."
+    data-next="Editorial pass, peer review with two behavioural-science researchers, public open-source release under CC-BY-SA."
+    data-tags="behavioural, nudge, ethics, library, design"
+    data-install="claude skills add lab/nudge-library  # (preview)">
     <div class="signal mono" style="font-size: 11px; letter-spacing: 0.14em; margin-bottom: 14px;">X.05 · DRAFT</div>
     <div class="sans ink" style="font-size: 20px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 10px;">Behavioural-nudge library</div>
     <div class="dim" style="font-family: var(--f-sans); font-size: 13.5px; line-height: 1.6;">
@@ -869,8 +967,19 @@
       Not a manipulation cookbook &mdash; a referee&rsquo;s manual.
     </div>
     <div class="mt-24 faint mono" style="font-size: 11px; letter-spacing: 0.14em;">WHY · NUDGES, NOT STEERS</div>
-  </div>
-  <div class="card">
+    <div class="bench-card__expand"><span>Open concept brief</span><span class="caret">▾</span></div>
+    <div class="bench-drawer"></div>
+  </article>
+
+  <article class="card bench-card" data-id="X.06" data-status="IDEA"
+    data-problem="Designers grow when they get critiqued by someone senior. Most teams don't have a senior IC in every meeting. The result: junior designers ship work that a senior would have caught in five minutes."
+    data-approach="An agent trained on a team&rsquo;s in-house rubric. Reads a screen or a flow, returns critique in the team's voice — structure first, craft second, no nit-storms. Logs the critique so the team's rubric improves with every use."
+    data-inputs="Team rubric (markdown), Screen / flow under review, Audience and decision context"
+    data-stack="System-prompt + retrieval over the team's rubric, integration with Figma comments, optional Linear handoff"
+    data-status-line="Concept-stage. The system-prompt architecture is sketched; the rubric-retrieval layer is the open question."
+    data-next="Decide between fine-tuning vs RAG for rubric retrieval, prototype with one design team's rubric, evaluate against a senior IC's blind critique."
+    data-tags="critique, senior-ic, rubric, design-review, agent"
+    data-install="claude skills add lab/critique-as-a-service  # (concept)">
     <div class="signal mono" style="font-size: 11px; letter-spacing: 0.14em; margin-bottom: 14px;">X.06 · IDEA</div>
     <div class="sans ink" style="font-size: 20px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 10px;">Critique-as-a-Service</div>
     <div class="dim" style="font-family: var(--f-sans); font-size: 13.5px; line-height: 1.6;">
@@ -878,8 +987,178 @@
       team&rsquo;s in-house rubric. Useful when the senior isn&rsquo;t in the room.
     </div>
     <div class="mt-24 faint mono" style="font-size: 11px; letter-spacing: 0.14em;">WHY · SENIORITY-AS-A-SERVICE</div>
-  </div>
+    <div class="bench-card__expand"><span>Open concept brief</span><span class="caret">▾</span></div>
+    <div class="bench-drawer"></div>
+  </article>
+
 </div>
+
+<div id="bench-toast" class="bench-toast"></div>
+
+<script>
+  // ── AI Lab bench: drawer + ZIP ──
+  function _benchEscape(s){ return (s || '').replace(/[&<>"']/g, function(c){
+    return ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[c];
+  }); }
+
+  function buildBenchDrawer(card) {
+    var problem = card.dataset.problem || '';
+    var approach = card.dataset.approach || '';
+    var inputs = (card.dataset.inputs || '').split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+    var stack = card.dataset.stack || '';
+    var statusLine = card.dataset.statusLine || '';
+    var next = card.dataset.next || '';
+    var install = card.dataset.install || '';
+    var tags = (card.dataset.tags || '').split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+
+    var inputsHtml = inputs.map(function(i){ return '<span class="pill">'+_benchEscape(i)+'</span>'; }).join('');
+    var tagsHtml = tags.map(function(t){ return '<span class="pill">'+_benchEscape(t)+'</span>'; }).join('');
+
+    return '' +
+      '<div class="bench-row"><div class="bench-row__l">Problem</div><div class="bench-row__v">'+_benchEscape(problem)+'</div></div>' +
+      '<div class="bench-row"><div class="bench-row__l">Approach</div><div class="bench-row__v">'+_benchEscape(approach)+'</div></div>' +
+      '<div class="bench-row"><div class="bench-row__l">Inputs</div><div class="bench-row__v"><div class="bench-tags">'+inputsHtml+'</div></div></div>' +
+      '<div class="bench-row"><div class="bench-row__l">Stack</div><div class="bench-row__v">'+_benchEscape(stack)+'</div></div>' +
+      '<div class="bench-row"><div class="bench-row__l">Status</div><div class="bench-row__v dim">'+_benchEscape(statusLine)+'</div></div>' +
+      '<div class="bench-row"><div class="bench-row__l">Next</div><div class="bench-row__v dim">'+_benchEscape(next)+'</div></div>' +
+      '<div class="bench-row"><div class="bench-row__l">Install</div><div class="bench-row__v mono">'+_benchEscape(install)+'</div></div>' +
+      '<div class="bench-row"><div class="bench-row__l">Tags</div><div class="bench-row__v"><div class="bench-tags">'+tagsHtml+'</div></div></div>' +
+      '<div class="bench-actions">' +
+        '<button class="bench-btn bench-btn--primary" data-action="zip"><span class="label">↓ Download concept brief (.zip)</span><span class="ok">✓ Downloaded</span></button>' +
+        '<button class="bench-btn" data-action="copy-install"><span class="label">Copy install line</span><span class="ok">✓ Copied</span></button>' +
+        '<a class="bench-btn" href="contact.html">Request the prototype ↗</a>' +
+      '</div>';
+  }
+
+  function toggleBench(card) {
+    var open = !card.classList.contains('is-open');
+    if (open) {
+      var drawer = card.querySelector('.bench-drawer');
+      if (!drawer.dataset.built) {
+        drawer.innerHTML = buildBenchDrawer(card);
+        drawer.dataset.built = '1';
+      }
+    }
+    card.classList.toggle('is-open', open);
+    var labelEl = card.querySelector('.bench-card__expand span:first-child');
+    if (labelEl) labelEl.textContent = open ? 'Close concept brief' : 'Open concept brief';
+  }
+
+  function benchToast(msg) {
+    var t = document.getElementById('bench-toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(benchToast._t);
+    benchToast._t = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+  }
+
+  function benchFlashOK(btn) {
+    btn.classList.add('is-ok');
+    setTimeout(function(){ btn.classList.remove('is-ok'); }, 1600);
+  }
+
+  async function downloadBenchZip(card) {
+    if (typeof JSZip === 'undefined') { benchToast('ZIP library failed to load'); return; }
+    var id = card.dataset.id || 'X';
+    var status = card.dataset.status || 'DRAFT';
+    var name = (card.querySelector('.sans.ink') || {}).textContent || 'concept';
+    name = name.replace(/[^\w\s-]/g, '').trim();
+    var slug = name.toLowerCase().replace(/\s+/g, '-');
+    var problem = card.dataset.problem || '';
+    var approach = card.dataset.approach || '';
+    var inputs = (card.dataset.inputs || '').split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+    var stack = card.dataset.stack || '';
+    var statusLine = card.dataset.statusLine || '';
+    var next = card.dataset.next || '';
+    var install = card.dataset.install || '';
+    var tags = (card.dataset.tags || '').split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+
+    var briefMd = '' +
+      '# ' + name + '\n' +
+      '> Bench ID: `' + id + '` · Status: **' + status + '** · From the AI Lab\n\n' +
+      '## Problem\n' + problem.trim() + '\n\n' +
+      '## Approach\n' + approach.trim() + '\n\n' +
+      '## Inputs\n' + inputs.map(function(i){ return '- ' + i; }).join('\n') + '\n\n' +
+      '## Stack\n' + stack.trim() + '\n\n' +
+      '## Status\n' + statusLine.trim() + '\n\n' +
+      '## Next milestone\n' + next.trim() + '\n\n' +
+      '## Install (preview)\n```bash\n' + install + '\n```\n\n' +
+      '## Tags\n' + tags.map(function(t){ return '`' + t + '`'; }).join(' ') + '\n\n' +
+      '---\n' +
+      '_From the AI Lab · Puneet Arora · Bangalore · 2026_\n';
+
+    var systemPromptDraft = '' +
+      'You are the "' + name + '" agent from Puneet Arora\'s AI Lab (bench id ' + id + ', status ' + status + ').\n\n' +
+      'Goal: ' + approach.trim() + '\n\n' +
+      'Operating principles:\n' +
+      '1. Prefer one load-bearing finding over a long list.\n' +
+      '2. Cite evidence (file, screen region, transcript row) on every claim.\n' +
+      '3. Distinguish observation from opinion.\n' +
+      '4. Refuse the impressive but unactionable answer.\n' +
+      '5. Stop early. Length is not value.\n\n' +
+      'Context — the problem this concept addresses:\n' + problem.trim() + '\n';
+
+    var nextSteps = '' +
+      '# Next steps · ' + name + '\n\n' +
+      '## Immediate\n' + next.trim() + '\n\n' +
+      '## To request a working prototype\n' +
+      'Reach out via contact.html on the portfolio. Mention bench ID `' + id + '` in the subject line.\n';
+
+    var manifest = {
+      "id": id.toLowerCase().replace(/\./g, '-'),
+      "name": name,
+      "version": "0.1.0",
+      "status": status,
+      "source": "ai-lab",
+      "tags": tags,
+      "files": [ "BRIEF.md", "system-prompt.draft.txt", "next-steps.md" ],
+      "author": "Puneet Arora",
+      "url": "https://puneetindeelhi940.github.io/portfolio/ai-lab.html"
+    };
+
+    var zip = new JSZip();
+    var folder = zip.folder('lab-' + slug);
+    folder.file('BRIEF.md', briefMd);
+    folder.file('system-prompt.draft.txt', systemPromptDraft);
+    folder.file('next-steps.md', nextSteps);
+    folder.file('manifest.json', JSON.stringify(manifest, null, 2));
+
+    var blob = await zip.generateAsync({ type: 'blob' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'lab-' + slug + '.zip';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    benchToast('Downloaded · lab-' + slug + '.zip');
+  }
+
+  function benchCopy(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    ta.remove();
+    return Promise.resolve();
+  }
+
+  document.addEventListener('click', function(ev){
+    var btn = ev.target.closest('.bench-btn');
+    if (btn) {
+      ev.stopPropagation();
+      var card = btn.closest('.bench-card');
+      if (!card) return;
+      var action = btn.dataset.action;
+      if (action === 'zip') downloadBenchZip(card).then(function(){ benchFlashOK(btn); });
+      else if (action === 'copy-install') benchCopy(card.dataset.install || '').then(function(){ benchFlashOK(btn); benchToast('Install line copied'); });
+      return;
+    }
+    var card = ev.target.closest('.bench-card');
+    if (card) toggleBench(card);
+  });
+</script>
 
 <footer class="foot">
   <div class="foot__nav">

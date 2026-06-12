@@ -356,11 +356,11 @@
     </p>
     <div class="stat-strip">
       <div class="cell">
-        <div class="v" data-count="30">0</div>
+        <div class="v" data-count="62">0</div>
         <div class="l">Skills indexed</div>
       </div>
       <div class="cell">
-        <div class="v" data-count="6">0</div>
+        <div class="v" data-count="14">0</div>
         <div class="l">Categories</div>
       </div>
       <div class="cell">
@@ -368,7 +368,7 @@
         <div class="l">Surfaces (Web, Code, API, MCP)</div>
       </div>
       <div class="cell">
-        <div class="v">v 1.0</div>
+        <div class="v">v 1.1</div>
         <div class="l">Updated · Jun 2026</div>
       </div>
     </div>
@@ -390,10 +390,12 @@
   <div class="telem-row">
     <div class="telem-row__label">Recently added</div>
     <div class="telem-row__pills">
-      <span class="telem-pill" data-jump="GB.04">GB.04 · Migration Planner<span class="new">NEW</span></span>
-      <span class="telem-pill" data-jump="GB.10">GB.10 · North-Star Definer<span class="new">NEW</span></span>
-      <span class="telem-pill" data-jump="GB.18">GB.18 · Token Sync<span class="new">NEW</span></span>
-      <span class="telem-pill" data-jump="GB.30">GB.30 · Decision Log Curator<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.31">GB.31 · Hero Section Lab<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.35">GB.35 · MCP Scaffold<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.41">GB.41 · Skill Eval Builder<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.51">GB.51 · Referral Loop<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.55">GB.55 · Cold Subject Lab<span class="new">NEW</span></span>
+      <span class="telem-pill" data-jump="GB.61">GB.61 · Positioning Map<span class="new">NEW</span></span>
     </div>
   </div>
 </div>
@@ -412,6 +414,14 @@
     <button class="chip" data-filter="research">Research</button>
     <button class="chip" data-filter="growth">Growth</button>
     <button class="chip" data-filter="knowledge">Knowledge</button>
+    <button class="chip" data-filter="ui">UI Design</button>
+    <button class="chip" data-filter="mcp">MCP</button>
+    <button class="chip" data-filter="skillcraft">Skill Creator</button>
+    <button class="chip" data-filter="gif">GIF</button>
+    <button class="chip" data-filter="internal">Internal Comms</button>
+    <button class="chip" data-filter="growth-hack">Growth Hacking</button>
+    <button class="chip" data-filter="cold-email">Cold Email</button>
+    <button class="chip" data-filter="competitive">Competitive</button>
   </div>
 </div>
 
@@ -959,6 +969,614 @@
         <div class="skill__name">Decision Log Curator</div>
         <div class="skill__desc">Audits an existing decision log — surfaces stale entries, reopen-trigger hits, and contradictions. Turns a write-only log into a read-back one.</div>
         <div class="skill__tags"><span class="tag">/curator</span><span class="tag">stale</span><span class="tag">contradictions</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== UI DESIGN ===== -->
+<section class="cat-section" data-cat="ui">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · G</span>UI Design</div>
+    <div class="cat-head__meta">HERO · EMPTY · FORM · MOTION</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.31" data-tags="hero landing ui design"
+      data-inputs="One-line positioning, Audience, The one action we want the user to take"
+      data-prompt="Give me three hero variants for a {audience} landing page. Each variant must lead with the action, not the brand. Show the copy hierarchy — eyebrow, headline, sub, CTA, social proof — explicitly."
+      data-output="Three hero variants with named hierarchy, an A/B prediction per variant, and the one we'd ship if we could only ship one."
+      data-install="claude skills add gb/hero-section-lab"
+      data-why="A hero either commits to the user's next step or it doesn't. The skill is built to make the commitment visible — and to refuse the &lsquo;balanced&rsquo; variant that means nothing.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.31 · UI</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Hero Section Lab</div>
+        <div class="skill__desc">Generates three hero variants from a single positioning line. Names the hierarchy explicitly. Forces a &ldquo;ship one&rdquo; pick. Kills the balanced-but-meaningless middle option.</div>
+        <div class="skill__tags"><span class="tag">/hero</span><span class="tag">3-variants</span><span class="tag">action-first</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.32" data-tags="empty state ui design"
+      data-inputs="Screen name, User intent at this screen, Available next actions"
+      data-prompt="Turn this empty state from a dead-end into the first useful step. Lead with the one thing the user should do; demote the &lsquo;learn more&rsquo; link. Include the visual prompt that matches."
+      data-output="A copy + visual brief — primary action, supporting copy, optional secondary, and the one thing to avoid (gradients-of-nothing imagery)."
+      data-install="claude skills add gb/empty-state-designer"
+      data-why="Empty states fail by being &lsquo;welcome&rsquo; pages. The skill is built around the single useful step that prevents the screen from feeling like an error.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.32 · UI</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Empty State Designer</div>
+        <div class="skill__desc">Turns a blank screen into the first useful one — primary action, supporting copy, matching visual brief. Refuses to ship a welcome screen with no next step.</div>
+        <div class="skill__tags"><span class="tag">/empty</span><span class="tag">one-action</span><span class="tag">copy+visual</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.33" data-tags="form field ui design"
+      data-inputs="Form spec (fields + labels + types), Conversion target, Mobile / desktop"
+      data-prompt="Audit this form. Flag every overlong field, missing label, bad default, and autocomplete miss. Tell me which fields to delete to lift conversion without breaking data quality."
+      data-output="A field-by-field table — keep / shorten / merge / delete — with autocomplete hints and the predicted conversion lift if we cut N fields."
+      data-install="claude skills add gb/form-field-auditor"
+      data-why="Most forms over-collect on the wrong fields. The skill is built around the trade between conversion and data quality, not against one of them.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.33 · UI</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Form Field Auditor</div>
+        <div class="skill__desc">Reads a form spec, flags overlong fields, missing labels, bad defaults, autocomplete misses. Recommends which fields to delete without breaking data quality.</div>
+        <div class="skill__tags"><span class="tag">/form-audit</span><span class="tag">autocomplete</span><span class="tag">conversion</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.34" data-tags="microinteraction motion ui design"
+      data-inputs="Interaction (e.g. save, delete, send), Current behaviour, Visual frame description"
+      data-prompt="Brief the microinteraction for {interaction}. Tell me the state transition it has to signal, the easing curve that suits, the duration band, and the framer-motion / CSS stub to start from."
+      data-output="A microinteraction brief — state-change signalled, easing, duration band, and a copy-paste code stub in your stack of choice."
+      data-install="claude skills add gb/microinteraction-brief"
+      data-why="Microinteractions either reinforce trust or steal attention. The skill is built around the state-change-signal, not the motion-for-motion's-sake.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.34 · UI</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Microinteraction Brief</div>
+        <div class="skill__desc">Briefs a microinteraction by the state-change it must signal — easing, duration, and a working framer-motion / CSS stub. Refuses motion that doesn&rsquo;t reinforce a state.</div>
+        <div class="skill__tags"><span class="tag">/micro</span><span class="tag">state-signal</span><span class="tag">code-stub</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== MCP BUILDER ===== -->
+<section class="cat-section" data-cat="mcp">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · H</span>MCP Builder</div>
+    <div class="cat-head__meta">SCAFFOLD · TOOL · RESOURCE · TEST</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.35" data-tags="mcp server scaffold"
+      data-inputs="Target language (TS / Py), Service name, Three first tools you want to expose"
+      data-prompt="Scaffold an MCP server in {lang} for {service} with these three tools to start: {tools}. Include auth, error envelopes, and a tools/list handler. No TODO comments — write it complete."
+      data-output="A runnable MCP server scaffold — package.json / pyproject, server entry, three tool stubs, auth plumbing, and a smoke script."
+      data-install="claude skills add gb/mcp-scaffold"
+      data-why="MCP scaffolds rot the moment the spec moves. The skill is built to stay current with the spec and to never ship a TODO disguised as &lsquo;extension point&rsquo;.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.35 · MCP</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">MCP Server Scaffold</div>
+        <div class="skill__desc">Generates a runnable MCP server in TypeScript or Python — auth, error envelopes, tools/list, and three real tool stubs. No TODOs.</div>
+        <div class="skill__tags"><span class="tag">/mcp-scaffold</span><span class="tag">ts | py</span><span class="tag">runnable</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.36" data-tags="mcp tool schema"
+      data-inputs="Intent description, Inputs the agent will have, Outputs it should return"
+      data-prompt="Design the tool schema for this intent. Name the tool in agent-friendly idiom (verb-first). Choose argument names that an LLM won't confuse. Show me the JSON schema and the description string the agent reads."
+      data-output="A tool name, JSON schema, and a description string written for the model — not for the docs site."
+      data-install="claude skills add gb/mcp-tool-schema"
+      data-why="MCP tool schemas are read by models, not humans — verb-first names and unambiguous arg names beat &lsquo;clean API&rsquo; every time. The skill is built around the model's reading habits.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.36 · MCP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Tool Schema Designer</div>
+        <div class="skill__desc">Names MCP tools in verb-first idiom, picks arg names a model won&rsquo;t confuse, writes the description string that gets the right invocation rate.</div>
+        <div class="skill__tags"><span class="tag">/mcp-tool</span><span class="tag">model-readable</span><span class="tag">verb-first</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.37" data-tags="mcp resource map"
+      data-inputs="Your app's read surfaces (URIs / files / records), Permission model"
+      data-prompt="Map these read surfaces to MCP resources. Decide which are static, which are templated, and which should be tools instead. Show me the resource URIs and the permission boundary."
+      data-output="A resources/list payload, a tool-vs-resource decision per surface, and the permission model surfaced as an MCP capability."
+      data-install="claude skills add gb/mcp-resource-mapper"
+      data-why="The hardest MCP call is tool-vs-resource. The skill makes the trade explicit — staticness, model invocation cost, permission boundary — instead of guessing.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.37 · MCP</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Resource Mapper</div>
+        <div class="skill__desc">Maps app read-surfaces to MCP resources. Decides static vs templated vs tool. Surfaces the permission model as capability metadata.</div>
+        <div class="skill__tags"><span class="tag">/mcp-resources</span><span class="tag">tool-vs-resource</span><span class="tag">perms</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.38" data-tags="mcp test harness"
+      data-inputs="MCP server endpoint, Tool list, Three realistic agent prompts"
+      data-prompt="Build a test harness for this MCP server. Fixtures for the three prompts, golden replies, error-envelope checks, and a &lsquo;tool was not invoked&rsquo; assertion. Output should be CI-ready."
+      data-output="A test file (Vitest / pytest), three golden fixtures, and a CI workflow snippet."
+      data-install="claude skills add gb/mcp-test-harness"
+      data-why="MCP servers regress silently because the agent picks a different tool next week. The skill catches that drift with golden replies, not with prayer.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.38 · MCP</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">MCP Test Harness</div>
+        <div class="skill__desc">Builds CI-ready fixtures + golden replies for an MCP server. Catches the silent regression when the agent decides to call a different tool next week.</div>
+        <div class="skill__tags"><span class="tag">/mcp-test</span><span class="tag">golden</span><span class="tag">ci-ready</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== SKILL CREATOR ===== -->
+<section class="cat-section" data-cat="skillcraft">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · I</span>Skill Creator</div>
+    <div class="cat-head__meta">BRIEF · STRESS-TEST · EVAL · LIFECYCLE</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-2" data-id="GB.39" data-tags="skill brief skillcraft"
+      data-inputs="One-line wish (&lsquo;I wish a skill could…&rsquo;), Inputs you'll have, Output shape"
+      data-prompt="Turn this wish into a SKILL.md brief. Be opinionated about scope. Name the one job. Specify the inputs and the output shape. End with the three failure modes we accept."
+      data-output="A SKILL.md draft — one job, named inputs, output spec, three accepted failure modes, and an explicit non-goal list."
+      data-install="claude skills add gb/skill-brief-drafter"
+      data-why="Skills bloat the moment scope is unclear. The skill is built around scope-clarity — non-goals are first-class, not an afterthought.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.39 · SKL</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Skill Brief Drafter</div>
+        <div class="skill__desc">Turns a &ldquo;I wish a skill could…&rdquo; into a SKILL.md brief — one job, named inputs, accepted failure modes, and explicit non-goals.</div>
+        <div class="skill__tags"><span class="tag">/skill-brief</span><span class="tag">one-job</span><span class="tag">non-goals</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-1" data-id="GB.40" data-tags="prompt stress skillcraft"
+      data-inputs="Draft system prompt, Three adversarial inputs (off-topic / ambiguous / refusal-trigger)"
+      data-prompt="Stress-test this system prompt. Run it on the three adversarial inputs. Tell me where the prompt breaks, where it over-refuses, and where it would benefit from one extra constraint."
+      data-output="Per-input observation, a prompt-edit recommendation with reasoning, and a regression check to add to evals."
+      data-install="claude skills add gb/prompt-stress-test"
+      data-why="System prompts are most fragile at off-topic and ambiguous inputs. The skill is built to find that fragility before a user does.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.40 · SKL</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">System Prompt Stress-Tester</div>
+        <div class="skill__desc">Runs a draft system prompt against off-topic, ambiguous, and refusal-trigger inputs. Surfaces the edits that close the gap before a user finds it.</div>
+        <div class="skill__tags"><span class="tag">/prompt-stress</span><span class="tag">adversarial</span><span class="tag">regression</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.41" data-tags="eval rubric skillcraft"
+      data-inputs="Skill description, Five real example prompts, Acceptable / unacceptable output samples"
+      data-prompt="Build an eval suite for this skill. Use a rubric, not a single golden. Score on correctness, structure, brevity, and tone. Surface the case where two reviewers would disagree."
+      data-output="A rubric eval suite (YAML), five scored cases, and a disagreement-zone flag per case."
+      data-install="claude skills add gb/skill-eval-builder"
+      data-why="Single-golden evals reward memorisation. The skill is built around rubric scoring and disagreement-zones, which is where the actual quality work lives.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.41 · SKL</div><div class="skill__plat">CLAUDE CODE</div></div>
+        <div class="skill__name">Skill Eval Builder</div>
+        <div class="skill__desc">Builds a rubric-based eval suite for a skill — correctness, structure, brevity, tone. Surfaces the disagreement-zones two reviewers would split on.</div>
+        <div class="skill__tags"><span class="tag">/eval</span><span class="tag">rubric</span><span class="tag">disagreement</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.42" data-tags="lifecycle retire skillcraft"
+      data-inputs="Existing skill catalogue, Usage telemetry (skill-id → calls)"
+      data-prompt="Curate this catalogue. Recommend which skills to retire, which to merge, and which to promote to defaults. Justify each call with usage data, not opinion."
+      data-output="Three lists — retire / merge / promote — each with a usage citation and a one-line migration note."
+      data-install="claude skills add gb/skill-lifecycle"
+      data-why="Skill catalogues bloat fast. The skill is built around retirement — the least loved, most important part of curation.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.42 · SKL</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Skill Lifecycle Curator</div>
+        <div class="skill__desc">Audits a skill catalogue and recommends retire / merge / promote calls — justified by usage telemetry, not by taste.</div>
+        <div class="skill__tags"><span class="tag">/lifecycle</span><span class="tag">retire-first</span><span class="tag">usage-led</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== GIF GENERATOR ===== -->
+<section class="cat-section" data-cat="gif">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · J</span>GIF Generator</div>
+    <div class="cat-head__meta">STORYBOARD · LOOP · ALT · OPTIMIZE</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.43" data-tags="gif demo storyboard"
+      data-inputs="Feature description, Audience, Length target (3s / 6s / 12s)"
+      data-prompt="Storyboard a demo GIF for {feature} aimed at {audience}. Frame-by-frame plan. Show me the &lsquo;hook&rsquo; frame, the &lsquo;payoff&rsquo; frame, and the loop point that makes it watchable twice."
+      data-output="A frame-by-frame storyboard, a hook + payoff annotation, and an explicit loop-point so the GIF reads well on second play."
+      data-install="claude skills add gb/demo-gif-storyboard"
+      data-why="Most demo GIFs fail on the second loop. The skill is built around the loop-point — the frame that earns a re-watch.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.43 · GIF</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Demo GIF Storyboard</div>
+        <div class="skill__desc">Frame-by-frame storyboard for a demo GIF — hook frame, payoff frame, explicit loop-point. Built so the GIF earns its second play, not just its first.</div>
+        <div class="skill__tags"><span class="tag">/gif-board</span><span class="tag">hook+payoff</span><span class="tag">loop-point</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.44" data-tags="gif loop audit"
+      data-inputs="Existing GIF (URL / file), Intended message"
+      data-prompt="Audit this GIF's loop. Find the jarring frame, the cursor-jump, and the mid-action cut. Tell me the single-frame edit that would make the loop feel intentional."
+      data-output="A frame-level diagnosis (jarring frame, cursor jump, mid-action cut), and a one-frame edit recommendation per issue."
+      data-install="claude skills add gb/loop-auditor"
+      data-why="A GIF that loops badly is worse than no GIF — it advertises lack of care. The skill is built around the one-frame edit that flips it.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.44 · GIF</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Loop Auditor</div>
+        <div class="skill__desc">Finds the jarring frame, the cursor jump, the mid-action cut. Recommends the single-frame edit that makes the loop feel intentional.</div>
+        <div class="skill__tags"><span class="tag">/loop-audit</span><span class="tag">one-frame-fix</span><span class="tag">cursor</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.45" data-tags="gif a11y caption"
+      data-inputs="GIF storyboard or file, Audience context, Tone guide"
+      data-prompt="Write the alt text and caption for this GIF. Alt is for screen readers — describe the action, not the aesthetic. Caption is for muted-autoplay — carry the meaning if the motion fails."
+      data-output="An alt-text string for screen readers + a caption line for muted autoplay, with one short and one long variant each."
+      data-install="claude skills add gb/gif-alt-caption"
+      data-why="GIFs play muted by default. The skill is built around the &lsquo;motion failed&rsquo; case — the caption that carries meaning if nothing moves.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.45 · GIF</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Caption + Alt Writer</div>
+        <div class="skill__desc">Writes alt text (for screen readers) and a caption line (for muted autoplay) so the GIF&rsquo;s meaning survives without motion. Short + long variants of each.</div>
+        <div class="skill__tags"><span class="tag">/gif-a11y</span><span class="tag">muted-autoplay</span><span class="tag">screen-reader</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.46" data-tags="gif format optimize"
+      data-inputs="GIF file (or specs: width × height × frames × fps), Target surface (email / web / Slack / X)"
+      data-prompt="Optimize this GIF for {surface}. Tell me whether to ship GIF / WebP / MP4 / APNG. Give me the dimensions and bitrate to hit the file-size budget for that surface."
+      data-output="A format recommendation per surface, dimensions, bitrate, and a fallback strategy when the surface rejects the chosen format."
+      data-install="claude skills add gb/gif-format-optimizer"
+      data-why="Every surface has a different file-size and format ceiling. The skill is built around those ceilings, not around &lsquo;best quality&rsquo;.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.46 · GIF</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Format Optimizer</div>
+        <div class="skill__desc">Picks GIF / WebP / MP4 / APNG per surface (email, web, Slack, X). Recommends dimensions and bitrate against the surface&rsquo;s file-size ceiling. Includes a fallback.</div>
+        <div class="skill__tags"><span class="tag">/format</span><span class="tag">surface-aware</span><span class="tag">budget</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== INTERNAL COMMS ===== -->
+<section class="cat-section" data-cat="internal">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · K</span>Internal Communications</div>
+    <div class="cat-head__meta">ALL-HANDS · ORG CHANGE · DIGEST · STATUS</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.47" data-tags="all-hands narrative internal"
+      data-inputs="Quarter's three biggest things, Audience size, Speaker tone"
+      data-prompt="Draft an all-hands narrative. Open with the one belief that defines the quarter. Earn it with two stories — one we shipped, one we learned. End with the explicit ask of the room."
+      data-output="A 12-minute narrative — opening belief, two stories, explicit ask — with speaker notes and the three slides to cut."
+      data-install="claude skills add gb/all-hands-drafter"
+      data-why="All-hands fail when they list everything that happened. The skill is built around the one belief and the explicit ask — the only two things people remember.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.47 · INC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">All-Hands Drafter</div>
+        <div class="skill__desc">12-minute narrative — opening belief, one shipped story, one learning story, an explicit ask of the room. Cuts the three slides you didn&rsquo;t need.</div>
+        <div class="skill__tags"><span class="tag">/all-hands</span><span class="tag">belief-first</span><span class="tag">explicit-ask</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.48" data-tags="org change internal"
+      data-inputs="The decision, The reasoning, Who is affected and how"
+      data-prompt="Draft the org-change note. Lead with the decision, not the journey. Name the impact by role honestly. End with what is and isn't changing for each affected group."
+      data-output="A note structured as decision → impact-by-role → what-is-and-isn&rsquo;t-changing → next steps + FAQ stub."
+      data-install="claude skills add gb/org-change-note"
+      data-why="Org-change notes fail by burying the decision in the journey. The skill writes for the affected reader who needs to know in 60 seconds, then explains.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.48 · INC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Org Change Note</div>
+        <div class="skill__desc">Decision-first org-change note — impact named by role, what is + isn&rsquo;t changing per group, next steps, FAQ stub. Built for the reader who has 60 seconds.</div>
+        <div class="skill__tags"><span class="tag">/org-change</span><span class="tag">decision-first</span><span class="tag">role-impact</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.49" data-tags="weekly digest internal"
+      data-inputs="Team's PRs / decisions / blockers for the week, Audience (peers / leadership)"
+      data-prompt="Compose this week's digest in three columns: Shipped, Deciding, Watching. One sentence per row. Cut everything that doesn't change a reader's plan for next week."
+      data-output="A three-column digest with one-sentence rows, ordered by impact on the reader&rsquo;s next-week plan."
+      data-install="claude skills add gb/weekly-digest"
+      data-why="Weekly digests fail by becoming activity-logs. The skill is built around the reader's next-week plan — the only useful frame.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.49 · INC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Weekly Team Digest</div>
+        <div class="skill__desc">Three-column digest — Shipped / Deciding / Watching — one sentence per row, ordered by impact on the reader&rsquo;s next-week plan.</div>
+        <div class="skill__tags"><span class="tag">/digest</span><span class="tag">3-column</span><span class="tag">next-week</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.50" data-tags="status hedge internal"
+      data-inputs="Draft status update, Audience seniority, Decision needing surfaced"
+      data-prompt="Polish this status update. Kill hedge words (&lsquo;maybe&rsquo;, &lsquo;sort of&rsquo;, &lsquo;exploring&rsquo;). Convert verbs to past tense or present tense. Surface the decision that's hiding in the third paragraph."
+      data-output="A polished update, a hedge-word kill-list with replacements, and the decision pulled to the top with a yes/no ask."
+      data-install="claude skills add gb/status-polish"
+      data-why="Status updates fail by hedging. The skill is built around tense-tightening and pulling the hidden decision to the top — the work most updates avoid.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.50 · INC</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Status Update Polish</div>
+        <div class="skill__desc">Kills hedge words, tightens tenses, and surfaces the buried decision with an explicit yes/no ask. Polished for the executive reader who skims, not reads.</div>
+        <div class="skill__tags"><span class="tag">/status</span><span class="tag">hedge-killer</span><span class="tag">decision-surface</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== GROWTH HACKING ===== -->
+<section class="cat-section" data-cat="growth-hack">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · L</span>Growth Hacking</div>
+    <div class="cat-head__meta">LOOPS · ACTIVATION · REACTIVATION · PRICING</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.51" data-tags="referral loop growth-hack"
+      data-inputs="Product, Sender motivation, Recipient motivation, Single shareable artefact"
+      data-prompt="Design a referral loop for this product. Name the sender's motivation. Name the recipient's. Build the loop around the shareable artefact, not the reward. Specify the friction we accept."
+      data-output="A loop diagram (sender → artefact → recipient → re-entry), motivation per actor, the friction we accept, and the cheat-detection rule."
+      data-install="claude skills add gb/referral-loop-designer"
+      data-why="Most referral loops die because the artefact isn't worth sharing. The skill is built around the artefact, not the reward — that's the part that compounds.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.51 · GH</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Referral Loop Designer</div>
+        <div class="skill__desc">Designs a referral loop around the shareable artefact, not the reward. Names motivations per actor, accepts a specific friction, and includes a cheat-detection rule.</div>
+        <div class="skill__tags"><span class="tag">/loop</span><span class="tag">artefact-led</span><span class="tag">cheat-detect</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.52" data-tags="activation step growth-hack"
+      data-inputs="Onboarding flow, D7 / D30 retention curves, Aha-moment hypothesis"
+      data-prompt="Audit our activation flow. Find the one step that predicts D30 retention better than any other. Tell me which steps to delete and which step to move earlier."
+      data-output="An activation-step diagnosis — the one predictive step, deletion candidates, a re-ordered flow, and the experiment to validate it."
+      data-install="claude skills add gb/activation-step-auditor"
+      data-why="Most onboarding flows treat every step as equal. The skill is built to find the one step that decides D30 — the only one that matters.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.52 · GH</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Activation Step Auditor</div>
+        <div class="skill__desc">Finds the one onboarding step that predicts D30 retention. Recommends deletions and a re-order. Includes the experiment to validate the call.</div>
+        <div class="skill__tags"><span class="tag">/activation</span><span class="tag">d30-predictor</span><span class="tag">re-order</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.53" data-tags="reactivation dormant growth-hack"
+      data-inputs="Dormant-user definition, Last-active behaviour, Latest product change worth surfacing"
+      data-prompt="Write a three-step reactivation sequence for users dormant {N} days. Each step has one job. Lead with what changed, not with &lsquo;we miss you&rsquo;. End with a graceful exit."
+      data-output="Three emails — what-changed, value-proof, graceful-exit — with subject lines and a send-time recommendation per step."
+      data-install="claude skills add gb/reactivation-sequence"
+      data-why="Reactivation sequences fail by sounding like guilt-trips. The skill is built around what-changed-since-you-left, which is the only thing dormant users care about.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.53 · GH</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Reactivation Sequence</div>
+        <div class="skill__desc">Three-step reactivation flow — what-changed, value-proof, graceful-exit. Subject lines and send-times included. Refuses &ldquo;we miss you&rdquo; sentiment.</div>
+        <div class="skill__tags"><span class="tag">/reactivation</span><span class="tag">what-changed</span><span class="tag">graceful-exit</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.54" data-tags="pricing variant growth-hack"
+      data-inputs="Current pricing page, Three plans, Top objection from sales notes"
+      data-prompt="Generate three pricing-page variants. Each variant addresses a different framing — anchoring, decoy, value-stacked. Predict the conversion-vs-ARPU trade for each."
+      data-output="Three pricing variants with explicit framing labels, a conversion-vs-ARPU prediction per variant, and the variant we&rsquo;d ship if we could only ship one."
+      data-install="claude skills add gb/pricing-variant-lab"
+      data-why="Pricing-page tests die because the variants vary the wrong thing. The skill is built around three different framings, not three different colours.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.54 · GH</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Pricing-Page Variant Lab</div>
+        <div class="skill__desc">Three pricing-page variants framed differently — anchoring, decoy, value-stacked. Conversion-vs-ARPU prediction per variant. One pick if forced to ship one.</div>
+        <div class="skill__tags"><span class="tag">/pricing</span><span class="tag">3-framings</span><span class="tag">arpu-trade</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== COLD EMAIL ===== -->
+<section class="cat-section" data-cat="cold-email">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · M</span>Cold Email</div>
+    <div class="cat-head__meta">SUBJECT · PERSONALISE · CADENCE · DIAGNOSE</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.55" data-tags="cold subject email"
+      data-inputs="Audience, One-line offer, One thing you know about the prospect"
+      data-prompt="Generate five cold-email subject lines for this offer. One curiosity-led, one specificity-led, one urgency-led, one personalisation-led, one anti-pattern (the one we shouldn't ship)."
+      data-output="Five subject lines, each tagged with its framing, plus the anti-pattern explained. A predicted open-rate band per line."
+      data-install="claude skills add gb/cold-subject-lab"
+      data-why="Subject lines fail because they all use the same framing. The skill is built to vary the framing, then make the trade-off explicit.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.55 · CLD</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Cold Subject Lab</div>
+        <div class="skill__desc">Five subject lines across five framings (curiosity, specificity, urgency, personalisation, anti-pattern). Predicted open-rate band per line. Built to vary the frame, not the words.</div>
+        <div class="skill__tags"><span class="tag">/subject</span><span class="tag">5-framings</span><span class="tag">open-rate</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.56" data-tags="personalisation research email"
+      data-inputs="Prospect name, Company URL, One public signal (post / blog / talk)"
+      data-prompt="Research this prospect. Find the one line that would make a cold email feel earned — a recent decision, a stated opinion, a public hire. Avoid LinkedIn anniversary nonsense."
+      data-output="A one-line personalisation that's recent, specific, and not creepy — plus two alternates ordered by &lsquo;earned-ness&rsquo;."
+      data-install="claude skills add gb/personalisation-researcher"
+      data-why="Personalisation fails by being generic or creepy. The skill is built around the &lsquo;earned&rsquo; line — recent, specific, public.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.56 · CLD</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Personalisation Researcher</div>
+        <div class="skill__desc">Finds the one earned line for a cold email — recent decision, stated opinion, public hire. Refuses anniversary congrats and other low-effort openers.</div>
+        <div class="skill__tags"><span class="tag">/personalise</span><span class="tag">earned-line</span><span class="tag">not-creepy</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.57" data-tags="follow-up cadence email"
+      data-inputs="Initial cold-email send date, Reply-by-day distribution, Account tier"
+      data-prompt="Design a follow-up cadence. Tell me how many follow-ups, what each says, when to break the chain politely, and the trigger that should fork into a different sequence."
+      data-output="A cadence — N messages with intervals, the &lsquo;break&rsquo; message, and the fork condition that routes to a different sequence."
+      data-install="claude skills add gb/follow-up-cadence"
+      data-why="Most cadences fail by being one message repeated three times. The skill is built to vary the angle and to know when to stop with grace.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.57 · CLD</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Follow-Up Cadence</div>
+        <div class="skill__desc">Designs a follow-up cadence that varies angle per message, knows when to break the chain politely, and forks to a different sequence on the right signal.</div>
+        <div class="skill__tags"><span class="tag">/cadence</span><span class="tag">graceful-break</span><span class="tag">fork-rule</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.58" data-tags="reply rate diagnose email"
+      data-inputs="Sequence with metrics (open / reply / opt-out), Audience description"
+      data-prompt="Diagnose this sequence's reply rate. Tell me whether the bottleneck is targeting, subject, body, or CTA. Show me the cheapest test that would prove the bottleneck."
+      data-output="A bottleneck diagnosis (targeting / subject / body / CTA), the reasoning, and the cheapest A/B that would confirm or kill the hypothesis."
+      data-install="claude skills add gb/reply-rate-diagnostic"
+      data-why="Cold sequences are usually fixed at the wrong layer. The skill is built to identify the actual bottleneck — most of the time it's targeting, not copy.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.58 · CLD</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Reply-Rate Diagnostic</div>
+        <div class="skill__desc">Reads a sequence's open / reply / opt-out metrics and identifies whether the bottleneck is targeting, subject, body, or CTA. Recommends the cheapest disproving test.</div>
+        <div class="skill__tags"><span class="tag">/diagnose</span><span class="tag">bottleneck</span><span class="tag">cheap-test</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== COMPETITIVE ANALYSIS ===== -->
+<section class="cat-section" data-cat="competitive">
+  <div class="cat-head">
+    <div class="cat-head__title"><span class="num">§ 02 · N</span>Competitive Analysis</div>
+    <div class="cat-head__meta">FEATURE DIFF · PRICING · POSITIONING MAP · WIN/LOSS</div>
+  </div>
+  <div class="gb-rule gb-rule--thin"></div>
+  <div class="skill-grid">
+
+    <article class="skill acc-1" data-id="GB.59" data-tags="feature diff competitive"
+      data-inputs="Our feature list, Competitor URL(s), Audience"
+      data-prompt="Diff our feature list against {competitor}. Skip parity table fillers. Group features by job-to-be-done, not by section. Surface the two features they have that change the customer's expectation."
+      data-output="A JTBD-grouped diff, two expectation-shifting findings, and the one feature we should de-emphasise because it's category-table-stakes."
+      data-install="claude skills add gb/feature-diff-auditor"
+      data-why="Feature diffs fail when they list every checkbox. The skill is built around expectation-shifters and table-stakes — the only two categories that matter.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.59 · CMP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Feature Diff Auditor</div>
+        <div class="skill__desc">JTBD-grouped feature diff against a competitor. Surfaces expectation-shifters and table-stakes. Refuses the parity-checkbox dump that nobody reads.</div>
+        <div class="skill__tags"><span class="tag">/diff</span><span class="tag">jtbd</span><span class="tag">expectation-shift</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-2" data-id="GB.60" data-tags="pricing competitive"
+      data-inputs="Our pricing tiers, Two competitor pricing pages, Target segment"
+      data-prompt="Compare our pricing to {competitors} for {segment}. Normalise on seat / usage / outcome. Tell me which competitor we look expensive against, where, and the one line on our pricing page that closes the gap."
+      data-output="A normalised comparison table, the &lsquo;we look expensive&rsquo; cells highlighted, and the single pricing-page edit that flips the read."
+      data-install="claude skills add gb/pricing-comparison"
+      data-why="Pricing comparisons fail because they compare list prices apples-to-oranges. The skill is built around normalisation — without it, the comparison is theatre.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.60 · CMP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Pricing Comparison</div>
+        <div class="skill__desc">Normalises pricing across seat / usage / outcome. Highlights where we look expensive. Recommends the one pricing-page edit that flips the comparison.</div>
+        <div class="skill__tags"><span class="tag">/pricing-cmp</span><span class="tag">normalised</span><span class="tag">one-edit-fix</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-3" data-id="GB.61" data-tags="positioning map competitive"
+      data-inputs="Category, Five competitors (incl. us), Two axes that actually matter to buyers"
+      data-prompt="Build a 2×2 positioning map for {category} on these axes. Place every competitor. Defend each placement with one quote or one feature. Tell me which quadrant is empty and whether that's an opportunity or a graveyard."
+      data-output="A 2×2 positioning map with placements, a one-line defence per placement, and a verdict on the empty quadrant (opportunity vs graveyard)."
+      data-install="claude skills add gb/positioning-map"
+      data-why="Positioning maps fail when the axes are vibes. The skill is built around axes buyers actually use and treats the empty quadrant as a question, not an answer.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.61 · CMP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Positioning Map</div>
+        <div class="skill__desc">2×2 positioning map on axes buyers actually use. Each placement defended with a quote or feature. Empty quadrant ruled opportunity or graveyard with reasoning.</div>
+        <div class="skill__tags"><span class="tag">/positioning-map</span><span class="tag">buyer-axes</span><span class="tag">empty-quadrant</span></div>
+      </div>
+      <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
+      <div class="skill__drawer"></div>
+    </article>
+
+    <article class="skill acc-4" data-id="GB.62" data-tags="win loss competitive"
+      data-inputs="Last N deal-review notes, Outcome (win / loss / no-decision), Stated reason"
+      data-prompt="Synthesise these deal-review notes. Separate stated reasons from real reasons. Find the loss pattern that repeats. Tell me which fix is product, which is GTM, and which is &lsquo;accept and move on&rsquo;."
+      data-output="A stated-vs-real reasons table, a repeated loss pattern, a product / GTM / accept classification, and the one investment to make this quarter."
+      data-install="claude skills add gb/win-loss-synth"
+      data-why="Win/loss data is full of stated reasons that aren't the real reasons. The skill is built to draw out the real ones and refuse the &lsquo;losing on price&rsquo; default.">
+      <div class="skill__head">
+        <div class="skill__top"><div class="skill__id">GB.62 · CMP</div><div class="skill__plat">CLAUDE.AI</div></div>
+        <div class="skill__name">Win/Loss Synth</div>
+        <div class="skill__desc">Synthesises deal-review notes. Separates stated reasons from real ones. Classifies fixes as product / GTM / accept. Refuses the &ldquo;losing on price&rdquo; default.</div>
+        <div class="skill__tags"><span class="tag">/win-loss</span><span class="tag">stated-vs-real</span><span class="tag">classified-fix</span></div>
       </div>
       <div class="skill__expand"><span>Open details</span><span class="caret">▾</span></div>
       <div class="skill__drawer"></div>

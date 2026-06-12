@@ -1161,7 +1161,13 @@
         OR EMAIL DIRECTLY · <a href="contact.html" class="signal">contact ↗</a>
       </div>
     </div>
-    <form id="submit-form">
+    <!--
+      Submit form backend:
+      Set window.SFI_FORMSPREE_ID below to your Formspree form ID (the part after /f/).
+      Sign up at https://formspree.io/, create a new form, copy the ID, and paste it
+      between the quotes. If the ID is left blank, the form falls back to mailto.
+    -->
+    <form id="submit-form" action="https://formspree.io/f/" method="POST">
       <div class="submit__row">
         <label><span>Your name</span><input type="text" name="name" required></label>
         <label><span>Email</span><input type="email" name="email" required></label>
@@ -1497,26 +1503,78 @@
     });
   })();
 
-  // submit form (client-side success — proposal stored in mailto fallback)
+  // ── Submit form ──
+  // Configure: paste your Formspree form ID below (e.g. "xyzabcde").
+  // If left blank, the form falls back to the user's mail client (mailto:).
+  window.SFI_FORMSPREE_ID = "";
+  window.SFI_FALLBACK_EMAIL = "hello@puneetarora.in";
+
   (function(){
     var form = document.getElementById('submit-form');
     var ok = document.getElementById('submit-success');
     if (!form) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var data = new FormData(form);
-      var body = 'Name: ' + data.get('name') + '\n'
-               + 'Email: ' + data.get('email') + '\n'
-               + 'Skill: ' + data.get('skill') + '\n'
-               + 'Category: ' + data.get('category') + '\n\n'
-               + (data.get('description') || '');
-      var mail = 'mailto:hello@puneetarora.in'
-               + '?subject=' + encodeURIComponent('[Skills for India] Proposal: ' + data.get('skill'))
+
+    function showSuccess(msg) {
+      ok.textContent = msg;
+      ok.classList.add('show');
+      setTimeout(function(){ ok.classList.remove('show'); }, 8000);
+    }
+
+    async function postToFormspree(id, payload) {
+      var res = await fetch('https://formspree.io/f/' + id, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error('Formspree responded ' + res.status);
+      return res.json();
+    }
+
+    function mailtoFallback(payload) {
+      var body = 'Name: ' + payload.name + '\n'
+               + 'Email: ' + payload.email + '\n'
+               + 'Skill: ' + payload.skill + '\n'
+               + 'Category: ' + payload.category + '\n\n'
+               + (payload.description || '');
+      var mail = 'mailto:' + window.SFI_FALLBACK_EMAIL
+               + '?subject=' + encodeURIComponent('[Skills for India] Proposal: ' + payload.skill)
                + '&body=' + encodeURIComponent(body);
       window.location.href = mail;
-      ok.classList.add('show');
-      form.reset();
-      setTimeout(function(){ ok.classList.remove('show'); }, 6000);
+    }
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      var data = new FormData(form);
+      var payload = {
+        name: data.get('name'),
+        email: data.get('email'),
+        skill: data.get('skill'),
+        category: data.get('category'),
+        description: data.get('description'),
+        _subject: '[Skills for India] Proposal: ' + data.get('skill'),
+        _source: 'skills-for-india.html'
+      };
+      var id = (window.SFI_FORMSPREE_ID || '').trim();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalLabel = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = 'SENDING…'; }
+
+      if (id) {
+        try {
+          await postToFormspree(id, payload);
+          form.reset();
+          showSuccess('✓ Proposal received · I will reach out within 72 hours');
+        } catch (err) {
+          showToast('Send failed · opening your mail client as a fallback');
+          mailtoFallback(payload);
+        }
+      } else {
+        mailtoFallback(payload);
+        form.reset();
+        showSuccess('✓ Mail client opened · finish sending to confirm the proposal');
+      }
+
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = originalLabel; }
     });
   })();
 </script>
