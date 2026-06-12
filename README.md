@@ -3,7 +3,7 @@
 Private, invite-only working portfolio for Puneet Arora — Principal Product Designer.
 
 **Live (when deployed):** see GitHub Pages settings.
-**Default passcode:** `growthecore` (rotate before sharing — see below).
+**Access:** no passcode — visitors just press ENTER on the landing page.
 
 ## Stack
 
@@ -11,7 +11,7 @@ Plain static HTML + CSS + a small vanilla JS file. No build step, no dependencie
 
 ```
 site/
-├─ index.html                ← entry passcode gate
+├─ index.html                ← entry landing page (soft gate)
 ├─ home.html                 ← hero, dossiers, AI lab teaser
 ├─ bio.html                  ← leadership story, patents, journey
 ├─ work.html                 ← case study index
@@ -24,24 +24,9 @@ site/
    └─ portrait.png
 ```
 
-## Soft passcode gate
+## Soft gate
 
-Every page checks `sessionStorage` for a key set by `index.html`. No backend, no real auth — this is a polite "have you been sent the link?" filter, not security. Source of the page is still visible to anyone determined.
-
-### How to rotate the passcode
-
-1. Open the deployed site in a browser.
-2. Open the JS console and run:
-   ```js
-   await __hashGatePass('your-new-passcode')
-   ```
-   Copy the returned hex string.
-3. Open `assets/site.js`, replace the value of `PASS_HASH` with the new hash.
-4. Commit and push.
-
-The passcode is normalised before hashing: lowercased + whitespace stripped. So `Hello World` and `helloworld` are equivalent.
-
-The default ships as `growthecore` (from the quote "Grow the core, while adding some more").
+Every page checks `sessionStorage` for a key set by `index.html`. There is no passcode — pressing ENTER on the landing page grants access (and "Remember on this device" persists it via `localStorage`). The gate is just a landing screen that funnels visitors through `index.html` first; it is not security.
 
 ## Deploying to GitHub Pages
 
@@ -67,7 +52,7 @@ If you'd rather push this whole project (including the dev artefacts at the root
 
 ## Visiting the site (for invitees)
 
-Share the URL and the passcode privately (separate channels are safer — URL via email, passcode via WhatsApp/SMS, etc.). Recipients enter the passcode once, and "Remember on this device" persists access via `localStorage` for return visits.
+Share the URL. Visitors land on `index.html`, press ENTER, and they're in. "Remember on this device" persists access via `localStorage` for return visits.
 
 ## Editing the persona / content
 
