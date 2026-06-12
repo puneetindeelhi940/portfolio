@@ -26,7 +26,7 @@ site/
 
 ## Soft gate
 
-Every page checks `sessionStorage` for a key set by `index.html`. There is no passcode — pressing ENTER on the landing page grants access (and "Remember on this device" persists it via `localStorage`). The gate is just a landing screen that funnels visitors through `index.html` first; it is not security.
+Every page checks for an access key set by `index.html`. There is no passcode — pressing ENTER on the landing page grants access, persisted via `localStorage` so return visits skip the landing screen. The gate is just a landing screen that funnels visitors through `index.html` first; it is not security.
 
 ## Deploying to GitHub Pages
 
@@ -52,7 +52,7 @@ If you'd rather push this whole project (including the dev artefacts at the root
 
 ## Visiting the site (for invitees)
 
-Share the URL. Visitors land on `index.html`, press ENTER, and they're in. "Remember on this device" persists access via `localStorage` for return visits.
+Share the URL. Visitors land on `index.html`, press ENTER, and they're in. Access persists via `localStorage`, so return visits go straight through.
 
 ## Editing the persona / content
 
