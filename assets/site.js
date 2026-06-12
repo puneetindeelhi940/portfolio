@@ -48,10 +48,9 @@
   document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('gate-form');
     if (form) {
-      const rem = document.getElementById('gate-remember');
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        grantAccess(rem && rem.checked);
+        grantAccess(true);
         // Redirect to ?to=... or home.html
         const params = new URLSearchParams(location.search);
         const to = params.get('to');
