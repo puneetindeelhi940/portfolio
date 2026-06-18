@@ -1,86 +1,68 @@
 # Puneet Arora — Portfolio
 
-Private, invite-only working portfolio for Puneet Arora — Principal Product Designer.
+Public portfolio for Puneet Arora — Principal Product Designer & AI Design Leader.
 
-**Live (when deployed):** see GitHub Pages settings.
-**Access:** no passcode — visitors just press ENTER on the landing page.
+**Live:** https://puneetindeelhi940.github.io/portfolio/ (GitHub Pages, `main` branch).
 
 ## Stack
 
-Plain static HTML + CSS + a small vanilla JS file. No build step, no dependencies, no tracking. Designed to be hostable as-is on **GitHub Pages** or any static host.
+Plain static HTML + CSS + a small vanilla JS file. No build step, no dependencies, no tracking. Hostable as-is on **GitHub Pages** or any static host. The site is open and search-indexable (no access gate).
 
 ```
-site/
-├─ index.html                ← entry landing page (soft gate)
-├─ home.html                 ← hero, dossiers, AI lab teaser
-├─ bio.html                  ← leadership story, patents, journey
-├─ work.html                 ← case study index
-├─ case-dell-genai.html      ← Dell.com GenAI deep case
-├─ ai-lab.html               ← Design Intelligence Portal + Vigyan Setu
-├─ contact.html              ← channels, role brief, etc.
+portfolio/
+├─ index.html                ← forwards straight to home.html
+├─ home.html                 ← hero, executive snapshot, signature work, how I lead, principles
+├─ bio.html                  ← leadership story, patents, journey, certifications
+├─ work.html                 ← case-study index (dossiers)
+├─ case-dell-chatbot.html    ← canonical Dell GenAI Virtual Assistant case
+├─ case-boeing-taam.html     ← Boeing TAAM case
+├─ experiments.html          ← live tools, custom GPTs, Vigyan Setu, Skills directories
+├─ skills-for-india.html     ← Skills directory (India)
+├─ skills-for-global-builders.html ← Skills directory (global)
+├─ contact.html              ← channels, role brief
+├─ robots.txt · sitemap.xml  ← SEO
 └─ assets/
-   ├─ site.css               ← shared styles (Intelligence Terminal system)
-   ├─ site.js                ← gate + chrome helpers
+   ├─ site.css               ← shared design system (sea-green, Roboto)
+   ├─ site.js                ← theme toggle + year stamp
    └─ portrait.png
 ```
 
-## Soft gate
+`case-dell-genai.html`, `ai-lab.html`, and `vibe-magic.html` are kept as lightweight redirect
+stubs to their canonical replacements. `30day-agentic-ux-plan.html` remains in the repo, unlinked.
 
-Every page checks for an access key set by `index.html`. There is no passcode — pressing ENTER on the landing page grants access, persisted via `localStorage` so return visits skip the landing screen. The gate is just a landing screen that funnels visitors through `index.html` first; it is not security.
+## Navigation
+
+Single source of nav is the topbar: **WORK · ABOUT · CONTACT** plus a secondary **EXPERIMENTS**
+link. Footers carry only the copyright line.
 
 ## Deploying to GitHub Pages
 
-1. Create a new GitHub repo (public or private — Pages works for both on paid plans).
-2. Push the contents of the `site/` folder to the **root** of that repo.
-3. In the repo, go to **Settings → Pages**.
-4. Source: `Deploy from a branch`. Branch: `main`. Folder: `/ (root)`.
-5. Save. Wait ~30s. The site is live at `https://<your-username>.github.io/<repo-name>/`.
-
-### Alternative: keep `site/` as a subfolder
-
-If you'd rather push this whole project (including the dev artefacts at the root), point Pages at the `/site` folder:
-
-1. **Settings → Pages → Source:** `Deploy from a branch`.
-2. **Branch:** `main`. **Folder:** `/site`.
-3. The site is then live at `https://<user>.github.io/<repo>/`.
+1. Push to the **root** of the repo.
+2. **Settings → Pages → Source:** `Deploy from a branch`. **Branch:** `main`. **Folder:** `/ (root)`.
+3. Save. The site is live at `https://<user>.github.io/<repo>/`.
 
 ### Custom domain (optional)
 
-1. In the repo's **Settings → Pages**, add your domain (e.g. `puneetarora.design`).
-2. Add a `CNAME` file at the repo root containing just that domain.
-3. Point your DNS at GitHub Pages (`A` records to `185.199.108.153` / `109` / `110` / `111`, or a `CNAME` for `<user>.github.io`).
+1. **Settings → Pages**, add your domain.
+2. Add a `CNAME` file at the repo root with that domain.
+3. Point DNS at GitHub Pages (`A` records to `185.199.108.153/109/110/111`, or a `CNAME` to `<user>.github.io`).
+4. Update the absolute URLs in `robots.txt`, `sitemap.xml`, and the `og:`/`canonical` tags to the new domain.
 
-## Visiting the site (for invitees)
+## Editing content
 
-Share the URL. Visitors land on `index.html`, press ENTER, and they're in. Access persists via `localStorage`, so return visits go straight through.
+All content is inline HTML — no CMS. To update a stat or rewrite a paragraph, open the relevant
+page and edit the text. Design tokens (colours, type, spacing) live in `assets/site.css` under
+`:root { --... }` — edit there to retune the system across all pages. The accent is sea-green
+(`--signal`); a light theme is available via the topbar DARK/LIGHT toggle.
 
-## Editing the persona / content
+## Accessibility
 
-All content is inline HTML — no CMS, no Markdown. To update a stat or rewrite a paragraph, open the relevant page and edit the text.
-
-Common edits:
-
-| Want to change | File | Where to look |
-|---|---|---|
-| Personal facts (role, leads, location) | `home.html` | the `<aside>` operator profile card |
-| The "How I Think" lenses | `bio.html` | `<div class="how">` |
-| Career timeline rows | `bio.html` | `<div class="timeline">` |
-| Patents list | `bio.html` | `<div class="patents">` |
-| Dell case study | `case-dell-genai.html` | `<section class="case-section">` blocks |
-| AI Lab projects | `ai-lab.html` | `featured-card` + `on the bench` cards |
-| Contact channels | `contact.html` | `<a class="channel">` rows |
-
-The design tokens (colours, type sizes, spacing) live in `assets/site.css` under `:root { --... }`. Edit there if you want to retune the system across all pages.
+- Minimum body font-size of 12px; all animations are disabled under `prefers-reduced-motion`.
+- Colour tokens are tuned to keep WCAG AA contrast on text/background pairs in both themes.
 
 ## Browser support
 
-Modern evergreen browsers. Uses `oklch()` colours, `color-mix()`, and `:has()`. If you need to support older browsers, swap colours to hex via the CSS variables in `:root`.
-
-## Privacy
-
-- `robots` meta tags are set to `noindex,nofollow` on every page.
-- No analytics, no fonts beyond Google Fonts (Roboto / Roboto Mono).
-- The gate is **client-side only**. For real auth, deploy behind Cloudflare Access, Vercel Password Protection, or a similar gate.
+Modern evergreen browsers. Uses `oklch()` colours, `color-mix()`, and `:has()`.
 
 ---
 
