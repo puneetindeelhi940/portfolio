@@ -28,9 +28,10 @@
      A full-bleed "situation room" that runs always-dark for
      immersion, built on the shared Intelligence-Terminal tokens
      (sea-green --signal, warn-orange, Roboto / Roboto Mono).
-     A 3D globe is hand-drawn on <canvas> behind the HUD — no
-     external libraries, no network, no image assets — so it
-     always renders, offline included.
+     A real, textured 3D globe (globe.gl + three.js) renders behind
+     the HUD. The library and Earth textures are vendored locally in
+     assets/vendor — no CDN, no external calls. If WebGL is missing it
+     degrades to a CSS earth-glow so the HUD always reads as intentional.
      ───────────────────────────────────────────────────────────── */
 
   :root {
@@ -62,11 +63,23 @@
       linear-gradient(180deg, var(--space-1), var(--space-0));
   }
 
-  /* ── globe (self-drawn canvas, zero dependencies) ── */
-  #globeCanvas { position: absolute; inset: 0; z-index: 1; display: block; cursor: grab; touch-action: none; }
-  #globeCanvas:active { cursor: grabbing; }
-  .globe-chips { position: absolute; inset: 0; z-index: 12; pointer-events: none; }
-  .globe-chips .chip { position: absolute; left: 0; top: 0; will-change: transform; }
+  /* ── globe ── */
+  #globeViz { position: absolute; inset: 0; z-index: 1; }
+  .cd-fallback {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    display: grid; place-items: center;
+  }
+  .cd-fallback .orb {
+    width: min(56vh, 620px); aspect-ratio: 1; border-radius: 50%;
+    background:
+      radial-gradient(closest-side at 38% 34%, rgba(90, 150, 200, 0.55), rgba(20, 50, 80, 0.35) 60%, rgba(6, 12, 20, 0.9) 100%);
+    box-shadow: 0 0 120px 20px rgba(60, 130, 190, 0.25), inset -30px -20px 90px rgba(0,0,0,0.7);
+    position: relative;
+  }
+  .cd-fallback .orb::after {
+    content: ""; position: absolute; inset: -2px; border-radius: 50%;
+    box-shadow: inset 0 0 60px 6px rgba(120, 200, 255, 0.25);
+  }
 
   /* ── overlay scaffold ── */
   .hud { position: absolute; inset: 0; z-index: 20; pointer-events: none; }
@@ -190,7 +203,7 @@
   .compass .lbl { font-family: var(--f-mono); font-size: 11px; color: var(--hud-dim); }
   .speed-pill { position: absolute; right: 168px; bottom: 270px; font-family: var(--f-mono); font-size: 12px; color: var(--hud-dim); background: var(--glass-2); border: 1px solid var(--hud-rule); border-radius: 999px; width: 38px; height: 38px; display: grid; place-items: center; cursor: pointer; }
 
-  /* ── floating globe chips (DOM elements tracked to globe coords each frame) ── */
+  /* ── floating globe chips (used if globe.gl absent; live ones are injected via htmlElements) ── */
   .chip {
     background: rgba(8,13,20,0.82); border: 1px solid var(--hud-rule); border-radius: 8px; padding: 8px 11px;
     font-family: var(--f-mono); font-size: 11px; color: var(--hud-ink); white-space: nowrap; transform: translate(-50%, -120%);
@@ -292,9 +305,9 @@
 <body class="cd-body">
 <div class="cd-app">
 
-  <!-- 3D globe: hand-drawn on canvas, no external libraries or assets -->
-  <canvas id="globeCanvas"></canvas>
-  <div class="globe-chips" id="globeChips"></div>
+  <!-- real 3D globe (globe.gl, self-hosted) renders here; CSS earth-glow is the no-WebGL fallback -->
+  <div class="cd-fallback"><div class="orb"></div></div>
+  <div id="globeViz"></div>
 
   <!-- TOP BAR -->
   <div class="cd-top">
@@ -460,12 +473,12 @@
 
 </div><!-- /cd-app -->
 
-<!-- Globe engine: hand-drawn on <canvas>. No libraries, no network, no assets. -->
+<!-- globe.gl (bundles three.js) — vendored in assets/vendor, no external/CDN calls -->
+<script src="assets/vendor/globe.gl.min.js"></script>
 <script>
 (function () {
   "use strict";
-  var PI = Math.PI, TAU = PI * 2;
-  var COL = { signal: '#3fd0a8', cyan: '#58d6ff', risk: '#ff5a52', gold: '#e8c07a', mesh: 'rgba(120,170,210,' };
+  var TAU = Math.PI * 2, signal = '#3fd0a8', cyan = '#58d6ff', risk = '#ff5a52', gold = '#e8c07a';
 
   /* ── data ──────────────────────────────────────────────── */
   var towers = [
@@ -487,13 +500,13 @@
   var sats = satNames.map(function (n, i) {
     var warn = /NCV/.test(n);
     return {
-      name: n,
+      type: 'sat', name: n,
       lat: (Math.random() * 120 - 60),
       lng: (Math.random() * 360 - 180),
-      alt: 0.18 + Math.random() * 0.30,
-      speed: 0.08 + Math.random() * 0.14,
+      alt: 0.28 + Math.random() * 0.42,
+      speed: 0.12 + Math.random() * 0.22,
       warn: warn,
-      signal: warn ? 'Weak' : ['Strong', 'Nominal', 'Good'][i % 3],
+      signal: warn ? 'Weak' : (['Strong','Nominal','Good'][i % 3]),
       sigPct: warn ? 32 : 60 + (i * 7) % 38,
       freq: (10 + (i * 6.3) % 80).toFixed(1) + ' MHz',
       freqPct: 30 + (i * 9) % 65,
@@ -501,182 +514,113 @@
     };
   });
 
+  // annotation chips anchored to the globe
   var chips = [
-    { kind: 'fail', lat: 34, lng: 96,  title: 'NCV - 16950', metric: 'Chance of failure', value: '94%' },
-    { kind: 'coll', lat: 4,  lng: 18,  title: 'Chance of collision', metric: 'Est. time', value: '15:31:11', headline: '89%' }
+    { type: 'chip', kind: 'fail',  lat: 30, lng: 95,  title: 'NCV - 16950', metric: 'Chance of failure', value: '94%' },
+    { type: 'chip', kind: 'coll',  lat: -2, lng: 22,  title: 'Chance of collision', metric: 'Est. time', value: '15:31:11', headline: '89%' }
   ];
 
+  // network links between towers
   function link(a, b) { return { startLat: towers[a].lat, startLng: towers[a].lng, endLat: towers[b].lat, endLng: towers[b].lng }; }
   var links = [link(0,6), link(2,3), link(6,7), link(7,8), link(8,9), link(9,10), link(10,11), link(4,5), link(1,0), link(3,4)];
-  var trash = [];
 
-  /* ── canvas + state ────────────────────────────────────── */
-  var cv = document.getElementById('globeCanvas'), ctx = cv.getContext('2d');
-  var cx = 0, cy = 0, R = 0, dpr = 1;
-  var yaw = 0.6, pitch = -0.32;
-  var selected = sats[0];
-  var state = { autoRotate: true, speed: 1, showSats: true, showTowers: true, showLinks: true, zoom: 1 };
+  var trash = []; // debris injected by "space trash"
 
-  function recalc() {
-    var app = document.querySelector('.cd-app');
-    var w = app.clientWidth, h = app.clientHeight;
-    dpr = window.devicePixelRatio || 1;
-    cv.width = w * dpr; cv.height = h * dpr;
-    cv.style.width = w + 'px'; cv.style.height = h + 'px';
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    cx = w * 0.5; cy = h * 0.46;
-    R = Math.min(w, h) * 0.46 * state.zoom;
+  /* ── globe ─────────────────────────────────────────────── */
+  var world = null, hasGlobe = (typeof Globe !== 'undefined');
+  var state = { autoRotate: true, speed: 1, showSats: true, showTowers: true, showLinks: true, alt: 1.85 };
+
+  function htmlData() {
+    var arr = [];
+    if (state.showSats) arr = arr.concat(sats);
+    arr = arr.concat(chips);
+    arr = arr.concat(trash);
+    return arr;
   }
 
-  /* ── 3D helpers ────────────────────────────────────────── */
-  function v3(lat, lng) { var la = lat * PI / 180, lo = lng * PI / 180, cl = Math.cos(la); return [cl * Math.cos(lo), Math.sin(la), cl * Math.sin(lo)]; }
-  function rot(v) {
-    var x = v[0], y = v[1], z = v[2];
-    var cY = Math.cos(yaw), sY = Math.sin(yaw);
-    var x1 = x * cY + z * sY, z1 = -x * sY + z * cY;
-    var cX = Math.cos(pitch), sX = Math.sin(pitch);
-    return [x1, y * cX - z1 * sX, y * sX + z1 * cX];
+  function buildHtmlEl(d) {
+    if (d.type === 'sat') {
+      var el = document.createElement('div');
+      el.className = 'sat-icon' + (d.warn ? ' warn' : '');
+      el.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m13 7 4 4M5 19l3-3"/><rect x="2.5" y="13.5" width="6" height="6" rx="1" transform="rotate(-45 5.5 16.5)"/><rect x="15.5" y="4.5" width="6" height="6" rx="1" transform="rotate(-45 18.5 7.5)"/></svg>';
+      el.title = d.name;
+      el.addEventListener('click', function (e) { e.stopPropagation(); selectSat(d); });
+      return el;
+    }
+    if (d.type === 'trash') {
+      var t = document.createElement('div');
+      t.style.cssText = 'width:6px;height:6px;border-radius:50%;background:' + risk + ';box-shadow:0 0 6px ' + risk + ';transform:translate(-50%,-50%);';
+      return t;
+    }
+    // chip
+    var c = document.createElement('div');
+    c.className = 'chip' + (d.kind !== 'fail' ? ' risk' : '');
+    if (d.kind === 'fail') {
+      c.innerHTML = '<div class="t"><span class="sq"></span>' + d.title + '</div><div class="m">' + d.metric + ' <b>' + d.value + '</b></div>';
+    } else {
+      c.innerHTML = '<div class="t"><span class="sq"></span>' + d.title + ': <b class="bad" style="margin-left:4px">' + d.headline + '</b></div><div class="m">' + d.metric + ' <b>' + d.value + '</b></div>';
+    }
+    return c;
   }
-  function scr(v, rf) { rf = rf || 1; return { x: cx + v[0] * R * rf, y: cy - v[1] * R * rf, z: v[2] }; }
-  function project(lat, lng, rf) { return scr(rot(v3(lat, lng)), rf); }
 
-  /* ── drawing ───────────────────────────────────────────── */
-  var arcPhase = 0, ringR = 0;
+  function initGlobe() {
+    try {
+      world = Globe()(document.getElementById('globeViz'))
+        .globeImageUrl('assets/vendor/earth-night.jpg')
+        .bumpImageUrl('assets/vendor/earth-topology.png')
+        .backgroundColor('rgba(0,0,0,0)')
+        .showAtmosphere(true).atmosphereColor('#4aa3d4').atmosphereAltitude(0.16)
+        .pointsData(state.showTowers ? towers : [])
+          .pointLat('lat').pointLng('lng').pointAltitude(0.01).pointRadius(0.32)
+          .pointColor(function (d) { return d.car ? gold : signal; })
+        .arcsData(state.showLinks ? links : [])
+          .arcColor(function () { return [cyan, 'rgba(88,214,255,0.1)']; })
+          .arcStroke(0.45).arcAltitude(0.22)
+          .arcDashLength(0.5).arcDashGap(1).arcDashAnimateTime(2600)
+        .ringsData([{ lat: chips[1].lat, lng: chips[1].lng }])
+          .ringColor(function () { return function (t) { return 'rgba(255,90,82,' + (1 - t) + ')'; }; })
+          .ringMaxRadius(7).ringPropagationSpeed(3).ringRepeatPeriod(1200)
+        .htmlElementsData(htmlData())
+          .htmlElement(buildHtmlEl)
+          .htmlLat(function (d) { return d.lat; })
+          .htmlLng(function (d) { return d.lng; })
+          .htmlAltitude(function (d) { return d.type === 'sat' ? d.alt : (d.type === 'trash' ? 0.3 : 0.06); });
 
-  function drawAtmosphere() {
-    var g = ctx.createRadialGradient(cx, cy, R * 0.82, cx, cy, R * 1.2);
-    g.addColorStop(0, 'rgba(74,163,212,0)');
-    g.addColorStop(0.62, 'rgba(74,163,212,0.10)');
-    g.addColorStop(0.86, 'rgba(120,200,255,0.22)');
-    g.addColorStop(1, 'rgba(120,200,255,0)');
-    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx, cy, R * 1.2, 0, TAU); ctx.fill();
-  }
-  function drawGlobeBody() {
-    var lx = cx + R * 0.5, ly = cy - R * 0.5;
-    var g = ctx.createRadialGradient(lx, ly, R * 0.1, cx, cy, R * 1.05);
-    g.addColorStop(0, '#16384e'); g.addColorStop(0.45, '#0e2638'); g.addColorStop(1, '#06121d');
-    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx, cy, R, 0, TAU); ctx.fill();
-    ctx.strokeStyle = 'rgba(120,200,255,0.28)'; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.arc(cx, cy, R, 0, TAU); ctx.stroke();
-  }
-  function strokeMesh(getPts) {
-    ctx.beginPath(); var st = false;
-    getPts(function (p, brk) {
-      if (brk) { st = false; return; }
-      if (!st) { ctx.moveTo(p.x, p.y); st = true; } else ctx.lineTo(p.x, p.y);
-    });
-    ctx.strokeStyle = 'rgba(120,170,210,0.12)'; ctx.lineWidth = 1; ctx.stroke();
-  }
-  function drawGraticule() {
-    for (var lat = -60; lat <= 60; lat += 30) (function (lat) {
-      strokeMesh(function (add) { for (var lng = -180; lng <= 180; lng += 6) { var p = project(lat, lng); p.z > 0 ? add(p) : add(null, true); } });
-    })(lat);
-    for (var lng = -180; lng < 180; lng += 30) (function (lng) {
-      strokeMesh(function (add) { for (var lat = -90; lat <= 90; lat += 6) { var p = project(lat, lng); p.z > 0 ? add(p) : add(null, true); } });
-    })(lng);
-  }
-  function drawMeshDots() {
-    for (var lat = -80; lat <= 80; lat += 10) {
-      for (var lng = -180; lng < 180; lng += 10) {
-        var p = project(lat, lng); if (p.z <= 0) continue;
-        ctx.fillStyle = COL.mesh + (0.16 + p.z * 0.5).toFixed(2) + ')';
-        ctx.beginPath(); ctx.arc(p.x, p.y, 0.8 + p.z * 0.9, 0, TAU); ctx.fill();
-      }
+      world.pointOfView({ lat: 22, lng: 30, altitude: state.alt }, 0);
+      var c = world.controls();
+      c.autoRotate = state.autoRotate; c.autoRotateSpeed = 0.45; c.enableZoom = true;
+
+      sizeGlobe();
+      window.addEventListener('resize', sizeGlobe);
+      animateSats();
+    } catch (err) {
+      hasGlobe = false;
+      console.warn('Globe init failed; HUD-only fallback active.', err);
     }
   }
-  function drawTowers() {
-    if (!state.showTowers) return;
-    towers.forEach(function (t) {
-      var p = project(t.lat, t.lng, 1.004); if (p.z <= 0) return;
-      var col = t.car ? COL.gold : COL.signal;
-      ctx.fillStyle = col; ctx.shadowColor = col; ctx.shadowBlur = 10;
-      ctx.beginPath(); ctx.arc(p.x, p.y, 2.6, 0, TAU); ctx.fill(); ctx.shadowBlur = 0;
-      ctx.globalAlpha = 0.35; ctx.strokeStyle = col; ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.arc(p.x, p.y, 5 + Math.sin(arcPhase * 2 + t.lat) * 1.3, 0, TAU); ctx.stroke(); ctx.globalAlpha = 1;
-    });
-  }
-  function slerp(a, b, t) {
-    var d = Math.max(-1, Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2]));
-    var om = Math.acos(d), so = Math.sin(om);
-    if (so < 1e-5) return a;
-    var s1 = Math.sin((1 - t) * om) / so, s2 = Math.sin(t * om) / so;
-    return [a[0] * s1 + b[0] * s2, a[1] * s1 + b[1] * s2, a[2] * s1 + b[2] * s2];
-  }
-  function drawArcs() {
-    if (!state.showLinks) return;
-    links.forEach(function (L, idx) {
-      var A = v3(L.startLat, L.startLng), B = v3(L.endLat, L.endLng), N = 48, pts = [];
-      for (var i = 0; i <= N; i++) { var t = i / N, m = slerp(A, B, t), lf = 1 + Math.sin(t * PI) * 0.18; pts.push(scr(rot([m[0] * lf, m[1] * lf, m[2] * lf]))); }
-      ctx.beginPath(); var st = false;
-      for (var j = 0; j < pts.length; j++) { var p = pts[j]; if (p.z > -0.2) { if (!st) { ctx.moveTo(p.x, p.y); st = true; } else ctx.lineTo(p.x, p.y); } else st = false; }
-      ctx.strokeStyle = 'rgba(88,214,255,0.16)'; ctx.lineWidth = 1; ctx.stroke();
-      var hi = Math.floor(((arcPhase * 0.5 + idx * 0.13) % 1) * N);
-      for (var k = 0; k < 10; k++) { var ii = hi - k; if (ii < 0 || ii >= pts.length) continue; var pa = pts[ii]; if (pa.z <= -0.2) continue; ctx.globalAlpha = (1 - k / 10) * 0.9; ctx.fillStyle = COL.cyan; ctx.shadowColor = COL.cyan; ctx.shadowBlur = 8; ctx.beginPath(); ctx.arc(pa.x, pa.y, 1.8 * (1 - k / 12), 0, TAU); ctx.fill(); }
-      ctx.globalAlpha = 1; ctx.shadowBlur = 0;
-    });
-  }
-  function drawCollisionRing() {
-    var c = chips[1], p = project(c.lat, c.lng, 1.01); if (p.z <= 0) return;
-    ringR = (ringR + 0.6) % 26;
-    for (var i = 0; i < 2; i++) { var rr = ringR + i * 13; ctx.globalAlpha = Math.max(0, 1 - rr / 26); ctx.strokeStyle = COL.risk; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(p.x, p.y, rr, 0, TAU); ctx.stroke(); }
-    ctx.globalAlpha = 1; ctx.fillStyle = COL.risk; ctx.shadowColor = COL.risk; ctx.shadowBlur = 12;
-    ctx.beginPath(); ctx.arc(p.x, p.y, 3.4, 0, TAU); ctx.fill(); ctx.shadowBlur = 0;
-  }
-  function drawSat(s, frontPass) {
-    var p = project(s.lat, s.lng, 1 + s.alt), isFront = p.z > 0;
-    if (frontPass !== isFront) return;
-    s._x = p.x; s._y = p.y; s._front = isFront;
-    var col = s.warn ? COL.risk : COL.cyan;
-    ctx.globalAlpha = isFront ? 1 : 0.3;
-    ctx.fillStyle = col; ctx.shadowColor = col; ctx.shadowBlur = isFront ? 9 : 0;
-    ctx.beginPath(); ctx.arc(p.x, p.y, isFront ? 2.6 : 1.8, 0, TAU); ctx.fill(); ctx.shadowBlur = 0;
-    if (s === selected && isFront) { ctx.strokeStyle = col; ctx.lineWidth = 1.2; ctx.globalAlpha = 0.9; ctx.beginPath(); ctx.arc(p.x, p.y, 7, 0, TAU); ctx.stroke(); }
-    ctx.globalAlpha = 1;
-  }
-  function drawTrash(frontPass) {
-    trash.forEach(function (d) { var p = project(d.lat, d.lng, 1.3), isFront = p.z > 0; if (frontPass !== isFront) return; ctx.globalAlpha = isFront ? 0.95 : 0.3; ctx.fillStyle = COL.risk; ctx.beginPath(); ctx.arc(p.x, p.y, 1.4, 0, TAU); ctx.fill(); ctx.globalAlpha = 1; });
+
+  function sizeGlobe() {
+    if (!world) return;
+    var app = document.querySelector('.cd-app');
+    world.width(app.clientWidth).height(app.clientHeight);
   }
 
-  /* ── floating chips (DOM, tracked to the globe) ────────── */
-  var chipEls = [];
-  function buildChips() { var host = document.getElementById('globeChips'); host.innerHTML = ''; chipEls = chips.map(function () { var el = document.createElement('div'); host.appendChild(el); return el; }); renderChips(); }
-  function renderChips() {
-    chips.forEach(function (c, i) {
-      var el = chipEls[i];
-      if (c.kind === 'fail') { el.className = 'chip'; el.innerHTML = '<div class="t"><span class="sq"></span>' + c.title + '</div><div class="m">' + c.metric + ' <b>' + c.value + '</b></div>'; }
-      else { el.className = 'chip risk'; el.innerHTML = '<div class="t"><span class="sq"></span>' + c.title + ': <b class="bad" style="margin-left:4px">' + c.headline + '</b></div><div class="m">' + c.metric + ' <b>' + c.value + '</b></div>'; }
+  function refreshHtml() { if (world) world.htmlElementsData(htmlData()); }
+
+  function animateSats() {
+    if (!world) return;
+    sats.forEach(function (s) {
+      s.lng += s.speed * state.speed;
+      if (s.lng > 180) s.lng -= 360;
     });
-  }
-  function positionChips() {
-    chips.forEach(function (c, i) {
-      var p = project(c.lat, c.lng, 1.02), el = chipEls[i];
-      if (p.z > 0.05) { el.style.display = 'block'; el.style.transform = 'translate(' + p.x + 'px,' + p.y + 'px) translate(-50%,-120%)'; }
-      else el.style.display = 'none';
-    });
+    // html layer reads lat/lng accessors each frame, so mutating is enough;
+    // refresh occasionally to be safe across globe.gl builds
+    requestAnimationFrame(animateSats);
   }
 
-  /* ── main loop ─────────────────────────────────────────── */
-  function frame() {
-    ctx.clearRect(0, 0, cv.width, cv.height);
-    if (state.autoRotate) yaw += 0.0016 * state.speed;
-    sats.forEach(function (s) { s.lng += s.speed * state.speed; if (s.lng > 180) s.lng -= 360; });
-    arcPhase += 0.01;
-    drawAtmosphere();
-    if (state.showSats) { sats.forEach(function (s) { drawSat(s, false); }); drawTrash(false); }
-    drawGlobeBody();
-    drawGraticule();
-    drawMeshDots();
-    drawArcs();
-    drawTowers();
-    drawCollisionRing();
-    if (state.showSats) { sats.forEach(function (s) { drawSat(s, true); }); drawTrash(true); }
-    positionChips();
-    requestAnimationFrame(frame);
-  }
-
-  /* ── satellite selection ───────────────────────────────── */
+  /* ── satellite selection → info card ───────────────────── */
   var satCard = document.getElementById('satCard');
   function selectSat(d) {
-    selected = d;
     document.getElementById('satName').textContent = d.name;
     document.getElementById('satSignalV').textContent = d.signal;
     document.getElementById('satSignal').style.width = d.sigPct + '%';
@@ -687,82 +631,90 @@
   }
   selectSat(sats[0]);
 
-  /* ── pointer: drag to rotate, click to select ──────────── */
-  var dragging = false, moved = 0, lastX = 0, lastY = 0;
-  cv.addEventListener('pointerdown', function (e) { dragging = true; moved = 0; lastX = e.clientX; lastY = e.clientY; cv.setPointerCapture(e.pointerId); });
-  cv.addEventListener('pointermove', function (e) {
-    if (!dragging) return;
-    var dx = e.clientX - lastX, dy = e.clientY - lastY; lastX = e.clientX; lastY = e.clientY; moved += Math.abs(dx) + Math.abs(dy);
-    yaw += dx * 0.005; pitch = Math.max(-1.2, Math.min(1.2, pitch + dy * 0.005));
-  });
-  cv.addEventListener('pointerup', function (e) {
-    dragging = false;
-    if (moved < 6) {
-      var rect = cv.getBoundingClientRect(), mx = e.clientX - rect.left, my = e.clientY - rect.top, best = null, bd = 16;
-      sats.forEach(function (s) { if (!s._front) return; var dd = Math.hypot(s._x - mx, s._y - my); if (dd < bd) { bd = dd; best = s; } });
-      if (best) selectSat(best);
-    }
-  });
-  cv.addEventListener('wheel', function (e) { e.preventDefault(); setZoom(state.zoom * (e.deltaY < 0 ? 1.1 : 0.9)); }, { passive: false });
-
   /* ── filters ───────────────────────────────────────────── */
   document.querySelectorAll('.rail-btn[data-layer]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      btn.classList.toggle('is-on'); var on = btn.classList.contains('is-on'), layer = btn.dataset.layer;
-      if (layer === 'sats') state.showSats = on;
-      if (layer === 'towers') state.showTowers = on;
-      if (layer === 'links') state.showLinks = on;
+      btn.classList.toggle('is-on');
+      var on = btn.classList.contains('is-on'), layer = btn.dataset.layer;
+      if (layer === 'sats') { state.showSats = on; refreshHtml(); }
+      if (layer === 'towers') { state.showTowers = on; if (world) world.pointsData(on ? towers : []); }
+      if (layer === 'links') { state.showLinks = on; if (world) world.arcsData(on ? links : []); }
     });
   });
 
   /* ── simulate: space trash / clean path ────────────────── */
   var toast = document.getElementById('toast'), toastMsg = document.getElementById('toastMsg'), toastT;
-  function flash(msg, kind) { toastMsg.textContent = msg; toast.className = 'toast show ' + (kind || 'ok'); clearTimeout(toastT); toastT = setTimeout(function () { toast.className = 'toast'; }, 2600); }
+  function flash(msg, kind) {
+    toastMsg.textContent = msg;
+    toast.className = 'toast show ' + (kind || 'ok');
+    clearTimeout(toastT);
+    toastT = setTimeout(function () { toast.className = 'toast'; }, 2600);
+  }
   var trashBtn = document.getElementById('simTrash');
   trashBtn.addEventListener('click', function () {
     var on = trashBtn.classList.toggle('is-on');
     if (on) {
-      trash = []; for (var i = 0; i < 60; i++) trash.push({ lat: Math.random() * 160 - 80, lng: Math.random() * 360 - 180 });
-      chips[1].headline = '97%'; collSeconds = 41 * 60 + 6; flash('SPACE TRASH INJECTED · collision risk ↑ 97%', 'bad');
-    } else { trash = []; chips[1].headline = '89%'; collSeconds = 2 * 3600 + 30 * 60 + 13; flash('Debris field cleared', 'ok'); }
-    renderChips();
+      trash = [];
+      for (var i = 0; i < 36; i++) trash.push({ type: 'trash', lat: Math.random() * 160 - 80, lng: Math.random() * 360 - 180 });
+      chips[1].headline = '97%';
+      document.getElementById('collClock').textContent = '0h 41m 06s';
+      collSeconds = 41 * 60 + 6;
+      flash('SPACE TRASH INJECTED · collision risk ↑ 97%', 'bad');
+    } else {
+      trash = [];
+      chips[1].headline = '89%';
+      flash('Debris field cleared', 'ok');
+    }
+    refreshHtml();
   });
   document.getElementById('simClean').addEventListener('click', function () {
-    trash = []; trashBtn.classList.remove('is-on'); chips[1].headline = '12%'; collSeconds = -1;
-    document.getElementById('collClock').textContent = '— stable —'; flash('CLEAN PATH PLOTTED · orbit nominal', 'ok'); renderChips();
+    trash = []; trashBtn.classList.remove('is-on');
+    chips[1].headline = '12%';
+    document.getElementById('collClock').textContent = '— stable —';
+    collSeconds = -1;
+    flash('CLEAN PATH PLOTTED · orbit nominal', 'ok');
+    refreshHtml();
   });
 
-  /* ── zoom + rotate speed ───────────────────────────────── */
-  function setZoom(z) { state.zoom = Math.max(0.6, Math.min(2.4, z)); recalc(); }
-  document.getElementById('zoomIn').addEventListener('click', function () { setZoom(state.zoom * 1.18); });
-  document.getElementById('zoomOut').addEventListener('click', function () { setZoom(state.zoom * 0.85); });
+  /* ── zoom + rotate ─────────────────────────────────────── */
+  function zoom(f) { if (!world) return; var p = world.pointOfView(); state.alt = Math.max(0.7, Math.min(4, p.altitude * f)); world.pointOfView({ altitude: state.alt }, 350); }
+  document.getElementById('zoomIn').addEventListener('click', function () { zoom(0.8); });
+  document.getElementById('zoomOut').addEventListener('click', function () { zoom(1.25); });
 
   var speeds = [1, 2, 0], si = 0, speedBtn = document.getElementById('speedBtn'), rotateLbl = document.getElementById('rotateLbl');
   speedBtn.addEventListener('click', function () {
     si = (si + 1) % speeds.length; state.speed = speeds[si];
     speedBtn.textContent = state.speed === 0 ? '∥' : state.speed + 'x';
-    state.autoRotate = state.speed !== 0; rotateLbl.textContent = state.autoRotate ? 'Rotate' : 'Paused';
+    state.autoRotate = state.speed !== 0;
+    rotateLbl.textContent = state.autoRotate ? 'Rotate' : 'Paused';
+    if (world) { world.controls().autoRotate = state.autoRotate; world.controls().autoRotateSpeed = 0.45 * state.speed; }
   });
 
+  // compass needle drift
   var needle = document.getElementById('needle'), ang = 0;
   setInterval(function () { if (state.autoRotate) { ang = (ang + state.speed * 0.8) % 360; needle.style.transform = 'translate(-50%,-100%) rotate(' + ang + 'deg)'; } }, 60);
 
-  /* ── mode tabs ─────────────────────────────────────────── */
+  /* ── tabs / mode ───────────────────────────────────────── */
   document.querySelectorAll('#cdTabs button').forEach(function (b) {
     b.addEventListener('click', function () {
       document.querySelectorAll('#cdTabs button').forEach(function (x) { x.classList.remove('is-active'); });
       b.classList.add('is-active');
-      var m = { Overview: 'Mode: Overview · all systems nominal', Firewall: 'Mode: Firewall · 3 rules engaged', Alerts: 'Mode: Alerts · 24 active issues', Attacks: 'Mode: Attacks · 0 live intrusions' };
-      flash(m[b.dataset.mode] || b.dataset.mode, (b.dataset.mode === 'Attacks' || b.dataset.mode === 'Alerts') ? 'bad' : 'ok');
+      var modeMsg = { Overview: 'Mode: Overview · all systems nominal', Firewall: 'Mode: Firewall · 3 rules engaged', Alerts: 'Mode: Alerts · 24 active issues', Attacks: 'Mode: Attacks · 0 live intrusions' };
+      flash(modeMsg[b.dataset.mode] || b.dataset.mode, b.dataset.mode === 'Attacks' || b.dataset.mode === 'Alerts' ? 'bad' : 'ok');
     });
   });
 
   /* ── towers table ──────────────────────────────────────── */
   var twrBody = document.getElementById('twrBody'), page = 0, perPage = 5, filter = '';
-  function loadBars(load) { var b = '', n = 5, lit = Math.round(load / 100 * n); for (var i = 0; i < n; i++) b += '<i style="height:' + (5 + i * 2.4) + 'px;opacity:' + (i < lit ? 1 : 0.28) + '"></i>'; return '<span class="loadbars">' + b + '</span>'; }
+  function loadBars(load) {
+    var bars = '', n = 5, lit = Math.round(load / 100 * n);
+    for (var i = 0; i < n; i++) bars += '<i style="height:' + (5 + i * 2.4) + 'px;opacity:' + (i < lit ? 1 : 0.28) + '"></i>';
+    return '<span class="loadbars">' + bars + '</span>';
+  }
   function renderTable() {
     var rows = towers.filter(function (t) { return !filter || (t.id + ' ' + t.loc).toLowerCase().indexOf(filter) > -1; });
-    var pages = Math.max(1, Math.ceil(rows.length / perPage)); if (page >= pages) page = pages - 1;
+    var pages = Math.max(1, Math.ceil(rows.length / perPage));
+    if (page >= pages) page = pages - 1;
     var slice = rows.slice(page * perPage, page * perPage + perPage);
     twrBody.innerHTML = slice.map(function (t) {
       return '<tr><td><span class="id">' + (t.car ? '<span class="car">⌄</span>' : '<span style="color:var(--hud-faint)">⌄</span>') + t.id + '</span></td>' +
@@ -782,36 +734,57 @@
 
   /* ── live counters ─────────────────────────────────────── */
   var collSeconds = 2 * 3600 + 30 * 60 + 13, collEl = document.getElementById('collClock');
-  setInterval(function () { if (collSeconds < 0) return; collSeconds = Math.max(0, collSeconds - 1); var h = Math.floor(collSeconds / 3600), m = Math.floor((collSeconds % 3600) / 60), s = collSeconds % 60; collEl.textContent = h + 'h ' + ('0' + m).slice(-2) + 'm ' + ('0' + s).slice(-2) + 's'; }, 1000);
+  setInterval(function () {
+    if (collSeconds < 0) return;
+    collSeconds = Math.max(0, collSeconds - 1);
+    var h = Math.floor(collSeconds / 3600), m = Math.floor((collSeconds % 3600) / 60), s = collSeconds % 60;
+    collEl.textContent = h + 'h ' + ('0' + m).slice(-2) + 'm ' + ('0' + s).slice(-2) + 's';
+  }, 1000);
 
   var errEl = document.getElementById('errTs'), errT = 8 * 3600 + 39 * 60 + 16;
-  setInterval(function () { errT++; var h = Math.floor(errT / 3600) % 24, m = Math.floor((errT % 3600) / 60), s = errT % 60; errEl.textContent = 'T' + ('0' + h).slice(-2) + ':' + ('0' + m).slice(-2) + ':' + ('0' + s).slice(-2) + '.' + ('0' + Math.floor(Math.random() * 99)).slice(-2) + 'Z'; }, 1000);
+  setInterval(function () {
+    errT++;
+    var h = Math.floor(errT / 3600) % 24, m = Math.floor((errT % 3600) / 60), s = errT % 60;
+    errEl.textContent = 'T' + ('0' + h).slice(-2) + ':' + ('0' + m).slice(-2) + ':' + ('0' + s).slice(-2) + '.' + ('0' + Math.floor(Math.random() * 99)).slice(-2) + 'Z';
+  }, 1000);
 
-  setInterval(function () { var cur = 8 + Math.floor(Math.random() * 4); document.getElementById('curSpeed').innerHTML = cur + 'k <span>km/h</span>'; document.getElementById('gCur').style.height = (cur / 30 * 100) + '%'; }, 2200);
+  // gentle speed flutter
+  setInterval(function () {
+    var cur = 8 + Math.floor(Math.random() * 4);
+    document.getElementById('curSpeed').innerHTML = cur + 'k <span>km/h</span>';
+    document.getElementById('gCur').style.height = (cur / 30 * 100) + '%';
+  }, 2200);
 
-  /* ── chance-of-failure waveform ────────────────────────── */
-  var fcv = document.getElementById('failCanvas'), fctx = fcv.getContext('2d'), tw = 0;
-  function sizeFail() { var r = fcv.getBoundingClientRect(), d = window.devicePixelRatio || 1; fcv.width = r.width * d; fcv.height = r.height * d; fctx.setTransform(d, 0, 0, d, 0, 0); }
+  /* ── chance-of-failure canvas waveform ─────────────────── */
+  var cv = document.getElementById('failCanvas'), ctx = cv.getContext('2d'), t0 = 0;
+  function sizeCanvas() { var r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1; cv.width = r.width * dpr; cv.height = r.height * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
   function wave(w, h, t, freq, amp, phase, color, glow) {
-    fctx.beginPath();
-    for (var x = 0; x <= w; x += 4) { var y = h / 2 + Math.sin(x * freq + t + phase) * amp * (0.5 + 0.5 * Math.sin(x * 0.012 + t * 0.7)) + Math.sin(x * 0.05 - t * 1.3) * (amp * 0.3); x === 0 ? fctx.moveTo(x, y) : fctx.lineTo(x, y); }
-    fctx.strokeStyle = color; fctx.lineWidth = 2; fctx.shadowColor = color; fctx.shadowBlur = glow; fctx.stroke(); fctx.shadowBlur = 0;
+    ctx.beginPath();
+    for (var x = 0; x <= w; x += 4) {
+      var y = h / 2 + Math.sin(x * freq + t + phase) * amp * (0.5 + 0.5 * Math.sin(x * 0.012 + t * 0.7)) + Math.sin(x * 0.05 - t * 1.3) * (amp * 0.3);
+      if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.shadowColor = color; ctx.shadowBlur = glow; ctx.stroke(); ctx.shadowBlur = 0;
   }
   function drawChart() {
-    var r = fcv.getBoundingClientRect(), w = r.width, h = r.height; fctx.clearRect(0, 0, w, h);
-    fctx.strokeStyle = 'rgba(120,150,180,0.08)'; fctx.lineWidth = 1;
-    for (var gy = 0; gy <= 4; gy++) { var yy = h / 4 * gy; fctx.beginPath(); fctx.moveTo(0, yy); fctx.lineTo(w, yy); fctx.stroke(); }
-    tw += 0.03;
-    wave(w, h, tw, 0.03, h * 0.16, 0, 'rgba(88,214,255,0.9)', 14);
-    wave(w, h, tw * 1.2, 0.022, h * 0.12, 1.6, 'rgba(232,192,122,0.85)', 10);
-    wave(w, h, tw * 0.8, 0.04, h * 0.08, 3.0, 'rgba(63,208,168,0.6)', 6);
+    var r = cv.getBoundingClientRect(), w = r.width, h = r.height;
+    ctx.clearRect(0, 0, w, h);
+    // grid
+    ctx.strokeStyle = 'rgba(120,150,180,0.08)'; ctx.lineWidth = 1;
+    for (var gy = 0; gy <= 4; gy++) { var yy = h / 4 * gy; ctx.beginPath(); ctx.moveTo(0, yy); ctx.lineTo(w, yy); ctx.stroke(); }
+    t0 += 0.03;
+    wave(w, h, t0, 0.03, h * 0.16, 0, 'rgba(88,214,255,0.9)', 14);
+    wave(w, h, t0 * 1.2, 0.022, h * 0.12, 1.6, 'rgba(232,192,122,0.85)', 10);
+    wave(w, h, t0 * 0.8, 0.04, h * 0.08, 3.0, 'rgba(63,208,168,0.6)', 6);
     requestAnimationFrame(drawChart);
   }
+  window.addEventListener('resize', sizeCanvas);
 
   /* ── boot ──────────────────────────────────────────────── */
-  function boot() { recalc(); buildChips(); sizeFail(); drawChart(); requestAnimationFrame(frame); }
-  window.addEventListener('resize', function () { recalc(); sizeFail(); });
+  function boot() { sizeCanvas(); drawChart(); if (hasGlobe) initGlobe(); }
   if (document.readyState === 'complete') boot(); else window.addEventListener('load', boot);
+
+  // year (shared footer convention not used here, but keep parity if added)
 })();
 </script>
 </body>
