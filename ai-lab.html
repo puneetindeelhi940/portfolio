@@ -3,14 +3,203 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Experiments — Puneet Arora</title>
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/experiments.html">
-<meta http-equiv="refresh" content="0; url=experiments.html">
+<title>AI Lab — Puneet Arora</title>
+<meta name="description" content="Puneet Arora's AI Lab — working AI prototypes and live tools: the AI Opportunity Simulator, the Design Intelligence Portal, two live custom GPTs, the Vigyan Setu UX case, the 30-Day Agentic UX plan, and the Skills directories.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/ai-lab.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Puneet Arora — Portfolio">
+<meta property="og:title" content="AI Lab — Puneet Arora">
+<meta property="og:description" content="Working AI prototypes and live tools — the AI Opportunity Simulator, Design Intelligence Portal, custom GPTs, Vigyan Setu, and the Skills directories.">
+<meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/ai-lab.html">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Lab — Puneet Arora">
+<meta name="twitter:description" content="Working AI prototypes and live tools — the AI Opportunity Simulator, Design Intelligence Portal, custom GPTs, Vigyan Setu, and the Skills directories.">
+<meta name="twitter:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
 <link rel="stylesheet" href="assets/site.css">
-<script>location.replace('experiments.html');</script>
+<style>
+  .xgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; padding: 0 var(--pad-x) 16px; }
+  @media (max-width: 760px) { .xgrid { grid-template-columns: 1fr; } }
+  .xcard { display: block; padding: 26px; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); transition: border-color .15s, transform .15s; }
+  a.xcard:hover { border-color: var(--signal); transform: translateY(-2px); }
+  .xcard .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .xcard .tag { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--signal); }
+  .xcard .status { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--faint); }
+  .xcard h3 { font-family: var(--f-sans); font-size: 21px; font-weight: 500; letter-spacing: -0.015em; color: var(--ink); margin: 0 0 8px; }
+  .xcard p { font-family: var(--f-sans); font-size: 14px; line-height: 1.6; color: var(--dim); margin: 0; }
+  .xcard .go { display: inline-block; margin-top: 18px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--signal); }
+  .concepts { padding: 0 var(--pad-x) 56px; }
+  .concepts .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  @media (max-width: 760px) { .concepts .grid { grid-template-columns: 1fr; } }
+  .concepts .c { background: var(--bg); padding: 24px; }
+  .concepts .c .id { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--faint); margin-bottom: 12px; }
+  .concepts .c h4 { font-family: var(--f-sans); font-size: 17px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
+  .concepts .c p { font-family: var(--f-sans); font-size: 13.5px; line-height: 1.55; color: var(--dim); margin: 0; }
+</style>
 </head>
 <body>
-<noscript><p style="font-family:system-ui,sans-serif;padding:2rem;">This page has moved. Continue to <a href="experiments.html">Experiments — Puneet Arora</a>.</p></noscript>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="ai-lab.html" class="nav-secondary is-current">AI LAB</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" data-screen-label="hero" style="display:block; padding-bottom: 32px;">
+  <div class="flex gap-12" style="align-items: center; margin-bottom: 28px;">
+    <span class="faint mono" style="font-size: 11px; letter-spacing: 0.18em;">AI LAB · WORKING PROTOTYPES · LIVE TOOLS</span>
+  </div>
+  <h1 class="hero__big" style="max-width: 18ch;">The <em>AI Lab</em>.</h1>
+  <p class="hero__sub" style="max-width: 60ch;">
+    Every AI thing I've built and shipped, in one place — live tools, an interactive economy
+    simulator, custom GPTs, a public-AI UX case, and a directory of Claude skills. Real links, no slideware.
+  </p>
+</section>
+
+<!-- LIVE & WORKING -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 01</span>
+    <span class="shead__title">LIVE &amp; WORKING</span>
+    <span class="shead__sub">// tools you can open right now</span>
+  </div>
+</div>
+<div class="xgrid">
+  <a href="opportunity-simulator.html" class="xcard">
+    <div class="top"><span class="tag">AI OPPORTUNITY SIMULATOR</span><span class="status">PROTOTYPE · INTERACTIVE</span></div>
+    <h3>AI Opportunity Simulator</h3>
+    <p>A living digital twin of the global economy for executives — it finds where money is about to flow, scores every country, simulates geopolitical shocks four orders deep, and turns each world event into strategy. Every module navigable; simulated data.</p>
+    <span class="go">OPEN THE SIMULATOR →</span>
+  </a>
+  <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="xcard">
+    <div class="top"><span class="tag">DESIGN INTELLIGENCE PORTAL</span><span class="status">LIVE · VIBE-CODED</span></div>
+    <h3>Design Intelligence Portal</h3>
+    <p>A working hub for AI prompt engineering inside design organisations — CO-STAR, RTF and Chain-of-Thought frameworks made operational for design teams. Not a course, a tool.</p>
+    <span class="go">VISIT pa9401.vercel.app →</span>
+  </a>
+  <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener" class="xcard">
+    <div class="top"><span class="tag">VIGYAN SETU</span><span class="status">UX CASE · PUBLIC AI</span></div>
+    <h3>Vigyan Setu — IndiaAI Impact Summit</h3>
+    <p>A UX reading of India's flagship convening on responsible AI (Feb 2026 · Bharat Mandapam) — three sutras, seven chakras, citizen-facing demos, examined as a design problem.</p>
+    <span class="go">VIEW THE SUMMIT →</span>
+  </a>
+  <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="xcard">
+    <div class="top"><span class="tag">CUSTOM GPT</span><span class="status">LIVE</span></div>
+    <h3>Portfolio Intelligence Lab</h3>
+    <p>A custom GPT that encodes 20 years of strategic design thinking — a portfolio reviewer that reads past the surface and reasons about the work, not just the visuals.</p>
+    <span class="go">OPEN IN CHATGPT →</span>
+  </a>
+  <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="xcard">
+    <div class="top"><span class="tag">CUSTOM GPT</span><span class="status">LIVE</span></div>
+    <h3>AI-Powered UX Trust &amp; Dark-Pattern Intelligence</h3>
+    <p>A custom GPT that audits interfaces for trust and dark patterns — surfacing where an experience nudges versus where it manipulates, with the ethical guardrails made explicit.</p>
+    <span class="go">OPEN IN CHATGPT →</span>
+  </a>
+</div>
+
+<!-- SKILLS DIRECTORIES -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 02</span>
+    <span class="shead__title">SKILLS DIRECTORIES</span>
+    <span class="shead__sub">// catalogs of Claude skills, by audience</span>
+  </div>
+</div>
+<div class="xgrid">
+  <a href="skills-for-india.html" class="xcard">
+    <div class="top"><span class="tag">SKILLS · INDIA</span><span class="status">DIRECTORY</span></div>
+    <h3>Skills for India</h3>
+    <p>Claude skills built for India's builders — from ITR drafting and TDS reconciliation to multilingual tooling. A practical catalog with the input, output and India-specific reason for each.</p>
+    <span class="go">OPEN DIRECTORY →</span>
+  </a>
+  <a href="skills-for-global-builders.html" class="xcard">
+    <div class="top"><span class="tag">SKILLS · GLOBAL</span><span class="status">DIRECTORY</span></div>
+    <h3>Skills for Global Builders</h3>
+    <p>Claude skills for builders shipping AI features in production — focused test generation, token-and-code drift checks, and the small automations that compress a working day.</p>
+    <span class="go">OPEN DIRECTORY →</span>
+  </a>
+</div>
+
+<!-- GUIDES & FRAMEWORKS -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 03</span>
+    <span class="shead__title">GUIDES &amp; FRAMEWORKS</span>
+    <span class="shead__sub">// long-form playbooks you can read or download</span>
+  </div>
+</div>
+<div class="xgrid">
+  <a href="30day-agentic-ux-plan.html" class="xcard">
+    <div class="top"><span class="tag">AGENTIC UX</span><span class="status">PLAYBOOK · 30 DAYS</span></div>
+    <h3>30-Day Agentic UX Mastery Plan</h3>
+    <p>A structured, day-by-day plan to build fluency in designing agentic AI experiences — concepts, drills, and rituals that take a designer from prompting to shipping trustworthy agent UX.</p>
+    <span class="go">READ THE PLAN →</span>
+  </a>
+  <a href="30-Day-Agentic-UX-Mastery-Plan-Puneet-Arora.pdf" target="_blank" rel="noopener" class="xcard">
+    <div class="top"><span class="tag">AGENTIC UX</span><span class="status">PDF · DOWNLOAD</span></div>
+    <h3>30-Day Agentic UX Plan (PDF)</h3>
+    <p>The same playbook as a portable PDF — for reading offline, sharing with a team, or printing as a desk-side reference.</p>
+    <span class="go">DOWNLOAD PDF →</span>
+  </a>
+</div>
+
+<!-- CONCEPTS -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 04</span>
+    <span class="shead__title">CONCEPTS I'M EXPLORING</span>
+    <span class="shead__sub">// early-stage — not yet shipped, no install required</span>
+  </div>
+</div>
+<div class="concepts">
+  <div class="grid">
+    <div class="c">
+      <div class="id">DRAFT</div>
+      <h4>Prompt-evaluation harness</h4>
+      <p>A small harness for prompt drift — versioned eval cases, side-by-side output diffs, and a rubric scorer that separates “structurally wrong” from “stylistically different.”</p>
+    </div>
+    <div class="c">
+      <div class="id">DRAFT</div>
+      <h4>Behavioural-nudge library</h4>
+      <p>A documented library of behavioural-science nudges with the ethical guardrails baked in — mechanism, positive examples, anti-patterns, and a measurement plan per nudge.</p>
+    </div>
+    <div class="c">
+      <div class="id">IDEA</div>
+      <h4>Critique-as-a-Service</h4>
+      <p>An agent that critiques a screen the way a senior IC would, scored against a team's in-house rubric — useful when the senior isn't in the room.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div>© <span id="year">2026</span> · PUNEET ARORA · BANGALORE · v.2026.06</div>
+</footer>
+
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
 </body>
 </html>

@@ -16,7 +16,8 @@ portfolio/
 ├─ work.html                 ← case-study index (dossiers)
 ├─ case-dell-chatbot.html    ← canonical Dell GenAI Virtual Assistant case
 ├─ case-boeing-taam.html     ← Boeing TAAM case
-├─ experiments.html          ← live tools, custom GPTs, Vigyan Setu, Skills directories
+├─ ai-lab.html               ← AI Lab hub: Opportunity Simulator, live tools, custom GPTs, Vigyan Setu, Agentic-UX plan, Skills directories
+├─ opportunity-simulator.html ← AI Opportunity Simulator (interactive prototype, simulated data)
 ├─ skills-for-india.html     ← Skills directory (India)
 ├─ skills-for-global-builders.html ← Skills directory (global)
 ├─ contact.html              ← channels, role brief
@@ -27,8 +28,9 @@ portfolio/
    └─ portrait.png
 ```
 
-`case-dell-genai.html`, `ai-lab.html`, and `vibe-magic.html` are kept as lightweight redirect
-stubs to their canonical replacements. `30day-agentic-ux-plan.html` remains in the repo, unlinked.
+`case-dell-genai.html` redirects to its canonical case. `experiments.html` and `vibe-magic.html`
+are lightweight redirect stubs to `ai-lab.html` (the page was renamed Experiments → AI Lab).
+`30day-agentic-ux-plan.html` is surfaced as a card on the AI Lab page.
 
 ## Navigation
 
