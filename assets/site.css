@@ -18,8 +18,10 @@
   --faint:    oklch(56% 0.018 175);
   --rule:     oklch(28% 0.02 175);
   --rule-2:   oklch(32% 0.025 175);
-  --signal:   oklch(83% 0.14 85);
-  --signal-ink: oklch(18% 0.04 85);
+  /* Accent: sea-green. As text on --bg (L17) ≈ 6.5:1 (AA/AAA);
+   * --signal-ink on a --signal fill ≈ 5.9:1 (AA). */
+  --signal:   oklch(72% 0.12 168);
+  --signal-ink: oklch(22% 0.05 168);
   --warn:     oklch(74% 0.13 35);
 
   --pad-x: 56px;
@@ -46,8 +48,9 @@
   --faint:     oklch(48% 0.060 150);
   --rule:      oklch(86% 0.022 150);
   --rule-2:    oklch(78% 0.035 150);
-  --signal:    oklch(42% 0.16 145);
-  --signal-ink: oklch(98% 0.005 150);
+  /* Sea-green accent, darkened for AA on near-white paper (~6:1). */
+  --signal:    oklch(45% 0.13 168);
+  --signal-ink: oklch(98% 0.01 168);
   --warn:      oklch(48% 0.18 28);
 }
 /* Re-tint hardcoded-color helpers so prose, portraits, and the gate
@@ -211,6 +214,17 @@ img { display: block; max-width: 100%; }
   color: var(--ink);
   border-bottom-color: var(--signal);
 }
+/* Secondary nav link — visually separated from the primary trio */
+.topbar__nav a.nav-secondary {
+  margin-left: auto;
+  padding-left: 18px;
+  border-left: 1px solid var(--rule);
+  color: var(--faint);
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+.topbar__nav a.nav-secondary:hover { color: var(--signal); }
 .topbar__meta {
   display: flex;
   align-items: center;
@@ -736,7 +750,8 @@ img { display: block; max-width: 100%; }
   line-height: 1.15;
 }
 .case-section__head .sub { color: var(--dim); font-size: 12px; margin-top: 10px; }
-.case-section__body p { margin: 0 0 18px; }
+.case-section__body p { margin: 0 0 18px; font-family: var(--f-sans); }
+.case-section__body { font-family: var(--f-sans); }
 .case-section__body p:last-child { margin-bottom: 0; }
 .case-section__body strong { color: var(--ink); font-weight: 500; }
 
@@ -957,4 +972,13 @@ a.cell:hover { background: var(--surface-2); }
   .manifest .cell, .how .cell, .patents .cell { border-left: none; border-bottom: 1px solid var(--rule); }
   .hero__big { font-size: 44px; }
   .case-hero__title { font-size: 36px; }
+}
+
+/* Accessibility: respect reduced-motion — disables blink-dot and all infinite animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
