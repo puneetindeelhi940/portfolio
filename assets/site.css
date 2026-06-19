@@ -815,6 +815,29 @@ img { display: block; max-width: 100%; }
 .bio-prose p { margin: 0 0 22px; }
 .bio-prose strong { color: var(--ink); font-weight: 500; }
 
+/* My Story layout */
+.story-layout {
+  display: flex;
+  gap: 48px;
+  max-width: 960px;
+  margin: 0 auto 64px;
+  padding: 0 var(--pad-x);
+  align-items: flex-start;
+}
+.story-layout .bio-prose { flex: 1; min-width: 0; }
+.story-img { flex: 0 0 280px; position: sticky; top: 32px; }
+.story-img img {
+  width: 100%;
+  border-radius: 12px;
+  opacity: 0.8;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 768px) {
+  .story-layout { flex-direction: column; }
+  .story-img { flex: none; width: 100%; position: static; }
+}
+
 /* "How I think" cards */
 .how {
   display: grid;
