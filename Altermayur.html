@@ -546,6 +546,169 @@
     font-weight: 500;
   }
 
+  /* ═══════════ SUPPORTING WORK CARDS ═══════════ */
+  .am-support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--grey-200);
+    border-left: 1px solid var(--grey-200);
+    max-width: var(--max-w);
+    margin: 40px auto 0;
+  }
+
+  .am-support-card {
+    padding: 28px;
+    border-right: 1px solid var(--grey-200);
+    border-bottom: 1px solid var(--grey-200);
+  }
+
+  .am-support-card__id {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+    margin-bottom: 14px;
+  }
+
+  .am-support-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--black);
+    margin-bottom: 10px;
+  }
+
+  .am-support-card p {
+    font-size: 13px;
+    color: var(--grey-500);
+    line-height: 1.6;
+  }
+
+  .am-support-card__note {
+    margin-top: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+  }
+
+  /* ═══════════ AI LAB CARDS ═══════════ */
+  .am-lab-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--grey-200);
+    border-left: 1px solid var(--grey-200);
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .am-lab-card {
+    display: block;
+    padding: 28px;
+    border-right: 1px solid var(--grey-200);
+    border-bottom: 1px solid var(--grey-200);
+    transition: background 0.15s;
+  }
+
+  a.am-lab-card:hover {
+    background: var(--grey-100);
+  }
+
+  .am-lab-card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .am-lab-card__tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+  }
+
+  .am-lab-card__status {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+  }
+
+  .am-lab-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    color: var(--black);
+    margin-bottom: 8px;
+  }
+
+  .am-lab-card p {
+    font-size: 14px;
+    color: var(--grey-500);
+    line-height: 1.6;
+  }
+
+  .am-lab-card__go {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey-500);
+    transition: color 0.2s;
+  }
+
+  a.am-lab-card:hover .am-lab-card__go {
+    color: var(--black);
+  }
+
+  /* ═══════════ CONCEPTS GRID ═══════════ */
+  .am-concepts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--grey-200);
+    border-left: 1px solid var(--grey-200);
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .am-concept {
+    padding: 24px;
+    border-right: 1px solid var(--grey-200);
+    border-bottom: 1px solid var(--grey-200);
+  }
+
+  .am-concept__id {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+    margin-bottom: 12px;
+  }
+
+  .am-concept h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 8px;
+  }
+
+  .am-concept p {
+    font-size: 13px;
+    color: var(--grey-500);
+    line-height: 1.55;
+  }
+
   /* ═══════════ HOW I LEAD ═══════════ */
   .am-lead {
     display: grid;
@@ -607,6 +770,276 @@
     font-size: 14px;
     color: var(--grey-500);
     line-height: 1.6;
+  }
+
+  /* ═══════════ HOW I THINK GRID ═══════════ */
+  .am-think-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--grey-200);
+    border-left: 1px solid var(--grey-200);
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .am-think-cell {
+    padding: 24px 28px;
+    border-right: 1px solid var(--grey-200);
+    border-bottom: 1px solid var(--grey-200);
+  }
+
+  .am-think-cell__num {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+    margin-bottom: 12px;
+  }
+
+  .am-think-cell h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 8px;
+  }
+
+  .am-think-cell p {
+    font-size: 13px;
+    color: var(--grey-500);
+    line-height: 1.55;
+  }
+
+  /* ═══════════ TIMELINE ═══════════ */
+  .am-timeline {
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .am-timeline__row {
+    display: grid;
+    grid-template-columns: 180px 260px 1fr;
+    gap: 32px;
+    padding: 28px var(--pad);
+    border-bottom: 1px solid var(--grey-200);
+    align-items: baseline;
+  }
+
+  .am-timeline__yr {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: -0.01em;
+  }
+
+  .am-timeline__dur {
+    font-size: 12px;
+    color: var(--grey-400);
+    margin-top: 4px;
+  }
+
+  .am-timeline__co {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 4px;
+  }
+
+  .am-timeline__role {
+    font-size: 13px;
+    color: var(--grey-400);
+  }
+
+  .am-timeline__what {
+    font-size: 14px;
+    color: var(--grey-500);
+    line-height: 1.6;
+  }
+
+  .am-timeline__what strong {
+    color: var(--black);
+    font-weight: 600;
+  }
+
+  /* ═══════════ PATENTS GRID ═══════════ */
+  .am-patents-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--grey-200);
+    border-left: 1px solid var(--grey-200);
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .am-patent {
+    display: block;
+    padding: 20px 24px;
+    border-right: 1px solid var(--grey-200);
+    border-bottom: 1px solid var(--grey-200);
+    transition: background 0.12s;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a.am-patent:hover {
+    background: var(--grey-100);
+  }
+
+  .am-patent__id {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--grey-400);
+    margin-bottom: 8px;
+  }
+
+  .am-patent__title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 4px;
+  }
+
+  .am-patent__desc {
+    font-size: 13px;
+    color: var(--grey-500);
+    line-height: 1.5;
+  }
+
+  /* ═══════════ CONTACT SECTION ═══════════ */
+  .am-contact {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 56px;
+    padding: 48px var(--pad) 60px;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .am-contact__heading {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--black);
+    margin-bottom: 20px;
+  }
+
+  .am-contact__heading em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--grey-500);
+  }
+
+  .am-contact__desc {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--grey-500);
+    max-width: 560px;
+    margin-bottom: 24px;
+  }
+
+  .am-channel {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--grey-200);
+    gap: 18px;
+    transition: padding-left 0.14s;
+  }
+
+  a.am-channel:hover {
+    padding-left: 8px;
+  }
+
+  .am-channel__icon {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--grey-500);
+  }
+
+  .am-channel__label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+    margin-bottom: 4px;
+  }
+
+  .am-channel__value {
+    font-size: 17px;
+    color: var(--black);
+    letter-spacing: -0.005em;
+  }
+
+  .am-channel__arrow {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey-400);
+    transition: color 0.12s;
+  }
+
+  a.am-channel:hover .am-channel__arrow {
+    color: var(--black);
+  }
+
+  .am-contact-panel {
+    border: 1px solid var(--grey-200);
+    padding: 24px;
+    background: var(--grey-100);
+    margin-bottom: 16px;
+  }
+
+  .am-contact-panel__eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+    margin-bottom: 14px;
+  }
+
+  .am-contact-panel p {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--grey-500);
+    margin-bottom: 18px;
+  }
+
+  .am-contact-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 48px var(--pad) 56px;
+    border-top: 1px solid var(--grey-200);
+  }
+
+  .am-contact-strip__eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey-400);
+    margin-bottom: 8px;
+  }
+
+  .am-contact-strip__value {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 6px;
+  }
+
+  .am-contact-strip__note {
+    font-size: 13px;
+    color: var(--grey-500);
   }
 
   /* ═══════════ SOCIAL SECTION ═══════════ */
@@ -747,6 +1180,14 @@
     .am-lead { grid-template-columns: 1fr; }
     .am-lead__portrait { width: 100%; max-width: 240px; }
     .am-social-grid { grid-template-columns: 1fr; }
+    .am-lab-grid { grid-template-columns: 1fr; }
+    .am-think-grid { grid-template-columns: 1fr; }
+    .am-timeline__row { grid-template-columns: 1fr; gap: 12px; }
+    .am-patents-grid { grid-template-columns: 1fr; }
+    .am-contact { grid-template-columns: 1fr; gap: 32px; }
+    .am-contact-strip { grid-template-columns: 1fr; gap: 24px; }
+    .am-support-grid { grid-template-columns: 1fr; }
+    .am-concepts-grid { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 900px) {
@@ -806,14 +1247,14 @@
 <!-- ═══════════ HEADER ═══════════ -->
 <header class="am-header">
   <div class="am-header__brand">
-    <span class="am-header__name">Puneet Arora</span>
+    <a href="#" class="am-header__name" style="text-decoration: none;">Puneet Arora</a>
     <span class="am-header__title">AI Experience Leader</span>
   </div>
   <nav class="am-header__nav">
+    <a href="#work">Work</a>
+    <a href="#ai-lab">AI Lab</a>
     <a href="#about">About</a>
-    <a href="work.html">Work</a>
-    <a href="ai-lab.html">AI Lab</a>
-    <a href="#social">Social</a>
+    <a href="#contact">Contact</a>
     <a href="https://www.linkedin.com/in/puneetarora35/" target="_blank" rel="noopener">Connect</a>
   </nav>
 </header>
@@ -836,7 +1277,7 @@
     </p>
 
     <div class="am-hero__ctas">
-      <a href="work.html" class="am-btn am-btn--primary">Explore Strategic Work &rarr;</a>
+      <a href="#work" class="am-btn am-btn--primary">Explore Strategic Work &rarr;</a>
       <a href="https://www.linkedin.com/in/puneetarora35/" target="_blank" rel="noopener" class="am-btn am-btn--outline">Connect for Conversation</a>
     </div>
 
@@ -868,64 +1309,26 @@
   </aside>
 </section>
 
-<!-- ═══════════ EXECUTIVE SNAPSHOT ═══════════ -->
-<div class="am-section-head" id="about">
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- §01 — WORK                                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="am-section-head" id="work">
   <div class="am-section-head__left">
-    <span class="am-section-head__num">&sect; 02</span>
-    <span class="am-section-head__title">Executive Snapshot</span>
-    <span class="am-section-head__sub">two decades of enterprise scale, delivered</span>
+    <span class="am-section-head__num">&sect; 01</span>
+    <span class="am-section-head__title">Work</span>
+    <span class="am-section-head__sub">transformation stories &mdash; challenge to outcome</span>
   </div>
 </div>
 
 <div class="am-body">
   <p>
-    Twenty years turning ambiguity into AI and enterprise experiences people trust &mdash; and the design
-    practices that keep producing them after I&rsquo;ve moved on.
+    Selected engagements where the work moved a metric and changed how the org worked.
+    Four signature cases told in detail; three supporting engagements summarised below.
   </p>
 </div>
 
-<div class="am-stats">
-  <div class="am-stats__cell">
-    <div class="am-stats__num">20</div>
-    <div class="am-stats__label">Years</div>
-    <div class="am-stats__desc">product &middot; enterprise &middot; AI &middot; platform</div>
-  </div>
-  <div class="am-stats__cell">
-    <div class="am-stats__num">4</div>
-    <div class="am-stats__label">Fortune-500 &amp; Global Enterprises</div>
-    <div class="am-stats__desc">Dell &middot; Boeing &middot; Software AG &middot; H-P R&amp;D</div>
-  </div>
-  <div class="am-stats__cell">
-    <div class="am-stats__num">33</div>
-    <div class="am-stats__label">Designers Led</div>
-    <div class="am-stats__desc">across 5 time zones at Dell DDD</div>
-  </div>
-  <div class="am-stats__cell">
-    <div class="am-stats__num">8</div>
-    <div class="am-stats__label">Patents</div>
-    <div class="am-stats__desc">+ 8 technical publications</div>
-  </div>
-</div>
-
-<div class="am-snapgrid">
-  <div class="am-snap"><div class="am-snap__label">01 &middot; Enterprise UX Leadership</div><h3>Experiences at scale</h3><p>Leading B2B and B2C product design across Dell.com and complex enterprise platforms serving millions of customers and tens of thousands of stores.</p></div>
-  <div class="am-snap"><div class="am-snap__label">02 &middot; AI &amp; Personalization</div><h3>Intelligence, made usable</h3><p>GenAI experiences, prompt frameworks, intent estimation, and adaptive personalization grounded in behavioural science &mdash; not novelty, but trusted utility.</p></div>
-  <div class="am-snap"><div class="am-snap__label">03 &middot; Product Strategy</div><h3>From vision to roadmap</h3><p>Translating fuzzy executive intent into design strategy, measurable outcomes, and shippable product &mdash; across ambiguity and competing priorities.</p></div>
-  <div class="am-snap"><div class="am-snap__label">04 &middot; Cross-functional Leadership</div><h3>Influence without authority</h3><p>Aligning engineering, product, research, and the C-suite around a shared experience vision &mdash; and the tradeoffs required to get there.</p></div>
-  <div class="am-snap"><div class="am-snap__label">05 &middot; Systems Thinking</div><h3>Scalable by design</h3><p>Design systems, AI design operations, and centres of excellence that turn one good outcome into a repeatable organisational capability.</p></div>
-  <div class="am-snap"><div class="am-snap__label">06 &middot; Recognition</div><h3>Proven at the top</h3><p>President &amp; Game Changer Awards at Dell &mdash; 2025 &middot; The Economic Times Award &mdash; 2022 &middot; Director&rsquo;s Award at H-P R&amp;D &mdash; 2007. A track record of being handed the ambiguous, high-stakes problems &mdash; and shipping.</p></div>
-</div>
-
-<!-- ═══════════ SIGNATURE WORK ═══════════ -->
-<div class="am-section-head">
-  <div class="am-section-head__left">
-    <span class="am-section-head__num">&sect; 03</span>
-    <span class="am-section-head__title">Signature Work</span>
-    <span class="am-section-head__sub">four transformation stories &mdash; challenge to outcome</span>
-  </div>
-  <a href="work.html" class="am-section-head__right">See all work &rarr;</a>
-</div>
-
+<!-- Signature stories -->
 <details class="am-story">
   <summary>
     <span class="am-story__idx">01</span>
@@ -949,7 +1352,7 @@
     <div class="am-story__outcomes">
       <div><div class="am-outcome__value">Org-level</div><div class="am-outcome__label">capability built</div></div>
       <div><div class="am-outcome__value">Cross-DDD</div><div class="am-outcome__label">adoption</div></div>
-      <a href="ai-lab.html" class="am-btn am-btn--outline" style="margin-left:auto;">Explore the AI Lab &rarr;</a>
+      <a href="#ai-lab" class="am-btn am-btn--outline" style="margin-left:auto;">Explore the AI Lab &rarr;</a>
     </div>
   </div>
 </details>
@@ -1009,15 +1412,6 @@
       <div><div class="am-outcome__value">5 zones</div><div class="am-outcome__label">global team</div></div>
       <div><div class="am-outcome__value">Millions</div><div class="am-outcome__label">of customers</div></div>
     </div>
-    <div style="margin-top: 24px; padding: 20px 22px; border: 1px solid var(--grey-200);">
-      <div class="am-arc__label" style="margin-bottom: 12px;">Team Leadership</div>
-      <p style="font-size: 14px; line-height: 1.6; color: var(--grey-500); margin-bottom: 12px; font-style: italic;">
-        &ldquo;Puneet held the vision across four concurrent workstreams and five time zones &mdash; the team always knew why the work mattered, not just what to ship.&rdquo;
-      </p>
-      <p style="font-size: 14px; line-height: 1.6; color: var(--grey-500); font-style: italic;">
-        &ldquo;He turned personalisation from a feature request into an organisational capability &mdash; the practice kept producing results long after any single sprint ended.&rdquo;
-      </p>
-    </div>
   </div>
 </details>
 
@@ -1049,10 +1443,232 @@
   </div>
 </details>
 
-<!-- ═══════════ HOW I LEAD ═══════════ -->
+<!-- Supporting work -->
 <div class="am-section-head">
   <div class="am-section-head__left">
-    <span class="am-section-head__num">&sect; 04</span>
+    <span class="am-section-head__num">&sect; 01b</span>
+    <span class="am-section-head__title">Supporting Work</span>
+    <span class="am-section-head__sub">additional engagements, summarised</span>
+  </div>
+</div>
+
+<div class="am-support-grid">
+  <div class="am-support-card">
+    <div class="am-support-card__id">D.004 &middot; 2022</div>
+    <h3>Digital LifeCare</h3>
+    <p>Healthcare platform delivered as part of Dell&rsquo;s Future-State Sales &amp; CSAT programme. Won <strong style="color: var(--black);">ET Digital Healthcare Platform of the Year 2022</strong>.</p>
+    <div class="am-support-card__note">Summary on request</div>
+  </div>
+  <div class="am-support-card">
+    <div class="am-support-card__id">D.005 &middot; 2019&ndash;21</div>
+    <h3>Dell Sales Application (DSA)</h3>
+    <p>Forward-looking solutions for the Dell sales workforce. Awarded the <strong style="color: var(--black);">Dell Champion Award</strong> for innovative, forward-looking design contributions.</p>
+    <div class="am-support-card__note">Summary on request</div>
+  </div>
+  <div class="am-support-card">
+    <div class="am-support-card__id">D.006 &middot; 2013&ndash;15</div>
+    <h3>H-P R&amp;D Defect Reduction &middot; 40% takeout</h3>
+    <p>Process-improvement initiative across H-P R&amp;D GBUs. Design-led upstream reduction of incoming change requests. Earned the <strong style="color: var(--black);">H-P R&amp;D Director&rsquo;s Award (APJ)</strong>.</p>
+    <div class="am-support-card__note">Summary on request</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- §02 — AI LAB                                       -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="am-section-head" id="ai-lab">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 02</span>
+    <span class="am-section-head__title">AI Lab</span>
+    <span class="am-section-head__sub">working prototypes &middot; live tools</span>
+  </div>
+</div>
+
+<div class="am-body">
+  <p>
+    Every AI thing I&rsquo;ve built and shipped, in one place &mdash; live tools, an interactive economy simulator,
+    custom GPTs, a public-AI UX case, and a directory of Claude skills. Real links, no slideware.
+  </p>
+</div>
+
+<!-- Live & Working -->
+<div class="am-lab-grid">
+  <a href="opportunity-simulator.html" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">AI Opportunity Simulator</span><span class="am-lab-card__status">Prototype &middot; Interactive</span></div>
+    <h3>AI Opportunity Simulator</h3>
+    <p>A living digital twin of the global economy for executives &mdash; it finds where money is about to flow, scores every country, simulates geopolitical shocks four orders deep, and turns each world event into strategy.</p>
+    <span class="am-lab-card__go">Open the Simulator &rarr;</span>
+  </a>
+  <a href="situation-simulator.html" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Situation Simulator</span><span class="am-lab-card__status">Prototype &middot; 3D Globe</span></div>
+    <h3>Orbital Situation Room</h3>
+    <p>A live 3D globe of satellites, ground towers and network links &mdash; a defense-ops &ldquo;situation room.&rdquo; Simulate space-trash collisions and clean orbital paths, filter constellations, and watch failure risk update in real time.</p>
+    <span class="am-lab-card__go">Enter the Situation Room &rarr;</span>
+  </a>
+  <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Design Intelligence Portal</span><span class="am-lab-card__status">Live &middot; Vibe-Coded</span></div>
+    <h3>Design Intelligence Portal</h3>
+    <p>A working hub for AI prompt engineering inside design organisations &mdash; CO-STAR, RTF and Chain-of-Thought frameworks made operational for design teams. Not a course, a tool.</p>
+    <span class="am-lab-card__go">Visit pa9401.vercel.app &rarr;</span>
+  </a>
+  <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Vigyan Setu</span><span class="am-lab-card__status">UX Case &middot; Public AI</span></div>
+    <h3>Vigyan Setu &mdash; IndiaAI Impact Summit</h3>
+    <p>A UX reading of India&rsquo;s flagship convening on responsible AI (Feb 2026 &middot; Bharat Mandapam) &mdash; three sutras, seven chakras, citizen-facing demos, examined as a design problem.</p>
+    <span class="am-lab-card__go">View the Summit &rarr;</span>
+  </a>
+  <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Custom GPT</span><span class="am-lab-card__status">Live</span></div>
+    <h3>Portfolio Intelligence Lab</h3>
+    <p>A custom GPT that encodes 20 years of strategic design thinking &mdash; a portfolio reviewer that reads past the surface and reasons about the work, not just the visuals.</p>
+    <span class="am-lab-card__go">Open in ChatGPT &rarr;</span>
+  </a>
+  <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Custom GPT</span><span class="am-lab-card__status">Live</span></div>
+    <h3>AI-Powered UX Trust &amp; Dark-Pattern Intelligence</h3>
+    <p>A custom GPT that audits interfaces for trust and dark patterns &mdash; surfacing where an experience nudges versus where it manipulates, with the ethical guardrails made explicit.</p>
+    <span class="am-lab-card__go">Open in ChatGPT &rarr;</span>
+  </a>
+</div>
+
+<!-- Skills Directories -->
+<div class="am-section-head">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 02b</span>
+    <span class="am-section-head__title">Skills &amp; Guides</span>
+    <span class="am-section-head__sub">catalogs and playbooks</span>
+  </div>
+</div>
+
+<div class="am-lab-grid">
+  <a href="skills-for-india.html" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Skills &middot; India</span><span class="am-lab-card__status">Directory</span></div>
+    <h3>Skills for India</h3>
+    <p>Claude skills built for India&rsquo;s builders &mdash; from ITR drafting and TDS reconciliation to multilingual tooling. A practical catalog with the input, output and India-specific reason for each.</p>
+    <span class="am-lab-card__go">Open Directory &rarr;</span>
+  </a>
+  <a href="skills-for-global-builders.html" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Skills &middot; Global</span><span class="am-lab-card__status">Directory</span></div>
+    <h3>Skills for Global Builders</h3>
+    <p>Claude skills for builders shipping AI features in production &mdash; focused test generation, token-and-code drift checks, and the small automations that compress a working day.</p>
+    <span class="am-lab-card__go">Open Directory &rarr;</span>
+  </a>
+  <a href="30day-agentic-ux-plan.html" class="am-lab-card">
+    <div class="am-lab-card__top"><span class="am-lab-card__tag">Agentic UX</span><span class="am-lab-card__status">Playbook &middot; 30 Days</span></div>
+    <h3>30-Day Agentic UX Mastery Plan</h3>
+    <p>A structured, day-by-day plan to build fluency in designing agentic AI experiences &mdash; concepts, drills, and rituals that take a designer from prompting to shipping trustworthy agent UX.</p>
+    <span class="am-lab-card__go">Read the Plan &rarr;</span>
+  </a>
+</div>
+
+<!-- Concepts -->
+<div class="am-section-head">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 02c</span>
+    <span class="am-section-head__title">Concepts</span>
+    <span class="am-section-head__sub">early-stage &mdash; not yet shipped</span>
+  </div>
+</div>
+
+<div class="am-concepts-grid">
+  <div class="am-concept">
+    <div class="am-concept__id">Draft</div>
+    <h4>Prompt-evaluation harness</h4>
+    <p>A small harness for prompt drift &mdash; versioned eval cases, side-by-side output diffs, and a rubric scorer that separates &ldquo;structurally wrong&rdquo; from &ldquo;stylistically different.&rdquo;</p>
+  </div>
+  <div class="am-concept">
+    <div class="am-concept__id">Draft</div>
+    <h4>Behavioural-nudge library</h4>
+    <p>A documented library of behavioural-science nudges with the ethical guardrails baked in &mdash; mechanism, positive examples, anti-patterns, and a measurement plan per nudge.</p>
+  </div>
+  <div class="am-concept">
+    <div class="am-concept__id">Idea</div>
+    <h4>Critique-as-a-Service</h4>
+    <p>An agent that critiques a screen the way a senior IC would, scored against a team&rsquo;s in-house rubric &mdash; useful when the senior isn&rsquo;t in the room.</p>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- §03 — ABOUT                                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="am-section-head" id="about">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 03</span>
+    <span class="am-section-head__title">About</span>
+    <span class="am-section-head__sub">the leadership story, told straight</span>
+  </div>
+</div>
+
+<div class="am-body">
+  <p>
+    I&rsquo;m a <strong style="color: var(--black);">Principal Product Designer</strong>
+    with 20 years at the seam between executives, engineers, and end users &mdash; from
+    early printer firmware UIs at H-P R&amp;D, to operations cockpits at Boeing, to GenAI personalization
+    at Dell.com.
+  </p>
+  <p style="margin-top: 16px;">
+    Most recently, across nearly eight years at Dell (2018&ndash;2026), I led the
+    Personalization at Scale practice for the .com &mdash; designing the system where GenAI,
+    behavioural science, analytics, and millions of customers meet.
+  </p>
+  <p style="margin-top: 16px;">
+    I believe the next decade of design leadership is about <strong style="color: var(--black);">designing with agents in
+    the room as colleagues</strong>, not tools &mdash; and about building the operating systems
+    (rituals, rubrics, evidence) that let an org stay coherent while it experiments at speed.
+  </p>
+  <p style="margin-top: 16px; font-style: italic; color: var(--grey-400); border-left: 3px solid var(--grey-200); padding-left: 20px;">
+    &ldquo;Grow the core, while adding some more.&rdquo;
+  </p>
+</div>
+
+<!-- How I Think -->
+<div class="am-section-head">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 03a</span>
+    <span class="am-section-head__title">How I Think</span>
+    <span class="am-section-head__sub">six lenses I bring to a design org</span>
+  </div>
+</div>
+
+<div class="am-think-grid">
+  <div class="am-think-cell">
+    <div class="am-think-cell__num">01 &middot; Strategy</div>
+    <h4>Systems thinking</h4>
+    <p>The product is a node. The org is the graph. Most product problems are coordination problems wearing UX clothes &mdash; fix the coordination, the UX follows.</p>
+  </div>
+  <div class="am-think-cell">
+    <div class="am-think-cell__num">02 &middot; Alignment</div>
+    <h4>Stakeholder negotiation</h4>
+    <p>Executives, eng SMEs, PMs, sales, customers &mdash; I learned at Dell how to hold five truths at once and ship something all five can defend in their own language.</p>
+  </div>
+  <div class="am-think-cell">
+    <div class="am-think-cell__num">03 &middot; Influence</div>
+    <h4>Design without authority</h4>
+    <p>Most of the leverage I&rsquo;ve had came before I had a title for it. I run rituals and write memos that change minds long before they change reporting lines.</p>
+  </div>
+  <div class="am-think-cell">
+    <div class="am-think-cell__num">04 &middot; Craft</div>
+    <h4>Practice as a system</h4>
+    <p>3-6-9 month deliverable plans. Coaching loops. Mentorship rotations. Practice is engineered, not assumed &mdash; that&rsquo;s how 33 designers across 5 time zones stay coherent.</p>
+  </div>
+  <div class="am-think-cell">
+    <div class="am-think-cell__num">05 &middot; Ambiguity</div>
+    <h4>Enterprise comfort</h4>
+    <p>Re-orgs, dotted lines, missing data, contested OKRs. Most of the work happens before the brief is written. I&rsquo;m comfortable in the fog and good at drawing the map.</p>
+  </div>
+  <div class="am-think-cell">
+    <div class="am-think-cell__num">06 &middot; AI</div>
+    <h4>Agents as colleagues</h4>
+    <p>Prompt libraries, intent estimation, evaluation rubrics, sandbox tooling. I treat AI not as a feature to be designed but as a teammate to be onboarded.</p>
+  </div>
+</div>
+
+<!-- How I Lead -->
+<div class="am-section-head">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 03b</span>
     <span class="am-section-head__title">How I Lead</span>
     <span class="am-section-head__sub">quiet confidence, compounding trust</span>
   </div>
@@ -1071,34 +1687,179 @@
   </ol>
 </div>
 
-<!-- ═══════════ SOCIAL SECTION ═══════════ -->
-<div class="am-section-head" id="social">
+<!-- Journey / Timeline -->
+<div class="am-section-head">
   <div class="am-section-head__left">
-    <span class="am-section-head__num">&sect; 05</span>
-    <span class="am-section-head__title">Writing &amp; Leadership</span>
-    <span class="am-section-head__sub">publications, events, and thought leadership</span>
+    <span class="am-section-head__num">&sect; 03c</span>
+    <span class="am-section-head__title">Journey</span>
+    <span class="am-section-head__sub">twenty years, four reinventions</span>
+  </div>
+  <span class="am-section-head__right">2006 &rarr; 2026</span>
+</div>
+
+<div class="am-timeline">
+  <div class="am-timeline__row">
+    <div><div class="am-timeline__yr">2022 &mdash; 2026</div><div class="am-timeline__dur">3 yrs 9 mo</div></div>
+    <div><div class="am-timeline__co">Dell Technologies</div><div class="am-timeline__role">Principal Product Designer &middot; Personalization at Scale</div></div>
+    <div class="am-timeline__what">Led the pan-Dell GenAI personalization initiative &mdash; prompt libraries, intent estimation, multi-modal adaptive layouts. Drove design strategy across AI &amp; ecommerce PoDs, managed 33 designers across 5 time zones. <strong>President &amp; Game Changer awards.</strong></div>
+  </div>
+  <div class="am-timeline__row">
+    <div><div class="am-timeline__yr">2018 &mdash; 2022</div><div class="am-timeline__dur">4 yrs</div></div>
+    <div><div class="am-timeline__co">Dell Technologies</div><div class="am-timeline__role">Global UX Practice &amp; Design Lead &middot; AI/ML, eCommerce, CSAT</div></div>
+    <div class="am-timeline__what">Crafted e2e customer journeys for the future-state Sales &amp; CSAT platform. Won <strong>ET Digital Healthcare Platform of the Year 2022</strong> for the Digital LifeCare flagship. Received the <strong>Dell Champion Award</strong> for DSA.</div>
+  </div>
+  <div class="am-timeline__row">
+    <div><div class="am-timeline__yr">2016 &mdash; 2018</div><div class="am-timeline__dur">1 yr 7 mo</div></div>
+    <div><div class="am-timeline__co">Boeing India</div><div class="am-timeline__role">Senior Product Designer &middot; UX Specialist</div></div>
+    <div class="am-timeline__what">Owned end-to-end UX for Fuel Efficiency Solutions and TAAM. Ran design sprints; prepared lo-fi / hi-fi prototypes; performed heuristic evaluations and usability reviews with airline ops planners.</div>
+  </div>
+  <div class="am-timeline__row">
+    <div><div class="am-timeline__yr">2015 &mdash; 2016</div><div class="am-timeline__dur">11 mo</div></div>
+    <div><div class="am-timeline__co">Software AG R&amp;D</div><div class="am-timeline__role">Senior User Experience Designer</div></div>
+    <div class="am-timeline__what">Modernised UX for enterprise applications (One Data, Eclipse Designer). Defined a common layout and design language for internal &amp; external corporate branding. Ran design-thinking workshops for developer teams.</div>
+  </div>
+  <div class="am-timeline__row" style="border-bottom: none;">
+    <div><div class="am-timeline__yr">2006 &mdash; 2015</div><div class="am-timeline__dur">9 yrs 5 mo</div></div>
+    <div><div class="am-timeline__co">Hewlett-Packard R&amp;D</div><div class="am-timeline__role">Design Engineer II</div></div>
+    <div class="am-timeline__what">Conceptualised UX for consumer inkjet, SMB and large-format printers under H-P R&amp;D One Voice standards. Won <strong>H-P R&amp;D Director&rsquo;s Award (APJ)</strong> for 40% cost savings via design-led defect-reduction.</div>
   </div>
 </div>
 
-<div class="am-social-section">
-  <div class="am-social-grid">
-    <div class="am-social-card">
-      <div class="am-social-card__tag">Publications</div>
-      <h3>8 Technical Publications</h3>
-      <p>Research and thought leadership across AI design, enterprise UX, and design operations &mdash; contributing to the conversation on how design scales.</p>
-    </div>
-    <div class="am-social-card">
-      <div class="am-social-card__tag">Patents</div>
-      <h3>8 Granted Patents</h3>
-      <p>Innovation at the intersection of AI, personalization, and enterprise experience design &mdash; turning design thinking into protected intellectual property.</p>
-    </div>
-    <div class="am-social-card">
-      <div class="am-social-card__tag">Leadership</div>
-      <h3>AI Design CoE</h3>
-      <p>Built Dell&rsquo;s AI-Design Centre of Excellence from the ground up &mdash; raising organisational AI design maturity across hundreds of designers.</p>
-    </div>
+<!-- Patents -->
+<div class="am-section-head">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 03d</span>
+    <span class="am-section-head__title">Patents &amp; Publications</span>
+    <span class="am-section-head__sub">eight granted patents, eight technical publications</span>
   </div>
 </div>
+
+<div class="am-patents-grid">
+  <a href="https://patents.google.com/patent/US10928986B1/en?oq=10928986" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">US10928986B1 &middot; 2021</div>
+    <div class="am-patent__title">Transaction Visibility Frameworks Using AI</div>
+    <div class="am-patent__desc">AI-driven frameworks for transaction visibility in enterprise systems.</div>
+  </a>
+  <a href="https://patents.justia.com/patent/20140302785" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">US20140302785 &middot; 2015</div>
+    <div class="am-patent__title">Near Field Communication (NFC) Data Transfer</div>
+    <div class="am-patent__desc">NFC-based data transfer methods for device-to-device communication.</div>
+  </a>
+  <a href="https://patents.google.com/patent/US20140040919?oq=puneet+kumar+arora+reminder+message" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">US20140040919A1 &middot; 2014</div>
+    <div class="am-patent__title">Reminder Messages</div>
+    <div class="am-patent__desc">Context-aware reminder messaging systems.</div>
+  </a>
+  <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130340073.pdf" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">US13/523,707 &middot; 2012</div>
+    <div class="am-patent__title">Identification to Access Portable Computing Device</div>
+    <div class="am-patent__desc">Identity-based access control for portable computing devices.</div>
+  </a>
+  <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130288597.pdf" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">US13/457,233 &middot; 2012</div>
+    <div class="am-patent__title">Transferring Data Items via Metadata</div>
+    <div class="am-patent__desc">Metadata-driven transfer of data items across computing devices.</div>
+  </a>
+  <a href="https://patents.justia.com/patent/20170364315#description" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">US15/544,684 &middot; 2017</div>
+    <div class="am-patent__title">Print Reservation</div>
+    <div class="am-patent__desc">Quota-based print reservation and subscription management.</div>
+  </a>
+  <a href="https://patents.google.com/patent/WO2015092801A1" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">PCT/IN2013/000783 &middot; 2013</div>
+    <div class="am-patent__title">Wireless Communication of Print Content</div>
+    <div class="am-patent__desc">Wireless protocols for transmitting print-ready content.</div>
+  </a>
+  <a href="https://patents.google.com/patent/WO2015012824A1/tr" target="_blank" rel="noopener" class="am-patent">
+    <div class="am-patent__id">PCT/US2013/051855 &middot; 2013</div>
+    <div class="am-patent__title">Marking Agent Credit Adjustments</div>
+    <div class="am-patent__desc">Cost-optimization through marking-agent credit adjustments.</div>
+  </a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- §04 — CONTACT                                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="am-section-head" id="contact">
+  <div class="am-section-head__left">
+    <span class="am-section-head__num">&sect; 04</span>
+    <span class="am-section-head__title">Contact</span>
+    <span class="am-section-head__sub">let&rsquo;s build what&rsquo;s next together</span>
+  </div>
+</div>
+
+<div class="am-contact">
+  <div>
+    <h2 class="am-contact__heading">
+      Let&rsquo;s build<br>
+      <em>what&rsquo;s next</em><br>
+      together.
+    </h2>
+
+    <p class="am-contact__desc">
+      If you&rsquo;re shaping enterprise design, AI transformation, or intelligent customer
+      experiences &mdash; let&rsquo;s talk. I partner with executive leaders and design organisations
+      to turn AI ambition into shipped, trusted products.
+    </p>
+
+    <div>
+      <a href="mailto:puneetindelhi@yahoo.com" class="am-channel">
+        <div class="am-channel__icon">@</div>
+        <div><div class="am-channel__label">Email</div><div class="am-channel__value">puneetindelhi@yahoo.com</div></div>
+        <div class="am-channel__arrow">Compose &rarr;</div>
+      </a>
+      <a href="https://www.linkedin.com/in/puneetarora35/" target="_blank" rel="noopener" class="am-channel">
+        <div class="am-channel__icon">in</div>
+        <div><div class="am-channel__label">LinkedIn &middot; Preferred for recruiters</div><div class="am-channel__value">linkedin.com/in/puneetarora35</div></div>
+        <div class="am-channel__arrow">Open &nearr;</div>
+      </a>
+      <a href="tel:+919739995677" class="am-channel" style="border-bottom: none;">
+        <div class="am-channel__icon">&#9742;</div>
+        <div><div class="am-channel__label">Phone &middot; WhatsApp</div><div class="am-channel__value">+91 97399 95677</div></div>
+        <div class="am-channel__arrow">Call &rarr;</div>
+      </a>
+    </div>
+  </div>
+
+  <aside>
+    <div class="am-contact-panel">
+      <div class="am-contact-panel__eyebrow">For Design &amp; Product Executives</div>
+      <p>If you&rsquo;re hiring a design leader who can stand up an AI practice,
+        align cross-functional teams, and ship measurable outcomes &mdash; a short
+        note about the mandate and org context gets the fastest response.</p>
+      <a href="https://www.linkedin.com/in/puneetarora35/" target="_blank" rel="noopener" class="am-btn am-btn--primary">Message on LinkedIn &nearr;</a>
+    </div>
+    <div class="am-contact-panel">
+      <div class="am-contact-panel__eyebrow">For Talent &amp; Recruiting Partners</div>
+      <p>Grab the latest resume below, or share the role brief &mdash; I&rsquo;ll
+        respond with a tailored summary within a day.</p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="assets/puneet-arora-resume.pdf" target="_blank" rel="noopener" class="am-btn am-btn--primary">Download Resume &darr;</a>
+        <a href="mailto:puneetindelhi@yahoo.com?subject=Role%20discussion" class="am-btn am-btn--outline">Email with Role Brief &rarr;</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="am-contact-strip">
+  <div>
+    <div class="am-contact-strip__eyebrow">Location</div>
+    <div class="am-contact-strip__value">Bangalore, India</div>
+    <div class="am-contact-strip__note">Open to relocation for the right opportunity.</div>
+  </div>
+  <div>
+    <div class="am-contact-strip__eyebrow">Time Zone</div>
+    <div class="am-contact-strip__value">IST (UTC+5:30)</div>
+    <div class="am-contact-strip__note">Happy to take calls in EU or US Pacific evenings.</div>
+  </div>
+  <div>
+    <div class="am-contact-strip__eyebrow">Languages</div>
+    <div class="am-contact-strip__value">English &middot; Hindi &middot; Punjabi</div>
+    <div class="am-contact-strip__note">Work in English; comfortable across global teams.</div>
+  </div>
+</div>
+
 
 <!-- ═══════════ FOOTER ═══════════ -->
 <footer class="am-footer">
@@ -1109,10 +1870,10 @@
         <div class="am-footer__quote">&ldquo;Grow the core, while adding some more&rdquo;</div>
       </div>
       <div class="am-footer__links">
+        <a href="#work">Work</a>
+        <a href="#ai-lab">AI Lab</a>
         <a href="#about">About</a>
-        <a href="work.html">Work</a>
-        <a href="ai-lab.html">AI Lab</a>
-        <a href="#social">Social</a>
+        <a href="#contact">Contact</a>
         <a href="https://www.linkedin.com/in/puneetarora35/" target="_blank" rel="noopener">Connect</a>
       </div>
     </div>
