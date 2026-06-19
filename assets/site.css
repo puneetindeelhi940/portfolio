@@ -787,10 +787,6 @@ img { display: block; max-width: 100%; }
 /* ───────── Bio ───────── */
 .bio-hero {
   padding: 72px var(--pad-x) 56px;
-  display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 64px;
-  align-items: start;
 }
 .bio-hero__portrait {
   border: 1px solid var(--rule);
@@ -950,7 +946,6 @@ a.cell:hover { background: var(--surface-2); }
   .case-section { grid-template-columns: 1fr; gap: 24px; }
   .dossier { grid-template-columns: 1fr; gap: 12px; padding: 28px var(--pad-x); }
   .timeline__row { grid-template-columns: 1fr; }
-  .bio-hero { grid-template-columns: 1fr; }
   .patents { grid-template-columns: repeat(2, 1fr); }
   .patents .cell:nth-child(2n+1) { border-left: none; }
   .ribbon { grid-template-columns: repeat(2, 1fr) !important; }
