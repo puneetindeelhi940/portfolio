@@ -54,16 +54,15 @@
   @media (max-width: 760px) { .arc { grid-template-columns: 1fr; } .arc .beat.wide { grid-column: auto; } .story > summary { grid-template-columns: 1fr auto; } .story__idx { display: none; } }
 
   .lead { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 0 var(--pad-x) 56px; }
-  .lead__portrait { position: relative; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; aspect-ratio: 5/6; }
+  .lead__portrait { position: relative; border: 1px solid rgba(255,255,255,0.12); border-radius: 28px; overflow: hidden; aspect-ratio: 5/6; width: 69%; }
   .lead__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(1) contrast(1.04); }
-  .lead__portrait .quote { position: absolute; left: 22px; right: 22px; bottom: 20px; font-family: var(--f-sans); font-style: italic; font-size: 17px; line-height: 1.4; color: var(--ink); text-shadow: 0 2px 16px rgba(0,0,0,.6); }
   .leadlist { list-style: none; padding: 0; margin: 0; }
   .leadlist li { padding: 18px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: baseline; }
   .leadlist li:first-child { padding-top: 0; }
   .leadlist .num { font-family: var(--f-mono); color: var(--signal); font-size: 13px; }
   .leadlist h4 { font-family: var(--f-sans); font-size: 16px; font-weight: 500; margin: 0 0 5px; color: var(--ink); }
   .leadlist p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.55; margin: 0; }
-  @media (max-width: 880px) { .lead { grid-template-columns: 1fr; } .lead__portrait { max-width: 420px; } }
+  @media (max-width: 880px) { .lead { grid-template-columns: 1fr; } .lead__portrait { width: 100%; max-width: 290px; } }
 
   .princ { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
   .princ .p { background: var(--bg); padding: 30px 28px; }
@@ -327,7 +326,6 @@
 <div class="lead">
   <div class="lead__portrait">
     <img src="assets/portrait.png" alt="Puneet Arora" loading="lazy">
-    <div class="quote">“The best design leaders are remembered for the people they grew, not just the products they shipped.”</div>
   </div>
   <ol class="leadlist">
     <li><span class="num">i.</span><div><h4>I mentor designers into leaders</h4><p>Coaching individuals from execution to judgement — the difference between someone who can do the work and someone who can decide what work matters.</p></div></li>

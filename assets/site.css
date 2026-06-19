@@ -806,7 +806,7 @@ img { display: block; max-width: 100%; }
 }
 
 .bio-prose {
-  max-width: 680px;
+  max-width: none;
   font-family: var(--f-sans);
   font-size: 17px;
   line-height: 1.72;
