@@ -23,3 +23,11 @@
 - Shared styles: `assets/site.css`. Soft gate + chrome helpers: `assets/site.js`.
 - Topbar nav is the single source of navigation; page footers show only the copyright line.
 - Run / preview / screenshot the site with the `run-portfolio` skill (`.claude/skills/run-portfolio`).
+
+## PPTX deck quality gate (IMPORTANT — standing instruction from the owner)
+
+- **Before sharing any generated PPTX deck, validate and fix alignment and text overlapping issues.**
+- Use `python-pptx` to programmatically check that text boxes, bullet cards, stat cards, and table rows have sufficient height, spacing, and font sizing so content never clips or overlaps adjacent elements.
+- Common fixes: increase text box height, increase vertical spacing between rows/items, reduce font size by 1–2pt, push elements downward to create clearance.
+- After fixing, regenerate the deck and visually spot-check at least 3–4 slides (title, a content-heavy slide, and the closing slide) before sharing.
+- If alignment issues persist after one round of fixes, stop and inform the user rather than iterating further.
