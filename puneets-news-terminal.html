@@ -394,12 +394,12 @@ a { color: inherit; text-decoration: none; }
 /* ═══════════ TOP ROW: HEADLINE + LATEST BRIEF ═══════════ */
 .nt-top-row {
   max-width: var(--max-w);
-  margin: var(--pad) auto 0;
-  padding: 0 var(--pad);
+  margin: 0 auto 0;
+  padding: 44px var(--pad) 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 280px;
   gap: 20px;
+  align-items: stretch;
 }
 
 .nt-headline {
@@ -512,7 +512,7 @@ a { color: inherit; text-decoration: none; }
   margin-top: auto;
 }
 
-.nt-brief { height: 100%; overflow: hidden; }
+.nt-brief { height: 100%; }
 
 .nt-brief__card {
   background: var(--brief-bg);
@@ -520,7 +520,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--radius);
   padding: 20px 24px;
   height: 100%;
-  overflow: hidden;
   transition: background 0.3s, border-color 0.3s;
 }
 
@@ -622,7 +621,7 @@ a { color: inherit; text-decoration: none; }
 .nt-main {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 20px var(--pad) var(--pad);
+  padding: 60px var(--pad) var(--pad);
 }
 
 .nt-grid {
@@ -837,6 +836,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   width: max-content;
   animation: ticker-scroll 50s linear infinite;
+  will-change: transform;
 }
 
 .nt-ticker__item {
@@ -892,7 +892,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; }
+  *:not(.nt-ticker__track) { animation: none !important; transition: none !important; }
 }
 </style>
 </head>
@@ -1352,13 +1352,14 @@ a { color: inherit; text-decoration: none; }
 
     var remaining = items.slice(5);
     if (remaining.length === 0 && items.length <= 5) remaining = items;
+    remaining = remaining.slice(0, 40);
 
     grid.innerHTML = remaining.map(function (item) {
       var cat = item.catKey || activeCat;
       var label = item.catLabel || catLabel;
       var imgHtml = item.image
         ? '<img class="nt-card__img" src="' + escapeHtml(item.image) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
-        : '';
+        : '<div class="nt-card__img" style="display:flex;align-items:center;justify-content:center"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--dim);opacity:0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>';
       return '<a class="nt-card" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener" data-signal-cat="' + escapeHtml(cat) + '">' +
         imgHtml +
         '<div class="nt-card__body">' +
