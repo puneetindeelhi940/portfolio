@@ -199,8 +199,8 @@ a { color: inherit; text-decoration: none; }
 
 .nt-search {
   position: relative;
-  flex: 0 1 360px;
-  min-width: 200px;
+  flex: 0 1 288px;
+  min-width: 160px;
 }
 
 .nt-search__icon {
@@ -374,6 +374,23 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
+.nt-chip--signals {
+  background: linear-gradient(135deg, #1a3a2a, #0d2b28);
+  border-color: #2e8b7a;
+  color: #5fd4b8;
+}
+
+.nt-chip--signals.active {
+  background: linear-gradient(135deg, #2e8b7a, #1fa874);
+  border-color: #2e8b7a;
+  color: #fff;
+}
+
+.nt-chip--signals:hover {
+  border-color: #5fd4b8;
+  color: #5fd4b8;
+}
+
 /* ═══════════ TOP ROW: HEADLINE + LATEST BRIEF ═══════════ */
 .nt-top-row {
   max-width: var(--max-w);
@@ -381,8 +398,8 @@ a { color: inherit; text-decoration: none; }
   padding: 0 var(--pad);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 280px;
   gap: 20px;
-  align-items: stretch;
 }
 
 .nt-headline {
@@ -393,6 +410,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: row;
   transition: background 0.3s, border-color 0.3s;
+  height: 100%;
 }
 
 .nt-headline__imgwrap {
@@ -425,12 +443,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nt-headline__body {
-  padding: 26px 30px;
+  padding: 18px 22px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   flex: 1;
   min-width: 0;
+  overflow: hidden;
 }
 
 .nt-headline__tag {
@@ -442,11 +461,15 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nt-headline__title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.32;
+  line-height: 1.3;
   color: var(--ink);
   display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .nt-headline__tags {
@@ -489,14 +512,15 @@ a { color: inherit; text-decoration: none; }
   margin-top: auto;
 }
 
-.nt-brief { height: 100%; }
+.nt-brief { height: 100%; overflow: hidden; }
 
 .nt-brief__card {
   background: var(--brief-bg);
   border: 1px solid var(--brief-border);
   border-radius: var(--radius);
-  padding: 24px 28px;
+  padding: 20px 24px;
   height: 100%;
+  overflow: hidden;
   transition: background 0.3s, border-color 0.3s;
 }
 
@@ -629,7 +653,7 @@ a { color: inherit; text-decoration: none; }
 
 .nt-card__img {
   width: 100%;
-  height: 140px;
+  height: 168px;
   object-fit: cover;
   background: var(--surface-2);
 }
@@ -707,7 +731,7 @@ a { color: inherit; text-decoration: none; }
 
 .nt-skeleton__img {
   width: 100%;
-  height: 140px;
+  height: 168px;
   background: linear-gradient(110deg, var(--surface-2) 8%, var(--surface-3) 18%, var(--surface-2) 33%);
   background-size: 200% 100%;
   animation: shimmer 1.5s linear infinite;
@@ -851,12 +875,12 @@ a { color: inherit; text-decoration: none; }
     gap: 20px 14px;
   }
 
-  .nt-card__img { height: 120px; }
+  .nt-card__img { height: 144px; }
 
-  .nt-top-row { grid-template-columns: 1fr; }
+  .nt-top-row { grid-template-columns: 1fr; grid-template-rows: auto; }
 
-  .nt-headline { flex-direction: column; }
-  .nt-headline__imgwrap { width: 100%; height: 220px; }
+  .nt-headline { flex-direction: column; height: auto; }
+  .nt-headline__imgwrap { width: 100%; height: 180px; }
 
   .nt-ticker__item { flex-basis: 50vw; }
 }
@@ -916,7 +940,8 @@ a { color: inherit; text-decoration: none; }
 <!-- ═══════════ CHIP FILTERS ═══════════ -->
 <div class="nt-chips-wrap">
   <div class="nt-chips" id="chipRow">
-    <button class="nt-chip active" data-cat="popular">Popular</button>
+    <button class="nt-chip nt-chip--signals active" data-cat="signals">&#9889; My Signals</button>
+    <button class="nt-chip" data-cat="popular">Popular</button>
     <button class="nt-chip" data-cat="business">Business</button>
     <button class="nt-chip" data-cat="technology">Technology</button>
     <button class="nt-chip" data-cat="ux">UX</button>
@@ -952,7 +977,7 @@ a { color: inherit; text-decoration: none; }
     <div class="nt-brief__card" id="briefCard">
       <div class="nt-brief__header">
         <span class="nt-brief__title">Latest Brief</span>
-        <span class="nt-brief__badge" id="briefBadge">Top 10 Trending</span>
+        <span class="nt-brief__badge" id="briefBadge">Top 5 Trending</span>
       </div>
       <ol class="nt-brief__list" id="briefList">
         <!-- Injected by JS -->
@@ -969,7 +994,7 @@ a { color: inherit; text-decoration: none; }
 </main>
 
 <footer class="nt-footer">
-  <div class="nt-footer__copy">&copy; 2026 Puneet Arora. News sourced from 60+ outlets worldwide.</div>
+  <div class="nt-footer__copy">&copy; 2026 Puneet Arora. News sourced from 40+ outlets worldwide.</div>
   <div class="nt-ticker">
     <div class="nt-ticker__label">News Sources:</div>
     <div class="nt-ticker__track" id="tickerTrack">
@@ -983,6 +1008,7 @@ a { color: inherit; text-decoration: none; }
   'use strict';
 
   var CATEGORIES = {
+    signals:    { label: 'My Signals', sources: [] },
     popular:    { label: 'Popular',    sources: ['BBC News','Reuters','Associated Press','The Guardian','CNN','The Hindu','Indian Express','Times of India','Hindustan Times','NDTV'] },
     business:   { label: 'Business',   sources: ['Bloomberg','CNBC','Financial Times','The Economic Times','Mint','Moneycontrol','Business Standard','Yahoo Finance','MarketWatch'] },
     technology: { label: 'Technology', sources: ['TechCrunch','The Verge','Wired','Ars Technica','MIT Technology Review','MacRumors'] },
@@ -1060,10 +1086,108 @@ a { color: inherit; text-decoration: none; }
     ]
   };
 
-  var activeCat = 'popular';
+  var activeCat = 'signals';
   var newsCache = {};
   var searchQuery = '';
   var userRegion = 'IN';
+
+  // ── AI Signal Engine — behavioural intelligence ──
+  var SIGNAL_KEY = 'nt-ai-signals';
+  var SIGNAL_WINDOW = 30 * 24 * 60 * 60 * 1000;
+
+  function loadSignals() {
+    try { return JSON.parse(localStorage.getItem(SIGNAL_KEY)) || { catVisits: [], articleClicks: [], searches: [] }; }
+    catch (e) { return { catVisits: [], articleClicks: [], searches: [] }; }
+  }
+
+  function saveSignals(s) {
+    var cutoff = Date.now() - SIGNAL_WINDOW;
+    s.catVisits = s.catVisits.filter(function (v) { return v.ts > cutoff; });
+    s.articleClicks = s.articleClicks.filter(function (v) { return v.ts > cutoff; });
+    s.searches = s.searches.filter(function (v) { return v.ts > cutoff; });
+    try { localStorage.setItem(SIGNAL_KEY, JSON.stringify(s)); } catch (e) {}
+  }
+
+  function recordCatVisit(cat) {
+    if (cat === 'signals') return;
+    var s = loadSignals();
+    s.catVisits.push({ cat: cat, ts: Date.now() });
+    saveSignals(s);
+  }
+
+  function recordArticleClick(cat) {
+    var s = loadSignals();
+    s.articleClicks.push({ cat: cat, ts: Date.now() });
+    saveSignals(s);
+  }
+
+  function recordSearch(q) {
+    var s = loadSignals();
+    s.searches.push({ q: q, ts: Date.now() });
+    saveSignals(s);
+  }
+
+  function getSignalWeights() {
+    var s = loadSignals();
+    var now = Date.now();
+    var scores = {};
+    var realCats = Object.keys(CATEGORIES).filter(function (c) { return c !== 'signals'; });
+    realCats.forEach(function (c) { scores[c] = 0; });
+
+    s.catVisits.forEach(function (v) {
+      var age = (now - v.ts) / (24 * 60 * 60 * 1000);
+      var decay = Math.max(0, 1 - age / 30);
+      scores[v.cat] = (scores[v.cat] || 0) + 3 * decay;
+    });
+
+    s.articleClicks.forEach(function (v) {
+      var age = (now - v.ts) / (24 * 60 * 60 * 1000);
+      var decay = Math.max(0, 1 - age / 30);
+      scores[v.cat] = (scores[v.cat] || 0) + 5 * decay;
+    });
+
+    var hour = new Date().getHours();
+    if (hour >= 6 && hour < 10) { scores.business = (scores.business || 0) + 1.5; scores.popular = (scores.popular || 0) + 1; }
+    if (hour >= 10 && hour < 17) { scores.technology = (scores.technology || 0) + 1.2; scores.ux = (scores.ux || 0) + 1; scores.startups = (scores.startups || 0) + 0.8; }
+    if (hour >= 17 && hour < 21) { scores.sports = (scores.sports || 0) + 1.5; scores.culture = (scores.culture || 0) + 1; scores.gadgets = (scores.gadgets || 0) + 1; }
+    if (hour >= 21 || hour < 6) { scores.travel = (scores.travel || 0) + 1; scores.culture = (scores.culture || 0) + 0.8; }
+
+    var weekday = new Date().getDay();
+    if (weekday === 0 || weekday === 6) {
+      scores.travel = (scores.travel || 0) + 1; scores.sports = (scores.sports || 0) + 1; scores.culture = (scores.culture || 0) + 0.5;
+    } else {
+      scores.business = (scores.business || 0) + 0.8; scores.technology = (scores.technology || 0) + 0.5;
+    }
+
+    var sorted = Object.keys(scores).sort(function (a, b) { return scores[b] - scores[a]; });
+    return sorted;
+  }
+
+  function buildSignalsFeed() {
+    var ranked = getSignalWeights();
+    var topCats = ranked.slice(0, 5);
+    var items = [];
+    topCats.forEach(function (cat) {
+      var cached = newsCache[cat] || [];
+      cached.forEach(function (item) {
+        items.push(Object.assign({}, item, { catKey: cat, catLabel: CATEGORIES[cat].label }));
+      });
+    });
+    var seen = {};
+    items = items.filter(function (item) {
+      var key = item.title.toLowerCase().trim();
+      if (seen[key]) return false;
+      seen[key] = true;
+      return true;
+    });
+    items.sort(function (a, b) {
+      var aIdx = topCats.indexOf(a.catKey);
+      var bIdx = topCats.indexOf(b.catKey);
+      if (aIdx !== bIdx) return aIdx - bIdx;
+      return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
+    });
+    newsCache.signals = items;
+  }
 
   var grid       = document.getElementById('newsGrid');
   var briefList  = document.getElementById('briefList');
@@ -1081,6 +1205,7 @@ a { color: inherit; text-decoration: none; }
   var ALL_SOURCES = (function () {
     var seen = {}; var list = [];
     Object.keys(CATEGORIES).forEach(function (cat) {
+      if (cat === 'signals') return;
       CATEGORIES[cat].sources.forEach(function (s) {
         if (!seen[s]) { seen[s] = true; list.push(s); }
       });
@@ -1117,6 +1242,8 @@ a { color: inherit; text-decoration: none; }
     chipRow.querySelectorAll('.nt-chip').forEach(function (c) { c.classList.remove('active'); });
     chip.classList.add('active');
     activeCat = chip.dataset.cat;
+    recordCatVisit(activeCat);
+    if (activeCat === 'signals') buildSignalsFeed();
     renderAll();
   });
 
@@ -1126,6 +1253,7 @@ a { color: inherit; text-decoration: none; }
     clearTimeout(searchTimer);
     searchTimer = setTimeout(function () {
       searchQuery = searchBox.value.trim().toLowerCase();
+      if (searchQuery.length > 2) recordSearch(searchQuery);
       renderAll();
     }, 250);
   });
@@ -1157,38 +1285,46 @@ a { color: inherit; text-decoration: none; }
 
   // ── Headline card (left of Latest Brief) — updates per category ──
   function renderHeadlineFromItem(item) {
-    if (!item) return;
-    var catLabel = CATEGORIES[activeCat] ? CATEGORIES[activeCat].label : 'News';
+    if (!item) {
+      headlineCard.innerHTML =
+        '<div class="nt-headline__imgwrap nt-headline__imgwrap--empty"><svg class="nt-headline__placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="16" x2="13" y2="16"/></svg></div>' +
+        '<div class="nt-headline__body"><span class="nt-headline__tag">Loading&hellip;</span></div>';
+      return;
+    }
+    var tagLabel = item.catLabel || (CATEGORIES[activeCat] ? CATEGORIES[activeCat].label : 'News');
+    if (searchQuery) tagLabel = 'Search Result';
     var imgHtml = item.image
       ? '<div class="nt-headline__imgwrap"><img class="nt-headline__img" src="' + escapeHtml(item.image) + '" alt="" loading="lazy" onerror="this.parentElement.classList.add(\'nt-headline__imgwrap--empty\');this.remove()"></div>'
       : '<div class="nt-headline__imgwrap nt-headline__imgwrap--empty"><svg class="nt-headline__placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="16" x2="13" y2="16"/></svg></div>';
-    var desc = (item.description || '').substring(0, 320);
+    var desc = (item.description || '').substring(0, 200);
+    var cat = item.catKey || activeCat;
     headlineCard.innerHTML =
       imgHtml +
       '<div class="nt-headline__body">' +
-      '<span class="nt-headline__tag">Top Story &middot; ' + escapeHtml(catLabel) + '</span>' +
-      '<a class="nt-headline__title" href="' + escapeHtml(item.url || '') + '" target="_blank" rel="noopener">' + escapeHtml(item.title || '') + '</a>' +
+      '<span class="nt-headline__tag">Top Story &middot; ' + escapeHtml(tagLabel) + '</span>' +
+      '<a class="nt-headline__title" href="' + escapeHtml(item.url || '') + '" target="_blank" rel="noopener" data-signal-cat="' + escapeHtml(cat) + '">' + escapeHtml(item.title || '') + '</a>' +
       (desc ? '<p class="nt-headline__desc">' + escapeHtml(desc) + '</p>' : '') +
-      '<a class="nt-headline__cta" href="' + escapeHtml(item.url || '') + '" target="_blank" rel="noopener">Read full story &rarr;</a>' +
+      '<a class="nt-headline__cta" href="' + escapeHtml(item.url || '') + '" target="_blank" rel="noopener" data-signal-cat="' + escapeHtml(cat) + '">Read full story &rarr;</a>' +
       '<span class="nt-headline__time">' + escapeHtml(item.source || '') + ' &middot; ' + timeAgo(item.pubDate) + '</span>' +
       '</div>';
   }
 
-  // ── Brief rendering (top 10) ──
+  // ── Brief rendering (top 5) ──
   function renderBrief(items) {
-    var top10 = items.slice(0, 10);
-    briefBadge.textContent = 'Top ' + Math.min(top10.length, 10) + ' Trending';
+    var top5 = items.slice(0, 5);
+    briefBadge.textContent = 'Top ' + Math.min(top5.length, 5) + ' Trending';
 
-    if (top10.length === 0) {
+    if (top5.length === 0) {
       briefList.innerHTML = '';
-      for (var i = 0; i < 5; i++) {
-        briefList.innerHTML += '<li style="padding:10px 0;border-bottom:1px solid var(--rule)"><div class="nt-brief__skeleton nt-brief__skeleton--long"></div><div class="nt-brief__skeleton nt-brief__skeleton--short"></div></li>';
+      for (var i = 0; i < 3; i++) {
+        briefList.innerHTML += '<li style="padding:8px 0;border-bottom:1px solid var(--rule)"><div class="nt-brief__skeleton nt-brief__skeleton--long"></div><div class="nt-brief__skeleton nt-brief__skeleton--short"></div></li>';
       }
       return;
     }
 
-    briefList.innerHTML = top10.map(function (item) {
-      return '<a class="nt-brief__item" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener">' +
+    briefList.innerHTML = top5.map(function (item) {
+      var cat = item.catKey || activeCat;
+      return '<a class="nt-brief__item" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener" data-signal-cat="' + escapeHtml(cat) + '">' +
         '<span class="nt-brief__num"></span>' +
         '<div class="nt-brief__text">' +
         '<div class="nt-brief__headline">' + escapeHtml(item.title) + '</div>' +
@@ -1199,11 +1335,12 @@ a { color: inherit; text-decoration: none; }
 
   // ── Card grid rendering ──
   function renderCards(items) {
+    var catLabel = CATEGORIES[activeCat] ? CATEGORIES[activeCat].label : 'News';
     if (items.length === 0 && newsCache[activeCat]) {
       grid.innerHTML = '<div class="nt-empty">' +
         '<div class="nt-empty__icon">&#128240;</div>' +
         '<div class="nt-empty__title">' + (searchQuery ? 'No matches for "' + escapeHtml(searchQuery) + '"' : 'No headlines yet') + '</div>' +
-        '<div class="nt-empty__desc">' + (searchQuery ? 'Try a different search term.' : 'Check back soon — fresh news is on its way for ' + CATEGORIES[activeCat].label + '.') + '</div>' +
+        '<div class="nt-empty__desc">' + (searchQuery ? 'Try a different search term.' : 'Check back soon — fresh news is on its way for ' + catLabel + '.') + '</div>' +
         '</div>';
       return;
     }
@@ -1213,14 +1350,16 @@ a { color: inherit; text-decoration: none; }
       return;
     }
 
-    var remaining = items.slice(10);
-    if (remaining.length === 0 && items.length <= 10) remaining = items;
+    var remaining = items.slice(5);
+    if (remaining.length === 0 && items.length <= 5) remaining = items;
 
     grid.innerHTML = remaining.map(function (item) {
+      var cat = item.catKey || activeCat;
+      var label = item.catLabel || catLabel;
       var imgHtml = item.image
         ? '<img class="nt-card__img" src="' + escapeHtml(item.image) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
         : '';
-      return '<a class="nt-card" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener">' +
+      return '<a class="nt-card" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener" data-signal-cat="' + escapeHtml(cat) + '">' +
         imgHtml +
         '<div class="nt-card__body">' +
         '<div class="nt-card__meta">' +
@@ -1229,25 +1368,49 @@ a { color: inherit; text-decoration: none; }
         '</div>' +
         '<div class="nt-card__title">' + escapeHtml(item.title) + '</div>' +
         (item.description ? '<div class="nt-card__desc">' + escapeHtml(item.description) + '</div>' : '') +
-        '<span class="nt-card__category">' + escapeHtml(CATEGORIES[activeCat].label) + '</span>' +
+        '<span class="nt-card__category">' + escapeHtml(label) + '</span>' +
         '</div></a>';
     }).join('');
   }
 
   function renderAll() {
-    var items = newsCache[activeCat] || [];
+    var items;
+
     if (searchQuery) {
-      items = items.filter(function (item) {
-        return item.title.toLowerCase().indexOf(searchQuery) !== -1 ||
-               (item.description || '').toLowerCase().indexOf(searchQuery) !== -1;
+      var allItems = [];
+      var realCats = Object.keys(CATEGORIES).filter(function (c) { return c !== 'signals'; });
+      realCats.forEach(function (cat) {
+        (newsCache[cat] || []).forEach(function (item) {
+          allItems.push(Object.assign({}, item, { catKey: cat, catLabel: CATEGORIES[cat].label }));
+        });
       });
+      var seen = {};
+      allItems = allItems.filter(function (item) {
+        var key = item.title.toLowerCase().trim();
+        if (seen[key]) return false;
+        seen[key] = true;
+        return true;
+      });
+      items = allItems.filter(function (item) {
+        return item.title.toLowerCase().indexOf(searchQuery) !== -1 ||
+               (item.description || '').toLowerCase().indexOf(searchQuery) !== -1 ||
+               (item.source || '').toLowerCase().indexOf(searchQuery) !== -1 ||
+               (item.catLabel || '').toLowerCase().indexOf(searchQuery) !== -1;
+      });
+      items.sort(function (a, b) {
+        return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
+      });
+    } else {
+      items = newsCache[activeCat] || [];
     }
+
     if (items.length > 0) {
       renderHeadlineFromItem(items[0]);
       var rest = items.slice(1);
       renderBrief(rest);
       renderCards(rest);
     } else {
+      renderHeadlineFromItem(null);
       renderBrief(items);
       renderCards(items);
     }
@@ -1296,7 +1459,9 @@ a { color: inherit; text-decoration: none; }
               url: item.link || '',
               image: item.enclosure && item.enclosure.link ? item.enclosure.link : (item.thumbnail || ''),
               source: data.feed && data.feed.title ? data.feed.title : 'Unknown',
-              pubDate: item.pubDate || ''
+              pubDate: item.pubDate || '',
+              catKey: cat,
+              catLabel: CATEGORIES[cat] ? CATEGORIES[cat].label : ''
             };
           });
         })
@@ -1323,11 +1488,11 @@ a { color: inherit; text-decoration: none; }
   function fetchAllNews() {
     renderSkeletons(8);
     hideError();
-    var cats = Object.keys(CATEGORIES);
+    var cats = Object.keys(CATEGORIES).filter(function (c) { return c !== 'signals'; });
     var promises = cats.map(function (cat) { return fetchCategoryNews(cat); });
     Promise.all(promises)
-      .then(function () { updateRefreshTime(); renderAll(); })
-      .catch(function () { showError('Some feeds could not be loaded.'); renderAll(); });
+      .then(function () { buildSignalsFeed(); updateRefreshTime(); renderAll(); })
+      .catch(function () { buildSignalsFeed(); showError('Some feeds could not be loaded.'); renderAll(); });
   }
 
   function handleRefresh() {
@@ -1337,6 +1502,12 @@ a { color: inherit; text-decoration: none; }
   }
 
   document.getElementById('refreshBtn').addEventListener('click', handleRefresh);
+
+  // ── Track article clicks for signal intelligence ──
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('[data-signal-cat]');
+    if (link) recordArticleClick(link.dataset.signalCat);
+  });
 
   detectRegion();
   fetchAllNews();
