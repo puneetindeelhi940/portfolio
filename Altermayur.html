@@ -598,31 +598,50 @@
   /* ═══════════ AI LAB CARDS ═══════════ */
   .am-lab-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-    border-top: 1px solid var(--grey-200);
-    border-left: 1px solid var(--grey-200);
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 28px;
     max-width: var(--max-w);
     margin: 0 auto;
+    padding: 0 var(--pad);
   }
 
   .am-lab-card {
-    display: block;
-    padding: 28px;
-    border-right: 1px solid var(--grey-200);
-    border-bottom: 1px solid var(--grey-200);
-    transition: background 0.15s;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--grey-200);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   }
 
   a.am-lab-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--grey-300);
+  }
+
+  .am-lab-card__screenshot {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top left;
     background: var(--grey-100);
+    border-bottom: 1px solid var(--grey-200);
+  }
+
+  .am-lab-card__body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .am-lab-card__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .am-lab-card__tag {
@@ -639,20 +658,23 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--grey-400);
+    padding: 3px 10px;
+    border: 1px solid var(--grey-200);
+    border-radius: 20px;
   }
 
   .am-lab-card h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.015em;
     color: var(--black);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .am-lab-card p {
     font-size: 14px;
     color: var(--grey-500);
-    line-height: 1.6;
+    line-height: 1.65;
   }
 
   .am-lab-card__go {
@@ -1519,46 +1541,75 @@
 <!-- Live & Working -->
 <div class="am-lab-grid">
   <a href="puneets-news-terminal.html" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">News Terminal</span><span class="am-lab-card__status">Live &middot; 60+ Sources</span></div>
-    <h3>News Terminal</h3>
-    <p>A curated news aggregator pulling headlines from 60+ global outlets across 12 categories &mdash; business, tech, UX, startups, sports and more. Chip filters, live search, playful/serious modes, auto-refresh every 15 min.</p>
-    <span class="am-lab-card__go">Open News Terminal &rarr;</span>
+    <img class="am-lab-card__screenshot" src="assets/screenshots/news-terminal.png" alt="AI News Terminal screenshot" loading="lazy">
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">AI News Terminal</span><span class="am-lab-card__status">Live &middot; 60+ Sources</span></div>
+      <h3>AI News Terminal</h3>
+      <p>A curated news aggregator pulling headlines from 60+ global outlets across 12 categories &mdash; business, tech, UX, startups, sports and more. Chip-based filters, live search, and a playful/serious mode toggle. Auto-refreshes every 15 minutes.</p>
+      <span class="am-lab-card__go">Open AI News Terminal &rarr;</span>
+    </div>
   </a>
   <a href="opportunity-simulator.html" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">AI Opportunity Simulator</span><span class="am-lab-card__status">Prototype &middot; Interactive</span></div>
-    <h3>AI Opportunity Simulator</h3>
-    <p>A living digital twin of the global economy for executives &mdash; it finds where money is about to flow, scores every country, simulates geopolitical shocks four orders deep, and turns each world event into strategy.</p>
-    <span class="am-lab-card__go">Open the Simulator &rarr;</span>
+    <img class="am-lab-card__screenshot" src="assets/screenshots/opportunity-simulator.png" alt="AI Opportunity Simulator screenshot" loading="lazy">
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">AI Opportunity Simulator</span><span class="am-lab-card__status">Prototype &middot; Interactive</span></div>
+      <h3>AI Opportunity Simulator</h3>
+      <p>A living digital twin of the global economy for executives &mdash; it finds where money is about to flow, scores every country, simulates geopolitical shocks four orders deep, and turns each world event into actionable strategy.</p>
+      <span class="am-lab-card__go">Open the Simulator &rarr;</span>
+    </div>
   </a>
   <a href="situation-simulator.html" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Situation Simulator</span><span class="am-lab-card__status">Prototype &middot; 3D Globe</span></div>
-    <h3>Orbital Situation Room</h3>
-    <p>A live 3D globe of satellites, ground towers and network links &mdash; a defense-ops &ldquo;situation room.&rdquo; Simulate space-trash collisions and clean orbital paths, filter constellations, and watch failure risk update in real time.</p>
-    <span class="am-lab-card__go">Enter the Situation Room &rarr;</span>
+    <img class="am-lab-card__screenshot" src="assets/screenshots/situation-simulator.png" alt="Orbital Situation Room screenshot" loading="lazy">
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Situation Simulator</span><span class="am-lab-card__status">Prototype &middot; 3D Globe</span></div>
+      <h3>Orbital Situation Room</h3>
+      <p>A live 3D globe of satellites, ground towers and network links &mdash; a defense-ops &ldquo;situation room.&rdquo; Simulate space-trash collisions, filter constellations, and watch failure risk update in real time as orbital objects interact.</p>
+      <span class="am-lab-card__go">Enter the Situation Room &rarr;</span>
+    </div>
   </a>
   <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Design Intelligence Portal</span><span class="am-lab-card__status">Live &middot; Vibe-Coded</span></div>
-    <h3>Design Intelligence Portal</h3>
-    <p>A working hub for AI prompt engineering inside design organisations &mdash; CO-STAR, RTF and Chain-of-Thought frameworks made operational for design teams. Not a course, a tool.</p>
-    <span class="am-lab-card__go">Visit pa9401.vercel.app &rarr;</span>
+    <div style="height:200px;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--grey-200);">
+      <span style="font-size:28px;font-weight:700;color:#e2e2e2;letter-spacing:-0.02em;text-align:center;padding:20px;">Design Intelligence<br>Portal</span>
+    </div>
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Design Intelligence Portal</span><span class="am-lab-card__status">Live &middot; Vibe-Coded</span></div>
+      <h3>Design Intelligence Portal</h3>
+      <p>A working hub for AI prompt engineering inside design organisations &mdash; CO-STAR, RTF and Chain-of-Thought frameworks made operational for design teams. Not a course, a live tool your team can use today.</p>
+      <span class="am-lab-card__go">Visit pa9401.vercel.app &rarr;</span>
+    </div>
   </a>
   <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Vigyan Setu</span><span class="am-lab-card__status">UX Case &middot; Public AI</span></div>
-    <h3>Vigyan Setu &mdash; IndiaAI Impact Summit</h3>
-    <p>A UX reading of India&rsquo;s flagship convening on responsible AI (Feb 2026 &middot; Bharat Mandapam) &mdash; three sutras, seven chakras, citizen-facing demos, examined as a design problem.</p>
-    <span class="am-lab-card__go">View the Summit &rarr;</span>
+    <div style="height:200px;background:linear-gradient(135deg,#0d1b2a,#1b263b,#415a77);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--grey-200);">
+      <span style="font-size:28px;font-weight:700;color:#e2e2e2;letter-spacing:-0.02em;text-align:center;padding:20px;">Vigyan Setu<br><span style="font-size:14px;font-weight:400;opacity:0.7;">IndiaAI Impact Summit</span></span>
+    </div>
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Vigyan Setu</span><span class="am-lab-card__status">UX Case &middot; Public AI</span></div>
+      <h3>Vigyan Setu &mdash; IndiaAI Impact Summit</h3>
+      <p>A UX reading of India&rsquo;s flagship convening on responsible AI (Feb 2026, Bharat Mandapam) &mdash; three sutras, seven chakras, citizen-facing demos, examined end-to-end as a design and governance problem.</p>
+      <span class="am-lab-card__go">View the Summit &rarr;</span>
+    </div>
   </a>
   <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Custom GPT</span><span class="am-lab-card__status">Live</span></div>
-    <h3>Portfolio Intelligence Lab</h3>
-    <p>A custom GPT that encodes 20 years of strategic design thinking &mdash; a portfolio reviewer that reads past the surface and reasons about the work, not just the visuals.</p>
-    <span class="am-lab-card__go">Open in ChatGPT &rarr;</span>
+    <div style="height:200px;background:linear-gradient(135deg,#10a37f,#1a7f64);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--grey-200);">
+      <span style="font-size:28px;font-weight:700;color:#fff;letter-spacing:-0.02em;text-align:center;padding:20px;">Portfolio<br>Intelligence Lab</span>
+    </div>
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Custom GPT</span><span class="am-lab-card__status">Live</span></div>
+      <h3>Portfolio Intelligence Lab</h3>
+      <p>A custom GPT that encodes 20 years of strategic design thinking &mdash; a portfolio reviewer that reads past the surface and reasons about the work, the decisions behind it, and the impact, not just the visuals.</p>
+      <span class="am-lab-card__go">Open in ChatGPT &rarr;</span>
+    </div>
   </a>
   <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Custom GPT</span><span class="am-lab-card__status">Live</span></div>
-    <h3>AI-Powered UX Trust &amp; Dark-Pattern Intelligence</h3>
-    <p>A custom GPT that audits interfaces for trust and dark patterns &mdash; surfacing where an experience nudges versus where it manipulates, with the ethical guardrails made explicit.</p>
-    <span class="am-lab-card__go">Open in ChatGPT &rarr;</span>
+    <div style="height:200px;background:linear-gradient(135deg,#2d1b69,#44337a);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--grey-200);">
+      <span style="font-size:24px;font-weight:700;color:#e2e2e2;letter-spacing:-0.02em;text-align:center;padding:20px;">UX Trust &amp;<br>Dark-Pattern<br>Intelligence</span>
+    </div>
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Custom GPT</span><span class="am-lab-card__status">Live</span></div>
+      <h3>AI-Powered UX Trust &amp; Dark-Pattern Intelligence</h3>
+      <p>A custom GPT that audits interfaces for trust and dark patterns &mdash; surfacing where an experience nudges versus where it manipulates, with ethical guardrails made explicit. Paste a screenshot, get an audit.</p>
+      <span class="am-lab-card__go">Open in ChatGPT &rarr;</span>
+    </div>
   </a>
 </div>
 
@@ -1573,22 +1624,31 @@
 
 <div class="am-lab-grid">
   <a href="skills-for-india.html" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Skills &middot; India</span><span class="am-lab-card__status">Directory</span></div>
-    <h3>Skills for India</h3>
-    <p>Claude skills built for India&rsquo;s builders &mdash; from ITR drafting and TDS reconciliation to multilingual tooling. A practical catalog with the input, output and India-specific reason for each.</p>
-    <span class="am-lab-card__go">Open Directory &rarr;</span>
+    <img class="am-lab-card__screenshot" src="assets/screenshots/skills-india.png" alt="Skills for India screenshot" loading="lazy">
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Skills &middot; India</span><span class="am-lab-card__status">Directory</span></div>
+      <h3>Skills for India</h3>
+      <p>Claude skills built for India&rsquo;s builders &mdash; from ITR drafting and TDS reconciliation to multilingual tooling. A practical catalog with the input, output, and India-specific context for each skill.</p>
+      <span class="am-lab-card__go">Open Directory &rarr;</span>
+    </div>
   </a>
   <a href="skills-for-global-builders.html" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Skills &middot; Global</span><span class="am-lab-card__status">Directory</span></div>
-    <h3>Skills for Global Builders</h3>
-    <p>Claude skills for builders shipping AI features in production &mdash; focused test generation, token-and-code drift checks, and the small automations that compress a working day.</p>
-    <span class="am-lab-card__go">Open Directory &rarr;</span>
+    <img class="am-lab-card__screenshot" src="assets/screenshots/skills-global.png" alt="Skills for Global Builders screenshot" loading="lazy">
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Skills &middot; Global</span><span class="am-lab-card__status">Directory</span></div>
+      <h3>Skills for Global Builders</h3>
+      <p>Claude skills for builders shipping AI features in production &mdash; focused test generation, token-and-code drift checks, and the small automations that compress a full working day into a morning.</p>
+      <span class="am-lab-card__go">Open Directory &rarr;</span>
+    </div>
   </a>
   <a href="30day-agentic-ux-plan.html" class="am-lab-card">
-    <div class="am-lab-card__top"><span class="am-lab-card__tag">Agentic UX</span><span class="am-lab-card__status">Playbook &middot; 30 Days</span></div>
-    <h3>30-Day Agentic UX Mastery Plan</h3>
-    <p>A structured, day-by-day plan to build fluency in designing agentic AI experiences &mdash; concepts, drills, and rituals that take a designer from prompting to shipping trustworthy agent UX.</p>
-    <span class="am-lab-card__go">Read the Plan &rarr;</span>
+    <img class="am-lab-card__screenshot" src="assets/screenshots/agentic-ux.png" alt="30-Day Agentic UX Plan screenshot" loading="lazy">
+    <div class="am-lab-card__body">
+      <div class="am-lab-card__top"><span class="am-lab-card__tag">Agentic UX</span><span class="am-lab-card__status">Playbook &middot; 30 Days</span></div>
+      <h3>30-Day Agentic UX Mastery Plan</h3>
+      <p>A structured, day-by-day plan to build fluency in designing agentic AI experiences &mdash; concepts, drills, and rituals that take a designer from prompting to shipping trustworthy agent UX in 30 days.</p>
+      <span class="am-lab-card__go">Read the Plan &rarr;</span>
+    </div>
   </a>
 </div>
 
