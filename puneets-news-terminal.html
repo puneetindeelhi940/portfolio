@@ -4,15 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI News Terminal — Puneet Arora | AI Experience Leader</title>
-<meta name="description" content="A curated news aggregator by Puneet Arora, AI Experience Leader at Dell Technologies. Trending headlines across technology, business, UX, startups, sports and more — filtered, searchable, always fresh. Built by Puneet Kumar Arora, New Delhi &amp; Bangalore.">
-<meta name="keywords" content="Puneet Arora, Puneet Arora Dell Technologies, Puneet Arora UX, Puneet Arora New Delhi, Puneet Arora Bangalore, Puneet Kumar Arora, news aggregator, tech news, business news">
+<meta name="description" content="A curated AI-powered news aggregator by Puneet Arora, AI Experience Leader at Dell Technologies. Trending headlines across technology, business, UX, startups, sports and more — filtered, searchable, always fresh. Built by Puneet Kumar Arora, New Delhi &amp; Bangalore.">
+<meta name="keywords" content="Puneet Arora, Puneet Arora Dell Technologies, Puneet AI tools, Puneet Arora AI Lab, AI Lab, Vibe Coding, Vibe code, AI vibe code experiments, Puneet Arora UX, Puneet Arora New Delhi, Puneet Arora Bangalore, Puneet Kumar Arora, news aggregator, tech news, business news, AI news terminal">
 <meta name="author" content="Puneet Arora">
-<meta property="og:title" content="AI News Terminal — Puneet Arora">
-<meta property="og:description" content="Curated news across 12 topics from 60+ global sources. Built by Puneet Arora — AI Experience Leader, Dell Technologies, New Delhi / Bangalore.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="AI News Terminal — Puneet Arora | AI Lab">
+<meta property="og:description" content="AI-powered curated news across 12 topics from 60+ global sources. Built by Puneet Arora — AI Experience Leader, Dell Technologies, New Delhi / Bangalore. Vibe Coding &amp; AI Lab experiments.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI News Terminal — Puneet Arora">
-<meta name="twitter:description" content="Curated news across 12 topics from 60+ global sources. Built by Puneet Kumar Arora, UX &amp; AI leader.">
+<meta name="twitter:title" content="AI News Terminal — Puneet Arora | AI Lab">
+<meta name="twitter:description" content="AI-powered curated news across 12 topics from 60+ global sources. Built by Puneet Kumar Arora, UX &amp; AI leader. Vibe Coding experiments.">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -835,7 +839,7 @@ a { color: inherit; text-decoration: none; }
 .nt-ticker__track {
   display: flex;
   width: max-content;
-  animation: ticker-scroll 50s linear infinite;
+  animation: ticker-scroll 60s linear infinite;
   will-change: transform;
 }
 
@@ -847,6 +851,14 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.03em;
   color: var(--ink-2);
   white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nt-ticker__item:hover {
+  color: var(--ink);
+  text-decoration: underline;
 }
 
 @keyframes ticker-scroll {
@@ -1030,7 +1042,9 @@ a { color: inherit; text-decoration: none; }
       'https://www.theguardian.com/world/rss',
       'https://thehindu.com/news/national/feeder/default.rss',
       'https://indianexpress.com/feed/',
-      'https://www.ndtv.com/rss/top-stories'
+      'https://www.ndtv.com/rss/top-stories',
+      'https://timesofindia.indiatimes.com/rssfeedstopstories.cms',
+      'https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml'
     ],
     business: [
       'https://www.cnbc.com/id/100003114/device/rss/rss.html',
@@ -1202,6 +1216,65 @@ a { color: inherit; text-decoration: none; }
   var headlineCard = document.getElementById('headlineCard');
   var tickerTrack   = document.getElementById('tickerTrack');
 
+  var SOURCE_URLS = {
+    'BBC News': 'https://www.bbc.com/news',
+    'Reuters': 'https://www.reuters.com',
+    'Associated Press': 'https://apnews.com',
+    'The Guardian': 'https://www.theguardian.com',
+    'CNN': 'https://www.cnn.com',
+    'The Hindu': 'https://www.thehindu.com',
+    'Indian Express': 'https://indianexpress.com',
+    'Times of India': 'https://timesofindia.indiatimes.com',
+    'Hindustan Times': 'https://www.hindustantimes.com',
+    'NDTV': 'https://www.ndtv.com',
+    'Bloomberg': 'https://www.bloomberg.com',
+    'CNBC': 'https://www.cnbc.com',
+    'Financial Times': 'https://www.ft.com',
+    'The Economic Times': 'https://economictimes.indiatimes.com',
+    'Mint': 'https://www.livemint.com',
+    'Moneycontrol': 'https://www.moneycontrol.com',
+    'Business Standard': 'https://www.business-standard.com',
+    'Yahoo Finance': 'https://finance.yahoo.com',
+    'MarketWatch': 'https://www.marketwatch.com',
+    'TechCrunch': 'https://techcrunch.com',
+    'The Verge': 'https://www.theverge.com',
+    'Wired': 'https://www.wired.com',
+    'Ars Technica': 'https://arstechnica.com',
+    'MIT Technology Review': 'https://www.technologyreview.com',
+    'MacRumors': 'https://www.macrumors.com',
+    'Nielsen Norman Group': 'https://www.nngroup.com',
+    'UX Collective': 'https://uxdesign.cc',
+    'Smashing Magazine': 'https://www.smashingmagazine.com',
+    'A List Apart': 'https://alistapart.com',
+    'UX Magazine': 'https://uxmag.com',
+    'Women Love Tech': 'https://www.womenlovetech.com',
+    'SheThePeople': 'https://www.shethepeople.tv',
+    'Fortune': 'https://fortune.com',
+    'Weather.com': 'https://weather.com',
+    'AccuWeather': 'https://www.accuweather.com',
+    'GSMArena': 'https://www.gsmarena.com',
+    'Android Authority': 'https://www.androidauthority.com',
+    'Gadget 360': 'https://www.gadgets360.com',
+    'Gadgets Now': 'https://www.gadgetsnow.com',
+    'Google News': 'https://news.google.com',
+    'Microsoft Start': 'https://www.msn.com',
+    'National Geographic': 'https://www.nationalgeographic.com',
+    'Smithsonian Magazine': 'https://www.smithsonianmag.com',
+    'Scroll Culture': 'https://scroll.in',
+    'The Better India': 'https://www.thebetterindia.com',
+    'ET Tech': 'https://economictimes.indiatimes.com/tech',
+    'NASSCOM News': 'https://nasscom.in',
+    'People Matters': 'https://www.peoplematters.in',
+    'YourStory': 'https://yourstory.com',
+    'Condé Nast Traveler': 'https://www.cntraveler.com',
+    'Lonely Planet': 'https://www.lonelyplanet.com',
+    'National Geographic Travel': 'https://www.nationalgeographic.com/travel',
+    'ESPN': 'https://www.espn.com',
+    'Cricbuzz': 'https://www.cricbuzz.com',
+    'ESPN Cricinfo': 'https://www.espncricinfo.com',
+    'Olympics.com': 'https://www.olympics.com'
+  };
+
   var ALL_SOURCES = (function () {
     var seen = {}; var list = [];
     Object.keys(CATEGORIES).forEach(function (cat) {
@@ -1215,7 +1288,8 @@ a { color: inherit; text-decoration: none; }
 
   function renderTicker() {
     var html = ALL_SOURCES.map(function (s) {
-      return '<span class="nt-ticker__item">' + escapeHtml(s) + '</span>';
+      var url = SOURCE_URLS[s] || '#';
+      return '<a class="nt-ticker__item" href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' + escapeHtml(s) + '</a>';
     }).join('');
     tickerTrack.innerHTML = html + html;
   }
@@ -1243,8 +1317,22 @@ a { color: inherit; text-decoration: none; }
     chip.classList.add('active');
     activeCat = chip.dataset.cat;
     recordCatVisit(activeCat);
-    if (activeCat === 'signals') buildSignalsFeed();
-    renderAll();
+
+    renderHeadlineFromItem(null);
+    renderBrief([]);
+    renderSkeletons(8);
+
+    if (activeCat === 'signals') {
+      var realCats = Object.keys(CATEGORIES).filter(function (c) { return c !== 'signals'; });
+      var topCats = getSignalWeights().slice(0, 5);
+      Promise.all(topCats.map(function (cat) { return fetchCategoryNews(cat); }))
+        .then(function () { buildSignalsFeed(); updateRefreshTime(); renderAll(); })
+        .catch(function () { buildSignalsFeed(); renderAll(); });
+    } else {
+      fetchCategoryNews(activeCat)
+        .then(function () { updateRefreshTime(); renderAll(); })
+        .catch(function () { renderAll(); });
+    }
   });
 
   // ── Search (debounced) ──
@@ -1449,7 +1537,7 @@ a { color: inherit; text-decoration: none; }
     if (feeds.length === 0) { newsCache[cat] = []; return Promise.resolve(); }
 
     var promises = feeds.map(function (feedUrl) {
-      return fetch(RSS2JSON_BASE + encodeURIComponent(feedUrl))
+      return fetch(RSS2JSON_BASE + encodeURIComponent(feedUrl) + '&_=' + Date.now(), { cache: 'no-store' })
         .then(function (r) { return r.json(); })
         .then(function (data) {
           if (data.status !== 'ok' || !data.items) return [];
@@ -1487,6 +1575,9 @@ a { color: inherit; text-decoration: none; }
   }
 
   function fetchAllNews() {
+    newsCache = {};
+    renderHeadlineFromItem(null);
+    renderBrief([]);
     renderSkeletons(8);
     hideError();
     var cats = Object.keys(CATEGORIES).filter(function (c) { return c !== 'signals'; });
