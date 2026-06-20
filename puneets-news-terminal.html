@@ -238,8 +238,12 @@ a { color: inherit; text-decoration: none; }
 .nt-mode-toggle {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
   flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 2px;
 }
 
 .nt-mode-toggle__label {
@@ -247,10 +251,10 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--faint);
+  color: var(--dim);
   cursor: pointer;
-  transition: color 0.2s;
-  padding: 4px 8px;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+  padding: 5px 12px;
   border-radius: 4px;
 }
 
@@ -258,7 +262,8 @@ a { color: inherit; text-decoration: none; }
 
 .nt-mode-toggle__label.active {
   color: var(--ink);
-  background: var(--surface-2);
+  background: var(--surface-3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .nt-refreshed {
