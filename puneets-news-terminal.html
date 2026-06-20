@@ -826,8 +826,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 @keyframes ticker-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
 }
 
 /* ═══════════ RESPONSIVE ═══════════ */
@@ -1155,6 +1155,25 @@ a { color: inherit; text-decoration: none; }
     return Math.floor(diff / 86400) + 'd ago';
   }
 
+  // ── Headline card (left of Latest Brief) — updates per category ──
+  function renderHeadlineFromItem(item) {
+    if (!item) return;
+    var catLabel = CATEGORIES[activeCat] ? CATEGORIES[activeCat].label : 'News';
+    var imgHtml = item.image
+      ? '<div class="nt-headline__imgwrap"><img class="nt-headline__img" src="' + escapeHtml(item.image) + '" alt="" loading="lazy" onerror="this.parentElement.classList.add(\'nt-headline__imgwrap--empty\');this.remove()"></div>'
+      : '<div class="nt-headline__imgwrap nt-headline__imgwrap--empty"><svg class="nt-headline__placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="16" x2="13" y2="16"/></svg></div>';
+    var desc = (item.description || '').substring(0, 320);
+    headlineCard.innerHTML =
+      imgHtml +
+      '<div class="nt-headline__body">' +
+      '<span class="nt-headline__tag">Top Story &middot; ' + escapeHtml(catLabel) + '</span>' +
+      '<a class="nt-headline__title" href="' + escapeHtml(item.url || '') + '" target="_blank" rel="noopener">' + escapeHtml(item.title || '') + '</a>' +
+      (desc ? '<p class="nt-headline__desc">' + escapeHtml(desc) + '</p>' : '') +
+      '<a class="nt-headline__cta" href="' + escapeHtml(item.url || '') + '" target="_blank" rel="noopener">Read full story &rarr;</a>' +
+      '<span class="nt-headline__time">' + escapeHtml(item.source || '') + ' &middot; ' + timeAgo(item.pubDate) + '</span>' +
+      '</div>';
+  }
+
   // ── Brief rendering (top 10) ──
   function renderBrief(items) {
     var top10 = items.slice(0, 10);
@@ -1223,8 +1242,15 @@ a { color: inherit; text-decoration: none; }
                (item.description || '').toLowerCase().indexOf(searchQuery) !== -1;
       });
     }
-    renderBrief(items);
-    renderCards(items);
+    if (items.length > 0) {
+      renderHeadlineFromItem(items[0]);
+      var rest = items.slice(1);
+      renderBrief(rest);
+      renderCards(rest);
+    } else {
+      renderBrief(items);
+      renderCards(items);
+    }
   }
 
   function renderSkeletons(count) {
@@ -1253,41 +1279,6 @@ a { color: inherit; text-decoration: none; }
   }
 
   var RSS2JSON_BASE = 'https://api.rss2json.com/v1/api.json?rss_url=';
-  var TOI_FEED = 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms';
-
-  function renderHeadline(item) {
-    var img = item.enclosure && item.enclosure.link ? item.enclosure.link : (item.thumbnail || '');
-    var rawDesc = (item.description || '').replace(/<[^>]*>/g, '').trim();
-    var desc = rawDesc.length > 320 ? rawDesc.substring(0, 320).replace(/\s+\S*$/, '') + '…' : rawDesc;
-    var cats = (item.categories || []).slice(0, 3);
-    var tagsHtml = cats.length
-      ? '<div class="nt-headline__tags">' + cats.map(function (c) { return '<span class="nt-headline__tagchip">' + escapeHtml(c) + '</span>'; }).join('') + '</div>'
-      : '';
-    var imgHtml = img
-      ? '<div class="nt-headline__imgwrap"><img class="nt-headline__img" src="' + escapeHtml(img) + '" alt="" loading="lazy" onerror="this.parentElement.classList.add(\'nt-headline__imgwrap--empty\');this.remove()"></div>'
-      : '<div class="nt-headline__imgwrap nt-headline__imgwrap--empty"><svg class="nt-headline__placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="16" x2="13" y2="16"/></svg></div>';
-    headlineCard.innerHTML =
-      imgHtml +
-      '<div class="nt-headline__body">' +
-      '<span class="nt-headline__tag">Top Story &middot; Times of India</span>' +
-      '<a class="nt-headline__title" href="' + escapeHtml(item.link || '') + '" target="_blank" rel="noopener">' + escapeHtml(item.title || '') + '</a>' +
-      tagsHtml +
-      (desc ? '<p class="nt-headline__desc">' + escapeHtml(desc) + '</p>' : '') +
-      '<a class="nt-headline__cta" href="' + escapeHtml(item.link || '') + '" target="_blank" rel="noopener">Read full story &rarr;</a>' +
-      '<span class="nt-headline__time">' + timeAgo(item.pubDate) + '</span>' +
-      '</div>';
-  }
-
-  function fetchHeadline() {
-    return fetch(RSS2JSON_BASE + encodeURIComponent(TOI_FEED))
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        if (data.status === 'ok' && data.items && data.items.length) {
-          renderHeadline(data.items[0]);
-        }
-      })
-      .catch(function () {});
-  }
 
   function fetchCategoryNews(cat) {
     var feeds = RSS_FEEDS[cat] || [];
@@ -1343,16 +1334,13 @@ a { color: inherit; text-decoration: none; }
     var btn = document.getElementById('refreshBtn');
     if (btn) { btn.classList.add('spinning'); setTimeout(function () { btn.classList.remove('spinning'); }, 600); }
     fetchAllNews();
-    fetchHeadline();
   }
 
   document.getElementById('refreshBtn').addEventListener('click', handleRefresh);
 
   detectRegion();
   fetchAllNews();
-  fetchHeadline();
   setInterval(fetchAllNews, 15 * 60 * 1000);
-  setInterval(fetchHeadline, 15 * 60 * 1000);
 })();
 </script>
 </body>
