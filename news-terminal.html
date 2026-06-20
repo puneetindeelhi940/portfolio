@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News Terminal — Puneet Arora | AI Experience Leader</title>
+<meta name="description" content="A curated news aggregator by Puneet Arora, AI Experience Leader at Dell Technologies. Trending headlines across technology, business, UX, startups, sports and more — filtered, searchable, always fresh. Built by Puneet Kumar Arora, New Delhi &amp; Bangalore.">
+<meta name="keywords" content="Puneet Arora, Puneet Arora Dell Technologies, Puneet Arora UX, Puneet Arora New Delhi, Puneet Arora Bangalore, Puneet Kumar Arora, news aggregator, tech news, business news">
+<meta name="author" content="Puneet Arora">
+<meta property="og:title" content="News Terminal — Puneet Arora">
+<meta property="og:description" content="Curated news across 12 topics from 60+ global sources. Built by Puneet Arora — AI Experience Leader, Dell Technologies, New Delhi / Bangalore.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="News Terminal — Puneet Arora">
+<meta name="twitter:description" content="Curated news across 12 topics from 60+ global sources. Built by Puneet Kumar Arora, UX &amp; AI leader.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f0f0f;
+  --bg-2: #181818;
+  --surface: #1e1e1e;
+  --surface-2: #262626;
+  --surface-3: #2e2e2e;
+  --ink: #f0f0f0;
+  --ink-2: #cccccc;
+  --dim: #999999;
+  --faint: #666666;
+  --rule: #333333;
+  --accent: #00d4aa;
+  --accent-dim: rgba(0, 212, 170, 0.15);
+  --danger: #ff6b6b;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --max-w: 1440px;
+  --pad: 24px;
+  --topbar-h: 60px;
+  --chip-row-h: 52px;
+}
+
+[data-mode="playful"] {
+  --accent: #6c5ce7;
+  --accent-dim: rgba(108, 92, 231, 0.15);
+  --chip-popular: #ff6b6b;
+  --chip-business: #0984e3;
+  --chip-technology: #00b894;
+  --chip-ux: #e17055;
+  --chip-women: #fd79a8;
+  --chip-weather: #74b9ff;
+  --chip-gadgets: #a29bfe;
+  --chip-regional: #ffeaa7;
+  --chip-culture: #dfe6e9;
+  --chip-startups: #55efc4;
+  --chip-travel: #fab1a0;
+  --chip-sports: #fdcb6e;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ═══════════ TOPBAR ═══════════ */
+.nt-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 15, 15, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--rule);
+  padding: 0 var(--pad);
+  height: var(--topbar-h);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nt-brand {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dim);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.nt-brand strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.nt-search {
+  position: relative;
+  flex: 0 1 280px;
+  min-width: 160px;
+}
+
+.nt-search__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--faint);
+  pointer-events: none;
+  width: 16px;
+  height: 16px;
+}
+
+.nt-search__input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 13px;
+  padding: 8px 12px 8px 36px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.nt-search__input::placeholder { color: var(--faint); }
+.nt-search__input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.nt-topbar__spacer { flex: 1; }
+
+.nt-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.nt-mode-toggle__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dim);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nt-mode-toggle__label:hover { color: var(--ink); }
+.nt-mode-toggle__label.active { color: var(--accent); }
+
+.nt-mode-toggle__switch {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.25s;
+  flex-shrink: 0;
+}
+
+.nt-mode-toggle__switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 50%;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-mode="playful"] .nt-mode-toggle__switch::after {
+  transform: translateX(18px);
+}
+
+.nt-refreshed {
+  font-size: 11px;
+  color: var(--faint);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nt-refreshed__dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 6px;
+  animation: pulse-dot 2s ease infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.nt-back {
+  font-size: 12px;
+  color: var(--dim);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.nt-back:hover { color: var(--accent); }
+
+/* ═══════════ CHIP ROW ═══════════ */
+.nt-chips-wrap {
+  position: sticky;
+  top: var(--topbar-h);
+  z-index: 90;
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.nt-chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px var(--pad);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.nt-chips::-webkit-scrollbar { display: none; }
+
+.nt-chip {
+  appearance: none;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  color: var(--ink-2);
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.nt-chip:hover {
+  background: var(--surface-2);
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.nt-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+  font-weight: 600;
+}
+
+[data-mode="playful"] .nt-chip[data-cat="popular"].active  { background: var(--chip-popular); border-color: var(--chip-popular); }
+[data-mode="playful"] .nt-chip[data-cat="business"].active  { background: var(--chip-business); border-color: var(--chip-business); color: #fff; }
+[data-mode="playful"] .nt-chip[data-cat="technology"].active { background: var(--chip-technology); border-color: var(--chip-technology); }
+[data-mode="playful"] .nt-chip[data-cat="ux"].active         { background: var(--chip-ux); border-color: var(--chip-ux); }
+[data-mode="playful"] .nt-chip[data-cat="women"].active      { background: var(--chip-women); border-color: var(--chip-women); }
+[data-mode="playful"] .nt-chip[data-cat="weather"].active    { background: var(--chip-weather); border-color: var(--chip-weather); }
+[data-mode="playful"] .nt-chip[data-cat="gadgets"].active    { background: var(--chip-gadgets); border-color: var(--chip-gadgets); }
+[data-mode="playful"] .nt-chip[data-cat="regional"].active   { background: var(--chip-regional); border-color: var(--chip-regional); color: #333; }
+[data-mode="playful"] .nt-chip[data-cat="culture"].active    { background: var(--chip-culture); border-color: var(--chip-culture); color: #333; }
+[data-mode="playful"] .nt-chip[data-cat="startups"].active   { background: var(--chip-startups); border-color: var(--chip-startups); }
+[data-mode="playful"] .nt-chip[data-cat="travel"].active     { background: var(--chip-travel); border-color: var(--chip-travel); }
+[data-mode="playful"] .nt-chip[data-cat="sports"].active     { background: var(--chip-sports); border-color: var(--chip-sports); color: #333; }
+
+/* ═══════════ MAIN GRID ═══════════ */
+.nt-main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+.nt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+[data-mode="playful"] .nt-grid { gap: 20px; }
+
+/* ═══════════ NEWS CARD ═══════════ */
+.nt-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nt-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+[data-mode="playful"] .nt-card {
+  border-radius: 14px;
+}
+
+[data-mode="playful"] .nt-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.nt-card__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--surface-2);
+}
+
+.nt-card__body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nt-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.nt-card__source {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.nt-card__time {
+  font-size: 11px;
+  color: var(--faint);
+}
+
+.nt-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.nt-card__desc {
+  font-size: 13px;
+  color: var(--dim);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.nt-card__category {
+  margin-top: auto;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding: 4px 10px;
+  background: var(--surface-2);
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+/* ═══════════ SKELETON LOADER ═══════════ */
+.nt-skeleton {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.nt-skeleton__img {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(110deg, var(--surface-2) 8%, var(--surface-3) 18%, var(--surface-2) 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+.nt-skeleton__body { padding: 16px; }
+
+.nt-skeleton__line {
+  height: 12px;
+  background: linear-gradient(110deg, var(--surface-2) 8%, var(--surface-3) 18%, var(--surface-2) 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.nt-skeleton__line--short { width: 40%; }
+.nt-skeleton__line--title { height: 16px; width: 90%; }
+.nt-skeleton__line--med { width: 70%; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ═══════════ EMPTY STATE ═══════════ */
+.nt-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--dim);
+}
+
+.nt-empty__icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.4;
+}
+
+.nt-empty__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink-2);
+  margin-bottom: 8px;
+}
+
+.nt-empty__desc {
+  font-size: 14px;
+  color: var(--faint);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ═══════════ ERROR BANNER ═══════════ */
+.nt-error {
+  max-width: var(--max-w);
+  margin: 16px auto;
+  padding: 12px var(--pad);
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: var(--radius-sm);
+  color: var(--danger);
+  font-size: 13px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.nt-error.visible { display: flex; }
+
+/* ═══════════ FOOTER ═══════════ */
+.nt-footer {
+  text-align: center;
+  padding: 40px var(--pad);
+  color: var(--faint);
+  font-size: 12px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+@media (max-width: 768px) {
+  :root { --pad: 16px; }
+
+  .nt-topbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px var(--pad);
+    gap: 10px;
+  }
+
+  .nt-search { flex: 1 1 100%; order: 10; min-width: 0; }
+
+  .nt-brand { font-size: 12px; }
+
+  .nt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nt-card__img { height: 160px; }
+}
+
+@media (max-width: 480px) {
+  .nt-mode-toggle__label { display: none; }
+  .nt-refreshed span { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body data-mode="serious">
+
+<!-- ═══════════ TOPBAR ═══════════ -->
+<header class="nt-topbar">
+  <a href="Altermayur.html" class="nt-back" title="Back to portfolio">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    Portfolio
+  </a>
+  <div class="nt-brand"><strong>News Terminal</strong> &mdash; built by Puneet</div>
+
+  <div class="nt-search">
+    <svg class="nt-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input class="nt-search__input" type="search" placeholder="Search headlines..." id="newsSearch" autocomplete="off">
+  </div>
+
+  <div class="nt-topbar__spacer"></div>
+
+  <div class="nt-mode-toggle">
+    <span class="nt-mode-toggle__label active" data-mode-label="serious">Serious</span>
+    <div class="nt-mode-toggle__switch" id="modeSwitch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle playful mode"></div>
+    <span class="nt-mode-toggle__label" data-mode-label="playful">Playful</span>
+  </div>
+
+  <div class="nt-refreshed" id="lastRefreshed">
+    <span class="nt-refreshed__dot"></span>
+    <span>Refreshed: --</span>
+  </div>
+</header>
+
+<!-- ═══════════ CHIP FILTERS ═══════════ -->
+<div class="nt-chips-wrap">
+  <div class="nt-chips" id="chipRow">
+    <button class="nt-chip active" data-cat="popular">Popular</button>
+    <button class="nt-chip" data-cat="business">Business</button>
+    <button class="nt-chip" data-cat="technology">Technology</button>
+    <button class="nt-chip" data-cat="ux">UX</button>
+    <button class="nt-chip" data-cat="women">Women</button>
+    <button class="nt-chip" data-cat="weather">Weather</button>
+    <button class="nt-chip" data-cat="gadgets">Gadgets</button>
+    <button class="nt-chip" data-cat="regional">Regional</button>
+    <button class="nt-chip" data-cat="culture">Culture</button>
+    <button class="nt-chip" data-cat="startups">Startups</button>
+    <button class="nt-chip" data-cat="travel">Travel</button>
+    <button class="nt-chip" data-cat="sports">Sports</button>
+  </div>
+</div>
+
+<!-- ═══════════ ERROR BANNER ═══════════ -->
+<div class="nt-error" id="errorBanner">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+  <span id="errorMsg"></span>
+</div>
+
+<!-- ═══════════ MAIN CONTENT ═══════════ -->
+<main class="nt-main">
+  <div class="nt-grid" id="newsGrid">
+    <!-- Cards or skeletons injected by JS -->
+  </div>
+</main>
+
+<footer class="nt-footer">
+  &copy; 2026 Puneet Arora. News sourced from 60+ outlets worldwide.
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // ── Category → Source mapping + RSS feeds ──
+  const CATEGORIES = {
+    popular:    { label: 'Popular',    sources: ['BBC News','Reuters','Associated Press','The Guardian','CNN','The Hindu','Indian Express','Times of India','Hindustan Times','NDTV'] },
+    business:   { label: 'Business',   sources: ['Bloomberg','CNBC','Financial Times','The Economic Times','Mint','Moneycontrol','Business Standard','Yahoo Finance','MarketWatch'] },
+    technology: { label: 'Technology', sources: ['TechCrunch','The Verge','Wired','Ars Technica','MIT Technology Review','MacRumors'] },
+    ux:         { label: 'UX',         sources: ['Nielsen Norman Group','UX Collective','Smashing Magazine','A List Apart','UX Magazine'] },
+    women:      { label: 'Women',      sources: ['Women Love Tech','SheThePeople','Fortune'] },
+    weather:    { label: 'Weather',    sources: ['Weather.com','AccuWeather'] },
+    gadgets:    { label: 'Gadgets',    sources: ['GSMArena','Android Authority','Gadget 360','Gadgets Now'] },
+    regional:   { label: 'Regional',   sources: ['Google News','Microsoft Start','NDTV','The Hindu','Indian Express','Times of India'] },
+    culture:    { label: 'Culture',    sources: ['National Geographic','Smithsonian Magazine','Scroll Culture','The Better India'] },
+    startups:   { label: 'Startups',   sources: ['ET Tech','NASSCOM News','People Matters','YourStory'] },
+    travel:     { label: 'Travel',     sources: ['Condé Nast Traveler','Lonely Planet','National Geographic Travel'] },
+    sports:     { label: 'Sports',     sources: ['ESPN','Cricbuzz','ESPN Cricinfo','Olympics.com'] }
+  };
+
+  // RSS feeds mapped by category for rss2json proxy
+  const RSS_FEEDS = {
+    popular: [
+      'http://feeds.bbci.co.uk/news/rss.xml',
+      'https://rss.nytimes.com/services/xml/rss/nyt/World.xml',
+      'https://www.theguardian.com/world/rss',
+      'https://thehindu.com/news/national/feeder/default.rss',
+      'https://indianexpress.com/feed/',
+      'https://www.ndtv.com/rss/top-stories'
+    ],
+    business: [
+      'https://www.cnbc.com/id/100003114/device/rss/rss.html',
+      'https://economictimes.indiatimes.com/rssfeedstopstories.cms',
+      'https://www.livemint.com/rss/markets',
+      'https://www.moneycontrol.com/rss/latestnews.xml',
+      'https://www.business-standard.com/rss/home_page_top_stories.rss'
+    ],
+    technology: [
+      'https://techcrunch.com/feed/',
+      'https://www.theverge.com/rss/index.xml',
+      'https://www.wired.com/feed/rss',
+      'https://feeds.arstechnica.com/arstechnica/index',
+      'https://feeds.feedburner.com/macrumors/MacRumors'
+    ],
+    ux: [
+      'https://feeds.feedburner.com/SmashingMagazine',
+      'https://alistapart.com/main/feed/',
+      'https://uxmag.com/feed'
+    ],
+    women: [
+      'https://www.womenlovetech.com/feed/',
+      'https://www.shethepeople.tv/feed/'
+    ],
+    weather: [
+      'https://weather.com/feeds/enhancedconditions/rss'
+    ],
+    gadgets: [
+      'https://www.gsmarena.com/rss-news-reviews.php3',
+      'https://www.androidauthority.com/feed/',
+      'https://feeds.feedburner.com/gadgets360-latest'
+    ],
+    regional: [
+      'https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en',
+      'https://www.ndtv.com/rss/top-stories',
+      'https://thehindu.com/news/national/feeder/default.rss'
+    ],
+    culture: [
+      'https://www.smithsonianmag.com/rss/latest_articles/',
+      'https://www.thebetterindia.com/feed/'
+    ],
+    startups: [
+      'https://yourstory.com/feed',
+      'https://economictimes.indiatimes.com/tech/startups/rssfeeds/70983202.cms'
+    ],
+    travel: [
+      'https://www.lonelyplanet.com/feed.xml',
+      'https://www.cntraveler.com/feed/rss'
+    ],
+    sports: [
+      'https://www.espncricinfo.com/rss/content/story/feeds/0.xml',
+      'https://www.espn.com/espn/rss/news'
+    ]
+  };
+
+  // ── State ──
+  let activeCat = 'popular';
+  let newsCache = {};
+  let searchQuery = '';
+  let userRegion = 'IN';
+
+  // ── DOM refs ──
+  const grid      = document.getElementById('newsGrid');
+  const searchBox = document.getElementById('newsSearch');
+  const chipRow   = document.getElementById('chipRow');
+  const modeSwitch= document.getElementById('modeSwitch');
+  const refreshEl = document.getElementById('lastRefreshed');
+  const errorBanner = document.getElementById('errorBanner');
+  const errorMsg    = document.getElementById('errorMsg');
+
+  // ── Mode toggle ──
+  const savedMode = localStorage.getItem('nt-mode') || 'serious';
+  document.body.dataset.mode = savedMode;
+  updateModeLabels();
+
+  modeSwitch.addEventListener('click', toggleMode);
+  modeSwitch.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMode(); }
+  });
+
+  function toggleMode() {
+    const next = document.body.dataset.mode === 'serious' ? 'playful' : 'serious';
+    document.body.dataset.mode = next;
+    localStorage.setItem('nt-mode', next);
+    modeSwitch.setAttribute('aria-checked', next === 'playful');
+    updateModeLabels();
+  }
+
+  function updateModeLabels() {
+    document.querySelectorAll('.nt-mode-toggle__label').forEach(function (el) {
+      el.classList.toggle('active', el.dataset.modeLabel === document.body.dataset.mode);
+    });
+  }
+
+  // ── Chips ──
+  chipRow.addEventListener('click', function (e) {
+    var chip = e.target.closest('.nt-chip');
+    if (!chip) return;
+    chipRow.querySelectorAll('.nt-chip').forEach(function (c) { c.classList.remove('active'); });
+    chip.classList.add('active');
+    activeCat = chip.dataset.cat;
+    renderNews();
+  });
+
+  // ── Search (debounced) ──
+  var searchTimer;
+  searchBox.addEventListener('input', function () {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function () {
+      searchQuery = searchBox.value.trim().toLowerCase();
+      renderNews();
+    }, 250);
+  });
+
+  // ── IP-based geolocation ──
+  function detectRegion() {
+    fetch('https://ipapi.co/json/')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data && data.country_code) {
+          userRegion = data.country_code;
+        }
+      })
+      .catch(function () {
+        userRegion = 'IN';
+      });
+  }
+
+  // ── Skeleton rendering ──
+  function renderSkeletons(count) {
+    var html = '';
+    for (var i = 0; i < count; i++) {
+      html += '<div class="nt-skeleton">' +
+        '<div class="nt-skeleton__img"></div>' +
+        '<div class="nt-skeleton__body">' +
+        '<div class="nt-skeleton__line nt-skeleton__line--short"></div>' +
+        '<div class="nt-skeleton__line nt-skeleton__line--title"></div>' +
+        '<div class="nt-skeleton__line nt-skeleton__line--med"></div>' +
+        '</div></div>';
+    }
+    grid.innerHTML = html;
+  }
+
+  // ── Time ago ──
+  function timeAgo(dateStr) {
+    var d = new Date(dateStr);
+    if (isNaN(d.getTime())) return '';
+    var diff = Math.floor((Date.now() - d.getTime()) / 1000);
+    if (diff < 60) return 'Just now';
+    if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+    if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+    return Math.floor(diff / 86400) + 'd ago';
+  }
+
+  // ── Card rendering ──
+  function renderNews() {
+    var items = newsCache[activeCat] || [];
+
+    if (searchQuery) {
+      items = items.filter(function (item) {
+        return item.title.toLowerCase().indexOf(searchQuery) !== -1 ||
+               (item.description || '').toLowerCase().indexOf(searchQuery) !== -1;
+      });
+    }
+
+    if (items.length === 0 && newsCache[activeCat]) {
+      grid.innerHTML = '<div class="nt-empty">' +
+        '<div class="nt-empty__icon">&#128240;</div>' +
+        '<div class="nt-empty__title">' + (searchQuery ? 'No matches for "' + escapeHtml(searchQuery) + '"' : 'No headlines yet') + '</div>' +
+        '<div class="nt-empty__desc">' + (searchQuery ? 'Try a different search term or clear the search.' : 'Check back soon — fresh news is on its way for ' + CATEGORIES[activeCat].label + '.') + '</div>' +
+        '</div>';
+      return;
+    }
+
+    if (items.length === 0) {
+      renderSkeletons(8);
+      return;
+    }
+
+    grid.innerHTML = items.map(function (item) {
+      var imgHtml = item.image
+        ? '<img class="nt-card__img" src="' + escapeHtml(item.image) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
+        : '';
+      return '<a class="nt-card" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener">' +
+        imgHtml +
+        '<div class="nt-card__body">' +
+        '<div class="nt-card__meta">' +
+        '<span class="nt-card__source">' + escapeHtml(item.source) + '</span>' +
+        '<span class="nt-card__time">' + timeAgo(item.pubDate) + '</span>' +
+        '</div>' +
+        '<div class="nt-card__title">' + escapeHtml(item.title) + '</div>' +
+        (item.description ? '<div class="nt-card__desc">' + escapeHtml(item.description) + '</div>' : '') +
+        '<span class="nt-card__category">' + escapeHtml(CATEGORIES[activeCat].label) + '</span>' +
+        '</div></a>';
+    }).join('');
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
+  function showError(msg) {
+    errorMsg.textContent = msg;
+    errorBanner.classList.add('visible');
+  }
+
+  function hideError() {
+    errorBanner.classList.remove('visible');
+  }
+
+  function updateRefreshTime() {
+    var now = new Date();
+    var timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    refreshEl.innerHTML = '<span class="nt-refreshed__dot"></span><span>Refreshed: ' + timeStr + '</span>';
+  }
+
+  // ── Fetch news via rss2json (free, CORS-friendly proxy) ──
+  var RSS2JSON_BASE = 'https://api.rss2json.com/v1/api.json?rss_url=';
+
+  function fetchCategoryNews(cat) {
+    var feeds = RSS_FEEDS[cat] || [];
+    if (feeds.length === 0) {
+      newsCache[cat] = [];
+      return Promise.resolve();
+    }
+
+    var promises = feeds.map(function (feedUrl) {
+      return fetch(RSS2JSON_BASE + encodeURIComponent(feedUrl))
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.status !== 'ok' || !data.items) return [];
+          return data.items.map(function (item) {
+            return {
+              title: item.title || '',
+              description: (item.description || '').replace(/<[^>]*>/g, '').substring(0, 200),
+              url: item.link || '',
+              image: item.enclosure && item.enclosure.link ? item.enclosure.link : (item.thumbnail || ''),
+              source: data.feed && data.feed.title ? data.feed.title : 'Unknown',
+              pubDate: item.pubDate || ''
+            };
+          });
+        })
+        .catch(function () { return []; });
+    });
+
+    return Promise.all(promises).then(function (results) {
+      var allItems = [];
+      results.forEach(function (arr) { allItems = allItems.concat(arr); });
+
+      // Deduplicate by title
+      var seen = {};
+      allItems = allItems.filter(function (item) {
+        var key = item.title.toLowerCase().trim();
+        if (seen[key]) return false;
+        seen[key] = true;
+        return true;
+      });
+
+      // Sort by date (newest first)
+      allItems.sort(function (a, b) {
+        return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
+      });
+
+      newsCache[cat] = allItems;
+    });
+  }
+
+  function fetchAllNews() {
+    renderSkeletons(8);
+    hideError();
+
+    var cats = Object.keys(CATEGORIES);
+    var promises = cats.map(function (cat) { return fetchCategoryNews(cat); });
+
+    Promise.all(promises)
+      .then(function () {
+        updateRefreshTime();
+        renderNews();
+      })
+      .catch(function () {
+        showError('Some feeds could not be loaded. Showing available headlines.');
+        renderNews();
+      });
+  }
+
+  // ── Init ──
+  detectRegion();
+  fetchAllNews();
+
+  // Auto-refresh every 15 minutes
+  setInterval(fetchAllNews, 15 * 60 * 1000);
+
+})();
+</script>
+</body>
+</html>
