@@ -363,23 +363,46 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--radius);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   transition: background 0.3s, border-color 0.3s;
+}
+
+.nt-headline__imgwrap {
+  width: 44%;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-2);
 }
 
 .nt-headline__img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  background: var(--surface-2);
+  display: block;
+}
+
+.nt-headline__imgwrap--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--surface-2), var(--surface-3));
+}
+
+.nt-headline__placeholder-icon {
+  width: 25%;
+  height: 25%;
+  color: var(--dim);
+  opacity: 0.4;
 }
 
 .nt-headline__body {
-  padding: 24px 28px;
+  padding: 26px 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   flex: 1;
+  min-width: 0;
 }
 
 .nt-headline__tag {
@@ -391,18 +414,46 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nt-headline__title {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.32;
   color: var(--ink);
   display: block;
 }
 
-.nt-headline__desc {
-  font-size: 13px;
-  color: var(--ink-2);
-  line-height: 1.5;
+.nt-headline__tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
 }
+
+.nt-headline__tagchip {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+
+.nt-headline__desc {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
+.nt-headline__cta {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  width: fit-content;
+}
+
+.nt-headline__cta:hover { text-decoration: underline; }
 
 .nt-headline__time {
   font-size: 11px;
@@ -776,6 +827,9 @@ a { color: inherit; text-decoration: none; }
 
   .nt-top-row { grid-template-columns: 1fr; }
 
+  .nt-headline { flex-direction: column; }
+  .nt-headline__imgwrap { width: 100%; height: 220px; }
+
   .nt-ticker__item { flex-basis: 50vw; }
 }
 
@@ -857,9 +911,10 @@ a { color: inherit; text-decoration: none; }
 <!-- ═══════════ TOP ROW: HEADLINE + LATEST BRIEF ═══════════ -->
 <div class="nt-top-row">
   <div class="nt-headline" id="headlineCard">
-    <div class="nt-skeleton__img"></div>
+    <div class="nt-headline__imgwrap"><div class="nt-skeleton__img" style="height:100%"></div></div>
     <div class="nt-headline__body">
       <div class="nt-brief__skeleton nt-brief__skeleton--short"></div>
+      <div class="nt-brief__skeleton nt-brief__skeleton--long" style="margin-top:8px"></div>
       <div class="nt-brief__skeleton nt-brief__skeleton--long"></div>
     </div>
   </div>
@@ -1171,13 +1226,23 @@ a { color: inherit; text-decoration: none; }
 
   function renderHeadline(item) {
     var img = item.enclosure && item.enclosure.link ? item.enclosure.link : (item.thumbnail || '');
-    var desc = (item.description || '').replace(/<[^>]*>/g, '').substring(0, 180);
+    var rawDesc = (item.description || '').replace(/<[^>]*>/g, '').trim();
+    var desc = rawDesc.length > 320 ? rawDesc.substring(0, 320).replace(/\s+\S*$/, '') + '…' : rawDesc;
+    var cats = (item.categories || []).slice(0, 3);
+    var tagsHtml = cats.length
+      ? '<div class="nt-headline__tags">' + cats.map(function (c) { return '<span class="nt-headline__tagchip">' + escapeHtml(c) + '</span>'; }).join('') + '</div>'
+      : '';
+    var imgHtml = img
+      ? '<div class="nt-headline__imgwrap"><img class="nt-headline__img" src="' + escapeHtml(img) + '" alt="" loading="lazy" onerror="this.parentElement.classList.add(\'nt-headline__imgwrap--empty\');this.remove()"></div>'
+      : '<div class="nt-headline__imgwrap nt-headline__imgwrap--empty"><svg class="nt-headline__placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="16" x2="13" y2="16"/></svg></div>';
     headlineCard.innerHTML =
-      (img ? '<img class="nt-headline__img" src="' + escapeHtml(img) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">' : '') +
+      imgHtml +
       '<div class="nt-headline__body">' +
       '<span class="nt-headline__tag">Top Story &middot; Times of India</span>' +
       '<a class="nt-headline__title" href="' + escapeHtml(item.link || '') + '" target="_blank" rel="noopener">' + escapeHtml(item.title || '') + '</a>' +
+      tagsHtml +
       (desc ? '<p class="nt-headline__desc">' + escapeHtml(desc) + '</p>' : '') +
+      '<a class="nt-headline__cta" href="' + escapeHtml(item.link || '') + '" target="_blank" rel="noopener">Read full story &rarr;</a>' +
       '<span class="nt-headline__time">' + timeAgo(item.pubDate) + '</span>' +
       '</div>';
   }
