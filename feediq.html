@@ -1,0 +1,1600 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FeedIQ — AI-Powered Feed Intelligence for Cargill</title>
+<meta name="description" content="AI-powered feed formulation optimizer and mycotoxin risk intelligence platform. A product concept by Puneet Arora for Cargill.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   FeedIQ Design System — Standalone product prototype
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --bg:       #0a0f0d;
+  --bg-2:     #0f1613;
+  --surface:  #141e1a;
+  --surface-2:#1a2822;
+  --surface-3:#1f3029;
+  --ink:      #e8f0ec;
+  --dim:      #8fa89c;
+  --faint:    #5a7268;
+  --rule:     #243530;
+  --rule-2:   #2d4238;
+
+  --accent:   #00c978;
+  --accent-dim: #00a863;
+  --accent-bg: rgba(0,201,120,0.08);
+  --accent-bg-2: rgba(0,201,120,0.14);
+
+  --warn:     #ff9f43;
+  --warn-bg:  rgba(255,159,67,0.10);
+  --danger:   #ff6b6b;
+  --danger-bg:rgba(255,107,107,0.10);
+  --info:     #54a0ff;
+  --info-bg:  rgba(84,160,255,0.10);
+
+  --f-sans:  'Inter', -apple-system, system-ui, sans-serif;
+  --f-mono:  'JetBrains Mono', 'SF Mono', monospace;
+
+  --radius:   8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --pad:      24px;
+  --max:      1400px;
+  --topbar-h: 56px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--f-sans);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Topbar ── */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  height: var(--topbar-h);
+  padding: 0 var(--pad);
+  background: rgba(10,15,13,0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--rule);
+}
+.topbar__brand {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; color: var(--ink);
+  font-family: var(--f-mono); font-weight: 700; font-size: 15px;
+  letter-spacing: -0.02em;
+}
+.topbar__brand .logo-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(0,201,120,0.5);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { box-shadow: 0 0 8px rgba(0,201,120,0.5); }
+  50%     { box-shadow: 0 0 16px rgba(0,201,120,0.8); }
+}
+.topbar__tag {
+  font-family: var(--f-mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-bg);
+  padding: 3px 8px; border-radius: 3px;
+}
+.topbar__nav { display: flex; gap: 0; }
+.topbar__nav a {
+  font-family: var(--f-mono); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  text-decoration: none; color: var(--dim);
+  padding: 6px 14px; border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+.topbar__nav a:hover, .topbar__nav a.active {
+  color: var(--accent); background: var(--accent-bg);
+}
+.topbar__right {
+  display: flex; align-items: center; gap: 12px;
+}
+.topbar__author {
+  font-family: var(--f-mono); font-size: 10px;
+  color: var(--faint); letter-spacing: 0.08em;
+}
+.topbar__author a { color: var(--dim); text-decoration: none; }
+.topbar__author a:hover { color: var(--accent); }
+
+/* ── Layout ── */
+.container { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+.section { padding: 64px 0; }
+.section--bordered { border-top: 1px solid var(--rule); }
+
+/* ── Typography ── */
+.section-label {
+  font-family: var(--f-mono); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-label::before {
+  content: ''; width: 16px; height: 1px; background: var(--accent);
+}
+.section-title {
+  font-size: 32px; font-weight: 800; letter-spacing: -0.03em;
+  line-height: 1.1; margin-bottom: 12px; color: var(--ink);
+}
+.section-sub {
+  font-size: 15px; color: var(--dim); max-width: 600px; line-height: 1.6;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(0,201,120,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero__eyebrow {
+  font-family: var(--f-mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 20px;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero__eyebrow::before {
+  content: ''; width: 24px; height: 2px; background: var(--accent);
+}
+.hero__title {
+  font-size: clamp(36px, 5vw, 56px); font-weight: 900;
+  letter-spacing: -0.04em; line-height: 1.05;
+  margin-bottom: 24px; max-width: 800px;
+}
+.hero__title em {
+  font-style: normal; color: var(--accent);
+  background: linear-gradient(135deg, var(--accent), #00e68a);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero__desc {
+  font-size: 17px; color: var(--dim); line-height: 1.7;
+  max-width: 620px; margin-bottom: 36px;
+}
+.hero__ctas {
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--f-mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  text-decoration: none; padding: 12px 24px;
+  border-radius: var(--radius); cursor: pointer;
+  border: none; transition: all 0.25s;
+}
+.btn--primary {
+  background: var(--accent); color: #0a0f0d;
+}
+.btn--primary:hover {
+  background: #00e68a; box-shadow: 0 4px 20px rgba(0,201,120,0.3);
+  transform: translateY(-1px);
+}
+.btn--ghost {
+  background: transparent; color: var(--dim);
+  border: 1px solid var(--rule-2);
+}
+.btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── Problem Statement Cards ── */
+.problem-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--rule);
+  border: 1px solid var(--rule); border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.problem-card {
+  background: var(--surface); padding: 28px;
+}
+.problem-card__icon {
+  font-size: 28px; margin-bottom: 14px; display: block;
+}
+.problem-card__stat {
+  font-family: var(--f-mono); font-size: 28px; font-weight: 800;
+  color: var(--accent); margin-bottom: 4px;
+}
+.problem-card__label {
+  font-family: var(--f-mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--faint); margin-bottom: 12px;
+}
+.problem-card__text {
+  font-size: 14px; color: var(--dim); line-height: 1.55;
+}
+@media (max-width: 800px) {
+  .problem-grid { grid-template-columns: 1fr; }
+}
+
+/* ── KPI Bar ── */
+.kpi-bar {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--rule);
+  border: 1px solid var(--rule); border-radius: var(--radius-lg);
+  overflow: hidden; margin-top: 40px;
+}
+.kpi {
+  background: var(--bg-2); padding: 24px; text-align: center;
+}
+.kpi__value {
+  font-family: var(--f-mono); font-size: 32px; font-weight: 800;
+  color: var(--ink);
+}
+.kpi__value .unit { font-size: 16px; color: var(--accent); font-weight: 600; }
+.kpi__label {
+  font-family: var(--f-mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--faint); margin-top: 4px;
+}
+@media (max-width: 800px) {
+  .kpi-bar { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Dashboard Layout ── */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 20px;
+}
+.dashboard--full {
+  grid-template-columns: 1fr;
+}
+@media (max-width: 1000px) {
+  .dashboard { grid-template-columns: 1fr; }
+}
+
+/* ── Panels ── */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.panel__header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--surface-2);
+}
+.panel__title {
+  font-family: var(--f-mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink);
+}
+.panel__badge {
+  font-family: var(--f-mono); font-size: 10px; font-weight: 600;
+  padding: 3px 8px; border-radius: 3px;
+}
+.panel__badge--live { background: var(--accent-bg); color: var(--accent); }
+.panel__badge--warn { background: var(--warn-bg); color: var(--warn); }
+.panel__badge--danger { background: var(--danger-bg); color: var(--danger); }
+.panel__body { padding: 20px; }
+
+/* ── Heatmap ── */
+.heatmap-container {
+  position: relative;
+}
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: 120px repeat(6, 1fr);
+  gap: 2px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+}
+.heatmap-grid .hdr {
+  padding: 8px 6px;
+  text-align: center;
+  color: var(--faint);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.heatmap-grid .row-label {
+  padding: 10px 8px;
+  color: var(--dim);
+  font-weight: 500;
+  display: flex; align-items: center;
+  font-size: 11px;
+}
+.heatmap-grid .cell {
+  padding: 10px 6px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: default;
+  transition: transform 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+.heatmap-grid .cell:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+.cell--low    { background: rgba(0,201,120,0.12); color: var(--accent); }
+.cell--medium { background: rgba(255,159,67,0.15); color: var(--warn); }
+.cell--high   { background: rgba(255,107,107,0.18); color: var(--danger); }
+.cell--severe { background: rgba(255,70,70,0.28); color: #ff4646; }
+.cell--na     { background: var(--surface-2); color: var(--faint); }
+
+.heatmap-legend {
+  display: flex; gap: 16px; margin-top: 16px; justify-content: center;
+}
+.heatmap-legend__item {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--f-mono); font-size: 10px;
+  color: var(--dim); letter-spacing: 0.06em;
+}
+.heatmap-legend__dot {
+  width: 10px; height: 10px; border-radius: 2px;
+}
+
+/* ── Alerts ── */
+.alert-list { display: flex; flex-direction: column; gap: 8px; }
+.alert-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  font-size: 13px; line-height: 1.5;
+}
+.alert-item--danger { background: var(--danger-bg); }
+.alert-item--warn { background: var(--warn-bg); }
+.alert-item--info { background: var(--info-bg); }
+.alert-item__icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+.alert-item__text { color: var(--dim); }
+.alert-item__text strong { color: var(--ink); font-weight: 600; }
+
+/* ── Chat / Formulator ── */
+.chat-container {
+  display: flex; flex-direction: column;
+  height: 600px;
+}
+.chat-messages {
+  flex: 1; overflow-y: auto; padding: 20px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+.chat-messages::-webkit-scrollbar { width: 4px; }
+.chat-messages::-webkit-scrollbar-track { background: transparent; }
+.chat-messages::-webkit-scrollbar-thumb { background: var(--rule-2); border-radius: 2px; }
+
+.msg {
+  max-width: 85%;
+  padding: 14px 18px;
+  border-radius: var(--radius-lg);
+  font-size: 14px; line-height: 1.6;
+  animation: msg-in 0.3s ease-out;
+}
+@keyframes msg-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.msg--ai {
+  align-self: flex-start;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+}
+.msg--user {
+  align-self: flex-end;
+  background: var(--accent);
+  color: #0a0f0d;
+}
+.msg__sender {
+  font-family: var(--f-mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 6px; display: block;
+}
+.msg--ai .msg__sender { color: var(--accent); }
+.msg--user .msg__sender { color: rgba(10,15,13,0.6); }
+.msg__content { white-space: pre-wrap; }
+
+.chat-input-area {
+  display: flex; gap: 8px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--rule);
+  background: var(--bg-2);
+}
+.chat-input {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--rule-2);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  font-family: var(--f-sans);
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.chat-input::placeholder { color: var(--faint); }
+.chat-input:focus { border-color: var(--accent); }
+.chat-send {
+  background: var(--accent); color: #0a0f0d;
+  border: none; border-radius: var(--radius);
+  padding: 12px 20px;
+  font-family: var(--f-mono); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  cursor: pointer; transition: all 0.2s;
+}
+.chat-send:hover { background: #00e68a; }
+
+/* ── Prompt Chips ── */
+.prompt-chips {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding: 12px 20px 0;
+}
+.prompt-chip {
+  font-family: var(--f-mono); font-size: 11px; font-weight: 500;
+  color: var(--dim); background: var(--surface-2);
+  border: 1px solid var(--rule-2);
+  padding: 6px 14px; border-radius: 20px;
+  cursor: pointer; transition: all 0.2s;
+}
+.prompt-chip:hover {
+  border-color: var(--accent); color: var(--accent);
+  background: var(--accent-bg);
+}
+
+/* ── Results Table ── */
+.results-table {
+  width: 100%; border-collapse: collapse;
+  font-family: var(--f-mono); font-size: 12px;
+}
+.results-table th {
+  text-align: left; padding: 10px 12px;
+  color: var(--faint); font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  font-size: 10px; border-bottom: 1px solid var(--rule);
+}
+.results-table td {
+  padding: 10px 12px; color: var(--dim);
+  border-bottom: 1px solid rgba(36,53,48,0.5);
+}
+.results-table tr:hover td { background: var(--accent-bg); }
+.results-table .val { color: var(--ink); font-weight: 600; }
+.results-table .pct-bar {
+  height: 4px; border-radius: 2px;
+  background: var(--rule);
+  position: relative;
+  min-width: 60px;
+}
+.results-table .pct-bar__fill {
+  position: absolute; top: 0; left: 0; height: 100%;
+  border-radius: 2px;
+  background: var(--accent);
+  transition: width 0.6s ease-out;
+}
+
+/* ── Risk Gauge ── */
+.gauge-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 0; border-bottom: 1px solid rgba(36,53,48,0.5);
+}
+.gauge-row:last-child { border-bottom: none; }
+.gauge-label {
+  font-family: var(--f-mono); font-size: 11px; font-weight: 500;
+  color: var(--dim); width: 60px; flex-shrink: 0;
+}
+.gauge-track {
+  flex: 1; height: 8px; background: var(--rule);
+  border-radius: 4px; overflow: hidden;
+}
+.gauge-fill {
+  height: 100%; border-radius: 4px;
+  transition: width 0.8s ease-out;
+}
+.gauge-fill--low  { background: var(--accent); }
+.gauge-fill--med  { background: var(--warn); }
+.gauge-fill--high { background: var(--danger); }
+.gauge-value {
+  font-family: var(--f-mono); font-size: 12px; font-weight: 700;
+  width: 42px; text-align: right; flex-shrink: 0;
+}
+
+/* ── Formulation Output ── */
+.formulation-output {
+  display: none;
+  animation: fade-in 0.4s ease-out;
+}
+.formulation-output.visible { display: block; }
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.formulation-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 20px; padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+}
+.formulation-header h3 {
+  font-size: 18px; font-weight: 700; color: var(--ink);
+}
+.formulation-cost {
+  font-family: var(--f-mono); font-size: 14px; font-weight: 700;
+  color: var(--accent); background: var(--accent-bg);
+  padding: 6px 14px; border-radius: var(--radius);
+}
+
+/* ── Tabs ── */
+.tab-bar {
+  display: flex; border-bottom: 1px solid var(--rule);
+}
+.tab-bar__item {
+  font-family: var(--f-mono); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--faint); padding: 14px 20px;
+  cursor: pointer; position: relative;
+  transition: color 0.2s; border: none; background: none;
+}
+.tab-bar__item:hover { color: var(--dim); }
+.tab-bar__item.active {
+  color: var(--accent);
+}
+.tab-bar__item.active::after {
+  content: ''; position: absolute; bottom: -1px; left: 0; right: 0;
+  height: 2px; background: var(--accent);
+}
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ── Process / How It Works ── */
+.process-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--rule);
+  border: 1px solid var(--rule); border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.process-step {
+  background: var(--surface); padding: 28px 24px;
+  position: relative;
+}
+.process-step__num {
+  font-family: var(--f-mono); font-size: 32px; font-weight: 800;
+  color: var(--accent); opacity: 0.3; margin-bottom: 12px;
+}
+.process-step h4 {
+  font-size: 15px; font-weight: 700; color: var(--ink);
+  margin-bottom: 8px;
+}
+.process-step p {
+  font-size: 13px; color: var(--dim); line-height: 1.55;
+}
+@media (max-width: 900px) {
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .process-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Footer ── */
+.footer {
+  padding: 40px var(--pad);
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+.footer__text {
+  font-family: var(--f-mono); font-size: 11px;
+  color: var(--faint); letter-spacing: 0.06em;
+}
+.footer__text a { color: var(--dim); text-decoration: none; }
+.footer__text a:hover { color: var(--accent); }
+
+/* ── Utilities ── */
+.mt-20 { margin-top: 20px; }
+.mt-40 { margin-top: 40px; }
+.mt-60 { margin-top: 60px; }
+.mb-20 { margin-bottom: 20px; }
+.flex { display: flex; }
+.gap-8  { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-20 { gap: 20px; }
+.hidden { display: none; }
+
+/* ── Ingredient Donut ── */
+.donut-container {
+  display: flex; align-items: center; gap: 24px;
+  margin-top: 16px;
+}
+.donut-chart {
+  width: 140px; height: 140px; flex-shrink: 0;
+}
+.donut-legend { display: flex; flex-direction: column; gap: 6px; }
+.donut-legend__item {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--f-mono); font-size: 11px; color: var(--dim);
+}
+.donut-legend__dot {
+  width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0;
+}
+
+/* ── Nutrition Bars ── */
+.nutrition-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  margin-top: 12px;
+}
+.nutrition-item {
+  display: flex; align-items: center; gap: 10px;
+}
+.nutrition-item__label {
+  font-family: var(--f-mono); font-size: 11px;
+  color: var(--dim); width: 110px; flex-shrink: 0;
+}
+.nutrition-item__bar {
+  flex: 1; height: 6px; background: var(--rule);
+  border-radius: 3px; overflow: hidden;
+}
+.nutrition-item__fill {
+  height: 100%; border-radius: 3px;
+  transition: width 0.8s ease-out;
+}
+.nutrition-item__val {
+  font-family: var(--f-mono); font-size: 11px;
+  color: var(--ink); font-weight: 600; width: 48px;
+  text-align: right; flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  :root { --pad: 16px; }
+  .topbar__nav { display: none; }
+  .hero__title { font-size: 28px; }
+  .kpi-bar { grid-template-columns: 1fr 1fr; }
+  .nutrition-grid { grid-template-columns: 1fr; }
+  .donut-container { flex-direction: column; }
+}
+
+/* ── Scroll animations ── */
+[data-reveal] {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+[data-reveal].revealed {
+  opacity: 1; transform: translateY(0);
+}
+
+/* ── Context Banner ── */
+.context-banner {
+  background: var(--surface); border: 1px solid var(--rule);
+  border-radius: var(--radius-lg); padding: 24px 28px;
+  margin-top: 40px;
+  display: flex; gap: 20px; align-items: flex-start;
+}
+.context-banner__icon {
+  font-size: 24px; flex-shrink: 0; margin-top: 2px;
+}
+.context-banner__text {
+  font-size: 14px; color: var(--dim); line-height: 1.65;
+}
+.context-banner__text strong { color: var(--ink); }
+
+/* ── Tradeoff Slider ── */
+.tradeoff {
+  background: var(--surface-2); border-radius: var(--radius);
+  padding: 16px 20px; margin-top: 16px;
+}
+.tradeoff__header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 12px;
+}
+.tradeoff__label {
+  font-family: var(--f-mono); font-size: 11px; font-weight: 600;
+  color: var(--faint); letter-spacing: 0.08em; text-transform: uppercase;
+}
+.tradeoff__value {
+  font-family: var(--f-mono); font-size: 13px; font-weight: 700;
+  color: var(--accent);
+}
+.tradeoff input[type="range"] {
+  width: 100%; appearance: none; height: 6px;
+  background: var(--rule); border-radius: 3px; outline: none;
+}
+.tradeoff input[type="range"]::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px;
+  border-radius: 50%; background: var(--accent);
+  cursor: pointer; border: 2px solid var(--bg);
+  box-shadow: 0 2px 6px rgba(0,201,120,0.3);
+}
+.tradeoff__hint {
+  font-size: 12px; color: var(--faint); margin-top: 8px;
+  font-family: var(--f-mono);
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     TOPBAR
+     ═══════════════════════════════════════════════ -->
+<header class="topbar">
+  <div class="topbar__brand">
+    <span class="logo-dot"></span>
+    FeedIQ
+    <span class="topbar__tag">PRODUCT CONCEPT</span>
+  </div>
+  <nav class="topbar__nav">
+    <a href="#problem" class="active">PROBLEM</a>
+    <a href="#dashboard">RISK DASHBOARD</a>
+    <a href="#formulator">AI FORMULATOR</a>
+    <a href="#how">HOW IT WORKS</a>
+  </nav>
+  <div class="topbar__right">
+    <span class="topbar__author">by <a href="home.html">Puneet Arora</a></span>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════ -->
+<section class="hero container" id="problem">
+  <div class="hero__eyebrow">PRODUCT CONCEPT FOR CARGILL</div>
+  <h1 class="hero__title">
+    71% of feed is contaminated.<br>
+    <em>Zero tools connect risk to action.</em>
+  </h1>
+  <p class="hero__desc">
+    FeedIQ is an AI-powered feed intelligence platform that transforms Cargill's mycotoxin data
+    into real-time risk scores and generates optimized, safe feed formulations — turning a
+    $1.5B testing problem into a decision-making advantage.
+  </p>
+  <div class="hero__ctas">
+    <a href="#formulator" class="btn btn--primary">TRY THE AI FORMULATOR <span>&darr;</span></a>
+    <a href="#dashboard" class="btn btn--ghost">VIEW RISK DASHBOARD</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     PROBLEM STATEMENT
+     ═══════════════════════════════════════════════ -->
+<section class="section section--bordered">
+  <div class="container" data-reveal>
+    <span class="section-label">THE PROBLEM</span>
+    <h2 class="section-title">Cargill tests 390,000 samples a year.<br>The insight dies in a PDF.</h2>
+    <p class="section-sub">
+      Cargill's 2025 Global Mycotoxin Report analyzes nearly 390,000 samples across 41 countries.
+      But feed buyers, livestock producers, and nutritionists have no interactive tool to assess
+      their specific risk or act on it.
+    </p>
+
+    <div class="problem-grid mt-40">
+      <div class="problem-card">
+        <span class="problem-card__stat">71%</span>
+        <span class="problem-card__label">CONTAMINATION RATE</span>
+        <p class="problem-card__text">
+          71% of global feed samples test positive for at least one mycotoxin above detection limits.
+          This isn't an edge case — it's the baseline.
+        </p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-card__stat">47%</span>
+        <span class="problem-card__label">MULTI-TOXIN SAMPLES</span>
+        <p class="problem-card__text">
+          Nearly half of all samples contain 3 or more mycotoxins simultaneously, creating
+          compounding risks that single-toxin testing misses.
+        </p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-card__stat">34%</span>
+        <span class="problem-card__label">ABOVE RISK THRESHOLD</span>
+        <p class="problem-card__text">
+          Over a third of samples exceed Cargill's performance-based risk thresholds — levels linked
+          to measurable productivity losses in livestock.
+        </p>
+      </div>
+    </div>
+
+    <div class="kpi-bar">
+      <div class="kpi">
+        <div class="kpi__value">389K<span class="unit">+</span></div>
+        <div class="kpi__label">ANALYSES / YEAR</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__value">41</div>
+        <div class="kpi__label">COUNTRIES</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__value">$1.5<span class="unit">B</span></div>
+        <div class="kpi__label">TESTING MARKET SIZE</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__value">46<span class="unit">%</span></div>
+        <div class="kpi__label">LABS SHORT-STAFFED</div>
+      </div>
+    </div>
+
+    <div class="context-banner mt-40">
+      <span class="context-banner__icon">&#9888;&#65039;</span>
+      <div class="context-banner__text">
+        <strong>The gap:</strong> Cargill has the data. Producers have the problem. But there's no real-time,
+        interactive tool connecting mycotoxin risk intelligence to feed formulation decisions.
+        FeedIQ bridges this gap — turning static reports into dynamic, AI-driven recommendations.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     MYCOTOXIN RISK DASHBOARD
+     ═══════════════════════════════════════════════ -->
+<section class="section section--bordered" id="dashboard">
+  <div class="container" data-reveal>
+    <span class="section-label">RISK DASHBOARD</span>
+    <h2 class="section-title">Global mycotoxin risk at a glance</h2>
+    <p class="section-sub">
+      Interactive contamination heatmap powered by Cargill's 2025 Global Mycotoxin Report.
+      Click any region to drill into commodity-specific risk.
+    </p>
+
+    <div class="dashboard mt-40">
+      <!-- Heatmap Panel -->
+      <div class="panel">
+        <div class="panel__header">
+          <span class="panel__title">Contamination Heatmap — by Region &times; Toxin</span>
+          <span class="panel__badge panel__badge--live">LIVE DATA</span>
+        </div>
+        <div class="panel__body">
+          <div class="heatmap-grid" id="heatmap">
+            <!-- Header row -->
+            <div class="hdr"></div>
+            <div class="hdr">DON</div>
+            <div class="hdr">FUM</div>
+            <div class="hdr">ZEN</div>
+            <div class="hdr">AFLA</div>
+            <div class="hdr">T-2</div>
+            <div class="hdr">OTA</div>
+            <!-- Rows injected by JS -->
+          </div>
+          <div class="heatmap-legend mt-20">
+            <div class="heatmap-legend__item"><span class="heatmap-legend__dot" style="background:rgba(0,201,120,0.4)"></span> LOW (&lt;15%)</div>
+            <div class="heatmap-legend__item"><span class="heatmap-legend__dot" style="background:rgba(255,159,67,0.5)"></span> MODERATE (15-35%)</div>
+            <div class="heatmap-legend__item"><span class="heatmap-legend__dot" style="background:rgba(255,107,107,0.5)"></span> HIGH (35-55%)</div>
+            <div class="heatmap-legend__item"><span class="heatmap-legend__dot" style="background:rgba(255,70,70,0.7)"></span> SEVERE (&gt;55%)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alerts Panel -->
+      <div class="panel">
+        <div class="panel__header">
+          <span class="panel__title">Active Alerts</span>
+          <span class="panel__badge panel__badge--danger">3 CRITICAL</span>
+        </div>
+        <div class="panel__body">
+          <div class="alert-list">
+            <div class="alert-item alert-item--danger">
+              <span class="alert-item__icon">&#9888;</span>
+              <div class="alert-item__text">
+                <strong>DON spike in S. America</strong> — Deoxynivalenol above 53% threshold in corn and wheat. Consider binder supplementation.
+              </div>
+            </div>
+            <div class="alert-item alert-item--danger">
+              <span class="alert-item__icon">&#9888;</span>
+              <div class="alert-item__text">
+                <strong>Fumonisin surge — SE Asia</strong> — FUM levels increased 18% vs. prior year. Corn-based feeds at elevated risk.
+              </div>
+            </div>
+            <div class="alert-item alert-item--warn">
+              <span class="alert-item__icon">&#9888;</span>
+              <div class="alert-item__text">
+                <strong>Multi-toxin alert — Europe</strong> — 52% of Central European samples show 3+ concurrent toxins. Compound risk applies.
+              </div>
+            </div>
+            <div class="alert-item alert-item--info">
+              <span class="alert-item__icon">&#8505;</span>
+              <div class="alert-item__text">
+                <strong>Low risk — Oceania</strong> — All six toxin categories below 15% threshold. Favorable sourcing region this quarter.
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--rule);">
+            <div style="font-family: var(--f-mono); font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); margin-bottom: 12px;">MULTI-TOXIN PREVALENCE</div>
+            <div class="gauge-row">
+              <span class="gauge-label">1 toxin</span>
+              <div class="gauge-track"><div class="gauge-fill gauge-fill--low" style="width:71%"></div></div>
+              <span class="gauge-value" style="color:var(--accent)">71%</span>
+            </div>
+            <div class="gauge-row">
+              <span class="gauge-label">2+ toxins</span>
+              <div class="gauge-track"><div class="gauge-fill gauge-fill--med" style="width:58%"></div></div>
+              <span class="gauge-value" style="color:var(--warn)">58%</span>
+            </div>
+            <div class="gauge-row">
+              <span class="gauge-label">3+ toxins</span>
+              <div class="gauge-track"><div class="gauge-fill gauge-fill--high" style="width:47%"></div></div>
+              <span class="gauge-value" style="color:var(--danger)">47%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     AI FEED FORMULATOR
+     ═══════════════════════════════════════════════ -->
+<section class="section section--bordered" id="formulator">
+  <div class="container" data-reveal>
+    <span class="section-label">AI FORMULATOR</span>
+    <h2 class="section-title">Describe what you need. Get an optimized formulation.</h2>
+    <p class="section-sub">
+      Natural language feed formulation — tell FeedIQ your species, climate, budget, and constraints.
+      The AI generates an optimized recipe with built-in mycotoxin risk awareness.
+    </p>
+
+    <div class="dashboard mt-40">
+      <!-- Chat Panel -->
+      <div class="panel" style="grid-column: 1 / -1;">
+        <div class="panel__header">
+          <span class="panel__title">FeedIQ AI Formulator</span>
+          <span class="panel__badge panel__badge--live">AI READY</span>
+        </div>
+
+        <div class="prompt-chips" id="promptChips">
+          <button class="prompt-chip" data-prompt="Optimize a broiler feed for tropical climate, budget under $280/ton, minimize soy content">Broiler — tropical, low soy</button>
+          <button class="prompt-chip" data-prompt="Create a layer hen feed that maximizes egg production while reducing mycotoxin risk from corn-based ingredients">Layer hen — max eggs, low myco risk</button>
+          <button class="prompt-chip" data-prompt="Formulate a dairy cattle TMR for high-yield Holstein cows in Northern Europe, incorporate local byproducts">Dairy TMR — Holstein, N. Europe</button>
+          <button class="prompt-chip" data-prompt="Design a swine grower feed using South American corn, flag any fumonisin concerns and suggest alternatives">Swine grower — S. American corn</button>
+        </div>
+
+        <div class="chat-container">
+          <div class="chat-messages" id="chatMessages">
+            <div class="msg msg--ai">
+              <span class="msg__sender">FeedIQ AI</span>
+              <span class="msg__content">Welcome to FeedIQ. I can formulate optimized feed recipes with built-in mycotoxin risk assessment.
+
+Tell me your species, production stage, climate, budget, and any constraints — or try one of the prompts above.</span>
+            </div>
+          </div>
+          <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="e.g. Broiler feed for tropical climate, budget $280/ton, minimize soy...">
+            <button class="chat-send" id="chatSend">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulation Output (appears after chat interaction) -->
+    <div class="formulation-output mt-40" id="formulationOutput">
+      <div class="dashboard">
+        <!-- Formulation Results -->
+        <div class="panel">
+          <div class="panel__header">
+            <span class="panel__title">Optimized Formulation</span>
+            <span class="panel__badge panel__badge--live" id="formulationBadge">BROILER — TROPICAL</span>
+          </div>
+          <div class="panel__body">
+            <div class="formulation-header">
+              <h3 id="formulationTitle">Broiler Grower Feed — Tropical</h3>
+              <span class="formulation-cost" id="formulationCost">$268 / ton</span>
+            </div>
+
+            <!-- Tab Bar -->
+            <div class="tab-bar">
+              <button class="tab-bar__item active" data-tab="ingredients">INGREDIENTS</button>
+              <button class="tab-bar__item" data-tab="nutrition">NUTRITION</button>
+              <button class="tab-bar__item" data-tab="risk">MYCO RISK</button>
+            </div>
+
+            <!-- Ingredients Tab -->
+            <div class="tab-content active" id="tab-ingredients">
+              <div class="donut-container">
+                <svg class="donut-chart" viewBox="0 0 140 140" id="donutChart"></svg>
+                <div class="donut-legend" id="donutLegend"></div>
+              </div>
+              <table class="results-table mt-20">
+                <thead>
+                  <tr><th>Ingredient</th><th>Inclusion</th><th>% of Mix</th><th>Cost Contrib.</th></tr>
+                </thead>
+                <tbody id="ingredientTable"></tbody>
+              </table>
+            </div>
+
+            <!-- Nutrition Tab -->
+            <div class="tab-content" id="tab-nutrition">
+              <div style="font-family: var(--f-mono); font-size: 10px; color: var(--faint); letter-spacing: 0.1em; text-transform: uppercase; margin: 16px 0 12px;">KEY NUTRITIONAL PARAMETERS</div>
+              <div class="nutrition-grid" id="nutritionGrid"></div>
+            </div>
+
+            <!-- Myco Risk Tab -->
+            <div class="tab-content" id="tab-risk">
+              <div style="font-family: var(--f-mono); font-size: 10px; color: var(--faint); letter-spacing: 0.1em; text-transform: uppercase; margin: 16px 0 12px;">INGREDIENT-LEVEL RISK ASSESSMENT</div>
+              <div id="riskAssessment"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar: Trade-offs & Recommendations -->
+        <div>
+          <div class="panel mb-20">
+            <div class="panel__header">
+              <span class="panel__title">Cost vs. Risk Trade-off</span>
+            </div>
+            <div class="panel__body">
+              <div class="tradeoff">
+                <div class="tradeoff__header">
+                  <span class="tradeoff__label">BUDGET</span>
+                  <span class="tradeoff__value" id="budgetValue">$280 / ton</span>
+                </div>
+                <input type="range" min="220" max="360" value="280" step="5" id="budgetSlider">
+                <div class="tradeoff__hint" id="budgetHint">Drag to explore cost-risk trade-offs</div>
+              </div>
+              <div class="tradeoff mt-20">
+                <div class="tradeoff__header">
+                  <span class="tradeoff__label">RISK TOLERANCE</span>
+                  <span class="tradeoff__value" id="riskValue">MODERATE</span>
+                </div>
+                <input type="range" min="1" max="3" value="2" step="1" id="riskSlider">
+                <div class="tradeoff__hint" id="riskHint">Low = premium ingredients · High = cost optimized</div>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel__header">
+              <span class="panel__title">AI Recommendations</span>
+            </div>
+            <div class="panel__body">
+              <div class="alert-list" id="recommendations">
+                <div class="alert-item alert-item--warn">
+                  <span class="alert-item__icon">&#128161;</span>
+                  <div class="alert-item__text">
+                    <strong>Swap corn source:</strong> SE Asian corn carries 42% fumonisin risk this quarter. Consider sourcing from Oceania (8% risk) — adds ~$12/ton.
+                  </div>
+                </div>
+                <div class="alert-item alert-item--info">
+                  <span class="alert-item__icon">&#128200;</span>
+                  <div class="alert-item__text">
+                    <strong>Add mycotoxin binder:</strong> At current risk levels, adding 0.5% bentonite clay binder ($4/ton) could reduce DON absorption by ~40%.
+                  </div>
+                </div>
+                <div class="alert-item alert-item--info">
+                  <span class="alert-item__icon">&#9889;</span>
+                  <div class="alert-item__text">
+                    <strong>Alternative protein:</strong> Replacing 30% of soybean meal with DDGS saves $18/ton with equivalent lysine — but raises fumonisin exposure. FeedIQ has adjusted.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     HOW IT WORKS
+     ═══════════════════════════════════════════════ -->
+<section class="section section--bordered" id="how">
+  <div class="container" data-reveal>
+    <span class="section-label">HOW IT WORKS</span>
+    <h2 class="section-title">From question to optimized feed in seconds</h2>
+    <p class="section-sub">
+      FeedIQ combines large language models, constraint optimization, and Cargill's proprietary mycotoxin intelligence to deliver actionable formulations.
+    </p>
+
+    <div class="process-grid mt-40">
+      <div class="process-step">
+        <div class="process-step__num">01</div>
+        <h4>Describe your needs</h4>
+        <p>Specify species, growth stage, climate, budget, and any constraints in natural language. No spreadsheet expertise needed.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">02</div>
+        <h4>AI parses &amp; optimizes</h4>
+        <p>The LLM extracts requirements, maps them to nutritional constraints, and runs cost optimization against local ingredient databases.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">03</div>
+        <h4>Risk overlay applied</h4>
+        <p>Each ingredient is scored against real-time mycotoxin data for its sourcing region. High-risk ingredients trigger automatic alternatives.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">04</div>
+        <h4>Review &amp; adjust</h4>
+        <p>Explore cost-risk trade-offs with interactive sliders. Export the final formulation as a production-ready spec sheet.</p>
+      </div>
+    </div>
+
+    <div class="context-banner mt-40">
+      <span class="context-banner__icon">&#128640;</span>
+      <div class="context-banner__text">
+        <strong>Why this matters for Cargill:</strong> This product sits at the intersection of three Cargill pain points —
+        mycotoxin risk intelligence (389K samples/year with no interactive tool), feed formulation complexity
+        (their Galleon&trade; and CNS tools address this but lack natural language interfaces), and the post-restructuring
+        knowledge gap (8,000 departing employees taking formulation expertise with them). FeedIQ captures that expertise
+        in an AI system that scales.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     DESIGN RATIONALE
+     ═══════════════════════════════════════════════ -->
+<section class="section section--bordered" id="rationale">
+  <div class="container" data-reveal>
+    <span class="section-label">DESIGN RATIONALE</span>
+    <h2 class="section-title">UX decisions and why they matter</h2>
+
+    <div class="problem-grid mt-40">
+      <div class="problem-card">
+        <span class="problem-card__label">CONVERSATIONAL OVER FORMS</span>
+        <p class="problem-card__text">
+          Feed nutritionists think in constraints, not spreadsheet cells. A natural language interface
+          matches their mental model: "I need X for Y conditions" — not "fill row 47, column C."
+          This reduces onboarding from days to minutes.
+        </p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-card__label">RISK-AWARE BY DEFAULT</span>
+        <p class="problem-card__text">
+          Every formulation automatically checks mycotoxin risk. This isn't a separate workflow —
+          it's embedded. Designers call this "safety by architecture." Users don't need to remember
+          to check; the system checks for them.
+        </p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-card__label">TRADE-OFF TRANSPARENCY</span>
+        <p class="problem-card__text">
+          AI systems fail when they're black boxes. FeedIQ shows the why — cost-risk sliders let
+          users explore alternatives, see what changes, and build trust in the recommendation.
+          Inspired by Cargill's own "explain the trade-off" philosophy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__text">
+    FeedIQ — Product concept by <a href="home.html">Puneet Arora</a> &middot;
+    Built with AI-assisted development &middot; June 2026 &middot;
+    <a href="home.html">&larr; Back to portfolio</a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════════ -->
+<script>
+(function(){
+  'use strict';
+
+  /* ── Heatmap Data (based on Cargill 2025 Global Mycotoxin Report) ── */
+  var heatmapData = [
+    { region: 'N. America',  values: [48, 22, 30, 12, 18, 8]  },
+    { region: 'S. America',  values: [58, 45, 35, 28, 15, 10] },
+    { region: 'W. Europe',   values: [42, 18, 38, 6,  22, 14] },
+    { region: 'C. Europe',   values: [52, 24, 44, 8,  28, 12] },
+    { region: 'SE Asia',     values: [38, 56, 28, 42, 12, 18] },
+    { region: 'S. Asia',     values: [32, 48, 22, 38, 10, 16] },
+    { region: 'Africa',      values: [28, 42, 18, 52, 8,  14] },
+    { region: 'Oceania',     values: [12, 8,  10, 4,  6,  5]  }
+  ];
+
+  function riskClass(val) {
+    if (val > 55) return 'cell--severe';
+    if (val > 35) return 'cell--high';
+    if (val > 15) return 'cell--medium';
+    return 'cell--low';
+  }
+
+  var grid = document.getElementById('heatmap');
+  heatmapData.forEach(function(row) {
+    var label = document.createElement('div');
+    label.className = 'row-label';
+    label.textContent = row.region;
+    grid.appendChild(label);
+    row.values.forEach(function(v) {
+      var cell = document.createElement('div');
+      cell.className = 'cell ' + riskClass(v);
+      cell.textContent = v + '%';
+      cell.title = row.region + ': ' + v + '% above threshold';
+      grid.appendChild(cell);
+    });
+  });
+
+  /* ── Feed Formulation Scenarios ── */
+  var scenarios = {
+    broiler: {
+      title: 'Broiler Grower Feed — Tropical',
+      badge: 'BROILER — TROPICAL',
+      cost: 268,
+      ingredients: [
+        { name: 'Corn (local)',       pct: 52, cost: 85,  color: '#00c978' },
+        { name: 'Soybean Meal',       pct: 18, cost: 62,  color: '#00a863' },
+        { name: 'Rice Bran',          pct: 10, cost: 22,  color: '#54a0ff' },
+        { name: 'Fish Meal',          pct: 5,  cost: 38,  color: '#ff9f43' },
+        { name: 'Palm Oil',           pct: 4,  cost: 18,  color: '#ff6b6b' },
+        { name: 'DDGS',               pct: 5,  cost: 15,  color: '#a29bfe' },
+        { name: 'Limestone',          pct: 2,  cost: 3,   color: '#6c7a89' },
+        { name: 'Premix + Binder',    pct: 4,  cost: 25,  color: '#dfe6e9' }
+      ],
+      nutrition: [
+        { name: 'Crude Protein',  val: '21.5%', pct: 86, target: '20-23%' },
+        { name: 'ME (kcal/kg)',   val: '3,050', pct: 92, target: '2,900-3,100' },
+        { name: 'Lysine',         val: '1.12%', pct: 90, target: '1.05-1.20%' },
+        { name: 'Methionine',     val: '0.48%', pct: 82, target: '0.42-0.52%' },
+        { name: 'Calcium',        val: '0.90%', pct: 90, target: '0.80-1.00%' },
+        { name: 'Avail. Phosphorus', val: '0.42%', pct: 84, target: '0.35-0.45%' },
+        { name: 'Crude Fat',      val: '5.8%',  pct: 72, target: '5.0-8.0%' },
+        { name: 'Crude Fiber',    val: '3.2%',  pct: 64, target: '3.0-5.0%' }
+      ],
+      risks: [
+        { ingredient: 'Corn (local — SE Asia)', toxin: 'FUM', level: 56, risk: 'HIGH', note: 'Consider Oceania corn or add binder' },
+        { ingredient: 'Corn (local — SE Asia)', toxin: 'AFLA', level: 42, risk: 'HIGH', note: 'Aflatoxin B1 prevalent in humid storage' },
+        { ingredient: 'DDGS',                   toxin: 'DON',  level: 38, risk: 'HIGH', note: 'DON concentrates in distillers grains' },
+        { ingredient: 'Soybean Meal',            toxin: 'ZEN',  level: 18, risk: 'MOD',  note: 'Monitor S. American crop year' },
+        { ingredient: 'Rice Bran',               toxin: 'OTA',  level: 12, risk: 'LOW',  note: 'Within acceptable limits' },
+        { ingredient: 'Fish Meal',               toxin: '—',    level: 0,  risk: 'NONE', note: 'Mycotoxin-free protein source' }
+      ]
+    },
+    layer: {
+      title: 'Layer Hen Feed — Max Eggs, Low Risk',
+      badge: 'LAYER — LOW MYCO RISK',
+      cost: 295,
+      ingredients: [
+        { name: 'Corn (Oceania)',     pct: 48, cost: 95,  color: '#00c978' },
+        { name: 'Soybean Meal',       pct: 22, cost: 72,  color: '#00a863' },
+        { name: 'Wheat Middlings',    pct: 8,  cost: 18,  color: '#54a0ff' },
+        { name: 'Calcium Carbonate',  pct: 9,  cost: 12,  color: '#ff9f43' },
+        { name: 'Sunflower Meal',     pct: 5,  cost: 20,  color: '#a29bfe' },
+        { name: 'Veg Oil',            pct: 3,  cost: 28,  color: '#ff6b6b' },
+        { name: 'Mono-dical Phos.',   pct: 2,  cost: 18,  color: '#6c7a89' },
+        { name: 'Premix + Binder',    pct: 3,  cost: 32,  color: '#dfe6e9' }
+      ],
+      nutrition: [
+        { name: 'Crude Protein',  val: '17.2%', pct: 86, target: '16-18%' },
+        { name: 'ME (kcal/kg)',   val: '2,750', pct: 88, target: '2,700-2,850' },
+        { name: 'Lysine',         val: '0.85%', pct: 85, target: '0.78-0.90%' },
+        { name: 'Methionine',     val: '0.38%', pct: 84, target: '0.34-0.42%' },
+        { name: 'Calcium',        val: '3.80%', pct: 95, target: '3.5-4.0%' },
+        { name: 'Avail. Phosphorus', val: '0.38%', pct: 84, target: '0.32-0.42%' },
+        { name: 'Linoleic Acid',  val: '1.4%',  pct: 78, target: '1.0-1.8%' },
+        { name: 'Crude Fiber',    val: '4.1%',  pct: 68, target: '3.5-5.5%' }
+      ],
+      risks: [
+        { ingredient: 'Corn (Oceania)',      toxin: 'DON',  level: 8,  risk: 'LOW',  note: 'Oceania sourcing minimizes risk' },
+        { ingredient: 'Corn (Oceania)',      toxin: 'FUM',  level: 6,  risk: 'LOW',  note: 'Low fumonisin region' },
+        { ingredient: 'Soybean Meal',        toxin: 'ZEN',  level: 14, risk: 'LOW',  note: 'Zearalenone can affect egg production' },
+        { ingredient: 'Wheat Middlings',     toxin: 'DON',  level: 22, risk: 'MOD',  note: 'Standard European wheat levels' },
+        { ingredient: 'Sunflower Meal',      toxin: '—',    level: 0,  risk: 'NONE', note: 'Minimal mycotoxin concern' }
+      ]
+    },
+    dairy: {
+      title: 'Dairy TMR — Holstein, N. Europe',
+      badge: 'DAIRY — N. EUROPE',
+      cost: 312,
+      ingredients: [
+        { name: 'Corn Silage',        pct: 35, cost: 48,  color: '#00c978' },
+        { name: 'Grass Silage',       pct: 20, cost: 32,  color: '#00a863' },
+        { name: 'Soybean Meal',       pct: 12, cost: 52,  color: '#54a0ff' },
+        { name: 'Barley Grain',       pct: 10, cost: 28,  color: '#ff9f43' },
+        { name: 'Rapeseed Meal',      pct: 8,  cost: 32,  color: '#a29bfe' },
+        { name: 'Beet Pulp',          pct: 6,  cost: 22,  color: '#ff6b6b' },
+        { name: 'Mineral Premix',     pct: 4,  cost: 48,  color: '#6c7a89' },
+        { name: 'Buffer + Binder',    pct: 5,  cost: 50,  color: '#dfe6e9' }
+      ],
+      nutrition: [
+        { name: 'Crude Protein',  val: '16.8%', pct: 84, target: '15-18%' },
+        { name: 'NEL (Mcal/kg)',  val: '1.62',  pct: 90, target: '1.55-1.70' },
+        { name: 'NDF',            val: '32%',   pct: 80, target: '28-36%' },
+        { name: 'Starch',         val: '24%',   pct: 80, target: '22-28%' },
+        { name: 'Calcium',        val: '0.80%', pct: 80, target: '0.60-0.90%' },
+        { name: 'Phosphorus',     val: '0.42%', pct: 84, target: '0.35-0.48%' },
+        { name: 'RDP',            val: '10.2%', pct: 85, target: '9.5-11.5%' },
+        { name: 'RUP',            val: '6.6%',  pct: 82, target: '6.0-7.5%' }
+      ],
+      risks: [
+        { ingredient: 'Corn Silage',     toxin: 'DON',  level: 44, risk: 'HIGH', note: 'C. Europe silage DON elevated this year' },
+        { ingredient: 'Corn Silage',     toxin: 'ZEN',  level: 38, risk: 'HIGH', note: 'ZEN affects reproduction — critical for dairy' },
+        { ingredient: 'Barley Grain',    toxin: 'DON',  level: 28, risk: 'MOD',  note: 'Northern barley moderate DON risk' },
+        { ingredient: 'Grass Silage',    toxin: '—',    level: 4,  risk: 'LOW',  note: 'Minimal mycotoxin concern' },
+        { ingredient: 'Rapeseed Meal',   toxin: 'OTA',  level: 10, risk: 'LOW',  note: 'Low ochratoxin levels' }
+      ]
+    },
+    swine: {
+      title: 'Swine Grower Feed — S. American Corn',
+      badge: 'SWINE — S. AMERICAN CORN',
+      cost: 255,
+      ingredients: [
+        { name: 'Corn (S. America)',  pct: 58, cost: 88,  color: '#00c978' },
+        { name: 'Soybean Meal',       pct: 20, cost: 65,  color: '#00a863' },
+        { name: 'Wheat Bran',         pct: 8,  cost: 18,  color: '#54a0ff' },
+        { name: 'Meat & Bone Meal',   pct: 4,  cost: 25,  color: '#ff9f43' },
+        { name: 'Veg Oil',            pct: 3,  cost: 22,  color: '#ff6b6b' },
+        { name: 'Limestone',          pct: 2,  cost: 4,   color: '#6c7a89' },
+        { name: 'Salt + Premix',      pct: 3,  cost: 18,  color: '#a29bfe' },
+        { name: 'Myco Binder',        pct: 2,  cost: 15,  color: '#dfe6e9' }
+      ],
+      nutrition: [
+        { name: 'Crude Protein',  val: '18.5%', pct: 82, target: '17-20%' },
+        { name: 'DE (kcal/kg)',   val: '3,350', pct: 90, target: '3,200-3,400' },
+        { name: 'Lysine',         val: '0.98%', pct: 88, target: '0.90-1.05%' },
+        { name: 'Threonine',      val: '0.62%', pct: 82, target: '0.58-0.68%' },
+        { name: 'Calcium',        val: '0.72%', pct: 80, target: '0.60-0.80%' },
+        { name: 'Avail. Phosphorus', val: '0.34%', pct: 85, target: '0.28-0.38%' },
+        { name: 'Crude Fat',      val: '4.8%',  pct: 68, target: '4.0-6.0%' },
+        { name: 'Crude Fiber',    val: '3.8%',  pct: 63, target: '3.0-5.0%' }
+      ],
+      risks: [
+        { ingredient: 'Corn (S. America)', toxin: 'FUM',  level: 45, risk: 'HIGH', note: 'Fumonisin endemic in S. American corn crop' },
+        { ingredient: 'Corn (S. America)', toxin: 'DON',  level: 58, risk: 'HIGH', note: 'DON above performance threshold — binder added' },
+        { ingredient: 'Corn (S. America)', toxin: 'AFLA', level: 28, risk: 'MOD',  note: 'Aflatoxin present, binder partially mitigates' },
+        { ingredient: 'Soybean Meal',      toxin: 'ZEN',  level: 35, risk: 'HIGH', note: 'S. American soy elevated ZEN — affects fertility' },
+        { ingredient: 'Wheat Bran',        toxin: 'DON',  level: 22, risk: 'MOD',  note: 'Moderate DON from bran concentration' },
+        { ingredient: 'Meat & Bone Meal',  toxin: '—',    level: 0,  risk: 'NONE', note: 'No mycotoxin concern' }
+      ]
+    }
+  };
+
+  /* ── Chat AI responses ── */
+  var aiResponses = {
+    broiler: "Analyzing your requirements:\n\n  Species: Broiler (grower phase)\n  Climate: Tropical (high heat stress)\n  Budget: < $280/ton\n  Constraint: Minimize soy content\n\nI've generated an optimized formulation at $268/ton — 4.3% under budget. Key decisions:\n\n  • Replaced 30% of soy with rice bran + DDGS to reduce soy dependency\n  • Added palm oil for energy density in heat stress conditions\n  • Flagged mycotoxin risk: SE Asian corn carries 56% fumonisin exposure\n  • Included 0.5% mycotoxin binder as safety net\n\nScroll down to see the full formulation with risk overlay.",
+    layer: "Analyzing your requirements:\n\n  Species: Layer hen\n  Goal: Maximum egg production\n  Constraint: Minimize mycotoxin risk\n\nFormulation optimized at $295/ton. Key decisions:\n\n  • Sourced corn from Oceania (lowest risk region globally: 8% FUM vs 56% SE Asia)\n  • High calcium carbonate (9%) for shell quality\n  • ZEN monitoring flagged — zearalenone directly impacts egg production\n  • Overall mycotoxin risk score: LOW (vs. industry average of MODERATE)\n\nThe premium for Oceania corn adds ~$12/ton but reduces mycotoxin-related production losses worth ~$40-60/ton in egg output.",
+    dairy: "Analyzing your requirements:\n\n  Species: Dairy cattle (Holstein)\n  Region: Northern Europe\n  Goal: High-yield TMR with local byproducts\n\nFormulation at $312/ton as a Total Mixed Ration. Key decisions:\n\n  • Corn silage base (35%) with grass silage complement for fiber balance\n  • Rapeseed meal as local protein (replacing imported soy where possible)\n  • Beet pulp as locally sourced energy + fiber source\n  • WARNING: C. European corn silage showing elevated DON (44%) and ZEN (38%)\n  • ZEN is critical for dairy — directly impacts reproduction and milk yield\n  • Added buffer + binder at 5% to manage silage-related risks\n\nRecommend pre-testing silage batches before feeding.",
+    swine: "Analyzing your requirements:\n\n  Species: Swine (grower phase)\n  Corn source: South America\n  Request: Flag fumonisin concerns\n\n⚠️ HIGH ALERT: S. American corn carries significant multi-toxin risk.\n\nFormulation at $255/ton with mitigations built in:\n\n  • FUM at 45% and DON at 58% — both above performance thresholds\n  • Added 2% mycotoxin binder (bentonite + yeast cell wall blend)\n  • Soybean meal also elevated for ZEN (35%) — affects swine fertility\n  • Total risk score: HIGH even with binder\n\nAlternatives considered:\n  • Switching to N. American corn would reduce FUM from 45% to 22% (+ $18/ton)\n  • European wheat as partial corn replacement (adds $8/ton, reduces DON exposure)\n\nI've flagged all concerns in the risk tab below."
+  };
+
+  var scenarioMap = {
+    'Optimize a broiler feed for tropical climate, budget under $280/ton, minimize soy content': 'broiler',
+    'Create a layer hen feed that maximizes egg production while reducing mycotoxin risk from corn-based ingredients': 'layer',
+    'Formulate a dairy cattle TMR for high-yield Holstein cows in Northern Europe, incorporate local byproducts': 'dairy',
+    'Design a swine grower feed using South American corn, flag any fumonisin concerns and suggest alternatives': 'swine'
+  };
+
+  /* ── Render formulation ── */
+  function renderFormulation(key) {
+    var s = scenarios[key];
+    document.getElementById('formulationTitle').textContent = s.title;
+    document.getElementById('formulationBadge').textContent = s.badge;
+    document.getElementById('formulationCost').textContent = '$' + s.cost + ' / ton';
+
+    // Ingredients table
+    var tbody = document.getElementById('ingredientTable');
+    tbody.innerHTML = '';
+    s.ingredients.forEach(function(ing) {
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:' + ing.color + ';margin-right:8px;vertical-align:middle;"></span>' + ing.name + '</td>' +
+        '<td class="val">' + ing.pct + '%</td>' +
+        '<td><div class="pct-bar"><div class="pct-bar__fill" style="width:' + ing.pct + '%;background:' + ing.color + '"></div></div></td>' +
+        '<td class="val">$' + ing.cost + '</td>';
+      tbody.appendChild(tr);
+    });
+
+    // Donut chart
+    renderDonut(s.ingredients);
+
+    // Nutrition
+    var nutrGrid = document.getElementById('nutritionGrid');
+    nutrGrid.innerHTML = '';
+    s.nutrition.forEach(function(n) {
+      var fillColor = n.pct >= 85 ? 'var(--accent)' : n.pct >= 70 ? 'var(--warn)' : 'var(--danger)';
+      var item = document.createElement('div');
+      item.className = 'nutrition-item';
+      item.innerHTML = '<span class="nutrition-item__label">' + n.name + '</span>' +
+        '<div class="nutrition-item__bar"><div class="nutrition-item__fill" style="width:' + n.pct + '%;background:' + fillColor + '"></div></div>' +
+        '<span class="nutrition-item__val">' + n.val + '</span>';
+      nutrGrid.appendChild(item);
+    });
+
+    // Risk assessment
+    var riskDiv = document.getElementById('riskAssessment');
+    riskDiv.innerHTML = '';
+    s.risks.forEach(function(r) {
+      var riskColor = r.risk === 'HIGH' ? 'var(--danger)' : r.risk === 'MOD' ? 'var(--warn)' : r.risk === 'NONE' ? 'var(--faint)' : 'var(--accent)';
+      var bgColor = r.risk === 'HIGH' ? 'var(--danger-bg)' : r.risk === 'MOD' ? 'var(--warn-bg)' : r.risk === 'NONE' ? 'var(--surface-2)' : 'var(--accent-bg)';
+      var gauge = document.createElement('div');
+      gauge.className = 'gauge-row';
+      gauge.innerHTML = '<span class="gauge-label" style="width:140px;font-size:10px;">' + r.ingredient + '</span>' +
+        '<span style="font-family:var(--f-mono);font-size:10px;width:36px;color:var(--faint);text-align:center;">' + r.toxin + '</span>' +
+        '<div class="gauge-track"><div class="gauge-fill" style="width:' + r.level + '%;background:' + riskColor + '"></div></div>' +
+        '<span style="font-family:var(--f-mono);font-size:10px;font-weight:700;width:36px;text-align:center;padding:2px 6px;border-radius:3px;background:' + bgColor + ';color:' + riskColor + '">' + r.risk + '</span>';
+      gauge.title = r.note;
+      riskDiv.appendChild(gauge);
+    });
+
+    document.getElementById('formulationOutput').classList.add('visible');
+    // Scroll to output
+    setTimeout(function() {
+      document.getElementById('formulationOutput').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300);
+  }
+
+  /* ── Donut SVG ── */
+  function renderDonut(ingredients) {
+    var svg = document.getElementById('donutChart');
+    var legend = document.getElementById('donutLegend');
+    svg.innerHTML = '';
+    legend.innerHTML = '';
+    var cx = 70, cy = 70, r = 54, total = 0;
+    ingredients.forEach(function(i) { total += i.pct; });
+    var offset = 0;
+    ingredients.forEach(function(ing) {
+      var pct = ing.pct / total;
+      var dash = pct * 2 * Math.PI * r;
+      var gap = (1 - pct) * 2 * Math.PI * r;
+      var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('cx', cx);
+      circle.setAttribute('cy', cy);
+      circle.setAttribute('r', r);
+      circle.setAttribute('fill', 'none');
+      circle.setAttribute('stroke', ing.color);
+      circle.setAttribute('stroke-width', '18');
+      circle.setAttribute('stroke-dasharray', dash + ' ' + gap);
+      circle.setAttribute('stroke-dashoffset', -offset * 2 * Math.PI * r / total);
+      circle.setAttribute('transform', 'rotate(-90 ' + cx + ' ' + cy + ')');
+      svg.appendChild(circle);
+      offset += ing.pct;
+
+      var li = document.createElement('div');
+      li.className = 'donut-legend__item';
+      li.innerHTML = '<span class="donut-legend__dot" style="background:' + ing.color + '"></span>' + ing.pct + '% ' + ing.name;
+      legend.appendChild(li);
+    });
+  }
+
+  /* ── Chat interaction ── */
+  var chatMessages = document.getElementById('chatMessages');
+  var chatInput = document.getElementById('chatInput');
+  var chatSend = document.getElementById('chatSend');
+
+  function addMessage(text, type) {
+    var div = document.createElement('div');
+    div.className = 'msg msg--' + type;
+    var sender = type === 'ai' ? 'FeedIQ AI' : 'You';
+    div.innerHTML = '<span class="msg__sender">' + sender + '</span><span class="msg__content">' + escapeHtml(text) + '</span>';
+    chatMessages.appendChild(div);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  function escapeHtml(text) {
+    var div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function handlePrompt(text) {
+    addMessage(text, 'user');
+    chatInput.value = '';
+
+    var scenarioKey = scenarioMap[text];
+    if (!scenarioKey) {
+      // Try matching keywords
+      var lower = text.toLowerCase();
+      if (lower.indexOf('broiler') !== -1) scenarioKey = 'broiler';
+      else if (lower.indexOf('layer') !== -1 || lower.indexOf('egg') !== -1) scenarioKey = 'layer';
+      else if (lower.indexOf('dairy') !== -1 || lower.indexOf('cattle') !== -1 || lower.indexOf('cow') !== -1) scenarioKey = 'dairy';
+      else if (lower.indexOf('swine') !== -1 || lower.indexOf('pig') !== -1) scenarioKey = 'swine';
+      else scenarioKey = 'broiler';
+    }
+
+    // Typing indicator
+    var typing = document.createElement('div');
+    typing.className = 'msg msg--ai';
+    typing.innerHTML = '<span class="msg__sender">FeedIQ AI</span><span class="msg__content" style="color:var(--faint)">Analyzing requirements and running optimization...</span>';
+    chatMessages.appendChild(typing);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    setTimeout(function() {
+      chatMessages.removeChild(typing);
+      addMessage(aiResponses[scenarioKey], 'ai');
+      renderFormulation(scenarioKey);
+    }, 1500);
+  }
+
+  chatSend.addEventListener('click', function() {
+    var text = chatInput.value.trim();
+    if (text) handlePrompt(text);
+  });
+
+  chatInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      var text = chatInput.value.trim();
+      if (text) handlePrompt(text);
+    }
+  });
+
+  // Prompt chips
+  document.querySelectorAll('.prompt-chip').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      handlePrompt(this.getAttribute('data-prompt'));
+    });
+  });
+
+  /* ── Tabs ── */
+  document.querySelectorAll('.tab-bar__item').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var target = this.getAttribute('data-tab');
+      this.closest('.panel').querySelectorAll('.tab-bar__item').forEach(function(t) { t.classList.remove('active'); });
+      this.classList.add('active');
+      this.closest('.panel').querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+      document.getElementById('tab-' + target).classList.add('active');
+    });
+  });
+
+  /* ── Budget slider ── */
+  document.getElementById('budgetSlider').addEventListener('input', function() {
+    document.getElementById('budgetValue').textContent = '$' + this.value + ' / ton';
+    var v = parseInt(this.value);
+    if (v < 260) {
+      document.getElementById('budgetHint').textContent = 'Cost-optimized: higher mycotoxin risk, fewer premium ingredients';
+    } else if (v > 320) {
+      document.getElementById('budgetHint').textContent = 'Premium formulation: lowest risk, best-in-class sourcing';
+    } else {
+      document.getElementById('budgetHint').textContent = 'Balanced: good risk mitigation within standard budget';
+    }
+  });
+
+  document.getElementById('riskSlider').addEventListener('input', function() {
+    var labels = { '1': 'LOW', '2': 'MODERATE', '3': 'HIGH' };
+    var hints = {
+      '1': 'Premium ingredients, strict sourcing, mycotoxin binders included',
+      '2': 'Standard sourcing with risk monitoring',
+      '3': 'Cost-optimized, accept higher contamination risk'
+    };
+    document.getElementById('riskValue').textContent = labels[this.value];
+    document.getElementById('riskHint').textContent = hints[this.value];
+  });
+
+  /* ── Scroll reveal ── */
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('[data-reveal]').forEach(function(el) {
+    observer.observe(el);
+  });
+
+  /* ── Nav active state ── */
+  var navLinks = document.querySelectorAll('.topbar__nav a');
+  var sections = ['problem', 'dashboard', 'formulator', 'how'];
+  window.addEventListener('scroll', function() {
+    var scrollPos = window.scrollY + 100;
+    sections.forEach(function(id, i) {
+      var el = document.getElementById(id);
+      if (el) {
+        var top = el.offsetTop;
+        var bottom = top + el.offsetHeight;
+        if (scrollPos >= top && scrollPos < bottom) {
+          navLinks.forEach(function(l) { l.classList.remove('active'); });
+          navLinks[i].classList.add('active');
+        }
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
