@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>T·C·T — The Cargill Terminal | Decision Intelligence Platform</title>
+<meta name="description" content="AI-native Enterprise Decision Intelligence Platform for Cargill. Executive, Procurement & Supply Chain Decision Engines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════
+   T·C·T Design System — Bloomberg Terminal Density
+   ═══════════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#06080a;--bg1:#0b0e12;--bg2:#10141a;--bg3:#161b24;--bg4:#1c222e;
+  --ink:#d4dae6;--ink2:#a0aab8;--ink3:#6b7685;--ink4:#454f5e;--ink5:#2d3544;
+  --accent:#00d4aa;--accent2:#00b894;--accent-bg:rgba(0,212,170,.08);
+  --blue:#4a9eff;--blue-bg:rgba(74,158,255,.08);
+  --amber:#ffb347;--amber-bg:rgba(255,179,71,.08);
+  --red:#ff6b6b;--red-bg:rgba(255,107,107,.08);
+  --purple:#a78bfa;--purple-bg:rgba(167,139,250,.08);
+  --cyan:#22d3ee;--cyan-bg:rgba(34,211,238,.08);
+  --green:#34d399;--green-bg:rgba(52,211,153,.08);
+  --border:#1a2030;--border2:#242d3d;--border3:#2e3a4e;
+  --f-mono:'JetBrains Mono','IBM Plex Mono',monospace;
+  --f-sans:'Inter',-apple-system,system-ui,sans-serif;
+  --sidebar-w:220px;--topbar-h:44px;--panel-r:6px;
+}
+html{font-size:13px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--f-sans);background:var(--bg);color:var(--ink);overflow:hidden;height:100vh}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+::-webkit-scrollbar-thumb:hover{background:var(--border3)}
+
+/* ── Layout Shell ── */
+.shell{display:grid;grid-template-rows:var(--topbar-h) 1fr;grid-template-columns:var(--sidebar-w) 1fr;height:100vh;width:100vw}
+.topbar{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:var(--bg1);border-bottom:1px solid var(--border);z-index:100}
+.sidebar{grid-row:2;background:var(--bg1);border-right:1px solid var(--border);overflow-y:auto;padding:8px 0}
+.main{grid-row:2;overflow-y:auto;overflow-x:hidden;background:var(--bg)}
+
+/* ── Topbar ── */
+.topbar__left{display:flex;align-items:center;gap:12px}
+.topbar__brand{font-family:var(--f-mono);font-size:14px;font-weight:700;color:var(--ink);letter-spacing:.04em;display:flex;align-items:center;gap:8px}
+.topbar__brand .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 6px rgba(0,212,170,.5);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.topbar__sep{width:1px;height:20px;background:var(--border2)}
+.topbar__engine{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-bg);padding:3px 10px;border-radius:3px}
+.topbar__center{flex:1;max-width:480px;margin:0 24px}
+.topbar__search{width:100%;background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:6px 12px 6px 32px;font-family:var(--f-mono);font-size:11px;color:var(--ink);outline:none;transition:border-color .2s;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b7685' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:10px center}
+.topbar__search::placeholder{color:var(--ink4)}
+.topbar__search:focus{border-color:var(--accent)}
+.topbar__right{display:flex;align-items:center;gap:6px}
+.topbar__btn{background:none;border:1px solid var(--border);border-radius:4px;padding:4px 10px;font-family:var(--f-mono);font-size:10px;font-weight:500;color:var(--ink3);cursor:pointer;transition:all .15s}
+.topbar__btn:hover{border-color:var(--border3);color:var(--ink2)}
+.topbar__time{font-family:var(--f-mono);font-size:10px;color:var(--ink3);letter-spacing:.04em}
+.topbar__user{width:26px;height:26px;border-radius:50%;background:var(--accent-bg);border:1px solid var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);font-size:10px;font-weight:700;color:var(--accent)}
+
+/* ── Sidebar ── */
+.sb-section{padding:4px 8px;margin-bottom:4px}
+.sb-label{font-family:var(--f-mono);font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink4);padding:8px 12px 4px;display:flex;align-items:center;justify-content:space-between}
+.sb-item{display:flex;align-items:center;gap:8px;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:500;color:var(--ink3);cursor:pointer;transition:all .15s;text-decoration:none;position:relative}
+.sb-item:hover{background:var(--bg2);color:var(--ink2)}
+.sb-item.active{background:var(--accent-bg);color:var(--accent)}
+.sb-item .ico{width:16px;text-align:center;font-size:12px;flex-shrink:0}
+.sb-item .badge{margin-left:auto;font-family:var(--f-mono);font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;background:var(--red-bg);color:var(--red)}
+.sb-item .badge--blue{background:var(--blue-bg);color:var(--blue)}
+.sb-item .badge--green{background:var(--green-bg);color:var(--green)}
+.sb-divider{height:1px;background:var(--border);margin:8px 12px}
+
+/* ── Main Content ── */
+.main-pad{padding:12px 16px}
+.engine-view{display:none}
+.engine-view.active{display:block}
+
+/* ── Grid System ── */
+.g{display:grid;gap:8px}
+.g-2{grid-template-columns:1fr 1fr}
+.g-3{grid-template-columns:1fr 1fr 1fr}
+.g-4{grid-template-columns:1fr 1fr 1fr 1fr}
+.g-5{grid-template-columns:1fr 1fr 1fr 1fr 1fr}
+.g-6{grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr}
+.g-23{grid-template-columns:2fr 3fr}
+.g-32{grid-template-columns:3fr 2fr}
+.g-13{grid-template-columns:1fr 3fr}
+.g-31{grid-template-columns:3fr 1fr}
+.g-122{grid-template-columns:1fr 2fr 2fr}
+.g-span-2{grid-column:span 2}
+.g-span-3{grid-column:span 3}
+
+/* ── Panel (core building block) ── */
+.panel{background:var(--bg1);border:1px solid var(--border);border-radius:var(--panel-r);overflow:hidden}
+.panel--accent{border-color:rgba(0,212,170,.2)}
+.panel--blue{border-color:rgba(74,158,255,.2)}
+.panel--amber{border-color:rgba(255,179,71,.2)}
+.panel--red{border-color:rgba(255,107,107,.2)}
+.ph{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid var(--border);background:var(--bg2);min-height:32px}
+.ph__t{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.ph__r{display:flex;align-items:center;gap:6px}
+.ph__badge{font-family:var(--f-mono);font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px}
+.ph__badge--live{background:var(--green-bg);color:var(--green)}
+.ph__badge--warn{background:var(--amber-bg);color:var(--amber)}
+.ph__badge--crit{background:var(--red-bg);color:var(--red)}
+.ph__badge--info{background:var(--blue-bg);color:var(--blue)}
+.ph__dot{width:6px;height:6px;border-radius:50%}
+.ph__dot--green{background:var(--green);box-shadow:0 0 4px rgba(52,211,153,.5)}
+.ph__dot--amber{background:var(--amber)}
+.ph__dot--red{background:var(--red);animation:blink 1.5s ease-in-out infinite}
+.pb{padding:10px 12px}
+
+/* ── KPI ── */
+.kpi{display:flex;flex-direction:column;padding:10px 12px}
+.kpi__label{font-family:var(--f-mono);font-size:9px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink4);margin-bottom:4px}
+.kpi__row{display:flex;align-items:baseline;gap:6px}
+.kpi__val{font-family:var(--f-mono);font-size:22px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.kpi__unit{font-family:var(--f-mono);font-size:10px;color:var(--ink3)}
+.kpi__delta{font-family:var(--f-mono);font-size:10px;font-weight:600;padding:1px 5px;border-radius:2px}
+.kpi__delta--up{background:var(--green-bg);color:var(--green)}
+.kpi__delta--down{background:var(--red-bg);color:var(--red)}
+.kpi__delta--flat{background:var(--blue-bg);color:var(--blue)}
+.kpi__spark{margin-top:6px;height:20px;display:flex;align-items:end;gap:1px}
+.kpi__spark .bar{width:4px;border-radius:1px;background:var(--accent);opacity:.6;transition:opacity .2s}
+.kpi__spark .bar:last-child{opacity:1}
+
+/* ── Data Table ── */
+.dtable{width:100%;border-collapse:collapse;font-family:var(--f-mono);font-size:11px}
+.dtable th{text-align:left;padding:5px 8px;font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink4);border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg1)}
+.dtable td{padding:5px 8px;border-bottom:1px solid rgba(26,32,48,.5);color:var(--ink2)}
+.dtable tr:hover td{background:rgba(0,212,170,.03)}
+.dtable .val{color:var(--ink);font-weight:600}
+.dtable .up{color:var(--green)}
+.dtable .down{color:var(--red)}
+.dtable .warn{color:var(--amber)}
+
+/* ── Status Dot ── */
+.sdot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
+.sdot--g{background:var(--green)}.sdot--a{background:var(--amber)}.sdot--r{background:var(--red)}.sdot--b{background:var(--blue)}
+
+/* ── Progress Bar ── */
+.pbar{height:4px;background:var(--border);border-radius:2px;overflow:hidden}
+.pbar__fill{height:100%;border-radius:2px;transition:width .6s ease-out}
+.pbar__fill--g{background:var(--green)}.pbar__fill--a{background:var(--amber)}.pbar__fill--r{background:var(--red)}.pbar__fill--b{background:var(--blue)}.pbar__fill--accent{background:var(--accent)}
+
+/* ── Risk Indicator ── */
+.risk-chip{font-family:var(--f-mono);font-size:9px;font-weight:600;padding:2px 6px;border-radius:2px;letter-spacing:.04em}
+.risk-chip--low{background:var(--green-bg);color:var(--green)}
+.risk-chip--med{background:var(--amber-bg);color:var(--amber)}
+.risk-chip--high{background:var(--red-bg);color:var(--red)}
+.risk-chip--crit{background:rgba(255,50,50,.15);color:#ff4040}
+
+/* ── Confidence Meter ── */
+.conf{display:flex;align-items:center;gap:4px}
+.conf__bar{display:flex;gap:1px}
+.conf__seg{width:3px;height:10px;border-radius:1px;background:var(--border2)}
+.conf__seg.on{background:var(--accent)}
+.conf__label{font-family:var(--f-mono);font-size:9px;color:var(--ink3)}
+
+/* ── AI Recommendation Card ── */
+.ai-card{padding:10px 12px;border-left:2px solid var(--accent);background:var(--accent-bg);border-radius:0 4px 4px 0;margin-bottom:6px}
+.ai-card--blue{border-color:var(--blue);background:var(--blue-bg)}
+.ai-card--amber{border-color:var(--amber);background:var(--amber-bg)}
+.ai-card--red{border-color:var(--red);background:var(--red-bg)}
+.ai-card__header{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.ai-card__tag{font-family:var(--f-mono);font-size:8px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ai-card--blue .ai-card__tag{color:var(--blue)}
+.ai-card--amber .ai-card__tag{color:var(--amber)}
+.ai-card--red .ai-card__tag{color:var(--red)}
+.ai-card__title{font-size:12px;font-weight:600;color:var(--ink);margin-bottom:3px}
+.ai-card__body{font-size:11px;color:var(--ink2);line-height:1.5}
+.ai-card__actions{display:flex;gap:6px;margin-top:6px}
+.ai-card__btn{font-family:var(--f-mono);font-size:9px;font-weight:600;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:none;color:var(--ink3);cursor:pointer;transition:all .15s}
+.ai-card__btn:hover{border-color:var(--accent);color:var(--accent)}
+.ai-card__btn--primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.ai-card__btn--primary:hover{background:#00e6b8}
+
+/* ── Decision Timeline ── */
+.timeline{display:flex;flex-direction:column;gap:0}
+.tl-item{display:flex;gap:10px;padding:6px 0;position:relative}
+.tl-item::before{content:'';position:absolute;left:4px;top:18px;bottom:-6px;width:1px;background:var(--border2)}
+.tl-item:last-child::before{display:none}
+.tl-dot{width:9px;height:9px;border-radius:50%;margin-top:3px;flex-shrink:0;border:2px solid var(--border2);background:var(--bg1)}
+.tl-dot--done{background:var(--accent);border-color:var(--accent)}
+.tl-dot--active{border-color:var(--blue);background:var(--blue);box-shadow:0 0 6px rgba(74,158,255,.4)}
+.tl-dot--pending{border-color:var(--border3)}
+.tl-content{flex:1}
+.tl-time{font-family:var(--f-mono);font-size:9px;color:var(--ink4)}
+.tl-desc{font-size:11px;color:var(--ink2)}
+
+/* ── Health Score Circle ── */
+.health-score{position:relative;width:56px;height:56px;flex-shrink:0}
+.health-score svg{transform:rotate(-90deg)}
+.health-score__val{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);font-size:14px;font-weight:700}
+
+/* ── Ticker ── */
+.ticker{display:flex;gap:16px;padding:4px 12px;font-family:var(--f-mono);font-size:10px;overflow-x:auto;white-space:nowrap;border-bottom:1px solid var(--border)}
+.ticker__item{display:flex;align-items:center;gap:4px;color:var(--ink3)}
+.ticker__item .sym{color:var(--ink);font-weight:600}
+.ticker__item .price{color:var(--ink2)}
+
+/* ── Mini Sparkline (CSS) ── */
+.spark{display:inline-flex;align-items:end;gap:1px;height:16px;vertical-align:middle}
+.spark .s{width:2px;border-radius:1px;background:var(--accent);opacity:.5}
+.spark .s:last-child{opacity:1}
+
+/* ── Intent Tabs ── */
+.intent-bar{display:flex;gap:0;border-bottom:1px solid var(--border);background:var(--bg1);padding:0 12px}
+.intent-tab{font-family:var(--f-mono);font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink4);padding:8px 14px;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.intent-tab:hover{color:var(--ink3)}
+.intent-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ── Map Placeholder ── */
+.map-area{background:var(--bg);border-radius:4px;position:relative;overflow:hidden;min-height:200px}
+.map-area::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,212,170,.03) 0%,transparent 70%)}
+.map-dot{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(0,212,170,.4);z-index:2}
+.map-dot--amber{background:var(--amber);box-shadow:0 0 8px rgba(255,179,71,.4)}
+.map-dot--red{background:var(--red);box-shadow:0 0 8px rgba(255,107,107,.4);animation:blink 1.5s ease-in-out infinite}
+.map-line{position:absolute;height:1px;background:linear-gradient(90deg,var(--accent),transparent);z-index:1;opacity:.3}
+.map-label{position:absolute;font-family:var(--f-mono);font-size:8px;color:var(--ink4);z-index:3;letter-spacing:.04em}
+
+/* ── Approval Card ── */
+.approval{padding:10px 12px;border-bottom:1px solid var(--border)}
+.approval:last-child{border-bottom:none}
+.approval__top{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.approval__id{font-family:var(--f-mono);font-size:10px;color:var(--ink4)}
+.approval__title{font-size:12px;font-weight:600;color:var(--ink)}
+.approval__meta{display:flex;gap:12px;font-family:var(--f-mono);font-size:10px;color:var(--ink3);margin-top:2px}
+.approval__actions{display:flex;gap:4px;margin-top:6px}
+
+/* ── Notification ── */
+.notif{display:flex;align-items:flex-start;gap:8px;padding:8px 12px;border-bottom:1px solid var(--border)}
+.notif:last-child{border-bottom:none}
+.notif__dot{margin-top:4px;flex-shrink:0}
+.notif__text{font-size:11px;color:var(--ink2);line-height:1.4}
+.notif__time{font-family:var(--f-mono);font-size:9px;color:var(--ink4);margin-top:2px}
+
+/* ── Responsive ── */
+@media(max-width:1200px){.g-4,.g-5,.g-6{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:900px){:root{--sidebar-w:0px}.sidebar{display:none}.g-2,.g-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<!-- ══════════════════════════════════════════════
+     TOPBAR
+     ══════════════════════════════════════════════ -->
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="topbar__brand"><span class="dot"></span> T·C·T</div>
+    <span class="topbar__sep"></span>
+    <span class="topbar__engine" id="engineLabel">COMMAND CENTER</span>
+  </div>
+  <div class="topbar__center">
+    <input class="topbar__search" type="text" placeholder="Search decisions, suppliers, shipments, risks... (⌘K)">
+  </div>
+  <div class="topbar__right">
+    <span class="topbar__time" id="liveTime">20 JUN 2026 · 14:32:08 IST</span>
+    <span class="topbar__sep"></span>
+    <button class="topbar__btn">AI BRIEF</button>
+    <button class="topbar__btn" style="position:relative">ALERTS <span style="position:absolute;top:-2px;right:-2px;width:6px;height:6px;border-radius:50%;background:var(--red)"></span></button>
+    <span class="topbar__user">PA</span>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════
+     SIDEBAR
+     ══════════════════════════════════════════════ -->
+<nav class="sidebar">
+  <div class="sb-section">
+    <a class="sb-item active" data-engine="home"><span class="ico">◉</span> Command Center</a>
+  </div>
+  <div class="sb-divider"></div>
+
+  <div class="sb-label">EXECUTIVE ENGINE</div>
+  <div class="sb-section">
+    <a class="sb-item" data-engine="exec"><span class="ico">☀</span> Morning Brief</a>
+    <a class="sb-item" data-engine="exec-pulse"><span class="ico">◈</span> Business Pulse</a>
+    <a class="sb-item" data-engine="exec-risks"><span class="ico">⚡</span> Strategic Risks <span class="badge">4</span></a>
+    <a class="sb-item" data-engine="exec-commodity"><span class="ico">◆</span> Commodity Intel</a>
+    <a class="sb-item" data-engine="exec-ai"><span class="ico">✦</span> AI Recommendations</a>
+  </div>
+  <div class="sb-divider"></div>
+
+  <div class="sb-label">PROCUREMENT ENGINE</div>
+  <div class="sb-section">
+    <a class="sb-item" data-engine="proc"><span class="ico">◎</span> Supplier Intelligence</a>
+    <a class="sb-item" data-engine="proc-contracts"><span class="ico">◇</span> Contract Copilot</a>
+    <a class="sb-item" data-engine="proc-spend"><span class="ico">▣</span> Spend Analytics</a>
+    <a class="sb-item" data-engine="proc-risk"><span class="ico">△</span> Vendor Risk</a>
+    <a class="sb-item" data-engine="proc-approvals"><span class="ico">☐</span> Approvals <span class="badge badge--blue">7</span></a>
+  </div>
+  <div class="sb-divider"></div>
+
+  <div class="sb-label">SUPPLY CHAIN ENGINE</div>
+  <div class="sb-section">
+    <a class="sb-item" data-engine="sc"><span class="ico">◈</span> Mission Control</a>
+    <a class="sb-item" data-engine="sc-shipments"><span class="ico">▸</span> Shipment Intel</a>
+    <a class="sb-item" data-engine="sc-delays"><span class="ico">⏱</span> Delay Prediction <span class="badge">2</span></a>
+    <a class="sb-item" data-engine="sc-routes"><span class="ico">⟡</span> Route Optimization</a>
+    <a class="sb-item" data-engine="sc-inventory"><span class="ico">▥</span> Inventory Intel</a>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <a class="sb-item" style="color:var(--ink4);font-size:10px"><span class="ico" style="font-size:10px">←</span> Back to Portfolio</a>
+  </div>
+  <div class="sb-section" style="margin-top:auto;padding-top:8px;border-top:1px solid var(--border)">
+    <div style="padding:6px 12px;font-family:var(--f-mono);font-size:8px;color:var(--ink5);letter-spacing:.08em">
+      DESIGNED BY PUNEET ARORA<br>
+      PRODUCT CONCEPT · JUNE 2026
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     MAIN — COMMAND CENTER (HOME)
+     ══════════════════════════════════════════════ -->
+<div class="main">
+
+<!-- Commodity Ticker -->
+<div class="ticker" id="ticker">
+  <div class="ticker__item"><span class="sym">CORN</span> <span class="price">$4.52</span> <span class="up">+1.2%</span></div>
+  <div class="ticker__item"><span class="sym">WHEAT</span> <span class="price">$6.18</span> <span class="down">-0.8%</span></div>
+  <div class="ticker__item"><span class="sym">SOYBEAN</span> <span class="price">$11.84</span> <span class="up">+2.1%</span></div>
+  <div class="ticker__item"><span class="sym">PALM OIL</span> <span class="price">$842</span> <span class="down">-1.4%</span></div>
+  <div class="ticker__item"><span class="sym">CATTLE</span> <span class="price">$188.20</span> <span class="up">+0.6%</span></div>
+  <div class="ticker__item"><span class="sym">SUGAR</span> <span class="price">$0.218</span> <span class="up">+3.2%</span></div>
+  <div class="ticker__item"><span class="sym">COCOA</span> <span class="price">$8,420</span> <span class="down">-0.3%</span></div>
+  <div class="ticker__item"><span class="sym">BRL/USD</span> <span class="price">5.42</span> <span class="down">-0.5%</span></div>
+  <div class="ticker__item"><span class="sym">EUR/USD</span> <span class="price">1.088</span> <span class="up">+0.2%</span></div>
+  <div class="ticker__item"><span class="sym">BRENT</span> <span class="price">$78.40</span> <span class="up">+1.8%</span></div>
+</div>
+
+<!-- ENGINE: COMMAND CENTER -->
+<div class="engine-view active" id="v-home">
+<div class="main-pad">
+
+  <!-- Intent Tabs -->
+  <div class="intent-bar" style="margin:-12px -16px 12px;padding:0 16px">
+    <span class="intent-tab active">OBSERVE</span>
+    <span class="intent-tab">UNDERSTAND</span>
+    <span class="intent-tab">INVESTIGATE</span>
+    <span class="intent-tab">PREDICT</span>
+    <span class="intent-tab">RECOMMEND</span>
+    <span class="intent-tab">SIMULATE</span>
+    <span class="intent-tab">APPROVE</span>
+    <span class="intent-tab">EXECUTE</span>
+    <span class="intent-tab">LEARN</span>
+  </div>
+
+  <!-- Top KPI Row -->
+  <div class="g g-6" style="margin-bottom:8px">
+    <div class="panel"><div class="kpi"><span class="kpi__label">REVENUE (FY26 YTD)</span><div class="kpi__row"><span class="kpi__val">$62.4B</span><span class="kpi__delta kpi__delta--down">-3.2%</span></div><div class="kpi__spark" id="spark-rev"></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">GROSS MARGIN</span><div class="kpi__row"><span class="kpi__val">8.4%</span><span class="kpi__delta kpi__delta--up">+0.6pp</span></div><div class="kpi__spark" id="spark-margin"></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">ACTIVE SHIPMENTS</span><div class="kpi__row"><span class="kpi__val">2,847</span><span class="kpi__delta kpi__delta--flat">+12</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">ON-TIME DELIVERY</span><div class="kpi__row"><span class="kpi__val">94.2%</span><span class="kpi__delta kpi__delta--up">+1.1%</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">SUPPLIER HEALTH</span><div class="kpi__row"><span class="kpi__val">7.8</span><span class="kpi__unit">/10</span><span class="kpi__delta kpi__delta--down">-0.2</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">OPEN RISKS</span><div class="kpi__row"><span class="kpi__val" style="color:var(--red)">14</span><span class="kpi__delta kpi__delta--down">+3</span></div></div></div>
+  </div>
+
+  <!-- Main Grid -->
+  <div class="g g-31" style="margin-bottom:8px">
+    <!-- Left: 3 Engine Summaries -->
+    <div class="g" style="gap:8px">
+
+      <!-- EXECUTIVE SUMMARY -->
+      <div class="panel panel--accent">
+        <div class="ph"><span class="ph__t">EXECUTIVE DECISION ENGINE</span><div class="ph__r"><span class="ph__dot ph__dot--green"></span><span class="ph__badge ph__badge--live">LIVE</span></div></div>
+        <div class="pb">
+          <div class="g g-3" style="gap:6px;margin-bottom:8px">
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">MORNING BRIEF</div>
+              <div style="font-size:11px;color:var(--ink2)">3 critical items require CEO attention. Soybean volatility up 18%. Brazil port strike risk elevated.</div>
+            </div>
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">COMPETITOR INTEL</div>
+              <div style="font-size:11px;color:var(--ink2)">Bunge-Viterra integration 85% complete. ADM exploring AI feed platform partnership. COFCO expanding Africa footprint.</div>
+            </div>
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">AI RECOMMENDATIONS</div>
+              <div style="font-size:11px;color:var(--accent)">2 high-confidence recommendations pending review. Estimated combined impact: $8.2M savings.</div>
+            </div>
+          </div>
+          <div class="ai-card">
+            <div class="ai-card__header"><span class="ai-card__tag">AI · EXECUTIVE BRIEF · 92% CONFIDENCE</span>
+              <div class="conf"><div class="conf__bar"><span class="conf__seg on"></span><span class="conf__seg on"></span><span class="conf__seg on"></span><span class="conf__seg on"></span><span class="conf__seg"></span></div></div>
+            </div>
+            <div class="ai-card__title">Recommend: Accelerate Oceania corn sourcing to hedge SE Asian fumonisin risk</div>
+            <div class="ai-card__body">Mycotoxin data shows 56% fumonisin prevalence in SE Asian corn (Q2 2026). Shifting 30% of corn procurement to Oceania reduces contamination risk by 48% at +$12/ton premium. Net savings: $4.2M in avoided production losses across Animal Nutrition.</div>
+            <div class="ai-card__actions">
+              <button class="ai-card__btn ai-card__btn--primary">APPROVE</button>
+              <button class="ai-card__btn">SIMULATE</button>
+              <button class="ai-card__btn">INVESTIGATE</button>
+              <button class="ai-card__btn">DISMISS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROCUREMENT SUMMARY -->
+      <div class="panel panel--blue">
+        <div class="ph"><span class="ph__t">PROCUREMENT DECISION ENGINE</span><div class="ph__r"><span class="ph__dot ph__dot--amber"></span><span class="ph__badge ph__badge--warn">7 PENDING</span></div></div>
+        <div class="pb">
+          <div class="g g-4" style="gap:6px;margin-bottom:8px">
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px;text-align:center">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">ACTIVE SUPPLIERS</div>
+              <div style="font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--ink)">4,218</div>
+            </div>
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px;text-align:center">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">YTD SPEND</div>
+              <div style="font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--ink)">$38.2B</div>
+            </div>
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px;text-align:center">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">AT-RISK VENDORS</div>
+              <div style="font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--red)">23</div>
+            </div>
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px;text-align:center">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">SAVINGS CAPTURED</div>
+              <div style="font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--green)">$142M</div>
+            </div>
+          </div>
+          <table class="dtable">
+            <thead><tr><th>Pending Approval</th><th>Value</th><th>Risk</th><th>Due</th></tr></thead>
+            <tbody>
+              <tr><td class="val">Soybean Meal — ADM Argentina</td><td>$12.4M</td><td><span class="risk-chip risk-chip--med">MED</span></td><td>Today</td></tr>
+              <tr><td class="val">Palm Oil — Wilmar Indonesia</td><td>$8.7M</td><td><span class="risk-chip risk-chip--high">HIGH</span></td><td>Today</td></tr>
+              <tr><td class="val">Corn — Bunge Brazil</td><td>$6.2M</td><td><span class="risk-chip risk-chip--low">LOW</span></td><td>21 Jun</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SUPPLY CHAIN SUMMARY -->
+      <div class="panel panel--amber">
+        <div class="ph"><span class="ph__t">SUPPLY CHAIN DECISION ENGINE</span><div class="ph__r"><span class="ph__dot ph__dot--red"></span><span class="ph__badge ph__badge--crit">2 DELAYS</span></div></div>
+        <div class="pb">
+          <div class="g g-3" style="gap:6px;margin-bottom:8px">
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px;text-align:center">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">IN-TRANSIT</div>
+              <div style="font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--ink)">2,847</div>
+              <div style="font-family:var(--f-mono);font-size:9px;color:var(--ink4)">vessels + rail + truck</div>
+            </div>
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px;text-align:center">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">DELAYED</div>
+              <div style="font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--red)">38</div>
+              <div style="font-family:var(--f-mono);font-size:9px;color:var(--ink4)">avg +2.4 days</div>
+            </div>
+            <div style="padding:6px 8px;background:var(--bg2);border-radius:4px;text-align:center">
+              <div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">PORT CONGESTION</div>
+              <div style="font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--amber)">3</div>
+              <div style="font-family:var(--f-mono);font-size:9px;color:var(--ink4)">Santos · Shanghai · Rotterdam</div>
+            </div>
+          </div>
+          <!-- Mini Map -->
+          <div class="map-area" style="height:120px;border:1px solid var(--border)">
+            <div class="map-dot" style="top:35%;left:18%"></div>
+            <div class="map-dot" style="top:55%;left:28%"></div>
+            <div class="map-dot map-dot--amber" style="top:60%;left:32%"></div>
+            <div class="map-dot" style="top:30%;left:50%"></div>
+            <div class="map-dot map-dot--red" style="top:42%;left:48%"></div>
+            <div class="map-dot" style="top:35%;left:72%"></div>
+            <div class="map-dot map-dot--amber" style="top:28%;left:78%"></div>
+            <div class="map-dot" style="top:65%;left:82%"></div>
+            <div class="map-label" style="top:28%;left:14%">HOUSTON</div>
+            <div class="map-label" style="top:66%;left:27%">SANTOS</div>
+            <div class="map-label" style="top:24%;left:46%">ROTTERDAM</div>
+            <div class="map-label" style="top:48%;left:47%">MOMBASA</div>
+            <div class="map-label" style="top:20%;left:74%">SHANGHAI</div>
+            <div class="map-label" style="top:70%;left:80%">SINGAPORE</div>
+            <div class="map-line" style="top:38%;left:20%;width:28%;transform:rotate(-5deg)"></div>
+            <div class="map-line" style="top:34%;left:52%;width:20%;transform:rotate(2deg)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: AI Assistant + Decision Timeline -->
+    <div class="g" style="gap:8px">
+      <!-- AI Decision Feed -->
+      <div class="panel" style="max-height:calc(100vh - 220px);overflow-y:auto">
+        <div class="ph"><span class="ph__t">AI DECISION FEED</span><div class="ph__r"><span class="ph__badge ph__badge--live">LIVE</span></div></div>
+        <div class="pb">
+          <div class="ai-card ai-card--red">
+            <div class="ai-card__header"><span class="ai-card__tag">URGENT · SUPPLY CHAIN · 96% CONFIDENCE</span></div>
+            <div class="ai-card__title">Port of Santos: 72-hour strike risk detected</div>
+            <div class="ai-card__body">Labor union negotiations stalled. AI models predict 68% probability of 3-day work stoppage starting June 23. 12 Cargill vessels currently en route. Recommend diverting 4 vessels to Paranaguá.</div>
+            <div class="ai-card__actions"><button class="ai-card__btn ai-card__btn--primary">SIMULATE</button><button class="ai-card__btn">INVESTIGATE</button></div>
+          </div>
+          <div class="ai-card ai-card--amber">
+            <div class="ai-card__header"><span class="ai-card__tag">PROCUREMENT · 88% CONFIDENCE</span></div>
+            <div class="ai-card__title">Wilmar Indonesia: EUDR compliance gap detected</div>
+            <div class="ai-card__body">Satellite analysis shows 3 Wilmar sub-suppliers lack GPS polygon mapping for EUDR Dec 2026 deadline. $8.7M palm oil contract at risk. Recommend: conditional approval with 60-day compliance requirement.</div>
+            <div class="ai-card__actions"><button class="ai-card__btn ai-card__btn--primary">APPROVE WITH CONDITIONS</button><button class="ai-card__btn">VIEW SUPPLIER</button></div>
+          </div>
+          <div class="ai-card">
+            <div class="ai-card__header"><span class="ai-card__tag">EXECUTIVE · 91% CONFIDENCE</span></div>
+            <div class="ai-card__title">Margin opportunity: Brazilian real weakening creates soy export advantage</div>
+            <div class="ai-card__body">BRL/USD at 5.42 (-2.1% MTD). Cargill's Brazil soy operations gain ~$3.80/ton margin at current FX. Recommend: accelerate Q3 export contracts while FX favorable. Window: est. 2-3 weeks.</div>
+            <div class="ai-card__actions"><button class="ai-card__btn ai-card__btn--primary">EXECUTE</button><button class="ai-card__btn">PREDICT</button></div>
+          </div>
+          <div class="ai-card ai-card--blue">
+            <div class="ai-card__header"><span class="ai-card__tag">COMPETITIVE · 85% CONFIDENCE</span></div>
+            <div class="ai-card__title">ADM signals AI feed platform partnership</div>
+            <div class="ai-card__body">Earnings call analysis + LinkedIn hiring patterns suggest ADM pursuing AI feed optimization (similar to Adisseo). Cargill's Galleon platform has 18-month head start. Recommend: accelerate Galleon NLP features.</div>
+            <div class="ai-card__actions"><button class="ai-card__btn">INVESTIGATE</button><button class="ai-card__btn">DISMISS</button></div>
+          </div>
+
+          <!-- Decision Timeline -->
+          <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border)">
+            <div style="font-family:var(--f-mono);font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink4);margin-bottom:8px">DECISION TIMELINE — TODAY</div>
+            <div class="timeline">
+              <div class="tl-item"><div class="tl-dot tl-dot--done"></div><div class="tl-content"><div class="tl-time">06:14 IST</div><div class="tl-desc">Morning Brief generated — 3 critical items flagged</div></div></div>
+              <div class="tl-item"><div class="tl-dot tl-dot--done"></div><div class="tl-content"><div class="tl-time">08:30 IST</div><div class="tl-desc">CEO reviewed Brazilian FX opportunity — marked for execution</div></div></div>
+              <div class="tl-item"><div class="tl-dot tl-dot--done"></div><div class="tl-content"><div class="tl-time">10:15 IST</div><div class="tl-desc">Procurement approved Corn — Bunge Brazil ($6.2M)</div></div></div>
+              <div class="tl-item"><div class="tl-dot tl-dot--active"></div><div class="tl-content"><div class="tl-time">14:32 IST</div><div class="tl-desc"><strong>NOW:</strong> Santos port strike simulation running</div></div></div>
+              <div class="tl-item"><div class="tl-dot tl-dot--pending"></div><div class="tl-content"><div class="tl-time">—</div><div class="tl-desc">Pending: Wilmar palm oil conditional approval</div></div></div>
+              <div class="tl-item"><div class="tl-dot tl-dot--pending"></div><div class="tl-content"><div class="tl-time">—</div><div class="tl-desc">Pending: Oceania corn sourcing shift (AI recommendation)</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ENGINE: EXECUTIVE — MORNING BRIEF -->
+<div class="engine-view" id="v-exec">
+<div class="main-pad">
+  <div class="intent-bar" style="margin:-12px -16px 12px;padding:0 16px">
+    <span class="intent-tab active">OBSERVE</span><span class="intent-tab">UNDERSTAND</span><span class="intent-tab">PREDICT</span><span class="intent-tab">RECOMMEND</span>
+  </div>
+
+  <div class="g g-32" style="margin-bottom:8px">
+    <!-- Morning Brief -->
+    <div class="panel">
+      <div class="ph"><span class="ph__t">MORNING BRIEF — 20 JUNE 2026</span><div class="ph__r"><span class="ph__badge ph__badge--live">AI GENERATED</span></div></div>
+      <div class="pb">
+        <div style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:8px;line-height:1.4">Good morning. Here are 3 items that require your attention today:</div>
+        <div class="ai-card ai-card--red" style="margin-bottom:6px">
+          <div class="ai-card__header"><span class="ai-card__tag">PRIORITY 1 · SUPPLY CHAIN RISK</span></div>
+          <div class="ai-card__title">Santos port strike probability: 68%</div>
+          <div class="ai-card__body">12 vessels en route. $42M in cargo at risk. Labor union deadline: June 23. Recommended action: pre-position 4 vessels at Paranaguá (est. cost: $180K, saves $8.2M in delays).</div>
+        </div>
+        <div class="ai-card ai-card--amber" style="margin-bottom:6px">
+          <div class="ai-card__header"><span class="ai-card__tag">PRIORITY 2 · MARKET</span></div>
+          <div class="ai-card__title">Soybean volatility at 18-month high</div>
+          <div class="ai-card__body">CBOT soybean implied vol at 28.4% (vs 18.2% avg). Driven by Argentina drought + USDA report speculation. 3 large hedging positions expiring this week. Recommended: roll July positions to September.</div>
+        </div>
+        <div class="ai-card ai-card--blue">
+          <div class="ai-card__header"><span class="ai-card__tag">PRIORITY 3 · COMPETITIVE</span></div>
+          <div class="ai-card__title">Bunge-Viterra integration reaching critical phase</div>
+          <div class="ai-card__body">85% integration complete. Bunge now has 2.3x grain handling capacity in South America. Market share threat in Brazilian soy export corridor. Recommend: review Santos terminal expansion timeline.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Business Pulse -->
+    <div class="g" style="gap:8px">
+      <div class="panel">
+        <div class="ph"><span class="ph__t">BUSINESS PULSE</span></div>
+        <div class="pb">
+          <div class="g g-2" style="gap:4px">
+            <div style="padding:6px;background:var(--bg2);border-radius:4px"><div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">REVENUE MTD</div><div style="font-family:var(--f-mono);font-size:16px;font-weight:700">$12.8B</div><span class="kpi__delta kpi__delta--down" style="font-size:9px">-2.4% vs plan</span></div>
+            <div style="padding:6px;background:var(--bg2);border-radius:4px"><div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">EBITDA</div><div style="font-family:var(--f-mono);font-size:16px;font-weight:700">$1.07B</div><span class="kpi__delta kpi__delta--up" style="font-size:9px">+1.2%</span></div>
+            <div style="padding:6px;background:var(--bg2);border-radius:4px"><div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">WORKING CAPITAL</div><div style="font-family:var(--f-mono);font-size:16px;font-weight:700">$18.4B</div><span class="kpi__delta kpi__delta--flat" style="font-size:9px">flat</span></div>
+            <div style="padding:6px;background:var(--bg2);border-radius:4px"><div style="font-family:var(--f-mono);font-size:8px;color:var(--ink4)">HEADCOUNT</div><div style="font-family:var(--f-mono);font-size:16px;font-weight:700">152,400</div><span class="kpi__delta kpi__delta--down" style="font-size:9px">-5.0%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ph"><span class="ph__t">STRATEGIC RISKS</span><div class="ph__r"><span class="ph__badge ph__badge--crit">4 ACTIVE</span></div></div>
+        <div class="pb" style="padding:0">
+          <table class="dtable" style="font-size:10px">
+            <thead><tr><th>Risk</th><th>Severity</th><th>Trend</th></tr></thead>
+            <tbody>
+              <tr><td class="val">Santos Port Strike</td><td><span class="risk-chip risk-chip--crit">CRIT</span></td><td class="up">↑ Rising</td></tr>
+              <tr><td class="val">EUDR Compliance Gap</td><td><span class="risk-chip risk-chip--high">HIGH</span></td><td class="warn">→ Stable</td></tr>
+              <tr><td class="val">US Cattle Herd Decline</td><td><span class="risk-chip risk-chip--high">HIGH</span></td><td class="down">↓ Chronic</td></tr>
+              <tr><td class="val">Mycotoxin Spike — SE Asia</td><td><span class="risk-chip risk-chip--med">MED</span></td><td class="up">↑ Rising</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ph"><span class="ph__t">COMMODITY INTELLIGENCE</span></div>
+        <div class="pb" style="padding:0">
+          <table class="dtable" style="font-size:10px">
+            <thead><tr><th>Commodity</th><th>Price</th><th>Chg</th><th>Vol</th><th>Signal</th></tr></thead>
+            <tbody>
+              <tr><td class="val">Corn</td><td>$4.52/bu</td><td class="up">+1.2%</td><td>14.2%</td><td style="color:var(--green)">BUY</td></tr>
+              <tr><td class="val">Soybean</td><td>$11.84/bu</td><td class="up">+2.1%</td><td class="warn">28.4%</td><td style="color:var(--amber)">HOLD</td></tr>
+              <tr><td class="val">Wheat</td><td>$6.18/bu</td><td class="down">-0.8%</td><td>12.8%</td><td style="color:var(--green)">BUY</td></tr>
+              <tr><td class="val">Palm Oil</td><td>$842/MT</td><td class="down">-1.4%</td><td>16.1%</td><td style="color:var(--red)">REDUCE</td></tr>
+              <tr><td class="val">Sugar</td><td>$0.218/lb</td><td class="up">+3.2%</td><td class="warn">22.7%</td><td style="color:var(--amber)">HOLD</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ENGINE: PROCUREMENT — SUPPLIER INTELLIGENCE -->
+<div class="engine-view" id="v-proc">
+<div class="main-pad">
+  <div class="intent-bar" style="margin:-12px -16px 12px;padding:0 16px">
+    <span class="intent-tab active">OBSERVE</span><span class="intent-tab">INVESTIGATE</span><span class="intent-tab">PREDICT</span><span class="intent-tab">RECOMMEND</span><span class="intent-tab">APPROVE</span>
+  </div>
+
+  <!-- Procurement KPIs -->
+  <div class="g g-5" style="margin-bottom:8px">
+    <div class="panel"><div class="kpi"><span class="kpi__label">TOTAL SUPPLIERS</span><div class="kpi__row"><span class="kpi__val">4,218</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">YTD SPEND</span><div class="kpi__row"><span class="kpi__val">$38.2B</span><span class="kpi__delta kpi__delta--down">-4.1%</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">SAVINGS CAPTURED</span><div class="kpi__row"><span class="kpi__val" style="color:var(--green)">$142M</span><span class="kpi__delta kpi__delta--up">+18%</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">AT-RISK VENDORS</span><div class="kpi__row"><span class="kpi__val" style="color:var(--red)">23</span><span class="kpi__delta kpi__delta--down">+5</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">PENDING APPROVALS</span><div class="kpi__row"><span class="kpi__val" style="color:var(--amber)">7</span></div></div></div>
+  </div>
+
+  <div class="g g-32" style="margin-bottom:8px">
+    <!-- Supplier Table -->
+    <div class="panel">
+      <div class="ph"><span class="ph__t">SUPPLIER HEALTH SCOREBOARD</span><div class="ph__r"><span class="ph__badge ph__badge--info">4,218 SUPPLIERS</span></div></div>
+      <div class="pb" style="padding:0;max-height:400px;overflow-y:auto">
+        <table class="dtable" style="font-size:10px">
+          <thead><tr><th>Supplier</th><th>Health</th><th>Spend YTD</th><th>On-Time</th><th>Quality</th><th>EUDR</th><th>Risk</th></tr></thead>
+          <tbody>
+            <tr><td class="val">ADM — Argentina</td><td><span style="color:var(--green);font-weight:700">8.4</span></td><td>$2.1B</td><td>96.2%</td><td>98.1%</td><td><span class="sdot sdot--g"></span>PASS</td><td><span class="risk-chip risk-chip--low">LOW</span></td></tr>
+            <tr><td class="val">Bunge — Brazil</td><td><span style="color:var(--green);font-weight:700">8.1</span></td><td>$1.8B</td><td>94.8%</td><td>97.4%</td><td><span class="sdot sdot--g"></span>PASS</td><td><span class="risk-chip risk-chip--low">LOW</span></td></tr>
+            <tr><td class="val">Wilmar — Indonesia</td><td><span style="color:var(--amber);font-weight:700">6.2</span></td><td>$1.4B</td><td>89.1%</td><td>94.2%</td><td><span class="sdot sdot--r"></span>FAIL</td><td><span class="risk-chip risk-chip--high">HIGH</span></td></tr>
+            <tr><td class="val">Louis Dreyfus — France</td><td><span style="color:var(--green);font-weight:700">7.8</span></td><td>$980M</td><td>95.4%</td><td>97.8%</td><td><span class="sdot sdot--g"></span>PASS</td><td><span class="risk-chip risk-chip--low">LOW</span></td></tr>
+            <tr><td class="val">COFCO — China</td><td><span style="color:var(--amber);font-weight:700">6.8</span></td><td>$720M</td><td>91.2%</td><td>95.1%</td><td><span class="sdot sdot--a"></span>PENDING</td><td><span class="risk-chip risk-chip--med">MED</span></td></tr>
+            <tr><td class="val">Olam — Singapore</td><td><span style="color:var(--green);font-weight:700">7.5</span></td><td>$640M</td><td>93.6%</td><td>96.8%</td><td><span class="sdot sdot--g"></span>PASS</td><td><span class="risk-chip risk-chip--low">LOW</span></td></tr>
+            <tr><td class="val">Glencore Agri — CH</td><td><span style="color:var(--amber);font-weight:700">6.4</span></td><td>$580M</td><td>88.4%</td><td>93.8%</td><td><span class="sdot sdot--a"></span>PENDING</td><td><span class="risk-chip risk-chip--med">MED</span></td></tr>
+            <tr><td class="val">Viterra — NL</td><td><span style="color:var(--red);font-weight:700">5.1</span></td><td>$420M</td><td>82.6%</td><td>91.2%</td><td><span class="sdot sdot--r"></span>FAIL</td><td><span class="risk-chip risk-chip--high">HIGH</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Right side -->
+    <div class="g" style="gap:8px">
+      <!-- Spend Breakdown -->
+      <div class="panel">
+        <div class="ph"><span class="ph__t">SPEND BY CATEGORY</span></div>
+        <div class="pb">
+          <div style="margin-bottom:8px">
+            <div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:var(--ink2)">Grains & Oilseeds</span><span style="color:var(--ink);font-weight:600;font-family:var(--f-mono)">$18.4B — 48%</span></div>
+            <div class="pbar"><div class="pbar__fill pbar__fill--accent" style="width:48%"></div></div>
+          </div>
+          <div style="margin-bottom:8px">
+            <div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:var(--ink2)">Protein & Meat</span><span style="color:var(--ink);font-weight:600;font-family:var(--f-mono)">$8.2B — 21%</span></div>
+            <div class="pbar"><div class="pbar__fill pbar__fill--b" style="width:21%"></div></div>
+          </div>
+          <div style="margin-bottom:8px">
+            <div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:var(--ink2)">Food Ingredients</span><span style="color:var(--ink);font-weight:600;font-family:var(--f-mono)">$5.8B — 15%</span></div>
+            <div class="pbar"><div class="pbar__fill pbar__fill--a" style="width:15%"></div></div>
+          </div>
+          <div style="margin-bottom:8px">
+            <div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:var(--ink2)">Energy & Biofuels</span><span style="color:var(--ink);font-weight:600;font-family:var(--f-mono)">$3.6B — 9%</span></div>
+            <div class="pbar"><div class="pbar__fill pbar__fill--g" style="width:9%"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:var(--ink2)">Logistics & Services</span><span style="color:var(--ink);font-weight:600;font-family:var(--f-mono)">$2.2B — 6%</span></div>
+            <div class="pbar"><div class="pbar__fill pbar__fill--accent" style="width:6%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contract Copilot -->
+      <div class="panel panel--accent">
+        <div class="ph"><span class="ph__t">CONTRACT COPILOT</span><div class="ph__r"><span class="ph__badge ph__badge--live">AI</span></div></div>
+        <div class="pb">
+          <div class="ai-card" style="margin-bottom:6px">
+            <div class="ai-card__title" style="font-size:11px">Wilmar renewal due in 14 days</div>
+            <div class="ai-card__body" style="font-size:10px">AI suggests: renegotiate with EUDR compliance clause. Add 60-day GPS polygon mapping requirement. Benchmark: competing palm suppliers offer 3% lower FOB.</div>
+            <div class="ai-card__actions"><button class="ai-card__btn ai-card__btn--primary" style="font-size:8px">DRAFT TERMS</button><button class="ai-card__btn" style="font-size:8px">COMPARE</button></div>
+          </div>
+          <div class="ai-card ai-card--blue">
+            <div class="ai-card__title" style="font-size:11px">ADM Argentina contract optimization</div>
+            <div class="ai-card__body" style="font-size:10px">Volume commitment increase of 8% unlocks tier-2 pricing. Estimated saving: $4.2M annually. AI confidence: 89%.</div>
+            <div class="ai-card__actions"><button class="ai-card__btn ai-card__btn--primary" style="font-size:8px">SIMULATE</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ENGINE: SUPPLY CHAIN — MISSION CONTROL -->
+<div class="engine-view" id="v-sc">
+<div class="main-pad">
+  <div class="intent-bar" style="margin:-12px -16px 12px;padding:0 16px">
+    <span class="intent-tab active">OBSERVE</span><span class="intent-tab">PREDICT</span><span class="intent-tab">SIMULATE</span><span class="intent-tab">EXECUTE</span>
+  </div>
+
+  <!-- SC KPIs -->
+  <div class="g g-6" style="margin-bottom:8px">
+    <div class="panel"><div class="kpi"><span class="kpi__label">IN-TRANSIT</span><div class="kpi__row"><span class="kpi__val">2,847</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">ON-TIME</span><div class="kpi__row"><span class="kpi__val">94.2%</span><span class="kpi__delta kpi__delta--up">+1.1%</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">DELAYED</span><div class="kpi__row"><span class="kpi__val" style="color:var(--red)">38</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">AVG DELAY</span><div class="kpi__row"><span class="kpi__val">2.4d</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">PORT ALERTS</span><div class="kpi__row"><span class="kpi__val" style="color:var(--amber)">3</span></div></div></div>
+    <div class="panel"><div class="kpi"><span class="kpi__label">WEATHER RISKS</span><div class="kpi__row"><span class="kpi__val" style="color:var(--amber)">5</span></div></div></div>
+  </div>
+
+  <div class="g g-31" style="margin-bottom:8px">
+    <!-- Global Map -->
+    <div class="panel">
+      <div class="ph"><span class="ph__t">MISSION CONTROL — GLOBAL OPERATIONS</span><div class="ph__r"><span class="ph__dot ph__dot--green"></span><span class="ph__badge ph__badge--live">REAL-TIME</span></div></div>
+      <div class="pb" style="padding:0">
+        <div class="map-area" style="height:280px">
+          <!-- Americas -->
+          <div class="map-dot" style="top:22%;left:15%;width:8px;height:8px"></div>
+          <div class="map-label" style="top:18%;left:12%">CHICAGO HQ</div>
+          <div class="map-dot" style="top:30%;left:18%"></div>
+          <div class="map-label" style="top:26%;left:16%">HOUSTON</div>
+          <div class="map-dot map-dot--red" style="top:62%;left:30%;width:8px;height:8px"></div>
+          <div class="map-label" style="top:58%;left:27%;color:var(--red)">SANTOS ⚠</div>
+          <div class="map-dot" style="top:58%;left:33%"></div>
+          <div class="map-label" style="top:55%;left:32%">PARANAGUÁ</div>
+          <!-- Europe -->
+          <div class="map-dot map-dot--amber" style="top:25%;left:48%;width:8px;height:8px"></div>
+          <div class="map-label" style="top:21%;left:45%;color:var(--amber)">ROTTERDAM ⚠</div>
+          <div class="map-dot" style="top:28%;left:50%"></div>
+          <div class="map-label" style="top:31%;left:49%">GENEVA</div>
+          <!-- Africa -->
+          <div class="map-dot" style="top:50%;left:52%"></div>
+          <div class="map-label" style="top:46%;left:50%">MOMBASA</div>
+          <!-- Asia -->
+          <div class="map-dot map-dot--amber" style="top:30%;left:78%;width:8px;height:8px"></div>
+          <div class="map-label" style="top:26%;left:75%;color:var(--amber)">SHANGHAI ⚠</div>
+          <div class="map-dot" style="top:45%;left:73%"></div>
+          <div class="map-label" style="top:48%;left:71%">MUMBAI</div>
+          <div class="map-dot" style="top:55%;left:80%"></div>
+          <div class="map-label" style="top:58%;left:78%">SINGAPORE</div>
+          <!-- Oceania -->
+          <div class="map-dot" style="top:72%;left:85%"></div>
+          <div class="map-label" style="top:75%;left:83%">SYDNEY</div>
+          <!-- Routes -->
+          <div class="map-line" style="top:35%;left:20%;width:26%;transform:rotate(-8deg)"></div>
+          <div class="map-line" style="top:28%;left:50%;width:26%;transform:rotate(3deg)"></div>
+          <div class="map-line" style="top:62%;left:32%;width:18%;transform:rotate(-12deg)"></div>
+        </div>
+
+        <!-- Shipment Table -->
+        <div style="max-height:200px;overflow-y:auto">
+          <table class="dtable" style="font-size:10px">
+            <thead><tr><th>Shipment</th><th>Route</th><th>Cargo</th><th>Qty</th><th>ETA</th><th>Status</th><th>AI Predict</th></tr></thead>
+            <tbody>
+              <tr><td class="val">CGI-4821</td><td>Santos → Rotterdam</td><td>Soybean</td><td>62K MT</td><td>Jul 4</td><td><span class="sdot sdot--r"></span><span class="warn">AT RISK</span></td><td><span class="risk-chip risk-chip--high">+3d DELAY</span></td></tr>
+              <tr><td class="val">CGI-4819</td><td>Houston → Shanghai</td><td>Corn</td><td>48K MT</td><td>Jul 12</td><td><span class="sdot sdot--g"></span>ON TRACK</td><td><span class="risk-chip risk-chip--low">ON TIME</span></td></tr>
+              <tr><td class="val">CGI-4815</td><td>Paranaguá → Mombasa</td><td>Wheat</td><td>35K MT</td><td>Jun 28</td><td><span class="sdot sdot--g"></span>ON TRACK</td><td><span class="risk-chip risk-chip--low">ON TIME</span></td></tr>
+              <tr><td class="val">CGI-4812</td><td>Mumbai → Singapore</td><td>Rice</td><td>22K MT</td><td>Jun 24</td><td><span class="sdot sdot--a"></span><span class="warn">SLOW</span></td><td><span class="risk-chip risk-chip--med">+1d DELAY</span></td></tr>
+              <tr><td class="val">CGI-4808</td><td>Chicago → Rotterdam</td><td>Corn</td><td>55K MT</td><td>Jul 8</td><td><span class="sdot sdot--g"></span>ON TRACK</td><td><span class="risk-chip risk-chip--low">ON TIME</span></td></tr>
+              <tr><td class="val">CGI-4805</td><td>Santos → Shanghai</td><td>Soybean</td><td>72K MT</td><td>Jul 18</td><td><span class="sdot sdot--r"></span><span class="warn">AT RISK</span></td><td><span class="risk-chip risk-chip--high">+4d DELAY</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Alerts + Port Intel + Weather -->
+    <div class="g" style="gap:8px">
+      <div class="panel panel--red">
+        <div class="ph"><span class="ph__t">DELAY PREDICTION</span><div class="ph__r"><span class="ph__badge ph__badge--crit">AI ALERT</span></div></div>
+        <div class="pb">
+          <div class="ai-card ai-card--red" style="margin-bottom:6px">
+            <div class="ai-card__header"><span class="ai-card__tag">96% CONFIDENCE</span></div>
+            <div class="ai-card__title" style="font-size:11px">CGI-4821: +3 day delay predicted</div>
+            <div class="ai-card__body" style="font-size:10px">Santos port strike (68% prob.) + current vessel speed 12.1 kn (below 13.4 kn plan). AI recommends diverting to Paranaguá. Cost: $42K. Saves: $380K in contractual penalties.</div>
+          </div>
+          <div class="ai-card ai-card--amber">
+            <div class="ai-card__header"><span class="ai-card__tag">82% CONFIDENCE</span></div>
+            <div class="ai-card__title" style="font-size:11px">CGI-4812: +1 day due to Mumbai congestion</div>
+            <div class="ai-card__body" style="font-size:10px">Mumbai port utilization at 94%. Berth wait time: est. 18 hours. Low impact — customer notified.</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ph"><span class="ph__t">PORT INTELLIGENCE</span></div>
+        <div class="pb" style="padding:0">
+          <table class="dtable" style="font-size:10px">
+            <thead><tr><th>Port</th><th>Wait</th><th>Util</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="val"><span class="sdot sdot--r"></span>Santos</td><td>36h</td><td class="warn">92%</td><td><span class="risk-chip risk-chip--crit">STRIKE RISK</span></td></tr>
+              <tr><td class="val"><span class="sdot sdot--a"></span>Shanghai</td><td>24h</td><td class="warn">88%</td><td><span class="risk-chip risk-chip--med">CONGESTED</span></td></tr>
+              <tr><td class="val"><span class="sdot sdot--a"></span>Rotterdam</td><td>18h</td><td>82%</td><td><span class="risk-chip risk-chip--med">MODERATE</span></td></tr>
+              <tr><td class="val"><span class="sdot sdot--g"></span>Houston</td><td>6h</td><td>64%</td><td><span class="risk-chip risk-chip--low">NORMAL</span></td></tr>
+              <tr><td class="val"><span class="sdot sdot--g"></span>Singapore</td><td>8h</td><td>71%</td><td><span class="risk-chip risk-chip--low">NORMAL</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ph"><span class="ph__t">WEATHER INTELLIGENCE</span></div>
+        <div class="pb" style="font-size:10px;color:var(--ink2)">
+          <div style="margin-bottom:6px"><span class="sdot sdot--a"></span><strong style="color:var(--ink)">Tropical Storm — Gulf of Mexico:</strong> Cat 1 expected Jun 25. Houston port may suspend ops 24-48h. 3 vessels affected.</div>
+          <div style="margin-bottom:6px"><span class="sdot sdot--a"></span><strong style="color:var(--ink)">Monsoon — Bay of Bengal:</strong> Heavy rainfall Mumbai Jun 22-26. Port delays likely +12-18h.</div>
+          <div><span class="sdot sdot--g"></span><strong style="color:var(--ink)">Atlantic Corridor:</strong> Clear. Santos → Rotterdam routes unaffected by weather.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div><!-- /main -->
+</div><!-- /shell -->
+
+<script>
+(function(){
+  'use strict';
+
+  // ── Engine Navigation ──
+  var views = {
+    'home': 'v-home', 'exec': 'v-exec', 'exec-pulse': 'v-exec', 'exec-risks': 'v-exec',
+    'exec-commodity': 'v-exec', 'exec-ai': 'v-exec',
+    'proc': 'v-proc', 'proc-contracts': 'v-proc', 'proc-spend': 'v-proc',
+    'proc-risk': 'v-proc', 'proc-approvals': 'v-proc',
+    'sc': 'v-sc', 'sc-shipments': 'v-sc', 'sc-delays': 'v-sc',
+    'sc-routes': 'v-sc', 'sc-inventory': 'v-sc'
+  };
+
+  var engineLabels = {
+    'home': 'COMMAND CENTER',
+    'exec': 'EXECUTIVE ENGINE', 'exec-pulse': 'EXECUTIVE ENGINE', 'exec-risks': 'EXECUTIVE ENGINE',
+    'exec-commodity': 'EXECUTIVE ENGINE', 'exec-ai': 'EXECUTIVE ENGINE',
+    'proc': 'PROCUREMENT ENGINE', 'proc-contracts': 'PROCUREMENT ENGINE', 'proc-spend': 'PROCUREMENT ENGINE',
+    'proc-risk': 'PROCUREMENT ENGINE', 'proc-approvals': 'PROCUREMENT ENGINE',
+    'sc': 'SUPPLY CHAIN ENGINE', 'sc-shipments': 'SUPPLY CHAIN ENGINE', 'sc-delays': 'SUPPLY CHAIN ENGINE',
+    'sc-routes': 'SUPPLY CHAIN ENGINE', 'sc-inventory': 'SUPPLY CHAIN ENGINE'
+  };
+
+  document.querySelectorAll('.sb-item[data-engine]').forEach(function(item) {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      var engine = this.getAttribute('data-engine');
+      var viewId = views[engine];
+      if (!viewId) return;
+
+      // Update sidebar active
+      document.querySelectorAll('.sb-item').forEach(function(s) { s.classList.remove('active'); });
+      this.classList.add('active');
+
+      // Show view
+      document.querySelectorAll('.engine-view').forEach(function(v) { v.classList.remove('active'); });
+      document.getElementById(viewId).classList.add('active');
+
+      // Update topbar label
+      document.getElementById('engineLabel').textContent = engineLabels[engine] || 'COMMAND CENTER';
+
+      // Scroll to top
+      document.querySelector('.main').scrollTop = 0;
+    });
+  });
+
+  // ── Live Clock ──
+  function updateClock() {
+    var now = new Date();
+    var months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    var d = now.getDate();
+    var m = months[now.getMonth()];
+    var y = now.getFullYear();
+    var h = String(now.getHours()).padStart(2,'0');
+    var min = String(now.getMinutes()).padStart(2,'0');
+    var s = String(now.getSeconds()).padStart(2,'0');
+    document.getElementById('liveTime').textContent = d + ' ' + m + ' ' + y + ' · ' + h + ':' + min + ':' + s + ' IST';
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+
+  // ── Sparklines ──
+  function sparkline(id, data, color) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var max = Math.max.apply(null, data);
+    data.forEach(function(v) {
+      var bar = document.createElement('div');
+      bar.className = 'bar';
+      bar.style.height = Math.max(2, (v / max) * 20) + 'px';
+      if (color) bar.style.background = color;
+      el.appendChild(bar);
+    });
+  }
+  sparkline('spark-rev', [14.2, 13.8, 14.5, 13.2, 12.8, 11.9, 12.4, 12.8], '#00d4aa');
+  sparkline('spark-margin', [7.2, 7.8, 7.4, 8.1, 7.9, 8.2, 8.0, 8.4], '#00d4aa');
+
+  // ── Intent Tabs (visual only) ──
+  document.querySelectorAll('.intent-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      this.parentElement.querySelectorAll('.intent-tab').forEach(function(t) { t.classList.remove('active'); });
+      this.classList.add('active');
+    });
+  });
+
+  // ── Back to Portfolio ──
+  document.querySelector('.sb-item:last-of-type')
+
+})();
+</script>
+</body>
+</html>
