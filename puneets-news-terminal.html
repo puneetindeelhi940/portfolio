@@ -273,7 +273,35 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
+
+.nt-refresh-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.nt-refresh-btn:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+.nt-refresh-btn svg { transition: transform 0.5s ease; }
+.nt-refresh-btn.spinning svg { animation: spin-refresh 0.6s ease; }
+
+@keyframes spin-refresh { to { transform: rotate(360deg); } }
 
 .nt-refreshed__dot {
   display: inline-block;
@@ -881,6 +909,7 @@ a { color: inherit; text-decoration: none; }
   <div class="nt-refreshed" id="lastRefreshed">
     <span class="nt-refreshed__dot"></span>
     <span>Last refreshed: --</span>
+    <button class="nt-refresh-btn" id="refreshBtn" title="Refresh now"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></button>
   </div>
 </header>
 
@@ -1218,7 +1247,9 @@ a { color: inherit; text-decoration: none; }
   function updateRefreshTime() {
     var now = new Date();
     var timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    refreshEl.innerHTML = '<span class="nt-refreshed__dot"></span><span>Last refreshed: ' + timeStr + '</span>';
+    refreshEl.innerHTML = '<span class="nt-refreshed__dot"></span><span>Last refreshed: ' + timeStr + '</span>' +
+      '<button class="nt-refresh-btn" id="refreshBtn" title="Refresh now"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></button>';
+    document.getElementById('refreshBtn').addEventListener('click', handleRefresh);
   }
 
   var RSS2JSON_BASE = 'https://api.rss2json.com/v1/api.json?rss_url=';
@@ -1307,6 +1338,15 @@ a { color: inherit; text-decoration: none; }
       .then(function () { updateRefreshTime(); renderAll(); })
       .catch(function () { showError('Some feeds could not be loaded.'); renderAll(); });
   }
+
+  function handleRefresh() {
+    var btn = document.getElementById('refreshBtn');
+    if (btn) { btn.classList.add('spinning'); setTimeout(function () { btn.classList.remove('spinning'); }, 600); }
+    fetchAllNews();
+    fetchHeadline();
+  }
+
+  document.getElementById('refreshBtn').addEventListener('click', handleRefresh);
 
   detectRegion();
   fetchAllNews();
