@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FeedIQ — McKinsey-style case study deck (Double Diamond framework)
+FeedIQ & The Cargill Terminal (T-C-T) — McKinsey-style case study deck (Double Diamond framework)
 Author: Puneet Arora
 """
 
@@ -131,7 +131,7 @@ def add_attribution(slide, text="Puneet Arora  |  Product Design & AI Strategy")
     add_text(slide, Inches(0.8), SLIDE_H - Inches(0.55), Inches(5), Inches(0.3),
              text, font_size=8, color=FAINT, font_name='Consolas')
 
-def add_page_num(slide, num, total=24):
+def add_page_num(slide, num, total=30):
     add_text(slide, SLIDE_W - Inches(1.5), SLIDE_H - Inches(0.55), Inches(1), Inches(0.3),
              f"{num} / {total}", font_size=8, color=FAINT, font_name='Consolas', alignment=PP_ALIGN.RIGHT)
 
@@ -147,13 +147,13 @@ add_rect(sl, Inches(0), Inches(0), SLIDE_W, Inches(0.06), ACCENT)
 
 add_label(sl, Inches(0.8), Inches(1.5), "—  PRODUCT CASE STUDY  |  JUNE 2026")
 add_text(sl, Inches(0.8), Inches(2.0), Inches(10), Inches(2),
-         "FeedIQ", font_size=72, color=WHITE, bold=True)
+         "FeedIQ  &  The Cargill Terminal", font_size=56, color=WHITE, bold=True)
 add_text(sl, Inches(0.8), Inches(3.3), Inches(10), Inches(1),
-         "AI-Powered Feed Intelligence\nfor Cargill", font_size=28, color=ACCENT, bold=False)
-add_text(sl, Inches(0.8), Inches(4.6), Inches(8), Inches(0.8),
-         "Transforming 390,000 annual mycotoxin analyses into real-time risk scores\n"
-         "and AI-optimized feed formulations — a product concept addressing Cargill's\n"
-         "most pressing data-to-action gap.", font_size=14, color=DIM)
+         "AI-Powered Feed Intelligence + Enterprise\nDecision Intelligence Platform", font_size=26, color=ACCENT, bold=False)
+add_text(sl, Inches(0.8), Inches(4.6), Inches(10), Inches(0.8),
+         "Two products, one vision: transforming Cargill's data into AI-native decisions.\n"
+         "FeedIQ tackles feed formulation & mycotoxin risk. The Cargill Terminal (T-C-T)\n"
+         "scales to enterprise-wide Decision Intelligence — Executive, Procurement & Supply Chain.", font_size=14, color=DIM)
 
 add_divider(sl, Inches(0.8), Inches(6.0), Inches(11.5))
 add_text(sl, Inches(0.8), Inches(6.15), Inches(4), Inches(0.3),
@@ -181,10 +181,10 @@ add_title_text(sl, Inches(0.8), Inches(1.0), "The 60-second brief")
 add_rect(sl, Inches(0.8), Inches(2.0), Inches(11.5), Inches(4.5), BG_CARD, RULE)
 
 items = [
-    ("WHAT", "FeedIQ is an AI-powered platform that transforms Cargill's mycotoxin testing data into an interactive risk dashboard and generates optimized, safety-aware feed formulations through a natural language interface."),
-    ("WHY", "Cargill analyzes 389,926 feed samples/year across 41 countries — but the insights die in static PDF reports. 71% of samples are contaminated, 46% of labs are short-staffed, and 8,000 employees (with formulation expertise) are departing. The gap between data and action costs producers billions."),
-    ("HOW", "Conversational AI (LLM) + constraint optimization + real-time mycotoxin data overlay. Users describe needs in plain language; FeedIQ generates cost-optimized formulations with built-in contamination risk scoring per ingredient and sourcing region."),
-    ("WHEN", "Phase 1 (0-3 months): Interactive prototype with 4 species scenarios. Phase 2 (3-9 months): Live API integration with Cargill's mycotoxin database. Phase 3 (9-18 months): Production deployment across Cargill's animal nutrition business.")
+    ("WHAT", "FeedIQ: AI feed formulation with mycotoxin risk overlay. T-C-T: A Bloomberg Terminal-density enterprise platform with 3 decision engines (Executive, Procurement, Supply Chain), intent-based UX, and AI confidence scoring."),
+    ("WHY", "Cargill analyzes 389,926 feed samples/year across 41 countries — insights die in static PDFs. 71% contamination, 8,000 experts departing, $160B revenue with zero AI-native decision tools. The gap between data and action costs billions."),
+    ("HOW", "FeedIQ: Conversational AI + constraint optimization + mycotoxin data overlay. T-C-T: 3 deep decision engines with 9 intent modes (Observe → Predict → Execute), AI recommendation cards, supplier intelligence, and shipment tracking."),
+    ("WHEN", "Phase 1: Both prototypes DONE. Phase 2 (3-9 mo): Integrate Cargill APIs — mycotoxin DB, procurement data, shipment feeds. Phase 3 (9-18 mo): Production deployment across Cargill's animal nutrition and supply chain operations.")
 ]
 
 y = Inches(2.2)
@@ -929,7 +929,455 @@ add_page_num(sl, 16)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 17: DESIGN PRINCIPLES
+# SLIDE 17: TCT — FROM PRODUCT TO PLATFORM
+# ══════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(blank_layout)
+set_bg(sl)
+add_phase_label(sl, Inches(0.8), Inches(0.5), "DEVELOP", 2)
+add_label(sl, Inches(2.6), Inches(0.53), "—  PLATFORM EVOLUTION")
+add_title_text(sl, Inches(0.8), Inches(1.0), "From product to platform:\nThe Cargill Terminal (T-C-T)")
+
+add_body_text(sl, Inches(0.8), Inches(1.9),
+              "FeedIQ proved the concept — AI can transform Cargill's data into decisions. T-C-T scales that\n"
+              "to an enterprise Decision Intelligence platform spanning three business-critical domains.",
+              width=Inches(10), font_size=13)
+
+# Before/After comparison
+add_rect(sl, Inches(0.8), Inches(2.9), Inches(5.5), Inches(3.8), BG_CARD, RULE)
+add_text(sl, Inches(1.1), Inches(3.05), Inches(5), Inches(0.25),
+         "FEEDIQ (PRODUCT)", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+feediq_items = [
+    "Single domain: Feed Intelligence",
+    "Mycotoxin risk heatmap (8 regions × 6 toxins)",
+    "AI feed formulator (4 species scenarios)",
+    "Cost-risk trade-off sliders",
+    "Chat-based interaction model",
+    "~1,600 lines of code",
+]
+iy = Inches(3.4)
+for item in feediq_items:
+    add_text(sl, Inches(1.1), iy, Inches(5), Inches(0.22),
+             f"  {item}", font_size=10, color=DIM)
+    iy += Inches(0.28)
+
+add_rect(sl, Inches(6.5), Inches(2.9), Inches(5.8), Inches(3.8), BG_CARD, INFO)
+add_text(sl, Inches(6.8), Inches(3.05), Inches(5.2), Inches(0.25),
+         "T-C-T (PLATFORM)", font_size=9, color=INFO, bold=True, font_name='Consolas')
+tct_items = [
+    "3 domains: Executive + Procurement + Supply Chain",
+    "Bloomberg Terminal density UX",
+    "AI decision engines with confidence scoring",
+    "Supplier Intelligence (8 global suppliers, EUDR)",
+    "Shipment tracking + delay prediction AI",
+    "Command Center unifying all 3 engines",
+    "Intent-based navigation (9 decision modes)",
+    "Live commodity ticker + market intelligence",
+]
+iy = Inches(3.4)
+for item in tct_items:
+    add_text(sl, Inches(6.8), iy, Inches(5.2), Inches(0.22),
+             f"  {item}", font_size=10, color=DIM)
+    iy += Inches(0.28)
+
+add_attribution(sl, "Product strategy & architecture by Puneet Arora")
+add_page_num(sl, 17)
+
+
+# ══════════════════════════════════════════════════════════════
+# SLIDE 18: TCT — ARCHITECTURE & 3 ENGINES
+# ══════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(blank_layout)
+set_bg(sl)
+add_phase_label(sl, Inches(0.8), Inches(0.5), "DEVELOP", 2)
+add_label(sl, Inches(2.6), Inches(0.53), "—  PLATFORM ARCHITECTURE")
+add_title_text(sl, Inches(0.8), Inches(1.0), "Three engines, one intelligence shell")
+
+add_body_text(sl, Inches(0.8), Inches(1.9),
+              "T-C-T wraps three deep decision engines in a unified shell inspired by Bloomberg Terminal,\n"
+              "Palantir Foundry, and Arc Browser — maximum information density with progressive disclosure.",
+              width=Inches(10), font_size=13)
+
+# Shell architecture
+add_rect(sl, Inches(0.8), Inches(2.9), Inches(11.5), Inches(0.7), BG_CARD2, ACCENT)
+add_text(sl, Inches(1.1), Inches(3.0), Inches(10.5), Inches(0.5),
+         "SHELL: Topbar (live ticker + search + clock)  →  Sidebar (engine nav + badges)  →  Main (engine views)  →  Intent Tabs (9 modes)",
+         font_size=11, color=DIM)
+
+engines = [
+    ("EXECUTIVE ENGINE", "Strategic intelligence for C-suite", ACCENT,
+     ["Morning Brief (3 daily priorities)", "Business Pulse (6 KPIs + sparklines)",
+      "Strategic Risk tracker (severity + trend)", "Commodity Intelligence (prices + forecasts)",
+      "AI Recommendations with confidence scores"]),
+    ("PROCUREMENT ENGINE", "Supplier & contract intelligence", INFO,
+     ["Supplier Health Scorecard (8 suppliers, 0-10)", "EUDR compliance tracking (PASS/FAIL/PENDING)",
+      "Spend Analytics by category ($38.2B)", "Contract Copilot (AI renewal recommendations)",
+      "Vendor Risk Assessment + approval pipeline"]),
+    ("SUPPLY CHAIN ENGINE", "Logistics & shipment intelligence", WARN,
+     ["Mission Control (SVG route map)", "Shipment Intel (6 active, status tracking)",
+      "Delay Prediction AI (root cause + ETA)", "Port Intelligence (5 ports, congestion index)",
+      "Weather Intelligence + route optimization"]),
+]
+
+x = Inches(0.8)
+for i, (title, subtitle, color, items) in enumerate(engines):
+    cx = x + i * Inches(3.9)
+    add_rect(sl, cx, Inches(3.9), Inches(3.7), Inches(3.0), BG_CARD, color)
+    add_text(sl, cx + Inches(0.25), Inches(4.0), Inches(3.2), Inches(0.25),
+             title, font_size=10, color=color, bold=True, font_name='Consolas')
+    add_text(sl, cx + Inches(0.25), Inches(4.3), Inches(3.2), Inches(0.3),
+             subtitle, font_size=12, color=WHITE, bold=True)
+    iy = Inches(4.7)
+    for item in items:
+        add_text(sl, cx + Inches(0.25), iy, Inches(3.2), Inches(0.22),
+                 f"  {item}", font_size=9, color=DIM)
+        iy += Inches(0.25)
+
+add_attribution(sl, "Architecture by Puneet Arora  |  Inspired by Bloomberg Terminal + Palantir Foundry")
+add_page_num(sl, 18)
+
+
+# ══════════════════════════════════════════════════════════════
+# SLIDE 19: TCT — EXECUTIVE ENGINE DEEP DIVE
+# ══════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(blank_layout)
+set_bg(sl)
+add_phase_label(sl, Inches(0.8), Inches(0.5), "DEVELOP", 2)
+add_label(sl, Inches(2.6), Inches(0.53), "—  EXECUTIVE ENGINE")
+add_title_text(sl, Inches(0.8), Inches(1.0), "Every morning starts with\na decision brief")
+
+add_body_text(sl, Inches(0.8), Inches(1.9),
+              "The Executive Engine synthesizes overnight events into a prioritized brief.\n"
+              "Not a dashboard — a decision queue. Each item has urgency, confidence, and a recommended action.",
+              width=Inches(10), font_size=13)
+
+# Morning Brief example
+add_rect(sl, Inches(0.8), Inches(2.9), Inches(7.3), Inches(3.8), BG_CARD, ACCENT)
+add_text(sl, Inches(1.1), Inches(3.05), Inches(6.5), Inches(0.25),
+         "MORNING BRIEF — SAMPLE", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+
+briefs = [
+    ("URGENT", "Soybean port strike probability: 68%", "Recommend: Accelerate Brazil corn sourcing to hedge 5K Asian fumonisin risk", DANGER),
+    ("HIGH", "Soybean volatility at 18-month high", "AI: Derivative hedging available — Argentina drought + USDA report speculation drives 3-day trend", WARN),
+    ("MONITOR", "Bunge-Viterra integration reaching critical phase", "89% integration completed — South America blending capacity shift could benefit Cargill market share", INFO),
+]
+by = Inches(3.45)
+for urg, title, desc, color in briefs:
+    add_rect(sl, Inches(1.0), by, Inches(0.85), Inches(0.22), color, color)
+    add_text(sl, Inches(1.05), by + Inches(0.01), Inches(0.8), Inches(0.2),
+             urg, font_size=8, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+    add_text(sl, Inches(2.0), by, Inches(5.8), Inches(0.22),
+             title, font_size=10, color=WHITE, bold=True)
+    add_text(sl, Inches(2.0), by + Inches(0.25), Inches(5.8), Inches(0.5),
+             desc, font_size=9, color=DIM)
+    by += Inches(0.9)
+
+# KPIs
+add_rect(sl, Inches(8.3), Inches(2.9), Inches(4.0), Inches(3.8), BG_CARD, RULE)
+add_text(sl, Inches(8.6), Inches(3.05), Inches(3.5), Inches(0.25),
+         "BUSINESS PULSE KPIs", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+
+kpis = [
+    ("$62.48", "CORN FUTURES", "▲ 8.4%"),
+    ("2,847", "ACTIVE SHIPMENTS", "▲ 12"),
+    ("94.2%", "ON-TIME DELIVERY", "▼ 0.3%"),
+    ("7.8", "SUPPLIER HEALTH", "— stable"),
+    ("14", "PENDING DECISIONS", "▼ 3"),
+]
+ky = Inches(3.4)
+for val, lbl, trend in kpis:
+    add_text(sl, Inches(8.6), ky, Inches(1.5), Inches(0.22),
+             val, font_size=14, color=WHITE, bold=True, font_name='Consolas')
+    add_text(sl, Inches(10.2), ky, Inches(1.5), Inches(0.22),
+             lbl, font_size=8, color=FAINT, font_name='Consolas')
+    tcolor = ACCENT if "▲" in trend else DANGER if "▼" in trend else DIM
+    add_text(sl, Inches(10.2), ky + Inches(0.2), Inches(1.5), Inches(0.15),
+             trend, font_size=8, color=tcolor, font_name='Consolas')
+    ky += Inches(0.45)
+
+add_attribution(sl, "Executive intelligence design by Puneet Arora")
+add_page_num(sl, 19)
+
+
+# ══════════════════════════════════════════════════════════════
+# SLIDE 20: TCT — PROCUREMENT ENGINE DEEP DIVE
+# ══════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(blank_layout)
+set_bg(sl)
+add_phase_label(sl, Inches(0.8), Inches(0.5), "DEVELOP", 2)
+add_label(sl, Inches(2.6), Inches(0.53), "—  PROCUREMENT ENGINE")
+add_title_text(sl, Inches(0.8), Inches(1.0), "Supplier intelligence meets\nEUDR compliance")
+
+add_body_text(sl, Inches(0.8), Inches(1.9),
+              "Cargill's $38B procurement spend demands AI-native supplier intelligence.\n"
+              "The Procurement Engine tracks 8 global suppliers with health scoring, EUDR compliance, and AI contract recommendations.",
+              width=Inches(10), font_size=13)
+
+# Supplier scorecard
+add_rect(sl, Inches(0.8), Inches(2.9), Inches(7.3), Inches(3.8), BG_CARD, INFO)
+add_text(sl, Inches(1.1), Inches(3.05), Inches(6.5), Inches(0.25),
+         "SUPPLIER HEALTH SCORECARD (8 GLOBAL SUPPLIERS)", font_size=9, color=INFO, bold=True, font_name='Consolas')
+
+suppliers = [
+    ("ADM — Argentina", "8.4", "96.2%", "PASS", "LOW"),
+    ("Bunge — Brazil", "8.1", "94.8%", "PASS", "LOW"),
+    ("Wilmar — Indonesia", "6.2", "91.2%", "PENDING", "HIGH"),
+    ("Louis Dreyfus — France", "7.8", "93.6%", "PASS", "MED"),
+    ("COFCO — China", "6.8", "91.5%", "PENDING", "MED"),
+    ("Olam — Singapore", "7.5", "93.1%", "PASS", "LOW"),
+    ("Glencore Agri — CH", "6.4", "89.8%", "PENDING", "MED"),
+    ("Viterra — NL", "9.2", "97.1%", "PASS", "LOW"),
+]
+
+add_text(sl, Inches(1.1), Inches(3.35), Inches(1.8), Inches(0.2),
+         "SUPPLIER", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(3.0), Inches(3.35), Inches(0.6), Inches(0.2),
+         "HEALTH", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(3.7), Inches(3.35), Inches(0.8), Inches(0.2),
+         "ON-TIME", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(4.6), Inches(3.35), Inches(0.8), Inches(0.2),
+         "EUDR", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(5.5), Inches(3.35), Inches(0.8), Inches(0.2),
+         "RISK", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+
+sy = Inches(3.6)
+for name, health, ontime, eudr, risk in suppliers:
+    add_text(sl, Inches(1.1), sy, Inches(1.8), Inches(0.2),
+             name, font_size=8, color=DIM, font_name='Consolas')
+    hcolor = ACCENT if float(health) >= 7.5 else WARN if float(health) >= 6.5 else DANGER
+    add_text(sl, Inches(3.0), sy, Inches(0.6), Inches(0.2),
+             health, font_size=9, color=hcolor, bold=True, font_name='Consolas')
+    add_text(sl, Inches(3.7), sy, Inches(0.8), Inches(0.2),
+             ontime, font_size=8, color=DIM, font_name='Consolas')
+    ecolor = ACCENT if eudr == "PASS" else WARN
+    add_text(sl, Inches(4.6), sy, Inches(0.8), Inches(0.2),
+             eudr, font_size=8, color=ecolor, bold=True, font_name='Consolas')
+    rcolor = ACCENT if risk == "LOW" else WARN if risk == "MED" else DANGER
+    add_text(sl, Inches(5.5), sy, Inches(0.8), Inches(0.2),
+             risk, font_size=8, color=rcolor, bold=True, font_name='Consolas')
+    sy += Inches(0.28)
+
+# Contract Copilot
+add_rect(sl, Inches(8.3), Inches(2.9), Inches(4.0), Inches(3.8), BG_CARD, RULE)
+add_text(sl, Inches(8.6), Inches(3.05), Inches(3.5), Inches(0.25),
+         "CONTRACT COPILOT AI", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+
+add_text(sl, Inches(8.6), Inches(3.5), Inches(3.5), Inches(0.25),
+         "Wilmar renewal due in 14 days", font_size=10, color=WHITE, bold=True)
+add_text(sl, Inches(8.6), Inches(3.8), Inches(3.5), Inches(0.8),
+         "AI suggests: renegotiate with EUDR\ncompliance clause. Add 60-day GPS\npolygon mapping requirement.\nCompeting palm suppliers offer\n3% lower FOB.",
+         font_size=9, color=DIM)
+
+add_text(sl, Inches(8.6), Inches(4.9), Inches(3.5), Inches(0.25),
+         "ADM contract optimization", font_size=10, color=WHITE, bold=True)
+add_text(sl, Inches(8.6), Inches(5.2), Inches(3.5), Inches(0.8),
+         "Volume commitment increase of 8%\nunlocks tier-2 pricing. Estimated\nsaving: $4.2M annually.\nAI confidence: 89%",
+         font_size=9, color=DIM)
+
+add_rect(sl, Inches(8.6), Inches(6.1), Inches(1.0), Inches(0.25), ACCENT, ACCENT)
+add_text(sl, Inches(8.65), Inches(6.12), Inches(0.9), Inches(0.2),
+         "DRAFT", font_size=8, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+add_rect(sl, Inches(9.8), Inches(6.1), Inches(1.0), Inches(0.25), INFO, INFO)
+add_text(sl, Inches(9.85), Inches(6.12), Inches(0.9), Inches(0.2),
+         "SIMULATE", font_size=8, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+
+add_attribution(sl, "Procurement intelligence design by Puneet Arora")
+add_page_num(sl, 20)
+
+
+# ══════════════════════════════════════════════════════════════
+# SLIDE 21: TCT — SUPPLY CHAIN ENGINE DEEP DIVE
+# ══════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(blank_layout)
+set_bg(sl)
+add_phase_label(sl, Inches(0.8), Inches(0.5), "DEVELOP", 2)
+add_label(sl, Inches(2.6), Inches(0.53), "—  SUPPLY CHAIN ENGINE")
+add_title_text(sl, Inches(0.8), Inches(1.0), "Predict disruptions before\nthey hit the bottom line")
+
+add_body_text(sl, Inches(0.8), Inches(1.9),
+              "2,847 active shipments, 94.2% on-time delivery, 5 critical ports — the Supply Chain Engine\n"
+              "gives operators predictive intelligence to reroute, pre-position, and mitigate before delays compound.",
+              width=Inches(10), font_size=13)
+
+# Shipment table
+add_rect(sl, Inches(0.8), Inches(2.9), Inches(7.3), Inches(2.0), BG_CARD, WARN)
+add_text(sl, Inches(1.1), Inches(3.05), Inches(6.5), Inches(0.25),
+         "ACTIVE SHIPMENTS (SAMPLE)", font_size=9, color=WARN, bold=True, font_name='Consolas')
+
+add_text(sl, Inches(1.1), Inches(3.35), Inches(1.0), Inches(0.2),
+         "ID", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(2.0), Inches(3.35), Inches(1.5), Inches(0.2),
+         "ROUTE", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(3.7), Inches(3.35), Inches(1.0), Inches(0.2),
+         "CARGO", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(4.8), Inches(3.35), Inches(0.8), Inches(0.2),
+         "STATUS", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(5.8), Inches(3.35), Inches(1.2), Inches(0.2),
+         "ETA", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+add_text(sl, Inches(6.8), Inches(3.35), Inches(1.0), Inches(0.2),
+         "DELAY", font_size=8, color=FAINT, bold=True, font_name='Consolas')
+
+shipments = [
+    ("CGL-8891", "Santos → Rotterdam", "Soybean", "IN TRANSIT", "Jun 28", "0d"),
+    ("CGL-8823", "Odessa → Jakarta", "Wheat", "DELAYED", "Jul 03", "+3d"),
+    ("CGL-8756", "NOLA → Shanghai", "Corn", "IN TRANSIT", "Jul 12", "0d"),
+    ("CGL-8712", "Rosario → Mumbai", "Meal", "DELAYED", "Jul 05", "+1d"),
+]
+
+ty = Inches(3.6)
+for sid, route, cargo, status, eta, delay in shipments:
+    add_text(sl, Inches(1.1), ty, Inches(1.0), Inches(0.2),
+             sid, font_size=8, color=DIM, font_name='Consolas')
+    add_text(sl, Inches(2.0), ty, Inches(1.5), Inches(0.2),
+             route, font_size=8, color=DIM, font_name='Consolas')
+    add_text(sl, Inches(3.7), ty, Inches(1.0), Inches(0.2),
+             cargo, font_size=8, color=DIM, font_name='Consolas')
+    scolor = WARN if status == "DELAYED" else ACCENT
+    add_text(sl, Inches(4.8), ty, Inches(0.8), Inches(0.2),
+             status, font_size=7, color=scolor, bold=True, font_name='Consolas')
+    add_text(sl, Inches(5.8), ty, Inches(1.0), Inches(0.2),
+             eta, font_size=8, color=DIM, font_name='Consolas')
+    dcolor = DANGER if "+" in delay else ACCENT
+    add_text(sl, Inches(6.8), ty, Inches(1.0), Inches(0.2),
+             delay, font_size=8, color=dcolor, bold=True, font_name='Consolas')
+    ty += Inches(0.26)
+
+# Delay prediction AI
+add_rect(sl, Inches(0.8), Inches(5.1), Inches(3.5), Inches(1.7), BG_CARD, DANGER)
+add_text(sl, Inches(1.1), Inches(5.25), Inches(3), Inches(0.25),
+         "DELAY PREDICTION AI", font_size=9, color=DANGER, bold=True, font_name='Consolas')
+add_text(sl, Inches(1.1), Inches(5.55), Inches(3), Inches(0.22),
+         "CGL-8823: 3-day delay predicted", font_size=10, color=WHITE, bold=True)
+add_text(sl, Inches(1.1), Inches(5.85), Inches(3), Inches(0.7),
+         "Root cause: Odessa port congestion\n(32 vessels, 4.2d avg dwell).\nAI confidence: 87%\nRecommend: Reroute via Constanta.",
+         font_size=9, color=DIM)
+
+# Port intelligence
+add_rect(sl, Inches(4.5), Inches(5.1), Inches(3.6), Inches(1.7), BG_CARD, RULE)
+add_text(sl, Inches(4.8), Inches(5.25), Inches(3), Inches(0.25),
+         "PORT INTELLIGENCE (TOP 5)", font_size=9, color=INFO, bold=True, font_name='Consolas')
+ports = [
+    ("Santos", "18 vessels", "LOW"),
+    ("Rotterdam", "24 vessels", "MED"),
+    ("Odessa", "32 vessels", "HIGH"),
+    ("NOLA", "15 vessels", "LOW"),
+    ("Shanghai", "28 vessels", "MED"),
+]
+py = Inches(5.55)
+for port, vessels, cong in ports:
+    add_text(sl, Inches(4.8), py, Inches(1.3), Inches(0.2),
+             port, font_size=8, color=DIM, font_name='Consolas')
+    add_text(sl, Inches(6.0), py, Inches(1.0), Inches(0.2),
+             vessels, font_size=8, color=DIM, font_name='Consolas')
+    ccolor = ACCENT if cong == "LOW" else WARN if cong == "MED" else DANGER
+    add_text(sl, Inches(7.0), py, Inches(0.8), Inches(0.2),
+             cong, font_size=7, color=ccolor, bold=True, font_name='Consolas')
+    py += Inches(0.22)
+
+# KPI cards
+add_rect(sl, Inches(8.3), Inches(2.9), Inches(4.0), Inches(3.9), BG_CARD, RULE)
+add_text(sl, Inches(8.6), Inches(3.05), Inches(3.5), Inches(0.25),
+         "SUPPLY CHAIN KPIs", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+
+sc_kpis = [
+    ("2,847", "Active shipments"),
+    ("94.2%", "On-time delivery"),
+    ("38", "Global routes active"),
+    ("2.46", "Avg transit ratio"),
+    ("3", "Active weather alerts"),
+]
+ky = Inches(3.45)
+for val, lbl in sc_kpis:
+    add_text(sl, Inches(8.6), ky, Inches(2), Inches(0.25),
+             val, font_size=18, color=WHITE, bold=True, font_name='Consolas')
+    add_text(sl, Inches(8.6), ky + Inches(0.3), Inches(3), Inches(0.2),
+             lbl, font_size=8, color=FAINT, font_name='Consolas')
+    ky += Inches(0.55)
+
+add_attribution(sl, "Supply chain intelligence design by Puneet Arora")
+add_page_num(sl, 21)
+
+
+# ══════════════════════════════════════════════════════════════
+# SLIDE 22: TCT — INTENT-BASED UX & AI CONFIDENCE
+# ══════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(blank_layout)
+set_bg(sl)
+add_phase_label(sl, Inches(0.8), Inches(0.5), "DEVELOP", 2)
+add_label(sl, Inches(2.6), Inches(0.53), "—  UX INNOVATION: INTENT-BASED NAVIGATION")
+add_title_text(sl, Inches(0.8), Inches(1.0), "9 intent modes map the\nentire decision lifecycle")
+
+add_body_text(sl, Inches(0.8), Inches(1.9),
+              "Traditional dashboards organize by data type. T-C-T organizes by user intent —\n"
+              "what you're trying to DO, not what you're looking AT. This is the core UX innovation.",
+              width=Inches(10), font_size=13)
+
+# Intent lifecycle
+intents = [
+    ("OBSERVE", "Monitor data streams,\nspot anomalies", ACCENT),
+    ("UNDERSTAND", "Contextualize signals\nwith historical data", ACCENT),
+    ("INVESTIGATE", "Drill into root causes\nand dependencies", INFO),
+    ("PREDICT", "AI-generated forecasts\nwith confidence bands", INFO),
+    ("RECOMMEND", "Ranked options with\ntrade-off analysis", WARN),
+    ("SIMULATE", "What-if scenarios with\nimpact projections", WARN),
+    ("APPROVE", "Decision queue with\naudit trail + sign-off", DANGER),
+    ("EXECUTE", "One-click action with\nrollback capability", DANGER),
+    ("LEARN", "Outcome tracking feeds\nback into AI models", FAINT),
+]
+
+ix = Inches(0.6)
+iw = Inches(1.33)
+for i, (name, desc, color) in enumerate(intents):
+    cx = ix + i * (iw + Inches(0.05))
+    add_rect(sl, cx, Inches(2.9), iw, Inches(1.4), BG_CARD, color)
+    add_text(sl, cx + Inches(0.1), Inches(3.0), iw - Inches(0.2), Inches(0.2),
+             name, font_size=8, color=color, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+    add_text(sl, cx + Inches(0.1), Inches(3.25), iw - Inches(0.2), Inches(0.8),
+             desc, font_size=8, color=DIM, alignment=PP_ALIGN.CENTER)
+    if i < 8:
+        add_text(sl, cx + iw, Inches(3.3), Inches(0.1), Inches(0.2),
+                 "→", font_size=10, color=FAINT, alignment=PP_ALIGN.CENTER)
+
+# AI Confidence
+add_rect(sl, Inches(0.8), Inches(4.7), Inches(5.5), Inches(2.2), BG_CARD, ACCENT)
+add_text(sl, Inches(1.1), Inches(4.85), Inches(5), Inches(0.25),
+         "AI RECOMMENDATION CARDS", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+add_text(sl, Inches(1.1), Inches(5.2), Inches(5), Inches(1.5),
+         "Every AI recommendation in T-C-T includes:\n\n"
+         "• Confidence score (0-100%) with visual meter\n"
+         "• Urgency badge (CRITICAL / HIGH / MONITOR)\n"
+         "• Estimated impact (cost savings, risk reduction)\n"
+         "• Action buttons (APPROVE / SIMULATE / INVESTIGATE)\n"
+         "• Decision audit trail for compliance",
+         font_size=10, color=DIM)
+
+# Comparison with traditional
+add_rect(sl, Inches(6.5), Inches(4.7), Inches(5.8), Inches(2.2), BG_CARD, RULE)
+add_text(sl, Inches(6.8), Inches(4.85), Inches(5.2), Inches(0.25),
+         "TRADITIONAL vs. INTENT-BASED UX", font_size=9, color=INFO, bold=True, font_name='Consolas')
+
+comparisons = [
+    ("Dashboard", "Shows data, user decides what to do", DIM),
+    ("Chatbot", "Answers questions, no workflow context", DIM),
+    ("Alert System", "Flags issues, no resolution path", DIM),
+    ("T-C-T", "Guides the entire decision lifecycle\nfrom observation through execution", ACCENT),
+]
+cy = Inches(5.2)
+for label, desc, color in comparisons:
+    is_tct = label == "T-C-T"
+    if is_tct:
+        add_rect(sl, Inches(6.7), cy - Inches(0.05), Inches(5.4), Inches(0.55), BG_CARD2, ACCENT)
+    add_text(sl, Inches(6.8), cy, Inches(1.2), Inches(0.2),
+             label, font_size=10, color=ACCENT if is_tct else FAINT, bold=True, font_name='Consolas')
+    add_text(sl, Inches(8.1), cy, Inches(4), Inches(0.4),
+             desc, font_size=9, color=WHITE if is_tct else DIM)
+    cy += Inches(0.4) if not is_tct else Inches(0.55)
+
+add_attribution(sl, "Intent-based UX framework by Puneet Arora  |  Informed by Apple Intelligence + Arc Browser")
+add_page_num(sl, 22)
+
+
+# ══════════════════════════════════════════════════════════════
+# SLIDE 23: DESIGN PRINCIPLES
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
@@ -964,11 +1412,11 @@ for i, (num, title, color, hook, detail) in enumerate(principles):
              detail, font_size=10, color=DIM)
 
 add_attribution(sl, "Design principles by Puneet Arora  |  Informed by Dell GenAI VA (4.4% → 80% engagement)")
-add_page_num(sl, 17)
+add_page_num(sl, 23)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 18: INFORMATION ARCHITECTURE
+# SLIDE 24: INFORMATION ARCHITECTURE
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
@@ -1014,76 +1462,76 @@ add_text(sl, Inches(1.1), Inches(6.0), Inches(10.5), Inches(0.7),
          font_size=10, color=DIM)
 
 add_attribution(sl, "Architecture by Puneet Arora")
-add_page_num(sl, 18)
+add_page_num(sl, 24)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 19: PROTOTYPE DEMO (DELIVER)
+# SLIDE 25: PROTOTYPE DEMO (DELIVER)
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
 add_phase_label(sl, Inches(0.8), Inches(0.5), "DELIVER", 2)
-add_label(sl, Inches(2.6), Inches(0.53), "—  WORKING PROTOTYPE")
-add_title_text(sl, Inches(0.8), Inches(1.0), "Live prototype: try it now")
+add_label(sl, Inches(2.6), Inches(0.53), "—  WORKING PROTOTYPES")
+add_title_text(sl, Inches(0.8), Inches(1.0), "Two live prototypes: try them now")
 
-add_rect(sl, Inches(0.8), Inches(2.2), Inches(11.5), Inches(1.2), BG_CARD, ACCENT)
-add_text(sl, Inches(1.1), Inches(2.35), Inches(10.5), Inches(0.3),
-         "LIVE URL", font_size=10, color=ACCENT, bold=True, font_name='Consolas')
-add_text(sl, Inches(1.1), Inches(2.65), Inches(10.5), Inches(0.3),
-         "https://puneetindeelhi940.github.io/portfolio/feediq.html", font_size=18, color=WHITE, bold=True, font_name='Consolas')
-add_text(sl, Inches(1.1), Inches(3.0), Inches(10.5), Inches(0.25),
-         "Interactive prototype — click any prompt chip to see AI formulation with mycotoxin risk overlay",
-         font_size=11, color=DIM)
+# FeedIQ URL
+add_rect(sl, Inches(0.8), Inches(2.1), Inches(5.5), Inches(0.9), BG_CARD, ACCENT)
+add_text(sl, Inches(1.1), Inches(2.2), Inches(5), Inches(0.25),
+         "FEEDIQ — LIVE", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+add_text(sl, Inches(1.1), Inches(2.5), Inches(5), Inches(0.3),
+         "puneetindeelhi940.github.io/portfolio/feediq.html", font_size=11, color=WHITE, bold=True, font_name='Consolas')
 
-# What's in the prototype
-add_rect(sl, Inches(0.8), Inches(3.7), Inches(5.5), Inches(3.0), BG_CARD, RULE)
-add_text(sl, Inches(1.1), Inches(3.85), Inches(5), Inches(0.25),
-         "WHAT'S IN THE PROTOTYPE", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
-demo_items = [
+# TCT URL
+add_rect(sl, Inches(6.5), Inches(2.1), Inches(5.8), Inches(0.9), BG_CARD, INFO)
+add_text(sl, Inches(6.8), Inches(2.2), Inches(5.2), Inches(0.25),
+         "T-C-T — LIVE", font_size=9, color=INFO, bold=True, font_name='Consolas')
+add_text(sl, Inches(6.8), Inches(2.5), Inches(5.2), Inches(0.3),
+         "puneetindeelhi940.github.io/portfolio/tct.html", font_size=11, color=WHITE, bold=True, font_name='Consolas')
+
+# FeedIQ features
+add_rect(sl, Inches(0.8), Inches(3.3), Inches(5.5), Inches(3.4), BG_CARD, RULE)
+add_text(sl, Inches(1.1), Inches(3.45), Inches(5), Inches(0.25),
+         "FEEDIQ PROTOTYPE", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+feediq_demo = [
     "Global contamination heatmap (8 regions × 6 toxins)",
-    "Active risk alerts with severity indicators",
-    "Multi-toxin prevalence gauges",
-    "Conversational AI formulator (4 scenarios)",
+    "Conversational AI formulator (4 species scenarios)",
     "Ingredient donut chart + cost breakdown table",
     "Nutrition profile with target range bars",
     "Per-ingredient mycotoxin risk assessment",
-    "Cost-risk trade-off sliders",
-    "AI-generated recommendations",
-    "Design rationale section",
+    "Cost-risk trade-off sliders + AI recommendations",
 ]
-iy = Inches(4.2)
-for item in demo_items:
+iy = Inches(3.8)
+for item in feediq_demo:
     add_text(sl, Inches(1.1), iy, Inches(5), Inches(0.22),
              f"✓  {item}", font_size=10, color=DIM)
-    iy += Inches(0.24)
+    iy += Inches(0.26)
 
-# Scenarios
-add_rect(sl, Inches(6.5), Inches(3.7), Inches(5.8), Inches(3.0), BG_CARD, RULE)
-add_text(sl, Inches(6.8), Inches(3.85), Inches(5.2), Inches(0.25),
-         "4 DEMO SCENARIOS", font_size=9, color=INFO, bold=True, font_name='Consolas')
-
-demo_scenarios = [
-    ("Broiler — Tropical", "$268/ton, 52% corn, SE Asian FUM risk flagged"),
-    ("Layer Hen — Low Risk", "$295/ton, Oceania corn sourcing, ZEN monitoring"),
-    ("Dairy TMR — N. Europe", "$312/ton, silage-based, DON+ZEN warnings"),
-    ("Swine — S. American Corn", "$255/ton, multi-toxin HIGH alert, binder added"),
+# TCT features
+add_rect(sl, Inches(6.5), Inches(3.3), Inches(5.8), Inches(3.4), BG_CARD, RULE)
+add_text(sl, Inches(6.8), Inches(3.45), Inches(5.2), Inches(0.25),
+         "T-C-T PROTOTYPE", font_size=9, color=INFO, bold=True, font_name='Consolas')
+tct_demo = [
+    "Command Center with cross-engine KPI dashboard",
+    "Executive Engine: Morning Brief + Business Pulse",
+    "Procurement Engine: 8-supplier scorecard + EUDR",
+    "Supply Chain Engine: Route map + delay prediction",
+    "AI recommendation cards with confidence scoring",
+    "Intent-based navigation (9 decision modes)",
+    "Live commodity ticker (10 instruments)",
+    "Bloomberg Terminal-density data layout",
 ]
+iy = Inches(3.8)
+for item in tct_demo:
+    add_text(sl, Inches(6.8), iy, Inches(5.2), Inches(0.22),
+             f"✓  {item}", font_size=10, color=DIM)
+    iy += Inches(0.26)
 
-sy = Inches(4.2)
-for title, desc in demo_scenarios:
-    add_rect(sl, Inches(6.7), sy, Inches(5.4), Inches(0.6), BG_CARD2, RULE)
-    add_text(sl, Inches(6.9), sy + Inches(0.05), Inches(2.2), Inches(0.2),
-             title, font_size=11, color=WHITE, bold=True)
-    add_text(sl, Inches(6.9), sy + Inches(0.28), Inches(5), Inches(0.25),
-             desc, font_size=9, color=DIM, font_name='Consolas')
-    sy += Inches(0.68)
-
-add_attribution(sl, "Prototype designed & built by Puneet Arora  |  Vibe-coded in < 1 day")
-add_page_num(sl, 19)
+add_attribution(sl, "Both prototypes designed & built by Puneet Arora  |  Vibe-coded in 3 days")
+add_page_num(sl, 25)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 20: METRICS FRAMEWORK
+# SLIDE 26: METRICS FRAMEWORK
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
@@ -1131,11 +1579,11 @@ add_text(sl, Inches(0.8), Inches(6.85), Inches(11.5), Inches(0.3),
          "Benchmarks sourced from: Adisseo AI platform (2026), Cargill VIV Asia 2025 reports, industry averages",
          font_size=8, color=FAINT, font_name='Consolas')
 add_attribution(sl, "Metrics framework by Puneet Arora")
-add_page_num(sl, 20)
+add_page_num(sl, 26)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 21: PRODUCT ROADMAP
+# SLIDE 27: PRODUCT ROADMAP
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
@@ -1145,16 +1593,16 @@ add_title_text(sl, Inches(0.8), Inches(1.0), "Three phases to production")
 
 phases = [
     ("PHASE 1", "0 – 3 MONTHS", "Prove the concept", ACCENT,
-     ["Interactive prototype (DONE)", "4 species scenario demos (DONE)", "User testing with 5-10 nutritionists",
-      "Validate formulation accuracy vs. expert", "Cargill internal stakeholder review", "Refine AI prompts and constraints"]),
+     ["FeedIQ prototype (DONE)", "T-C-T 3-engine prototype (DONE)", "User testing with 5-10 stakeholders",
+      "Validate formulation accuracy vs. expert", "Cargill internal stakeholder review", "Refine AI prompts and engine logic"]),
     ("PHASE 2", "3 – 9 MONTHS", "Connect real data", INFO,
-     ["Integrate Cargill mycotoxin database API", "Connect to regional ingredient pricing feeds",
-      "Claude/GPT API for live formulation generation", "Expand to 12+ species/production stages",
-      "Pilot with 2-3 Cargill animal nutrition clients", "A/B test conversational vs. form-based UX"]),
+     ["Integrate mycotoxin DB + procurement APIs", "Connect to live commodity & shipment feeds",
+      "Claude/GPT API for live AI recommendations", "EUDR compliance data feed integration",
+      "Pilot with 2-3 Cargill business units", "A/B test intent-based vs. dashboard UX"]),
     ("PHASE 3", "9 – 18 MONTHS", "Scale & monetize", WARN,
-     ["Production deployment across Cargill AN business", "Multi-language support (6+ languages)",
-      "Mobile companion app for field use", "Premium tier with predictive risk forecasting",
-      "Integration with Cargill's CNS & Galleon platforms", "White-label for Cargill's B2B customers"]),
+     ["Production deployment across Cargill", "T-C-T as Cargill's internal decision OS",
+      "Mobile companion app for field/exec use", "Cross-engine AI decision correlation",
+      "Integration with CMAX, CNS, Galleon", "White-label for Cargill's B2B customers"]),
 ]
 
 x = Inches(0.8)
@@ -1176,11 +1624,11 @@ for i, (phase, time, subtitle, color, items) in enumerate(phases):
         iy += Inches(0.32)
 
 add_attribution(sl, "Roadmap by Puneet Arora")
-add_page_num(sl, 21)
+add_page_num(sl, 27)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 22: BENCHMARKS & VALIDATION
+# SLIDE 28: BENCHMARKS & VALIDATION
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
@@ -1215,53 +1663,61 @@ add_text(sl, Inches(1.1), Inches(6.2), Inches(10.5), Inches(0.5),
          font_size=11, color=DIM)
 
 add_attribution(sl, "Research & analysis by Puneet Arora")
-add_page_num(sl, 22)
+add_page_num(sl, 28)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 23: SOLUTION NOVELTY
+# SLIDE 29: SOLUTION NOVELTY
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
 add_label(sl, Inches(0.8), Inches(0.6), "—  SOLUTION NOVELTY")
-add_title_text(sl, Inches(0.8), Inches(1.0), "What makes FeedIQ different")
+add_title_text(sl, Inches(0.8), Inches(1.0), "What makes this different")
 
-add_rect(sl, Inches(0.8), Inches(2.0), Inches(11.5), Inches(4.8), BG_CARD, RULE)
+add_rect(sl, Inches(0.8), Inches(2.0), Inches(5.5), Inches(4.8), BG_CARD, RULE)
+add_text(sl, Inches(1.1), Inches(2.1), Inches(5), Inches(0.25),
+         "FEEDIQ FIRSTS", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
 
-novel = [
-    ("FIRST: Risk + Formulation unified",
-     "No existing tool combines mycotoxin risk intelligence with feed formulation in a single interface. "
-     "Nutritionists currently use separate systems (or skip risk checks entirely). FeedIQ makes risk-awareness the default, not an optional step.",
-     ACCENT),
-    ("FIRST: Natural language feed formulation",
-     "Every competitor (Bestmix, Format Solutions, Adifo) uses form-based UIs requiring expert training. "
-     "FeedIQ is the first to apply conversational AI — describe what you need, get an optimized recipe. "
-     "Onboarding drops from days to minutes.",
-     INFO),
-    ("FIRST: Ingredient-level mycotoxin risk scoring",
-     "Existing tools give aggregate risk scores. FeedIQ scores each ingredient individually against its sourcing region, "
-     "showing exactly which component carries the risk and what alternatives exist. Precision beats averages.",
-     WARN),
-    ("FIRST: Cost-risk trade-off visualization",
-     "No tool currently shows 'if you spend $12 more per ton, you reduce fumonisin risk by 48%.' "
-     "FeedIQ makes invisible trade-offs visible — enabling data-driven sourcing decisions instead of price-only procurement.",
-     DANGER),
+feediq_novel = [
+    ("Risk + Formulation unified", "First tool combining mycotoxin risk with feed optimization in one interface.", ACCENT),
+    ("Natural language formulation", "Conversational AI replaces form-based UIs. Onboarding: days → minutes.", INFO),
+    ("Ingredient-level risk scoring", "Per-ingredient mycotoxin scoring by sourcing region, not just aggregates.", WARN),
+    ("Cost-risk trade-off viz", "'Spend $12 more/ton → 48% less fumonisin risk.' Invisible trade-offs made visible.", DANGER),
 ]
 
-ny = Inches(2.2)
-for title, desc, color in novel:
-    add_text(sl, Inches(1.1), ny, Inches(10.5), Inches(0.25),
-             title, font_size=13, color=color, bold=True)
-    add_text(sl, Inches(1.1), ny + Inches(0.3), Inches(10.5), Inches(0.7),
-             desc, font_size=11, color=DIM)
-    ny += Inches(1.1)
+ny = Inches(2.45)
+for title, desc, color in feediq_novel:
+    add_text(sl, Inches(1.1), ny, Inches(5), Inches(0.22),
+             title, font_size=11, color=color, bold=True)
+    add_text(sl, Inches(1.1), ny + Inches(0.25), Inches(5), Inches(0.5),
+             desc, font_size=10, color=DIM)
+    ny += Inches(0.65)
+
+add_rect(sl, Inches(6.5), Inches(2.0), Inches(5.8), Inches(4.8), BG_CARD, RULE)
+add_text(sl, Inches(6.8), Inches(2.1), Inches(5.2), Inches(0.25),
+         "T-C-T FIRSTS", font_size=9, color=INFO, bold=True, font_name='Consolas')
+
+tct_novel = [
+    ("Intent-based enterprise UX", "Navigation by user intent (Observe → Execute), not data type. New UX paradigm.", INFO),
+    ("3-engine decision platform", "Executive + Procurement + Supply Chain in one shell. Zero existing parallels at Cargill.", ACCENT),
+    ("AI confidence scoring", "Every AI recommendation shows confidence %, urgency, and impact. Explainable AI by design.", WARN),
+    ("EUDR compliance intelligence", "Supplier-level deforestation regulation tracking with AI renegotiation recommendations.", DANGER),
+]
+
+ny = Inches(2.45)
+for title, desc, color in tct_novel:
+    add_text(sl, Inches(6.8), ny, Inches(5.2), Inches(0.22),
+             title, font_size=11, color=color, bold=True)
+    add_text(sl, Inches(6.8), ny + Inches(0.25), Inches(5.2), Inches(0.5),
+             desc, font_size=10, color=DIM)
+    ny += Inches(0.65)
 
 add_attribution(sl, "Product strategy by Puneet Arora")
-add_page_num(sl, 23)
+add_page_num(sl, 29)
 
 
 # ══════════════════════════════════════════════════════════════
-# SLIDE 24: CLOSING / ABOUT
+# SLIDE 30: CLOSING / ABOUT
 # ══════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(blank_layout)
 set_bg(sl)
@@ -1292,7 +1748,8 @@ add_rect(sl, Inches(7.5), Inches(4.8), Inches(5), Inches(2.2), BG_CARD, RULE)
 add_text(sl, Inches(7.8), Inches(4.95), Inches(4.5), Inches(0.25),
          "LINKS & CONTACT", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
 links = [
-    ("Live Prototype", "puneetindeelhi940.github.io/portfolio/feediq.html"),
+    ("FeedIQ Prototype", "puneetindeelhi940.github.io/portfolio/feediq.html"),
+    ("T-C-T Prototype", "puneetindeelhi940.github.io/portfolio/tct.html"),
     ("Portfolio", "puneetindeelhi940.github.io/portfolio/home.html"),
     ("Email", "puneet.ar@gmail.com"),
 ]
@@ -1307,13 +1764,13 @@ for label, url in links:
 add_text(sl, Inches(0.8), Inches(7.0), Inches(11.5), Inches(0.3),
          "Built with vibe coding  |  Double Diamond framework  |  June 2026",
          font_size=9, color=FAINT, font_name='Consolas', alignment=PP_ALIGN.CENTER)
-add_page_num(sl, 24)
+add_page_num(sl, 30)
 
 
 # ══════════════════════════════════════════════════════════════
 # SAVE
 # ══════════════════════════════════════════════════════════════
-output_path = '/home/user/portfolio/FeedIQ-Case-Study-Puneet-Arora.pptx'
+output_path = '/home/user/portfolio/FeedIQ-TCT-Case-Study-Puneet-Arora.pptx'
 prs.save(output_path)
 print(f"OK saved to {output_path}")
 print(f"Slides: {len(prs.slides)}")
