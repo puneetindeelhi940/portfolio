@@ -77,22 +77,26 @@ def add_label(slide, left, top, text, color=ACCENT):
                     font_size=10, color=color, bold=True, font_name='Consolas')
 
 def add_title_text(slide, left, top, text, width=Inches(10), font_size=32):
-    return add_text(slide, left, top, width, Inches(1.2), text,
+    line_count = text.count('\n') + 1
+    height = Inches(0.55 * line_count + 0.1)
+    return add_text(slide, left, top, width, height, text,
                     font_size=font_size, color=WHITE, bold=True)
 
 def add_body_text(slide, left, top, text, width=Inches(8), font_size=14, color=DIM):
-    return add_text(slide, left, top, width, Inches(3), text,
+    line_count = text.count('\n') + 1
+    height = max(Inches(0.4), Inches(0.22 * line_count + 0.1))
+    return add_text(slide, left, top, width, height, text,
                     font_size=font_size, color=color)
 
 def add_stat_card(slide, left, top, width, stat, label, desc="", stat_color=ACCENT):
-    card = add_rect(slide, left, top, width, Inches(1.7), BG_CARD, RULE)
-    add_text(slide, left + Inches(0.25), top + Inches(0.15), width - Inches(0.5), Inches(0.5),
-             stat, font_size=36, color=stat_color, bold=True, font_name='Consolas')
-    add_text(slide, left + Inches(0.25), top + Inches(0.7), width - Inches(0.5), Inches(0.25),
-             label, font_size=9, color=FAINT, bold=True, font_name='Consolas')
+    card = add_rect(slide, left, top, width, Inches(1.8), BG_CARD, RULE)
+    add_text(slide, left + Inches(0.25), top + Inches(0.12), width - Inches(0.5), Inches(0.5),
+             stat, font_size=32, color=stat_color, bold=True, font_name='Consolas')
+    add_text(slide, left + Inches(0.25), top + Inches(0.65), width - Inches(0.5), Inches(0.25),
+             label, font_size=8, color=FAINT, bold=True, font_name='Consolas')
     if desc:
-        add_text(slide, left + Inches(0.25), top + Inches(1.0), width - Inches(0.5), Inches(0.6),
-                 desc, font_size=10, color=DIM)
+        add_text(slide, left + Inches(0.25), top + Inches(0.95), width - Inches(0.5), Inches(0.75),
+                 desc, font_size=9, color=DIM)
 
 def add_kpi_row(slide, left, top, items, total_width=Inches(11.5)):
     card_w = total_width / len(items)
@@ -107,12 +111,12 @@ def add_kpi_row(slide, left, top, items, total_width=Inches(11.5)):
 def add_bullet_card(slide, left, top, width, height, title, bullets, title_color=WHITE):
     card = add_rect(slide, left, top, width, height, BG_CARD, RULE)
     add_text(slide, left + Inches(0.25), top + Inches(0.15), width - Inches(0.5), Inches(0.3),
-             title, font_size=13, color=title_color, bold=True)
+             title, font_size=12, color=title_color, bold=True)
     y = top + Inches(0.5)
     for b in bullets:
-        add_text(slide, left + Inches(0.25), y, width - Inches(0.5), Inches(0.4),
-                 f"  {b}", font_size=11, color=DIM)
-        y += Inches(0.38)
+        add_text(slide, left + Inches(0.25), y, width - Inches(0.5), Inches(0.45),
+                 f"  {b}", font_size=10, color=DIM)
+        y += Inches(0.42)
     return card
 
 def add_phase_label(slide, left, top, phase_text, diamond_num=1):
@@ -190,10 +194,10 @@ items = [
 y = Inches(2.2)
 for label, desc in items:
     add_text(sl, Inches(1.1), y, Inches(1.2), Inches(0.3),
-             label, font_size=11, color=ACCENT, bold=True, font_name='Consolas')
-    add_text(sl, Inches(2.5), y, Inches(9.3), Inches(1.0),
-             desc, font_size=11, color=DIM)
-    y += Inches(1.15)
+             label, font_size=10, color=ACCENT, bold=True, font_name='Consolas')
+    add_text(sl, Inches(2.5), y, Inches(9.3), Inches(1.15),
+             desc, font_size=10, color=DIM)
+    y += Inches(1.25)
     if label != "WHEN":
         add_divider(sl, Inches(1.1), y - Inches(0.15), Inches(10.7))
 
@@ -351,9 +355,9 @@ for i, (title, color, bullets) in enumerate(challenges):
              title, font_size=9, color=color, bold=True, font_name='Consolas')
     by = y + Inches(0.55)
     for b in bullets:
-        add_text(sl, cx + Inches(0.2), by, card_w - Inches(0.4), Inches(0.75),
-                 f"• {b}", font_size=10, color=DIM)
-        by += Inches(0.65) if len(b) > 35 else Inches(0.55)
+        add_text(sl, cx + Inches(0.2), by, card_w - Inches(0.4), Inches(0.85),
+                 f"• {b}", font_size=9, color=DIM)
+        by += Inches(0.75) if len(b) > 35 else Inches(0.65)
 
 add_text(sl, Inches(0.8), Inches(6.8), Inches(11.5), Inches(0.3),
          "Source: Cargill FY2025 results, Impact Report 2025, ClientEarth filings, Global Mycotoxin Report 2025",
@@ -404,13 +408,13 @@ tx = Inches(1.1)
 ty = Inches(5.15)
 for i, (name, pct, desc) in enumerate(toxins):
     cx = tx + (i % 3) * Inches(3.75)
-    cy = ty + (i // 3) * Inches(0.8)
+    cy = ty + (i // 3) * Inches(0.85)
     add_text(sl, cx, cy, Inches(0.5), Inches(0.25),
-             name, font_size=10, color=ACCENT, bold=True, font_name='Consolas')
+             name, font_size=9, color=ACCENT, bold=True, font_name='Consolas')
     add_text(sl, cx + Inches(0.5), cy, Inches(0.5), Inches(0.25),
-             pct, font_size=10, color=WHITE, bold=True, font_name='Consolas')
-    add_text(sl, cx + Inches(1.0), cy, Inches(2.6), Inches(0.65),
-             desc, font_size=9, color=DIM)
+             pct, font_size=9, color=WHITE, bold=True, font_name='Consolas')
+    add_text(sl, cx + Inches(1.0), cy, Inches(2.6), Inches(0.75),
+             desc, font_size=8, color=DIM)
 
 add_text(sl, Inches(0.8), Inches(6.85), Inches(11.5), Inches(0.3),
          "Source: Cargill 2025 Global Mycotoxin Report — 389,926 analyses across 41 countries",
@@ -517,10 +521,10 @@ gaps = [
 gy = Inches(2.6)
 for title, desc in gaps:
     add_text(sl, Inches(6.8), gy, Inches(5.2), Inches(0.25),
-             f"✕  {title}", font_size=10, color=WHITE, bold=True)
-    add_text(sl, Inches(7.1), gy + Inches(0.26), Inches(4.9), Inches(0.5),
-             desc, font_size=9, color=DIM)
-    gy += Inches(0.72)
+             f"✕  {title}", font_size=9, color=WHITE, bold=True)
+    add_text(sl, Inches(7.1), gy + Inches(0.26), Inches(4.9), Inches(0.55),
+             desc, font_size=8, color=DIM)
+    gy += Inches(0.82)
 
 add_attribution(sl)
 add_page_num(sl, 8)
@@ -565,17 +569,17 @@ for row in companies:
     for i, cell in enumerate(row):
         color = WHITE if i == 0 else (ACCENT if i == 4 else DIM)
         weight = True if i == 0 else False
-        add_text(sl, rx, ry, hw[i], Inches(0.4),
-                 cell, font_size=9, color=color, bold=weight, font_name='Consolas' if i < 2 else 'Segoe UI')
+        add_text(sl, rx, ry, hw[i], Inches(0.45),
+                 cell, font_size=8, color=color, bold=weight, font_name='Consolas' if i < 2 else 'Segoe UI')
         rx += hw[i]
-    ry += Inches(0.45)
+    ry += Inches(0.5)
 
 # Benchmark callout
-add_rect(sl, Inches(0.8), Inches(6.2), Inches(11.5), Inches(0.7), BG_CARD2, ACCENT)
-add_text(sl, Inches(1.1), Inches(6.3), Inches(10.5), Inches(0.5),
+add_rect(sl, Inches(0.8), Inches(6.3), Inches(11.5), Inches(0.6), BG_CARD2, ACCENT)
+add_text(sl, Inches(1.1), Inches(6.35), Inches(10.5), Inches(0.5),
          "KEY BENCHMARK: Adisseo (March 2026) launched an AI feed optimizer for Chinese livestock — reported 12% cost reduction for major pig farms. "
          "This validates the market. FeedIQ differentiates with global mycotoxin risk integration (Adisseo doesn't have it).",
-         font_size=11, color=DIM)
+         font_size=10, color=DIM)
 
 add_attribution(sl, "Analysis by Puneet Arora  |  Sources: Industry reports, company filings, press releases")
 add_page_num(sl, 9)
@@ -646,11 +650,11 @@ drivers = [
 dy = Inches(4.9)
 for i, (title, desc) in enumerate(drivers):
     cx = Inches(1.1) + (i % 2) * Inches(5.6)
-    cy = dy + (i // 2) * Inches(1.1)
+    cy = dy + (i // 2) * Inches(1.15)
     add_text(sl, cx, cy, Inches(5.2), Inches(0.25),
-             title, font_size=11, color=ACCENT, bold=True)
-    add_text(sl, cx, cy + Inches(0.28), Inches(5.2), Inches(0.7),
-             desc, font_size=10, color=DIM)
+             title, font_size=10, color=ACCENT, bold=True)
+    add_text(sl, cx, cy + Inches(0.28), Inches(5.2), Inches(0.8),
+             desc, font_size=9, color=DIM)
 
 add_attribution(sl)
 add_page_num(sl, 11)
@@ -861,10 +865,10 @@ reasons = [
 ry = Inches(2.8)
 for title, desc in reasons:
     add_text(sl, Inches(8.3), ry, Inches(3.8), Inches(0.22),
-             title, font_size=10, color=ACCENT, bold=True)
-    add_text(sl, Inches(8.3), ry + Inches(0.25), Inches(3.8), Inches(0.7),
-             desc, font_size=9, color=DIM)
-    ry += Inches(0.85)
+             title, font_size=9, color=ACCENT, bold=True)
+    add_text(sl, Inches(8.3), ry + Inches(0.24), Inches(3.8), Inches(0.8),
+             desc, font_size=8, color=DIM)
+    ry += Inches(1.0)
 
 add_attribution(sl, "UX concept by Puneet Arora  |  Interaction design: conversational AI + constraint optimization")
 add_page_num(sl, 15)
@@ -898,12 +902,12 @@ tradeoffs = [
 ty = Inches(3.4)
 for title, change, impact in tradeoffs:
     add_text(sl, Inches(1.1), ty, Inches(5), Inches(0.22),
-             title, font_size=10, color=ACCENT, bold=True, font_name='Consolas')
-    add_text(sl, Inches(1.1), ty + Inches(0.25), Inches(5), Inches(0.4),
-             change, font_size=9, color=DIM)
-    add_text(sl, Inches(1.1), ty + Inches(0.6), Inches(5), Inches(0.35),
-             impact, font_size=8, color=WHITE, bold=True, font_name='Consolas')
-    ty += Inches(1.1)
+             title, font_size=9, color=ACCENT, bold=True, font_name='Consolas')
+    add_text(sl, Inches(1.1), ty + Inches(0.25), Inches(5), Inches(0.45),
+             change, font_size=8, color=DIM)
+    add_text(sl, Inches(1.1), ty + Inches(0.68), Inches(5), Inches(0.35),
+             impact, font_size=7, color=WHITE, bold=True, font_name='Consolas')
+    ty += Inches(1.15)
 
 # Design principle
 add_rect(sl, Inches(6.5), Inches(2.9), Inches(5.8), Inches(3.8), BG_CARD, WARN)
@@ -1025,12 +1029,12 @@ for i, (title, subtitle, color, items) in enumerate(engines):
     add_text(sl, cx + Inches(0.25), Inches(4.0), Inches(3.2), Inches(0.25),
              title, font_size=10, color=color, bold=True, font_name='Consolas')
     add_text(sl, cx + Inches(0.25), Inches(4.3), Inches(3.2), Inches(0.3),
-             subtitle, font_size=12, color=WHITE, bold=True)
+             subtitle, font_size=11, color=WHITE, bold=True)
     iy = Inches(4.7)
     for item in items:
-        add_text(sl, cx + Inches(0.25), iy, Inches(3.2), Inches(0.3),
-                 f"  {item}", font_size=8, color=DIM)
-        iy += Inches(0.3)
+        add_text(sl, cx + Inches(0.25), iy, Inches(3.2), Inches(0.35),
+                 f"  {item}", font_size=7, color=DIM)
+        iy += Inches(0.32)
 
 add_attribution(sl, "Architecture by Puneet Arora  |  Inspired by Bloomberg Terminal + Palantir Foundry")
 add_page_num(sl, 18)
@@ -1064,12 +1068,12 @@ by = Inches(3.45)
 for urg, title, desc, color in briefs:
     add_rect(sl, Inches(1.0), by, Inches(0.85), Inches(0.22), color, color)
     add_text(sl, Inches(1.05), by + Inches(0.01), Inches(0.8), Inches(0.2),
-             urg, font_size=8, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+             urg, font_size=7, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
     add_text(sl, Inches(2.0), by, Inches(5.8), Inches(0.25),
-             title, font_size=10, color=WHITE, bold=True)
-    add_text(sl, Inches(2.0), by + Inches(0.28), Inches(5.8), Inches(0.65),
-             desc, font_size=8, color=DIM)
-    by += Inches(1.0)
+             title, font_size=9, color=WHITE, bold=True)
+    add_text(sl, Inches(2.0), by + Inches(0.28), Inches(5.8), Inches(0.75),
+             desc, font_size=7, color=DIM)
+    by += Inches(1.1)
 
 # KPIs
 add_rect(sl, Inches(8.3), Inches(2.9), Inches(4.0), Inches(3.8), BG_CARD, RULE)
@@ -1086,9 +1090,9 @@ kpis = [
 ky = Inches(3.4)
 for val, lbl, trend in kpis:
     add_text(sl, Inches(8.6), ky, Inches(1.5), Inches(0.25),
-             val, font_size=13, color=WHITE, bold=True, font_name='Consolas')
+             val, font_size=12, color=WHITE, bold=True, font_name='Consolas')
     add_text(sl, Inches(10.2), ky, Inches(1.5), Inches(0.22),
-             lbl, font_size=8, color=FAINT, font_name='Consolas')
+             lbl, font_size=7, color=FAINT, font_name='Consolas')
     tcolor = ACCENT if "▲" in trend else DANGER if "▼" in trend else DIM
     add_text(sl, Inches(10.2), ky + Inches(0.22), Inches(1.5), Inches(0.18),
              trend, font_size=8, color=tcolor, font_name='Consolas')
@@ -1167,18 +1171,18 @@ add_text(sl, Inches(8.6), Inches(3.8), Inches(3.5), Inches(1.0),
          "AI suggests: renegotiate with EUDR\ncompliance clause. Add 60-day GPS\npolygon mapping requirement.\nCompeting palm suppliers offer\n3% lower FOB.",
          font_size=8, color=DIM)
 
-add_text(sl, Inches(8.6), Inches(4.95), Inches(3.5), Inches(0.25),
-         "ADM contract optimization", font_size=10, color=WHITE, bold=True)
-add_text(sl, Inches(8.6), Inches(5.25), Inches(3.5), Inches(0.8),
+add_text(sl, Inches(8.6), Inches(5.0), Inches(3.5), Inches(0.25),
+         "ADM contract optimization", font_size=9, color=WHITE, bold=True)
+add_text(sl, Inches(8.6), Inches(5.28), Inches(3.5), Inches(0.8),
          "Volume commitment increase of 8%\nunlocks tier-2 pricing. Estimated\nsaving: $4.2M annually.\nAI confidence: 89%",
-         font_size=8, color=DIM)
+         font_size=7, color=DIM)
 
-add_rect(sl, Inches(8.6), Inches(6.1), Inches(1.0), Inches(0.25), ACCENT, ACCENT)
-add_text(sl, Inches(8.65), Inches(6.12), Inches(0.9), Inches(0.2),
-         "DRAFT", font_size=8, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
-add_rect(sl, Inches(9.8), Inches(6.1), Inches(1.0), Inches(0.25), INFO, INFO)
-add_text(sl, Inches(9.85), Inches(6.12), Inches(0.9), Inches(0.2),
-         "SIMULATE", font_size=8, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+add_rect(sl, Inches(8.6), Inches(6.25), Inches(1.0), Inches(0.25), ACCENT, ACCENT)
+add_text(sl, Inches(8.65), Inches(6.27), Inches(0.9), Inches(0.2),
+         "DRAFT", font_size=7, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+add_rect(sl, Inches(9.8), Inches(6.25), Inches(1.0), Inches(0.25), INFO, INFO)
+add_text(sl, Inches(9.85), Inches(6.27), Inches(0.9), Inches(0.2),
+         "SIMULATE", font_size=7, color=BG_DARK, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
 
 add_attribution(sl, "Procurement intelligence design by Puneet Arora")
 add_page_num(sl, 20)
@@ -1246,10 +1250,10 @@ add_rect(sl, Inches(0.8), Inches(5.1), Inches(3.5), Inches(1.7), BG_CARD, DANGER
 add_text(sl, Inches(1.1), Inches(5.25), Inches(3), Inches(0.25),
          "DELAY PREDICTION AI", font_size=9, color=DANGER, bold=True, font_name='Consolas')
 add_text(sl, Inches(1.1), Inches(5.55), Inches(3), Inches(0.25),
-         "CGL-8823: 3-day delay predicted", font_size=10, color=WHITE, bold=True)
-add_text(sl, Inches(1.1), Inches(5.82), Inches(3), Inches(0.8),
+         "CGL-8823: 3-day delay predicted", font_size=9, color=WHITE, bold=True)
+add_text(sl, Inches(1.1), Inches(5.82), Inches(3), Inches(0.85),
          "Root cause: Odessa port congestion\n(32 vessels, 4.2d avg dwell).\nAI confidence: 87%\nRecommend: Reroute via Constanta.",
-         font_size=8, color=DIM)
+         font_size=7, color=DIM)
 
 # Port intelligence
 add_rect(sl, Inches(4.5), Inches(5.1), Inches(3.6), Inches(1.7), BG_CARD, RULE)
@@ -1328,31 +1332,31 @@ ix = Inches(0.6)
 iw = Inches(1.33)
 for i, (name, desc, color) in enumerate(intents):
     cx = ix + i * (iw + Inches(0.05))
-    add_rect(sl, cx, Inches(2.9), iw, Inches(1.5), BG_CARD, color)
-    add_text(sl, cx + Inches(0.1), Inches(3.0), iw - Inches(0.2), Inches(0.22),
-             name, font_size=8, color=color, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
-    add_text(sl, cx + Inches(0.1), Inches(3.28), iw - Inches(0.2), Inches(0.9),
-             desc, font_size=7, color=DIM, alignment=PP_ALIGN.CENTER)
+    add_rect(sl, cx, Inches(2.9), iw, Inches(1.4), BG_CARD, color)
+    add_text(sl, cx + Inches(0.08), Inches(2.98), iw - Inches(0.16), Inches(0.2),
+             name, font_size=7, color=color, bold=True, font_name='Consolas', alignment=PP_ALIGN.CENTER)
+    add_text(sl, cx + Inches(0.08), Inches(3.22), iw - Inches(0.16), Inches(0.9),
+             desc, font_size=6, color=DIM, alignment=PP_ALIGN.CENTER)
     if i < 8:
-        add_text(sl, cx + iw, Inches(3.35), Inches(0.1), Inches(0.2),
-                 "→", font_size=10, color=FAINT, alignment=PP_ALIGN.CENTER)
+        add_text(sl, cx + iw, Inches(3.3), Inches(0.1), Inches(0.2),
+                 "→", font_size=8, color=FAINT, alignment=PP_ALIGN.CENTER)
 
 # AI Confidence
-add_rect(sl, Inches(0.8), Inches(4.8), Inches(5.5), Inches(2.1), BG_CARD, ACCENT)
-add_text(sl, Inches(1.1), Inches(4.95), Inches(5), Inches(0.25),
+add_rect(sl, Inches(0.8), Inches(4.7), Inches(5.5), Inches(2.2), BG_CARD, ACCENT)
+add_text(sl, Inches(1.1), Inches(4.82), Inches(5), Inches(0.25),
          "AI RECOMMENDATION CARDS", font_size=9, color=ACCENT, bold=True, font_name='Consolas')
-add_text(sl, Inches(1.1), Inches(5.25), Inches(5), Inches(1.5),
+add_text(sl, Inches(1.1), Inches(5.1), Inches(5), Inches(1.7),
          "Every AI recommendation in T-C-T includes:\n\n"
          "• Confidence score (0-100%) with visual meter\n"
          "• Urgency badge (CRITICAL / HIGH / MONITOR)\n"
          "• Estimated impact (cost savings, risk reduction)\n"
          "• Action buttons (APPROVE / SIMULATE / INVESTIGATE)\n"
          "• Decision audit trail for compliance",
-         font_size=9, color=DIM)
+         font_size=8, color=DIM)
 
 # Comparison with traditional
-add_rect(sl, Inches(6.5), Inches(4.8), Inches(5.8), Inches(2.1), BG_CARD, RULE)
-add_text(sl, Inches(6.8), Inches(4.95), Inches(5.2), Inches(0.25),
+add_rect(sl, Inches(6.5), Inches(4.7), Inches(5.8), Inches(2.2), BG_CARD, RULE)
+add_text(sl, Inches(6.8), Inches(4.82), Inches(5.2), Inches(0.25),
          "TRADITIONAL vs. INTENT-BASED UX", font_size=9, color=INFO, bold=True, font_name='Consolas')
 
 comparisons = [
@@ -1361,16 +1365,16 @@ comparisons = [
     ("Alert System", "Flags issues, no resolution path", DIM),
     ("T-C-T", "Guides the entire decision lifecycle\nfrom observation through execution", ACCENT),
 ]
-cy = Inches(5.3)
+cy = Inches(5.15)
 for label, desc, color in comparisons:
     is_tct = label == "T-C-T"
     if is_tct:
-        add_rect(sl, Inches(6.7), cy - Inches(0.05), Inches(5.4), Inches(0.65), BG_CARD2, ACCENT)
+        add_rect(sl, Inches(6.7), cy - Inches(0.05), Inches(5.4), Inches(0.7), BG_CARD2, ACCENT)
     add_text(sl, Inches(6.8), cy, Inches(1.2), Inches(0.22),
-             label, font_size=10, color=ACCENT if is_tct else FAINT, bold=True, font_name='Consolas')
-    add_text(sl, Inches(8.1), cy, Inches(4), Inches(0.45),
-             desc, font_size=9, color=WHITE if is_tct else DIM)
-    cy += Inches(0.42) if not is_tct else Inches(0.65)
+             label, font_size=9, color=ACCENT if is_tct else FAINT, bold=True, font_name='Consolas')
+    add_text(sl, Inches(8.0), cy, Inches(4), Inches(0.5),
+             desc, font_size=8, color=WHITE if is_tct else DIM)
+    cy += Inches(0.45) if not is_tct else Inches(0.7)
 
 add_attribution(sl, "Intent-based UX framework by Puneet Arora  |  Informed by Apple Intelligence + Arc Browser")
 add_page_num(sl, 22)
@@ -1400,16 +1404,16 @@ principles = [
 x = Inches(0.8)
 for i, (num, title, color, hook, detail) in enumerate(principles):
     cx = x + i * Inches(3.9)
-    add_rect(sl, cx, Inches(2.4), Inches(3.7), Inches(4.6), BG_CARD, color)
-    add_text(sl, cx + Inches(0.25), Inches(2.55), Inches(0.5), Inches(0.4),
-             num, font_size=28, color=color, bold=True, font_name='Consolas')
-    add_text(sl, cx + Inches(0.25), Inches(3.0), Inches(3.2), Inches(0.65),
-             title, font_size=16, color=WHITE, bold=True)
-    add_text(sl, cx + Inches(0.25), Inches(3.7), Inches(3.2), Inches(0.65),
-             hook, font_size=10, color=color)
-    add_divider(sl, cx + Inches(0.25), Inches(4.4), Inches(3.2))
-    add_text(sl, cx + Inches(0.25), Inches(4.55), Inches(3.2), Inches(2.3),
-             detail, font_size=9, color=DIM)
+    add_rect(sl, cx, Inches(2.4), Inches(3.7), Inches(4.7), BG_CARD, color)
+    add_text(sl, cx + Inches(0.25), Inches(2.55), Inches(0.5), Inches(0.35),
+             num, font_size=24, color=color, bold=True, font_name='Consolas')
+    add_text(sl, cx + Inches(0.25), Inches(2.95), Inches(3.2), Inches(0.6),
+             title, font_size=14, color=WHITE, bold=True)
+    add_text(sl, cx + Inches(0.25), Inches(3.6), Inches(3.2), Inches(0.65),
+             hook, font_size=9, color=color)
+    add_divider(sl, cx + Inches(0.25), Inches(4.3), Inches(3.2))
+    add_text(sl, cx + Inches(0.25), Inches(4.45), Inches(3.2), Inches(2.5),
+             detail, font_size=8, color=DIM)
 
 add_attribution(sl, "Design principles by Puneet Arora  |  Informed by Dell GenAI VA (4.4% → 80% engagement)")
 add_page_num(sl, 23)
@@ -1443,9 +1447,9 @@ for i, (title, desc, color) in enumerate(steps):
     add_text(sl, cx + Inches(0.15), sy + Inches(0.1), sw - Inches(0.3), Inches(0.2),
              f"STEP {i+1}", font_size=8, color=FAINT, bold=True, font_name='Consolas')
     add_text(sl, cx + Inches(0.15), sy + Inches(0.35), sw - Inches(0.3), Inches(0.3),
-             title, font_size=13, color=color, bold=True, font_name='Consolas')
+             title, font_size=12, color=color, bold=True, font_name='Consolas')
     add_text(sl, cx + Inches(0.15), sy + Inches(0.75), sw - Inches(0.3), Inches(2.5),
-             desc, font_size=9, color=DIM)
+             desc, font_size=8, color=DIM)
 
 # Arrow indicators between steps
 for i in range(5):
@@ -1567,13 +1571,13 @@ for i, (cat, color, metrics) in enumerate(categories):
              cat, font_size=10, color=color, bold=True, font_name='Consolas')
     my = Inches(2.7)
     for metric, target, bench in metrics:
-        add_text(sl, cx, my, Inches(3.4), Inches(0.22),
-                 metric, font_size=10, color=WHITE, bold=True)
-        add_text(sl, cx, my + Inches(0.25), Inches(3.4), Inches(0.25),
-                 target, font_size=9, color=color, font_name='Consolas')
-        add_text(sl, cx, my + Inches(0.5), Inches(3.4), Inches(0.25),
-                 bench, font_size=8, color=FAINT, font_name='Consolas')
-        my += Inches(0.85)
+        add_text(sl, cx, my, Inches(3.4), Inches(0.25),
+                 metric, font_size=9, color=WHITE, bold=True)
+        add_text(sl, cx, my + Inches(0.28), Inches(3.4), Inches(0.25),
+                 target, font_size=8, color=color, font_name='Consolas')
+        add_text(sl, cx, my + Inches(0.55), Inches(3.4), Inches(0.3),
+                 bench, font_size=7, color=FAINT, font_name='Consolas')
+        my += Inches(0.95)
 
 add_text(sl, Inches(0.8), Inches(6.85), Inches(11.5), Inches(0.3),
          "Benchmarks sourced from: Adisseo AI platform (2026), Cargill VIV Asia 2025 reports, industry averages",
@@ -1619,9 +1623,9 @@ for i, (phase, time, subtitle, color, items) in enumerate(phases):
     for item in items:
         prefix = "✓" if "DONE" in item else "○"
         c = ACCENT if "DONE" in item else DIM
-        add_text(sl, cx + Inches(0.25), iy, Inches(3.2), Inches(0.35),
-                 f" {prefix}  {item}", font_size=9, color=c)
-        iy += Inches(0.35)
+        add_text(sl, cx + Inches(0.25), iy, Inches(3.2), Inches(0.38),
+                 f" {prefix}  {item}", font_size=8, color=c)
+        iy += Inches(0.38)
 
 add_attribution(sl, "Roadmap by Puneet Arora")
 add_page_num(sl, 27)
@@ -1645,22 +1649,22 @@ benchmarks = [
 
 by = Inches(2.2)
 for title, date, metric, desc, color in benchmarks:
-    add_rect(sl, Inches(0.8), by, Inches(11.5), Inches(1.15), BG_CARD, RULE)
-    add_text(sl, Inches(1.1), by + Inches(0.08), Inches(3), Inches(0.22),
-             title, font_size=11, color=WHITE, bold=True)
-    add_text(sl, Inches(1.1), by + Inches(0.35), Inches(3), Inches(0.2),
-             date, font_size=9, color=FAINT, font_name='Consolas')
-    add_text(sl, Inches(4.2), by + Inches(0.1), Inches(1.8), Inches(0.35),
-             metric, font_size=14, color=color, bold=True, font_name='Consolas')
-    add_text(sl, Inches(6.2), by + Inches(0.08), Inches(5.8), Inches(1.0),
-             desc, font_size=9, color=DIM)
-    by += Inches(1.25)
+    add_rect(sl, Inches(0.8), by, Inches(11.5), Inches(0.95), BG_CARD, RULE)
+    add_text(sl, Inches(1.1), by + Inches(0.06), Inches(3), Inches(0.22),
+             title, font_size=10, color=WHITE, bold=True)
+    add_text(sl, Inches(1.1), by + Inches(0.32), Inches(3), Inches(0.2),
+             date, font_size=8, color=FAINT, font_name='Consolas')
+    add_text(sl, Inches(4.2), by + Inches(0.08), Inches(1.8), Inches(0.35),
+             metric, font_size=13, color=color, bold=True, font_name='Consolas')
+    add_text(sl, Inches(6.2), by + Inches(0.06), Inches(5.8), Inches(0.85),
+             desc, font_size=8, color=DIM)
+    by += Inches(1.05)
 
-add_rect(sl, Inches(0.8), Inches(6.1), Inches(11.5), Inches(0.7), BG_CARD2, ACCENT)
-add_text(sl, Inches(1.1), Inches(6.2), Inches(10.5), Inches(0.5),
-         "PATTERN: AI tools that connect domain data to user decisions consistently deliver 10-30x ROI.\n"
+add_rect(sl, Inches(0.8), Inches(6.45), Inches(11.5), Inches(0.55), BG_CARD2, ACCENT)
+add_text(sl, Inches(1.1), Inches(6.5), Inches(10.5), Inches(0.45),
+         "PATTERN: AI tools that connect domain data to user decisions consistently deliver 10-30x ROI. "
          "FeedIQ applies this proven pattern to a $1.5B market with zero existing interactive tools.",
-         font_size=11, color=DIM)
+         font_size=10, color=DIM)
 
 add_attribution(sl, "Research & analysis by Puneet Arora")
 add_page_num(sl, 28)
@@ -1688,10 +1692,10 @@ feediq_novel = [
 ny = Inches(2.45)
 for title, desc, color in feediq_novel:
     add_text(sl, Inches(1.1), ny, Inches(5), Inches(0.25),
-             title, font_size=11, color=color, bold=True)
-    add_text(sl, Inches(1.1), ny + Inches(0.28), Inches(5), Inches(0.55),
-             desc, font_size=10, color=DIM)
-    ny += Inches(0.78)
+             title, font_size=10, color=color, bold=True)
+    add_text(sl, Inches(1.1), ny + Inches(0.28), Inches(5), Inches(0.6),
+             desc, font_size=9, color=DIM)
+    ny += Inches(0.85)
 
 add_rect(sl, Inches(6.5), Inches(2.0), Inches(5.8), Inches(4.0), BG_CARD, RULE)
 add_text(sl, Inches(6.8), Inches(2.1), Inches(5.2), Inches(0.25),
@@ -1707,10 +1711,10 @@ tct_novel = [
 ny = Inches(2.45)
 for title, desc, color in tct_novel:
     add_text(sl, Inches(6.8), ny, Inches(5.2), Inches(0.25),
-             title, font_size=11, color=color, bold=True)
-    add_text(sl, Inches(6.8), ny + Inches(0.28), Inches(5.2), Inches(0.55),
-             desc, font_size=10, color=DIM)
-    ny += Inches(0.78)
+             title, font_size=10, color=color, bold=True)
+    add_text(sl, Inches(6.8), ny + Inches(0.28), Inches(5.2), Inches(0.6),
+             desc, font_size=9, color=DIM)
+    ny += Inches(0.85)
 
 add_attribution(sl, "Product strategy by Puneet Arora")
 add_page_num(sl, 29)
@@ -1756,10 +1760,10 @@ links = [
 ly = Inches(5.3)
 for label, url in links:
     add_text(sl, Inches(7.8), ly, Inches(1.5), Inches(0.25),
-             label, font_size=9, color=FAINT, font_name='Consolas')
+             label, font_size=8, color=FAINT, font_name='Consolas')
     add_text(sl, Inches(9.3), ly, Inches(3), Inches(0.25),
-             url, font_size=9, color=WHITE, font_name='Consolas')
-    ly += Inches(0.3)
+             url, font_size=8, color=WHITE, font_name='Consolas')
+    ly += Inches(0.35)
 
 add_text(sl, Inches(0.8), Inches(7.0), Inches(11.5), Inches(0.3),
          "Built with vibe coding  |  Double Diamond framework  |  June 2026",
