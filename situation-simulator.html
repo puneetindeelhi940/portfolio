@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Situation Simulator — Orbital Defense — Puneet Arora</title>
 <meta name="description" content="An interactive orbital-defense situation room — a live 3D globe of satellites, ground towers and network links. Simulate space-trash collisions, clean orbital paths, filter constellations, and watch failure risk in real time. Concept prototype (simulated data).">
@@ -260,7 +261,7 @@
   .towers .head .tab b { color: var(--signal); }
   .towers .head .search { margin-left: auto; display: flex; align-items: center; gap: 7px; background: rgba(8,13,20,0.7); border: 1px solid var(--hud-rule); border-radius: 8px; padding: 6px 10px; }
   .towers .head .search svg { width: 14px; height: 14px; color: var(--hud-faint); }
-  .towers .head .search input { background: transparent; border: none; outline: none; color: var(--hud-ink); font-family: var(--f-sans); font-size: 12.5px; width: 110px; }
+  .towers .head .search input { background: transparent; border: none; color: var(--hud-ink); font-family: var(--f-sans); font-size: 12.5px; width: 110px; }
   table.twr { width: 100%; border-collapse: collapse; }
   table.twr th { text-align: left; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--hud-faint); font-weight: 400; padding: 10px 14px; }
   table.twr td { padding: 11px 14px; font-size: 13px; color: var(--hud-dim); border-top: 1px solid var(--hud-rule); }
@@ -303,6 +304,7 @@
 </style>
 </head>
 <body class="cd-body">
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="cd-app">
 
   <!-- real 3D globe (globe.gl, self-hosted) renders here; CSS earth-glow is the no-WebGL fallback -->
@@ -615,8 +617,9 @@
     });
     // html layer reads lat/lng accessors each frame, so mutating is enough;
     // refresh occasionally to be safe across globe.gl builds
-    requestAnimationFrame(animateSats);
+    if (!document.hidden) requestAnimationFrame(animateSats);
   }
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) requestAnimationFrame(animateSats); });
 
   /* ── satellite selection → info card ───────────────────── */
   var satCard = document.getElementById('satCard');
@@ -692,7 +695,7 @@
 
   // compass needle drift
   var needle = document.getElementById('needle'), ang = 0;
-  setInterval(function () { if (state.autoRotate) { ang = (ang + state.speed * 0.8) % 360; needle.style.transform = 'translate(-50%,-100%) rotate(' + ang + 'deg)'; } }, 60);
+  setInterval(function () { if (document.hidden) return; if (state.autoRotate) { ang = (ang + state.speed * 0.8) % 360; needle.style.transform = 'translate(-50%,-100%) rotate(' + ang + 'deg)'; } }, 60);
 
   /* ── tabs / mode ───────────────────────────────────────── */
   document.querySelectorAll('#cdTabs button').forEach(function (b) {
@@ -735,7 +738,7 @@
   /* ── live counters ─────────────────────────────────────── */
   var collSeconds = 2 * 3600 + 30 * 60 + 13, collEl = document.getElementById('collClock');
   setInterval(function () {
-    if (collSeconds < 0) return;
+    if (document.hidden || collSeconds < 0) return;
     collSeconds = Math.max(0, collSeconds - 1);
     var h = Math.floor(collSeconds / 3600), m = Math.floor((collSeconds % 3600) / 60), s = collSeconds % 60;
     collEl.textContent = h + 'h ' + ('0' + m).slice(-2) + 'm ' + ('0' + s).slice(-2) + 's';
@@ -743,6 +746,7 @@
 
   var errEl = document.getElementById('errTs'), errT = 8 * 3600 + 39 * 60 + 16;
   setInterval(function () {
+    if (document.hidden) return;
     errT++;
     var h = Math.floor(errT / 3600) % 24, m = Math.floor((errT % 3600) / 60), s = errT % 60;
     errEl.textContent = 'T' + ('0' + h).slice(-2) + ':' + ('0' + m).slice(-2) + ':' + ('0' + s).slice(-2) + '.' + ('0' + Math.floor(Math.random() * 99)).slice(-2) + 'Z';
@@ -750,6 +754,7 @@
 
   // gentle speed flutter
   setInterval(function () {
+    if (document.hidden) return;
     var cur = 8 + Math.floor(Math.random() * 4);
     document.getElementById('curSpeed').innerHTML = cur + 'k <span>km/h</span>';
     document.getElementById('gCur').style.height = (cur / 30 * 100) + '%';

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Opportunity Simulator — Puneet Arora</title>
 <meta name="description" content="A living digital twin of the global economy — an executive AI that surfaces where money is about to flow, scores every country, simulates N-order geopolitical shocks, and turns world events into strategy. Interactive prototype (simulated data).">
@@ -129,7 +130,7 @@
   .msg .bub ul { margin: 6px 0 0; padding-left: 18px; } .msg .bub li { margin: 3px 0; color: var(--dim); }
   .chat .composer { border-top: 1px solid var(--rule); padding: 12px; display: flex; gap: 10px; }
   .chat .composer input { flex: 1; background: var(--bg-2); border: 1px solid var(--rule); border-radius: 5px; color: var(--ink); font-family: var(--f-sans); font-size: 14px; padding: 11px 14px; }
-  .chat .composer input:focus { outline: none; border-color: var(--signal); }
+  .chat .composer input:focus { border-color: var(--signal); }
   .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
   .chip-row button { background: transparent; border: 1px solid var(--rule); border-radius: 999px; color: var(--dim); font-family: var(--f-sans); font-size: 12.5px; padding: 6px 13px; cursor: pointer; transition: all .14s; }
   .chip-row button:hover { color: var(--ink); border-color: var(--signal); }
@@ -217,7 +218,7 @@
   .pill-list span { font-family: var(--f-mono); font-size: 10.5px; color: var(--dim); border: 1px solid var(--rule); border-radius: 999px; padding: 4px 10px; }
 
   .input-lg { width: 100%; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; color: var(--ink); font-family: var(--f-sans); font-size: 16px; padding: 15px 18px; }
-  .input-lg:focus { outline: none; border-color: var(--signal); }
+  .input-lg:focus { border-color: var(--signal); }
 
   @media (max-width: 1000px) {
     .sim-shell { grid-template-columns: 1fr; }
@@ -234,6 +235,7 @@
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="page">
 
 <!-- TOPBAR -->

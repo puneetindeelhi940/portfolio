@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bio — Puneet Arora</title>
 <meta name="description" content="The leadership story of Puneet Arora — 20 years at the seam between executives, engineers and end users, with patents, awards and an AI-design practice.">
@@ -23,8 +24,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
 <link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Puneet Arora",
+  "jobTitle": "Principal Product Designer & AI Design Leader",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Dell Technologies"
+  },
+  "url": "https://puneetindeelhi940.github.io/portfolio/",
+  "sameAs": ["https://www.linkedin.com/in/puneetarora35/"],
+  "knowsAbout": ["AI Experience Design", "Enterprise UX", "Personalization at Scale", "GenAI", "Design Systems", "Design Leadership"],
+  "alumniOf": [
+    {"@type": "Organization", "name": "Dell Technologies"},
+    {"@type": "Organization", "name": "Boeing"},
+    {"@type": "Organization", "name": "Software AG"},
+    {"@type": "Organization", "name": "Hewlett Packard R&D"}
+  ],
+  "award": ["President & Game Changer Awards at Dell (2025)", "The Economic Times Award (2022)", "Director Award at H-P R&D (2007)"]
+}
+</script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="page">
 
 <header class="topbar">
@@ -48,6 +72,7 @@
     
   </div>
 </header>
+<main id="main-content">
 
 <!-- BIO HERO -->
 <section class="bio-hero">
@@ -99,7 +124,7 @@
 <div class="shead">
   <div class="shead__left">
     <span class="shead__n">§ 02</span>
-    <span class="shead__title">HOW I THINK</span>
+    <h2 class="shead__title">HOW I THINK</h2>
     <span class="shead__sub">// six lenses I bring to a design org</span>
   </div>
 </div>
@@ -140,7 +165,7 @@
 <div class="shead">
   <div class="shead__left">
     <span class="shead__n">§ 03</span>
-    <span class="shead__title">JOURNEY</span>
+    <h2 class="shead__title">JOURNEY</h2>
     <span class="shead__sub">// nineteen years, four reinventions</span>
   </div>
   <div class="shead__right">2006 → 2026</div>
@@ -237,7 +262,7 @@
 <div class="shead">
   <div class="shead__left">
     <span class="shead__n">§ 04</span>
-    <span class="shead__title">PATENTS &amp; PUBLICATIONS</span>
+    <h2 class="shead__title">PATENTS &amp; PUBLICATIONS</h2>
     <span class="shead__sub">// eight granted patents, eight technical publications</span>
   </div>
   <div class="shead__right">FULL LIST ON REQUEST</div>
@@ -286,6 +311,7 @@
 </div>
 
 <!-- FOOTER -->
+</main>
 <footer class="foot">
   <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
 </footer>

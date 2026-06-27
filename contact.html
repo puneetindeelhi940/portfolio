@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact — Puneet Arora</title>
 <meta name="description" content="Get in touch with Puneet Arora — Principal Product Designer &amp; AI Design Leader. Conversations on AI, personalization, UX strategy and enterprise transformation.">
@@ -97,7 +98,6 @@
     background: var(--bg); border: 1px solid var(--rule); border-radius: 2px;
     padding: 10px 12px; color: var(--ink);
     font-family: var(--f-sans); font-size: 13px;
-    outline: none;
   }
   .write input:focus, .write textarea:focus, .write select:focus { border-color: var(--signal); }
   .write textarea { resize: vertical; min-height: 110px; }
@@ -134,6 +134,7 @@
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="page">
 
 <header class="topbar">
@@ -157,6 +158,7 @@
     
   </div>
 </header>
+<main id="main-content">
 
 <section class="contact-grid">
   <div>
@@ -278,6 +280,7 @@
   </div>
 </div>
 
+</main>
 <footer class="foot">
   <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
 </footer>

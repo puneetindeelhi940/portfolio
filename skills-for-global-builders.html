@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skills for Global Builders — Puneet Arora</title>
 <meta name="description" content="Claude skills for builders shipping AI features in production — a practical catalog by Puneet Arora.">
@@ -24,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
 <link rel="stylesheet" href="assets/site.css">
-<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js" integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb" crossorigin="anonymous"></script>
 <style>
   :root {
     --gb-1: #6b8cff;   /* electric blue */
@@ -124,7 +125,7 @@
   .search:focus-within { border-color: var(--signal); }
   .search svg { width: 14px; height: 14px; flex-shrink: 0; color: var(--dim); }
   .search input {
-    background: transparent; border: 0; outline: none; color: var(--ink);
+    background: transparent; border: 0; color: var(--ink);
     font-family: var(--f-mono); font-size: 13px; flex: 1; letter-spacing: 0.03em;
   }
   .search input::placeholder { color: var(--faint); }
@@ -327,7 +328,6 @@
     background: var(--bg); border: 1px solid var(--rule); border-radius: 2px;
     padding: 10px 12px; color: var(--ink);
     font-family: var(--f-sans); font-size: 13px;
-    outline: none;
   }
   .submit input:focus, .submit textarea:focus, .submit select:focus { border-color: var(--gb-1); }
   .submit textarea { resize: vertical; min-height: 90px; }
@@ -353,6 +353,7 @@
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="page">
 
 <header class="topbar">
@@ -373,6 +374,7 @@
     </span>
   </div>
 </header>
+<main id="main-content">
 
 <!-- HERO -->
 <section class="gb-hero">
@@ -1690,7 +1692,7 @@
       Set window.GB_FORMSPREE_ID below to your Formspree form ID (after /f/).
       Falls back to the user's mail client when blank.
     -->
-    <form id="submit-form" action="https://formspree.io/f/" method="POST">
+    <form id="submit-form" action="mailto:puneet.ar@gmail.com" method="post" enctype="text/plain" method="POST">
       <div class="submit__row">
         <label><span>Your name</span><input type="text" name="name" required></label>
         <label><span>Email</span><input type="email" name="email" required></label>
@@ -1758,6 +1760,7 @@
   </aside>
 </section>
 
+</main>
 <footer class="foot">
   <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
 </footer>

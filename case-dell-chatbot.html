@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dell.com — Generative AI Chatbot · Case Study</title>
 <meta name="description" content="Designing Dell.com's generative AI chatbot — conversational commerce, guided journeys and a reusable chat component library for Dell Premier.">
@@ -358,7 +359,7 @@
   }
   .ref-thumb:hover, .ref-thumb:focus-visible {
     opacity: 1; border-color: var(--signal);
-    transform: translateY(-1px); outline: none;
+    transform: translateY(-1px);
   }
   .ref-thumb img {
     width: 100%; height: 100%; object-fit: cover; display: block;
@@ -411,8 +412,25 @@
     .impact-grid { grid-template-columns: 1fr; }
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Dell.com GenAI Virtual Assistant — A Case Study",
+  "description": "How Puneet Arora led the design of Dell's first GenAI Virtual Assistant, achieving 80% engagement across 26,000+ Premier stores.",
+  "author": {
+    "@type": "Person",
+    "name": "Puneet Arora"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Puneet Arora"
+  }
+}
+</script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="page">
 
 <header class="topbar">
@@ -433,6 +451,7 @@
     </span>
   </div>
 </header>
+<main id="main-content">
 
 <!-- CASE HERO -->
 <section class="case-hero">
@@ -553,7 +572,7 @@
             data-src="assets/purpose.PNG"
             data-alt="Case study purpose slide — Conversational GenAI is transforming how customers shop, and this case takes you behind the scenes."
             data-cap="Case opener — what this case study covers, and the key learnings on building a scalable, branded AI experience.">
-            <img src="assets/purpose.PNG" alt="" loading="lazy">
+            <img src="assets/purpose.PNG" alt="Project purpose and mission statement" loading="lazy">
           </button>
         </div>
       </div>
@@ -564,13 +583,13 @@
             data-src="assets/ai experience team.PNG"
             data-alt="AI Experience Leaders portraits — Aaron Marr, Karsten Baker, Paul Sturrs, Puneet Arora, Matt Walton, Adam Davis, Chad Roberts."
             data-cap="AI Experience Leaders — the visionary team that drove the first unified GenAI chatbot at Dell, defining strategy, design, and engineering.">
-            <img src="assets/ai experience team.PNG" alt="" loading="lazy">
+            <img src="assets/ai experience team.PNG" alt="AI experience design team" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/ai experience team 2.PNG"
             data-alt="UI Engineering portraits — Nisha Pillai and Kritika Jindal."
             data-cap="UI Engineering — Nisha Pillai (Senior Engineer) and Kritika Jindal (Engineer 2) bringing the assistant to life across surfaces.">
-            <img src="assets/ai experience team 2.PNG" alt="" loading="lazy">
+            <img src="assets/ai experience team 2.PNG" alt="AI experience design team collaboration" loading="lazy">
           </button>
         </div>
       </div>
@@ -658,13 +677,13 @@
             data-src="assets/mvp scope and objective.PNG"
             data-alt="Pre-redesign chatbot landscape — AI Product Chat, Connect Edited, and Dell Virtual Assistant screens."
             data-cap="Before — fragmented chatbots across Dell.com, each tied to a domain and disconnected from the others.">
-            <img src="assets/mvp scope and objective.PNG" alt="" loading="lazy">
+            <img src="assets/mvp scope and objective.PNG" alt="MVP scope and objectives overview" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/problems with current journey.PNG"
             data-alt="Current shopping journey flow — Homepage to Broad Category to Complex Filters to Technical Comparison to Unclear Decision."
             data-cap="The current journey — linear, rigid, and not adaptive to user needs. Time to stop pushing customers down a path and walk beside them.">
-            <img src="assets/problems with current journey.PNG" alt="" loading="lazy">
+            <img src="assets/problems with current journey.PNG" alt="Pain points in the current user journey" loading="lazy">
           </button>
         </div>
       </div>
@@ -770,7 +789,7 @@
             data-src="assets/discovery and framing behind the vision.PNG"
             data-alt="Near vs Future innovation radar diagram showing Guided Conversations, Better Discoverability, Multimodal Design, plus Voice AI, Automations, Full-System Recommendations, Deep Research, Cross-Platform Memory."
             data-cap="Discovery &amp; framing — a Now vs Future lens, blending internal deep-dives with external signals (Deloitte, Forrester, NNG) to set the roadmap.">
-            <img src="assets/discovery and framing behind the vision.PNG" alt="" loading="lazy">
+            <img src="assets/discovery and framing behind the vision.PNG" alt="Discovery and framing process for the design vision" loading="lazy">
           </button>
         </div>
       </div>
@@ -781,7 +800,7 @@
             data-src="assets/new rules of experience design.PNG"
             data-alt="Microsoft HAX Toolkit full grid — Initially, During interaction, When wrong, Over time guideline cards."
             data-cap="Microsoft HAX Toolkit — the full source framework behind the team&rsquo;s distilled Goal Clarity / Failure Transparency / Experience Grounding principles.">
-            <img src="assets/new rules of experience design.PNG" alt="" loading="lazy">
+            <img src="assets/new rules of experience design.PNG" alt="New rules of AI experience design" loading="lazy">
           </button>
         </div>
       </div>
@@ -792,13 +811,13 @@
             data-src="assets/competitive analysis workshop.PNG"
             data-alt="Logo grid of 11 conversational AI platforms reviewed in workshop."
             data-cap="Workshop — 11 platforms studied across consumer AI (Apple, Meta, Gemini), enterprise (Copilot, watsonx.ai, Amazon Q), and retail.">
-            <img src="assets/competitive analysis workshop.PNG" alt="" loading="lazy">
+            <img src="assets/competitive analysis workshop.PNG" alt="Competitive analysis workshop session" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/competitive analysis.PNG"
             data-alt="Competitive analysis matrix tables — 30+ brands across 6 industries and 25+ AI chatbots benchmarked."
             data-cap="The full competitive matrix — 30+ brands, 25+ chatbots benchmarked side-by-side on tone, transparency, reasoning, and brand fit.">
-            <img src="assets/competitive analysis.PNG" alt="" loading="lazy">
+            <img src="assets/competitive analysis.PNG" alt="Competitive analysis findings" loading="lazy">
           </button>
         </div>
       </div>
@@ -872,7 +891,7 @@
             data-src="assets/expected outcomes.PNG"
             data-alt="Expected outcomes diagram — three personas: customer, agent, and system, each with an illustrative diagram."
             data-cap="Expected outcomes — success framed from three perspectives: as a customer, as an agent, and as a system.">
-            <img src="assets/expected outcomes.PNG" alt="" loading="lazy">
+            <img src="assets/expected outcomes.PNG" alt="Expected outcomes and success metrics" loading="lazy">
           </button>
         </div>
       </div>
@@ -1120,13 +1139,13 @@
             data-src="assets/current state - old experience.PNG"
             data-alt="Chat Initiation Screen — old experience vs improved design with annotation callouts."
             data-cap="Chat Initiation Screen — old vs improved, with annotated changes: minimize icon, capabilities, transparency, prompt buttons, character counter.">
-            <img src="assets/current state - old experience.PNG" alt="" loading="lazy">
+            <img src="assets/current state - old experience.PNG" alt="Current state of the old chatbot experience" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/key usability issues.PNG"
             data-alt="End Chat and Survey screens — old vs improved with annotations."
             data-cap="End Chat &amp; Survey — old vs improved with annotated rationale: simpler closure, Begin Survey CTA, CSAT rating, upfront feedback textbox.">
-            <img src="assets/key usability issues.PNG" alt="" loading="lazy">
+            <img src="assets/key usability issues.PNG" alt="Key usability issues identified during testing" loading="lazy">
           </button>
         </div>
       </div>
@@ -1137,25 +1156,25 @@
             data-src="assets/designing identity - how we began.PNG"
             data-alt="Wall of branding inspiration spanning consumer AI, enterprise, and retail conversational UIs."
             data-cap="Designing identity — moodboard inspiration spanning Apple Intelligence, Galaxy AI, Meta AI, Copilot, watsonx.ai, Amazon Q, and more.">
-            <img src="assets/designing identity - how we began.PNG" alt="" loading="lazy">
+            <img src="assets/designing identity - how we began.PNG" alt="Designing the chatbot visual identity — initial explorations" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/visual identity.PNG"
             data-alt="Visual identity exploration — Dell AI variations across red, blue, purple, and mixed gradient treatments."
             data-cap="Palette &amp; gradient exploration — testing classic Dell blues against new AI-signalling colourways before landing on purple.">
-            <img src="assets/visual identity.PNG" alt="" loading="lazy">
+            <img src="assets/visual identity.PNG" alt="Final visual identity direction for the chatbot" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/Clear winner - user quotes.PNG"
             data-alt="Visual identity testing — purple swatches, a video frame of user choosing purple over blue, and seven affirming quotes."
             data-cap="A Clear Winner — 90% preferred the purple gradient, with consistent qualitative validation: &ldquo;feels modern,&rdquo; &ldquo;instantly signals AI.&rdquo;">
-            <img src="assets/Clear winner - user quotes.PNG" alt="" loading="lazy">
+            <img src="assets/Clear winner - user quotes.PNG" alt="User quotes identifying the clear winner in preference testing" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/visual identity - user reactions .PNG"
             data-alt="User reaction chip cloud — Amazing colors, WOW!, easy to use, attractive and intuitive, I loved the gradient this feels so AI."
             data-cap="User reactions — consistent signals of clarity, AI recognition, and trust in response to the new visual identity.">
-            <img src="assets/visual identity - user reactions .PNG" alt="" loading="lazy">
+            <img src="assets/visual identity - user reactions .PNG" alt="User reactions to the visual identity options" loading="lazy">
           </button>
         </div>
       </div>
@@ -1166,7 +1185,7 @@
             data-src="assets/visual refinements.PNG"
             data-alt="Old chat icon vs new sparkle AI icon, with DDS adoption screenshot."
             data-cap="Sparkle icon — from 95% read as &ldquo;standard chat&rdquo; to 100% read as &ldquo;AI&rdquo;, then officially adopted into the Dell Design System.">
-            <img src="assets/visual refinements.PNG" alt="" loading="lazy">
+            <img src="assets/visual refinements.PNG" alt="Visual refinements based on user feedback" loading="lazy">
           </button>
         </div>
       </div>
@@ -1177,7 +1196,7 @@
             data-src="assets/usability insights.PNG"
             data-alt="Six tested screens with five metrics — 98%, 97%, 95%, 96%, 96%."
             data-cap="Six tested screens with headline metrics: 98% find the interface intuitive, 97% flow without friction, 96% report a positive overall experience.">
-            <img src="assets/usability insights.PNG" alt="" loading="lazy">
+            <img src="assets/usability insights.PNG" alt="Usability insights from testing sessions" loading="lazy">
           </button>
         </div>
       </div>
@@ -1188,13 +1207,13 @@
             data-src="assets/chat component library AI DDS.PNG"
             data-alt="Unified AI Chat Figma library card with 26 components and 2 styles."
             data-cap="Unified AI Chat — 26+ components published as a shared Figma library for org-wide reuse.">
-            <img src="assets/chat component library AI DDS.PNG" alt="" loading="lazy">
+            <img src="assets/chat component library AI DDS.PNG" alt="Chat component library for the AI Design System" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/library to AI design coe.PNG"
             data-alt="AI Design Center of Excellence SharePoint landing page."
             data-cap="AI Design CoE — a shared hub for AI experience teams across Dell, with Vision, Mission, AI Chat Patterns, and Resources.">
-            <img src="assets/library to AI design coe.PNG" alt="" loading="lazy">
+            <img src="assets/library to AI design coe.PNG" alt="From component library to AI Design Centre of Excellence" loading="lazy">
           </button>
           <button class="ref-thumb" type="button"
             data-src="assets/Digital communications POD - milestones.PNG"
@@ -1746,6 +1765,7 @@
 
 </div><!-- /case-body -->
 
+</main>
 <footer class="foot">
   <div style="font-size: 11px; color: var(--faint); margin-top: 10px; max-width: 720px; margin-left: auto; margin-right: auto; line-height: 1.5;">
     Based on internal design documentation from the AI Experience Team at Dell Technologies.

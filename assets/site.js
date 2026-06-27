@@ -40,5 +40,23 @@
         });
       });
     }
+    // Keyboard support: make click-only interactive elements respond to Enter/Space
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var t = e.target;
+      if (t.tagName === 'BUTTON' || t.tagName === 'A' || t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT') return;
+      if (t.hasAttribute('tabindex') || t.hasAttribute('role')) {
+        e.preventDefault();
+        t.click();
+      }
+    });
+  });
+
+  // Global error handler
+  window.addEventListener('error', function (e) {
+    if (typeof console !== 'undefined') console.warn('[Portfolio]', e.message);
+  });
+  window.addEventListener('unhandledrejection', function (e) {
+    if (typeof console !== 'undefined') console.warn('[Portfolio] Unhandled promise:', e.reason);
   });
 })();
