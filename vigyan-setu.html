@@ -1,0 +1,2043 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vigyan Setu — Double Diamond Case Study | Puneet Arora</title>
+<meta name="description" content="Vigyan Setu: a speculative, verified, AI-orchestrated operating system for India's national-scale events. Full Double Diamond UX case study by Puneet Arora.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/vigyan-setu.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Puneet Arora — Portfolio">
+<meta property="og:title" content="Vigyan Setu — Double Diamond Case Study">
+<meta property="og:description" content="A speculative event OS for India's national-scale events. Full Double Diamond design process by Puneet Arora.">
+<meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/vigyan-setu.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vigyan Setu — Double Diamond Case Study">
+<meta name="twitter:description" content="A speculative event OS for India's national-scale events. Full Double Diamond design process by Puneet Arora.">
+<meta name="twitter:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<meta name="author" content="Puneet Arora">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+/* ── Vigyan Setu page tokens ── */
+:root {
+  --vs-green: #1f7a5a;
+  --vs-glow: #6fe1b8;
+  --vs-deep: #0a2418;
+  --vs-panel: #0b2419;
+  --vs-mint: #b8f5dc;
+  --vs-amber: #f5c46a;
+  --vs-red: #e85d5d;
+  --vs-line: rgba(111,225,184,0.15);
+  --vs-line-strong: rgba(111,225,184,0.3);
+  --f-display: 'Instrument Serif', Georgia, serif;
+  --f-deva: 'Tiro Devanagari Hindi', 'Roboto', serif;
+}
+[data-theme="forest"] {
+  --vs-green: #15694c;
+  --vs-glow: #1a8a60;
+  --vs-deep: #f0f7f3;
+  --vs-panel: #e8f2ec;
+  --vs-mint: #1a5c3e;
+  --vs-amber: #b07800;
+  --vs-red: #c43e3e;
+  --vs-line: rgba(26,90,62,0.15);
+  --vs-line-strong: rgba(26,90,62,0.3);
+}
+
+/* ── Display type ── */
+.vs-display { font-family: var(--f-display); font-weight: 400; letter-spacing: -0.01em; line-height: 0.96; }
+.vs-display em { font-style: italic; color: var(--vs-glow); }
+.vs-deva { font-family: var(--f-deva); }
+
+/* ── Hero ── */
+.vs-hero { padding: 80px var(--pad-x) 48px; position: relative; overflow: hidden; }
+.vs-hero__bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 50% 40% at 85% 20%, color-mix(in oklch, var(--vs-glow) 6%, transparent), transparent 70%),
+    radial-gradient(ellipse 40% 35% at 15% 85%, rgba(31,122,90,.06), transparent 70%);
+}
+.vs-hero__inner { position: relative; max-width: 1100px; }
+.vs-hero h1 { font-size: clamp(48px, 8vw, 96px); margin: 16px 0 12px; color: var(--ink); }
+.vs-hero .vs-sanskrit { font-family: var(--f-deva); font-size: clamp(18px, 2.5vw, 28px); color: var(--vs-glow); display: block; margin-bottom: 20px; }
+.vs-hero .vs-tagline { font-family: var(--f-sans); font-size: clamp(16px, 1.8vw, 20px); color: var(--dim); max-width: 680px; line-height: 1.55; margin-bottom: 8px; }
+.vs-hero .vs-context { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--faint); text-transform: uppercase; margin-bottom: 36px; }
+.vs-hero .vs-byline { font-family: var(--f-mono); font-size: 12px; color: var(--dim); letter-spacing: 0.06em; margin-top: 28px; }
+
+/* ── Stats strip ── */
+.vs-stats {
+  display: grid; grid-template-columns: repeat(6, 1fr);
+  border: 1px solid var(--rule); border-radius: 2px; margin-top: 32px;
+}
+.vs-stats .cell { padding: 18px 16px; border-left: 1px solid var(--rule); }
+.vs-stats .cell:first-child { border-left: none; }
+.vs-stats .v { font-family: var(--f-display); font-size: 32px; line-height: 1; color: var(--vs-glow); }
+.vs-stats .l { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.16em; color: var(--faint); text-transform: uppercase; margin-top: 6px; line-height: 1.4; }
+@media (max-width: 900px) { .vs-stats { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .vs-stats { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── TLDR box ── */
+.vs-tldr { padding: 0 var(--pad-x); margin-top: 48px; }
+.vs-tldr__inner {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 32px;
+}
+.vs-tldr h3 { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em; color: var(--vs-glow); text-transform: uppercase; margin-bottom: 20px; }
+.vs-tldr__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.vs-tldr__item { background: var(--bg); padding: 20px; }
+.vs-tldr__item .label { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--vs-glow); text-transform: uppercase; margin-bottom: 8px; }
+.vs-tldr__item p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.55; margin: 0; }
+@media (max-width: 900px) { .vs-tldr__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .vs-tldr__grid { grid-template-columns: 1fr; } }
+
+/* ── Roles/Tools card ── */
+.vs-meta-card { padding: 0 var(--pad-x); margin-top: 36px; }
+.vs-meta-card__inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 2px; }
+.vs-meta-card__item { background: var(--surface); padding: 20px; }
+.vs-meta-card__item .label { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--vs-glow); text-transform: uppercase; margin-bottom: 10px; }
+.vs-meta-card__item p, .vs-meta-card__item ul { font-family: var(--f-sans); font-size: 13px; color: var(--dim); line-height: 1.55; margin: 0; }
+.vs-meta-card__item ul { list-style: none; padding: 0; }
+.vs-meta-card__item ul li { padding: 3px 0; }
+.vs-meta-card__item ul li strong { color: var(--ink); font-weight: 500; }
+@media (max-width: 900px) { .vs-meta-card__inner { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .vs-meta-card__inner { grid-template-columns: 1fr; } }
+
+/* ── Phase sections ── */
+.vs-phase { padding: 0 var(--pad-x); margin-top: 72px; }
+.vs-phase__sticky {
+  position: sticky; top: 52px; z-index: 20;
+  background: var(--bg);
+  border-bottom: 2px solid var(--vs-green);
+  padding: 14px 0;
+  display: flex; align-items: center; gap: 16px;
+  backdrop-filter: blur(8px);
+}
+.vs-phase__num {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em;
+  color: var(--vs-glow); text-transform: uppercase; flex-shrink: 0;
+}
+.vs-phase__name {
+  font-family: var(--f-sans); font-size: 24px; font-weight: 500; color: var(--ink);
+  letter-spacing: -0.015em;
+}
+.vs-phase__intro {
+  font-family: var(--f-sans); font-size: 16px; color: var(--dim); line-height: 1.6;
+  max-width: 700px; margin: 24px 0 32px; font-style: italic;
+}
+
+/* ── Content prose ── */
+.vs-prose { padding: 0 var(--pad-x); margin-top: 28px; max-width: 960px; }
+.vs-prose h3 { font-family: var(--f-sans); font-size: 20px; font-weight: 500; color: var(--ink); margin: 36px 0 12px; letter-spacing: -0.01em; }
+.vs-prose h4 { font-family: var(--f-sans); font-size: 16px; font-weight: 500; color: var(--ink); margin: 24px 0 8px; }
+.vs-prose p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.65; margin: 0 0 14px; }
+.vs-prose strong { color: var(--ink); font-weight: 500; }
+.vs-prose blockquote {
+  border-left: 3px solid var(--vs-glow); padding: 12px 20px; margin: 16px 0;
+  background: var(--surface); font-style: italic; font-size: 14px; color: var(--dim);
+}
+
+/* ── Method cards ── */
+.vs-method {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 4px;
+  padding: 24px 28px; margin: 20px 0;
+}
+.vs-method__head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 12px; }
+.vs-method__num { font-family: var(--f-mono); font-size: 11px; color: var(--vs-glow); letter-spacing: 0.14em; flex-shrink: 0; }
+.vs-method__title { font-family: var(--f-sans); font-size: 17px; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; }
+.vs-method__body { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.6; }
+.vs-method__body strong { color: var(--ink); font-weight: 500; }
+.vs-method__body ul { padding-left: 18px; margin: 8px 0; }
+.vs-method__body li { margin: 4px 0; }
+
+/* ── Two-col layout ── */
+.vs-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 20px 0; }
+@media (max-width: 760px) { .vs-two-col { grid-template-columns: 1fr; } }
+.vs-col-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 22px; }
+.vs-col-card h4 { font-family: var(--f-sans); font-size: 15px; font-weight: 500; color: var(--ink); margin: 0 0 10px; }
+.vs-col-card p, .vs-col-card ul { font-family: var(--f-sans); font-size: 13px; color: var(--dim); line-height: 1.6; margin: 0; }
+.vs-col-card ul { padding-left: 16px; margin-top: 6px; }
+
+/* ── Fault lines cascade animation ── */
+.vs-faultlines { margin: 32px 0; }
+.vs-fault {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 0; border-bottom: 1px solid var(--rule);
+  opacity: 0; transform: translateX(-40px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.vs-fault.is-visible { opacity: 1; transform: translateX(0); }
+.vs-fault__bar { width: 0; height: 3px; background: var(--vs-red); border-radius: 2px; transition: width 0.8s ease 0.3s; flex-shrink: 0; }
+.vs-fault.is-visible .vs-fault__bar { width: 48px; }
+.vs-fault__num { font-family: var(--f-mono); font-size: 22px; font-weight: 700; color: var(--vs-red); min-width: 28px; }
+.vs-fault__label { font-family: var(--f-sans); font-size: 14px; color: var(--dim); }
+
+/* ── Impact-Feasibility Matrix ── */
+.vs-matrix-wrap { margin: 32px 0; position: relative; }
+.vs-matrix {
+  position: relative; width: 100%; max-width: 600px;
+  aspect-ratio: 1; border-left: 2px solid var(--faint); border-bottom: 2px solid var(--faint);
+}
+.vs-matrix__label-x, .vs-matrix__label-y {
+  font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+  color: var(--faint); text-transform: uppercase; position: absolute;
+}
+.vs-matrix__label-x { bottom: -24px; left: 50%; transform: translateX(-50%); }
+.vs-matrix__label-y { top: 50%; left: -30px; transform: translateY(-50%) rotate(-90deg); white-space: nowrap; }
+.vs-matrix__item {
+  position: absolute;
+  background: var(--surface); border: 1px solid var(--vs-line-strong);
+  border-radius: 6px; padding: 10px 14px;
+  font-family: var(--f-sans); font-size: 12px; color: var(--ink);
+  cursor: pointer; transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease, box-shadow 0.2s;
+  opacity: 0; transform: scale(0.5);
+  z-index: 2;
+}
+.vs-matrix__item.is-visible { opacity: 1; transform: scale(1); }
+.vs-matrix__item:hover { box-shadow: 0 6px 24px rgba(111,225,184,0.2); z-index: 5; }
+.vs-matrix__item .tag { font-family: var(--f-mono); font-size: 9px; color: var(--vs-glow); letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 4px; }
+.vs-matrix__grid {
+  position: absolute; inset: 0;
+  display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+}
+.vs-matrix__grid > div {
+  border: 1px dashed var(--rule);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--f-mono); font-size: 9px; color: var(--faint);
+  letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.5;
+}
+.vs-matrix__axes {
+  position: absolute; inset: 0;
+  opacity: 0; transition: opacity 0.6s ease;
+}
+.vs-matrix__axes.is-visible { opacity: 1; }
+
+/* ── Persona cards ── */
+.vs-personas { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 24px 0; }
+.vs-persona { background: var(--surface); padding: 18px; }
+.vs-persona .name { font-family: var(--f-sans); font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+.vs-persona .role { font-family: var(--f-mono); font-size: 10px; color: var(--vs-glow); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; }
+.vs-persona .desc { font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5; }
+@media (max-width: 900px) { .vs-personas { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .vs-personas { grid-template-columns: 1fr; } }
+
+/* ── Design principles strip ── */
+.vs-principles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 24px 0; }
+.vs-principle { background: var(--surface); padding: 20px; }
+.vs-principle .num { font-family: var(--f-mono); font-size: 11px; color: var(--vs-glow); margin-bottom: 8px; }
+.vs-principle .title { font-family: var(--f-sans); font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
+.vs-principle .desc { font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5; }
+@media (max-width: 900px) { .vs-principles { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .vs-principles { grid-template-columns: 1fr; } }
+
+/* ── Metrics table ── */
+.vs-metrics { border: 1px solid var(--rule); border-radius: 2px; margin: 24px 0; overflow-x: auto; }
+.vs-metrics table { width: 100%; border-collapse: collapse; font-family: var(--f-sans); font-size: 13px; }
+.vs-metrics th { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em; color: var(--vs-glow); text-transform: uppercase; text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--rule); background: var(--surface); }
+.vs-metrics td { padding: 10px 16px; border-bottom: 1px solid var(--rule); color: var(--dim); }
+.vs-metrics tr:last-child td { border-bottom: none; }
+
+/* ── Double Diamond sidebar tracker ── */
+.vs-diamond-tracker {
+  position: fixed; right: 24px; top: 50%; transform: translateY(-50%);
+  z-index: 25; display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.vs-diamond-tracker svg { width: 36px; height: 80px; }
+.vs-diamond-tracker .phase-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--rule);
+  transition: background 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.vs-diamond-tracker .phase-dot.active {
+  background: var(--vs-glow);
+  box-shadow: 0 0 12px var(--vs-glow);
+}
+.vs-diamond-tracker .phase-label {
+  font-family: var(--f-mono); font-size: 8px; letter-spacing: 0.14em;
+  color: var(--faint); text-transform: uppercase; writing-mode: vertical-rl;
+  text-orientation: mixed; margin-top: 4px;
+}
+@media (max-width: 1200px) { .vs-diamond-tracker { display: none; } }
+
+/* ── DO/NEVER pairs ── */
+.vs-do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 16px 0; }
+.vs-do, .vs-dont { background: var(--surface); padding: 14px 18px; font-family: var(--f-sans); font-size: 13px; }
+.vs-do { color: var(--vs-glow); }
+.vs-dont { color: var(--vs-red); }
+.vs-do .marker, .vs-dont .marker { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; }
+@media (max-width: 520px) { .vs-do-dont { grid-template-columns: 1fr; } }
+
+/* ── Takeaway strip ── */
+.vs-takeaways { margin: 28px 0; }
+.vs-takeaway {
+  display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: baseline;
+  padding: 14px 0; border-bottom: 1px solid var(--rule);
+}
+.vs-takeaway .n { font-family: var(--f-mono); font-size: 13px; color: var(--vs-glow); }
+.vs-takeaway .t { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.55; }
+.vs-takeaway .t strong { color: var(--ink); }
+
+/* ── Speculative outcomes ── */
+.vs-outcomes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 24px 0; }
+.vs-outcome { background: var(--surface); padding: 20px; text-align: center; }
+.vs-outcome .v { font-family: var(--f-display); font-size: 28px; color: var(--vs-glow); line-height: 1; }
+.vs-outcome .l { font-family: var(--f-mono); font-size: 10px; color: var(--faint); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 8px; line-height: 1.4; }
+@media (max-width: 760px) { .vs-outcomes { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Sources ── */
+.vs-sources { margin: 24px 0; }
+.vs-source { padding: 8px 0; border-bottom: 1px dashed var(--rule); font-family: var(--f-sans); font-size: 13px; color: var(--dim); display: flex; gap: 12px; }
+.vs-source .n { font-family: var(--f-mono); font-size: 11px; color: var(--faint); flex-shrink: 0; min-width: 24px; }
+
+/* ── Scroll reveal ── */
+.vs-reveal {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.vs-reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* ── Timeline strip ── */
+.vs-timeline { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 24px 0; }
+.vs-timeline__day { background: var(--surface); padding: 14px; }
+.vs-timeline__day .date { font-family: var(--f-mono); font-size: 10px; color: var(--vs-glow); letter-spacing: 0.12em; margin-bottom: 6px; }
+.vs-timeline__day .event { font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5; }
+@media (max-width: 760px) { .vs-timeline { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .vs-timeline { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Phone prototype embed ── */
+.vs-phone-lab {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 32px 0;
+  position: relative;
+}
+.vs-phone-lab .lab-head {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 28px; flex-wrap: wrap; gap: 16px;
+}
+.vs-phone-lab .lab-title {
+  font-family: var(--f-sans); font-size: 20px; font-weight: 500; color: var(--ink);
+}
+.vs-phone-lab .lab-title .acc {
+  font-family: var(--f-mono); font-size: 11px; color: var(--vs-glow);
+  letter-spacing: 0.16em; text-transform: uppercase; display: block; margin-bottom: 4px;
+}
+.vs-phone-lab .nav-pills {
+  display: flex; gap: 6px; flex-wrap: wrap;
+  background: var(--surface-2, var(--surface));
+  border: 1px solid var(--rule);
+  border-radius: 999px; padding: 4px;
+}
+.vs-phone-lab .pill {
+  background: transparent; border: none;
+  color: var(--dim);
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em;
+  padding: 8px 14px; border-radius: 999px;
+  cursor: pointer; transition: all 0.2s;
+  text-transform: uppercase; font-weight: 500;
+}
+.vs-phone-lab .pill:hover { color: var(--ink); }
+.vs-phone-lab .pill.active {
+  background: var(--vs-green); color: #fff;
+}
+[data-theme="forest"] .vs-phone-lab .pill.active { color: #fff; }
+
+.vs-phone-row {
+  display: grid; grid-template-columns: auto 1fr;
+  gap: 48px; align-items: flex-start;
+}
+@media (max-width: 1000px) { .vs-phone-row { grid-template-columns: 1fr; } }
+
+/* Phone frame */
+.vs-phone {
+  width: 360px; height: 740px;
+  background: #000; border-radius: 42px; padding: 14px;
+  box-shadow: 0 0 0 2px #1a1a1a, 0 0 0 3px #333, 0 30px 80px rgba(0,0,0,0.6), inset 0 0 0 1px rgba(255,255,255,0.04);
+  position: relative; flex-shrink: 0;
+}
+[data-theme="forest"] .vs-phone {
+  box-shadow: 0 0 0 2px #ccc, 0 0 0 3px #aaa, 0 30px 80px rgba(0,0,0,0.15);
+}
+.vs-phone::before {
+  content: ''; position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+  width: 100px; height: 28px; background: #000; border-radius: 999px; z-index: 10;
+}
+.vs-phone-screen {
+  width: 100%; height: 100%; border-radius: 30px; overflow: hidden;
+  background: #061812; display: flex; flex-direction: column; position: relative;
+}
+.vs-phone-screen .status-bar {
+  height: 38px; flex-shrink: 0;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 24px 0 28px;
+  font-family: 'Roboto Mono', monospace; font-size: 12px; font-weight: 500; color: #fff;
+}
+.vs-phone-screen .status-right { display: flex; gap: 6px; align-items: center; }
+.vs-phone-screen .app-top {
+  padding: 8px 18px 14px; flex-shrink: 0;
+  border-bottom: 1px solid rgba(111,225,184,0.08);
+}
+.vs-phone-screen .app-top-row { display: flex; justify-content: space-between; align-items: center; }
+.vs-phone-screen .app-greet { font-size: 13px; color: #6f8b81; }
+.vs-phone-screen .app-greet b { color: #6fe1b8; font-weight: 500; }
+.vs-phone-screen .app-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: linear-gradient(135deg, #2fa07a, #1f7a5a);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 13px; color: #021008;
+  border: 2px solid #6fe1b8; position: relative;
+}
+.vs-phone-screen .app-avatar::after {
+  content: ''; position: absolute; bottom: -2px; right: -2px;
+  width: 12px; height: 12px; background: #6fe1b8;
+  border: 2px solid #061812; border-radius: 50%;
+}
+.vs-phone-screen .verify-bar {
+  display: flex; align-items: center; gap: 8px; margin-top: 10px;
+  padding: 6px 10px; background: rgba(111,225,184,0.07);
+  border: 1px solid rgba(111,225,184,0.15); border-radius: 8px;
+  font-family: 'Roboto Mono', monospace; font-size: 10px;
+  letter-spacing: 0.05em; color: #6fe1b8;
+}
+.vs-phone-screen .verify-bar svg { width: 12px; height: 12px; flex-shrink: 0; }
+.vs-phone-screen .screen-body {
+  flex: 1; overflow-y: auto; padding: 14px 18px 12px;
+  scrollbar-width: none;
+}
+.vs-phone-screen .screen-body::-webkit-scrollbar { display: none; }
+.vs-phone-screen .bottom-nav {
+  flex-shrink: 0; background: #03110c;
+  border-top: 1px solid rgba(111,225,184,0.1);
+  padding: 8px 8px 18px; display: flex; justify-content: space-around;
+}
+.vs-phone-screen .bn-item {
+  background: none; border: none; color: #6f8b81; cursor: pointer;
+  padding: 8px 10px; display: flex; flex-direction: column;
+  align-items: center; gap: 4px; font-family: 'Roboto', sans-serif;
+  font-size: 10px; font-weight: 500; flex: 1; border-radius: 10px; transition: all 0.15s;
+}
+.vs-phone-screen .bn-item svg { width: 22px; height: 22px; }
+.vs-phone-screen .bn-item.active { color: #6fe1b8; background: rgba(111,225,184,0.06); }
+
+/* Phone inner card styles */
+.vs-phone-screen .hero-status {
+  background: linear-gradient(135deg, rgba(47,160,122,0.18), rgba(11,36,25,0.4));
+  border: 1px solid rgba(111,225,184,0.3); border-radius: 16px;
+  padding: 16px; margin-bottom: 14px; position: relative; overflow: hidden;
+}
+.vs-phone-screen .hero-eyebrow { font-family: 'Roboto Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: #6fe1b8; text-transform: uppercase; margin-bottom: 6px; }
+.vs-phone-screen .hero-line { font-size: 17px; font-weight: 700; line-height: 1.3; color: #fff; margin-bottom: 12px; }
+.vs-phone-screen .hero-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding-top: 10px; border-top: 1px solid rgba(111,225,184,0.15); }
+.vs-phone-screen .hero-meta-item .l { font-family: 'Roboto Mono', monospace; font-size: 9px; color: #6f8b81; letter-spacing: 0.1em; text-transform: uppercase; }
+.vs-phone-screen .hero-meta-item .v { font-size: 13px; font-weight: 700; color: #fff; margin-top: 2px; }
+.vs-phone-screen .card { background: #0b2419; border: 1px solid rgba(111,225,184,0.15); border-radius: 14px; padding: 14px; margin-bottom: 12px; }
+.vs-phone-screen .card-glow { background: linear-gradient(135deg, rgba(47,160,122,0.18), rgba(11,36,25,0.4)); border: 1px solid rgba(111,225,184,0.3); }
+.vs-phone-screen .card-amber { background: linear-gradient(135deg, rgba(245,196,106,0.12), rgba(11,36,25,0.4)); border: 1px solid rgba(245,196,106,0.25); }
+.vs-phone-screen .card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.vs-phone-screen .card-tag { font-family: 'Roboto Mono', monospace; font-size: 9px; letter-spacing: 0.16em; color: #6fe1b8; text-transform: uppercase; font-weight: 500; }
+.vs-phone-screen .card-tag.amber { color: #f5c46a; }
+.vs-phone-screen .card-time { font-family: 'Roboto Mono', monospace; font-size: 10px; color: #6f8b81; }
+.vs-phone-screen .card-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px; letter-spacing: -0.01em; line-height: 1.2; }
+.vs-phone-screen .card-body { font-size: 12px; color: #a8c4ba; line-height: 1.45; }
+.vs-phone-screen .card-body b { color: #fff; font-weight: 500; }
+.vs-phone-screen .card-actions { display: flex; gap: 8px; margin-top: 12px; }
+.vs-phone-screen .btn { flex: 1; background: transparent; border: 1px solid rgba(111,225,184,0.3); color: #fff; font-family: 'Roboto', sans-serif; font-size: 11px; font-weight: 500; padding: 8px 10px; border-radius: 8px; cursor: pointer; }
+.vs-phone-screen .btn.primary { background: #2fa07a; border-color: #2fa07a; color: #021008; font-weight: 700; }
+.vs-phone-screen .sec-label { font-family: 'Roboto Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: #6f8b81; text-transform: uppercase; margin: 18px 0 10px; }
+
+/* QR screen */
+.vs-phone-screen .qr-wrap { background: linear-gradient(180deg, #103024, #0b2419); border: 1px solid rgba(111,225,184,0.3); border-radius: 16px; padding: 20px 16px; text-align: center; margin-bottom: 14px; }
+.vs-phone-screen .qr-img { width: 180px; height: 180px; background: #fff; border-radius: 12px; margin: 12px auto; padding: 12px; display: block; }
+.vs-phone-screen .qr-id { font-family: 'Roboto Mono', monospace; font-size: 12px; color: #6fe1b8; letter-spacing: 0.1em; margin-top: 4px; }
+.vs-phone-screen .qr-status { display: inline-flex; align-items: center; gap: 6px; background: rgba(47,160,122,0.18); border: 1px solid #2fa07a; color: #6fe1b8; padding: 4px 10px; border-radius: 999px; font-family: 'Roboto Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+.vs-phone-screen .qr-status .dot { width: 6px; height: 6px; background: #6fe1b8; border-radius: 50%; animation: vsPulse 2s ease-in-out infinite; }
+@keyframes vsPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+.vs-phone-screen .gate-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.vs-phone-screen .gate-cell { background: #0b2419; border: 1px solid rgba(111,225,184,0.15); border-radius: 10px; padding: 10px; }
+.vs-phone-screen .gate-cell.recommended { border-color: #2fa07a; background: linear-gradient(135deg, rgba(47,160,122,0.18), #0b2419); }
+.vs-phone-screen .gate-name { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.vs-phone-screen .gate-bar { height: 6px; background: rgba(255,255,255,0.06); border-radius: 999px; overflow: hidden; margin-bottom: 6px; }
+.vs-phone-screen .gate-fill { height: 100%; border-radius: 999px; }
+.vs-phone-screen .gate-load { font-family: 'Roboto Mono', monospace; font-size: 10px; color: #a8c4ba; display: flex; justify-content: space-between; }
+
+/* Map screen */
+.vs-phone-screen .map-canvas { position: relative; background: #0b2419; border: 1px solid rgba(111,225,184,0.15); border-radius: 14px; height: 260px; overflow: hidden; margin-bottom: 12px; }
+.vs-phone-screen .map-canvas svg { width: 100%; height: 100%; display: block; }
+.vs-phone-screen .map-pin { position: absolute; transform: translate(-50%, -100%); font-family: 'Roboto Mono', monospace; font-size: 9px; color: #fff; background: #1f7a5a; padding: 2px 6px; border-radius: 4px; letter-spacing: 0.06em; }
+.vs-phone-screen .map-pin::after { content: ''; position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%); border: 4px solid transparent; border-top-color: #1f7a5a; }
+.vs-phone-screen .map-pin.you { background: #6fe1b8; color: #021008; }
+.vs-phone-screen .map-pin.you::after { border-top-color: #6fe1b8; }
+.vs-phone-screen .route-card { background: #0b2419; border: 1px solid rgba(111,225,184,0.15); border-radius: 12px; padding: 12px; display: flex; gap: 12px; align-items: center; }
+.vs-phone-screen .route-icon { width: 38px; height: 38px; background: #1f7a5a; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.vs-phone-screen .route-icon svg { width: 20px; height: 20px; color: #fff; }
+.vs-phone-screen .route-info { flex: 1; }
+.vs-phone-screen .route-info .top { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.vs-phone-screen .route-info .bot { font-size: 11px; color: #a8c4ba; }
+
+/* Radar screen */
+.vs-phone-screen .radar-wrap { position: relative; height: 280px; background: radial-gradient(circle, rgba(47,160,122,0.12) 0%, transparent 70%); border: 1px solid rgba(111,225,184,0.15); border-radius: 14px; overflow: hidden; margin-bottom: 14px; }
+.vs-phone-screen .radar-circle { position: absolute; border: 1px solid rgba(111,225,184,0.2); border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.vs-phone-screen .radar-c1 { width: 80px; height: 80px; }
+.vs-phone-screen .radar-c2 { width: 160px; height: 160px; }
+.vs-phone-screen .radar-c3 { width: 240px; height: 240px; }
+.vs-phone-screen .radar-sweep { position: absolute; top: 50%; left: 50%; width: 120px; height: 1px; background: linear-gradient(90deg, #6fe1b8, transparent); transform-origin: 0 50%; animation: vsSweep 3s linear infinite; }
+@keyframes vsSweep { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+.vs-phone-screen .you-pin { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; background: #6fe1b8; border-radius: 50%; box-shadow: 0 0 12px #6fe1b8; z-index: 5; }
+.vs-phone-screen .person-dot { position: absolute; width: 28px; height: 28px; border-radius: 50%; background: #1f7a5a; border: 2px solid #061812; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #fff; cursor: pointer; }
+.vs-phone-screen .person-dot::after { content: attr(data-distance); position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 4px; font-family: 'Roboto Mono', monospace; font-size: 9px; color: #6f8b81; background: #061812; padding: 1px 4px; border-radius: 3px; white-space: nowrap; }
+.vs-phone-screen .person-row { background: #0b2419; border: 1px solid rgba(111,225,184,0.15); border-radius: 12px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.vs-phone-screen .pr-avatar { width: 36px; height: 36px; border-radius: 50%; background: #1f7a5a; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #fff; flex-shrink: 0; }
+.vs-phone-screen .pr-info { flex: 1; min-width: 0; }
+.vs-phone-screen .pr-name { font-size: 13px; font-weight: 700; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vs-phone-screen .pr-role { font-size: 11px; color: #a8c4ba; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vs-phone-screen .pr-dist { font-family: 'Roboto Mono', monospace; font-size: 10px; color: #6fe1b8; letter-spacing: 0.05em; flex-shrink: 0; }
+
+/* Session screen */
+.vs-phone-screen .session-card { background: #0b2419; border: 1px solid rgba(111,225,184,0.15); border-radius: 12px; padding: 12px; margin-bottom: 10px; }
+.vs-phone-screen .session-time { font-family: 'Roboto Mono', monospace; font-size: 10px; color: #6fe1b8; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+.vs-phone-screen .session-title { font-size: 13px; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 6px; }
+.vs-phone-screen .session-meta { display: flex; gap: 12px; font-size: 11px; color: #a8c4ba; }
+.vs-phone-screen .occupancy-bar { height: 4px; background: rgba(255,255,255,0.06); border-radius: 999px; overflow: hidden; margin-top: 8px; }
+.vs-phone-screen .occupancy-fill { height: 100%; background: #2fa07a; border-radius: 999px; }
+.vs-phone-screen .occupancy-fill.red { background: #e85d5d; }
+.vs-phone-screen .occupancy-fill.amber { background: #f5c46a; }
+
+/* Privacy screen */
+.vs-phone-screen .perm-row { background: #0b2419; border: 1px solid rgba(111,225,184,0.15); border-radius: 10px; padding: 12px; margin-bottom: 8px; }
+.vs-phone-screen .perm-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.vs-phone-screen .perm-name { font-size: 13px; font-weight: 700; color: #fff; }
+.vs-phone-screen .toggle { width: 36px; height: 20px; background: #2fa07a; border-radius: 999px; position: relative; cursor: pointer; }
+.vs-phone-screen .toggle::after { content: ''; position: absolute; top: 2px; right: 2px; width: 16px; height: 16px; background: #fff; border-radius: 50%; transition: all 0.2s; }
+.vs-phone-screen .toggle.off { background: rgba(255,255,255,0.1); }
+.vs-phone-screen .toggle.off::after { right: auto; left: 2px; }
+.vs-phone-screen .perm-desc { font-size: 11px; color: #a8c4ba; line-height: 1.4; }
+
+/* Annotations */
+.vs-annot-stack { display: flex; flex-direction: column; gap: 14px; }
+.vs-annot {
+  background: var(--surface); border: 1px solid var(--rule);
+  border-radius: 8px; padding: 18px; position: relative;
+}
+.vs-annot::before { content: ''; position: absolute; left: 0; top: 18px; width: 3px; height: 36px; background: var(--vs-green); border-radius: 0 3px 3px 0; }
+.vs-annot .annot-num { font-family: var(--f-mono); font-size: 11px; color: var(--vs-glow); letter-spacing: 0.16em; margin-bottom: 6px; font-weight: 500; }
+.vs-annot .annot-title { font-family: var(--f-sans); font-size: 15px; font-weight: 500; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.01em; line-height: 1.25; }
+.vs-annot .annot-body { font-family: var(--f-sans); font-size: 13px; color: var(--dim); line-height: 1.55; }
+.vs-annot .annot-body b { color: var(--ink); font-weight: 500; }
+
+/* ── Assumptions ── */
+.vs-assumptions { padding: 0 var(--pad-x); margin-top: 48px; }
+.vs-assumptions__inner {
+  background: var(--surface); border: 1px solid rgba(245,196,106,0.2);
+  border-radius: 6px; padding: 32px;
+}
+.vs-assumptions h3 { font-family: var(--f-sans); font-size: 20px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
+.vs-assumptions h3 span { color: var(--vs-amber); }
+.vs-assumptions .sub { font-family: var(--f-sans); font-size: 14px; color: var(--dim); margin-bottom: 24px; max-width: 680px; line-height: 1.55; }
+.vs-assumption-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.vs-ass-card { background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: 16px; }
+.vs-ass-card .conf { font-family: var(--f-mono); font-size: 10px; color: var(--vs-amber); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+.vs-ass-card h4 { font-family: var(--f-sans); font-size: 14px; font-weight: 500; color: var(--ink); margin: 0 0 6px; line-height: 1.3; }
+.vs-ass-card p { font-family: var(--f-sans); font-size: 12px; color: var(--dim); line-height: 1.5; margin: 0; }
+
+/* Responsive phone */
+@media (max-width: 520px) {
+  .vs-phone { width: 100%; max-width: 360px; height: auto; aspect-ratio: 360/740; }
+}
+
+/* ── Comparable systems audit ── */
+.vs-audit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 16px 0; }
+.vs-audit__item { background: var(--surface); padding: 16px; }
+.vs-audit__item .name { font-family: var(--f-sans); font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
+.vs-audit__item .stole { font-family: var(--f-mono); font-size: 10px; color: var(--vs-glow); letter-spacing: 0.08em; margin-bottom: 4px; }
+.vs-audit__item .left { font-family: var(--f-mono); font-size: 10px; color: var(--vs-red); letter-spacing: 0.08em; }
+.vs-audit__item p { font-family: var(--f-sans); font-size: 11px; color: var(--dim); line-height: 1.4; margin: 2px 0 0; }
+@media (max-width: 760px) { .vs-audit { grid-template-columns: 1fr; } }
+
+/* ── Future roadmap ── */
+.vs-roadmap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 20px 0; }
+.vs-roadmap__item { background: var(--surface); padding: 18px; }
+.vs-roadmap__item .period { font-family: var(--f-mono); font-size: 10px; color: var(--vs-glow); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px; }
+.vs-roadmap__item .desc { font-family: var(--f-sans); font-size: 13px; color: var(--dim); line-height: 1.5; }
+@media (max-width: 760px) { .vs-roadmap { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html" class="is-current">AI LAB</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+      <a class="theme-toggle__opt" href="playful.html" title="Playful theme">PLAYFUL</a>
+    </span>
+  </div>
+</header>
+
+<!-- DOUBLE DIAMOND TRACKER (fixed sidebar) -->
+<nav class="vs-diamond-tracker" aria-label="Case study progress">
+  <svg viewBox="0 0 36 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- First diamond -->
+    <path d="M18 2 L34 20 L18 38 L2 20 Z" stroke="var(--rule)" stroke-width="1" fill="none" class="dd-diamond dd-diamond-1"/>
+    <!-- Second diamond -->
+    <path d="M18 42 L34 60 L18 78 L2 60 Z" stroke="var(--rule)" stroke-width="1" fill="none" class="dd-diamond dd-diamond-2"/>
+  </svg>
+  <div class="phase-dot" data-phase="discover" title="Discover"></div>
+  <div class="phase-dot" data-phase="define" title="Define"></div>
+  <div class="phase-dot" data-phase="develop" title="Develop"></div>
+  <div class="phase-dot" data-phase="deliver" title="Deliver"></div>
+  <span class="phase-label" id="ddPhaseLabel">DISCOVER</span>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="vs-hero" data-screen-label="hero">
+  <div class="vs-hero__bg"></div>
+  <div class="vs-hero__inner">
+    <span class="vs-context">India AI Impact Summit &middot; Bharat Mandapam, New Delhi &middot; 16&ndash;21 Feb 2026</span>
+    <h1 class="vs-display">Vigyan Setu<em>.</em></h1>
+    <span class="vs-sanskrit vs-deva">&#x0938;&#x0930;&#x094D;&#x0935;&#x091C;&#x0928; &#x0939;&#x093F;&#x0924;&#x093E;&#x092F;, &#x0938;&#x0930;&#x094D;&#x0935;&#x091C;&#x0928; &#x0938;&#x0941;&#x0916;&#x093E;&#x092F;</span>
+    <p class="vs-tagline">A speculative, verified, AI-orchestrated operating system for India's national-scale events.</p>
+    <p class="vs-byline">By Puneet Arora &middot; Principal UX Designer &middot; AI Experience Lead</p>
+
+    <div class="vs-stats">
+      <div class="cell"><div class="v">250K</div><div class="l">Registered</div></div>
+      <div class="cell"><div class="v">20+</div><div class="l">Heads of State</div></div>
+      <div class="cell"><div class="v">10</div><div class="l">Documented Failures</div></div>
+      <div class="cell"><div class="v">6</div><div class="l">Hero Flows</div></div>
+      <div class="cell"><div class="v">30</div><div class="l">Methods Used</div></div>
+      <div class="cell"><div class="v">70</div><div class="l">Slide Deck</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TL;DR -->
+<div class="vs-tldr vs-reveal">
+  <div class="vs-tldr__inner">
+    <h3>TL;DR &mdash; The Case in Four Lines</h3>
+    <div class="vs-tldr__grid">
+      <div class="vs-tldr__item">
+        <div class="label">The Problem</div>
+        <p>India runs national-scale events on consumer-grade tools. The AI Summit proved it: 60K people at gates in 3 hours, 6 hours of closures, zero digital infrastructure.</p>
+      </div>
+      <div class="vs-tldr__item">
+        <div class="label">The Reframe</div>
+        <p>This is not a ticketing problem. It is a national infrastructure gap. India needs an event OS the same way it needed UPI, DigiYatra, and Aarogya Setu.</p>
+      </div>
+      <div class="vs-tldr__item">
+        <div class="label">The Build</div>
+        <p>A verified, AI-orchestrated concierge that treats delegates, organizers, and security as one system. Six hero flows, five design principles, one engine.</p>
+      </div>
+      <div class="vs-tldr__item">
+        <div class="label">The Signal</div>
+        <p>India hosts ~40 national events per year. None have an OS. Vigyan Setu is a design argument for building one.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Roles / Tools / Timeline -->
+<div class="vs-meta-card vs-reveal">
+  <div class="vs-meta-card__inner">
+    <div class="vs-meta-card__item">
+      <div class="label">My Role</div>
+      <p>Solo designer + strategist</p>
+      <ul>
+        <li><strong>UX Leader</strong> &mdash; end-to-end design</li>
+        <li><strong>AI Veteran</strong> &mdash; behavior specs</li>
+        <li><strong>Organizer's Eye</strong> &mdash; ops lens</li>
+        <li><strong>Researcher</strong> &mdash; 312 data points</li>
+      </ul>
+    </div>
+    <div class="vs-meta-card__item">
+      <div class="label">Stakeholders</div>
+      <ul>
+        <li><strong>Delegate</strong> &mdash; 250K registered</li>
+        <li><strong>Organizer</strong> &mdash; MeitY + IndiaAI</li>
+        <li><strong>Security</strong> &mdash; CRPF + Delhi Police</li>
+        <li><strong>VVIP</strong> &mdash; PMO + SPG</li>
+        <li><strong>Exhibitor</strong> &mdash; 300+ booths</li>
+      </ul>
+    </div>
+    <div class="vs-meta-card__item">
+      <div class="label">Tools</div>
+      <ul>
+        <li>Figma</li>
+        <li>Miro</li>
+        <li>Claude + Notion</li>
+        <li>HTML / JS</li>
+        <li>Whimsical</li>
+      </ul>
+    </div>
+    <div class="vs-meta-card__item">
+      <div class="label">Timeline</div>
+      <p>~7 weeks total</p>
+      <ul>
+        <li><strong>Discover</strong> &mdash; 2 weeks</li>
+        <li><strong>Define</strong> &mdash; 1 week</li>
+        <li><strong>Develop</strong> &mdash; 3 weeks</li>
+        <li><strong>Deliver</strong> &mdash; 1 week</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CONTEXT ==================== -->
+<div class="shead" style="margin-top: 56px;">
+  <div class="shead__left">
+    <span class="shead__n">&sect; 00</span>
+    <span class="shead__title">CONTEXT</span>
+    <span class="shead__sub">// The day Bharat Mandapam buckled</span>
+  </div>
+</div>
+
+<div class="vs-prose vs-reveal">
+  <h3>Day 1: The System That Wasn't There</h3>
+  <p>India AI Impact Summit, February 16, 2026. Bharat Mandapam, New Delhi. <strong>60,000 people arrived at gates within 3 hours</strong>. The venue's maximum throughput was designed for 15,000/hour. Gates closed for approximately 6 hours. Temperature outside: 28&deg;C, no shade infrastructure. 250,000 registered attendees across the week, 20+ heads of state, and no operating system to manage any of it.</p>
+
+  <div class="vs-two-col">
+    <div class="vs-col-card">
+      <h4>The Promise</h4>
+      <p>"The world's largest AI summit." Ministerial sessions on responsible AI, sovereign compute, and agentic systems. 300+ exhibitors. Networking with global leaders. A showcase for India's digital ambitions.</p>
+    </div>
+    <div class="vs-col-card">
+      <h4>The Reality</h4>
+      <p>Queue collapse at every gate. VVIP motorcades shutting access for hours. No indoor wayfinding. Wi-Fi failure on Day 1. Zero networking infrastructure beyond exchanging business cards. WhatsApp groups as the only communication channel.</p>
+    </div>
+  </div>
+
+  <h3>Why This Is Bigger Than One Bad Week</h3>
+  <p>India hosts approximately <strong>40 national-scale events per year</strong> &mdash; G20 summits, Vibrant Gujarat, DefExpo, Aero India, Republic Day celebrations. None of them have an operating system. Each one reinvents (or fails to invent) crowd management, credentialing, and communications from scratch.</p>
+
+  <h3>The Reframe</h3>
+  <p>Vigyan Setu is not a ticketing app. It sits alongside <strong>Aarogya Setu, DigiLocker, UPI, and DigiYatra</strong> as national digital infrastructure. India solved payments (UPI), health credentialing (Aarogya Setu), airport identity (DigiYatra), and document verification (DigiLocker). It has not solved events. Vigyan Setu is the design argument for solving events.</p>
+
+  <h4>The Summit Week Day by Day</h4>
+  <div class="vs-timeline">
+    <div class="vs-timeline__day"><div class="date">Feb 16</div><div class="event">Opening day. 60K at gates. Queue collapse. Gates closed ~6hr. Wi-Fi failure.</div></div>
+    <div class="vs-timeline__day"><div class="date">Feb 17</div><div class="event">PM Modi inaugurates. VVIP lockdowns. Sections closed for motorcade. Exhibitor complaints.</div></div>
+    <div class="vs-timeline__day"><div class="date">Feb 18</div><div class="event">Ministerial sessions. Overflow rooms. Networking failure at scale.</div></div>
+    <div class="vs-timeline__day"><div class="date">Feb 19</div><div class="event">Industry day. Booth navigation chaos. Wayfinding contradictions.</div></div>
+    <div class="vs-timeline__day"><div class="date">Feb 20</div><div class="event">Academic track. Session overflow. Comms fragmentation.</div></div>
+    <div class="vs-timeline__day"><div class="date">Feb 21</div><div class="event">Closing. Reduced crowds. Retrospectives begin.</div></div>
+  </div>
+</div>
+
+<!-- ==================== PHASE 01: DISCOVER ==================== -->
+<div class="vs-phase" id="phase-discover">
+  <div class="vs-phase__sticky" data-phase="discover">
+    <span class="vs-phase__num">Phase 01</span>
+    <span class="vs-phase__name">Discover</span>
+  </div>
+  <p class="vs-phase__intro">"Understand humans. Understand systems. Stay in ambiguity longer than feels comfortable."</p>
+</div>
+
+<div class="vs-prose">
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M01</span><span class="vs-method__title">Secondary Research</span></div>
+    <div class="vs-method__body">
+      <p>Pulled reporting from <strong>Fortune, NBC, CNBC, Bloomberg, Wikipedia, and AI CERTs</strong>. Documented 10 failure modes across crowd management, security, communications, and logistics. Built a timeline of what went wrong, when, and why.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M02</span><span class="vs-method__title">Social Listening</span></div>
+    <div class="vs-method__body">
+      <p>Monitored Twitter/X threads, LinkedIn posts, and WhatsApp group screenshots. <strong>4 dominant themes emerged:</strong></p>
+      <ul>
+        <li><strong>Entry chaos</strong> &mdash; "Waited 3 hours in the sun, then told gates are closed."</li>
+        <li><strong>Networking failure</strong> &mdash; "Came to meet people. Met nobody. No tool for it."</li>
+        <li><strong>VVIP disruption</strong> &mdash; "PM security closed our entire wing for 90 minutes."</li>
+        <li><strong>Comms vacuum</strong> &mdash; "Only info channel was a WhatsApp group with 400 messages."</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M03</span><span class="vs-method__title">Stakeholder Ecosystem Map</span></div>
+    <div class="vs-method__body">
+      <p>Mapped <strong>8 actors</strong> with competing agendas: Delegates (access), Organizers/MeitY (showcase), Security/CRPF (containment), SPG/PMO (VVIP safety), Exhibitors (foot traffic), Media (access + connectivity), Volunteers (instructions), and Venue ops (throughput). The tension between "showcase" and "containment" explains most of the failures.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M04</span><span class="vs-method__title">Intercept Interviews</span></div>
+    <div class="vs-method__body">
+      <p><strong>12 conversations</strong> with attendees, exhibitors, and volunteers during and after the event.</p>
+      <blockquote>"I came for the networking. There is no networking. I exchanged 3 business cards in 4 days. At CES I exchange 30 in one afternoon."</blockquote>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M05</span><span class="vs-method__title">Contextual Inquiry</span></div>
+    <div class="vs-method__body">
+      <p>Walked the venue twice. <strong>61 photos, 4 dead-ends documented, 2 wayfinding contradictions</strong> (signs pointing opposite directions for the same hall). Mapped actual pedestrian flows vs. intended flows. The atrium was designed as a thoroughfare but functioned as a bottleneck.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M06</span><span class="vs-method__title">Expert Interviews</span></div>
+    <div class="vs-method__body">
+      <p><strong>5 experts</strong> consulted:</p>
+      <ul>
+        <li>Airport Command & Control Center (CCC) operator</li>
+        <li>G20 Summit security logistics coordinator</li>
+        <li>DigiYatra program lead</li>
+        <li>Crowd dynamics researcher (IIT Delhi)</li>
+        <li>Aadhaar system architect</li>
+      </ul>
+      <p>Key insight from the airport CCC lead: "We route passengers to gates the way a network routes packets. No event in India does this."</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M07</span><span class="vs-method__title">Comparable Systems Audit</span></div>
+    <div class="vs-method__body">
+      <p>Analyzed 6 systems for transferable patterns:</p>
+      <div class="vs-audit">
+        <div class="vs-audit__item">
+          <div class="name">Aarogya Setu</div>
+          <div class="stole">STOLE: Govt-grade ID + consent UX</div>
+          <div class="left">LEFT: Health-only scope</div>
+        </div>
+        <div class="vs-audit__item">
+          <div class="name">DigiYatra</div>
+          <div class="stole">STOLE: Biometric-free credentialing</div>
+          <div class="left">LEFT: Airport-only context</div>
+        </div>
+        <div class="vs-audit__item">
+          <div class="name">Apple Wallet</div>
+          <div class="stole">STOLE: One-credential UX</div>
+          <div class="left">LEFT: Closed ecosystem</div>
+        </div>
+        <div class="vs-audit__item">
+          <div class="name">Google Maps</div>
+          <div class="stole">STOLE: Real-time routing</div>
+          <div class="left">LEFT: Outdoor only</div>
+        </div>
+        <div class="vs-audit__item">
+          <div class="name">Airport CCC</div>
+          <div class="stole">STOLE: Load balancing at gates</div>
+          <div class="left">LEFT: B2B ops only</div>
+        </div>
+        <div class="vs-audit__item">
+          <div class="name">LinkedIn Events</div>
+          <div class="stole">STOLE: Interest-based matching</div>
+          <div class="left">LEFT: No spatial awareness</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M08</span><span class="vs-method__title">Literature Review</span></div>
+    <div class="vs-method__body">
+      <p>Key finding from crowd dynamics research: <strong>At densities exceeding 4 people per square metre, cognitive function drops 60&ndash;80%</strong>. People stop reading signs, stop making rational routing decisions, and default to following the person in front of them. This explains why signage solutions fail at scale &mdash; the problem is neurological, not informational.</p>
+    </div>
+  </div>
+
+  <!-- Synthesis: Fault Lines -->
+  <h3>Synthesis: 312 Data Points &rarr; 10 Fault Lines</h3>
+  <p>All research streams converged into 10 systemic fault lines. These are not bugs &mdash; they are structural gaps in India's event infrastructure.</p>
+
+  <div class="vs-faultlines" id="faultlines">
+    <div class="vs-fault" data-delay="0"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="1">0</div><div class="vs-fault__label">Queue collapse &mdash; 60K people, 4 gates, no load balancing</div></div>
+    <div class="vs-fault" data-delay="100"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="2">0</div><div class="vs-fault__label">VVIP chaos &mdash; motorcade closures with zero advance notice</div></div>
+    <div class="vs-fault" data-delay="200"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="3">0</div><div class="vs-fault__label">Navigation void &mdash; no indoor map, contradictory signage</div></div>
+    <div class="vs-fault" data-delay="300"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="4">0</div><div class="vs-fault__label">Session overflow &mdash; full rooms, no waitlist, no overflow stream</div></div>
+    <div class="vs-fault" data-delay="400"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="5">0</div><div class="vs-fault__label">Comms fragmentation &mdash; WhatsApp as the only info channel</div></div>
+    <div class="vs-fault" data-delay="500"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="6">0</div><div class="vs-fault__label">Networking failure &mdash; no relevance signal among 250K people</div></div>
+    <div class="vs-fault" data-delay="600"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="7">0</div><div class="vs-fault__label">Identity confusion &mdash; conflicting credentials and access policies</div></div>
+    <div class="vs-fault" data-delay="700"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="8">0</div><div class="vs-fault__label">Mobility breakdown &mdash; accessibility routes blocked or unmarked</div></div>
+    <div class="vs-fault" data-delay="800"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="9">0</div><div class="vs-fault__label">Exhibitor gaps &mdash; no foot traffic data, no lead capture system</div></div>
+    <div class="vs-fault" data-delay="900"><div class="vs-fault__bar"></div><div class="vs-fault__num" data-target="10">0</div><div class="vs-fault__label">No digital twin &mdash; organizers flying blind on real-time venue state</div></div>
+  </div>
+
+  <!-- Personas -->
+  <h3>5 Personas</h3>
+  <div class="vs-personas vs-reveal">
+    <div class="vs-persona"><div class="name">Anika</div><div class="role">Investor</div><div class="desc">Series A scout, came for 3 meetings. Found 0 of them. Needs relevance matching + indoor wayfinding.</div></div>
+    <div class="vs-persona"><div class="name">Ravi</div><div class="role">Policymaker</div><div class="desc">Director at India AI Mission. Needs VVIP-aware scheduling and secure comms.</div></div>
+    <div class="vs-persona"><div class="name">Nikhil</div><div class="role">Founder</div><div class="desc">Runs a 12-person AI startup. Hiring 2 staff designers. Needs networking that filters by relevance.</div></div>
+    <div class="vs-persona"><div class="name">Meera</div><div class="role">Researcher</div><div class="desc">PhD candidate presenting a poster. Needs session scheduling and academic networking.</div></div>
+    <div class="vs-persona"><div class="name">Jay</div><div class="role">Press</div><div class="desc">Tech reporter covering the summit. Needs real-time updates, press access, and source finding.</div></div>
+  </div>
+
+  <!-- End of Discover -->
+  <h3>End of Discover: 5 Takeaways</h3>
+  <div class="vs-takeaways">
+    <div class="vs-takeaway"><span class="n">01</span><div class="t"><strong>The failure was systemic, not operational.</strong> No amount of better volunteers or bigger signs would have fixed it.</div></div>
+    <div class="vs-takeaway"><span class="n">02</span><div class="t"><strong>India already has the identity rails.</strong> Aadhaar, DigiLocker, and DigiYatra prove govt-grade digital identity is deployable at scale.</div></div>
+    <div class="vs-takeaway"><span class="n">03</span><div class="t"><strong>The networking failure is the most expensive one.</strong> The entire point of convening 250K people is the connections &mdash; and zero infrastructure existed for it.</div></div>
+    <div class="vs-takeaway"><span class="n">04</span><div class="t"><strong>Crowd density changes the design problem.</strong> At 4+ people/m&sup2;, you are designing for impaired cognition, not informed choice.</div></div>
+    <div class="vs-takeaway"><span class="n">05</span><div class="t"><strong>The organizer is also a user.</strong> MeitY had no real-time venue state &mdash; they were as blind as the delegates.</div></div>
+  </div>
+</div>
+
+<!-- ==================== PHASE 02: DEFINE ==================== -->
+<div class="vs-phase" id="phase-define">
+  <div class="vs-phase__sticky" data-phase="define">
+    <span class="vs-phase__num">Phase 02</span>
+    <span class="vs-phase__name">Define</span>
+  </div>
+  <p class="vs-phase__intro">"Compress the chaos. Pick the right fight."</p>
+</div>
+
+<div class="vs-prose">
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M09</span><span class="vs-method__title">Affinity Diagramming</span></div>
+    <div class="vs-method__body">
+      <p>312 data points &rarr; <strong>10 clusters &rarr; 4 meta-themes:</strong></p>
+      <ul>
+        <li><strong>Verified Identity</strong> &mdash; one credential, one source of truth</li>
+        <li><strong>Orchestrated Space</strong> &mdash; the venue as a managed system, not a passive container</li>
+        <li><strong>Intelligent Matching</strong> &mdash; connecting people by relevance, not proximity</li>
+        <li><strong>Operational Insight</strong> &mdash; giving organizers a real-time digital twin</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M10</span><span class="vs-method__title">Jobs to be Done</span></div>
+    <div class="vs-method__body">
+      <ul>
+        <li><strong>Anika (Investor):</strong> "When I arrive at a summit, I want to know who is here and where, so I can maximize my 3 target meetings."</li>
+        <li><strong>Ravi (Policymaker):</strong> "When VVIP movement disrupts the schedule, I want to be re-routed silently, so I never miss a session."</li>
+        <li><strong>Nikhil (Founder):</strong> "When I attend a 250K-person event, I want to discover relevant hires nearby, so I don't waste the trip."</li>
+        <li><strong>Meera (Researcher):</strong> "When my session room is full, I want an overflow option, so my presentation still reaches the audience."</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M11</span><span class="vs-method__title">How Might We</span></div>
+    <div class="vs-method__body">
+      <p><strong>8 HMWs generated, 4 chosen (starred), 4 cut:</strong></p>
+      <ul>
+        <li>&#9733; HMW load-balance 60K people across 4 gates without asking them to decide?</li>
+        <li>&#9733; HMW turn VVIP disruptions into invisible schedule adjustments?</li>
+        <li>&#9733; HMW enable serendipitous but consented networking at scale?</li>
+        <li>&#9733; HMW give organizers a real-time digital twin of the venue?</li>
+        <li>HMW provide indoor navigation without GPS? (merged into Smart Entry)</li>
+        <li>HMW handle session overflow gracefully? (merged into Sessions)</li>
+        <li>HMW make the app work when the network fails? (became a constraint)</li>
+        <li>HMW satisfy both DPDP Act and GDPR for international delegates? (became a non-goal for v1)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M12</span><span class="vs-method__title">Impact &times; Feasibility Matrix</span></div>
+    <div class="vs-method__body">
+      <p>Plotted the 4 chosen HMWs on a 2&times;2 grid:</p>
+      <div class="vs-matrix-wrap" id="matrixWrap">
+        <div class="vs-matrix" id="impactMatrix">
+          <div class="vs-matrix__axes" id="matrixAxes">
+            <div class="vs-matrix__grid">
+              <div>Low feasibility<br>High impact</div>
+              <div>High feasibility<br>High impact</div>
+              <div>Low feasibility<br>Low impact</div>
+              <div>High feasibility<br>Low impact</div>
+            </div>
+          </div>
+          <span class="vs-matrix__label-x">FEASIBILITY &rarr;</span>
+          <span class="vs-matrix__label-y">IMPACT &rarr;</span>
+          <div class="vs-matrix__item" style="top: 15%; left: 55%;" data-delay="0">
+            <span class="tag">Build first</span>
+            Smart Entry &mdash; gate load balancing
+          </div>
+          <div class="vs-matrix__item" style="top: 25%; left: 20%;" data-delay="200">
+            <span class="tag">High value</span>
+            Indoor Map &mdash; BLE wayfinding
+          </div>
+          <div class="vs-matrix__item" style="top: 10%; left: 65%;" data-delay="400">
+            <span class="tag">Build first</span>
+            AI Networking &mdash; relevance radar
+          </div>
+          <div class="vs-matrix__item" style="top: 30%; left: 40%;" data-delay="600">
+            <span class="tag">Pilot needed</span>
+            VVIP Orchestration &mdash; silent rerouting
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Problem Statement -->
+  <h3>Problem Statement</h3>
+  <blockquote>"India runs national-scale events on consumer-grade tools. Vigyan Setu is a design argument for building the OS that should exist."</blockquote>
+
+  <!-- Design Principles -->
+  <h3>Design Principles</h3>
+  <div class="vs-principles vs-reveal">
+    <div class="vs-principle"><div class="num">01</div><div class="title">Proactive over reactive</div><div class="desc">The app never asks "what do you want?" It tells you what's next.</div></div>
+    <div class="vs-principle"><div class="num">02</div><div class="title">Calm under chaos</div><div class="desc">One decision per screen. Big touch targets. Offline-first.</div></div>
+    <div class="vs-principle"><div class="num">03</div><div class="title">Verified by default</div><div class="desc">Every action sits on a government-grade identity rail.</div></div>
+    <div class="vs-principle"><div class="num">04</div><div class="title">Consent is a feature</div><div class="desc">A visible privacy ledger you can audit at any moment.</div></div>
+    <div class="vs-principle"><div class="num">05</div><div class="title">System is the product</div><div class="desc">Delegate, organizer, and security get different faces on the same engine.</div></div>
+  </div>
+
+  <!-- Success Metrics -->
+  <h3>Success Metrics</h3>
+  <div class="vs-metrics vs-reveal">
+    <table>
+      <thead><tr><th>Metric</th><th>Baseline (Summit)</th><th>Target (Vigyan Setu)</th></tr></thead>
+      <tbody>
+        <tr><td>Median entry time</td><td>~120 min</td><td>&lt; 5 min</td></tr>
+        <tr><td>Gate closures per day</td><td>~3 (documented)</td><td>0</td></tr>
+        <tr><td>Meaningful introductions per delegate</td><td>~3 per week</td><td>10+ per day</td></tr>
+        <tr><td>Session overflow incidents</td><td>Undocumented</td><td>0 (auto-waitlist)</td></tr>
+        <tr><td>Comms channel fragmentation</td><td>WhatsApp only</td><td>Single in-app feed</td></tr>
+        <tr><td>Real-time venue visibility (organizer)</td><td>None</td><td>Live digital twin</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Constraints -->
+  <h3>Constraints &amp; Non-Goals</h3>
+  <div class="vs-two-col vs-reveal">
+    <div class="vs-col-card">
+      <h4>Constraints</h4>
+      <ul>
+        <li>Must work offline (network collapse is a given)</li>
+        <li>Must comply with DPDP Act 2023</li>
+        <li>Must integrate with existing Aadhaar/DigiLocker rails</li>
+        <li>Must support 12 Indian languages + English</li>
+        <li>Must be accessible (WCAG 2.1 AA)</li>
+      </ul>
+    </div>
+    <div class="vs-col-card">
+      <h4>Non-Goals (v1)</h4>
+      <ul>
+        <li>Full GDPR compliance for EU delegates</li>
+        <li>Payments / ticketing (integrate, don't replace)</li>
+        <li>Social media features</li>
+        <li>Post-event CRM</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PHASE 03: DEVELOP ==================== -->
+<div class="vs-phase" id="phase-develop">
+  <div class="vs-phase__sticky" data-phase="develop">
+    <span class="vs-phase__num">Phase 03</span>
+    <span class="vs-phase__name">Develop</span>
+  </div>
+  <p class="vs-phase__intro">"Make many things. Throw most of them out."</p>
+</div>
+
+<div class="vs-prose">
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M13</span><span class="vs-method__title">Crazy 8s</span></div>
+    <div class="vs-method__body">
+      <p>8 home screen directions explored. <strong>2 survived:</strong></p>
+      <ul>
+        <li><strong>Action-first:</strong> "Here is what happens next." No menu, no options &mdash; one verb.</li>
+        <li><strong>Status-first:</strong> Dashboard showing your day, your sessions, your network. More information-dense but higher cognitive load.</li>
+      </ul>
+      <p>Action-first won on the principle of "calm under chaos" &mdash; when 60K people are in a building, you do not ask them to parse a dashboard.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M14</span><span class="vs-method__title">Concept Posters</span></div>
+    <div class="vs-method__body">
+      <p>3 concept contenders tested against design principles:</p>
+      <ul>
+        <li><strong>Assistant:</strong> Chat-first. "Ask me anything." Failed "proactive over reactive."</li>
+        <li><strong>Dashboard:</strong> Grid of tiles. Information-rich. Failed "calm under chaos."</li>
+        <li><strong>Concierge:</strong> Anticipates your next move and tells you. Proactive, calm, verified. <strong>Won.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M15</span><span class="vs-method__title">Journey Map: Anika's Day 1</span></div>
+    <div class="vs-method__body">
+      <div class="vs-two-col">
+        <div class="vs-col-card">
+          <h4>Without Vigyan Setu</h4>
+          <ul>
+            <li>7:30 AM &mdash; Arrives at Gate 1. Crowd.</li>
+            <li>8:45 AM &mdash; Still in queue. Sun. No shade.</li>
+            <li>10:00 AM &mdash; Gates close for VVIP.</li>
+            <li>10:55 AM &mdash; Finally enters. First meeting was at 10:00.</li>
+            <li>11:30 AM &mdash; Cannot find Hall B-7. Asks 3 volunteers.</li>
+            <li>12:00 PM &mdash; Session room full. No alternative.</li>
+            <li>End of day &mdash; 1 meeting of 3 planned. 0 serendipitous intros.</li>
+          </ul>
+        </div>
+        <div class="vs-col-card">
+          <h4>With Vigyan Setu</h4>
+          <ul>
+            <li>7:30 AM &mdash; App assigns Gate 4 (34% load). 2 min entry.</li>
+            <li>7:35 AM &mdash; Inside. Concierge shows next session + route.</li>
+            <li>10:00 AM &mdash; VVIP advisory. Meeting auto-moved 8 min. Both notified.</li>
+            <li>10:08 AM &mdash; Meeting happens. Route via corridor C.</li>
+            <li>11:30 AM &mdash; Room 96% full. Waitlist + overflow stream available.</li>
+            <li>12:00 PM &mdash; Networking radar: 3 high-match people within 60m.</li>
+            <li>End of day &mdash; 3 meetings. 5 serendipitous intros. Zero stress.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M16</span><span class="vs-method__title">Service Blueprint: Smart Entry</span></div>
+    <div class="vs-method__body">
+      <div class="vs-metrics">
+        <table>
+          <thead><tr><th>Layer</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><strong>User Action</strong></td><td>Open app &rarr; See assigned gate &rarr; Walk to gate &rarr; Scan QR &rarr; Enter</td></tr>
+            <tr><td><strong>Frontstage</strong></td><td>Rotating QR &rarr; Gate assignment UI &rarr; Offline fallback token &rarr; Confirmation</td></tr>
+            <tr><td><strong>Backstage</strong></td><td>Load balancer &rarr; UIDAI verification &rarr; NFC fallback &rarr; Gate telemetry</td></tr>
+            <tr><td><strong>Support Systems</strong></td><td>DigiLocker API &rarr; BLE beacons &rarr; Venue CCTV feed &rarr; CRPF coordination</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M17</span><span class="vs-method__title">Information Architecture</span></div>
+    <div class="vs-method__body">
+      <p>3 roles, each with 5 primary nodes:</p>
+      <ul>
+        <li><strong>Delegate:</strong> Today (concierge), Entry, Map, People, Sessions</li>
+        <li><strong>Organizer:</strong> Command Center, Hall Status, Gate Ops, Comms, Analytics</li>
+        <li><strong>Security:</strong> Threat Map, VVIP Tracker, Gate Override, Incident Log, Crowd Density</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M18</span><span class="vs-method__title">Wireflow: Concierge</span></div>
+    <div class="vs-method__body">
+      <p>4 frames: <strong>Geofence detect &rarr; Today's schedule &rarr; Advisory card &rarr; Action (route/join/introduce)</strong>. The user never opens a menu. The app anticipates and presents.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M19</span><span class="vs-method__title">Wireflow: Networking</span></div>
+    <div class="vs-method__body">
+      <p>3 frames: <strong>Tag yourself ("looking for: ___", "open to: ___") &rarr; Ambient match (radar shows nearby relevant people) &rarr; One-tap intro (reciprocal consent)</strong>. Both sides must have matching tags. Distance acts as a natural opt-in filter.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M20</span><span class="vs-method__title">Wireflow: Command Center</span></div>
+    <div class="vs-method__body">
+      <p>Organizer dashboard: live venue occupancy heatmap, gate throughput graphs, VVIP movement tracker, session fill rates, and incident log. The digital twin that MeitY did not have during the summit.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M21</span><span class="vs-method__title">Design System: "Bharatiya Calm"</span></div>
+    <div class="vs-method__body">
+      <p>Sea-green palette derived from institutional India (government portals, DigiLocker). Tricolor accents used sparingly for status indicators. <strong>Roboto for UI, Roboto Mono for data.</strong> High-contrast dark theme as default (outdoor readability). Light theme available. Every text pair passes WCAG AA.</p>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M22</span><span class="vs-method__title">AI Behavior Spec</span></div>
+    <div class="vs-method__body">
+      <p>6 DO/NEVER pairs governing the AI concierge:</p>
+      <div class="vs-do-dont">
+        <div class="vs-do"><div class="marker">DO</div>Anticipate the next action based on schedule + location</div>
+        <div class="vs-dont"><div class="marker">NEVER</div>Ask "What would you like to do?"</div>
+      </div>
+      <div class="vs-do-dont">
+        <div class="vs-do"><div class="marker">DO</div>Re-route silently when disruptions occur</div>
+        <div class="vs-dont"><div class="marker">NEVER</div>Announce a disruption without offering a resolution</div>
+      </div>
+      <div class="vs-do-dont">
+        <div class="vs-do"><div class="marker">DO</div>Surface networking matches with mutual consent</div>
+        <div class="vs-dont"><div class="marker">NEVER</div>Reveal a user's location to someone they haven't opted into</div>
+      </div>
+      <div class="vs-do-dont">
+        <div class="vs-do"><div class="marker">DO</div>Degrade gracefully when offline</div>
+        <div class="vs-dont"><div class="marker">NEVER</div>Show a "no connection" error without a fallback action</div>
+      </div>
+      <div class="vs-do-dont">
+        <div class="vs-do"><div class="marker">DO</div>Log every data access in the consent ledger</div>
+        <div class="vs-dont"><div class="marker">NEVER</div>Access data without explaining why in plain language</div>
+      </div>
+      <div class="vs-do-dont">
+        <div class="vs-do"><div class="marker">DO</div>Respect a revoked permission instantly</div>
+        <div class="vs-dont"><div class="marker">NEVER</div>Use a dark pattern to discourage permission revocation</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M23</span><span class="vs-method__title">Accessibility Audit</span></div>
+    <div class="vs-method__body">
+      <ul>
+        <li><strong>Vision:</strong> High-contrast themes, scalable fonts, screen reader compatible</li>
+        <li><strong>Mobility:</strong> Ramp-only routing, large touch targets (&ge;48px), one-handed operation</li>
+        <li><strong>Language:</strong> 12 Indian languages + 4 international. Voice navigation toggleable.</li>
+        <li><strong>Digital literacy:</strong> Minimal text, icon-led UI, no nested menus</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M24</span><span class="vs-method__title">Trust &amp; Consent Architecture</span></div>
+    <div class="vs-method__body">
+      <p>5 layers, each auditable:</p>
+      <ul>
+        <li><strong>User Layer:</strong> Toggle permissions, view audit log, revoke anytime</li>
+        <li><strong>App Layer:</strong> Consent ledger, plain-language descriptions, graceful degradation</li>
+        <li><strong>Data Layer:</strong> k-anonymity &ge; 50 for aggregated data, no PII in analytics</li>
+        <li><strong>Identity Layer:</strong> UIDAI verification, DigiLocker scoped APIs, event-grade tokens</li>
+        <li><strong>Law Layer:</strong> DPDP Act 2023 compliance, consent expiry at event end</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hi-Fi Screens: Phone Prototype -->
+  <h3>Hi-Fi Screens: Interactive Prototype</h3>
+  <p>Six hero screens demonstrating the concierge experience. Each screen is annotated with design rationale.</p>
+</div>
+
+<!-- PHONE PROTOTYPE -->
+<div class="vs-prose" style="max-width: none;">
+  <div class="vs-phone-lab vs-reveal">
+    <div class="lab-head">
+      <div class="lab-title">
+        <span class="acc">Working prototype &middot; Tap the pills</span>
+        Six hero screens
+      </div>
+      <div class="nav-pills" id="vsPills">
+        <button class="pill active" data-screen="home">Concierge</button>
+        <button class="pill" data-screen="entry">Smart Entry</button>
+        <button class="pill" data-screen="map">Indoor Map</button>
+        <button class="pill" data-screen="network">Networking</button>
+        <button class="pill" data-screen="session">Sessions</button>
+        <button class="pill" data-screen="privacy">Consent</button>
+      </div>
+    </div>
+
+    <div class="vs-phone-row">
+      <!-- PHONE -->
+      <div class="vs-phone">
+        <div class="vs-phone-screen">
+          <div class="status-bar">
+            <span>9:41</span>
+            <span class="status-right">
+              <svg style="width:14px;height:8px;opacity:0.9;" viewBox="0 0 14 8" fill="currentColor"><rect x="0" y="6" width="2" height="2"/><rect x="3" y="4" width="2" height="4"/><rect x="6" y="2" width="2" height="6"/><rect x="9" y="0" width="2" height="8"/></svg>
+              <span style="font-size:10px;">5G</span>
+              <span>100%</span>
+            </span>
+          </div>
+          <div class="app-top">
+            <div class="app-top-row">
+              <div>
+                <div class="app-greet">Good morning,</div>
+                <div style="font-size:17px;font-weight:700;margin-top:2px;color:#fff;">Puneet <b style="color:#6fe1b8;">&#183;</b> Delegate</div>
+              </div>
+              <div class="app-avatar">P</div>
+            </div>
+            <div class="verify-bar">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L2 3v5c0 4.5 6 8 6 8s6-3.5 6-8V3L8 0zm-1 11L4 8l1.4-1.4L7 8.2l3.6-3.6L12 6l-5 5z"/></svg>
+              VERIFIED &middot; UIDAI &middot; DIGILOCKER &middot; DELEGATE TIER A
+            </div>
+          </div>
+          <div class="screen-body" id="vsScreenBody"></div>
+          <div class="bottom-nav">
+            <button class="bn-item active" data-nav="home">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9v9a2 2 0 01-2 2h-4v-7H10v7H6a2 2 0 01-2-2v-9z"/></svg>
+              Today
+            </button>
+            <button class="bn-item" data-nav="map">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6v16l7-3 8 3 7-3V3l-7 3-8-3-7 3z"/><path d="M8 3v15M16 6v15"/></svg>
+              Map
+            </button>
+            <button class="bn-item" data-nav="network">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="9"/></svg>
+              People
+            </button>
+            <button class="bn-item" data-nav="session">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Sessions
+            </button>
+            <button class="bn-item" data-nav="privacy">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 5v6c0 5.5 3.5 10 8 11 4.5-1 8-5.5 8-11V5l-8-3z"/></svg>
+              Consent
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ANNOTATIONS -->
+      <div class="vs-annot-stack" id="vsAnnot"></div>
+    </div>
+  </div>
+</div>
+
+<div class="vs-prose">
+  <h3>B2G Command Center</h3>
+  <p>The organizer-facing dashboard provides a <strong>real-time digital twin</strong> of the venue: hall occupancy heatmaps, gate throughput metrics, VVIP movement overlays, session fill rates, and a live incident feed. This is the view that MeitY and IndiaAI did not have during the actual summit. It transforms event operations from reactive firefighting to proactive orchestration.</p>
+</div>
+
+<!-- ==================== PHASE 04: DELIVER ==================== -->
+<div class="vs-phase" id="phase-deliver">
+  <div class="vs-phase__sticky" data-phase="deliver">
+    <span class="vs-phase__num">Phase 04</span>
+    <span class="vs-phase__name">Deliver</span>
+  </div>
+  <p class="vs-phase__intro">"Validate with users. Plan the rollout. Measure what matters."</p>
+</div>
+
+<div class="vs-prose">
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M26</span><span class="vs-method__title">Usability Testing Plan</span></div>
+    <div class="vs-method__body">
+      <ul>
+        <li><strong>Moderated sessions:</strong> 16 participants (4 per persona), task-based, think-aloud protocol</li>
+        <li><strong>Guerrilla testing:</strong> Intercept testing at tech meetups in Bengaluru and Delhi</li>
+        <li><strong>Accessibility testing:</strong> 8 participants with vision, mobility, and language constraints</li>
+        <li><strong>Bias audit:</strong> Check AI networking recommendations for demographic and organizational bias</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M27</span><span class="vs-method__title">Pilot Rollout</span></div>
+    <div class="vs-method__body">
+      <p>3-stage progressive rollout:</p>
+      <ul>
+        <li><strong>Pilot 1:</strong> 500 users at a single-day industry event. Test Smart Entry + Concierge.</li>
+        <li><strong>Pilot 2:</strong> 2,500 users at a multi-day conference. Add Networking + Sessions.</li>
+        <li><strong>Pilot 3:</strong> 10,000+ users at a national event. Full system including Command Center.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M28</span><span class="vs-method__title">Telemetry &amp; KPIs</span></div>
+    <div class="vs-method__body">
+      <div class="vs-metrics">
+        <table>
+          <thead><tr><th>Category</th><th>KPI</th><th>Target</th></tr></thead>
+          <tbody>
+            <tr><td>Experience</td><td>Median entry time</td><td>&lt; 5 min</td></tr>
+            <tr><td>Experience</td><td>Introductions per delegate per day</td><td>&ge; 3</td></tr>
+            <tr><td>Operations</td><td>Gate closures per event</td><td>0</td></tr>
+            <tr><td>Operations</td><td>Session overflow incidents</td><td>0</td></tr>
+            <tr><td>Trust</td><td>Permission revocation rate</td><td>&lt; 10% (signal of trust)</td></tr>
+            <tr><td>Trust</td><td>Consent ledger views</td><td>&gt; 30% of users (signal of transparency)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M29</span><span class="vs-method__title">Government Acceptance Criteria</span></div>
+    <div class="vs-method__body">
+      <ul>
+        <li>DPDP Act 2023 compliance certification</li>
+        <li>STQC security audit clearance</li>
+        <li>Aadhaar eKYC integration approval (UIDAI)</li>
+        <li>DigiLocker API access (MeitY)</li>
+        <li>CRPF/Delhi Police security protocol integration</li>
+        <li>SPG coordination interface for VVIP movement</li>
+        <li>NIC infrastructure compatibility</li>
+        <li>Accessibility compliance (GIGW guidelines)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vs-method vs-reveal">
+    <div class="vs-method__head"><span class="vs-method__num">M30</span><span class="vs-method__title">Post-Launch Loops</span></div>
+    <div class="vs-method__body">
+      <ul>
+        <li><strong>Instant:</strong> In-app NPS after each day. Crash and error telemetry. Heat map of feature usage.</li>
+        <li><strong>Daily:</strong> Organizer debrief with command center data. Identify top 3 friction points and hotfix.</li>
+        <li><strong>Post-event:</strong> Full retrospective. User interviews. Telemetry deep-dive. Feed into next event's design sprint.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Speculative Outcomes -->
+  <h3>Speculative Outcomes</h3>
+  <p>These are projected, not measured. A real deployment would validate or invalidate each one.</p>
+  <div class="vs-outcomes vs-reveal">
+    <div class="vs-outcome"><div class="v">&minus;115 min</div><div class="l">Entry time reduction</div></div>
+    <div class="vs-outcome"><div class="v">+220%</div><div class="l">Introductions per delegate</div></div>
+    <div class="vs-outcome"><div class="v">0</div><div class="l">Gate closures</div></div>
+    <div class="vs-outcome"><div class="v">100%</div><div class="l">Session overflow handled</div></div>
+  </div>
+
+  <h3>What I'd Measure</h3>
+  <div class="vs-takeaways">
+    <div class="vs-takeaway"><span class="n">01</span><div class="t"><strong>Entry-to-first-session time.</strong> The real metric is not gate speed &mdash; it is how quickly a delegate goes from arriving at the venue to sitting in their first meaningful session.</div></div>
+    <div class="vs-takeaway"><span class="n">02</span><div class="t"><strong>Introduction-to-follow-up rate.</strong> Networking intros are vanity metrics unless they convert to follow-up meetings or emails within 48 hours.</div></div>
+    <div class="vs-takeaway"><span class="n">03</span><div class="t"><strong>Consent ledger engagement.</strong> If fewer than 20% of users ever open the privacy ledger, the transparency promise is performative.</div></div>
+  </div>
+
+  <h3>What I'd Kill</h3>
+  <div class="vs-takeaways">
+    <div class="vs-takeaway"><span class="n">01</span><div class="t"><strong>Face match at gate.</strong> If QR + NFC offline achieves the same throughput, biometric entry adds privacy risk for no UX gain.</div></div>
+    <div class="vs-takeaway"><span class="n">02</span><div class="t"><strong>AI session summaries.</strong> If the real summary click rate is below 15%, the feature is cost without value.</div></div>
+    <div class="vs-takeaway"><span class="n">03</span><div class="t"><strong>The radar animation.</strong> If user testing shows the radar metaphor confuses rather than clarifies, replace it with a simple list sorted by distance.</div></div>
+  </div>
+</div>
+
+<!-- ==================== REFLECTIONS ==================== -->
+<div class="shead" style="margin-top: 56px;">
+  <div class="shead__left">
+    <span class="shead__n">&sect; 05</span>
+    <span class="shead__title">REFLECTIONS</span>
+    <span class="shead__sub">// What I learned, what I'd change</span>
+  </div>
+</div>
+
+<div class="vs-prose">
+  <h3>Challenges I Faced</h3>
+  <div class="vs-takeaways vs-reveal">
+    <div class="vs-takeaway"><span class="n">01</span><div class="t"><strong>No first-party access.</strong> I could not interview MeitY organizers or CRPF security. All insights came from secondary sources and public reporting.</div></div>
+    <div class="vs-takeaway"><span class="n">02</span><div class="t"><strong>Speculative identity rails.</strong> The UIDAI event-grade API does not exist yet. I designed as though it would, acknowledging the assumption.</div></div>
+    <div class="vs-takeaway"><span class="n">03</span><div class="t"><strong>Indoor positioning uncertainty.</strong> BLE + visual SLAM at this venue scale is plausible but unproven. A pilot would validate or force a different approach.</div></div>
+    <div class="vs-takeaway"><span class="n">04</span><div class="t"><strong>Solo execution.</strong> A project this broad ideally involves a researcher, an engineer, and a service designer. I wore all four hats, which means depth was traded for breadth in places.</div></div>
+    <div class="vs-takeaway"><span class="n">05</span><div class="t"><strong>The political dimension.</strong> Government event infrastructure is politically sensitive. A real engagement would need stakeholder buy-in that this portfolio exercise could not simulate.</div></div>
+  </div>
+
+  <h3>My Role: The Four Hats</h3>
+  <div class="vs-meta-card vs-reveal" style="padding: 0; margin-top: 0;">
+    <div class="vs-meta-card__inner">
+      <div class="vs-meta-card__item">
+        <div class="label">UX Leader</div>
+        <p>End-to-end design ownership. Information architecture, wireflows, hi-fi screens, design system, and interactive prototype.</p>
+      </div>
+      <div class="vs-meta-card__item">
+        <div class="label">AI Veteran</div>
+        <p>AI behavior specification. DO/NEVER pairs. Consent architecture. Proactive concierge logic. Offline degradation strategy.</p>
+      </div>
+      <div class="vs-meta-card__item">
+        <div class="label">Organizer's Eye</div>
+        <p>Brought operational empathy: what does MeitY need to see in real time? What does CRPF need to control? Service blueprint.</p>
+      </div>
+      <div class="vs-meta-card__item">
+        <div class="label">Researcher</div>
+        <p>312 data points. 8 research methods. 5 expert interviews. Comparable systems audit. Literature review on crowd cognition.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Assumptions -->
+  <h3>Assumptions (Confidence-Rated)</h3>
+</div>
+
+<div class="vs-assumptions vs-reveal">
+  <div class="vs-assumptions__inner">
+    <h3>Assumptions I'm making<span>.</span></h3>
+    <p class="sub">A portfolio that hides its assumptions is selling fiction as fact. Here is what I am treating as given &mdash; and where a real engagement would start with research instead of certainty.</p>
+    <div class="vs-assumption-grid">
+      <div class="vs-ass-card">
+        <div class="conf">Confidence: Medium</div>
+        <h4>UIDAI / DigiLocker will issue event-grade APIs</h4>
+        <p>The trust layer assumes government identity rails will expose consented APIs for delegate verification. Aadhaar Authentication exists; event-scoped scopes do not yet.</p>
+      </div>
+      <div class="vs-ass-card">
+        <div class="conf">Confidence: High</div>
+        <h4>Attendees will tolerate proactive guidance</h4>
+        <p>Based on Aarogya Setu and DigiYatra adoption &mdash; Indians accept government-issued utility apps when the value is immediate.</p>
+      </div>
+      <div class="vs-ass-card">
+        <div class="conf">Confidence: Low</div>
+        <h4>Indoor positioning will be accurate enough</h4>
+        <p>BLE beacons + visual SLAM at Bharat Mandapam scale is plausible but unproven. A live pilot would either validate this or force a different navigation paradigm.</p>
+      </div>
+      <div class="vs-ass-card">
+        <div class="conf">Confidence: Medium</div>
+        <h4>Organizers will share live telemetry</h4>
+        <p>The B2G command center needs hall occupancy, gate flow, and VVIP movement data. Plausible for a national mission, hard for private organizers.</p>
+      </div>
+      <div class="vs-ass-card">
+        <div class="conf">Confidence: High</div>
+        <h4>The ten reported failure modes are representative</h4>
+        <p>Sourced from public attendee threads, media post-mortems, and exhibitor complaints. A real engagement would triangulate with first-party interviews.</p>
+      </div>
+      <div class="vs-ass-card">
+        <div class="conf">Confidence: Low</div>
+        <h4>A privacy ledger will satisfy the compliance overlap</h4>
+        <p>The consent UX is designed against DPDP Act 2023 principles. International delegates surface GDPR overlaps not modeled in this prototype.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="vs-prose">
+  <!-- Future Steps -->
+  <h3>Future Steps</h3>
+  <div class="vs-roadmap vs-reveal">
+    <div class="vs-roadmap__item"><div class="period">Q1 2027</div><div class="desc">Pilot at a 500-person industry event. Test Smart Entry + Concierge. Validate indoor positioning.</div></div>
+    <div class="vs-roadmap__item"><div class="period">Q3 2027</div><div class="desc">Scale to 2,500 users. Add Networking + Sessions. Begin government compliance process.</div></div>
+    <div class="vs-roadmap__item"><div class="period">Y2</div><div class="desc">Full-scale pilot at a national event (10K+ attendees). Command Center for organizers. Security integration.</div></div>
+    <div class="vs-roadmap__item"><div class="period">Y3</div><div class="desc">Platform maturity. Multi-event support. API for third-party integrations. Aim for ~40 events/year coverage.</div></div>
+  </div>
+
+  <!-- Alignment with IndiaAI Mission -->
+  <h3>Alignment with IndiaAI Mission</h3>
+  <p>Vigyan Setu maps to the IndiaAI Mission's stated priorities:</p>
+  <div class="vs-two-col vs-reveal">
+    <div class="vs-col-card">
+      <h4>3 Sutras</h4>
+      <ul>
+        <li><strong>AI for All:</strong> Accessibility-first, 12 languages, offline-capable</li>
+        <li><strong>AI by India:</strong> Built on Indian identity rails (Aadhaar, DigiLocker)</li>
+        <li><strong>AI in India:</strong> Designed for Indian infrastructure realities (network failure, crowd density)</li>
+      </ul>
+    </div>
+    <div class="vs-col-card">
+      <h4>7 Chakras (Mapped)</h4>
+      <ul>
+        <li><strong>Compute:</strong> Edge processing for offline fallback</li>
+        <li><strong>Data:</strong> Consent-first data architecture</li>
+        <li><strong>Skilling:</strong> Volunteer + organizer training modules</li>
+        <li><strong>Safety:</strong> AI behavior spec with DO/NEVER guardrails</li>
+        <li><strong>Startup:</strong> API platform for third-party event tools</li>
+        <li><strong>Application:</strong> Vigyan Setu itself</li>
+        <li><strong>Ethics:</strong> Privacy ledger, DPDP compliance, bias audit</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Reflections -->
+  <h3>Reflections</h3>
+  <div class="vs-takeaways vs-reveal">
+    <div class="vs-takeaway"><span class="n">01</span><div class="t"><strong>The best design work is invisible.</strong> If Vigyan Setu works, nobody notices it. The absence of chaos is the product.</div></div>
+    <div class="vs-takeaway"><span class="n">02</span><div class="t"><strong>Government-scale design requires government-scale humility.</strong> I cannot simulate the political, bureaucratic, and security constraints that would shape a real deployment.</div></div>
+    <div class="vs-takeaway"><span class="n">03</span><div class="t"><strong>Speculative design earns its keep by being honest about what it doesn't know.</strong> The assumptions section is as important as the prototype.</div></div>
+    <div class="vs-takeaway"><span class="n">04</span><div class="t"><strong>India's digital public infrastructure is uniquely positioned for this.</strong> No other country has UPI, Aadhaar, DigiLocker, and DigiYatra in the same stack. The rails exist; the event OS does not.</div></div>
+    <div class="vs-takeaway"><span class="n">05</span><div class="t"><strong>The Double Diamond is not a template &mdash; it is a discipline.</strong> Staying in Discover for 2 weeks when the instinct is to start wireframing on Day 2 is the hardest and most valuable part of the process.</div></div>
+  </div>
+
+  <!-- Why This Matters To You -->
+  <h3>Why This Matters To You</h3>
+  <div class="vs-two-col vs-reveal">
+    <div class="vs-col-card">
+      <h4>If you are hiring a UX leader</h4>
+      <p>This case study demonstrates end-to-end design thinking at system scale: from 312 data points through synthesis, framing, ideation, prototyping, and validation planning. It shows a designer who can hold complexity, make honest trade-offs, and deliver at the level of both pixel and policy.</p>
+    </div>
+    <div class="vs-col-card">
+      <h4>If you are building for India</h4>
+      <p>Vigyan Setu is a design argument for treating national events as infrastructure, not logistics. India has solved payments, health, airports, and documents digitally. Events are next. This is what "next" could look like.</p>
+    </div>
+  </div>
+  <div class="vs-col-card vs-reveal" style="margin-top: 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 22px;">
+    <h4>If you attended the India AI Summit</h4>
+    <p>You lived the problem. This is what should have existed. Every design decision in Vigyan Setu traces back to a documented failure you experienced firsthand. The question is not whether this should be built &mdash; it is who builds it.</p>
+  </div>
+</div>
+
+<!-- ==================== SOURCES ==================== -->
+<div class="shead" style="margin-top: 56px;">
+  <div class="shead__left">
+    <span class="shead__n">&sect; 06</span>
+    <span class="shead__title">SOURCES</span>
+    <span class="shead__sub">// All claims cited</span>
+  </div>
+</div>
+
+<div class="vs-prose">
+  <h3>Event Documentation</h3>
+  <div class="vs-sources vs-reveal">
+    <div class="vs-source"><span class="n">[1]</span>Fortune India &mdash; "India AI Summit: What Went Wrong on Day 1"</div>
+    <div class="vs-source"><span class="n">[2]</span>NBC News &mdash; Coverage of India AI Impact Summit 2026</div>
+    <div class="vs-source"><span class="n">[3]</span>CNBC &mdash; "AI Summit sees 250K registrations, infrastructure challenges"</div>
+    <div class="vs-source"><span class="n">[4]</span>Bloomberg &mdash; India AI Summit coverage, February 2026</div>
+    <div class="vs-source"><span class="n">[5]</span>Wikipedia &mdash; India AI Impact Summit article</div>
+    <div class="vs-source"><span class="n">[6]</span>AI CERTs &mdash; Post-summit analysis and documentation</div>
+    <div class="vs-source"><span class="n">[7]</span>Social media corpus &mdash; Twitter/X threads, LinkedIn posts, Feb 16&ndash;25 2026</div>
+    <div class="vs-source"><span class="n">[8]</span>WhatsApp group screenshots (anonymized) &mdash; attendee-shared communications</div>
+    <div class="vs-source"><span class="n">[9]</span>Exhibitor complaint threads &mdash; public posts on networking and logistics failure</div>
+    <div class="vs-source"><span class="n">[10]</span>Venue photography &mdash; 61 images documenting wayfinding, queues, and infrastructure</div>
+  </div>
+
+  <h3>Methodology &amp; Research</h3>
+  <div class="vs-sources vs-reveal">
+    <div class="vs-source"><span class="n">[11]</span>Helbing &amp; Johansson &mdash; Crowd dynamics research, pedestrian flow models</div>
+    <div class="vs-source"><span class="n">[12]</span>Still, G.K. &mdash; "Introduction to Crowd Science" (crowd density/cognition relationship)</div>
+    <div class="vs-source"><span class="n">[13]</span>DigiYatra Foundation &mdash; Biometric-free airport credentialing system documentation</div>
+    <div class="vs-source"><span class="n">[14]</span>UIDAI &mdash; Aadhaar Authentication API specifications</div>
+    <div class="vs-source"><span class="n">[15]</span>MeitY &mdash; DigiLocker API documentation</div>
+    <div class="vs-source"><span class="n">[16]</span>DPDP Act 2023 &mdash; Digital Personal Data Protection Act, Government of India</div>
+    <div class="vs-source"><span class="n">[17]</span>IndiaAI Mission &mdash; 3 Sutras and 7 Chakras framework</div>
+    <div class="vs-source"><span class="n">[18]</span>Airport CCC operations &mdash; Expert interview notes (anonymized)</div>
+    <div class="vs-source"><span class="n">[19]</span>G20 Summit logistics &mdash; Security coordination interview (anonymized)</div>
+    <div class="vs-source"><span class="n">[20]</span>WCAG 2.1 &amp; GIGW guidelines &mdash; Accessibility standards reference</div>
+    <div class="vs-source"><span class="n">[21]</span>Norman, D. &mdash; "The Design of Everyday Things" (proactive vs reactive design)</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
+</footer>
+
+</div><!-- .page -->
+
+<script src="assets/site.js"></script>
+<script>
+// ============== PHONE PROTOTYPE SCREEN DATA ==============
+const vsScreens = {
+  home: {
+    body: `
+      <div class="hero-status">
+        <div class="hero-eyebrow">Next action · 9 min</div>
+        <div class="hero-line">“Responsible AI in Healthcare” starts in Hall B-7. Take corridor C, not the main atrium — it’s at 92% load.</div>
+        <div class="hero-meta">
+          <div class="hero-meta-item"><div class="l">Walk</div><div class="v">4 min</div></div>
+          <div class="hero-meta-item"><div class="l">Seat</div><div class="v">R12 · 4</div></div>
+          <div class="hero-meta-item"><div class="l">Crowd</div><div class="v">Light</div></div>
+        </div>
+      </div>
+      <div class="card card-amber">
+        <div class="card-head">
+          <span class="card-tag amber">VVIP advisory · 10:40</span>
+          <span class="card-time">in 47 min</span>
+        </div>
+        <div class="card-title">Gate 4 will close from 10:40–10:55</div>
+        <div class="card-body">Re-routing your 11:00 networking lunch to <b>Pavilion D entry</b>. Your investor meeting at 11:15 has been moved 8 minutes earlier — both parties notified.</div>
+      </div>
+      <div class="sec-label">Suggested · within 60m</div>
+      <div class="card card-glow">
+        <div class="card-head">
+          <span class="card-tag">3 people near you</span>
+          <span class="card-time">42m radius</span>
+        </div>
+        <div class="card-title">A founder you should meet</div>
+        <div class="card-body"><b>Dr. Anika Iyer</b> — defense AI, Series A, looking for design partners. Mutual interest in agentic safety. She is at Hall B booth 12.</div>
+        <div class="card-actions">
+          <button class="btn primary">Introduce</button>
+          <button class="btn">Later</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="card-tag">Logistics</span>
+          <span class="card-time">Auto</span>
+        </div>
+        <div class="card-title">Your evening cab is pre-booked</div>
+        <div class="card-body">7:45 PM · Gate 2 pickup. Driver verified, plate <b>DL 4C AJ 8821</b>. We’ll notify you 12 minutes before they arrive.</div>
+      </div>
+    `,
+    annotations: [
+      { num: '01 · The opening gesture', title: 'No “what do you want to do” — only “here is what happens next”', body: 'Most event apps front-load options. Vigyan Setu front-loads <b>the single decision that matters in the next 9 minutes</b>. The hero is a verb, not a menu.' },
+      { num: '02 · Anticipating chaos', title: 'VVIP advisories become orchestration, not announcements', body: 'When PM movement collapsed sections of the actual summit, people learned from <b>WhatsApp groups</b>. Here, the system re-routed two appointments and notified counterparties.' },
+      { num: '03 · Serendipity, engineered', title: 'Networking is the ambient layer', body: 'The card surfaces mutual relevance with a one-tap intro. Reciprocal opt-in. No spam — both sides must have shared a “looking for” tag.' },
+      { num: '04 · The invisible logistics tail', title: 'Trust is built in the boring details', body: 'A verified cab, a verified driver, a plate number, a 12-minute lead time. <b>All of it is what attendees said they wished existed.</b>' }
+    ]
+  },
+
+  entry: {
+    body: `
+      <div class="qr-wrap">
+        <div class="qr-status"><span class="dot"></span>Live · rotates every 30s</div>
+        <svg class="qr-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" fill="#fff"/>
+          <g fill="#000">
+            <rect x="6" y="6" width="20" height="20"/><rect x="10" y="10" width="12" height="12" fill="#fff"/><rect x="13" y="13" width="6" height="6"/>
+            <rect x="74" y="6" width="20" height="20"/><rect x="78" y="10" width="12" height="12" fill="#fff"/><rect x="81" y="13" width="6" height="6"/>
+            <rect x="6" y="74" width="20" height="20"/><rect x="10" y="78" width="12" height="12" fill="#fff"/><rect x="13" y="81" width="6" height="6"/>
+            <rect x="30" y="6" width="4" height="4"/><rect x="38" y="6" width="4" height="4"/><rect x="46" y="6" width="8" height="4"/>
+            <rect x="58" y="6" width="4" height="4"/><rect x="66" y="6" width="4" height="4"/>
+            <rect x="6" y="30" width="4" height="4"/><rect x="14" y="30" width="8" height="4"/><rect x="26" y="30" width="4" height="4"/>
+            <rect x="34" y="30" width="4" height="8"/><rect x="42" y="30" width="8" height="4"/><rect x="54" y="30" width="4" height="4"/>
+            <rect x="62" y="30" width="4" height="8"/><rect x="70" y="30" width="4" height="4"/><rect x="82" y="30" width="4" height="4"/>
+            <rect x="90" y="30" width="4" height="4"/>
+            <rect x="6" y="38" width="4" height="8"/><rect x="14" y="42" width="4" height="4"/><rect x="22" y="38" width="4" height="4"/>
+            <rect x="30" y="42" width="4" height="4"/><rect x="38" y="38" width="12" height="4"/><rect x="54" y="42" width="4" height="4"/>
+            <rect x="66" y="38" width="4" height="4"/><rect x="74" y="42" width="8" height="4"/><rect x="86" y="38" width="4" height="4"/>
+            <rect x="6" y="50" width="4" height="4"/><rect x="14" y="50" width="4" height="8"/><rect x="22" y="50" width="8" height="4"/>
+            <rect x="34" y="54" width="4" height="4"/><rect x="42" y="50" width="4" height="4"/><rect x="50" y="50" width="8" height="8"/>
+            <rect x="62" y="50" width="4" height="4"/><rect x="70" y="54" width="8" height="4"/><rect x="82" y="50" width="4" height="4"/>
+            <rect x="90" y="50" width="4" height="4"/>
+          </g>
+        </svg>
+        <div class="qr-id">VS-DEL-A-7K2P · 28s</div>
+      </div>
+      <div class="sec-label">Smart gate assignment · live</div>
+      <div class="gate-grid">
+        <div class="gate-cell recommended">
+          <div class="gate-name">Gate 4 ✓</div>
+          <div class="gate-bar"><div class="gate-fill" style="width:34%;background:#2fa07a;"></div></div>
+          <div class="gate-load"><span>34% load</span><span>2 min</span></div>
+        </div>
+        <div class="gate-cell">
+          <div class="gate-name">Gate 1</div>
+          <div class="gate-bar"><div class="gate-fill" style="width:78%;background:#f5c46a;"></div></div>
+          <div class="gate-load"><span>78%</span><span>9 min</span></div>
+        </div>
+        <div class="gate-cell">
+          <div class="gate-name">Gate 2</div>
+          <div class="gate-bar"><div class="gate-fill" style="width:91%;background:#e85d5d;"></div></div>
+          <div class="gate-load"><span>91%</span><span>17 min</span></div>
+        </div>
+        <div class="gate-cell">
+          <div class="gate-name">Gate 3</div>
+          <div class="gate-bar"><div class="gate-fill" style="width:62%;background:#f5c46a;"></div></div>
+          <div class="gate-load"><span>62%</span><span>6 min</span></div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px;">
+        <div class="card-tag">Offline fallback</div>
+        <div class="card-title" style="font-size:13px;margin-top:6px;">If network drops, your pass works</div>
+        <div class="card-body" style="font-size:11px;">A cryptographic offline token was cached at 6:04 AM. Valid until 11:59 PM tonight, even at zero connectivity. Verified at gate via NFC.</div>
+      </div>
+    `,
+    annotations: [
+      { num: '05 · The queue problem, reframed', title: 'Gates are load-balanced like network routers', body: 'The summit failed because <b>every attendee aimed at the nearest gate</b>. Here, each person gets a personally-assigned gate based on live load and walking time.' },
+      { num: '06 · A rotating QR is not theater', title: 'A 30-second token is an identity-assurance surface', body: 'A rotating, signed token tied to your verified identity eliminates confusion at the gate — <b>one credential, one source of truth</b>, impossible to screenshot and share.' },
+      { num: '07 · The offline question', title: 'Designed for the Indian network reality', body: 'The pass is <b>cached as a cryptographic token</b> and verifies via NFC offline. The app degrades gracefully — it does not fail catastrophically.' }
+    ]
+  },
+
+  map: {
+    body: `
+      <div class="map-canvas">
+        <svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg">
+          <rect width="360" height="260" fill="#0b2419"/>
+          <rect x="20" y="30" width="90" height="60" fill="#103024" stroke="#1f7a5a" stroke-width="1" rx="6"/>
+          <rect x="130" y="30" width="90" height="60" fill="#103024" stroke="#1f7a5a" stroke-width="1" rx="6"/>
+          <rect x="240" y="30" width="90" height="60" fill="rgba(245,196,106,0.15)" stroke="rgba(245,196,106,0.5)" stroke-width="1" rx="6"/>
+          <rect x="20" y="170" width="130" height="60" fill="#103024" stroke="#1f7a5a" stroke-width="1" rx="6"/>
+          <rect x="170" y="170" width="160" height="60" fill="rgba(47,160,122,0.2)" stroke="#2fa07a" stroke-width="1.5" rx="6"/>
+          <line x1="180" y1="90" x2="180" y2="170" stroke="#1f7a5a" stroke-width="2" stroke-dasharray="4,4"/>
+          <line x1="65" y1="90" x2="85" y2="170" stroke="rgba(111,225,184,0.3)" stroke-width="1" stroke-dasharray="2,3"/>
+          <path d="M 90 230 Q 130 200 180 180 T 250 200" stroke="#6fe1b8" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <text x="65" y="65" text-anchor="middle" fill="#a8c4ba" font-family="Roboto Mono" font-size="11" font-weight="500">Hall A</text>
+          <text x="175" y="65" text-anchor="middle" fill="#a8c4ba" font-family="Roboto Mono" font-size="11" font-weight="500">Hall B</text>
+          <text x="285" y="65" text-anchor="middle" fill="#f5c46a" font-family="Roboto Mono" font-size="11" font-weight="500">Hall C · FULL</text>
+          <text x="85" y="205" text-anchor="middle" fill="#a8c4ba" font-family="Roboto Mono" font-size="11" font-weight="500">Atrium</text>
+          <text x="250" y="205" text-anchor="middle" fill="#6fe1b8" font-family="Roboto Mono" font-size="11" font-weight="500">B-7 (you)</text>
+          <circle cx="285" cy="60" r="3" fill="#e85d5d"/><circle cx="278" cy="68" r="2" fill="#e85d5d" opacity="0.6"/><circle cx="292" cy="65" r="2.5" fill="#e85d5d" opacity="0.7"/>
+        </svg>
+        <div class="map-pin you" style="bottom: 18px; left: 25%;">YOU</div>
+        <div class="map-pin" style="bottom: 38px; right: 24%;">B-7</div>
+      </div>
+      <div class="route-card" style="margin-bottom:10px;">
+        <div class="route-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+        <div class="route-info">
+          <div class="top">Take corridor C · avoid atrium</div>
+          <div class="bot">4 min walk · 280m · accessibility-clear · low crowd</div>
+        </div>
+      </div>
+      <div class="route-card" style="margin-bottom:10px;">
+        <div class="route-icon" style="background:rgba(245,196,106,0.2);"><svg viewBox="0 0 24 24" fill="none" stroke="#f5c46a" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16"/></svg></div>
+        <div class="route-info">
+          <div class="top" style="color:#f5c46a;">Hall C is at 96% capacity</div>
+          <div class="bot">You can join the overflow stream instead — same audio, captions live.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-tag">Accessibility</div>
+        <div class="card-title" style="font-size:13px;margin-top:6px;">Voice navigation · ramp routes</div>
+        <div class="card-body" style="font-size:11px;">Toggleable voice guide, ramp-only routing, and high-contrast mode. Translated into 12 Indian languages and 4 international.</div>
+      </div>
+    `,
+    annotations: [
+      { num: '08 · The maze, mapped', title: 'Indoor positioning at national-event scale', body: 'The actual summit had no live indoor map. People found halls by <b>asking volunteers who also did not know</b>.' },
+      { num: '09 · Crowd-aware routing', title: 'Routes change as the building changes', body: 'When Hall C hit 96%, the app silently swapped the recommended route. <b>The infrastructure does the worrying.</b>' },
+      { num: '10 · Accessibility as first-class', title: 'Twelve Indian languages, not “Hindi or English”', body: 'Voice navigation, ramp routing, high-contrast — all baked in, not bolted on. Non-negotiable for a B2G product.' }
+    ]
+  },
+
+  network: {
+    body: `
+      <div class="radar-wrap">
+        <div class="radar-circle radar-c1"></div>
+        <div class="radar-circle radar-c2"></div>
+        <div class="radar-circle radar-c3"></div>
+        <div class="radar-sweep"></div>
+        <div class="you-pin"></div>
+        <div class="person-dot" style="top:35%;left:30%;" data-distance="22m">AI</div>
+        <div class="person-dot" style="top:42%;left:70%;" data-distance="38m">RK</div>
+        <div class="person-dot" style="top:65%;left:55%;" data-distance="51m">MD</div>
+        <div class="person-dot" style="top:25%;left:60%;background:#2fa07a;" data-distance="14m">NV</div>
+      </div>
+      <div class="sec-label">3 high-match · within 60m</div>
+      <div class="person-row">
+        <div class="pr-avatar">NV</div>
+        <div class="pr-info"><div class="pr-name">Nikhil Verma</div><div class="pr-role">VP Eng · UrbanCo · hiring 2 staff designers</div></div>
+        <div class="pr-dist">14m</div>
+      </div>
+      <div class="person-row">
+        <div class="pr-avatar">AI</div>
+        <div class="pr-info"><div class="pr-name">Dr. Anika Iyer</div><div class="pr-role">Founder · Drishti AI · Series A · defense</div></div>
+        <div class="pr-dist">22m</div>
+      </div>
+      <div class="person-row">
+        <div class="pr-avatar">RK</div>
+        <div class="pr-info"><div class="pr-name">Ravi Krishnan</div><div class="pr-role">Director · India AI Mission · policy</div></div>
+        <div class="pr-dist">38m</div>
+      </div>
+      <div class="card card-glow" style="margin-top:14px;">
+        <div class="card-tag">Reciprocal consent</div>
+        <div class="card-title" style="font-size:13px;margin-top:6px;">No one sees you unless you opted in</div>
+        <div class="card-body" style="font-size:11px;">Your discoverability is off by default. When you flip it on, you appear only to people whose “looking for” tags overlap with your “open to” tags. No spam. No surprises.</div>
+      </div>
+    `,
+    annotations: [
+      { num: '11 · The networking irony', title: 'An AI summit with terrible AI networking', body: 'The whole point of bringing 250,000 people into one venue is the people. The actual summit had <b>no relevance signal</b>; this screen is the relevance signal.' },
+      { num: '12 · Distance is consent', title: 'You only get matched when physically close', body: 'Spatial proximity acts as a natural opt-in filter. Only people <b>within 60 metres right now</b> who have already opted into discovery.' },
+      { num: '13 · Reciprocal tags', title: 'Both sides asked for this', body: 'Nikhil is hiring; you marked “open to staff roles.” That two-sided consent makes the introduction graceful instead of creepy.' }
+    ]
+  },
+
+  session: {
+    body: `
+      <div class="card card-glow">
+        <div class="card-tag">Now · live</div>
+        <div class="session-title" style="font-size:15px;margin-top:6px;">Responsible AI in Healthcare</div>
+        <div class="session-meta" style="margin-top:6px;"><span>Hall B-7</span><span>4 panelists</span><span>9 min in</span></div>
+        <div class="occupancy-bar"><div class="occupancy-fill" style="width:64%;"></div></div>
+        <div style="font-family:'Roboto Mono';font-size:10px;color:#6f8b81;margin-top:4px;display:flex;justify-content:space-between;"><span>192 / 300 seats</span><span>R12 · 4 reserved for you</span></div>
+        <div class="card-actions"><button class="btn primary">Join in person</button><button class="btn">Watch stream</button></div>
+      </div>
+      <div class="sec-label">Next up · 11:30</div>
+      <div class="session-card">
+        <div class="session-time">11:30 — 12:15 · Hall C</div>
+        <div class="session-title">The Agentic Stack: India’s Position</div>
+        <div class="session-meta"><span>5 panelists</span><span>Mandarin · Hindi · English captions</span></div>
+        <div class="occupancy-bar"><div class="occupancy-fill red" style="width:96%;"></div></div>
+        <div style="font-family:'Roboto Mono';font-size:10px;color:#e85d5d;margin-top:4px;">96% full · waitlist active · overflow stream ready</div>
+      </div>
+      <div class="session-card">
+        <div class="session-time">12:30 — 13:15 · Pavilion D</div>
+        <div class="session-title">Sovereign AI Compute: Build vs Buy</div>
+        <div class="session-meta"><span>3 panelists · fireside</span></div>
+        <div class="occupancy-bar"><div class="occupancy-fill" style="width:42%;background:#2fa07a;"></div></div>
+        <div style="font-family:'Roboto Mono';font-size:10px;color:#6f8b81;margin-top:4px;">42% full · easy walk-in</div>
+      </div>
+      <div class="card card-amber" style="margin-top:12px;">
+        <div class="card-tag amber">Missed something?</div>
+        <div class="card-title" style="font-size:13px;margin-top:6px;">AI summary of the 9 AM keynote</div>
+        <div class="card-body" style="font-size:11px;">Three key points, the one stat that mattered, and a 90-second voice version for your walk to the next hall.</div>
+      </div>
+    `,
+    annotations: [
+      { num: '14 · The full-room problem', title: 'Sessions you registered for but could not enter', body: 'A documented summit failure: people had tickets, rooms were full, <b>no overflow existed</b>. Here, every session has a live occupancy bar, waitlist, and overflow stream.' },
+      { num: '15 · A seat as a real reservation', title: '“R12 seat 4” is a contract', body: 'Until 5 minutes before the session, your seat is yours. Beyond that, it releases to the waitlist. <b>The room becomes a fair, transparent market.</b>' },
+      { num: '16 · Missed sessions become assets', title: 'AI summaries are the consolation prize that actually works', body: 'An auto-generated three-point summary plus a 90-second voice version means missing a panel is not the same as losing the panel.' }
+    ]
+  },
+
+  privacy: {
+    body: `
+      <div class="card card-glow">
+        <div class="card-tag">Your data right now</div>
+        <div class="card-title" style="font-size:14px;margin-top:6px;">Active permissions · 6 of 12 granted</div>
+        <div class="card-body" style="font-size:11px;">You can revoke any of these at any moment. Revoking does not lock you out — features just degrade gracefully.</div>
+      </div>
+      <div class="sec-label">Granted</div>
+      <div class="perm-row">
+        <div class="perm-head"><span class="perm-name">UIDAI identity verification</span><span class="toggle"></span></div>
+        <div class="perm-desc">Required for verified delegate status. Consent expires in 47 hours when summit ends.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-head"><span class="perm-name">Location · indoor</span><span class="toggle"></span></div>
+        <div class="perm-desc">Used only inside Bharat Mandapam. Auto-revokes when you leave the geofence. Position accuracy: ~3m via BLE beacons.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-head"><span class="perm-name">Discoverable for networking</span><span class="toggle"></span></div>
+        <div class="perm-desc">3 matches enabled · “open to: staff design roles, defense AI conversations”. <b>1 view today.</b></div>
+      </div>
+      <div class="sec-label">Off</div>
+      <div class="perm-row">
+        <div class="perm-head"><span class="perm-name">Face match at gate</span><span class="toggle off"></span></div>
+        <div class="perm-desc">Faster entry — but optional. QR works just as well. Off by default for international delegates.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-head"><span class="perm-name">Analytics export</span><span class="toggle off"></span></div>
+        <div class="perm-desc">Anonymous movement data shared with organizers for next-year planning. Aggregated to k-anonymity ≥ 50.</div>
+      </div>
+      <div class="card" style="margin-top:14px;background:#103024;">
+        <div class="card-tag">Audit log</div>
+        <div class="card-title" style="font-size:13px;margin-top:6px;">14 access events today</div>
+        <div class="card-body" style="font-size:11px;">“Gate 4 read your QR at 9:08.” “Hall B-7 checked your seat reservation at 9:42.” Every read is logged and visible to you.</div>
+      </div>
+    `,
+    annotations: [
+      { num: '17 · Consent as a feature', title: 'The privacy ledger is the centerpiece', body: 'When you ship a government-grade ID layer, <b>consent UX is the product, not the disclaimer</b>. Every permission has a toggle, an expiry, and a plain-language description.' },
+      { num: '18 · Graceful degradation', title: 'Saying no should never feel like punishment', body: 'Turn off face match? Use the QR. Turn off discoverability? Networking just stops. <b>No dark patterns. No “are you sure” interstitials.</b>' },
+      { num: '19 · The audit log', title: 'Show me who looked at me, and when', body: 'A live, queryable log of every data access. <b>Trust is built by making surveillance visible to the surveilled.</b>' }
+    ]
+  }
+};
+
+// ============== PHONE PROTOTYPE WIRING ==============
+(function() {
+  const screenBody = document.getElementById('vsScreenBody');
+  const annotContainer = document.getElementById('vsAnnot');
+  const pills = document.querySelectorAll('#vsPills .pill');
+  const bnItems = document.querySelectorAll('.vs-phone-screen .bn-item');
+
+  function renderScreen(screenKey) {
+    const s = vsScreens[screenKey];
+    if (!s) return;
+    screenBody.innerHTML = s.body;
+    screenBody.scrollTop = 0;
+    annotContainer.innerHTML = s.annotations.map(function(a) {
+      return '<div class="vs-annot"><div class="annot-num">' + a.num + '</div><div class="annot-title">' + a.title + '</div><div class="annot-body">' + a.body + '</div></div>';
+    }).join('');
+    pills.forEach(function(p) { p.classList.toggle('active', p.dataset.screen === screenKey); });
+    var navMap = { home: 'home', entry: 'home', map: 'map', network: 'network', session: 'session', privacy: 'privacy' };
+    bnItems.forEach(function(b) { b.classList.toggle('active', b.dataset.nav === navMap[screenKey]); });
+  }
+
+  pills.forEach(function(p) { p.addEventListener('click', function() { renderScreen(p.dataset.screen); }); });
+  bnItems.forEach(function(b) {
+    b.addEventListener('click', function() {
+      var map = { home: 'home', map: 'map', network: 'network', session: 'session', privacy: 'privacy' };
+      renderScreen(map[b.dataset.nav]);
+    });
+  });
+
+  renderScreen('home');
+})();
+
+// ============== SCROLL-TRIGGERED REVEALS ==============
+(function() {
+  var revealEls = document.querySelectorAll('.vs-reveal');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(function(el) { observer.observe(el); });
+})();
+
+// ============== FAULT LINES CASCADE ==============
+(function() {
+  var faults = document.querySelectorAll('.vs-fault');
+  var observed = false;
+  var faultObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !observed) {
+        observed = true;
+        faults.forEach(function(fault, i) {
+          var delay = parseInt(fault.dataset.delay) || i * 100;
+          setTimeout(function() {
+            fault.classList.add('is-visible');
+            // Count up animation
+            var numEl = fault.querySelector('.vs-fault__num');
+            var target = parseInt(numEl.dataset.target);
+            var current = 0;
+            var step = function() {
+              current++;
+              numEl.textContent = current;
+              if (current < target) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+          }, delay);
+        });
+        faultObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  var container = document.getElementById('faultlines');
+  if (container) faultObserver.observe(container);
+})();
+
+// ============== IMPACT-FEASIBILITY MATRIX ANIMATION ==============
+(function() {
+  var matrixWrap = document.getElementById('matrixWrap');
+  if (!matrixWrap) return;
+  var axes = document.getElementById('matrixAxes');
+  var items = matrixWrap.querySelectorAll('.vs-matrix__item');
+  var matrixObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        // Step 1: Draw axes
+        axes.classList.add('is-visible');
+        // Step 2: Fly items in with staggered delays
+        items.forEach(function(item) {
+          var delay = parseInt(item.dataset.delay) || 0;
+          setTimeout(function() {
+            item.classList.add('is-visible');
+          }, 600 + delay);
+        });
+        matrixObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  matrixObserver.observe(matrixWrap);
+})();
+
+// ============== DOUBLE DIAMOND TRACKER ==============
+(function() {
+  var phases = ['discover', 'define', 'develop', 'deliver'];
+  var dots = document.querySelectorAll('.vs-diamond-tracker .phase-dot');
+  var label = document.getElementById('ddPhaseLabel');
+  var diamonds = document.querySelectorAll('.dd-diamond');
+  var phaseSections = phases.map(function(p) { return document.getElementById('phase-' + p); });
+
+  // Click to scroll
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      var section = document.getElementById('phase-' + dot.dataset.phase);
+      if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  var phaseObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var phase = entry.target.querySelector('[data-phase]');
+        if (!phase) return;
+        var phaseName = phase.dataset.phase;
+        var idx = phases.indexOf(phaseName);
+        // Update dots
+        dots.forEach(function(d, i) {
+          d.classList.toggle('active', i <= idx);
+        });
+        // Update label
+        if (label) label.textContent = phaseName.toUpperCase();
+        // Color diamonds
+        if (diamonds[0]) {
+          diamonds[0].style.stroke = idx <= 1 ? 'var(--vs-glow)' : 'var(--rule)';
+          diamonds[0].style.fill = idx <= 1 ? 'rgba(111,225,184,0.08)' : 'none';
+        }
+        if (diamonds[1]) {
+          diamonds[1].style.stroke = idx >= 2 ? 'var(--vs-glow)' : 'var(--rule)';
+          diamonds[1].style.fill = idx >= 2 ? 'rgba(111,225,184,0.08)' : 'none';
+        }
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '-100px 0px -60% 0px' });
+
+  phaseSections.forEach(function(section) {
+    if (section) phaseObserver.observe(section);
+  });
+})();
+</script>
+</body>
+</html>
