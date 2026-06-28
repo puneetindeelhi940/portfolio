@@ -34,6 +34,7 @@
       setupFilters();
       setupCalculator();
       document.getElementById('footerYear').textContent = new Date().getFullYear();
+      initTicker();
     } catch (e) {
       console.error('Observatory init error:', e);
     }
@@ -686,6 +687,14 @@
     return div.innerHTML;
   }
 
+
+  // ═══════════════ TICKER ═══════════════
+  function initTicker() {
+    var track = document.getElementById('tickerTrack');
+    if (!track) return;
+    var clone = track.innerHTML;
+    track.innerHTML = clone + clone;
+  }
 
   // Boot
   document.addEventListener('DOMContentLoaded', init);

@@ -58,9 +58,67 @@ img { max-width: 100%; display: block; }
 ul { list-style: none; }
 select, input, button { font-family: inherit; }
 
+/* ═══════════════ HEADLINE TICKER ═══════════════ */
+.ticker {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 110;
+  height: 32px;
+  background: #1A1A2E;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.ticker__track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: tickerScroll 90s linear infinite;
+  gap: 0;
+  padding-left: 100%;
+}
+.ticker__track:hover { animation-play-state: paused; }
+@keyframes tickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker__item {
+  font-family: var(--f-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  padding: 0 12px;
+  letter-spacing: 0.01em;
+}
+.ticker__sep {
+  font-size: 6px;
+  color: rgba(255,255,255,0.2);
+  padding: 0 4px;
+  flex-shrink: 0;
+}
+.ticker__flash {
+  background: #FF3B30;
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-right: 6px;
+  animation: flashPulse 2s ease-in-out infinite;
+}
+@keyframes flashPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.ticker__hot {
+  color: #FF9500;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+}
+
 /* ═══════════════ TOP BAR ═══════════════ */
 .topbar {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  position: fixed; top: 32px; left: 0; right: 0; z-index: 100;
   background: rgba(250,250,250,0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -156,7 +214,7 @@ select, input, button { font-family: inherit; }
 
 /* ═══════════════ HERO ═══════════════ */
 .hero {
-  padding: 120px var(--pad) 64px;
+  padding: 140px var(--pad) 64px;
   text-align: center;
   background: linear-gradient(180deg, #FFFFFF 0%, var(--bg) 100%);
 }
@@ -1284,7 +1342,10 @@ select, input, button { font-family: inherit; }
   }
   .topbar__hamburger { display: flex; }
   .topbar__refresh { display: none; }
-  .hero { padding: 80px var(--pad) 48px; }
+  .ticker { height: 28px; }
+  .ticker__item { font-size: 10px; }
+  .topbar { top: 28px; }
+  .hero { padding: 100px var(--pad) 48px; }
   .hero__number { font-size: 64px; }
   .hero__metrics { grid-template-columns: 1fr 1fr; }
   .section { padding: 48px var(--pad); }
