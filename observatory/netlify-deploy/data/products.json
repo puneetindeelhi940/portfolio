@@ -1,0 +1,122 @@
+{
+  "last_updated": "2026-06-28T06:00:00Z",
+  "layers": {
+    "direct": {
+      "label": "Layer 1: Direct AI Inflation",
+      "description": "Prices that rise almost immediately due to AI demand",
+      "products": [
+        {"name": "GPUs (Data Center)", "category": "Semiconductors", "ai_premium_pct": 42, "normal_inflation_pct": 2.1, "trend": "rising", "confidence": 95, "example_price": "$30,000–$40,000 per H100", "source": "NVIDIA earnings, distributor pricing"},
+        {"name": "HBM Memory", "category": "Semiconductors", "ai_premium_pct": 38, "normal_inflation_pct": 3.2, "trend": "rising", "confidence": 92, "example_price": "$15–$25 per GB", "source": "SK Hynix, Samsung earnings reports"},
+        {"name": "Cloud GPU Instances", "category": "Cloud Services", "ai_premium_pct": 28, "normal_inflation_pct": -2.0, "trend": "rising", "confidence": 94, "example_price": "$2.50–$12/hr per GPU", "source": "AWS, Azure, GCP pricing pages"},
+        {"name": "AI API Tokens", "category": "AI Services", "ai_premium_pct": -15, "normal_inflation_pct": 0, "trend": "falling", "confidence": 90, "example_price": "$0.25–$75 per 1M tokens", "source": "OpenAI, Anthropic, Google pricing"},
+        {"name": "Enterprise AI Software", "category": "Software", "ai_premium_pct": 22, "normal_inflation_pct": 5.0, "trend": "rising", "confidence": 88, "example_price": "$30–$50 per user/month", "source": "Gartner, vendor pricing"},
+        {"name": "AI Servers", "category": "Hardware", "ai_premium_pct": 35, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 91, "example_price": "$200,000–$500,000", "source": "Dell, HPE, Supermicro pricing"},
+        {"name": "Data Center Storage", "category": "Hardware", "ai_premium_pct": 18, "normal_inflation_pct": -3.0, "trend": "moderate", "confidence": 85, "example_price": "$0.02–$0.08 per GB/month", "source": "IDC, storage vendor pricing"},
+        {"name": "Model Training Compute", "category": "Cloud Services", "ai_premium_pct": 55, "normal_inflation_pct": 0, "trend": "rising", "confidence": 87, "example_price": "$5M–$500M per frontier model", "source": "Epoch AI, company disclosures"},
+        {"name": "AI Inference Services", "category": "Cloud Services", "ai_premium_pct": 12, "normal_inflation_pct": 0, "trend": "falling", "confidence": 86, "example_price": "Varies by provider", "source": "Company pricing, analyst estimates"},
+        {"name": "Networking Equipment (AI)", "category": "Hardware", "ai_premium_pct": 24, "normal_inflation_pct": 3.0, "trend": "rising", "confidence": 84, "example_price": "$50,000–$200,000 per switch", "source": "Arista, Cisco earnings"}
+      ]
+    },
+    "indirect": {
+      "label": "Layer 2: Indirect AI Inflation",
+      "description": "Consumer and business products impacted by AI component demand",
+      "products": [
+        {"name": "Consumer Laptops", "category": "Consumer Electronics", "ai_premium_pct": 9, "normal_inflation_pct": 1.5, "trend": "rising", "confidence": 82, "example_price": "$800–$2,000", "source": "IDC, BLS CPI"},
+        {"name": "Smartphones", "category": "Consumer Electronics", "ai_premium_pct": 6, "normal_inflation_pct": 2.0, "trend": "moderate", "confidence": 78, "example_price": "$600–$1,400", "source": "Counterpoint Research, BLS CPI"},
+        {"name": "Gaming PCs", "category": "Consumer Electronics", "ai_premium_pct": 14, "normal_inflation_pct": 1.0, "trend": "rising", "confidence": 85, "example_price": "$1,200–$4,000", "source": "Jon Peddie Research, retailer pricing"},
+        {"name": "SSDs / Storage", "category": "Consumer Electronics", "ai_premium_pct": 8, "normal_inflation_pct": -5.0, "trend": "moderate", "confidence": 80, "example_price": "$60–$200 per TB", "source": "TrendForce, DRAMeXchange"},
+        {"name": "RAM / DDR5", "category": "Consumer Electronics", "ai_premium_pct": 12, "normal_inflation_pct": -2.0, "trend": "rising", "confidence": 83, "example_price": "$4–$8 per GB", "source": "DRAMeXchange, SK Hynix"},
+        {"name": "Business SaaS", "category": "Software", "ai_premium_pct": 15, "normal_inflation_pct": 6.0, "trend": "rising", "confidence": 79, "example_price": "$10–$80 per user/month", "source": "Gartner, company pricing"},
+        {"name": "Cloud Hosting", "category": "Cloud Services", "ai_premium_pct": 5, "normal_inflation_pct": -3.0, "trend": "moderate", "confidence": 81, "example_price": "$0.01–$0.10 per GB/month", "source": "Synergy Research, pricing pages"},
+        {"name": "Internet Services", "category": "Telecommunications", "ai_premium_pct": 4, "normal_inflation_pct": 3.0, "trend": "moderate", "confidence": 72, "example_price": "$50–$120/month", "source": "FCC, national telecom reports"},
+        {"name": "Cybersecurity Software", "category": "Software", "ai_premium_pct": 18, "normal_inflation_pct": 8.0, "trend": "rising", "confidence": 77, "example_price": "$5–$30 per endpoint/month", "source": "Gartner, CrowdStrike/Palo Alto pricing"},
+        {"name": "Electricity Bills", "category": "Energy", "ai_premium_pct": 3, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 68, "example_price": "Varies by region", "source": "EIA, national grid operators"}
+      ]
+    },
+    "second_order": {
+      "label": "Layer 3: Second-Order Inflation",
+      "description": "Infrastructure and resource costs driven by AI buildout",
+      "products": [
+        {"name": "Housing Near Data Centers", "category": "Real Estate", "ai_premium_pct": 8, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 65, "example_price": "+8–15% premium in N. Virginia, Dublin", "source": "Zillow, CBRE data center reports"},
+        {"name": "Commercial Real Estate (Tech)", "category": "Real Estate", "ai_premium_pct": 6, "normal_inflation_pct": 2.0, "trend": "moderate", "confidence": 62, "example_price": "Varies by market", "source": "JLL, CBRE"},
+        {"name": "Construction Materials", "category": "Construction", "ai_premium_pct": 3, "normal_inflation_pct": 5.0, "trend": "moderate", "confidence": 58, "example_price": "Varies", "source": "BLS PPI, construction indices"},
+        {"name": "Copper", "category": "Commodities", "ai_premium_pct": 7, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 70, "example_price": "$9,500–$11,000/tonne", "source": "LME, Goldman Sachs commodities"},
+        {"name": "Water (Industrial)", "category": "Utilities", "ai_premium_pct": 2, "normal_inflation_pct": 3.0, "trend": "moderate", "confidence": 55, "example_price": "Varies by region", "source": "USGS, national water authorities"},
+        {"name": "Cooling Systems", "category": "Industrial Equipment", "ai_premium_pct": 15, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 72, "example_price": "$100K–$2M per system", "source": "Vertiv, Schneider Electric"},
+        {"name": "Power Infrastructure", "category": "Energy", "ai_premium_pct": 10, "normal_inflation_pct": 5.0, "trend": "rising", "confidence": 68, "example_price": "Varies", "source": "IEA, utility company reports"},
+        {"name": "Rare Earth Materials", "category": "Commodities", "ai_premium_pct": 5, "normal_inflation_pct": 6.0, "trend": "moderate", "confidence": 60, "example_price": "Varies by element", "source": "USGS, Chinese export data"},
+        {"name": "AI Engineer Salaries", "category": "Labor", "ai_premium_pct": 28, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 88, "example_price": "$200K–$800K total comp", "source": "Levels.fyi, Glassdoor, company disclosures"},
+        {"name": "Semiconductor Fab Equipment", "category": "Industrial Equipment", "ai_premium_pct": 20, "normal_inflation_pct": 6.0, "trend": "rising", "confidence": 82, "example_price": "$150M–$300M per EUV machine", "source": "ASML, Applied Materials earnings"}
+      ]
+    },
+    "lifestyle": {
+      "label": "Layer 4: Lifestyle Impact",
+      "description": "Everyday costs where AI creates subtle price pressure",
+      "products": [
+        {"name": "Streaming Services", "category": "Entertainment", "ai_premium_pct": 4, "normal_inflation_pct": 6.0, "trend": "moderate", "confidence": 55, "example_price": "$8–$23/month", "source": "Company pricing, industry reports"},
+        {"name": "Ride Sharing", "category": "Transportation", "ai_premium_pct": 3, "normal_inflation_pct": 5.0, "trend": "moderate", "confidence": 50, "example_price": "Varies by market", "source": "Uber, Lyft pricing data"},
+        {"name": "Food Delivery", "category": "Food & Beverage", "ai_premium_pct": 2, "normal_inflation_pct": 4.0, "trend": "moderate", "confidence": 48, "example_price": "+15–30% over dine-in", "source": "DoorDash, industry reports"},
+        {"name": "Healthcare (AI Diagnostics)", "category": "Healthcare", "ai_premium_pct": 5, "normal_inflation_pct": 6.0, "trend": "rising", "confidence": 52, "example_price": "Varies", "source": "CMS, healthcare industry reports"},
+        {"name": "Education (EdTech)", "category": "Education", "ai_premium_pct": 8, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 58, "example_price": "$20–$100/month", "source": "EdTech industry reports"},
+        {"name": "Insurance Premiums", "category": "Finance", "ai_premium_pct": 3, "normal_inflation_pct": 5.0, "trend": "moderate", "confidence": 45, "example_price": "Varies", "source": "NAIC, insurance industry data"},
+        {"name": "Banking Fees", "category": "Finance", "ai_premium_pct": 2, "normal_inflation_pct": 3.0, "trend": "stable", "confidence": 42, "example_price": "Varies", "source": "FDIC, banking reports"},
+        {"name": "Travel Booking", "category": "Travel", "ai_premium_pct": 3, "normal_inflation_pct": 5.0, "trend": "moderate", "confidence": 48, "example_price": "Varies", "source": "Booking.com, Expedia data"},
+        {"name": "Retail (AI Pricing)", "category": "Retail", "ai_premium_pct": 2, "normal_inflation_pct": 3.0, "trend": "moderate", "confidence": 40, "example_price": "Varies", "source": "BLS CPI, retail industry reports"},
+        {"name": "Freelance Rates (AI-skilled)", "category": "Labor", "ai_premium_pct": 22, "normal_inflation_pct": 4.0, "trend": "rising", "confidence": 72, "example_price": "$100–$400/hour", "source": "Upwork, Fiverr, Toptal data"}
+      ]
+    }
+  },
+  "causal_chains": [
+    {
+      "trigger": "Consumer Laptops",
+      "chain": [
+        {"node": "Higher enterprise AI adoption", "evidence": "Enterprise AI spending up 62% YoY (IDC)", "confidence": 92},
+        {"node": "More GPU demand", "evidence": "NVIDIA data center revenue up 122% (NVIDIA Q1 2026)", "confidence": 95},
+        {"node": "HBM memory shortages", "evidence": "HBM production at 95% utilization (SK Hynix)", "confidence": 88},
+        {"node": "Server manufacturing costs rise", "evidence": "Server ASP up 18% YoY (IDC Quarterly Server Tracker)", "confidence": 85},
+        {"node": "Component allocation shifts to AI", "evidence": "DRAM allocation to servers up from 35% to 42% (TrendForce)", "confidence": 82},
+        {"node": "Consumer laptop component costs increase", "evidence": "Notebook DRAM costs up 12% (DRAMeXchange)", "confidence": 80},
+        {"node": "Retail prices increase +9%", "evidence": "Average laptop ASP $1,150 vs $1,055 prior year (IDC)", "confidence": 78}
+      ]
+    },
+    {
+      "trigger": "Electricity Bills",
+      "chain": [
+        {"node": "AI model training and inference demand surges", "evidence": "Global AI compute doubling every 6 months (Epoch AI)", "confidence": 90},
+        {"node": "Data center electricity consumption rises 26%", "evidence": "IEA projects 580 TWh for data centers in 2026", "confidence": 92},
+        {"node": "Grid operators face peak demand challenges", "evidence": "PJM Interconnection revised 2030 demand forecast up 40%", "confidence": 85},
+        {"node": "Utilities invest in new generation capacity", "evidence": "$68B in planned US power plant construction (EIA)", "confidence": 88},
+        {"node": "Capital costs passed to ratepayers", "evidence": "Average commercial rate up 5.7% YoY (EIA)", "confidence": 82},
+        {"node": "Consumer and business electricity bills increase", "evidence": "Residential rates in data center corridors up 8-12% (local utility filings)", "confidence": 75}
+      ]
+    },
+    {
+      "trigger": "Cloud Hosting",
+      "chain": [
+        {"node": "Enterprises shift AI workloads to cloud", "evidence": "Cloud AI spending up 45% YoY (Synergy Research)", "confidence": 91},
+        {"node": "Hyperscalers expand GPU fleet", "evidence": "Combined capex of AWS+Azure+GCP: $180B in 2026 (company guidance)", "confidence": 93},
+        {"node": "GPU instance demand exceeds supply", "evidence": "GPU instance wait times 2-8 weeks at major providers", "confidence": 85},
+        {"node": "Premium pricing on AI-optimized instances", "evidence": "GPU instances 3-5x more expensive than CPU equivalents", "confidence": 90},
+        {"node": "General cloud costs rise as capacity is reallocated", "evidence": "Base cloud egress and storage prices stable but compute up 5%", "confidence": 72}
+      ]
+    },
+    {
+      "trigger": "Cybersecurity Software",
+      "chain": [
+        {"node": "AI enables more sophisticated cyber threats", "evidence": "AI-generated phishing up 300% (CrowdStrike)", "confidence": 82},
+        {"node": "Security vendors invest in AI-powered defense", "evidence": "CrowdStrike, Palo Alto R&D spend up 35% (earnings reports)", "confidence": 88},
+        {"node": "AI compute costs embedded in security products", "evidence": "GPU inference cost per security query (vendor disclosures)", "confidence": 75},
+        {"node": "License fees increase to fund AI capabilities", "evidence": "Average endpoint protection cost up 18% YoY (Gartner)", "confidence": 80}
+      ]
+    },
+    {
+      "trigger": "Housing Near Data Centers",
+      "chain": [
+        {"node": "Hyperscalers announce new data center campuses", "evidence": "200+ GW of new capacity announced 2024-2026 (CBRE)", "confidence": 88},
+        {"node": "Construction jobs and tech workers move to area", "evidence": "Northern Virginia tech employment up 22% (BLS)", "confidence": 82},
+        {"node": "Local housing demand surges", "evidence": "Prince William County median home price up 15% (Zillow)", "confidence": 78},
+        {"node": "Property values and rents increase 8-15%", "evidence": "Dublin, N. Virginia, Johor data center corridor pricing (CBRE)", "confidence": 72}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "last_updated": "2026-06-28T06:00:00Z",
+  "source": "Official pricing pages as of June 2026",
+  "services": [
+    {
+      "name": "ChatGPT Plus",
+      "provider": "OpenAI",
+      "category": "General AI Assistant",
+      "current_price": 20,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 20,
+      "launch_date": "2023-02",
+      "price_history": [
+        {"date": "2023-02", "price": 20},
+        {"date": "2024-01", "price": 20},
+        {"date": "2025-01", "price": 20},
+        {"date": "2026-01", "price": 20}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "ChatGPT Pro",
+      "provider": "OpenAI",
+      "category": "General AI Assistant",
+      "current_price": 200,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 200,
+      "launch_date": "2024-12",
+      "price_history": [
+        {"date": "2024-12", "price": 200},
+        {"date": "2025-06", "price": 200},
+        {"date": "2026-01", "price": 200}
+      ],
+      "change_pct": 0,
+      "tier": "professional"
+    },
+    {
+      "name": "Claude Pro",
+      "provider": "Anthropic",
+      "category": "General AI Assistant",
+      "current_price": 20,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 20,
+      "launch_date": "2023-09",
+      "price_history": [
+        {"date": "2023-09", "price": 20},
+        {"date": "2024-06", "price": 20},
+        {"date": "2025-01", "price": 20},
+        {"date": "2026-01", "price": 20}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "Claude Max",
+      "provider": "Anthropic",
+      "category": "General AI Assistant",
+      "current_price": 200,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 100,
+      "launch_date": "2025-02",
+      "price_history": [
+        {"date": "2025-02", "price": 100},
+        {"date": "2025-09", "price": 200}
+      ],
+      "change_pct": 100,
+      "tier": "professional"
+    },
+    {
+      "name": "Gemini Advanced",
+      "provider": "Google",
+      "category": "General AI Assistant",
+      "current_price": 19.99,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 19.99,
+      "launch_date": "2024-02",
+      "price_history": [
+        {"date": "2024-02", "price": 19.99},
+        {"date": "2025-01", "price": 19.99},
+        {"date": "2026-01", "price": 19.99}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "Microsoft 365 Copilot",
+      "provider": "Microsoft",
+      "category": "Productivity AI",
+      "current_price": 30,
+      "currency": "USD",
+      "billing": "monthly per user",
+      "launch_price": 30,
+      "launch_date": "2023-11",
+      "price_history": [
+        {"date": "2023-11", "price": 30},
+        {"date": "2024-06", "price": 30},
+        {"date": "2025-01", "price": 30},
+        {"date": "2026-01", "price": 30}
+      ],
+      "change_pct": 0,
+      "tier": "enterprise"
+    },
+    {
+      "name": "GitHub Copilot Individual",
+      "provider": "GitHub / Microsoft",
+      "category": "Developer AI",
+      "current_price": 10,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 10,
+      "launch_date": "2022-06",
+      "price_history": [
+        {"date": "2022-06", "price": 10},
+        {"date": "2023-01", "price": 10},
+        {"date": "2024-01", "price": 10},
+        {"date": "2025-01", "price": 10},
+        {"date": "2026-01", "price": 10}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "GitHub Copilot Business",
+      "provider": "GitHub / Microsoft",
+      "category": "Developer AI",
+      "current_price": 19,
+      "currency": "USD",
+      "billing": "monthly per user",
+      "launch_price": 19,
+      "launch_date": "2023-02",
+      "price_history": [
+        {"date": "2023-02", "price": 19},
+        {"date": "2024-01", "price": 19},
+        {"date": "2025-01", "price": 19},
+        {"date": "2026-01", "price": 19}
+      ],
+      "change_pct": 0,
+      "tier": "enterprise"
+    },
+    {
+      "name": "Midjourney Standard",
+      "provider": "Midjourney",
+      "category": "Image Generation",
+      "current_price": 30,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 30,
+      "launch_date": "2022-08",
+      "price_history": [
+        {"date": "2022-08", "price": 30},
+        {"date": "2023-06", "price": 30},
+        {"date": "2024-01", "price": 30},
+        {"date": "2025-01", "price": 30},
+        {"date": "2026-01", "price": 30}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "Cursor Pro",
+      "provider": "Cursor",
+      "category": "Developer AI",
+      "current_price": 20,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 20,
+      "launch_date": "2024-03",
+      "price_history": [
+        {"date": "2024-03", "price": 20},
+        {"date": "2025-01", "price": 20},
+        {"date": "2026-01", "price": 20}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "Perplexity Pro",
+      "provider": "Perplexity",
+      "category": "AI Search",
+      "current_price": 20,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 20,
+      "launch_date": "2024-01",
+      "price_history": [
+        {"date": "2024-01", "price": 20},
+        {"date": "2025-01", "price": 20},
+        {"date": "2026-01", "price": 20}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "Notion AI",
+      "provider": "Notion",
+      "category": "Productivity AI",
+      "current_price": 10,
+      "currency": "USD",
+      "billing": "monthly per member",
+      "launch_price": 10,
+      "launch_date": "2023-02",
+      "price_history": [
+        {"date": "2023-02", "price": 10},
+        {"date": "2024-01", "price": 10},
+        {"date": "2025-01", "price": 10},
+        {"date": "2026-01", "price": 10}
+      ],
+      "change_pct": 0,
+      "tier": "consumer"
+    },
+    {
+      "name": "Adobe Firefly Premium",
+      "provider": "Adobe",
+      "category": "Image Generation",
+      "current_price": 9.99,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 4.99,
+      "launch_date": "2023-09",
+      "price_history": [
+        {"date": "2023-09", "price": 4.99},
+        {"date": "2024-09", "price": 9.99},
+        {"date": "2025-06", "price": 9.99},
+        {"date": "2026-01", "price": 9.99}
+      ],
+      "change_pct": 100,
+      "tier": "consumer"
+    },
+    {
+      "name": "Jasper Creator",
+      "provider": "Jasper",
+      "category": "Marketing AI",
+      "current_price": 49,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 40,
+      "launch_date": "2023-01",
+      "price_history": [
+        {"date": "2023-01", "price": 40},
+        {"date": "2024-01", "price": 49},
+        {"date": "2025-01", "price": 49},
+        {"date": "2026-01", "price": 49}
+      ],
+      "change_pct": 22.5,
+      "tier": "professional"
+    },
+    {
+      "name": "Runway Pro",
+      "provider": "Runway",
+      "category": "Video Generation",
+      "current_price": 35,
+      "currency": "USD",
+      "billing": "monthly",
+      "launch_price": 15,
+      "launch_date": "2023-06",
+      "price_history": [
+        {"date": "2023-06", "price": 15},
+        {"date": "2024-01", "price": 28},
+        {"date": "2024-09", "price": 35},
+        {"date": "2025-06", "price": 35},
+        {"date": "2026-01", "price": 35}
+      ],
+      "change_pct": 133,
+      "tier": "professional"
+    }
+  ],
+  "aggregate_stats": {
+    "avg_consumer_monthly": 21.4,
+    "avg_enterprise_monthly_per_user": 24.5,
+    "total_market_size_billions": 28.6,
+    "yoy_price_change_avg_pct": 4.2,
+    "services_with_price_increase_pct": 26.7,
+    "avg_annual_consumer_spend": 256.8
+  }
+}
