@@ -3,10 +3,11 @@
  */
 
 :root {
-  /* ── Dark theme (default) — slate ground, sea-green accent ──
-   * Accent: --signal oklch(72% 0.12 168) — sea-green.
-   * Contrast vs --bg (L17): ~6.5:1  (passes WCAG AA/AAA for normal text).
-   * Contrast vs --signal-ink (L22) on green pills/buttons: ~5.9:1 (AA).
+  /* ── Dark theme (default) — slate ground, gold accent ──
+   * Accent: --signal oklch(83% 0.14 85) — warm gold.
+   * Contrast vs --bg (L17): ~12:1  (passes WCAG AAA for normal text).
+   * Contrast vs --signal-ink (L18) on gold pills/buttons: ~11:1 (AAA).
+   * Accent reads as gold-on-graphite, not green.
    */
   --bg:        oklch(17% 0.022 175);
   --bg-2:     oklch(15% 0.02 175);
@@ -14,7 +15,7 @@
   --surface-2: oklch(22% 0.022 175);
   --ink:      oklch(96% 0.01 175);
   --dim:      oklch(72% 0.02 175);
-  --faint:    oklch(62% 0.018 175);
+  --faint:    oklch(56% 0.018 175);
   --rule:     oklch(28% 0.02 175);
   --rule-2:   oklch(32% 0.025 175);
   /* Accent: sea-green. As text on --bg (L17) ≈ 6.5:1 (AA/AAA);
@@ -27,7 +28,7 @@
   --pad-x-sm: 32px;
   --max: 1440px;
 
-  --f-mono: 'SF Mono', 'Cascadia Code', 'Consolas', 'Roboto Mono', monospace;
+  --f-mono: 'Segoe UI', sans-serif;
   --f-sans: 'Segoe UI', sans-serif;
   --f-serif: 'Segoe UI', Georgia, serif;
 }
@@ -44,7 +45,7 @@
   --surface-2: oklch(93% 0.020 150);
   --ink:       oklch(28% 0.075 150);
   --dim:       oklch(40% 0.070 150);
-  --faint:     oklch(42% 0.060 150);
+  --faint:     oklch(48% 0.060 150);
   --rule:      oklch(86% 0.022 150);
   --rule-2:    oklch(78% 0.035 150);
   /* Sea-green accent, darkened for AA on near-white paper (~6:1). */
@@ -93,7 +94,7 @@
   color: var(--dim);
   padding: 6px 12px;
   font-family: var(--f-mono);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.18em;
   line-height: 1.2;
@@ -116,19 +117,19 @@
   align-items: center;
   gap: 12px;
   margin-top: 22px;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.18em;
   color: var(--faint);
 }
 .gate__theme .lbl { text-transform: uppercase; }
 /* Topbar variant — slightly tighter */
-.topbar__meta .theme-toggle__opt { padding: 5px 9px; font-size: 11px; }
+.topbar__meta .theme-toggle__opt { padding: 5px 9px; font-size: 9px; }
 
   --pad-x: 56px;
   --pad-x-sm: 32px;
   --max: 1440px;
 
-  --f-mono: 'SF Mono', 'Cascadia Code', 'Consolas', 'Roboto Mono', monospace;
+  --f-mono: 'Segoe UI', sans-serif;
   --f-sans: 'Segoe UI', sans-serif;
   --f-serif: 'Segoe UI', Georgia, serif;
 }
@@ -151,7 +152,7 @@ html, body {
 
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; }
-img { display: block; max-width: 100%; height: auto; }
+img { display: block; max-width: 100%; }
 
 /* ───────── Layout ───────── */
 .page  { min-height: 100vh; display: flex; flex-direction: column; }
@@ -169,12 +170,11 @@ img { display: block; max-width: 100%; height: auto; }
   gap: 32px;
   font-size: 11px;
   letter-spacing: 0.16em;
-  background: color-mix(in oklch, var(--bg) 92%, transparent);
+  background: var(--bg);
   position: sticky;
   top: 0;
   z-index: 30;
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   white-space: nowrap;
 }
 .topbar__brand { white-space: nowrap; }
@@ -241,7 +241,7 @@ img { display: block; max-width: 100%; height: auto; }
 .ribbon {
   display: grid;
   border-bottom: 1px solid var(--rule);
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.14em;
 }
 .ribbon .cell {
@@ -260,7 +260,7 @@ img { display: block; max-width: 100%; height: auto; }
   align-items: center;
   gap: 6px;
   padding: 3px 8px;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--signal);
@@ -323,7 +323,6 @@ img { display: block; max-width: 100%; height: auto; }
   letter-spacing: -0.015em;
   color: var(--ink);
   line-height: 1.05;
-  margin: 0;
 }
 .shead__sub { color: var(--dim); font-size: 12px; }
 .shead__right { color: var(--dim); font-size: 11px; letter-spacing: 0.12em; }
@@ -423,7 +422,7 @@ img { display: block; max-width: 100%; height: auto; }
   justify-content: center;
   align-items: flex-start;
   padding-left: clamp(40px, 8vw, 120px);
-  background: var(--bg-2);
+  background: #1a1612; /* warm dark grey-brown, gate-specific */
   position: relative;
   overflow: hidden;
   transition: opacity .5s ease;
@@ -485,7 +484,7 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--ink);
 }
 .gate__tagline {
-  color: var(--dim);
+  color: #b88a5e; /* warm brown, readable on the dark bg */
   font-family: var(--f-sans);
   font-size: 14px;
   font-weight: 500;
@@ -514,7 +513,7 @@ img { display: block; max-width: 100%; height: auto; }
   cursor: pointer;
   padding: 11px 18px;
   font-family: var(--f-mono);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.20em;
   transition: background .15s;
@@ -528,7 +527,7 @@ img { display: block; max-width: 100%; height: auto; }
   right: 28px;
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 10px;
   color: var(--faint);
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -582,7 +581,7 @@ img { display: block; max-width: 100%; height: auto; }
   gap: 28px;
   flex-wrap: wrap;
   color: var(--faint);
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.14em;
 }
 .hero__trust .lbl { color: var(--faint); }
@@ -612,7 +611,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .manifest .cell .k {
   color: var(--signal);
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.18em;
   margin-bottom: 8px;
 }
@@ -635,9 +634,9 @@ img { display: block; max-width: 100%; height: auto; }
 .dossier:hover { background: var(--surface); }
 .dossier:hover .dossier__open { color: var(--signal); border-color: var(--signal); }
 .dossier__id { color: var(--signal); font-size: 11px; letter-spacing: 0.12em; }
-.dossier__year { color: var(--faint); font-size: 11px; margin-top: 4px; }
+.dossier__year { color: var(--faint); font-size: 10px; margin-top: 4px; }
 .dossier__client { color: var(--ink); font-size: 13px; }
-.dossier__tag { color: var(--dim); font-size: 11px; letter-spacing: 0.14em; margin-top: 4px; }
+.dossier__tag { color: var(--dim); font-size: 10px; letter-spacing: 0.14em; margin-top: 4px; }
 .dossier__title {
   font-family: var(--f-sans);
   font-size: 22px;
@@ -650,14 +649,14 @@ img { display: block; max-width: 100%; height: auto; }
 .dossier__blurb { color: var(--dim); font-size: 12px; line-height: 1.6; max-width: 520px; }
 .dossier__scope { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
 .dossier__scope span {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--dim);
   padding: 3px 8px;
   border: 1px solid var(--rule-2);
   border-radius: 2px;
   letter-spacing: 0.06em;
 }
-.dossier__outcome .lbl { color: var(--faint); font-size: 11px; letter-spacing: 0.14em; margin-bottom: 6px; }
+.dossier__outcome .lbl { color: var(--faint); font-size: 10px; letter-spacing: 0.14em; margin-bottom: 6px; }
 .dossier__outcome .v { color: var(--ink); font-size: 13px; line-height: 1.5; }
 .dossier__open {
   align-self: start;
@@ -709,7 +708,7 @@ img { display: block; max-width: 100%; height: auto; }
   border-left: 1px solid var(--rule);
 }
 .facts .cell:first-child { border-left: none; }
-.facts .k { color: var(--faint); font-size: 11px; letter-spacing: 0.16em; margin-bottom: 8px; }
+.facts .k { color: var(--faint); font-size: 10px; letter-spacing: 0.16em; margin-bottom: 8px; }
 .facts .v { color: var(--ink); font-size: 14px; line-height: 1.4; }
 
 /* TOC / scrolling section anchors for case study */
@@ -723,7 +722,7 @@ img { display: block; max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--rule);
   background: color-mix(in oklch, var(--bg) 92%, transparent);
   backdrop-filter: blur(8px);
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--dim);
@@ -801,7 +800,7 @@ img { display: block; max-width: 100%; height: auto; }
   bottom: 0; left: 0; right: 0;
   padding: 10px 14px;
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.20em;
   color: var(--ink);
 }
@@ -852,7 +851,7 @@ img { display: block; max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--rule);
 }
 .timeline__row .yr { color: var(--signal); font-size: 11px; letter-spacing: 0.14em; }
-.timeline__row .dur { color: var(--faint); font-size: 11px; letter-spacing: 0.12em; margin-top: 4px; }
+.timeline__row .dur { color: var(--faint); font-size: 10px; letter-spacing: 0.12em; margin-top: 4px; }
 .timeline__row .co {
   font-family: var(--f-sans);
   font-size: 18px;
@@ -876,7 +875,7 @@ img { display: block; max-width: 100%; height: auto; }
   border-left: 1px solid var(--rule);
 }
 .patents .cell:first-child { border-left: none; }
-.patents .cell .id { color: var(--faint); font-size: 11px; letter-spacing: 0.18em; margin-bottom: 10px; }
+.patents .cell .id { color: var(--faint); font-size: 10px; letter-spacing: 0.18em; margin-bottom: 10px; }
 .patents .cell .h {
   font-family: var(--f-sans);
   font-size: 15px;
@@ -897,7 +896,7 @@ a.cell:hover { background: var(--surface-2); }
 }
 .form-field label {
   color: var(--faint);
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -908,6 +907,7 @@ a.cell:hover { background: var(--surface-2); }
   padding: 14px 16px;
   font-family: var(--f-mono);
   font-size: 13px;
+  outline: none;
   border-radius: 2px;
   resize: vertical;
 }
@@ -969,90 +969,11 @@ a.cell:hover { background: var(--surface-2); }
   .case-hero__title { font-size: 36px; }
 }
 
-/* ───────── Skip navigation ───────── */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.skip-link:focus {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  padding: 12px 24px;
-  background: var(--bg);
-  color: var(--ink);
-  z-index: 100;
-  font-size: 14px;
-  border: 2px solid var(--signal);
-}
-
-/* ───────── Focus indicators ───────── */
-a:focus-visible,
-button:focus-visible,
-.btn:focus-visible,
-.card--link:focus-visible,
-.dossier:focus-visible,
-.toc a:focus-visible,
-input:focus-visible,
-textarea:focus-visible,
-select:focus-visible {
-  outline: 2px solid var(--signal);
-  outline-offset: 2px;
-}
-
-/* ───────── Responsive grid (mobile) ───────── */
-@media (max-width: 700px) {
-  .grid-2, .grid-3, .grid-4, .grid-6 { grid-template-columns: 1fr; }
-}
-
-/* ───────── Dossier intermediate breakpoint ───────── */
-@media (max-width: 900px) and (min-width: 701px) {
-  .dossier { grid-template-columns: 80px 1fr 1fr; }
-}
-
-/* ───────── Gate form width fix ───────── */
-@media (min-width: 721px) and (max-width: 1000px) {
-  .gate__form { width: max(220px, 65%); }
-}
-
-/* ───────── Nav scroll indicators (mobile) ───────── */
-@media (max-width: 700px) {
-  .topbar__nav {
-    -webkit-mask-image: linear-gradient(to right, black 90%, transparent);
-    mask-image: linear-gradient(to right, black 90%, transparent);
-  }
-}
-
-/* Accessibility: respect reduced-motion */
+/* Accessibility: respect reduced-motion — disables blink-dot and all infinite animations */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01s !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01s !important;
+    animation: none !important;
+    transition: none !important;
     scroll-behavior: auto !important;
-  }
-}
-
-/* ───────── Auto color scheme detection ───────── */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme]) {
-    --bg:        oklch(99% 0.003 150);
-    --bg-2:      oklch(97% 0.008 150);
-    --surface:   oklch(96% 0.013 150);
-    --surface-2: oklch(93% 0.020 150);
-    --ink:       oklch(28% 0.075 150);
-    --dim:       oklch(40% 0.070 150);
-    --faint:     oklch(42% 0.060 150);
-    --rule:      oklch(86% 0.022 150);
-    --rule-2:    oklch(78% 0.035 150);
-    --signal:    oklch(45% 0.13 168);
-    --signal-ink: oklch(98% 0.01 168);
-    --warn:      oklch(48% 0.18 28);
   }
 }
