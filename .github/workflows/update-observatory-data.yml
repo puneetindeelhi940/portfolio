@@ -1,0 +1,41 @@
+name: Update AI Inflation Observatory Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Every day at 06:00 UTC
+  workflow_dispatch: # Allow manual triggers
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch and update data
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python scripts/fetch-observatory-data.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Observatory Data Bot"
+          git config user.email "observatory-bot@users.noreply.github.com"
+          git add observatory/data/
+          if git diff --staged --quiet; then
+            echo "No data changes detected"
+          else
+            git commit -m "chore: refresh observatory data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

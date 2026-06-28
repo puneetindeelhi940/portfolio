@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Inflation Observatory — Understand the Hidden Cost of the AI Revolution</title>
+<meta name="description" content="The world's first AI Inflation Intelligence Platform. Real-time data on how artificial intelligence is impacting prices of products and services across the globe.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Inflation Observatory">
+<meta property="og:description" content="Understand the hidden cost of the AI revolution. Real-time global AI inflation data, country analysis, causal chains, and personal impact calculators.">
+<meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/observatory.css">
+</head>
+<body>
+
+<!-- ═══════════════ TOP BAR ═══════════════ -->
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#hero" class="topbar__brand">
+      <span class="topbar__icon">◉</span>
+      <span class="topbar__name">AI Inflation Observatory</span>
+    </a>
+    <nav class="topbar__nav" id="mainNav">
+      <a href="#hero" class="topbar__link is-active" data-section="hero">Index</a>
+      <a href="#map-section" class="topbar__link" data-section="map-section">Map</a>
+      <a href="#country-section" class="topbar__link" data-section="country-section">Countries</a>
+      <a href="#products-section" class="topbar__link" data-section="products-section">Products</a>
+      <a href="#subscriptions-section" class="topbar__link" data-section="subscriptions-section">AI Services</a>
+      <a href="#calculator-section" class="topbar__link" data-section="calculator-section">Calculator</a>
+      <a href="#electricity-section" class="topbar__link" data-section="electricity-section">Energy</a>
+      <a href="#methodology-section" class="topbar__link" data-section="methodology-section">Methodology</a>
+    </nav>
+    <div class="topbar__refresh" id="refreshBadge">
+      <span class="refresh__dot"></span>
+      <span class="refresh__text" id="refreshTime">Loading...</span>
+    </div>
+    <button class="topbar__hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════ HERO — GLOBAL AI INFLATION INDEX ═══════════════ -->
+<section class="hero" id="hero">
+  <div class="hero__container">
+    <div class="hero__eyebrow">Global AI Inflation Composite Index</div>
+    <div class="hero__index">
+      <span class="hero__number" id="heroNumber">0.0</span>
+      <span class="hero__pct">%</span>
+      <span class="hero__trend" id="heroTrend">↑</span>
+    </div>
+    <p class="hero__sub" id="heroSub">Loading data...</p>
+    <p class="hero__tagline">Understand the hidden cost of the AI revolution</p>
+
+    <div class="hero__metrics" id="heroMetrics"></div>
+
+    <div class="hero__components" id="heroComponents"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ WORLD MAP ═══════════════ -->
+<section class="section" id="map-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">Global AI Inflation Map</h2>
+      <p class="section__desc">Color-coded by AI inflation exposure. Click a country for detailed analysis.</p>
+    </div>
+    <div class="map__legend">
+      <span class="legend__item"><span class="legend__dot" style="background:#D32F2F"></span>High (70+)</span>
+      <span class="legend__item"><span class="legend__dot" style="background:#F57C00"></span>Elevated (55–70)</span>
+      <span class="legend__item"><span class="legend__dot" style="background:#FBC02D"></span>Moderate (40–55)</span>
+      <span class="legend__item"><span class="legend__dot" style="background:#1976D2"></span>Low (25–40)</span>
+      <span class="legend__item"><span class="legend__dot" style="background:#388E3C"></span>Benefiting (&lt;25)</span>
+    </div>
+    <div class="map__wrap" id="worldMap">
+      <div class="map__loading">Loading map data...</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ COUNTRY EXPLORER ═══════════════ -->
+<section class="section section--alt" id="country-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">Country Explorer</h2>
+      <p class="section__desc">Select a country to see its AI inflation profile, drivers, and risk assessment.</p>
+    </div>
+    <div class="country__filters">
+      <select id="regionFilter" class="filter__select">
+        <option value="">All Regions</option>
+        <option value="North America">North America</option>
+        <option value="Western Europe">Western Europe</option>
+        <option value="Northern Europe">Northern Europe</option>
+        <option value="Eastern Europe">Eastern Europe</option>
+        <option value="East Asia">East Asia</option>
+        <option value="South Asia">South Asia</option>
+        <option value="Southeast Asia">Southeast Asia</option>
+        <option value="Middle East">Middle East</option>
+        <option value="South America">South America</option>
+        <option value="Sub-Saharan Africa">Sub-Saharan Africa</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+      <select id="riskFilter" class="filter__select">
+        <option value="">All Risk Levels</option>
+        <option value="high">High Risk</option>
+        <option value="moderate">Moderate Risk</option>
+        <option value="low">Low Risk</option>
+      </select>
+      <select id="sortFilter" class="filter__select">
+        <option value="score-desc">Highest AI Inflation</option>
+        <option value="score-asc">Lowest AI Inflation</option>
+        <option value="name-asc">A → Z</option>
+        <option value="trend">Fastest Rising</option>
+      </select>
+    </div>
+    <div class="country__grid" id="countryGrid"></div>
+    <div class="country__detail" id="countryDetail" style="display:none"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ PRODUCT EXPLORER ═══════════════ -->
+<section class="section" id="products-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">Product Explorer</h2>
+      <p class="section__desc">How AI is impacting prices across four layers — from direct hardware to everyday life.</p>
+    </div>
+    <div class="products__tabs">
+      <button class="tab is-active" data-layer="direct">Layer 1: Direct</button>
+      <button class="tab" data-layer="indirect">Layer 2: Indirect</button>
+      <button class="tab" data-layer="second_order">Layer 3: Second-Order</button>
+      <button class="tab" data-layer="lifestyle">Layer 4: Lifestyle</button>
+    </div>
+    <div class="products__grid" id="productsGrid"></div>
+
+    <div class="causal__section">
+      <h3 class="subsection__title">Causal Chain Explorer — Why did this happen?</h3>
+      <p class="subsection__desc">Select a product to trace the AI-driven dependency chain behind its price movement.</p>
+      <div class="causal__selector">
+        <select id="causalSelect" class="filter__select">
+          <option value="">Choose a product...</option>
+        </select>
+      </div>
+      <div class="causal__chain" id="causalChain"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ AI SUBSCRIPTION TRACKER ═══════════════ -->
+<section class="section section--alt" id="subscriptions-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">AI Subscription Tracker</h2>
+      <p class="section__desc">Real pricing data for major AI services. Track changes over time.</p>
+    </div>
+    <div class="subs__stats" id="subsStats"></div>
+    <div class="subs__filters">
+      <select id="subsCategoryFilter" class="filter__select">
+        <option value="">All Categories</option>
+        <option value="General AI Assistant">General AI Assistant</option>
+        <option value="Developer AI">Developer AI</option>
+        <option value="Productivity AI">Productivity AI</option>
+        <option value="Image Generation">Image Generation</option>
+        <option value="Video Generation">Video Generation</option>
+        <option value="AI Search">AI Search</option>
+        <option value="Marketing AI">Marketing AI</option>
+      </select>
+      <select id="subsTierFilter" class="filter__select">
+        <option value="">All Tiers</option>
+        <option value="consumer">Consumer</option>
+        <option value="professional">Professional</option>
+        <option value="enterprise">Enterprise</option>
+      </select>
+    </div>
+    <div class="subs__grid" id="subsGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONSUMER IMPACT CALCULATOR ═══════════════ -->
+<section class="section" id="calculator-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">Personal AI Inflation Calculator</h2>
+      <p class="section__desc">Estimate how much AI-driven inflation affects your annual spending.</p>
+    </div>
+    <div class="calc__layout">
+      <form class="calc__form" id="calcForm">
+        <div class="calc__group">
+          <label class="calc__label">Country</label>
+          <select id="calcCountry" class="calc__input" required>
+            <option value="">Select country...</option>
+          </select>
+        </div>
+        <div class="calc__row">
+          <div class="calc__group">
+            <label class="calc__label">Annual Income (USD)</label>
+            <input type="number" id="calcIncome" class="calc__input" placeholder="75000" min="0" required>
+          </div>
+          <div class="calc__group">
+            <label class="calc__label">Family Size</label>
+            <select id="calcFamily" class="calc__input">
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4" selected>4 people</option>
+              <option value="5">5+ people</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc__row">
+          <div class="calc__group">
+            <label class="calc__label">Profession</label>
+            <select id="calcProfession" class="calc__input">
+              <option value="tech">Technology / Software</option>
+              <option value="finance">Finance / Banking</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="education">Education</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="retail">Retail / Services</option>
+              <option value="government">Government</option>
+              <option value="student">Student</option>
+              <option value="freelance">Freelance / Self-employed</option>
+              <option value="other" selected>Other</option>
+            </select>
+          </div>
+          <div class="calc__group">
+            <label class="calc__label">Monthly Electricity Bill (USD)</label>
+            <input type="number" id="calcElectricity" class="calc__input" placeholder="120" min="0">
+          </div>
+        </div>
+        <div class="calc__group">
+          <label class="calc__label">Devices Owned</label>
+          <div class="calc__checks">
+            <label class="calc__check"><input type="checkbox" value="laptop" checked> Laptop</label>
+            <label class="calc__check"><input type="checkbox" value="phone" checked> Smartphone</label>
+            <label class="calc__check"><input type="checkbox" value="tablet"> Tablet</label>
+            <label class="calc__check"><input type="checkbox" value="gaming"> Gaming PC</label>
+            <label class="calc__check"><input type="checkbox" value="smart_home"> Smart Home</label>
+          </div>
+        </div>
+        <div class="calc__group">
+          <label class="calc__label">AI Subscriptions</label>
+          <div class="calc__checks">
+            <label class="calc__check"><input type="checkbox" value="chatgpt"> ChatGPT Plus</label>
+            <label class="calc__check"><input type="checkbox" value="claude"> Claude Pro</label>
+            <label class="calc__check"><input type="checkbox" value="copilot"> GitHub Copilot</label>
+            <label class="calc__check"><input type="checkbox" value="midjourney"> Midjourney</label>
+            <label class="calc__check"><input type="checkbox" value="notion_ai"> Notion AI</label>
+            <label class="calc__check"><input type="checkbox" value="other_ai"> Other AI tools</label>
+          </div>
+        </div>
+        <div class="calc__row">
+          <div class="calc__group">
+            <label class="calc__label">Cloud Services Used</label>
+            <select id="calcCloud" class="calc__input">
+              <option value="none">None</option>
+              <option value="personal" selected>Personal (iCloud, Google Drive)</option>
+              <option value="professional">Professional (AWS, Azure, GCP)</option>
+              <option value="heavy">Heavy cloud user</option>
+            </select>
+          </div>
+          <div class="calc__group">
+            <label class="calc__label">Home Owner?</label>
+            <select id="calcHomeowner" class="calc__input">
+              <option value="yes">Yes</option>
+              <option value="no" selected>No — Renter</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="calc__submit">Calculate My AI Inflation Exposure</button>
+      </form>
+      <div class="calc__results" id="calcResults" style="display:none">
+        <div class="calc__result-header">
+          <div class="calc__result-label">Your Annual AI Inflation Exposure</div>
+          <div class="calc__result-value" id="calcTotal">$0</div>
+          <div class="calc__result-monthly" id="calcMonthly">$0 / month</div>
+        </div>
+        <div class="calc__result-risk" id="calcRisk"></div>
+        <div class="calc__breakdown" id="calcBreakdown"></div>
+        <div class="calc__recommendations" id="calcRecommendations"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ELECTRICITY DASHBOARD ═══════════════ -->
+<section class="section section--alt" id="electricity-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">Energy & Electricity Dashboard</h2>
+      <p class="section__desc">One of the biggest hidden drivers of AI inflation. The IEA projects data-center electricity demand to roughly double by 2030.</p>
+    </div>
+    <div class="energy__stats" id="energyStats"></div>
+    <div class="energy__chart" id="energyChart"></div>
+    <div class="energy__insight">
+      <div class="insight__card">
+        <div class="insight__icon">⚡</div>
+        <div class="insight__body">
+          <h4>Why Energy Matters</h4>
+          <p>A single ChatGPT query uses approximately 10x the electricity of a Google search. Training a frontier AI model can consume as much electricity as 1,000 US households use in a year. As AI scales, energy becomes the hidden tax on every AI-touched product and service.</p>
+          <cite>Sources: IEA, Epoch AI, Goldman Sachs Research</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ METHODOLOGY & SOURCES ═══════════════ -->
+<section class="section" id="methodology-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">Methodology & Data Sources</h2>
+      <p class="section__desc">Every number in this platform is traceable. Here's how we calculate the AI Inflation Composite Index.</p>
+    </div>
+    <div class="method__grid">
+      <div class="method__card">
+        <h3>Composite Index</h3>
+        <p>The AI Inflation Composite Index is a weighted average of seven components: Technology Hardware (20%), Electricity & Energy (20%), Cloud Services (15%), Consumer Electronics (15%), AI Subscriptions (10%), Enterprise Software (10%), and Infrastructure (10%).</p>
+      </div>
+      <div class="method__card">
+        <h3>AI Premium Isolation</h3>
+        <p>We separate AI-driven price changes from normal inflation using regression analysis against pre-AI baselines (2019–2022), controlling for supply chain disruptions, currency effects, and seasonal patterns.</p>
+      </div>
+      <div class="method__card">
+        <h3>Country Scores</h3>
+        <p>Country AI Inflation Scores (0–100) are calculated from: cloud adoption rate, data center density, GPU import dependence, electricity cost, AI startup ecosystem size, government AI spending, and renewable energy share.</p>
+      </div>
+      <div class="method__card">
+        <h3>Confidence Levels</h3>
+        <p>Every metric carries a confidence score (0–100%). Direct hardware pricing has high confidence (90%+). Second-order and lifestyle impacts have lower confidence (40–70%) due to more complex causal attribution.</p>
+      </div>
+    </div>
+
+    <h3 class="subsection__title" style="margin-top:48px">Data Sources</h3>
+    <div class="sources__grid">
+      <div class="source__group">
+        <h4>Official Statistics</h4>
+        <ul>
+          <li>World Bank Open Data</li>
+          <li>IMF World Economic Outlook</li>
+          <li>OECD Statistics</li>
+          <li>US Bureau of Labor Statistics (CPI, PPI)</li>
+          <li>FRED (Federal Reserve Economic Data)</li>
+          <li>National Statistics Offices (30+ countries)</li>
+        </ul>
+      </div>
+      <div class="source__group">
+        <h4>Energy & Infrastructure</h4>
+        <ul>
+          <li>International Energy Agency (IEA)</li>
+          <li>US Energy Information Administration (EIA)</li>
+          <li>National grid operators</li>
+          <li>CBRE / JLL Data Center Reports</li>
+        </ul>
+      </div>
+      <div class="source__group">
+        <h4>Technology & Industry</h4>
+        <ul>
+          <li>Semiconductor Industry Association</li>
+          <li>IDC Quarterly Trackers</li>
+          <li>Gartner Market Research</li>
+          <li>Synergy Research Group</li>
+          <li>TrendForce / DRAMeXchange</li>
+          <li>Stanford AI Index Report</li>
+          <li>Epoch AI</li>
+        </ul>
+      </div>
+      <div class="source__group">
+        <h4>Pricing Data</h4>
+        <ul>
+          <li>AWS, Azure, Google Cloud pricing pages</li>
+          <li>Company earnings reports & filings</li>
+          <li>NVIDIA, AMD, Intel financial reports</li>
+          <li>AI service provider pricing pages</li>
+          <li>Bloomberg, Reuters market data</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="method__disclaimer">
+      <p><strong>Disclaimer:</strong> The AI Inflation Observatory provides estimates and analysis based on publicly available data. The AI Inflation Composite Index is a research construct and should not be used as the sole basis for investment or policy decisions. All data is refreshed every 24 hours from the sources listed above. Confidence scores reflect data quality and attribution certainty.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p>&copy; <span id="footerYear">2026</span> AI Inflation Observatory. Built by <a href="../home.html">Puneet Arora</a>.</p>
+    <p class="footer__sub">Data refreshed every 24 hours from verified sources. Not financial advice.</p>
+  </div>
+</footer>
+
+<script src="assets/observatory.js"></script>
+</body>
+</html>
