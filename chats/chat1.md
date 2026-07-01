@@ -131,14 +131,14 @@ Questions answered:
 - positioning: Both Principal Designer (Strategist) and Sr Manager
 - employment_status: Open to right opportunity, not active
 - geography: Bangalore + open to relocation
-- contact_info: Use real LinkedIn (/in/puneetar/), Use real phone (+91 98862 81671), Use real email (puneetindelhi@yahoo.com)
+- contact_info: Use real LinkedIn (/in/arorapuneet11/), Use real phone (+91 98862 81671), Use real email (puneetindelhi@yahoo.com)
 - portrait: uploads/portrait-1780841194082.png
 - resume_download: No download — contact-gated
 - patents_pubs: Yes — give them a dedicated section / strip on Bio
 - ai_lab_real: I vibe coded this tool : https://pa9401.vercel.app/
 - host_setup: Connect to GitHub and push for me (will trigger auth)
 - private_invite: Soft gate — passcode / shared password on entry
-- anything_else_2: Quotes: "Grow the core, while adding some more". Use all other information from my linkedin profile : https://www.linkedin.com/in/puneetar/
+- anything_else_2: Quotes: "Grow the core, while adding some more". Use all other information from my linkedin profile : https://www.linkedin.com/in/arorapuneet11/
 
 ## Assistant
 

@@ -472,7 +472,7 @@ function EdFoot() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
             {[
               ['Email', 'p@arora.studio'],
-              ['LinkedIn', '/in/puneetarora'],
+              ['LinkedIn', '/in/arorapuneet11'],
               ['Based', 'Bengaluru ↔ SF'],
               ['Calendar', 'cal.com/puneet'],
             ].map(([k, v]) => (

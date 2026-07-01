@@ -212,4 +212,4 @@ I don't have the answers. But I believe the questions become unavoidable once yo
 
 **Tags:** #ArtificialIntelligence #Inflation #Economics #Technology #AI #ClimateChange #FutureOfWork #DataVisualization #OpenSource #ProductDesign
 
-**About the author:** Puneet Arora is a Principal Product Designer and AI Design Leader with 20 years of experience across Dell, Boeing, HP R&D, and Software AG. He builds things that make complexity understandable. [Portfolio](https://puneetindeelhi940.github.io/portfolio/home.html) · [LinkedIn](https://linkedin.com)
+**About the author:** Puneet Arora is a Principal Product Designer and AI Design Leader with 20 years of experience across Dell, Boeing, HP R&D, and Software AG. He builds things that make complexity understandable. [Portfolio](https://puneetindeelhi940.github.io/portfolio/home.html) · [LinkedIn](https://www.linkedin.com/in/arorapuneet11/)

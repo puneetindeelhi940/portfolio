@@ -467,7 +467,7 @@ function SysFoot() {
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, alignSelf: 'end' }}>
         {[
-          ['LinkedIn', '/in/puneetarora'],
+          ['LinkedIn', '/in/arorapuneet11'],
           ['Email', 'p@arora.studio'],
           ['Based', 'Bengaluru ↔ San Francisco'],
           ['Availability', 'Q3 2026 onward'],

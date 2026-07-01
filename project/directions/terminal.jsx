@@ -479,7 +479,7 @@ function Foot() {
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, alignSelf: 'end' }}>
         {[
-          ['LINKEDIN', '/in/puneetarora'],
+          ['LINKEDIN', '/in/arorapuneet11'],
           ['EMAIL', 'p@arora.studio'],
           ['LOCATION', 'Bengaluru · San Francisco'],
           ['AVAILABILITY', 'Q3 2026 onward'],
