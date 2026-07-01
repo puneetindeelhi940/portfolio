@@ -722,6 +722,9 @@ body {
       <p>Smart Job Tracker</p>
     </div>
     <nav class="sidebar__nav">
+      <button class="nav-item" data-view="find" style="background:var(--accent-light);border:1px solid var(--accent);color:var(--accent);margin-bottom:8px">
+        <span class="icon">&#128269;</span> Find Jobs
+      </button>
       <button class="nav-item active" data-view="dashboard">
         <span class="icon">&#9632;</span> Dashboard
       </button>
@@ -754,6 +757,47 @@ body {
 
   <!-- Main Content -->
   <main class="main">
+    <!-- ═══ Find Jobs View ═══ -->
+    <section id="view-find" style="display:none">
+      <div class="header">
+        <h2>Find Jobs</h2>
+      </div>
+
+      <div class="profile-section" style="margin-bottom:24px">
+        <h3 style="margin-bottom:4px">Search Criteria</h3>
+        <p style="font-size:13px;color:var(--dim);margin-bottom:16px">Fill in what you're looking for. Leave any field blank to see all results for that criteria.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <div class="form-group" style="margin-bottom:0">
+            <label>Role / Job Title</label>
+            <input type="text" id="find-role" placeholder="e.g. Senior UX Designer, Product Designer">
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label>Company</label>
+            <input type="text" id="find-company" placeholder="e.g. Google, Figma, Spotify">
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label>Location</label>
+            <input type="text" id="find-location" placeholder="e.g. Remote, Bangalore, San Francisco">
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label>Min Salary (INR / year)</label>
+            <input type="text" id="find-salary" placeholder="e.g. 25,00,000 or 3000000">
+          </div>
+        </div>
+
+        <div style="margin-top:18px;display:flex;align-items:center;gap:12px">
+          <button class="btn btn--primary" id="find-search-btn" onclick="runJobSearch()" style="padding:10px 28px;font-size:14px">
+            Search Jobs
+          </button>
+          <span id="find-status" style="font-size:13px;color:var(--dim)"></span>
+        </div>
+      </div>
+
+      <div id="find-sources" style="margin-bottom:16px"></div>
+      <div id="find-results"></div>
+    </section>
+
     <!-- ═══ Dashboard View ═══ -->
     <section id="view-dashboard">
       <div class="header">
@@ -1448,6 +1492,120 @@ function esc(str) {
 function refreshCurrentView() {
   const active = document.querySelector('.nav-item.active');
   if (active) active.click();
+}
+
+// ── Find Jobs (live search) ──
+function runJobSearch() {
+  const role = document.getElementById('find-role').value.trim();
+  const company = document.getElementById('find-company').value.trim();
+  const location = document.getElementById('find-location').value.trim();
+  const salary = document.getElementById('find-salary').value.trim();
+
+  const btn = document.getElementById('find-search-btn');
+  const status = document.getElementById('find-status');
+  const resultsDiv = document.getElementById('find-results');
+  const sourcesDiv = document.getElementById('find-sources');
+
+  btn.disabled = true;
+  btn.textContent = 'Searching...';
+  status.textContent = 'Searching across 7 sources... This takes 15-30 seconds.';
+  resultsDiv.innerHTML = '<div style="text-align:center;padding:40px;color:var(--dim)"><div style="font-size:32px;margin-bottom:12px">&#128270;</div>Scanning RemoteOK, WeWorkRemotely, Indeed, LinkedIn, Google Jobs, Arbeitnow, The Muse...</div>';
+  sourcesDiv.innerHTML = '';
+
+  const params = new URLSearchParams();
+  if (role) params.set('role', role);
+  if (company) params.set('company', company);
+  if (location) params.set('location', location);
+  if (salary) params.set('min_salary', salary.replace(/,/g, ''));
+
+  fetch('/api/search?' + params.toString())
+    .then(r => {
+      if (!r.ok) throw new Error('Server not running');
+      return r.json();
+    })
+    .then(data => {
+      btn.disabled = false;
+      btn.textContent = 'Search Jobs';
+
+      const foundJobs = data.jobs || [];
+      status.textContent = `Found ${foundJobs.length} jobs across ${Object.keys(data.sources || {}).length} sources`;
+
+      // Source breakdown
+      const sources = data.sources || {};
+      sourcesDiv.innerHTML = '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">' +
+        Object.entries(sources).map(([name, count]) => {
+          const isError = typeof count === 'string';
+          const c = isError ? 0 : count;
+          const color = c > 0 ? 'var(--green)' : 'var(--faint)';
+          return `<span style="font-size:11px;padding:3px 10px;border-radius:20px;background:var(--surface);border:1px solid var(--border);color:${color};font-weight:600">${name}: ${c}</span>`;
+        }).join('') + '</div>';
+
+      if (foundJobs.length === 0) {
+        resultsDiv.innerHTML = '<div class="empty"><div class="empty__icon">&#128533;</div><h3>No jobs found</h3><p>Try broader keywords or different locations. Leave fields blank to widen the search.</p></div>';
+        return;
+      }
+
+      let html = '<div class="jobs-table-wrap"><table class="jobs-table"><thead><tr><th>Job Title</th><th>Company</th><th>Location</th><th>Source</th><th>Posted</th><th></th></tr></thead><tbody>';
+      foundJobs.forEach(j => {
+        const existsAlready = jobs.some(ej => ej.title.toLowerCase() === j.title.toLowerCase() && ej.company.toLowerCase() === j.company.toLowerCase());
+        html += `<tr>
+          <td>
+            <div class="job-title" style="cursor:default">${esc(j.title)}</div>
+            ${j.url ? `<a href="${esc(j.url)}" target="_blank" rel="noopener" style="font-size:11px;color:var(--accent)">View listing</a>` : ''}
+          </td>
+          <td class="job-company">${esc(j.company)}</td>
+          <td class="job-location">${esc(j.location || '-')}</td>
+          <td><span style="font-size:11px;color:var(--dim)">${esc(j.source)}</span></td>
+          <td style="font-size:12px;color:var(--faint)">${j.posted || '-'}</td>
+          <td>
+            ${existsAlready
+              ? '<span style="font-size:11px;color:var(--faint)">Already saved</span>'
+              : `<button class="btn btn--sm btn--primary" onclick="saveFoundJob(this, ${esc(JSON.stringify(j)).replace(/"/g, '&quot;')})">+ Save</button>`
+            }
+          </td>
+        </tr>`;
+      });
+      html += '</tbody></table></div>';
+      resultsDiv.innerHTML = html;
+    })
+    .catch(err => {
+      btn.disabled = false;
+      btn.textContent = 'Search Jobs';
+      status.textContent = '';
+      resultsDiv.innerHTML = `<div class="profile-section" style="border-color:var(--red);background:var(--red-bg)">
+        <h3 style="color:var(--red)">Server Not Running</h3>
+        <p style="font-size:14px;color:var(--ink);margin-top:8px">To use Find Jobs, you need to start the JobPilot server:</p>
+        <ol style="font-size:14px;color:var(--dim);margin-top:10px;padding-left:20px;line-height:2">
+          <li>Go to the <strong>jobpilot/scraper/</strong> folder</li>
+          <li>Double-click <strong>START_JOBPILOT.bat</strong></li>
+          <li>Keep that window open and come back here</li>
+        </ol>
+        <p style="font-size:13px;color:var(--faint);margin-top:12px">The server runs locally on your machine. No data is sent anywhere.</p>
+      </div>`;
+    });
+}
+
+function saveFoundJob(btn, jobData) {
+  const j = typeof jobData === 'string' ? JSON.parse(jobData) : jobData;
+  const newJob = {
+    id: j.id || (Date.now().toString(36) + Math.random().toString(36).slice(2, 7)),
+    title: j.title,
+    company: j.company,
+    location: j.location || '',
+    salary: j.salary || '',
+    status: 'new',
+    url: j.url || '',
+    notes: `Source: ${j.source}` + (j.posted ? ` | Posted: ${j.posted}` : ''),
+    type: 'full-time',
+    priority: 'medium',
+    addedAt: new Date().toISOString(),
+    statusHistory: [],
+  };
+  jobs.push(newJob);
+  save();
+  btn.outerHTML = '<span style="font-size:11px;color:var(--green);font-weight:600">Saved!</span>';
+  document.getElementById('nav-total-badge').textContent = jobs.length;
+  showToast(`Saved: ${j.title} @ ${j.company}`);
 }
 
 // ── Manual Scraper File Load ──
