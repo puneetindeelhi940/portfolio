@@ -68,6 +68,8 @@
     </a>
     <nav class="topbar__nav" id="mainNav">
       <a href="#hero" class="topbar__link is-active" data-section="hero">Index</a>
+      <a href="#personas-section" class="topbar__link" data-section="personas-section">Insights</a>
+      <a href="#signals-section" class="topbar__link" data-section="signals-section">Signals</a>
       <a href="#map-section" class="topbar__link" data-section="map-section">Map</a>
       <a href="#country-section" class="topbar__link" data-section="country-section">Countries</a>
       <a href="#products-section" class="topbar__link" data-section="products-section">Products</a>
@@ -101,6 +103,40 @@
     <div class="hero__metrics" id="heroMetrics"></div>
 
     <div class="hero__components" id="heroComponents"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ PERSONA LENSES ═══════════════ -->
+<section class="section personas-section" id="personas-section">
+  <div class="section__container">
+    <div class="persona__selector">
+      <div class="persona__header">
+        <span class="persona__label">View as:</span>
+        <div class="persona__tabs" id="personaTabs">
+          <button class="persona__tab is-active" data-persona="overview">Overview</button>
+          <button class="persona__tab" data-persona="cto">Tech Executive</button>
+          <button class="persona__tab" data-persona="investor">Investor</button>
+          <button class="persona__tab" data-persona="consumer">Consumer</button>
+          <button class="persona__tab" data-persona="policy">Policy Maker</button>
+        </div>
+      </div>
+    </div>
+    <div class="persona__briefing" id="personaBriefing"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ KEY SIGNALS ═══════════════ -->
+<section class="section section--alt signals-section" id="signals-section">
+  <div class="section__container">
+    <div class="section__header">
+      <h2 class="section__title">Key Signals</h2>
+      <p class="section__desc">The trends that matter right now — accelerating, decelerating, and emerging.</p>
+    </div>
+    <div class="signals__grid" id="signalsGrid"></div>
+    <div class="watchlist" id="watchlist">
+      <h3 class="subsection__title" style="margin-top:40px;margin-bottom:16px">What to Watch</h3>
+      <div class="watchlist__grid" id="watchlistGrid"></div>
+    </div>
   </div>
 </section>
 

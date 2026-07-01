@@ -24,6 +24,10 @@
       ]);
       renderRefreshBadge();
       renderHero();
+      renderPersonaBriefing('overview');
+      renderSignals();
+      renderWatchlist();
+      setupPersonaTabs();
       renderMap();
       renderCountries();
       renderProducts('direct');
@@ -573,6 +577,171 @@
       '<span><span style="display:inline-block;width:12px;height:12px;background:var(--rule);border-radius:2px;vertical-align:middle;margin-right:4px"></span>Traditional workloads</span>' +
       '<span style="margin-left:auto;font-style:italic">E = Estimated · Source: IEA, Goldman Sachs Research</span>' +
       '</div>';
+  }
+
+  // ═══════════════ PERSONA LENSES ═══════════════
+  var personaData = {
+    overview: {
+      narrative: 'AI-driven inflation is <strong>reshaping global cost structures</strong> across technology, energy, and consumer markets. The composite index at <strong>3.8%</strong> reflects accelerating pressure from GPU scarcity, surging data center energy demand, and enterprise AI adoption. The strongest signal: <strong>AI subscriptions are inflating at 12.4%</strong>, the fastest of any component.',
+      cards: [
+        { icon: '📊', metric: '3.8%', label: 'Composite Index', context: 'Up from 3.5% last quarter. AI contributes 0.6 percentage points to global tech inflation.', signal: '+8.6%', signalClass: 'up' },
+        { icon: '⚡', metric: '580 TWh', label: 'DC Electricity 2026E', context: 'Data center electricity demand projected to double by 2030. AI workloads now exceed 50% of DC power.', signal: '+26% YoY', signalClass: 'up' },
+        { icon: '🔥', metric: '12.4%', label: 'AI Subscription Inflation', context: 'Fastest-rising component. Driven by inference costs, model competition, and feature expansion.', signal: 'Accelerating', signalClass: 'up' },
+        { icon: '💰', metric: '$320B', label: 'Global AI Capex', context: 'Microsoft, Google, Amazon alone plan $180B. Capital pouring into GPU clusters and data centers.', signal: '+62% YoY', signalClass: 'up' }
+      ]
+    },
+    cto: {
+      narrative: 'Your infrastructure costs are under pressure from <strong>three vectors</strong>: cloud GPU instances up 28%, enterprise software licenses restructuring around AI features (+6.8%), and electricity costs in data center corridors rising 5.7%. The silver lining: <strong>AI API token prices are falling 15%</strong> as competition intensifies.',
+      cards: [
+        { icon: '☁️', metric: '+28%', label: 'Cloud GPU Cost Pressure', context: 'GPU instance demand outstrips supply. Reserve capacity early — spot pricing is volatile.', signal: 'Rising', signalClass: 'up' },
+        { icon: '💻', metric: '+6.8%', label: 'Enterprise Software', context: 'AI feature premiums, Copilot add-ons, and license restructuring driving costs up across the stack.', signal: 'Rising', signalClass: 'up' },
+        { icon: '🔑', metric: '-15%', label: 'AI API Token Costs', context: 'Competition between OpenAI, Anthropic, Google driving inference costs down. Leverage this trend.', signal: 'Falling', signalClass: 'down' },
+        { icon: '👥', metric: '$400K+', label: 'AI Engineer Comp', context: 'Median total comp at frontier labs. Talent costs are a hidden inflation driver for tech orgs.', signal: 'Watch', signalClass: 'watch' }
+      ]
+    },
+    investor: {
+      narrative: 'The <strong>$320B global AI capex cycle</strong> is creating clear winners and losers. GPU makers and HBM memory suppliers sit at the top of the value chain with 38-42% AI premiums. Cloud providers are passing costs through. Watch for <strong>margin compression</strong> in AI-dependent SaaS companies as infrastructure costs rise faster than pricing power.',
+      cards: [
+        { icon: '📈', metric: '$184B', label: 'GPU Market 2026', context: 'NVIDIA data center revenue hit $35.1B in Q1 alone. HBM suppliers (SK Hynix) at 95% utilization.', signal: '+48% YoY', signalClass: 'up' },
+        { icon: '🏗️', metric: '+42%', label: 'GPU Price Premium', context: 'H100/B200 demand still outpacing supply. ASPs remain elevated. Key beneficiary: NVIDIA, AMD.', signal: 'Accelerating', signalClass: 'up' },
+        { icon: '⚡', metric: '~6%', label: 'US Grid Share (DCs)', context: 'Projected 12% by 2030. Utilities in data center corridors seeing 8-12% rate increases. Long utilities.', signal: 'Emerging', signalClass: 'watch' },
+        { icon: '🏢', metric: '+9%', label: 'Laptop ASP Growth', context: 'AI NPU chips and memory allocation shifting consumer electronics costs. Component competition rising.', signal: 'Moderate', signalClass: 'watch' }
+      ]
+    },
+    consumer: {
+      narrative: 'AI inflation is hitting your wallet in <strong>ways you might not notice</strong>. Your electricity bill in data center corridors is 8-12% above average. Laptops cost 9% more due to AI chip allocation. AI subscriptions — ChatGPT, Claude, Midjourney — are the most visible cost, but <strong>the hidden costs in everyday products may be larger</strong>.',
+      cards: [
+        { icon: '💡', metric: '+8-12%', label: 'Electricity Premium', context: 'US residential rates in data center corridors above national average. Your utility bill reflects AI demand.', signal: 'Rising', signalClass: 'up' },
+        { icon: '💻', metric: '+9%', label: 'Laptop Prices', context: 'AI NPU chips, increased memory needs, and component allocation are pushing consumer device prices up.', signal: 'YoY', signalClass: 'up' },
+        { icon: '📱', metric: '$20-200/mo', label: 'AI Sub Range', context: 'From ChatGPT Plus at $20 to Pro at $200. Many overlap in capabilities — consolidation saves money.', signal: 'Stable-Rising', signalClass: 'watch' },
+        { icon: '🏠', metric: '+3.2%', label: 'Consumer Electronics', context: 'Memory prices, component scarcity, and AI feature premiums flowing through to phones, tablets, TVs.', signal: 'Moderate', signalClass: 'watch' }
+      ]
+    },
+    policy: {
+      narrative: '<strong>Energy infrastructure is the critical bottleneck.</strong> Ireland\'s data centers consume 21% of the national grid — the highest globally. The IEA projects data center demand will double by 2030, requiring massive grid investment. Countries with <strong>high AI adoption but low renewable energy share</strong> face the steepest inflationary pressure.',
+      cards: [
+        { icon: '🇮🇪', metric: '21%', label: 'Ireland DC Grid Share', context: 'Highest globally. Raises questions about grid resilience, renewable targets, and industrial policy.', signal: 'Critical', signalClass: 'up' },
+        { icon: '🌍', metric: '~1,000 TWh', label: 'DC Demand 2030', context: 'IEA projection. Requires $100B+ in grid and generation infrastructure globally. Policy window closing.', signal: 'By 2030', signalClass: 'watch' },
+        { icon: '🔋', metric: 'Varies', label: 'Renewable Energy Gap', context: 'Countries with high AI adoption but low renewable share face dual pressure: energy costs and emissions.', signal: 'Diverging', signalClass: 'watch' },
+        { icon: '📊', metric: '0.6 ppt', label: 'AI Inflation Contribution', context: 'AI adds 0.6 percentage points to tech inflation globally. Need new CPI sub-indices to track accurately.', signal: 'Untracked', signalClass: 'up' }
+      ]
+    }
+  };
+
+  function setupPersonaTabs() {
+    document.querySelectorAll('.persona__tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.persona__tab').forEach(function (t) { t.classList.remove('is-active'); });
+        this.classList.add('is-active');
+        renderPersonaBriefing(this.getAttribute('data-persona'));
+      });
+    });
+  }
+
+  function renderPersonaBriefing(persona) {
+    var data = personaData[persona];
+    if (!data) return;
+    var el = document.getElementById('personaBriefing');
+    el.innerHTML = '<div class="briefing__narrative">' + data.narrative + '</div>' +
+      '<div class="briefing__grid">' +
+      data.cards.map(function (c) {
+        return '<div class="briefing__card">' +
+          '<div class="briefing__icon">' + c.icon + '</div>' +
+          '<div class="briefing__metric">' + esc(c.metric) + '</div>' +
+          '<div class="briefing__metric-label">' + esc(c.label) + '</div>' +
+          '<div class="briefing__context">' + esc(c.context) + '</div>' +
+          '<span class="briefing__signal ' + c.signalClass + '">' +
+          (c.signalClass === 'up' ? '▲ ' : c.signalClass === 'down' ? '▼ ' : '◆ ') +
+          esc(c.signal) + '</span>' +
+          '</div>';
+      }).join('') +
+      '</div>';
+  }
+
+  // ═══════════════ KEY SIGNALS ═══════════════
+  function renderSignals() {
+    var signals = [
+      {
+        badge: 'Accelerating', badgeClass: 'accelerating',
+        title: 'GPU Scarcity Premium Widening',
+        body: 'Data center GPU demand continues to outpace supply despite NVIDIA and AMD capacity ramps. Enterprise waiting times for H200/B200 clusters exceed 6 months.',
+        value: '+42%', delta: '+6pp QoQ', deltaClass: 'up',
+        source: 'NVIDIA Q1 2026 earnings, SIA data'
+      },
+      {
+        badge: 'Accelerating', badgeClass: 'accelerating',
+        title: 'AI Subscription Costs Rising Fastest',
+        body: 'AI subscriptions inflate at 12.4% — the highest of all index components. Enterprise tiers showing steeper increases as vendors add premium inference features.',
+        value: '12.4%', delta: '+3.2pp YoY', deltaClass: 'up',
+        source: 'Company pricing pages, Observatory analysis'
+      },
+      {
+        badge: 'Emerging', badgeClass: 'emerging',
+        title: 'Data Center Energy Strain on Regional Grids',
+        body: 'Electricity costs in data center corridors now 8-12% above national averages. PJM Interconnection revised 2030 US demand forecast up 40% due to AI.',
+        value: '580 TWh', delta: '+26% vs 2024', deltaClass: 'up',
+        source: 'IEA, EIA, PJM Interconnection'
+      },
+      {
+        badge: 'Decelerating', badgeClass: 'decelerating',
+        title: 'AI API Token Prices Falling',
+        body: 'Intense competition between OpenAI, Anthropic, Google, and open-source models is driving inference costs down. A rare deflationary pocket in the AI economy.',
+        value: '-15%', delta: 'YoY decline', deltaClass: 'down',
+        source: 'OpenAI, Anthropic, Google pricing pages'
+      },
+      {
+        badge: 'Emerging', badgeClass: 'emerging',
+        title: 'HBM Memory Supply Bottleneck',
+        body: 'SK Hynix at 95% HBM production utilization. Memory allocation shifting from consumer devices to AI accelerators, pushing consumer electronics prices up.',
+        value: '+38%', delta: 'AI premium', deltaClass: 'up',
+        source: 'SK Hynix earnings, TrendForce data'
+      },
+      {
+        badge: 'Stable', badgeClass: 'stable',
+        title: 'Cloud Compute Baseline Holding',
+        body: 'Non-AI cloud services show stable pricing at 4.1% inflation. Competition between AWS, Azure, and GCP keeping general compute costs in check.',
+        value: '4.1%', delta: 'Flat QoQ', deltaClass: '',
+        source: 'Synergy Research Group'
+      }
+    ];
+
+    var grid = document.getElementById('signalsGrid');
+    grid.innerHTML = signals.map(function (s) {
+      return '<div class="signal__card">' +
+        '<span class="signal__badge ' + s.badgeClass + '">' +
+        (s.badgeClass === 'accelerating' ? '▲ ' : s.badgeClass === 'decelerating' ? '▼ ' : s.badgeClass === 'emerging' ? '◆ ' : '— ') +
+        esc(s.badge) + '</span>' +
+        '<div class="signal__title">' + esc(s.title) + '</div>' +
+        '<div class="signal__body">' + esc(s.body) + '</div>' +
+        '<div class="signal__datapoint">' +
+        '<span class="signal__value">' + esc(s.value) + '</span>' +
+        '<span class="signal__delta ' + s.deltaClass + '">' + esc(s.delta) + '</span>' +
+        '</div>' +
+        '<div class="signal__source">' + esc(s.source) + '</div>' +
+        '</div>';
+    }).join('');
+  }
+
+  // ═══════════════ WATCHLIST ═══════════════
+  function renderWatchlist() {
+    var items = [
+      { icon: '⚡', title: 'US Grid Capacity Crisis', body: 'PJM Interconnection revised its 2030 electricity demand forecast up 40%. Utilities in Virginia, Texas, and Georgia are requesting emergency rate increases tied to data center demand. Watch: utility earnings and rate case filings.', tag: 'Energy', tagClass: 'energy' },
+      { icon: '🔧', title: 'HBM4 Transition (2027)', body: 'Next-generation High Bandwidth Memory will require new packaging technology. Early indicators suggest 20-30% cost increase per chip. Could extend the memory premium through 2028.', tag: 'Hardware', tagClass: 'hardware' },
+      { icon: '💲', title: 'Enterprise AI Tier Repricing', body: 'Microsoft 365 Copilot, Google Workspace AI, and Salesforce Einstein are all in active repricing cycles. Q3-Q4 2026 renewals may see 15-25% increases for AI features.', tag: 'Pricing', tagClass: 'pricing' },
+      { icon: '🌏', title: 'Southeast Asia Data Center Boom', body: 'Malaysia\'s Johor state has attracted $15B in hyperscaler investment. Local electricity demand projections being revised upward, with potential grid stability concerns by 2028.', tag: 'Geopolitical', tagClass: 'geopolitical' }
+    ];
+
+    var grid = document.getElementById('watchlistGrid');
+    grid.innerHTML = items.map(function (item) {
+      return '<div class="watch__card">' +
+        '<div class="watch__icon">' + item.icon + '</div>' +
+        '<div class="watch__content">' +
+        '<div class="watch__title">' + esc(item.title) + '</div>' +
+        '<div class="watch__body">' + esc(item.body) + '</div>' +
+        '<span class="watch__tag ' + item.tagClass + '">' + esc(item.tag) + '</span>' +
+        '</div>' +
+        '</div>';
+    }).join('');
   }
 
   // ═══════════════ NAVIGATION ═══════════════
