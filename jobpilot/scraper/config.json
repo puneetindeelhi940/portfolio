@@ -1,0 +1,49 @@
+{
+  "keywords": [
+    "Senior UX Designer",
+    "Principal Product Designer",
+    "UX Design Lead",
+    "Head of Design",
+    "Design Director",
+    "AI UX Designer",
+    "Product Designer Senior"
+  ],
+  "locations": [
+    "Remote",
+    "San Francisco",
+    "New York",
+    "Seattle",
+    "London",
+    "Bangalore"
+  ],
+  "exclude_keywords": [
+    "intern",
+    "internship",
+    "junior",
+    "entry level"
+  ],
+  "companies": [
+    "Google",
+    "Meta",
+    "Apple",
+    "Microsoft",
+    "Amazon",
+    "Figma",
+    "Spotify",
+    "Airbnb",
+    "Notion",
+    "Stripe",
+    "Netflix",
+    "Salesforce",
+    "Adobe",
+    "IBM",
+    "Dell",
+    "Uber",
+    "Dropbox",
+    "Slack",
+    "Pinterest",
+    "Snap"
+  ],
+  "max_results_per_source": 50,
+  "days_fresh": 7
+}

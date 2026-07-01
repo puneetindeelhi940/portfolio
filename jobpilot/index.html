@@ -740,9 +740,13 @@ body {
       </button>
     </nav>
     <div class="sidebar__footer">
-      <button class="btn btn--sm" onclick="exportData()" style="width:100%">Export Data</button>
+      <label class="btn btn--sm btn--primary" style="width:100%;cursor:pointer;text-align:center">
+        Load Scraped Jobs
+        <input type="file" accept=".json" onchange="importScraperFile(event)" style="display:none">
+      </label>
+      <button class="btn btn--sm" onclick="exportData()" style="width:100%;margin-top:6px">Export Data</button>
       <label class="btn btn--sm" style="width:100%;margin-top:6px;cursor:pointer;text-align:center">
-        Import Data
+        Import Backup
         <input type="file" accept=".json" onchange="importData(event)" style="display:none">
       </label>
     </div>
@@ -1446,8 +1450,51 @@ function refreshCurrentView() {
   if (active) active.click();
 }
 
+// ── Manual Scraper File Load ──
+function importScraperFile(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    try {
+      const data = JSON.parse(ev.target.result);
+      const incoming = data.jobs || [];
+      if (incoming.length === 0) { showToast('No jobs found in file'); return; }
+      const existingIds = new Set(jobs.map(j => j.id));
+      const newJobs = incoming.filter(j => !existingIds.has(j.id));
+      if (newJobs.length === 0) { showToast('All jobs already imported'); return; }
+      jobs.push(...newJobs);
+      save();
+      refreshCurrentView();
+      showToast(`${newJobs.length} new jobs loaded from scraper`);
+    } catch (err) {
+      showToast('Invalid scraper output file');
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+// ── Scraper Feed Import ──
+function loadScraperFeed() {
+  fetch('jobs_feed.json?t=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (!data || !data.jobs || data.jobs.length === 0) return;
+      const existingIds = new Set(jobs.map(j => j.id));
+      const newJobs = data.jobs.filter(j => !existingIds.has(j.id));
+      if (newJobs.length === 0) return;
+      jobs.push(...newJobs);
+      save();
+      refreshCurrentView();
+      showToast(`${newJobs.length} new jobs loaded from scraper`);
+    })
+    .catch(() => {});
+}
+
 // ── Init ──
 renderDashboard();
+loadScraperFeed();
 </script>
 </body>
 </html>
