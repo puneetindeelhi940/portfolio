@@ -159,7 +159,7 @@
     tooltip.innerHTML = '<div class="map__tooltip__name"></div><div class="map__tooltip__score"></div>';
     document.body.appendChild(tooltip);
 
-    fetch('assets/world.json')
+    fetch('data/world.json')
       .then(function (r) { return r.json(); })
       .then(function (geojson) {
         wrap.innerHTML = '';

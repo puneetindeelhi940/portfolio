@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T06:00:00Z",
+  "last_updated": "2026-07-01T09:15:27Z",
   "source": "Official pricing pages as of June 2026",
   "services": [
     {
@@ -12,10 +12,22 @@
       "launch_price": 20,
       "launch_date": "2023-02",
       "price_history": [
-        {"date": "2023-02", "price": 20},
-        {"date": "2024-01", "price": 20},
-        {"date": "2025-01", "price": 20},
-        {"date": "2026-01", "price": 20}
+        {
+          "date": "2023-02",
+          "price": 20
+        },
+        {
+          "date": "2024-01",
+          "price": 20
+        },
+        {
+          "date": "2025-01",
+          "price": 20
+        },
+        {
+          "date": "2026-01",
+          "price": 20
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -30,9 +42,18 @@
       "launch_price": 200,
       "launch_date": "2024-12",
       "price_history": [
-        {"date": "2024-12", "price": 200},
-        {"date": "2025-06", "price": 200},
-        {"date": "2026-01", "price": 200}
+        {
+          "date": "2024-12",
+          "price": 200
+        },
+        {
+          "date": "2025-06",
+          "price": 200
+        },
+        {
+          "date": "2026-01",
+          "price": 200
+        }
       ],
       "change_pct": 0,
       "tier": "professional"
@@ -47,10 +68,22 @@
       "launch_price": 20,
       "launch_date": "2023-09",
       "price_history": [
-        {"date": "2023-09", "price": 20},
-        {"date": "2024-06", "price": 20},
-        {"date": "2025-01", "price": 20},
-        {"date": "2026-01", "price": 20}
+        {
+          "date": "2023-09",
+          "price": 20
+        },
+        {
+          "date": "2024-06",
+          "price": 20
+        },
+        {
+          "date": "2025-01",
+          "price": 20
+        },
+        {
+          "date": "2026-01",
+          "price": 20
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -65,8 +98,14 @@
       "launch_price": 100,
       "launch_date": "2025-02",
       "price_history": [
-        {"date": "2025-02", "price": 100},
-        {"date": "2025-09", "price": 200}
+        {
+          "date": "2025-02",
+          "price": 100
+        },
+        {
+          "date": "2025-09",
+          "price": 200
+        }
       ],
       "change_pct": 100,
       "tier": "professional"
@@ -81,9 +120,18 @@
       "launch_price": 19.99,
       "launch_date": "2024-02",
       "price_history": [
-        {"date": "2024-02", "price": 19.99},
-        {"date": "2025-01", "price": 19.99},
-        {"date": "2026-01", "price": 19.99}
+        {
+          "date": "2024-02",
+          "price": 19.99
+        },
+        {
+          "date": "2025-01",
+          "price": 19.99
+        },
+        {
+          "date": "2026-01",
+          "price": 19.99
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -98,10 +146,22 @@
       "launch_price": 30,
       "launch_date": "2023-11",
       "price_history": [
-        {"date": "2023-11", "price": 30},
-        {"date": "2024-06", "price": 30},
-        {"date": "2025-01", "price": 30},
-        {"date": "2026-01", "price": 30}
+        {
+          "date": "2023-11",
+          "price": 30
+        },
+        {
+          "date": "2024-06",
+          "price": 30
+        },
+        {
+          "date": "2025-01",
+          "price": 30
+        },
+        {
+          "date": "2026-01",
+          "price": 30
+        }
       ],
       "change_pct": 0,
       "tier": "enterprise"
@@ -116,11 +176,26 @@
       "launch_price": 10,
       "launch_date": "2022-06",
       "price_history": [
-        {"date": "2022-06", "price": 10},
-        {"date": "2023-01", "price": 10},
-        {"date": "2024-01", "price": 10},
-        {"date": "2025-01", "price": 10},
-        {"date": "2026-01", "price": 10}
+        {
+          "date": "2022-06",
+          "price": 10
+        },
+        {
+          "date": "2023-01",
+          "price": 10
+        },
+        {
+          "date": "2024-01",
+          "price": 10
+        },
+        {
+          "date": "2025-01",
+          "price": 10
+        },
+        {
+          "date": "2026-01",
+          "price": 10
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -135,10 +210,22 @@
       "launch_price": 19,
       "launch_date": "2023-02",
       "price_history": [
-        {"date": "2023-02", "price": 19},
-        {"date": "2024-01", "price": 19},
-        {"date": "2025-01", "price": 19},
-        {"date": "2026-01", "price": 19}
+        {
+          "date": "2023-02",
+          "price": 19
+        },
+        {
+          "date": "2024-01",
+          "price": 19
+        },
+        {
+          "date": "2025-01",
+          "price": 19
+        },
+        {
+          "date": "2026-01",
+          "price": 19
+        }
       ],
       "change_pct": 0,
       "tier": "enterprise"
@@ -153,11 +240,26 @@
       "launch_price": 30,
       "launch_date": "2022-08",
       "price_history": [
-        {"date": "2022-08", "price": 30},
-        {"date": "2023-06", "price": 30},
-        {"date": "2024-01", "price": 30},
-        {"date": "2025-01", "price": 30},
-        {"date": "2026-01", "price": 30}
+        {
+          "date": "2022-08",
+          "price": 30
+        },
+        {
+          "date": "2023-06",
+          "price": 30
+        },
+        {
+          "date": "2024-01",
+          "price": 30
+        },
+        {
+          "date": "2025-01",
+          "price": 30
+        },
+        {
+          "date": "2026-01",
+          "price": 30
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -172,9 +274,18 @@
       "launch_price": 20,
       "launch_date": "2024-03",
       "price_history": [
-        {"date": "2024-03", "price": 20},
-        {"date": "2025-01", "price": 20},
-        {"date": "2026-01", "price": 20}
+        {
+          "date": "2024-03",
+          "price": 20
+        },
+        {
+          "date": "2025-01",
+          "price": 20
+        },
+        {
+          "date": "2026-01",
+          "price": 20
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -189,9 +300,18 @@
       "launch_price": 20,
       "launch_date": "2024-01",
       "price_history": [
-        {"date": "2024-01", "price": 20},
-        {"date": "2025-01", "price": 20},
-        {"date": "2026-01", "price": 20}
+        {
+          "date": "2024-01",
+          "price": 20
+        },
+        {
+          "date": "2025-01",
+          "price": 20
+        },
+        {
+          "date": "2026-01",
+          "price": 20
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -206,10 +326,22 @@
       "launch_price": 10,
       "launch_date": "2023-02",
       "price_history": [
-        {"date": "2023-02", "price": 10},
-        {"date": "2024-01", "price": 10},
-        {"date": "2025-01", "price": 10},
-        {"date": "2026-01", "price": 10}
+        {
+          "date": "2023-02",
+          "price": 10
+        },
+        {
+          "date": "2024-01",
+          "price": 10
+        },
+        {
+          "date": "2025-01",
+          "price": 10
+        },
+        {
+          "date": "2026-01",
+          "price": 10
+        }
       ],
       "change_pct": 0,
       "tier": "consumer"
@@ -224,10 +356,22 @@
       "launch_price": 4.99,
       "launch_date": "2023-09",
       "price_history": [
-        {"date": "2023-09", "price": 4.99},
-        {"date": "2024-09", "price": 9.99},
-        {"date": "2025-06", "price": 9.99},
-        {"date": "2026-01", "price": 9.99}
+        {
+          "date": "2023-09",
+          "price": 4.99
+        },
+        {
+          "date": "2024-09",
+          "price": 9.99
+        },
+        {
+          "date": "2025-06",
+          "price": 9.99
+        },
+        {
+          "date": "2026-01",
+          "price": 9.99
+        }
       ],
       "change_pct": 100,
       "tier": "consumer"
@@ -242,10 +386,22 @@
       "launch_price": 40,
       "launch_date": "2023-01",
       "price_history": [
-        {"date": "2023-01", "price": 40},
-        {"date": "2024-01", "price": 49},
-        {"date": "2025-01", "price": 49},
-        {"date": "2026-01", "price": 49}
+        {
+          "date": "2023-01",
+          "price": 40
+        },
+        {
+          "date": "2024-01",
+          "price": 49
+        },
+        {
+          "date": "2025-01",
+          "price": 49
+        },
+        {
+          "date": "2026-01",
+          "price": 49
+        }
       ],
       "change_pct": 22.5,
       "tier": "professional"
@@ -260,11 +416,26 @@
       "launch_price": 15,
       "launch_date": "2023-06",
       "price_history": [
-        {"date": "2023-06", "price": 15},
-        {"date": "2024-01", "price": 28},
-        {"date": "2024-09", "price": 35},
-        {"date": "2025-06", "price": 35},
-        {"date": "2026-01", "price": 35}
+        {
+          "date": "2023-06",
+          "price": 15
+        },
+        {
+          "date": "2024-01",
+          "price": 28
+        },
+        {
+          "date": "2024-09",
+          "price": 35
+        },
+        {
+          "date": "2025-06",
+          "price": 35
+        },
+        {
+          "date": "2026-01",
+          "price": 35
+        }
       ],
       "change_pct": 133,
       "tier": "professional"

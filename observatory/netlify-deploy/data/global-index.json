@@ -11,10 +11,14 @@
   "components": {
     "technology_hardware": {
       "label": "Technology Hardware",
-      "weight": 0.20,
+      "weight": 0.2,
       "value": 8.2,
       "trend": "rising",
-      "drivers": ["GPU demand", "HBM memory shortage", "Server capacity expansion"],
+      "drivers": [
+        "GPU demand",
+        "HBM memory shortage",
+        "Server capacity expansion"
+      ],
       "source": "Bureau of Labor Statistics PPI, Semiconductor Industry Association"
     },
     "cloud_services": {
@@ -22,23 +26,35 @@
       "weight": 0.15,
       "value": 4.1,
       "trend": "stable",
-      "drivers": ["GPU instance demand", "Data center expansion", "Energy costs"],
+      "drivers": [
+        "GPU instance demand",
+        "Data center expansion",
+        "Energy costs"
+      ],
       "source": "Synergy Research Group, Company pricing pages"
     },
     "ai_subscriptions": {
       "label": "AI Subscriptions",
-      "weight": 0.10,
+      "weight": 0.1,
       "value": 12.4,
       "trend": "rising",
-      "drivers": ["Inference cost", "Model competition", "Feature expansion"],
+      "drivers": [
+        "Inference cost",
+        "Model competition",
+        "Feature expansion"
+      ],
       "source": "Company pricing pages, press releases"
     },
     "electricity": {
       "label": "Electricity & Energy",
-      "weight": 0.20,
+      "weight": 0.2,
       "value": 5.7,
       "trend": "rising",
-      "drivers": ["Data center demand", "Grid strain", "Peak load shifts"],
+      "drivers": [
+        "Data center demand",
+        "Grid strain",
+        "Peak load shifts"
+      ],
       "source": "IEA, EIA, National grid operators"
     },
     "consumer_electronics": {
@@ -46,23 +62,35 @@
       "weight": 0.15,
       "value": 3.2,
       "trend": "moderate",
-      "drivers": ["Component allocation to AI", "Memory prices", "NPU integration"],
+      "drivers": [
+        "Component allocation to AI",
+        "Memory prices",
+        "NPU integration"
+      ],
       "source": "IDC, Gartner, BLS CPI"
     },
     "enterprise_software": {
       "label": "Enterprise Software",
-      "weight": 0.10,
+      "weight": 0.1,
       "value": 6.8,
       "trend": "rising",
-      "drivers": ["AI feature premiums", "Copilot add-ons", "License restructuring"],
+      "drivers": [
+        "AI feature premiums",
+        "Copilot add-ons",
+        "License restructuring"
+      ],
       "source": "Gartner, Company earnings reports"
     },
     "infrastructure": {
       "label": "Infrastructure & Construction",
-      "weight": 0.10,
+      "weight": 0.1,
       "value": 4.5,
       "trend": "rising",
-      "drivers": ["Data center construction", "Power infrastructure", "Cooling systems"],
+      "drivers": [
+        "Data center construction",
+        "Power infrastructure",
+        "Cooling systems"
+      ],
       "source": "CBRE, JLL, Construction industry reports"
     }
   },
@@ -96,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-06-28T06:00:00Z",
+  "last_updated": "2026-07-01T09:15:27Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
