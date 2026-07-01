@@ -14,6 +14,7 @@
   }
 
   async function init() {
+    initParticleBackground();
     try {
       [globalIndex, countries, products, subscriptions] = await Promise.all([
         loadJSON('global-index.json'),
@@ -180,8 +181,8 @@
 
           var code2 = iso3to2[feature.iso];
           var cd = code2 ? countryMap[code2] : null;
-          path.setAttribute('fill', cd ? scoreToColor(cd.ai_inflation_score) : '#E5E5EA');
-          path.setAttribute('stroke', '#fff');
+          path.setAttribute('fill', cd ? scoreToColor(cd.ai_inflation_score) : '#1A1A2E');
+          path.setAttribute('stroke', 'rgba(255,255,255,0.12)');
           path.setAttribute('stroke-width', '0.5');
           if (cd) path.style.cursor = 'pointer';
 
@@ -191,9 +192,9 @@
             tooltip.querySelector('.map__tooltip__score').textContent =
               cd ? 'AI Inflation Score: ' + cd.ai_inflation_score + '/100 · ' + cd.trend : 'No data available';
             tooltip.classList.add('visible');
-            this.setAttribute('stroke', '#1D1D1F');
+            this.setAttribute('stroke', '#00D4FF');
             this.setAttribute('stroke-width', '1.5');
-            this.style.opacity = '0.85';
+            this.style.opacity = '0.9';
           });
           path.addEventListener('mousemove', function (e) {
             tooltip.style.left = (e.clientX + 14) + 'px';
@@ -201,7 +202,7 @@
           });
           path.addEventListener('mouseleave', function () {
             tooltip.classList.remove('visible');
-            this.setAttribute('stroke', '#fff');
+            this.setAttribute('stroke', 'rgba(255,255,255,0.12)');
             this.setAttribute('stroke-width', '0.5');
             this.style.opacity = '1';
           });
@@ -694,6 +695,117 @@
     if (!track) return;
     var clone = track.innerHTML;
     track.innerHTML = clone + clone;
+  }
+
+  // ═══════════════ PARTICLE BACKGROUND ═══════════════
+  function initParticleBackground() {
+    var canvas = document.createElement('canvas');
+    canvas.id = 'particleBg';
+    canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;';
+    document.body.insertBefore(canvas, document.body.firstChild);
+
+    var ctx = canvas.getContext('2d');
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w, h, particles = [];
+    var mobile = window.innerWidth < 768;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function resize() {
+      w = window.innerWidth;
+      h = window.innerHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function createParticles() {
+      var count = mobile ? 35 : Math.floor(w * h / 18000);
+      count = Math.max(30, Math.min(count, 100));
+      particles = [];
+      for (var i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.4,
+          vy: (Math.random() - 0.5) * 0.4,
+          r: Math.random() * 1.5 + 0.8,
+          o: Math.random() * 0.35 + 0.15
+        });
+      }
+    }
+
+    var gradAngle = 0;
+
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+
+      gradAngle += 0.002;
+      var gx = w * 0.5 + Math.cos(gradAngle) * w * 0.3;
+      var gy = h * 0.5 + Math.sin(gradAngle * 0.7) * h * 0.3;
+      var grad = ctx.createRadialGradient(gx, gy, 0, gx, gy, w * 0.6);
+      grad.addColorStop(0, 'rgba(0, 212, 255, 0.04)');
+      grad.addColorStop(0.5, 'rgba(0, 100, 200, 0.02)');
+      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, w, h);
+
+      var gx2 = w * 0.3 + Math.sin(gradAngle * 1.3) * w * 0.25;
+      var gy2 = h * 0.7 + Math.cos(gradAngle * 0.9) * h * 0.25;
+      var grad2 = ctx.createRadialGradient(gx2, gy2, 0, gx2, gy2, w * 0.4);
+      grad2.addColorStop(0, 'rgba(180, 74, 255, 0.03)');
+      grad2.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = grad2;
+      ctx.fillRect(0, 0, w, h);
+
+      var threshold = mobile ? 100 : 150;
+      if (!mobile) {
+        for (var i = 0; i < particles.length; i++) {
+          for (var j = i + 1; j < particles.length; j++) {
+            var dx = particles[i].x - particles[j].x;
+            var dy = particles[i].y - particles[j].y;
+            var dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < threshold) {
+              var alpha = (1 - dist / threshold) * 0.08;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = 'rgba(0, 212, 255, ' + alpha + ')';
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      for (var k = 0; k < particles.length; k++) {
+        var p = particles[k];
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(0, 212, 255, ' + p.o + ')';
+        ctx.fill();
+
+        if (!reduced) {
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0) p.x = w;
+          if (p.x > w) p.x = 0;
+          if (p.y < 0) p.y = h;
+          if (p.y > h) p.y = 0;
+        }
+      }
+
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    createParticles();
+    draw();
+
+    window.addEventListener('resize', function () {
+      mobile = window.innerWidth < 768;
+      resize();
+      createParticles();
+    });
   }
 
   // Boot
