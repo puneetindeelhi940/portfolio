@@ -152,8 +152,19 @@ def update_global_index():
 
 
 def update_last_updated():
-    """Write a standalone last-updated.json for the refresh badge."""
+    """Update last_updated timestamp across all data files."""
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    for filename in ["global-index.json", "countries.json", "products.json", "ai-subscriptions.json"]:
+        filepath = DATA_DIR / filename
+        if filepath.exists():
+            with open(filepath, "r") as f:
+                data = json.load(f)
+            data["last_updated"] = ts
+            with open(filepath, "w") as f:
+                json.dump(data, f, indent=2)
+            print(f"  Updated timestamp in {filename}")
+
     last_updated_file = DATA_DIR / "last-updated.json"
     with open(last_updated_file, "w") as f:
         json.dump({"last_updated": ts, "pipeline": "github-actions"}, f, indent=2)
