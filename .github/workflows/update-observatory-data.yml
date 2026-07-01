@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "Observatory Data Bot"
           git config user.email "observatory-bot@users.noreply.github.com"
-          git add observatory/data/*.json
+          git add observatory/data/*.json observatory/netlify-deploy/data/*.json
           if git diff --staged --quiet; then
             echo "No data changes detected"
           else

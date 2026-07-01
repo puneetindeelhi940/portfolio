@@ -24,6 +24,7 @@ except ImportError:
     import requests
 
 DATA_DIR = Path(__file__).parent.parent / "observatory" / "data"
+NETLIFY_DATA_DIR = Path(__file__).parent.parent / "observatory" / "netlify-deploy" / "data"
 
 WORLD_BANK_BASE = "https://api.worldbank.org/v2"
 FRED_BASE = "https://api.stlouisfed.org/fred"
@@ -171,6 +172,21 @@ def update_last_updated():
     print(f"Refresh timestamp: {ts}")
 
 
+def sync_to_netlify_deploy():
+    """Copy updated data files to the Netlify deployment directory."""
+    if not NETLIFY_DATA_DIR.exists():
+        print("  Netlify deploy directory not found, skipping sync")
+        return
+    print("Syncing data to netlify-deploy...")
+    import shutil
+    for filename in ["global-index.json", "countries.json", "products.json", "ai-subscriptions.json"]:
+        src = DATA_DIR / filename
+        dst = NETLIFY_DATA_DIR / filename
+        if src.exists():
+            shutil.copy2(src, dst)
+            print(f"  Synced {filename}")
+
+
 def main():
     print("=" * 60)
     print("AI Inflation Observatory — Data Pipeline")
@@ -183,6 +199,7 @@ def main():
     update_countries_from_world_bank()
     update_global_index()
     update_last_updated()
+    sync_to_netlify_deploy()
 
     print("\nPipeline complete.")
     if not FRED_API_KEY:
