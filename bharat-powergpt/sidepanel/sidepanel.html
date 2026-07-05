@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bharat PowerGPT</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <header class="sp-header">
+    <div class="sp-brand">
+      <span class="sp-logo">B</span>
+      <h1>Bharat PowerGPT</h1>
+    </div>
+  </header>
+
+  <nav class="sp-nav">
+    <button class="sp-nav-btn sp-nav-active" data-view="folders">Folders</button>
+    <button class="sp-nav-btn" data-view="search">Search</button>
+    <button class="sp-nav-btn" data-view="treemap">Tree Map</button>
+    <button class="sp-nav-btn" data-view="prompts">Prompts</button>
+  </nav>
+
+  <main id="sp-main">
+    <div id="sp-view-folders" class="sp-view sp-view-active"></div>
+    <div id="sp-view-search" class="sp-view"></div>
+    <div id="sp-view-treemap" class="sp-view"></div>
+    <div id="sp-view-prompts" class="sp-view"></div>
+  </main>
+
+  <script src="../lib/storage.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

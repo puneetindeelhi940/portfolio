@@ -1,0 +1,177 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  color: #222;
+  background: #fafafa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sp-header {
+  padding: 14px 16px;
+  background: #1a1a2e;
+  color: #fff;
+}
+.sp-brand { display: flex; align-items: center; gap: 10px; }
+.sp-logo {
+  width: 28px; height: 28px;
+  background: #fff;
+  color: #1a1a2e;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 14px;
+}
+.sp-brand h1 { font-size: 15px; font-weight: 600; }
+
+.sp-nav {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+}
+.sp-nav-btn {
+  flex: 1;
+  padding: 10px 4px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s;
+}
+.sp-nav-btn:hover { color: #222; }
+.sp-nav-active { color: #1a1a2e; border-bottom-color: #1a1a2e; }
+
+#sp-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.sp-view { display: none; }
+.sp-view-active { display: block; }
+
+/* Folders */
+.sp-folder-actions { display: flex; gap: 8px; margin-bottom: 12px; }
+.sp-folder-tree { display: flex; flex-direction: column; gap: 4px; }
+
+.sp-folder-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.sp-folder-item:hover { background: #f0f4ff; }
+.sp-folder-item.sp-active { background: #e8eaf6; border-color: #c5cae9; }
+.sp-folder-icon { font-size: 16px; }
+.sp-folder-name { flex: 1; font-weight: 500; }
+.sp-folder-count { font-size: 11px; color: #999; background: #f0f0f0; padding: 2px 7px; border-radius: 10px; }
+
+.sp-subfolder { margin-left: 20px; }
+
+.sp-chat-list { margin-top: 8px; display: flex; flex-direction: column; gap: 4px; }
+.sp-chat-item {
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 8px;
+}
+.sp-chat-item:hover { background: #f5f5f5; }
+.sp-chat-title { flex: 1; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sp-chat-platform {
+  font-size: 10px; padding: 2px 6px;
+  background: #e8eaf6; color: #3949ab;
+  border-radius: 4px; font-weight: 500;
+}
+
+/* Search */
+.sp-search-box {
+  display: flex; gap: 8px; margin-bottom: 12px;
+}
+.sp-search-box input {
+  flex: 1; padding: 8px 12px;
+  border: 1px solid #ddd; border-radius: 6px;
+  font-size: 13px; outline: none;
+}
+.sp-search-box input:focus { border-color: #3949ab; }
+.sp-search-results { display: flex; flex-direction: column; gap: 6px; }
+.sp-search-result {
+  padding: 10px 12px;
+  background: #fff; border: 1px solid #eee;
+  border-radius: 6px; cursor: pointer;
+}
+.sp-search-result:hover { border-color: #c5cae9; }
+.sp-search-result h4 { font-size: 13px; margin-bottom: 4px; }
+.sp-search-result p { font-size: 11px; color: #666; }
+
+/* Tree Map */
+.sp-treemap-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 4px;
+}
+.sp-treemap-block {
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  transition: transform 0.15s;
+}
+.sp-treemap-block:hover { transform: scale(1.05); }
+
+/* Prompts (side panel version) */
+.sp-prompts-list { display: flex; flex-direction: column; gap: 8px; }
+.sp-prompt-item {
+  padding: 10px 12px;
+  background: #fff; border: 1px solid #eee;
+  border-radius: 6px;
+}
+.sp-prompt-item h4 { font-size: 13px; margin-bottom: 4px; }
+.sp-prompt-item p { font-size: 11px; color: #666; margin-bottom: 6px; }
+.sp-prompt-item button { margin-right: 6px; }
+
+/* Shared */
+.sp-btn {
+  padding: 6px 12px; border: 1px solid #ddd; border-radius: 6px;
+  background: #fff; cursor: pointer; font-size: 12px; font-weight: 500;
+}
+.sp-btn:hover { background: #f5f5f5; }
+.sp-btn-primary { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
+.sp-btn-primary:hover { background: #2d2d4e; }
+.sp-btn-sm { padding: 4px 8px; font-size: 11px; }
+.sp-empty { text-align: center; color: #999; padding: 30px 10px; }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body { background: #121212; color: #e0e0e0; }
+  .sp-nav { background: #1e1e1e; border-bottom-color: #333; }
+  .sp-nav-btn { color: #999; }
+  .sp-nav-active { color: #fff; border-bottom-color: #fff; }
+  .sp-folder-item, .sp-chat-item, .sp-search-result, .sp-prompt-item {
+    background: #1e1e1e; border-color: #333;
+  }
+  .sp-folder-item:hover, .sp-chat-item:hover { background: #2a2a3e; }
+  .sp-folder-item.sp-active { background: #2a2a4e; border-color: #3949ab; }
+  .sp-folder-count { background: #333; color: #ccc; }
+  .sp-search-box input { background: #1e1e1e; border-color: #444; color: #eee; }
+  .sp-btn { background: #1e1e1e; border-color: #444; color: #eee; }
+  .sp-btn:hover { background: #2a2a2a; }
+  .sp-btn-primary { background: #3949ab; border-color: #3949ab; }
+}
