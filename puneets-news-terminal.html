@@ -47,99 +47,6 @@
   --topbar-h: 56px;
 }
 
-/* ═══════════ PLAYFUL MODE ═══════════ */
-[data-mode="playful"] {
-  --bg: #0d2b28;
-  --bg-2: #123a36;
-  --surface: rgba(255, 255, 255, 0.05);
-  --surface-2: rgba(255, 255, 255, 0.09);
-  --surface-3: rgba(255, 255, 255, 0.13);
-  --ink: #f5f1e6;
-  --ink-2: #cfe8df;
-  --dim: #9bc4b9;
-  --faint: #7fa89f;
-  --rule: rgba(255, 255, 255, 0.14);
-  --accent: #f2c14e;
-  --accent-dim: rgba(242, 193, 78, 0.18);
-  --brief-bg: rgba(255, 255, 255, 0.06);
-  --brief-border: rgba(255, 255, 255, 0.16);
-  --danger: #ff6b6b;
-  background: transparent;
-}
-
-[data-mode="playful"] .nt-topbar {
-  background: rgba(13, 43, 40, 0.78);
-}
-
-[data-mode="playful"] .nt-chips-wrap {
-  background: rgba(13, 43, 40, 0.72);
-}
-
-[data-mode="playful"] .nt-chip.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #14241f;
-}
-
-[data-mode="playful"] .nt-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 6px 24px rgba(242, 193, 78, 0.2);
-}
-
-[data-mode="playful"] .nt-brief__card,
-[data-mode="playful"] .nt-headline,
-[data-mode="playful"] .nt-card,
-[data-mode="playful"] .nt-skeleton {
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-[data-mode="playful"] .nt-search__input {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--rule);
-  color: var(--ink);
-}
-
-[data-mode="playful"] .nt-search__input::placeholder {
-  color: var(--faint);
-}
-
-/* ═══════════ PLAYFUL ANIMATED BOKEH BACKGROUND ═══════════ */
-.nt-bokeh {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
-  background: var(--bg);
-  opacity: 0;
-  transition: opacity 0.6s ease, background 0.3s ease;
-}
-
-[data-mode="playful"] .nt-bokeh { opacity: 1; }
-
-.nt-bokeh__circle {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(40px);
-  opacity: 0.55;
-  animation: bokeh-float 22s ease-in-out infinite alternate;
-}
-
-.nt-bokeh__circle--1 { width: 380px; height: 380px; left: 2%; top: 6%; background: radial-gradient(circle, #2e8b7a, transparent 70%); animation-duration: 24s; }
-.nt-bokeh__circle--2 { width: 240px; height: 240px; left: 28%; top: 55%; background: radial-gradient(circle, #f2c14e, transparent 70%); animation-duration: 28s; animation-delay: -4s; }
-.nt-bokeh__circle--3 { width: 300px; height: 300px; left: 55%; top: 15%; background: radial-gradient(circle, #3fae71, transparent 70%); animation-duration: 26s; animation-delay: -9s; }
-.nt-bokeh__circle--4 { width: 200px; height: 200px; left: 78%; top: 60%; background: radial-gradient(circle, #e8a33d, transparent 70%); animation-duration: 20s; animation-delay: -2s; }
-.nt-bokeh__circle--5 { width: 260px; height: 260px; left: 12%; top: 75%; background: radial-gradient(circle, #1f5650, transparent 70%); animation-duration: 30s; animation-delay: -12s; }
-.nt-bokeh__circle--6 { width: 180px; height: 180px; left: 65%; top: 85%; background: radial-gradient(circle, #f2c14e, transparent 70%); animation-duration: 23s; animation-delay: -7s; }
-.nt-bokeh__circle--7 { width: 320px; height: 320px; left: 88%; top: 5%; background: radial-gradient(circle, #2e8b7a, transparent 70%); animation-duration: 27s; animation-delay: -15s; }
-
-@keyframes bokeh-float {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(40px, -30px) scale(1.15); }
-  100% { transform: translate(-30px, 25px) scale(0.95); }
-}
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -910,16 +817,6 @@ a { color: inherit; text-decoration: none; }
 </head>
 <body data-mode="serious">
 
-<div class="nt-bokeh" aria-hidden="true">
-  <span class="nt-bokeh__circle nt-bokeh__circle--1"></span>
-  <span class="nt-bokeh__circle nt-bokeh__circle--2"></span>
-  <span class="nt-bokeh__circle nt-bokeh__circle--3"></span>
-  <span class="nt-bokeh__circle nt-bokeh__circle--4"></span>
-  <span class="nt-bokeh__circle nt-bokeh__circle--5"></span>
-  <span class="nt-bokeh__circle nt-bokeh__circle--6"></span>
-  <span class="nt-bokeh__circle nt-bokeh__circle--7"></span>
-</div>
-
 <!-- ═══════════ TOPBAR ═══════════ -->
 <header class="nt-topbar">
   <a href="Altermayur.html" class="nt-back" title="Back to portfolio">
@@ -939,7 +836,6 @@ a { color: inherit; text-decoration: none; }
 
   <div class="nt-mode-toggle">
     <span class="nt-mode-toggle__label active" data-mode-label="serious" id="btnSerious">Serious</span>
-    <span class="nt-mode-toggle__label" data-mode-label="playful" id="btnPlayful">Playful</span>
   </div>
 
   <div class="nt-refreshed" id="lastRefreshed">
@@ -1209,7 +1105,6 @@ a { color: inherit; text-decoration: none; }
   var searchBox  = document.getElementById('newsSearch');
   var chipRow    = document.getElementById('chipRow');
   var btnSerious = document.getElementById('btnSerious');
-  var btnPlayful = document.getElementById('btnPlayful');
   var refreshEl  = document.getElementById('lastRefreshed');
   var errorBanner = document.getElementById('errorBanner');
   var errorMsg    = document.getElementById('errorMsg');
@@ -1295,19 +1190,9 @@ a { color: inherit; text-decoration: none; }
   }
   renderTicker();
 
-  // ── Mode toggle (click labels directly) ──
-  var savedMode = localStorage.getItem('nt-mode') || 'serious';
-  setMode(savedMode);
-
-  btnSerious.addEventListener('click', function () { setMode('serious'); });
-  btnPlayful.addEventListener('click', function () { setMode('playful'); });
-
-  function setMode(mode) {
-    document.body.dataset.mode = mode;
-    localStorage.setItem('nt-mode', mode);
-    btnSerious.classList.toggle('active', mode === 'serious');
-    btnPlayful.classList.toggle('active', mode === 'playful');
-  }
+  // ── Mode (serious only) ──
+  document.body.dataset.mode = 'serious';
+  localStorage.setItem('nt-mode', 'serious');
 
   // ── Chips ──
   chipRow.addEventListener('click', function (e) {
