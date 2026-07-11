@@ -355,6 +355,25 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1
 .fullscreen .lm-nav{padding:16px 40px}
 .fullscreen .lm-slide-inner{padding:80px 60px}
 
+/* SCENARIO SELECTOR */
+.scenario-selector{padding:0 24px;margin-bottom:-40px}
+.scenario-selector .container{max-width:1200px;margin:0 auto}
+.scenario-bar{display:flex;gap:12px;flex-wrap:wrap}
+.scenario-radio{display:none}
+.scenario-card{flex:1;min-width:280px;background:var(--surface);border:1.5px solid var(--rule2);border-radius:14px;padding:20px 22px;cursor:pointer;transition:all 0.35s ease;position:relative;overflow:hidden}
+.scenario-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:14px 14px 0 0;transition:opacity 0.3s}
+.scenario-card:hover{border-color:rgba(108,201,108,0.25);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.25)}
+.scenario-radio:checked + .scenario-card{border-color:var(--accent);background:linear-gradient(135deg,rgba(108,201,108,0.06),rgba(108,201,108,0.02))}
+.scenario-radio:checked + .scenario-card::before{opacity:1;background:linear-gradient(90deg,var(--accent),var(--blue))}
+.scenario-card::before{opacity:0}
+.scenario-card-icon{font-size:22px;margin-bottom:8px}
+.scenario-card-title{font:600 14px/1.3 var(--sans);color:var(--ink);margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.scenario-card-tag{font:600 8px/1 var(--sans);color:var(--accent);background:rgba(108,201,108,0.1);padding:3px 8px;border-radius:100px;letter-spacing:0.06em;text-transform:uppercase}
+.scenario-card-desc{font:400 12px/1.5 var(--sans);color:var(--faint)}
+.scenario-card-kpis{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
+.scenario-card-kpi{font:600 11px/1 var(--sans);color:var(--dim);display:flex;align-items:center;gap:4px}
+.scenario-card-kpi .val{color:var(--accent)}
+
 /* RESPONSIVE */
 @media(max-width:900px){
   .hero h1{font-size:36px}
@@ -418,10 +437,54 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1
     <div class="hero-stat"><div class="hero-stat-val" id="stat-decisions">0</div><div class="hero-stat-label">Decisions Captured</div></div>
     <div class="hero-stat"><div class="hero-stat-val" id="stat-time">0m</div><div class="hero-stat-label">Session Duration</div></div>
     <div class="hero-stat"><div class="hero-stat-val" id="stat-confidence">61%</div><div class="hero-stat-label">Final Confidence</div></div>
-    <div class="hero-stat"><div class="hero-stat-val" id="stat-roi">+22%</div><div class="hero-stat-label">ROI Improvement</div></div>
+    <div class="hero-stat"><div class="hero-stat-val" id="stat-roi">+0%</div><div class="hero-stat-label">ROI Improvement</div></div>
   </div>
   <div style="margin-top:40px">
     <button class="lm-enter-btn" id="enter-leadership-btn">&#x1F3AF; Enter Leadership Mode</button>
+  </div>
+</section>
+
+<!-- SCENARIO SELECTOR -->
+<section class="section scenario-selector fade-up" id="scenario-section">
+  <div class="container">
+    <div class="section-label">Cargill Strategic Scenarios</div>
+    <div class="section-title" style="margin-bottom:6px">Choose a Decision Context</div>
+    <div class="section-desc">Select a real-world Cargill scenario to simulate. Each scenario loads domain-specific parameters, KPIs, and AI coaching tuned to that business context.</div>
+    <div class="scenario-bar" id="scenario-bar">
+      <input type="radio" name="scenario" id="sc-grain" value="grain" class="scenario-radio" checked>
+      <label class="scenario-card" for="sc-grain">
+        <div class="scenario-card-icon">&#x1F33E;</div>
+        <div class="scenario-card-title">Grain Supply Chain Optimization <span class="scenario-card-tag">Supply Chain</span></div>
+        <div class="scenario-card-desc">AI-driven demand forecasting and logistics optimization across Cargill's global grain trading network — reducing waste, tightening delivery windows, and maximizing margin per bushel.</div>
+        <div class="scenario-card-kpis">
+          <div class="scenario-card-kpi">Waste: <span class="val">-18%</span></div>
+          <div class="scenario-card-kpi">Margin: <span class="val">+$2.4M</span></div>
+          <div class="scenario-card-kpi">Forecast: <span class="val">94%</span></div>
+        </div>
+      </label>
+      <input type="radio" name="scenario" id="sc-nutrition" value="nutrition" class="scenario-radio">
+      <label class="scenario-card" for="sc-nutrition">
+        <div class="scenario-card-icon">&#x1F404;</div>
+        <div class="scenario-card-title">Animal Nutrition Portfolio <span class="scenario-card-tag">R&amp;D</span></div>
+        <div class="scenario-card-desc">Expanding Cargill's precision animal nutrition line with AI-formulated feed blends — optimizing for livestock health outcomes, cost efficiency, and sustainability targets.</div>
+        <div class="scenario-card-kpis">
+          <div class="scenario-card-kpi">Yield: <span class="val">+12%</span></div>
+          <div class="scenario-card-kpi">Cost/ton: <span class="val">-$34</span></div>
+          <div class="scenario-card-kpi">Trials: <span class="val">6 active</span></div>
+        </div>
+      </label>
+      <input type="radio" name="scenario" id="sc-sustain" value="sustainability" class="scenario-radio">
+      <label class="scenario-card" for="sc-sustain">
+        <div class="scenario-card-icon">&#x1F331;</div>
+        <div class="scenario-card-title">Sustainability Compliance <span class="scenario-card-tag">ESG</span></div>
+        <div class="scenario-card-desc">AI-powered scope 3 emissions tracking and deforestation-free sourcing verification across Cargill's agricultural supply chain — meeting EU CSRD and SEC climate disclosure mandates.</div>
+        <div class="scenario-card-kpis">
+          <div class="scenario-card-kpi">Scope 3: <span class="val">-22%</span></div>
+          <div class="scenario-card-kpi">Compliance: <span class="val">97%</span></div>
+          <div class="scenario-card-kpi">Savings: <span class="val">$5.1M</span></div>
+        </div>
+      </label>
+    </div>
   </div>
 </section>
 
@@ -429,8 +492,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1
 <section class="section fade-up" id="simulator">
   <div class="container">
     <div class="section-label">Live Simulation</div>
-    <div class="section-title">Shape the Strategy</div>
-    <div class="section-desc">Move the sliders below to make strategic decisions. Every change is captured as a timeline event — watch the KPIs respond in real time.</div>
+    <div class="section-title" id="sim-section-title">Shape the Strategy</div>
+    <div class="section-desc" id="sim-section-desc">Move the sliders below to make strategic decisions. Every change is captured as a timeline event — watch the KPIs respond in real time.</div>
 
     <div class="sim-panel">
       <div class="sim-header">
@@ -1028,45 +1091,162 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1
 (function(){
 'use strict';
 
-var SLIDERS = [
-  {id:'budget',label:'Budget',min:30,max:100,value:50,step:5,unit:'L',prefix:'₹',impact:{confidence:0.4,roi:0.3,engLoad:0.2,risk:-0.1}},
-  {id:'scope',label:'Feature Scope',min:1,max:3,value:3,step:1,unit:'',options:['Small','Medium','Large'],impact:{confidence:-0.6,roi:0.15,timeToMarket:0.5,engLoad:0.4}},
-  {id:'engineers',label:'Engineering Team',min:3,max:12,value:5,step:1,unit:' engineers',impact:{confidence:0.3,velocity:0.4,engLoad:-0.3,risk:-0.25}},
-  {id:'uxInvest',label:'UX Investment',min:5,max:40,value:10,step:5,unit:'%',impact:{confidence:0.15,custSat:0.6,roi:0.1,timeToMarket:0.1}}
-];
+/* ════════════════════════════════
+   CARGILL SCENARIO DEFINITIONS
+   ════════════════════════════════ */
 
-var KPI_DEFS = [
-  {id:'confidence',label:'Delivery Confidence',base:61,unit:'%',color:'var(--accent)'},
-  {id:'roi',label:'Projected ROI',base:14,unit:'%',color:'var(--blue)'},
-  {id:'timeToMarket',label:'Time to Market',base:8,unit:' mo',color:'var(--gold)',invert:true},
-  {id:'risk',label:'Execution Risk',base:72,unit:'',color:'var(--red)',invert:true},
-  {id:'velocity',label:'Team Velocity',base:48,unit:'',color:'var(--cyan)'},
-  {id:'engLoad',label:'Engineering Load',base:65,unit:'%',color:'var(--purple)',invert:true},
-  {id:'custSat',label:'Customer Satisfaction',base:62,unit:'%',color:'var(--accent)'},
-  {id:'complexity',label:'Complexity Score',base:68,unit:'',color:'var(--gold)',invert:true}
-];
+var SCENARIOS = {
+  grain: {
+    title: 'Grain Supply Chain Optimization',
+    simTitle: 'Optimize the Supply Chain',
+    simDesc: 'Adjust logistics parameters below to optimize Cargill\'s grain supply chain. AI forecasting models respond in real time — watch waste drop and margins climb with every decision!',
+    sliders: [
+      {id:'forecastAI',label:'AI Forecast Investment',min:5,max:50,value:12,step:5,unit:'%',impact:{confidence:0.5,roi:0.35,wasteReduction:0.4,risk:-0.2}},
+      {id:'routeScope',label:'Route Optimization Scope',min:1,max:3,value:1,step:1,unit:'',options:['Regional','National','Global'],impact:{confidence:-0.3,roi:0.4,deliveryWindow:-0.5,wasteReduction:0.3}},
+      {id:'sensorDensity',label:'IoT Sensor Density',min:1,max:5,value:2,step:1,unit:'x',options:['1x Baseline','2x Standard','3x Enhanced','4x Dense','5x Full Coverage'],impact:{confidence:0.25,wasteReduction:0.5,risk:-0.35,deliveryWindow:-0.2}},
+      {id:'partnerInteg',label:'Partner API Integration',min:10,max:100,value:25,step:5,unit:'%',impact:{confidence:0.2,deliveryWindow:-0.3,roi:0.15,risk:-0.15}}
+    ],
+    kpis: [
+      {id:'confidence',label:'Forecast Accuracy',base:72,unit:'%',color:'var(--accent)'},
+      {id:'roi',label:'Margin per Bushel',base:8,unit:'¢',color:'var(--blue)'},
+      {id:'deliveryWindow',label:'Delivery Window',base:96,unit:' hrs',color:'var(--gold)',invert:true},
+      {id:'risk',label:'Spoilage Risk',base:68,unit:'',color:'var(--red)',invert:true},
+      {id:'wasteReduction',label:'Waste Reduction',base:4,unit:'%',color:'var(--cyan)'},
+      {id:'velocity',label:'Throughput Index',base:52,unit:'',color:'var(--purple)'},
+      {id:'custSat',label:'Partner Satisfaction',base:64,unit:'%',color:'var(--accent)'},
+      {id:'complexity',label:'Ops Complexity',base:71,unit:'',color:'var(--gold)',invert:true}
+    ],
+    visibleKpis: ['confidence','roi','deliveryWindow','risk'],
+    coach: [
+      {cond:function(s){return s.forecastAI>=30&&s.sensorDensity>=3},msg:'! AI forecast + dense IoT sensor mesh creates a predictive logistics advantage! Cargill competitors still rely on 48-hr lagging indicators — you\'re operating at near real-time.',type:'suggestion'},
+      {cond:function(s){return s.routeScope>=3&&s.partnerInteg<=40},msg:'! Global route optimization without deep partner API integration creates blind spots. 62% of grain logistics delays originate at partner handoff points.',type:'alert'},
+      {cond:function(s){return s.forecastAI>=25&&s.routeScope<=2},msg:'High AI investment with regional scope — efficient capital deployment! You\'re building forecasting depth before expanding breadth.',type:'pattern'},
+      {cond:function(s){return s.sensorDensity>=4},msg:'! Dense sensor coverage unlocks predictive spoilage detection — Cargill\'s grain loss drops below 1.2% at this density, vs industry average 3.8%.',type:'suggestion'},
+      {cond:function(s){return s.partnerInteg>=60&&s.routeScope>=2},msg:'! Strong partner integration + broad route scope enables end-to-end visibility. This configuration typically reduces delivery variance by 34%.',type:'suggestion'},
+      {cond:function(s){return s.forecastAI<=15},msg:'AI forecast investment is below the effectiveness threshold. Models need at least 20% allocation to outperform traditional statistical methods.',type:'alert'},
+      {cond:function(s){return s.sensorDensity<=2&&s.routeScope>=3},msg:'Low sensor density with global scope creates data gaps. Consider increasing IoT coverage before expanding route optimization.',type:'alert'},
+      {cond:function(s){return s.forecastAI>=35&&s.sensorDensity>=4&&s.partnerInteg>=60},msg:'! Optimal configuration detected. This tri-factor combination (AI + Sensors + Partners) historically delivers 2.4x ROI vs single-lever approaches at Cargill scale.',type:'suggestion'}
+    ]
+  },
+  nutrition: {
+    title: 'Animal Nutrition Portfolio Expansion',
+    simTitle: 'Design the Nutrition Strategy',
+    simDesc: 'Calibrate Cargill\'s precision nutrition R&D portfolio. Each parameter affects livestock outcomes, formulation costs, and sustainability — the AI models every trade-off in real time!',
+    sliders: [
+      {id:'rdBudget',label:'R&D Budget',min:2,max:20,value:5,step:1,unit:'M',prefix:'$',impact:{confidence:0.4,roi:0.25,risk:-0.2,velocity:0.3}},
+      {id:'trialScale',label:'Field Trial Scale',min:1,max:3,value:1,step:1,unit:'',options:['Pilot (3 farms)','Regional (18 farms)','National (50+ farms)'],impact:{confidence:0.35,roi:0.2,risk:-0.3,custSat:0.25}},
+      {id:'aiFormulation',label:'AI Formulation Engine',min:1,max:5,value:2,step:1,unit:'',options:['Rule-Based','ML-Assisted','Deep Learning','Multi-Objective AI','Autonomous AI'],impact:{confidence:0.3,roi:0.35,velocity:0.2,complexity:0.3}},
+      {id:'sustainFocus',label:'Sustainability Weight',min:5,max:50,value:10,step:5,unit:'%',impact:{custSat:0.5,roi:-0.1,risk:-0.15,confidence:0.1}}
+    ],
+    kpis: [
+      {id:'confidence',label:'Formulation Accuracy',base:64,unit:'%',color:'var(--accent)'},
+      {id:'roi',label:'Cost Savings / Ton',base:8,unit:'',prefix:'$',color:'var(--blue)'},
+      {id:'velocity',label:'Trial Velocity',base:3,unit:' /qtr',color:'var(--gold)'},
+      {id:'risk',label:'Regulatory Risk',base:58,unit:'',color:'var(--red)',invert:true},
+      {id:'custSat',label:'Livestock Health Score',base:71,unit:'',color:'var(--accent)'},
+      {id:'complexity',label:'Formulation Complexity',base:62,unit:'',color:'var(--gold)',invert:true},
+      {id:'wasteReduction',label:'Feed Waste Reduction',base:6,unit:'%',color:'var(--cyan)'},
+      {id:'deliveryWindow',label:'Time to Market',base:14,unit:' mo',color:'var(--purple)',invert:true}
+    ],
+    visibleKpis: ['confidence','roi','velocity','risk'],
+    coach: [
+      {cond:function(s){return s.aiFormulation>=4&&s.rdBudget>=10},msg:'! Multi-objective AI formulation at this R&D budget unlocks breed-specific nutrition profiles — Cargill\'s competitive moat in precision nutrition! Industry peers are 18-24 months behind on this capability.',type:'suggestion'},
+      {cond:function(s){return s.trialScale>=2&&s.sustainFocus>=25},msg:'! Regional trials with high sustainability weight generates publishable ESG data. Cargill can position these results in annual sustainability reports — a tangible proof point for institutional investors.',type:'suggestion'},
+      {cond:function(s){return s.rdBudget<=6&&s.aiFormulation>=3},msg:'Advanced AI formulation without adequate R&D budget creates a data bottleneck. Models need diverse training data from well-funded trials to avoid overfitting.',type:'alert'},
+      {cond:function(s){return s.trialScale>=3&&s.rdBudget>=12},msg:'! National-scale trials at $12M+ budget puts Cargill in a dominant position. Only 2 competitors globally have this trial footprint — and neither has AI formulation at your selected level.',type:'suggestion'},
+      {cond:function(s){return s.sustainFocus>=30},msg:'! High sustainability weighting aligns with Cargill\'s 2030 commitment to 30% reduction in supply chain emissions. This formulation approach can contribute 4-6 percentage points toward that target.',type:'pattern'},
+      {cond:function(s){return s.aiFormulation<=2&&s.trialScale>=2},msg:'Rule-based formulation at scale generates high volume but low-insight data. Consider upgrading AI engine before expanding trial footprint.',type:'alert'},
+      {cond:function(s){return s.rdBudget>=15&&s.trialScale<=1},msg:'Significant R&D budget concentrated in pilot scale — consider expanding trials to validate formulations across diverse livestock populations and geographies.',type:'alert'},
+      {cond:function(s){return s.aiFormulation>=3&&s.sustainFocus>=20&&s.trialScale>=2},msg:'! This combination enables Cargill\'s "Nutrition-as-a-Service" model — AI-driven, sustainability-verified feed programs that command 22% premium pricing.',type:'suggestion'}
+    ]
+  },
+  sustainability: {
+    title: 'Sustainability Compliance Investment',
+    simTitle: 'Build the Compliance Strategy',
+    simDesc: 'Configure Cargill\'s ESG compliance infrastructure. Every parameter affects emissions tracking fidelity, regulatory readiness, and cost — the AI surfaces hidden trade-offs instantly!',
+    sliders: [
+      {id:'trackingInvest',label:'Emissions Tracking Budget',min:1,max:15,value:3,step:1,unit:'M',prefix:'$',impact:{confidence:0.45,roi:0.2,risk:-0.3,velocity:0.15}},
+      {id:'scopeDepth',label:'Scope 3 Coverage',min:1,max:3,value:1,step:1,unit:'',options:['Tier 1 Suppliers','Tier 1-2 Suppliers','Full Value Chain'],impact:{confidence:0.3,risk:-0.4,complexity:0.5,roi:-0.15}},
+      {id:'aiVerification',label:'AI Verification Engine',min:1,max:4,value:1,step:1,unit:'',options:['Manual Audit','Satellite + ML','Real-Time AI','Autonomous Verification'],impact:{confidence:0.4,roi:0.3,risk:-0.25,velocity:0.35}},
+      {id:'partnerOnboard',label:'Supplier Onboarding',min:5,max:100,value:15,step:5,unit:'% of suppliers',impact:{confidence:0.2,risk:-0.2,custSat:0.4,roi:0.1}}
+    ],
+    kpis: [
+      {id:'confidence',label:'Compliance Readiness',base:38,unit:'%',color:'var(--accent)'},
+      {id:'roi',label:'Penalty Avoidance',base:2,unit:'M',prefix:'$',color:'var(--blue)'},
+      {id:'risk',label:'Regulatory Exposure',base:82,unit:'',color:'var(--red)',invert:true},
+      {id:'velocity',label:'Reporting Speed',base:42,unit:'',color:'var(--gold)'},
+      {id:'custSat',label:'Supplier Trust Score',base:55,unit:'',color:'var(--accent)'},
+      {id:'complexity',label:'Integration Complexity',base:45,unit:'',color:'var(--gold)',invert:true},
+      {id:'wasteReduction',label:'Emissions Reduction',base:3,unit:'%',color:'var(--cyan)'},
+      {id:'deliveryWindow',label:'Audit Cycle Time',base:90,unit:' days',color:'var(--purple)',invert:true}
+    ],
+    visibleKpis: ['confidence','roi','risk','velocity'],
+    coach: [
+      {cond:function(s){return s.aiVerification>=3&&s.trackingInvest>=8},msg:'! Real-time AI verification at this investment level creates audit-proof compliance. Cargill becomes the first ag-commodity company with continuous ESG assurance — a massive credibility signal for EU regulators.',type:'suggestion'},
+      {cond:function(s){return s.scopeDepth>=3&&s.partnerOnboard<=30},msg:'! Full value chain scope with low supplier onboarding creates a dangerous gap. 73% of Cargill\'s scope 3 emissions originate beyond Tier 2 — you need supplier participation to measure them.',type:'alert'},
+      {cond:function(s){return s.trackingInvest>=10&&s.scopeDepth>=2},msg:'! Strong tracking investment + deep scope coverage positions Cargill ahead of the EU CSRD 2027 deadline by 18 months. Early compliance historically earns 15% lower audit costs and preferential regulatory treatment.',type:'suggestion'},
+      {cond:function(s){return s.partnerOnboard>=50&&s.aiVerification>=2},msg:'! 50%+ supplier onboarding with satellite ML verification creates a self-reinforcing data network. Each additional supplier improves verification accuracy by 0.3% across the entire network!',type:'suggestion'},
+      {cond:function(s){return s.aiVerification<=1&&s.scopeDepth>=2},msg:'Manual auditing at Tier 2+ scope is prohibitively expensive. At Cargill\'s supplier count (~14,000 Tier 1-2), manual verification costs 8x more than AI-assisted approaches.',type:'alert'},
+      {cond:function(s){return s.trackingInvest<=4},msg:'Emissions tracking budget below $4M creates material misstatement risk under SEC climate disclosure rules. Cargill\'s peer group (ADM, Bunge) is investing $8-12M.',type:'alert'},
+      {cond:function(s){return s.partnerOnboard>=70&&s.scopeDepth>=2&&s.aiVerification>=3},msg:'! This configuration enables "Verified Sustainable Sourcing" premium branding. CPG customers (Nestlé, Unilever, P&G) pay 8-14% more for verified deforestation-free commodities.',type:'suggestion'},
+      {cond:function(s){return s.trackingInvest>=6&&s.aiVerification>=2&&s.partnerOnboard>=40},msg:'! Balanced configuration detected. This approach covers 78% of emissions exposure at 40% of the cost of full manual audit — the optimal efficiency frontier for Cargill\'s current maturity.',type:'suggestion'}
+    ]
+  }
+};
 
-var VISIBLE_KPIS = ['confidence','roi','timeToMarket','risk'];
+var currentScenario = 'grain';
 
-var COACH_PATTERNS = [
-  {cond:function(s){return s.scope<=2&&s.budget<=55},msg:'You appear to be prioritizing speed over quality. Scope and budget are both conservative.',type:'pattern'},
-  {cond:function(s){return s.engineers>=8&&s.scope>=3},msg:'Your decisions indicate an aggressive delivery strategy. High team size with maximum scope requires careful coordination.',type:'alert'},
-  {cond:function(s){return s.budget>=70&&s.scope<=2},msg:'You consistently reduce scope before increasing budget — a capital-efficient approach.',type:'pattern'},
-  {cond:function(s){return s.uxInvest>=25},msg:'Your roadmap favors customer experience over engineering efficiency. UX investment is above 25%.',type:'suggestion'},
-  {cond:function(s){return s.engineers>=7&&s.scope<=2},msg:'Your current strategy is optimized for predictable delivery — strong team, focused scope.',type:'pattern'},
-  {cond:function(s){return s.budget>=60&&s.engineers>=7&&s.scope<=2},msg:'Excellent configuration. This balances execution risk with business value effectively.',type:'suggestion'},
-  {cond:function(s){return s.budget<=40},msg:'Budget constraint detected. Consider whether this limits your ability to capture market opportunity.',type:'alert'},
-  {cond:function(s){return s.uxInvest<=10&&s.scope>=3},msg:'Low UX investment with large scope may create usability debt. Users may struggle with feature density.',type:'alert'}
-];
+var SLIDERS, KPI_DEFS, VISIBLE_KPIS, COACH_PATTERNS;
+
+function loadScenario(key) {
+  var sc = SCENARIOS[key];
+  currentScenario = key;
+  SLIDERS = sc.sliders;
+  KPI_DEFS = sc.kpis;
+  VISIBLE_KPIS = sc.visibleKpis;
+  COACH_PATTERNS = sc.coach;
+
+  sliderState = {};
+  kpiState = {};
+  events = [];
+  sessionMinutes = 0;
+  changeCounts = {};
+  SLIDERS.forEach(function(s) { sliderState[s.id] = s.value; changeCounts[s.id] = 0; });
+  KPI_DEFS.forEach(function(k) { kpiState[k.id] = k.base; });
+
+  var titleEl = document.getElementById('sim-section-title');
+  var descEl = document.getElementById('sim-section-desc');
+  if (titleEl) titleEl.textContent = sc.simTitle;
+  if (descEl) descEl.textContent = sc.simDesc;
+
+  document.getElementById('stat-decisions').textContent = '0';
+  document.getElementById('stat-time').textContent = '0m';
+  document.getElementById('stat-confidence').textContent = KPI_DEFS[0].base + '%';
+  document.getElementById('stat-roi').textContent = '+0%';
+
+  var tl = document.getElementById('timeline');
+  if (tl) tl.innerHTML = '';
+
+  renderSliders();
+  renderKPIs();
+  updateCoach();
+  updateScores();
+  updateInsights();
+  updateNarrative();
+
+  if (!document.body.classList.contains('no-anim')) {
+    setTimeout(runAutoDemo, 400);
+  }
+}
 
 var SCORES = [
-  {name:'Strategic Thinking',base:62,desc:'Ability to balance multiple competing priorities while maintaining a coherent product vision.'},
+  {name:'Strategic Thinking',base:62,desc:'Ability to balance multiple competing priorities while maintaining a coherent strategic vision.'},
   {name:'Risk Management',base:55,desc:'How effectively decisions mitigate execution risk without sacrificing business opportunity.'},
   {name:'Investment Efficiency',base:68,desc:'Capital allocation effectiveness — achieving maximum outcome per unit of investment.'},
-  {name:'Execution Readiness',base:58,desc:'Team configuration and scope alignment for reliable, on-time delivery.'},
-  {name:'Innovation Balance',base:60,desc:'Balancing novel features with proven approaches to manage uncertainty.'},
-  {name:'Customer Focus',base:52,desc:'Degree to which decisions prioritize end-user experience and satisfaction.'},
-  {name:'Engineering Sustainability',base:65,desc:'Whether team size, workload, and complexity support long-term engineering health.'},
+  {name:'Execution Readiness',base:58,desc:'Configuration and scope alignment for reliable, on-time delivery.'},
+  {name:'Innovation Balance',base:60,desc:'Balancing novel AI capabilities with proven approaches to manage uncertainty.'},
+  {name:'Stakeholder Focus',base:52,desc:'Degree to which decisions prioritize end-stakeholder experience and satisfaction.'},
+  {name:'Operational Sustainability',base:65,desc:'Whether resource allocation and complexity support long-term operational health.'},
   {name:'Business Alignment',base:60,desc:'Alignment between strategy decisions and core business objectives.'}
 ];
 
@@ -1108,8 +1288,7 @@ var changeCounts = {};
 var currentLMSlide = 0;
 var totalLMSlides = 13;
 
-SLIDERS.forEach(function(s) { sliderState[s.id] = s.value; changeCounts[s.id] = 0; });
-KPI_DEFS.forEach(function(k) { kpiState[k.id] = k.base; });
+// Initial load happens in loadScenario() below
 
 function getMostChanged() {
   var max = 0, name = 'Budget';
@@ -1239,8 +1418,11 @@ function onSliderChange(id, prev, next) {
   events.push(evt);
   document.getElementById('stat-decisions').textContent = events.length;
   document.getElementById('stat-time').textContent = sessionMinutes + 'm';
-  document.getElementById('stat-confidence').textContent = kpiState.confidence + '%';
-  document.getElementById('stat-roi').textContent = '+' + (kpiState.roi - KPI_DEFS.find(function(k){return k.id==='roi'}).base) + '%';
+  var confKpi = KPI_DEFS.find(function(k){return k.id==='confidence'});
+  document.getElementById('stat-confidence').textContent = kpiState.confidence + (confKpi ? confKpi.unit : '%');
+  var roiKpi = KPI_DEFS.find(function(k){return k.id==='roi'});
+  var roiDelta = roiKpi ? kpiState.roi - roiKpi.base : 0;
+  document.getElementById('stat-roi').textContent = '+' + roiDelta + (roiKpi ? roiKpi.unit : '%');
   document.getElementById('sim-clock').textContent = time;
   addTimelineEvent(evt, events.length - 1);
   updateCoach();
@@ -1356,15 +1538,24 @@ function showCompare(before, after) {
 function updateScores() {
   var container = document.getElementById('scorecard');
   var s = sliderState;
+  var ids = SLIDERS.map(function(sl){return sl.id});
+  var norms = {};
+  SLIDERS.forEach(function(sl){
+    norms[sl.id] = (s[sl.id] - sl.min) / (sl.max - sl.min);
+  });
+  var avgNorm = 0;
+  ids.forEach(function(id){ avgNorm += norms[id]; });
+  avgNorm /= ids.length;
+
   var modifiers = {
-    'Strategic Thinking': (s.scope <= 2 ? 15 : -5) + (s.budget >= 60 ? 8 : 0),
-    'Risk Management': (s.scope <= 2 ? 12 : -8) + (s.engineers >= 7 ? 10 : 0),
-    'Investment Efficiency': (s.budget <= 60 ? 10 : -5) + (s.scope <= 2 ? 8 : 0),
-    'Execution Readiness': (s.engineers >= 7 ? 15 : 0) + (s.scope <= 2 ? 12 : -5),
-    'Innovation Balance': (s.scope >= 3 ? 10 : -5) + (s.uxInvest >= 20 ? 8 : 0),
-    'Customer Focus': (s.uxInvest >= 20 ? 20 : 0) + (s.uxInvest >= 30 ? 10 : 0),
-    'Engineering Sustainability': (s.engineers >= 7 ? 10 : -5) + (s.scope <= 2 ? 12 : -8),
-    'Business Alignment': (s.budget >= 60 ? 8 : -3) + (s.scope <= 2 ? 5 : 0) + (s.engineers >= 6 ? 5 : 0)
+    'Strategic Thinking': Math.round((avgNorm - 0.3) * 40),
+    'Risk Management': Math.round((norms[ids[0]] || 0) * 20 + (1 - (norms[ids[1]] || 0.5)) * 15 - 10),
+    'Investment Efficiency': Math.round((1 - avgNorm) * 15 + (norms[ids[0]] || 0) * 12 - 5),
+    'Execution Readiness': Math.round((norms[ids[2]] || 0) * 22 + (1 - (norms[ids[1]] || 0.5)) * 10 - 5),
+    'Innovation Balance': Math.round((norms[ids[2]] || 0) * 18 + (norms[ids[1]] || 0) * 8 - 5),
+    'Stakeholder Focus': Math.round((norms[ids[3]] || 0) * 28 + (norms[ids[2]] || 0) * 6),
+    'Operational Sustainability': Math.round((1 - (norms[ids[1]] || 0.5)) * 18 + (norms[ids[0]] || 0) * 10 - 5),
+    'Business Alignment': Math.round(avgNorm * 22 - 5)
   };
   container.innerHTML = SCORES.map(function(sc) {
     var score = Math.min(98, Math.max(20, sc.base + (modifiers[sc.name] || 0)));
@@ -1382,11 +1573,35 @@ function updateInsights() {
 
 function updateNarrative() {
   var n = document.getElementById('narrative');
+  var sc = SCENARIOS[currentScenario];
   var conf = kpiState.confidence;
-  var roi = kpiState.roi;
-  var baseConf = KPI_DEFS.find(function(k){return k.id==='confidence'}).base;
-  var scopeLabel = SLIDERS.find(function(s){return s.id==='scope'}).options[sliderState.scope - 1];
-  n.innerHTML = '<div class="narrative-title">Decision Evolution Report</div><p>The initial strategy focused on maximizing feature scope within a constrained timeline. With a <strong>₹50L budget</strong>, <strong>5 engineers</strong>, and <strong>Large scope</strong>, delivery confidence stood at just <strong>'+baseConf+'%</strong>.</p><p>As the simulation progressed, '+(events.length > 0 ? 'engineering capacity emerged as the primary constraint' : 'no changes have been made yet')+'. '+(sliderState.scope <= 2 ? 'Reducing scope from Large to <span class="highlight">'+scopeLabel+'</span> increased delivery confidence significantly.' : 'The current scope remains ambitious.')+'</p><p>'+(sliderState.engineers > 5 ? 'Adding '+(sliderState.engineers - 5)+' engineers further improved execution confidence while only marginally increasing delivery costs.' : 'The engineering team remains at baseline capacity.')+'</p><p>'+(sliderState.uxInvest > 10 ? 'Increasing UX investment to '+sliderState.uxInvest+'% resulted in an estimated <span class="highlight">'+Math.round((sliderState.uxInvest - 10) * 0.6)+'% improvement</span> in customer satisfaction.' : 'UX investment remains at baseline levels.')+'</p><p>The final strategy '+(conf > baseConf + 10 ? '<span class="highlight">balanced execution risk, business value, and expected ROI more effectively</span> than the original plan' : 'is still being shaped')+' — with delivery confidence at <strong>'+conf+'%</strong> and projected ROI at <strong>'+roi+'%</strong>. '+events.length+' strategic decisions were recorded across '+sessionMinutes+' minutes.</p>';
+  var confKpi = KPI_DEFS.find(function(k){return k.id==='confidence'});
+  var baseConf = confKpi.base;
+  var confDelta = conf - baseConf;
+  var roiKpi = KPI_DEFS.find(function(k){return k.id==='roi'});
+  var roi = roiKpi ? kpiState.roi : 0;
+
+  var sliderSummaries = SLIDERS.map(function(sl) {
+    var curr = sliderState[sl.id];
+    var orig = sl.value;
+    if (curr === orig) return null;
+    var currDisplay = sl.options ? sl.options[curr - 1] : (sl.prefix||'') + curr + sl.unit;
+    var origDisplay = sl.options ? sl.options[orig - 1] : (sl.prefix||'') + orig + sl.unit;
+    return '<strong>' + sl.label + '</strong> moved from ' + origDisplay + ' to <span class="highlight">' + currDisplay + '</span>';
+  }).filter(Boolean);
+
+  n.innerHTML = '<div class="narrative-title">Decision Evolution Report — ' + sc.title + '</div>' +
+    '<p>The simulation began with baseline parameters for Cargill\'s <strong>' + sc.title.toLowerCase() + '</strong> initiative. ' + confKpi.label + ' started at <strong>' + baseConf + confKpi.unit + '</strong>.</p>' +
+    (sliderSummaries.length > 0 ?
+      '<p>Over ' + events.length + ' strategic decisions, the following changes were made: ' + sliderSummaries.join('; ') + '.</p>' :
+      '<p>No changes have been made yet. Move the sliders above to begin shaping strategy.</p>') +
+    (confDelta > 5 ?
+      '<p>' + confKpi.label + ' improved by <span class="highlight">+' + confDelta + confKpi.unit + '</span> — a significant strategic gain driven by balanced parameter optimization.</p>' : '') +
+    '<p>The current strategy configuration ' +
+    (confDelta > 15 ? '<span class="highlight">represents a substantial improvement</span> over the initial baseline' : 'is still being refined') +
+    ' — with ' + confKpi.label + ' at <strong>' + conf + confKpi.unit + '</strong>' +
+    (roiKpi ? ' and ' + roiKpi.label + ' at <strong>' + roi + roiKpi.unit + '</strong>' : '') +
+    '. ' + events.length + ' decisions were recorded across ' + sessionMinutes + ' minutes.</p>';
 }
 
 function renderLeadershipSlides() {
@@ -1649,14 +1864,21 @@ function observeFadeUps() {
 }
 
 function runAutoDemo() {
-  var demoSteps = [
-    {id:'budget',value:70},
-    {id:'scope',value:2},
-    {id:'engineers',value:7},
-    {id:'uxInvest',value:25},
-    {id:'budget',value:80},
-    {id:'engineers',value:8}
-  ];
+  var demoStepsMap = {
+    grain: [
+      {id:'forecastAI',value:25},{id:'routeScope',value:2},{id:'sensorDensity',value:4},
+      {id:'partnerInteg',value:55},{id:'forecastAI',value:40},{id:'routeScope',value:3}
+    ],
+    nutrition: [
+      {id:'rdBudget',value:10},{id:'trialScale',value:2},{id:'aiFormulation',value:4},
+      {id:'sustainFocus',value:25},{id:'rdBudget',value:15},{id:'trialScale',value:3}
+    ],
+    sustainability: [
+      {id:'trackingInvest',value:8},{id:'scopeDepth',value:2},{id:'aiVerification',value:3},
+      {id:'partnerOnboard',value:50},{id:'trackingInvest',value:12},{id:'scopeDepth',value:3}
+    ]
+  };
+  var demoSteps = demoStepsMap[currentScenario] || demoStepsMap.grain;
   var step = 0;
   var interval = setInterval(function() {
     if (step >= demoSteps.length) { clearInterval(interval); return; }
@@ -1682,17 +1904,19 @@ function runAutoDemo() {
    INIT
    ════════════════════════════════ */
 
-renderSliders();
-renderKPIs();
-updateCoach();
-updateScores();
-updateInsights();
-updateNarrative();
+loadScenario('grain');
 renderLeadershipSlides();
 renderExportSections();
 observeFadeUps();
 
-setTimeout(runAutoDemo, 600);
+// Scenario radio listener
+document.querySelectorAll('.scenario-radio').forEach(function(radio) {
+  radio.addEventListener('change', function() {
+    document.body.classList.remove('no-anim');
+    loadScenario(this.value);
+  });
+});
+
 setTimeout(function(){
   document.body.classList.add('no-anim');
   document.querySelectorAll('.fade-up').forEach(function(el){ el.classList.add('visible'); });
