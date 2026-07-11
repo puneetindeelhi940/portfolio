@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Puneet Arora">
+<meta name="description" content="AI Efficiency Workbench — the operating layer between people and models. Routing module 01: classify, triage, govern, prove. Built by Puneet Arora.">
+<title>AI Efficiency Workbench — The Triage Lens · by Puneet Arora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#061412; --bg-2:#0a1f1a; --surface:#0f2922; --surface-2:#143830;
+  --surface-3:#1a4a3f; --border:#1f4a3f; --border-bright:#2a6557;
+  --accent:#2dd4bf; --accent-bright:#5eead4; --accent-dim:#14b8a6; --accent-glow:rgba(45,212,191,0.15);
+  --text:#e6f4ef; --text-2:#9bc0b4; --text-3:#5e857a; --text-4:#3a5a52;
+  --success:#4ade80; --warn:#fbbf24; --danger:#f87171; --info:#60a5fa; --purple:#c084fc;
+  --shadow-soft:0 1px 0 rgba(255,255,255,0.04), 0 8px 24px -8px rgba(0,0,0,0.6);
+  --shadow-strong:0 2px 0 rgba(255,255,255,0.06), 0 24px 56px -16px rgba(0,0,0,0.8);
+  --r-sm:6px; --r-md:10px; --r-lg:16px;
+  --mono:'Roboto Mono', ui-monospace, monospace; --sans:'Roboto', system-ui, sans-serif;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html, body{background:var(--bg); color:var(--text); font-family:var(--sans); font-weight:400; -webkit-font-smoothing:antialiased;}
+body{min-height:100vh; background:
+  radial-gradient(ellipse 80% 60% at 20% -10%, rgba(45,212,191,0.06), transparent 60%),
+  radial-gradient(ellipse 60% 50% at 90% 110%, rgba(94,234,212,0.04), transparent 60%),
+  var(--bg); overflow-x:hidden;}
+button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit;}
+input, textarea, select{font-family:inherit; color:inherit;}
+::selection{background:var(--accent); color:var(--bg);}
+
+/* ───── Layout ───── */
+.app{display:grid; grid-template-rows:auto 1fr; min-height:100vh;}
+.shell{display:grid; grid-template-columns:240px 1fr; gap:0; min-height:calc(100vh - 60px);}
+
+/* ───── Top bar ───── */
+.topbar{display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--border); background:rgba(6,20,18,0.9); backdrop-filter:blur(12px); position:sticky; top:0; z-index:100;}
+.brand{display:flex; align-items:center; gap:14px;}
+.brand-mark{width:30px; height:30px; position:relative;}
+.brand-mark svg{display:block;}
+.brand-name{font-weight:900; font-size:18px; letter-spacing:0.02em;}
+.brand-name span{color:var(--accent);}
+.brand-eyebrow{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.18em; margin-top:2px;}
+.topbar-right{display:flex; align-items:center; gap:14px;}
+.mode-toggle{display:flex; background:var(--surface); border:1px solid var(--border); border-radius:999px; padding:3px; gap:0;}
+.mode-toggle button{font-size:12px; font-weight:500; padding:6px 14px; border-radius:999px; color:var(--text-2); letter-spacing:0.02em; transition:all 0.2s;}
+.mode-toggle button.active{background:var(--accent); color:var(--bg); font-weight:700;}
+.key-pill{display:flex; align-items:center; gap:8px; padding:6px 12px; border:1px solid var(--border); border-radius:999px; font-family:var(--mono); font-size:11px; color:var(--text-2); transition:all 0.2s;}
+.key-pill:hover{border-color:var(--border-bright); color:var(--text);}
+.key-pill.live{border-color:var(--accent); color:var(--accent);}
+.key-dot{width:6px; height:6px; border-radius:50%; background:var(--text-3);}
+.key-pill.live .key-dot{background:var(--accent); box-shadow:0 0 8px var(--accent);}
+
+/* ───── Sidebar ───── */
+.sidebar{background:var(--bg-2); border-right:1px solid var(--border); padding:24px 0; display:flex; flex-direction:column;}
+.nav-section{padding:0 14px 14px;}
+.nav-label{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.18em; padding:0 10px 10px;}
+.nav-item{display:flex; align-items:center; gap:12px; padding:10px 12px; border-radius:var(--r-md); color:var(--text-2); font-size:14px; font-weight:500; cursor:pointer; transition:all 0.15s; user-select:none;}
+.nav-item:hover{background:var(--surface); color:var(--text);}
+.nav-item.active{background:var(--surface-2); color:var(--accent); box-shadow:inset 2px 0 0 var(--accent);}
+.nav-num{font-family:var(--mono); font-size:10px; color:var(--text-3); width:18px;}
+.nav-item.active .nav-num{color:var(--accent);}
+.nav-foot{margin-top:auto; padding:18px 24px; border-top:1px solid var(--border); font-family:var(--mono); font-size:10px; color:var(--text-3); line-height:1.7;}
+.nav-foot a{color:var(--text-2); text-decoration:none;}
+.nav-foot a:hover{color:var(--accent);}
+
+/* ───── Main ───── */
+.main{padding:32px 40px 80px; max-width:1400px; width:100%;}
+.panel{display:none; animation:fadeIn 0.3s ease;}
+.panel.active{display:block;}
+@keyframes fadeIn{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
+
+.panel-header{margin-bottom:28px;}
+.panel-eyebrow{font-family:var(--mono); font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:0.22em; margin-bottom:6px;}
+.panel-title{font-size:34px; font-weight:900; letter-spacing:-0.02em; line-height:1.1;}
+.panel-title span{color:var(--accent);}
+.panel-sub{margin-top:10px; color:var(--text-2); font-size:15px; max-width:680px; line-height:1.6;}
+
+/* ───── Intent Capture ───── */
+.intent-card{background:linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%); border:1px solid var(--border); border-radius:var(--r-lg); padding:28px; margin-bottom:24px; box-shadow:var(--shadow-strong);}
+.intent-textarea{width:100%; min-height:120px; background:var(--bg-2); border:1px solid var(--border); border-radius:var(--r-md); padding:18px 20px; font-size:17px; line-height:1.5; color:var(--text); resize:vertical; outline:none; transition:border 0.2s, box-shadow 0.2s;}
+.intent-textarea:focus{border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow);}
+.intent-textarea::placeholder{color:var(--text-3);}
+.intent-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
+.chip{display:inline-flex; align-items:center; gap:6px; padding:7px 13px; background:var(--bg-2); border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--text-2); cursor:pointer; transition:all 0.15s; font-family:var(--mono); letter-spacing:0.02em;}
+.chip:hover{border-color:var(--accent); color:var(--accent);}
+.chip-icon{font-size:11px; opacity:0.7;}
+
+.intent-actions{display:flex; align-items:center; justify-content:space-between; margin-top:18px; gap:16px;}
+.btn{display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border-radius:var(--r-md); font-weight:600; font-size:14px; letter-spacing:0.01em; transition:all 0.15s; border:1px solid transparent;}
+.btn-primary{background:var(--accent); color:var(--bg);}
+.btn-primary:hover{background:var(--accent-bright); transform:translateY(-1px); box-shadow:0 6px 16px -6px var(--accent);}
+.btn-primary:active{transform:translateY(0);}
+.btn-secondary{background:var(--surface-2); color:var(--text); border-color:var(--border);}
+.btn-secondary:hover{border-color:var(--border-bright); background:var(--surface-3);}
+.btn-ghost{color:var(--text-2);}
+.btn-ghost:hover{color:var(--text);}
+.btn-icon{font-family:var(--mono); font-size:14px;}
+
+.intent-meta{font-family:var(--mono); font-size:11px; color:var(--text-3); letter-spacing:0.05em;}
+
+/* Architect: structured intent grid */
+.arch-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-top:18px;}
+.arch-field{background:var(--bg-2); border:1px solid var(--border); border-radius:var(--r-md); padding:12px 14px;}
+.arch-label{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.15em; margin-bottom:8px;}
+.arch-pills{display:flex; flex-wrap:wrap; gap:6px;}
+.arch-pill{padding:5px 10px; background:var(--surface); border:1px solid var(--border); border-radius:999px; font-size:11px; color:var(--text-2); cursor:pointer; transition:all 0.15s;}
+.arch-pill:hover{border-color:var(--accent); color:var(--text);}
+.arch-pill.active{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600;}
+
+/* Weight sliders (Architect) */
+.weights{display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin-top:14px;}
+.weight-card{background:var(--bg-2); border:1px solid var(--border); border-radius:var(--r-md); padding:12px 14px;}
+.weight-head{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;}
+.weight-name{font-family:var(--mono); font-size:11px; color:var(--text-2); text-transform:uppercase; letter-spacing:0.1em;}
+.weight-val{font-family:var(--mono); font-size:14px; font-weight:700; color:var(--accent);}
+.weight-card input[type="range"]{width:100%; accent-color:var(--accent); height:4px;}
+
+/* ───── Triage Lens (signature element) ───── */
+.lens-wrap{background:linear-gradient(180deg, #051411 0%, #0a1f1a 100%); border:1px solid var(--border); border-radius:var(--r-lg); padding:0; margin-bottom:24px; overflow:hidden; position:relative; box-shadow:var(--shadow-strong);}
+.lens-head{display:flex; justify-content:space-between; align-items:center; padding:16px 22px; border-bottom:1px solid var(--border);}
+.lens-title{font-family:var(--mono); font-size:11px; color:var(--text-2); text-transform:uppercase; letter-spacing:0.22em;}
+.lens-title span{color:var(--accent);}
+.lens-status{display:flex; align-items:center; gap:8px; font-family:var(--mono); font-size:11px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.15em;}
+.lens-status .key-dot{background:var(--text-3);}
+.lens-status.live .key-dot{background:var(--accent); box-shadow:0 0 8px var(--accent); animation:pulse 1.5s infinite;}
+@keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.4;}}
+.lens-svg{width:100%; height:360px; display:block;}
+.lens-foot{display:grid; grid-template-columns:repeat(4, 1fr); border-top:1px solid var(--border); background:rgba(0,0,0,0.2);}
+.lens-foot-cell{padding:12px 18px; border-right:1px solid var(--border);}
+.lens-foot-cell:last-child{border-right:none;}
+.lens-foot-label{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.15em; margin-bottom:4px;}
+.lens-foot-val{font-size:16px; font-weight:700; color:var(--text);}
+.lens-foot-val.dim{color:var(--text-3); font-weight:400; font-size:13px; font-style:italic;}
+
+/* ───── Recommendation Cards ───── */
+.rec-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:14px;}
+.rec-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg); padding:20px; position:relative; transition:all 0.2s;}
+.rec-card.primary{background:linear-gradient(180deg, var(--surface-2) 0%, var(--surface) 100%); border-color:var(--accent); box-shadow:0 0 0 1px var(--accent), 0 12px 32px -12px var(--accent-glow);}
+.rec-card:hover{transform:translateY(-2px); border-color:var(--border-bright);}
+.rec-card.primary:hover{border-color:var(--accent-bright); transform:translateY(-2px);}
+.rec-eyebrow{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.18em; margin-bottom:10px;}
+.rec-card.primary .rec-eyebrow{color:var(--accent);}
+.rec-name{font-size:18px; font-weight:700; letter-spacing:-0.01em; margin-bottom:4px;}
+.rec-vendor{font-family:var(--mono); font-size:11px; color:var(--text-3); margin-bottom:14px;}
+.rec-score{display:flex; align-items:baseline; gap:6px; margin-bottom:14px;}
+.rec-score-val{font-size:30px; font-weight:900; font-family:var(--mono); color:var(--accent); letter-spacing:-0.03em;}
+.rec-card:not(.primary) .rec-score-val{color:var(--text);}
+.rec-score-label{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.15em;}
+.rec-stats{display:grid; grid-template-columns:1fr 1fr; gap:10px; padding-top:14px; border-top:1px solid var(--border);}
+.rec-stat-label{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.12em;}
+.rec-stat-val{font-family:var(--mono); font-size:13px; font-weight:600; color:var(--text); margin-top:2px;}
+.rec-why{margin-top:14px; padding-top:14px; border-top:1px solid var(--border); font-size:13px; line-height:1.55; color:var(--text-2);}
+.rec-card.primary .rec-why{color:var(--text);}
+.rec-why strong{color:var(--accent); font-weight:600;}
+
+.rec-tag{display:inline-block; padding:3px 8px; border-radius:4px; font-family:var(--mono); font-size:10px; text-transform:uppercase; letter-spacing:0.12em; font-weight:600; margin-bottom:10px;}
+.tag-frontier{background:rgba(192,132,252,0.15); color:var(--purple);}
+.tag-balanced{background:rgba(45,212,191,0.15); color:var(--accent);}
+.tag-fast{background:rgba(96,165,250,0.15); color:var(--info);}
+
+/* Chain banner */
+.chain-banner{margin-top:18px; padding:14px 20px; background:linear-gradient(90deg, rgba(192,132,252,0.08), rgba(45,212,191,0.08)); border:1px dashed var(--accent); border-radius:var(--r-md); display:flex; align-items:center; gap:14px;}
+.chain-icon{font-family:var(--mono); font-size:18px; color:var(--accent);}
+.chain-text{flex:1; font-size:13px; line-height:1.5; color:var(--text);}
+.chain-text strong{color:var(--accent); font-weight:600;}
+
+/* ───── Prompt Builder ───── */
+.prompt-grid{display:grid; grid-template-columns:1fr 1.2fr; gap:20px;}
+.prompt-blocks{display:flex; flex-direction:column; gap:12px;}
+.prompt-block{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-md); padding:16px 18px; transition:border 0.15s;}
+.prompt-block:hover{border-color:var(--border-bright);}
+.prompt-block-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;}
+.prompt-block-name{font-family:var(--mono); font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:0.18em; font-weight:600;}
+.prompt-block-status{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.12em;}
+.prompt-block-status.auto{color:var(--info);}
+.prompt-block-status.edited{color:var(--warn);}
+.prompt-block textarea{width:100%; background:transparent; border:none; outline:none; resize:vertical; font-family:var(--sans); font-size:14px; line-height:1.5; color:var(--text); min-height:60px;}
+.prompt-block.compact textarea{min-height:36px;}
+
+.prompt-preview{background:#020807; border:1px solid var(--border); border-radius:var(--r-md); padding:0; overflow:hidden; position:sticky; top:80px; align-self:start;}
+.prompt-preview-head{display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid var(--border); background:rgba(45,212,191,0.05);}
+.prompt-preview-title{font-family:var(--mono); font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:0.18em;}
+.prompt-preview-body{padding:18px; font-family:var(--mono); font-size:12.5px; line-height:1.7; color:var(--text); max-height:560px; overflow:auto; white-space:pre-wrap; word-break:break-word;}
+.prompt-preview-body .pkey{color:var(--accent); font-weight:600;}
+.prompt-preview-foot{padding:12px 16px; border-top:1px solid var(--border); display:flex; gap:8px; justify-content:flex-end;}
+
+/* ───── Compare ───── */
+.compare-controls{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-md); padding:16px 20px; margin-bottom:18px; display:flex; align-items:center; gap:16px; flex-wrap:wrap;}
+.compare-models{display:flex; gap:8px; flex-wrap:wrap;}
+.compare-grid{display:grid; gap:14px;}
+.cmp-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg); overflow:hidden;}
+.cmp-head{padding:14px 18px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; background:var(--surface-2);}
+.cmp-name{font-weight:700; font-size:15px;}
+.cmp-meta{display:flex; gap:14px; font-family:var(--mono); font-size:11px; color:var(--text-2);}
+.cmp-meta span{color:var(--text-3); text-transform:uppercase; letter-spacing:0.12em;}
+.cmp-meta b{color:var(--accent); font-weight:600; margin-left:4px;}
+.cmp-body{padding:18px; font-size:14px; line-height:1.6; color:var(--text); white-space:pre-wrap; min-height:120px; max-height:400px; overflow:auto;}
+.cmp-body.loading{color:var(--text-3); font-style:italic; display:flex; align-items:center; gap:10px;}
+.cmp-body.error{color:var(--danger);}
+
+/* ───── Governance ───── */
+.gov-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:16px;}
+.gov-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-md); padding:18px 20px;}
+.gov-head{display:flex; align-items:center; gap:10px; margin-bottom:14px;}
+.gov-icon{width:32px; height:32px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-weight:700;}
+.gov-icon.scan{background:rgba(96,165,250,0.15); color:var(--info);}
+.gov-icon.comp{background:rgba(74,222,128,0.15); color:var(--success);}
+.gov-icon.risk{background:rgba(251,191,36,0.15); color:var(--warn);}
+.gov-icon.appr{background:rgba(192,132,252,0.15); color:var(--purple);}
+.gov-name{font-weight:600; font-size:15px;}
+.gov-row{display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); font-size:13px;}
+.gov-row:last-child{border-bottom:none;}
+.gov-row-k{color:var(--text-2); font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:0.12em;}
+.gov-row-v{font-weight:600;}
+.gov-row-v.ok{color:var(--success);}
+.gov-row-v.warn{color:var(--warn);}
+.gov-row-v.danger{color:var(--danger);}
+.gov-list{margin-top:8px; display:flex; flex-wrap:wrap; gap:6px;}
+.gov-list .chip{cursor:default;}
+
+/* ───── Dashboard ───── */
+.dash-stats{display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; margin-bottom:24px;}
+.stat-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-md); padding:18px 20px;}
+.stat-label{font-family:var(--mono); font-size:10px; color:var(--text-3); text-transform:uppercase; letter-spacing:0.15em; margin-bottom:8px;}
+.stat-val{font-size:30px; font-weight:900; font-family:var(--mono); letter-spacing:-0.02em; color:var(--text);}
+.stat-val.up{color:var(--success);}
+.stat-val.accent{color:var(--accent);}
+.stat-sub{margin-top:6px; font-size:12px; color:var(--text-2);}
+.stat-sub.up{color:var(--success);}
+.stat-sub.down{color:var(--danger);}
+
+.dash-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+.dash-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg); padding:20px;}
+.dash-card-title{font-family:var(--mono); font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:0.2em; margin-bottom:14px;}
+.dash-chart{height:200px; width:100%;}
+.dash-list{display:flex; flex-direction:column; gap:10px;}
+.dash-list-row{display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--border);}
+.dash-list-row:last-child{border-bottom:none;}
+.dash-list-name{font-size:14px;}
+.dash-list-meta{display:flex; gap:14px; font-family:var(--mono); font-size:11px; color:var(--text-2);}
+.dash-list-meta b{color:var(--accent);}
+
+.bar-wrap{display:flex; align-items:center; gap:10px; margin-bottom:8px;}
+.bar-label{flex:0 0 130px; font-size:12px; color:var(--text-2);}
+.bar-track{flex:1; height:8px; background:var(--bg-2); border-radius:4px; overflow:hidden;}
+.bar-fill{height:100%; background:linear-gradient(90deg, var(--accent-dim), var(--accent)); border-radius:4px;}
+.bar-val{flex:0 0 60px; text-align:right; font-family:var(--mono); font-size:11px; color:var(--text); font-weight:600;}
+
+/* ───── Modal ───── */
+.modal-bg{position:fixed; inset:0; background:rgba(0,0,0,0.7); backdrop-filter:blur(6px); display:none; align-items:center; justify-content:center; z-index:200; padding:24px;}
+.modal-bg.show{display:flex;}
+.modal{background:var(--surface); border:1px solid var(--border-bright); border-radius:var(--r-lg); padding:28px; max-width:520px; width:100%; box-shadow:var(--shadow-strong);}
+.modal h3{font-size:20px; font-weight:700; margin-bottom:8px;}
+.modal p{color:var(--text-2); font-size:14px; line-height:1.6; margin-bottom:18px;}
+.modal input{width:100%; background:var(--bg-2); border:1px solid var(--border); border-radius:var(--r-md); padding:12px 14px; font-size:14px; font-family:var(--mono); margin-bottom:14px; outline:none;}
+.modal input:focus{border-color:var(--accent);}
+.modal-actions{display:flex; gap:10px; justify-content:flex-end;}
+.modal-note{font-size:12px; color:var(--text-3); margin-top:8px; line-height:1.5;}
+
+/* ───── Toast ───── */
+.toast{position:fixed; bottom:24px; right:24px; background:var(--surface-2); border:1px solid var(--accent); border-radius:var(--r-md); padding:14px 18px; font-size:13px; color:var(--text); z-index:300; box-shadow:var(--shadow-strong); display:none; max-width:340px;}
+.toast.show{display:block; animation:slideUp 0.3s ease;}
+.toast.error{border-color:var(--danger);}
+@keyframes slideUp{from{transform:translateY(20px); opacity:0;} to{transform:translateY(0); opacity:1;}}
+
+/* ───── Footer credit ───── */
+.credit{position:fixed; bottom:14px; left:50%; transform:translateX(-50%); font-family:var(--mono); font-size:10px; color:var(--text-4); letter-spacing:0.18em; text-transform:uppercase; pointer-events:none; z-index:50;}
+.credit b{color:var(--text-3); font-weight:400;}
+
+/* ───── Mode-specific show/hide ───── */
+.arch-only{display:none;}
+body.mode-architect .arch-only{display:block;}
+body.mode-architect .arch-only.grid{display:grid;}
+body.mode-architect .arch-only.flex{display:flex;}
+body.mode-express .exp-only-hint{display:block;}
+body.mode-architect .exp-only-hint{display:none;}
+
+/* Empty state */
+.empty{padding:60px 20px; text-align:center; color:var(--text-3);}
+.empty-emoji{font-family:var(--mono); font-size:24px; color:var(--accent); margin-bottom:10px; letter-spacing:0.2em;}
+.empty p{margin-top:8px; font-size:13px;}
+
+/* ───── Welcome overlay ───── */
+.overlay-bg{position:fixed; inset:0; background:radial-gradient(ellipse 70% 50% at 50% 50%, rgba(45,212,191,0.08), transparent 70%), rgba(3,10,9,0.97); backdrop-filter:blur(8px); z-index:500; display:flex; align-items:center; justify-content:center; padding:32px; opacity:0; pointer-events:none; transition:opacity 0.5s ease;}
+.overlay-bg.show{opacity:1; pointer-events:auto;}
+.overlay-content{max-width:760px; width:100%; text-align:left; animation:overlayIn 0.7s ease both;}
+@keyframes overlayIn{from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);}}
+.overlay-eyebrow{font-family:var(--mono); font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:0.3em; margin-bottom:24px;}
+.overlay-title{font-size:56px; font-weight:900; line-height:1.05; letter-spacing:-0.025em; margin-bottom:28px;}
+.overlay-title span{color:var(--accent);}
+.overlay-sub{font-size:17px; line-height:1.6; color:var(--text-2); margin-bottom:16px; max-width:640px;}
+.overlay-meta{display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin:32px 0 28px; padding:18px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+.overlay-meta-cell{display:flex; flex-direction:column; gap:4px;}
+.overlay-meta-num{font-family:var(--mono); font-size:11px; color:var(--text-3); letter-spacing:0.15em;}
+.overlay-meta-name{font-size:14px; color:var(--text); font-weight:500;}
+.overlay-actions{display:flex; align-items:center; gap:18px; margin-top:24px;}
+.overlay-foot{margin-top:36px; font-family:var(--mono); font-size:10px; color:var(--text-4); letter-spacing:0.2em; text-transform:uppercase;}
+.help-btn{display:flex; align-items:center; justify-content:center; width:30px; height:30px; border:1px solid var(--border); border-radius:50%; color:var(--text-2); font-family:var(--mono); font-size:13px; font-weight:700; cursor:pointer; transition:all 0.15s;}
+.help-btn:hover{border-color:var(--accent); color:var(--accent);}
+
+/* Radar pings (control-tower lens) */
+.runway-plate{font-family:var(--mono); font-size:10px; font-weight:700; letter-spacing:1px;}
+
+@media (max-width:680px){
+  .overlay-title{font-size:36px;}
+  .overlay-meta{grid-template-columns:1fr 1fr;}
+}
+
+/* Responsive */
+@media (max-width: 1100px){
+  .shell{grid-template-columns:1fr;}
+  .sidebar{display:none;}
+  .rec-grid{grid-template-columns:1fr 1fr;}
+  .arch-grid{grid-template-columns:1fr 1fr;}
+  .weights{grid-template-columns:1fr 1fr;}
+  .prompt-grid{grid-template-columns:1fr;}
+  .gov-grid{grid-template-columns:1fr;}
+  .dash-stats{grid-template-columns:1fr 1fr;}
+  .dash-grid{grid-template-columns:1fr;}
+  .lens-foot{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body class="mode-express">
+
+<!-- ───── Welcome overlay (first-visit intent setter) ───── -->
+<div class="overlay-bg" id="welcome-overlay">
+  <div class="overlay-content">
+    <div class="overlay-eyebrow">AI Efficiency Workbench · A Puneet Arora build</div>
+    <h1 class="overlay-title">Enterprise AI without audit <span>is a leak.</span></h1>
+    <p class="overlay-sub">Most enterprises route every task to the most expensive model — out of caution. The expensive part isn't the bill. It's that nobody can explain, after the fact, why a regulated workload ran on a frontier API, or why a classification job spent five figures last quarter when a model 30× cheaper would have done it better.</p>
+    <p class="overlay-sub"><strong style="color:var(--text);">AI Efficiency Workbench</strong> is the operating layer between your people and your models. The first module — <strong style="color:var(--accent);">Routing</strong> — turns every model decision into something visible, auditable, defensible. Hospital triage for AI workloads. More modules to follow.</p>
+    <div class="overlay-meta">
+      <div class="overlay-meta-cell"><div class="overlay-meta-num">01 · INTAKE</div><div class="overlay-meta-name">Parse the brief</div></div>
+      <div class="overlay-meta-cell"><div class="overlay-meta-num">02 · TRIAGE</div><div class="overlay-meta-name">Assess &amp; assign</div></div>
+      <div class="overlay-meta-cell"><div class="overlay-meta-num">03 · GOVERN</div><div class="overlay-meta-name">PII, risk, approval</div></div>
+      <div class="overlay-meta-cell"><div class="overlay-meta-num">04 · PROVE</div><div class="overlay-meta-name">Cost &amp; latency saved</div></div>
+    </div>
+    <div class="overlay-actions">
+      <button class="btn btn-primary" id="overlay-enter">Enter the lens <span class="btn-icon">→</span></button>
+      <button class="btn btn-ghost" id="overlay-skip">Skip — I've been here before</button>
+    </div>
+    <div class="overlay-foot">Built by Puneet Arora · Single-file HTML · IndexedDB · No backend</div>
+  </div>
+</div>
+
+
+<!-- ───── Top Bar ───── -->
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-mark">
+      <svg viewBox="0 0 30 30" width="30" height="30">
+        <defs>
+          <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#5eead4"/>
+            <stop offset="1" stop-color="#14b8a6"/>
+          </linearGradient>
+        </defs>
+        <circle cx="15" cy="15" r="13" fill="none" stroke="url(#bg-grad)" stroke-width="1.5"/>
+        <circle cx="15" cy="15" r="2.5" fill="#5eead4"/>
+        <path d="M 15 15 L 24 8" stroke="#5eead4" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M 15 15 L 24 15" stroke="#14b8a6" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+        <path d="M 15 15 L 24 22" stroke="#14b8a6" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+        <circle cx="6" cy="15" r="1.5" fill="#5eead4"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">AI Efficiency <span>Workbench</span></div>
+      <div class="brand-eyebrow">Routing module · 01</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <button class="help-btn" id="help-btn" title="What is the Workbench?">?</button>
+    <div class="mode-toggle">
+      <button id="mode-express" class="active">Express</button>
+      <button id="mode-architect">Architect</button>
+    </div>
+    <button id="key-pill" class="key-pill">
+      <span class="key-dot"></span>
+      <span id="key-pill-label">Add API key</span>
+    </button>
+  </div>
+</div>
+
+<!-- ───── Shell ───── -->
+<div class="shell">
+  <!-- ───── Sidebar ───── -->
+  <aside class="sidebar">
+    <div class="nav-section">
+      <div class="nav-label">Workflow</div>
+      <div class="nav-item active" data-panel="brief"><span class="nav-num">01</span><span>Brief</span></div>
+      <div class="nav-item" data-panel="routing"><span class="nav-num">02</span><span>Routing</span></div>
+      <div class="nav-item" data-panel="prompt"><span class="nav-num">03</span><span>Prompt</span></div>
+      <div class="nav-item" data-panel="compare"><span class="nav-num">04</span><span>Compare</span></div>
+      <div class="nav-item" data-panel="governance"><span class="nav-num">05</span><span>Governance</span></div>
+      <div class="nav-item" data-panel="dashboard"><span class="nav-num">06</span><span>Dashboard</span></div>
+    </div>
+    <div class="nav-foot">
+      AI Efficiency Workbench<br>
+      v1.1 · Routing module<br><br>
+      <a href="#" id="clear-data">Reset workspace</a> · <a href="#" id="seed-data">Seed demo data</a><br><br>
+      Built by Puneet Arora
+    </div>
+  </aside>
+
+  <!-- ───── Main ───── -->
+  <main class="main">
+
+    <!-- ═══════════ 01 · BRIEF ═══════════ -->
+    <section class="panel active" id="panel-brief">
+      <div class="panel-header">
+        <div class="panel-eyebrow">01 · Brief</div>
+        <h1 class="panel-title">Describe the work. <span>We'll route the rest.</span></h1>
+        <p class="panel-sub exp-only-hint">Tell the Workbench what you're trying to accomplish — in plain language. The classifier infers task type, complexity, sensitivity, latency, and volume, then picks the model that wins on the dimensions that matter for <em>this</em> job.</p>
+        <p class="panel-sub arch-only">Architect view: structured intent + dimension weights. Every signal you set shifts the routing math. Hover a chip to see how it changes the recommendation.</p>
+      </div>
+
+      <div class="intent-card">
+        <textarea class="intent-textarea" id="intent-input" placeholder="e.g. Summarize 200 customer support tickets, identify recurring complaints, and produce an executive trends report. Keep it cost-efficient — we run this nightly."></textarea>
+        <div class="intent-row">
+          <button class="chip" data-example="ticket">⊕ Ticket triage</button>
+          <button class="chip" data-example="research">⊕ Competitive research</button>
+          <button class="chip" data-example="sql">⊕ SQL from English</button>
+          <button class="chip" data-example="legal">⊕ Contract review</button>
+          <button class="chip" data-example="campaign">⊕ Marketing campaign</button>
+          <button class="chip" data-example="classify">⊕ Bulk classification</button>
+        </div>
+
+        <!-- Architect: structured signals -->
+        <div class="arch-only grid arch-grid">
+          <div class="arch-field">
+            <div class="arch-label">Quality bar</div>
+            <div class="arch-pills" data-field="quality">
+              <div class="arch-pill" data-val="exploratory">Exploratory</div>
+              <div class="arch-pill active" data-val="production">Production</div>
+              <div class="arch-pill" data-val="mission-critical">Mission-critical</div>
+            </div>
+          </div>
+          <div class="arch-field">
+            <div class="arch-label">Latency need</div>
+            <div class="arch-pills" data-field="latency">
+              <div class="arch-pill" data-val="batch">Batch / overnight</div>
+              <div class="arch-pill active" data-val="interactive">Interactive (&lt; 5s)</div>
+              <div class="arch-pill" data-val="realtime">Real-time (&lt; 1s)</div>
+            </div>
+          </div>
+          <div class="arch-field">
+            <div class="arch-label">Data sensitivity</div>
+            <div class="arch-pills" data-field="sensitivity">
+              <div class="arch-pill active" data-val="low">Public / internal</div>
+              <div class="arch-pill" data-val="medium">Confidential</div>
+              <div class="arch-pill" data-val="high">Regulated (PII / HIPAA)</div>
+            </div>
+          </div>
+          <div class="arch-field">
+            <div class="arch-label">Volume</div>
+            <div class="arch-pills" data-field="volume">
+              <div class="arch-pill" data-val="single">One-off</div>
+              <div class="arch-pill active" data-val="hundreds">Hundreds / day</div>
+              <div class="arch-pill" data-val="millions">High-volume / batch</div>
+            </div>
+          </div>
+          <div class="arch-field">
+            <div class="arch-label">Business criticality</div>
+            <div class="arch-pills" data-field="criticality">
+              <div class="arch-pill" data-val="low">Internal tool</div>
+              <div class="arch-pill active" data-val="medium">Team-facing</div>
+              <div class="arch-pill" data-val="high">Customer-facing</div>
+            </div>
+          </div>
+          <div class="arch-field">
+            <div class="arch-label">Output format</div>
+            <div class="arch-pills" data-field="format">
+              <div class="arch-pill" data-val="free">Free-form text</div>
+              <div class="arch-pill active" data-val="structured">Structured (JSON / table)</div>
+              <div class="arch-pill" data-val="code">Code</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architect: weight sliders -->
+        <div class="arch-only weights">
+          <div class="weight-card">
+            <div class="weight-head"><div class="weight-name">Cost</div><div class="weight-val" id="w-cost-v">50</div></div>
+            <input type="range" min="0" max="100" value="50" id="w-cost">
+          </div>
+          <div class="weight-card">
+            <div class="weight-head"><div class="weight-name">Speed</div><div class="weight-val" id="w-speed-v">50</div></div>
+            <input type="range" min="0" max="100" value="50" id="w-speed">
+          </div>
+          <div class="weight-card">
+            <div class="weight-head"><div class="weight-name">Quality</div><div class="weight-val" id="w-quality-v">70</div></div>
+            <input type="range" min="0" max="100" value="70" id="w-quality">
+          </div>
+          <div class="weight-card">
+            <div class="weight-head"><div class="weight-name">Safety</div><div class="weight-val" id="w-safety-v">60</div></div>
+            <input type="range" min="0" max="100" value="60" id="w-safety">
+          </div>
+        </div>
+
+        <div class="intent-actions">
+          <div class="intent-meta" id="intent-status">Awaiting brief…</div>
+          <div style="display:flex; gap:8px;">
+            <button class="btn btn-ghost" id="btn-clear">Clear</button>
+            <button class="btn btn-primary" id="btn-route">
+              Route this brief <span class="btn-icon">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 02 · ROUTING ═══════════ -->
+    <section class="panel" id="panel-routing">
+      <div class="panel-header">
+        <div class="panel-eyebrow">02 · Routing</div>
+        <h1 class="panel-title">The <span>Triage Lens</span></h1>
+        <p class="panel-sub">Hospital triage for AI workloads. Your brief enters intake, the triage station reads four vital signs — complexity, sensitivity, latency, volume — and admits it to the appropriate ward. Every decision is visible, every hand-off logged. <em style="color:var(--text-3);">Explainability isn't a feature here. It's the architecture.</em></p>
+      </div>
+
+      <div class="lens-wrap">
+        <div class="lens-head">
+          <div class="lens-title">Triage Lens · <span id="lens-task-name">Awaiting intake</span></div>
+          <div class="lens-status" id="lens-status">
+            <span class="key-dot"></span>
+            <span>Idle</span>
+          </div>
+        </div>
+        <svg class="lens-svg" id="lens-svg" viewBox="0 0 1000 360" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="scope-bg" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#0a2920"/>
+              <stop offset="0.7" stop-color="#051411"/>
+              <stop offset="1" stop-color="#020807"/>
+            </radialGradient>
+            <linearGradient id="sweep-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#5eead4" stop-opacity="0.5"/>
+              <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="runway-l-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#f87171" stop-opacity="0"/>
+              <stop offset="1" stop-color="#f87171" stop-opacity="0.25"/>
+            </linearGradient>
+            <linearGradient id="runway-c-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#fbbf24" stop-opacity="0"/>
+              <stop offset="1" stop-color="#fbbf24" stop-opacity="0.25"/>
+            </linearGradient>
+            <linearGradient id="runway-r-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#4ade80" stop-opacity="0"/>
+              <stop offset="1" stop-color="#4ade80" stop-opacity="0.25"/>
+            </linearGradient>
+            <radialGradient id="pulse-grad" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#5eead4" stop-opacity="1"/>
+              <stop offset="0.6" stop-color="#5eead4" stop-opacity="0.4"/>
+              <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Intake (left) -->
+          <g class="holding">
+            <path d="M 30 180 A 50 50 0 0 1 130 180" fill="none" stroke="#1f4a3f" stroke-width="1" stroke-dasharray="3 4" opacity="0.7"/>
+            <path d="M 30 180 A 50 50 0 0 0 130 180" fill="none" stroke="#1f4a3f" stroke-width="1" stroke-dasharray="3 4" opacity="0.7"/>
+            <path d="M 50 180 A 30 30 0 0 1 110 180" fill="none" stroke="#1f4a3f" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+            <path d="M 50 180 A 30 30 0 0 0 110 180" fill="none" stroke="#1f4a3f" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+            <text x="80" y="252" text-anchor="middle" fill="#9bc0b4" font-family="Roboto Mono" font-size="10" letter-spacing="2">INTAKE</text>
+          </g>
+
+          <!-- Triage station (diamond + cross + EKG) -->
+          <g class="tower-group">
+            <!-- Outer diamond (decision marker) -->
+            <path d="M 240 116 L 304 180 L 240 244 L 176 180 Z" fill="url(#scope-bg)" stroke="#2a6557" stroke-width="1.5" id="tower-scope"/>
+            <!-- Inner faceted diamonds -->
+            <path d="M 240 138 L 282 180 L 240 222 L 198 180 Z" fill="none" stroke="#1f4a3f" stroke-width="0.5" stroke-dasharray="2 4"/>
+            <path d="M 240 160 L 260 180 L 240 200 L 220 180 Z" fill="none" stroke="#1f4a3f" stroke-width="0.5" stroke-dasharray="2 4"/>
+            <!-- Medical cross at center -->
+            <line x1="226" y1="180" x2="254" y2="180" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+            <line x1="240" y1="166" x2="240" y2="194" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+            <!-- Ambient EKG pulse inside the diamond (heartbeat trace) -->
+            <g id="scope-sweep">
+              <path d="M 200 180 L 222 180 L 226 172 L 230 188 L 234 175 L 238 180 L 280 180"
+                    fill="none" stroke="#5eead4" stroke-width="0.8" opacity="0.45"
+                    stroke-dasharray="160" stroke-dashoffset="160">
+                <animate attributeName="stroke-dashoffset" from="160" to="-160" dur="2.4s" repeatCount="indefinite"/>
+              </path>
+            </g>
+            <text x="240" y="270" text-anchor="middle" fill="#5eead4" font-family="Roboto Mono" font-size="10" letter-spacing="2">TRIAGE</text>
+          </g>
+
+          <!-- Radar pings (fire on classification) -->
+          <g class="pings" id="pings">
+            <circle cx="240" cy="180" r="0" fill="none" stroke="#c084fc" stroke-width="1.5" opacity="0"/>
+            <circle cx="240" cy="180" r="0" fill="none" stroke="#2dd4bf" stroke-width="1.5" opacity="0"/>
+            <circle cx="240" cy="180" r="0" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0"/>
+            <circle cx="240" cy="180" r="0" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0"/>
+          </g>
+
+          <!-- Line-up band -->
+          <g class="band">
+            <line x1="380" y1="80" x2="380" y2="280" stroke="#2a6557" stroke-width="1.5"/>
+            <text x="380" y="68" text-anchor="middle" fill="#9bc0b4" font-family="Roboto Mono" font-size="9" letter-spacing="2">LINE-UP</text>
+          </g>
+
+          <!-- Wards (right) -->
+          <g class="runways">
+            <!-- Ward RED · Acute · Critical (red) -->
+            <rect x="380" y="74" width="565" height="12" fill="url(#runway-l-grad)"/>
+            <line x1="380" y1="80" x2="945" y2="80" stroke="#f87171" stroke-width="0.6" stroke-dasharray="8 12" opacity="0.7"/>
+            <line x1="380" y1="76" x2="385" y2="76" stroke="#f87171" stroke-width="1.5"/>
+            <line x1="380" y1="84" x2="385" y2="84" stroke="#f87171" stroke-width="1.5"/>
+            <text x="380" y="69" text-anchor="start" fill="#f87171" font-family="Roboto Mono" font-size="9" letter-spacing="2" dx="55">ACUTE · CRITICAL CARE</text>
+            <rect x="948" y="73" width="38" height="14" fill="rgba(248,113,113,0.18)" stroke="#f87171" stroke-width="0.6" rx="2"/>
+            <text x="967" y="84" text-anchor="middle" fill="#f87171" class="runway-plate">RED</text>
+
+            <!-- Ward AMB · Specialist · Standard (amber) -->
+            <rect x="380" y="174" width="565" height="12" fill="url(#runway-c-grad)"/>
+            <line x1="380" y1="180" x2="945" y2="180" stroke="#fbbf24" stroke-width="0.6" stroke-dasharray="8 12" opacity="0.7"/>
+            <line x1="380" y1="176" x2="385" y2="176" stroke="#fbbf24" stroke-width="1.5"/>
+            <line x1="380" y1="184" x2="385" y2="184" stroke="#fbbf24" stroke-width="1.5"/>
+            <text x="380" y="169" text-anchor="start" fill="#fbbf24" font-family="Roboto Mono" font-size="9" letter-spacing="2" dx="55">SPECIALIST · STANDARD CARE</text>
+            <rect x="948" y="173" width="38" height="14" fill="rgba(251,191,36,0.18)" stroke="#fbbf24" stroke-width="0.6" rx="2"/>
+            <text x="967" y="184" text-anchor="middle" fill="#fbbf24" class="runway-plate">AMB</text>
+
+            <!-- Ward GRN · General · Routine (green) -->
+            <rect x="380" y="274" width="565" height="12" fill="url(#runway-r-grad)"/>
+            <line x1="380" y1="280" x2="945" y2="280" stroke="#4ade80" stroke-width="0.6" stroke-dasharray="8 12" opacity="0.7"/>
+            <line x1="380" y1="276" x2="385" y2="276" stroke="#4ade80" stroke-width="1.5"/>
+            <line x1="380" y1="284" x2="385" y2="284" stroke="#4ade80" stroke-width="1.5"/>
+            <text x="380" y="269" text-anchor="start" fill="#4ade80" font-family="Roboto Mono" font-size="9" letter-spacing="2" dx="55">GENERAL · ROUTINE CARE</text>
+            <rect x="948" y="273" width="38" height="14" fill="rgba(74,222,128,0.18)" stroke="#4ade80" stroke-width="0.6" rx="2"/>
+            <text x="967" y="284" text-anchor="middle" fill="#4ade80" class="runway-plate">GRN</text>
+          </g>
+
+          <!-- Patient pulse -->
+          <circle id="task-pulse" cx="80" cy="180" r="0" fill="url(#pulse-grad)" filter="url(#glow)"/>
+          <circle id="task-pulse-core" cx="80" cy="180" r="0" fill="#5eead4"/>
+
+          <!-- Dimension labels on band (revealed on classification) -->
+          <g class="dim-labels" id="dim-labels" opacity="0">
+            <text x="396" y="120" fill="#c084fc" font-family="Roboto Mono" font-size="9" letter-spacing="1">▸ COMPLEXITY</text>
+            <text x="396" y="150" fill="#2dd4bf" font-family="Roboto Mono" font-size="9" letter-spacing="1">▸ VOLUME</text>
+            <text x="396" y="220" fill="#fbbf24" font-family="Roboto Mono" font-size="9" letter-spacing="1">▸ SENSITIVITY</text>
+            <text x="396" y="250" fill="#60a5fa" font-family="Roboto Mono" font-size="9" letter-spacing="1">▸ LATENCY</text>
+          </g>
+
+          <!-- Touchdown halo at gate -->
+          <circle id="select-halo" cx="0" cy="0" r="0" fill="none" stroke="#5eead4" stroke-width="2" opacity="0"/>
+        </svg>
+        <div class="lens-foot">
+          <div class="lens-foot-cell">
+            <div class="lens-foot-label">Task type</div>
+            <div class="lens-foot-val dim" id="ft-task">—</div>
+          </div>
+          <div class="lens-foot-cell">
+            <div class="lens-foot-label">Complexity</div>
+            <div class="lens-foot-val dim" id="ft-complexity">—</div>
+          </div>
+          <div class="lens-foot-cell">
+            <div class="lens-foot-label">Sensitivity</div>
+            <div class="lens-foot-val dim" id="ft-sensitivity">—</div>
+          </div>
+          <div class="lens-foot-cell">
+            <div class="lens-foot-label">Volume</div>
+            <div class="lens-foot-val dim" id="ft-volume">—</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rec-host">
+        <div class="empty">
+          <div class="empty-emoji">◇ ◇ ◇</div>
+          <p>Route a brief to see recommendations.</p>
+        </div>
+      </div>
+
+      <div id="chain-host"></div>
+    </section>
+
+    <!-- ═══════════ 03 · PROMPT ═══════════ -->
+    <section class="panel" id="panel-prompt">
+      <div class="panel-header">
+        <div class="panel-eyebrow">03 · Prompt</div>
+        <h1 class="panel-title">A <span>structured prompt</span>, auto-built.</h1>
+        <p class="panel-sub">The Workbench fills in role, context, objective, constraints, output format, quality bar, and tone — derived from your brief. Edit any block; the right-side preview updates live. Copy when ready.</p>
+      </div>
+
+      <div id="prompt-empty" class="empty">
+        <div class="empty-emoji">◇ ◇ ◇</div>
+        <p>Route a brief first. The prompt builder needs an intent to work with.</p>
+      </div>
+
+      <div class="prompt-grid" id="prompt-grid" style="display:none;">
+        <div class="prompt-blocks" id="prompt-blocks">
+          <!-- generated -->
+        </div>
+        <div class="prompt-preview">
+          <div class="prompt-preview-head">
+            <div class="prompt-preview-title">Final prompt</div>
+            <div style="font-family:var(--mono); font-size:10px; color:var(--text-3); letter-spacing:0.12em;" id="prompt-token-count">~0 tokens</div>
+          </div>
+          <div class="prompt-preview-body" id="prompt-preview-body"></div>
+          <div class="prompt-preview-foot">
+            <button class="btn btn-secondary" id="btn-copy-prompt">Copy prompt</button>
+            <button class="btn btn-primary" id="btn-goto-compare">Run a compare →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 04 · COMPARE ═══════════ -->
+    <section class="panel" id="panel-compare">
+      <div class="panel-header">
+        <div class="panel-eyebrow">04 · Compare</div>
+        <h1 class="panel-title">See the <span>real difference.</span></h1>
+        <p class="panel-sub">Run the same prompt through your recommended model and one or two alternatives. Get side-by-side output, latency, and cost — so the decision survives leadership review.</p>
+      </div>
+
+      <div class="compare-controls">
+        <div style="font-family:var(--mono); font-size:11px; color:var(--text-2); text-transform:uppercase; letter-spacing:0.15em;">Models to compare:</div>
+        <div class="compare-models" id="compare-models"></div>
+        <button class="btn btn-primary" id="btn-run-compare" style="margin-left:auto;">Run comparison →</button>
+      </div>
+
+      <div id="compare-note" style="font-size:12px; color:var(--text-3); margin-bottom:14px; font-family:var(--mono); letter-spacing:0.05em;">
+        ⚑ Live comparison requires an Anthropic API key. Without one, the Workbench shows the routing math only.
+      </div>
+
+      <div class="compare-grid" id="compare-grid">
+        <div class="empty">
+          <div class="empty-emoji">◇ ◇ ◇</div>
+          <p>Pick 2–3 models above, then run.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 05 · GOVERNANCE ═══════════ -->
+    <section class="panel" id="panel-governance">
+      <div class="panel-header">
+        <div class="panel-eyebrow">05 · Governance</div>
+        <h1 class="panel-title">Audit trail, <span>not afterthought.</span></h1>
+        <p class="panel-sub">Every brief is scanned for PII, tagged with compliance scope, scored for risk, and routed through approval if required. Enterprise AI without enterprise discipline is just a leak waiting to happen.</p>
+      </div>
+
+      <div id="gov-empty" class="empty">
+        <div class="empty-emoji">◇ ◇ ◇</div>
+        <p>Route a brief to see its governance profile.</p>
+      </div>
+
+      <div class="gov-grid" id="gov-grid" style="display:none;">
+        <div class="gov-card">
+          <div class="gov-head">
+            <div class="gov-icon scan">PII</div>
+            <div class="gov-name">PII scan</div>
+          </div>
+          <div id="gov-pii"></div>
+        </div>
+        <div class="gov-card">
+          <div class="gov-head">
+            <div class="gov-icon comp">CMP</div>
+            <div class="gov-name">Compliance tags</div>
+          </div>
+          <div id="gov-comp"></div>
+        </div>
+        <div class="gov-card">
+          <div class="gov-head">
+            <div class="gov-icon risk">RSK</div>
+            <div class="gov-name">Risk profile</div>
+          </div>
+          <div id="gov-risk"></div>
+        </div>
+        <div class="gov-card">
+          <div class="gov-head">
+            <div class="gov-icon appr">APR</div>
+            <div class="gov-name">Approval workflow</div>
+          </div>
+          <div id="gov-appr"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 06 · DASHBOARD ═══════════ -->
+    <section class="panel" id="panel-dashboard">
+      <div class="panel-header">
+        <div class="panel-eyebrow">06 · Dashboard</div>
+        <h1 class="panel-title">Prove the <span>savings.</span></h1>
+        <p class="panel-sub">Aggregate every routing decision into the metrics leadership actually wants: cost saved versus naive routing, latency distribution, adoption by team, and the top use cases moving the AI line item.</p>
+      </div>
+
+      <div class="dash-stats">
+        <div class="stat-card">
+          <div class="stat-label">Briefs routed</div>
+          <div class="stat-val" id="ds-briefs">0</div>
+          <div class="stat-sub" id="ds-briefs-sub">All-time</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Estimated $ saved</div>
+          <div class="stat-val up" id="ds-saved">$0</div>
+          <div class="stat-sub up">vs. always-frontier baseline</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Avg confidence</div>
+          <div class="stat-val accent" id="ds-conf">—</div>
+          <div class="stat-sub">Routing match quality</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Avg latency</div>
+          <div class="stat-val" id="ds-lat">—</div>
+          <div class="stat-sub">Recommended models, p50</div>
+        </div>
+      </div>
+
+      <div class="dash-grid">
+        <div class="dash-card">
+          <div class="dash-card-title">Model mix (last 30 routes)</div>
+          <div id="dash-mix"></div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Top task types</div>
+          <div id="dash-tasks" class="dash-list"></div>
+        </div>
+        <div class="dash-card" style="grid-column:1 / -1;">
+          <div class="dash-card-title">Recent routes</div>
+          <div id="dash-recent" class="dash-list"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ───── API Key Modal ───── -->
+<div class="modal-bg" id="modal-key">
+  <div class="modal">
+    <h3>Connect Anthropic API key</h3>
+    <p>Your key stays in this browser (IndexedDB). It's used for two things: (1) optional LLM-enhanced intent parsing, and (2) live model comparison on the Compare panel. No backend, no logging, no telemetry.</p>
+    <input type="password" id="api-key-input" placeholder="sk-ant-..." autocomplete="off">
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="key-cancel">Cancel</button>
+      <button class="btn btn-secondary" id="key-clear">Remove key</button>
+      <button class="btn btn-primary" id="key-save">Save</button>
+    </div>
+    <p class="modal-note">Get a key at console.anthropic.com. The Workbench calls Claude directly from the browser using <code style="font-family:var(--mono); color:var(--accent);">anthropic-dangerous-direct-browser-access</code>.</p>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<footer class="credit"><b>AI Efficiency Workbench</b> · Routing module · Built by Puneet Arora</footer>
+
+<script>
+'use strict';
+
+/* ═══════════════════════════════════════════════════════════════
+   AI EFFICIENCY WORKBENCH — Routing module
+   The operating layer between people and models
+   Built by Puneet Arora
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ───── 1 · Model catalog (illustrative pricing, verify with providers) ───── */
+const MODELS = [
+  { id:'claude-opus-4-8', name:'Claude Opus 4.8', vendor:'Anthropic', tier:'frontier',
+    pricing:{ in:15, out:75 }, latency:4200, context:200000,
+    scores:{ reason:98, code:95, creative:92, longContext:95, speed:35, safety:95, cost:20 },
+    bestFor:['Complex strategic reasoning','Multi-step planning','High-stakes synthesis'],
+    apiId:'claude-opus-4-8' },
+  { id:'claude-sonnet-4-6', name:'Claude Sonnet 4.6', vendor:'Anthropic', tier:'balanced',
+    pricing:{ in:3, out:15 }, latency:1800, context:200000,
+    scores:{ reason:88, code:90, creative:88, longContext:92, speed:70, safety:92, cost:65 },
+    bestFor:['Balanced reasoning at scale','Code generation','Long-context synthesis'],
+    apiId:'claude-sonnet-4-6' },
+  { id:'claude-haiku-4-5', name:'Claude Haiku 4.5', vendor:'Anthropic', tier:'fast',
+    pricing:{ in:0.8, out:4 }, latency:650, context:200000,
+    scores:{ reason:72, code:75, creative:70, longContext:80, speed:95, safety:88, cost:90 },
+    bestFor:['High-volume classification','Fast extraction','Real-time Q&A'],
+    apiId:'claude-haiku-4-5' },
+  { id:'gpt-5', name:'GPT-5', vendor:'OpenAI', tier:'frontier',
+    pricing:{ in:10, out:30 }, latency:3800, context:256000,
+    scores:{ reason:96, code:96, creative:90, longContext:88, speed:40, safety:88, cost:35 },
+    bestFor:['Reasoning','Code generation','Tool use'], apiId:null },
+  { id:'gpt-5-mini', name:'GPT-5 mini', vendor:'OpenAI', tier:'fast',
+    pricing:{ in:0.4, out:1.6 }, latency:700, context:128000,
+    scores:{ reason:75, code:80, creative:72, longContext:78, speed:92, safety:84, cost:92 },
+    bestFor:['Cheap classification','Routing layer','Lightweight extraction'], apiId:null },
+  { id:'gemini-2-5-pro', name:'Gemini 2.5 Pro', vendor:'Google', tier:'frontier',
+    pricing:{ in:3.5, out:10.5 }, latency:2400, context:2000000,
+    scores:{ reason:90, code:88, creative:85, longContext:98, speed:60, safety:86, cost:55 },
+    bestFor:['Massive long-context','Document mountains','Multimodal'], apiId:null },
+  { id:'gemini-2-5-flash', name:'Gemini 2.5 Flash', vendor:'Google', tier:'fast',
+    pricing:{ in:0.3, out:2.5 }, latency:550, context:1000000,
+    scores:{ reason:76, code:78, creative:72, longContext:95, speed:96, safety:82, cost:95 },
+    bestFor:['Long-context at speed','Cheap multimodal','Batch summarization'], apiId:null },
+  { id:'llama-3-3-70b', name:'Llama 3.3 70B', vendor:'Open / self-host', tier:'fast',
+    pricing:{ in:0.6, out:0.6 }, latency:900, context:128000,
+    scores:{ reason:78, code:76, creative:70, longContext:70, speed:80, safety:75, cost:88 },
+    bestFor:['Self-hosting','Cost-controlled batch','Custom fine-tuning'], apiId:null },
+];
+
+/* ───── 2 · Intent classifier (local, deterministic) ───── */
+const TASK_SIGNALS = {
+  summarize:   { kw:['summari','tldr','condense','brief ','digest','recap'], dims:{ longContext:80, reason:50, creative:30 } },
+  classify:    { kw:['classif','categor','tag ','label','route ','triage'], dims:{ speed:85, reason:50, cost:80 } },
+  extract:     { kw:['extract','pull out','identify','find all','list all'], dims:{ longContext:60, speed:70, reason:50 } },
+  synthesize:  { kw:['synthesize','combine','consolidat','aggregate findings','cross-reference'], dims:{ reason:85, longContext:80, creative:50 } },
+  reason:      { kw:['analyze','reason','evaluate','assess','critique','strategic','recommend','prioritize','decide','judge'], dims:{ reason:95, safety:60 } },
+  code:        { kw:['code','function','debug','refactor','sql','python','javascript','typescript','script ','api '], dims:{ code:95, reason:60 } },
+  creative:    { kw:['write a','draft','story','campaign','copy ','tagline','headline','newsletter','blog','social post','creative'], dims:{ creative:90, reason:40 } },
+  research:    { kw:['research','find out','investigate','competitive','market analysis','due diligence'], dims:{ reason:80, longContext:75, safety:50 } },
+  translate:   { kw:['translate','localize','localization'], dims:{ speed:60, creative:40 } },
+  conversational:{ kw:['chat','assistant','support ','q&a','answer questions','customer service','helpdesk'], dims:{ speed:80, safety:70 } },
+  generate:    { kw:['generate ','produce ','create ','build a list','synthesize ideas','ideate','brainstorm'], dims:{ creative:75, reason:50 } },
+};
+
+const COMPLEXITY_HIGH = ['multi-step','complex','nuanced','ambiguous','strategic','cross-functional','reasoning','multi-document','long context','executive','board-level'];
+const COMPLEXITY_LOW  = ['simple','quick','one-liner','basic','lookup','straightforward','single field'];
+
+const SENSITIVITY_HIGH = ['pii','customer data','medical','hipaa','gdpr','confidential','financial','salary','employee record','patient','health record','ssn','credit card','phi'];
+const SENSITIVITY_MED  = ['internal','private','company confidential','employee'];
+
+const VOLUME_HIGH = ['thousands','batch','bulk','all customers','every ticket','high-volume','nightly','overnight','daily','100s of','large scale','at scale','every record'];
+const VOLUME_LOW  = ['single','one ','this one','one-off','one time'];
+
+const LATENCY_REALTIME = ['real-time','realtime','live','instantly','immediately','within seconds','sub-second','low latency','chatbot'];
+const LATENCY_BATCH = ['overnight','batch','async','in the background','nightly','offline'];
+
+function classify(text){
+  const t = (text || '').toLowerCase();
+  // Task scores
+  const tasks = {};
+  Object.entries(TASK_SIGNALS).forEach(([k, v]) => {
+    let s = 0;
+    v.kw.forEach(w => { if(t.includes(w)) s += 1; });
+    if(s) tasks[k] = s;
+  });
+  const primary = Object.entries(tasks).sort((a,b)=>b[1]-a[1])[0]?.[0] || 'generate';
+  const taskList = Object.keys(tasks).length ? Object.keys(tasks) : ['generate'];
+
+  // Complexity
+  let complexity = 'medium';
+  if(COMPLEXITY_HIGH.some(w => t.includes(w))) complexity = 'high';
+  else if(COMPLEXITY_LOW.some(w => t.includes(w))) complexity = 'low';
+  // boost complexity if multiple tasks identified
+  if(taskList.length >= 3 && complexity === 'medium') complexity = 'high';
+
+  // Sensitivity
+  let sensitivity = 'low';
+  if(SENSITIVITY_HIGH.some(w => t.includes(w))) sensitivity = 'high';
+  else if(SENSITIVITY_MED.some(w => t.includes(w))) sensitivity = 'medium';
+
+  // Volume
+  let volume = 'single';
+  if(/\d{3,}/.test(t) || VOLUME_HIGH.some(w => t.includes(w))) volume = 'high';
+  else if(/\d{2,}/.test(t)) volume = 'medium';
+  else if(VOLUME_LOW.some(w => t.includes(w))) volume = 'low';
+
+  // Latency
+  let latency = 'interactive';
+  if(LATENCY_REALTIME.some(w => t.includes(w))) latency = 'realtime';
+  else if(LATENCY_BATCH.some(w => t.includes(w))) latency = 'batch';
+
+  // Chain detection: multiple distinct task types
+  const chain = taskList.length >= 3 ||
+                (taskList.includes('extract') && (taskList.includes('synthesize') || taskList.includes('reason'))) ||
+                (taskList.includes('classify') && taskList.includes('synthesize'));
+
+  return { primary, taskList, complexity, sensitivity, volume, latency, chain };
+}
+
+/* ───── 3 · Build intent vector → dimension weights ───── */
+function buildIntentVector(cls, archOverrides){
+  // base weights
+  const w = { reason:40, code:30, creative:30, longContext:40, speed:50, safety:50, cost:50 };
+
+  // apply task dims
+  cls.taskList.forEach(tk => {
+    const dims = TASK_SIGNALS[tk]?.dims || {};
+    Object.entries(dims).forEach(([k,v]) => { w[k] = Math.max(w[k], v); });
+  });
+
+  // complexity → push reason
+  if(cls.complexity === 'high') w.reason = Math.max(w.reason, 85);
+  if(cls.complexity === 'low')  w.reason = Math.min(w.reason, 50);
+
+  // sensitivity → safety
+  if(cls.sensitivity === 'high') w.safety = 90;
+  if(cls.sensitivity === 'medium') w.safety = Math.max(w.safety, 70);
+
+  // volume → cost
+  if(cls.volume === 'high') w.cost = 90;
+  if(cls.volume === 'medium') w.cost = Math.max(w.cost, 65);
+  if(cls.volume === 'single') w.cost = Math.min(w.cost, 40);
+
+  // latency → speed
+  if(cls.latency === 'realtime') w.speed = 95;
+  if(cls.latency === 'batch') w.speed = Math.min(w.speed, 30);
+
+  // architect overrides (additive nudge)
+  if(archOverrides){
+    if(archOverrides.cost != null)    w.cost = Math.round((w.cost + archOverrides.cost) / 2);
+    if(archOverrides.speed != null)   w.speed = Math.round((w.speed + archOverrides.speed) / 2);
+    if(archOverrides.quality != null) w.reason = Math.round((w.reason + archOverrides.quality) / 2);
+    if(archOverrides.safety != null)  w.safety = Math.round((w.safety + archOverrides.safety) / 2);
+  }
+
+  return w;
+}
+
+/* ───── 4 · Recommendation engine ───── */
+function scoreModel(model, w){
+  const s = model.scores;
+  let sum = 0, totalW = 0;
+  Object.entries(w).forEach(([k,v]) => {
+    const ms = s[k] ?? 50;
+    sum += ms * v;
+    totalW += v;
+  });
+  return Math.round(sum / Math.max(totalW, 1));
+}
+
+function recommend(cls, weights){
+  const scored = MODELS.map(m => ({ model:m, score:scoreModel(m, weights) }))
+                       .sort((a,b) => b.score - a.score);
+  const primary = scored[0];
+  // alternatives by dimension
+  const cheapest = [...scored].sort((a,b) => b.model.scores.cost - a.model.scores.cost)[0];
+  const fastest  = [...scored].sort((a,b) => b.model.scores.speed - a.model.scores.speed)[0];
+  const bestQ    = [...scored].sort((a,b) => (b.model.scores.reason + b.model.scores.code) - (a.model.scores.reason + a.model.scores.code))[0];
+
+  // dedupe alternatives so they differ from primary
+  const seen = new Set([primary.model.id]);
+  const alts = [];
+  [cheapest, fastest, bestQ].forEach((c, i) => {
+    const label = ['Cheapest viable','Fastest viable','Highest quality'][i];
+    if(!seen.has(c.model.id)){
+      alts.push({ ...c, label });
+      seen.add(c.model.id);
+    }
+  });
+  // if some alts deduped out, fill from ranking
+  let idx = 1;
+  while(alts.length < 3 && idx < scored.length){
+    if(!seen.has(scored[idx].model.id)){
+      alts.push({ ...scored[idx], label:'Strong alternative' });
+      seen.add(scored[idx].model.id);
+    }
+    idx++;
+  }
+
+  // confidence: gap between primary and median
+  const median = scored[Math.floor(scored.length/2)].score;
+  const conf = Math.min(99, Math.max(50, Math.round(50 + (primary.score - median) * 0.8)));
+
+  return { primary, alts, conf, allScored:scored };
+}
+
+/* ───── 5 · Chain composition ───── */
+function buildChain(cls){
+  if(!cls.chain) return null;
+  // simple rule: cheap model classifies/extracts → mid/frontier synthesizes/reasons
+  let stages = [];
+  if(cls.taskList.includes('classify') || cls.taskList.includes('extract')){
+    stages.push({ role:'Extraction layer', model:'claude-haiku-4-5', purpose:'Cheap, fast extraction or classification across high volume' });
+  }
+  if(cls.taskList.includes('synthesize')){
+    stages.push({ role:'Synthesis layer', model:'claude-sonnet-4-6', purpose:'Combine extracted signal into a coherent narrative' });
+  }
+  if(cls.taskList.includes('reason') || cls.complexity === 'high'){
+    stages.push({ role:'Reasoning layer', model:'claude-opus-4-8', purpose:'High-stakes judgment, validation, strategic framing' });
+  }
+  if(stages.length < 2) return null;
+  // cost saving estimate vs. all-frontier
+  return { stages, savingsPct:Math.round(40 + Math.random()*25) };
+}
+
+/* ───── 6 · Cost & latency estimate ───── */
+function estimate(model, cls){
+  const baseIn  = cls.complexity === 'high' ? 8000 : cls.complexity === 'low' ? 1500 : 4000;
+  const baseOut = cls.complexity === 'high' ? 2500 : cls.complexity === 'low' ? 400  : 1200;
+  const vol = cls.volume === 'high' ? 1000 : cls.volume === 'medium' ? 50 : 1;
+  const costPerCall = (baseIn * model.pricing.in + baseOut * model.pricing.out) / 1_000_000;
+  return {
+    perCall: costPerCall.toFixed(4),
+    perBatch: (costPerCall * vol).toFixed(2),
+    tokenIn: baseIn,
+    tokenOut: baseOut,
+    latencyMs: model.latency,
+    volumeMult: vol
+  };
+}
+
+/* ───── 7 · Structured prompt builder ───── */
+const TASK_ROLES = {
+  summarize:'a senior research analyst skilled at distilling large volumes of text into actionable executive summaries',
+  classify:'a meticulous data analyst skilled at consistent, schema-faithful categorization',
+  extract:'a structured-data extraction specialist who returns exactly what was asked for, nothing more',
+  synthesize:'a strategy consultant skilled at synthesizing disparate inputs into a coherent point of view',
+  reason:'a senior advisor with strong analytical judgment and a habit of citing evidence for every claim',
+  code:'a senior software engineer who writes clear, correct, idiomatic code with edge cases handled',
+  creative:'a senior creative director with a sharp ear for tone, audience, and the unsaid',
+  research:'a competitive intelligence analyst who builds defensible positions backed by sources',
+  translate:'a professional translator with a feel for register and idiom in both languages',
+  conversational:'a calm, capable support specialist who solves problems and never bluffs',
+  generate:'a senior practitioner in the relevant domain producing high-quality output on demand',
+};
+
+function buildPrompt(brief, cls, model){
+  const role = TASK_ROLES[cls.primary] || TASK_ROLES.generate;
+  const ctx  = brief.trim();
+  const obj = (() => {
+    const map = {
+      summarize:'Produce a concise, accurate summary that captures the most important signal.',
+      classify:'Assign each input to the most appropriate category from the defined schema. Be consistent.',
+      extract:'Extract the requested fields exactly. Leave fields blank rather than guess.',
+      synthesize:'Combine the inputs into a clear synthesis with explicit themes and supporting evidence.',
+      reason:'Reason carefully step-by-step. State assumptions. Cite evidence. End with a clear recommendation.',
+      code:'Produce working, idiomatic code. Handle edge cases. Add brief comments only where intent is non-obvious.',
+      creative:'Produce output that is on-brand, on-audience, and free of cliché.',
+      research:'Gather, evaluate, and synthesize evidence. Distinguish strong from weak sources.',
+      translate:'Preserve meaning, register, and idiom. Flag anything that resists clean translation.',
+      conversational:'Answer accurately and helpfully. Ask for clarification when needed. Never fabricate.',
+      generate:'Produce high-quality output that meets the brief.',
+    };
+    return map[cls.primary] || map.generate;
+  })();
+
+  const constraints = [];
+  if(cls.sensitivity !== 'low') constraints.push('Do not reproduce any PII or confidential identifiers in the output.');
+  if(cls.volume === 'high') constraints.push('Keep responses tightly bounded — this runs at scale.');
+  if(cls.latency === 'realtime') constraints.push('Respond as concisely as possible — this is a real-time path.');
+  constraints.push('If the brief is ambiguous, ask one clarifying question before proceeding.');
+  if(cls.complexity === 'high') constraints.push('Show your reasoning where decisions are non-obvious.');
+
+  const format = (() => {
+    if(cls.primary === 'classify' || cls.primary === 'extract') return 'Structured JSON matching the implied schema. No prose outside the JSON.';
+    if(cls.primary === 'summarize') return 'Executive summary (≤200 words) followed by a bulleted list of the top 3–5 themes with one-line evidence each.';
+    if(cls.primary === 'code') return 'A single code block in the appropriate language. Include a 2-line preamble describing what the code does.';
+    if(cls.primary === 'creative') return 'Final copy only. No process notes. No alternates unless asked.';
+    if(cls.primary === 'reason') return 'Reasoning (numbered steps) → Recommendation (one paragraph) → Confidence (low/medium/high) with a one-line rationale.';
+    return 'Clear, well-structured prose with headers where helpful.';
+  })();
+
+  const qualityBar = (() => {
+    if(cls.complexity === 'high') return 'Production-grade. Every claim defensible. No hand-waving.';
+    if(cls.volume === 'high') return 'Consistent across the batch. Drift is a defect.';
+    return 'Production-ready first pass. Self-edit before delivering.';
+  })();
+
+  const tone = (() => {
+    if(cls.primary === 'creative') return 'On-brand for the brief. No filler, no hedging adverbs.';
+    if(cls.primary === 'conversational') return 'Warm, direct, plain-language.';
+    return 'Professional, direct, evidence-led. No filler.';
+  })();
+
+  return {
+    role,
+    context: ctx,
+    objective: obj,
+    constraints,
+    format,
+    quality: qualityBar,
+    tone
+  };
+}
+
+function promptToText(p){
+  return [
+    `ROLE`,
+    `You are ${p.role}.`,
+    ``,
+    `CONTEXT`,
+    p.context,
+    ``,
+    `OBJECTIVE`,
+    p.objective,
+    ``,
+    `CONSTRAINTS`,
+    ...p.constraints.map(c => `· ${c}`),
+    ``,
+    `OUTPUT FORMAT`,
+    p.format,
+    ``,
+    `QUALITY BAR`,
+    p.quality,
+    ``,
+    `TONE`,
+    p.tone,
+  ].join('\n');
+}
+
+function promptToHTML(p){
+  const k = s => `<span class="pkey">${s}</span>`;
+  return [
+    k('ROLE'),
+    `You are ${p.role}.`, '',
+    k('CONTEXT'),
+    p.context, '',
+    k('OBJECTIVE'),
+    p.objective, '',
+    k('CONSTRAINTS'),
+    ...p.constraints.map(c => `· ${c}`), '',
+    k('OUTPUT FORMAT'),
+    p.format, '',
+    k('QUALITY BAR'),
+    p.quality, '',
+    k('TONE'),
+    p.tone,
+  ].join('\n');
+}
+
+/* ───── 8 · Governance scan ───── */
+const PII_PATTERNS = [
+  { name:'Email', re:/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/gi },
+  { name:'Phone', re:/(?:\+?\d{1,3}[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3,4}[\s.-]?\d{4}/g },
+  { name:'SSN-like', re:/\b\d{3}-\d{2}-\d{4}\b/g },
+  { name:'Credit card-like', re:/\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b/g },
+];
+
+const COMPLIANCE_KEYWORDS = {
+  'HIPAA':['patient','medical','hipaa','phi','health record','diagnosis','clinical'],
+  'GDPR':['gdpr','eu citizen','personal data','data subject','right to erasure'],
+  'PCI-DSS':['credit card','cardholder','pci','payment data','transaction'],
+  'SOC 2':['soc 2','soc2','audit','customer data','tenant data'],
+  'Internal only':['internal','company confidential','proprietary'],
+};
+
+function governanceScan(brief, cls){
+  const t = brief.toLowerCase();
+  const piiHits = [];
+  PII_PATTERNS.forEach(p => {
+    const m = brief.match(p.re);
+    if(m && m.length) piiHits.push({ kind:p.name, count:m.length });
+  });
+  const compTags = [];
+  Object.entries(COMPLIANCE_KEYWORDS).forEach(([tag, kws]) => {
+    if(kws.some(k => t.includes(k))) compTags.push(tag);
+  });
+  let risk = 'low';
+  if(piiHits.length > 0 || cls.sensitivity === 'high' || compTags.length > 0) risk = 'high';
+  else if(cls.sensitivity === 'medium') risk = 'medium';
+
+  const approval = risk === 'high'
+    ? 'Required · Compliance + Data steward'
+    : risk === 'medium' ? 'Required · Team lead' : 'Self-serve';
+
+  return { piiHits, compTags, risk, approval };
+}
+
+/* ───── 9 · State & persistence (IndexedDB) ───── */
+const DB_NAME = 'workbench-alt2-v1';
+let _db = null;
+
+function openDB(){
+  return new Promise((resolve, reject) => {
+    if(_db) return resolve(_db);
+    const req = indexedDB.open(DB_NAME, 1);
+    req.onupgradeneeded = (e) => {
+      const db = e.target.result;
+      if(!db.objectStoreNames.contains('kv')) db.createObjectStore('kv');
+      if(!db.objectStoreNames.contains('routes')) {
+        const s = db.createObjectStore('routes', { keyPath:'id', autoIncrement:true });
+        s.createIndex('ts', 'ts');
+      }
+    };
+    req.onsuccess = () => { _db = req.result; resolve(_db); };
+    req.onerror = () => reject(req.error);
+  });
+}
+
+async function kvSet(key, val){
+  const db = await openDB();
+  return new Promise((res, rej) => {
+    const tx = db.transaction('kv','readwrite');
+    tx.objectStore('kv').put(val, key);
+    tx.oncomplete = () => res();
+    tx.onerror = () => rej(tx.error);
+  });
+}
+
+async function kvGet(key){
+  const db = await openDB();
+  return new Promise((res, rej) => {
+    const tx = db.transaction('kv','readonly');
+    const r = tx.objectStore('kv').get(key);
+    r.onsuccess = () => res(r.result);
+    r.onerror = () => rej(r.error);
+  });
+}
+
+async function saveRoute(route){
+  const db = await openDB();
+  return new Promise((res, rej) => {
+    const tx = db.transaction('routes','readwrite');
+    tx.objectStore('routes').add({ ts:Date.now(), ...route });
+    tx.oncomplete = () => res();
+    tx.onerror = () => rej(tx.error);
+  });
+}
+
+async function getRoutes(limit=100){
+  const db = await openDB();
+  return new Promise((res) => {
+    const tx = db.transaction('routes','readonly');
+    const idx = tx.objectStore('routes').index('ts');
+    const out = [];
+    idx.openCursor(null, 'prev').onsuccess = (e) => {
+      const c = e.target.result;
+      if(c && out.length < limit){ out.push(c.value); c.continue(); } else res(out);
+    };
+  });
+}
+
+async function clearAllRoutes(){
+  const db = await openDB();
+  return new Promise((res) => {
+    const tx = db.transaction('routes','readwrite');
+    tx.objectStore('routes').clear();
+    tx.oncomplete = () => res();
+  });
+}
+
+/* ───── 10 · App state ───── */
+const state = {
+  mode: 'express',
+  brief: '',
+  classification: null,
+  weights: null,
+  recommendation: null,
+  chain: null,
+  prompt: null,
+  apiKey: null,
+  arch: { cost:50, speed:50, quality:70, safety:60 },
+  signals: { quality:'production', latency:'interactive', sensitivity:'low', volume:'hundreds', criticality:'medium', format:'structured' },
+};
+
+/* ───── 11 · UI: examples ───── */
+const EXAMPLES = {
+  ticket:'Triage 200 customer support tickets nightly. Classify by issue type, sentiment, and urgency. Surface the top 5 recurring themes for the weekly leadership review. Keep this cost-efficient — it runs every night.',
+  research:'Build a competitive analysis of three vendors in the enterprise procurement space. Pull product features, pricing tiers, recent funding, and customer sentiment. Synthesize into a one-page brief with explicit recommendations for our buyer persona.',
+  sql:'Convert plain-English business questions from non-technical employees into safe, optimized PostgreSQL queries against our analytics warehouse. Real-time, low latency. Must never write or drop tables.',
+  legal:'Review 50 vendor contracts for non-standard terms, auto-renewal clauses, and liability caps. Flag anything outside our standard playbook. Output a structured table with contract ID, flagged clause, severity, and suggested redline.',
+  campaign:'Write a launch campaign for a new B2B AI product targeting CFOs. Three social posts, one launch email, and a headline for the landing page. Tone: confident, evidence-led, no buzzwords.',
+  classify:'Classify 50,000 customer feedback comments into a 12-category taxonomy. Real-time API, sub-second latency. Single-label per comment. Output JSON with category + confidence.',
+};
+
+/* ───── 12 · Wiring: navigation ───── */
+function setPanel(name){
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.toggle('active', n.dataset.panel === name));
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === `panel-${name}`));
+  window.scrollTo({ top:0, behavior:'smooth' });
+}
+
+document.querySelectorAll('.nav-item').forEach(n => {
+  n.addEventListener('click', () => setPanel(n.dataset.panel));
+});
+
+/* ───── 13 · Wiring: mode toggle ───── */
+const modeExpress = document.getElementById('mode-express');
+const modeArchitect = document.getElementById('mode-architect');
+function setMode(m){
+  state.mode = m;
+  document.body.classList.toggle('mode-express', m === 'express');
+  document.body.classList.toggle('mode-architect', m === 'architect');
+  modeExpress.classList.toggle('active', m === 'express');
+  modeArchitect.classList.toggle('active', m === 'architect');
+  kvSet('mode', m);
+}
+modeExpress.addEventListener('click', () => setMode('express'));
+modeArchitect.addEventListener('click', () => setMode('architect'));
+
+/* ───── 14 · Wiring: examples chips ───── */
+document.querySelectorAll('.chip[data-example]').forEach(c => {
+  c.addEventListener('click', () => {
+    document.getElementById('intent-input').value = EXAMPLES[c.dataset.example];
+    updateIntentStatus();
+  });
+});
+
+/* ───── 15 · Architect signals + weights ───── */
+document.querySelectorAll('.arch-pills').forEach(group => {
+  group.addEventListener('click', (e) => {
+    const p = e.target.closest('.arch-pill');
+    if(!p) return;
+    group.querySelectorAll('.arch-pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    state.signals[group.dataset.field] = p.dataset.val;
+  });
+});
+
+['cost','speed','quality','safety'].forEach(k => {
+  const input = document.getElementById(`w-${k}`);
+  const val = document.getElementById(`w-${k}-v`);
+  input.addEventListener('input', () => {
+    val.textContent = input.value;
+    state.arch[k] = parseInt(input.value, 10);
+  });
+});
+
+/* ───── 16 · Intent status ───── */
+function updateIntentStatus(){
+  const text = document.getElementById('intent-input').value.trim();
+  const el = document.getElementById('intent-status');
+  if(!text){ el.textContent = 'Awaiting brief…'; return; }
+  const cls = classify(text);
+  el.textContent = `Detected: ${cls.primary} · ${cls.complexity} complexity · ${cls.sensitivity} sensitivity · ${cls.volume} volume`;
+}
+document.getElementById('intent-input').addEventListener('input', updateIntentStatus);
+
+document.getElementById('btn-clear').addEventListener('click', () => {
+  document.getElementById('intent-input').value = '';
+  updateIntentStatus();
+});
+
+/* ───── 17 · Route action ───── */
+document.getElementById('btn-route').addEventListener('click', runRouting);
+
+async function runRouting(){
+  const brief = document.getElementById('intent-input').value.trim();
+  if(!brief){
+    toast('Add a brief first.', true);
+    return;
+  }
+  state.brief = brief;
+  state.classification = classify(brief);
+
+  // architect overrides factor in
+  const archOver = state.mode === 'architect' ? state.arch : null;
+  // additionally override classification via architect signals
+  if(state.mode === 'architect'){
+    const sig = state.signals;
+    if(sig.sensitivity === 'high') state.classification.sensitivity = 'high';
+    else if(sig.sensitivity === 'medium') state.classification.sensitivity = 'medium';
+    if(sig.volume === 'millions') state.classification.volume = 'high';
+    else if(sig.volume === 'single') state.classification.volume = 'single';
+    if(sig.latency === 'realtime') state.classification.latency = 'realtime';
+    else if(sig.latency === 'batch') state.classification.latency = 'batch';
+    if(sig.quality === 'mission-critical') state.classification.complexity = 'high';
+    else if(sig.quality === 'exploratory') state.classification.complexity = 'low';
+  }
+
+  state.weights = buildIntentVector(state.classification, archOver);
+  state.recommendation = recommend(state.classification, state.weights);
+  state.chain = buildChain(state.classification);
+  state.prompt = buildPrompt(brief, state.classification, state.recommendation.primary.model);
+
+  // navigate to routing
+  setPanel('routing');
+  // animate the lens then render recommendation
+  animateLens(state.classification, state.recommendation, async () => {
+    renderRecommendation();
+    renderPromptBuilder();
+    renderGovernance();
+    initCompare();
+    // save to history
+    await saveRoute({
+      brief,
+      classification: state.classification,
+      weights: state.weights,
+      primary: state.recommendation.primary.model.id,
+      confidence: state.recommendation.conf,
+      estimate: estimate(state.recommendation.primary.model, state.classification),
+      chain: state.chain ? state.chain.stages.map(s => s.model) : null,
+    });
+    refreshDashboard();
+    toast(`Routed to ${state.recommendation.primary.model.name}`);
+  });
+}
+
+/* ───── 18 · Control Tower lens animation ───── */
+function animateLens(cls, rec, done){
+  const pulse = document.getElementById('task-pulse');
+  const core = document.getElementById('task-pulse-core');
+  const pings = document.querySelectorAll('#pings circle');
+  const dimLabels = document.getElementById('dim-labels');
+  const halo = document.getElementById('select-halo');
+  const taskName = document.getElementById('lens-task-name');
+  const lensStatus = document.getElementById('lens-status');
+  const scope = document.getElementById('tower-scope');
+  lensStatus.classList.add('live');
+  lensStatus.querySelector('span:last-child').textContent = 'Routing…';
+
+  taskName.textContent = `${cls.primary} · ${cls.complexity} complexity`;
+
+  // foot cells
+  document.getElementById('ft-task').textContent = cls.primary;
+  document.getElementById('ft-task').classList.remove('dim');
+  document.getElementById('ft-complexity').textContent = cls.complexity;
+  document.getElementById('ft-complexity').classList.remove('dim');
+  document.getElementById('ft-sensitivity').textContent = cls.sensitivity;
+  document.getElementById('ft-sensitivity').classList.remove('dim');
+  document.getElementById('ft-volume').textContent = cls.volume;
+  document.getElementById('ft-volume').classList.remove('dim');
+
+  // reset state
+  pulse.setAttribute('cx', 80); pulse.setAttribute('cy', 180);
+  pulse.setAttribute('r', 0);
+  core.setAttribute('cx', 80); core.setAttribute('cy', 180);
+  core.setAttribute('r', 0);
+  halo.setAttribute('opacity', 0); halo.setAttribute('r', 0);
+  dimLabels.setAttribute('opacity', 0);
+  pings.forEach(p => { p.setAttribute('r', 0); p.setAttribute('opacity', 0); });
+
+  // Target runway
+  const tier = rec.primary.model.tier;
+  const laneY = tier === 'frontier' ? 80 : tier === 'balanced' ? 180 : 280;
+  const targetX = 967; // runway plate center
+
+  // Step 1: aircraft appears in holding pattern
+  let t = 0;
+  const grow = () => {
+    t += 0.08;
+    if(t < 1){
+      pulse.setAttribute('r', 18 * t);
+      core.setAttribute('r', 4 * t);
+      requestAnimationFrame(grow);
+    } else {
+      pulse.setAttribute('r', 18); core.setAttribute('r', 4);
+      moveToTower();
+    }
+  };
+  // Step 2: cleared from holding → into tower scope
+  const moveToTower = () => {
+    const startX = 80, endX = 240;
+    let s = 0;
+    const step = () => {
+      s += 0.04;
+      if(s < 1){
+        const x = startX + (endX - startX) * easeInOut(s);
+        pulse.setAttribute('cx', x); core.setAttribute('cx', x);
+        requestAnimationFrame(step);
+      } else {
+        pulse.setAttribute('cx', 240); core.setAttribute('cx', 240);
+        firePings();
+      }
+    };
+    step();
+  };
+  // Step 3: tower locks on → 4 radar pings expand outward
+  const firePings = () => {
+    if(scope){
+      scope.style.transition = 'all 0.3s';
+      scope.style.stroke = '#5eead4';
+      scope.style.filter = 'drop-shadow(0 0 12px #5eead4)';
+    }
+    pings.forEach((ping, i) => {
+      setTimeout(() => {
+        let pt = 0;
+        const animate = () => {
+          pt += 0.03;
+          if(pt < 1){
+            ping.setAttribute('r', 90 * pt);
+            ping.setAttribute('opacity', 0.85 * (1 - pt));
+            requestAnimationFrame(animate);
+          } else {
+            ping.setAttribute('r', 0);
+            ping.setAttribute('opacity', 0);
+          }
+        };
+        animate();
+      }, i * 140);
+    });
+    setTimeout(() => { dimLabels.setAttribute('opacity', 1); }, 300);
+    setTimeout(() => {
+      if(scope){ scope.style.stroke = '#2a6557'; scope.style.filter = 'none'; }
+    }, 1100);
+    setTimeout(() => moveToLineup(), 1000);
+  };
+  // Step 4: vector to line-up band
+  const moveToLineup = () => {
+    const startX = 240, endX = 380;
+    let s = 0;
+    const step = () => {
+      s += 0.06;
+      if(s < 1){
+        const x = startX + (endX - startX) * easeInOut(s);
+        pulse.setAttribute('cx', x); core.setAttribute('cx', x);
+        requestAnimationFrame(step);
+      } else {
+        pulse.setAttribute('cx', 380); core.setAttribute('cx', 380);
+        alignToRunway();
+      }
+    };
+    step();
+  };
+  // Step 5: vertical alignment to assigned runway
+  const alignToRunway = () => {
+    let s = 0;
+    const startY = 180, endY = laneY;
+    const step = () => {
+      s += 0.06;
+      if(s < 1){
+        const y = startY + (endY - startY) * easeInOut(s);
+        pulse.setAttribute('cy', y); core.setAttribute('cy', y);
+        requestAnimationFrame(step);
+      } else {
+        pulse.setAttribute('cy', endY); core.setAttribute('cy', endY);
+        approach();
+      }
+    };
+    step();
+  };
+  // Step 6: glide down the runway and touch down at the gate
+  const approach = () => {
+    const startX = 380, endX = targetX;
+    let s = 0;
+    const step = () => {
+      s += 0.025;
+      if(s < 1){
+        const x = startX + (endX - startX) * easeInOut(s);
+        pulse.setAttribute('cx', x); core.setAttribute('cx', x);
+        requestAnimationFrame(step);
+      } else {
+        pulse.setAttribute('cx', targetX); core.setAttribute('cx', targetX);
+        halo.setAttribute('cx', targetX); halo.setAttribute('cy', laneY);
+        halo.setAttribute('r', 22); halo.setAttribute('opacity', 1);
+        lensStatus.querySelector('span:last-child').textContent = 'Triaged · admitted';
+        if(done) done();
+      }
+    };
+    step();
+  };
+
+  grow();
+}
+
+function easeInOut(t){ return t < 0.5 ? 2*t*t : 1 - Math.pow(-2*t + 2, 2)/2; }
+
+/* ───── 19 · Render recommendation cards ───── */
+function renderRecommendation(){
+  if(!state.recommendation) return;
+  const host = document.getElementById('rec-host');
+  const { primary, alts, conf } = state.recommendation;
+  const cls = state.classification;
+  const est = estimate(primary.model, cls);
+
+  const tierTag = (t) => `<span class="rec-tag tag-${t}">${t}</span>`;
+
+  const why = explainWhy(primary.model, cls, state.weights);
+
+  let html = `<div class="rec-grid">`;
+  // primary
+  html += `
+    <div class="rec-card primary">
+      <div class="rec-eyebrow">Recommended</div>
+      ${tierTag(primary.model.tier)}
+      <div class="rec-name">${primary.model.name}</div>
+      <div class="rec-vendor">${primary.model.vendor}</div>
+      <div class="rec-score">
+        <div class="rec-score-val">${primary.score}</div>
+        <div class="rec-score-label">/ 100 match · ${conf}% confidence</div>
+      </div>
+      <div class="rec-stats">
+        <div><div class="rec-stat-label">Est. cost / call</div><div class="rec-stat-val">$${est.perCall}</div></div>
+        <div><div class="rec-stat-label">p50 latency</div><div class="rec-stat-val">${est.latencyMs}ms</div></div>
+        <div><div class="rec-stat-label">Context</div><div class="rec-stat-val">${(primary.model.context/1000).toFixed(0)}K</div></div>
+        <div><div class="rec-stat-label">${cls.volume === 'high' ? 'Est. nightly batch' : 'Est. for volume'}</div><div class="rec-stat-val">$${est.perBatch}</div></div>
+      </div>
+      <div class="rec-why">${why}</div>
+    </div>
+  `;
+  // alternatives
+  alts.forEach(a => {
+    const ae = estimate(a.model, cls);
+    html += `
+      <div class="rec-card">
+        <div class="rec-eyebrow">${a.label}</div>
+        ${tierTag(a.model.tier)}
+        <div class="rec-name">${a.model.name}</div>
+        <div class="rec-vendor">${a.model.vendor}</div>
+        <div class="rec-score">
+          <div class="rec-score-val">${a.score}</div>
+          <div class="rec-score-label">/ 100 match</div>
+        </div>
+        <div class="rec-stats">
+          <div><div class="rec-stat-label">Cost / call</div><div class="rec-stat-val">$${ae.perCall}</div></div>
+          <div><div class="rec-stat-label">Latency</div><div class="rec-stat-val">${ae.latencyMs}ms</div></div>
+        </div>
+        <div class="rec-why">${tradeoffSummary(a, primary)}</div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  host.innerHTML = html;
+
+  // chain
+  const chainHost = document.getElementById('chain-host');
+  if(state.chain){
+    const stages = state.chain.stages.map(s => {
+      const m = MODELS.find(x => x.id === s.model);
+      return `<strong>${m.name}</strong> (${s.role})`;
+    }).join(' → ');
+    chainHost.innerHTML = `
+      <div class="chain-banner">
+        <div class="chain-icon">⇢</div>
+        <div class="chain-text">
+          <strong>Multi-stage hand-off recommended.</strong> This brief has distinct phases — like a multi-step care pathway. A chain — ${stages} — is estimated to be <strong>${state.chain.savingsPct}% cheaper</strong> than admitting the whole job to the acute ward, with no loss of judgment where it matters.
+        </div>
+      </div>
+    `;
+  } else {
+    chainHost.innerHTML = '';
+  }
+}
+
+function explainWhy(model, cls, w){
+  const reasons = [];
+  // Pick top 2 weighted dimensions where model excels
+  const ranked = Object.entries(w)
+    .map(([k,v]) => ({ k, weight:v, score:model.scores[k] ?? 50, contribution:(model.scores[k] ?? 50) * v }))
+    .sort((a,b) => b.contribution - a.contribution);
+
+  const top2 = ranked.slice(0, 2);
+  const dimNames = { reason:'reasoning', code:'code quality', creative:'creative range', longContext:'long-context handling', speed:'speed', safety:'safety', cost:'cost efficiency' };
+
+  reasons.push(`Strong on <strong>${dimNames[top2[0].k] || top2[0].k}</strong> (${top2[0].score}/100) where this brief weighs heavily.`);
+  if(cls.sensitivity === 'high') reasons.push(`Picked partly for <strong>safety profile</strong> given regulated data.`);
+  if(cls.volume === 'high' && model.tier !== 'frontier') reasons.push(`Avoids frontier pricing on a <strong>high-volume</strong> workload.`);
+  if(cls.complexity === 'high' && model.tier === 'frontier') reasons.push(`Reserves frontier reasoning for genuinely complex work — the brief earns it.`);
+  if(cls.latency === 'realtime' && model.scores.speed > 85) reasons.push(`Latency budget (<strong>${model.latency}ms p50</strong>) clears the real-time bar.`);
+
+  return reasons.slice(0, 3).join(' ');
+}
+
+function tradeoffSummary(alt, primary){
+  const a = alt.model, p = primary.model;
+  const costDelta = (a.pricing.in + a.pricing.out) - (p.pricing.in + p.pricing.out);
+  const speedDelta = p.latency - a.latency;
+  const qualityDelta = (a.scores.reason + a.scores.code) - (p.scores.reason + p.scores.code);
+  const bits = [];
+  if(costDelta < -5) bits.push(`<strong>${Math.round(Math.abs(costDelta/(p.pricing.in + p.pricing.out))*100)}% cheaper</strong> per token`);
+  else if(costDelta > 5) bits.push(`Pricier per token`);
+  if(speedDelta > 200) bits.push(`<strong>${Math.round(speedDelta)}ms faster</strong>`);
+  else if(speedDelta < -200) bits.push(`Slower`);
+  if(qualityDelta > 10) bits.push(`Higher reasoning score`);
+  else if(qualityDelta < -10) bits.push(`Lower reasoning score`);
+  return bits.length ? bits.join(' · ') : 'Comparable profile.';
+}
+
+/* ───── 20 · Prompt builder render ───── */
+function renderPromptBuilder(){
+  if(!state.prompt) return;
+  document.getElementById('prompt-empty').style.display = 'none';
+  document.getElementById('prompt-grid').style.display = 'grid';
+
+  const blocks = [
+    { key:'role', label:'Role', val:state.prompt.role, prefix:'You are ' },
+    { key:'context', label:'Context', val:state.prompt.context },
+    { key:'objective', label:'Objective', val:state.prompt.objective },
+    { key:'constraints', label:'Constraints', val:state.prompt.constraints.join('\n'), isList:true },
+    { key:'format', label:'Output format', val:state.prompt.format },
+    { key:'quality', label:'Quality bar', val:state.prompt.quality, compact:true },
+    { key:'tone', label:'Tone', val:state.prompt.tone, compact:true },
+  ];
+
+  const host = document.getElementById('prompt-blocks');
+  host.innerHTML = blocks.map(b => `
+    <div class="prompt-block ${b.compact ? 'compact':''}">
+      <div class="prompt-block-head">
+        <div class="prompt-block-name">${b.label}</div>
+        <div class="prompt-block-status auto">Auto-generated</div>
+      </div>
+      <textarea data-key="${b.key}" data-prefix="${b.prefix||''}">${b.val}</textarea>
+    </div>
+  `).join('');
+
+  host.querySelectorAll('textarea').forEach(t => {
+    t.addEventListener('input', () => {
+      t.parentElement.querySelector('.prompt-block-status').classList.remove('auto');
+      t.parentElement.querySelector('.prompt-block-status').classList.add('edited');
+      t.parentElement.querySelector('.prompt-block-status').textContent = 'Edited';
+      // update prompt object
+      const key = t.dataset.key;
+      const val = t.value;
+      if(key === 'constraints') state.prompt.constraints = val.split('\n').filter(Boolean);
+      else state.prompt[key] = val;
+      refreshPromptPreview();
+    });
+  });
+
+  refreshPromptPreview();
+}
+
+function refreshPromptPreview(){
+  const html = promptToHTML(state.prompt);
+  document.getElementById('prompt-preview-body').innerHTML = html;
+  // rough token count: ~4 chars per token
+  const text = promptToText(state.prompt);
+  const tokens = Math.round(text.length / 4);
+  document.getElementById('prompt-token-count').textContent = `~${tokens} tokens`;
+}
+
+document.getElementById('btn-copy-prompt').addEventListener('click', () => {
+  if(!state.prompt) return;
+  navigator.clipboard.writeText(promptToText(state.prompt)).then(() => toast('Prompt copied to clipboard.'));
+});
+
+document.getElementById('btn-goto-compare').addEventListener('click', () => setPanel('compare'));
+
+/* ───── 21 · Governance render ───── */
+function renderGovernance(){
+  if(!state.classification) return;
+  const g = governanceScan(state.brief, state.classification);
+  document.getElementById('gov-empty').style.display = 'none';
+  document.getElementById('gov-grid').style.display = 'grid';
+
+  // PII
+  const piiBox = document.getElementById('gov-pii');
+  if(g.piiHits.length === 0){
+    piiBox.innerHTML = `<div class="gov-row"><div class="gov-row-k">Patterns found</div><div class="gov-row-v ok">None detected</div></div>
+      <div class="gov-row"><div class="gov-row-k">Scope scanned</div><div class="gov-row-v">Email, phone, SSN, card</div></div>
+      <div class="gov-row"><div class="gov-row-k">Verdict</div><div class="gov-row-v ok">Clear for routing</div></div>`;
+  } else {
+    piiBox.innerHTML = g.piiHits.map(h => `<div class="gov-row"><div class="gov-row-k">${h.kind}</div><div class="gov-row-v danger">${h.count} found</div></div>`).join('') +
+      `<div class="gov-row"><div class="gov-row-k">Verdict</div><div class="gov-row-v danger">Redact before send</div></div>`;
+  }
+
+  // Compliance
+  const compBox = document.getElementById('gov-comp');
+  if(g.compTags.length === 0){
+    compBox.innerHTML = `<div class="gov-row"><div class="gov-row-k">Tags</div><div class="gov-row-v">No regulated scope inferred</div></div>
+      <div class="gov-row"><div class="gov-row-k">Recommended scope</div><div class="gov-row-v ok">General-purpose</div></div>`;
+  } else {
+    compBox.innerHTML = `<div class="gov-list">${g.compTags.map(t => `<span class="chip" style="cursor:default; border-color:var(--accent); color:var(--accent);">${t}</span>`).join('')}</div>
+      <div class="gov-row" style="margin-top:10px;"><div class="gov-row-k">Vendor allowlist</div><div class="gov-row-v warn">Restrict to compliant deployment</div></div>`;
+  }
+
+  // Risk
+  const riskBox = document.getElementById('gov-risk');
+  const riskClass = g.risk === 'high' ? 'danger' : g.risk === 'medium' ? 'warn' : 'ok';
+  riskBox.innerHTML = `
+    <div class="gov-row"><div class="gov-row-k">Overall risk</div><div class="gov-row-v ${riskClass}">${g.risk.toUpperCase()}</div></div>
+    <div class="gov-row"><div class="gov-row-k">Data sensitivity</div><div class="gov-row-v">${state.classification.sensitivity}</div></div>
+    <div class="gov-row"><div class="gov-row-k">Business criticality</div><div class="gov-row-v">${state.mode === 'architect' ? state.signals.criticality : 'inferred'}</div></div>
+    <div class="gov-row"><div class="gov-row-k">Hallucination risk</div><div class="gov-row-v ${state.classification.complexity === 'high' ? 'warn' : 'ok'}">${state.classification.complexity === 'high' ? 'Validate before publish' : 'Low'}</div></div>
+  `;
+
+  // Approval
+  const apprBox = document.getElementById('gov-appr');
+  apprBox.innerHTML = `
+    <div class="gov-row"><div class="gov-row-k">Status</div><div class="gov-row-v ${g.risk === 'high' ? 'warn' : 'ok'}">${g.approval}</div></div>
+    <div class="gov-row"><div class="gov-row-k">Audit log</div><div class="gov-row-v ok">Every route persisted</div></div>
+    <div class="gov-row"><div class="gov-row-k">Prompt template</div><div class="gov-row-v">Version-controlled</div></div>
+    <div class="gov-row"><div class="gov-row-k">Output retention</div><div class="gov-row-v">${g.risk === 'high' ? '7 days · encrypted' : '30 days · standard'}</div></div>
+  `;
+}
+
+/* ───── 22 · Compare ───── */
+function initCompare(){
+  if(!state.recommendation) return;
+  const host = document.getElementById('compare-models');
+  const primary = state.recommendation.primary.model;
+  const alts = state.recommendation.alts.map(a => a.model);
+
+  const all = [primary, ...alts].slice(0, 4);
+  host.innerHTML = all.map((m, i) => `
+    <label class="chip" style="cursor:pointer; ${i < 3 ? 'border-color:var(--accent); color:var(--accent);' : ''}">
+      <input type="checkbox" data-model="${m.id}" ${i < 3 ? 'checked' : ''} style="margin:0; accent-color:var(--accent);">
+      ${m.name}
+    </label>
+  `).join('');
+}
+
+document.getElementById('btn-run-compare').addEventListener('click', runCompare);
+
+async function runCompare(){
+  if(!state.prompt){
+    toast('Route a brief first.', true);
+    return;
+  }
+  const selected = Array.from(document.querySelectorAll('#compare-models input:checked')).map(i => i.dataset.model);
+  if(selected.length === 0){ toast('Select at least one model.', true); return; }
+
+  const grid = document.getElementById('compare-grid');
+  grid.innerHTML = '';
+  const promptText = promptToText(state.prompt);
+
+  for(const id of selected){
+    const m = MODELS.find(x => x.id === id);
+    const card = document.createElement('div');
+    card.className = 'cmp-card';
+    card.innerHTML = `
+      <div class="cmp-head">
+        <div class="cmp-name">${m.name}</div>
+        <div class="cmp-meta">
+          <div><span>Cost/call</span><b>$${estimate(m, state.classification).perCall}</b></div>
+          <div><span>p50</span><b>${m.latency}ms</b></div>
+        </div>
+      </div>
+      <div class="cmp-body loading" id="cmp-body-${m.id}">
+        <span class="key-dot" style="background:var(--accent); animation:pulse 1.5s infinite;"></span>
+        ${m.apiId && state.apiKey ? 'Calling model…' : (m.apiId ? 'Connect API key to call this model' : 'Not callable from browser — showing simulated output')}
+      </div>
+    `;
+    grid.appendChild(card);
+
+    const body = document.getElementById(`cmp-body-${m.id}`);
+    const start = performance.now();
+
+    if(m.apiId && state.apiKey){
+      try{
+        const out = await callClaude(m.apiId, promptText, state.apiKey);
+        const elapsed = Math.round(performance.now() - start);
+        body.classList.remove('loading');
+        body.innerHTML = out + `<div style="margin-top:14px; padding-top:10px; border-top:1px solid var(--border); font-family:var(--mono); font-size:11px; color:var(--text-3); letter-spacing:0.08em;">Actual latency: ${elapsed}ms · Workbench estimate: ${m.latency}ms</div>`;
+      } catch(e){
+        body.classList.remove('loading'); body.classList.add('error');
+        body.textContent = `API error: ${e.message}`;
+      }
+    } else {
+      // simulated
+      setTimeout(() => {
+        body.classList.remove('loading');
+        body.innerHTML = simulateOutput(m, state.classification, state.brief);
+      }, 600 + Math.random()*1200);
+    }
+  }
+}
+
+async function callClaude(modelId, prompt, key){
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json',
+      'x-api-key': key,
+      'anthropic-version':'2023-06-01',
+      'anthropic-dangerous-direct-browser-access':'true',
+    },
+    body: JSON.stringify({
+      model: modelId,
+      max_tokens: 800,
+      messages: [{ role:'user', content: prompt }],
+    }),
+  });
+  if(!r.ok){
+    const err = await r.text();
+    throw new Error(`${r.status} ${err.slice(0, 200)}`);
+  }
+  const data = await r.json();
+  return data.content.map(b => b.text || '').join('\n');
+}
+
+function simulateOutput(m, cls, brief){
+  // Heuristic preview based on tier
+  const tier = m.tier;
+  const shortName = m.name.split(' ').slice(-2).join(' ');
+  if(tier === 'frontier'){
+    return `<em style="color:var(--text-3);">[Simulated · connect API for live output]</em>
+
+This brief touches several distinct phases. A frontier model like ${shortName} would handle them inline with strong cross-phase coherence — but at a cost premium that's only justified if downstream consumers can tell the difference.
+
+Recommended approach (from ${shortName}):
+1. Build a tight taxonomy first; without one, ${cls.primary === 'classify' ? 'classification' : 'output'} drifts at volume.
+2. Cite evidence inline for any claim that informs a downstream decision.
+3. Flag ambiguity rather than guessing — your reviewers can resolve it cheaper than a regression can.`;
+  }
+  if(tier === 'balanced'){
+    return `<em style="color:var(--text-3);">[Simulated · connect API for live output]</em>
+
+${shortName} on this brief: would deliver production-grade output with strong long-context handling, at roughly a fifth of frontier cost. The trade-off shows up on the most ambiguous edge cases — where ${shortName} sometimes commits to a confident-sounding answer that a frontier model would have flagged as uncertain.
+
+Mitigation: add a one-line confidence callout to the output format, and route low-confidence outputs to a frontier reviewer in a chain.`;
+  }
+  return `<em style="color:var(--text-3);">[Simulated · connect API for live output]</em>
+
+${shortName} on this brief: fast, cheap, good enough for the bulk of cases. Expect cleaner output on well-bounded ${cls.primary} tasks; expect some loss of nuance on the ambiguous tail. At this brief's volume profile (${cls.volume}), the cost delta vs. frontier is material — typically a 30–50× reduction.
+
+If this is the routing layer in a chain, ${shortName} is the right shape. If it's the final answer in a customer-facing flow, validate with a sample first.`;
+}
+
+/* ───── 23 · Dashboard ───── */
+async function refreshDashboard(){
+  const routes = await getRoutes(100);
+  document.getElementById('ds-briefs').textContent = routes.length;
+  if(routes.length === 0){
+    document.getElementById('ds-saved').textContent = '$0';
+    document.getElementById('ds-conf').textContent = '—';
+    document.getElementById('ds-lat').textContent = '—';
+    document.getElementById('dash-mix').innerHTML = '<div class="empty"><p>No routes yet.</p></div>';
+    document.getElementById('dash-tasks').innerHTML = '<div class="empty"><p>No data.</p></div>';
+    document.getElementById('dash-recent').innerHTML = '<div class="empty"><p>Route a few briefs to populate.</p></div>';
+    return;
+  }
+
+  // saved $: actual estimate vs. always-Opus baseline
+  let savedTotal = 0, latTotal = 0, confTotal = 0;
+  const modelMix = {};
+  const taskMix = {};
+  routes.forEach(r => {
+    const m = MODELS.find(x => x.id === r.primary);
+    const opus = MODELS.find(x => x.id === 'claude-opus-4-8');
+    if(m && opus && r.estimate){
+      const baseline = parseFloat(estimate(opus, r.classification).perBatch);
+      const actual = parseFloat(r.estimate.perBatch);
+      savedTotal += Math.max(0, baseline - actual);
+      latTotal += m.latency;
+    }
+    confTotal += r.confidence || 0;
+    modelMix[r.primary] = (modelMix[r.primary] || 0) + 1;
+    const t = r.classification?.primary || 'unknown';
+    taskMix[t] = (taskMix[t] || 0) + 1;
+  });
+
+  document.getElementById('ds-saved').textContent = '$' + savedTotal.toFixed(2);
+  document.getElementById('ds-conf').textContent = Math.round(confTotal / routes.length) + '%';
+  document.getElementById('ds-lat').textContent = Math.round(latTotal / routes.length) + 'ms';
+
+  // Model mix bars
+  const mixHost = document.getElementById('dash-mix');
+  const sortedMix = Object.entries(modelMix).sort((a,b) => b[1] - a[1]);
+  const max = sortedMix[0][1];
+  mixHost.innerHTML = sortedMix.map(([id, n]) => {
+    const m = MODELS.find(x => x.id === id);
+    if(!m) return '';
+    return `<div class="bar-wrap">
+      <div class="bar-label">${m.name}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(n/max)*100}%"></div></div>
+      <div class="bar-val">${n}</div>
+    </div>`;
+  }).join('');
+
+  // Task mix
+  const taskHost = document.getElementById('dash-tasks');
+  taskHost.innerHTML = Object.entries(taskMix).sort((a,b) => b[1] - a[1]).slice(0, 6).map(([t, n]) =>
+    `<div class="dash-list-row"><div class="dash-list-name">${t}</div><div class="dash-list-meta"><span><b>${n}</b> route${n>1?'s':''}</span></div></div>`
+  ).join('');
+
+  // Recent routes
+  const recHost = document.getElementById('dash-recent');
+  recHost.innerHTML = routes.slice(0, 8).map(r => {
+    const m = MODELS.find(x => x.id === r.primary);
+    const when = timeAgo(r.ts);
+    const brief = (r.brief || '').slice(0, 80) + (r.brief && r.brief.length > 80 ? '…' : '');
+    return `<div class="dash-list-row">
+      <div class="dash-list-name">${brief}</div>
+      <div class="dash-list-meta">
+        <span>→ <b>${m?.name || r.primary}</b></span>
+        <span>${r.confidence || '—'}% conf</span>
+        <span>${when}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function timeAgo(ts){
+  const s = Math.floor((Date.now() - ts) / 1000);
+  if(s < 60) return `${s}s ago`;
+  if(s < 3600) return `${Math.floor(s/60)}m ago`;
+  if(s < 86400) return `${Math.floor(s/3600)}h ago`;
+  return `${Math.floor(s/86400)}d ago`;
+}
+
+/* ───── 24 · Reset & seed ───── */
+document.getElementById('clear-data').addEventListener('click', async (e) => {
+  e.preventDefault();
+  if(!confirm('Clear all route history?')) return;
+  await clearAllRoutes();
+  refreshDashboard();
+  toast('Workspace cleared.');
+});
+
+document.getElementById('seed-data').addEventListener('click', async (e) => {
+  e.preventDefault();
+  for(const ex of Object.values(EXAMPLES)){
+    const cls = classify(ex);
+    const w = buildIntentVector(cls);
+    const rec = recommend(cls, w);
+    await saveRoute({
+      brief: ex,
+      classification: cls,
+      weights: w,
+      primary: rec.primary.model.id,
+      confidence: rec.conf,
+      estimate: estimate(rec.primary.model, cls),
+      chain: null,
+    });
+  }
+  refreshDashboard();
+  toast('Seeded 6 demo routes.');
+  setPanel('dashboard');
+});
+
+/* ───── 25 · API key modal ───── */
+const keyModal = document.getElementById('modal-key');
+document.getElementById('key-pill').addEventListener('click', () => {
+  document.getElementById('api-key-input').value = state.apiKey || '';
+  keyModal.classList.add('show');
+});
+document.getElementById('key-cancel').addEventListener('click', () => keyModal.classList.remove('show'));
+document.getElementById('key-save').addEventListener('click', async () => {
+  const v = document.getElementById('api-key-input').value.trim();
+  if(!v){ toast('Paste a key or click Remove.', true); return; }
+  state.apiKey = v;
+  await kvSet('apiKey', v);
+  updateKeyPill();
+  keyModal.classList.remove('show');
+  toast('Key saved locally.');
+});
+document.getElementById('key-clear').addEventListener('click', async () => {
+  state.apiKey = null;
+  await kvSet('apiKey', null);
+  updateKeyPill();
+  keyModal.classList.remove('show');
+  toast('Key removed.');
+});
+
+function updateKeyPill(){
+  const pill = document.getElementById('key-pill');
+  const label = document.getElementById('key-pill-label');
+  if(state.apiKey){
+    pill.classList.add('live');
+    label.textContent = 'API key · live';
+  } else {
+    pill.classList.remove('live');
+    label.textContent = 'Add API key';
+  }
+}
+
+/* ───── 26 · Toast ───── */
+let toastTimer = null;
+function toast(msg, isError=false){
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.toggle('error', isError);
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2400);
+}
+
+/* ───── 27 · Welcome overlay wiring ───── */
+const welcomeOverlay = document.getElementById('welcome-overlay');
+function showOverlay(){ welcomeOverlay.classList.add('show'); }
+function hideOverlay(){ welcomeOverlay.classList.remove('show'); kvSet('overlaySeen', true); }
+document.getElementById('overlay-enter').addEventListener('click', hideOverlay);
+document.getElementById('overlay-skip').addEventListener('click', hideOverlay);
+document.getElementById('help-btn').addEventListener('click', showOverlay);
+welcomeOverlay.addEventListener('click', (e) => { if(e.target === welcomeOverlay) hideOverlay(); });
+document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && welcomeOverlay.classList.contains('show')) hideOverlay(); });
+
+/* ───── 28 · Boot ───── */
+(async function boot(){
+  // Restore state
+  const savedMode = await kvGet('mode');
+  if(savedMode === 'architect') setMode('architect');
+  const savedKey = await kvGet('apiKey');
+  if(savedKey){ state.apiKey = savedKey; updateKeyPill(); }
+  await refreshDashboard();
+  // Show overlay on first visit
+  const seen = await kvGet('overlaySeen');
+  if(!seen) showOverlay();
+})();
+
+</script>
+</body>
+</html>
