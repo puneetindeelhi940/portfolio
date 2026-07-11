@@ -13,9 +13,32 @@ body { margin: 0; scroll-behavior: smooth; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 @keyframes blink-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+
+/* Cards — dark variant (default) */
 .pcard { transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease; }
 .pcard:hover { transform: translateY(-4px); border-color: rgba(184,160,120,0.3) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
-a.hover-link:hover { filter: brightness(1.25); }
+
+/* Cards — light variant */
+.section-light .pcard { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.section-light .pcard:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.14); border-color: rgba(74,138,78,0.35) !important; }
+
+a.hover-link:hover { filter: brightness(1.15); }
+
+/* Stepper nav */
+.stepper-nav { position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 100; display: flex; flex-direction: column; gap: 14px; align-items: center; }
+.stepper-dot { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid rgba(108,201,108,0.4); background: transparent; cursor: pointer; transition: all 0.3s ease; padding: 0; }
+.stepper-dot.active { background: #56b45a; border-color: #56b45a; box-shadow: 0 0 8px rgba(86,180,90,0.4); transform: scale(1.3); }
+.stepper-dot:hover:not(.active) { border-color: #6cc96c; background: rgba(108,201,108,0.2); }
+.stepper-label { position: absolute; right: 22px; white-space: nowrap; font: 500 11px/1 'DM Sans', sans-serif; color: #f0ece4; background: rgba(28,31,25,0.92); padding: 5px 10px; border-radius: 6px; pointer-events: none; opacity: 0; transform: translateX(6px); transition: opacity 0.2s, transform 0.2s; }
+.stepper-dot:hover .stepper-label { opacity: 1; transform: translateX(0); }
+
+/* Section bases */
+.section-dark { background-color: #1c1f19; color: #f0ece4; }
+.section-light { background-color: #f5f3ef; color: #1c1f19; }
+
+/* Dot pattern overlays */
+.section-dark.dot-bg { background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 0); background-size: 24px 24px; }
+.section-light.dot-bg { background-image: radial-gradient(rgba(0,0,0,0.06) 1px, transparent 0); background-size: 24px 24px; }
 
 @media (max-width: 768px) {
   .hero-grid { grid-template-columns: 1fr !important; }
@@ -33,88 +56,105 @@ a.hover-link:hover { filter: brightness(1.25); }
   .nav-links { display: none !important; }
   .about-h2 { font-size: 30px !important; }
   .section-h2 { font-size: 32px !important; }
+  .stepper-nav { right: 10px; gap: 10px; }
+  .stepper-dot { width: 8px; height: 8px; }
+  .stepper-label { display: none; }
 }
 </style>
 </head>
 <body>
 
-<div style="background-color: #1c1f19; background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 0); background-size: 24px 24px; background-position: center; color: #f0ece4; font-family: 'DM Sans', sans-serif; min-height: 100vh">
+<!-- STEPPER NAV -->
+<nav class="stepper-nav" aria-label="Section navigation">
+  <button class="stepper-dot active" data-target="sec-hero"><span class="stepper-label">Hero</span></button>
+  <button class="stepper-dot" data-target="sec-showcase"><span class="stepper-label">Showcase</span></button>
+  <button class="stepper-dot" data-target="sec-about"><span class="stepper-label">About</span></button>
+  <button class="stepper-dot" data-target="sec-process"><span class="stepper-label">Process</span></button>
+  <button class="stepper-dot" data-target="sec-cta"><span class="stepper-label">Connect</span></button>
+</nav>
 
-  <!-- NAV -->
-  <nav style="display: flex; align-items: center; justify-content: space-between; padding: 20px 24px">
-    <div style="display: flex; align-items: center; gap: 10px">
-      <div style="width: 32px; height: 32px; background: #4a8a4e; border-radius: 8px; display: flex; align-items: center; justify-content: center; font: 700 14px/1 'DM Serif Display', serif; color: #f0ece4">P</div>
+<div style="font-family: 'DM Sans', sans-serif; min-height: 100vh">
+
+  <!-- ========== SECTION 1: HERO (DARK) ========== -->
+  <section id="sec-hero" class="section-dark dot-bg" style="padding: 0">
+
+    <!-- NAV -->
+    <nav style="display: flex; align-items: center; justify-content: space-between; padding: 20px 24px">
+      <div style="display: flex; align-items: center; gap: 10px">
+        <div style="width: 32px; height: 32px; background: #4a8a4e; border-radius: 8px; display: flex; align-items: center; justify-content: center; font: 700 14px/1 'DM Serif Display', serif; color: #f0ece4">P</div>
+        <div>
+          <div style="font: 600 13px/1 'DM Sans', sans-serif; color: #f0ece4; letter-spacing: 0.02em">Puneet Arora</div>
+          <div style="font: 400 10px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.5)">AI Vibe Coding</div>
+        </div>
+      </div>
+      <div class="nav-links" style="display: flex; gap: 28px; align-items: center">
+        <a href="https://www.linkedin.com/in/arorapuneet11/" target="_blank" class="hover-link" style="font: 500 13px/1 'DM Sans', sans-serif; color: #1c1f19; background: #56b45a; padding: 10px 22px; border-radius: 100px; text-decoration: none; cursor: pointer">Let's Connect</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="fade-in hero-grid" style="padding: 60px 24px 40px; display: grid; grid-template-columns: 1fr 400px; gap: 48px; align-items: center">
       <div>
-        <div style="font: 600 13px/1 'DM Sans', sans-serif; color: #f0ece4; letter-spacing: 0.02em">Puneet Arora</div>
-        <div style="font: 400 10px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.5)">AI Vibe Coding</div>
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(74,138,78,0.1); border: 1px solid rgba(74,138,78,0.2); border-radius: 100px; padding: 6px 16px; margin-bottom: 28px">
+          <div style="width: 6px; height: 6px; background: #56b45a; border-radius: 50%; animation: blink-dot 1.5s ease-in-out infinite"></div>
+          <span style="font: 500 11px/1 'DM Sans', sans-serif; color: #7dd87d; letter-spacing: 0.06em; text-transform: uppercase">9 Projects Live</span>
+        </div>
+        <h1 style="font: 400 64px/1.05 'DM Serif Display', serif; color: #f0ece4; margin: 0 0 24px">Growing the core…<br><span style="color: #6cc96c">while adding<br>some more.</span></h1>
+        <p style="font: 400 17px/1.7 'DM Sans', sans-serif; color: rgba(240,236,228,0.65); max-width: 500px; margin: 0 0 36px">User Experience Practice &amp; AI Design Transformation. Live tools, prototypes, and case studies — all vibe-coded.</p>
+        <div style="display: flex; gap: 12px">
+          <a href="#sec-showcase" class="hover-link" style="font: 500 14px/1 'DM Sans', sans-serif; color: #1c1f19; background: #56b45a; padding: 14px 32px; border-radius: 100px; text-decoration: none; cursor: pointer">Explore Projects ↓</a>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; display: flex; align-items: baseline; gap: 16px">
+          <div style="font: 700 36px/1 'DM Serif Display', serif; color: #6cc96c">19</div>
+          <div style="font: 400 13px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Years designing<br>enterprise experiences</div>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; display: flex; align-items: baseline; gap: 16px">
+          <div style="font: 700 36px/1 'DM Serif Display', serif; color: #6cc96c">10</div>
+          <div style="font: 400 13px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">AI concepts<br>designed</div>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; display: flex; align-items: baseline; gap: 16px">
+          <div style="font: 700 36px/1 'DM Serif Display', serif; color: #6cc96c">8</div>
+          <div style="font: 400 13px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Patents granted across AI, UX,<br>Mobile Security, Cloud Printing...</div>
+        </div>
       </div>
     </div>
-    <div class="nav-links" style="display: flex; gap: 28px; align-items: center">
-      <a href="https://www.linkedin.com/in/arorapuneet11/" target="_blank" class="hover-link" style="font: 500 13px/1 'DM Sans', sans-serif; color: #1c1f19; background: #56b45a; padding: 10px 22px; border-radius: 100px; text-decoration: none; cursor: pointer">Let's Connect</a>
-    </div>
-  </nav>
 
-  <!-- HERO -->
-  <section class="fade-in hero-grid" style="padding: 60px 24px 40px; display: grid; grid-template-columns: 1fr 400px; gap: 48px; align-items: center">
-    <div>
-      <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(74,138,78,0.1); border: 1px solid rgba(74,138,78,0.2); border-radius: 100px; padding: 6px 16px; margin-bottom: 28px">
-        <div style="width: 6px; height: 6px; background: #56b45a; border-radius: 50%; animation: blink-dot 1.5s ease-in-out infinite"></div>
-        <span style="font: 500 11px/1 'DM Sans', sans-serif; color: #7dd87d; letter-spacing: 0.06em; text-transform: uppercase">9 Projects Live</span>
-      </div>
-      <h1 style="font: 400 64px/1.05 'DM Serif Display', serif; color: #f0ece4; margin: 0 0 24px">Growing the core…<br><span style="color: #6cc96c">while adding<br>some more.</span></h1>
-      <p style="font: 400 17px/1.7 'DM Sans', sans-serif; color: rgba(240,236,228,0.65); max-width: 500px; margin: 0 0 36px">User Experience Practice &amp; AI Design Transformation. Live tools, prototypes, and case studies — all vibe-coded.</p>
-      <div style="display: flex; gap: 12px">
-        <a href="#showcase" class="hover-link" style="font: 500 14px/1 'DM Sans', sans-serif; color: #1c1f19; background: #56b45a; padding: 14px 32px; border-radius: 100px; text-decoration: none; cursor: pointer">Explore Projects ↓</a>
-      </div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 12px">
-      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; display: flex; align-items: baseline; gap: 16px">
-        <div style="font: 700 36px/1 'DM Serif Display', serif; color: #6cc96c">19</div>
-        <div style="font: 400 13px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Years designing<br>enterprise experiences</div>
-      </div>
-      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; display: flex; align-items: baseline; gap: 16px">
-        <div style="font: 700 36px/1 'DM Serif Display', serif; color: #6cc96c">10</div>
-        <div style="font: 400 13px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">AI concepts<br>designed</div>
-      </div>
-      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; display: flex; align-items: baseline; gap: 16px">
-        <div style="font: 700 36px/1 'DM Serif Display', serif; color: #6cc96c">8</div>
-        <div style="font: 400 13px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Patents granted across AI, UX,<br>Mobile Security, Cloud Printing...</div>
+    <!-- MARQUEE -->
+    <div style="overflow: hidden; border-top: 1px solid rgba(74,138,78,0.15); border-bottom: 1px solid rgba(74,138,78,0.15); padding: 14px 0; background: rgba(74,138,78,0.04)">
+      <div style="display: flex; gap: 48px; animation: marquee-scroll 15s linear infinite; width: max-content">
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Imagine</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Build</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Ship</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Transform</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Design</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Vibe-Code</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Imagine</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Build</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Ship</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Transform</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Design</span>
+        <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Vibe-Code</span>
       </div>
     </div>
+
   </section>
 
-  <!-- MARQUEE -->
-  <div style="overflow: hidden; border-top: 1px solid rgba(74,138,78,0.15); border-bottom: 1px solid rgba(74,138,78,0.15); padding: 14px 0; background: rgba(74,138,78,0.04)">
-    <div style="display: flex; gap: 48px; animation: marquee-scroll 15s linear infinite; width: max-content">
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Imagine</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Build</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Ship</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Transform</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Design</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Vibe-Code</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Imagine</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Build</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Ship</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Transform</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Design</span>
-      <span style="font: 700 13px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.4); letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap">Vibe-Code</span>
-    </div>
-  </div>
-
-  <!-- SHOWCASE -->
-  <section id="showcase" class="fade-in" style="padding: 60px 24px">
+  <!-- ========== SECTION 2: SHOWCASE (LIGHT) ========== -->
+  <section id="sec-showcase" class="section-light dot-bg fade-in" style="padding: 72px 24px 80px">
     <div class="showcase-header" style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px">
       <div>
-        <div style="font: 400 12px/1 'DM Sans', sans-serif; color: #6cc96c; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px">The Showcase</div>
-        <h2 class="section-h2" style="font: 400 42px/1.1 'DM Serif Display', serif; color: #f0ece4; margin: 0">See what I've shipped.</h2>
+        <div style="font: 400 12px/1 'DM Sans', sans-serif; color: #3a7a3e; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px">The Showcase</div>
+        <h2 class="section-h2" style="font: 400 42px/1.1 'DM Serif Display', serif; color: #1c1f19; margin: 0">See what I've shipped.</h2>
       </div>
-      <p style="font: 400 14px/1.6 'DM Sans', sans-serif; color: rgba(240,236,228,0.5); max-width: 360px; margin: 0; text-align: right">Every concept here is user-centric. Real use-cases. Real links, Real user feedback. No slideware.</p>
+      <p style="font: 400 14px/1.6 'DM Sans', sans-serif; color: rgba(28,31,25,0.55); max-width: 360px; margin: 0; text-align: right">Every concept here is user-centric. Real use-cases. Real links, Real user feedback. No slideware.</p>
     </div>
 
     <div class="project-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px">
 
       <!-- Card 1: AI News Terminal -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #12140f; padding: 16px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px">
             <div style="width: 7px; height: 7px; border-radius: 50%; background: #e25555"></div>
@@ -151,17 +191,17 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #7dd87d; background: rgba(74,138,78,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">60+ Sources</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #3a7a3e; background: rgba(74,138,78,0.1); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">60+ Sources</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">AI News Terminal</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">AI-powered news aggregator with a behavioural signal engine that learns from your browsing habits. Aggregates 60+ sources across 12 categories. Pure vanilla JS.</p>
-          <a href="puneets-news-terminal.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #7dd87d; text-decoration: none; cursor: pointer">Open Terminal →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">AI News Terminal</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">AI-powered news aggregator with a behavioural signal engine that learns from your browsing habits. Aggregates 60+ sources across 12 categories. Pure vanilla JS.</p>
+          <a href="puneets-news-terminal.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #3a7a3e; text-decoration: none; cursor: pointer">Open Terminal →</a>
         </div>
       </div>
 
       <!-- Card 2: AI Opportunity Simulator -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #14120e; padding: 16px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px">
             <span style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(184,160,120,0.85); letter-spacing: 0.08em; text-transform: uppercase">Global AI Opportunity Index</span>
@@ -201,17 +241,17 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #c4aa78; background: rgba(184,160,120,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Prototype</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Interactive</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #8a7040; background: rgba(184,160,120,0.12); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Prototype</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Interactive</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">AI Opportunity Simulator</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">A living digital twin of the global economy. AI-scored country rankings, four-order-deep geopolitical shock simulations, and real-time strategy extraction.</p>
-          <a href="opportunity-simulator.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #c4aa78; text-decoration: none; cursor: pointer">Open Simulator →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">AI Opportunity Simulator</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">A living digital twin of the global economy. AI-scored country rankings, four-order-deep geopolitical shock simulations, and real-time strategy extraction.</p>
+          <a href="opportunity-simulator.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #8a7040; text-decoration: none; cursor: pointer">Open Simulator →</a>
         </div>
       </div>
 
       <!-- Card 3: Orbital Situation Room -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #0e1218; padding: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.06); position: relative">
           <div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(106,138,154,0.8); letter-spacing: 0.1em; text-transform: uppercase; position: absolute; top: 14px; left: 16px">Orbital Ops</div>
           <div style="font: 400 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.2); position: absolute; top: 14px; right: 16px">3D · WebGL</div>
@@ -233,17 +273,17 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #7ab0c0; background: rgba(106,138,154,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">3D · WebGL</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Prototype</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #4a7888; background: rgba(106,138,154,0.12); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">3D · WebGL</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Prototype</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Orbital Situation Room</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">WebGL 3D globe rendering satellites, ground stations, and network links. AI-driven collision simulations, constellation filtering, and live failure-risk scoring.</p>
-          <a href="situation-simulator.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #7ab0c0; text-decoration: none; cursor: pointer">Enter Situation Room →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Orbital Situation Room</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">WebGL 3D globe rendering satellites, ground stations, and network links. AI-driven collision simulations, constellation filtering, and live failure-risk scoring.</p>
+          <a href="situation-simulator.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #4a7888; text-decoration: none; cursor: pointer">Enter Situation Room →</a>
         </div>
       </div>
 
       <!-- Card 4: Design Intelligence Portal -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #121410; padding: 16px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px">
             <span style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(90,154,94,0.85); letter-spacing: 0.08em; text-transform: uppercase">Design Intelligence</span>
@@ -282,32 +322,22 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #7dd87d; background: rgba(74,138,78,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Vibe-Coded</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #3a7a3e; background: rgba(74,138,78,0.1); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Vibe-Coded</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Design Intelligence Portal</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">A portal with a dashboard to amplify prompt engineering skills of Design teams, backed by real metrics and efficiency driven KPIs.</p>
-          <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #7dd87d; text-decoration: none; cursor: pointer">Visit Portal →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Design Intelligence Portal</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">A portal with a dashboard to amplify prompt engineering skills of Design teams, backed by real metrics and efficiency driven KPIs.</p>
+          <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #3a7a3e; text-decoration: none; cursor: pointer">Visit Portal →</a>
         </div>
       </div>
 
       <!-- Card 5: Vigyan Setu -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #14120e; padding: 16px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(184,136,110,0.85); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px">Double Diamond · 70 Slides</div>
           <div style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 2px">
-            <svg width="100" height="80" viewBox="0 0 100 80" style="opacity: 0.7">
-              <polygon points="0,40 50,5 50,75" fill="none" stroke="rgba(184,136,110,0.25)" stroke-width="1"></polygon>
-              <polygon points="50,5 100,40 50,75" fill="none" stroke="rgba(184,136,110,0.25)" stroke-width="1"></polygon>
-              <text x="25" y="42" fill="rgba(184,136,110,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Discover</text>
-              <text x="75" y="42" fill="rgba(184,136,110,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Define</text>
-            </svg>
-            <svg width="100" height="80" viewBox="0 0 100 80" style="opacity: 0.7">
-              <polygon points="0,40 50,5 50,75" fill="none" stroke="rgba(74,138,78,0.25)" stroke-width="1"></polygon>
-              <polygon points="50,5 100,40 50,75" fill="none" stroke="rgba(74,138,78,0.25)" stroke-width="1"></polygon>
-              <text x="25" y="42" fill="rgba(74,138,78,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Develop</text>
-              <text x="75" y="42" fill="rgba(74,138,78,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Deliver</text>
-            </svg>
+            <svg width="100" height="80" viewBox="0 0 100 80" style="opacity: 0.7"><polygon points="0,40 50,5 50,75" fill="none" stroke="rgba(184,136,110,0.25)" stroke-width="1"></polygon><polygon points="50,5 100,40 50,75" fill="none" stroke="rgba(184,136,110,0.25)" stroke-width="1"></polygon><text x="25" y="42" fill="rgba(184,136,110,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Discover</text><text x="75" y="42" fill="rgba(184,136,110,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Define</text></svg>
+            <svg width="100" height="80" viewBox="0 0 100 80" style="opacity: 0.7"><polygon points="0,40 50,5 50,75" fill="none" stroke="rgba(74,138,78,0.25)" stroke-width="1"></polygon><polygon points="50,5 100,40 50,75" fill="none" stroke="rgba(74,138,78,0.25)" stroke-width="1"></polygon><text x="25" y="42" fill="rgba(74,138,78,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Develop</text><text x="75" y="42" fill="rgba(74,138,78,0.4)" font-size="7" font-family="DM Sans" text-anchor="middle">Deliver</text></svg>
           </div>
           <div style="display: flex; gap: 12px; justify-content: center">
             <span style="font: 500 8px/1 'DM Sans', sans-serif; color: rgba(184,136,110,0.7)">30 methods</span>
@@ -319,17 +349,17 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #c4946e; background: rgba(184,136,110,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Case Study</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Interactive</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #8a5a3a; background: rgba(184,136,110,0.12); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Case Study</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Interactive</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Vigyan Setu</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">A double-diamond design thinking framework based speculative case study focussing on India AI Impact Summit.</p>
-          <a href="vigyan-setu.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #c4946e; text-decoration: none; cursor: pointer">Read Case Study →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Vigyan Setu</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">A double-diamond design thinking framework based speculative case study focussing on India AI Impact Summit.</p>
+          <a href="vigyan-setu.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #8a5a3a; text-decoration: none; cursor: pointer">Read Case Study →</a>
         </div>
       </div>
 
       <!-- Card 6: Skills Lab -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #10121a; padding: 16px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px">
             <span style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(130,134,160,0.85); letter-spacing: 0.08em; text-transform: uppercase">Skills Lab</span>
@@ -339,22 +369,10 @@ a.hover-link:hover { filter: brightness(1.25); }
             </div>
           </div>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; flex: 1">
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px">
-              <div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">GST Invoice Parser</div>
-              <div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Extract line items from GST invoices</div>
-            </div>
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px">
-              <div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">RTI Draft Writer</div>
-              <div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Generate RTI applications</div>
-            </div>
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px">
-              <div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">API Doc Generator</div>
-              <div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Auto-generate API documentation</div>
-            </div>
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px">
-              <div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">UX Audit Prompt</div>
-              <div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Run structured UX audits</div>
-            </div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px"><div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">GST Invoice Parser</div><div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Extract line items from GST invoices</div></div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px"><div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">RTI Draft Writer</div><div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Generate RTI applications</div></div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px"><div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">API Doc Generator</div><div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Auto-generate API documentation</div></div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; padding: 8px"><div style="font: 600 8px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.75); margin-bottom: 3px">UX Audit Prompt</div><div style="font: 400 7px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Run structured UX audits</div></div>
           </div>
           <div style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: rgba(74,138,78,0.12); border-radius: 4px">
             <span style="font: 400 8px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.5)">⚡</span>
@@ -363,26 +381,22 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #9a9ec0; background: rgba(130,134,160,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">92 Skills</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Generator</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #5a5e88; background: rgba(130,134,160,0.12); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">92 Skills</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Generator</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Skills Lab</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">Skills Lab for Indian &amp; Global AI Builders. Contains AI skills generator, 30 India-built Claude skills and 62 global builder skills...</p>
-          <a href="skills-lab.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #9a9ec0; text-decoration: none; cursor: pointer">Open Skills Lab →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Skills Lab</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">Skills Lab for Indian &amp; Global AI Builders. Contains AI skills generator, 30 India-built Claude skills and 62 global builder skills...</p>
+          <a href="skills-lab.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #5a5e88; text-decoration: none; cursor: pointer">Open Skills Lab →</a>
         </div>
       </div>
 
       <!-- Card 7: Portfolio Intelligence Lab -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #121410; padding: 16px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(90,154,94,0.85); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px">Portfolio Intelligence Lab</div>
           <div style="display: flex; flex-direction: column; gap: 6px; flex: 1">
-            <div style="align-self: flex-end; background: rgba(74,138,78,0.12); border: 1px solid rgba(74,138,78,0.15); border-radius: 10px 10px 2px 10px; padding: 8px 10px; max-width: 75%">
-              <span style="font: 400 8px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Analyze this portfolio for strategic depth and craft maturity</span>
-            </div>
-            <div style="align-self: flex-start; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px 10px 10px 2px; padding: 8px 10px; max-width: 80%">
-              <span style="font: 400 8px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.7)">Looking at the trajectory from H-P R&amp;D to Dell's AI personalization practice, I see three compounding patterns…</span>
-            </div>
+            <div style="align-self: flex-end; background: rgba(74,138,78,0.12); border: 1px solid rgba(74,138,78,0.15); border-radius: 10px 10px 2px 10px; padding: 8px 10px; max-width: 75%"><span style="font: 400 8px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Analyze this portfolio for strategic depth and craft maturity</span></div>
+            <div style="align-self: flex-start; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px 10px 10px 2px; padding: 8px 10px; max-width: 80%"><span style="font: 400 8px/1.4 'DM Sans', sans-serif; color: rgba(240,236,228,0.7)">Looking at the trajectory from H-P R&amp;D to Dell's AI personalization practice, I see three compounding patterns…</span></div>
             <div style="display: flex; gap: 4px; margin-top: auto">
               <span style="font: 500 7px/1 'DM Sans', sans-serif; color: rgba(74,138,78,0.4); background: rgba(74,138,78,0.08); padding: 3px 8px; border-radius: 3px">ANALYSIS</span>
               <span style="font: 500 7px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.25); background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 3px">INSIGHTS</span>
@@ -391,56 +405,42 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #7dd87d; background: rgba(74,138,78,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Custom GPT</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #3a7a3e; background: rgba(74,138,78,0.1); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Custom GPT</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Portfolio Intelligence Lab</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">A custom GPT encoding 19 years of strategic design thinking. AI-powered portfolio reviewer for expert-level critique.</p>
-          <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #7dd87d; text-decoration: none; cursor: pointer">Open in ChatGPT →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Portfolio Intelligence Lab</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">A custom GPT encoding 19 years of strategic design thinking. AI-powered portfolio reviewer for expert-level critique.</p>
+          <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #3a7a3e; text-decoration: none; cursor: pointer">Open in ChatGPT →</a>
         </div>
       </div>
 
       <!-- Card 8: UX Trust & Dark Pattern Intelligence -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #14100e; padding: 16px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(200,140,100,0.85); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2px">UX Trust Audit</div>
           <div style="display: flex; align-items: center; gap: 16px; padding: 10px 12px; background: rgba(255,255,255,0.03); border-radius: 6px">
-            <div style="width: 48px; height: 48px; border-radius: 50%; border: 3px solid #56b45a; display: flex; align-items: center; justify-content: center">
-              <span style="font: 700 16px/1 'DM Serif Display', serif; color: #7dd87d">72</span>
-            </div>
-            <div>
-              <div style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.5); margin-bottom: 3px">Trust Score</div>
-              <div style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">3 dark patterns detected · 2 nudges flagged</div>
-            </div>
+            <div style="width: 48px; height: 48px; border-radius: 50%; border: 3px solid #56b45a; display: flex; align-items: center; justify-content: center"><span style="font: 700 16px/1 'DM Serif Display', serif; color: #7dd87d">72</span></div>
+            <div><div style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.5); margin-bottom: 3px">Trust Score</div><div style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">3 dark patterns detected · 2 nudges flagged</div></div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 3px; flex: 1">
-            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: rgba(226,85,85,0.06); border-radius: 3px">
-              <span style="font: 700 7px/1 monospace; color: rgba(226,85,85,0.85)">!</span>
-              <span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Confirmshaming in cancellation flow</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: rgba(226,180,85,0.06); border-radius: 3px">
-              <span style="font: 700 7px/1 monospace; color: rgba(226,180,85,0.85)">?</span>
-              <span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Forced continuity — no clear opt-out</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: rgba(74,138,78,0.12); border-radius: 3px">
-              <span style="font: 700 7px/1 monospace; color: rgba(74,138,78,0.8)">✓</span>
-              <span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Ethical nudge — clear value prop</span>
-            </div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: rgba(226,85,85,0.06); border-radius: 3px"><span style="font: 700 7px/1 monospace; color: rgba(226,85,85,0.85)">!</span><span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Confirmshaming in cancellation flow</span></div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: rgba(226,180,85,0.06); border-radius: 3px"><span style="font: 700 7px/1 monospace; color: rgba(226,180,85,0.85)">?</span><span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Forced continuity — no clear opt-out</span></div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: rgba(74,138,78,0.12); border-radius: 3px"><span style="font: 700 7px/1 monospace; color: rgba(74,138,78,0.8)">✓</span><span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Ethical nudge — clear value prop</span></div>
           </div>
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #c4946e; background: rgba(184,136,110,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Custom GPT</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #8a5a3a; background: rgba(184,136,110,0.12); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Custom GPT</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Live</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">UX Trust &amp; Dark-Pattern Intelligence</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">AI-driven audits on any interface for trust erosion and dark patterns. Scored trust audit with actionable findings.</p>
-          <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #c4946e; text-decoration: none; cursor: pointer">Open in ChatGPT →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">UX Trust &amp; Dark-Pattern Intelligence</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">AI-driven audits on any interface for trust erosion and dark patterns. Scored trust audit with actionable findings.</p>
+          <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #8a5a3a; text-decoration: none; cursor: pointer">Open in ChatGPT →</a>
         </div>
       </div>
 
       <!-- Card 9: 30-Day Agentic UX Plan -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #121016; padding: 16px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(150,120,180,0.85); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px">30-Day Mastery Plan</div>
           <div style="display: flex; align-items: center; gap: 2px; margin-bottom: 8px">
@@ -456,70 +456,46 @@ a.hover-link:hover { filter: brightness(1.25); }
             <span style="font: 500 7px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.15)">Week 4</span>
           </div>
           <div style="display: flex; flex-direction: column; gap: 3px; flex: 1">
-            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; background: rgba(74,138,78,0.12); border-radius: 4px; border-left: 2px solid rgba(74,138,78,0.5)">
-              <span style="font: 700 8px/1 monospace; color: rgba(74,138,78,0.8)">D01</span>
-              <span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.7)">Prompt-level fluency baseline</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 4px; border-left: 2px solid rgba(74,138,78,0.35)">
-              <span style="font: 700 8px/1 monospace; color: rgba(74,138,78,0.7)">D02</span>
-              <span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Agent mental models</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 4px; border-left: 2px solid rgba(74,138,78,0.35)">
-              <span style="font: 700 8px/1 monospace; color: rgba(74,138,78,0.7)">D03</span>
-              <span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Trust calibration in agent UX</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 4px; border-left: 2px solid rgba(150,120,180,0.35)">
-              <span style="font: 700 8px/1 monospace; color: rgba(150,120,180,0.7)">D04</span>
-              <span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Designing for agent autonomy</span>
-            </div>
+            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; background: rgba(74,138,78,0.12); border-radius: 4px; border-left: 2px solid rgba(74,138,78,0.5)"><span style="font: 700 8px/1 monospace; color: rgba(74,138,78,0.8)">D01</span><span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.7)">Prompt-level fluency baseline</span></div>
+            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 4px; border-left: 2px solid rgba(74,138,78,0.35)"><span style="font: 700 8px/1 monospace; color: rgba(74,138,78,0.7)">D02</span><span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Agent mental models</span></div>
+            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 4px; border-left: 2px solid rgba(74,138,78,0.35)"><span style="font: 700 8px/1 monospace; color: rgba(74,138,78,0.7)">D03</span><span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.65)">Trust calibration in agent UX</span></div>
+            <div style="display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 4px; border-left: 2px solid rgba(150,120,180,0.35)"><span style="font: 700 8px/1 monospace; color: rgba(150,120,180,0.7)">D04</span><span style="font: 400 8px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.55)">Designing for agent autonomy</span></div>
           </div>
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #b098d0; background: rgba(150,120,180,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Playbook</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">30 Days</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #6a5090; background: rgba(150,120,180,0.12); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Playbook</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">30 Days</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">30-Day Agentic UX Mastery</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">Structured day-by-day playbook for designing agentic AI experiences. From prompt fluency to shipping autonomous agents.</p>
-          <a href="30day-agentic-ux-plan.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #b098d0; text-decoration: none; cursor: pointer">Read the Plan →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">30-Day Agentic UX Mastery</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">Structured day-by-day playbook for designing agentic AI experiences. From prompt fluency to shipping autonomous agents.</p>
+          <a href="30day-agentic-ux-plan.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #6a5090; text-decoration: none; cursor: pointer">Read the Plan →</a>
         </div>
       </div>
 
-      <!-- Card 10: Dell AI Personalization Prototype -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <!-- Card 10: Dell AI Personalization -->
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #0f1218; padding: 16px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="font: 600 9px/1 'DM Sans', sans-serif; color: rgba(78,140,200,0.85); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px">Sarvagya Platform</div>
-          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; background: rgba(78,140,200,0.12); border-radius: 4px">
-            <div style="width: 4px; height: 4px; background: #4e8cc8; border-radius: 50%; flex-shrink: 0"></div>
-            <div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.8)">Customer DNA: Manoj (Student) → 94% match</div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px">
-            <div style="width: 4px; height: 4px; background: #b8a078; border-radius: 50%; flex-shrink: 0"></div>
-            <div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.75)">Personalized layout: +49% conversion lift</div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px">
-            <div style="width: 4px; height: 4px; background: #b8a078; border-radius: 50%; flex-shrink: 0"></div>
-            <div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.7)">Cross-sell engine: 11.5x recommendation ROI</div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px">
-            <div style="width: 4px; height: 4px; background: #56b45a; border-radius: 50%; flex-shrink: 0"></div>
-            <div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.65)">3 persona journeys: Student · Creative · Enterprise</div>
-          </div>
+          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; background: rgba(78,140,200,0.12); border-radius: 4px"><div style="width: 4px; height: 4px; background: #4e8cc8; border-radius: 50%; flex-shrink: 0"></div><div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.8)">Customer DNA: Manoj (Student) → 94% match</div></div>
+          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px"><div style="width: 4px; height: 4px; background: #b8a078; border-radius: 50%; flex-shrink: 0"></div><div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.75)">Personalized layout: +49% conversion lift</div></div>
+          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px"><div style="width: 4px; height: 4px; background: #b8a078; border-radius: 50%; flex-shrink: 0"></div><div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.7)">Cross-sell engine: 11.5x recommendation ROI</div></div>
+          <div style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px"><div style="width: 4px; height: 4px; background: #56b45a; border-radius: 50%; flex-shrink: 0"></div><div style="font: 400 9px/1.3 monospace; color: rgba(240,236,228,0.65)">3 persona journeys: Student · Creative · Enterprise</div></div>
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #4e9ade; background: rgba(78,140,200,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Prototype</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">E-Commerce</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">AI</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #2a6aaa; background: rgba(78,140,200,0.1); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Prototype</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">E-Commerce</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">AI</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Dell.com AI Personalization</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">Real-time AI personalization platform (Sarvagya) that builds a Customer DNA for every Dell.com visitor. Three persona journeys with full e-commerce workflow.</p>
-          <a href="dell-personalization-prototype.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #4e9ade; text-decoration: none; cursor: pointer">Open Prototype →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Dell.com AI Personalization</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">Real-time AI personalization platform (Sarvagya) that builds a Customer DNA for every Dell.com visitor. Three persona journeys with full e-commerce workflow.</p>
+          <a href="dell-personalization-prototype.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #2a6aaa; text-decoration: none; cursor: pointer">Open Prototype →</a>
         </div>
       </div>
 
       <!-- Card 11: Decision Replay -->
-      <div class="pcard" style="background: rgba(140,120,90,0.08); border: 1px solid rgba(184,160,120,0.15); border-radius: 14px; overflow: hidden">
+      <div class="pcard" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden">
         <div style="height: 220px; background: #0e120a; padding: 16px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(255,255,255,0.06)">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
             <div style="width: 7px; height: 7px; border-radius: 50%; background: #e25555"></div>
@@ -529,30 +505,10 @@ a.hover-link:hover { filter: brightness(1.25); }
           </div>
           <div style="position: relative; padding-left: 14px; flex: 1; display: flex; flex-direction: column; gap: 4px">
             <div style="position: absolute; left: 5px; top: 2px; bottom: 2px; width: 1.5px; background: linear-gradient(to bottom, #6cc96c, rgba(108,201,108,0.15))"></div>
-            <div style="display: flex; align-items: center; gap: 8px; position: relative">
-              <div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #6cc96c; border-radius: 50%; box-shadow: 0 0 6px rgba(108,201,108,0.4)"></div>
-              <span style="font: 700 7px/1 monospace; color: rgba(108,201,108,0.8)">09:12</span>
-              <span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.75)">Budget 50L to 70L</span>
-              <span style="font: 600 7px/1 monospace; color: #6cc96c; margin-left: auto">+8% conf</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; position: relative">
-              <div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #6cc96c; border-radius: 50%"></div>
-              <span style="font: 700 7px/1 monospace; color: rgba(108,201,108,0.7)">09:18</span>
-              <span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.7)">Scope Large to Medium</span>
-              <span style="font: 600 7px/1 monospace; color: #6cc96c; margin-left: auto">+14% conf</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; position: relative">
-              <div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #6cc96c; border-radius: 50%"></div>
-              <span style="font: 700 7px/1 monospace; color: rgba(108,201,108,0.6)">09:26</span>
-              <span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.65)">+2 Engineers added</span>
-              <span style="font: 600 7px/1 monospace; color: #6cc96c; margin-left: auto">lower risk</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px; position: relative">
-              <div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #b098d0; border-radius: 50%"></div>
-              <span style="font: 700 7px/1 monospace; color: rgba(176,152,208,0.7)">09:31</span>
-              <span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.55)">UX Investment +15%</span>
-              <span style="font: 600 7px/1 monospace; color: #b098d0; margin-left: auto">+11% CSAT</span>
-            </div>
+            <div style="display: flex; align-items: center; gap: 8px; position: relative"><div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #6cc96c; border-radius: 50%; box-shadow: 0 0 6px rgba(108,201,108,0.4)"></div><span style="font: 700 7px/1 monospace; color: rgba(108,201,108,0.8)">09:12</span><span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.75)">Budget 50L to 70L</span><span style="font: 600 7px/1 monospace; color: #6cc96c; margin-left: auto">+8% conf</span></div>
+            <div style="display: flex; align-items: center; gap: 8px; position: relative"><div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #6cc96c; border-radius: 50%"></div><span style="font: 700 7px/1 monospace; color: rgba(108,201,108,0.7)">09:18</span><span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.7)">Scope Large to Medium</span><span style="font: 600 7px/1 monospace; color: #6cc96c; margin-left: auto">+14% conf</span></div>
+            <div style="display: flex; align-items: center; gap: 8px; position: relative"><div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #6cc96c; border-radius: 50%"></div><span style="font: 700 7px/1 monospace; color: rgba(108,201,108,0.6)">09:26</span><span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.65)">+2 Engineers added</span><span style="font: 600 7px/1 monospace; color: #6cc96c; margin-left: auto">lower risk</span></div>
+            <div style="display: flex; align-items: center; gap: 8px; position: relative"><div style="position: absolute; left: -12px; width: 5px; height: 5px; background: #b098d0; border-radius: 50%"></div><span style="font: 700 7px/1 monospace; color: rgba(176,152,208,0.7)">09:31</span><span style="font: 400 8px/1.2 monospace; color: rgba(240,236,228,0.55)">UX Investment +15%</span><span style="font: 600 7px/1 monospace; color: #b098d0; margin-left: auto">+11% CSAT</span></div>
           </div>
           <div style="display: flex; align-items: center; justify-content: space-between; padding: 4px 0; margin-top: auto">
             <div style="display: flex; gap: 8px">
@@ -565,79 +521,67 @@ a.hover-link:hover { filter: brightness(1.25); }
         </div>
         <div style="padding: 20px 20px 24px">
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 10px">
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #7dd87d; background: rgba(74,138,78,0.15); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Signature</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #b098d0; background: rgba(150,120,180,0.12); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">AI Coach</span>
-            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.4); background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Interactive</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #3a7a3e; background: rgba(74,138,78,0.1); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Signature</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: #6a5090; background: rgba(150,120,180,0.1); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">AI Coach</span>
+            <span style="font: 500 9px/1 'DM Sans', sans-serif; color: rgba(28,31,25,0.45); background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase">Interactive</span>
           </div>
-          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Decision Replay</h3>
-          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(240,236,228,0.55); margin: 0 0 14px">Flagship feature of DecisionCanvas AI. Captures every strategic decision as an interactive timeline with AI coaching, scorecards, and executive playback.</p>
-          <a href="decision-replay.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #7dd87d; text-decoration: none; cursor: pointer">Experience Replay →</a>
+          <h3 style="font: 500 17px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Decision Replay</h3>
+          <p style="font: 400 13px/1.55 'DM Sans', sans-serif; color: rgba(28,31,25,0.6); margin: 0 0 14px">Flagship feature of DecisionCanvas AI. Captures every strategic decision as an interactive timeline with AI coaching, scorecards, and executive playback.</p>
+          <a href="decision-replay.html" class="hover-link" style="font: 500 12px/1 'DM Sans', sans-serif; color: #3a7a3e; text-decoration: none; cursor: pointer">Experience Replay →</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="fade-in" style="padding: 60px 24px; background: #181a15; border-top: 1px solid rgba(74,138,78,0.08)">
+  <!-- ========== SECTION 3: ABOUT (DARK) ========== -->
+  <section id="sec-about" class="section-dark dot-bg fade-in" style="padding: 72px 24px 80px">
     <div style="max-width: 640px; margin: 0 auto; text-align: center">
       <div style="font: 400 12px/1 'DM Sans', sans-serif; color: #6cc96c; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px">The Builder</div>
       <h2 class="about-h2" style="font: 400 38px/1.15 'DM Serif Display', serif; color: #f0ece4; margin: 0 0 20px">Every AI thing I've built, in one place.</h2>
       <p style="font: 400 15px/1.7 'DM Sans', sans-serif; color: rgba(240,236,228,0.6); margin: 0 0 32px">Principal Product Designer with 19 years at the seam between executives, engineers, and end users. From printer firmware UIs at H-P R&amp;D, to operations cockpits at Boeing, to GenAI personalization at Dell.com.</p>
       <div class="stats-row" style="display: flex; gap: 32px; justify-content: center">
-        <div style="text-align: center">
-          <div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">4</div>
-          <div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">Fortune-500</div>
-        </div>
+        <div style="text-align: center"><div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">4</div><div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">Fortune-500</div></div>
         <div style="width: 1px; background: rgba(255,255,255,0.08)"></div>
-        <div style="text-align: center">
-          <div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">33</div>
-          <div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">Designers led</div>
-        </div>
+        <div style="text-align: center"><div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">33</div><div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">Designers led</div></div>
         <div style="width: 1px; background: rgba(255,255,255,0.08)"></div>
-        <div style="text-align: center">
-          <div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">8</div>
-          <div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">Patents</div>
-        </div>
+        <div style="text-align: center"><div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">8</div><div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">Patents</div></div>
         <div style="width: 1px; background: rgba(255,255,255,0.08)"></div>
-        <div style="text-align: center">
-          <div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">10</div>
-          <div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">AI projects live</div>
-        </div>
+        <div style="text-align: center"><div style="font: 700 32px/1 'DM Serif Display', serif; color: #6cc96c">10</div><div style="font: 400 11px/1.3 'DM Sans', sans-serif; color: rgba(240,236,228,0.45); margin-top: 4px">AI projects live</div></div>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section class="fade-in" style="padding: 60px 24px; border-top: 1px solid rgba(74,138,78,0.08)">
+  <!-- ========== SECTION 4: PROCESS (LIGHT) ========== -->
+  <section id="sec-process" class="section-light dot-bg fade-in" style="padding: 72px 24px 80px">
     <div style="text-align: center; margin-bottom: 48px">
-      <div style="font: 400 12px/1 'DM Sans', sans-serif; color: #6cc96c; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px">The Loop</div>
-      <h2 class="section-h2" style="font: 400 42px/1.1 'DM Serif Display', serif; color: #f0ece4; margin: 0">Imagine. Build. Ship.</h2>
+      <div style="font: 400 12px/1 'DM Sans', sans-serif; color: #3a7a3e; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px">The Loop</div>
+      <h2 class="section-h2" style="font: 400 42px/1.1 'DM Serif Display', serif; color: #1c1f19; margin: 0">Imagine. Build. Ship.</h2>
     </div>
     <div class="process-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px">
-      <div style="background: rgba(74,138,78,0.05); border-radius: 12px 0 0 12px; padding: 40px 32px; position: relative">
+      <div style="background: rgba(74,138,78,0.06); border-radius: 12px 0 0 12px; padding: 40px 32px; position: relative">
         <div style="font: 700 64px/1 'DM Serif Display', serif; color: rgba(74,138,78,0.1); position: absolute; top: 16px; right: 24px">1</div>
-        <div style="font: 600 11px/1 'DM Sans', sans-serif; color: #6cc96c; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px">Imagine</div>
-        <h3 style="font: 500 18px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">See the problem differently</h3>
-        <p style="font: 400 13px/1.6 'DM Sans', sans-serif; color: rgba(240,236,228,0.5); margin: 0">Start with a question worth answering. The best tools come from real frustrations.</p>
+        <div style="font: 600 11px/1 'DM Sans', sans-serif; color: #3a7a3e; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px">Imagine</div>
+        <h3 style="font: 500 18px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">See the problem differently</h3>
+        <p style="font: 400 13px/1.6 'DM Sans', sans-serif; color: rgba(28,31,25,0.55); margin: 0">Start with a question worth answering. The best tools come from real frustrations.</p>
       </div>
-      <div style="background: rgba(184,160,120,0.05); padding: 40px 32px; position: relative">
-        <div style="font: 700 64px/1 'DM Serif Display', serif; color: rgba(184,160,120,0.1); position: absolute; top: 16px; right: 24px">2</div>
-        <div style="font: 600 11px/1 'DM Sans', sans-serif; color: #c4aa78; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px">Build</div>
-        <h3 style="font: 500 18px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Vibe-code it into existence</h3>
-        <p style="font: 400 13px/1.6 'DM Sans', sans-serif; color: rgba(240,236,228,0.5); margin: 0">Design in conversation with AI. Ship working software, not decks.</p>
+      <div style="background: rgba(184,160,120,0.06); padding: 40px 32px; position: relative">
+        <div style="font: 700 64px/1 'DM Serif Display', serif; color: rgba(184,160,120,0.12); position: absolute; top: 16px; right: 24px">2</div>
+        <div style="font: 600 11px/1 'DM Sans', sans-serif; color: #8a7040; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px">Build</div>
+        <h3 style="font: 500 18px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Vibe-code it into existence</h3>
+        <p style="font: 400 13px/1.6 'DM Sans', sans-serif; color: rgba(28,31,25,0.55); margin: 0">Design in conversation with AI. Ship working software, not decks.</p>
       </div>
-      <div style="background: rgba(74,138,78,0.05); border-radius: 0 12px 12px 0; padding: 40px 32px; position: relative">
+      <div style="background: rgba(74,138,78,0.06); border-radius: 0 12px 12px 0; padding: 40px 32px; position: relative">
         <div style="font: 700 64px/1 'DM Serif Display', serif; color: rgba(74,138,78,0.1); position: absolute; top: 16px; right: 24px">3</div>
-        <div style="font: 600 11px/1 'DM Sans', sans-serif; color: #6cc96c; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px">Ship</div>
-        <h3 style="font: 500 18px/1.3 'DM Sans', sans-serif; color: #f0ece4; margin: 0 0 8px">Send it live</h3>
-        <p style="font: 400 13px/1.6 'DM Sans', sans-serif; color: rgba(240,236,228,0.5); margin: 0">The best prototypes become real products. They find users and prove the concept.</p>
+        <div style="font: 600 11px/1 'DM Sans', sans-serif; color: #3a7a3e; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px">Ship</div>
+        <h3 style="font: 500 18px/1.3 'DM Sans', sans-serif; color: #1c1f19; margin: 0 0 8px">Send it live</h3>
+        <p style="font: 400 13px/1.6 'DM Sans', sans-serif; color: rgba(28,31,25,0.55); margin: 0">The best prototypes become real products. They find users and prove the concept.</p>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="fade-in" style="padding: 60px 24px; background: #181a15; border-top: 1px solid rgba(74,138,78,0.08); text-align: center">
+  <!-- ========== SECTION 5: CTA (DARK) ========== -->
+  <section id="sec-cta" class="section-dark dot-bg fade-in" style="padding: 72px 24px 80px; text-align: center">
     <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(74,138,78,0.1); border: 1px solid rgba(74,138,78,0.2); border-radius: 100px; padding: 6px 16px; margin-bottom: 20px">
       <div style="width: 6px; height: 6px; background: #56b45a; border-radius: 50%"></div>
       <span style="font: 500 11px/1 'DM Sans', sans-serif; color: #7dd87d; letter-spacing: 0.06em; text-transform: uppercase">Open to Opportunities</span>
@@ -650,7 +594,7 @@ a.hover-link:hover { filter: brightness(1.25); }
   </section>
 
   <!-- FOOTER -->
-  <footer class="mobile-footer" style="padding: 28px 24px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between">
+  <footer class="mobile-footer section-dark" style="padding: 28px 24px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between">
     <div style="display: flex; align-items: center; gap: 10px">
       <div style="width: 24px; height: 24px; background: #4a8a4e; border-radius: 6px; display: flex; align-items: center; justify-content: center; font: 700 10px/1 'DM Serif Display', serif; color: #f0ece4">P</div>
       <span style="font: 400 12px/1 'DM Sans', sans-serif; color: rgba(240,236,228,0.7)">Puneet Arora · UX Practice &amp; AI Design Transformation</span>
@@ -661,17 +605,36 @@ a.hover-link:hover { filter: brightness(1.25); }
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  var observer = new IntersectionObserver(function(entries) {
+  // Fade-in observer
+  var fadeObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-in').forEach(function(el) { fadeObserver.observe(el); });
+
+  // Stepper nav
+  var dots = document.querySelectorAll('.stepper-dot');
+  var sections = [];
+  dots.forEach(function(dot) {
+    var sec = document.getElementById(dot.getAttribute('data-target'));
+    if (sec) sections.push({ dot: dot, el: sec });
+    dot.addEventListener('click', function() {
+      sec.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  var stepperObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        dots.forEach(function(d) { d.classList.remove('active'); });
+        sections.forEach(function(s) {
+          if (s.el === entry.target) s.dot.classList.add('active');
+        });
       }
     });
-  }, { threshold: 0.15 });
-
-  document.querySelectorAll('.fade-in').forEach(function(el) {
-    observer.observe(el);
-  });
+  }, { threshold: 0.3 });
+  sections.forEach(function(s) { stepperObserver.observe(s.el); });
 });
 </script>
 
