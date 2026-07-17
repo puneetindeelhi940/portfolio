@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root, :root[data-theme="dark"] {
+  --bg: #0a0b0f;
+  --bg2: #0e1015;
+  --surface: #12141b;
+  --surface2: #181b24;
+  --raised: #1e222d;
+  --line: rgba(255, 255, 255, 0.08);
+  --line2: rgba(255, 255, 255, 0.14);
+  --ink: #e9ebf2;
+  --dim: #99a0b3;
+  --faint: #626a80;
+  --accent: #7c86ff;
+  --accent2: #5b64e8;
+  --accent-soft: rgba(124, 134, 255, 0.13);
+  --cyan: #38d5e0;
+  --cyan-soft: rgba(56, 213, 224, 0.12);
+  --ok: #45c98b;
+  --ok-soft: rgba(69, 201, 139, 0.13);
+  --warn: #e6b04c;
+  --warn-soft: rgba(230, 176, 76, 0.13);
+  --danger: #ef6a60;
+  --danger-soft: rgba(239, 106, 96, 0.13);
+  --mon-green: #35e08c;
+  --mon-cyan: #3ed3f2;
+  --mon-red: #ff6b64;
+  --mon-yellow: #ffd166;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f7f8fa;
+  --bg2: #f1f2f6;
+  --surface: #ffffff;
+  --surface2: #f6f7fa;
+  --raised: #ffffff;
+  --line: rgba(15, 18, 34, 0.09);
+  --line2: rgba(15, 18, 34, 0.16);
+  --ink: #171a26;
+  --dim: #5b6274;
+  --faint: #9299ab;
+  --accent: #5a63e8;
+  --accent2: #4a52d4;
+  --accent-soft: rgba(90, 99, 232, 0.1);
+  --cyan: #0aa8b8;
+  --cyan-soft: rgba(10, 168, 184, 0.1);
+  --ok: #1a9e64;
+  --ok-soft: rgba(26, 158, 100, 0.1);
+  --warn: #b17d17;
+  --warn-soft: rgba(177, 125, 23, 0.12);
+  --danger: #d64540;
+  --danger-soft: rgba(214, 69, 64, 0.1);
+  --mon-green: #0f9d58;
+  --mon-cyan: #0793b3;
+  --mon-red: #d64540;
+  --mon-yellow: #ad7a00;
+  --shadow: 0 1px 2px rgba(20,24,40,.06), 0 8px 24px rgba(20,24,40,.07);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface2);
+  --color-raised: var(--raised);
+  --color-line: var(--line);
+  --color-line2: var(--line2);
+  --color-ink: var(--ink);
+  --color-dim: var(--dim);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent2);
+  --color-accent-soft: var(--accent-soft);
+  --color-cyan: var(--cyan);
+  --color-cyan-soft: var(--cyan-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-mon-green: var(--mon-green);
+  --color-mon-cyan: var(--mon-cyan);
+  --color-mon-red: var(--mon-red);
+  --color-mon-yellow: var(--mon-yellow);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--accent-soft); }
+
+* { scrollbar-width: thin; scrollbar-color: var(--line2) transparent; }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb { background: var(--line2); border-radius: 4px; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.card-hover { transition: border-color .15s, transform .15s, box-shadow .15s; }
+.card-hover:hover { border-color: var(--line2); box-shadow: var(--shadow); }
+
+.kbd {
+  font-family: var(--font-mono); font-size: 10px; padding: 1px 5px;
+  border: 1px solid var(--line2); border-bottom-width: 2px; border-radius: 4px; color: var(--dim);
+}
+
+@keyframes pulse-dot { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+.pulse-dot { animation: pulse-dot 1.6s ease-in-out infinite; }
+
+@keyframes blink { 0%,100% { opacity: 1 } 50% { opacity: 0 } }
+.blink { animation: blink 1s step-end infinite; }
+
+/* React Flow theme overrides */
+.react-flow__attribution { display: none; }
+.react-flow__edge-path { stroke-width: 1.5; }
+.react-flow__controls {
+  box-shadow: var(--shadow) !important;
+  border: 1px solid var(--line);
+  border-radius: 8px; overflow: hidden;
+}
+.react-flow__controls-button {
+  background: var(--surface) !important;
+  border-bottom: 1px solid var(--line) !important;
+  fill: var(--dim) !important;
+}
+.react-flow__controls-button:hover { background: var(--surface2) !important; }
+.react-flow__minimap { background: var(--surface) !important; border-radius: 8px; }
+.react-flow__handle { background: var(--faint); border: none; width: 7px; height: 7px; }
+.react-flow__node.selected .sim-node { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+input[type="range"] { accent-color: var(--accent); }

@@ -1,3 +1,10 @@
 node_modules/
 package-lock.json
 package.json
+
+# SimCraft AI (simcraft-src is a Next.js project; /simcraft is its built export)
+!simcraft-src/package.json
+!simcraft-src/package-lock.json
+simcraft-src/.next/
+simcraft-src/out/
+simcraft-src/next-env.d.ts
