@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puneet Arora — India's #1 SME in AI-UX Cost Optimization & AI Dark Patterns</title>
+<meta name="description" content="Puneet Arora — India's go-to expert in AI-UX Cost Optimization and AI-driven Dark Pattern detection. Cut the cost of AI experiences, and ship AI that persuades without manipulating. 19 years, Dell GenAI at scale.">
+<meta name="author" content="Puneet Arora">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/ai-sme.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Puneet Arora — Portfolio">
+<meta property="og:title" content="India's #1 SME in AI-UX Cost Optimization & AI Dark Patterns">
+<meta property="og:description" content="Cut the cost of AI experiences. Ship AI that persuades without manipulating. India's go-to expert — 19 years, Dell GenAI at scale.">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/ai-sme.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* ═══════════════ AI-SME landing — bold AI pitch, built on shared tokens ═══════════════ */
+
+  /* Ambient AI grid backdrop behind the hero */
+  .sme-hero {
+    position: relative;
+    padding: 76px var(--pad-x) 60px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sme-hero__grid {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(color-mix(in oklch, var(--signal) 7%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in oklch, var(--signal) 7%, transparent) 1px, transparent 1px);
+    background-size: 46px 46px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 80% at 70% 20%, #000 0%, transparent 75%);
+            mask-image: radial-gradient(ellipse 90% 80% at 70% 20%, #000 0%, transparent 75%);
+    opacity: 0.7;
+  }
+  .sme-hero__glow {
+    position: absolute; z-index: 0; pointer-events: none;
+    top: -180px; right: -120px; width: 640px; height: 640px;
+    background: radial-gradient(circle, color-mix(in oklch, var(--signal) 16%, transparent) 0%, transparent 62%);
+    filter: blur(8px);
+  }
+  .sme-hero__inner {
+    position: relative; z-index: 1;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 54px;
+    align-items: center;
+  }
+  .sme-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--f-mono);
+    font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase;
+    color: var(--signal);
+    border: 1px solid color-mix(in oklch, var(--signal) 45%, transparent);
+    border-radius: 40px;
+    padding: 7px 16px;
+    margin-bottom: 26px;
+  }
+  .sme-eyebrow .pulse {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--signal);
+    box-shadow: 0 0 12px var(--signal);
+    animation: blink-dot 1.4s ease-in-out infinite;
+  }
+  .sme-hero h1 {
+    font-family: var(--f-sans);
+    font-size: clamp(38px, 5.4vw, 62px);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.032em;
+    color: var(--ink);
+    margin: 0 0 24px;
+  }
+  .sme-hero h1 em {
+    font-style: normal;
+    color: var(--signal);
+    position: relative;
+  }
+  .sme-hero__sub {
+    font-size: 17px; line-height: 1.62;
+    color: oklch(86% 0.012 175);
+    max-width: 40ch;
+    margin: 0 0 34px;
+  }
+  [data-theme="forest"] .sme-hero__sub { color: oklch(34% 0.07 150); }
+  .sme-hero__ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 34px; }
+  .sme-hero__rank {
+    display: flex; gap: 26px; flex-wrap: wrap; align-items: center;
+    padding-top: 26px; border-top: 1px solid var(--rule);
+  }
+  .sme-hero__rank .stat .n {
+    font-family: var(--f-sans); font-weight: 700; font-size: 26px;
+    color: var(--ink); letter-spacing: -0.02em; line-height: 1;
+  }
+  .sme-hero__rank .stat .l {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--faint); margin-top: 6px;
+  }
+
+  /* ── Hero AI illustration (bold, animated SVG brain-network) ── */
+  .ai-orb { width: 100%; height: auto; display: block; }
+  .ai-orb .edge { stroke: color-mix(in oklch, var(--signal) 55%, transparent); stroke-width: 1; fill: none; opacity: 0.5; }
+  .ai-orb .ring { stroke: color-mix(in oklch, var(--signal) 30%, transparent); fill: none; }
+  .ai-orb .node { fill: var(--signal); }
+  .ai-orb .node--dim { fill: color-mix(in oklch, var(--signal) 45%, var(--bg)); }
+  .ai-orb .core { fill: var(--signal); }
+  .ai-orb .spin { transform-origin: 260px 260px; animation: orb-spin 40s linear infinite; }
+  .ai-orb .spin-rev { transform-origin: 260px 260px; animation: orb-spin 60s linear infinite reverse; }
+  .ai-orb .pulseNode { animation: nodePulse 2.6s ease-in-out infinite; }
+  @keyframes orb-spin { to { transform: rotate(360deg); } }
+  @keyframes nodePulse { 0%,100% { opacity: 0.35; } 50% { opacity: 1; } }
+  @keyframes dashFlow { to { stroke-dashoffset: -60; } }
+  .ai-orb .flow { stroke-dasharray: 3 7; animation: dashFlow 2.4s linear infinite; }
+
+  /* ═══════════════ Domain offer cards ═══════════════ */
+  .domains {
+    display: grid; grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .domain {
+    position: relative;
+    padding: 48px var(--pad-x) 44px;
+    border-left: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .domain:first-child { border-left: none; }
+  .domain__no {
+    font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.2em;
+    color: var(--signal); margin-bottom: 22px;
+  }
+  .domain__viz { height: 168px; margin: 0 0 30px; }
+  .domain__viz svg { width: 100%; height: 100%; display: block; }
+  .domain h2 {
+    font-family: var(--f-sans); font-size: 28px; font-weight: 700;
+    letter-spacing: -0.02em; line-height: 1.1; color: var(--ink); margin: 0 0 8px;
+  }
+  .domain__kicker {
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--signal); margin-bottom: 18px;
+  }
+  .domain p { font-size: 14.5px; line-height: 1.66; color: var(--dim); margin: 0 0 22px; }
+  .domain ul { list-style: none; padding: 0; margin: 0 0 4px; display: grid; gap: 11px; }
+  .domain li {
+    display: grid; grid-template-columns: 20px 1fr; font-size: 13.5px;
+    color: oklch(82% 0.012 175); line-height: 1.5;
+  }
+  [data-theme="forest"] .domain li { color: oklch(34% 0.07 150); }
+  .domain li::before { content: "→"; color: var(--signal); }
+
+  /* Dark-pattern scanner viz specifics */
+  .scan .beam { stroke: var(--warn); stroke-width: 2; opacity: 0.9; }
+  .scan .flag { fill: var(--warn); animation: flagBlink 1.8s ease-in-out infinite; }
+  .scan .flag2 { animation-delay: .6s; }
+  .scan .flag3 { animation-delay: 1.2s; }
+  @keyframes flagBlink { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
+  .scan .sweep { transform-origin: 90px 84px; animation: sweep 4s ease-in-out infinite; }
+  @keyframes sweep { 0%,100% { transform: rotate(-32deg); } 50% { transform: rotate(32deg); } }
+  .scan .card { fill: color-mix(in oklch, var(--surface) 80%, var(--bg)); stroke: var(--rule-2); }
+  .scan .bar { fill: color-mix(in oklch, var(--signal) 40%, var(--bg)); }
+
+  /* Cost gauge viz specifics */
+  .gauge .track { stroke: var(--rule-2); stroke-width: 16; fill: none; }
+  .gauge .fill { stroke: var(--signal); stroke-width: 16; fill: none; stroke-linecap: round;
+    stroke-dasharray: 999; stroke-dashoffset: 999; animation: gaugeFill 2.4s ease-out forwards; }
+  @keyframes gaugeFill { to { stroke-dashoffset: 300; } }
+  .gauge .needle { stroke: var(--ink); stroke-width: 3; stroke-linecap: round;
+    transform-origin: 130px 128px; animation: needleSwing 2.6s ease-out forwards; }
+  @keyframes needleSwing { 0% { transform: rotate(-84deg); } 70% { transform: rotate(38deg); } 100% { transform: rotate(28deg); } }
+  .gauge .coin { fill: none; stroke: var(--signal); stroke-width: 2; opacity: .55; }
+  .gauge .down { fill: var(--signal); }
+
+  /* ═══════════════ Value / positioning band ═══════════════ */
+  .band {
+    padding: 62px var(--pad-x);
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px;
+    background: var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .band .cell { background: var(--bg); padding: 30px 30px 30px 0; }
+  .band .cell .ic { color: var(--signal); font-family: var(--f-mono); font-size: 22px; margin-bottom: 16px; }
+  .band .cell h3 { font-family: var(--f-sans); font-size: 18px; font-weight: 600; color: var(--ink); margin: 0 0 10px; letter-spacing: -0.01em; }
+  .band .cell p { font-size: 14px; color: var(--dim); line-height: 1.6; margin: 0; }
+
+  /* ═══════════════ Proof / credibility ═══════════════ */
+  .proof { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--rule); }
+  .proof .cell { padding: 34px 28px; border-left: 1px solid var(--rule); }
+  .proof .cell:first-child { border-left: none; }
+  .proof .cell:nth-child(even) { background: var(--surface); }
+  .proof .n { font-family: var(--f-sans); font-weight: 700; font-size: 34px; color: var(--ink); letter-spacing: -0.025em; line-height: 1; margin-bottom: 12px; }
+  .proof .n em { font-style: normal; color: var(--signal); }
+  .proof .k { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--signal); margin-bottom: 8px; }
+  .proof .d { font-size: 12px; color: var(--dim); line-height: 1.5; }
+
+  /* ═══════════════ Engagements / services ═══════════════ */
+  .svcs { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--rule); }
+  .svc { padding: 36px 30px; border-left: 1px solid var(--rule); transition: background .15s; }
+  .svc:first-child { border-left: none; }
+  .svc:hover { background: var(--surface); }
+  .svc .tag {
+    display: inline-block; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--signal); border: 1px solid color-mix(in oklch, var(--signal) 40%, transparent);
+    border-radius: 40px; padding: 4px 12px; margin-bottom: 18px;
+  }
+  .svc h3 { font-family: var(--f-sans); font-size: 20px; font-weight: 600; color: var(--ink); margin: 0 0 10px; letter-spacing: -0.015em; }
+  .svc p { font-size: 13.5px; color: var(--dim); line-height: 1.6; margin: 0; }
+
+  /* ═══════════════ Final CTA ═══════════════ */
+  .cta {
+    position: relative; overflow: hidden;
+    padding: 74px var(--pad-x); text-align: center;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cta__glow {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    background: radial-gradient(ellipse 60% 120% at 50% 0%, color-mix(in oklch, var(--signal) 12%, transparent), transparent 70%);
+  }
+  .cta__in { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+  .cta h2 { font-family: var(--f-sans); font-size: clamp(28px, 4vw, 42px); font-weight: 700; letter-spacing: -0.025em; color: var(--ink); margin: 0 0 16px; line-height: 1.08; }
+  .cta h2 em { font-style: normal; color: var(--signal); }
+  .cta p { font-size: 16px; color: var(--dim); line-height: 1.6; margin: 0 0 30px; }
+  .cta__ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+  .credit-line {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--faint);
+  }
+
+  @media (max-width: 1000px) {
+    .sme-hero__inner { grid-template-columns: 1fr; gap: 40px; }
+    .sme-hero__viz { max-width: 420px; }
+    .domains { grid-template-columns: 1fr; }
+    .domain { border-left: none; border-top: 1px solid var(--rule); }
+    .domain:first-child { border-top: none; }
+    .band { grid-template-columns: 1fr; }
+    .band .cell { padding: 24px 0; border-bottom: 1px solid var(--rule); }
+    .proof { grid-template-columns: repeat(2, 1fr); }
+    .proof .cell:nth-child(2n+1) { border-left: none; }
+    .svcs { grid-template-columns: 1fr; }
+    .svc { border-left: none; border-top: 1px solid var(--rule); }
+    .svc:first-child { border-top: none; }
+  }
+  @media (max-width: 560px) {
+    .proof { grid-template-columns: 1fr; }
+    .proof .cell { border-left: none; border-bottom: 1px solid var(--rule); }
+    .sme-hero__rank { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html" class="is-current">AI SME</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="sme-hero" data-screen-label="hero">
+  <div class="sme-hero__grid"></div>
+  <div class="sme-hero__glow"></div>
+  <div class="sme-hero__inner">
+    <div>
+      <span class="sme-eyebrow"><span class="pulse"></span>India's #1 SME · AI Experience Practice</span>
+      <h1>The two questions<br>every AI product<br>must answer:<br><em>What does it cost?</em><br><em>Who does it fool?</em></h1>
+      <p class="sme-hero__sub">
+        I'm Puneet Arora — India's go-to authority on <strong>AI-UX Cost Optimization</strong>
+        and <strong>AI-driven Dark Pattern</strong> detection. I make AI experiences dramatically
+        cheaper to run, and I make sure they persuade customers without manipulating them.
+      </p>
+      <div class="sme-hero__ctas">
+        <a href="contact.html" class="btn btn--primary">BOOK AN EXPERT SESSION <span>→</span></a>
+        <a href="#domains" class="btn btn--ghost">SEE THE TWO PRACTICES</a>
+      </div>
+      <div class="sme-hero__rank">
+        <div class="stat"><div class="n">19 yrs</div><div class="l">Enterprise + AI design</div></div>
+        <div class="stat"><div class="n">26,000+</div><div class="l">Stores running my GenAI</div></div>
+        <div class="stat"><div class="n">33</div><div class="l">Designers led globally</div></div>
+      </div>
+    </div>
+
+    <!-- Hero AI orb -->
+    <div class="sme-hero__viz">
+      <svg class="ai-orb" viewBox="0 0 520 520" role="img" aria-label="Abstract AI neural network orb">
+        <defs>
+          <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="var(--signal)" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="var(--signal)" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- orbit rings -->
+        <g class="spin">
+          <ellipse class="ring" cx="260" cy="260" rx="230" ry="92" stroke-width="1"/>
+          <ellipse class="ring" cx="260" cy="260" rx="180" ry="180" stroke-width="1"/>
+        </g>
+        <g class="spin-rev">
+          <ellipse class="ring" cx="260" cy="260" rx="92" ry="230" stroke-width="1"/>
+          <ellipse class="ring" cx="260" cy="260" rx="150" ry="210" stroke-width="1"/>
+        </g>
+        <!-- network edges -->
+        <g>
+          <path class="edge flow" d="M260 60 L150 200 L120 330 L260 460"/>
+          <path class="edge flow" d="M260 60 L370 200 L400 330 L260 460"/>
+          <path class="edge flow" d="M150 200 L260 260 L370 200"/>
+          <path class="edge flow" d="M120 330 L260 260 L400 330"/>
+          <path class="edge" d="M150 200 L120 330"/>
+          <path class="edge" d="M370 200 L400 330"/>
+          <path class="edge" d="M260 60 L260 260 L260 460"/>
+        </g>
+        <!-- core glow -->
+        <circle cx="260" cy="260" r="120" fill="url(#coreGlow)"/>
+        <!-- nodes -->
+        <circle class="node pulseNode" cx="260" cy="60" r="9"/>
+        <circle class="node--dim pulseNode" cx="150" cy="200" r="7" style="animation-delay:.3s"/>
+        <circle class="node--dim pulseNode" cx="370" cy="200" r="7" style="animation-delay:.5s"/>
+        <circle class="node--dim pulseNode" cx="120" cy="330" r="7" style="animation-delay:.9s"/>
+        <circle class="node--dim pulseNode" cx="400" cy="330" r="7" style="animation-delay:1.1s"/>
+        <circle class="node pulseNode" cx="260" cy="460" r="9" style="animation-delay:1.4s"/>
+        <!-- core -->
+        <circle class="core" cx="260" cy="260" r="16"/>
+        <circle cx="260" cy="260" r="26" fill="none" stroke="var(--signal)" stroke-width="1.5" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ POSITIONING BAND ═══════════════ -->
+<div class="band">
+  <div class="cell">
+    <div class="ic">01</div>
+    <h3>Two frontiers, one operator</h3>
+    <p>AI-UX cost and AI dark patterns are the two disciplines every Indian AI product will be forced to master — one to survive margins, the other to survive regulators. I own both.</p>
+  </div>
+  <div class="cell">
+    <div class="ic">02</div>
+    <h3>Not theory — production scale</h3>
+    <p>I've shipped GenAI live across 26,000+ Dell Premier stores and led personalization for millions of sessions. This is a practitioner's point of view, not a keynote.</p>
+  </div>
+  <div class="cell">
+    <div class="ic">03</div>
+    <h3>Behavioural science, not vibes</h3>
+    <p>Every recommendation is grounded in behavioural science, measurable KPIs, and evaluation rubrics — the same rigor I built into Dell's AI Design Centre of Excellence.</p>
+  </div>
+</div>
+
+<!-- ═══════════════ THE TWO DOMAINS ═══════════════ -->
+<div class="shead" id="domains">
+  <div class="shead__left">
+    <span class="shead__n">§ 01</span>
+    <span class="shead__title">Two practices I own</span>
+    <span class="shead__sub">// the disciplines I'm building a reputation on across India</span>
+  </div>
+</div>
+
+<div class="domains">
+  <!-- DOMAIN 1 — COST OPTIMIZATION -->
+  <div class="domain">
+    <div class="domain__no">01 / PRACTICE</div>
+    <div class="domain__viz gauge">
+      <svg viewBox="0 0 260 200" role="img" aria-label="Cost gauge dropping into an efficient range">
+        <!-- gauge arc -->
+        <path class="track" d="M 34 158 A 96 96 0 1 1 226 158"/>
+        <path class="fill" d="M 34 158 A 96 96 0 1 1 226 158"/>
+        <!-- needle -->
+        <line class="needle" x1="130" y1="128" x2="130" y2="58"/>
+        <circle cx="130" cy="128" r="7" fill="var(--ink)"/>
+        <!-- descending cost coins -->
+        <circle class="coin" cx="196" cy="52" r="13"/>
+        <path class="down" d="M196 68 l-6 -8 h4 v-8 h4 v8 h4 z"/>
+        <text x="130" y="110" text-anchor="middle" font-family="var(--f-mono)" font-size="11" letter-spacing="1" fill="var(--dim)">COST / SESSION</text>
+        <text x="130" y="152" text-anchor="middle" font-family="var(--f-sans)" font-weight="700" font-size="26" fill="var(--signal)" letter-spacing="-1">-58%</text>
+      </svg>
+    </div>
+    <div class="domain__kicker">AI-UX Cost Optimization</div>
+    <h2>Make intelligent experiences cost a fraction to run.</h2>
+    <p>
+      Most AI products are built to impress in a demo and quietly bankrupt in production —
+      bloated prompts, redundant model calls, and design patterns that burn tokens for no user
+      value. I re-architect the <em>experience</em> so it stays magical while the bill collapses.
+    </p>
+    <ul>
+      <li>Prompt &amp; context engineering that cuts token spend without cutting quality</li>
+      <li>Model-tiering and routing — the right model for each moment, not the biggest one</li>
+      <li>UX patterns that reduce round-trips: progressive disclosure, caching, guided flows</li>
+      <li>A cost-per-outcome scorecard your CFO and your PM both trust</li>
+    </ul>
+  </div>
+
+  <!-- DOMAIN 2 — DARK PATTERNS -->
+  <div class="domain">
+    <div class="domain__no">02 / PRACTICE</div>
+    <div class="domain__viz scan">
+      <svg viewBox="0 0 260 200" role="img" aria-label="Radar scanning an interface and flagging dark patterns">
+        <!-- mock interface -->
+        <rect class="card" x="150" y="40" width="86" height="120" rx="6"/>
+        <rect class="bar" x="162" y="56" width="62" height="8" rx="4"/>
+        <rect class="bar" x="162" y="74" width="46" height="8" rx="4"/>
+        <rect class="bar" x="162" y="120" width="62" height="18" rx="4"/>
+        <!-- flags on deceptive elements -->
+        <circle class="flag" cx="216" cy="60" r="6"/>
+        <circle class="flag flag2" cx="200" cy="78" r="6"/>
+        <circle class="flag flag3" cx="216" cy="129" r="6"/>
+        <!-- radar -->
+        <circle cx="90" cy="84" r="60" fill="none" stroke="var(--rule-2)" stroke-width="1"/>
+        <circle cx="90" cy="84" r="40" fill="none" stroke="var(--rule-2)" stroke-width="1"/>
+        <circle cx="90" cy="84" r="20" fill="none" stroke="var(--rule-2)" stroke-width="1"/>
+        <g class="sweep"><line class="beam" x1="90" y1="84" x2="90" y2="24"/></g>
+        <circle cx="90" cy="84" r="4" fill="var(--warn)"/>
+        <text x="90" y="172" text-anchor="middle" font-family="var(--f-mono)" font-size="10" letter-spacing="1.5" fill="var(--warn)">3 PATTERNS FLAGGED</text>
+      </svg>
+    </div>
+    <div class="domain__kicker">AI-Driven Dark Pattern Expert</div>
+    <h2>Ship AI that persuades — without crossing the line.</h2>
+    <p>
+      Generative AI industrialises manipulation: it can personalise a nudge, a scarcity cue, or a
+      confirm-shaming message to <em>every single user</em> at scale. That's a trust bomb and a
+      regulatory liability. I build the systems that detect, prevent, and design it out.
+    </p>
+    <ul>
+      <li>Audit AI flows for deceptive patterns — before regulators or press find them</li>
+      <li>Design persuasive-yet-honest alternatives that still convert</li>
+      <li>Governance rubrics &amp; red-team playbooks for AI-generated UX</li>
+      <li>India-context readiness: CCPA-style scrutiny, consumer-protection guidelines, brand risk</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════════ PROOF ═══════════════ -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 02</span>
+    <span class="shead__title">Why me</span>
+    <span class="shead__sub">// the track record behind the expertise</span>
+  </div>
+</div>
+<div class="proof">
+  <div class="cell">
+    <div class="k">Scale shipped</div>
+    <div class="n">26,000<em>+</em></div>
+    <div class="d">Dell Premier stores running the GenAI assistant I led — production, not prototype.</div>
+  </div>
+  <div class="cell">
+    <div class="k">Engagement lift</div>
+    <div class="n">4.4 → <em>80%</em></div>
+    <div class="d">Engagement on Dell's first GenAI Virtual Assistant, with +14% conversion.</div>
+  </div>
+  <div class="cell">
+    <div class="k">Capability built</div>
+    <div class="n"><em>AI</em> CoE</div>
+    <div class="d">Founded Dell's AI Design Centre of Excellence — rubrics, prompt frameworks, evaluation.</div>
+  </div>
+  <div class="cell">
+    <div class="k">Recognition</div>
+    <div class="n"><em>8</em> patents</div>
+    <div class="d">Plus President &amp; Game Changer Awards (Dell '25) and The Economic Times Award ('22).</div>
+  </div>
+</div>
+
+<!-- ═══════════════ ENGAGEMENTS ═══════════════ -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 03</span>
+    <span class="shead__title">How to work with me</span>
+    <span class="shead__sub">// from a single audit to an embedded practice</span>
+  </div>
+</div>
+<div class="svcs">
+  <div class="svc">
+    <span class="tag">Diagnostic</span>
+    <h3>The AI Experience Audit</h3>
+    <p>A fixed-scope teardown of one AI product across both lenses — cost-per-outcome and dark-pattern exposure — with a prioritised, board-ready remediation plan.</p>
+  </div>
+  <div class="svc">
+    <span class="tag">Advisory</span>
+    <h3>Fractional AI-UX Principal</h3>
+    <p>I embed with your product and design leadership to set the standards, review the hard calls, and coach your team into an in-house capability that outlives the engagement.</p>
+  </div>
+  <div class="svc">
+    <span class="tag">Enablement</span>
+    <h3>Masterclasses &amp; Keynotes</h3>
+    <p>Practitioner-led sessions for design, product, and leadership teams on optimising AI-UX cost and designing persuasion that stays on the right side of trust.</p>
+  </div>
+</div>
+
+<!-- ═══════════════ FINAL CTA ═══════════════ -->
+<section class="cta">
+  <div class="cta__glow"></div>
+  <div class="cta__in">
+    <h2>Building an AI product in India?<br>Get the <em>cost</em> and the <em>ethics</em> right — early.</h2>
+    <p>The teams that win are the ones that make AI cheap to run and impossible to distrust. Let's make yours one of them.</p>
+    <div class="cta__ctas">
+      <a href="contact.html" class="btn btn--primary">START A CONVERSATION <span>→</span></a>
+      <a href="work.html" class="btn btn--ghost">SEE THE WORK</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div>Puneet Kumar Arora — AI-UX Cost Optimization &amp; AI Dark Pattern Practice</div>
+  <div class="credit-line">Built by Puneet Arora · 2026</div>
+</footer>
+
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
+</body>
+</html>
