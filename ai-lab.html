@@ -95,6 +95,39 @@
     a.xcard .xcard__shot .xcard__img { transition: filter .25s ease; }
     a.xcard:hover .xcard__illus > svg { filter: saturate(1.18) brightness(1.08); }
     a.xcard:hover .xcard__shot .xcard__img { filter: saturate(1.12) brightness(1.05); }
+
+    /* --- Tailored flourishes on flagship cards --- */
+
+    /* News Terminal: pulsing LIVE dot + a refresh scan down the brief list */
+    .illus--terminal .t-live { animation: t-live 1.6s ease-in-out infinite; }
+    @keyframes t-live { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
+    .illus--terminal .t-scan { animation: t-scan 4.4s ease-in-out infinite; }
+    @keyframes t-scan {
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 0.85; }
+      48% { transform: translateY(64px); opacity: 0.85; }
+      60%, 100% { transform: translateY(64px); opacity: 0; }
+    }
+    a.xcard:hover .illus--terminal .t-scan { animation-duration: 2.3s; }
+
+    /* Portfolio Intelligence Lab: "thinking" pulses from the lens */
+    .illus--gpt .g-pulse { transform-box: fill-box; transform-origin: center; animation: g-pulse 3.2s ease-out infinite; }
+    .illus--gpt .g-pulse.d2 { animation-delay: 1.6s; }
+    @keyframes g-pulse { 0% { transform: scale(0.32); opacity: 0.5; } 80% { opacity: 0; } 100% { transform: scale(1.75); opacity: 0; } }
+    a.xcard:hover .illus--gpt .g-pulse { animation-duration: 2s; }
+
+    /* Dark-pattern audit: scan sweep + trust score filling */
+    .illus--audit .a-scan { animation: a-scan 3.6s ease-in-out infinite; }
+    @keyframes a-scan {
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 0.55; }
+      88% { opacity: 0.55; }
+      100% { transform: translateY(74px); opacity: 0; }
+    }
+    .illus--audit .a-score { transform-box: fill-box; transform-origin: left center; animation: a-score 3.6s ease-in-out infinite; }
+    @keyframes a-score { 0%, 12% { transform: scaleX(0.15); } 56%, 100% { transform: scaleX(1); } }
+    a.xcard:hover .illus--audit .a-scan,
+    a.xcard:hover .illus--audit .a-score { animation-duration: 1.9s; }
   }
 </style>
 </head>
@@ -147,7 +180,7 @@
 </div>
 <div class="xgrid">
   <a href="puneets-news-terminal.html" class="xcard">
-    <div class="xcard__illus" style="background:linear-gradient(135deg,#0d2b28,#123a36,#0a201e);">
+    <div class="xcard__illus illus--terminal" style="background:linear-gradient(135deg,#0d2b28,#123a36,#0a201e);">
       <svg viewBox="0 0 600 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <rect x="0" y="0" width="600" height="28" fill="#0a201e" opacity="0.6"/>
         <circle cx="20" cy="14" r="3" fill="#9bc4b9" opacity="0.3"/>
@@ -219,6 +252,9 @@
         <circle cx="560" cy="75" r="2" fill="#f2c14e" opacity="0.15"/>
         <circle cx="540" cy="140" r="1.5" fill="#9bc4b9" opacity="0.12"/>
         <circle cx="570" cy="200" r="2" fill="#f2c14e" opacity="0.1"/>
+        <!-- motion: live refresh scan over the brief list + live dot -->
+        <rect class="t-scan" x="224" y="84" width="176" height="15" rx="2" fill="#f2c14e" opacity="0"/>
+        <circle class="t-live" cx="70" cy="39.5" r="2.2" fill="#f2c14e" opacity="0.5"/>
       </svg>
     </div>
     <div class="xcard__body">
@@ -342,7 +378,7 @@
     </div>
   </a>
   <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="xcard">
-    <div class="xcard__illus" style="background:linear-gradient(135deg,#10a37f,#1a7f64,#0d6b4f);">
+    <div class="xcard__illus illus--gpt" style="background:linear-gradient(135deg,#10a37f,#1a7f64,#0d6b4f);">
       <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <circle cx="170" cy="82" r="52" stroke="#fff" stroke-width="1.8" opacity="0.14"/>
         <circle cx="170" cy="82" r="40" stroke="#fff" stroke-width="1.2" opacity="0.1"/>
@@ -374,6 +410,9 @@
         <circle cx="250" cy="40" r="1.5" fill="#fff" opacity="0.15"/>
         <circle cx="260" cy="170" r="2" fill="#fff" opacity="0.12"/>
         <circle cx="120" cy="160" r="1.5" fill="#fff" opacity="0.1"/>
+        <!-- motion: "thinking" pulses radiating from the lens -->
+        <circle class="g-pulse" cx="170" cy="82" r="26" fill="none" stroke="#fff" stroke-width="1.5" opacity="0"/>
+        <circle class="g-pulse d2" cx="170" cy="82" r="26" fill="none" stroke="#fff" stroke-width="1.5" opacity="0"/>
       </svg>
     </div>
     <div class="xcard__body">
@@ -393,7 +432,7 @@
     </div>
   </a>
   <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="xcard">
-    <div class="xcard__illus" style="background:linear-gradient(135deg,#3b0a1a,#5c1630,#7a1e3e);">
+    <div class="xcard__illus illus--audit" style="background:linear-gradient(135deg,#3b0a1a,#5c1630,#7a1e3e);">
       <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <path d="M75 40 L110 52 L110 90 Q110 120 75 135 Q40 120 40 90 L40 52Z" stroke="#f8c4d0" stroke-width="1.2" opacity="0.2" fill="none"/>
         <path d="M75 55 L100 64 L100 88 Q100 108 75 118 Q50 108 50 88 L50 64Z" stroke="#f8c4d0" stroke-width="0.7" opacity="0.14" fill="none"/>
@@ -429,10 +468,12 @@
         <rect x="150" y="125" width="110" height="30" rx="4" stroke="#f8c4d0" stroke-width="0.5" opacity="0.12"/>
         <text x="160" y="139" font-family="Inter,system-ui,sans-serif" font-size="7" fill="#68d391" opacity="0.25" letter-spacing="0.06em">TRUST SCORE</text>
         <rect x="160" y="144" width="85" height="5" rx="2" fill="#f8c4d0" opacity="0.06"/>
-        <rect x="160" y="144" width="58" height="5" rx="2" fill="#68d391" opacity="0.15"/>
+        <rect class="a-score" x="160" y="144" width="58" height="5" rx="2" fill="#68d391" opacity="0.15"/>
         <ellipse cx="75" cy="180" rx="18" ry="8" stroke="#f8c4d0" stroke-width="0.6" opacity="0.12"/>
         <circle cx="75" cy="180" r="4" stroke="#f8c4d0" stroke-width="0.5" opacity="0.15"/>
         <circle cx="75" cy="180" r="1.5" fill="#f8c4d0" opacity="0.15"/>
+        <!-- motion: audit scan sweeping the interface -->
+        <rect class="a-scan" x="150" y="30" width="110" height="2" rx="1" fill="#68d391" opacity="0"/>
       </svg>
     </div>
     <div class="xcard__body">
