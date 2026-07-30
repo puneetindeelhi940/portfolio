@@ -23,6 +23,17 @@
   .snap h3 { font-family: var(--f-sans); font-size: 18px; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 9px; color: var(--ink); }
   .snap p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.6; margin: 0; }
   @media (max-width: 900px) { .snapgrid { grid-template-columns: 1fr; } }
+
+  /* Topics I consult & speak on */
+  .topics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .topic { background: var(--bg); padding: 26px 24px; display: flex; flex-direction: column; }
+  .topic .k { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--signal); margin-bottom: 13px; }
+  .topic h3 { font-family: var(--f-sans); font-size: 18px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.2; margin: 0 0 9px; color: var(--ink); }
+  .topic p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.55; margin: 0 0 18px; flex: 1; }
+  .topic__metrics { display: flex; gap: 22px; border-top: 1px solid var(--rule); padding-top: 15px; }
+  .topic__metrics .m .v { display: block; font-family: var(--f-sans); font-size: 19px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); }
+  .topic__metrics .m .l { display: block; margin-top: 3px; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); line-height: 1.35; }
+  @media (max-width: 900px) { .topics { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -116,10 +127,81 @@
   <div class="snap"><div class="ic">06 · Fractional Leadership</div><h3>Senior design, on demand</h3><p>Embedded design leadership for teams scaling their AI practice — mentoring designers into leaders while shipping real product.</p></div>
 </div>
 
-<!-- CTA -->
+<!-- TOPICS -->
 <div class="shead">
   <div class="shead__left">
     <span class="shead__n">§ 02</span>
+    <span class="shead__title">TOPICS I CONSULT &amp; SPEAK ON</span>
+    <span class="shead__sub">// specialist areas — with the receipts</span>
+  </div>
+</div>
+
+<div class="topics">
+  <div class="topic">
+    <div class="k">01 · AI Optimization</div>
+    <h3>Make AI earn its place</h3>
+    <p>Tuning AI experiences against real behaviour — from prompt architecture to guardrails — so intelligence moves the metrics that matter instead of just impressing in a demo.</p>
+    <div class="topic__metrics">
+      <div class="m"><span class="v">4.4% → 80%</span><span class="l">engagement lift, Dell GenAI</span></div>
+      <div class="m"><span class="v">+14%</span><span class="l">conversion uplift</span></div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="k">02 · AI in Product Design</div>
+    <h3>Intelligence, built into the product</h3>
+    <p>Embedding GenAI into commerce and enterprise products end to end — conversational constructs, AI design systems, and a canvas beyond the chat box — without eroding user trust.</p>
+    <div class="topic__metrics">
+      <div class="m"><span class="v">26,000+</span><span class="l">stores live with AI UX</span></div>
+      <div class="m"><span class="v">8</span><span class="l">patents granted</span></div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="k">03 · AI for Product Teams</div>
+    <h3>Fluency as a team capability</h3>
+    <p>Turning AI from scattered experiments into a repeatable practice — prompt libraries, evaluation rubrics, and a centre of excellence adopted across a large design org.</p>
+    <div class="topic__metrics">
+      <div class="m"><span class="v">33</span><span class="l">designers led &amp; upskilled</span></div>
+      <div class="m"><span class="v">5 zones</span><span class="l">aligned on one practice</span></div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="k">04 · Dark Patterns</div>
+    <h3>Persuasion without manipulation</h3>
+    <p>Spotting and designing out deceptive patterns — the difference between an interface that helps a user decide and one that tricks them. Trust is the metric; retention is the payoff.</p>
+    <div class="topic__metrics">
+      <div class="m"><span class="v">0</span><span class="l">dark patterns shipped</span></div>
+      <div class="m"><span class="v">71 → 84</span><span class="l">SUS via ethical redesign</span></div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="k">05 · AI for Students</div>
+    <h3>Learn AI honestly</h3>
+    <p>Helping students and early builders use AI with integrity — a practical framework for research, writing, and craft that keeps the thinking human and the shortcuts accountable.</p>
+    <div class="topic__metrics">
+      <div class="m"><span class="v">Univ. of Delhi</span><span class="l">invited session</span></div>
+      <div class="m"><span class="v">CO-STAR</span><span class="l">taught prompt framework</span></div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="k">06 · Brainstorming with your AI companion</div>
+    <h3>A thinking partner, not an oracle</h3>
+    <p>Using AI to widen your options, pressure-test ideas, and get unstuck — with the prompting rituals and Chain-of-Thought techniques that make the model a genuine creative collaborator.</p>
+    <div class="topic__metrics">
+      <div class="m"><span class="v">Chain-of-Thought</span><span class="l">operationalised for teams</span></div>
+      <div class="m"><span class="v">19 yrs</span><span class="l">design judgement behind it</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 03</span>
     <span class="shead__title">LET&rsquo;S TALK</span>
     <span class="shead__sub">// tell me where the ambiguity is</span>
   </div>
