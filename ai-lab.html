@@ -55,29 +55,30 @@
     .xcard__illus > svg,
     .xcard__illus > .xcard__img { position: relative; z-index: 1; }
 
-    /* 1 · Light sheen sweeping across every visual */
+    /* 1 · Light sheen sweeping across every visual — bright, continuous */
     .xcard__illus::after {
       content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
       background: linear-gradient(115deg,
-        transparent 30%, rgba(255,255,255,0.07) 45%, rgba(255,255,255,0.20) 50%,
-        rgba(255,255,255,0.07) 55%, transparent 70%);
-      background-size: 250% 100%; background-position: 160% 0;
+        transparent 24%, rgba(255,255,255,0.10) 42%, rgba(255,255,255,0.42) 50%,
+        rgba(255,255,255,0.10) 58%, transparent 76%);
+      background-size: 250% 100%; background-position: 150% 0;
       mix-blend-mode: screen;
-      animation: xcard-sheen 6s ease-in-out infinite;
+      animation: xcard-sheen 4.2s linear infinite;
     }
-    @keyframes xcard-sheen { 0% { background-position: 160% 0; } 60%, 100% { background-position: -80% 0; } }
+    /* Band starts and ends fully off the visible area, so the loop reset is invisible. */
+    @keyframes xcard-sheen { 0% { background-position: 150% 0; } 100% { background-position: -60% 0; } }
 
-    /* 2 · Whole-illustration "breathing" — a slow, subtle depth pulse */
-    .xcard__illus > svg { transform-origin: 50% 50%; animation: xcard-breathe 9s ease-in-out infinite; }
-    @keyframes xcard-breathe { 0%, 100% { transform: scale(1) translateY(0); } 50% { transform: scale(1.04) translateY(-3px); } }
+    /* 2 · Whole-illustration "breathing" — a clearly visible depth pulse */
+    .xcard__illus > svg { transform-origin: 50% 50%; animation: xcard-breathe 6.5s ease-in-out infinite; }
+    @keyframes xcard-breathe { 0%, 100% { transform: scale(1) translateY(0); } 50% { transform: scale(1.075) translateY(-6px); } }
 
     /* 3 · Dashed strokes flow — connection lines, orbit rings, routing lanes come alive */
-    .xcard__illus [stroke-dasharray] { animation: xcard-flow 3.6s linear infinite; }
-    @keyframes xcard-flow { to { stroke-dashoffset: -44; } }
+    .xcard__illus [stroke-dasharray] { animation: xcard-flow 2.2s linear infinite; }
+    @keyframes xcard-flow { to { stroke-dashoffset: -64; } }
 
-    /* 4 · Slow Ken Burns drift on the screenshot cards */
-    .xcard__shot .xcard__img { transform-origin: 22% 20%; animation: xcard-ken 22s ease-in-out infinite alternate; }
-    @keyframes xcard-ken { from { transform: scale(1); } to { transform: scale(1.09); } }
+    /* 4 · Ken Burns drift on the screenshot cards — perceptible, always moving */
+    .xcard__shot .xcard__img { transform-origin: 22% 20%; animation: xcard-ken 14s ease-in-out infinite alternate; }
+    @keyframes xcard-ken { from { transform: scale(1); } to { transform: scale(1.12); } }
 
     /* De-sync so the cards don't pulse in lockstep */
     .xgrid .xcard:nth-child(3n+2) .xcard__illus::after { animation-delay: -2.6s; }
