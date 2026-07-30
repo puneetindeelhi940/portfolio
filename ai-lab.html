@@ -28,8 +28,9 @@
   @media (max-width: 760px) { .xgrid { grid-template-columns: 1fr; } }
   .xcard { display: flex; flex-direction: column; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); transition: border-color .15s, transform .15s; overflow: hidden; }
   a.xcard:hover { border-color: var(--signal); transform: translateY(-2px); }
-  .xcard__img { width: 100%; height: 220px; object-fit: cover; object-position: top left; background: var(--bg); border-bottom: 1px solid var(--rule); display: block; }
   .xcard__illus { width: 100%; height: 220px; position: relative; overflow: hidden; border-bottom: 1px solid var(--rule); }
+  .xcard__shot { background: var(--bg); }
+  .xcard__img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
   .xcard__body { padding: 26px; flex: 1; }
   .xcard .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
   .xcard .tag { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--signal); }
@@ -44,6 +45,57 @@
   .concepts .c .id { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--faint); margin-bottom: 12px; }
   .concepts .c h4 { font-family: var(--f-sans); font-size: 17px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
   .concepts .c p { font-family: var(--f-sans); font-size: 13.5px; line-height: 1.55; color: var(--dim); margin: 0; }
+
+  /* ---------------------------------------------------------------
+     Card motion — ambient at rest, richer on hover.
+     All motion is opt-in only when the OS allows it.
+  ---------------------------------------------------------------- */
+  @media (prefers-reduced-motion: no-preference) {
+    /* keep the visual layers stacked so the sheen sits on top */
+    .xcard__illus > svg,
+    .xcard__illus > .xcard__img { position: relative; z-index: 1; }
+
+    /* 1 · Light sheen sweeping across every visual */
+    .xcard__illus::after {
+      content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background: linear-gradient(115deg,
+        transparent 32%, rgba(255,255,255,0.05) 46%, rgba(255,255,255,0.13) 50%,
+        rgba(255,255,255,0.05) 54%, transparent 68%);
+      background-size: 250% 100%; background-position: 160% 0;
+      mix-blend-mode: screen;
+      animation: xcard-sheen 7.5s ease-in-out infinite;
+    }
+    @keyframes xcard-sheen { 0% { background-position: 160% 0; } 60%, 100% { background-position: -80% 0; } }
+
+    /* 2 · Whole-illustration "breathing" — a slow, subtle depth pulse */
+    .xcard__illus > svg { transform-origin: 50% 50%; animation: xcard-breathe 9s ease-in-out infinite; }
+    @keyframes xcard-breathe { 0%, 100% { transform: scale(1) translateY(0); } 50% { transform: scale(1.028) translateY(-2px); } }
+
+    /* 3 · Dashed strokes flow — connection lines, orbit rings, routing lanes come alive */
+    .xcard__illus [stroke-dasharray] { animation: xcard-flow 3.6s linear infinite; }
+    @keyframes xcard-flow { to { stroke-dashoffset: -44; } }
+
+    /* 4 · Slow Ken Burns drift on the screenshot cards */
+    .xcard__shot .xcard__img { transform-origin: 22% 20%; animation: xcard-ken 22s ease-in-out infinite alternate; }
+    @keyframes xcard-ken { from { transform: scale(1); } to { transform: scale(1.09); } }
+
+    /* De-sync so the cards don't pulse in lockstep */
+    .xgrid .xcard:nth-child(3n+2) .xcard__illus::after { animation-delay: -2.6s; }
+    .xgrid .xcard:nth-child(3n+3) .xcard__illus::after { animation-delay: -5.1s; }
+    .xgrid .xcard:nth-child(2n)   .xcard__illus > svg   { animation-delay: -3.4s; }
+    .xgrid .xcard:nth-child(3n+1) .xcard__illus [stroke-dasharray] { animation-delay: -1.2s; }
+    .xgrid .xcard:nth-child(3n+2) .xcard__illus [stroke-dasharray] { animation-delay: -2.4s; }
+
+    /* Hover — everything leans in */
+    a.xcard:hover .xcard__illus::after { animation-duration: 2.4s; }
+    a.xcard:hover .xcard__illus > svg { animation-duration: 4.5s; }
+    a.xcard:hover .xcard__illus [stroke-dasharray] { animation-duration: 1.3s; }
+    a.xcard:hover .xcard__shot .xcard__img { animation-duration: 7s; }
+    a.xcard .xcard__illus > svg,
+    a.xcard .xcard__shot .xcard__img { transition: filter .25s ease; }
+    a.xcard:hover .xcard__illus > svg { filter: saturate(1.18) brightness(1.08); }
+    a.xcard:hover .xcard__shot .xcard__img { filter: saturate(1.12) brightness(1.05); }
+  }
 </style>
 </head>
 <body>
@@ -177,7 +229,7 @@
     </div>
   </a>
   <a href="opportunity-simulator.html" class="xcard">
-    <img class="xcard__img" src="assets/screenshots/opportunity-simulator.png" alt="AI Opportunity Simulator screenshot" loading="lazy">
+    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/opportunity-simulator.png" alt="AI Opportunity Simulator screenshot" loading="lazy"></div>
     <div class="xcard__body">
       <div class="top"><span class="tag">AI OPPORTUNITY SIMULATOR</span><span class="status">PROTOTYPE · INTERACTIVE</span></div>
       <h3>AI Opportunity Simulator</h3>
@@ -186,7 +238,7 @@
     </div>
   </a>
   <a href="situation-simulator.html" class="xcard">
-    <img class="xcard__img" src="assets/screenshots/situation-simulator.png" alt="Orbital Situation Room screenshot" loading="lazy">
+    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/situation-simulator.png" alt="Orbital Situation Room screenshot" loading="lazy"></div>
     <div class="xcard__body">
       <div class="top"><span class="tag">SITUATION SIMULATOR</span><span class="status">PROTOTYPE · 3D GLOBE</span></div>
       <h3>Orbital Situation Room</h3>
@@ -332,7 +384,7 @@
     </div>
   </a>
   <a href="https://aiinflationmonitor.netlify.app/" target="_blank" rel="noopener" class="xcard">
-    <img class="xcard__img" src="assets/screenshots/ai-inflation-observatory.png" alt="AI Inflation Observatory — dark premium dashboard showing composite index at 3.8%, $320B global AI capex, and 7-category inflation breakdown" loading="lazy">
+    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/ai-inflation-observatory.png" alt="AI Inflation Observatory — dark premium dashboard showing composite index at 3.8%, $320B global AI capex, and 7-category inflation breakdown" loading="lazy"></div>
     <div class="xcard__body">
       <div class="top"><span class="tag">AI INFLATION OBSERVATORY</span><span class="status">LIVE · AUTO-REFRESHED · 29 COUNTRIES</span></div>
       <h3>AI Inflation Observatory</h3>
@@ -504,7 +556,7 @@
 </div>
 <div class="xgrid">
   <a href="30day-agentic-ux-plan.html" class="xcard">
-    <img class="xcard__img" src="assets/screenshots/agentic-ux.png" alt="30-Day Agentic UX Mastery Plan screenshot" loading="lazy">
+    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/agentic-ux.png" alt="30-Day Agentic UX Mastery Plan screenshot" loading="lazy"></div>
     <div class="xcard__body">
       <div class="top"><span class="tag">AGENTIC UX</span><span class="status">PLAYBOOK · 30 DAYS</span></div>
       <h3>30-Day Agentic UX Mastery Plan</h3>
