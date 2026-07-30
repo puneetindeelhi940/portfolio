@@ -48,9 +48,9 @@
 
   /* ---------------------------------------------------------------
      Card motion — ambient at rest, richer on hover.
-     All motion is opt-in only when the OS allows it.
+     Runs by default (works in in-app browsers / older webviews too);
+     disabled only when the device explicitly asks to reduce motion.
   ---------------------------------------------------------------- */
-  @media (prefers-reduced-motion: no-preference) {
     /* keep the visual layers stacked so the sheen sits on top */
     .xcard__illus > svg,
     .xcard__illus > .xcard__img { position: relative; z-index: 1; }
@@ -59,17 +59,17 @@
     .xcard__illus::after {
       content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
       background: linear-gradient(115deg,
-        transparent 32%, rgba(255,255,255,0.05) 46%, rgba(255,255,255,0.13) 50%,
-        rgba(255,255,255,0.05) 54%, transparent 68%);
+        transparent 30%, rgba(255,255,255,0.07) 45%, rgba(255,255,255,0.20) 50%,
+        rgba(255,255,255,0.07) 55%, transparent 70%);
       background-size: 250% 100%; background-position: 160% 0;
       mix-blend-mode: screen;
-      animation: xcard-sheen 7.5s ease-in-out infinite;
+      animation: xcard-sheen 6s ease-in-out infinite;
     }
     @keyframes xcard-sheen { 0% { background-position: 160% 0; } 60%, 100% { background-position: -80% 0; } }
 
     /* 2 · Whole-illustration "breathing" — a slow, subtle depth pulse */
     .xcard__illus > svg { transform-origin: 50% 50%; animation: xcard-breathe 9s ease-in-out infinite; }
-    @keyframes xcard-breathe { 0%, 100% { transform: scale(1) translateY(0); } 50% { transform: scale(1.028) translateY(-2px); } }
+    @keyframes xcard-breathe { 0%, 100% { transform: scale(1) translateY(0); } 50% { transform: scale(1.04) translateY(-3px); } }
 
     /* 3 · Dashed strokes flow — connection lines, orbit rings, routing lanes come alive */
     .xcard__illus [stroke-dasharray] { animation: xcard-flow 3.6s linear infinite; }
@@ -128,6 +128,16 @@
     @keyframes a-score { 0%, 12% { transform: scaleX(0.15); } 56%, 100% { transform: scaleX(1); } }
     a.xcard:hover .illus--audit .a-scan,
     a.xcard:hover .illus--audit .a-score { animation-duration: 1.9s; }
+
+  /* Respect an explicit reduced-motion preference: stop all card motion. */
+  @media (prefers-reduced-motion: reduce) {
+    .xcard__illus > svg,
+    .xcard__illus [stroke-dasharray],
+    .xcard__shot .xcard__img,
+    .illus--terminal .t-live, .illus--terminal .t-scan,
+    .illus--gpt .g-pulse,
+    .illus--audit .a-scan, .illus--audit .a-score { animation: none !important; }
+    .xcard__illus::after { display: none !important; }
   }
 </style>
 </head>
