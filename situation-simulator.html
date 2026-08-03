@@ -292,6 +292,87 @@
 
   /* simulate flash toast */
   .toast { position: absolute; left: 50%; bottom: 240px; transform: translateX(-50%) translateY(12px); z-index: 40; opacity: 0; transition: opacity .25s, transform .25s; pointer-events: none; }
+
+  /* ── panel controls: minimize + resize ── */
+  .panel-ctrl { position: absolute; top: 0; left: 0; right: 0; height: 0; z-index: 5; }
+  .panel { position: relative; }
+  .panel-resize {
+    position: absolute; top: -1px; left: 50%; transform: translateX(-50%); width: 36px; height: 14px;
+    display: flex; align-items: center; justify-content: center; cursor: ns-resize;
+    background: var(--glass-2); border: 1px solid var(--hud-rule); border-radius: 0 0 6px 6px;
+    opacity: 0; transition: opacity .2s;
+  }
+  .panel:hover .panel-resize { opacity: 1; }
+  .panel-resize .grip { width: 18px; height: 2px; border-top: 1px solid var(--hud-faint); border-bottom: 1px solid var(--hud-faint); }
+  .panel-min {
+    position: absolute; top: 8px; right: 8px; width: 22px; height: 22px; border-radius: 5px;
+    border: 1px solid var(--hud-rule); background: var(--glass-2); color: var(--hud-dim);
+    cursor: pointer; display: grid; place-items: center; z-index: 6;
+    opacity: 0; transition: opacity .2s, color .15s;
+  }
+  .panel:hover .panel-min { opacity: 1; }
+  .panel-min:hover { color: var(--hud-ink); border-color: var(--hud-rule-2); }
+  .panel-min svg { width: 12px; height: 12px; }
+  .panel.is-minimized { overflow: hidden; }
+  .panel.is-minimized .panel-min { opacity: 1; }
+  .panel.is-minimized .panel-resize { display: none; }
+
+  /* ── settings dropdown ── */
+  .settings-drop {
+    position: absolute; top: 58px; right: 22px; width: 260px; z-index: 50;
+    background: var(--glass); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--hud-rule); border-radius: 12px; padding: 10px 0;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.55); display: none;
+  }
+  .settings-drop.open { display: block; }
+  .settings-drop .sg { padding: 10px 16px; }
+  .settings-drop .sg .sl { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--hud-faint); margin-bottom: 8px; }
+  .settings-drop .sg-item {
+    display: flex; align-items: center; justify-content: space-between; padding: 8px 0;
+    font-size: 13px; color: var(--hud-ink); border-bottom: 1px solid var(--hud-rule);
+  }
+  .settings-drop .sg-item:last-child { border-bottom: none; }
+  .settings-drop .sg-item .sw {
+    width: 34px; height: 18px; border-radius: 999px; background: var(--hud-faint); position: relative; cursor: pointer; transition: background .2s;
+  }
+  .settings-drop .sg-item .sw.on { background: var(--signal); }
+  .settings-drop .sg-item .sw::after {
+    content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: transform .2s;
+  }
+  .settings-drop .sg-item .sw.on::after { transform: translateX(16px); }
+  .settings-drop .sg + .sg { border-top: 1px solid var(--hud-rule); }
+
+  /* ── history side panel ── */
+  .history-panel {
+    position: absolute; top: 0; right: 0; bottom: 0; width: 340px; z-index: 45;
+    background: var(--glass); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-left: 1px solid var(--hud-rule); box-shadow: -8px 0 40px rgba(0,0,0,0.4);
+    transform: translateX(100%); transition: transform .3s ease; overflow-y: auto;
+  }
+  .history-panel.open { transform: translateX(0); }
+  .history-panel .hp-head {
+    display: flex; align-items: center; justify-content: space-between; padding: 16px 18px;
+    border-bottom: 1px solid var(--hud-rule); position: sticky; top: 0; background: inherit; z-index: 2;
+  }
+  .history-panel .hp-head b { font-size: 14px; font-weight: 600; color: var(--hud-ink); }
+  .history-panel .hp-close {
+    width: 28px; height: 28px; border-radius: 7px; border: 1px solid var(--hud-rule);
+    background: var(--glass-2); color: var(--hud-dim); cursor: pointer; display: grid; place-items: center;
+  }
+  .history-panel .hp-close:hover { color: var(--hud-ink); }
+  .hp-event {
+    padding: 14px 18px; border-bottom: 1px solid var(--hud-rule); transition: background .15s;
+  }
+  .hp-event:hover { background: rgba(120,150,180,0.06); }
+  .hp-event .hp-ts { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--hud-faint); margin-bottom: 4px; }
+  .hp-event .hp-title { font-size: 13px; color: var(--hud-ink); font-weight: 500; display: flex; align-items: center; gap: 8px; }
+  .hp-event .hp-title .sev {
+    width: 7px; height: 7px; border-radius: 50%; flex: none;
+  }
+  .hp-event .hp-title .sev.critical { background: var(--risk); box-shadow: 0 0 8px var(--risk); }
+  .hp-event .hp-title .sev.warning { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
+  .hp-event .hp-title .sev.info { background: var(--cyan); }
+  .hp-event .hp-desc { font-size: 12px; color: var(--hud-dim); margin-top: 4px; line-height: 1.45; }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
   .toast .inner { display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border-radius: 999px; font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.04em; }
   .toast.ok .inner { background: color-mix(in oklch, var(--signal) 22%, #0a121a); border: 1px solid var(--signal); color: var(--hud-ink); }
@@ -322,9 +403,8 @@
       <button data-mode="Attacks">Attacks</button>
     </nav>
     <div class="cd-top-right">
-      <a class="icon-btn" href="ai-lab.html" title="History"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 4v4h4"/><path d="M12 8v4l3 2"/></svg></a>
-      <button class="icon-btn" title="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.3l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2.2-1.3l-.4-2.6H10.1l-.4 2.6a7 7 0 0 0-2.2 1.3l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12c0 .4 0 .9.1 1.3l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2.2 1.3l.4 2.6h3.8l.4-2.6a7 7 0 0 0 2.2-1.3l2.4 1 2-3.4-2-1.6c.1-.4.1-.9.1-1.3Z"/></svg></button>
-      <button class="icon-btn" title="Alerts" id="bellBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></button>
+      <button class="icon-btn" id="historyBtn" title="History"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 4v4h4"/><path d="M12 8v4l3 2"/></svg></button>
+      <button class="icon-btn" id="settingsBtn" title="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.3l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2.2-1.3l-.4-2.6H10.1l-.4 2.6a7 7 0 0 0-2.2 1.3l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12c0 .4 0 .9.1 1.3l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2.2 1.3l.4 2.6h3.8l.4-2.6a7 7 0 0 0 2.2-1.3l2.4 1 2-3.4-2-1.6c.1-.4.1-.9.1-1.3Z"/></svg></button>
       <a class="exit-link" href="ai-lab.html">↩ AI LAB</a>
     </div>
   </div>
@@ -405,7 +485,9 @@
     <div class="dock">
 
       <!-- STARLINK / GAUGES -->
-      <div class="panel craft">
+      <div class="panel craft" id="panelCraft">
+        <div class="panel-resize"><span class="grip"></span></div>
+        <button class="panel-min" title="Minimize"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg></button>
         <div class="top"><span class="id">STARLINK-31352</span><span class="sig"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i><i style="height:14px"></i></span></div>
         <div class="brand-x">SPACEX</div>
         <div class="gauges">
@@ -431,7 +513,9 @@
       </div>
 
       <!-- TOWERS -->
-      <div class="panel towers">
+      <div class="panel towers" id="panelTowers">
+        <div class="panel-resize"><span class="grip"></span></div>
+        <button class="panel-min" title="Minimize"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg></button>
         <div class="head">
           <span class="tab is-active" id="tabTowers">TOWERS <b id="twrCount">5</b></span>
           <span class="tab" id="tabIssues">ACTIVE ISSUES <b>24</b></span>
@@ -450,7 +534,9 @@
       </div>
 
       <!-- CHANCE OF FAILURE -->
-      <div class="panel chart-panel">
+      <div class="panel chart-panel" id="panelChart">
+        <div class="panel-resize"><span class="grip"></span></div>
+        <button class="panel-min" title="Minimize"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg></button>
         <div class="head"><b>CHANCE OF FAILURE</b>
           <div class="tools">
             <button title="Adjust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2" fill="#0a0f17"/><circle cx="15" cy="12" r="2" fill="#0a0f17"/><circle cx="8" cy="18" r="2" fill="#0a0f17"/></svg></button>
@@ -470,6 +556,40 @@
 
   <!-- toast -->
   <div class="toast" id="toast"><div class="inner"><span id="toastMsg"></span></div></div>
+
+  <!-- SETTINGS DROPDOWN -->
+  <div class="settings-drop" id="settingsDrop">
+    <div class="sg">
+      <div class="sl">Display</div>
+      <div class="sg-item">Auto-rotate globe<span class="sw on" data-key="rotate"></span></div>
+      <div class="sg-item">Show labels<span class="sw on" data-key="labels"></span></div>
+      <div class="sg-item">Particle effects<span class="sw" data-key="particles"></span></div>
+    </div>
+    <div class="sg">
+      <div class="sl">Alerts</div>
+      <div class="sg-item">Collision warnings<span class="sw on" data-key="coll-warn"></span></div>
+      <div class="sg-item">Signal degradation<span class="sw on" data-key="sig-deg"></span></div>
+      <div class="sg-item">Tower overload<span class="sw" data-key="twr-over"></span></div>
+    </div>
+    <div class="sg">
+      <div class="sl">Data</div>
+      <div class="sg-item">Refresh interval<span style="font-family:var(--f-mono);font-size:12px;color:var(--cyan)">5 sec</span></div>
+      <div class="sg-item">Telemetry mode<span style="font-family:var(--f-mono);font-size:12px;color:var(--cyan)">Live</span></div>
+    </div>
+  </div>
+
+  <!-- HISTORY SIDE PANEL -->
+  <div class="history-panel" id="historyPanel">
+    <div class="hp-head"><b>Event History</b><button class="hp-close" id="historyClose">✕</button></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 14:22:07 UTC</div><div class="hp-title"><span class="sev critical"></span>Collision risk spike — SAT NCV-16950</div><div class="hp-desc">Predicted conjunction with debris field TLE-48229. Time to closest approach: 41 min. Auto-maneuver queued.</div></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 13:58:31 UTC</div><div class="hp-title"><span class="sev warning"></span>Signal degradation — TWR-001 Portland</div><div class="hp-desc">Downlink throughput dropped to 420 Mbps (threshold: 500 Mbps). Rain fade suspected. Rerouting via RD-35 Seattle.</div></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 12:41:55 UTC</div><div class="hp-title"><span class="sev info"></span>Orbital maneuver complete — Starlink-31352</div><div class="hp-desc">Station-keeping burn executed. Delta-v: 0.38 m/s. New altitude: 557 km. All systems nominal.</div></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 11:17:09 UTC</div><div class="hp-title"><span class="sev critical"></span>DDoS attempt blocked — NYC-401</div><div class="hp-desc">Volumetric attack (38 Gbps) mitigated by edge firewall rules. Source: Eastern Europe botnet cluster. 0 packets reached core.</div></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 10:05:44 UTC</div><div class="hp-title"><span class="sev warning"></span>Tower load threshold — TWR-001 Portland</div><div class="hp-desc">Load at 95%. Device count 1,258 exceeding soft cap. Auto-scaling secondary channel.</div></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 09:33:21 UTC</div><div class="hp-title"><span class="sev info"></span>Firmware push — 12 towers</div><div class="hp-desc">Security patch v8.4.1 deployed to all APAC and EU towers. 100% success. Next cycle: Americas.</div></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 08:12:58 UTC</div><div class="hp-title"><span class="sev warning"></span>Anomalous RF signature — Kuiper-58</div><div class="hp-desc">Unidentified 2.4 GHz burst detected near orbital slot. Duration: 340 ms. Logging for analysis.</div></div>
+    <div class="hp-event"><div class="hp-ts">2026-08-03 · 06:49:03 UTC</div><div class="hp-title"><span class="sev critical"></span>Firewall rule triggered — SGP-3 Singapore</div><div class="hp-desc">Unauthorized API probe from 14.x.x.x range. 127 requests in 8 seconds. IP blocked. Threat level: medium.</div></div>
+  </div>
 
 </div><!-- /cd-app -->
 
@@ -783,6 +903,63 @@
   /* ── boot ──────────────────────────────────────────────── */
   function boot() { sizeCanvas(); drawChart(); if (hasGlobe) initGlobe(); }
   if (document.readyState === 'complete') boot(); else window.addEventListener('load', boot);
+
+  /* ── settings dropdown ─────────────────────────────────── */
+  var settingsDrop = document.getElementById('settingsDrop');
+  document.getElementById('settingsBtn').addEventListener('click', function (e) {
+    e.stopPropagation();
+    settingsDrop.classList.toggle('open');
+    document.getElementById('historyPanel').classList.remove('open');
+  });
+  settingsDrop.addEventListener('click', function (e) { e.stopPropagation(); });
+  document.querySelectorAll('.settings-drop .sw').forEach(function (sw) {
+    sw.addEventListener('click', function () {
+      sw.classList.toggle('on');
+      flash((sw.classList.contains('on') ? 'Enabled' : 'Disabled') + ': ' + sw.parentElement.firstChild.textContent.trim(), 'ok');
+    });
+  });
+  document.addEventListener('click', function () { settingsDrop.classList.remove('open'); });
+
+  /* ── history side panel ────────────────────────────────── */
+  var historyPanel = document.getElementById('historyPanel');
+  document.getElementById('historyBtn').addEventListener('click', function () {
+    historyPanel.classList.toggle('open');
+    settingsDrop.classList.remove('open');
+  });
+  document.getElementById('historyClose').addEventListener('click', function () {
+    historyPanel.classList.remove('open');
+  });
+
+  /* ── panel minimize / resize ───────────────────────────── */
+  document.querySelectorAll('.panel-min').forEach(function (btn) {
+    var panel = btn.closest('.panel');
+    var stored = null;
+    btn.addEventListener('click', function () {
+      if (panel.classList.contains('is-minimized')) {
+        panel.style.maxHeight = stored || '';
+        panel.classList.remove('is-minimized');
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg>';
+      } else {
+        stored = panel.style.maxHeight || '';
+        panel.style.maxHeight = '42px';
+        panel.classList.add('is-minimized');
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>';
+      }
+    });
+  });
+  document.querySelectorAll('.panel-resize').forEach(function (handle) {
+    var panel = handle.closest('.panel');
+    var startY, startH;
+    handle.addEventListener('mousedown', function (e) {
+      e.preventDefault();
+      startY = e.clientY;
+      startH = panel.getBoundingClientRect().height;
+      function onMove(ev) { panel.style.maxHeight = Math.max(42, startH + (ev.clientY - startY)) + 'px'; panel.style.overflow = 'hidden'; }
+      function onUp() { document.removeEventListener('mousemove', onMove); document.removeEventListener('mouseup', onUp); }
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('mouseup', onUp);
+    });
+  });
 
   // year (shared footer convention not used here, but keep parity if added)
 })();
