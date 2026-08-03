@@ -53,7 +53,17 @@
     { id: 'a9', title: 'Prompt Cost Control for Production Apps', sum: 'Caching, batching, and model routing patterns that cut your token bill by 60% without touching quality.', cat: 'llms', diff: 'Intermediate', mins: 11, tools: ['Claude', 'GPT', 'Gemini'], tags: ['llms', 'cost', 'production'], grad: ['#8b5cf6', '#5b21b6'] },
     { id: 'a10', title: 'Computer Use: Letting Models Drive the Screen', sum: 'The new frontier. How screen-control agents work, where they break, and how to sandbox them safely.', cat: 'computeruse', diff: 'Advanced', mins: 15, tools: ['Claude'], tags: ['computer-use', 'agents'], grad: ['#d97757', '#7c3f2e'] },
     { id: 'a11', title: 'Voice AI Pipelines from Scratch', sum: 'STT → reasoning → TTS with sub-second latency. The architecture, the tradeoffs, and the interruption handling.', cat: 'voice', diff: 'Advanced', mins: 12, tools: ['GPT'], tags: ['voice', 'realtime'], grad: ['#ec4899', '#9d174d'] },
-    { id: 'a12', title: 'From Newsletter to Product: A Builder’s Playbook', sum: 'How to turn what you know into a platform people return to — content architecture, funnels, and retention loops.', cat: 'business', diff: 'Beginner', mins: 9, tools: ['Vercel', 'Supabase'], tags: ['business', 'growth'], grad: ['#22c55e', '#15803d'] }
+    { id: 'a12', title: 'From Newsletter to Product: A Builder’s Playbook', sum: 'How to turn what you know into a platform people return to — content architecture, funnels, and retention loops.', cat: 'business', diff: 'Beginner', mins: 9, tools: ['Vercel', 'Supabase'], tags: ['business', 'growth'], grad: ['#22c55e', '#15803d'] },
+
+    // ── Published essays by Puneet Arora on Medium (open externally) ──
+    { id: 'm1', title: 'It’s Advantage Designers: Open-source AI Models Are Catching Up Faster Than Expected', sum: 'Open weights are closing the gap with frontier models — and that shift hands real leverage back to designers and builders.', cat: 'llms', diff: 'Beginner', mins: 2, tools: ['Claude', 'GPT'], tags: ['open-source', 'models', 'design', 'medium'], grad: ['#2563eb', '#1e3a8a'], ext: true, source: 'Medium', date: 'Jul 2026', url: 'https://medium.com/@arorapuneet11/its-advantage-designers-open-source-ai-models-are-catching-up-faster-than-expected-f6b59f669503' },
+    { id: 'm2', title: 'Less AI, More Intelligence', sum: 'The next AI revolution won’t be bigger models — it’ll be smaller bills. Why efficiency (People, Planet, Profit) is the real advantage.', cat: 'llms', diff: 'Intermediate', mins: 5, tools: ['Claude', 'GPT', 'Gemini'], tags: ['cost', 'efficiency', 'tokens', 'medium'], grad: ['#0ea5e9', '#075985'], ext: true, source: 'Medium', date: 'Jul 2026', url: 'https://medium.com/@arorapuneet11/less-ai-more-intelligence-1cf3115335e1' },
+    { id: 'm3', title: 'Vigyan Setu: A UX Case Study on the India AI Impact Summit', sum: 'A Double Diamond case study — 30 named methods and a working prototype — for the summit the design community stayed silent on.', cat: 'business', diff: 'Intermediate', mins: 8, tools: ['Claude'], tags: ['ux', 'case-study', 'india', 'medium'], grad: ['#0b2419', '#103024'], ext: true, source: 'Medium', date: 'Jun 2026', url: 'https://medium.com/@arorapuneet11/vigyan-setu-a-ux-case-study-on-india-ai-impact-summit-e6e79c1035dc' },
+    { id: 'm4', title: 'You’re Paying an AI Tax and You Don’t Even Know It', sum: 'AI is quietly making everything more expensive. I built a tool to show you exactly how much — and where it hits you first.', cat: 'business', diff: 'Beginner', mins: 9, tools: ['Gemini'], tags: ['cost', 'economics', 'inflation', 'medium'], grad: ['#d97757', '#7c3f2e'], ext: true, source: 'Medium', date: 'Jun 2026', url: 'https://medium.com/@arorapuneet11/youre-paying-an-ai-tax-and-you-don-t-even-know-it-0037b95b7922' },
+    { id: 'm5', title: 'Your Design Team Needs This Dashboard to Fix Bad Prompting', sum: 'Prompt literacy — not prompt enthusiasm — is the skill gap quietly draining your AI ROI. Here’s the dashboard that fixes it.', cat: 'prompting', diff: 'Intermediate', mins: 7, tools: ['Claude', 'GPT'], tags: ['prompting', 'roi', 'dashboard', 'medium'], grad: ['#6366f1', '#3730a3'], ext: true, source: 'Medium', date: 'Jun 2026', url: 'https://medium.com/@arorapuneet11/your-design-team-deserves-better-than-blind-prompting-heres-the-dashboard-that-fixes-it-2633738bfbbe' },
+    { id: 'm6', title: 'Are You Measuring Your AI Agent Efficiency?', sum: 'Most teams ship agents they can’t measure. A practical case for treating agent efficiency as a first-class metric.', cat: 'evals', diff: 'Intermediate', mins: 6, tools: ['Claude'], tags: ['agents', 'efficiency', 'evals', 'medium'], grad: ['#0f766e', '#134e4a'], ext: true, source: 'Medium', date: 'May 2026', url: 'https://medium.com/@arorapuneet11/are-you-measuring-your-ai-agent-efficiency-fb1ff78ab6c7' },
+    { id: 'm7', title: 'Designing for Agentic Apps: Principles, Patterns, Guidelines & Guardrails', sum: 'A working UX vocabulary for autonomous agents — the principles, patterns, and guardrails that make them trustworthy.', cat: 'agents', diff: 'Intermediate', mins: 5, tools: ['Claude'], tags: ['agentic', 'ux', 'patterns', 'medium'], grad: ['#8b5cf6', '#5b21b6'], ext: true, source: 'Medium', date: 'May 2026', url: 'https://medium.com/@arorapuneet11/designing-for-agentic-ux-ai-principles-patterns-guidelines-guardrails-391be251044b' },
+    { id: 'm8', title: 'Why Enterprises Are (Still) Struggling with AI Adoption', sum: 'AI’s biggest enterprise failure isn’t intelligence — it’s trust. What the adoption numbers really tell us.', cat: 'business', diff: 'Beginner', mins: 3, tools: ['Claude'], tags: ['enterprise', 'trust', 'adoption', 'medium'], grad: ['#334155', '#1e293b'], ext: true, source: 'Medium', date: 'May 2026', url: 'https://medium.com/@arorapuneet11/ai-adoption-trust-numbers-tell-the-real-story-a39b5d27f94b' }
   ];
 
   // Full reading content for the in-app article reader.
@@ -242,11 +252,65 @@
   ];
 
   var ROADMAP = [
-    { lvl: 'Beginner', n: '01', steps: ['Understand tokens, context & temperature', 'Write your first structured prompt', 'Ship a no-code automation', 'Run a model comparison'] },
-    { lvl: 'Intermediate', n: '02', steps: ['Build a RAG pipeline', 'Design a tool for an agent', 'Add evals to a prompt', 'Control cost with caching'] },
-    { lvl: 'Advanced', n: '03', steps: ['Orchestrate multiple agents', 'Stand up an MCP server', 'Build an eval harness', 'Handle computer-use safely'] },
-    { lvl: 'Production', n: '04', steps: ['Add tracing & observability', 'Set drift & quality alerts', 'Model routing & fallbacks', 'Red-team your agent'] },
-    { lvl: 'Enterprise', n: '05', steps: ['Governance & policy framework', 'Human-in-the-loop review gates', 'Cost & usage dashboards', 'Org-wide AI enablement'] }
+    { lvl: 'Beginner', n: '01', who: 'For the curious — no code required to start.',
+      overview: 'Build a real mental model of how large language models behave, then ship your first genuinely useful thing. You’ll finish able to talk about AI precisely and automate something you do by hand today.',
+      outcomes: ['Explain tokens, context and temperature in plain English', 'Write a structured prompt that works on the first try', 'Automate one repetitive task end-to-end', 'Judge two models on a task that matters to you'],
+      steps: [
+        { t: 'Understand tokens, context & temperature', detail: 'Models don’t read words — they read tokens, remember only what fits their context window, and pick each next token with a randomness dial called temperature. Get these three ideas and most “weird AI behaviour” stops being mysterious.', hands: 'Paste a paragraph into the OpenAI tokenizer and watch the token count. Then ask the same question twice at temperature 0 vs 1 and compare.', resources: [{ l: 'OpenAI tokenizer', u: 'https://platform.openai.com/tokenizer' }, { l: 'Anthropic — prompting overview', u: 'https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview' }] },
+        { t: 'Write your first structured prompt', detail: 'A vague prompt gets a vague answer. Structure removes the guesswork — the CO-STAR framework (Context, Objective, Style, Tone, Audience, Response) is the fastest way to go from “meh” to “ship it”.', hands: 'Rewrite a prompt you already use into CO-STAR form and compare the two outputs side by side.', resources: [{ l: 'Read: CO-STAR framework', article: 'a2' }, { l: 'Open the Prompt Library', nav: 'prompts' }] },
+        { t: 'Ship a no-code automation', detail: 'You don’t need to code to remove hours of busywork. The pattern is always the same: an event fires, an AI step classifies or rewrites, and the result lands where you already look.', hands: 'Build an inbox-triage flow in n8n or Zapier that summarises new email and drops it into a task board.', resources: [{ l: 'Read: Automations that pay for themselves', article: 'a5' }, { l: 'Browse Workflow blueprints', nav: 'workflows' }, { l: 'Zapier', u: 'https://zapier.com/' }] },
+        { t: 'Run a model comparison', detail: 'Pick the right tool for the job by testing, not by hype. The same prompt can be excellent on one model and mediocre on another.', hands: 'Send one real task to Claude, GPT and Gemini and score the outputs 1–5 on accuracy and tone.', resources: [{ l: 'Open the Tool Comparison', nav: 'tools' }] }
+      ],
+      capstone: { t: 'Capstone — your personal AI daily brief', desc: 'Wire up a no-code flow that pulls your sources each morning, summarises them, and messages you the three things worth knowing. Small, real, and yours.', action: { l: 'Start from a workflow →', nav: 'workflows' } },
+      deepdive: [{ l: 'Andrej Karpathy — Intro to LLMs (video)', u: 'https://www.youtube.com/watch?v=zjkBMFhNj_g' }, { l: 'DeepLearning.AI — Prompt Engineering for Devs', u: 'https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/' }] },
+
+    { lvl: 'Intermediate', n: '02', who: 'For builders who can code a little and want to ship.',
+      overview: 'Move from prompting to building. You’ll ground a model in your own data, give it tools, prove its quality with evals, and stop the token bill from surprising you.',
+      outcomes: ['Stand up a working RAG pipeline', 'Design a tool an agent can call reliably', 'Attach evals to a prompt before you trust it', 'Cut inference cost without hurting quality'],
+      steps: [
+        { t: 'Build a RAG pipeline', detail: 'Retrieval-augmented generation is how you make a model answer from your documents instead of its imagination. Chunk on semantic boundaries, retrieve and re-rank, then force the model to answer only from the retrieved context — with citations.', hands: 'Embed one document into Supabase pgvector, retrieve the top passages for a question, and answer with citations.', resources: [{ l: 'Read: RAG without hallucinations', article: 'a3' }, { l: 'Supabase vector', u: 'https://supabase.com/docs/guides/ai' }, { l: 'Vercel AI chatbot starter', u: 'https://github.com/vercel/ai-chatbot' }] },
+        { t: 'Design a tool for an agent', detail: 'An agent is only as good as its tools. Write the description for the model — state exactly when to call it, when not to, and what the failure modes are. Ambiguous parameter names cause mis-calls.', hands: 'Write a JSON tool definition for one capability, with a model-facing description and two documented failure modes.', resources: [{ l: 'Use: Agent Tool Spec Writer prompt', nav: 'prompts' }, { l: 'Read: Building your first MCP server', article: 'a4' }] },
+        { t: 'Add evals to a prompt', detail: 'If you can’t measure output quality, you’re shipping on vibes. A small golden dataset plus LLM-as-judge grading against a rubric turns prompt tweaks into experiments you can trust.', hands: 'Curate 10 real inputs with known-good outputs and grade a prompt against them with an LLM judge.', resources: [{ l: 'Read: Evaluating LLM output at scale', article: 'a8' }, { l: 'promptfoo', u: 'https://github.com/promptfoo/promptfoo' }] },
+        { t: 'Control cost with caching', detail: 'Token bills scale silently. Cache stable prompt prefixes, batch non-urgent work, and route easy requests to cheaper models — routinely a 50–60% cut with no quality loss.', hands: 'Cache a long system prompt and measure the cost-per-call before and after.', resources: [{ l: 'Read: Prompt cost control', article: 'a9' }, { l: 'Try the cost calculators', nav: 'resources' }] }
+      ],
+      capstone: { t: 'Capstone — a grounded doc Q&A bot', desc: 'Ship a bot that answers questions from a real document set with citations and a human handoff when confidence is low. This is the single most reused pattern in production AI.', action: { l: 'See the RAG Support Bot blueprint →', nav: 'workflows' } },
+      deepdive: [{ l: 'Paper — ReAct: Reasoning + Acting', u: 'https://arxiv.org/abs/2210.03629' }, { l: 'awesome-mcp-servers', u: 'https://github.com/punkpeye/awesome-mcp-servers' }] },
+
+    { lvl: 'Advanced', n: '03', who: 'For engineers shipping AI to real users.',
+      overview: 'Go from a single prompt to systems. Multiple cooperating agents, your own MCP server, a proper eval harness, and the judgement to let a model touch the real world safely.',
+      outcomes: ['Orchestrate multiple agents without chaos', 'Expose your own tools via MCP', 'Run a repeatable eval harness in CI', 'Sandbox computer-use safely'],
+      steps: [
+        { t: 'Orchestrate multiple agents', detail: 'When one agent isn’t enough, a team can be — but only with sharp single-responsibility roles, tight delegation, and a critic that catches mistakes before you do. More agents is not better.', hands: 'Build a 3-role crew (researcher → writer → critic) and pass forward only what each role needs.', resources: [{ l: 'Read: Multi-agent orchestration', article: 'a6' }, { l: 'CrewAI', u: 'https://github.com/crewAIInc/crewAI' }, { l: 'LangGraph', u: 'https://github.com/langchain-ai/langgraph' }] },
+        { t: 'Stand up an MCP server', detail: 'The Model Context Protocol lets any MCP-aware client discover and call your tools through one clean, typed server. Start with a single well-typed tool and grow.', hands: 'Expose one real capability as an MCP tool and call it from a client end-to-end.', resources: [{ l: 'Read: Building your first MCP server', article: 'a4' }, { l: 'awesome-mcp-servers', u: 'https://github.com/punkpeye/awesome-mcp-servers' }] },
+        { t: 'Build an eval harness', detail: 'Ad-hoc grading doesn’t scale. Wire golden datasets, rubric grading, and regression checks into CI so every change is measured automatically.', hands: 'Add promptfoo to your repo and fail the build on a quality regression.', resources: [{ l: 'Read: Evaluating LLM output', article: 'a8' }, { l: 'Read: Measuring agent efficiency', article: 'm6' }, { l: 'promptfoo', u: 'https://github.com/promptfoo/promptfoo' }] },
+        { t: 'Handle computer-use safely', detail: 'Screen-control agents can operate software that has no API — powerful and risky. Run them in an isolated sandbox with step limits, confirmation on destructive actions, and full logging.', hands: 'Run a computer-use task in a throwaway container and log every action.', resources: [{ l: 'Read: Computer use', article: 'a10' }] }
+      ],
+      capstone: { t: 'Capstone — a 3-agent research crew', desc: 'Ship a crew that researches a topic, drafts a brief, and critiques its own work — with an eval that scores each run. Real orchestration, measured.', action: { l: 'See the AI Project Gallery →', nav: 'projects' } },
+      deepdive: [{ l: 'Paper — Self-consistency in CoT', u: 'https://arxiv.org/abs/2203.11171' }, { l: 'Read: Designing for agentic apps', article: 'm7' }] },
+
+    { lvl: 'Production', n: '04', who: 'For teams running AI in production.',
+      overview: 'Shipping is the start, not the finish. Add the observability, alerting, routing, and adversarial testing that keep an AI system honest once real users are hitting it.',
+      outcomes: ['Trace and observe every AI call', 'Alert on drift and quality drops', 'Route and fall back across models', 'Red-team your own agent'],
+      steps: [
+        { t: 'Add tracing & observability', detail: 'AI apps fail silently. Capture every prompt, tool call, and output so you can debug what actually happened — not what you assume happened.', hands: 'Instrument one flow so every call is traceable, then replay a failed run.', resources: [{ l: 'See the AI Efficiency Workbench', u: 'workbench-alt2.html' }, { l: 'Read: Are you measuring agent efficiency?', article: 'm6' }] },
+        { t: 'Set drift & quality alerts', detail: 'Model behaviour and your inputs both drift over time. Run your eval set on a schedule and alert when quality drops below a threshold.', hands: 'Schedule your eval suite and wire a Slack alert on regression.', resources: [{ l: 'Read: Evaluating LLM output', article: 'a8' }, { l: 'promptfoo', u: 'https://github.com/promptfoo/promptfoo' }] },
+        { t: 'Model routing & fallbacks', detail: 'Don’t send every request to your most expensive model, and never let a single provider outage take you down. Route by difficulty and fall back gracefully.', hands: 'Add a router that sends easy calls to a cheap model and retries on a fallback provider.', resources: [{ l: 'Read: Prompt cost control', article: 'a9' }, { l: 'Read: Less AI, More Intelligence', article: 'm2' }] },
+        { t: 'Red-team your agent', detail: 'Before your users find the failure modes, you should. Probe for prompt injection, data leakage, and unsafe tool calls.', hands: 'Write 15 adversarial prompts that try to break your agent and log what gets through.', resources: [{ l: 'The AI Efficiency Workbench (routing & governance)', u: 'workbench-alt2.html' }] }
+      ],
+      capstone: { t: 'Capstone — observability on a live agent', desc: 'Take an agent you’ve built and add tracing, a scheduled eval, and a drift alert. Turn a black box into something you can operate with confidence.', action: { l: 'Open the Efficiency Workbench →', u: 'workbench-alt2.html' } },
+      deepdive: [{ l: 'Read: You’re paying an AI tax', article: 'm4' }, { l: 'promptfoo — red-teaming', u: 'https://www.promptfoo.dev/docs/red-team/' }] },
+
+    { lvl: 'Enterprise', n: '05', who: 'For leaders scaling AI across an organisation.',
+      overview: 'The hardest part of enterprise AI isn’t the model — it’s trust, governance, and getting hundreds of people to adopt good practice. This stage is about turning one good outcome into an organisational capability.',
+      outcomes: ['Stand up an AI governance framework', 'Design human-in-the-loop review gates', 'Give leaders cost and usage visibility', 'Enable AI fluency across the org'],
+      steps: [
+        { t: 'Governance & policy framework', detail: 'AI without governance is scattered, low-trust adoption. Define acceptable use, data boundaries, review requirements, and ownership — the guardrails that let teams move fast safely.', hands: 'Draft a one-page AI usage policy covering data, review, and accountability.', resources: [{ l: 'Read: Why enterprises struggle with AI adoption', article: 'm8' }, { l: 'See: Vigyan Setu governance case', article: 'm3' }] },
+        { t: 'Human-in-the-loop review gates', detail: 'The highest-stakes decisions should never be fully automated. Design review gates that insert a human at exactly the right moments — and nowhere else.', hands: 'Map one workflow and mark where a human must approve before the AI proceeds.', resources: [{ l: 'The Triage Lens — routing & review', u: 'workbench-alt2.html' }] },
+        { t: 'Cost & usage dashboards', detail: 'Leaders can’t manage what they can’t see. Give them a live view of AI spend, usage, and ROI so investment decisions are grounded in data, not anecdote.', hands: 'Stand up a dashboard that tracks spend and usage per team.', resources: [{ l: 'Read: The prompt-literacy dashboard', article: 'm5' }, { l: 'The AI Inflation Observatory', u: 'https://aiinflationmonitor.netlify.app/' }] },
+        { t: 'Org-wide AI enablement', detail: 'Fluency is a capability, not a workshop. Build the rituals, libraries, and centre-of-excellence that raise the whole org’s craft — and keep producing results after you’ve moved on.', hands: 'Design a 30-day enablement plan with rituals, a prompt library, and evaluation rubrics.', resources: [{ l: 'The Skills Lab (92 skills)', u: 'skills-lab.html' }, { l: 'The 30-Day Agentic UX plan', u: '30day-agentic-ux-plan.html' }] }
+      ],
+      capstone: { t: 'Capstone — an AI enablement one-pager for your org', desc: 'Produce the artefact a leadership team would actually approve: the policy, the review gates, the metrics, and the 30-day enablement plan. This is the work that outlasts any single project.', action: { l: 'Explore the AI Lab →', u: 'ai-lab.html' } },
+      deepdive: [{ l: 'Read: It’s advantage designers (open-source)', article: 'm1' }, { l: 'The Design Intelligence Portal', u: 'https://pa9401.vercel.app/' }] }
   ];
 
   var PERSONAS = [
@@ -353,19 +417,24 @@
 
   function articleCard(a) {
     var bm = state.bookmarks[a.id], lk = state.likes[a.id], pr = state.progress[a.id] || 0;
+    var readEl = a.ext
+      ? '<a class="read" href="' + esc(a.url) + '" target="_blank" rel="noopener">READ ON MEDIUM ↗</a>'
+      : '<a class="read bb-readbtn" data-id="' + a.id + '" href="#">READ →</a>';
+    var shareAttr = a.ext ? ' data-url="' + esc(a.url) + '"' : '';
     return '<article class="bb-card" data-id="' + a.id + '" data-tags="' + esc((a.tags.join(' ') + ' ' + a.tools.join(' ') + ' ' + a.title + ' ' + a.cat).toLowerCase()) + '" data-cat="' + a.cat + '" data-diff="' + a.diff + '" data-mins="' + a.mins + '" data-tools="' + esc(a.tools.join(',')) + '">' +
-      '<div class="bb-card__cover" style="' + grad(a.grad[0], a.grad[1]) + '"><span class="badge">' + esc(a.cat) + '</span></div>' +
+      '<div class="bb-card__cover" style="' + grad(a.grad[0], a.grad[1]) + '"><span class="badge">' + esc(a.cat) + '</span>' +
+        (a.ext ? '<span class="bb-card__src">✎ ' + esc(a.source || 'External') + '</span>' : '') + '</div>' +
       (pr > 0 ? '<div class="bb-progress"><i style="width:' + pr + '%"></i></div>' : '') +
       '<div class="bb-card__body">' +
         '<h3 class="bb-card__title">' + esc(a.title) + '</h3>' +
         '<p class="bb-card__sum">' + esc(a.sum) + '</p>' +
         '<div class="bb-card__tags">' + a.tools.map(function (t) { return '<span class="bb-mini-tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
-        '<div class="bb-card__meta"><span class="diff">' + esc(a.diff) + '</span><span>' + a.mins + ' min read</span></div>' +
+        '<div class="bb-card__meta"><span class="diff">' + esc(a.diff) + '</span><span>' + a.mins + ' min read</span>' + (a.ext ? '<span>' + esc(a.date || '') + '</span>' : '') + '</div>' +
         '<div class="bb-card__actions">' +
           '<button class="bb-iconbtn bb-bookmark ' + (bm ? 'is-on' : '') + '" data-id="' + a.id + '" title="Bookmark" aria-pressed="' + !!bm + '">' + (bm ? '★' : '☆') + '</button>' +
           '<button class="bb-iconbtn bb-like ' + (lk ? 'is-on' : '') + '" data-id="' + a.id + '" title="Like" aria-pressed="' + !!lk + '">♥</button>' +
-          '<button class="bb-iconbtn bb-share" data-id="' + a.id + '" title="Share">↗</button>' +
-          '<a class="read bb-readbtn" data-id="' + a.id + '" href="#">READ →</a>' +
+          '<button class="bb-iconbtn bb-share" data-id="' + a.id + '"' + shareAttr + ' title="Share">↗</button>' +
+          readEl +
         '</div>' +
       '</div></article>';
   }
@@ -494,6 +563,13 @@
           : 'Complete a stage to unlock the next. ' + (currentStage >= 0 ? 'Up next: <strong style="color:var(--ink)">' + esc(ROADMAP[currentStage].lvl) + '</strong>.' : '')) +
       '</p></div>';
 
+    function roadRes(r) {
+      if (r.u) { var isExt = /^https?:/.test(r.u); return '<a class="bb-road__res" href="' + esc(r.u) + '"' + (isExt ? ' target="_blank" rel="noopener"' : '') + '>' + esc(r.l) + (isExt ? ' ↗' : ' →') + '</a>'; }
+      if (r.article) return '<button class="bb-road__res bb-readbtn" data-id="' + r.article + '">' + esc(r.l) + '</button>';
+      if (r.nav) return '<button class="bb-road__res bb-nav" data-view="' + r.nav + '">' + esc(r.l) + '</button>';
+      return '';
+    }
+
     var stages = ROADMAP.map(function (s, si) {
       var done = stageComplete(si), unlocked = stageUnlocked(si), current = unlocked && !done;
       var cnt = stageDoneCount(si), spct = Math.round((cnt / s.steps.length) * 100);
@@ -501,13 +577,36 @@
       var pill = done ? '<span class="bb-road__pill done">✓ Complete</span>'
         : current ? '<span class="bb-road__pill current">● In progress</span>'
         : '<span class="bb-road__pill locked">🔒 Locked</span>';
+
+      var stepsHtml = s.steps.map(function (st, i) {
+        var key = si + '-' + i, dn = state.completed[key];
+        return '<li class="bb-road__step ' + (dn ? 'done' : '') + '" data-key="' + key + '" data-si="' + si + '">' +
+          '<button class="bb-road__check" data-key="' + key + '" data-si="' + si + '" title="Mark done" aria-pressed="' + !!dn + '">✓</button>' +
+          '<div class="bb-road__stepcol">' +
+            '<button class="bb-road__steprow"><span class="bb-road__steptitle">' + esc(st.t) + '</span><span class="bb-road__stepcaret">+</span></button>' +
+            '<div class="bb-road__stepbody">' +
+              '<p>' + esc(st.detail) + '</p>' +
+              '<div class="bb-road__hands"><span class="lbl">Hands-on</span>' + esc(st.hands) + '</div>' +
+              '<div class="bb-road__reslist">' + st.resources.map(roadRes).join('') + '</div>' +
+            '</div></div></li>';
+      }).join('');
+
+      var capstone = s.capstone ? '<div class="bb-road__capstone"><div class="k">◆ Capstone project</div>' +
+        '<div class="t">' + esc(s.capstone.t) + '</div><p>' + esc(s.capstone.desc) + '</p>' +
+        roadRes(s.capstone.action).replace('bb-road__res', 'bb-road__res bb-road__capbtn') + '</div>' : '';
+
+      var deep = s.deepdive ? '<details class="bb-road__deep"><summary>Go deeper — expert resources</summary><div class="bb-road__reslist">' + s.deepdive.map(roadRes).join('') + '</div></details>' : '';
+
       return '<div class="bb-road__stage ' + cls + '" data-si="' + si + '">' +
         '<div class="bb-road__lvl">Stage ' + s.n + '<span class="n">' + esc(s.lvl) + '</span>' + pill +
-          '<div class="bb-road__stagebar"><i style="width:' + spct + '%"></i></div></div>' +
-        '<ul class="bb-road__steps">' + s.steps.map(function (st, i) {
-          var key = si + '-' + i, dn = state.completed[key];
-          return '<li class="' + (dn ? 'done' : '') + '" data-key="' + key + '" data-si="' + si + '"><span class="bb-road__check">✓</span><span>' + esc(st) + '</span></li>';
-        }).join('') + '</ul></div>';
+          '<div class="bb-road__stagebar"><i style="width:' + spct + '%"></i></div>' +
+          '<div class="bb-road__who">' + esc(s.who) + '</div></div>' +
+        '<div class="bb-road__body">' +
+          '<div class="bb-road__intro"><p>' + esc(s.overview) + '</p>' +
+            '<div class="bb-road__outcomes"><span class="lbl">What you’ll be able to do</span><ul>' + s.outcomes.map(function (o) { return '<li>' + esc(o) + '</li>'; }).join('') + '</ul></div></div>' +
+          '<ul class="bb-road__steps">' + stepsHtml + '</ul>' +
+          capstone + deep +
+        '</div></div>';
     }).join('');
 
     wrap.innerHTML = overview + stages;
@@ -860,6 +959,8 @@
   }
 
   function openArticle(id) {
+    var a = ARTICLES.filter(function (x) { return x.id === id; })[0];
+    if (a && a.ext) { window.open(a.url, '_blank', 'noopener'); return; }
     renderReader(id);
     state.progress[id] = Math.max(state.progress[id] || 0, 10);
     persist();
@@ -888,7 +989,7 @@
       // like
       var lk = t.closest('.bb-like'); if (lk) { var lid = lk.getAttribute('data-id'); state.likes[lid] = !state.likes[lid]; persist(); lk.classList.toggle('is-on', state.likes[lid]); return; }
       // share
-      var sh = t.closest('.bb-share, .bb-shareprompt'); if (sh) { var shid = sh.getAttribute('data-id'); var url = location.origin + location.pathname + '#' + shid; if (navigator.clipboard) navigator.clipboard.writeText(url); toast('Link copied to clipboard'); return; }
+      var sh = t.closest('.bb-share, .bb-shareprompt'); if (sh) { var shid = sh.getAttribute('data-id'); var url = sh.getAttribute('data-url') || (location.origin + location.pathname + '#' + shid); if (navigator.clipboard) navigator.clipboard.writeText(url); toast('Link copied to clipboard'); return; }
       // read → open in-app reader
       var rd = t.closest('.bb-readbtn'); if (rd) { e.preventDefault(); openArticle(rd.getAttribute('data-id')); return; }
       // back from reader
@@ -906,8 +1007,10 @@
       var fc = t.closest('.bb-flow-copy'); if (fc) { var w = WORKFLOWS.filter(function (x) { return x.id === fc.getAttribute('data-id'); })[0]; if (w && navigator.clipboard) navigator.clipboard.writeText(w.nodes.join(' → ')); toast('Steps copied'); return; }
       var sf = t.closest('.bb-saveflow'); if (sf) { var sfid = sf.getAttribute('data-id'); state.savedFlows[sfid] = !state.savedFlows[sfid]; persist(); sf.classList.toggle('is-active', state.savedFlows[sfid]); sf.textContent = state.savedFlows[sfid] ? '★ Saved' : '☆ Bookmark'; toast(state.savedFlows[sfid] ? 'Workflow saved' : 'Removed'); return; }
 
-      // roadmap step toggle (sequential unlock flow)
-      var rs = t.closest('.bb-road__steps li'); if (rs) { toggleRoadmapStep(rs.getAttribute('data-key'), +rs.getAttribute('data-si')); return; }
+      // roadmap: checkbox toggles completion (sequential unlock flow)
+      var chk = t.closest('.bb-road__check'); if (chk) { toggleRoadmapStep(chk.getAttribute('data-key'), +chk.getAttribute('data-si')); return; }
+      // roadmap: step title expands its detail/hands-on/resources
+      var srow = t.closest('.bb-road__steprow'); if (srow) { var stp = srow.closest('.bb-road__step'); if (stp) stp.classList.toggle('is-open'); return; }
 
       // compare intent
       var ci = t.closest('.bb-cmp-btn'); if (ci) { $all('.bb-cmp-btn').forEach(function (b) { b.classList.toggle('is-active', b === ci); }); renderCompare(ci.getAttribute('data-intent')); return; }
