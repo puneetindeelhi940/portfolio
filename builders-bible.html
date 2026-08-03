@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Builder's Bible — The Interactive AI Knowledge Portal</title>
+<meta name="description" content="Builder's Bible is an interactive AI learning portal for builders — discover, learn, build, and ship. Articles, playbooks, projects, a prompt library, workflow blueprints, tool comparisons, calculators, and roadmaps.">
+<meta name="author" content="Puneet Arora">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/builders-bible.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Builder's Bible">
+<meta property="og:title" content="Builder's Bible — The Interactive AI Knowledge Portal">
+<meta property="og:description" content="An AI operating system for builders. Discover, learn, build, bookmark, search, and return.">
+<meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/builders-bible.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Builder's Bible — The Interactive AI Knowledge Portal">
+<meta name="twitter:description" content="An AI operating system for builders. Discover, learn, build, bookmark, search, and return.">
+<meta name="twitter:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t==='forest')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/builders-bible.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Builder's Bible","url":"https://puneetindeelhi940.github.io/portfolio/builders-bible.html","description":"An interactive AI knowledge portal for builders.","author":{"@type":"Person","name":"Puneet Arora"},"potentialAction":{"@type":"SearchAction","target":"https://puneetindeelhi940.github.io/portfolio/builders-bible.html?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+</head>
+<body>
+<div class="page">
+
+<!-- ══════════ TOPBAR ══════════ -->
+<header class="topbar bb-topbar" data-screen-label="topbar">
+  <a href="builders-bible.html" class="topbar__brand"><span class="dot"></span><b>Builder's&nbsp;Bible</b></a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a data-view="home" class="is-current">HOME</a>
+    <a data-view="articles">ARTICLES</a>
+    <a data-view="playbooks">PLAYBOOKS</a>
+    <a data-view="projects">PROJECTS</a>
+    <a data-view="prompts">PROMPTS</a>
+    <a data-view="workflows">WORKFLOWS</a>
+    <a data-view="tools">TOOLS</a>
+    <a data-view="resources">RESOURCES</a>
+    <a data-view="community">COMMUNITY</a>
+    <a data-view="dashboard">DASHBOARD</a>
+    <a data-view="about">ABOUT</a>
+  </nav>
+  <div class="topbar__meta bb-actions">
+    <button class="bb-searchbtn" aria-label="Search (press / or Cmd-K)"><span>⌕ SEARCH</span><kbd>⌘K</kbd></button>
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- ══════════ VIEW: HOME ══════════ -->
+<main class="bb-view is-active" data-view="home">
+
+  <!-- HERO -->
+  <section class="bb-hero">
+    <div class="bb-hero__grid"></div>
+    <div class="bb-hero__bg"></div>
+    <div class="bb-hero__inner">
+      <span class="bb-hero__eyebrow eyebrow"><span class="pulse"></span> AN OPERATING SYSTEM FOR AI BUILDERS</span>
+      <h1>Don't just read about AI.<br><em>Build with it.</em></h1>
+      <p class="bb-hero__sub">Builder's Bible turns a newsletter into a living learning platform — articles, playbooks, real projects, a prompt library, workflow blueprints, tool comparisons, and roadmaps. Discover, learn, build, and return.</p>
+      <form class="bb-signup">
+        <input type="email" required placeholder="you@builder.dev" aria-label="Email address">
+        <button type="submit" class="btn btn--primary">JOIN 18,400+ BUILDERS <span>→</span></button>
+      </form>
+      <div class="bb-hero__ctas">
+        <button class="btn btn--ghost bb-nav" data-view="articles">EXPLORE THE LIBRARY</button>
+        <button class="btn btn--ghost bb-nav" data-view="playbooks">START A ROADMAP</button>
+      </div>
+    </div>
+    <div class="bb-hero__scroll"><div class="mouse"></div>TAKE THE QUIZ</div>
+  </section>
+
+  <!-- QUIZ -->
+  <div class="bb-secintro" data-reveal>
+    <div class="eyebrow2">Start here · 20 seconds</div>
+    <h2>What best describes you?</h2>
+    <p>Pick one and we'll instantly assemble a learning path — articles, projects, prompt packs, and the tools worth your time.</p>
+  </div>
+  <section class="bb-quiz">
+    <div class="bb-quiz__cards" id="bb-personas"></div>
+    <div class="bb-reco" id="bb-reco"></div>
+  </section>
+
+  <!-- LIVE STATS -->
+  <div class="bb-secintro" data-reveal>
+    <div class="eyebrow2">Live · updated weekly</div>
+    <h2>The portal in numbers</h2>
+  </div>
+  <section class="bb-stats" id="bb-stats"></section>
+
+  <!-- BROWSE BY TOPIC -->
+  <div class="bb-secintro" data-reveal>
+    <div class="eyebrow2">Discover</div>
+    <h2>Browse by topic</h2>
+    <p>Eighteen tracks, from prompt engineering to computer use. Each opens a filtered slice of the library.</p>
+  </div>
+  <section style="padding:0 var(--pad-x)"><div class="bb-topics" id="bb-topics"></div></section>
+
+  <!-- BROWSE BY TOOL -->
+  <div class="bb-secintro" data-reveal>
+    <div class="eyebrow2">Discover</div>
+    <h2>Browse by tool</h2>
+    <p>Jump straight to everything built with the tools you already use.</p>
+  </div>
+  <section style="padding:0 var(--pad-x) 8px"><div class="bb-tools-grid" id="bb-tools"></div></section>
+
+  <!-- FEATURED -->
+  <div class="bb-secintro" data-reveal>
+    <div class="eyebrow2">Editor's picks</div>
+    <h2>Featured this week</h2>
+  </div>
+  <section class="bb-cardgrid" id="bb-featured" style="padding-top:20px"></section>
+</main>
+
+<!-- ══════════ VIEW: ARTICLES ══════════ -->
+<main class="bb-view" data-view="articles">
+  <div class="bb-secintro">
+    <div class="eyebrow2">The Library</div>
+    <h2>Interactive articles</h2>
+    <p>Every card is scannable in seconds — bookmark, like, share, and track your reading. Filter by topic, difficulty, reading time, or tool.</p>
+  </div>
+  <div class="bb-filters">
+    <input class="bb-inlinesearch" id="bb-artsearch" type="search" placeholder="Search articles, tags, tools…" aria-label="Search articles">
+    <select class="bb-select" id="bb-filter-cat" aria-label="Topic">
+      <option value="">All topics</option>
+      <option value="agents">AI Agents</option><option value="automation">Automation</option><option value="prompting">Prompt Engineering</option>
+      <option value="rag">RAG</option><option value="mcp">MCP</option><option value="coding">Coding</option><option value="evals">Evaluations</option>
+      <option value="llms">LLMs</option><option value="voice">Voice AI</option><option value="computeruse">Computer Use</option><option value="business">Business</option>
+    </select>
+    <select class="bb-select" id="bb-filter-diff" aria-label="Difficulty"><option value="">Any level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+    <select class="bb-select" id="bb-filter-tool" aria-label="Tool"><option value="">Any tool</option><option>Claude</option><option>GPT</option><option>Gemini</option><option>Cursor</option><option>n8n</option><option>Zapier</option><option>Supabase</option><option>Vercel</option><option>LangGraph</option><option>CrewAI</option><option>AutoGen</option></select>
+    <select class="bb-select" id="bb-filter-time" aria-label="Reading time"><option value="">Any length</option><option value="short">Under 8 min</option><option value="long">8 min+</option></select>
+    <select class="bb-select" id="bb-filter-sort" aria-label="Sort"><option value="">Sort: featured</option><option value="short">Shortest first</option><option value="long">Longest first</option><option value="bookmarked">Bookmarked only</option></select>
+    <span class="bb-count" id="bb-articlecount"></span>
+  </div>
+  <section class="bb-cardgrid" id="bb-articlegrid"></section>
+</main>
+
+<!-- ══════════ VIEW: PLAYBOOKS / ROADMAPS ══════════ -->
+<main class="bb-view" data-view="playbooks">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Learning paths</div>
+    <h2>AI roadmaps</h2>
+    <p>Five stages, beginner to enterprise. Tick steps as you go — your progress is saved and surfaced on your dashboard.</p>
+  </div>
+  <section class="bb-road" id="bb-roadmap"></section>
+</main>
+
+<!-- ══════════ VIEW: PROJECTS ══════════ -->
+<main class="bb-view" data-view="projects">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Showcase</div>
+    <h2>AI project gallery</h2>
+    <p>Real builds with the honest details — the problem, the architecture, the stack, the cost, and the time it took.</p>
+  </div>
+  <section class="bb-cardgrid" id="bb-projectgrid" style="padding-top:20px"></section>
+</main>
+
+<!-- ══════════ VIEW: PROMPTS ══════════ -->
+<main class="bb-view" data-view="prompts">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Prompt library</div>
+    <h2>Prompts worth keeping</h2>
+    <p>Copy-ready prompts with example output and tips. Expand any card, copy in one click, and bookmark the ones you reach for.</p>
+  </div>
+  <div class="bb-filters">
+    <input class="bb-inlinesearch" id="bb-promptsearch" type="search" placeholder="Search prompts…" aria-label="Search prompts">
+    <div id="bb-prompt-chips" style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="bb-chip" data-filter="Claude">Claude</button>
+      <button class="bb-chip" data-filter="GPT">GPT</button>
+      <button class="bb-chip" data-filter="Gemini">Gemini</button>
+      <button class="bb-chip" data-filter="Coding">Coding</button>
+      <button class="bb-chip" data-filter="Writing">Writing</button>
+      <button class="bb-chip" data-filter="Marketing">Marketing</button>
+      <button class="bb-chip" data-filter="Business">Business</button>
+      <button class="bb-chip" data-filter="Research">Research</button>
+      <button class="bb-chip" data-filter="Automation">Automation</button>
+    </div>
+  </div>
+  <section class="bb-list" id="bb-promptlist"></section>
+</main>
+
+<!-- ══════════ VIEW: WORKFLOWS ══════════ -->
+<main class="bb-view" data-view="workflows">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Workflow library</div>
+    <h2>Automation blueprints</h2>
+    <p>Each blueprint shows the architecture, the tools, build time, and cost — download the JSON, copy the steps, or save it for later.</p>
+  </div>
+  <section class="bb-list" id="bb-workflowlist"></section>
+</main>
+
+<!-- ══════════ VIEW: TOOLS ══════════ -->
+<main class="bb-view" data-view="tools">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Interactive comparison</div>
+    <h2>What are you trying to do?</h2>
+    <p>Pick a goal and we'll line up the right tools side by side — pricing, speed, quality, context, and reasoning.</p>
+  </div>
+  <div class="bb-cmp-intent">
+    <button class="bb-chip bb-cmp-btn is-active" data-intent="Coding">💻 Coding</button>
+    <button class="bb-chip bb-cmp-btn" data-intent="Writing">✍️ Writing</button>
+    <button class="bb-chip bb-cmp-btn" data-intent="Research">🔎 Research</button>
+    <button class="bb-chip bb-cmp-btn" data-intent="Automation">⚙️ Automation</button>
+    <button class="bb-chip bb-cmp-btn" data-intent="Customer Support">💬 Support</button>
+    <button class="bb-chip bb-cmp-btn" data-intent="Voice">🎙️ Voice</button>
+    <button class="bb-chip bb-cmp-btn" data-intent="Image Generation">🎨 Image</button>
+  </div>
+  <div class="bb-cmp-table-wrap" id="bb-compare"></div>
+</main>
+
+<!-- ══════════ VIEW: RESOURCES ══════════ -->
+<main class="bb-view" data-view="resources">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Resource hub</div>
+    <h2>Everything worth bookmarking</h2>
+    <p>Books, courses, videos, repos, frameworks, papers, communities, and starter kits — each rated, levelled, and time-boxed.</p>
+  </div>
+  <section class="bb-res-cols" id="bb-resources"></section>
+
+  <div class="bb-secintro">
+    <div class="eyebrow2">Interactive calculators</div>
+    <h2>Do the math before you build</h2>
+    <p>Live estimates for API spend, automation ROI, and token counts — every field updates instantly.</p>
+  </div>
+  <section class="bb-calc-grid">
+    <div class="bb-calc">
+      <h3>LLM API cost</h3><p class="d">Estimate your monthly inference bill.</p>
+      <div class="bb-calc__field"><label for="calc-model">Model</label>
+        <select id="calc-model"><option value="claude-opus">Claude Opus</option><option value="claude-sonnet" selected>Claude Sonnet</option><option value="gpt-4o">GPT-4o</option><option value="gpt-4o-mini">GPT-4o mini</option><option value="gemini-flash">Gemini Flash</option></select></div>
+      <div class="bb-calc__field"><label for="calc-reqs">Requests / month</label><input id="calc-reqs" type="number" value="50000" min="0"></div>
+      <div class="bb-calc__field"><label for="calc-in">Input tokens / req</label><input id="calc-in" type="number" value="1500" min="0"></div>
+      <div class="bb-calc__field"><label for="calc-out">Output tokens / req</label><input id="calc-out" type="number" value="600" min="0"></div>
+      <div class="bb-calc__out"><span class="l">Estimated spend</span><span class="v" id="calc-out-llm">$0</span></div>
+    </div>
+    <div class="bb-calc">
+      <h3>Automation ROI</h3><p class="d">What automating repetitive work is worth.</p>
+      <div class="bb-calc__field"><label for="roi-people">People affected</label><input id="roi-people" type="number" value="8" min="0"></div>
+      <div class="bb-calc__field"><label for="roi-hours">Hours saved / person / week</label><input id="roi-hours" type="number" value="5" min="0"></div>
+      <div class="bb-calc__field"><label for="roi-rate">Hourly cost ($)</label><input id="roi-rate" type="number" value="45" min="0"></div>
+      <div class="bb-calc__out"><span class="l">Time reclaimed <span id="calc-out-roi-hrs" class="mono faint" style="font-size:12px"></span></span><span class="v" id="calc-out-roi">$0</span></div>
+    </div>
+    <div class="bb-calc">
+      <h3>Token estimator</h3><p class="d">Roughly how many tokens your text is.</p>
+      <div class="bb-calc__field"><label for="tok-words">Word count</label><input id="tok-words" type="number" value="800" min="0"></div>
+      <p class="body" style="font-size:12px">Rule of thumb: ~1.33 tokens per English word. Use it to size context windows and estimate cost per call.</p>
+      <div class="bb-calc__out"><span class="l">Estimated tokens</span><span class="v" id="calc-out-tokens">0 tok</span></div>
+    </div>
+    <div class="bb-calc">
+      <h3>More calculators</h3><p class="d">On the roadmap for the portal.</p>
+      <ul class="bb-prompt__tips" style="margin-top:6px">
+        <li><span>Embedding cost estimator</span></li>
+        <li><span>Agent run cost (multi-step)</span></li>
+        <li><span>Infrastructure & hosting</span></li>
+        <li><span>Fine-tuning break-even</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- ══════════ VIEW: COMMUNITY ══════════ -->
+<main class="bb-view" data-view="community">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Community</div>
+    <h2>Build in public, together</h2>
+    <p>A weekly challenge, a featured builder, prompt and workflow of the week, and a leaderboard for the most active members.</p>
+  </div>
+  <section class="bb-comm">
+    <div style="display:grid;gap:20px">
+      <div class="bb-panel">
+        <h3>This week's challenge</h3>
+        <div style="font-family:var(--f-sans);font-size:20px;color:var(--ink);font-weight:500;margin-bottom:8px">Ship an agent that files your expenses</div>
+        <p class="body" style="font-size:14px">Take a real receipt, extract the fields with a vision model, categorise it, and drop it into a sheet — end to end, under 50 lines. Best submission is featured next week.</p>
+        <div class="bb-flow__actions" style="margin-top:14px"><button class="btn btn--primary">Submit your build</button><button class="btn btn--ghost bb-nav" data-view="workflows">See workflow ideas</button></div>
+      </div>
+      <div class="grid-2" style="gap:20px">
+        <div class="bb-panel"><h3>Prompt of the week</h3><div style="color:var(--ink);font-size:16px;margin-bottom:6px">The Ruthless Editor</div><p class="body" style="font-size:13px">Cuts a draft to its strongest self and tells you why. 340 copies this week.</p><button class="bb-chip bb-nav" data-view="prompts" style="margin-top:10px">Open in library →</button></div>
+        <div class="bb-panel"><h3>Workflow of the week</h3><div style="color:var(--ink);font-size:16px;margin-bottom:6px">RAG Support Bot</div><p class="body" style="font-size:13px">Grounded answers with a human handoff on low confidence. 120 duplications.</p><button class="bb-chip bb-nav" data-view="workflows" style="margin-top:10px">See blueprint →</button></div>
+      </div>
+      <div class="bb-panel"><h3>Featured builder</h3>
+        <div style="display:flex;gap:16px;align-items:center">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#d97757,#6366f1);display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);color:#fff;font-weight:700">AB</div>
+          <div><div style="color:var(--ink);font-size:16px">ada.builds</div><div class="mono faint" style="font-size:11px">14 workflows shipped · agent specialist</div></div>
+        </div>
+        <p class="body" style="font-size:14px;margin-top:12px">"I stopped reading tutorials passively. Building the workflow of the week every Sunday is what actually made things click."</p>
+      </div>
+    </div>
+    <div class="bb-panel"><h3>Leaderboard</h3><div class="bb-leader" id="bb-leaders"></div>
+      <div class="divider"></div>
+      <h3>Recent submissions</h3>
+      <div class="bb-leader">
+        <div class="bb-leader__row"><span class="bb-leader__rank">◆</span><span class="bb-leader__name">Voice note → CRM<span class="sub">by linus.dev</span></span><span class="bb-leader__pts">2h ago</span></div>
+        <div class="bb-leader__row"><span class="bb-leader__rank">◆</span><span class="bb-leader__name">PDF → flashcards<span class="sub">by margaret_ai</span></span><span class="bb-leader__pts">5h ago</span></div>
+        <div class="bb-leader__row"><span class="bb-leader__rank">◆</span><span class="bb-leader__name">Standup summariser<span class="sub">by grace_h</span></span><span class="bb-leader__pts">1d ago</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ══════════ VIEW: DASHBOARD ══════════ -->
+<main class="bb-view" data-view="dashboard">
+  <div class="bb-secintro">
+    <div class="eyebrow2">Your space</div>
+    <h2>Personal dashboard</h2>
+    <p>Everything you've saved and started, in one place. Stored privately in your browser — nothing leaves this device.</p>
+  </div>
+  <section class="bb-dash" id="bb-dash"></section>
+</main>
+
+<!-- ══════════ VIEW: ABOUT ══════════ -->
+<main class="bb-view" data-view="about">
+  <div class="bb-secintro">
+    <div class="eyebrow2">About</div>
+    <h2>Built by a builder, for builders</h2>
+    <p>Builder's Bible is the learning portal I wish existed — the depth of documentation, the elegance of a premium product, and the discoverability of a modern platform. It's built and curated by Puneet Arora, Principal Product Designer & AI Design Leader.</p>
+  </div>
+  <div class="bb-secintro" style="padding-top:16px">
+    <div class="eyebrow2">Current AI stack</div>
+    <h2 style="font-size:26px">What I build with today</h2>
+  </div>
+  <section class="bb-stack" id="bb-stack"></section>
+  <div style="padding:16px var(--pad-x) 48px">
+    <div class="bb-panel" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+      <div><div style="font-family:var(--f-sans);font-size:20px;color:var(--ink);font-weight:500">Want the portfolio behind the portal?</div><p class="body" style="font-size:14px;margin:6px 0 0">See the case studies, the AI Lab, and the rest of the work.</p></div>
+      <a href="home.html" class="btn btn--primary">Visit the main portfolio →</a>
+    </div>
+  </div>
+</main>
+
+<!-- ══════════ SEARCH OVERLAY ══════════ -->
+<div class="bb-overlay" id="bb-overlay" role="dialog" aria-modal="true" aria-label="Global search">
+  <div class="bb-search-box">
+    <input id="bb-search-input" type="text" placeholder="Search articles, prompts, workflows, projects, tools…" aria-label="Search">
+    <div class="bb-search-results" id="bb-search-results"></div>
+    <div class="bb-search-foot"><span>↑↓ navigate</span><span>↵ open</span><span>esc close</span></div>
+  </div>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="foot">
+  <div>Builder's Bible — the interactive AI knowledge portal · Built by Puneet Arora · <span id="year"></span></div>
+  <div class="foot__nav"><a href="home.html">Portfolio</a><a data-view="about" style="cursor:pointer">About</a><a href="contact.html">Contact</a></div>
+</footer>
+
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
+<script src="assets/builders-bible.js"></script>
+</body>
+</html>
