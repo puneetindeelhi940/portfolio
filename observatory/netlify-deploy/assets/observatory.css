@@ -78,7 +78,7 @@ select, input, button { font-family: inherit; }
   align-items: center;
   height: 100%;
   white-space: nowrap;
-  animation: tickerScroll 90s linear infinite;
+  animation: tickerScroll 45s linear infinite;
   gap: 0;
   padding-left: 100%;
 }
