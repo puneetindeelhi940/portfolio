@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Agent Collaboration Model — Puneet Arora</title>
+<meta name="description" content="Patterns for how humans and several agents split the work, hand off cleanly, and stay accountable to each other.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/agent-collaboration-model.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Puneet Arora — Portfolio">
+<meta property="og:title" content="The Agent Collaboration Model — Puneet Arora">
+<meta property="og:description" content="Patterns for how humans and several agents split the work, hand off cleanly, and stay accountable to each other.">
+<meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/agent-collaboration-model.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Agent Collaboration Model — Puneet Arora">
+<meta name="twitter:description" content="Patterns for how humans and several agents split the work, hand off cleanly, and stay accountable to each other.">
+<meta name="twitter:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  :root{ --th-memory:#3fb79a; --th-agent:#4f9fe0; --th-personalization:#d59a2e; --th-trust:#8b74e8; --th-hitl:#3fbf6f; --th-economics:#e0707c; --fp-max:880px; }
+  [data-theme="forest"]{ --th-memory:#158066; --th-agent:#2f6fb0; --th-personalization:#a9791a; --th-trust:#6a52c8; --th-hitl:#1f8a4c; --th-economics:#c04c58; }
+  .fp-shell{max-width:var(--fp-max);margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
+  @media(max-width:1100px){.fp-shell{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
+  @media(max-width:600px){.fp-shell{padding-left:22px;padding-right:22px;}}
+
+  .fp-back{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);text-decoration:none;margin:40px 0 0;}
+  .fp-back:hover{color:var(--signal);}
+  .fp-hero{padding:26px 0 8px;}
+  .fp-eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:var(--f-mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--signal);margin-bottom:22px;}
+  .fp-eyebrow .fw-id{color:var(--faint);}
+  .tchip{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10px;letter-spacing:0.06em;color:var(--dim);border:1px solid var(--rule);border-radius:999px;padding:4px 10px;text-transform:none;}
+  .tchip .td{width:7px;height:7px;border-radius:50%;}
+  .fp-hero h1{font-size:clamp(30px,5.4vw,52px);font-weight:800;line-height:1.06;letter-spacing:-0.025em;margin:0;max-width:18ch;text-wrap:balance;}
+  .fp-purpose{font-size:clamp(17px,2.4vw,21px);line-height:1.5;color:var(--ink);margin:20px 0 0;max-width:60ch;font-weight:500;}
+
+  .fp-why{margin:34px 0 0;border-left:2px solid var(--signal);padding:6px 0 6px 22px;max-width:66ch;}
+  .fp-why p{margin:0;font-size:16.5px;line-height:1.66;color:var(--dim);}
+  .fp-why p + p{margin-top:14px;}
+  .fp-why em{font-style:normal;color:var(--ink);}
+
+  .fp-sec{padding:56px 0 0;}
+  .fp-sh{display:flex;align-items:baseline;gap:14px;margin-bottom:20px;border-top:1px solid var(--rule);padding-top:26px;}
+  .fp-sh .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.14em;color:var(--faint);}
+  .fp-sh h2{font-size:clamp(20px,2.8vw,27px);font-weight:720;letter-spacing:-0.02em;margin:0;}
+  .fp-prose{max-width:66ch;}
+  .fp-prose p{font-size:16px;line-height:1.7;color:var(--dim);margin:0 0 16px;}
+  .fp-prose p:last-child{margin-bottom:0;}
+  .fp-prose strong{color:var(--ink);font-weight:600;}
+
+  .fp-diagram{margin-top:26px;border:1px solid var(--rule);border-radius:14px;background:var(--surface);padding:30px 28px;overflow-x:auto;}
+  .fp-diagram svg{display:block;width:100%;height:auto;max-width:820px;margin:0 auto;}
+  .fp-cap{font-family:var(--f-mono);font-size:11px;letter-spacing:0.06em;color:var(--faint);margin-top:16px;text-align:center;}
+
+  .fp-principles{list-style:none;margin:24px 0 0;padding:0;counter-reset:pr;display:grid;gap:2px;}
+  .fp-principles li{display:grid;grid-template-columns:44px 1fr;gap:6px 18px;align-items:start;padding:20px 0;border-top:1px solid var(--rule);}
+  .fp-principles li:first-child{border-top:0;}
+  .fp-principles li::before{counter-increment:pr;content:counter(pr,decimal-leading-zero);font-family:var(--f-mono);font-size:12px;color:var(--signal);letter-spacing:0.06em;padding-top:3px;}
+  .fp-principles h3{grid-column:2;font-size:17px;font-weight:640;letter-spacing:-0.01em;color:var(--ink);margin:0 0 6px;}
+  .fp-principles p{grid-column:2;font-size:14.5px;line-height:1.6;color:var(--dim);margin:0;}
+
+  .fp-related{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+  .fp-rel{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--rule);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--dim);font-size:14px;transition:border-color .15s,color .15s,transform .15s;}
+  .fp-rel:hover{border-color:var(--signal);color:var(--ink);transform:translateY(-2px);}
+  .fp-rel .a{font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);}
+
+  .fp-foot{margin-top:72px;border-top:1px solid var(--rule);padding:58px 0 66px;text-align:center;}
+  .fp-foot .q{font-size:clamp(18px,3vw,26px);font-weight:720;letter-spacing:-0.02em;max-width:24ch;margin:0 auto 18px;text-wrap:balance;}
+  .fp-foot .q em{font-style:normal;color:var(--signal);}
+  .fp-foot a{font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);text-decoration:none;}
+  .fp-foot a:hover{color:var(--signal);}
+
+  /* diagram helpers */
+  .dg-box{fill:var(--bg);stroke:var(--rule);}
+  .dg-fill{fill:var(--surface);stroke:var(--rule);}
+  .dg-line{stroke:var(--rule);}
+  .dg-ink{fill:var(--ink);}
+  .dg-dim{fill:var(--dim);}
+  .dg-faint{fill:var(--faint);}
+  .dg-sig{fill:var(--signal);}
+  .dg-sigstroke{stroke:var(--signal);}
+  .dg-t{font-family:var(--f-mono);}
+  .dg-h{font-family:var(--f-sans);font-weight:700;}
+</style>
+<link rel="stylesheet" href="assets/typography.css">
+</head>
+<body>
+<div class="page">
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html" class="is-current">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<section class="fp-shell fp-hero" data-screen-label="hero">
+  <a class="fp-back" href="ai-lab.html">&larr; The AI Lab</a>
+  <div class="fp-hero" style="padding-top:22px;">
+    <div class="fp-eyebrow">
+      <span>Framework · FW-04</span>
+      <span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span>
+    </div>
+    <h1>The Agent Collaboration Model</h1>
+    <p class="fp-purpose">Patterns for how humans and several agents split the work, hand off cleanly, and stay accountable to each other.</p>
+    <div class="fp-why">
+      <p>One assistant was simple. The moment you have three agents and a person, you have an org &mdash; and orgs need structure or they turn into a group chat where nobody owns anything.</p><p><em>I treat AI not as a feature to be designed but as a teammate to be onboarded.</em> This is the small set of patterns I keep reaching for so the work has an owner at every step.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">01</span><h2>The problem</h2></div>
+  <div class="fp-prose">
+    <p>Multi-agent systems fail the way bad teams fail: unclear ownership, dropped hand-offs, and no one who can say why a decision was made.</p>
+    <p>The interesting design question was never &lsquo;can the agents talk to each other&rsquo;. <strong>It&rsquo;s &lsquo;who&rsquo;s accountable when they do&rsquo;.</strong></p>
+  </div>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">02</span><h2>The model</h2></div>
+  <div class="fp-prose">
+    <p>Four patterns, picked by the shape of the work. <strong>Relay</strong> &mdash; a chain, each agent hands to the next. <strong>Panel</strong> &mdash; several weigh in, one synthesises. <strong>Orchestrator</strong> &mdash; one agent plans and delegates to specialists.</p>
+    <p>And running through all of them, the <strong>Human checkpoint</strong>: the named place where a person can see the work and stop it. It&rsquo;s not a fourth pattern &mdash; it&rsquo;s the thing that makes the other three safe.</p>
+  </div>
+  <div class="fp-diagram">
+    <svg viewBox="0 0 780 360" role="img" aria-label="The Agent Collaboration Model: an orchestrator delegating to specialist agents, with a human checkpoint before the outcome.">
+  <!-- human -->
+  <circle cx="90" cy="180" r="34" class="dg-fill"/>
+  <text x="90" y="176" text-anchor="middle" class="dg-h dg-ink" font-size="13">Human</text>
+  <text x="90" y="193" text-anchor="middle" class="dg-t dg-faint" font-size="9">sets intent</text>
+  <!-- orchestrator -->
+  <rect x="210" y="146" width="130" height="68" rx="10" fill="var(--surface)" stroke="var(--signal)" stroke-opacity="0.6"/>
+  <text x="275" y="176" text-anchor="middle" class="dg-h" font-size="14" fill="var(--signal)">Orchestrator</text>
+  <text x="275" y="196" text-anchor="middle" class="dg-t dg-faint" font-size="9">plans &amp; delegates</text>
+  <!-- specialists -->
+  <rect x="430" y="60" width="120" height="56" rx="9" class="dg-fill"/>
+  <text x="490" y="86" text-anchor="middle" class="dg-h dg-ink" font-size="12.5">Research</text>
+  <text x="490" y="102" text-anchor="middle" class="dg-t dg-faint" font-size="9">gathers</text>
+  <rect x="430" y="152" width="120" height="56" rx="9" class="dg-fill"/>
+  <text x="490" y="178" text-anchor="middle" class="dg-h dg-ink" font-size="12.5">Draft</text>
+  <text x="490" y="194" text-anchor="middle" class="dg-t dg-faint" font-size="9">produces</text>
+  <rect x="430" y="244" width="120" height="56" rx="9" class="dg-fill"/>
+  <text x="490" y="270" text-anchor="middle" class="dg-h dg-ink" font-size="12.5">Check</text>
+  <text x="490" y="286" text-anchor="middle" class="dg-t dg-faint" font-size="9">verifies</text>
+  <!-- checkpoint -->
+  <rect x="628" y="146" width="118" height="68" rx="10" fill="var(--surface)" stroke="var(--signal)" stroke-dasharray="5 4" stroke-opacity="0.7"/>
+  <text x="687" y="172" text-anchor="middle" class="dg-h dg-ink" font-size="12.5">Human</text>
+  <text x="687" y="189" text-anchor="middle" class="dg-h dg-ink" font-size="12.5">checkpoint</text>
+  <text x="687" y="205" text-anchor="middle" class="dg-t dg-faint" font-size="9">can stop it</text>
+  <!-- arrows -->
+  <g class="dg-sigstroke" fill="none" stroke-width="1.4">
+    <path d="M 124 180 L 206 180"/>
+    <path d="M 340 168 L 428 90"/>
+    <path d="M 340 180 L 428 180"/>
+    <path d="M 340 192 L 428 270"/>
+    <path d="M 550 90 L 624 168" stroke-dasharray="4 4"/>
+    <path d="M 550 180 L 624 180" stroke-dasharray="4 4"/>
+    <path d="M 550 270 L 624 192" stroke-dasharray="4 4"/>
+  </g>
+  <text x="275" y="250" text-anchor="middle" class="dg-t dg-faint" font-size="10" letter-spacing="1">RELAY · PANEL · ORCHESTRATOR — pick by the shape of the work</text>
+</svg>
+  </div>
+  <div class="fp-cap">An orchestrator delegating to specialists, with a human checkpoint that can halt the outcome.</div>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">03</span><h2>Principles</h2></div>
+  <ol class="fp-principles">
+    <li><h3>Design the seam, not just the nodes</h3><p>Every hand-off is a place work goes to die. That&rsquo;s where the design effort belongs.</p></li>
+    <li><h3>One synthesiser</h3><p>A panel that never converges is just noise with more steps and a bigger bill.</p></li>
+    <li><h3>Name the owner at each step</h3><p>Including the human one. &lsquo;The system decided&rsquo; is not an owner.</p></li>
+    <li><h3>Make the reasoning legible</h3><p>If the person can&rsquo;t follow how the agents got there, the checkpoint is decorative.</p></li>
+  </ol>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">04</span><h2>How I use it</h2></div>
+  <div class="fp-prose">
+    <p>Draw the work as a flow first, then ask which pattern actually fits: chain, panel, or orchestrator. Most teams reach for orchestration when a relay would do.</p>
+    <p>Put a human checkpoint wherever the Override Matrix says the stakes demand one. And if you can&rsquo;t name who owns a step, the design isn&rsquo;t finished &mdash; it just looks finished.</p>
+  </div>
+  <div class="fp-related">
+    <a class="fp-rel" href="situation-simulator.html"><span class="a">Prototype · Agent ops</span>Orbital Situation Room</a>
+    <a class="fp-rel" href="skills-lab.html"><span class="a">Live · Agentic UX</span>Skills Lab</a>
+  </div>
+</section>
+
+<footer class="fp-shell fp-foot">
+  <div class="q">Three agents and a person is an <em>org</em>. Design it like one.</div>
+  <a href="ai-lab.html">← Back to the AI Lab</a>
+</footer>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

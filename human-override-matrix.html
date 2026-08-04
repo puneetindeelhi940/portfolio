@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Human Override Matrix — Puneet Arora</title>
+<meta name="description" content="A map from stakes and reversibility to the right amount of human control — decision by decision, not by vibe.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/human-override-matrix.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Puneet Arora — Portfolio">
+<meta property="og:title" content="The Human Override Matrix — Puneet Arora">
+<meta property="og:description" content="A map from stakes and reversibility to the right amount of human control — decision by decision, not by vibe.">
+<meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/human-override-matrix.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Human Override Matrix — Puneet Arora">
+<meta name="twitter:description" content="A map from stakes and reversibility to the right amount of human control — decision by decision, not by vibe.">
+<meta name="twitter:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  :root{ --th-memory:#3fb79a; --th-agent:#4f9fe0; --th-personalization:#d59a2e; --th-trust:#8b74e8; --th-hitl:#3fbf6f; --th-economics:#e0707c; --fp-max:880px; }
+  [data-theme="forest"]{ --th-memory:#158066; --th-agent:#2f6fb0; --th-personalization:#a9791a; --th-trust:#6a52c8; --th-hitl:#1f8a4c; --th-economics:#c04c58; }
+  .fp-shell{max-width:var(--fp-max);margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
+  @media(max-width:1100px){.fp-shell{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
+  @media(max-width:600px){.fp-shell{padding-left:22px;padding-right:22px;}}
+
+  .fp-back{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);text-decoration:none;margin:40px 0 0;}
+  .fp-back:hover{color:var(--signal);}
+  .fp-hero{padding:26px 0 8px;}
+  .fp-eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:var(--f-mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--signal);margin-bottom:22px;}
+  .fp-eyebrow .fw-id{color:var(--faint);}
+  .tchip{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10px;letter-spacing:0.06em;color:var(--dim);border:1px solid var(--rule);border-radius:999px;padding:4px 10px;text-transform:none;}
+  .tchip .td{width:7px;height:7px;border-radius:50%;}
+  .fp-hero h1{font-size:clamp(30px,5.4vw,52px);font-weight:800;line-height:1.06;letter-spacing:-0.025em;margin:0;max-width:18ch;text-wrap:balance;}
+  .fp-purpose{font-size:clamp(17px,2.4vw,21px);line-height:1.5;color:var(--ink);margin:20px 0 0;max-width:60ch;font-weight:500;}
+
+  .fp-why{margin:34px 0 0;border-left:2px solid var(--signal);padding:6px 0 6px 22px;max-width:66ch;}
+  .fp-why p{margin:0;font-size:16.5px;line-height:1.66;color:var(--dim);}
+  .fp-why p + p{margin-top:14px;}
+  .fp-why em{font-style:normal;color:var(--ink);}
+
+  .fp-sec{padding:56px 0 0;}
+  .fp-sh{display:flex;align-items:baseline;gap:14px;margin-bottom:20px;border-top:1px solid var(--rule);padding-top:26px;}
+  .fp-sh .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.14em;color:var(--faint);}
+  .fp-sh h2{font-size:clamp(20px,2.8vw,27px);font-weight:720;letter-spacing:-0.02em;margin:0;}
+  .fp-prose{max-width:66ch;}
+  .fp-prose p{font-size:16px;line-height:1.7;color:var(--dim);margin:0 0 16px;}
+  .fp-prose p:last-child{margin-bottom:0;}
+  .fp-prose strong{color:var(--ink);font-weight:600;}
+
+  .fp-diagram{margin-top:26px;border:1px solid var(--rule);border-radius:14px;background:var(--surface);padding:30px 28px;overflow-x:auto;}
+  .fp-diagram svg{display:block;width:100%;height:auto;max-width:820px;margin:0 auto;}
+  .fp-cap{font-family:var(--f-mono);font-size:11px;letter-spacing:0.06em;color:var(--faint);margin-top:16px;text-align:center;}
+
+  .fp-principles{list-style:none;margin:24px 0 0;padding:0;counter-reset:pr;display:grid;gap:2px;}
+  .fp-principles li{display:grid;grid-template-columns:44px 1fr;gap:6px 18px;align-items:start;padding:20px 0;border-top:1px solid var(--rule);}
+  .fp-principles li:first-child{border-top:0;}
+  .fp-principles li::before{counter-increment:pr;content:counter(pr,decimal-leading-zero);font-family:var(--f-mono);font-size:12px;color:var(--signal);letter-spacing:0.06em;padding-top:3px;}
+  .fp-principles h3{grid-column:2;font-size:17px;font-weight:640;letter-spacing:-0.01em;color:var(--ink);margin:0 0 6px;}
+  .fp-principles p{grid-column:2;font-size:14.5px;line-height:1.6;color:var(--dim);margin:0;}
+
+  .fp-related{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+  .fp-rel{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--rule);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--dim);font-size:14px;transition:border-color .15s,color .15s,transform .15s;}
+  .fp-rel:hover{border-color:var(--signal);color:var(--ink);transform:translateY(-2px);}
+  .fp-rel .a{font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);}
+
+  .fp-foot{margin-top:72px;border-top:1px solid var(--rule);padding:58px 0 66px;text-align:center;}
+  .fp-foot .q{font-size:clamp(18px,3vw,26px);font-weight:720;letter-spacing:-0.02em;max-width:24ch;margin:0 auto 18px;text-wrap:balance;}
+  .fp-foot .q em{font-style:normal;color:var(--signal);}
+  .fp-foot a{font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);text-decoration:none;}
+  .fp-foot a:hover{color:var(--signal);}
+
+  /* diagram helpers */
+  .dg-box{fill:var(--bg);stroke:var(--rule);}
+  .dg-fill{fill:var(--surface);stroke:var(--rule);}
+  .dg-line{stroke:var(--rule);}
+  .dg-ink{fill:var(--ink);}
+  .dg-dim{fill:var(--dim);}
+  .dg-faint{fill:var(--faint);}
+  .dg-sig{fill:var(--signal);}
+  .dg-sigstroke{stroke:var(--signal);}
+  .dg-t{font-family:var(--f-mono);}
+  .dg-h{font-family:var(--f-sans);font-weight:700;}
+</style>
+<link rel="stylesheet" href="assets/typography.css">
+</head>
+<body>
+<div class="page">
+<header class="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html" class="is-current">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<section class="fp-shell fp-hero" data-screen-label="hero">
+  <a class="fp-back" href="ai-lab.html">&larr; The AI Lab</a>
+  <div class="fp-hero" style="padding-top:22px;">
+    <div class="fp-eyebrow">
+      <span>Framework · FW-03</span>
+      <span class="tchip"><span class="td" style="background:var(--th-hitl)"></span>Human-in-the-loop</span>
+    </div>
+    <h1>The Human Override Matrix</h1>
+    <p class="fp-purpose">A map from stakes and reversibility to the right amount of human control — decision by decision, not by vibe.</p>
+    <div class="fp-why">
+      <p>&lsquo;Human in the loop&rsquo; is a slogan until you decide which humans, in which loop, for which decisions.</p><p>Put a person in front of everything and you&rsquo;ve built a slower version of the old thing. Put a person in front of nothing and you&rsquo;ll eventually explain to a regulator why not. <em>The matrix is where you make that call one decision at a time, instead of by temperament.</em></p>
+    </div>
+  </div>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">01</span><h2>The problem</h2></div>
+  <div class="fp-prose">
+    <p>Automation questions get answered by personality &mdash; the cautious PM confirms everything, the bold one ships full autonomy &mdash; when they should be answered by the shape of the decision.</p>
+    <p>Two things actually matter: <strong>how much is at stake, and whether you can take it back.</strong> Almost everything else is noise dressed up as nuance.</p>
+  </div>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">02</span><h2>The model</h2></div>
+  <div class="fp-prose">
+    <p>A 2&times;2. Stakes on one axis, reversibility on the other. Four zones fall out.</p>
+    <p><strong>Act</strong> (low stakes, reversible): just do it. <strong>Notify</strong> (reversible, higher stakes): act, but tell them. <strong>Confirm</strong> (irreversible, lower stakes): ask first. <strong>Require human</strong> (irreversible, high stakes): don&rsquo;t move without a person. You place each <em>decision</em> on the grid &mdash; not each feature.</p>
+  </div>
+  <div class="fp-diagram">
+    <svg viewBox="0 0 780 380" role="img" aria-label="The Human Override Matrix: stakes against reversibility, yielding Act, Notify, Confirm, and Require human.">
+  <!-- axes -->
+  <text x="40" y="40" class="dg-t dg-faint" font-size="11" letter-spacing="1">IRREVERSIBLE</text>
+  <text x="40" y="330" class="dg-t dg-faint" font-size="11" letter-spacing="1">REVERSIBLE</text>
+  <line x1="150" y1="50" x2="150" y2="330" class="dg-line"/>
+  <line x1="150" y1="330" x2="720" y2="330" class="dg-line"/>
+  <text x="180" y="356" class="dg-t dg-faint" font-size="11" letter-spacing="1">LOW STAKES</text>
+  <text x="690" y="356" text-anchor="end" class="dg-t dg-faint" font-size="11" letter-spacing="1">HIGH STAKES</text>
+  <!-- quadrants -->
+  <rect x="150" y="50" width="285" height="140" rx="8" class="dg-fill"/>
+  <rect x="435" y="50" width="285" height="140" rx="8" fill="var(--surface)" stroke="var(--signal)" stroke-opacity="0.5"/>
+  <rect x="150" y="190" width="285" height="140" rx="8" class="dg-fill"/>
+  <rect x="435" y="190" width="285" height="140" rx="8" class="dg-fill"/>
+  <!-- labels -->
+  <text x="292" y="112" text-anchor="middle" class="dg-h dg-ink" font-size="17">Confirm</text>
+  <text x="292" y="136" text-anchor="middle" class="dg-dim" font-size="12">ask before you move</text>
+  <text x="577" y="108" text-anchor="middle" class="dg-h" font-size="17" fill="var(--signal)">Require human</text>
+  <text x="577" y="132" text-anchor="middle" class="dg-dim" font-size="12">don&rsquo;t act without a person</text>
+  <text x="292" y="256" text-anchor="middle" class="dg-h dg-ink" font-size="17">Act</text>
+  <text x="292" y="280" text-anchor="middle" class="dg-dim" font-size="12">just do it; asking is rude</text>
+  <text x="577" y="256" text-anchor="middle" class="dg-h dg-ink" font-size="17">Notify</text>
+  <text x="577" y="280" text-anchor="middle" class="dg-dim" font-size="12">act, but tell them</text>
+</svg>
+  </div>
+  <div class="fp-cap">Stakes against reversibility. The word that changes everything is 'irreversible'.</div>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">03</span><h2>Principles</h2></div>
+  <ol class="fp-principles">
+    <li><h3>Reversible and low-stakes? Just act</h3><p>Asking permission for something trivial and undoable is its own kind of rude.</p></li>
+    <li><h3>Irreversible changes the rules</h3><p>When you can&rsquo;t undo it, a human signs. No exceptions worth the incident report.</p></li>
+    <li><h3>Escalate the decision, not the task</h3><p>Route the 5% that&rsquo;s genuinely hard; automate the 95% that isn&rsquo;t.</p></li>
+    <li><h3>The override has to be reachable</h3><p>Control that lives three screens deep in settings isn&rsquo;t control.</p></li>
+  </ol>
+</section>
+
+<section class="fp-shell fp-sec">
+  <div class="fp-sh"><span class="n">04</span><h2>How I use it</h2></div>
+  <div class="fp-prose">
+    <p>List the real decisions a feature makes &mdash; not the screens, the decisions. That list is usually shorter and scarier than people expect.</p>
+    <p>Drop each one onto the grid. Anything that lands in &lsquo;Require human&rsquo; needs a genuine, usable control at the moment it&rsquo;s needed &mdash; not a disabled button and an apology.</p>
+  </div>
+  <div class="fp-related">
+    <a class="fp-rel" href="workbench-alt2.html"><span class="a">Prototype · Routing &amp; governance</span>AI Efficiency Workbench</a>
+    <a class="fp-rel" href="situation-simulator.html"><span class="a">Prototype · Agent ops</span>Orbital Situation Room</a>
+  </div>
+</section>
+
+<footer class="fp-shell fp-foot">
+  <div class="q">Automate the boring 95%. Put a human on the <em>irreversible</em> 5%.</div>
+  <a href="ai-lab.html">← Back to the AI Lab</a>
+</footer>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

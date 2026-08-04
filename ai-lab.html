@@ -178,6 +178,8 @@
   .fcard h4{font-size:17px;font-weight:680;letter-spacing:-0.015em;color:var(--ink);margin:0 0 9px;line-height:1.2;}
   .fcard p{font-size:13.2px;line-height:1.55;color:var(--dim);margin:0;flex:1;}
   .fcard .by{font-family:var(--f-mono);font-size:10px;letter-spacing:0.06em;color:var(--signal);margin-top:16px;}
+  a.fcard{text-decoration:none;transition:transform .16s,border-color .16s,box-shadow .16s;}
+  a.fcard:hover{transform:translateY(-3px);border-color:var(--signal);box-shadow:0 16px 34px -24px rgba(0,0,0,.55);}
 
   /* ---------------- CONCEPTS (dim dashed) ---------------- */
   .ccgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
@@ -234,10 +236,10 @@
 <section class="lab-hero lab-shell" data-screen-label="hero">
   <div class="lab-eyebrow"><span class="dot"></span><span>AI Lab &middot; Puneet Arora &middot; AI Product &amp; UX Research</span></div>
   <h1>This is where I research the <em>future of AI products</em>.</h1>
-  <p class="sub">Not a portfolio — a working lab. Live tools, running experiments, published frameworks, and the open questions behind them. <b>Every card tells you what I was exploring, what I bet, and what I learned</b> — not just what I built.</p>
+  <p class="sub">Not a portfolio — a working lab. Live tools, experiments still in motion, and the frameworks I've pulled out of them. <b>Every card tells you the question I was chasing, the bet I made, and what it taught me.</b> Not the tech. The thinking.</p>
   <div class="lab-why">
     <div class="k">Why I build these</div>
-    <p>I don't build these to prove I can use AI. I build them to answer questions that keep me up — <em>how memory should feel, when an agent should ask versus act, what honest uncertainty looks like</em>. Each one is me thinking out loud, in public.</p>
+    <p>I don't build these to prove I can use AI. Everyone can use AI now. I build them to chase the questions that won't leave me alone — <em>how memory should feel, when an agent should ask instead of act, what honest uncertainty looks like on a screen</em>. Each one is me thinking out loud, in public.</p>
   </div>
   <div class="lab-tele" role="list" aria-label="Lab at a glance">
     <div role="listitem"><span class="lv"></span><div class="num">6</div><div class="lbl">In production</div></div>
@@ -274,7 +276,7 @@
 <!-- PLAYGROUNDS -->
 <section class="cat lab-shell" id="playgrounds" data-cat>
   <div class="cat-head"><span class="n">01</span><h2>Playgrounds</h2><span class="meta">Live &middot; open right now</span></div>
-  <p class="cat-sub">Shipped tools you can use this second. Each one is a hypothesis about AI-UX, tested in production.</p>
+  <p class="cat-sub">Shipped tools you can open right now. Each one started as a hunch about how AI should behave, and got tested in the open.</p>
   <div class="pgrid">
       <a href="puneets-news-terminal.html" class="pcard stripe s-prod filterable" data-area="memory personalization">
         <div class="xcard__illus illus--terminal" style="background:linear-gradient(135deg,#0d2b28,#123a36,#0a201e);">
@@ -357,7 +359,7 @@
         <div class="pcard__body">
           <div class="pcard__top"><span class="plabel">AI News Terminal</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
           <h3>How should an AI remember you — without feeling like surveillance?</h3>
-          <p class="pcopy">A behavioural signal engine learns from a 30-day rolling window with decay-weighted scoring — recency over totality, across 60+ sources. <b>What I learned: forgetting is a feature, and memory only earns trust when it's visible and time-bound.</b></p>
+          <p class="pcopy">A behavioural signal engine that learns from a 30-day rolling window — decay-weighted, recency over totality, across 60+ sources. <b>What I learned: forgetting is a feature. Memory only earns trust when you can see it and time-bound it.</b></p>
           <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-memory)"></span>Memory UX</span><span class="go">Open the terminal &rarr;</span></div>
         </div>
       </a>
@@ -410,8 +412,8 @@
     </div>
         <div class="pcard__body">
           <div class="pcard__top"><span class="plabel">Design Intelligence Portal</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
-          <h3>Can prompt frameworks become tools a design team uses every day?</h3>
-          <p class="pcopy">CO-STAR, RTF and Chain-of-Thought operationalised as ready-to-use instruments, not slideware. <b>What I learned: teams adopt AI when the scaffolding lives in the UI — structure beats cleverness.</b></p>
+          <h3>Can prompt frameworks become tools a design team actually uses?</h3>
+          <p class="pcopy">CO-STAR, RTF and Chain-of-Thought turned into instruments you pick up, not theory you memorise. <b>What I learned: teams adopt AI when the scaffolding lives in the UI. Structure beats cleverness.</b></p>
           <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Visit pa9401.vercel.app &rarr;</span></div>
         </div>
       </a>
@@ -455,8 +457,8 @@
     </div>
         <div class="pcard__body">
           <div class="pcard__top"><span class="plabel">Portfolio Intelligence Lab</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
-          <h3>What happens when you embed 19 years of design judgment into an agent?</h3>
-          <p class="pcopy">A custom GPT that reasons about decisions and impact, not just visuals. <b>What I learned: domain expertise, made explicit and evaluable, is what turns a chatbot into a credible critic.</b></p>
+          <h3>What happens when you put 19 years of design judgement inside an agent?</h3>
+          <p class="pcopy">A GPT that argues about decisions and impact, not just what looks nice. <b>What I learned: expertise, made explicit and testable, is what turns a chatbot into a critic worth listening to.</b></p>
           <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Open in ChatGPT &rarr;</span></div>
         </div>
       </a>
@@ -465,7 +467,7 @@
         <div class="pcard__body">
           <div class="pcard__top"><span class="plabel">AI Inflation Observatory</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
           <h3>Where is AI quietly making everything more expensive?</h3>
-          <p class="pcopy">A composite index across 7 weighted categories and 29 countries, auto-refreshed every 24 hours from World Bank, FRED and IEA. <b>What I learned: the right question — 'where does it hit you first?' — matters more than the dashboard.</b></p>
+          <p class="pcopy">A composite index across 7 categories and 29 countries, refreshed every 24 hours from World Bank, FRED and IEA. <b>What I learned: the right question — 'where does it hit you first?' — carries the product further than the dashboard does.</b></p>
           <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-economics)"></span>AI Economics</span><span class="go">Explore the observatory &rarr;</span></div>
         </div>
       </a>
@@ -516,8 +518,8 @@
     </div>
         <div class="pcard__body">
           <div class="pcard__top"><span class="plabel">UX Trust & Dark-Pattern Intelligence</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
-          <h3>Can an agent tell an ethical nudge from a manipulative one?</h3>
-          <p class="pcopy">Paste a screen, get a scored trust audit with actionable findings and guardrails baked into the model. <b>What I learned: trust is measurable — and users deserve to see the score, not just feel the manipulation.</b></p>
+          <h3>Can an agent tell an honest nudge from a manipulative one?</h3>
+          <p class="pcopy">Paste a screen, get a scored trust audit with the guardrails built into the model. <b>What I learned: trust is measurable — and people deserve to see the score, not just feel the manipulation.</b></p>
           <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span><span class="go">Open in ChatGPT &rarr;</span></div>
         </div>
       </a>
@@ -556,8 +558,8 @@
     </div>
         <div class="pcard__body">
           <div class="pcard__top"><span class="plabel">Skills Lab</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
-          <h3>What if anyone could generate a production-ready AI skill on the fly?</h3>
-          <p class="pcopy">A live generator plus 92 curated Claude skills for India and global builders. <b>What I learned: agentic UX is really about lowering the cost of trying an idea to almost nothing.</b></p>
+          <h3>What if trying a new AI skill cost you almost nothing?</h3>
+          <p class="pcopy">A live generator plus 92 skills I built for Indian and global builders. <b>What I learned: most of agentic UX is just lowering the cost of trying the next idea.</b></p>
           <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Open Skills Lab &rarr;</span></div>
         </div>
       </a>
@@ -567,15 +569,15 @@
 <!-- EXPERIMENTS -->
 <section class="cat lab-shell" id="experiments" data-cat>
   <div class="cat-head"><span class="n">02</span><h2>Experiments</h2><span class="meta">Functional prototypes</span></div>
-  <p class="cat-sub">Interactive prototypes where I'm still learning — each states the bet and the insight it's testing.</p>
+  <p class="cat-sub">Prototypes I'm still learning from. Each one names the bet it's making and the insight it's chasing.</p>
   <div class="egrid">
       <a href="opportunity-simulator.html" class="ecard stripe s-proto filterable" data-area="economics hitl">
         <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/opportunity-simulator.png" alt="AI Opportunity Simulator screenshot" loading="lazy"></div>
         <div class="ecard__body">
           <div class="ecard__top"><span class="plabel">Opportunity Simulator</span><span class="mbadge m-proto"><span class="md"></span>Prototype</span></div>
           <h3>Can an executive steer the global economy like a live simulation?</h3>
-          <p class="line"><b>Hypothesis</b>AI-scored country rankings plus four-order-deep shock sims turn macro signals into moves.</p>
-          <p class="line"><b>Insight</b>People trust a forecast they can poke, override, and trace to a cause.</p>
+          <p class="line"><b>Hypothesis</b>AI-scored country rankings and four-order-deep shock sims turn macro noise into moves.</p>
+          <p class="line"><b>Insight</b>People trust a forecast they can poke, override, and trace back to a cause.</p>
           <div class="ecard__foot"><span class="tchip"><span class="td" style="background:var(--th-economics)"></span>AI Economics</span><span class="go">Open the simulator &rarr;</span></div>
         </div>
       </a>
@@ -583,9 +585,9 @@
         <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/situation-simulator.png" alt="Orbital Situation Room screenshot" loading="lazy"></div>
         <div class="ecard__body">
           <div class="ecard__top"><span class="plabel">Orbital Situation Room</span><span class="mbadge m-proto"><span class="md"></span>Prototype</span></div>
-          <h3>What does collaborating with an autonomous agent actually feel like?</h3>
+          <h3>What does working alongside an autonomous agent actually feel like?</h3>
           <p class="line"><b>Hypothesis</b>A live 3D ops picture with agent-run collision sims should invite steering, not spectating.</p>
-          <p class="line"><b>Insight</b>Control and auditability are the price of trusting automation.</p>
+          <p class="line"><b>Insight</b>Control and auditability are the rent you pay to trust automation.</p>
           <div class="ecard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Enter the room &rarr;</span></div>
         </div>
       </a>
@@ -635,8 +637,8 @@
     </div>
         <div class="ecard__body">
           <div class="ecard__top"><span class="plabel">AI Efficiency Workbench</span><span class="mbadge m-proto"><span class="md"></span>Prototype</span></div>
-          <h3>How do you make enterprise AI cost-aware without losing control?</h3>
-          <p class="line"><b>Hypothesis</b>Triage every workload; route by cost; escalate only the 5% that needs a human.</p>
+          <h3>How do you make enterprise AI cost-aware without losing the plot?</h3>
+          <p class="line"><b>Hypothesis</b>Triage every workload, route by cost, and send only the 5% that needs a human to a human.</p>
           <p class="line"><b>Insight</b>Governance is a UX problem — every decision must be visible and defensible.</p>
           <div class="ecard__foot"><span class="tchip"><span class="td" style="background:var(--th-economics)"></span>AI Economics</span><span class="go">Open the workbench &rarr;</span></div>
         </div>
@@ -652,7 +654,7 @@
       <a href="vigyan-setu.html" class="rentry filterable" data-area="trust hitl">
         <div class="rentry__l">
           <div class="rentry__num"><span>R-01</span><span class="mbadge m-research"><span class="md"></span>Research</span></div>
-          <h3>Why did a national AI summit's experience break — and how would you redesign it?</h3>
+          <h3>Why did a national AI summit's experience break — and how would I rebuild it?</h3>
           <div class="rentry__meta"><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span><span class="tchip"><span class="td" style="background:var(--th-hitl)"></span>Human-in-loop</span></div>
           <span class="go">Read the case study &rarr;</span>
         </div>
@@ -660,21 +662,21 @@
           <div class="cell"><div class="k">Problem</div><div class="v">The India AI Impact Summit failed its attendees across 10 documented fault lines.</div></div>
           <div class="cell"><div class="k">Hypothesis</div><div class="v">A Double-Diamond event OS could turn that chaos into a trustworthy, human-in-the-loop system.</div></div>
           <div class="cell"><div class="k">Key insight</div><div class="v">Trust is built in the seams — wayfinding, timing, and honest status.</div></div>
-          <div class="cell"><div class="k">What I learned</div><div class="v">Speculative design persuades most when it's grounded in real, documented failure.</div></div>
+          <div class="cell"><div class="k">What I learned</div><div class="v">Speculative design only persuades when it's anchored to a real, documented failure.</div></div>
         </div>
       </a>
       <a href="30day-agentic-ux-plan.html" class="rentry filterable" data-area="agent">
         <div class="rentry__l">
           <div class="rentry__num"><span>R-02</span><span class="mbadge m-research"><span class="md"></span>Research</span></div>
-          <h3>Can agentic-UX craft be built as a daily practice, not a lecture?</h3>
+          <h3>Can agentic-UX craft be built as a daily habit, not a lecture?</h3>
           <div class="rentry__meta"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span></div>
           <span class="go">Read the plan &rarr;</span>
         </div>
         <div class="rentry__r">
           <div class="cell"><div class="k">Problem</div><div class="v">Designers lack a concrete path from prompt fluency to shipping trustworthy agents.</div></div>
-          <div class="cell"><div class="k">Hypothesis</div><div class="v">A 30-day ritual of small drills compounds into real design judgment.</div></div>
+          <div class="cell"><div class="k">Hypothesis</div><div class="v">Thirty days of small drills compounds into real judgement.</div></div>
           <div class="cell"><div class="k">Key insight</div><div class="v">Craft comes from reps, not reading.</div></div>
-          <div class="cell"><div class="k">What I learned</div><div class="v">The hard part isn't prompting — it's designing the hand-off between human and agent.</div></div>
+          <div class="cell"><div class="k">What I learned</div><div class="v">The hard part was never the prompt. It's designing the hand-off between human and agent.</div></div>
         </div>
       </a>
   </div>
@@ -683,45 +685,45 @@
 <!-- FRAMEWORKS -->
 <section class="cat lab-shell" id="frameworks" data-cat>
   <div class="cat-head"><span class="n">04</span><h2>The Arora Frameworks</h2><span class="meta">Reusable IP</span></div>
-  <p class="cat-sub">The thinking, distilled into named, reusable models — intellectual property that travels with the work.</p>
+  <p class="cat-sub">When the same idea shows up in three experiments, I give it a name. These are the models I reach for again and again — the reusable part of the thinking.</p>
   <div class="fgrid">
-      <div class="fcard filterable" data-area="memory">
+      <a href="memory-ux-canvas.html" class="fcard filterable" data-area="memory">
         <div class="id"><span>FW-01</span><span class="tchip"><span class="td" style="background:var(--th-memory)"></span>Memory UX</span></div>
         <h4>Memory UX Canvas</h4>
-        <p>A structured canvas for designing persistent AI memory people actually trust — what to store, decay, surface, and forget.</p>
-        <div class="by">by Puneet Arora</div>
-      </div>
-      <div class="fcard filterable" data-area="trust">
+        <p>A worksheet for deciding what an AI should remember, what it should let go of, and what it has no business storing without asking.</p>
+        <div class="by">Read the framework &rarr;</div>
+      </a>
+      <a href="ai-decision-confidence-scale.html" class="fcard filterable" data-area="trust">
         <div class="id"><span>FW-02</span><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span></div>
         <h4>AI Decision Confidence Scale</h4>
-        <p>A shared vocabulary for communicating model uncertainty so users calibrate their trust instead of guessing.</p>
-        <div class="by">by Puneet Arora</div>
-      </div>
-      <div class="fcard filterable" data-area="hitl">
+        <p>A shared language for how sure the model is — so the interface can say 'I'm guessing' instead of pretending.</p>
+        <div class="by">Read the framework &rarr;</div>
+      </a>
+      <a href="human-override-matrix.html" class="fcard filterable" data-area="hitl">
         <div class="id"><span>FW-03</span><span class="tchip"><span class="td" style="background:var(--th-hitl)"></span>Human-in-loop</span></div>
         <h4>Human Override Matrix</h4>
-        <p>A decision tool for where — and how — an agent hands control back to the user.</p>
-        <div class="by">by Puneet Arora</div>
-      </div>
-      <div class="fcard filterable" data-area="agent">
+        <p>When should an agent act, ask, or wait? A simple map from stakes and reversibility to the right amount of human control.</p>
+        <div class="by">Read the framework &rarr;</div>
+      </a>
+      <a href="agent-collaboration-model.html" class="fcard filterable" data-area="agent">
         <div class="id"><span>FW-04</span><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span></div>
         <h4>Agent Collaboration Model</h4>
-        <p>Reusable patterns for multi-agent interaction, hand-off, and when to ask versus act.</p>
-        <div class="by">by Puneet Arora</div>
-      </div>
-      <div class="fcard filterable" data-area="personalization">
+        <p>Patterns for how humans and several agents split the work, hand off cleanly, and stay accountable to each other.</p>
+        <div class="by">Read the framework &rarr;</div>
+      </a>
+      <a href="personalization-maturity-model.html" class="fcard filterable" data-area="personalization">
         <div class="id"><span>FW-05</span><span class="tchip"><span class="td" style="background:var(--th-personalization)"></span>Personalization</span></div>
         <h4>Personalization Maturity Model</h4>
-        <p>A stage-by-stage roadmap for enterprise personalization — from rules to adaptive systems.</p>
-        <div class="by">by Puneet Arora</div>
-      </div>
+        <p>The five stages of enterprise personalization — from one-size-fits-all to anticipatory — and how to tell which one you're really at.</p>
+        <div class="by">Read the framework &rarr;</div>
+      </a>
   </div>
 </section>
 
 <!-- CONCEPTS -->
 <section class="cat lab-shell" id="concepts" data-cat>
   <div class="cat-head"><span class="n">05</span><h2>Concepts</h2><span class="meta">Early &middot; not yet built</span></div>
-  <p class="cat-sub">Questions I'm circling — framed and argued, but not yet shipped.</p>
+  <p class="cat-sub">Questions I'm still circling. Framed and argued — not yet built.</p>
   <div class="ccgrid">
       <div class="ccard filterable" data-area="trust">
         <div class="id"><span class="mbadge m-concept"><span class="md"></span>Concept</span><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span></div>
@@ -731,12 +733,12 @@
       <div class="ccard filterable" data-area="personalization trust">
         <div class="id"><span class="mbadge m-concept"><span class="md"></span>Concept</span><span class="tchip"><span class="td" style="background:var(--th-personalization)"></span>Personalization</span></div>
         <h4>Behavioural-nudge library</h4>
-        <p>Documented nudges with ethical guardrails baked in — mechanism, positive examples, anti-patterns, and a measurement plan per nudge.</p>
+        <p>Nudges with the ethics built in — the mechanism, the honest examples, the anti-patterns, and how you'd measure each one.</p>
       </div>
       <div class="ccard filterable" data-area="agent">
         <div class="id"><span class="mbadge m-exp"><span class="md"></span>Experimental</span><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span></div>
         <h4>Critique-as-a-Service</h4>
-        <p>An agent that critiques a screen the way a senior IC would, scored against a team's in-house rubric — for when the senior isn't in the room.</p>
+        <p>An agent that critiques a screen the way a senior IC would — scored against your team's own rubric, for when the senior isn't in the room.</p>
       </div>
   </div>
 </section>
@@ -744,7 +746,7 @@
 <!-- FOOTER -->
 <footer class="lab-foot" data-screen-label="footer">
   <div class="lab-shell">
-    <div class="close">Most people ship AI features. <em>I research how they should feel.</em></div>
+    <div class="close">Most people ship AI features. <em>I'd rather get the behaviour right.</em></div>
     <div class="sig"><a href="home.html">Puneet Kumar Arora</a> &middot; The AI Lab &middot; Design Practice &amp; AI Transformation Leadership</div>
   </div>
 </footer>
