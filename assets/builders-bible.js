@@ -259,7 +259,7 @@
         { t: 'Understand tokens, context & temperature', detail: 'Models don’t read words — they read tokens, remember only what fits their context window, and pick each next token with a randomness dial called temperature. Get these three ideas and most “weird AI behaviour” stops being mysterious.', hands: 'Paste a paragraph into the OpenAI tokenizer and watch the token count. Then ask the same question twice at temperature 0 vs 1 and compare.', resources: [{ l: 'OpenAI tokenizer', u: 'https://platform.openai.com/tokenizer' }, { l: 'Anthropic — prompting overview', u: 'https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview' }] },
         { t: 'Write your first structured prompt', detail: 'A vague prompt gets a vague answer. Structure removes the guesswork — the CO-STAR framework (Context, Objective, Style, Tone, Audience, Response) is the fastest way to go from “meh” to “ship it”.', hands: 'Rewrite a prompt you already use into CO-STAR form and compare the two outputs side by side.', resources: [{ l: 'Read: CO-STAR framework', article: 'a2' }, { l: 'Open the Prompt Library', nav: 'prompts' }] },
         { t: 'Ship a no-code automation', detail: 'You don’t need to code to remove hours of busywork. The pattern is always the same: an event fires, an AI step classifies or rewrites, and the result lands where you already look.', hands: 'Build an inbox-triage flow in n8n or Zapier that summarises new email and drops it into a task board.', resources: [{ l: 'Read: Automations that pay for themselves', article: 'a5' }, { l: 'Browse Workflow blueprints', nav: 'workflows' }, { l: 'Zapier', u: 'https://zapier.com/' }] },
-        { t: 'Run a model comparison', detail: 'Pick the right tool for the job by testing, not by hype. The same prompt can be excellent on one model and mediocre on another.', hands: 'Send one real task to Claude, GPT and Gemini and score the outputs 1–5 on accuracy and tone.', resources: [{ l: 'Open the Tool Comparison', nav: 'tools' }] }
+        { t: 'Run a model comparison', detail: 'Pick the right tool for the job by testing, not by hype. The same prompt can be excellent on one model and mediocre on another.', hands: 'Send one real task to Claude, GPT and Gemini and score the outputs 1–5 on accuracy and tone.', resources: [{ l: 'Open the Tool Comparison', nav: 'resources' }] }
       ],
       capstone: { t: 'Capstone — your personal AI daily brief', desc: 'Wire up a no-code flow that pulls your sources each morning, summarises them, and messages you the three things worth knowing. Small, real, and yours.', action: { l: 'Start from a workflow →', nav: 'workflows' } },
       deepdive: [{ l: 'Andrej Karpathy — Intro to LLMs (video)', u: 'https://www.youtube.com/watch?v=zjkBMFhNj_g' }, { l: 'DeepLearning.AI — Prompt Engineering for Devs', u: 'https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/' }] },
@@ -447,13 +447,72 @@
       '<polyline points="86,90 130,78 174,84 218,58 262,64 306,36" fill="none" stroke="#f2c14e" stroke-width="1.6" opacity="0.5"/>' +
       '<g fill="#9bc4b9" opacity="0.4"><circle cx="86" cy="90" r="3"/><circle cx="130" cy="78" r="3"/><circle cx="174" cy="84" r="3"/><circle cx="218" cy="58" r="3"/><circle cx="262" cy="64" r="3"/><circle cx="306" cy="36" r="3"/></g>' +
       '<path d="M296 36 L306 36 L306 46" stroke="#f2c14e" stroke-width="1.4" fill="none" opacity="0.5"/>',
+    swarm:
+      '<circle cx="200" cy="66" r="12" fill="#f2c14e" opacity="0.14" stroke="#f2c14e" stroke-width="1"/><circle cx="200" cy="66" r="4" fill="#f2c14e" opacity="0.5"/>' +
+      '<g stroke="#9bc4b9" stroke-width="0.8" opacity="0.22" fill="none"><line x1="200" y1="66" x2="130" y2="40"/><line x1="200" y1="66" x2="270" y2="40"/><line x1="200" y1="66" x2="112" y2="66"/><line x1="200" y1="66" x2="288" y2="66"/><line x1="200" y1="66" x2="130" y2="92"/><line x1="200" y1="66" x2="270" y2="92"/></g>' +
+      '<g fill="none" stroke="#9bc4b9" stroke-width="1" opacity="0.4"><circle cx="130" cy="40" r="8"/><circle cx="270" cy="40" r="8"/><circle cx="112" cy="66" r="8"/><circle cx="288" cy="66" r="8"/><circle cx="130" cy="92" r="8"/><circle cx="270" cy="92" r="8"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.3"><circle cx="130" cy="40" r="2.5"/><circle cx="270" cy="40" r="2.5"/><circle cx="112" cy="66" r="2.5"/><circle cx="288" cy="66" r="2.5"/><circle cx="130" cy="92" r="2.5"/><circle cx="270" cy="92" r="2.5"/></g>',
+    costmeter:
+      '<rect x="96" y="52" width="208" height="15" rx="7.5" fill="#f5f1e6" opacity="0.05" stroke="#f5f1e6" stroke-width="0.6"/>' +
+      '<rect x="96" y="52" width="80" height="15" rx="7.5" fill="#f2c14e" opacity="0.35"/>' +
+      '<circle cx="176" cy="59.5" r="9" fill="#f2c14e" opacity="0.2" stroke="#f2c14e" stroke-width="1.2"/>' +
+      '<path d="M110 86 L286 98" stroke="#9bc4b9" stroke-width="0.8" opacity="0.25" stroke-dasharray="3 3"/>' +
+      '<g fill="#9bc4b9"><rect x="110" y="84" width="16" height="22" opacity="0.3"/><rect x="150" y="88" width="16" height="18" opacity="0.25"/><rect x="190" y="92" width="16" height="14" opacity="0.2"/><rect x="230" y="97" width="16" height="9" opacity="0.16"/><rect x="270" y="100" width="16" height="6" opacity="0.12"/></g>',
+    neuralnet:
+      '<g stroke="#9bc4b9" stroke-width="0.6" opacity="0.18" fill="none"><line x1="110" y1="40" x2="200" y2="34"/><line x1="110" y1="40" x2="200" y2="56"/><line x1="110" y1="66" x2="200" y2="56"/><line x1="110" y1="66" x2="200" y2="78"/><line x1="110" y1="92" x2="200" y2="78"/><line x1="110" y1="92" x2="200" y2="100"/><line x1="200" y1="34" x2="290" y2="50"/><line x1="200" y1="56" x2="290" y2="50"/><line x1="200" y1="78" x2="290" y2="82"/><line x1="200" y1="100" x2="290" y2="82"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.4"><circle cx="110" cy="40" r="5"/><circle cx="110" cy="66" r="5"/><circle cx="110" cy="92" r="5"/><circle cx="200" cy="34" r="5"/><circle cx="200" cy="56" r="5"/><circle cx="200" cy="78" r="5"/><circle cx="200" cy="100" r="5"/><circle cx="290" cy="82" r="5"/></g>' +
+      '<circle cx="290" cy="50" r="6" fill="#f2c14e" opacity="0.5"/>',
+    funnel:
+      '<path d="M96 42 L232 42 L188 74 L188 98 L140 98 L140 74 Z" fill="#9bc4b9" opacity="0.06" stroke="#9bc4b9" stroke-width="1"/>' +
+      '<g fill="#9bc4b9" opacity="0.35"><circle cx="112" cy="32" r="2.5"/><circle cx="132" cy="32" r="2.5"/><circle cx="152" cy="32" r="2.5"/><circle cx="172" cy="32" r="2.5"/><circle cx="192" cy="32" r="2.5"/><circle cx="212" cy="32" r="2.5"/></g>' +
+      '<path d="M188 86 H262" stroke="#f2c14e" stroke-width="1.2" opacity="0.45"/><path d="M256 80 L268 86 L256 92 Z" fill="#f2c14e" opacity="0.5"/>' +
+      '<circle cx="296" cy="86" r="10" fill="#f2c14e" opacity="0.16" stroke="#f2c14e" stroke-width="1"/><circle cx="296" cy="86" r="3" fill="#f2c14e" opacity="0.5"/>',
+    diamond:
+      '<g fill="none" stroke="#9bc4b9" stroke-width="1" opacity="0.4"><path d="M64 66 L130 40 L196 66 L130 92 Z"/><path d="M196 66 L262 40 L336 66 L262 92 Z"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.05"><path d="M64 66 L130 40 L196 66 L130 92 Z"/><path d="M196 66 L262 40 L336 66 L262 92 Z"/></g>' +
+      '<g fill="#f2c14e" opacity="0.45"><circle cx="64" cy="66" r="3"/><circle cx="196" cy="66" r="3"/><circle cx="336" cy="66" r="3"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.3"><circle cx="130" cy="40" r="2"/><circle cx="130" cy="92" r="2"/><circle cx="262" cy="40" r="2"/><circle cx="262" cy="92" r="2"/></g>',
+    coins:
+      '<g stroke="#f2c14e" stroke-width="0.8" opacity="0.9"><ellipse cx="118" cy="98" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.12"/><ellipse cx="118" cy="90" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.12"/>' +
+      '<ellipse cx="180" cy="98" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.14"/><ellipse cx="180" cy="90" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.14"/><ellipse cx="180" cy="82" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.14"/><ellipse cx="180" cy="74" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.14"/>' +
+      '<ellipse cx="242" cy="98" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.16"/><ellipse cx="242" cy="90" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.16"/><ellipse cx="242" cy="82" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.16"/><ellipse cx="242" cy="74" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.16"/><ellipse cx="242" cy="66" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.16"/><ellipse cx="242" cy="58" rx="17" ry="5" fill="#f2c14e" fill-opacity="0.16"/></g>' +
+      '<path d="M300 96 L300 52 M291 63 L300 52 L309 63" fill="none" stroke="#9bc4b9" stroke-width="1.4" opacity="0.45"/>',
+    dashboard:
+      '<rect x="76" y="26" width="248" height="82" rx="6" fill="#f5f1e6" opacity="0.03" stroke="#f5f1e6" stroke-width="0.6"/>' +
+      '<g fill="none" stroke="#9bc4b9" stroke-width="0.6" opacity="0.3"><rect x="88" y="38" width="66" height="30" rx="3"/><rect x="167" y="38" width="66" height="30" rx="3"/><rect x="246" y="38" width="66" height="30" rx="3"/></g>' +
+      '<g fill="#f2c14e" opacity="0.4"><rect x="96" y="44" width="24" height="4" rx="1"/><rect x="175" y="44" width="24" height="4" rx="1"/><rect x="254" y="44" width="24" height="4" rx="1"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.2"><rect x="96" y="54" width="42" height="3" rx="1"/><rect x="175" y="54" width="42" height="3" rx="1"/><rect x="254" y="54" width="42" height="3" rx="1"/></g>' +
+      '<g fill="#9bc4b9"><rect x="96" y="94" width="10" height="10" opacity="0.25"/><rect x="110" y="88" width="10" height="16" opacity="0.3"/><rect x="124" y="82" width="10" height="22" opacity="0.35"/><rect x="138" y="90" width="10" height="14" opacity="0.25"/></g>' +
+      '<path d="M250 100 a20 20 0 0 1 40 0" fill="none" stroke="#9bc4b9" stroke-width="3" opacity="0.2"/><path d="M250 100 a20 20 0 0 1 30 -14" fill="none" stroke="#f2c14e" stroke-width="3" opacity="0.45"/>',
+    gauge:
+      '<path d="M118 98 a82 82 0 0 1 164 0" fill="none" stroke="#9bc4b9" stroke-width="2" opacity="0.22"/>' +
+      '<path d="M118 98 a82 82 0 0 1 104 -64" fill="none" stroke="#f2c14e" stroke-width="2" opacity="0.45"/>' +
+      '<g stroke="#9bc4b9" stroke-width="1" opacity="0.25"><line x1="132" y1="86" x2="122" y2="80"/><line x1="200" y1="20" x2="200" y2="30"/><line x1="268" y1="86" x2="278" y2="80"/></g>' +
+      '<line x1="200" y1="98" x2="244" y2="60" stroke="#f2c14e" stroke-width="2" opacity="0.6"/><circle cx="200" cy="98" r="6" fill="#f2c14e" opacity="0.4" stroke="#f2c14e" stroke-width="1"/>',
+    shield:
+      '<path d="M200 28 L248 44 L248 74 Q248 102 200 112 Q152 102 152 74 L152 44 Z" fill="#9bc4b9" opacity="0.06" stroke="#9bc4b9" stroke-width="1"/>' +
+      '<path d="M180 68 l13 13 l26 -28" fill="none" stroke="#f2c14e" stroke-width="1.8" opacity="0.55"/>' +
+      '<g fill="#9bc4b9" opacity="0.25"><circle cx="200" cy="44" r="2"/><circle cx="168" cy="60" r="2"/><circle cx="232" cy="60" r="2"/><circle cx="200" cy="98" r="2"/></g>',
+    scales:
+      '<line x1="200" y1="32" x2="200" y2="98" stroke="#9bc4b9" stroke-width="1.5" opacity="0.35"/><rect x="184" y="98" width="32" height="6" rx="2" fill="#9bc4b9" opacity="0.3"/>' +
+      '<line x1="132" y1="46" x2="268" y2="46" stroke="#9bc4b9" stroke-width="1.5" opacity="0.35"/><circle cx="200" cy="34" r="3" fill="#f2c14e" opacity="0.5"/>' +
+      '<g stroke="#9bc4b9" stroke-width="0.8" opacity="0.3" fill="none"><line x1="132" y1="46" x2="132" y2="60"/><line x1="268" y1="46" x2="268" y2="60"/></g>' +
+      '<path d="M112 60 A20 8 0 0 0 152 60" fill="#f2c14e" fill-opacity="0.1" stroke="#f2c14e" stroke-width="0.8" opacity="0.4"/>' +
+      '<path d="M248 60 A20 8 0 0 0 288 60" fill="#9bc4b9" fill-opacity="0.08" stroke="#9bc4b9" stroke-width="0.8" opacity="0.35"/>',
     _default:
       '<circle cx="200" cy="66" r="22" stroke="#9bc4b9" stroke-width="1" opacity="0.2" fill="none"/><circle cx="200" cy="66" r="6" fill="#f2c14e" opacity="0.4"/>' +
       '<g stroke="#9bc4b9" stroke-width="1" opacity="0.25"><line x1="200" y1="66" x2="150" y2="40"/><line x1="200" y1="66" x2="250" y2="40"/><line x1="200" y1="66" x2="150" y2="92"/><line x1="200" y1="66" x2="250" y2="92"/></g>' +
       '<g fill="#9bc4b9" opacity="0.35"><circle cx="150" cy="40" r="4"/><circle cx="250" cy="40" r="4"/><circle cx="150" cy="92" r="4"/><circle cx="250" cy="92" r="4"/></g>'
   };
-  function coverArt(cat) {
-    var inner = COVER_ART[cat] || COVER_ART._default;
+  // Each article id maps to a distinct motif so no two cards share an illustration.
+  var ARTMAP = {
+    a1: 'agents', a2: 'prompting', a3: 'rag', a4: 'mcp', a5: 'automation', a6: 'swarm',
+    a7: 'coding', a8: 'evals', a9: 'costmeter', a10: 'computeruse', a11: 'voice', a12: 'business',
+    m1: 'neuralnet', m2: 'funnel', m3: 'diamond', m4: 'coins', m5: 'dashboard', m6: 'gauge', m7: 'shield', m8: 'scales'
+  };
+  function coverArt(a) {
+    var motif = (a && ARTMAP[a.id]) || (a && a.cat) || '';
+    var inner = COVER_ART[motif] || COVER_ART[a && a.cat] || COVER_ART._default;
     return '<svg class="bb-cover-svg" viewBox="0 0 400 132" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' + inner + '</svg>';
   }
 
@@ -498,7 +557,7 @@
       : '<a class="read bb-readbtn" data-id="' + a.id + '" href="#">READ →</a>';
     var shareAttr = a.ext ? ' data-url="' + esc(a.url) + '"' : '';
     return '<article class="bb-card" data-id="' + a.id + '" data-tags="' + esc((a.tags.join(' ') + ' ' + a.tools.join(' ') + ' ' + a.title + ' ' + a.cat).toLowerCase()) + '" data-cat="' + a.cat + '" data-diff="' + a.diff + '" data-mins="' + a.mins + '" data-tools="' + esc(a.tools.join(',')) + '">' +
-      '<div class="bb-card__cover" style="' + grad(a.grad[0], a.grad[1]) + '">' + coverArt(a.cat) + '<span class="badge">' + esc(a.cat) + '</span>' +
+      '<div class="bb-card__cover" style="' + grad(a.grad[0], a.grad[1]) + '">' + coverArt(a) + '<span class="badge">' + esc(a.cat) + '</span>' +
         (a.ext ? '<span class="bb-card__src">✎ ' + esc(a.source || 'External') + '</span>' : '') + '</div>' +
       (pr > 0 ? '<div class="bb-progress"><i style="width:' + pr + '%"></i></div>' : '') +
       '<div class="bb-card__body">' +
@@ -975,6 +1034,8 @@
   /* ─────────────────────────── ROUTER ─────────────────────────── */
 
   function navigate(view, opts) {
+    // Fall back to home for removed/unknown views (e.g. old #tools / #community links).
+    if (!$('.bb-view[data-view="' + view + '"]')) view = 'home';
     $all('.bb-view').forEach(function (v) { v.classList.toggle('is-active', v.getAttribute('data-view') === view); });
     $all('.bb-topbar .topbar__nav a').forEach(function (a) { a.classList.toggle('is-current', a.getAttribute('data-view') === view); });
     if (history.replaceState) { try { history.replaceState(null, '', '#' + view); } catch (e) {} }
@@ -1007,7 +1068,7 @@
 
     wrap.innerHTML =
       '<button class="bb-reader__back bb-backarticles">← All articles</button>' +
-      '<div class="bb-reader__hero" style="' + grad(a.grad[0], a.grad[1]) + '">' + coverArt(a.cat) + '<span class="badge">' + esc(a.cat) + '</span></div>' +
+      '<div class="bb-reader__hero" style="' + grad(a.grad[0], a.grad[1]) + '">' + coverArt(a) + '<span class="badge">' + esc(a.cat) + '</span></div>' +
       '<h1>' + esc(a.title) + '</h1>' +
       '<div class="bb-reader__meta"><span class="diff">' + esc(a.diff) + '</span><span>' + a.mins + ' min read</span><span>Updated ' + esc(body.updated) + '</span>' +
         '<span class="sp">' +
