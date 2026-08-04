@@ -839,6 +839,22 @@ img { display: block; max-width: 100%; }
 }
 .how .cell .d { color: var(--dim); font-size: 13px; line-height: 1.6; }
 
+/* How I lead */
+.lead { display: grid; grid-template-columns: 215px 1fr; gap: 64px; align-items: center; padding: 0 var(--pad-x) 56px; }
+.lead__figure { margin: 0; }
+.lead__portrait { position: relative; border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; overflow: hidden; aspect-ratio: 5/6; width: 100%; }
+.lead__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(1) contrast(1.04); }
+.lead__cap { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.lead__cap strong { display: block; font-family: var(--f-sans); font-size: 14px; font-weight: 500; color: var(--ink); }
+.lead__cap span { display: block; margin-top: 4px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--dim); line-height: 1.5; }
+.leadlist { list-style: none; padding: 0; margin: 0; }
+.leadlist li { padding: 18px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: baseline; }
+.leadlist li:first-child { padding-top: 0; }
+.leadlist .num { font-family: var(--f-mono); color: var(--signal); font-size: 13px; }
+.leadlist h4 { font-family: var(--f-sans); font-size: 16px; font-weight: 500; margin: 0 0 5px; color: var(--ink); }
+.leadlist p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.55; margin: 0; }
+@media (max-width: 880px) { .lead { grid-template-columns: 1fr; } .lead__portrait { width: 100%; max-width: 215px; } }
+
 /* Timeline (light version on bio) */
 .timeline {
   border-top: 1px solid var(--rule);

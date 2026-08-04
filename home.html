@@ -53,21 +53,6 @@
   .story__out .l { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin-top: 3px; }
   @media (max-width: 760px) { .arc { grid-template-columns: 1fr; } .arc .beat.wide { grid-column: auto; } .story > summary { grid-template-columns: 1fr auto; } .story__idx { display: none; } }
 
-  .lead { display: grid; grid-template-columns: 215px 1fr; gap: 64px; align-items: center; padding: 0 var(--pad-x) 56px; }
-  .lead__figure { margin: 0; }
-  .lead__portrait { position: relative; border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; overflow: hidden; aspect-ratio: 5/6; width: 100%; }
-  .lead__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(1) contrast(1.04); }
-  .lead__cap { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--rule); }
-  .lead__cap strong { display: block; font-family: var(--f-sans); font-size: 14px; font-weight: 500; color: var(--ink); }
-  .lead__cap span { display: block; margin-top: 4px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--dim); line-height: 1.5; }
-  .leadlist { list-style: none; padding: 0; margin: 0; }
-  .leadlist li { padding: 18px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: baseline; }
-  .leadlist li:first-child { padding-top: 0; }
-  .leadlist .num { font-family: var(--f-mono); color: var(--signal); font-size: 13px; }
-  .leadlist h4 { font-family: var(--f-sans); font-size: 16px; font-weight: 500; margin: 0 0 5px; color: var(--ink); }
-  .leadlist p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.55; margin: 0; }
-  @media (max-width: 880px) { .lead { grid-template-columns: 1fr; } .lead__portrait { width: 100%; max-width: 215px; } }
-
   .princ { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
   .princ .p { background: var(--bg); padding: 30px 28px; }
   .princ .p .k { font-family: var(--f-mono); font-size: 13px; color: var(--signal); margin-bottom: 16px; }
@@ -332,33 +317,6 @@
     </div>
   </div>
 </details>
-
-<!-- HOW I LEAD -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 04</span>
-    <span class="shead__title">HOW I LEAD</span>
-    <span class="shead__sub">// quiet confidence, compounding trust</span>
-  </div>
-</div>
-<div class="lead">
-  <figure class="lead__figure">
-    <div class="lead__portrait">
-      <img src="assets/portrait.png" alt="Puneet Arora" loading="lazy">
-    </div>
-    <figcaption class="lead__cap">
-      <strong>Puneet Arora</strong>
-      <span>Design Practice &amp; AI Transformation Leadership</span>
-    </figcaption>
-  </figure>
-  <ol class="leadlist">
-    <li><span class="num">i.</span><div><h4>I mentor designers into leaders</h4><p>Coaching individuals from execution to judgement — the difference between someone who can do the work and someone who can decide what work matters.</p></div></li>
-    <li><span class="num">ii.</span><div><h4>I influence stakeholders, not just deliverables</h4><p>Bringing engineering, product, and the C-suite to a shared experience vision — and to the tradeoffs it demands.</p></div></li>
-    <li><span class="num">iii.</span><div><h4>I lead cross-functionally</h4><p>Thirty-three designers across five time zones, four concurrent experiences — alignment held through clarity, not control.</p></div></li>
-    <li><span class="num">iv.</span><div><h4>I build for design maturity</h4><p>Systems, rituals, and centres of excellence that raise the whole organisation’s craft, long after any single project ends.</p></div></li>
-    <li><span class="num">v.</span><div><h4>I build trust before I ask for it</h4><p>Credibility compounds. I earn the right to lead hard conversations by being reliable in the easy ones.</p></div></li>
-  </ol>
-</div>
 
 <!-- FOOTER -->
 <footer class="foot">
