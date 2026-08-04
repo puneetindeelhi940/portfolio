@@ -172,12 +172,12 @@
   .rail-btn.is-on .chk { opacity: 1; }
 
   /* ── satellite info card (right) ── */
-  .sat-card { position: absolute; top: 150px; right: 22px; width: 290px; padding: 0; overflow: hidden; transition: opacity .2s, transform .2s; }
+  .sat-card { position: absolute; top: 96px; right: 80px; width: 280px; padding: 0; overflow: hidden; transition: opacity .2s, transform .2s; z-index: 6; }
   .sat-card.hidden { opacity: 0; transform: translateX(12px); pointer-events: none; }
   .sat-card .head { display: flex; align-items: center; gap: 9px; padding: 14px 16px; border-bottom: 1px solid var(--hud-rule); }
   .sat-card .head svg { width: 16px; height: 16px; color: var(--cyan); }
   .sat-card .head b { font-size: 15px; font-weight: 500; }
-  .sat-card .art { height: 150px; display: grid; place-items: center; background: radial-gradient(120px 120px at 60% 40%, rgba(88,214,255,0.10), transparent 70%); }
+  .sat-card .art { height: 112px; display: grid; place-items: center; background: radial-gradient(120px 120px at 60% 40%, rgba(88,214,255,0.10), transparent 70%); }
   .sat-card .art svg { width: 150px; height: 110px; }
   .sat-card .row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; padding: 12px 16px; }
   .sat-card .row + .row { border-top: 1px solid var(--hud-rule); }
@@ -295,7 +295,9 @@
 
   /* ── panel controls: minimize + resize ── */
   .panel-ctrl { position: absolute; top: 0; left: 0; right: 0; height: 0; z-index: 5; }
-  .panel { position: relative; }
+  /* Scoped to the dock so it doesn't clobber the absolutely-positioned .sat-card,
+     which is a .panel too and was being knocked out of its top-right slot. */
+  .dock .panel { position: relative; }
   .panel-resize {
     position: absolute; top: -1px; left: 50%; transform: translateX(-50%); width: 36px; height: 14px;
     display: flex; align-items: center; justify-content: center; cursor: ns-resize;
@@ -458,6 +460,7 @@
 
     <!-- SATELLITE INFO CARD -->
     <div class="panel sat-card" id="satCard">
+      <button class="panel-min" title="Minimize"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg></button>
       <div class="head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m13 7 4 4M5 19l3-3"/><rect x="2.5" y="13.5" width="6" height="6" rx="1" transform="rotate(-45 5.5 16.5)"/><rect x="15.5" y="4.5" width="6" height="6" rx="1" transform="rotate(-45 18.5 7.5)"/></svg><b id="satName">Starlink-17524</b></div>
       <div class="art">
         <svg viewBox="0 0 150 110" fill="none"><g stroke="#7d95ac" stroke-width="1.4"><rect x="62" y="44" width="26" height="22" rx="2" fill="#1a2632"/><rect x="6" y="40" width="48" height="30" rx="2" fill="#12304a"/><rect x="96" y="40" width="48" height="30" rx="2" fill="#12304a"/><path d="M14 40v30M24 40v30M34 40v30M44 40v30M106 40v30M116 40v30M126 40v30M136 40v30" stroke="#3b6f93"/><path d="M75 44V30M70 30h10" stroke="#58d6ff"/></g></svg>
@@ -950,15 +953,29 @@
   });
   document.querySelectorAll('.panel-resize').forEach(function (handle) {
     var panel = handle.closest('.panel');
-    var startY, startH;
-    handle.addEventListener('mousedown', function (e) {
+    handle.addEventListener('pointerdown', function (e) {
       e.preventDefault();
-      startY = e.clientY;
-      startH = panel.getBoundingClientRect().height;
-      function onMove(ev) { panel.style.maxHeight = Math.max(42, startH + (ev.clientY - startY)) + 'px'; panel.style.overflow = 'hidden'; }
-      function onUp() { document.removeEventListener('mousemove', onMove); document.removeEventListener('mouseup', onUp); }
-      document.addEventListener('mousemove', onMove);
-      document.addEventListener('mouseup', onUp);
+      try { handle.setPointerCapture(e.pointerId); } catch (err) {}
+      var startY = e.clientY;
+      var startH = panel.getBoundingClientRect().height;
+      // The dock is anchored to the bottom, so pin this panel to its base and
+      // let the top edge move: drag the grip UP to grow taller, DOWN to shrink.
+      panel.style.alignSelf = 'end';
+      panel.style.maxHeight = 'none';
+      panel.style.overflow = 'hidden';
+      function onMove(ev) {
+        var h = startH + (startY - ev.clientY);
+        h = Math.max(120, Math.min(h, window.innerHeight * 0.72));
+        panel.style.height = h + 'px';
+      }
+      function onUp() {
+        handle.removeEventListener('pointermove', onMove);
+        handle.removeEventListener('pointerup', onUp);
+        handle.removeEventListener('pointercancel', onUp);
+      }
+      handle.addEventListener('pointermove', onMove);
+      handle.addEventListener('pointerup', onUp);
+      handle.addEventListener('pointercancel', onUp);
     });
   });
 
