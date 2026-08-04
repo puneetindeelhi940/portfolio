@@ -24,8 +24,8 @@
   --signal-ink: oklch(22% 0.05 168);
   --warn:     oklch(74% 0.13 35);
 
-  --pad-x: 56px;
-  --pad-x-sm: 32px;
+  --pad-x: 64px;
+  --pad-x-sm: 40px;
   --max: 1440px;
 
   --f-mono: 'Segoe UI', sans-serif;
@@ -125,8 +125,8 @@
 /* Topbar variant — slightly tighter */
 .topbar__meta .theme-toggle__opt { padding: 5px 9px; font-size: 9px; }
 
-  --pad-x: 56px;
-  --pad-x-sm: 32px;
+  --pad-x: 64px;
+  --pad-x-sm: 40px;
   --max: 1440px;
 
   --f-mono: 'Segoe UI', sans-serif;
