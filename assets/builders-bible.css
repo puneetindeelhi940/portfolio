@@ -118,15 +118,16 @@
 .bb-topic .c { display: block; font-family: var(--f-mono); font-size: 10px; color: var(--faint); letter-spacing: 0.08em; }
 .bb-topic .arw { position: absolute; right: 16px; top: 20px; color: var(--signal); opacity: 0; transform: translateX(-4px); transition: .18s; }
 
-.bb-tools-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; }
+.bb-tools-grid { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 .bb-toollogo {
-  aspect-ratio: 1/1; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  flex: 0 0 calc((100% - 72px) / 7); aspect-ratio: 1/1;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
   cursor: pointer; transition: border-color .15s, transform .15s; color: inherit;
 }
 .bb-toollogo:hover { border-color: var(--signal); transform: translateY(-3px); }
-.bb-toollogo .glyph { width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: var(--f-mono); font-weight: 700; font-size: 15px; color: #fff; }
-.bb-toollogo .nm { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--dim); }
+.bb-toollogo .glyph { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: var(--f-mono); font-weight: 700; font-size: 26px; color: #fff; }
+.bb-toollogo .nm { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--dim); }
 
 /* ───────── Filter bar ───────── */
 .bb-filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; padding: 20px var(--pad-x); border-bottom: 1px solid var(--rule); position: sticky; top: 52px; z-index: 20; background: color-mix(in oklch, var(--bg) 92%, transparent); backdrop-filter: blur(8px); }
@@ -304,7 +305,7 @@ table.bb-table tr:hover td { background: var(--surface); }
 @media (max-width: 1200px) {
   .bb-stats { grid-template-columns: repeat(4, 1fr); }
   .bb-topics, .bb-quiz__cards { grid-template-columns: repeat(3, 1fr); }
-  .bb-tools-grid { grid-template-columns: repeat(5, 1fr); }
+  .bb-toollogo { flex-basis: calc((100% - 48px) / 5); }
   .bb-reco__grid { grid-template-columns: repeat(2, 1fr); }
   .bb-cardgrid { grid-template-columns: repeat(2, 1fr); }
   .bb-stack { grid-template-columns: repeat(2, 1fr); }
@@ -312,7 +313,7 @@ table.bb-table tr:hover td { background: var(--surface); }
 @media (max-width: 820px) {
   .bb-stats { grid-template-columns: repeat(2, 1fr); }
   .bb-topics, .bb-quiz__cards { grid-template-columns: repeat(2, 1fr); }
-  .bb-tools-grid { grid-template-columns: repeat(3, 1fr); }
+  .bb-toollogo { flex-basis: calc((100% - 24px) / 3); }
   .bb-cardgrid, .bb-calc-grid, .bb-dash, .bb-comm { grid-template-columns: 1fr; }
   .bb-cmp-intent { grid-template-columns: repeat(2, 1fr); }
   .bb-res-cols { columns: 1; }
@@ -321,7 +322,8 @@ table.bb-table tr:hover td { background: var(--surface); }
   .bb-searchbtn kbd { display: none; }
 }
 @media (max-width: 520px) {
-  .bb-topics, .bb-quiz__cards, .bb-tools-grid { grid-template-columns: 1fr 1fr; }
+  .bb-topics, .bb-quiz__cards { grid-template-columns: 1fr 1fr; }
+  .bb-toollogo { flex-basis: calc((100% - 12px) / 2); }
   .bb-stats { grid-template-columns: 1fr 1fr; }
 }
 
