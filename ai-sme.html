@@ -103,7 +103,7 @@
   }
 
   /* ── Hero AI illustration (bold, animated SVG brain-network) ── */
-  .ai-orb { width: 100%; height: auto; display: block; }
+  .ai-orb { width: calc(100% - 17px); height: auto; display: block; margin: 0 auto; }
   .ai-orb .edge { stroke: color-mix(in oklch, var(--signal) 55%, transparent); stroke-width: 1; fill: none; opacity: 0.5; }
   .ai-orb .ring { stroke: color-mix(in oklch, var(--signal) 30%, transparent); fill: none; }
   .ai-orb .node { fill: var(--signal); }
@@ -178,11 +178,11 @@
   /* ═══════════════ Value / positioning band ═══════════════ */
   .band {
     padding: 62px var(--pad-x);
-    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;
     background: transparent;
     border-bottom: 1px solid var(--signal);
   }
-  .band .cell { background: var(--signal); padding: 8px; }
+  .band .cell { background: var(--signal); padding: 16.5px 8px; border-radius: 7px; }
   .band .cell .ic { color: #fff; font-family: var(--f-mono); font-size: 22px; margin-bottom: 16px; }
   .band .cell h3 { font-family: var(--f-sans); font-size: 18px; font-weight: 600; color: #fff; margin: 0 0 10px; letter-spacing: -0.01em; }
   .band .cell p { font-size: 14px; color: #fff; line-height: 1.6; margin: 0; }
@@ -238,7 +238,7 @@
     .domain { border-left: none; border-top: 1px solid var(--rule); }
     .domain:first-child { border-top: none; }
     .band { grid-template-columns: 1fr; }
-    .band .cell { padding: 8px; }
+    .band .cell { padding: 16.5px 8px; }
     .proof { grid-template-columns: repeat(2, 1fr); }
     .proof .cell:nth-child(2n+1) { border-left: none; }
     .svcs { grid-template-columns: 1fr; }
@@ -382,18 +382,23 @@
   <div class="domain">
     <div class="domain__no">01 / PRACTICE</div>
     <div class="domain__viz gauge">
-      <svg viewBox="0 0 260 200" role="img" aria-label="Cost gauge dropping into an efficient range">
-        <!-- gauge arc -->
-        <path class="track" d="M 34 158 A 96 96 0 1 1 226 158"/>
-        <path class="fill" d="M 34 158 A 96 96 0 1 1 226 158"/>
-        <!-- needle -->
-        <line class="needle" x1="130" y1="128" x2="130" y2="58"/>
-        <circle cx="130" cy="128" r="7" fill="var(--ink)"/>
-        <!-- descending cost coins -->
-        <circle class="coin" cx="196" cy="52" r="13"/>
-        <path class="down" d="M196 68 l-6 -8 h4 v-8 h4 v8 h4 z"/>
-        <text x="130" y="110" text-anchor="middle" font-family="var(--f-mono)" font-size="11" letter-spacing="1" fill="var(--dim)">COST / SESSION</text>
-        <text x="130" y="152" text-anchor="middle" font-family="var(--f-sans)" font-weight="700" font-size="26" fill="var(--signal)" letter-spacing="-1">-58%</text>
+      <svg viewBox="0 0 260 200" role="img" aria-label="Cost per session falling 58 percent, from 12 cents to 5 cents">
+        <text x="30" y="20" font-family="var(--f-mono)" font-size="10" letter-spacing="1.5" fill="var(--dim)">COST PER SESSION</text>
+        <!-- baseline -->
+        <line x1="30" y1="150" x2="230" y2="150" stroke="var(--rule-2)" stroke-width="1.5"/>
+        <!-- BEFORE bar -->
+        <rect x="58" y="52" width="52" height="98" rx="5" fill="color-mix(in oklch, var(--signal) 16%, var(--bg))" stroke="color-mix(in oklch, var(--signal) 40%, transparent)" stroke-width="1"/>
+        <text x="84" y="44" text-anchor="middle" font-family="var(--f-sans)" font-weight="700" font-size="15" fill="var(--dim)">$0.12</text>
+        <text x="84" y="166" text-anchor="middle" font-family="var(--f-mono)" font-size="9" letter-spacing="1" fill="var(--dim)">BEFORE</text>
+        <!-- AFTER bar (41% of before ≈ -58%) -->
+        <rect x="150" y="109" width="52" height="41" rx="5" fill="var(--signal)"/>
+        <text x="176" y="101" text-anchor="middle" font-family="var(--f-sans)" font-weight="700" font-size="15" fill="var(--signal)">$0.05</text>
+        <text x="176" y="166" text-anchor="middle" font-family="var(--f-mono)" font-size="9" letter-spacing="1" fill="var(--signal)">AFTER</text>
+        <!-- drop arrow -->
+        <path d="M112 62 q34 4 44 40" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-dasharray="3 4" opacity="0.45"/>
+        <path d="M156 102 l-5 -8 h10 z" fill="var(--ink)" opacity="0.45"/>
+        <!-- headline stat -->
+        <text x="130" y="192" text-anchor="middle" font-family="var(--f-sans)" font-weight="700" font-size="16" letter-spacing="-0.4" fill="var(--signal)">&#8722;58% per session</text>
       </svg>
     </div>
     <div class="domain__kicker">AI-UX Cost Optimization</div>
@@ -415,23 +420,27 @@
   <div class="domain">
     <div class="domain__no">02 / PRACTICE</div>
     <div class="domain__viz scan">
-      <svg viewBox="0 0 260 200" role="img" aria-label="Radar scanning an interface and flagging dark patterns">
-        <!-- mock interface -->
-        <rect class="card" x="150" y="40" width="86" height="120" rx="6"/>
-        <rect class="bar" x="162" y="56" width="62" height="8" rx="4"/>
-        <rect class="bar" x="162" y="74" width="46" height="8" rx="4"/>
-        <rect class="bar" x="162" y="120" width="62" height="18" rx="4"/>
-        <!-- flags on deceptive elements -->
-        <circle class="flag" cx="216" cy="60" r="6"/>
-        <circle class="flag flag2" cx="200" cy="78" r="6"/>
-        <circle class="flag flag3" cx="216" cy="129" r="6"/>
-        <!-- radar -->
-        <circle cx="90" cy="84" r="60" fill="none" stroke="var(--rule-2)" stroke-width="1"/>
-        <circle cx="90" cy="84" r="40" fill="none" stroke="var(--rule-2)" stroke-width="1"/>
-        <circle cx="90" cy="84" r="20" fill="none" stroke="var(--rule-2)" stroke-width="1"/>
-        <g class="sweep"><line class="beam" x1="90" y1="84" x2="90" y2="24"/></g>
-        <circle cx="90" cy="84" r="4" fill="var(--warn)"/>
-        <text x="90" y="172" text-anchor="middle" font-family="var(--f-mono)" font-size="10" letter-spacing="1.5" fill="var(--warn)">3 PATTERNS FLAGGED</text>
+      <svg viewBox="0 0 260 200" role="img" aria-label="Audit of 40 user flows: 37 trust-safe, 3 dark patterns flagged">
+        <text x="30" y="20" font-family="var(--f-mono)" font-size="10" letter-spacing="1.5" fill="var(--dim)">FLOWS AUDITED</text>
+        <!-- donut -->
+        <g transform="translate(84,108)">
+          <circle r="50" fill="none" stroke="var(--rule-2)" stroke-width="15"/>
+          <!-- 37/40 trust-safe -->
+          <circle r="50" fill="none" stroke="var(--signal)" stroke-width="15"
+            stroke-dasharray="288 314" transform="rotate(-90)"/>
+          <!-- 3/40 flagged -->
+          <circle r="50" fill="none" stroke="var(--warn)" stroke-width="15"
+            stroke-dasharray="22 314" stroke-dashoffset="-290" transform="rotate(-90)"/>
+          <text y="-3" text-anchor="middle" font-family="var(--f-sans)" font-weight="700" font-size="34" fill="var(--ink)">40</text>
+          <text y="18" text-anchor="middle" font-family="var(--f-mono)" font-size="9" letter-spacing="1" fill="var(--dim)">FLOWS</text>
+        </g>
+        <!-- legend -->
+        <g font-family="var(--f-mono)" font-size="12">
+          <circle cx="172" cy="86" r="5" fill="var(--signal)"/>
+          <text x="184" y="90" fill="var(--dim)">37 trust-safe</text>
+          <circle cx="172" cy="122" r="5" fill="var(--warn)"/>
+          <text x="184" y="126" fill="var(--warn)">3 flagged</text>
+        </g>
       </svg>
     </div>
     <div class="domain__kicker">AI-Driven Dark Pattern Expert</div>
@@ -485,7 +494,7 @@
 <div class="shead">
   <div class="shead__left">
     <span class="shead__n">§ 03</span>
-    <span class="shead__title">How to work with me</span>
+    <span class="shead__title">Let's do AI-Collab</span>
     <span class="shead__sub">// from a single audit to an embedded practice</span>
   </div>
 </div>
