@@ -969,18 +969,18 @@ class Component extends DCLogic {
 
     // Override placeholders with real Dell CDN product images
     const imgMap = {
-      inspiron16: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/16-5640/media-gallery/laptop-inspiron-16-5640t-ice-blue-fpr-gallery-2.psd?fmt=png-alpha&wid=570&hei=400',
-      inspiron15: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/16-5640/pdp/laptop-inspiron-16-5640-sentry-pdp-mg.psd?fmt=png-alpha&wid=570&hei=400',
-      g15: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-plus/db16250/media-gallery/fpr/notebook-db16250nt-fpr-bl-gallery-2.psd?fmt=png-alpha&wid=570&hei=400',
-      vostro14: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc14250/media-gallery/notebook-dell-pro-pc14250-hd-fhd-gy-gallery-1.psd?fmt=png-alpha&wid=570&hei=400',
-      precision7680: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc14250/media-gallery/notebook-dell-pro-pc14250-hd-fhd-bk-gallery-1.psd?fmt=png-alpha&wid=570&hei=400',
-      precision5690: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc14250/media-gallery/notebook-dell-pro-pc14250-hd-fhd-bk-gallery-2.psd?fmt=png-alpha&wid=570&hei=400',
-      alienware_m18: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-plus/db16255/media-gallery/non-touch/laptop-dell-plus-db16255nt-ice-bl-fpr-gallery-5.psd?fmt=png-alpha&wid=570&hei=400',
-      xps16: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/7455/media-gallery/touch/laptop-latitude-7455t-gray-wlan-gallery-4.psd?fmt=png-alpha&wid=570&hei=400',
-      lat9450: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/latitude-14-9450-laptop-2-in-1/mg/notebook-latitude-14-9450-t-wlan-gray-gallery-1.psd?fmt=png-alpha&wid=570&hei=400',
-      precision5690m: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc14250/media-gallery/notebook-dell-pro-pc14250nt-hd-fhd-scr-copilot-gray-gallery-2.psd?fmt=png-alpha&wid=570&hei=400',
-      lat7350: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/7455/media-gallery/touch/laptop-latitude-7455t-gray-wlan-gallery-4.psd?fmt=png-alpha&wid=570&hei=400',
-      lat5550: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc14250/media-gallery/notebook-dell-pro-pc14250-hd-fhd-gy-gallery-1.psd?fmt=png-alpha&wid=570&hei=400',
+      inspiron16: 'assets/dell-products/laptop-inspiron-16-5640t-ice-blue-fpr-gallery-2.png',
+      inspiron15: 'assets/dell-products/laptop-inspiron-16-5640-sentry-pdp-mg.png',
+      g15: 'assets/dell-products/notebook-db16250nt-fpr-bl-gallery-2.png',
+      vostro14: 'assets/dell-products/notebook-dell-pro-pc14250-hd-fhd-gy-gallery-1.png',
+      precision7680: 'assets/dell-products/notebook-dell-pro-pc14250-hd-fhd-bk-gallery-1.png',
+      precision5690: 'assets/dell-products/notebook-dell-pro-pc14250-hd-fhd-bk-gallery-2.png',
+      alienware_m18: 'assets/dell-products/laptop-dell-plus-db16255nt-ice-bl-fpr-gallery-5.png',
+      xps16: 'assets/dell-products/laptop-latitude-7455t-gray-wlan-gallery-4.png',
+      lat9450: 'assets/dell-products/notebook-latitude-14-9450-t-wlan-gray-gallery-1.png',
+      precision5690m: 'assets/dell-products/notebook-dell-pro-pc14250nt-hd-fhd-scr-copilot-gray-gallery-2.png',
+      lat7350: 'assets/dell-products/laptop-latitude-7455t-gray-wlan-gallery-4.png',
+      lat5550: 'assets/dell-products/notebook-dell-pro-pc14250-hd-fhd-gy-gallery-1.png',
     };
     const applyImgs = (arr) => arr.forEach(p => { if (imgMap[p.id]) p.image = imgMap[p.id]; });
     applyImgs(C.products);
