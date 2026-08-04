@@ -14,7 +14,8 @@
     const toggleOpts = document.querySelectorAll('[data-theme-set]');
     if (toggleOpts.length) {
       try {
-        const saved = localStorage.getItem('pa-theme') || 'default';
+        // No saved preference → Light (forest) is the default across the site.
+        const saved = localStorage.getItem('pa-theme') || 'forest';
         toggleOpts.forEach(b => {
           const active = b.getAttribute('data-theme-set') === saved;
           b.setAttribute('aria-checked', String(active));
@@ -27,7 +28,8 @@
           const theme = this.getAttribute('data-theme-set');
           if (theme === 'default') {
             document.documentElement.removeAttribute('data-theme');
-            try { localStorage.removeItem('pa-theme'); } catch(e) {}
+            // Persist the explicit dark choice so it survives the light-by-default rule.
+            try { localStorage.setItem('pa-theme', 'default'); } catch(e) {}
           } else {
             document.documentElement.setAttribute('data-theme', theme);
             try { localStorage.setItem('pa-theme', theme); } catch(e) {}

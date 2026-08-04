@@ -319,7 +319,8 @@
     { id: 'developer', ic: '💻', t: 'Developer', d: 'Engineer by trade', reco: { path: 'Advanced Roadmap', arts: ['Designing AI Agents', 'Evaluating LLM Output'], projs: ['Observatory'], packs: ['Coding Prompts'], tools: ['LangGraph', 'Claude', 'Vercel'] } },
     { id: 'founder', ic: '🚀', t: 'Founder', d: 'Building a company', reco: { path: 'Business + Production', arts: ['Newsletter to Product', 'Prompt Cost Control'], projs: ['JobPilot'], packs: ['Business Prompts'], tools: ['Claude', 'Vercel', 'Supabase'] } },
     { id: 'enterprise', ic: '🏢', t: 'Enterprise', d: 'Scale AI in an org', reco: { path: 'Enterprise Roadmap', arts: ['Multi-Agent Orchestration', 'Evaluating LLM Output'], projs: ['Observatory'], packs: ['Governance Prompts'], tools: ['LangGraph', 'Claude'] } },
-    { id: 'student', ic: '🎓', t: 'Student', d: 'Learning the craft', reco: { path: 'Beginner Roadmap', arts: ['CO-STAR Framework', 'Building an MCP Server'], projs: ['MeetingMind'], packs: ['Research Prompts'], tools: ['Gemini', 'Claude'] } }
+    { id: 'student', ic: '🎓', t: 'Student', d: 'Learning the craft', reco: { path: 'Beginner Roadmap', arts: ['CO-STAR Framework', 'Building an MCP Server'], projs: ['MeetingMind'], packs: ['Research Prompts'], tools: ['Gemini', 'Claude'] } },
+    { id: 'designer', ic: '🎨', t: 'Designer', d: 'Craft AI experiences', reco: { path: 'Agentic UX Roadmap', arts: ['Designing for Agentic Apps', 'It’s Advantage Designers', 'Why Enterprises Struggle with AI'], projs: ['Vigyan Setu', 'Design Intelligence Portal'], packs: ['Design & UX Prompts'], tools: ['Claude', 'Gemini', 'Cursor'] } }
   ];
 
   var STATS = [
@@ -381,6 +382,81 @@
   function $(s, r) { return (r || document).querySelector(s); }
   function $all(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
   function grad(a, b) { return 'background:linear-gradient(135deg,' + a + ',' + b + ');'; }
+
+  /* Category cover illustrations — abstract line-art in the portfolio's
+   * Intelligence-Terminal palette (sea-green / cream / amber), echoing the
+   * AI Lab cards. One meaningful motif per topic, layered over the dark cover. */
+  var COVER_ART = {
+    agents:
+      '<g stroke="#9bc4b9" stroke-width="1" opacity="0.22" fill="none"><line x1="200" y1="66" x2="122" y2="36"/><line x1="200" y1="66" x2="288" y2="34"/><line x1="200" y1="66" x2="130" y2="98"/><line x1="200" y1="66" x2="284" y2="100"/></g>' +
+      '<circle cx="200" cy="66" r="17" fill="#f2c14e" opacity="0.1" stroke="#f2c14e" stroke-width="1"/><circle cx="200" cy="66" r="5" fill="#f2c14e" opacity="0.5"/>' +
+      '<g fill="none" stroke="#9bc4b9" stroke-width="0.8" opacity="0.4"><rect x="104" y="28" width="36" height="16" rx="4"/><rect x="270" y="26" width="38" height="16" rx="4"/><rect x="112" y="90" width="36" height="16" rx="4"/><rect x="264" y="92" width="40" height="16" rx="4"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.28"><rect x="110" y="35" width="22" height="2" rx="1"/><rect x="277" y="33" width="24" height="2" rx="1"/><rect x="118" y="97" width="22" height="2" rx="1"/><rect x="271" y="99" width="26" height="2" rx="1"/></g>',
+    prompting:
+      '<rect x="66" y="24" width="268" height="84" rx="6" fill="#f5f1e6" opacity="0.03" stroke="#f5f1e6" stroke-width="0.6"/>' +
+      '<g fill="none" stroke="#f2c14e" stroke-width="0.8" opacity="0.45"><rect x="78" y="34" width="18" height="13" rx="3"/><rect x="100" y="34" width="18" height="13" rx="3"/><rect x="122" y="34" width="18" height="13" rx="3"/><rect x="144" y="34" width="18" height="13" rx="3"/><rect x="166" y="34" width="18" height="13" rx="3"/><rect x="188" y="34" width="18" height="13" rx="3"/></g>' +
+      '<g fill="#9bc4b9"><rect x="78" y="60" width="200" height="4" rx="2" opacity="0.2"/><rect x="78" y="72" width="170" height="4" rx="2" opacity="0.15"/><rect x="78" y="84" width="140" height="4" rx="2" opacity="0.1"/></g>' +
+      '<rect x="222" y="81" width="2" height="10" fill="#f2c14e" opacity="0.7"/>',
+    rag:
+      '<g fill="#f5f1e6" stroke="#f5f1e6" stroke-width="0.6"><rect x="54" y="40" width="56" height="66" rx="4" opacity="0.05"/><rect x="62" y="32" width="56" height="66" rx="4" opacity="0.06"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.2"><rect x="70" y="42" width="40" height="3" rx="1"/><rect x="70" y="50" width="36" height="3" rx="1"/><rect x="70" y="58" width="40" height="3" rx="1"/><rect x="70" y="66" width="30" height="3" rx="1"/></g>' +
+      '<path d="M126 62 H204" stroke="#f2c14e" stroke-width="1.2" opacity="0.45"/><path d="M198 56 L210 62 L198 68 Z" fill="#f2c14e" opacity="0.5"/>' +
+      '<circle cx="300" cy="62" r="24" fill="none" stroke="#9bc4b9" stroke-width="1" opacity="0.3"/><circle cx="300" cy="62" r="6" fill="#9bc4b9" opacity="0.4"/>' +
+      '<g fill="#f2c14e" opacity="0.35"><circle cx="150" cy="96" r="2"/><circle cx="168" cy="100" r="2"/><circle cx="186" cy="94" r="2"/><circle cx="204" cy="100" r="2"/></g>',
+    mcp:
+      '<rect x="168" y="44" width="64" height="46" rx="6" fill="#f2c14e" opacity="0.08" stroke="#f2c14e" stroke-width="1"/>' +
+      '<g fill="#f2c14e" opacity="0.4"><circle cx="182" cy="56" r="2.5"/><circle cx="182" cy="66" r="2.5"/><circle cx="182" cy="76" r="2.5"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.25"><rect x="192" y="53" width="28" height="3" rx="1"/><rect x="192" y="63" width="28" height="3" rx="1"/><rect x="192" y="73" width="20" height="3" rx="1"/></g>' +
+      '<g stroke="#9bc4b9" stroke-width="1" opacity="0.25" fill="none"><path d="M168 56 H120"/><path d="M168 76 H120"/><path d="M232 67 H286"/></g>' +
+      '<g fill="none" stroke="#9bc4b9" stroke-width="0.8" opacity="0.4"><rect x="92" y="44" width="28" height="18" rx="4"/><rect x="92" y="72" width="28" height="18" rx="4"/><rect x="286" y="56" width="30" height="22" rx="4"/></g>',
+    automation:
+      '<g fill="none" stroke="#9bc4b9" stroke-width="0.8" opacity="0.4"><rect x="52" y="52" width="52" height="30" rx="5"/><rect x="140" y="34" width="52" height="30" rx="5"/><rect x="140" y="72" width="52" height="30" rx="5"/><rect x="228" y="52" width="52" height="30" rx="5"/><rect x="316" y="52" width="40" height="30" rx="5"/></g>' +
+      '<g stroke="#f2c14e" stroke-width="1" opacity="0.4" fill="none"><path d="M104 63 Q122 63 140 49"/><path d="M104 71 Q122 71 140 87"/><path d="M192 49 Q210 49 228 63"/><path d="M192 87 Q210 87 228 71"/><path d="M280 67 H316"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.3"><circle cx="78" cy="67" r="3"/><circle cx="166" cy="49" r="3"/><circle cx="166" cy="87" r="3"/><circle cx="254" cy="67" r="3"/></g>',
+    coding:
+      '<rect x="70" y="24" width="260" height="86" rx="6" fill="#f5f1e6" opacity="0.03" stroke="#f5f1e6" stroke-width="0.6"/>' +
+      '<line x1="70" y1="40" x2="330" y2="40" stroke="#f5f1e6" stroke-width="0.5" opacity="0.12"/>' +
+      '<g fill="#9bc4b9" opacity="0.35"><circle cx="82" cy="32" r="2.5"/><circle cx="92" cy="32" r="2.5"/><circle cx="102" cy="32" r="2.5"/></g>' +
+      '<g fill="#9bc4b9"><rect x="84" y="52" width="30" height="3" rx="1" opacity="0.3"/><rect x="120" y="52" width="60" height="3" rx="1" opacity="0.15"/><rect x="96" y="62" width="80" height="3" rx="1" opacity="0.2"/><rect x="96" y="72" width="50" height="3" rx="1" opacity="0.15"/><rect x="84" y="82" width="40" height="3" rx="1" opacity="0.25"/><rect x="130" y="82" width="70" height="3" rx="1" opacity="0.12"/><rect x="96" y="92" width="60" height="3" rx="1" opacity="0.15"/></g>' +
+      '<path d="M300 52 q-9 0 -9 14 q0 14 9 14" stroke="#f2c14e" stroke-width="1.4" fill="none" opacity="0.45"/><path d="M316 52 q9 0 9 14 q0 14 -9 14" stroke="#f2c14e" stroke-width="1.4" fill="none" opacity="0.45"/>',
+    evals:
+      '<line x1="70" y1="100" x2="330" y2="100" stroke="#f5f1e6" stroke-width="0.6" opacity="0.15"/>' +
+      '<g fill="#9bc4b9"><rect x="86" y="76" width="26" height="24" opacity="0.2"/><rect x="124" y="60" width="26" height="40" opacity="0.28"/><rect x="162" y="46" width="26" height="54" opacity="0.35"/><rect x="200" y="66" width="26" height="34" opacity="0.22"/></g>' +
+      '<g fill="none" stroke="#f2c14e" stroke-width="1.2" opacity="0.5"><circle cx="286" cy="54" r="16"/><path d="M279 54 l5 6 l10 -13"/></g>',
+    llms:
+      '<g fill="none" stroke="#9bc4b9" stroke-width="0.9" opacity="0.35"><rect x="150" y="30" width="100" height="14" rx="4"/><rect x="150" y="50" width="100" height="14" rx="4"/><rect x="150" y="70" width="100" height="14" rx="4"/></g>' +
+      '<g stroke="#9bc4b9" stroke-width="0.7" opacity="0.2"><line x1="150" y1="44" x2="250" y2="50"/><line x1="150" y1="64" x2="250" y2="70"/></g>' +
+      '<circle cx="200" cy="57" r="4" fill="#f2c14e" opacity="0.5"/>' +
+      '<g fill="#f2c14e" opacity="0.4"><rect x="60" y="96" width="8" height="8" rx="1"/><rect x="72" y="96" width="8" height="8" rx="1"/><rect x="84" y="96" width="8" height="8" rx="1"/><rect x="96" y="96" width="8" height="8" rx="1"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.3"><rect x="300" y="96" width="8" height="8" rx="1"/><rect x="312" y="96" width="8" height="8" rx="1"/><rect x="324" y="96" width="8" height="8" rx="1"/></g>',
+    voice:
+      '<rect x="96" y="40" width="22" height="40" rx="11" fill="#9bc4b9" opacity="0.15" stroke="#9bc4b9" stroke-width="1"/>' +
+      '<path d="M88 66 a19 19 0 0 0 38 0" stroke="#9bc4b9" stroke-width="1" fill="none" opacity="0.3"/><line x1="107" y1="85" x2="107" y2="96" stroke="#9bc4b9" stroke-width="1" opacity="0.3"/>' +
+      '<g stroke="#f2c14e" stroke-width="2" opacity="0.45" stroke-linecap="round"><line x1="160" y1="58" x2="160" y2="74"/><line x1="176" y1="48" x2="176" y2="84"/><line x1="192" y1="40" x2="192" y2="92"/><line x1="208" y1="52" x2="208" y2="80"/><line x1="224" y1="44" x2="224" y2="88"/><line x1="240" y1="54" x2="240" y2="78"/><line x1="256" y1="60" x2="256" y2="72"/><line x1="272" y1="50" x2="272" y2="82"/><line x1="288" y1="58" x2="288" y2="74"/></g>',
+    computeruse:
+      '<rect x="76" y="26" width="248" height="82" rx="6" fill="#f5f1e6" opacity="0.03" stroke="#f5f1e6" stroke-width="0.6"/>' +
+      '<line x1="76" y1="42" x2="324" y2="42" stroke="#f5f1e6" stroke-width="0.5" opacity="0.12"/>' +
+      '<g fill="#9bc4b9" opacity="0.3"><circle cx="88" cy="34" r="2.5"/><circle cx="98" cy="34" r="2.5"/></g>' +
+      '<rect x="120" y="30" width="120" height="8" rx="4" fill="#9bc4b9" opacity="0.1"/>' +
+      '<rect x="92" y="56" width="70" height="40" rx="4" fill="#9bc4b9" opacity="0.08" stroke="#9bc4b9" stroke-width="0.5"/>' +
+      '<rect x="176" y="56" width="132" height="14" rx="3" fill="#9bc4b9" opacity="0.12"/>' +
+      '<rect x="176" y="76" width="90" height="20" rx="4" fill="#f2c14e" opacity="0.16" stroke="#f2c14e" stroke-width="0.7"/>' +
+      '<path d="M250 82 l0 20 l5 -6 l4 8 l3 -1 l-4 -8 l7 0 Z" fill="#f5f1e6" opacity="0.7"/>',
+    business:
+      '<line x1="70" y1="104" x2="330" y2="104" stroke="#f5f1e6" stroke-width="0.6" opacity="0.15"/><line x1="78" y1="24" x2="78" y2="104" stroke="#f5f1e6" stroke-width="0.6" opacity="0.12"/>' +
+      '<polyline points="86,90 130,78 174,84 218,58 262,64 306,36" fill="none" stroke="#f2c14e" stroke-width="1.6" opacity="0.5"/>' +
+      '<g fill="#9bc4b9" opacity="0.4"><circle cx="86" cy="90" r="3"/><circle cx="130" cy="78" r="3"/><circle cx="174" cy="84" r="3"/><circle cx="218" cy="58" r="3"/><circle cx="262" cy="64" r="3"/><circle cx="306" cy="36" r="3"/></g>' +
+      '<path d="M296 36 L306 36 L306 46" stroke="#f2c14e" stroke-width="1.4" fill="none" opacity="0.5"/>',
+    _default:
+      '<circle cx="200" cy="66" r="22" stroke="#9bc4b9" stroke-width="1" opacity="0.2" fill="none"/><circle cx="200" cy="66" r="6" fill="#f2c14e" opacity="0.4"/>' +
+      '<g stroke="#9bc4b9" stroke-width="1" opacity="0.25"><line x1="200" y1="66" x2="150" y2="40"/><line x1="200" y1="66" x2="250" y2="40"/><line x1="200" y1="66" x2="150" y2="92"/><line x1="200" y1="66" x2="250" y2="92"/></g>' +
+      '<g fill="#9bc4b9" opacity="0.35"><circle cx="150" cy="40" r="4"/><circle cx="250" cy="40" r="4"/><circle cx="150" cy="92" r="4"/><circle cx="250" cy="92" r="4"/></g>'
+  };
+  function coverArt(cat) {
+    var inner = COVER_ART[cat] || COVER_ART._default;
+    return '<svg class="bb-cover-svg" viewBox="0 0 400 132" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' + inner + '</svg>';
+  }
+
   function toolGlyph(name) {
     var c = TOOLCOLORS[name] || '#888';
     return '<span class="glyph" style="background:' + c + '">' + esc(name[0]) + '</span>';
@@ -422,7 +498,7 @@
       : '<a class="read bb-readbtn" data-id="' + a.id + '" href="#">READ →</a>';
     var shareAttr = a.ext ? ' data-url="' + esc(a.url) + '"' : '';
     return '<article class="bb-card" data-id="' + a.id + '" data-tags="' + esc((a.tags.join(' ') + ' ' + a.tools.join(' ') + ' ' + a.title + ' ' + a.cat).toLowerCase()) + '" data-cat="' + a.cat + '" data-diff="' + a.diff + '" data-mins="' + a.mins + '" data-tools="' + esc(a.tools.join(',')) + '">' +
-      '<div class="bb-card__cover" style="' + grad(a.grad[0], a.grad[1]) + '"><span class="badge">' + esc(a.cat) + '</span>' +
+      '<div class="bb-card__cover" style="' + grad(a.grad[0], a.grad[1]) + '">' + coverArt(a.cat) + '<span class="badge">' + esc(a.cat) + '</span>' +
         (a.ext ? '<span class="bb-card__src">✎ ' + esc(a.source || 'External') + '</span>' : '') + '</div>' +
       (pr > 0 ? '<div class="bb-progress"><i style="width:' + pr + '%"></i></div>' : '') +
       '<div class="bb-card__body">' +
@@ -766,6 +842,12 @@
       var p = PERSONAS.filter(function (x) { return x.id === btn.getAttribute('data-persona'); })[0];
       showReco(p);
     });
+    // Hero "Take the quiz" cue → scroll to the persona quiz
+    var cue = $('.bb-hero__scroll');
+    if (cue) cue.addEventListener('click', function () {
+      var target = $('.bb-quiz') || cards;
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   }
   function showReco(p) {
     var box = $('#bb-reco'); if (!box) return;
@@ -925,7 +1007,7 @@
 
     wrap.innerHTML =
       '<button class="bb-reader__back bb-backarticles">← All articles</button>' +
-      '<div class="bb-reader__hero" style="' + grad(a.grad[0], a.grad[1]) + '"><span class="badge">' + esc(a.cat) + '</span></div>' +
+      '<div class="bb-reader__hero" style="' + grad(a.grad[0], a.grad[1]) + '">' + coverArt(a.cat) + '<span class="badge">' + esc(a.cat) + '</span></div>' +
       '<h1>' + esc(a.title) + '</h1>' +
       '<div class="bb-reader__meta"><span class="diff">' + esc(a.diff) + '</span><span>' + a.mins + ' min read</span><span>Updated ' + esc(body.updated) + '</span>' +
         '<span class="sp">' +
