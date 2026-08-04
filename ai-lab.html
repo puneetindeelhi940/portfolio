@@ -24,121 +24,181 @@
 <script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
 <link rel="stylesheet" href="assets/site.css">
 <style>
-  .xgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; padding: 0 var(--pad-x) 16px; }
-  @media (max-width: 760px) { .xgrid { grid-template-columns: 1fr; } }
-  .xcard { display: flex; flex-direction: column; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); transition: border-color .15s, transform .15s; overflow: hidden; }
-  a.xcard:hover { border-color: var(--signal); transform: translateY(-2px); }
-  .xcard__illus { width: 100%; height: 176px; position: relative; overflow: hidden; border-bottom: 1px solid var(--rule); }
-  .xcard__shot { background: var(--bg); }
-  .xcard__img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
-  .xcard__body { padding: 26px; flex: 1; }
-  .xcard .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
-  .xcard .tag { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--signal); }
-  .xcard .status { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--faint); }
-  .xcard h3 { font-family: var(--f-sans); font-size: 21px; font-weight: 500; letter-spacing: -0.015em; color: var(--ink); margin: 0 0 8px; }
-  .xcard p { font-family: var(--f-sans); font-size: 14px; line-height: 1.6; color: var(--dim); margin: 0; }
-  .xcard .go { display: inline-block; margin-top: 18px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--signal); }
-  .concepts { padding: 0 var(--pad-x) 56px; }
-  .concepts .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-  @media (max-width: 760px) { .concepts .grid { grid-template-columns: 1fr; } }
-  .concepts .c { background: var(--bg); padding: 24px; }
-  .concepts .c .id { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; color: var(--faint); margin-bottom: 12px; }
-  .concepts .c h4 { font-family: var(--f-sans); font-size: 17px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
-  .concepts .c p { font-family: var(--f-sans); font-size: 13.5px; line-height: 1.55; color: var(--dim); margin: 0; }
+  /* ============================================================
+     AI LAB — research-lab redesign
+     Builds on assets/site.css tokens (--bg --surface --ink --dim
+     --faint --rule --signal --pad-x) so both themes work.
+     ============================================================ */
+  :root{
+    --m-prod:#3fbf6f; --m-proto:#e0a83a; --m-research:#4f9fe0;
+    --m-concept:#8b74e8; --m-exp:#e0707c;
+    --th-memory:#3fb79a; --th-agent:#4f9fe0; --th-personalization:#d59a2e;
+    --th-trust:#8b74e8; --th-hitl:#3fbf6f; --th-economics:#e0707c;
+    --lab-max: 1180px;
+  }
+  [data-theme="forest"]{
+    --m-prod:#1f8a4c; --m-proto:#a9791a; --m-research:#2f6fb0;
+    --m-concept:#6a52c8; --m-exp:#c04c58;
+    --th-memory:#158066; --th-agent:#2f6fb0; --th-personalization:#a9791a;
+    --th-trust:#6a52c8; --th-hitl:#1f8a4c; --th-economics:#c04c58;
+  }
 
-  /* ---------------------------------------------------------------
-     Card motion — ambient at rest, richer on hover.
-     Runs by default (works in in-app browsers / older webviews too);
-     disabled only when the device explicitly asks to reduce motion.
-  ---------------------------------------------------------------- */
-    /* keep the visual layers stacked so the sheen sits on top */
-    .xcard__illus > svg,
-    .xcard__illus > .xcard__img { position: relative; z-index: 1; }
+  .lab-shell{max-width:var(--lab-max);margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
+  @media(max-width:1100px){.lab-shell{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
+  @media(max-width:600px){.lab-shell{padding-left:22px;padding-right:22px;}}
 
-    /* 1 · Light sheen sweeping across every visual — bright, continuous */
-    .xcard__illus::after {
-      content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
-      background: linear-gradient(115deg,
-        transparent 24%, rgba(255,255,255,0.10) 42%, rgba(255,255,255,0.42) 50%,
-        rgba(255,255,255,0.10) 58%, transparent 76%);
-      background-size: 250% 100%; background-position: 150% 0;
-      mix-blend-mode: screen;
-      animation: xcard-sheen 4.2s linear infinite;
-    }
-    /* Band starts and ends fully off the visible area, so the loop reset is invisible. */
-    @keyframes xcard-sheen { 0% { background-position: 150% 0; } 100% { background-position: -60% 0; } }
+  .lab-mono{font-family:var(--f-mono);letter-spacing:0.14em;text-transform:uppercase;}
 
-    /* 2 · Whole-illustration "breathing" — a clearly visible depth pulse */
-    .xcard__illus > svg { transform-origin: 50% 50%; animation: xcard-breathe 6.5s ease-in-out infinite; }
-    @keyframes xcard-breathe { 0%, 100% { transform: scale(1) translateY(0); } 50% { transform: scale(1.075) translateY(-6px); } }
+  /* ---------------- HERO (manifesto) ---------------- */
+  .lab-hero{padding:52px 0 6px;}
+  .lab-eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--signal);display:flex;align-items:center;gap:11px;flex-wrap:wrap;}
+  .lab-eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 4px color-mix(in srgb,var(--signal) 22%,transparent);}
+  .lab-hero h1{font-size:clamp(34px,6.2vw,62px);font-weight:800;line-height:1.05;letter-spacing:-0.025em;margin:26px 0 0;max-width:16ch;text-wrap:balance;}
+  .lab-hero h1 em{font-style:normal;color:var(--signal);}
+  .lab-hero .sub{max-width:60ch;margin-top:22px;font-size:clamp(15px,2vw,18px);line-height:1.6;color:var(--dim);}
+  .lab-hero .sub b{color:var(--ink);font-weight:600;}
 
-    /* 3 · Dashed strokes flow — connection lines, orbit rings, routing lanes come alive */
-    .xcard__illus [stroke-dasharray] { animation: xcard-flow 2.2s linear infinite; }
-    @keyframes xcard-flow { to { stroke-dashoffset: -64; } }
+  .lab-why{margin-top:30px;max-width:66ch;border-left:2px solid var(--signal);padding:4px 0 4px 20px;}
+  .lab-why .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--signal);margin-bottom:9px;}
+  .lab-why p{margin:0;font-size:15.5px;line-height:1.62;color:var(--dim);}
+  .lab-why p em{font-style:normal;color:var(--ink);}
 
-    /* 4 · Ken Burns drift on the screenshot cards — perceptible, always moving */
-    .xcard__shot .xcard__img { transform-origin: 22% 20%; animation: xcard-ken 14s ease-in-out infinite alternate; }
-    @keyframes xcard-ken { from { transform: scale(1); } to { transform: scale(1.12); } }
+  /* ---------------- TELEMETRY strip ---------------- */
+  .lab-tele{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;margin-top:38px;}
+  @media(max-width:640px){.lab-tele{grid-template-columns:1fr 1fr;}}
+  .lab-tele>div{background:var(--surface);padding:20px 22px;position:relative;}
+  .lab-tele .num{font-family:var(--f-mono);font-size:30px;font-weight:700;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .lab-tele .lbl{font-family:var(--f-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);margin-top:9px;}
+  .lab-tele .lv{position:absolute;top:20px;right:20px;width:8px;height:8px;border-radius:50%;background:var(--m-prod);box-shadow:0 0 10px 1px color-mix(in srgb,var(--m-prod) 70%,transparent);}
 
-    /* De-sync so the cards don't pulse in lockstep */
-    .xgrid .xcard:nth-child(3n+2) .xcard__illus::after { animation-delay: -2.6s; }
-    .xgrid .xcard:nth-child(3n+3) .xcard__illus::after { animation-delay: -5.1s; }
-    .xgrid .xcard:nth-child(2n)   .xcard__illus > svg   { animation-delay: -3.4s; }
-    .xgrid .xcard:nth-child(3n+1) .xcard__illus [stroke-dasharray] { animation-delay: -1.2s; }
-    .xgrid .xcard:nth-child(3n+2) .xcard__illus [stroke-dasharray] { animation-delay: -2.4s; }
+  /* ---------------- CONTROLS: areas + category nav ---------------- */
+  .lab-controls{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:64px;}
+  .lab-controls .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px 0;}
+  .lab-controls .row + .row{border-top:1px solid var(--rule);}
+  .ctl-label{font-family:var(--f-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);margin-right:6px;}
+  .catlink{font-family:var(--f-mono);font-size:11.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--dim);text-decoration:none;padding:6px 12px;border-radius:7px;border:1px solid transparent;}
+  .catlink:hover{color:var(--ink);border-color:var(--rule);}
+  .fchip{font-family:var(--f-mono);font-size:11px;letter-spacing:0.03em;color:var(--dim);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:7px 13px 7px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:border-color .15s,color .15s,background .15s;}
+  .fchip .fd{width:8px;height:8px;border-radius:50%;background:var(--fdc,var(--faint));}
+  .fchip:hover{color:var(--ink);border-color:var(--faint);}
+  .fchip[aria-pressed="true"]{color:var(--ink);border-color:var(--fdc,var(--signal));background:color-mix(in srgb,var(--fdc,var(--signal)) 12%,transparent);}
+  .fchip--all[aria-pressed="true"]{border-color:var(--signal);background:color-mix(in srgb,var(--signal) 14%,transparent);}
 
-    /* Hover — everything leans in */
-    a.xcard:hover .xcard__illus::after { animation-duration: 2.4s; }
-    a.xcard:hover .xcard__illus > svg { animation-duration: 4.5s; }
-    a.xcard:hover .xcard__illus [stroke-dasharray] { animation-duration: 1.3s; }
-    a.xcard:hover .xcard__shot .xcard__img { animation-duration: 7s; }
-    a.xcard .xcard__illus > svg,
-    a.xcard .xcard__shot .xcard__img { transition: filter .25s ease; }
-    a.xcard:hover .xcard__illus > svg { filter: saturate(1.18) brightness(1.08); }
-    a.xcard:hover .xcard__shot .xcard__img { filter: saturate(1.12) brightness(1.05); }
+  /* ---------------- SHARED card atoms ---------------- */
+  .cat{padding:60px 0 8px;}
+  .cat-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px;}
+  .cat-head .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.12em;color:var(--faint);}
+  .cat-head h2{font-size:clamp(23px,3.2vw,32px);font-weight:760;letter-spacing:-0.02em;margin:0;}
+  .cat-head .meta{font-family:var(--f-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);}
+  .cat-sub{color:var(--dim);max-width:66ch;font-size:15px;margin:0 0 30px;}
 
-    /* --- Tailored flourishes on flagship cards --- */
+  .mbadge{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);white-space:nowrap;}
+  .mbadge .md{width:9px;height:9px;border-radius:50%;}
+  .m-prod .md{background:var(--m-prod);box-shadow:0 0 8px 0 color-mix(in srgb,var(--m-prod) 65%,transparent);}
+  .m-proto .md{background:var(--m-proto);} .m-research .md{background:var(--m-research);}
+  .m-concept .md{background:var(--m-concept);} .m-exp .md{background:var(--m-exp);}
 
-    /* News Terminal: pulsing LIVE dot + a refresh scan down the brief list */
-    .illus--terminal .t-live { animation: t-live 1.6s ease-in-out infinite; }
-    @keyframes t-live { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
-    .illus--terminal .t-scan { animation: t-scan 4.4s ease-in-out infinite; }
-    @keyframes t-scan {
-      0% { transform: translateY(0); opacity: 0; }
-      10% { opacity: 0.85; }
-      48% { transform: translateY(64px); opacity: 0.85; }
-      60%, 100% { transform: translateY(64px); opacity: 0; }
-    }
-    a.xcard:hover .illus--terminal .t-scan { animation-duration: 2.3s; }
+  .tchip{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10px;letter-spacing:0.06em;color:var(--dim);border:1px solid var(--rule);border-radius:999px;padding:4px 9px;}
+  .tchip .td{width:7px;height:7px;border-radius:50%;}
 
-    /* Portfolio Intelligence Lab: "thinking" pulses from the lens */
-    .illus--gpt .g-pulse { transform-box: fill-box; transform-origin: center; animation: g-pulse 3.2s ease-out infinite; }
-    .illus--gpt .g-pulse.d2 { animation-delay: 1.6s; }
-    @keyframes g-pulse { 0% { transform: scale(0.32); opacity: 0.5; } 80% { opacity: 0; } 100% { transform: scale(1.75); opacity: 0; } }
-    a.xcard:hover .illus--gpt .g-pulse { animation-duration: 2s; }
+  /* stripe helper */
+  .stripe{position:relative;}
+  .stripe::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;z-index:5;}
+  .s-prod::before{background:var(--m-prod);box-shadow:0 0 16px 1px color-mix(in srgb,var(--m-prod) 55%,transparent);}
+  .s-proto::before{background:var(--m-proto);}
+  .s-research::before{background:var(--m-research);}
+  .s-concept::before{background:var(--m-concept);}
+  .s-exp::before{background:var(--m-exp);}
 
-    /* Dark-pattern audit: scan sweep + trust score filling */
-    .illus--audit .a-scan { animation: a-scan 3.6s ease-in-out infinite; }
-    @keyframes a-scan {
-      0% { transform: translateY(0); opacity: 0; }
-      10% { opacity: 0.55; }
-      88% { opacity: 0.55; }
-      100% { transform: translateY(74px); opacity: 0; }
-    }
-    .illus--audit .a-score { transform-box: fill-box; transform-origin: left center; animation: a-score 3.6s ease-in-out infinite; }
-    @keyframes a-score { 0%, 12% { transform: scaleX(0.15); } 56%, 100% { transform: scaleX(1); } }
-    a.xcard:hover .illus--audit .a-scan,
-    a.xcard:hover .illus--audit .a-score { animation-duration: 1.9s; }
+  .filt-hide{display:none !important;}
 
-  /* Respect an explicit reduced-motion preference: stop all card motion. */
-  @media (prefers-reduced-motion: reduce) {
-    .xcard__illus > svg,
-    .xcard__illus [stroke-dasharray],
-    .xcard__shot .xcard__img,
-    .illus--terminal .t-live, .illus--terminal .t-scan,
-    .illus--gpt .g-pulse,
-    .illus--audit .a-scan, .illus--audit .a-score { animation: none !important; }
-    .xcard__illus::after { display: none !important; }
+  /* base illustration mechanics (restored from original) */
+  .xcard__illus{position:relative;width:100%;overflow:hidden;border-bottom:1px solid var(--rule);}
+  .xcard__illus>svg{position:relative;z-index:1;display:block;}
+  .xcard__shot{background:var(--bg);}
+  .xcard__img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block;}
+
+  /* ---------------- PLAYGROUNDS (big illustration cards) ---------------- */
+  .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  @media(max-width:820px){.pgrid{grid-template-columns:1fr;}}
+  .pcard{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:12px;background:var(--surface);overflow:hidden;text-decoration:none;transition:border-color .16s,transform .16s,box-shadow .16s;}
+  .pcard:hover{border-color:var(--signal);transform:translateY(-3px);box-shadow:0 22px 44px -26px rgba(0,0,0,.6);}
+  .pcard .xcard__illus{height:172px;}
+  .pcard__body{padding:22px 24px 24px;flex:1;display:flex;flex-direction:column;}
+  .pcard__top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px;}
+  .pcard .plabel{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);}
+  .pcard h3{font-family:var(--f-sans);font-size:20px;font-weight:640;line-height:1.22;letter-spacing:-0.02em;color:var(--ink);margin:0 0 11px;text-wrap:balance;}
+  .pcard .pcopy{font-size:13.8px;line-height:1.58;color:var(--dim);margin:0;}
+  .pcard .pcopy b{color:var(--ink);font-weight:600;}
+  .pcard__foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;gap:12px;}
+  .pcard .go{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);}
+
+  /* ---------------- EXPERIMENTS (compact instrument cards) ---------------- */
+  .egrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:960px){.egrid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:640px){.egrid{grid-template-columns:1fr;}}
+  .ecard{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:11px;background:var(--surface);overflow:hidden;text-decoration:none;transition:border-color .16s,transform .16s;}
+  .ecard:hover{border-color:var(--m-proto);transform:translateY(-3px);}
+  .ecard .xcard__illus{height:112px;}
+  .ecard__body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:0;}
+  .ecard__top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;}
+  .ecard .plabel{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--m-proto);}
+  .ecard h3{font-size:16px;font-weight:640;line-height:1.24;letter-spacing:-0.015em;color:var(--ink);margin:0 0 12px;text-wrap:balance;}
+  .ecard .line{font-size:12.5px;line-height:1.5;color:var(--dim);margin:0;padding-left:14px;position:relative;}
+  .ecard .line + .line{margin-top:7px;}
+  .ecard .line::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:1px;background:var(--m-proto);}
+  .ecard .line b{color:var(--ink);font-weight:600;font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;display:block;margin-bottom:2px;}
+  .ecard__foot{margin-top:15px;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .ecard .go{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--m-proto);}
+
+  /* ---------------- RESEARCH (editorial entries) ---------------- */
+  .rlist{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule);border-radius:12px;overflow:hidden;}
+  .rentry{display:grid;grid-template-columns:minmax(0,1fr) 1.35fr;gap:0;background:var(--surface);text-decoration:none;transition:background .16s;}
+  .rentry + .rentry{border-top:1px solid var(--rule);}
+  .rentry:hover{background:color-mix(in srgb,var(--signal) 6%,var(--surface));}
+  @media(max-width:820px){.rentry{grid-template-columns:1fr;}}
+  .rentry__l{padding:26px 26px 26px 28px;border-right:1px solid var(--rule);}
+  @media(max-width:820px){.rentry__l{border-right:0;border-bottom:1px solid var(--rule);}}
+  .rentry__num{font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;color:var(--faint);margin-bottom:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  .rentry h3{font-size:20px;font-weight:640;line-height:1.24;letter-spacing:-0.02em;color:var(--ink);margin:0 0 14px;text-wrap:balance;}
+  .rentry__meta{display:flex;gap:8px;flex-wrap:wrap;}
+  .rentry .go{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);margin-top:18px;display:inline-block;}
+  .rentry__r{padding:22px 26px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);}
+  @media(max-width:520px){.rentry__r{grid-template-columns:1fr;}}
+  .rentry__r .cell{background:var(--surface);padding:12px 4px 12px 0;}
+  .rentry__r .k{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);margin-bottom:6px;}
+  .rentry__r .v{font-size:13px;line-height:1.5;color:var(--dim);}
+
+  /* ---------------- FRAMEWORKS (IP cards) ---------------- */
+  .fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.fgrid{grid-template-columns:1fr;}}
+  .fcard{border:1px solid var(--rule);border-left:3px solid var(--signal);border-radius:0 11px 11px 0;background:var(--surface);padding:20px 20px 20px 21px;display:flex;flex-direction:column;}
+  .fcard .id{font-family:var(--f-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);margin-bottom:11px;display:flex;justify-content:space-between;align-items:center;gap:8px;}
+  .fcard h4{font-size:17px;font-weight:680;letter-spacing:-0.015em;color:var(--ink);margin:0 0 9px;line-height:1.2;}
+  .fcard p{font-size:13.2px;line-height:1.55;color:var(--dim);margin:0;flex:1;}
+  .fcard .by{font-family:var(--f-mono);font-size:10px;letter-spacing:0.06em;color:var(--signal);margin-top:16px;}
+
+  /* ---------------- CONCEPTS (dim dashed) ---------------- */
+  .ccgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:820px){.ccgrid{grid-template-columns:1fr;}}
+  .ccard{border:1px dashed var(--rule);border-radius:11px;background:color-mix(in srgb,var(--surface) 55%,transparent);padding:20px;opacity:.9;}
+  .ccard .id{font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:var(--faint);}
+  .ccard h4{font-size:16px;font-weight:640;letter-spacing:-0.015em;color:var(--ink);margin:0 0 9px;line-height:1.2;}
+  .ccard p{font-size:13px;line-height:1.55;color:var(--dim);margin:0;}
+
+  /* ---------------- FOOTER ---------------- */
+  .lab-foot{margin-top:78px;border-top:1px solid var(--rule);padding:66px 0 74px;text-align:center;background:radial-gradient(120% 150% at 50% 0%,color-mix(in srgb,var(--signal) 8%,transparent),transparent 55%);}
+  .lab-foot .close{font-size:clamp(21px,3.6vw,34px);font-weight:760;letter-spacing:-0.025em;line-height:1.16;max-width:20ch;margin:0 auto 20px;text-wrap:balance;}
+  .lab-foot .close em{font-style:normal;color:var(--signal);}
+  .lab-foot .sig{font-family:var(--f-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);}
+  .lab-foot .sig a{color:var(--dim);text-decoration:none;}
+  .lab-foot .sig a:hover{color:var(--signal);}
+
+  @media (prefers-reduced-motion: no-preference){
+    .lab-tele .lv{animation:labpulse 2.6s ease-in-out infinite;}
+    .s-prod::before{animation:labpulse 2.8s ease-in-out infinite;}
+    @keyframes labpulse{0%,100%{opacity:1;}50%{opacity:.5;}}
   }
 </style>
   <link rel="stylesheet" href="assets/typography.css">
@@ -171,28 +231,53 @@
 </header>
 
 <!-- HERO -->
-<section class="hero" data-screen-label="hero" style="display:block; padding-bottom: 32px;">
-  <div class="flex gap-12" style="align-items: center; margin-bottom: 28px;">
-    <span class="faint mono" style="font-size: 11px; letter-spacing: 0.18em;">AI LAB · WORKING PROTOTYPES · LIVE TOOLS</span>
+<section class="lab-hero lab-shell" data-screen-label="hero">
+  <div class="lab-eyebrow"><span class="dot"></span><span>AI Lab &middot; Puneet Arora &middot; AI Product &amp; UX Research</span></div>
+  <h1>This is where I research the <em>future of AI products</em>.</h1>
+  <p class="sub">Not a portfolio — a working lab. Live tools, running experiments, published frameworks, and the open questions behind them. <b>Every card tells you what I was exploring, what I bet, and what I learned</b> — not just what I built.</p>
+  <div class="lab-why">
+    <div class="k">Why I build these</div>
+    <p>I don't build these to prove I can use AI. I build them to answer questions that keep me up — <em>how memory should feel, when an agent should ask versus act, what honest uncertainty looks like</em>. Each one is me thinking out loud, in public.</p>
   </div>
-  <h1 class="hero__big" style="max-width: 18ch;">The <em>AI Lab</em>.</h1>
-  <p class="hero__sub" style="max-width: 60ch;">
-    Every AI thing I've built and shipped, in one place — live tools, an interactive economy
-    simulator, custom GPTs, a public-AI UX case, and a directory of Claude skills. Real links, no slideware.
-  </p>
+  <div class="lab-tele" role="list" aria-label="Lab at a glance">
+    <div role="listitem"><span class="lv"></span><div class="num">6</div><div class="lbl">In production</div></div>
+    <div role="listitem"><div class="num">3</div><div class="lbl">Prototypes</div></div>
+    <div role="listitem"><div class="num">5</div><div class="lbl">Frameworks</div></div>
+    <div role="listitem"><div class="num">6</div><div class="lbl">Areas of exploration</div></div>
+  </div>
 </section>
 
-<!-- LIVE & WORKING -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 01</span>
-    <span class="shead__title">LIVE &amp; WORKING</span>
-    <span class="shead__sub">// tools you can open right now</span>
+<!-- CONTROLS -->
+<div class="lab-controls" data-screen-label="controls">
+  <div class="lab-shell">
+    <div class="row">
+      <span class="ctl-label">Jump to</span>
+      <a class="catlink" href="#playgrounds">Playgrounds</a>
+      <a class="catlink" href="#experiments">Experiments</a>
+      <a class="catlink" href="#research">Research</a>
+      <a class="catlink" href="#frameworks">Frameworks</a>
+      <a class="catlink" href="#concepts">Concepts</a>
+    </div>
+    <div class="row" role="group" aria-label="Filter by area of exploration">
+      <span class="ctl-label">Explore by area</span>
+      <button type="button" class="fchip fchip--all" data-filter="all" aria-pressed="true">All work</button>
+      <button type="button" class="fchip" data-filter="memory" aria-pressed="false" style="--fdc:var(--th-memory)"><span class="fd"></span>Memory UX</button>
+        <button type="button" class="fchip" data-filter="agent" aria-pressed="false" style="--fdc:var(--th-agent)"><span class="fd"></span>Agent UX</button>
+        <button type="button" class="fchip" data-filter="personalization" aria-pressed="false" style="--fdc:var(--th-personalization)"><span class="fd"></span>Personalization</button>
+        <button type="button" class="fchip" data-filter="trust" aria-pressed="false" style="--fdc:var(--th-trust)"><span class="fd"></span>AI Trust</button>
+        <button type="button" class="fchip" data-filter="hitl" aria-pressed="false" style="--fdc:var(--th-hitl)"><span class="fd"></span>Human-in-loop</button>
+        <button type="button" class="fchip" data-filter="economics" aria-pressed="false" style="--fdc:var(--th-economics)"><span class="fd"></span>AI Economics</button>
+    </div>
   </div>
 </div>
-<div class="xgrid">
-  <a href="puneets-news-terminal.html" class="xcard">
-    <div class="xcard__illus illus--terminal" style="background:linear-gradient(135deg,#0d2b28,#123a36,#0a201e);">
+
+<!-- PLAYGROUNDS -->
+<section class="cat lab-shell" id="playgrounds" data-cat>
+  <div class="cat-head"><span class="n">01</span><h2>Playgrounds</h2><span class="meta">Live &middot; open right now</span></div>
+  <p class="cat-sub">Shipped tools you can use this second. Each one is a hypothesis about AI-UX, tested in production.</p>
+  <div class="pgrid">
+      <a href="puneets-news-terminal.html" class="pcard stripe s-prod filterable" data-area="memory personalization">
+        <div class="xcard__illus illus--terminal" style="background:linear-gradient(135deg,#0d2b28,#123a36,#0a201e);">
       <svg viewBox="0 0 600 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <rect x="0" y="0" width="600" height="28" fill="#0a201e" opacity="0.6"/>
         <circle cx="20" cy="14" r="3" fill="#9bc4b9" opacity="0.3"/>
@@ -269,33 +354,15 @@
         <circle class="t-live" cx="70" cy="39.5" r="2.2" fill="#f2c14e" opacity="0.5"/>
       </svg>
     </div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">AI NEWS TERMINAL</span><span class="status">LIVE · 60+ SOURCES</span></div>
-      <h3>AI News Terminal</h3>
-      <p>An AI-powered news aggregator with a behavioural signal engine that learns from your browsing habits — tracking category visits, article clicks, and search patterns over a 30-day rolling window with decay-weighted scoring and time-of-day heuristics. Aggregates 40+ sources across 12 categories, with cross-category intelligent search, always-fresh content on every visit, and clickable source ticker. Zero dependencies — pure vanilla JS, no frameworks.</p>
-      <span class="go">OPEN AI NEWS TERMINAL →</span>
-    </div>
-  </a>
-  <a href="opportunity-simulator.html" class="xcard">
-    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/opportunity-simulator.png" alt="AI Opportunity Simulator screenshot" loading="lazy"></div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">AI OPPORTUNITY SIMULATOR</span><span class="status">PROTOTYPE · INTERACTIVE</span></div>
-      <h3>AI Opportunity Simulator</h3>
-      <p>A living digital twin of the global economy built for executive decision-making — AI-scored country rankings, four-order-deep geopolitical shock simulations, and real-time strategy extraction from world events. Every module navigable and interactive; turns macroeconomic signals into actionable moves.</p>
-      <span class="go">OPEN THE SIMULATOR →</span>
-    </div>
-  </a>
-  <a href="situation-simulator.html" class="xcard">
-    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/situation-simulator.png" alt="Orbital Situation Room screenshot" loading="lazy"></div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">SITUATION SIMULATOR</span><span class="status">PROTOTYPE · 3D GLOBE</span></div>
-      <h3>Orbital Situation Room</h3>
-      <p>A WebGL-powered 3D globe rendering satellites, ground stations, and network links as a real-time defense operations interface. AI-driven collision simulations for orbital debris, constellation filtering, signal telemetry selection, and live failure-risk scoring — all interactive, all rendered client-side.</p>
-      <span class="go">ENTER THE SITUATION ROOM →</span>
-    </div>
-  </a>
-  <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="xcard">
-    <div class="xcard__illus" style="background:linear-gradient(135deg,#0a1628,#101d35,#162a4a);">
+        <div class="pcard__body">
+          <div class="pcard__top"><span class="plabel">AI News Terminal</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
+          <h3>How should an AI remember you — without feeling like surveillance?</h3>
+          <p class="pcopy">A behavioural signal engine learns from a 30-day rolling window with decay-weighted scoring — recency over totality, across 60+ sources. <b>What I learned: forgetting is a feature, and memory only earns trust when it's visible and time-bound.</b></p>
+          <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-memory)"></span>Memory UX</span><span class="go">Open the terminal &rarr;</span></div>
+        </div>
+      </a>
+      <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="pcard stripe s-prod filterable" data-area="agent">
+        <div class="xcard__illus" style="background:linear-gradient(135deg,#0a1628,#101d35,#162a4a);">
       <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <ellipse cx="90" cy="85" rx="48" ry="52" stroke="#64b5f6" stroke-width="1" opacity="0.18"/>
         <path d="M65 65 Q75 45 95 42 Q115 40 120 55" stroke="#64b5f6" stroke-width="0.8" opacity="0.22" fill="none"/>
@@ -341,56 +408,15 @@
         <circle cx="365" cy="40" r="1.5" fill="#64b5f6" opacity="0.15"/>
       </svg>
     </div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">DESIGN INTELLIGENCE PORTAL</span><span class="status">LIVE · VIBE-CODED</span></div>
-      <h3>Design Intelligence Portal</h3>
-      <p>A live AI-prompt engineering hub for design organisations — CO-STAR, RTF, and Chain-of-Thought frameworks operationalised as ready-to-use tools, not theory. Built with vibe coding; shipped as a working tool that design teams use daily for structured AI interactions.</p>
-      <span class="go">VISIT pa9401.vercel.app →</span>
-    </div>
-  </a>
-  <a href="vigyan-setu.html" class="xcard">
-    <div class="xcard__illus" style="background:linear-gradient(135deg,#061812,#0b2419,#103024);">
-      <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
-        <rect x="30" y="60" width="80" height="10" rx="2" fill="#1f7a5a" opacity="0.3"/>
-        <rect x="28" y="72" width="84" height="10" rx="2" fill="#1f7a5a" opacity="0.25"/>
-        <rect x="32" y="84" width="78" height="10" rx="2" fill="#1f7a5a" opacity="0.2"/>
-        <rect x="30" y="96" width="82" height="10" rx="2" fill="#1f7a5a" opacity="0.15"/>
-        <path d="M45 58 Q70 48 70 30 L70 58" stroke="#6fe1b8" stroke-width="0.8" opacity="0.25" fill="none"/>
-        <path d="M95 58 Q70 48 70 30 L70 58" stroke="#6fe1b8" stroke-width="0.8" opacity="0.25" fill="none"/>
-        <circle cx="200" cy="90" r="50" stroke="#2fa07a" stroke-width="0.8" opacity="0.15"/>
-        <circle cx="200" cy="90" r="38" stroke="#2fa07a" stroke-width="0.6" opacity="0.12"/>
-        <path d="M200 52 L230 115 L170 115Z" stroke="#6fe1b8" stroke-width="0.7" opacity="0.18" fill="none"/>
-        <path d="M200 128 L170 65 L230 65Z" stroke="#6fe1b8" stroke-width="0.7" opacity="0.18" fill="none"/>
-        <circle cx="200" cy="90" r="3" fill="#6fe1b8" opacity="0.3"/>
-        <rect x="290" y="50" width="55" height="55" rx="6" stroke="#1f7a5a" stroke-width="0.8" opacity="0.2"/>
-        <rect x="300" y="60" width="35" height="35" rx="3" stroke="#6fe1b8" stroke-width="0.6" opacity="0.15"/>
-        <text x="317" y="82" font-family="Inter,system-ui,sans-serif" font-size="10" fill="#6fe1b8" opacity="0.3" text-anchor="middle" font-weight="700">VS</text>
-        <text x="70" y="130" font-family="Inter,system-ui,sans-serif" font-size="7" fill="#6fe1b8" opacity="0.2" font-weight="500" letter-spacing="0.1em">DISCOVER</text>
-        <text x="160" y="130" font-family="Inter,system-ui,sans-serif" font-size="7" fill="#6fe1b8" opacity="0.2" font-weight="500" letter-spacing="0.1em">DEFINE</text>
-        <text x="245" y="130" font-family="Inter,system-ui,sans-serif" font-size="7" fill="#6fe1b8" opacity="0.2" font-weight="500" letter-spacing="0.1em">DEVELOP</text>
-        <text x="330" y="130" font-family="Inter,system-ui,sans-serif" font-size="7" fill="#6fe1b8" opacity="0.2" font-weight="500" letter-spacing="0.1em">DELIVER</text>
-        <line x1="60" y1="140" x2="370" y2="140" stroke="#1f7a5a" stroke-width="0.5" opacity="0.2"/>
-        <circle cx="70" cy="140" r="3" fill="#6fe1b8" opacity="0.2"/>
-        <circle cx="170" cy="140" r="3" fill="#6fe1b8" opacity="0.2"/>
-        <circle cx="260" cy="140" r="3" fill="#6fe1b8" opacity="0.2"/>
-        <circle cx="350" cy="140" r="3" fill="#6fe1b8" opacity="0.2"/>
-        <rect x="40" y="155" width="320" height="25" rx="12" stroke="#1f7a5a" stroke-width="0.6" opacity="0.15" fill="none"/>
-        <rect x="55" y="162" width="50" height="6" rx="3" fill="#6fe1b8" opacity="0.08"/>
-        <rect x="115" y="162" width="40" height="6" rx="3" fill="#6fe1b8" opacity="0.08"/>
-        <rect x="165" y="162" width="55" height="6" rx="3" fill="#6fe1b8" opacity="0.08"/>
-        <rect x="230" y="162" width="45" height="6" rx="3" fill="#6fe1b8" opacity="0.08"/>
-        <rect x="285" y="162" width="50" height="6" rx="3" fill="#6fe1b8" opacity="0.08"/>
-      </svg>
-    </div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">VIGYAN SETU</span><span class="status">CASE STUDY · 30 METHODS · INTERACTIVE</span></div>
-      <h3>Vigyan Setu : India AI Impact Summit UX Case Study</h3>
-      <p>A 70-slide Double Diamond case study for a speculative event OS, born from the documented failures of the India AI Impact Summit (Feb 2026, Bharat Mandapam). 30 methods, 10 fault lines, 5 personas, an interactive phone prototype, and scroll-triggered motion design. The full process from Discover to Deliver.</p>
-      <span class="go">READ THE CASE STUDY →</span>
-    </div>
-  </a>
-  <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="xcard">
-    <div class="xcard__illus illus--gpt" style="background:linear-gradient(135deg,#10a37f,#1a7f64,#0d6b4f);">
+        <div class="pcard__body">
+          <div class="pcard__top"><span class="plabel">Design Intelligence Portal</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
+          <h3>Can prompt frameworks become tools a design team uses every day?</h3>
+          <p class="pcopy">CO-STAR, RTF and Chain-of-Thought operationalised as ready-to-use instruments, not slideware. <b>What I learned: teams adopt AI when the scaffolding lives in the UI — structure beats cleverness.</b></p>
+          <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Visit pa9401.vercel.app &rarr;</span></div>
+        </div>
+      </a>
+      <a href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" class="pcard stripe s-prod filterable" data-area="agent trust">
+        <div class="xcard__illus illus--gpt" style="background:linear-gradient(135deg,#10a37f,#1a7f64,#0d6b4f);">
       <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <circle cx="170" cy="82" r="52" stroke="#fff" stroke-width="1.8" opacity="0.14"/>
         <circle cx="170" cy="82" r="40" stroke="#fff" stroke-width="1.2" opacity="0.1"/>
@@ -427,24 +453,24 @@
         <circle class="g-pulse d2" cx="170" cy="82" r="26" fill="none" stroke="#fff" stroke-width="1.5" opacity="0"/>
       </svg>
     </div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">CUSTOM GPT</span><span class="status">LIVE</span></div>
-      <h3>Portfolio Intelligence Lab</h3>
-      <p>A custom GPT encoding 19 years of strategic design thinking — it reasons about work, decisions, and impact rather than just evaluating visuals. An AI-powered portfolio reviewer that demonstrates how domain expertise can be embedded into conversational AI for expert-level critique.</p>
-      <span class="go">OPEN IN CHATGPT →</span>
-    </div>
-  </a>
-  <a href="https://aiinflationmonitor.netlify.app/" target="_blank" rel="noopener" class="xcard">
-    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/ai-inflation-observatory.png" alt="AI Inflation Observatory — dark premium dashboard showing composite index at 3.8%, $320B global AI capex, and 7-category inflation breakdown" loading="lazy"></div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">AI INFLATION OBSERVATORY</span><span class="status">LIVE · AUTO-REFRESHED · 29 COUNTRIES</span></div>
-      <h3>AI Inflation Observatory</h3>
-      <p>Nobody was tracking how AI is quietly making everything more expensive. So I built the index. A composite score from 7 weighted categories — hardware, cloud, subscriptions, electricity, consumer electronics, enterprise software, and infrastructure — across 29 countries. Persona-driven insights for CTOs, investors, consumers, and policy makers. Interactive world map, causal chain explorer, personal inflation calculator, and a pipeline that pulls live data from World Bank, FRED, IEA, and company filings every 24 hours. The question isn't whether AI is inflationary — it's where it hits you first.</p>
-      <span class="go">EXPLORE THE OBSERVATORY →</span>
-    </div>
-  </a>
-  <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="xcard">
-    <div class="xcard__illus illus--audit" style="background:linear-gradient(135deg,#3b0a1a,#5c1630,#7a1e3e);">
+        <div class="pcard__body">
+          <div class="pcard__top"><span class="plabel">Portfolio Intelligence Lab</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
+          <h3>What happens when you embed 19 years of design judgment into an agent?</h3>
+          <p class="pcopy">A custom GPT that reasons about decisions and impact, not just visuals. <b>What I learned: domain expertise, made explicit and evaluable, is what turns a chatbot into a credible critic.</b></p>
+          <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Open in ChatGPT &rarr;</span></div>
+        </div>
+      </a>
+      <a href="https://aiinflationmonitor.netlify.app/" target="_blank" rel="noopener" class="pcard stripe s-prod filterable" data-area="economics">
+        <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/ai-inflation-observatory.png" alt="AI Inflation Observatory — dark premium dashboard showing composite index at 3.8%, $320B global AI capex, and 7-category inflation breakdown" loading="lazy"></div>
+        <div class="pcard__body">
+          <div class="pcard__top"><span class="plabel">AI Inflation Observatory</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
+          <h3>Where is AI quietly making everything more expensive?</h3>
+          <p class="pcopy">A composite index across 7 weighted categories and 29 countries, auto-refreshed every 24 hours from World Bank, FRED and IEA. <b>What I learned: the right question — 'where does it hit you first?' — matters more than the dashboard.</b></p>
+          <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-economics)"></span>AI Economics</span><span class="go">Explore the observatory &rarr;</span></div>
+        </div>
+      </a>
+      <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="pcard stripe s-prod filterable" data-area="trust">
+        <div class="xcard__illus illus--audit" style="background:linear-gradient(135deg,#3b0a1a,#5c1630,#7a1e3e);">
       <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <path d="M75 40 L110 52 L110 90 Q110 120 75 135 Q40 120 40 90 L40 52Z" stroke="#f8c4d0" stroke-width="1.2" opacity="0.2" fill="none"/>
         <path d="M75 55 L100 64 L100 88 Q100 108 75 118 Q50 108 50 88 L50 64Z" stroke="#f8c4d0" stroke-width="0.7" opacity="0.14" fill="none"/>
@@ -488,15 +514,83 @@
         <rect class="a-scan" x="150" y="30" width="110" height="2" rx="1" fill="#68d391" opacity="0"/>
       </svg>
     </div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">CUSTOM GPT</span><span class="status">LIVE</span></div>
-      <h3>AI-Powered UX Trust &amp; Dark-Pattern Intelligence</h3>
-      <p>A custom GPT that runs AI-driven audits on any interface for trust erosion and dark patterns — distinguishing ethical nudges from manipulative design. Paste a screenshot and get a scored trust audit with actionable findings. Ethical guardrails baked into the model.</p>
-      <span class="go">OPEN IN CHATGPT →</span>
+        <div class="pcard__body">
+          <div class="pcard__top"><span class="plabel">UX Trust & Dark-Pattern Intelligence</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
+          <h3>Can an agent tell an ethical nudge from a manipulative one?</h3>
+          <p class="pcopy">Paste a screen, get a scored trust audit with actionable findings and guardrails baked into the model. <b>What I learned: trust is measurable — and users deserve to see the score, not just feel the manipulation.</b></p>
+          <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span><span class="go">Open in ChatGPT &rarr;</span></div>
+        </div>
+      </a>
+      <a href="skills-lab.html" class="pcard stripe s-prod filterable" data-area="agent">
+        <div class="xcard__illus" style="background:linear-gradient(135deg,#0a1628,#101d35,#0d2b28);">
+      <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+        <rect x="30" y="35" width="140" height="130" rx="6" stroke="#6fe1b8" stroke-width="0.8" opacity="0.15"/>
+        <text x="42" y="55" font-family="Inter,system-ui,sans-serif" font-size="7" fill="#6fe1b8" opacity="0.3" font-weight="600" letter-spacing="0.08em">GENERATOR</text>
+        <rect x="42" y="64" width="80" height="8" rx="2" fill="#6fe1b8" opacity="0.06" stroke="#6fe1b8" stroke-width="0.4"/>
+        <rect x="42" y="78" width="80" height="8" rx="2" fill="#6fe1b8" opacity="0.06" stroke="#6fe1b8" stroke-width="0.4"/>
+        <rect x="42" y="92" width="80" height="8" rx="2" fill="#6fe1b8" opacity="0.06" stroke="#6fe1b8" stroke-width="0.4"/>
+        <rect x="42" y="110" width="50" height="14" rx="4" fill="#6fe1b8" opacity="0.15"/>
+        <text x="67" y="120" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#021008" opacity="0.6" text-anchor="middle" font-weight="700">GENERATE</text>
+        <rect x="42" y="132" width="116" height="22" rx="4" stroke="#6fe1b8" stroke-width="0.5" opacity="0.12"/>
+        <rect x="48" y="138" width="60" height="4" rx="1" fill="#6fe1b8" opacity="0.1"/>
+        <rect x="48" y="146" width="40" height="3" rx="1" fill="#6fe1b8" opacity="0.06"/>
+        <rect x="200" y="35" width="80" height="60" rx="5" stroke="#ff9933" stroke-width="0.6" opacity="0.18"/>
+        <text x="212" y="52" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#ff9933" opacity="0.3" font-weight="600" letter-spacing="0.06em">INDIA</text>
+        <rect x="212" y="60" width="55" height="4" rx="1" fill="#ff9933" opacity="0.08"/>
+        <rect x="212" y="68" width="40" height="4" rx="1" fill="#ff9933" opacity="0.06"/>
+        <rect x="212" y="76" width="50" height="4" rx="1" fill="#ff9933" opacity="0.06"/>
+        <text x="240" y="88" font-family="Inter,system-ui,sans-serif" font-size="5" fill="#ff9933" opacity="0.15" text-anchor="middle">30 skills</text>
+        <rect x="300" y="35" width="80" height="60" rx="5" stroke="#6b8cff" stroke-width="0.6" opacity="0.18"/>
+        <text x="312" y="52" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#6b8cff" opacity="0.3" font-weight="600" letter-spacing="0.06em">GLOBAL</text>
+        <rect x="312" y="60" width="55" height="4" rx="1" fill="#6b8cff" opacity="0.08"/>
+        <rect x="312" y="68" width="40" height="4" rx="1" fill="#6b8cff" opacity="0.06"/>
+        <rect x="312" y="76" width="50" height="4" rx="1" fill="#6b8cff" opacity="0.06"/>
+        <text x="340" y="88" font-family="Inter,system-ui,sans-serif" font-size="5" fill="#6b8cff" opacity="0.15" text-anchor="middle">62 skills</text>
+        <rect x="200" y="110" width="180" height="50" rx="5" stroke="#6fe1b8" stroke-width="0.5" opacity="0.12"/>
+        <text x="212" y="128" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#6fe1b8" opacity="0.2" font-weight="600" letter-spacing="0.06em">MY GENERATED SKILLS</text>
+        <rect x="212" y="136" width="155" height="4" rx="1" fill="#6fe1b8" opacity="0.06"/>
+        <rect x="212" y="144" width="100" height="4" rx="1" fill="#6fe1b8" opacity="0.04"/>
+        <circle cx="340" cy="170" r="2" fill="#6fe1b8" opacity="0.15"/>
+        <circle cx="50" cy="180" r="1.5" fill="#ff9933" opacity="0.12"/>
+      </svg>
     </div>
-  </a>
-  <a href="workbench-alt2.html" class="xcard">
-    <div class="xcard__illus" style="background:linear-gradient(135deg,#061412,#0a1f1a,#0f2922);">
+        <div class="pcard__body">
+          <div class="pcard__top"><span class="plabel">Skills Lab</span><span class="mbadge m-prod"><span class="md"></span>Production</span></div>
+          <h3>What if anyone could generate a production-ready AI skill on the fly?</h3>
+          <p class="pcopy">A live generator plus 92 curated Claude skills for India and global builders. <b>What I learned: agentic UX is really about lowering the cost of trying an idea to almost nothing.</b></p>
+          <div class="pcard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Open Skills Lab &rarr;</span></div>
+        </div>
+      </a>
+  </div>
+</section>
+
+<!-- EXPERIMENTS -->
+<section class="cat lab-shell" id="experiments" data-cat>
+  <div class="cat-head"><span class="n">02</span><h2>Experiments</h2><span class="meta">Functional prototypes</span></div>
+  <p class="cat-sub">Interactive prototypes where I'm still learning — each states the bet and the insight it's testing.</p>
+  <div class="egrid">
+      <a href="opportunity-simulator.html" class="ecard stripe s-proto filterable" data-area="economics hitl">
+        <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/opportunity-simulator.png" alt="AI Opportunity Simulator screenshot" loading="lazy"></div>
+        <div class="ecard__body">
+          <div class="ecard__top"><span class="plabel">Opportunity Simulator</span><span class="mbadge m-proto"><span class="md"></span>Prototype</span></div>
+          <h3>Can an executive steer the global economy like a live simulation?</h3>
+          <p class="line"><b>Hypothesis</b>AI-scored country rankings plus four-order-deep shock sims turn macro signals into moves.</p>
+          <p class="line"><b>Insight</b>People trust a forecast they can poke, override, and trace to a cause.</p>
+          <div class="ecard__foot"><span class="tchip"><span class="td" style="background:var(--th-economics)"></span>AI Economics</span><span class="go">Open the simulator &rarr;</span></div>
+        </div>
+      </a>
+      <a href="situation-simulator.html" class="ecard stripe s-proto filterable" data-area="agent hitl">
+        <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/situation-simulator.png" alt="Orbital Situation Room screenshot" loading="lazy"></div>
+        <div class="ecard__body">
+          <div class="ecard__top"><span class="plabel">Orbital Situation Room</span><span class="mbadge m-proto"><span class="md"></span>Prototype</span></div>
+          <h3>What does collaborating with an autonomous agent actually feel like?</h3>
+          <p class="line"><b>Hypothesis</b>A live 3D ops picture with agent-run collision sims should invite steering, not spectating.</p>
+          <p class="line"><b>Insight</b>Control and auditability are the price of trusting automation.</p>
+          <div class="ecard__foot"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span><span class="go">Enter the room &rarr;</span></div>
+        </div>
+      </a>
+      <a href="workbench-alt2.html" class="ecard stripe s-proto filterable" data-area="economics hitl">
+        <div class="xcard__illus" style="background:linear-gradient(135deg,#061412,#0a1f1a,#0f2922);">
       <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
         <!-- Triage scope -->
         <circle cx="80" cy="90" r="42" stroke="#2a6557" stroke-width="0.8" opacity="0.5"/>
@@ -539,121 +633,143 @@
         </defs>
       </svg>
     </div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">AI EFFICIENCY WORKBENCH</span><span class="status">PROTOTYPE · ROUTING · GOVERNANCE</span></div>
-      <h3>AI Efficiency Workbench — The Triage Lens</h3>
-      <p>Hospital triage for enterprise AI workloads. Every brief gets classified, scored, and routed — and every decision is visible, auditable, defensible. 8 models across 3 wards, ~25x cheaper at scale, with only 5% flagged for human review. Single-file HTML, zero backend, optional Claude API for live model compare.</p>
-      <span class="go">OPEN THE WORKBENCH →</span>
-    </div>
-  </a>
-</div>
-
-<!-- SKILLS LAB -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 02</span>
-    <span class="shead__title">SKILLS LAB</span>
-    <span class="shead__sub">// generate, explore, and download Claude skills</span>
+        <div class="ecard__body">
+          <div class="ecard__top"><span class="plabel">AI Efficiency Workbench</span><span class="mbadge m-proto"><span class="md"></span>Prototype</span></div>
+          <h3>How do you make enterprise AI cost-aware without losing control?</h3>
+          <p class="line"><b>Hypothesis</b>Triage every workload; route by cost; escalate only the 5% that needs a human.</p>
+          <p class="line"><b>Insight</b>Governance is a UX problem — every decision must be visible and defensible.</p>
+          <div class="ecard__foot"><span class="tchip"><span class="td" style="background:var(--th-economics)"></span>AI Economics</span><span class="go">Open the workbench &rarr;</span></div>
+        </div>
+      </a>
   </div>
-</div>
-<div class="xgrid">
-  <a href="skills-lab.html" class="xcard">
-    <div class="xcard__illus" style="background:linear-gradient(135deg,#0a1628,#101d35,#0d2b28);">
-      <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
-        <rect x="30" y="35" width="140" height="130" rx="6" stroke="#6fe1b8" stroke-width="0.8" opacity="0.15"/>
-        <text x="42" y="55" font-family="Inter,system-ui,sans-serif" font-size="7" fill="#6fe1b8" opacity="0.3" font-weight="600" letter-spacing="0.08em">GENERATOR</text>
-        <rect x="42" y="64" width="80" height="8" rx="2" fill="#6fe1b8" opacity="0.06" stroke="#6fe1b8" stroke-width="0.4"/>
-        <rect x="42" y="78" width="80" height="8" rx="2" fill="#6fe1b8" opacity="0.06" stroke="#6fe1b8" stroke-width="0.4"/>
-        <rect x="42" y="92" width="80" height="8" rx="2" fill="#6fe1b8" opacity="0.06" stroke="#6fe1b8" stroke-width="0.4"/>
-        <rect x="42" y="110" width="50" height="14" rx="4" fill="#6fe1b8" opacity="0.15"/>
-        <text x="67" y="120" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#021008" opacity="0.6" text-anchor="middle" font-weight="700">GENERATE</text>
-        <rect x="42" y="132" width="116" height="22" rx="4" stroke="#6fe1b8" stroke-width="0.5" opacity="0.12"/>
-        <rect x="48" y="138" width="60" height="4" rx="1" fill="#6fe1b8" opacity="0.1"/>
-        <rect x="48" y="146" width="40" height="3" rx="1" fill="#6fe1b8" opacity="0.06"/>
-        <rect x="200" y="35" width="80" height="60" rx="5" stroke="#ff9933" stroke-width="0.6" opacity="0.18"/>
-        <text x="212" y="52" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#ff9933" opacity="0.3" font-weight="600" letter-spacing="0.06em">INDIA</text>
-        <rect x="212" y="60" width="55" height="4" rx="1" fill="#ff9933" opacity="0.08"/>
-        <rect x="212" y="68" width="40" height="4" rx="1" fill="#ff9933" opacity="0.06"/>
-        <rect x="212" y="76" width="50" height="4" rx="1" fill="#ff9933" opacity="0.06"/>
-        <text x="240" y="88" font-family="Inter,system-ui,sans-serif" font-size="5" fill="#ff9933" opacity="0.15" text-anchor="middle">30 skills</text>
-        <rect x="300" y="35" width="80" height="60" rx="5" stroke="#6b8cff" stroke-width="0.6" opacity="0.18"/>
-        <text x="312" y="52" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#6b8cff" opacity="0.3" font-weight="600" letter-spacing="0.06em">GLOBAL</text>
-        <rect x="312" y="60" width="55" height="4" rx="1" fill="#6b8cff" opacity="0.08"/>
-        <rect x="312" y="68" width="40" height="4" rx="1" fill="#6b8cff" opacity="0.06"/>
-        <rect x="312" y="76" width="50" height="4" rx="1" fill="#6b8cff" opacity="0.06"/>
-        <text x="340" y="88" font-family="Inter,system-ui,sans-serif" font-size="5" fill="#6b8cff" opacity="0.15" text-anchor="middle">62 skills</text>
-        <rect x="200" y="110" width="180" height="50" rx="5" stroke="#6fe1b8" stroke-width="0.5" opacity="0.12"/>
-        <text x="212" y="128" font-family="Inter,system-ui,sans-serif" font-size="6" fill="#6fe1b8" opacity="0.2" font-weight="600" letter-spacing="0.06em">MY GENERATED SKILLS</text>
-        <rect x="212" y="136" width="155" height="4" rx="1" fill="#6fe1b8" opacity="0.06"/>
-        <rect x="212" y="144" width="100" height="4" rx="1" fill="#6fe1b8" opacity="0.04"/>
-        <circle cx="340" cy="170" r="2" fill="#6fe1b8" opacity="0.15"/>
-        <circle cx="50" cy="180" r="1.5" fill="#ff9933" opacity="0.12"/>
-      </svg>
-    </div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">SKILLS LAB</span><span class="status">92 SKILLS · GENERATOR · LIVE</span></div>
-      <h3>Skills Lab</h3>
-      <p>Three tools in one: an AI skills generator (simulator + optional Claude API), 30 Claude skills built for India's builders (finance, civic, language, education), and 62 skills for global builders (engineering, product, design, growth). Generate, copy, share, and download custom skills on the fly.</p>
-      <span class="go">OPEN SKILLS LAB →</span>
-    </div>
-  </a>
-</div>
+</section>
 
-<!-- GUIDES & FRAMEWORKS -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 03</span>
-    <span class="shead__title">GUIDES &amp; FRAMEWORKS</span>
-    <span class="shead__sub">// long-form playbooks you can read or download</span>
+<!-- RESEARCH -->
+<section class="cat lab-shell" id="research" data-cat>
+  <div class="cat-head"><span class="n">03</span><h2>Research</h2><span class="meta">Studied &amp; documented</span></div>
+  <p class="cat-sub">Deeper investigations — read as Problem &rarr; Hypothesis &rarr; Insight &rarr; What I learned.</p>
+  <div class="rlist">
+      <a href="vigyan-setu.html" class="rentry filterable" data-area="trust hitl">
+        <div class="rentry__l">
+          <div class="rentry__num"><span>R-01</span><span class="mbadge m-research"><span class="md"></span>Research</span></div>
+          <h3>Why did a national AI summit's experience break — and how would you redesign it?</h3>
+          <div class="rentry__meta"><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span><span class="tchip"><span class="td" style="background:var(--th-hitl)"></span>Human-in-loop</span></div>
+          <span class="go">Read the case study &rarr;</span>
+        </div>
+        <div class="rentry__r">
+          <div class="cell"><div class="k">Problem</div><div class="v">The India AI Impact Summit failed its attendees across 10 documented fault lines.</div></div>
+          <div class="cell"><div class="k">Hypothesis</div><div class="v">A Double-Diamond event OS could turn that chaos into a trustworthy, human-in-the-loop system.</div></div>
+          <div class="cell"><div class="k">Key insight</div><div class="v">Trust is built in the seams — wayfinding, timing, and honest status.</div></div>
+          <div class="cell"><div class="k">What I learned</div><div class="v">Speculative design persuades most when it's grounded in real, documented failure.</div></div>
+        </div>
+      </a>
+      <a href="30day-agentic-ux-plan.html" class="rentry filterable" data-area="agent">
+        <div class="rentry__l">
+          <div class="rentry__num"><span>R-02</span><span class="mbadge m-research"><span class="md"></span>Research</span></div>
+          <h3>Can agentic-UX craft be built as a daily practice, not a lecture?</h3>
+          <div class="rentry__meta"><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span></div>
+          <span class="go">Read the plan &rarr;</span>
+        </div>
+        <div class="rentry__r">
+          <div class="cell"><div class="k">Problem</div><div class="v">Designers lack a concrete path from prompt fluency to shipping trustworthy agents.</div></div>
+          <div class="cell"><div class="k">Hypothesis</div><div class="v">A 30-day ritual of small drills compounds into real design judgment.</div></div>
+          <div class="cell"><div class="k">Key insight</div><div class="v">Craft comes from reps, not reading.</div></div>
+          <div class="cell"><div class="k">What I learned</div><div class="v">The hard part isn't prompting — it's designing the hand-off between human and agent.</div></div>
+        </div>
+      </a>
   </div>
-</div>
-<div class="xgrid">
-  <a href="30day-agentic-ux-plan.html" class="xcard">
-    <div class="xcard__illus xcard__shot"><img class="xcard__img" src="assets/screenshots/agentic-ux.png" alt="30-Day Agentic UX Mastery Plan screenshot" loading="lazy"></div>
-    <div class="xcard__body">
-      <div class="top"><span class="tag">AGENTIC UX</span><span class="status">PLAYBOOK · 30 DAYS</span></div>
-      <h3>30-Day Agentic UX Mastery Plan</h3>
-      <p>A structured, day-by-day playbook for designing agentic AI experiences — from prompt-level fluency to shipping trustworthy autonomous agents. Concepts, hands-on drills, and daily rituals that build real AI-UX craft in 30 days.</p>
-      <span class="go">READ THE PLAN →</span>
-    </div>
-  </a>
-</div>
+</section>
+
+<!-- FRAMEWORKS -->
+<section class="cat lab-shell" id="frameworks" data-cat>
+  <div class="cat-head"><span class="n">04</span><h2>The Arora Frameworks</h2><span class="meta">Reusable IP</span></div>
+  <p class="cat-sub">The thinking, distilled into named, reusable models — intellectual property that travels with the work.</p>
+  <div class="fgrid">
+      <div class="fcard filterable" data-area="memory">
+        <div class="id"><span>FW-01</span><span class="tchip"><span class="td" style="background:var(--th-memory)"></span>Memory UX</span></div>
+        <h4>Memory UX Canvas</h4>
+        <p>A structured canvas for designing persistent AI memory people actually trust — what to store, decay, surface, and forget.</p>
+        <div class="by">by Puneet Arora</div>
+      </div>
+      <div class="fcard filterable" data-area="trust">
+        <div class="id"><span>FW-02</span><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span></div>
+        <h4>AI Decision Confidence Scale</h4>
+        <p>A shared vocabulary for communicating model uncertainty so users calibrate their trust instead of guessing.</p>
+        <div class="by">by Puneet Arora</div>
+      </div>
+      <div class="fcard filterable" data-area="hitl">
+        <div class="id"><span>FW-03</span><span class="tchip"><span class="td" style="background:var(--th-hitl)"></span>Human-in-loop</span></div>
+        <h4>Human Override Matrix</h4>
+        <p>A decision tool for where — and how — an agent hands control back to the user.</p>
+        <div class="by">by Puneet Arora</div>
+      </div>
+      <div class="fcard filterable" data-area="agent">
+        <div class="id"><span>FW-04</span><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span></div>
+        <h4>Agent Collaboration Model</h4>
+        <p>Reusable patterns for multi-agent interaction, hand-off, and when to ask versus act.</p>
+        <div class="by">by Puneet Arora</div>
+      </div>
+      <div class="fcard filterable" data-area="personalization">
+        <div class="id"><span>FW-05</span><span class="tchip"><span class="td" style="background:var(--th-personalization)"></span>Personalization</span></div>
+        <h4>Personalization Maturity Model</h4>
+        <p>A stage-by-stage roadmap for enterprise personalization — from rules to adaptive systems.</p>
+        <div class="by">by Puneet Arora</div>
+      </div>
+  </div>
+</section>
 
 <!-- CONCEPTS -->
-<div class="shead">
-  <div class="shead__left">
-    <span class="shead__n">§ 04</span>
-    <span class="shead__title">CONCEPTS I'M EXPLORING</span>
-    <span class="shead__sub">// early-stage — not yet shipped, no install required</span>
+<section class="cat lab-shell" id="concepts" data-cat>
+  <div class="cat-head"><span class="n">05</span><h2>Concepts</h2><span class="meta">Early &middot; not yet built</span></div>
+  <p class="cat-sub">Questions I'm circling — framed and argued, but not yet shipped.</p>
+  <div class="ccgrid">
+      <div class="ccard filterable" data-area="trust">
+        <div class="id"><span class="mbadge m-concept"><span class="md"></span>Concept</span><span class="tchip"><span class="td" style="background:var(--th-trust)"></span>AI Trust</span></div>
+        <h4>Prompt-evaluation harness</h4>
+        <p>Versioned eval cases, side-by-side output diffs, and a rubric scorer that separates “structurally wrong” from “stylistically different.”</p>
+      </div>
+      <div class="ccard filterable" data-area="personalization trust">
+        <div class="id"><span class="mbadge m-concept"><span class="md"></span>Concept</span><span class="tchip"><span class="td" style="background:var(--th-personalization)"></span>Personalization</span></div>
+        <h4>Behavioural-nudge library</h4>
+        <p>Documented nudges with ethical guardrails baked in — mechanism, positive examples, anti-patterns, and a measurement plan per nudge.</p>
+      </div>
+      <div class="ccard filterable" data-area="agent">
+        <div class="id"><span class="mbadge m-exp"><span class="md"></span>Experimental</span><span class="tchip"><span class="td" style="background:var(--th-agent)"></span>Agent UX</span></div>
+        <h4>Critique-as-a-Service</h4>
+        <p>An agent that critiques a screen the way a senior IC would, scored against a team's in-house rubric — for when the senior isn't in the room.</p>
+      </div>
   </div>
-</div>
-<div class="concepts">
-  <div class="grid">
-    <div class="c">
-      <div class="id">DRAFT</div>
-      <h4>Prompt-evaluation harness</h4>
-      <p>A small harness for prompt drift — versioned eval cases, side-by-side output diffs, and a rubric scorer that separates “structurally wrong” from “stylistically different.”</p>
-    </div>
-    <div class="c">
-      <div class="id">DRAFT</div>
-      <h4>Behavioural-nudge library</h4>
-      <p>A documented library of behavioural-science nudges with the ethical guardrails baked in — mechanism, positive examples, anti-patterns, and a measurement plan per nudge.</p>
-    </div>
-    <div class="c">
-      <div class="id">IDEA</div>
-      <h4>Critique-as-a-Service</h4>
-      <p>An agent that critiques a screen the way a senior IC would, scored against a team's in-house rubric — useful when the senior isn't in the room.</p>
-    </div>
-  </div>
-</div>
+</section>
 
 <!-- FOOTER -->
-<footer class="foot">
-  <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
+<footer class="lab-foot" data-screen-label="footer">
+  <div class="lab-shell">
+    <div class="close">Most people ship AI features. <em>I research how they should feel.</em></div>
+    <div class="sig"><a href="home.html">Puneet Kumar Arora</a> &middot; The AI Lab &middot; Design Practice &amp; AI Transformation Leadership</div>
+  </div>
 </footer>
 
 </div><!-- /page -->
 
+<script>
+(function(){
+  var chips=[].slice.call(document.querySelectorAll('.fchip'));
+  var cards=[].slice.call(document.querySelectorAll('.filterable'));
+  var sections=[].slice.call(document.querySelectorAll('[data-cat]'));
+  function apply(key){
+    cards.forEach(function(c){
+      var show = key==='all' || (' '+c.getAttribute('data-area')+' ').indexOf(' '+key+' ')>-1;
+      c.classList.toggle('filt-hide', !show);
+    });
+    sections.forEach(function(s){
+      var vis=s.querySelectorAll('.filterable:not(.filt-hide)').length;
+      s.classList.toggle('filt-hide', vis===0);
+    });
+    chips.forEach(function(ch){ ch.setAttribute('aria-pressed', ch.getAttribute('data-filter')===key ? 'true':'false'); });
+  }
+  chips.forEach(function(ch){ ch.addEventListener('click', function(){ apply(ch.getAttribute('data-filter')); }); });
+})();
+</script>
 <script src="assets/site.js"></script>
 </body>
 </html>
