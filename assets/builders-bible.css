@@ -13,8 +13,9 @@
 .bb-searchbtn {
   display: inline-flex; align-items: center; gap: 10px;
   background: var(--surface); border: 1px solid var(--rule); border-radius: 2px;
-  color: var(--dim); padding: 6px 12px; font-family: var(--f-mono);
+  color: var(--dim); padding: 6px 16px; font-family: var(--f-mono);
   font-size: 10px; letter-spacing: 0.14em; transition: border-color .15s, color .15s;
+  margin-right: 8px;
 }
 .bb-searchbtn:hover { border-color: var(--signal); color: var(--ink); }
 .bb-searchbtn kbd {

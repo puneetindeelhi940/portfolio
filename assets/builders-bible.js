@@ -901,12 +901,6 @@
       var p = PERSONAS.filter(function (x) { return x.id === btn.getAttribute('data-persona'); })[0];
       showReco(p);
     });
-    // Hero "Take the quiz" cue → scroll to the persona quiz
-    var cue = $('.bb-hero__scroll');
-    if (cue) cue.addEventListener('click', function () {
-      var target = $('.bb-quiz') || cards;
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
   }
   function showReco(p) {
     var box = $('#bb-reco'); if (!box) return;
