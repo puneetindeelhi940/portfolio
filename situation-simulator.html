@@ -383,6 +383,134 @@
   .disclaimer { position: absolute; left: 50%; top: 70px; transform: translateX(-50%); z-index: 25; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--hud-faint); background: rgba(6,10,16,0.6); border: 1px solid var(--hud-rule); border-radius: 999px; padding: 5px 14px; }
   .disclaimer b { color: var(--gold); }
   @media (max-width: 900px) { .disclaimer { position: static; transform: none; display: inline-block; margin: 12px 16px 0; } }
+
+  /* ═══════════ NETRADEFEND additions ═══════════ */
+
+  /* Ashoka chakra brand mark — always visible, gently turning + blinking */
+  .cd-brand .chakra { width: 30px; height: 30px; flex: none; display: inline-grid; place-items: center; color: var(--signal); filter: drop-shadow(0 0 5px color-mix(in oklch, var(--signal) 60%, transparent)); }
+  .cd-brand .chakra svg { width: 30px; height: 30px; display: block; animation: chakra-spin 9s linear infinite; }
+  .cd-brand .chakra::after { content: ""; position: absolute; }
+  .cd-brand .chakra { position: relative; }
+  .cd-brand .chakra .glow { position: absolute; inset: 0; border-radius: 50%; box-shadow: 0 0 10px 1px color-mix(in oklch, var(--signal) 70%, transparent); animation: chakra-blink 1.5s ease-in-out infinite; }
+  @keyframes chakra-spin { to { transform: rotate(360deg); } }
+  @keyframes chakra-blink { 0%, 100% { opacity: 0.85; } 50% { opacity: 0.15; } }
+  @media (prefers-reduced-motion: reduce) { .cd-brand .chakra svg { animation: none; } .cd-brand .chakra .glow { animation: none; opacity: 0.6; } }
+
+  /* Panel handles — ALWAYS visible (was hover-only) */
+  .panel-resize, .panel-min { opacity: 1 !important; }
+  .panel-resize { background: color-mix(in oklch, var(--signal) 14%, var(--glass-2)); border-color: var(--hud-rule-2); }
+  .panel-min { background: color-mix(in oklch, var(--signal) 10%, var(--glass-2)); }
+
+  /* ── Tab views (Firewall / Alerts / Attacks / CyScam / About) ── */
+  .view { position: absolute; left: 0; right: 0; top: 66px; bottom: 0; z-index: 22;
+    display: none; overflow-y: auto; padding: 22px clamp(18px, 3vw, 40px) 48px;
+    background: linear-gradient(180deg, rgba(7,11,17,0.93), rgba(6,9,14,0.985) 46%); }
+  .view.active { display: block; animation: viewIn .28s ease; }
+  @keyframes viewIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .view-inner { max-width: 1440px; margin: 0 auto; }
+  .cd-app.dim #globeViz { opacity: 0.14; filter: saturate(0.6) blur(1px); transition: opacity .3s; }
+  .cd-app.dim .disclaimer { display: none; }
+
+  .vtitle { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 4px; }
+  .vtitle h1 { font-size: clamp(20px, 2.6vw, 27px); font-weight: 650; letter-spacing: -0.01em; margin: 0; color: var(--hud-ink); }
+  .vtitle .tagm { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--signal); }
+  .vlead { color: var(--hud-dim); font-size: 14px; max-width: 82ch; margin: 8px 0 22px; line-height: 1.6; }
+  .vlead b { color: var(--hud-ink); }
+
+  /* KPI cards */
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 8px; }
+  @media (max-width: 1080px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+  .kpi { border: 1px solid var(--hud-rule); border-radius: 12px; background: var(--glass); padding: 16px 18px; position: relative; overflow: hidden; }
+  .kpi::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--signal); opacity: 0.8; }
+  .kpi.crit::before { background: var(--risk); } .kpi.warn::before { background: var(--gold); } .kpi.cyan::before { background: var(--cyan); }
+  .kpi .l { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--hud-faint); }
+  .kpi .v { font-size: 28px; font-weight: 700; color: var(--hud-ink); margin: 8px 0 4px; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+  .kpi .d { font-family: var(--f-mono); font-size: 11px; color: var(--hud-dim); }
+  .kpi .d .up { color: var(--risk); } .kpi .d .dn { color: var(--signal); } .kpi .d .fl { color: var(--cyan); }
+
+  .vcols { display: grid; grid-template-columns: 1fr 372px; gap: 18px; align-items: start; margin-top: 22px; }
+  @media (max-width: 1080px) { .vcols { grid-template-columns: 1fr; } }
+  .card2 { border: 1px solid var(--hud-rule); border-radius: 14px; background: var(--glass); overflow: hidden; }
+  .card2 .c2head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--hud-rule); }
+  .card2 .c2head b { font-size: 13.5px; font-weight: 600; color: var(--hud-ink); letter-spacing: 0.01em; }
+  .card2 .c2head .mono { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--hud-faint); }
+  .card2 .c2body { padding: 6px 0; }
+
+  /* data table */
+  .dt { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .dt th { text-align: left; font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--hud-faint); padding: 8px 18px; border-bottom: 1px solid var(--hud-rule); position: sticky; top: 0; background: var(--glass); }
+  .dt td { padding: 11px 18px; border-bottom: 1px solid rgba(120,150,180,0.08); color: var(--hud-dim); vertical-align: middle; }
+  .dt tr:hover td { background: rgba(120,150,180,0.05); }
+  .dt .mono { font-family: var(--f-mono); color: var(--hud-ink); }
+  .dt .ip { font-family: var(--f-mono); color: var(--cyan); }
+  .dt .amt { font-family: var(--f-mono); color: var(--hud-ink); text-align: right; }
+
+  .badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border-radius: 5px; border: 1px solid transparent; white-space: nowrap; }
+  .badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .badge.crit { color: var(--risk); background: color-mix(in oklch, var(--risk) 16%, transparent); }
+  .badge.warn { color: var(--gold); background: color-mix(in oklch, var(--gold) 16%, transparent); }
+  .badge.info { color: var(--cyan); background: color-mix(in oklch, var(--cyan) 14%, transparent); }
+  .badge.ok   { color: var(--signal); background: color-mix(in oklch, var(--signal) 14%, transparent); }
+  .badge.mut  { color: var(--hud-faint); background: rgba(120,150,180,0.10); }
+
+  /* horizontal breakdown bars */
+  .hbars { padding: 12px 18px; display: flex; flex-direction: column; gap: 12px; }
+  .hbar .hb-top { display: flex; justify-content: space-between; font-size: 12px; color: var(--hud-dim); margin-bottom: 5px; }
+  .hbar .hb-top b { color: var(--hud-ink); font-family: var(--f-mono); }
+  .hbar .track { height: 7px; border-radius: 999px; background: rgba(120,150,180,0.14); overflow: hidden; }
+  .hbar .fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--signal), var(--cyan)); }
+  .hbar .fill.r { background: linear-gradient(90deg, var(--gold), var(--risk)); }
+
+  /* live stream feed */
+  .stream { max-height: 340px; overflow-y: auto; }
+  .stream .srow { display: grid; grid-template-columns: 74px 1fr auto; gap: 12px; align-items: center; padding: 9px 18px; border-bottom: 1px solid rgba(120,150,180,0.08); font-size: 12px; animation: slotin .3s ease; }
+  @keyframes slotin { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+  .stream .srow .t { font-family: var(--f-mono); font-size: 10px; color: var(--hud-faint); }
+  .stream .srow .m { color: var(--hud-dim); }
+  .stream .srow .m b { color: var(--hud-ink); font-weight: 500; }
+
+  /* right rail cards */
+  .rail-card { border: 1px solid var(--hud-rule); border-radius: 14px; background: var(--glass); padding: 16px 18px; margin-bottom: 16px; }
+  .rail-card h3 { font-size: 12px; font-family: var(--f-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--hud-faint); margin: 0 0 12px; }
+  .param { display: flex; align-items: baseline; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid rgba(120,150,180,0.08); font-size: 13px; color: var(--hud-dim); }
+  .param:last-child { border-bottom: none; }
+  .param b { color: var(--hud-ink); font-family: var(--f-mono); font-size: 13px; }
+  .param b.big { font-size: 18px; }
+  .param b.risk { color: var(--risk); } .param b.ok { color: var(--signal); }
+
+  .sources a { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid rgba(120,150,180,0.08); color: var(--hud-dim); text-decoration: none; font-size: 12.5px; transition: color .15s; }
+  .sources a:last-child { border-bottom: none; }
+  .sources a:hover { color: var(--cyan); }
+  .sources a .ext { margin-left: auto; font-family: var(--f-mono); font-size: 10px; color: var(--hud-faint); }
+  .sources a b { color: var(--hud-ink); font-weight: 600; }
+
+  .note { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.06em; color: var(--hud-faint); line-height: 1.6; }
+  .note b { color: var(--gold); }
+
+  /* India SVG map */
+  .indiamap { width: 100%; height: auto; display: block; }
+  .indiamap .border { fill: color-mix(in oklch, var(--signal) 7%, transparent); stroke: var(--signal); stroke-width: 1.1; stroke-opacity: 0.65; }
+  .indiamap .citydot { fill: var(--gold); }
+  .indiamap .cityhot { fill: var(--risk); }
+  .indiamap .clabel { font-family: var(--f-mono); font-size: 6.5px; fill: var(--hud-dim); }
+
+  /* About view */
+  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 22px; margin-top: 22px; }
+  @media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; } }
+  .prose { color: var(--hud-dim); font-size: 14.5px; line-height: 1.72; max-width: 68ch; }
+  .prose h2 { color: var(--hud-ink); font-size: 17px; font-weight: 650; margin: 26px 0 10px; }
+  .prose h2:first-child { margin-top: 0; }
+  .prose p { margin: 0 0 14px; } .prose strong { color: var(--hud-ink); }
+  .prose .sig { border-left: 2px solid var(--signal); padding-left: 16px; margin: 18px 0; color: var(--hud-dim); }
+  .capset { display: grid; gap: 12px; }
+  .caprow { border: 1px solid var(--hud-rule); border-radius: 12px; background: var(--glass); padding: 15px 16px; }
+  .caprow .k { display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; color: var(--hud-ink); margin-bottom: 5px; }
+  .caprow .k .tg { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--signal); border: 1px solid color-mix(in oklch, var(--signal) 45%, transparent); border-radius: 4px; padding: 2px 6px; margin-left: auto; }
+  .caprow p { margin: 0; font-size: 12.5px; color: var(--hud-dim); line-height: 1.55; }
+
+  /* ambient particle canvas */
+  #particleCanvas { position: absolute; inset: 0; z-index: 2; pointer-events: none; display: none; }
+  #particleCanvas.on { display: block; }
 </style>
   <link rel="stylesheet" href="assets/typography.css">
 </head>
@@ -392,18 +520,21 @@
   <!-- real 3D globe (globe.gl, self-hosted) renders here; CSS earth-glow is the no-WebGL fallback -->
   <div class="cd-fallback"><div class="orb"></div></div>
   <div id="globeViz"></div>
+  <canvas id="particleCanvas"></canvas>
 
   <!-- TOP BAR -->
   <div class="cd-top">
     <a href="home.html" class="cd-brand" title="Puneet Arora — home">
-      <span class="mark">CD</span>
-      <b>CYBER<span>DEFEND</span></b>
+      <span class="chakra" id="chakra" aria-hidden="true"></span>
+      <b>NETRA<span>DEFEND</span></b>
     </a>
     <nav class="cd-tabs" id="cdTabs" aria-label="Modes">
       <button class="is-active" data-mode="Overview"><span class="led"></span>Overview</button>
+      <button data-mode="CyScam">CyScam</button>
       <button data-mode="Firewall">Firewall</button>
       <button data-mode="Alerts">Alerts</button>
       <button data-mode="Attacks">Attacks</button>
+      <button data-mode="About">About</button>
     </nav>
     <div class="cd-top-right">
       <button class="icon-btn" id="historyBtn" title="History"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 4v4h4"/><path d="M12 8v4l3 2"/></svg></button>
@@ -549,14 +680,105 @@
         </div>
         <div class="chart-wrap"><canvas id="failCanvas"></canvas></div>
         <div class="chart-cities">
-          <div class="city"><div class="nm"><span class="d"></span> Los Angeles, CA</div><div class="role">Anchor time</div><div class="tm">21-11-02T <b>13:43:18</b></div></div>
-          <div class="city"><div class="nm"><span class="d"></span> Chicago, IL</div><div class="role">Last downlink</div><div class="tm">21-11-02T <b>14:45:15</b></div></div>
-          <div class="city"><div class="nm"><span class="d"></span> St. Louis, MO</div><div class="role">Next downlink</div><div class="tm">21-11-02T <b>18:45:15</b></div></div>
+          <div class="city"><div class="nm"><span class="d" style="background:#3fd0a8"></span> Composite risk</div><div class="role">rolling 24h</div><div class="tm"><b id="rkComposite">58%</b></div></div>
+          <div class="city"><div class="nm"><span class="d" style="background:#58d6ff"></span> Power bus</div><div class="role">subsystem</div><div class="tm"><b id="rkPower">24%</b></div></div>
+          <div class="city"><div class="nm"><span class="d" style="background:#e8c07a"></span> Thermal</div><div class="role">subsystem</div><div class="tm"><b id="rkThermal">70%</b></div></div>
         </div>
       </div>
 
     </div><!-- /dock -->
   </div><!-- /hud -->
+
+  <!-- ══════════ CYSCAM ══════════ -->
+  <section class="view" id="viewCyScam"><div class="view-inner">
+    <div class="vtitle"><h1>CyScam · India Fraud Watch</h1><span class="tagm" id="cyRefresh">auto-rotating feed</span></div>
+    <p class="vlead">Digital-arrest and cyber-fraud incidents reported across India over the last <b>17 days</b>. This is an <b>illustrative, auto-rotating feed</b> modelled on real scam patterns — not a record of specific real cases. If you are targeted, report at <b>cybercrime.gov.in</b> or call the national helpline <b>1930</b>.</p>
+    <div class="kpis" id="cyKpis"></div>
+    <div class="vcols">
+      <div>
+        <div class="card2">
+          <div class="c2head"><b>Reported incidents · last 17 days</b><span class="mono" id="cyCount">—</span></div>
+          <div style="overflow-x:auto"><table class="dt"><thead><tr><th>Date</th><th>City</th><th>Scam type</th><th>Victim</th><th style="text-align:right">Loss</th><th>Status</th></tr></thead><tbody id="cyBody"></tbody></table></div>
+        </div>
+      </div>
+      <div>
+        <div class="rail-card"><h3>India · case density</h3><div id="cyMap"></div></div>
+        <div class="rail-card"><h3>Parameters · 17-day window</h3><div id="cyParams"></div></div>
+        <div class="rail-card"><h3>Report &amp; verified resources</h3>
+          <div class="sources">
+            <a href="https://cybercrime.gov.in" target="_blank" rel="noopener"><b>cybercrime.gov.in</b><span class="ext">report ↗</span></a>
+            <a href="tel:1930"><b>1930</b> &middot; National Cyber-Crime Helpline<span class="ext">call</span></a>
+            <a href="https://i4c.mha.gov.in" target="_blank" rel="noopener"><b>I4C</b> &middot; Cyber Crime Coordination Centre<span class="ext">↗</span></a>
+            <a href="https://www.cert-in.org.in" target="_blank" rel="noopener"><b>CERT-In</b> &middot; advisories<span class="ext">↗</span></a>
+          </div>
+          <p class="note" style="margin-top:12px"><b>Note —</b> incidents above are simulated and regenerate every 24 hours. For real reporting use the official channels.</p>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- ══════════ FIREWALL ══════════ -->
+  <section class="view" id="viewFirewall"><div class="view-inner">
+    <div class="vtitle"><h1>Perimeter Firewall</h1><span class="tagm">edge enforcement · live</span></div>
+    <p class="vlead">Deep-packet inspection and rule enforcement across every edge node, in real time. <b>Simulated telemetry</b> for this prototype.</p>
+    <div class="kpis" id="fwKpis"></div>
+    <div class="vcols">
+      <div><div class="card2"><div class="c2head"><b>Blocked connections</b><span class="mono">live stream</span></div><div class="c2body stream" id="fwStream"></div></div></div>
+      <div>
+        <div class="rail-card"><h3>Top triggered rules · 24h</h3><div class="hbars" id="fwRules"></div></div>
+        <div class="rail-card"><h3>Ingress by region</h3><div class="hbars" id="fwGeo"></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- ══════════ ALERTS ══════════ -->
+  <section class="view" id="viewAlerts"><div class="view-inner">
+    <div class="vtitle"><h1>Alert Operations</h1><span class="tagm">SOC · triage queue</span></div>
+    <p class="vlead">Security signals correlated, deduplicated, and ranked for the on-call analyst. <b>Simulated queue</b> for this prototype.</p>
+    <div class="kpis" id="alKpis"></div>
+    <div class="card2" style="margin-top:22px">
+      <div class="c2head"><b>Active alert queue</b><span class="mono" id="alCount">—</span></div>
+      <div style="overflow-x:auto"><table class="dt"><thead><tr><th>Sev</th><th>Time</th><th>Signal</th><th>Category</th><th>Source</th><th>Status</th></tr></thead><tbody id="alBody"></tbody></table></div>
+    </div>
+  </div></section>
+
+  <!-- ══════════ ATTACKS ══════════ -->
+  <section class="view" id="viewAttacks"><div class="view-inner">
+    <div class="vtitle"><h1>Attack Surface</h1><span class="tagm">threat intelligence</span></div>
+    <p class="vlead">Live intrusion attempts, vectors, and origin — mapped to the kill chain. <b>Simulated intelligence</b> for this prototype.</p>
+    <div class="kpis" id="atKpis"></div>
+    <div class="vcols">
+      <div><div class="card2"><div class="c2head"><b>Live intrusion log</b><span class="mono">auto-refresh</span></div><div class="c2body stream" id="atStream"></div></div></div>
+      <div>
+        <div class="rail-card"><h3>Attack vectors · 24h</h3><div class="hbars" id="atVectors"></div></div>
+        <div class="rail-card"><h3>Kill-chain stage</h3><div class="hbars" id="atChain"></div></div>
+        <div class="rail-card"><h3>Top origin countries</h3><div class="hbars" id="atGeo"></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="view" id="viewAbout"><div class="view-inner">
+    <div class="vtitle"><h1>About NETRADEFEND</h1><span class="tagm">concept prototype · simulated data</span></div>
+    <p class="vlead">A cinematic cyber-defense situation room — a UX study in making dense security telemetry legible, calm, and actionable under pressure.</p>
+    <div class="about-grid">
+      <div class="prose">
+        <h2>What you're looking at</h2>
+        <p>NETRADEFEND is a working concept for a security-operations console — one screen where orbital assets, the network perimeter, live attacks, and India's fast-growing cyber-fraud problem sit side by side. Every number here is <strong>simulated</strong>. The point was never the data; it was the <strong>interface</strong> — how you make a wall of threat telemetry feel calm enough to actually act on.</p>
+        <h2>Why I built it</h2>
+        <p>I've spent nineteen years designing the connective tissue of product orgs, and the last few chasing how AI and trust should <em>feel</em> on a screen. Security is where that question stops being academic: a dashboard that cries wolf gets ignored, and an ignored alert is how breaches happen. I wanted to design the opposite — a console that earns your attention by spending it carefully.</p>
+        <p>The <strong>CyScam</strong> tab is the part I care about most. Digital-arrest scams and UPI fraud are quietly draining ordinary Indian families, and most systems treat it as a line in a spreadsheet. I wanted to give it a map, a face, and the real helpline — <strong>1930</strong> — one tap away.</p>
+        <div class="sig">Built by <strong>Puneet Arora</strong> — Principal Product Designer, eight granted patents, exploring the UX of AI, trust, and cyber-defense. A portfolio prototype, not a live security product.</div>
+      </div>
+      <div class="capset">
+        <div class="caprow"><div class="k">Overview <span class="tg">globe</span></div><p>Live orbital picture — satellites, ground towers, network links, collision risk. Click a satellite to inspect it; simulate space debris or a clean path.</p></div>
+        <div class="caprow"><div class="k">CyScam <span class="tg">India</span></div><p>A 17-day, auto-rotating watch of digital-arrest and cyber-fraud incidents across Indian cities, with case-density map and the official reporting channels.</p></div>
+        <div class="caprow"><div class="k">Firewall <span class="tg">edge</span></div><p>Deep-packet inspection metrics, a live stream of blocked connections, and the rules doing the most work.</p></div>
+        <div class="caprow"><div class="k">Alerts <span class="tg">SOC</span></div><p>A triage queue of correlated security signals, ranked by severity for the on-call analyst.</p></div>
+        <div class="caprow"><div class="k">Attacks <span class="tg">intel</span></div><p>Live intrusion attempts mapped to vectors, kill-chain stage, and origin country.</p></div>
+      </div>
+    </div>
+  </div></section>
 
   <!-- toast -->
   <div class="toast" id="toast"><div class="inner"><span id="toastMsg"></span></div></div>
@@ -617,7 +839,18 @@
     { id: 'FRA-12',  loc: 'Frankfurt, DE',    load: 76, dev: 1990, lat: 50.11, lng: 8.68 },
     { id: 'TKO-88',  loc: 'Tokyo, JP',        load: 83, dev: 4012, lat: 35.68, lng: 139.69 },
     { id: 'SGP-3',   loc: 'Singapore',        load: 58, dev: 1760, lat: 1.35,  lng: 103.82 },
-    { id: 'BLR-21',  loc: 'Bangalore, IN',    load: 67, dev: 2230, lat: 12.97, lng: 77.59 }
+    { id: 'DEL-01',  loc: 'Delhi, IN',        load: 88, dev: 4820, lat: 28.61, lng: 77.21, ind: true, car: true },
+    { id: 'MUM-02',  loc: 'Mumbai, IN',       load: 84, dev: 5210, lat: 19.08, lng: 72.88, ind: true, car: true },
+    { id: 'BLR-21',  loc: 'Bangalore, IN',    load: 79, dev: 4360, lat: 12.97, lng: 77.59, ind: true, car: true },
+    { id: 'HYD-06',  loc: 'Hyderabad, IN',    load: 71, dev: 3890, lat: 17.38, lng: 78.49, ind: true },
+    { id: 'CHN-05',  loc: 'Chennai, IN',      load: 76, dev: 3620, lat: 13.08, lng: 80.27, ind: true },
+    { id: 'KOL-04',  loc: 'Kolkata, IN',      load: 73, dev: 3140, lat: 22.57, lng: 88.36, ind: true },
+    { id: 'CHD-09',  loc: 'Chandigarh, IN',   load: 58, dev: 1240, lat: 30.73, lng: 76.78, ind: true },
+    { id: 'NSK-08',  loc: 'Nashik, IN',       load: 51, dev: 980,  lat: 19.99, lng: 73.79, ind: true },
+    { id: 'GWL-10',  loc: 'Gwalior, IN',      load: 47, dev: 820,  lat: 26.22, lng: 78.18, ind: true },
+    { id: 'JMU-07',  loc: 'Jammu, IN',        load: 44, dev: 690,  lat: 32.73, lng: 74.87, ind: true },
+    { id: 'TRC-11',  loc: 'Trichy, IN',       load: 49, dev: 760,  lat: 10.79, lng: 78.70, ind: true },
+    { id: 'PDY-12',  loc: 'Pondicherry, IN',  load: 42, dev: 540,  lat: 11.93, lng: 79.83, ind: true }
   ];
 
   var satNames = ['Starlink-17524','NCV-16950','Starlink-31352','Iridium-7','OneWeb-204','Starlink-2899','Kuiper-58','Starlink-4410','Globalstar-M','Starlink-1099','Sentinel-6','Starlink-7720','NCV-22041','Orbcomm-3'];
@@ -650,9 +883,23 @@
 
   var trash = []; // debris injected by "space trash"
 
+  var indiaCities = towers.filter(function (t) { return t.ind; });
+
+  // Simplified India boundary (lng,lat) — indicative outline for a subtle map highlight
+  var indiaRing = [
+    [74.3,34.6],[76.0,35.4],[78.2,34.5],[79.2,32.5],[80.4,30.4],[81.9,30.0],[83.5,28.7],[85.6,28.0],
+    [88.1,27.2],[89.7,26.7],[91.6,27.4],[94.2,27.5],[95.6,27.0],[97.1,28.1],[96.0,25.9],[94.4,24.5],
+    [93.3,24.0],[92.4,23.6],[91.6,22.9],[91.5,23.7],[89.1,22.0],[87.9,21.5],[86.5,20.7],[84.8,19.3],
+    [82.9,17.5],[80.9,15.9],[80.3,13.9],[80.2,13.1],[79.9,11.4],[78.9,9.6],[77.5,8.1],[76.5,8.9],
+    [75.7,11.6],[74.7,13.5],[73.8,15.7],[72.9,17.9],[72.8,19.1],[72.6,21.0],[70.9,20.8],[69.1,22.3],
+    [68.2,23.7],[68.5,24.3],[70.6,27.7],[72.6,28.9],[73.9,31.1],[74.6,32.8],[74.3,34.6]
+  ];
+  var indiaGeo = { type: 'Feature', properties: {}, geometry: { type: 'Polygon', coordinates: [ indiaRing ] } };
+
   /* ── globe ─────────────────────────────────────────────── */
   var world = null, hasGlobe = (typeof Globe !== 'undefined');
-  var state = { autoRotate: true, speed: 1, showSats: true, showTowers: true, showLinks: true, alt: 1.85 };
+  var state = { autoRotate: true, speed: 1, showSats: true, showTowers: true, showLinks: true,
+                showLabels: true, showBorders: true, particles: false, alt: 1.85 };
 
   function htmlData() {
     var arr = [];
@@ -695,8 +942,10 @@
         .backgroundColor('rgba(0,0,0,0)')
         .showAtmosphere(true).atmosphereColor('#4aa3d4').atmosphereAltitude(0.16)
         .pointsData(state.showTowers ? towers : [])
-          .pointLat('lat').pointLng('lng').pointAltitude(0.01).pointRadius(0.32)
-          .pointColor(function (d) { return d.car ? gold : signal; })
+          .pointLat('lat').pointLng('lng')
+          .pointAltitude(function (d) { return d.ind ? 0.015 : 0.01; })
+          .pointRadius(function (d) { return d.ind ? 0.5 : 0.3; })
+          .pointColor(function (d) { return d.ind ? '#ff9f45' : (d.car ? gold : signal); })
         .arcsData(state.showLinks ? links : [])
           .arcColor(function () { return [cyan, 'rgba(88,214,255,0.1)']; })
           .arcStroke(0.45).arcAltitude(0.22)
@@ -704,6 +953,17 @@
         .ringsData([{ lat: chips[1].lat, lng: chips[1].lng }])
           .ringColor(function () { return function (t) { return 'rgba(255,90,82,' + (1 - t) + ')'; }; })
           .ringMaxRadius(7).ringPropagationSpeed(3).ringRepeatPeriod(1200)
+        .polygonsData(state.showBorders ? [indiaGeo] : [])
+          .polygonCapColor(function () { return 'rgba(63,208,168,0.05)'; })
+          .polygonSideColor(function () { return 'rgba(63,208,168,0.10)'; })
+          .polygonStrokeColor(function () { return 'rgba(63,208,168,0.6)'; })
+          .polygonAltitude(0.007)
+        .labelsData(state.showLabels ? indiaCities : [])
+          .labelLat('lat').labelLng('lng')
+          .labelText(function (d) { return d.loc.replace(', IN', ''); })
+          .labelSize(0.6).labelDotRadius(0.3)
+          .labelColor(function () { return 'rgba(232,192,122,0.92)'; })
+          .labelResolution(1)
         .htmlElementsData(htmlData())
           .htmlElement(buildHtmlEl)
           .htmlLat(function (d) { return d.lat; })
@@ -819,12 +1079,29 @@
   setInterval(function () { if (state.autoRotate) { ang = (ang + state.speed * 0.8) % 360; needle.style.transform = 'translate(-50%,-100%) rotate(' + ang + 'deg)'; } }, 60);
 
   /* ── tabs / mode ───────────────────────────────────────── */
+  var viewMap = { CyScam: 'viewCyScam', Firewall: 'viewFirewall', Alerts: 'viewAlerts', Attacks: 'viewAttacks', About: 'viewAbout' };
+  var cdApp = document.querySelector('.cd-app'), hudEl = document.querySelector('.hud');
+  var cyScamBuilt = false, dashBuilt = false;
+  function switchMode(mode) {
+    document.querySelectorAll('.view').forEach(function (v) { v.classList.remove('active'); });
+    if (mode === 'Overview') {
+      hudEl.style.display = ''; cdApp.classList.remove('dim');
+      if (world) world.controls().autoRotate = state.autoRotate;
+    } else {
+      hudEl.style.display = 'none'; cdApp.classList.add('dim');
+      if (world) world.controls().autoRotate = false;
+      var v = document.getElementById(viewMap[mode]); if (v) { v.classList.add('active'); v.scrollTop = 0; }
+      if (mode === 'CyScam' && !cyScamBuilt) { buildCyScam(); cyScamBuilt = true; }
+      if (!dashBuilt && (mode === 'Firewall' || mode === 'Alerts' || mode === 'Attacks')) { buildDashboards(); dashBuilt = true; }
+    }
+  }
   document.querySelectorAll('#cdTabs button').forEach(function (b) {
     b.addEventListener('click', function () {
       document.querySelectorAll('#cdTabs button').forEach(function (x) { x.classList.remove('is-active'); });
       b.classList.add('is-active');
-      var modeMsg = { Overview: 'Mode: Overview · all systems nominal', Firewall: 'Mode: Firewall · 3 rules engaged', Alerts: 'Mode: Alerts · 24 active issues', Attacks: 'Mode: Attacks · 0 live intrusions' };
-      flash(modeMsg[b.dataset.mode] || b.dataset.mode, b.dataset.mode === 'Attacks' || b.dataset.mode === 'Alerts' ? 'bad' : 'ok');
+      switchMode(b.dataset.mode);
+      var modeMsg = { Overview: 'Mode: Overview · orbital picture', CyScam: 'CyScam · India fraud watch', Firewall: 'Firewall · edge enforcement', Alerts: 'Alerts · triage queue', Attacks: 'Attacks · threat intelligence', About: 'About NETRADEFEND' };
+      flash(modeMsg[b.dataset.mode] || b.dataset.mode, (b.dataset.mode === 'Attacks' || b.dataset.mode === 'Alerts') ? 'bad' : 'ok');
     });
   });
 
@@ -879,27 +1156,46 @@
     document.getElementById('gCur').style.height = (cur / 30 * 100) + '%';
   }, 2200);
 
-  /* ── chance-of-failure canvas waveform ─────────────────── */
-  var cv = document.getElementById('failCanvas'), ctx = cv.getContext('2d'), t0 = 0;
+  /* ── chance-of-failure: 24h subsystem risk trend ───────── */
+  var cv = document.getElementById('failCanvas'), ctx = cv.getContext('2d');
   function sizeCanvas() { var r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1; cv.width = r.width * dpr; cv.height = r.height * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
-  function wave(w, h, t, freq, amp, phase, color, glow) {
-    ctx.beginPath();
-    for (var x = 0; x <= w; x += 4) {
-      var y = h / 2 + Math.sin(x * freq + t + phase) * amp * (0.5 + 0.5 * Math.sin(x * 0.012 + t * 0.7)) + Math.sin(x * 0.05 - t * 1.3) * (amp * 0.3);
-      if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
-    }
-    ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.shadowColor = color; ctx.shadowBlur = glow; ctx.stroke(); ctx.shadowBlur = 0;
+  var N = 60;
+  function seedSeries(base, vol, seed) {
+    var a = [], v = base;
+    for (var i = 0; i < N; i++) { var n = Math.sin(i * 0.34 + seed) * vol * 0.55 + Math.sin(i * 0.12 + seed * 2.3) * vol * 0.7; a.push(Math.max(5, Math.min(95, base + n))); }
+    return a;
   }
-  function drawChart() {
-    var r = cv.getBoundingClientRect(), w = r.width, h = r.height;
-    ctx.clearRect(0, 0, w, h);
-    // grid
-    ctx.strokeStyle = 'rgba(120,150,180,0.08)'; ctx.lineWidth = 1;
-    for (var gy = 0; gy <= 4; gy++) { var yy = h / 4 * gy; ctx.beginPath(); ctx.moveTo(0, yy); ctx.lineTo(w, yy); ctx.stroke(); }
-    t0 += 0.03;
-    wave(w, h, t0, 0.03, h * 0.16, 0, 'rgba(88,214,255,0.9)', 14);
-    wave(w, h, t0 * 1.2, 0.022, h * 0.12, 1.6, 'rgba(232,192,122,0.85)', 10);
-    wave(w, h, t0 * 0.8, 0.04, h * 0.08, 3.0, 'rgba(63,208,168,0.6)', 6);
+  var sComposite = seedSeries(56, 15, 1.3), sPower = seedSeries(24, 7, 3.1), sThermal = seedSeries(68, 9, 5.7);
+  function stepSeries(arr, base, vol) { arr.shift(); var last = arr[arr.length - 1]; arr.push(Math.max(5, Math.min(95, last + (Math.random() - 0.5) * vol + (base - last) * 0.05))); }
+  function pushPoint() {
+    stepSeries(sComposite, 56, 6); stepSeries(sPower, 24, 4); stepSeries(sThermal, 68, 5);
+    var rc = document.getElementById('rkComposite'); if (rc) rc.textContent = Math.round(sComposite[N - 1]) + '%';
+    var rp = document.getElementById('rkPower'); if (rp) rp.textContent = Math.round(sPower[N - 1]) + '%';
+    var rt = document.getElementById('rkThermal'); if (rt) rt.textContent = Math.round(sThermal[N - 1]) + '%';
+  }
+  function drawSeries(w, h, arr, stroke, fill, lw) {
+    function pathLine() { ctx.beginPath(); for (var i = 0; i < N; i++) { var x = i / (N - 1) * w, y = h - (arr[i] / 100) * h; if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); } }
+    if (fill) { pathLine(); ctx.lineTo(w, h); ctx.lineTo(0, h); ctx.closePath(); var g = ctx.createLinearGradient(0, 0, 0, h); g.addColorStop(0, fill); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fill(); }
+    pathLine(); ctx.strokeStyle = stroke; ctx.lineWidth = lw; ctx.lineJoin = 'round'; ctx.stroke();
+  }
+  var pulseT = 0, lastPush = 0;
+  function drawChart(ts) {
+    var r = cv.getBoundingClientRect(), w = r.width, h = r.height; ctx.clearRect(0, 0, w, h);
+    ctx.font = '9px ui-monospace, monospace';
+    ctx.strokeStyle = 'rgba(120,150,180,0.09)'; ctx.lineWidth = 1;
+    for (var g = 0; g <= 4; g++) { var yy = h / 4 * g; ctx.beginPath(); ctx.moveTo(28, yy); ctx.lineTo(w, yy); ctx.stroke(); ctx.fillStyle = 'rgba(120,150,180,0.4)'; ctx.fillText((100 - g * 25) + '%', 2, Math.min(h - 2, yy + 9)); }
+    // critical threshold
+    var ty = h - 0.75 * h; ctx.setLineDash([5, 5]); ctx.strokeStyle = 'rgba(255,90,82,0.45)'; ctx.beginPath(); ctx.moveTo(28, ty); ctx.lineTo(w, ty); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = 'rgba(255,90,82,0.72)'; ctx.fillText('CRIT 75%', w - 54, ty - 4);
+    // subsystem lines then composite
+    drawSeries(w, h, sPower, 'rgba(88,214,255,0.5)', null, 1.3);
+    drawSeries(w, h, sThermal, 'rgba(232,192,122,0.48)', null, 1.3);
+    drawSeries(w, h, sComposite, 'rgba(63,208,168,0.95)', 'rgba(63,208,168,0.16)', 2.2);
+    // live "now" marker
+    var ny = h - (sComposite[N - 1] / 100) * h; pulseT += 0.05; var pr = 4 + Math.sin(pulseT) * 1.6;
+    ctx.beginPath(); ctx.arc(w - 1, ny, pr + 4, 0, TAU); ctx.fillStyle = 'rgba(63,208,168,0.12)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(w - 1, ny, 3.2, 0, TAU); ctx.fillStyle = '#3fd0a8'; ctx.fill();
+    if (ts && ts - lastPush > 2600) { pushPoint(); lastPush = ts; }
     requestAnimationFrame(drawChart);
   }
   window.addEventListener('resize', sizeCanvas);
@@ -919,7 +1215,11 @@
   document.querySelectorAll('.settings-drop .sw').forEach(function (sw) {
     sw.addEventListener('click', function () {
       sw.classList.toggle('on');
-      flash((sw.classList.contains('on') ? 'Enabled' : 'Disabled') + ': ' + sw.parentElement.firstChild.textContent.trim(), 'ok');
+      var on = sw.classList.contains('on'), key = sw.dataset.key;
+      if (key === 'rotate')    { state.autoRotate = on; if (world) world.controls().autoRotate = on; }
+      if (key === 'labels')    { state.showLabels = on; if (world) world.labelsData(on ? indiaCities : []); }
+      if (key === 'particles') { state.particles = on; toggleParticles(on); }
+      flash((on ? 'Enabled' : 'Disabled') + ': ' + sw.parentElement.firstChild.textContent.trim(), 'ok');
     });
   });
   document.addEventListener('click', function () { settingsDrop.classList.remove('open'); });
@@ -933,6 +1233,158 @@
   document.getElementById('historyClose').addEventListener('click', function () {
     historyPanel.classList.remove('open');
   });
+
+  /* ═══════════ NETRADEFEND: brand, particles, views ═══════════ */
+
+  // Ashoka chakra brand mark (24 spokes)
+  (function buildChakra() {
+    var el = document.getElementById('chakra'); if (!el) return;
+    var s = '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="50" cy="50" r="5.5" fill="currentColor"/>';
+    for (var i = 0; i < 24; i++) { var a = i / 24 * TAU; s += '<line x1="' + (50 + Math.cos(a) * 8).toFixed(1) + '" y1="' + (50 + Math.sin(a) * 8).toFixed(1) + '" x2="' + (50 + Math.cos(a) * 44).toFixed(1) + '" y2="' + (50 + Math.sin(a) * 44).toFixed(1) + '" stroke="currentColor" stroke-width="2"/>'; }
+    el.innerHTML = s + '</svg><span class="glow"></span>';
+  })();
+
+  // Ambient particle layer (toggled from settings)
+  var pcv = document.getElementById('particleCanvas'), pctx = pcv ? pcv.getContext('2d') : null, particles = [], praf = null;
+  function sizeParticles() { if (!pcv) return; var r = document.querySelector('.cd-app').getBoundingClientRect(), dpr = window.devicePixelRatio || 1; pcv.width = r.width * dpr; pcv.height = r.height * dpr; pctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  function toggleParticles(on) {
+    if (!pcv) return;
+    pcv.classList.toggle('on', on);
+    if (on) {
+      sizeParticles();
+      if (!particles.length) { var r = pcv.getBoundingClientRect(); for (var i = 0; i < 70; i++) particles.push({ x: Math.random() * r.width, y: Math.random() * r.height, vx: (Math.random() - 0.5) * 0.25, vy: (Math.random() - 0.5) * 0.25, r: Math.random() * 1.6 + 0.4, a: Math.random() * 0.45 + 0.15 }); }
+      if (!praf) drawParticles();
+    } else { if (praf) { cancelAnimationFrame(praf); praf = null; } if (pctx) pctx.clearRect(0, 0, pcv.width, pcv.height); }
+  }
+  function drawParticles() {
+    var r = pcv.getBoundingClientRect(); pctx.clearRect(0, 0, r.width, r.height);
+    particles.forEach(function (p) {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = r.width; if (p.x > r.width) p.x = 0; if (p.y < 0) p.y = r.height; if (p.y > r.height) p.y = 0;
+      pctx.beginPath(); pctx.arc(p.x, p.y, p.r, 0, TAU); pctx.fillStyle = 'rgba(88,214,255,' + p.a + ')'; pctx.fill();
+    });
+    praf = requestAnimationFrame(drawParticles);
+  }
+  window.addEventListener('resize', function () { if (state.particles) sizeParticles(); });
+
+  /* ── shared view helpers ── */
+  function kpi(label, cls, value, delta) { return '<div class="kpi ' + (cls || '') + '"><div class="l">' + label + '</div><div class="v">' + value + '</div><div class="d">' + (delta || '') + '</div></div>'; }
+  function param(k, v, cls) { return '<div class="param"><span>' + k + '</span><b class="' + (cls || '') + '">' + v + '</b></div>'; }
+  function bars(id, rows) { var el = document.getElementById(id); if (!el) return; el.innerHTML = rows.map(function (r) { return '<div class="hbar"><div class="hb-top"><span>' + r[0] + '</span><b>' + r[1] + '%</b></div><div class="track"><div class="fill ' + (r[2] || '') + '" style="width:' + r[1] + '%"></div></div></div>'; }).join(''); }
+  function fmtDate(d) { var mo = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return ('0' + d.getDate()).slice(-2) + ' ' + mo[d.getMonth()]; }
+  function nowClock() { var d = new Date(); return ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2) + ':' + ('0' + d.getSeconds()).slice(-2); }
+  function pick(a, r) { return a[Math.floor((r ? r() : Math.random()) * a.length)]; }
+
+  /* ── India SVG map (case density) ── */
+  function indiaMapSVG(cityCounts, hotCity) {
+    var minL = 67.5, maxL = 98, minLa = 6.5, maxLa = 37, W = 330, H = 350;
+    function px(lng) { return (lng - minL) / (maxL - minL) * W; }
+    function py(lat) { return (maxLa - lat) / (maxLa - minLa) * H; }
+    var d = ''; indiaRing.forEach(function (c, i) { d += (i ? 'L' : 'M') + px(c[0]).toFixed(1) + ' ' + py(c[1]).toFixed(1) + ' '; }); d += 'Z';
+    var dots = '';
+    indiaCities.forEach(function (c) {
+      var name = c.loc.replace(', IN', ''), cnt = cityCounts[name] || 0, r = 2.6 + Math.min(9, cnt * 0.7), hot = (name === hotCity);
+      dots += '<circle class="' + (hot ? 'cityhot' : 'citydot') + '" cx="' + px(c.lng).toFixed(1) + '" cy="' + py(c.lat).toFixed(1) + '" r="' + r.toFixed(1) + '" opacity="0.9"/>';
+      dots += '<text class="clabel" x="' + (px(c.lng) + r + 2).toFixed(1) + '" y="' + (py(c.lat) + 2.4).toFixed(1) + '">' + name + (cnt ? ' ' + cnt : '') + '</text>';
+    });
+    return '<svg class="indiamap" viewBox="0 0 ' + W + ' ' + H + '"><path class="border" d="' + d + '"/>' + dots + '</svg>';
+  }
+
+  /* ── CyScam: daily-seeded India fraud feed ── */
+  function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; var t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function inr(v) { if (v >= 1e7) return '₹' + (v / 1e7).toFixed(2) + ' Cr'; if (v >= 1e5) return '₹' + (v / 1e5).toFixed(1) + ' L'; return '₹' + Math.round(v / 1000) + 'k'; }
+  function buildCyScam() {
+    var today = new Date(), daySeed = Math.floor(today.getTime() / 86400000), rnd = mulberry32((daySeed * 2654435761) % 2147483647);
+    var cities = ['Delhi','Mumbai','Bangalore','Hyderabad','Chennai','Kolkata','Chandigarh','Nashik','Gwalior','Jammu','Trichy','Pondicherry','Pune','Lucknow','Ahmedabad','Jaipur'];
+    var types = [{ n: 'Digital Arrest', w: 5 }, { n: 'UPI / QR fraud', w: 6 }, { n: 'Investment scam', w: 5 }, { n: 'Courier / FedEx scam', w: 4 }, { n: 'KYC / bank fraud', w: 5 }, { n: 'Loan-app extortion', w: 3 }, { n: 'Sextortion', w: 3 }, { n: 'Job / task scam', w: 4 }, { n: 'Fake trading app', w: 3 }, { n: 'OTP / SIM-swap', w: 4 }];
+    var victims = ['Retired teacher, 68','Software engineer, 31','Homemaker, 45','College student, 21','Small trader, 52','Doctor, 39','Govt clerk, 47','Startup founder, 34','Bank manager, 50','Pensioner, 72','Nurse, 29','Shopkeeper, 41'];
+    var statuses = [{ n: 'Under investigation', c: 'warn' }, { n: 'FIR registered', c: 'info' }, { n: 'Funds frozen', c: 'ok' }, { n: 'Amount recovered', c: 'ok' }, { n: 'Accused arrested', c: 'ok' }, { n: 'Reported to 1930', c: 'info' }];
+    function pickW(arr) { var tot = 0, i; for (i = 0; i < arr.length; i++) tot += arr[i].w; var r = rnd() * tot; for (i = 0; i < arr.length; i++) { r -= arr[i].w; if (r <= 0) return arr[i]; } return arr[0]; }
+    var incidents = [], n = 34 + Math.floor(rnd() * 10);
+    for (var i = 0; i < n; i++) {
+      var daysAgo = Math.floor(rnd() * 17), dt = new Date(today.getTime() - daysAgo * 86400000);
+      incidents.push({ dt: dt, city: pick(cities, rnd), type: pickW(types).n, victim: pick(victims, rnd), amt: Math.round((0.4 + rnd() * rnd() * 80) * 1e5), status: pick(statuses, rnd) });
+    }
+    incidents.sort(function (a, b) { return b.dt - a.dt; });
+    var totalLoss = 0, byCity = {}, byType = {};
+    incidents.forEach(function (x) { totalLoss += x.amt; byCity[x.city] = (byCity[x.city] || 0) + 1; byType[x.type] = (byType[x.type] || 0) + 1; });
+    var topCity = Object.keys(byCity).sort(function (a, b) { return byCity[b] - byCity[a]; })[0];
+    var topType = Object.keys(byType).sort(function (a, b) { return byType[b] - byType[a]; })[0];
+    document.getElementById('cyKpis').innerHTML =
+      kpi('Reported incidents', 'crit', incidents.length, 'last 17 days') +
+      kpi('Total reported loss', 'warn', inr(totalLoss), 'across ' + Object.keys(byCity).length + ' cities') +
+      kpi('Most-targeted city', 'cyan', topCity, byCity[topCity] + ' cases') +
+      kpi('Top scam type', '', topType, byType[topType] + ' cases');
+    document.getElementById('cyCount').textContent = incidents.length + ' incidents';
+    document.getElementById('cyBody').innerHTML = incidents.map(function (x) {
+      return '<tr><td class="mono">' + fmtDate(x.dt) + '</td><td class="mono" style="color:var(--gold)">' + x.city + '</td><td>' + x.type + '</td><td>' + x.victim + '</td><td class="amt">' + inr(x.amt) + '</td><td><span class="badge ' + x.status.c + '">' + x.status.n + '</span></td></tr>';
+    }).join('');
+    document.getElementById('cyMap').innerHTML = indiaMapSVG(byCity, topCity);
+    var reported = incidents.filter(function (x) { return x.status.n === 'Reported to 1930' || x.status.n === 'FIR registered'; }).length;
+    document.getElementById('cyParams').innerHTML =
+      param('Cases (17d)', incidents.length, 'risk') +
+      param('Total loss', inr(totalLoss), 'risk') +
+      param('Average loss', inr(totalLoss / incidents.length), '') +
+      param('Digital-arrest cases', byType['Digital Arrest'] || 0, '') +
+      param('Cities affected', Object.keys(byCity).length, '') +
+      param('Formally reported', reported, 'ok');
+    var next = new Date((daySeed + 1) * 86400000), hrs = Math.max(1, Math.round((next - today) / 3600000));
+    document.getElementById('cyRefresh').textContent = 'refreshed ' + fmtDate(today) + ' · next in ' + hrs + 'h';
+  }
+
+  /* ── Firewall / Alerts / Attacks dashboards ── */
+  var fwTimer = null, atTimer = null;
+  function randIP() { return (Math.floor(Math.random() * 223) + 1) + '.' + Math.floor(Math.random() * 256) + '.' + Math.floor(Math.random() * 256) + '.' + Math.floor(Math.random() * 256); }
+  function clockAgo(min) { var d = new Date(Date.now() - min * 60000); return ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2); }
+  function buildDashboards() {
+    // FIREWALL
+    document.getElementById('fwKpis').innerHTML =
+      kpi('Packets inspected', 'cyan', '4.82B', 'today · <span class="fl">live</span>') +
+      kpi('Threats blocked', 'crit', '12,847', '<span class="up">▲ 6.2%</span> vs 24h') +
+      kpi('Rules engaged', '', '318', '12 auto-tuned') +
+      kpi('Block success', 'ok', '99.997%', '<span class="dn">0 leaked</span>');
+    bars('fwRules', [['SIG-4471 · SQL injection', 92, 'r'], ['GEO-118 · blocked ASN', 78, 'r'], ['RATE-09 · burst limiter', 64, ''], ['BOT-22 · headless UA', 51, ''], ['TLS-07 · weak cipher', 37, '']]);
+    bars('fwGeo', [['Asia-Pacific', 44, ''], ['Europe', 27, ''], ['North America', 18, ''], ['Latin America', 7, 'r'], ['Africa', 4, '']]);
+    fwStreamStart();
+    // ALERTS
+    document.getElementById('alKpis').innerHTML =
+      kpi('Open alerts', 'warn', '24', '<span class="up">▲ 3</span> new') +
+      kpi('Critical', 'crit', '4', 'SLA 15m') +
+      kpi('Mean time to ack', 'cyan', '2m 41s', '<span class="dn">▼ 22%</span>') +
+      kpi('Escalated', '', '2', 'to tier-2');
+    var cats = ['Intrusion','Malware','Anomaly','Policy','Recon'], srcs = ['edge-fw-3','ids-sensor-7','ep-agent-221','dns-guard','ueba-core'];
+    var sevs = [['crit','CRIT'],['crit','CRIT'],['warn','HIGH'],['warn','HIGH'],['info','MED'],['info','MED'],['mut','LOW']];
+    var sigs = ['Repeated auth failure','Beaconing to known C2','Privilege-escalation attempt','Data-exfil pattern','Port-scan sweep','Suspicious PowerShell','Unusual login geography','Policy: unencrypted transfer'];
+    var arows = []; for (var i = 0; i < 14; i++) { var sv = sevs[Math.floor(Math.random() * sevs.length)]; arows.push('<tr><td><span class="badge ' + sv[0] + '">' + sv[1] + '</span></td><td class="mono">' + clockAgo(i * 7 + 3) + '</td><td style="color:var(--hud-ink)">' + sigs[Math.floor(Math.random() * sigs.length)] + '</td><td>' + cats[Math.floor(Math.random() * cats.length)] + '</td><td class="mono">' + srcs[Math.floor(Math.random() * srcs.length)] + '</td><td><span class="badge mut">' + ['Open','Ack','Investigating'][Math.floor(Math.random() * 3)] + '</span></td></tr>'); }
+    document.getElementById('alBody').innerHTML = arows.join('');
+    document.getElementById('alCount').textContent = '24 active';
+    // ATTACKS
+    document.getElementById('atKpis').innerHTML =
+      kpi('Attacks (24h)', 'crit', '1,204', '<span class="up">▲ 11%</span>') +
+      kpi('Blocked', 'ok', '1,204', '100%') +
+      kpi('Attack-surface score', 'warn', 'B+', '2 exposures') +
+      kpi('Top vector', 'cyan', 'DDoS', '38% of volume');
+    bars('atVectors', [['DDoS / volumetric', 38, 'r'], ['Credential stuffing', 22, 'r'], ['Phishing payload', 16, ''], ['SQL / injection', 12, ''], ['Zero-day probe', 7, 'r'], ['Supply-chain', 5, '']]);
+    bars('atChain', [['Reconnaissance', 88, ''], ['Weaponization', 54, ''], ['Delivery', 41, 'r'], ['Exploitation', 19, 'r'], ['Command & control', 7, 'r'], ['Exfiltration', 2, 'r']]);
+    bars('atGeo', [['Unattributed / VPN', 33, ''], ['Eastern Europe', 24, 'r'], ['East Asia', 18, ''], ['North America', 14, ''], ['South Asia', 11, '']]);
+    atStreamStart();
+  }
+  function fwStreamStart() {
+    var el = document.getElementById('fwStream'); if (!el) return;
+    var acts = ['DROP','BLOCK','RESET','QUARANTINE'], rules = ['SQLi sig','geo-fence','rate limit','bot filter','TLS policy','C2 blocklist'];
+    function row() { var a = acts[Math.floor(Math.random() * acts.length)], cls = a === 'DROP' ? 'warn' : (a === 'RESET' ? 'info' : 'crit'); return '<div class="srow"><span class="t">' + nowClock() + '</span><span class="m"><b class="ip">' + randIP() + '</b> → edge · ' + rules[Math.floor(Math.random() * rules.length)] + '</span><span class="badge ' + cls + '">' + a + '</span></div>'; }
+    el.innerHTML = ''; for (var i = 0; i < 10; i++) el.insertAdjacentHTML('beforeend', row());
+    if (fwTimer) clearInterval(fwTimer);
+    fwTimer = setInterval(function () { var v = document.getElementById('viewFirewall'); if (!v || !v.classList.contains('active')) return; el.insertAdjacentHTML('afterbegin', row()); while (el.children.length > 16) el.removeChild(el.lastChild); }, 2100);
+  }
+  function atStreamStart() {
+    var el = document.getElementById('atStream'); if (!el) return;
+    var tech = ['SYN flood','Credential stuffing','Spearphish link','SQLi probe','Path traversal','RCE attempt','Brute-force SSH','DNS tunneling'], tgt = ['api-gw','auth-svc','edge-cdn','db-replica','mail-relay','vpn-head'], org = ['VPN/anon','RU','CN','KP','BR','IR','NG','US'];
+    function row() { var blk = Math.random() > 0.06; return '<div class="srow"><span class="t">' + nowClock() + '</span><span class="m"><b>' + tech[Math.floor(Math.random() * tech.length)] + '</b> · ' + org[Math.floor(Math.random() * org.length)] + ' → ' + tgt[Math.floor(Math.random() * tgt.length)] + '</span><span class="badge ' + (blk ? 'ok' : 'crit') + '">' + (blk ? 'BLOCKED' : 'ALERT') + '</span></div>'; }
+    el.innerHTML = ''; for (var i = 0; i < 10; i++) el.insertAdjacentHTML('beforeend', row());
+    if (atTimer) clearInterval(atTimer);
+    atTimer = setInterval(function () { var v = document.getElementById('viewAttacks'); if (!v || !v.classList.contains('active')) return; el.insertAdjacentHTML('afterbegin', row()); while (el.children.length > 16) el.removeChild(el.lastChild); }, 1800);
+  }
 
   /* ── panel minimize / resize ───────────────────────────── */
   document.querySelectorAll('.panel-min').forEach(function (btn) {
