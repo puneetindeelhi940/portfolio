@@ -53,9 +53,13 @@
   .story__out .l { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin-top: 3px; }
   @media (max-width: 760px) { .arc { grid-template-columns: 1fr; } .arc .beat.wide { grid-column: auto; } .story > summary { grid-template-columns: 1fr auto; } .story__idx { display: none; } }
 
-  .lead { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 0 var(--pad-x) 56px; }
-  .lead__portrait { position: relative; border: 1px solid rgba(255,255,255,0.12); border-radius: 28px; overflow: hidden; aspect-ratio: 5/6; width: 51%; }
+  .lead { display: grid; grid-template-columns: 215px 1fr; gap: 64px; align-items: center; padding: 0 var(--pad-x) 56px; }
+  .lead__figure { margin: 0; }
+  .lead__portrait { position: relative; border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; overflow: hidden; aspect-ratio: 5/6; width: 100%; }
   .lead__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(1) contrast(1.04); }
+  .lead__cap { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  .lead__cap strong { display: block; font-family: var(--f-sans); font-size: 14px; font-weight: 500; color: var(--ink); }
+  .lead__cap span { display: block; margin-top: 4px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--dim); line-height: 1.5; }
   .leadlist { list-style: none; padding: 0; margin: 0; }
   .leadlist li { padding: 18px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: baseline; }
   .leadlist li:first-child { padding-top: 0; }
@@ -338,9 +342,15 @@
   </div>
 </div>
 <div class="lead">
-  <div class="lead__portrait">
-    <img src="assets/portrait.png" alt="Puneet Arora" loading="lazy">
-  </div>
+  <figure class="lead__figure">
+    <div class="lead__portrait">
+      <img src="assets/portrait.png" alt="Puneet Arora" loading="lazy">
+    </div>
+    <figcaption class="lead__cap">
+      <strong>Puneet Arora</strong>
+      <span>Design Practice &amp; AI Transformation Leadership</span>
+    </figcaption>
+  </figure>
   <ol class="leadlist">
     <li><span class="num">i.</span><div><h4>I mentor designers into leaders</h4><p>Coaching individuals from execution to judgement — the difference between someone who can do the work and someone who can decide what work matters.</p></div></li>
     <li><span class="num">ii.</span><div><h4>I influence stakeholders, not just deliverables</h4><p>Bringing engineering, product, and the C-suite to a shared experience vision — and to the tradeoffs it demands.</p></div></li>
