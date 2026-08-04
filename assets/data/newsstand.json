@@ -1,0 +1,284 @@
+{
+  "generated_at": "2026-08-04T13:12:51Z",
+  "refresh_hours": 8,
+  "counts": {
+    "popular": 17,
+    "reliable": 17
+  },
+  "popular": [
+    {
+      "n": 1,
+      "claim": "FAKE Image NOT From Reuters Shows Moroccan Officer Throwing Rocks At Migrant Returning From Ceuta",
+      "verdict": "FALSE",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-image-not-from-reuters-shows-moroccan-officer-throwing-rocks-at-migrant-returning-from-ceuta.html",
+      "topic": "World"
+    },
+    {
+      "n": 2,
+      "claim": "Can Fauci plead the Fifth after Biden pardon? Why it's a legal gray area",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/news/2026/08/04/fauci-plead-fifth-biden-pardon/",
+      "topic": "Politics"
+    },
+    {
+      "n": 3,
+      "claim": "Trump’s Continued Claims of Vandalism at Reflecting Pool Disputed by U.S. Attorney Memo",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/trumps-continued-claims-of-vandalism-at-reflecting-pool-disputed-by-u-s-attorney-memo/",
+      "topic": "Politics"
+    },
+    {
+      "n": 4,
+      "claim": "Time Running Out For GOP As Congressman Faces Abuse Allegations",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/03/max-miller-bernie-moreno-ohio-donald-trump-mike-johnson",
+      "topic": "Trending"
+    },
+    {
+      "n": 5,
+      "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
+      "verdict": "FALSE",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/el-nino-misinformation/",
+      "topic": "Trending"
+    },
+    {
+      "n": 6,
+      "claim": "Siwan: At least nine rounds fired from AK-47 during students’ demonstration on July 25",
+      "verdict": "FALSE",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/bihar-siwan-opened-fire-by-police-on-student-protesters-cjp-bihar-band/",
+      "topic": "Trending"
+    },
+    {
+      "n": 7,
+      "claim": "How many people die trying to cross the Channel in a small boat?",
+      "verdict": "FALSE",
+      "source": "Full Fact",
+      "url": "https://fullfact.org/immigration/small-boat-crossing-deaths/",
+      "topic": "Trending"
+    },
+    {
+      "n": 8,
+      "claim": "FAKE Photo Of Woman With Prominent Nose Waving At Migrants In Spanish Ceuta Is AI",
+      "verdict": "FALSE",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-its-fake-photo-of-woman-waving-at-migrants-at-spanish-ceuta.html",
+      "topic": "Tech / AI"
+    },
+    {
+      "n": 9,
+      "claim": "8 misleading Fauci claims we've fact-checked",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/collections/fauci-rumors-collection/",
+      "topic": "Trending"
+    },
+    {
+      "n": 10,
+      "claim": "Paul Distorts Fauci’s Diary Entry About COVID-19 and Wet Market",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/07/paul-distorts-faucis-diary-entry-about-covid-19-and-wet-market/",
+      "topic": "Health"
+    },
+    {
+      "n": 11,
+      "claim": "Meet The Assistant AG Leading Trump’s Crackdown On Fraud",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/03/assistant-attorney-general-colin-mcdonald-state-tour-trump-crackdown-anti-fraud-task-force-business-welfare-",
+      "topic": "Politics"
+    },
+    {
+      "n": 12,
+      "claim": "Wellness influencers claim mainstream medicine ignores natural remedies. They’re wrong",
+      "verdict": "FALSE",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/wellness-influencers-wrongly-claim-mainstream-medicine-ignores-natural-remedies/",
+      "topic": "Health"
+    },
+    {
+      "n": 13,
+      "claim": "Hunt for a ‘global toolkit’: Republic blamed everyone from US deep state to Greta Thunberg for CJP stir",
+      "verdict": "FALSE",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/hunt-for-a-global-toolkit-republic-blamed-everyone-from-us-deep-state-to-greta-thunberg-for-cjp-stir/",
+      "topic": "Trending"
+    },
+    {
+      "n": 14,
+      "claim": "Council document doesn’t prove lease for Number 10 North was agreed before Andy Burnham was elected as Makerfield MP",
+      "verdict": "FALSE",
+      "source": "Full Fact",
+      "url": "https://fullfact.org/politics/manchester-council-heron-house-decision-lease-burnham/",
+      "topic": "Trending"
+    },
+    {
+      "n": 15,
+      "claim": "FAKE Photo Of Sophie Cunningham, Caitlin Clark Wearing 'XX-XY Athletics' T-Shirts Was Made With AI",
+      "verdict": "FALSE",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-photo-of-sophie-cunningham-caitlin-clark-wearing-xxxy-athletics-tshirts-was-made-with-ai.html",
+      "topic": "Tech / AI"
+    },
+    {
+      "n": 16,
+      "claim": "Are AI companies scanning and destroying millions of books, including rare titles?",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/fact-check/ai-companies-destroying-rare-books/",
+      "topic": "Tech / AI"
+    },
+    {
+      "n": 17,
+      "claim": "Major Driver of Worsening Canadian Wildfires Is Climate Change, Not Forest Mismanagement",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/07/major-driver-of-worsening-canadian-wildfires-is-climate-change-not-forest-mismanagement/",
+      "topic": "Science"
+    }
+  ],
+  "reliable": [
+    {
+      "n": 1,
+      "headline": "More than 150 migrants rescued after boat catches fire in Channel",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c4gkpeppjyqo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-04T11:19:08+00:00"
+    },
+    {
+      "n": 2,
+      "headline": "5 states hold primaries today. And, Spokane police arrest man connected to wildfire",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/04/g-s1-137277/up-first-newsetter-michigan-primaries-todd-blanche-spokane-wildfires-chuck-edwards",
+      "topic": "Trending",
+      "published": "2026-08-04T11:29:23+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "WATCH LIVE: Senate Judiciary Committee votes on Blanche nomination for attorney general",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-senate-judiciary-committee-votes-on-blanche-nomination-for-attorney-general",
+      "topic": "Politics",
+      "published": "2026-08-04T13:00:43+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Stronger EU borders needed after Ceuta crisis, von der Leyen says",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/03/stronger-eu-borders-physical-barriers-ceuta-von-der-leyen",
+      "topic": "Trending",
+      "published": "2026-08-03T17:44:01+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Is Bangladesh backtracking on post-Hasina reforms?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/is-bangladesh-backtracking-on-post-hasina-reforms/a-78231437?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-04T12:45:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Ukraine hits more Wildberries sites as strike kills five in Moscow region",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c151pkww79zo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-04T11:19:01+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "They're a world leader in using drones for healthcare. But drones can't do it all",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/04/g-s1-136906/drones-healthcare-trump-administration-rwanda",
+      "topic": "Trending",
+      "published": "2026-08-04T11:05:10+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Blanche wins support from GOP holdouts after vowing to scrap 'anti-weaponization fund",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/blanche-wins-support-from-gop-holdouts-after-vowing-to-scrap-anti-weaponization-fund",
+      "topic": "Trending",
+      "published": "2026-08-03T22:55:51+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "How Ceuta migrant crisis exposes divisions within Europe - The Latest",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/news/audio/2026/aug/03/how-ceuta-migrant-crisis-exposes-divisions-within-europe-the-latest",
+      "topic": "World",
+      "published": "2026-08-03T16:05:20+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Guatemala: Towns evacuated as Fuego volcano erupts",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/guatemala-towns-evacuated-as-fuego-volcano-erupts/a-78230836?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-04T11:53:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Analysis: Trump challenged by cold reality from top allies",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cgjed2q2l0xo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-04T09:11:39+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Authorities arrest an arson suspect in connection with wildfires in Spokane",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/04/g-s1-137274/suspect-arrested-wildfires-spokane",
+      "topic": "Trending",
+      "published": "2026-08-04T10:56:56+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Trump says new talks are Iran's 'last chance' to make deal 'before decapitation",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/trump-says-new-talks-are-irans-last-chance-to-make-deal-before-decapitation",
+      "topic": "Politics",
+      "published": "2026-08-03T22:50:22+00:00"
+    },
+    {
+      "n": 14,
+      "headline": "Ceuta leader accuses Morocco over ‘atrocity’ of mass border crossing",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/03/ceuta-leader-border-crossing-morocco-spain",
+      "topic": "World",
+      "published": "2026-08-03T14:13:01+00:00"
+    },
+    {
+      "n": 15,
+      "headline": "Tennis star Sabalenka supports sport's new sex test policy",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/tennis-star-sabalenka-supports-sport-s-new-sex-test-policy/a-78228069?maca=en-rss-en-all-1573-rdf",
+      "topic": "Celebrity",
+      "published": "2026-08-04T11:04:00+00:00"
+    },
+    {
+      "n": 16,
+      "headline": "What will happen when a SpaceX rocket collides with the Moon?",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx25yn22l97o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-04T09:13:37+00:00"
+    },
+    {
+      "n": 17,
+      "headline": "The sneaky economics of healthwashing",
+      "source": "NPR",
+      "url": "https://www.npr.org/sections/planet-money/2026/08/04/g-s1-136624/the-sneaky-economics-of-healthwashing",
+      "topic": "Trending",
+      "published": "2026-08-04T10:30:00+00:00"
+    }
+  ]
+}

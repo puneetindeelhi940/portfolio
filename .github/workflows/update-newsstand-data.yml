@@ -1,0 +1,43 @@
+name: Update Viral-vs-Verified Newsstand
+
+on:
+  schedule:
+    - cron: '0 */8 * * *' # every 8 hours (00:00, 08:00, 16:00 UTC)
+  workflow_dispatch: # allow manual triggers
+
+permissions:
+  contents: write
+
+concurrency:
+  group: newsstand-data
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests feedparser
+
+      - name: Fetch and refresh newsstand data
+        run: python scripts/fetch-newsstand-data.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Newsstand Data Bot"
+          git config user.email "newsstand-bot@users.noreply.github.com"
+          git add assets/data/newsstand.json
+          if git diff --staged --quiet; then
+            echo "No newsstand changes detected"
+          else
+            git commit -m "chore: refresh viral-vs-verified newsstand $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
