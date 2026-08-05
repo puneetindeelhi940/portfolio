@@ -248,6 +248,27 @@ input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;bac
 .mir-c3 p{font-size:13.5px;line-height:1.62;color:var(--dim);margin:0;}
 .mir-c3 p b{color:var(--ink);font-weight:600;}
 
+/* ---------- STATE OF THE ART (research + references) ---------- */
+.mir-sota{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;}
+.mir-sotacard{background:var(--surface);padding:24px 22px;display:flex;flex-direction:column;scroll-margin-top:64px;transition:background .2s;}
+.mir-sotacard:target{background:color-mix(in srgb,var(--signal) 9%,var(--surface));}
+.mir-sotacard .cap{font-family:var(--f-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--signal);display:flex;align-items:center;gap:8px;}
+.mir-sotacard .cap b{width:6px;height:6px;border-radius:50%;background:var(--signal);}
+.mir-sotacard h3{font-family:var(--f-sans);font-size:17px;font-weight:600;letter-spacing:-0.015em;color:var(--ink);margin:12px 0 10px;line-height:1.22;}
+.mir-sotacard p{font-size:13px;line-height:1.6;color:var(--dim);margin:0 0 12px;}
+.mir-sotacard p b{color:var(--ink);font-weight:600;}
+.mir-sotacard .reflect{font-family:var(--f-mono);font-size:11px;line-height:1.55;color:var(--faint);border-left:2px solid var(--signal);padding:2px 0 2px 11px;margin:0 0 14px;}
+.mir-sotacard .reflect em{font-style:normal;color:var(--signal);}
+.mir-refs{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px;}
+.mir-ref{font-family:var(--f-mono);font-size:10px;letter-spacing:0.02em;color:var(--dim);border:1px solid var(--rule-2);border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:6px;transition:all .15s;text-decoration:none;}
+.mir-ref::before{content:"↗";color:var(--signal);font-size:9px;}
+.mir-ref:hover{border-color:var(--signal);color:var(--signal-ink);background:var(--signal);}
+.mir-ref:hover::before{color:var(--signal-ink);}
+.mir-sota-foot{font-family:var(--f-mono);font-size:11px;color:var(--faint);margin:18px 0 0;line-height:1.6;}
+.mir-feat[href]{cursor:pointer;text-decoration:none;}
+.mir-feat[href]:hover{border-color:var(--signal);color:var(--ink);}
+.mir-feat[href]:hover i{background:var(--mir-amber);box-shadow:0 0 8px var(--mir-amber);}
+
 .mir-impact{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
 .mir-impact .cell{padding:28px 24px;border-left:1px solid var(--rule);}
 .mir-impact .cell:first-child{border-left:none;}
@@ -330,12 +351,12 @@ input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;bac
     <strong>You</strong> are the user being personalized.
   </p>
   <div class="mir-featurebar" id="mir-featurebar">
-    <span class="mir-feat"><i></i> Memory</span>
-    <span class="mir-feat"><i></i> User Profiles</span>
-    <span class="mir-feat"><i></i> Recommendation Engine</span>
-    <span class="mir-feat"><i></i> Behavioral Analytics</span>
-    <span class="mir-feat"><i></i> Explainable AI</span>
-    <span class="mir-feat"><i></i> Preference Editing</span>
+    <a class="mir-feat" href="#sota-memory" title="See the latest research behind AI memory"><i></i> Memory</a>
+    <a class="mir-feat" href="#sota-profiling" title="See the latest research behind AI user profiling"><i></i> User Profiles</a>
+    <a class="mir-feat" href="#sota-recs" title="See the latest research behind AI recommendation engines"><i></i> Recommendation Engine</a>
+    <a class="mir-feat" href="#sota-analytics" title="See the latest research behind AI behavioral analytics"><i></i> Behavioral Analytics</a>
+    <a class="mir-feat" href="#sota-xai" title="See the latest research behind Explainable AI"><i></i> Explainable AI</a>
+    <a class="mir-feat" href="#sota-prefs" title="See the latest research behind AI preference editing"><i></i> Preference Editing</a>
   </div>
   <p class="mir-hint"><span class="ar">↓</span> Hover, open, save, or dismiss anything below — the whole system reacts. It remembers you between visits.</p>
 </section>
@@ -534,10 +555,96 @@ input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;bac
   </div>
 </div>
 
-<!-- ═══════ BEHAVIORAL SCIENCE ═══════ -->
+<!-- ═══════ STATE OF THE ART — research + references ═══════ -->
 <div class="mir-sec">
   <div class="mir-shead">
     <span class="n">§ 05</span>
+    <h2>The state of the art</h2>
+    <span class="sub">// what's actually advancing in each of the six capabilities — with sources</span>
+  </div>
+  <p class="mir-lead">
+    This prototype simplifies on purpose. Here's where the real research is in 2025–26 for each surface, in plain talking points —
+    and the papers behind them. Each hero tag above jumps to its card; every reference opens the source.
+  </p>
+  <div class="mir-sota">
+
+    <div class="mir-sotacard" id="sota-memory">
+      <div class="cap"><b></b> AI Memory</div>
+      <h3>From bigger context windows to managed, durable memory</h3>
+      <p>The frontier moved past "just fit more in the prompt." Agents now run an <b>OS-like memory hierarchy</b> that pages facts in and out of context (MemGPT / Letta); pipelines <b>extract and consolidate</b> durable facts with ADD / UPDATE / DELETE instead of hoarding raw logs (Mem0); and modules like Google's <b>Titans learn what to memorize at test time</b>, while reading — not only during training.</p>
+      <div class="reflect"><em>In MIRROR:</em> confident facts are crystallized (not raw events), timestamped, and persisted across visits.</div>
+      <div class="mir-refs">
+        <a class="mir-ref" href="https://arxiv.org/abs/2310.08560" target="_blank" rel="noopener">MemGPT · 2023</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/2501.00663" target="_blank" rel="noopener">Titans · 2025</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener">Generative Agents · 2023</a>
+      </div>
+    </div>
+
+    <div class="mir-sotacard" id="sota-profiling">
+      <div class="cap"><b></b> AI User Profiling</div>
+      <h3>Learned representations, not demographic buckets</h3>
+      <p>Profiles are shifting from hand-built segments to <b>learned representations</b>: a user's whole interaction history compressed into embeddings that plug straight into an LLM (Google's <b>User-LLM</b>), and generative <b>agent personas</b> that simulate believable behavior (Generative Agents). The direction of travel — fewer static demographics, more behavior-derived, editable profiles.</p>
+      <div class="reflect"><em>In MIRROR:</em> an 8-dimension behavioral affinity vector and an inferred segment — seedable and hand-editable.</div>
+      <div class="mir-refs">
+        <a class="mir-ref" href="https://arxiv.org/abs/2402.13598" target="_blank" rel="noopener">User-LLM · 2024</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener">Generative Agents · 2023</a>
+      </div>
+    </div>
+
+    <div class="mir-sotacard" id="sota-recs">
+      <div class="cap"><b></b> AI Recommendation Engine</div>
+      <h3>Recommendation rewritten as generative sequence modeling</h3>
+      <p>Instead of scoring a giant catalog, systems give each item a <b>Semantic ID</b> and <b>generate the next item token-by-token</b> (Google's <b>TIGER</b>). Meta's <b>HSTU</b> reframed ranking as generative modeling, showed NLP-style <b>scaling laws for recommendation</b>, and reported double-digit online engagement lift in production.</p>
+      <div class="reflect"><em>In MIRROR:</em> relevance × novelty × diversity scoring with an explore/exploit dial and a live lift-vs-baseline readout.</div>
+      <div class="mir-refs">
+        <a class="mir-ref" href="https://arxiv.org/abs/2305.05065" target="_blank" rel="noopener">Generative Retrieval (TIGER) · 2023</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/2402.17152" target="_blank" rel="noopener">HSTU · 2024</a>
+      </div>
+    </div>
+
+    <div class="mir-sotacard" id="sota-analytics">
+      <div class="cap"><b></b> AI Behavioral Analytics</div>
+      <h3>Clickstreams modeled like language, in real time</h3>
+      <p>Behavioral analytics went <b>sequence-first</b>: bidirectional Transformers model a user's action sequence to predict intent (<b>BERT4Rec</b>), and modern systems treat every interaction — dwell, skip, add-to-cart — as <b>tokens in a stream that scales like language</b>, enabling real-time next-action prediction rather than batch dashboards.</p>
+      <div class="reflect"><em>In MIRROR:</em> a live, timestamped event stream that feeds the model on every signal, with session-level readouts.</div>
+      <div class="mir-refs">
+        <a class="mir-ref" href="https://arxiv.org/abs/1904.06690" target="_blank" rel="noopener">BERT4Rec · 2019</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/2402.17152" target="_blank" rel="noopener">Generative Recommenders · 2024</a>
+      </div>
+    </div>
+
+    <div class="mir-sotacard" id="sota-xai">
+      <div class="cap"><b></b> Explainable AI</div>
+      <h3>Post-hoc attribution — and opening the black box itself</h3>
+      <p>Two tracks matured. Post-hoc attribution became standard in regulated ML — <b>SHAP</b> for feature contributions, <b>counterfactual</b> "what would need to change" explanations. And <b>mechanistic interpretability</b> now reads the model internally: Anthropic's <b>sparse autoencoders</b> extract millions of human-legible features from a live model, letting you name — and even steer — the concept behind a decision.</p>
+      <div class="reflect"><em>In MIRROR:</em> every pick decomposes into contribution bars, a plain-language reason, and a counterfactual.</div>
+      <div class="mir-refs">
+        <a class="mir-ref" href="https://transformer-circuits.pub/2024/scaling-monosemanticity/" target="_blank" rel="noopener">Scaling Monosemanticity · 2024</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/1705.07874" target="_blank" rel="noopener">SHAP · 2017</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/1711.00399" target="_blank" rel="noopener">Counterfactual Explanations · 2017</a>
+      </div>
+    </div>
+
+    <div class="mir-sotacard" id="sota-prefs">
+      <div class="cap"><b></b> AI Preference Editing</div>
+      <h3>Aligning to preferences got simpler — and more controllable</h3>
+      <p><b>Direct Preference Optimization (DPO)</b> tunes models straight from preference pairs — no reward model, no RL loop — and is now applied inside recommenders (DPO4Rec) so systems learn from thumbs-up / down directly. In parallel, <b>Constitutional-AI</b>-style approaches let explicit, editable principles steer behavior. The shift: toward <b>user-controllable, legible</b> preference signals.</p>
+      <div class="reflect"><em>In MIRROR:</em> direct affinity sliders the model treats as ground truth, plus consent, persistence, and forget controls.</div>
+      <div class="mir-refs">
+        <a class="mir-ref" href="https://arxiv.org/abs/2305.18290" target="_blank" rel="noopener">DPO · 2023</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/2212.08073" target="_blank" rel="noopener">Constitutional AI · 2022</a>
+        <a class="mir-ref" href="https://arxiv.org/abs/2410.05939" target="_blank" rel="noopener">DPO4Rec · 2024</a>
+      </div>
+    </div>
+
+  </div>
+  <p class="mir-sota-foot">References are primary sources (arXiv / Anthropic Transformer Circuits). Use them as your talking-point backbone — each card is written to be said aloud in a portfolio review or interview.</p>
+</div>
+
+<!-- ═══════ BEHAVIORAL SCIENCE ═══════ -->
+<div class="mir-sec">
+  <div class="mir-shead">
+    <span class="n">§ 06</span>
     <h2>The behavioral science</h2>
     <span class="sub">// personalization is applied psychology — designed on purpose</span>
   </div>
@@ -566,7 +673,7 @@ input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;bac
 <!-- ═══════ BUSINESS IMPACT ═══════ -->
 <div class="mir-sec">
   <div class="mir-shead">
-    <span class="n">§ 06</span>
+    <span class="n">§ 07</span>
     <h2>Why it matters to the business</h2>
     <span class="sub">// the same discipline, shipped at Dell scale</span>
   </div>
