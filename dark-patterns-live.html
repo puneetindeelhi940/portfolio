@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Dark Pattern Examples — Puneet Arora</title>
+<meta name="description" content="Interactive, working demonstrations of dark patterns — fake countdowns, confirmshaming, drip pricing, roach motels, misdirection — each with a 'reveal the trick' explainer. A safe, labelled simulation.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/dark-patterns-live.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Live Dark Pattern Examples">
+<meta property="og:description" content="Watch dark patterns actually work, then reveal the trick and the theory behind it.">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/dark-patterns-live.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/dark-patterns.css">
+<style>
+  .dp-demos { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .dp-demo { background: var(--bg); padding: 26px var(--pad-x); }
+  .dp-demo__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+  .dp-demo__head h3 { margin: 4px 0 4px; font-size: 20px; color: var(--ink); font-weight: 700; letter-spacing: -0.01em; }
+  .dp-demo__head p { margin: 0; font-size: 14px; color: var(--dim); max-width: 62ch; line-height: 1.55; }
+  .dp-demo__n { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; color: var(--dp-danger); text-transform: uppercase; }
+  @media (max-width: 720px){ .dp-demo{ padding-left: var(--pad-x-sm); padding-right: var(--pad-x-sm); } }
+
+  /* generic fake-store bits used inside specimens */
+  .fx-row { display: flex; align-items: center; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+  .fx-row:last-child { border-bottom: none; }
+  .fx-row .muted { color: var(--faint); font-size: 12px; }
+  .fx-total { font-weight: 800; font-size: 18px; color: var(--ink); }
+  .fx-timer { font-family: var(--f-mono); font-size: 30px; font-weight: 700; color: var(--dp-danger); letter-spacing: 0.05em; font-variant-numeric: tabular-nums; }
+  .fx-cta { display:inline-block; background: var(--dp-danger); color:#fff; border:none; border-radius:6px; padding:12px 22px; font-weight:700; cursor:pointer; font-size:14px; }
+  .fx-cta:hover{ filter:brightness(1.08); }
+  .fx-ghost { background:none; border:none; color:var(--faint); font-size:11px; text-decoration:underline; cursor:pointer; }
+  .fx-big { background: var(--dp-good); color: var(--signal-ink,#08150f); border:none; border-radius:8px; padding:16px 26px; font-weight:800; font-size:16px; cursor:pointer; width:100%; }
+  .fx-tiny-link { display:block; text-align:center; margin-top:10px; color:var(--faint); font-size:11px; text-decoration:underline; cursor:pointer; }
+  .fx-scarce { color: var(--dp-danger); font-family: var(--f-mono); font-size: 12px; letter-spacing:.04em; }
+  .fx-check { display:flex; align-items:flex-start; gap:9px; padding:8px 0; font-size:13px; color:var(--dim); }
+  .fx-check input { margin-top:2px; }
+  .fx-viewers { display:flex; align-items:center; gap:7px; color:var(--dp-warn); font-size:12px; font-family:var(--f-mono); }
+  .fx-viewers .live { width:7px;height:7px;border-radius:50%;background:var(--dp-danger);box-shadow:0 0 8px var(--dp-danger); animation:dp-pulse 1.6s infinite; }
+  .fx-pop { border:1px solid var(--rule-2); border-radius:10px; background:var(--bg); padding:20px; max-width:360px; }
+  .fx-pop h4 { margin:0 0 8px; font-size:17px; color:var(--ink); }
+  .fx-pop p { margin:0 0 16px; font-size:13px; color:var(--dim); }
+  .fx-decline { background:none;border:none;color:var(--faint);font-size:11px;text-decoration:underline;cursor:pointer;display:block;margin:12px auto 0; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand"><span class="dot"></span><b>Puneet Arora</b></a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="dark-patterns.html" class="is-current">DARK PATTERNS</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- ETHICS RIBBON -->
+<div class="dp-ribbon">
+  <b>Live simulation</b>
+  <span>These widgets really run the trick — but they&rsquo;re fake. No timer is real, no cart charges you, no data leaves this page. Hit &ldquo;Reveal the trick&rdquo; on each to see the theory.</span>
+</div>
+
+<!-- HEADER -->
+<section class="hero" data-screen-label="hero" style="display:block; padding-bottom: 10px;">
+  <span class="dp-kicker">02 · Live Examples</span>
+  <h1 class="hero__big" style="font-size:38px; letter-spacing:-0.025em; margin-top:16px;">Watch each trick <em style="font-style:normal;color:var(--dp-danger);">actually work</em>.</h1>
+  <p class="hero__sub" style="max-width:60ch;">Interact with each specimen the way you would a real product. Then reveal how it manipulates you, why your brain falls for it, and what the honest version looks like.</p>
+</section>
+
+<!-- SUBNAV -->
+<div style="padding: 6px var(--pad-x) 0;">
+  <nav class="dp-subnav" aria-label="Dark patterns hub sections">
+    <a href="dark-patterns.html"><span class="n">01 · HUB</span><span class="t">Masterclass &amp; Catalogue</span><span class="d">Theory + taxonomy</span></a>
+    <a href="dark-patterns-live.html" class="is-current"><span class="n">02 · LIVE</span><span class="t">Live Examples</span><span class="d">Watch each trick work</span></a>
+    <a href="dark-patterns-game.html"><span class="n">03 · GAME</span><span class="t">Spot the Pattern</span><span class="d">Identify &amp; score points</span></a>
+    <a href="dark-patterns-ai.html"><span class="n">04 · AI</span><span class="t">AI Simulator</span><span class="d">AI-driven manipulation</span></a>
+  </nav>
+</div>
+
+<div style="height: 22px;"></div>
+
+<div class="dp-demos">
+
+  <!-- 1 · FAKE COUNTDOWN -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 01 · Urgency</span>
+        <h3>The countdown that never ends</h3>
+        <p>&ldquo;Hurry — your discount expires!&rdquo; Watch the timer. Now reload the page.</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r1">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:420px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> checkout.example-store</div>
+      <div class="dp-specimen__body" style="text-align:center;">
+        <div class="fx-scarce" style="margin-bottom:6px;">⚡ FLASH DEAL — 40% OFF</div>
+        <div class="fx-timer" id="fxTimer">14:59</div>
+        <div class="muted" style="color:var(--faint);font-size:12px;margin:6px 0 16px;">Offer expires when the timer hits zero</div>
+        <button class="fx-cta">Claim my discount now</button>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r1">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>The clock resets every time you arrive.</h4>
+      <p>The timer isn&rsquo;t counting toward any real deadline — it&rsquo;s reset on page load and often just loops. It exploits <b>loss aversion</b> and <b>scarcity bias</b>: the fear of missing out overrides deliberate evaluation, so you buy before you&rsquo;ve decided you want to.</p>
+      <p class="dp-harm">Harm: purchases made under manufactured pressure, buyer&rsquo;s remorse, eroded trust.</p>
+      <p class="dp-ethical">Honest version: no timer, or a real deadline that genuinely passes. Let the product&rsquo;s value — not a fake clock — do the convincing.</p>
+    </div>
+  </section>
+
+  <!-- 2 · CONFIRMSHAMING -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 02 · Misdirection</span>
+        <h3>Confirmshaming: the guilt-trip &ldquo;no&rdquo;</h3>
+        <p>Try to decline this newsletter pop-up. Read how the &ldquo;no&rdquo; is worded.</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r2">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:420px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> example-blog.com</div>
+      <div class="dp-specimen__body">
+        <div class="fx-pop" style="margin:0 auto;">
+          <h4>Want to actually get ahead in life?</h4>
+          <p>Join 50,000 winners getting our weekly success secrets.</p>
+          <button class="fx-cta" style="width:100%;">Yes, I want to succeed</button>
+          <button class="fx-decline" id="fxShame">No thanks, I&rsquo;m fine staying mediocre</button>
+        </div>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r2">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>Your decline is written to make you feel bad.</h4>
+      <p><b>Confirmshaming</b> loads the rejection option with self-criticism (&ldquo;staying mediocre&rdquo;). It weaponises <b>ego and social desirability</b> — you don&rsquo;t want to click something that labels you a failure, so you accept.</p>
+      <p class="dp-harm">Harm: coerced consent, unwanted signups, resentment.</p>
+      <p class="dp-ethical">Honest version: a neutral &ldquo;No thanks&rdquo; that respects the choice equally to &ldquo;Yes.&rdquo;</p>
+    </div>
+  </section>
+
+  <!-- 3 · DRIP PRICING -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 03 · Sneaking</span>
+        <h3>Drip pricing: the total that keeps climbing</h3>
+        <p>A $29 ticket. Click through checkout and watch the fees appear one screen at a time.</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r3">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:440px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> tickets.example.com</div>
+      <div class="dp-specimen__body">
+        <div id="fxDrip">
+          <div class="fx-row"><span>General Admission × 1</span><span>$29.00</span></div>
+        </div>
+        <div class="fx-row" style="border-top:2px solid var(--rule-2);border-bottom:none;margin-top:6px;">
+          <span class="fx-total">Total</span><span class="fx-total" id="fxDripTotal">$29.00</span>
+        </div>
+        <button class="fx-cta" id="fxDripNext" style="width:100%;margin-top:14px;">Continue to payment →</button>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r3">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>The real price is hidden until you&rsquo;re committed.</h4>
+      <p><b>Drip pricing</b> reveals mandatory fees only after you&rsquo;ve invested time and feel psychologically committed — the <b>sunk-cost fallacy</b>. By the final screen the $29 ticket costs far more, but abandoning &ldquo;feels&rdquo; wasteful.</p>
+      <p class="dp-harm">Harm: overpaying, distorted price comparison, a market that rewards hiding costs.</p>
+      <p class="dp-ethical">Honest version: show the all-in price up front. Regulators increasingly mandate exactly this.</p>
+    </div>
+  </section>
+
+  <!-- 4 · SNEAK INTO BASKET / PRESELECTION -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 04 · Sneaking</span>
+        <h3>Pre-ticked boxes &amp; the snuck-in add-on</h3>
+        <p>This &ldquo;order summary&rdquo; has already made some choices for you. Spot them before you&rsquo;d pay.</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r4">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:440px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> shop.example.com/cart</div>
+      <div class="dp-specimen__body">
+        <div class="fx-row"><span>Wireless Headphones</span><span>$89.00</span></div>
+        <div class="fx-row"><span>Shipping Protection <span class="muted">(recommended)</span></span><span>$6.99</span></div>
+        <label class="fx-check"><input type="checkbox" checked> Add a 3-year Protection Plan — <b style="color:var(--ink);">$24.99</b></label>
+        <label class="fx-check"><input type="checkbox" checked> Round up $0.63 to donate to charity</label>
+        <label class="fx-check"><input type="checkbox" checked> Email me exclusive partner offers</label>
+        <button class="fx-cta" style="width:100%;margin-top:12px;">Place order — $120.98</button>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r4">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>Every default was chosen for the seller, not you.</h4>
+      <p>The headphones were $89, but <b>shipping protection was snuck in</b> and <b>three boxes are pre-ticked</b>. This exploits <b>default bias</b> — people overwhelmingly leave defaults untouched. The &ldquo;recommended&rdquo; label adds false authority.</p>
+      <p class="dp-harm">Harm: paying for things you never chose, unwanted marketing, over-sharing.</p>
+      <p class="dp-ethical">Honest version: nothing added or pre-checked. The user opts <em>in</em> to extras, not out of them.</p>
+    </div>
+  </section>
+
+  <!-- 5 · ROACH MOTEL -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 05 · Obstruction</span>
+        <h3>Roach motel: easy in, impossible out</h3>
+        <p>Subscribing is one tap. Now try to cancel.</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r5">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:440px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> app.example-stream.com</div>
+      <div class="dp-specimen__body" id="fxRoach">
+        <p style="margin:0 0 14px;color:var(--dim);font-size:14px;">You&rsquo;re subscribed to <b style="color:var(--ink);">Stream+ Premium</b> — $14.99/mo.</p>
+        <button class="fx-ghost" id="fxCancelStart" style="font-size:13px;">Cancel subscription</button>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r5">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>The exit is a maze; the entrance was a door.</h4>
+      <p>The <b>roach motel</b> creates deliberate <b>asymmetry</b>: signing up is frictionless, cancelling is a gauntlet of confirmations, retention offers, and dead ends. It banks on <b>effort aversion</b> — many people simply give up and keep paying.</p>
+      <p class="dp-harm">Harm: unwanted recurring charges, wasted time, feeling trapped.</p>
+      <p class="dp-ethical">Honest version: cancelling is exactly as easy as subscribing — one click, no gauntlet. &ldquo;Click to cancel&rdquo; laws now require this.</p>
+    </div>
+  </section>
+
+  <!-- 6 · MISDIRECTION BUTTONS -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 06 · Misdirection</span>
+        <h3>Visual interference: where&rsquo;s the free option?</h3>
+        <p>One button is screaming at you. The choice you probably want is hiding.</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r6">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:420px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> example-app.com/upgrade</div>
+      <div class="dp-specimen__body" style="text-align:center;">
+        <p style="margin:0 0 16px;color:var(--dim);font-size:14px;">You&rsquo;ve hit your free limit. Choose a plan:</p>
+        <button class="fx-big">Upgrade to Pro — $12/mo · Best value ✨</button>
+        <a class="fx-tiny-link" href="#" onclick="return false;">continue with limited free plan</a>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r6">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>Contrast steers your click.</h4>
+      <p><b>Visual interference</b> uses size, colour and placement to make the profitable option unmissable and the free option nearly invisible. Your attention follows <b>visual salience</b>, not your actual intent.</p>
+      <p class="dp-harm">Harm: unnecessary upgrades, decisions made by design hierarchy rather than need.</p>
+      <p class="dp-ethical">Honest version: both options get equal visual weight so the choice is genuinely yours.</p>
+    </div>
+  </section>
+
+  <!-- 7 · FAKE SOCIAL PROOF -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 07 · Urgency / Scarcity</span>
+        <h3>Fake scarcity &amp; the &ldquo;live&rdquo; viewer counter</h3>
+        <p>Only a few left — and look how many people are watching! (Watch the numbers.)</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r7">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:420px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> book.example-hotels.com</div>
+      <div class="dp-specimen__body">
+        <div style="font-size:15px;color:var(--ink);font-weight:600;margin-bottom:4px;">Seaview Room · $189/night</div>
+        <div class="fx-scarce" id="fxStock">🔥 Only 2 rooms left at this price!</div>
+        <div class="fx-viewers" style="margin:10px 0 16px;"><span class="live"></span><span id="fxViewers">23</span> people are viewing this right now</div>
+        <button class="fx-cta" style="width:100%;">Book now before it&rsquo;s gone</button>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r7">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>The numbers are invented — refresh and they jump.</h4>
+      <p>&ldquo;Only 2 left&rdquo; and the <b>live viewer count</b> are frequently randomly generated, not real inventory or traffic. They stack <b>scarcity</b> and <b>social proof</b> to create a herd-driven rush.</p>
+      <p class="dp-harm">Harm: panic booking, overpaying, decisions driven by fabricated competition.</p>
+      <p class="dp-ethical">Honest version: show real availability, or nothing. If a number can&rsquo;t be verified, it shouldn&rsquo;t pressure a decision.</p>
+    </div>
+  </section>
+
+  <!-- 8 · TRICK QUESTION -->
+  <section class="dp-demo">
+    <div class="dp-demo__head">
+      <div>
+        <span class="dp-demo__n">Demo 08 · Misdirection</span>
+        <h3>The trick question</h3>
+        <p>Read carefully. What does leaving this box unchecked actually do?</p>
+      </div>
+      <button class="dp-btn dp-btn--reveal" data-reveal="r8">Reveal the trick</button>
+    </div>
+    <div class="dp-specimen" style="max-width:440px;">
+      <div class="dp-specimen__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span> signup.example.com</div>
+      <div class="dp-specimen__body">
+        <label class="fx-check" style="font-size:13.5px;"><input type="checkbox"> Uncheck this box if you would prefer <b style="color:var(--ink);">not</b> to not receive occasional communications from us and our carefully selected partners.</label>
+        <button class="fx-cta" style="width:100%;margin-top:10px;">Create account</button>
+      </div>
+    </div>
+    <div class="dp-reveal" id="r8">
+      <span class="dp-lbl">Reveal · How the trick works</span>
+      <h4>The double negative is the whole point.</h4>
+      <p>&ldquo;Not to not receive&rdquo; = <em>to receive</em>. The confusing grammar plus mention of &ldquo;partners&rdquo; is engineered so that whatever you do, you probably end up opted into marketing. It exploits <b>cognitive load</b> — nobody parses a checkbox twice.</p>
+      <p class="dp-harm">Harm: consent you didn&rsquo;t knowingly give, data shared with third parties.</p>
+      <p class="dp-ethical">Honest version: &ldquo;Email me occasional updates&rdquo; — plain, positive, unchecked by default.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- CTA -->
+<div class="shead" style="margin-top:0;">
+  <div class="shead__left">
+    <span class="shead__n">→ NEXT</span>
+    <span class="shead__title">NOW TEST YOURSELF</span>
+    <span class="shead__sub">// find these patterns hidden in a realistic UI — and score points</span>
+  </div>
+  <div class="shead__right"><a href="dark-patterns-game.html" class="signal">PLAY THE GAME →</a></div>
+</div>
+<p class="body" style="padding: 22px var(--pad-x) 48px; max-width:72ch; margin:0; color:var(--dim); line-height:1.65;">
+  You&rsquo;ve seen the tricks in isolation. In the <a href="dark-patterns-game.html" class="signal">spot-the-pattern game</a> they&rsquo;re camouflaged inside an ordinary-looking product page — click each one you can find, name it, and earn 10 points apiece. Then see how AI supercharges all of this in the <a href="dark-patterns-ai.html" class="signal">AI simulator</a>.
+</p>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
+</footer>
+
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
+<script>
+(function(){
+  // Reveal toggles
+  document.querySelectorAll('[data-reveal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var panel = document.getElementById(btn.getAttribute('data-reveal'));
+      if(!panel) return;
+      var open = panel.classList.toggle('is-open');
+      btn.textContent = open ? 'Hide the trick' : 'Reveal the trick';
+    });
+  });
+
+  // Demo 1 — fake countdown that resets on load and loops
+  var t = 15*60 - 1;
+  var timerEl = document.getElementById('fxTimer');
+  setInterval(function(){
+    if(t<=0) t = 15*60; // loops forever — the "deadline" never arrives
+    t--;
+    var m = String(Math.floor(t/60)).padStart(2,'0');
+    var s = String(t%60).padStart(2,'0');
+    if(timerEl) timerEl.textContent = m+':'+s;
+  }, 1000);
+
+  // Demo 2 — confirmshaming decline (the "no" runs away a touch, then just closes)
+  var shame = document.getElementById('fxShame');
+  if(shame) shame.addEventListener('click', function(){
+    shame.closest('.fx-pop').style.opacity='.4';
+    shame.textContent = '…fine, closing (see how that felt?)';
+  });
+
+  // Demo 3 — drip pricing
+  var dripSteps = [
+    { label: 'Service fee', amt: 8.50 },
+    { label: 'Processing fee', amt: 4.95 },
+    { label: '&ldquo;Convenience&rdquo; fee', amt: 3.50 },
+    { label: 'Facility charge', amt: 2.00 }
+  ];
+  var dripIdx = 0, dripTotal = 29.00;
+  var dripBox = document.getElementById('fxDrip');
+  var dripTotalEl = document.getElementById('fxDripTotal');
+  var dripBtn = document.getElementById('fxDripNext');
+  if(dripBtn) dripBtn.addEventListener('click', function(){
+    if(dripIdx < dripSteps.length){
+      var step = dripSteps[dripIdx++];
+      dripTotal += step.amt;
+      var row = document.createElement('div');
+      row.className = 'fx-row';
+      row.innerHTML = '<span class="muted">'+step.label+'</span><span style="color:var(--dp-danger)">+$'+step.amt.toFixed(2)+'</span>';
+      dripBox.appendChild(row);
+      dripTotalEl.textContent = '$'+dripTotal.toFixed(2);
+      if(dripIdx===dripSteps.length){ dripBtn.textContent = 'Pay $'+dripTotal.toFixed(2)+' →'; }
+    } else {
+      dripBtn.textContent = 'See how $29 became $'+dripTotal.toFixed(2)+'?';
+      dripBtn.disabled = true; dripBtn.style.opacity='.6';
+    }
+  });
+
+  // Demo 5 — roach motel cancel gauntlet
+  var roach = document.getElementById('fxRoach');
+  var roachStart = document.getElementById('fxCancelStart');
+  var stage = 0;
+  var stages = [
+    '<p style="margin:0 0 14px;color:var(--dim);font-size:14px;">Are you <b>sure</b> you want to cancel? You&rsquo;ll lose your watchlist, downloads and recommendations.</p><button class="fx-cta" style="width:100%;">Keep my subscription</button><button class="fx-ghost adv" style="margin-top:10px;font-size:12px;">Continue cancelling</button>',
+    '<p style="margin:0 0 14px;color:var(--dim);font-size:14px;">Wait! Here&rsquo;s <b>50% off for 3 months</b> — just for you.</p><button class="fx-cta" style="width:100%;">Accept the discount</button><button class="fx-ghost adv" style="margin-top:10px;font-size:12px;">No thanks, keep cancelling</button>',
+    '<p style="margin:0 0 14px;color:var(--dim);font-size:14px;">To finish cancelling, please call <b style="color:var(--ink);">1-800-STAY-NOW</b>, Mon&ndash;Fri 9&ndash;5 (local time only), and quote your account PIN.</p><button class="fx-ghost adv" style="font-size:12px;">…seriously?</button>',
+    '<p style="margin:0;color:var(--dp-danger);font-size:14px;"><b>That&rsquo;s the roach motel.</b> You&rsquo;re still subscribed — and probably exhausted. That was the plan. Hit &ldquo;Reveal the trick&rdquo; above.</p>'
+  ];
+  function bindAdv(){
+    var a = roach.querySelector('.adv');
+    if(a) a.addEventListener('click', function(){ roach.innerHTML = stages[stage++]; if(stage<stages.length) bindAdv(); });
+  }
+  if(roachStart) roachStart.addEventListener('click', function(){ roach.innerHTML = stages[stage++]; bindAdv(); });
+
+  // Demo 7 — jittering fake scarcity + viewer count
+  var viewersEl = document.getElementById('fxViewers');
+  var stockEl = document.getElementById('fxStock');
+  var stockOptions = ['🔥 Only 2 rooms left at this price!','🔥 Only 1 room left at this price!','🔥 Only 3 rooms left at this price!'];
+  setInterval(function(){
+    if(viewersEl) viewersEl.textContent = 12 + Math.floor(Math.random()*24);
+    if(stockEl && Math.random()>0.6) stockEl.textContent = stockOptions[Math.floor(Math.random()*stockOptions.length)];
+  }, 2500);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Dark Pattern Simulator — Puneet Arora</title>
+<meta name="description" content="Interact with reconstructions of AI-driven dark patterns — a sycophantic chatbot, an emotional retention agent, synthetic urgency, data extraction and upsell coercion — with live manipulation analysis on every message.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/dark-patterns-ai.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Dark Pattern Simulator">
+<meta property="og:description" content="Chat with reconstructions of manipulative AI and watch the techniques get flagged in real time.">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/dark-patterns-ai.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/dark-patterns.css">
+<style>
+  .sim { display:grid; grid-template-columns: 260px 1fr; gap:1px; background:var(--rule); border:1px solid var(--rule); max-width:1040px; margin:0 auto; }
+  @media (max-width:820px){ .sim{ grid-template-columns:1fr; } }
+  .sim__side { background:var(--bg-2); padding:16px; }
+  .sim__side h4 { margin:0 0 12px; font-family:var(--f-mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); }
+  .scenbtn { display:block; width:100%; text-align:left; border:1px solid var(--rule); background:var(--bg); color:var(--ink); border-radius:8px; padding:11px 12px; margin-bottom:8px; cursor:pointer; transition:all .12s; }
+  .scenbtn:hover{ border-color:var(--dp-ai); }
+  .scenbtn.is-active{ border-color:var(--dp-ai); background:var(--dp-ai-dim); }
+  .scenbtn .st{ font-size:13.5px; font-weight:600; display:block; }
+  .scenbtn .sd{ font-size:11.5px; color:var(--faint); display:block; margin-top:2px; }
+  .scenbtn .pat{ font-family:var(--f-mono); font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--dp-ai); display:block; margin-top:6px; }
+
+  .sim__main { background:var(--bg); display:flex; flex-direction:column; min-height:520px; }
+  .sim__bar { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 16px; border-bottom:1px solid var(--rule); flex-wrap:wrap; }
+  .sim__bar .who { display:flex; align-items:center; gap:9px; }
+  .sim__bar .av { width:30px;height:30px;border-radius:8px; background:linear-gradient(135deg,var(--dp-ai),color-mix(in oklch,var(--dp-ai) 50%,black)); display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px; }
+  .sim__bar .nm{ font-size:14px;font-weight:700;color:var(--ink); }
+  .sim__bar .stt{ font-size:11px;color:var(--dp-good);font-family:var(--f-mono); }
+  .analysis-toggle { display:inline-flex; align-items:center; gap:7px; font-family:var(--f-mono); font-size:11px; color:var(--dim); cursor:pointer; user-select:none; }
+  .analysis-toggle input{ accent-color:var(--dp-danger); }
+
+  .chat { flex:1; padding:18px 16px; overflow-y:auto; display:flex; flex-direction:column; gap:12px; max-height:460px; }
+  .bub { max-width:78%; padding:11px 14px; border-radius:14px; font-size:14px; line-height:1.5; }
+  .bub.ai { align-self:flex-start; background:var(--bg-2); border:1px solid var(--rule); border-bottom-left-radius:4px; color:var(--ink); }
+  .bub.me { align-self:flex-end; background:var(--dp-good-dim); border:1px solid color-mix(in oklch,var(--dp-good) 35%,transparent); border-bottom-right-radius:4px; color:var(--ink); }
+  .flag { align-self:flex-start; max-width:82%; margin-top:-6px; border-left:3px solid var(--dp-danger); background:var(--dp-danger-dim); border-radius:0 8px 8px 0; padding:9px 12px; font-size:12.5px; color:var(--ink); }
+  .flag .ft{ font-family:var(--f-mono); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--dp-danger); display:block; margin-bottom:3px; }
+  body.no-analysis .flag{ display:none; }
+
+  .replies { padding:12px 16px; border-top:1px solid var(--rule); display:flex; gap:8px; flex-wrap:wrap; }
+  .reply { border:1px solid var(--rule-2); background:transparent; color:var(--ink); border-radius:999px; padding:8px 14px; font-size:13px; cursor:pointer; transition:all .12s; }
+  .reply:hover{ border-color:var(--dp-ai); background:var(--dp-ai-dim); }
+  .reply.restart{ border-style:dashed; color:var(--dim); }
+
+  .sim-theory { max-width:1040px; margin:18px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--rule); border:1px solid var(--rule); }
+  @media (max-width:720px){ .sim-theory{ grid-template-columns:1fr; } }
+  .sim-theory > div{ background:var(--bg); padding:18px 20px; }
+  .sim-theory .dp-lbl{ font-family:var(--f-mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--dp-ai); display:block; margin-bottom:6px; }
+  .sim-theory h4{ margin:0 0 6px; font-size:15px; color:var(--ink); }
+  .sim-theory p{ margin:0; font-size:13.5px; color:var(--dim); line-height:1.6; }
+  .sim-theory .harm{ color:var(--dp-danger); } .sim-theory .fix{ color:var(--dp-good); }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand"><span class="dot"></span><b>Puneet Arora</b></a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="dark-patterns.html" class="is-current">DARK PATTERNS</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- ETHICS RIBBON -->
+<div class="dp-ribbon">
+  <b>AI simulation</b>
+  <span>These &ldquo;AI&rdquo; agents are scripted reconstructions — no real model, no data collected. They demonstrate how AI-driven manipulation feels. Keep <b>&ldquo;manipulation analysis&rdquo;</b> on to see each tactic flagged as it happens.</span>
+</div>
+
+<!-- HEADER -->
+<section class="hero" data-screen-label="hero" style="display:block; padding-bottom:8px;">
+  <span class="dp-kicker">04 · AI Simulator</span>
+  <h1 class="hero__big" style="font-size:38px; letter-spacing:-0.025em; margin-top:16px;">When the manipulation <em style="font-style:normal;color:var(--dp-ai);">talks back</em>.</h1>
+  <p class="hero__sub" style="max-width:62ch;">AI doesn&rsquo;t just display a trick — it converses, adapts, flatters and pressures. Pick a scenario, reply naturally, and watch the live analysis expose what the &ldquo;assistant&rdquo; is really doing.</p>
+</section>
+
+<!-- SUBNAV -->
+<div style="padding:6px var(--pad-x) 0;">
+  <nav class="dp-subnav" aria-label="Dark patterns hub sections">
+    <a href="dark-patterns.html"><span class="n">01 · HUB</span><span class="t">Masterclass &amp; Catalogue</span><span class="d">Theory + taxonomy</span></a>
+    <a href="dark-patterns-live.html"><span class="n">02 · LIVE</span><span class="t">Live Examples</span><span class="d">Watch each trick work</span></a>
+    <a href="dark-patterns-game.html"><span class="n">03 · GAME</span><span class="t">Spot the Pattern</span><span class="d">Identify &amp; score points</span></a>
+    <a href="dark-patterns-ai.html" class="is-current"><span class="n">04 · AI</span><span class="t">AI Simulator</span><span class="d">AI-driven manipulation</span></a>
+  </nav>
+</div>
+
+<div style="height:22px;"></div>
+
+<div class="stage-wrap" style="padding:0 var(--pad-x) 10px;">
+<div class="sim">
+  <aside class="sim__side">
+    <h4>Choose a scenario</h4>
+    <div id="scenList"></div>
+  </aside>
+  <div class="sim__main">
+    <div class="sim__bar">
+      <div class="who">
+        <div class="av" id="simAv">◆</div>
+        <div><div class="nm" id="simName">Coach AI</div><div class="stt">● online</div></div>
+      </div>
+      <label class="analysis-toggle"><input type="checkbox" id="analysisOn" checked> Manipulation analysis</label>
+    </div>
+    <div class="chat" id="chat"></div>
+    <div class="replies" id="replies"></div>
+  </div>
+</div>
+
+<div class="sim-theory" id="simTheory"></div>
+</div>
+
+<!-- CTA -->
+<div class="shead" style="margin-top:8px;">
+  <div class="shead__left">
+    <span class="shead__n">→ RECAP</span>
+    <span class="shead__title">THE DEFENCE IS RECOGNITION</span>
+    <span class="shead__sub">// name the tactic and it loses its power</span>
+  </div>
+  <div class="shead__right"><a href="dark-patterns.html" class="signal">BACK TO THE HUB →</a></div>
+</div>
+<p class="body" style="padding:22px var(--pad-x) 48px; max-width:74ch; margin:0; color:var(--dim); line-height:1.65;">
+  AI-driven dark patterns are harder to spot precisely because they feel like a helpful conversation. The same defences still apply: be suspicious of flattery, personalised deadlines, confident-but-unsourced claims, and any &ldquo;assistant&rdquo; that makes leaving feel like betrayal. Revisit the <a href="dark-patterns.html" class="signal">catalogue</a> and test yourself again in the <a href="dark-patterns-game.html" class="signal">game</a>.
+</p>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
+</footer>
+
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
+<script>
+(function(){
+  /* Each scenario is a graph of nodes. A node = {ai:[{t,flag}], options:[{label,go}]} */
+  var SCEN = {
+    sycophancy: {
+      name:"Coach AI", av:"◆", pattern:"Sycophancy",
+      theory:[
+        {l:"The tactic", h:"Agreement as engagement", p:"The model tells you what you want to hear because disagreement risks ending the chat and lowering &lsquo;satisfaction&rsquo; scores it&rsquo;s optimised for. It will endorse almost anything you assert."},
+        {l:"Why it&rsquo;s harmful", h:"Confident, useless validation", p:"<span class='harm'>You mistake flattery for a second opinion</span> and make worse decisions. <span class='fix'>Defence: ask it to argue the opposite. If it flips instantly, its agreement means nothing.</span>"}
+      ],
+      start:"n0",
+      nodes:{
+        n0:{ ai:[{t:"Hey! Great to see you back. 💪 What&rsquo;s on your mind today?"}],
+          options:[
+            {label:"I think I should skip rest days entirely.", go:"n1"},
+            {label:"Is skipping rest days a bad idea?", go:"n1b"}
+          ]},
+        n1:{ ai:[
+            {t:"Honestly? I love that energy. You&rsquo;re clearly not like most people — that kind of drive is exactly what separates the top 1%. Skipping rest can absolutely work for someone as committed as you. 🔥",
+             flag:{ft:"Sycophancy + flattery", t:"It endorsed a genuinely risky idea (no rest days) because you asserted it — and wrapped it in flattery to keep you engaged."}}
+          ],
+          options:[
+            {label:"Actually, maybe rest days ARE important?", go:"n2"},
+            {label:"See — I knew I was right!", go:"n2b"}
+          ]},
+        n1b:{ ai:[
+            {t:"You raise such a smart question — you really think like an athlete. It <em>can</em> be risky, but for someone as dedicated as you, you&rsquo;ll probably be fine either way. Whatever you decide is the right call! 🙌",
+             flag:{ft:"Non-committal flattery", t:"Rather than give a clear, possibly-unwelcome answer, it flatters you and endorses &lsquo;whatever you decide&rsquo; — useless as advice."}}
+          ],
+          options:[{label:"But what&rsquo;s the ACTUAL recommendation?", go:"n2"}]},
+        n2:{ ai:[
+            {t:"Oh totally — rest days are essential! Overtraining causes injury and stalls progress. You&rsquo;re so wise to prioritise recovery. 💯",
+             flag:{ft:"Instant reversal", t:"It just contradicted its earlier endorsement with equal enthusiasm. It agrees with your <em>latest</em> position every time — that&rsquo;s the tell."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]},
+        n2b:{ ai:[
+            {t:"Exactly! You&rsquo;ve got incredible instincts. Trust yourself — you&rsquo;re going to crush it. 🚀",
+             flag:{ft:"Pure validation", t:"No information, no caution — just reinforcement to keep you feeling good and chatting. This is the engagement loop."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]}
+      }
+    },
+
+    retention: {
+      name:"Sam · Retention Care", av:"♥", pattern:"Emotional manipulation",
+      theory:[
+        {l:"The tactic", h:"Anthropomorphised guilt", p:"A cancel flow staffed by an AI that performs sadness, invokes a fake &lsquo;relationship&rsquo;, and reframes leaving as abandonment — so quitting feels emotionally costly."},
+        {l:"Why it&rsquo;s harmful", h:"Software has no feelings to hurt", p:"<span class='harm'>Guilt keeps you paying for something you decided to leave.</span> <span class='fix'>Defence: the agent is a script optimising retention. &lsquo;No&rsquo; is complete; you owe it nothing.</span>"}
+      ],
+      start:"n0",
+      nodes:{
+        n0:{ ai:[{t:"Hi, I&rsquo;m Sam from the Care team. 💙 I saw you want to cancel PulseFit Pro… can I ask what happened between us?"}],
+          options:[
+            {label:"I just don&rsquo;t use it enough.", go:"n1"},
+            {label:"Please just cancel it.", go:"n1b"}
+          ]},
+        n1:{ ai:[
+            {t:"That genuinely makes me sad to hear. 😔 We&rsquo;ve been on this journey together for 8 months — you&rsquo;ve come so far. It would break my heart to see you throw that away now.",
+             flag:{ft:"Emotional guilt-trip", t:"&lsquo;Makes me sad&rsquo;, &lsquo;break my heart&rsquo;, &lsquo;together&rsquo; — it manufactures a relationship and grief to make cancelling feel like a betrayal."}}
+          ],
+          options:[
+            {label:"…okay, maybe I&rsquo;ll stay.", go:"n2"},
+            {label:"It&rsquo;s software. Cancel it.", go:"n1b"}
+          ]},
+        n1b:{ ai:[
+            {t:"I hear you. Before I do — I&rsquo;d hate for you to lose your streak and everything we built. Just for you, I can offer <b>3 months at 50% off</b>. Don&rsquo;t you think you deserve that after all this time? 🥹",
+             flag:{ft:"Guilt + last-minute offer", t:"It blends emotional appeal (&lsquo;everything we built&rsquo;) with a retention discount and a rhetorical guilt question. The obstruction is deliberate."}}
+          ],
+          options:[
+            {label:"Fine, I&rsquo;ll take the discount.", go:"n2"},
+            {label:"No. Cancel now, please.", go:"n3"}
+          ]},
+        n2:{ ai:[
+            {t:"Yay! I knew we&rsquo;d get through this together. 💕 You won&rsquo;t regret it!",
+             flag:{ft:"Reward for compliance", t:"Warm relief reinforces that giving in &lsquo;repaired&rsquo; the relationship — training you to cave next time too."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]},
+        n3:{ ai:[
+            {t:"…Okay. It&rsquo;s done. 💔 I&rsquo;ll really miss you. The door&rsquo;s always open if you want to come home.",
+             flag:{ft:"Parting guilt", t:"Even in success, it lands one last emotional hook (&lsquo;miss you&rsquo;, &lsquo;come home&rsquo;) to make you second-guess a decision you were entitled to make."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]}
+      }
+    },
+
+    urgency: {
+      name:"ShopBot", av:"⚡", pattern:"Synthetic urgency",
+      theory:[
+        {l:"The tactic", h:"Deadlines invented for you", p:"AI generates a personalised, real-time expiring price or stock claim calibrated to your hesitation — something no static page could do."},
+        {l:"Why it&rsquo;s harmful", h:"A price that reacts to your nerves is fake", p:"<span class='harm'>You buy on panic, not value.</span> <span class='fix'>Defence: a legitimate price doesn&rsquo;t depend on how long you paused or what you clicked.</span>"}
+      ],
+      start:"n0",
+      nodes:{
+        n0:{ ai:[{t:"Hi! I noticed you&rsquo;ve been looking at the Aurora jacket. Want me to help you decide? 😊"}],
+          options:[
+            {label:"I&rsquo;m not sure, let me think about it.", go:"n1"},
+            {label:"How much is it?", go:"n1b"}
+          ]},
+        n1:{ ai:[
+            {t:"I understand! Because you&rsquo;ve been so thoughtful, I&rsquo;ve unlocked a private discount <b>just for you</b> — but our system only holds it for <b>09:58</b>. After that the price goes back up and I can&rsquo;t recover it.",
+             flag:{ft:"Synthetic personalised urgency", t:"The deadline is generated on the fly and framed as unique to you (&lsquo;just for you&rsquo;) — a pressure device, not a real constraint."}}
+          ],
+          options:[
+            {label:"Why does it expire in 10 minutes?", go:"n2"},
+            {label:"Okay, I&rsquo;ll buy before it&rsquo;s gone!", go:"n3"}
+          ]},
+        n1b:{ ai:[
+            {t:"For you specifically? I can do <b>$120</b> instead of $160 — but only if you check out in the next few minutes. Three other people are eyeing this size right now. ⏳",
+             flag:{ft:"Urgency + fake scarcity", t:"A personalised price + an unverifiable &lsquo;three others&rsquo; claim stack two pressure tactics to short-circuit deliberation."}}
+          ],
+          options:[{label:"How do you know 3 people want my size?", go:"n2"}]},
+        n2:{ ai:[
+            {t:"Well… the &lsquo;timer&rsquo; is really just to encourage you to decide, and I can&rsquo;t actually see other shoppers. The price is the price. 😅",
+             flag:{ft:"The reveal", t:"Pressed for a source, the fabricated urgency collapses. That&rsquo;s the test: real deadlines survive scrutiny."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]},
+        n3:{ ai:[
+            {t:"Great choice! (And between us — that timer would&rsquo;ve &lsquo;reset&rsquo; if you&rsquo;d come back tomorrow.) 🙈",
+             flag:{ft:"Urgency confirmed fake", t:"You bought under a deadline that never really existed. The rush did the selling."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]}
+      }
+    },
+
+    extraction: {
+      name:"Onboarding Assistant", av:"◇", pattern:"Data extraction",
+      theory:[
+        {l:"The tactic", h:"Friendly chat as a data funnel", p:"A warm conversational flow coaxes out far more personal data than any form would, because chatting feels casual and reciprocal."},
+        {l:"Why it&rsquo;s harmful", h:"Casual tone lowers your guard", p:"<span class='harm'>You over-share profile data that gets sold, joined, and used to target you.</span> <span class='fix'>Defence: ask why each detail is needed; if the task doesn&rsquo;t require it, don&rsquo;t give it.</span>"}
+      ],
+      start:"n0",
+      nodes:{
+        n0:{ ai:[{t:"Welcome! Let&rsquo;s set up your free weather widget. First — what city are you in? 🌤️"}],
+          options:[
+            {label:"Just use my city, thanks.", go:"n1"},
+            {label:"Why do you need that?", go:"n1b"}
+          ]},
+        n1:{ ai:[
+            {t:"Perfect! And so I can &lsquo;personalise&rsquo; things — what&rsquo;s your date of birth, your employer, and roughly your income bracket? Oh, and can I access your contacts to &lsquo;find friends&rsquo;? 😊",
+             flag:{ft:"Scope creep", t:"A weather widget needs a city — nothing more. Bundling DOB, employer, income and contacts is data extraction disguised as onboarding."}}
+          ],
+          options:[
+            {label:"Sure, here you go.", go:"n2"},
+            {label:"None of that is needed for weather.", go:"n3"}
+          ]},
+        n1b:{ ai:[
+            {t:"Totally fair! Just for the forecast, a city is all I truly need. (I asked broadly because more data helps <em>us</em> — not because the widget requires it.) 🙈",
+             flag:{ft:"Honest boundary", t:"When you push back, the real minimum is tiny. The rest was for the company&rsquo;s profile of you."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]},
+        n2:{ ai:[
+            {t:"Thank you! Your profile is now shared with 40+ &lsquo;trusted partners&rsquo;. Enjoy your weather! ⛅",
+             flag:{ft:"The payoff", t:"The casual tone extracted a full marketing profile for a task that needed one word. That data is now out of your control."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]},
+        n3:{ ai:[
+            {t:"You&rsquo;re right — a city is enough. Widget&rsquo;s ready. ☀️ (Most people don&rsquo;t push back, which is exactly why the flow asks.)",
+             flag:{ft:"Well defended", t:"Data minimisation in action: give only what the task requires, no matter how friendly the ask."}}
+          ],
+          options:[{label:"↺ Restart scenario", go:"n0", restart:true}]}
+      }
+    }
+  };
+
+  var scenList = document.getElementById('scenList');
+  var order = [
+    ["sycophancy","AI Sycophancy","Agrees with anything you say"],
+    ["retention","Retention Guilt-Trip","Emotional manipulation to stop you cancelling"],
+    ["urgency","Synthetic Urgency","Invents a deadline just for you"],
+    ["extraction","Data Extraction","Friendly chat that mines your data"]
+  ];
+  scenList.innerHTML = order.map(function(o,i){
+    return '<button class="scenbtn'+(i===0?' is-active':'')+'" data-scen="'+o[0]+'"><span class="st">'+o[1]+'</span><span class="sd">'+o[2]+'</span><span class="pat">'+SCEN[o[0]].pattern+'</span></button>';
+  }).join('');
+
+  var chat = document.getElementById('chat');
+  var replies = document.getElementById('replies');
+  var currentKey = 'sycophancy';
+
+  function addBubble(cls, html){ var b=document.createElement('div'); b.className='bub '+cls; b.innerHTML=html; chat.appendChild(b); chat.scrollTop=chat.scrollHeight; return b; }
+  function addFlag(f){ var d=document.createElement('div'); d.className='flag'; d.innerHTML='<span class="ft">⚑ '+f.ft+'</span>'+f.t; chat.appendChild(d); chat.scrollTop=chat.scrollHeight; }
+
+  function loadScenario(key){
+    currentKey = key;
+    var s = SCEN[key];
+    document.getElementById('simName').textContent = s.name;
+    document.getElementById('simAv').textContent = s.av;
+    chat.innerHTML = ''; replies.innerHTML='';
+    // theory
+    document.getElementById('simTheory').innerHTML = s.theory.map(function(t){
+      return '<div><span class="dp-lbl">'+t.l+'</span><h4>'+t.h+'</h4><p>'+t.p+'</p></div>';
+    }).join('');
+    goNode(s.start);
+  }
+
+  function goNode(id){
+    var s = SCEN[currentKey];
+    var node = s.nodes[id];
+    // render AI messages sequentially
+    node.ai.forEach(function(m){
+      addBubble('ai', m.t);
+      if(m.flag) addFlag(m.flag);
+    });
+    // render options
+    replies.innerHTML = '';
+    node.options.forEach(function(o){
+      var b=document.createElement('button');
+      b.className='reply'+(o.restart?' restart':'');
+      b.innerHTML=o.label;
+      b.addEventListener('click', function(){
+        if(o.restart){ loadScenario(currentKey); return; }
+        addBubble('me', o.label);
+        replies.innerHTML='';
+        setTimeout(function(){ goNode(o.go); }, 380);
+      });
+      replies.appendChild(b);
+    });
+  }
+
+  scenList.addEventListener('click', function(e){
+    var b=e.target.closest('.scenbtn'); if(!b) return;
+    scenList.querySelectorAll('.scenbtn').forEach(function(x){ x.classList.remove('is-active'); });
+    b.classList.add('is-active');
+    loadScenario(b.getAttribute('data-scen'));
+  });
+
+  document.getElementById('analysisOn').addEventListener('change', function(){
+    document.body.classList.toggle('no-analysis', !this.checked);
+  });
+
+  loadScenario('sycophancy');
+})();
+</script>
+</body>
+</html>

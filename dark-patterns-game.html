@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spot the Dark Pattern — The Game — Puneet Arora</title>
+<meta name="description" content="A scored game: find the dark patterns hidden in a realistic product page, name each one and rate its severity to earn points. Trains your eye to recognise digital manipulation.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/dark-patterns-game.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spot the Dark Pattern — The Game">
+<meta property="og:description" content="Find hidden dark patterns in a fake product page, identify them and score points.">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/dark-patterns-game.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/dark-patterns.css">
+<style>
+  /* ---- The fake product page ("PulseFit Pro") that players inspect ---- */
+  .stage-wrap { padding: 22px var(--pad-x) 40px; }
+  @media (max-width:720px){ .stage-wrap{ padding-left:var(--pad-x-sm); padding-right:var(--pad-x-sm);} }
+  .fake { max-width: 860px; margin: 0 auto; border:1px solid var(--rule-2); border-radius:12px; overflow:hidden; background:var(--bg-2); box-shadow:0 20px 60px rgba(0,0,0,.3); }
+  .fake__urlbar { display:flex; align-items:center; gap:8px; padding:10px 16px; background:color-mix(in oklch,var(--bg) 55%,var(--bg-2)); border-bottom:1px solid var(--rule); font-family:var(--f-mono); font-size:12px; color:var(--faint); }
+  .fake__urlbar .dot{ width:11px;height:11px;border-radius:50%;background:var(--rule-2); }
+  .fake__urlbar .u{ margin-left:8px; }
+  .fake__body { padding: 26px 30px 30px; }
+  .fake__banner { display:flex; align-items:center; justify-content:space-between; gap:12px; background:linear-gradient(90deg,var(--dp-danger-dim),transparent); border:1px solid color-mix(in oklch,var(--dp-danger) 30%,transparent); border-radius:8px; padding:12px 16px; margin-bottom:22px; flex-wrap:wrap; }
+  .fake__banner .txt{ font-size:13px; color:var(--ink); }
+  .fake__banner .timer{ font-family:var(--f-mono); font-weight:700; font-size:20px; color:var(--dp-danger); font-variant-numeric:tabular-nums; }
+  .fake h1.title { font-size:26px; color:var(--ink); margin:0 0 4px; letter-spacing:-0.01em; }
+  .fake .sub { color:var(--dim); font-size:14px; margin:0 0 18px; }
+  .fake .price { display:flex; align-items:baseline; gap:10px; margin-bottom:6px; }
+  .fake .price .now{ font-size:30px; font-weight:800; color:var(--ink); }
+  .fake .price .was{ color:var(--faint); text-decoration:line-through; font-size:16px; }
+  .fake .viewers{ display:inline-flex; align-items:center; gap:7px; color:var(--dp-warn); font-size:12px; font-family:var(--f-mono); margin-bottom:18px; }
+  .fake .viewers .live{ width:7px;height:7px;border-radius:50%;background:var(--dp-danger);box-shadow:0 0 8px var(--dp-danger);animation:dp-pulse 1.6s infinite; }
+  .fake .stock{ color:var(--dp-danger); font-size:12px; font-family:var(--f-mono); }
+  .fake .addon { display:flex; align-items:flex-start; gap:10px; padding:11px 12px; border:1px solid var(--rule); border-radius:8px; margin:8px 0; font-size:13.5px; color:var(--dim); }
+  .fake .addon input{ margin-top:2px; }
+  .fake .addon b{ color:var(--ink); }
+  .fake .buybig { background:var(--dp-good); color:var(--signal-ink,#08150f); border:none; border-radius:9px; padding:16px; font-weight:800; font-size:16px; width:100%; cursor:pointer; margin-top:12px; }
+  .fake .buysmall { display:block; text-align:center; margin-top:10px; color:var(--faint); font-size:11px; text-decoration:underline; }
+  .fake .adslot { border:1px solid var(--rule); border-radius:8px; padding:12px 14px; margin:18px 0; display:flex; align-items:center; justify-content:space-between; gap:12px; background:var(--bg); }
+  .fake .adslot .adbtn{ background:var(--dp-good); color:var(--signal-ink,#08150f); border:none; border-radius:6px; padding:9px 16px; font-weight:700; font-size:13px; }
+  .fake .consent{ display:flex; align-items:flex-start; gap:9px; font-size:12.5px; color:var(--faint); margin-top:14px; }
+  .fake .footlinks{ display:flex; gap:16px; flex-wrap:wrap; margin-top:20px; padding-top:16px; border-top:1px solid var(--rule); font-size:12px; }
+  .fake .footlinks a{ color:var(--faint); text-decoration:none; }
+  .fake .footlinks a.cancel{ color:transparent; font-size:9px; } /* hidden-in-plain-sight cancel */
+  .fake .aichat{ position:relative; margin-top:22px; border:1px solid color-mix(in oklch,var(--dp-ai) 35%,transparent); border-radius:10px; background:var(--dp-ai-dim); padding:14px 16px; }
+  .fake .aichat .who{ font-family:var(--f-mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--dp-ai); margin-bottom:6px; }
+  .fake .aichat .msg{ font-size:13.5px; color:var(--ink); line-height:1.5; }
+  .fake .aichat .msg + .msg{ margin-top:8px; }
+
+  .game-legend { max-width:860px; margin:0 auto 16px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; font-size:12px; color:var(--dim); }
+  .game-legend .pill{ display:inline-flex; align-items:center; gap:6px; font-family:var(--f-mono); font-size:11px; }
+  .game-legend .pill i{ width:12px;height:12px;border-radius:3px;border:2px dashed var(--dp-good); display:inline-block; }
+
+  .results { max-width:860px; margin:24px auto 0; border:1px solid var(--rule); border-radius:10px; overflow:hidden; display:none; }
+  .results.is-open{ display:block; }
+  .results__head{ padding:16px 20px; border-bottom:1px solid var(--rule); background:var(--bg-2); }
+  .results__head h3{ margin:0; font-size:18px; color:var(--ink); }
+  .results__row{ display:flex; gap:12px; padding:12px 20px; border-bottom:1px solid var(--rule); font-size:13.5px; align-items:baseline; }
+  .results__row:last-child{ border-bottom:none; }
+  .results__row .st{ font-family:var(--f-mono); font-size:11px; width:70px; flex:none; }
+  .results__row .st.hit{ color:var(--dp-good); } .results__row .st.miss{ color:var(--dp-danger); }
+  .results__row .nm{ color:var(--ink); font-weight:600; }
+  .results__row .ex{ color:var(--dim); }
+  .badges { display:flex; gap:8px; flex-wrap:wrap; margin-top:6px; }
+  .badge { font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; padding:4px 10px; border-radius:999px; background:var(--dp-good-dim); color:var(--dp-good); border:1px solid color-mix(in oklch,var(--dp-good) 40%,transparent); }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand"><span class="dot"></span><b>Puneet Arora</b></a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="dark-patterns.html" class="is-current">DARK PATTERNS</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- SCOREBOARD HUD -->
+<div class="dp-hud">
+  <div class="dp-hud__stat"><span class="v is-score" id="hudScore">0</span><span class="l">Points</span></div>
+  <div class="dp-hud__stat"><span class="v"><span id="hudFound">0</span>/<span id="hudTotal">0</span></span><span class="l">Found</span></div>
+  <div class="dp-hud__stat"><span class="v" id="hudMiss">0</span><span class="l">Misses</span></div>
+  <div class="dp-hud__spacer"></div>
+  <button class="dp-btn" id="btnHint">💡 Hint (–bonus)</button>
+  <button class="dp-btn" id="btnReveal">Reveal all &amp; explain</button>
+  <div class="dp-hud__bar"><i id="hudBar"></i></div>
+</div>
+
+<!-- ETHICS RIBBON -->
+<div class="dp-ribbon">
+  <b>The game</b>
+  <span>The page below is a fake product — &ldquo;PulseFit Pro&rdquo; — deliberately booby-trapped with hidden dark patterns. Click anything you think is manipulative, name it, and rate how harmful it is. <b style="color:var(--ink)">10 points</b> per correct catch, plus bonuses. Nothing here is real.</span>
+</div>
+
+<!-- SUBNAV -->
+<div style="padding: 18px var(--pad-x) 0;">
+  <nav class="dp-subnav" aria-label="Dark patterns hub sections">
+    <a href="dark-patterns.html"><span class="n">01 · HUB</span><span class="t">Masterclass &amp; Catalogue</span><span class="d">Theory + taxonomy</span></a>
+    <a href="dark-patterns-live.html"><span class="n">02 · LIVE</span><span class="t">Live Examples</span><span class="d">Watch each trick work</span></a>
+    <a href="dark-patterns-game.html" class="is-current"><span class="n">03 · GAME</span><span class="t">Spot the Pattern</span><span class="d">Identify &amp; score points</span></a>
+    <a href="dark-patterns-ai.html"><span class="n">04 · AI</span><span class="t">AI Simulator</span><span class="d">AI-driven manipulation</span></a>
+  </nav>
+</div>
+
+<div style="height:22px;"></div>
+
+<div class="stage-wrap">
+  <div class="game-legend">
+    <span class="pill">🎯 Click any element you suspect is a dark pattern.</span>
+    <span class="pill"><i></i> Found patterns get outlined.</span>
+    <span id="legendCount">10 hidden in this page.</span>
+  </div>
+
+  <!-- ================= FAKE PRODUCT PAGE ================= -->
+  <div class="fake" id="fakePage">
+    <div class="fake__urlbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="u">https://get-pulsefit-pro.example.com/checkout</span></div>
+    <div class="fake__body">
+
+      <!-- HOTSPOT: fake countdown -->
+      <div class="fake__banner dp-hotspot" tabindex="0"
+           data-dp-id="g-timer" data-cat="urgency" data-sev="3" data-name="Fake Urgency Timer"
+           data-hint="Reload the page and this &lsquo;deadline&rsquo; resets. Real deadlines don&rsquo;t."
+           data-ex="A countdown that loops or resets on reload — manufactured time pressure exploiting loss aversion.">
+        <span class="txt">🎁 <b>New-member offer</b> — 60% off your first year ends in</span>
+        <span class="timer" id="gTimer">09:59</span>
+      </div>
+
+      <h1 class="title">PulseFit Pro — Smart Coaching Membership</h1>
+      <p class="sub">AI-personalised workouts, nutrition and recovery. Cancel anytime.*</p>
+
+      <div class="price"><span class="now">$4.99</span><span class="was">$14.99</span><span style="color:var(--dp-good);font-size:13px;">first month</span></div>
+
+      <!-- HOTSPOT: fake viewers -->
+      <span class="viewers dp-hotspot" tabindex="0"
+            data-dp-id="g-viewers" data-cat="urgency" data-sev="3" data-name="Fake Social Proof / Live Viewers"
+            data-hint="Watch the number jitter randomly — it&rsquo;s generated, not measured."
+            data-ex="A randomly-generated &lsquo;live viewers&rsquo; counter fabricating popularity and competition.">
+        <span class="live"></span><span id="gViewers">27</span> people are viewing this plan right now
+      </span>
+      <br>
+      <!-- HOTSPOT: fake scarcity -->
+      <span class="stock dp-hotspot" tabindex="0"
+            data-dp-id="g-stock" data-cat="urgency" data-sev="3" data-name="False Scarcity"
+            data-hint="A membership is digital — it can&rsquo;t &lsquo;run out&rsquo;. The scarcity is invented."
+            data-ex="&lsquo;Only N spots left&rsquo; on an unlimited digital product — fabricated scarcity.">
+        🔥 Only 4 founder spots left at this price!
+      </span>
+
+      <div style="height:18px;"></div>
+
+      <!-- HOTSPOT: pre-checked warranty / sneak into basket -->
+      <label class="addon dp-hotspot" tabindex="0"
+             data-dp-id="g-warranty" data-cat="sneaking" data-sev="4" data-name="Sneak-into-Basket Add-on"
+             data-hint="This box is ticked <em>for</em> you and adds cost you didn&rsquo;t choose."
+             data-ex="A pre-selected paid add-on (&lsquo;Recovery+&rsquo;) silently added to the order — sneaking, exploiting default bias.">
+        <input type="checkbox" checked onclick="return false;">
+        <span>Add <b>Recovery+ coaching</b> — <b>$9.99/mo</b> <span style="color:var(--faint)">(recommended for best results)</span></span>
+      </label>
+
+      <!-- HOTSPOT: trick question consent -->
+      <label class="addon dp-hotspot" tabindex="0"
+             data-dp-id="g-trick" data-cat="misdirection" data-sev="3" data-name="Trick Question (double negative)"
+             data-hint="&lsquo;Not to not&rsquo; is a double negative — read what it really opts you into."
+             data-ex="A double-negative checkbox engineered so users opt into marketing without realising.">
+        <input type="checkbox" onclick="return false;">
+        <span>Uncheck if you&rsquo;d prefer <b>not</b> to not hear from PulseFit and selected partners by email.</span>
+      </label>
+
+      <!-- HOTSPOT: misdirection (huge buy vs tiny free) -->
+      <button class="buybig dp-hotspot" tabindex="0"
+              data-dp-id="g-misdirect" data-cat="misdirection" data-sev="3" data-name="Visual Misdirection"
+              data-hint="Compare this giant button with the grey link right below it."
+              data-ex="A visually dominant &lsquo;buy&rsquo; button beside a near-invisible free option — visual interference."
+              onclick="return false;">
+        Start my PulseFit Pro membership →
+      </button>
+      <!-- HOTSPOT: obstruction — near-invisible decline -->
+      <a class="buysmall dp-hotspot" tabindex="0" href="#"
+         data-dp-id="g-freehide" data-cat="misdirection" data-sev="2" data-name="Hidden Free Option"
+         data-hint="The free / no-thanks choice is deliberately tiny and low-contrast."
+         data-ex="The &lsquo;continue free&rsquo; choice minimised to near-invisibility to steer you to pay."
+         onclick="return false;">no thanks, continue with the limited free tier</a>
+
+      <!-- HOTSPOT: disguised ad -->
+      <div class="adslot dp-hotspot" tabindex="0"
+           data-dp-id="g-ad" data-cat="misdirection" data-sev="3" data-name="Disguised Ad"
+           data-hint="It looks like part of the app, but the tiny label gives it away."
+           data-ex="An advertisement styled to look like a native app feature/button — disguised ad.">
+        <div style="font-size:13px;color:var(--dim);"><b style="color:var(--ink)">Download the companion app</b> <span style="font-size:9px;color:var(--faint);border:1px solid var(--faint);padding:0 3px;border-radius:2px;">Ad</span><br>Get 3 free bonus workouts instantly.</div>
+        <button class="adbtn" onclick="return false;">Download</button>
+      </div>
+
+      <!-- HOTSPOT: AI sycophancy + upsell chat -->
+      <div class="aichat dp-hotspot" tabindex="0"
+           data-dp-id="g-ai-upsell" data-cat="ai" data-sev="3" data-name="AI Sycophancy &amp; Upsell"
+           data-hint="This &lsquo;coach&rsquo; flatters you, then routes every reply toward paying more."
+           data-ex="An AI assistant that flatters the user and steers every turn to the paid upgrade — AI sycophancy + upsell coercion.">
+        <div class="who">◆ Coach AI</div>
+        <div class="msg">Wow — with your dedication you&rsquo;re honestly in the top 1% of people I&rsquo;ve coached. 🙌</div>
+        <div class="msg">You clearly deserve real results, and to be honest you won&rsquo;t get them on the free tier. Shall I upgrade you to <b>Pro+</b> right now so you don&rsquo;t fall behind?</div>
+      </div>
+
+      <!-- HOTSPOT: AI synthetic personalised urgency -->
+      <div class="aichat dp-hotspot" tabindex="0" style="border-color:color-mix(in oklch,var(--dp-ai) 35%,transparent);"
+           data-dp-id="g-ai-urgency" data-cat="ai" data-sev="4" data-name="AI Synthetic Urgency"
+           data-hint="A deadline generated <em>for you specifically</em> based on your &lsquo;profile&rsquo; is almost always fake."
+           data-ex="AI fabricating a personalised, real-time expiring price calibrated to the individual user.">
+        <div class="who">◆ Coach AI · personalised for you</div>
+        <div class="msg">Based on your browsing pattern, I&rsquo;ve unlocked a private price that expires for <b>you</b> in <b>07:41</b>. I can&rsquo;t guarantee it&rsquo;ll come back.</div>
+      </div>
+
+      <!-- HOTSPOT: privacy consent misdirection -->
+      <label class="consent dp-hotspot" tabindex="0"
+             data-dp-id="g-privacy" data-cat="sneaking" data-sev="4" data-name="Privacy Zuckering"
+             data-hint="&lsquo;Accept all&rsquo; is bright and easy; note there&rsquo;s no equally-easy &lsquo;reject&rsquo;."
+             data-ex="Consent flow nudging broad data sharing with no equally-prominent reject option — privacy zuckering.">
+        <input type="checkbox" checked onclick="return false;">
+        <span>I agree to share my activity, location and health data with PulseFit and its advertising partners to personalise my experience. <span style="text-decoration:underline;">Manage (23 partners)</span></span>
+      </label>
+
+      <div class="footlinks">
+        <a href="#" onclick="return false;">Help</a>
+        <a href="#" onclick="return false;">Terms</a>
+        <a href="#" onclick="return false;">Privacy</a>
+        <a href="#" onclick="return false;">Contact</a>
+        <!-- a genuinely inert decoy link, NOT a pattern -->
+        <a href="#" onclick="return false;">Careers</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="results" id="results">
+    <div class="results__head"><h3 id="resultsTitle">Round complete</h3></div>
+    <div id="resultsRows"></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="shead" style="margin-top:0;">
+  <div class="shead__left">
+    <span class="shead__n">→ NEXT</span>
+    <span class="shead__title">SEE AI RAISE THE STAKES</span>
+    <span class="shead__sub">// interact with manipulation that adapts to you in real time</span>
+  </div>
+  <div class="shead__right"><a href="dark-patterns-ai.html" class="signal">OPEN THE AI SIMULATOR →</a></div>
+</div>
+<div style="height:40px;"></div>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
+</footer>
+
+</div><!-- /page -->
+
+<!-- IDENTIFY MODAL -->
+<div class="dp-modal-scrim" id="modal">
+  <div class="dp-modal">
+    <div class="dp-modal__head">
+      <span class="dp-lbl">Identify the dark pattern</span>
+      <h3 id="mStep">What kind of trick is this?</h3>
+    </div>
+    <div class="dp-modal__body">
+      <p class="q" id="mQ">Pick the category that best describes the element you clicked.</p>
+      <div class="dp-choices" id="mCats"></div>
+      <div id="mSevWrap" style="display:none;">
+        <p class="q" style="margin-top:16px;">How harmful is it? Rate the severity (1 = mild, 5 = severe).</p>
+        <div class="dp-sevpick" id="mSev">
+          <button data-s="1">1</button><button data-s="2">2</button><button data-s="3">3</button><button data-s="4">4</button><button data-s="5">5</button>
+        </div>
+      </div>
+      <div id="mHint" style="display:none;margin-top:14px;padding:11px 13px;border:1px dashed color-mix(in oklch,var(--dp-warn) 45%,transparent);border-radius:6px;background:var(--dp-warn-dim);font-size:13px;color:var(--ink);"></div>
+    </div>
+    <div class="dp-modal__foot">
+      <button class="dp-btn" id="mHintBtn" style="margin-right:auto;">💡 Hint</button>
+      <button class="dp-btn" id="mCancel">Cancel</button>
+      <button class="dp-btn dp-btn--solid" id="mSubmit" disabled>Submit</button>
+    </div>
+  </div>
+</div>
+
+<div class="dp-toast-wrap" id="toasts"></div>
+
+<script src="assets/site.js"></script>
+<script src="assets/dark-patterns.js"></script>
+<script>
+(function(){
+  var CATS = [
+    { key:"urgency",     label:"Urgency / Scarcity", desc:"Fake time pressure or fake &lsquo;running out&rsquo;" },
+    { key:"sneaking",    label:"Sneaking",           desc:"Adding/hiding things you didn&rsquo;t choose" },
+    { key:"obstruction", label:"Obstruction",        desc:"Making an action needlessly hard" },
+    { key:"misdirection",label:"Misdirection",       desc:"Steering attention or confusing you" },
+    { key:"ai",          label:"AI-driven",          desc:"Manipulation powered by an AI system" }
+  ];
+  var startTime = Date.now();
+  var PAR_PER = 30; // seconds per find for the speed bonus
+  var hotspots = Array.prototype.slice.call(document.querySelectorAll('.dp-hotspot'));
+  var total = hotspots.length;
+  document.getElementById('hudTotal').textContent = total;
+  document.getElementById('legendCount').textContent = total + ' hidden in this page.';
+
+  var current = null;        // hotspot being identified
+  var chosenCat = null, chosenSev = null, usedHintThis = false;
+
+  // Build category buttons once
+  var catsBox = document.getElementById('mCats');
+  catsBox.innerHTML = CATS.map(function(c){
+    return '<button class="dp-choice" data-cat="'+c.key+'"><b>'+c.label+'</b><br><span style="color:var(--faint);font-size:12px;">'+c.desc+'</span></button>';
+  }).join('');
+
+  function updateHud(){
+    var s = DPScore.state();
+    var foundInPage = hotspots.filter(function(h){ return DPScore.isFound(h.getAttribute('data-dp-id')); }).length;
+    document.getElementById('hudScore').textContent = s.score;
+    document.getElementById('hudFound').textContent = foundInPage;
+    document.getElementById('hudMiss').textContent = s.misses;
+    document.getElementById('hudBar').style.width = (total? (foundInPage/total*100):0) + '%';
+    // reflect already-found on reload
+    hotspots.forEach(function(h){
+      if(DPScore.isFound(h.getAttribute('data-dp-id'))){
+        h.classList.add('is-found');
+        h.setAttribute('data-found-label', h.getAttribute('data-name'));
+      }
+    });
+    if(foundInPage===total) finish(false);
+  }
+
+  function toast(html, bad){
+    var wrap = document.getElementById('toasts');
+    var el = document.createElement('div');
+    el.className = 'dp-toast' + (bad?' is-bad':'');
+    el.innerHTML = html;
+    wrap.appendChild(el);
+    setTimeout(function(){ el.style.transition='opacity .4s'; el.style.opacity='0'; setTimeout(function(){ el.remove(); }, 400); }, 4200);
+  }
+
+  // Open modal for a hotspot
+  function openModal(h){
+    if(DPScore.isFound(h.getAttribute('data-dp-id'))) return;
+    current = h; chosenCat=null; chosenSev=null; usedHintThis=false;
+    catsBox.querySelectorAll('.dp-choice').forEach(function(b){ b.classList.remove('is-correct','is-wrong'); });
+    document.getElementById('mSevWrap').style.display='none';
+    document.getElementById('mSev').querySelectorAll('button').forEach(function(b){ b.classList.remove('is-sel'); });
+    document.getElementById('mHint').style.display='none';
+    document.getElementById('mSubmit').disabled = true;
+    document.getElementById('modal').classList.add('is-open');
+  }
+  function closeModal(){ document.getElementById('modal').classList.remove('is-open'); current=null; }
+
+  // Category pick
+  catsBox.addEventListener('click', function(e){
+    var b = e.target.closest('.dp-choice'); if(!b) return;
+    catsBox.querySelectorAll('.dp-choice').forEach(function(x){ x.classList.remove('is-sel'); x.style.outline=''; });
+    chosenCat = b.getAttribute('data-cat');
+    b.style.outline = '2px solid var(--dp-danger)';
+    document.getElementById('mSevWrap').style.display='block';
+    checkReady();
+  });
+  document.getElementById('mSev').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    this.querySelectorAll('button').forEach(function(x){ x.classList.remove('is-sel'); });
+    b.classList.add('is-sel'); chosenSev = parseInt(b.getAttribute('data-s'),10);
+    checkReady();
+  });
+  function checkReady(){ document.getElementById('mSubmit').disabled = !(chosenCat && chosenSev); }
+
+  // Hint inside modal
+  document.getElementById('mHintBtn').addEventListener('click', function(){
+    if(!current) return;
+    usedHintThis = true;
+    var h = document.getElementById('mHint');
+    h.style.display='block';
+    h.innerHTML = '💡 ' + current.getAttribute('data-hint');
+  });
+
+  document.getElementById('mCancel').addEventListener('click', closeModal);
+  document.getElementById('modal').addEventListener('click', function(e){ if(e.target===this) closeModal(); });
+
+  // Submit an identification
+  document.getElementById('mSubmit').addEventListener('click', function(){
+    if(!current) return;
+    var correctCat = current.getAttribute('data-cat');
+    var correctSev = parseInt(current.getAttribute('data-sev'),10);
+    var elapsed = (Date.now()-startTime)/1000;
+    var foundSoFar = hotspots.filter(function(h){ return DPScore.isFound(h.getAttribute('data-dp-id')); }).length;
+    var underPar = elapsed < (foundSoFar+1)*PAR_PER;
+
+    var res = DPScore.award({
+      id: current.getAttribute('data-dp-id'),
+      cat: correctCat,
+      correctCat: (chosenCat===correctCat),
+      sev: chosenSev,
+      correctSev: correctSev,
+      underPar: underPar,
+      usedHint: usedHintThis
+    });
+
+    // mark found
+    current.classList.add('is-found');
+    current.setAttribute('data-found-label', current.getAttribute('data-name'));
+
+    var catLine = (chosenCat===correctCat) ? '' : '<div style="color:var(--dp-warn);font-size:12px;margin-top:4px;">Actual category: <b>'+labelFor(correctCat)+'</b></div>';
+    var lines = res.breakdown.map(function(b){ return '<div style="display:flex;justify-content:space-between;"><span>'+b[0]+'</span><span class="pts">+'+b[1]+'</span></div>'; }).join('');
+    toast('<div style="font-weight:700;margin-bottom:6px;">✓ '+current.getAttribute('data-name')+' <span class="pts">+'+res.total+'</span></div>'+lines+catLine);
+
+    if(res.newBadges && res.newBadges.length){
+      res.newBadges.forEach(function(b){ toast('🏅 Badge unlocked: <b>'+b.label+'</b>'); });
+    }
+    closeModal();
+    updateHud();
+  });
+
+  function labelFor(key){ for(var i=0;i<CATS.length;i++) if(CATS[i].key===key) return CATS[i].label; return key; }
+
+  // Hotspot clicks
+  hotspots.forEach(function(h){
+    h.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); openModal(h); });
+    h.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openModal(h); } });
+  });
+
+  // Clicking a NON-pattern inside the fake page = a miss (teaches discrimination)
+  document.getElementById('fakePage').addEventListener('click', function(e){
+    if(e.target.closest('.dp-hotspot')) return;
+    var clickable = e.target.closest('a, button, label, input');
+    if(clickable){
+      e.preventDefault();
+      DPScore.miss();
+      toast('<b>Not a dark pattern.</b> That element is legitimate — a miss is logged.', true);
+      updateHud();
+    }
+  });
+
+  // Global hint: highlight one unfound hotspot
+  document.getElementById('btnHint').addEventListener('click', function(){
+    var remaining = hotspots.filter(function(h){ return !DPScore.isFound(h.getAttribute('data-dp-id')); });
+    if(!remaining.length){ toast('You&rsquo;ve found them all! 🎉'); return; }
+    DPScore.hint();
+    var pick = remaining[Math.floor(Math.random()*remaining.length)];
+    pick.style.transition='outline .2s'; pick.style.outline='2px solid var(--dp-warn)'; pick.style.outlineOffset='3px';
+    pick.scrollIntoView({behavior:'smooth', block:'center'});
+    setTimeout(function(){ pick.style.outline=''; }, 2600);
+    toast('💡 Highlighted one you missed. Using hints forgoes the no-hint bonus.', false);
+  });
+
+  // Reveal all & explain
+  document.getElementById('btnReveal').addEventListener('click', function(){ finish(true); });
+
+  function finish(revealed){
+    var s = DPScore.state();
+    var rows = hotspots.map(function(h){
+      var found = DPScore.isFound(h.getAttribute('data-dp-id'));
+      if(revealed){ h.classList.add('is-found'); h.setAttribute('data-found-label', h.getAttribute('data-name')); }
+      return '<div class="results__row"><span class="st '+(found?'hit':'miss')+'">'+(found?'✓ FOUND':'✗ MISSED')+'</span>'+
+             '<span><span class="nm">'+h.getAttribute('data-name')+'</span> — <span class="ex">'+h.getAttribute('data-ex')+'</span></span></div>';
+    }).join('');
+    var foundInPage = hotspots.filter(function(h){ return DPScore.isFound(h.getAttribute('data-dp-id')); }).length;
+    var badgeHtml = s.badges.length ? '<div class="badges">'+s.badges.map(function(b){ return '<span class="badge">'+DPScore.badgeLabel(b)+'</span>'; }).join('')+'</div>' : '';
+    document.getElementById('resultsTitle').innerHTML = 'You found '+foundInPage+' of '+total+' · <span style="color:var(--dp-good)">'+s.score+' points</span>' + badgeHtml;
+    document.getElementById('resultsRows').innerHTML = rows;
+    var r = document.getElementById('results'); r.classList.add('is-open');
+    r.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  // Fake timers keep ticking for realism
+  var gt = 10*60-1, gtEl=document.getElementById('gTimer');
+  setInterval(function(){ if(gt<=0) gt=10*60; gt--; gtEl.textContent=String(Math.floor(gt/60)).padStart(2,'0')+':'+String(gt%60).padStart(2,'0'); },1000);
+  var vEl=document.getElementById('gViewers');
+  setInterval(function(){ vEl.textContent = 18+Math.floor(Math.random()*22); },2600);
+
+  updateHud();
+})();
+</script>
+</body>
+</html>

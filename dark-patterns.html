@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dark Patterns Masterclass &amp; Hub — Puneet Arora</title>
+<meta name="description" content="A masterclass and interactive hub on dark patterns — AI and non-AI. Learn the theory, see live examples, play a spot-the-pattern game, and use it as a manipulation simulator. Every pattern explained and gamified.">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/dark-patterns.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Puneet Arora — Portfolio">
+<meta property="og:title" content="Dark Patterns Masterclass &amp; Hub">
+<meta property="og:description" content="Learn how dark patterns manipulate you — AI and non-AI — through live examples, a scored spot-the-pattern game, and an interactive simulator.">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/dark-patterns.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/dark-patterns.css">
+<style>
+  .dp-hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
+  .dp-hero__big { font-family: var(--f-sans); font-weight: 900; font-size: 46px; line-height: 1.05; letter-spacing: -0.03em; color: var(--ink); margin: 22px 0 18px; }
+  .dp-hero__big em { font-style: normal; color: var(--dp-danger); }
+  .dp-hero__sub { font-size: 16px; line-height: 1.65; color: var(--dim); max-width: 54ch; margin: 0 0 26px; }
+  .dp-hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .dp-statpanel { border: 1px solid var(--rule); border-radius: 8px; background: var(--bg-2); padding: 18px; }
+  .dp-statpanel h4 { margin: 0 0 14px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint); }
+  .dp-statrow { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .dp-statrow:last-child { border-bottom: none; }
+  .dp-statrow .k { font-size: 13px; color: var(--dim); }
+  .dp-statrow .v { font-family: var(--f-sans); font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .dp-statrow .v.is-score { color: var(--dp-good); }
+  @media (max-width: 900px){ .dp-hero{ grid-template-columns: 1fr; } .dp-hero__big{ font-size: 34px; } }
+
+  .dp-theory { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .dp-theory > div { background: var(--bg); padding: 24px; }
+  .dp-theory h3 { margin: 0 0 8px; font-size: 16px; color: var(--ink); }
+  .dp-theory p { margin: 0; font-size: 13.5px; color: var(--dim); line-height: 1.6; }
+  .dp-theory .num { font-family: var(--f-mono); font-size: 11px; color: var(--dp-danger); letter-spacing: 0.14em; }
+  @media (max-width: 900px){ .dp-theory{ grid-template-columns: 1fr; } }
+
+  .dp-filter { display: flex; gap: 8px; flex-wrap: wrap; padding: 0 var(--pad-x) 18px; }
+  .dp-filter button { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--rule-2); background: transparent; color: var(--dim); cursor: pointer; }
+  .dp-filter button.is-active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  @media (max-width: 720px){ .dp-filter{ padding-left: var(--pad-x-sm); padding-right: var(--pad-x-sm); } }
+
+  .dp-score-formula { display: grid; grid-template-columns: repeat(5,1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .dp-score-formula > div { background: var(--bg); padding: 18px 16px; text-align: center; }
+  .dp-score-formula .pts { font-family: var(--f-sans); font-size: 26px; font-weight: 900; color: var(--dp-good); }
+  .dp-score-formula .lbl { font-size: 12px; color: var(--dim); margin-top: 6px; line-height: 1.4; }
+  @media (max-width: 900px){ .dp-score-formula{ grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="dark-patterns.html" class="is-current">DARK PATTERNS</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" data-screen-label="hero" style="display:block;">
+  <div class="dp-hero">
+    <div>
+      <span class="dp-kicker">Masterclass · Hub · Simulator</span>
+      <h1 class="dp-hero__big">The tricks are<br><em>designed to be invisible.</em><br>Learn to see them.</h1>
+      <p class="dp-hero__sub">
+        A living classroom on <b>dark patterns</b> — the deceptive design choices that nudge, pressure and
+        trick people into decisions they wouldn&rsquo;t otherwise make. This hub covers the classic playbook
+        <em>and</em> the new generation of <b>AI-driven manipulation</b>. Every pattern is explained two ways:
+        the <b>theory</b> behind why it works on your brain, and a <b>gamified</b> way to train your eye.
+        The whole portal doubles as a <b>simulator</b> — safe, clearly-labelled reconstructions you can poke at.
+      </p>
+      <div class="dp-hero__ctas">
+        <a href="dark-patterns-game.html" class="dp-btn dp-btn--solid">▶ Play the spot-the-pattern game</a>
+        <a href="dark-patterns-live.html" class="dp-btn">See live examples</a>
+        <a href="dark-patterns-ai.html" class="dp-btn">AI simulator</a>
+      </div>
+    </div>
+    <aside class="dp-statpanel">
+      <h4>Your training progress</h4>
+      <div class="dp-statrow"><span class="k">Points earned</span><span class="v is-score" data-dp="score">0</span></div>
+      <div class="dp-statrow"><span class="k">Patterns identified</span><span class="v" data-dp="found">0</span></div>
+      <div class="dp-statrow"><span class="k">Badges unlocked</span><span class="v" data-dp="badges">0</span></div>
+      <div class="dp-statrow"><span class="k">In this catalogue</span><span class="v" data-dp="catalog">—</span></div>
+      <p style="margin:14px 0 0; font-size:12px; color:var(--faint); line-height:1.5;">Progress is saved in your browser only. <button id="dpReset" class="signal" style="background:none;border:none;padding:0;cursor:pointer;font:inherit;">Reset progress</button></p>
+    </aside>
+  </div>
+</section>
+
+<!-- ETHICS RIBBON -->
+<div class="dp-ribbon">
+  <b>Educational simulation</b>
+  <span>Every deceptive element on this hub is a clearly-labelled reconstruction. Nothing here charges money, collects real data, or leaves this page. It exists so you can recognise these tactics in the wild.</span>
+</div>
+
+<!-- SUBNAV -->
+<div style="padding: 22px var(--pad-x) 0;">
+  <nav class="dp-subnav" aria-label="Dark patterns hub sections">
+    <a href="dark-patterns.html" class="is-current"><span class="n">01 · HUB</span><span class="t">Masterclass &amp; Catalogue</span><span class="d">Theory + taxonomy</span></a>
+    <a href="dark-patterns-live.html"><span class="n">02 · LIVE</span><span class="t">Live Examples</span><span class="d">Watch each trick work</span></a>
+    <a href="dark-patterns-game.html"><span class="n">03 · GAME</span><span class="t">Spot the Pattern</span><span class="d">Identify &amp; score points</span></a>
+    <a href="dark-patterns-ai.html"><span class="n">04 · AI</span><span class="t">AI Simulator</span><span class="d">AI-driven manipulation</span></a>
+  </nav>
+</div>
+
+<!-- WHAT IS A DARK PATTERN -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 01</span>
+    <span class="shead__title">WHAT IS A DARK PATTERN?</span>
+    <span class="shead__sub">// the theory, in three parts</span>
+  </div>
+</div>
+<p class="body" style="padding: 22px var(--pad-x) 8px; max-width: 78ch; margin: 0; color: var(--dim); line-height: 1.7;">
+  A <b>dark pattern</b> (or &ldquo;deceptive pattern&rdquo;) is an interface deliberately crafted to trick users into
+  doing things they didn&rsquo;t mean to — buying more, sharing more, staying subscribed, clicking &ldquo;agree.&rdquo;
+  The term was coined by UX researcher Harry Brignull in 2010. These are not accidents or bad usability; they are
+  <em>persuasion weaponised against the user&rsquo;s own interest</em>. Regulators now treat many of them as unlawful.
+</p>
+<div class="dp-theory" style="margin: 14px var(--pad-x) 0;">
+  <div>
+    <div class="num">01 · THE HOOK</div>
+    <h3>They exploit how brains take shortcuts</h3>
+    <p>Loss aversion, scarcity, social proof, default bias, the sunk-cost fallacy. Dark patterns don&rsquo;t defeat your reasoning — they slip past it, borrowing the mental shortcuts you use to move quickly.</p>
+  </div>
+  <div>
+    <div class="num">02 · THE ASYMMETRY</div>
+    <h3>Easy to fall for, hard to reverse</h3>
+    <p>The manipulative path is one giant button; the honest path is a grey link three menus deep. The design is intentionally lopsided so the outcome the business wants is the path of least resistance.</p>
+  </div>
+  <div>
+    <div class="num">03 · THE HARM</div>
+    <h3>Money, data, attention, autonomy</h3>
+    <p>The cost lands on the user: unexpected charges, over-shared data, wasted time, eroded trust, and decisions that don&rsquo;t reflect what they actually wanted. At scale, it&rsquo;s a market failure — which is why it&rsquo;s regulated.</p>
+  </div>
+</div>
+
+<!-- HOW SCORING WORKS -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 02</span>
+    <span class="shead__title">HOW THE GAME SCORES YOU</span>
+    <span class="shead__sub">// 10 points per pattern — plus bonuses for reading it right</span>
+  </div>
+  <div class="shead__right"><a href="dark-patterns-game.html" class="signal">START PLAYING →</a></div>
+</div>
+<p class="body" style="padding: 22px var(--pad-x) 14px; max-width: 74ch; margin: 0; color: var(--dim); line-height: 1.65;">
+  In the <a href="dark-patterns-game.html" class="signal">spot-the-pattern game</a>, pages are disguised as ordinary
+  product UIs and seeded with hidden dark patterns. Click one you suspect, then <b>name its category</b> and
+  <b>rate its severity</b>. You don&rsquo;t just earn a flat reward — you&rsquo;re graded on how accurately you read
+  the manipulation:
+</p>
+<div class="dp-score-formula" style="margin: 0 var(--pad-x);">
+  <div><div class="pts">+10</div><div class="lbl">Correct identification<br>(the base reward)</div></div>
+  <div><div class="pts">+5</div><div class="lbl">Correct category<br>(what kind of trick)</div></div>
+  <div><div class="pts">+5</div><div class="lbl">Correct severity<br>(+2 if within one)</div></div>
+  <div><div class="pts">+3</div><div class="lbl">Speed bonus<br>(under par time)</div></div>
+  <div><div class="pts">+2</div><div class="lbl">No-hint bonus<br>(solved unassisted)</div></div>
+</div>
+<p class="body" style="padding: 12px var(--pad-x) 0; max-width: 74ch; margin: 0; color: var(--faint); font-size: 13px;">
+  A wrong identification scores nothing and is logged as a miss. Badges unlock as you go — <em>First Catch, Eagle Eye,
+  Unassisted, Century Club, AI-Aware</em>.
+</p>
+
+<!-- TAXONOMY / CATALOGUE -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 03</span>
+    <span class="shead__title">THE CATALOGUE</span>
+    <span class="shead__sub">// the full taxonomy — classic &amp; AI-driven</span>
+  </div>
+</div>
+<div class="dp-filter" role="group" aria-label="Filter catalogue">
+  <button data-filter="all" class="is-active">All</button>
+  <button data-filter="nonai">Classic (non-AI)</button>
+  <button data-filter="ai">AI-driven</button>
+  <button data-filter="both">Both</button>
+</div>
+<div class="dp-grid" id="dpCatalog" style="margin: 0 var(--pad-x);"><!-- cards injected by JS --></div>
+
+<!-- THE AI TURN -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 04</span>
+    <span class="shead__title">WHY AI CHANGES THE GAME</span>
+    <span class="shead__sub">// manipulation that personalises, adapts, and scales itself</span>
+  </div>
+  <div class="shead__right"><a href="dark-patterns-ai.html" class="signal">OPEN THE AI SIMULATOR →</a></div>
+</div>
+<div class="dp-theory" style="margin: 22px var(--pad-x) 0;">
+  <div>
+    <div class="num">PERSONALISED</div>
+    <h3>It targets <em>you</em></h3>
+    <p>Classic dark patterns are one-size-fits-all. AI tailors the manipulation to your data — your hesitation, your history, your emotional state — finding the exact lever that moves you specifically.</p>
+  </div>
+  <div>
+    <div class="num">ADAPTIVE</div>
+    <h3>It learns what works</h3>
+    <p>An AI system A/B tests you in real time. If guilt didn&rsquo;t keep you subscribed, it tries urgency, then flattery, then a discount — optimising relentlessly toward the outcome the business wants.</p>
+  </div>
+  <div>
+    <div class="num">CONVERSATIONAL</div>
+    <h3>It feels like a person</h3>
+    <p>A chatbot that sounds warm, confident and human can extract data, upsell, and discourage cancellation while feeling like help. Anthropomorphism is the delivery mechanism; sycophancy and false confidence are the payload.</p>
+  </div>
+</div>
+<p class="body" style="padding: 22px var(--pad-x) 0; max-width: 78ch; margin: 0; color: var(--dim); line-height: 1.7;">
+  The <a href="dark-patterns-ai.html" class="signal">AI simulator</a> lets you interact with reconstructions of these:
+  a chatbot that agrees with everything to keep you engaged, a &ldquo;retention specialist&rdquo; that emotionally
+  guilt-trips you out of cancelling, synthetic scarcity generated on the fly, and a conversation quietly engineered
+  to extract more of your data than you intended to give.
+</p>
+
+<!-- REFERENCES -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 05</span>
+    <span class="shead__title">REFERENCES &amp; FURTHER READING</span>
+    <span class="shead__sub">// the sources behind this masterclass</span>
+  </div>
+</div>
+<ul class="dp-refs" style="margin: 22px var(--pad-x) 0;">
+  <li><a href="https://www.forbes.com/sites/federicoguerrini/2024/11/17/ai-driven-dark-patterns-how-artificial-intelligence-is-supercharging-digital-manipulation/" target="_blank" rel="noopener"><span class="src">Forbes · 2024</span><span class="ttl">AI-Driven Dark Patterns: How Artificial Intelligence Is Supercharging Digital Manipulation</span><span class="url">forbes.com</span></a></li>
+  <li><a href="https://omnisearch.ai/blog/dark-patterns-in-ai" target="_blank" rel="noopener"><span class="src">Omnisearch</span><span class="ttl">Dark Patterns in AI</span><span class="url">omnisearch.ai/blog/dark-patterns-in-ai</span></a></li>
+  <li><a href="https://arxiv.org/abs/2602.18445" target="_blank" rel="noopener"><span class="src">arXiv · preprint</span><span class="ttl">Research paper on dark patterns (arXiv:2602.18445)</span><span class="url">arxiv.org/abs/2602.18445</span></a></li>
+  <li><a href="https://acuitylaw.com/dark-patterns-and-ai/" target="_blank" rel="noopener"><span class="src">Acuity Law</span><span class="ttl">Dark Patterns and AI — the legal / regulatory view</span><span class="url">acuitylaw.com/dark-patterns-and-ai</span></a></li>
+  <li><a href="https://journals.sagepub.com/doi/10.1177/24551333241275752" target="_blank" rel="noopener"><span class="src">SAGE Journals</span><span class="ttl">Peer-reviewed research on deceptive design</span><span class="url">journals.sagepub.com</span></a></li>
+  <li><a href="https://www.sciencedirect.com/science/article/pii/S2666389924000795" target="_blank" rel="noopener"><span class="src">ScienceDirect · Patterns</span><span class="ttl">Academic article on dark patterns &amp; AI</span><span class="url">sciencedirect.com</span></a></li>
+  <li><a href="https://deceptive.design/" target="_blank" rel="noopener"><span class="src">Deceptive Design</span><span class="ttl">Deceptive Design (Harry Brignull) — the canonical taxonomy &amp; hall of shame</span><span class="url">deceptive.design</span></a></li>
+  <li><a href="https://www.oecd.org/en/topics/sub-issues/dark-commercial-patterns.html" target="_blank" rel="noopener"><span class="src">OECD</span><span class="ttl">Dark Commercial Patterns — policy &amp; consumer-protection framing</span><span class="url">oecd.org</span></a></li>
+  <li><a href="https://www.eleken.co/blog-posts/dark-patterns-examples" target="_blank" rel="noopener"><span class="src">Eleken</span><span class="ttl">Dark Patterns Examples</span><span class="url">eleken.co/blog-posts/dark-patterns-examples</span></a></li>
+  <li><a href="https://uxdesign.cc/little-ux-crimes-a-collection-of-dark-patterns-in-design-7783b75195e0" target="_blank" rel="noopener"><span class="src">UX Collective</span><span class="ttl">Little UX Crimes: A Collection of Dark Patterns in Design</span><span class="url">uxdesign.cc</span></a></li>
+  <li><a href="https://thedecisionlab.com/reference-guide/design/dark-patterns" target="_blank" rel="noopener"><span class="src">The Decision Lab</span><span class="ttl">Dark Patterns — behavioural-science reference guide</span><span class="url">thedecisionlab.com</span></a></li>
+</ul>
+
+<!-- CTA -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 06</span>
+    <span class="shead__title">START TRAINING YOUR EYE</span>
+    <span class="shead__sub">// the best defence is recognition</span>
+  </div>
+  <div class="shead__right"><a href="dark-patterns-game.html" class="signal">PLAY THE GAME →</a></div>
+</div>
+<p class="body" style="padding: 22px var(--pad-x) 48px; max-width: 72ch; margin: 0; color: var(--dim); line-height: 1.65;">
+  Once you can name a tactic, it stops working on you. Move through the
+  <a href="dark-patterns-live.html" class="signal">live examples</a>, test yourself in the
+  <a href="dark-patterns-game.html" class="signal">game</a>, and see how AI raises the stakes in the
+  <a href="dark-patterns-ai.html" class="signal">simulator</a>.
+</p>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
+</footer>
+
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
+<script src="assets/dark-patterns.js"></script>
+<script src="assets/dark-patterns-catalog.js"></script>
+<script>
+(function(){
+  // Render catalogue
+  var grid = document.getElementById('dpCatalog');
+  var data = window.DP_CATALOG || [];
+  function sevBars(n){ var s='<span class="dp-sev" data-sev="'+n+'" title="Severity '+n+'/5">'; for(var i=0;i<5;i++) s+='<i></i>'; return s+'</span>'; }
+  function tagClass(c){ return c==='ai'?'dp-tag--ai':(c==='both'?'dp-tag--both':'dp-tag--nonai'); }
+  function tagLabel(c){ return c==='ai'?'AI-driven':(c==='both'?'AI + Classic':'Classic'); }
+  function render(filter){
+    grid.innerHTML = data.filter(function(d){ return filter==='all'||d.type===filter; }).map(function(d){
+      return '<article class="dp-card" data-type="'+d.type+'">'+
+        '<div class="dp-card__top"><span class="dp-tag '+tagClass(d.type)+'">'+tagLabel(d.type)+'</span>'+sevBars(d.severity)+'</div>'+
+        '<h3>'+d.name+'</h3>'+
+        '<p class="dp-def">'+d.definition+'</p>'+
+        '<div class="dp-block"><span class="dp-lbl">In the wild</span><p class="dp-eg">'+d.example+'</p></div>'+
+        '<div class="dp-block"><span class="dp-lbl">How to resist</span><p>'+d.resist+'</p></div>'+
+      '</article>';
+    }).join('');
+  }
+  render('all');
+  document.querySelector('.dp-filter').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    this.querySelectorAll('button').forEach(function(x){ x.classList.remove('is-active'); });
+    b.classList.add('is-active');
+    render(b.getAttribute('data-filter'));
+  });
+
+  // Progress panel
+  function refresh(){
+    if(!window.DPScore) return;
+    var s = DPScore.state();
+    var set = function(k,v){ var el=document.querySelector('[data-dp="'+k+'"]'); if(el) el.textContent=v; };
+    set('score', s.score);
+    set('found', Object.keys(s.found).length);
+    set('badges', s.badges.length);
+    set('catalog', data.length);
+  }
+  refresh();
+  var reset = document.getElementById('dpReset');
+  if(reset) reset.addEventListener('click', function(){ if(confirm('Reset all your dark-patterns training progress?')){ DPScore.reset(); refresh(); } });
+})();
+</script>
+</body>
+</html>
