@@ -34,6 +34,18 @@
   .topic__metrics .m .v { display: block; font-family: var(--f-sans); font-size: 19px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); }
   .topic__metrics .m .l { display: block; margin-top: 3px; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); line-height: 1.35; }
   @media (max-width: 900px) { .topics { grid-template-columns: 1fr; } }
+
+  /* Builder's Bible portal */
+  .bb-lede { padding: 26px var(--pad-x) 22px; max-width: 78ch; }
+  .bb-lede p { font-family: var(--f-sans); font-size: 15px; color: var(--dim); line-height: 1.65; margin: 0 0 18px; }
+  .bb-portal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .bb-cell { background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; text-decoration: none; transition: background .15s; }
+  .bb-cell:hover { background: var(--surface); }
+  .bb-cell .k { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--signal); margin-bottom: 12px; }
+  .bb-cell h3 { font-family: var(--f-sans); font-size: 16px; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 6px; color: var(--ink); }
+  .bb-cell p { font-family: var(--f-sans); font-size: 13px; color: var(--dim); line-height: 1.5; margin: 0; }
+  @media (max-width: 1000px) { .bb-portal { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .bb-portal { grid-template-columns: 1fr; } }
 </style>
   <link rel="stylesheet" href="assets/typography.css">
 </head>
@@ -199,10 +211,36 @@
   </div>
 </div>
 
-<!-- CTA -->
+<!-- BUILDER'S BIBLE -->
 <div class="shead">
   <div class="shead__left">
     <span class="shead__n">§ 03</span>
+    <span class="shead__title">BUILDER&rsquo;S BIBLE</span>
+    <span class="shead__sub">// the enablement platform behind the advisory</span>
+  </div>
+  <div class="shead__right"><a href="builders-bible.html" class="signal">OPEN THE PORTAL &rarr;</a></div>
+</div>
+
+<div class="bb-lede">
+  <p>An interactive AI knowledge portal I built for the teams I advise &mdash; articles, playbooks, real projects, a prompt library, workflow blueprints, tool comparisons, and roadmaps. It&rsquo;s how a consulting engagement becomes a capability that outlasts it.</p>
+  <a href="builders-bible.html" class="btn btn--primary">ENTER BUILDER&rsquo;S BIBLE <span>&rarr;</span></a>
+</div>
+
+<div class="bb-portal">
+  <a href="builders-bible.html#home" class="bb-cell"><span class="k">01 · Home</span><h3>Start here</h3><p>Persona quiz, live stats, and browse by topic or tool.</p></a>
+  <a href="builders-bible.html#articles" class="bb-cell"><span class="k">02 · Articles</span><h3>The library</h3><p>Interactive, filterable reads with progress tracking.</p></a>
+  <a href="builders-bible.html#playbooks" class="bb-cell"><span class="k">03 · Playbooks</span><h3>Roadmaps</h3><p>Five staged learning paths, beginner to enterprise.</p></a>
+  <a href="builders-bible.html#projects" class="bb-cell"><span class="k">04 · Projects</span><h3>Shipped builds</h3><p>Real projects from the AI Lab, stack and all.</p></a>
+  <a href="builders-bible.html#prompts" class="bb-cell"><span class="k">05 · Prompts</span><h3>Prompt library</h3><p>Copy-ready prompts with example output and tips.</p></a>
+  <a href="builders-bible.html#workflows" class="bb-cell"><span class="k">06 · Workflows</span><h3>Blueprints</h3><p>Automation architectures with tools, time, and cost.</p></a>
+  <a href="builders-bible.html#resources" class="bb-cell"><span class="k">07 · Resources</span><h3>Toolkit</h3><p>Tool comparisons, calculators, and curated picks.</p></a>
+  <a href="builders-bible.html#about" class="bb-cell"><span class="k">08 · About</span><h3>The stack</h3><p>Why it exists and what I build with today.</p></a>
+</div>
+
+<!-- CTA -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">§ 04</span>
     <span class="shead__title">LET&rsquo;S TALK</span>
     <span class="shead__sub">// tell me where the ambiguity is</span>
   </div>
