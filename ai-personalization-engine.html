@@ -1,0 +1,1290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIRROR — An Adaptive Personalization Engine · Puneet Arora</title>
+<meta name="description" content="MIRROR is a live, working personalization engine: memory, user profiles, a real recommendation model, behavioral analytics, explainable AI, and preference editing — all reacting to you in real time. A masterpiece by Puneet Arora.">
+<meta name="author" content="Puneet Arora">
+<link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/ai-personalization-engine.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Puneet Arora — Portfolio">
+<meta property="og:title" content="MIRROR — An Adaptive Personalization Engine">
+<meta property="og:description" content="A live personalization engine you can feel thinking: memory, profiles, recommendations, behavioral analytics, explainable AI, and preference editing — reacting to you in real time.">
+<meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/ai-personalization-engine.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme')||'forest';if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+/* ══════════════════════════════════════════════════════════════════
+   MIRROR — page-local system. Built on site tokens (sea-green --signal,
+   slate ground). A "living instrument" aesthetic — deliberately not the
+   card-grid dashboard cliché. The cognition field is a fixed-dark screen
+   in both themes; everything around it inherits the site's light/dark.
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --mir-heat: oklch(74% 0.15 55);          /* warm amber — intent / heat */
+  --mir-neg:  oklch(64% 0.16 25);          /* dismiss / negative */
+  --mir-screen: #0b1512;                   /* the instrument screen ground */
+  --mir-screen-2:#0f1c18;
+  --mir-screen-line: rgba(120,225,190,0.14);
+  --mir-screen-dim: rgba(150,200,185,0.55);
+  --mir-green: #46c79f;                     /* canvas-safe sea green */
+  --mir-green-soft: rgba(70,199,159,0.16);
+  --mir-amber: #e6a34d;
+}
+.mir-wrap{max-width:var(--max);margin:0 auto;}
+
+/* ---------- HERO ---------- */
+.mir-hero{padding:72px var(--pad-x) 40px;position:relative;overflow:hidden;}
+.mir-eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--faint);display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.mir-eyebrow b{color:var(--signal);font-weight:700;}
+.mir-live{display:inline-flex;align-items:center;gap:7px;color:var(--signal);}
+.mir-live .d{width:7px;height:7px;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal);animation:mir-blink 1.4s ease-in-out infinite;}
+@keyframes mir-blink{0%,100%{opacity:1}50%{opacity:.25}}
+.mir-title{font-family:var(--f-sans);font-weight:500;font-size:clamp(40px,7vw,84px);line-height:0.94;letter-spacing:-0.035em;color:var(--ink);margin:26px 0 0;}
+.mir-title .glint{background:linear-gradient(96deg,var(--signal),var(--mir-amber));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-style:italic;font-weight:300;}
+.mir-kicker{font-family:var(--f-sans);font-size:clamp(17px,2.1vw,22px);line-height:1.5;color:var(--dim);max-width:60ch;margin:26px 0 0;}
+.mir-kicker strong{color:var(--ink);font-weight:500;}
+.mir-featurebar{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px;}
+.mir-feat{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);border:1px solid var(--rule);border-radius:999px;padding:7px 13px;display:inline-flex;align-items:center;gap:8px;}
+.mir-feat i{width:6px;height:6px;border-radius:50%;background:var(--signal);font-style:normal;}
+.mir-hint{margin-top:26px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:0.06em;color:var(--faint);display:flex;align-items:center;gap:10px;}
+.mir-hint .ar{color:var(--signal);animation:mir-nudge 1.8s ease-in-out infinite;}
+@keyframes mir-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+
+/* ---------- Section chrome ---------- */
+.mir-sec{padding:0 var(--pad-x);}
+.mir-shead{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;padding:64px 0 8px;border-top:1px solid var(--rule);margin-top:20px;}
+.mir-shead .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.2em;color:var(--signal);}
+.mir-shead h2{font-family:var(--f-sans);font-weight:500;font-size:clamp(26px,3.6vw,40px);letter-spacing:-0.02em;margin:0;color:var(--ink);line-height:1.05;}
+.mir-shead .sub{font-family:var(--f-mono);font-size:11.5px;letter-spacing:0.06em;color:var(--dim);}
+.mir-lead{font-size:16px;line-height:1.7;color:var(--dim);max-width:74ch;margin:16px 0 30px;}
+
+/* ---------- CONSOLE ---------- */
+.mir-console{border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:var(--bg-2);}
+/* control strip */
+.mir-controls{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end;padding:18px 22px;border-bottom:1px solid var(--rule);background:var(--surface);}
+.mir-cgroup{display:flex;flex-direction:column;gap:9px;}
+.mir-clabel{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--faint);}
+.mir-personas{display:flex;flex-wrap:wrap;gap:7px;}
+.mir-persona{font-family:var(--f-mono);font-size:11px;letter-spacing:0.03em;color:var(--dim);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:7px 13px;cursor:pointer;transition:border-color .15s,color .15s,background .15s;}
+.mir-persona:hover{color:var(--ink);border-color:var(--faint);}
+.mir-persona[aria-pressed="true"]{color:var(--signal-ink);background:var(--signal);border-color:var(--signal);}
+.mir-dial{display:flex;align-items:center;gap:11px;}
+.mir-dial input[type=range]{width:120px;}
+.mir-dialval{font-family:var(--f-mono);font-size:11px;color:var(--signal);min-width:34px;}
+.mir-btn{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);background:transparent;border:1px solid var(--rule);border-radius:7px;padding:8px 13px;cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:7px;}
+.mir-btn:hover{color:var(--ink);border-color:var(--faint);}
+.mir-btn[aria-pressed="true"]{color:var(--mir-neg);border-color:var(--mir-neg);}
+.mir-btn--danger:hover{color:var(--mir-neg);border-color:var(--mir-neg);}
+
+/* console body grid */
+.mir-body{display:grid;grid-template-columns:1.55fr 1fr;gap:0;}
+.mir-surface{padding:20px 22px;border-right:1px solid var(--rule);min-width:0;}
+.mir-rail{padding:0;min-width:0;background:var(--bg-2);}
+
+/* surface header */
+.mir-surface-head{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px;}
+.mir-surface-head h3{font-family:var(--f-sans);font-size:15px;font-weight:600;letter-spacing:-0.01em;margin:0;color:var(--ink);display:flex;align-items:center;gap:9px;}
+.mir-surface-head h3 .rt{width:7px;height:7px;border-radius:50%;background:var(--signal);box-shadow:0 0 10px var(--signal);}
+.mir-modeswitch{display:inline-flex;border:1px solid var(--rule);border-radius:7px;overflow:hidden;}
+.mir-modeswitch button{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);background:transparent;border:none;border-left:1px solid var(--rule);padding:6px 11px;cursor:pointer;}
+.mir-modeswitch button:first-child{border-left:none;}
+.mir-modeswitch button[aria-pressed="true"]{background:var(--signal);color:var(--signal-ink);}
+.mir-surface-note{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.04em;color:var(--faint);margin:0 0 14px;}
+.mir-lift{color:var(--signal);}
+
+/* recommendation cards */
+.mir-recs{display:flex;flex-direction:column;gap:9px;}
+.mir-rec{display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:center;padding:13px 14px;border:1px solid var(--rule);border-radius:9px;background:var(--surface);position:relative;transition:border-color .18s,transform .18s,box-shadow .18s;cursor:default;}
+.mir-rec:hover{border-color:var(--signal);box-shadow:0 6px 24px -14px var(--signal);}
+.mir-rec.is-top{border-color:color-mix(in srgb,var(--signal) 55%,var(--rule));}
+.mir-rec.flash{animation:mir-flash .6s ease;}
+@keyframes mir-flash{0%{background:var(--mir-green-soft)}100%{background:var(--surface)}}
+.mir-rec__rank{font-family:var(--f-mono);font-size:18px;font-weight:700;color:var(--faint);text-align:center;font-variant-numeric:tabular-nums;line-height:1;}
+.mir-rec.is-top .mir-rec__rank{color:var(--signal);}
+.mir-rec__moved{font-family:var(--f-mono);font-size:9px;letter-spacing:0;display:block;margin-top:3px;}
+.mir-up{color:var(--signal);}.mir-down{color:var(--mir-neg);}
+.mir-rec__body{min-width:0;}
+.mir-rec__cat{font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);}
+.mir-rec__title{font-family:var(--f-sans);font-size:14.5px;font-weight:500;color:var(--ink);letter-spacing:-0.01em;margin:2px 0 4px;line-height:1.2;}
+.mir-rec__why{font-family:var(--f-mono);font-size:10.5px;color:var(--dim);line-height:1.4;display:flex;align-items:center;gap:6px;}
+.mir-rec__why .whybtn{color:var(--signal);border:none;background:none;font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:2px;padding:0;letter-spacing:0.02em;}
+.mir-rec__right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+.mir-match{text-align:right;}
+.mir-match .pct{font-family:var(--f-mono);font-size:16px;font-weight:700;color:var(--signal);line-height:1;font-variant-numeric:tabular-nums;}
+.mir-match .lbl{font-family:var(--f-mono);font-size:8px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);}
+.mir-match .bar{width:64px;height:4px;border-radius:3px;background:var(--rule);overflow:hidden;margin-top:5px;}
+.mir-match .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--signal),var(--mir-amber));border-radius:3px;transition:width .5s cubic-bezier(.2,.7,.2,1);}
+.mir-price{font-family:var(--f-mono);font-size:11px;color:var(--dim);}
+.mir-actions{display:flex;gap:5px;}
+.mir-act{width:28px;height:28px;border-radius:7px;border:1px solid var(--rule);background:transparent;color:var(--dim);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:13px;transition:all .15s;line-height:1;}
+.mir-act:hover{border-color:var(--signal);color:var(--signal);}
+.mir-act--save.on{background:var(--signal);color:var(--signal-ink);border-color:var(--signal);}
+.mir-act--cart:hover{border-color:var(--mir-heat);color:var(--mir-heat);}
+.mir-act--cart.on{background:var(--mir-heat);color:#231303;border-color:var(--mir-heat);}
+.mir-act--dismiss:hover{border-color:var(--mir-neg);color:var(--mir-neg);}
+
+/* ---------- RAIL: THE MIND ---------- */
+.mir-mind{background:var(--mir-screen);color:#dcefe7;padding:18px 20px;border-bottom:1px solid var(--rule);}
+.mir-mind__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
+.mir-mind__head .t{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--mir-screen-dim);}
+.mir-mind__head .c{font-family:var(--f-mono);font-size:10px;color:var(--mir-green);}
+.mir-field-wrap{position:relative;border:1px solid var(--mir-screen-line);border-radius:9px;background:radial-gradient(ellipse at 50% 40%,var(--mir-screen-2),var(--mir-screen));overflow:hidden;}
+#mir-field{display:block;width:100%;height:210px;}
+.mir-seg{position:absolute;left:14px;bottom:12px;right:14px;pointer-events:none;}
+.mir-seg .lab{font-family:var(--f-mono);font-size:8.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--mir-screen-dim);}
+.mir-seg .name{font-family:var(--f-sans);font-size:19px;font-weight:600;color:#eafff7;letter-spacing:-0.01em;line-height:1.1;margin-top:2px;text-shadow:0 2px 18px rgba(70,199,159,.4);}
+.mir-dna{margin-top:12px;font-family:var(--f-mono);font-size:10px;letter-spacing:0.02em;color:var(--mir-green);word-break:break-word;line-height:1.6;}
+.mir-dna .k{color:var(--mir-screen-dim);}
+.mir-conf{display:flex;align-items:center;gap:10px;margin-top:12px;}
+.mir-conf .bar{flex:1;height:5px;border-radius:3px;background:rgba(120,225,190,0.12);overflow:hidden;}
+.mir-conf .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mir-green),var(--mir-amber));width:0;transition:width .6s;}
+.mir-conf .v{font-family:var(--f-mono);font-size:10px;color:#eafff7;min-width:34px;text-align:right;}
+
+/* spectrum inside mind */
+.mir-spectrum{padding:16px 20px;border-bottom:1px solid var(--rule);}
+.mir-spectrum .t{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);margin-bottom:12px;}
+.mir-spec-row{display:grid;grid-template-columns:96px 1fr 30px;gap:10px;align-items:center;margin-bottom:8px;}
+.mir-spec-row .n{font-family:var(--f-mono);font-size:10.5px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.mir-spec-row .track{height:7px;border-radius:4px;background:var(--rule);overflow:hidden;}
+.mir-spec-row .track i{display:block;height:100%;border-radius:4px;background:var(--signal);width:0;transition:width .5s cubic-bezier(.2,.7,.2,1);}
+.mir-spec-row.top .track i{background:linear-gradient(90deg,var(--signal),var(--mir-amber));}
+.mir-spec-row .p{font-family:var(--f-mono);font-size:10px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums;}
+
+/* WHY panel */
+.mir-why{padding:16px 20px;}
+.mir-why .t{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);margin-bottom:6px;display:flex;justify-content:space-between;}
+.mir-why .t b{color:var(--signal);font-weight:400;}
+.mir-why__item{font-family:var(--f-sans);font-size:13px;font-weight:600;color:var(--ink);margin:2px 0 12px;}
+.mir-why__contrib{display:flex;flex-direction:column;gap:7px;margin-bottom:12px;}
+.mir-cbar{display:grid;grid-template-columns:78px 1fr 30px;gap:9px;align-items:center;}
+.mir-cbar .l{font-family:var(--f-mono);font-size:10px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.mir-cbar .tr{height:9px;border-radius:4px;background:var(--rule);overflow:hidden;}
+.mir-cbar .tr i{display:block;height:100%;background:var(--signal);border-radius:4px;transition:width .5s;}
+.mir-cbar .pc{font-family:var(--f-mono);font-size:9.5px;color:var(--faint);text-align:right;}
+.mir-why__text{font-size:12.5px;line-height:1.6;color:var(--dim);}
+.mir-why__text b{color:var(--ink);font-weight:600;}
+.mir-why__cf{margin-top:11px;padding:10px 12px;border:1px dashed var(--rule);border-radius:8px;font-family:var(--f-mono);font-size:10.5px;line-height:1.55;color:var(--dim);}
+.mir-why__cf b{color:var(--mir-amber);}
+
+/* ---------- TELEMETRY BAND ---------- */
+.mir-tele{display:grid;grid-template-columns:1fr 1.25fr;gap:0;border-top:1px solid var(--rule);}
+.mir-metrics{padding:20px 22px;border-right:1px solid var(--rule);}
+.mir-metrics .t,.mir-stream .t{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);margin-bottom:14px;}
+.mir-mgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:9px;overflow:hidden;}
+.mir-mcell{background:var(--surface);padding:15px 16px;}
+.mir-mcell .v{font-family:var(--f-mono);font-size:27px;font-weight:700;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums;}
+.mir-mcell .k{font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);margin-top:8px;}
+.mir-mcell .v small{font-size:13px;color:var(--dim);font-weight:400;}
+.mir-stream{padding:20px 22px;min-width:0;}
+.mir-log{font-family:var(--f-mono);font-size:11px;line-height:1.5;max-height:260px;overflow-y:auto;display:flex;flex-direction:column;gap:0;}
+.mir-log__row{display:grid;grid-template-columns:52px 16px 1fr;gap:9px;padding:6px 0;border-bottom:1px solid var(--rule);align-items:baseline;}
+.mir-log__row:first-child{animation:mir-slidein .35s ease;}
+@keyframes mir-slidein{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.mir-log__t{color:var(--faint);font-size:10px;}
+.mir-log__i{font-size:11px;}
+.mir-log__m{color:var(--dim);}
+.mir-log__m b{color:var(--ink);font-weight:500;}
+.mir-log__m .pos{color:var(--signal);}
+.mir-log__m .neg{color:var(--mir-neg);}
+.mir-log__m .hot{color:var(--mir-heat);}
+.mir-empty{color:var(--faint);font-style:italic;}
+
+/* ---------- PREFERENCE STUDIO ---------- */
+.mir-studio{display:grid;grid-template-columns:1.3fr 1fr;gap:0;border:1px solid var(--rule);border-radius:12px;overflow:hidden;}
+.mir-sliders{padding:22px 24px;border-right:1px solid var(--rule);}
+.mir-sliders h3,.mir-privacy h3{font-family:var(--f-sans);font-size:15px;font-weight:600;color:var(--ink);margin:0 0 4px;}
+.mir-sub{font-family:var(--f-mono);font-size:10.5px;color:var(--faint);margin:0 0 20px;line-height:1.5;}
+.mir-slider{display:grid;grid-template-columns:110px 1fr 34px;gap:14px;align-items:center;margin-bottom:13px;}
+.mir-slider label{font-family:var(--f-mono);font-size:11px;color:var(--dim);}
+.mir-slider input[type=range]{width:100%;}
+.mir-slider .val{font-family:var(--f-mono);font-size:11px;color:var(--signal);text-align:right;}
+.mir-privacy{padding:22px 24px;background:var(--surface);}
+.mir-toggle{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid var(--rule);}
+.mir-toggle:last-of-type{border-bottom:none;}
+.mir-toggle__sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--rule);border:none;position:relative;cursor:pointer;transition:background .2s;margin-top:2px;}
+.mir-toggle__sw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:var(--ink);transition:transform .2s;}
+.mir-toggle__sw[aria-pressed="true"]{background:var(--signal);}
+.mir-toggle__sw[aria-pressed="true"]::after{transform:translateX(18px);background:var(--signal-ink);}
+.mir-toggle__txt strong{display:block;font-family:var(--f-sans);font-size:13px;color:var(--ink);font-weight:500;}
+.mir-toggle__txt span{display:block;font-family:var(--f-mono);font-size:10px;color:var(--faint);line-height:1.5;margin-top:3px;}
+
+/* range input styling (both themes) */
+input[type=range]{-webkit-appearance:none;appearance:none;height:4px;border-radius:3px;background:var(--rule);outline:none;cursor:pointer;}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:15px;height:15px;border-radius:50%;background:var(--signal);border:2px solid var(--bg);box-shadow:0 0 0 1px var(--signal);}
+input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;background:var(--signal);border:2px solid var(--bg);}
+
+/* ---------- MEMORY ---------- */
+.mir-memwrap{border:1px solid var(--rule);border-radius:12px;overflow:hidden;}
+.mir-membar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:15px 22px;background:var(--surface);border-bottom:1px solid var(--rule);}
+.mir-membar .rec{font-family:var(--f-mono);font-size:11px;color:var(--dim);}
+.mir-membar .rec b{color:var(--signal);}
+.mir-mem{list-style:none;margin:0;padding:8px 0;max-height:340px;overflow-y:auto;}
+.mir-mem li{display:grid;grid-template-columns:74px 18px 1fr;gap:12px;padding:11px 22px;align-items:baseline;border-bottom:1px solid var(--rule);}
+.mir-mem li:last-child{border-bottom:none;}
+.mir-mem .mt{font-family:var(--f-mono);font-size:10px;color:var(--faint);}
+.mir-mem .mi{color:var(--signal);font-size:12px;}
+.mir-mem .mx{font-family:var(--f-sans);font-size:13.5px;color:var(--ink);line-height:1.45;}
+.mir-mem .mx b{color:var(--signal);font-weight:500;}
+.mir-mem .mx em{font-style:normal;color:var(--dim);font-family:var(--f-mono);font-size:11px;}
+
+/* ---------- NARRATIVE: architecture / science / impact ---------- */
+.mir-arch{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--rule);border-radius:12px;overflow:hidden;}
+.mir-arch__node{padding:22px 18px;border-right:1px solid var(--rule);position:relative;background:var(--surface);}
+.mir-arch__node:last-child{border-right:none;}
+.mir-arch__node .s{font-family:var(--f-mono);font-size:10px;letter-spacing:0.16em;color:var(--signal);}
+.mir-arch__node .h{font-family:var(--f-sans);font-size:15px;font-weight:600;color:var(--ink);margin:12px 0 8px;letter-spacing:-0.01em;line-height:1.2;}
+.mir-arch__node p{font-size:12px;line-height:1.55;color:var(--dim);margin:0;}
+.mir-arch__node .flow{position:absolute;top:50%;right:-7px;z-index:2;color:var(--signal);font-size:14px;transform:translateY(-50%);}
+
+.mir-cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;}
+.mir-c3{background:var(--surface);padding:26px 24px;}
+.mir-c3 .k{font-family:var(--f-mono);font-size:11px;letter-spacing:0.14em;color:var(--signal);text-transform:uppercase;}
+.mir-c3 h3{font-family:var(--f-sans);font-size:19px;font-weight:600;letter-spacing:-0.015em;color:var(--ink);margin:14px 0 10px;line-height:1.2;}
+.mir-c3 p{font-size:13.5px;line-height:1.62;color:var(--dim);margin:0;}
+.mir-c3 p b{color:var(--ink);font-weight:600;}
+
+.mir-impact{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.mir-impact .cell{padding:28px 24px;border-left:1px solid var(--rule);}
+.mir-impact .cell:first-child{border-left:none;}
+.mir-impact .n{font-family:var(--f-sans);font-size:38px;font-weight:500;color:var(--ink);letter-spacing:-0.03em;line-height:1;}
+.mir-impact .n em{font-style:normal;color:var(--signal);}
+.mir-impact .k{font-family:var(--f-mono);font-size:10px;letter-spacing:0.14em;color:var(--signal);text-transform:uppercase;margin:12px 0 7px;}
+.mir-impact .d{font-size:12px;line-height:1.55;color:var(--dim);}
+
+.mir-close{padding:64px var(--pad-x) 20px;}
+.mir-close blockquote{font-family:var(--f-sans);font-weight:300;font-style:italic;font-size:clamp(22px,3.2vw,32px);line-height:1.35;letter-spacing:-0.015em;color:var(--signal);border-left:2px solid var(--signal);padding:6px 0 6px 24px;margin:0;max-width:26ch;}
+.mir-close .by{font-family:var(--f-mono);font-size:11px;letter-spacing:0.06em;color:var(--dim);margin-top:22px;}
+
+/* footer credit */
+.mir-foot{border-top:1px solid var(--rule);padding:34px var(--pad-x) 40px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-family:var(--f-mono);font-size:11px;letter-spacing:0.08em;color:var(--faint);}
+.mir-foot b{color:var(--dim);font-weight:500;}
+.mir-foot a{color:var(--signal);}
+
+/* responsive */
+@media(max-width:1080px){
+  .mir-body{grid-template-columns:1fr;}
+  .mir-surface{border-right:none;border-bottom:1px solid var(--rule);}
+  .mir-tele{grid-template-columns:1fr;}
+  .mir-metrics{border-right:none;border-bottom:1px solid var(--rule);}
+  .mir-studio{grid-template-columns:1fr;}
+  .mir-sliders{border-right:none;border-bottom:1px solid var(--rule);}
+  .mir-arch{grid-template-columns:1fr 1fr;}
+  .mir-arch__node .flow{display:none;}
+  .mir-cards3{grid-template-columns:1fr;}
+  .mir-impact{grid-template-columns:1fr 1fr;}
+  .mir-impact .cell:nth-child(2n+1){border-left:none;}
+}
+@media(max-width:620px){
+  .mir-arch{grid-template-columns:1fr;}
+  .mir-impact{grid-template-columns:1fr;}
+  .mir-impact .cell{border-left:none;border-top:1px solid var(--rule);}
+  .mir-controls{gap:16px;}
+  .mir-rec{grid-template-columns:28px 1fr;}
+  .mir-rec__right{grid-column:1 / -1;flex-direction:row;justify-content:space-between;align-items:center;border-top:1px dashed var(--rule);padding-top:9px;margin-top:2px;}
+}
+</style>
+<link rel="stylesheet" href="assets/typography.css">
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <a href="home.html" class="topbar__brand"><span class="dot"></span><b>Puneet Arora</b></a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="bio.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<div class="mir-wrap">
+
+<!-- HERO -->
+<section class="mir-hero">
+  <div class="mir-eyebrow">
+    <span class="mir-live"><span class="d"></span> ENGINE ONLINE</span>
+    <span>AI · UX STRATEGY · <b>BEHAVIORAL SCIENCE</b> · SYSTEMS THINKING · BUSINESS IMPACT</span>
+  </div>
+  <h1 class="mir-title">MIRROR<span class="glint">.</span></h1>
+  <p class="mir-kicker">
+    A personalization engine you can watch <strong>think</strong>. Not a case-study screenshot —
+    a live model that observes how <em>you</em> behave on this page, builds a profile of you in
+    real time, recommends accordingly, and <strong>shows its reasoning</strong> for every call it makes.
+    <strong>You</strong> are the user being personalized.
+  </p>
+  <div class="mir-featurebar" id="mir-featurebar">
+    <span class="mir-feat"><i></i> Memory</span>
+    <span class="mir-feat"><i></i> User Profiles</span>
+    <span class="mir-feat"><i></i> Recommendation Engine</span>
+    <span class="mir-feat"><i></i> Behavioral Analytics</span>
+    <span class="mir-feat"><i></i> Explainable AI</span>
+    <span class="mir-feat"><i></i> Preference Editing</span>
+  </div>
+  <p class="mir-hint"><span class="ar">↓</span> Hover, open, save, or dismiss anything below — the whole system reacts. It remembers you between visits.</p>
+</section>
+
+<!-- ═══════ THE CONSOLE ═══════ -->
+<div class="mir-sec">
+  <div class="mir-shead">
+    <span class="n">§ 01</span>
+    <h2>The living surface</h2>
+    <span class="sub">// one engine, six surfaces, reacting to you in real time</span>
+  </div>
+  <p class="mir-lead">
+    Everything here is driven by a single behavioral model running in your browser — no server, no mock data.
+    Seed a profile to simulate a returning user, or start cold and teach it yourself. Watch the rank badges,
+    the match scores, the mind, and the telemetry all move together. That coherence <em>is</em> the systems-thinking point.
+  </p>
+
+  <div class="mir-console">
+    <!-- controls -->
+    <div class="mir-controls">
+      <div class="mir-cgroup">
+        <span class="mir-clabel">Seed a user profile <span class="dim">(adaptive onboarding)</span></span>
+        <div class="mir-personas" id="mir-personas" role="group" aria-label="Persona presets">
+          <button class="mir-persona" data-p="cold" aria-pressed="true">Cold start</button>
+          <button class="mir-persona" data-p="creator">Creative Pro</button>
+          <button class="mir-persona" data-p="gamer">Power Gamer</button>
+          <button class="mir-persona" data-p="value">Value Seeker</button>
+          <button class="mir-persona" data-p="enterprise">Enterprise IT</button>
+          <button class="mir-persona" data-p="eco">Conscious Buyer</button>
+        </div>
+      </div>
+      <div class="mir-cgroup">
+        <span class="mir-clabel">Explore ↔ Exploit</span>
+        <div class="mir-dial">
+          <input type="range" id="mir-explore" min="0" max="100" value="25" aria-label="Explore versus exploit">
+          <span class="mir-dialval" id="mir-explore-val">25%</span>
+        </div>
+      </div>
+      <div class="mir-cgroup">
+        <span class="mir-clabel">Controls</span>
+        <div style="display:flex;gap:7px;">
+          <button class="mir-btn" id="mir-pause" aria-pressed="false" title="Pause behavioral tracking (consent)">◐ Pause tracking</button>
+          <button class="mir-btn mir-btn--danger" id="mir-forget" title="Erase everything the engine knows">⌫ Forget me</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- body: surface + rail -->
+    <div class="mir-body">
+      <!-- SURFACE -->
+      <div class="mir-surface">
+        <div class="mir-surface-head">
+          <h3><span class="rt"></span> Your personalized surface</h3>
+          <div class="mir-modeswitch" role="group" aria-label="Ranking mode">
+            <button id="mir-mode-pers" aria-pressed="true">Personalized</button>
+            <button id="mir-mode-gen" aria-pressed="false">Generic</button>
+          </div>
+        </div>
+        <p class="mir-surface-note" id="mir-note">Popularity-led — no behavioral signals captured yet. Interact to teach the model.</p>
+        <div class="mir-recs" id="mir-recs" aria-live="polite"></div>
+      </div>
+
+      <!-- RAIL -->
+      <div class="mir-rail">
+        <!-- THE MIND -->
+        <div class="mir-mind">
+          <div class="mir-mind__head">
+            <span class="t">The Mind · cognition field</span>
+            <span class="c" id="mir-signals">0 signals</span>
+          </div>
+          <div class="mir-field-wrap">
+            <canvas id="mir-field" width="600" height="420"></canvas>
+            <div class="mir-seg">
+              <div class="lab">Inferred segment</div>
+              <div class="name" id="mir-segment">Getting to know you…</div>
+            </div>
+          </div>
+          <div class="mir-dna" id="mir-dna"><span class="k">DNA ·</span> awaiting signals</div>
+          <div class="mir-conf">
+            <div class="bar"><i id="mir-conf-bar"></i></div>
+            <span class="v" id="mir-conf-val">0%</span>
+          </div>
+        </div>
+
+        <!-- SPECTRUM (profile) -->
+        <div class="mir-spectrum">
+          <div class="t">Your profile · affinity spectrum</div>
+          <div id="mir-spectrum"></div>
+        </div>
+
+        <!-- WHY -->
+        <div class="mir-why">
+          <div class="t">Explainable AI <b id="mir-why-scope">· top pick</b></div>
+          <div class="mir-why__item" id="mir-why-item">—</div>
+          <div class="mir-why__contrib" id="mir-why-contrib"></div>
+          <div class="mir-why__text" id="mir-why-text">Interact with the surface and I'll explain, in plain language, exactly why the top recommendation earned its place.</div>
+          <div class="mir-why__cf" id="mir-why-cf" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TELEMETRY BAND -->
+    <div class="mir-tele">
+      <div class="mir-metrics">
+        <div class="t">Behavioral analytics · session</div>
+        <div class="mir-mgrid">
+          <div class="mir-mcell"><div class="v" id="mir-m-signals">0</div><div class="k">Signals captured</div></div>
+          <div class="mir-mcell"><div class="v" id="mir-m-engage">0<small>%</small></div><div class="k">Surface engaged</div></div>
+          <div class="mir-mcell"><div class="v" id="mir-m-motive">—</div><div class="k">Dominant motive</div></div>
+          <div class="mir-mcell"><div class="v" id="mir-m-explore">—</div><div class="k">Behavior mode</div></div>
+        </div>
+      </div>
+      <div class="mir-stream">
+        <div class="t">Live event stream <span class="dim" style="text-transform:none;letter-spacing:0;">— every signal, timestamped</span></div>
+        <div class="mir-log" id="mir-log"><div class="mir-empty">No events yet. Your first hover writes the first line.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ PREFERENCE STUDIO ═══════ -->
+<div class="mir-sec">
+  <div class="mir-shead">
+    <span class="n">§ 02</span>
+    <h2>Preference studio</h2>
+    <span class="sub">// steer the model directly — and decide what it's allowed to know</span>
+  </div>
+  <p class="mir-lead">
+    Inference is a hypothesis, not a verdict. Good personalization hands the controls back. Drag a dimension and the
+    surface re-ranks under your hand; the model treats your edit as ground truth. Trust is a design material — so is consent.
+  </p>
+  <div class="mir-studio">
+    <div class="mir-sliders">
+      <h3>Edit your affinities</h3>
+      <p class="mir-sub">These are the same weights the engine infers from behavior — now yours to set by hand.</p>
+      <div id="mir-slider-list"></div>
+    </div>
+    <div class="mir-privacy">
+      <h3>Consent &amp; control</h3>
+      <p class="mir-sub">The parts most personalization engines hide.</p>
+      <div class="mir-toggle">
+        <button class="mir-toggle__sw" id="mir-t-track" aria-pressed="true" aria-label="Behavioral tracking"></button>
+        <div class="mir-toggle__txt"><strong>Learn from my behavior</strong><span>When off, the engine stops capturing signals and only obeys your manual edits.</span></div>
+      </div>
+      <div class="mir-toggle">
+        <button class="mir-toggle__sw" id="mir-t-persist" aria-pressed="true" aria-label="Remember between visits"></button>
+        <div class="mir-toggle__txt"><strong>Remember me between visits</strong><span>Persists your model to this browser only. Turn off to keep this session ephemeral.</span></div>
+      </div>
+      <div class="mir-toggle">
+        <button class="mir-toggle__sw" id="mir-t-explain" aria-pressed="true" aria-label="Always show reasoning"></button>
+        <div class="mir-toggle__txt"><strong>Always show me the reasoning</strong><span>Every recommendation carries a "why". This is non-negotiable in trustworthy AI — here it's a toggle so you can feel its absence.</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ MEMORY ═══════ -->
+<div class="mir-sec">
+  <div class="mir-shead">
+    <span class="n">§ 03</span>
+    <h2>Memory</h2>
+    <span class="sub">// what the engine learned about you, and when it became confident</span>
+  </div>
+  <p class="mir-lead">
+    Personalization without memory is amnesia with good manners. MIRROR records each thing it learns as a
+    timestamped fact — and keeps it in this browser so a returning you is greeted, not re-interrogated. Nothing leaves your device.
+  </p>
+  <div class="mir-memwrap">
+    <div class="mir-membar">
+      <span class="rec" id="mir-mem-rec">This is a fresh session — no prior memory found.</span>
+      <button class="mir-btn mir-btn--danger" id="mir-mem-forget">⌫ Forget everything</button>
+    </div>
+    <ul class="mir-mem" id="mir-mem">
+      <li><span class="mt">—</span><span class="mi">◇</span><span class="mx">The memory log fills as the engine grows confident about you. <em>Give it a few signals.</em></span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════ HOW IT WORKS — architecture ═══════ -->
+<div class="mir-sec">
+  <div class="mir-shead">
+    <span class="n">§ 04</span>
+    <h2>The system underneath</h2>
+    <span class="sub">// a closed loop — observe, infer, decide, explain, learn</span>
+  </div>
+  <p class="mir-lead">
+    Every surface you just used is one output of the same loop. Design the loop well and personalization stops being a
+    pile of features and becomes a single, legible system.
+  </p>
+  <div class="mir-arch">
+    <div class="mir-arch__node"><div class="s">01 · SENSE</div><div class="h">Behavioral signals</div><p>Dwell, open, save, dismiss, buy — weighted by intent. Implicit and explicit signal captured with consent.</p><span class="flow">→</span></div>
+    <div class="mir-arch__node"><div class="s">02 · INFER</div><div class="h">Profile model</div><p>An 8-dimension affinity vector updated by decayed, confidence-weighted learning. This is the user profile.</p><span class="flow">→</span></div>
+    <div class="mir-arch__node"><div class="s">03 · DECIDE</div><div class="h">Recommendation</div><p>Relevance × novelty × diversity, tuned by the explore/exploit dial. Ranks the surface each tick.</p><span class="flow">→</span></div>
+    <div class="mir-arch__node"><div class="s">04 · EXPLAIN</div><div class="h">Reasoning layer</div><p>Every decision decomposes into contributions, plain language, and a counterfactual. Trust before delight.</p><span class="flow">→</span></div>
+    <div class="mir-arch__node"><div class="s">05 · REMEMBER</div><div class="h">Memory + control</div><p>Confident facts persist; the user can edit, pause, or forget. The loop closes back to SENSE.</p></div>
+  </div>
+</div>
+
+<!-- ═══════ BEHAVIORAL SCIENCE ═══════ -->
+<div class="mir-sec">
+  <div class="mir-shead">
+    <span class="n">§ 05</span>
+    <h2>The behavioral science</h2>
+    <span class="sub">// personalization is applied psychology — designed on purpose</span>
+  </div>
+  <div class="mir-cards3" style="margin-top:20px;">
+    <div class="mir-c3">
+      <div class="k">Autonomy &amp; control</div>
+      <h3>The IKEA effect, for your own profile</h3>
+      <p>People trust — and value — systems they help build. The preference studio and the "forget me" control convert a
+      passive recipient into a co-author. <b>Perceived control raises tolerance for the occasional wrong guess.</b></p>
+    </div>
+    <div class="mir-c3">
+      <div class="k">Transparency</div>
+      <h3>The explanation is the product</h3>
+      <p>Unexplained accuracy reads as surveillance; explained accuracy reads as service. The "why", the contribution bars,
+      and the counterfactual exist because <b>legibility is what turns a creepy guess into a helpful one.</b></p>
+    </div>
+    <div class="mir-c3">
+      <div class="k">Cold start &amp; habituation</div>
+      <h3>Earn the right to personalize</h3>
+      <p>The surface opens on popularity, not presumption, then shifts as evidence accrues — and the explore dial fights
+      filter-bubble fatigue. <b>Adaptation is paced to how trust is actually built: gradually, then visibly.</b></p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ BUSINESS IMPACT ═══════ -->
+<div class="mir-sec">
+  <div class="mir-shead">
+    <span class="n">§ 06</span>
+    <h2>Why it matters to the business</h2>
+    <span class="sub">// the same discipline, shipped at Dell scale</span>
+  </div>
+  <p class="mir-lead">
+    This prototype is the argument in miniature. The production version of this thinking — Dell.com personalization and the
+    GenAI assistant — moved real numbers across 26,000+ Premier stores.
+  </p>
+</div>
+<div class="mir-impact">
+  <div class="cell"><div class="n">+<em>14</em>%</div><div class="k">Conversion lift</div><div class="d">Personalization at scale across Dell.com, tied to KPI movement rather than opinion.</div></div>
+  <div class="cell"><div class="n"><em>4.4</em>→80%</div><div class="k">Assistant engagement</div><div class="d">Dell's first GenAI Virtual Assistant — from novelty to habit through trust-first design.</div></div>
+  <div class="cell"><div class="n"><em>26k</em>+</div><div class="k">Premier stores live</div><div class="d">B2B and B2C journeys, personalized recommendations, shipped in production.</div></div>
+  <div class="cell"><div class="n"><em>33</em></div><div class="k">Designers led</div><div class="d">Across five time zones — turning one good outcome into a repeatable capability.</div></div>
+</div>
+
+<!-- CLOSE -->
+<section class="mir-close">
+  <blockquote>People don't adopt AI because it's clever. They adopt it when it's honest about what it knows.</blockquote>
+  <div class="by">Designed &amp; built by Puneet Arora — Principal Product Designer &amp; AI Design Leader</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="mir-foot">
+  <span><b>MIRROR</b> — an adaptive personalization engine · a live prototype, running entirely in your browser</span>
+  <span>Built by Puneet Arora · <a href="work.html">See the work →</a></span>
+</footer>
+
+</div><!-- /mir-wrap -->
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   MIRROR ENGINE  —  a real, self-contained personalization model.
+   No server, no mock feed. State lives in the browser (and localStorage).
+   Built by Puneet Arora.
+   ══════════════════════════════════════════════════════════════════ */
+(function(){
+  'use strict';
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Dimensions: the axes of taste the model reasons over ---- */
+  var DIMS = [
+    {id:'performance',   label:'Performance'},
+    {id:'design',        label:'Design & Craft'},
+    {id:'value',         label:'Value'},
+    {id:'creator',       label:'Creator / Media'},
+    {id:'gaming',        label:'Gaming'},
+    {id:'mobility',      label:'Mobility'},
+    {id:'enterprise',    label:'Enterprise / IT'},
+    {id:'sustainability',label:'Sustainability'}
+  ];
+  var DLABEL = {}; DIMS.forEach(function(d){DLABEL[d.id]=d.label;});
+
+  /* ---- Catalog: each item is a weighted point in taste space ---- */
+  function w(o){var v={};DIMS.forEach(function(d){v[d.id]=o[d.id]||0;});return v;}
+  var ITEMS = [
+    {id:'xps15',  title:'XPS 15 Studio Laptop',        cat:'Laptops',     price:'$2,099', pop:0.86, w:w({performance:.9,design:.75,creator:.6})},
+    {id:'prec',   title:'Precision Mobile Workstation',cat:'Workstations',price:'$3,450', pop:0.52, w:w({performance:1,enterprise:.8,creator:.5})},
+    {id:'u6k',    title:'UltraSharp 6K Monitor',       cat:'Displays',    price:'$2,899', pop:0.61, w:w({design:.8,creator:.9,performance:.4})},
+    {id:'alien',  title:'Alienware m18 Gaming Rig',    cat:'Gaming',      price:'$2,799', pop:0.74, w:w({gaming:1,performance:.9,design:.4})},
+    {id:'insp',   title:'Inspiron Everyday 14',        cat:'Laptops',     price:'$649',   pop:0.9,  w:w({value:1,mobility:.6})},
+    {id:'xps13',  title:'XPS 13 Featherlight',         cat:'Laptops',     price:'$1,299', pop:0.7,  w:w({mobility:1,design:.7,value:.3})},
+    {id:'lat',    title:'Latitude Fleet Bundle',       cat:'Enterprise',  price:'Quote',  pop:0.44, w:w({enterprise:1,value:.6,mobility:.5})},
+    {id:'dock',   title:'Thunderbolt Dock Pro',        cat:'Accessories', price:'$329',   pop:0.55, w:w({enterprise:.6,performance:.4,creator:.4})},
+    {id:'kit',    title:'Color-Calibrated Creator Kit',cat:'Creator',     price:'$899',   pop:0.42, w:w({creator:1,design:.8})},
+    {id:'luna',   title:'Concept Luna Sustainable Laptop',cat:'Concept',  price:'$1,499', pop:0.35, w:w({sustainability:1,design:.6,mobility:.5})},
+    {id:'psp',    title:'ProSupport Plus Service',     cat:'Services',    price:'$199/yr',pop:0.4,  w:w({enterprise:.7,value:.5})},
+    {id:'egpu',   title:'RTX Studio eGPU',             cat:'Accessories', price:'$1,199', pop:0.33, w:w({creator:.8,gaming:.7,performance:.8})},
+    {id:'ssd',    title:'Budget SSD Upgrade',          cat:'Accessories', price:'$89',    pop:0.63, w:w({value:.9,performance:.4})},
+    {id:'trade',  title:'Carbon-Neutral Trade-In',     cat:'Services',    price:'Credit', pop:0.31, w:w({sustainability:.9,value:.6})},
+    {id:'cam',    title:'4K Webcam & Studio Mic',      cat:'Creator',     price:'$249',   pop:0.5,  w:w({creator:.8,design:.5})}
+  ];
+  var ITEM_MAXW = {}; ITEMS.forEach(function(it){var s=0;DIMS.forEach(function(d){s+=it.w[d.id];});ITEM_MAXW[it.id]=s||1;});
+
+  /* ---- Persona seeds (adaptive onboarding / returning users) ---- */
+  var PERSONAS = {
+    cold:      {},
+    creator:   {creator:.82,design:.7,performance:.55},
+    gamer:     {gaming:.88,performance:.72,design:.35},
+    value:     {value:.9,mobility:.45},
+    enterprise:{enterprise:.88,value:.5,mobility:.4},
+    eco:       {sustainability:.85,design:.5,value:.45}
+  };
+
+  /* ---- State ---- */
+  var LS_KEY='pa-mirror-v1';
+  var S = {
+    aff:{}, seen:{}, fatigue:{}, saved:{}, cart:{},
+    signals:0, opens:0, hovers:0,
+    memory:[], events:[],
+    persona:'cold', explore:0.25, mode:'pers',
+    track:true, persist:true, explain:true,
+    firstSeen:null, lastSeen:null, manualEdit:false
+  };
+  DIMS.forEach(function(d){S.aff[d.id]=0;});
+
+  var prevRank={}; // id -> previous rank for movement arrows
+
+  /* ---- Persistence ---- */
+  function save(){
+    if(!S.persist) return;
+    try{
+      localStorage.setItem(LS_KEY, JSON.stringify({
+        aff:S.aff, memory:S.memory, signals:S.signals, opens:S.opens, hovers:S.hovers,
+        persona:S.persona, explore:S.explore, saved:S.saved, cart:S.cart, seen:S.seen,
+        fatigue:S.fatigue, firstSeen:S.firstSeen, track:S.track, explain:S.explain
+      }));
+    }catch(e){}
+  }
+  function load(){
+    try{
+      var raw=localStorage.getItem(LS_KEY); if(!raw) return false;
+      var o=JSON.parse(raw); if(!o||!o.aff) return false;
+      DIMS.forEach(function(d){S.aff[d.id]=o.aff[d.id]||0;});
+      S.memory=o.memory||[]; S.signals=o.signals||0; S.opens=o.opens||0; S.hovers=o.hovers||0;
+      S.persona=o.persona||'cold'; S.explore=(typeof o.explore==='number')?o.explore:0.25;
+      S.saved=o.saved||{}; S.cart=o.cart||{}; S.seen=o.seen||{}; S.fatigue=o.fatigue||{};
+      S.firstSeen=o.firstSeen||Date.now(); S.track=o.track!==false; S.explain=o.explain!==false;
+      return true;
+    }catch(e){return false;}
+  }
+
+  /* ---- Utility ---- */
+  function now(){return Date.now();}
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+  function fmtTime(t){var d=new Date(t);return ('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)+':'+('0'+d.getSeconds()).slice(-2);}
+  function fmtDate(t){var d=new Date(t);return d.toLocaleDateString(undefined,{month:'short',day:'numeric'})+' '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);}
+  function topDims(n){return DIMS.slice().map(function(d){return {id:d.id,v:S.aff[d.id]};}).sort(function(a,b){return b.v-a.v;}).slice(0,n||3);}
+  function totalAff(){var s=0;DIMS.forEach(function(d){s+=S.aff[d.id];});return s;}
+
+  /* ---- Confidence: saturating in the number of signals ---- */
+  function confidence(){ return 1 - Math.exp(-S.signals/7); }
+
+  /* ---- Segment inference ---- */
+  function segment(){
+    var conf=confidence();
+    if(S.signals<2 && totalAff()<0.15) return 'Getting to know you…';
+    var t=topDims(2), a=t[0], b=t[1];
+    var m={
+      performance:'Power User', design:'Design-Led Buyer', value:'Pragmatic Value-Seeker',
+      creator:'Creative Pro', gaming:'Power Gamer', mobility:'Mobile Minimalist',
+      enterprise:'Enterprise Buyer', sustainability:'Conscious Buyer'
+    };
+    // notable pairings
+    var pair=[a.id,b.id].sort().join('|');
+    var pairs={
+      'creator|performance':'Creative Pro','gaming|performance':'Performance Gamer',
+      'design|mobility':'Mobile Minimalist','enterprise|value':'Fleet Buyer',
+      'creator|design':'Studio Creator','sustainability|value':'Conscious Pragmatist'
+    };
+    if(b.v>0.25 && pairs[pair]) return pairs[pair];
+    return m[a.id]||'Getting to know you…';
+  }
+
+  /* ---- DNA string ---- */
+  function dnaString(){
+    var t=topDims(3).filter(function(d){return d.v>0.08;});
+    if(!t.length) return 'awaiting signals';
+    var abbr={performance:'PERF',design:'DSGN',value:'VALUE',creator:'CREATE',gaming:'GAME',mobility:'MOBILE',enterprise:'ENTERPRISE',sustainability:'ECO'};
+    return t.map(function(d){
+      var arrow = d.v>0.6?'▲▲':(d.v>0.35?'▲':'△');
+      return abbr[d.id]+' '+arrow;
+    }).join('  ·  ');
+  }
+
+  /* ---- Recommendation scoring ---- */
+  function relevance(it){var s=0;DIMS.forEach(function(d){s+=S.aff[d.id]*it.w[d.id];});return s;}
+  function matchPct(it){ // 0..100 : how well item fits current profile
+    var r=relevance(it)/ITEM_MAXW[it.id];
+    return Math.round(clamp(r,0,1)*100);
+  }
+  function score(it){
+    var rel=relevance(it);
+    var fat=S.fatigue[it.id]||0;
+    var novelty=S.seen[it.id]?0:1;
+    // explore raises novelty weight & softens raw relevance
+    return rel*(1-0.35*S.explore) + S.explore*0.6*novelty - fat*0.8;
+  }
+  function ranked(){
+    var arr;
+    var cold = (S.signals<3 && totalAff()<0.12 && S.mode!=='gen' && !S.manualEdit);
+    if(S.mode==='gen' || cold){
+      arr = ITEMS.slice().sort(function(a,b){return b.pop-a.pop;});
+    } else {
+      arr = ITEMS.slice().sort(function(a,b){return score(b)-score(a);});
+      // light MMR diversity when exploring: avoid 3 in a row same category
+      if(S.explore>0.4){
+        var out=[],seenCat={};
+        arr.forEach(function(it){out.push(it);});
+        // simple interleave: push down an item if its category already twice above
+        for(var i=2;i<out.length;i++){
+          var c=out[i].cat, cnt=0;
+          for(var j=0;j<i;j++) if(out[j].cat===c) cnt++;
+          if(cnt>=2){ // move it a few slots down
+            var mv=out.splice(i,1)[0]; out.push(mv); i--;
+          }
+        }
+        arr=out;
+      }
+    }
+    return arr.slice(0,7);
+  }
+  function isCold(){ return (S.signals<3 && totalAff()<0.12 && !S.manualEdit); }
+
+  /* ---- Predicted lift vs generic (business framing) ---- */
+  function predictedLift(){
+    var pers=ITEMS.slice().sort(function(a,b){return score(b)-score(a);}).slice(0,4);
+    var gen=ITEMS.slice().sort(function(a,b){return b.pop-a.pop;}).slice(0,4);
+    function avgMatch(list){var s=0;list.forEach(function(it){s+=matchPct(it);});return s/list.length;}
+    var p=avgMatch(pers), g=avgMatch(gen);
+    if(g<=1) return 0;
+    return Math.round((p-g)/g*100);
+  }
+
+  /* ═══════ LEARNING: the core update ═══════ */
+  function applySignal(item, type, mag){
+    if(!S.track && type!=='manual'){ return; }
+    S.signals++;
+    if(type==='open') S.opens++;
+    S.seen[item.id]=true;
+    var lr=0.28;
+    DIMS.forEach(function(d){
+      var wgt=item.w[d.id];
+      if(wgt<=0) return;
+      if(mag>=0){
+        S.aff[d.id]=clamp(S.aff[d.id]+lr*mag*wgt*(1-S.aff[d.id]),0,1);
+      }else{
+        S.aff[d.id]=clamp(S.aff[d.id]+lr*mag*wgt*S.aff[d.id],0,1); // mag negative
+      }
+    });
+    if(mag<0){ S.fatigue[item.id]=(S.fatigue[item.id]||0)+0.5; }
+    learnMemory();
+    pulseField(item, mag);
+  }
+
+  /* ---- Memory: crystallize confident facts ---- */
+  function learnMemory(){
+    DIMS.forEach(function(d){
+      var v=S.aff[d.id];
+      var have=function(lvl){return S.memory.some(function(m){return m.dim===d.id&&m.lvl===lvl;});};
+      if(v>=0.7 && !have(2)){
+        addMemory(d.id,2,'Confident you prioritize <b>'+DLABEL[d.id]+'</b>');
+      }else if(v>=0.38 && !have(1)){
+        addMemory(d.id,1,'Noticed you lean toward <b>'+DLABEL[d.id]+'</b>');
+      }
+    });
+  }
+  function addMemory(dim,lvl,text){
+    S.memory.push({dim:dim,lvl:lvl,text:text,t:now()});
+    logEvent('◆','<b>Memory:</b> '+text.replace(/<\/?b>/g,''),'pos');
+  }
+
+  /* ---- Event log ---- */
+  function logEvent(icon,html,cls){
+    S.events.unshift({t:now(),icon:icon,html:html,cls:cls||''});
+    if(S.events.length>60) S.events.pop();
+    renderLog();
+  }
+
+  /* ═══════ RENDERING ═══════ */
+  var el={};
+  ['recs','note','segment','dna','conf-bar','conf-val','signals','spectrum',
+   'why-item','why-contrib','why-text','why-cf','why-scope',
+   'm-signals','m-engage','m-motive','m-explore','log',
+   'mem','mem-rec','slider-list','explore','explore-val','featurebar'
+  ].forEach(function(k){el[k]=document.getElementById('mir-'+k);});
+
+  function renderAll(){
+    renderRecs(); renderMind(); renderSpectrum(); renderWhy(); renderMetrics(); renderMemory();
+  }
+
+  function renderRecs(){
+    var list=ranked();
+    var newRank={};
+    var cold=isCold() && S.mode!=='gen';
+    // note line
+    if(S.mode==='gen'){
+      el.note.innerHTML='Generic ranking — popularity only, identical for everyone. <span class="mir-lift">This is the baseline you\'re beating.</span>';
+    }else if(cold){
+      el.note.innerHTML='Popularity-led — no behavioral signals captured yet. Interact to teach the model.';
+    }else{
+      var lift=predictedLift();
+      el.note.innerHTML='Personalized ranking · <span class="mir-lift">+'+Math.max(0,lift)+'% predicted relevance vs generic</span> · re-ranks on every signal.';
+    }
+    var html='';
+    list.forEach(function(it,i){
+      newRank[it.id]=i;
+      var pct=matchPct(it);
+      var moved='';
+      if(prevRank[it.id]!=null){
+        var diff=prevRank[it.id]-i;
+        if(diff>0) moved='<span class="mir-rec__moved mir-up">▲'+diff+'</span>';
+        else if(diff<0) moved='<span class="mir-rec__moved mir-down">▼'+(-diff)+'</span>';
+      }
+      var whyBtn = (S.mode==='gen'||cold)?'':'<button class="whybtn" data-why="'+it.id+'">why?</button>';
+      var whyTxt = topWhy(it,cold);
+      html+=''
+      +'<div class="mir-rec'+(i===0&&!cold&&S.mode!=='gen'?' is-top':'')+'" data-id="'+it.id+'">'
+        +'<div class="mir-rec__rank">'+(i+1)+moved+'</div>'
+        +'<div class="mir-rec__body">'
+          +'<div class="mir-rec__cat">'+it.cat+'</div>'
+          +'<div class="mir-rec__title">'+it.title+'</div>'
+          +'<div class="mir-rec__why">'+whyTxt+' '+whyBtn+'</div>'
+        +'</div>'
+        +'<div class="mir-rec__right">'
+          +'<div class="mir-match"><span class="pct">'+pct+'<span style="font-size:9px">%</span></span> <span class="lbl">match</span>'
+            +'<div class="bar"><i style="width:'+pct+'%"></i></div></div>'
+          +'<div class="mir-price">'+it.price+'</div>'
+          +'<div class="mir-actions">'
+            +'<button class="mir-act mir-act--save'+(S.saved[it.id]?' on':'')+'" data-act="save" data-id="'+it.id+'" title="Save" aria-label="Save">♥</button>'
+            +'<button class="mir-act mir-act--cart'+(S.cart[it.id]?' on':'')+'" data-act="cart" data-id="'+it.id+'" title="Add to cart" aria-label="Add to cart">▸</button>'
+            +'<button class="mir-act mir-act--dismiss" data-act="dismiss" data-id="'+it.id+'" title="Not for me" aria-label="Dismiss">✕</button>'
+          +'</div>'
+        +'</div>'
+      +'</div>';
+    });
+    el.recs.innerHTML=html;
+    prevRank=newRank;
+  }
+
+  function topWhy(it,cold){
+    if(cold) return 'Popular right now';
+    if(S.mode==='gen') return 'Ranked by popularity';
+    // find dominant contributing dim
+    var best=null,bv=0;
+    DIMS.forEach(function(d){var c=S.aff[d.id]*it.w[d.id];if(c>bv){bv=c;best=d.id;}});
+    if(!best||bv<0.04) return 'Broad appeal · few signals yet';
+    return 'Matches your interest in <b style="color:var(--signal);font-weight:500">'+DLABEL[best]+'</b>';
+  }
+
+  /* ---- Mind / segment / DNA / confidence ---- */
+  function renderMind(){
+    el.segment.textContent=segment();
+    el.dna.innerHTML='<span class="k">DNA ·</span> '+dnaString()+' <span class="k">· conf '+Math.round(confidence()*100)+'%</span>';
+    var c=Math.round(confidence()*100);
+    el['conf-bar'].style.width=c+'%'; el['conf-val'].textContent=c+'%';
+    el.signals.textContent=S.signals+' signal'+(S.signals===1?'':'s');
+  }
+
+  function renderSpectrum(){
+    var t=topDims(1)[0];
+    var html='';
+    DIMS.forEach(function(d){
+      var v=S.aff[d.id]; var pct=Math.round(v*100);
+      var isTop=(t&&d.id===t.id&&v>0.05);
+      html+=''
+      +'<div class="mir-spec-row'+(isTop?' top':'')+'">'
+        +'<span class="n">'+d.label+'</span>'
+        +'<span class="track"><i style="width:'+pct+'%"></i></span>'
+        +'<span class="p">'+pct+'</span>'
+      +'</div>';
+    });
+    el.spectrum.innerHTML=html;
+  }
+
+  /* ---- Explainable AI panel (for current top pick) ---- */
+  var whyFocus=null;
+  function renderWhy(){
+    var list=ranked();
+    var cold=isCold()&&S.mode!=='gen';
+    if(S.mode==='gen'||cold||!list.length){
+      el['why-scope'].textContent = S.mode==='gen'?'· disabled in generic mode':'· top pick';
+      el['why-item'].textContent='—';
+      el['why-contrib'].innerHTML='';
+      el['why-cf'].style.display='none';
+      el['why-text'].innerHTML = S.mode==='gen'
+        ? 'Generic mode shows the same order to everyone — there is nothing personal to explain. That\'s exactly the gap MIRROR closes.'
+        : 'Interact with the surface and I\'ll explain, in plain language, exactly why the top recommendation earned its place.';
+      return;
+    }
+    var it = whyFocus ? (ITEMS.filter(function(x){return x.id===whyFocus;})[0]||list[0]) : list[0];
+    el['why-scope'].textContent = (it===list[0]?'· top pick':'· '+it.title);
+    el['why-item'].textContent=it.title+'  ·  '+matchPct(it)+'% match';
+    // contributions
+    var contribs=DIMS.map(function(d){return {id:d.id,c:S.aff[d.id]*it.w[d.id]};})
+                     .filter(function(x){return x.c>0.01;})
+                     .sort(function(a,b){return b.c-a.c;});
+    var tot=contribs.reduce(function(s,x){return s+x.c;},0)||1;
+    var chtml='',reasons=[];
+    contribs.slice(0,4).forEach(function(x){
+      var share=Math.round(x.c/tot*100);
+      chtml+='<div class="mir-cbar"><span class="l">'+DLABEL[x.id]+'</span><span class="tr"><i style="width:'+share+'%"></i></span><span class="pc">'+share+'%</span></div>';
+      reasons.push(DLABEL[x.id]);
+    });
+    el['why-contrib'].innerHTML=chtml;
+    if(reasons.length){
+      el['why-text'].innerHTML='You\'re seeing <b>'+it.title+'</b> mainly because your behavior signals <b>'+reasons[0]+'</b>'
+        +(reasons[1]?' and <b>'+reasons[1]+'</b>':'')+'. The bars show how much each affinity contributed to this pick.';
+    }else{
+      el['why-text'].innerHTML='Not enough signal yet to attribute this pick — it\'s riding broad appeal.';
+    }
+    // counterfactual: zero the top dim, see where it lands
+    if(contribs.length){
+      var topd=contribs[0].id, keep=S.aff[topd];
+      var curPos=ITEMS.slice().sort(function(a,b){return score(b)-score(a);}).findIndex(function(x){return x.id===it.id;})+1;
+      S.aff[topd]=0;
+      var newPos=ITEMS.slice().sort(function(a,b){return score(b)-score(a);}).findIndex(function(x){return x.id===it.id;})+1;
+      S.aff[topd]=keep;
+      el['why-cf'].style.display='block';
+      var cfMsg = newPos>curPos
+        ? 'this would fall from <b>#'+curPos+'</b> to rank <b>#'+newPos+'</b>.'
+        : 'it would still hold <b>#'+curPos+'</b> on its remaining signals.';
+      el['why-cf'].innerHTML='Counterfactual — if you didn\'t care about <b>'+DLABEL[topd]+'</b>, '+cfMsg;
+    }
+  }
+
+  /* ---- Metrics ---- */
+  function renderMetrics(){
+    el['m-signals'].textContent=S.signals;
+    // Surface engaged: share of the catalog the visitor has actively touched.
+    var seenN=0; for(var k in S.seen){ if(S.seen[k]) seenN++; }
+    var eng = Math.round(seenN/ITEMS.length*100);
+    el['m-engage'].innerHTML=eng+'<small>%</small>';
+    var t=topDims(1)[0];
+    el['m-motive'].textContent=(t&&t.v>0.1)?DLABEL[t.id]:'—';
+    el['m-explore'].textContent = S.explore>0.6?'Exploring':(S.explore<0.25?'Exploiting':'Balanced');
+    el['m-explore'].style.fontSize='18px';
+  }
+
+  /* ---- Log ---- */
+  function renderLog(){
+    if(!S.events.length){el.log.innerHTML='<div class="mir-empty">No events yet. Your first hover writes the first line.</div>';return;}
+    var html='';
+    S.events.forEach(function(e){
+      html+='<div class="mir-log__row"><span class="mir-log__t">'+fmtTime(e.t)+'</span><span class="mir-log__i">'+e.icon+'</span><span class="mir-log__m '+e.cls+'">'+e.html+'</span></div>';
+    });
+    el.log.innerHTML=html;
+  }
+
+  /* ---- Memory list ---- */
+  function renderMemory(){
+    if(!S.memory.length){
+      el.mem.innerHTML='<li><span class="mt">—</span><span class="mi">◇</span><span class="mx">The memory log fills as the engine grows confident about you. <em>Give it a few signals.</em></span></li>';
+    }else{
+      var html='';
+      S.memory.slice().reverse().forEach(function(m){
+        var icon=m.lvl===2?'◆':'◇';
+        html+='<li><span class="mt">'+fmtTime(m.t)+'</span><span class="mi">'+icon+'</span><span class="mx">'+m.text+' <em>· '+(m.lvl===2?'high confidence':'emerging')+'</em></span></li>';
+      });
+      el.mem.innerHTML=html;
+    }
+    // recall line
+    if(S.firstSeen && (now()-S.firstSeen>4000) && S.signals>0){
+      el['mem-rec'].innerHTML='Welcome back — model restored, first seen <b>'+fmtDate(S.firstSeen)+'</b>. '+S.memory.length+' facts remembered.';
+    }else{
+      el['mem-rec'].innerHTML='This session started <b>'+(S.firstSeen?fmtDate(S.firstSeen):'now')+'</b>. '+(S.memory.length?S.memory.length+' facts learned so far.':'Nothing learned yet.');
+    }
+  }
+
+  /* ---- Sliders (preference editing) ---- */
+  function buildSliders(){
+    var html='';
+    DIMS.forEach(function(d){
+      html+='<div class="mir-slider"><label>'+d.label+'</label>'
+        +'<input type="range" min="0" max="100" value="'+Math.round(S.aff[d.id]*100)+'" data-dim="'+d.id+'" aria-label="'+d.label+' affinity">'
+        +'<span class="val" data-val="'+d.id+'">'+Math.round(S.aff[d.id]*100)+'</span></div>';
+    });
+    el['slider-list'].innerHTML=html;
+    el['slider-list'].querySelectorAll('input[type=range]').forEach(function(inp){
+      inp.addEventListener('input',function(){
+        var dim=this.getAttribute('data-dim');
+        S.aff[dim]=(+this.value)/100;
+        S.manualEdit=true;
+        el['slider-list'].querySelector('[data-val="'+dim+'"]').textContent=this.value;
+        learnMemory();
+        logEvent('✎','<b>You edited</b> '+DLABEL[dim]+' → '+this.value+'%','hot');
+        pulseField({w:(function(){var o={};o[dim]=1;return o;})()},1);
+        renderRecs();renderMind();renderSpectrum();renderWhy();save();
+      });
+    });
+  }
+  function syncSliders(){
+    if(!el['slider-list']) return;
+    el['slider-list'].querySelectorAll('input[type=range]').forEach(function(inp){
+      var dim=inp.getAttribute('data-dim');
+      inp.value=Math.round(S.aff[dim]*100);
+      var vv=el['slider-list'].querySelector('[data-val="'+dim+'"]'); if(vv) vv.textContent=Math.round(S.aff[dim]*100);
+    });
+  }
+
+  /* ═══════ COGNITION FIELD (canvas) ═══════ */
+  var cv=document.getElementById('mir-field'), ctx=cv&&cv.getContext('2d');
+  var nodes=[], particles=[], DPR=Math.min(2,window.devicePixelRatio||1);
+  function sizeField(){
+    if(!cv) return;
+    var r=cv.getBoundingClientRect();
+    cv.width=r.width*DPR; cv.height=r.height*DPR;
+    ctx.setTransform(DPR,0,0,DPR,0,0);
+    layoutNodes(r.width,r.height);
+  }
+  function layoutNodes(W,H){
+    nodes=[];
+    var cx=W/2, cy=H/2-8, R=Math.min(W,H)*0.36;
+    DIMS.forEach(function(d,i){
+      var ang=(i/DIMS.length)*Math.PI*2 - Math.PI/2;
+      nodes.push({id:d.id,x:cx+Math.cos(ang)*R,y:cy+Math.sin(ang)*R,pulse:0});
+    });
+    fieldCx=cx; fieldCy=cy;
+  }
+  var fieldCx=0,fieldCy=0;
+  function pulseField(item,mag){
+    if(!ctx) return;
+    nodes.forEach(function(n){
+      var wv=item.w?(item.w[n.id]||0):0;
+      if(wv>0.1){ n.pulse=Math.min(1.4,n.pulse+0.9*wv);
+        if(!reduce) particles.push({x:fieldCx,y:fieldCy,tx:n.x,ty:n.y,life:1,neg:mag<0}); }
+    });
+  }
+  function drawField(){
+    if(!ctx) return;
+    var W=cv.width/DPR, H=cv.height/DPR;
+    ctx.clearRect(0,0,W,H);
+    // links between co-active nodes
+    for(var i=0;i<nodes.length;i++){
+      for(var j=i+1;j<nodes.length;j++){
+        var a=nodes[i],b=nodes[j];
+        var strength=S.aff[a.id]*S.aff[b.id];
+        if(strength>0.06){
+          ctx.strokeStyle='rgba(70,199,159,'+(strength*0.6)+')';
+          ctx.lineWidth=0.6+strength*2;
+          ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+        }
+      }
+    }
+    // particles
+    particles.forEach(function(p){
+      p.x+=(p.tx-p.x)*0.14; p.y+=(p.ty-p.y)*0.14; p.life-=0.03;
+      ctx.beginPath();ctx.arc(p.x,p.y,2.2,0,7);
+      ctx.fillStyle=(p.neg?'rgba(210,90,70,':'rgba(70,199,159,')+p.life+')';ctx.fill();
+    });
+    particles=particles.filter(function(p){return p.life>0 && Math.abs(p.x-p.tx)>1;});
+    // nodes
+    var top=topDims(1)[0];
+    nodes.forEach(function(n){
+      var v=S.aff[n.id];
+      var rad=5+v*20 + n.pulse*6;
+      var isTop=(top&&n.id===top.id&&v>0.05);
+      var col=isTop?'230,163,77':'70,199,159';
+      // glow
+      var g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,rad*2.4);
+      g.addColorStop(0,'rgba('+col+','+(0.28+v*0.4)+')');
+      g.addColorStop(1,'rgba('+col+',0)');
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(n.x,n.y,rad*2.4,0,7);ctx.fill();
+      // core
+      ctx.fillStyle='rgba('+col+','+(0.5+v*0.5)+')';
+      ctx.beginPath();ctx.arc(n.x,n.y,Math.max(2.5,rad*0.5),0,7);ctx.fill();
+      // ring
+      ctx.strokeStyle='rgba('+col+',0.5)';ctx.lineWidth=1;
+      ctx.beginPath();ctx.arc(n.x,n.y,rad,0,7);ctx.stroke();
+      n.pulse*=0.9;
+    });
+    // center hub
+    ctx.fillStyle='rgba(70,199,159,0.9)';
+    ctx.beginPath();ctx.arc(fieldCx,fieldCy,3,0,7);ctx.fill();
+  }
+  function loop(){ drawField(); requestAnimationFrame(loop); }
+
+  /* ═══════ INTERACTION WIRING ═══════ */
+  var hoverTimers={};
+  function bindSurface(){
+    // dwell (hover) → dwell signal
+    el.recs.addEventListener('mouseover',function(e){
+      var card=e.target.closest('.mir-rec'); if(!card) return;
+      var id=card.getAttribute('data-id'); if(hoverTimers[id]) return;
+      S.hovers++;
+      hoverTimers[id]=setTimeout(function(){
+        var it=ITEMS.filter(function(x){return x.id===id;})[0];
+        if(it && S.track && !isColdGuard()){
+          applySignal(it,'dwell',0.32);
+          logEvent('◔','<b>Dwell</b> on '+it.title+' <span class="pos">+affinity</span>','pos');
+          afterSignal(card);
+        } else if(it && S.track){
+          applySignal(it,'dwell',0.32);
+          logEvent('◔','<b>Dwell</b> on '+it.title,'pos');
+          afterSignal(card);
+        }
+      },700);
+    });
+    el.recs.addEventListener('mouseout',function(e){
+      var card=e.target.closest('.mir-rec'); if(!card) return;
+      var id=card.getAttribute('data-id');
+      if(hoverTimers[id]){clearTimeout(hoverTimers[id]);hoverTimers[id]=null;}
+    });
+    // clicks: actions + why
+    el.recs.addEventListener('click',function(e){
+      var wb=e.target.closest('[data-why]');
+      if(wb){ whyFocus=wb.getAttribute('data-why'); renderWhy();
+        document.querySelector('.mir-why').scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});
+        return; }
+      var btn=e.target.closest('[data-act]'); if(!btn) return;
+      var id=btn.getAttribute('data-id'), act=btn.getAttribute('data-act');
+      var it=ITEMS.filter(function(x){return x.id===id;})[0]; if(!it) return;
+      var card=btn.closest('.mir-rec');
+      if(act==='save'){
+        S.saved[id]=!S.saved[id];
+        if(S.saved[id]){ applySignal(it,'save',0.7); logEvent('♥','<b>Saved</b> '+it.title+' <span class="pos">strong +</span>','pos'); }
+        else logEvent('♡','Removed '+it.title+' from saved');
+      }else if(act==='cart'){
+        S.cart[id]=!S.cart[id];
+        if(S.cart[id]){ applySignal(it,'cart',1.0); logEvent('▸','<b>Added to cart</b> '+it.title+' <span class="hot">highest intent</span>','hot'); }
+        else logEvent('▹','Removed '+it.title+' from cart');
+      }else if(act==='dismiss'){
+        applySignal(it,'dismiss',-0.8); logEvent('✕','<b>Dismissed</b> '+it.title+' <span class="neg">−affinity · fatigue</span>','neg');
+      }
+      afterSignal(card);
+    });
+  }
+  function isColdGuard(){return false;}
+  function afterSignal(card){
+    renderRecs(); renderMind(); renderSpectrum(); renderWhy(); renderMetrics(); renderMemory(); syncSliders();
+    if(card && !reduce){
+      var id=card.getAttribute('data-id');
+      var nc=el.recs.querySelector('.mir-rec[data-id="'+id+'"]');
+      if(nc){nc.classList.add('flash');setTimeout(function(){nc&&nc.classList.remove('flash');},600);}
+    }
+    updateFeatureLights();
+    save();
+  }
+
+  /* ---- Feature bar lights: illuminate as each capability is exercised ---- */
+  function updateFeatureLights(){
+    if(!el.featurebar) return;
+    var feats=el.featurebar.querySelectorAll('.mir-feat i');
+    var on=[
+      S.memory.length>0,                 // Memory
+      S.signals>0||S.manualEdit,         // Profiles
+      S.signals>0,                       // Recs (always effectively)
+      S.events.length>0,                 // Analytics
+      S.opens>0||S.signals>2,            // Explainable (viewed)
+      S.manualEdit                       // Preference editing
+    ];
+    on[2]=true;
+    feats.forEach(function(i,idx){ i.style.background = on[idx]?'var(--mir-amber)':'var(--signal)'; i.style.boxShadow = on[idx]?'0 0 8px var(--mir-amber)':'none'; });
+  }
+
+  /* ---- Persona / onboarding ---- */
+  function applyPersona(p){
+    S.persona=p;
+    DIMS.forEach(function(d){S.aff[d.id]=0;});
+    S.seen={};S.fatigue={};S.manualEdit=false;
+    var seed=PERSONAS[p]||{};
+    var seeded=Object.keys(seed).length>0;
+    DIMS.forEach(function(d){ if(seed[d.id]) S.aff[d.id]=seed[d.id]; });
+    if(seeded){
+      S.signals=Math.max(S.signals,6);
+      S.memory=S.memory.filter(function(m){return false;}); // reset memory for clean persona
+      learnMemory();
+      logEvent('☰','<b>Seeded profile:</b> '+labelFor(p)+' — model warm-started','pos');
+    }else{
+      S.signals=0;S.memory=[];
+      logEvent('☰','<b>Cold start</b> — model reset to zero knowledge','');
+    }
+    document.querySelectorAll('.mir-persona').forEach(function(b){b.setAttribute('aria-pressed', b.getAttribute('data-p')===p?'true':'false');});
+    pulseField({w:seed},1);
+    renderAll(); syncSliders(); updateFeatureLights(); save();
+  }
+  function labelFor(p){var m={cold:'Cold start',creator:'Creative Pro',gamer:'Power Gamer',value:'Value Seeker',enterprise:'Enterprise IT',eco:'Conscious Buyer'};return m[p]||p;}
+
+  /* ---- Forget ---- */
+  function forget(){
+    try{localStorage.removeItem(LS_KEY);}catch(e){}
+    DIMS.forEach(function(d){S.aff[d.id]=0;});
+    S.seen={};S.fatigue={};S.saved={};S.cart={};S.memory=[];S.events=[];
+    S.signals=0;S.opens=0;S.hovers=0;S.manualEdit=false;S.persona='cold';
+    S.firstSeen=now();prevRank={};whyFocus=null;
+    document.querySelectorAll('.mir-persona').forEach(function(b){b.setAttribute('aria-pressed', b.getAttribute('data-p')==='cold'?'true':'false');});
+    logEvent('⌫','<b>Forgotten.</b> Every trace erased — back to zero knowledge','neg');
+    renderAll(); syncSliders(); updateFeatureLights();
+  }
+
+  /* ---- Bind controls ---- */
+  function bindControls(){
+    document.getElementById('mir-personas').addEventListener('click',function(e){
+      var b=e.target.closest('.mir-persona'); if(!b) return; applyPersona(b.getAttribute('data-p'));
+    });
+    var ex=document.getElementById('mir-explore');
+    ex.addEventListener('input',function(){ S.explore=(+this.value)/100; el['explore-val'].textContent=this.value+'%'; renderRecs();renderMetrics();renderWhy();save(); });
+    document.getElementById('mir-mode-pers').addEventListener('click',function(){ S.mode='pers'; this.setAttribute('aria-pressed','true'); document.getElementById('mir-mode-gen').setAttribute('aria-pressed','false'); prevRank={}; renderRecs();renderWhy(); });
+    document.getElementById('mir-mode-gen').addEventListener('click',function(){ S.mode='gen'; this.setAttribute('aria-pressed','true'); document.getElementById('mir-mode-pers').setAttribute('aria-pressed','false'); prevRank={}; renderRecs();renderWhy(); });
+    var pause=document.getElementById('mir-pause');
+    pause.addEventListener('click',function(){ S.track=!S.track; this.setAttribute('aria-pressed',String(!S.track)); this.innerHTML=(S.track?'◐ Pause tracking':'▶ Resume tracking'); syncTrackToggle(); logEvent('◐',S.track?'<b>Tracking resumed</b>':'<b>Tracking paused</b> — consent withdrawn','hot'); save(); });
+    document.getElementById('mir-forget').addEventListener('click',forget);
+    document.getElementById('mir-mem-forget').addEventListener('click',forget);
+    // toggles
+    bindToggle('mir-t-track', function(v){ S.track=v; pause.setAttribute('aria-pressed',String(!v)); pause.innerHTML=(v?'◐ Pause tracking':'▶ Resume tracking'); logEvent('◐',v?'<b>Tracking on</b>':'<b>Tracking off</b>','hot'); });
+    bindToggle('mir-t-persist', function(v){ S.persist=v; if(v)save(); else {try{localStorage.removeItem(LS_KEY);}catch(e){}} logEvent('❖',v?'<b>Persistence on</b> — you\'ll be remembered':'<b>Persistence off</b> — session is ephemeral',''); });
+    bindToggle('mir-t-explain', function(v){ S.explain=v; document.querySelector('.mir-why').style.opacity=v?'1':'0.35'; document.querySelector('.mir-why').style.pointerEvents=v?'auto':'none'; el.recs.classList.toggle('no-why',!v); logEvent('◈',v?'<b>Reasoning shown</b>':'<b>Reasoning hidden</b> — feel the difference','hot'); });
+  }
+  function syncTrackToggle(){ var t=document.getElementById('mir-t-track'); if(t) t.setAttribute('aria-pressed',String(S.track)); }
+  function bindToggle(id,fn){ var b=document.getElementById(id); if(!b)return; b.addEventListener('click',function(){ var v=this.getAttribute('aria-pressed')!=='true'; this.setAttribute('aria-pressed',String(v)); fn(v); save(); }); }
+
+  /* ═══════ INIT ═══════ */
+  function init(){
+    var had=load();
+    // reflect explore
+    if(el.explore){el.explore.value=Math.round(S.explore*100);el['explore-val'].textContent=Math.round(S.explore*100)+'%';}
+    if(!S.firstSeen) S.firstSeen=now();
+    S.lastSeen=now();
+    sizeField();
+    buildSliders();
+    bindSurface();
+    bindControls();
+    // reflect persona pressed state
+    document.querySelectorAll('.mir-persona').forEach(function(b){b.setAttribute('aria-pressed', b.getAttribute('data-p')===S.persona?'true':'false');});
+    document.getElementById('mir-t-track').setAttribute('aria-pressed',String(S.track));
+    document.getElementById('mir-t-persist').setAttribute('aria-pressed',String(S.persist));
+    renderAll(); syncSliders(); updateFeatureLights();
+    if(had && S.signals>0){
+      logEvent('❖','<b>Memory restored</b> — recognised you from a prior visit','pos');
+    }
+    if(!reduce) loop(); else drawField();
+    window.addEventListener('resize',function(){ clearTimeout(window.__mrz); window.__mrz=setTimeout(sizeField,150); });
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
+  else init();
+})();
+</script>
+</body>
+</html>
