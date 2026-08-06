@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T02:07:38Z",
+  "generated_at": "2026-08-06T10:34:20Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,14 +16,22 @@
     },
     {
       "n": 2,
-      "claim": "Was Mitch McConnell's dead body transported to Kentucky coroner? Here's the truth",
+      "claim": "Will Mamdani's city-run grocery stores require ID to shop? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mcconnell-body-kentucky-coroner/",
+      "url": "https://www.snopes.com/fact-check/mamdani-nyc-grocery-stores-id/",
       "topic": "Trending"
     },
     {
       "n": 3,
+      "claim": "Trump Overstates Magnitude of Noncitizen Voting in New Jersey",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/trump-overstates-magnitude-of-noncitizen-voting-in-new-jersey/",
+      "topic": "Politics"
+    },
+    {
+      "n": 4,
       "claim": "Paxton Defies Establishment Expectations, Enters Election Home Stretch As Top GOP Fundraiser",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -31,7 +39,7 @@
       "topic": "Politics"
     },
     {
-      "n": 4,
+      "n": 5,
       "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -39,23 +47,23 @@
       "topic": "Trending"
     },
     {
-      "n": 5,
-      "claim": "‘Puncture repairers’; brought in from Jafrabad, Saharanpur: Ramesh Bidhuri’s communal dog whistles against Jantar Mantar protesters",
+      "n": 6,
+      "claim": "‘Are you a Muslim?’: Theatre activist beaten in Bengal after he replied, ‘What if I am? Isn’t this country also for Muslims?’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bjp-leader-ramesh-bidhuri-says-protesters-from-jantar-mantar-are-punctre-lagane-vale-tala-banane-vale-than-students/",
-      "topic": "Trending"
-    },
-    {
-      "n": 6,
-      "claim": "of Muslims praying in Tube carriage is fake",
-      "verdict": "FALSE",
-      "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/muslims-praying-london-underground-fake-ai/",
+      "url": "https://www.altnews.in/are-you-a-muslim-theatre-activist-beaten-in-bengal-after-he-replied-what-if-i-am-isnt-this-country-also-for-muslims/",
       "topic": "Trending"
     },
     {
       "n": 7,
+      "claim": "John Lewis isn’t giving away Maison Francis Kurkdjian perfume for £3",
+      "verdict": "FALSE",
+      "source": "Full Fact",
+      "url": "https://fullfact.org/shopping/john-lewis-maison-francis-kurkdjian-perfume/",
+      "topic": "Trending"
+    },
+    {
+      "n": 8,
       "claim": "Evidence August 3, 2026, Louisville Procession Was To Bring Mitch McConnell's Corpse To Coroner's Office -- It Was For Deceased Officer",
       "verdict": "UNPROVEN",
       "source": "Lead Stories",
@@ -63,15 +71,23 @@
       "topic": "Trending"
     },
     {
-      "n": 8,
-      "claim": "Did Caitlin Clark respond to Trump's 'attack' with uplifting message?",
+      "n": 9,
+      "claim": "Does video show Trump appearing to doze off during Fourth of July fireworks?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/caitlin-clark-response-trump-attack/",
+      "url": "https://www.snopes.com/fact-check/trump-fall-asleep-fireworks/",
       "topic": "Politics"
     },
     {
-      "n": 9,
+      "n": 10,
+      "claim": "Trump’s Cherry-Picked Inflation Boast",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/trumps-cherry-picked-inflation-boast/",
+      "topic": "Politics"
+    },
+    {
+      "n": 11,
       "claim": "Why Does Susan Collins Oppose Confirming Blanche? One Reason Involves Abortion Pills",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -79,7 +95,7 @@
       "topic": "Trending"
     },
     {
-      "n": 10,
+      "n": 12,
       "claim": "Wellness influencers claim mainstream medicine ignores natural remedies. They’re wrong",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -87,23 +103,23 @@
       "topic": "Health"
     },
     {
-      "n": 11,
-      "claim": "Siwan: At least nine rounds fired from AK-47 during students’ demonstration on July 25",
+      "n": 13,
+      "claim": "‘Puncture repairers’; brought in from Jafrabad, Saharanpur: Ramesh Bidhuri’s communal dog whistles against Jantar Mantar protesters",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bihar-siwan-opened-fire-by-police-on-student-protesters-cjp-bihar-band/",
+      "url": "https://www.altnews.in/bjp-leader-ramesh-bidhuri-says-protesters-from-jantar-mantar-are-punctre-lagane-vale-tala-banane-vale-than-students/",
       "topic": "Trending"
     },
     {
-      "n": 12,
-      "claim": "How many prison places did the Conservatives create?",
+      "n": 14,
+      "claim": "of Muslims praying in Tube carriage is fake",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/crime/how-many-prison-places-did-the-conservatives-create/",
+      "url": "https://fullfact.org/culture-and-society/muslims-praying-london-underground-fake-ai/",
       "topic": "Trending"
     },
     {
-      "n": 13,
+      "n": 15,
       "claim": "FAKE 689,235.43 EUR Receipt From Le Club 55 In St. Tropez Was Generated By AI",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -111,54 +127,38 @@
       "topic": "Tech / AI"
     },
     {
-      "n": 14,
-      "claim": "Did Trump post AI image of himself with Generals Patton and MacArthur?",
+      "n": 16,
+      "claim": "Was Mitch McConnell's dead body transported to Kentucky coroner? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-ai-image-patton-macarthur/",
-      "topic": "Politics"
-    },
-    {
-      "n": 15,
-      "claim": "Two Buried Details From Michigan’s Democratic Primary That Should Give Republicans Hope",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/05/abdul-el-sayed-haley-stevens-better-odds-against-mike-rogers-senate-michigan-working-class-voters-dark-money",
+      "url": "https://www.snopes.com/fact-check/mcconnell-body-kentucky-coroner/",
       "topic": "Trending"
     },
     {
-      "n": 16,
-      "claim": "What is RCP8.5? Unpacking misleading claims about climate scenarios",
-      "verdict": "FALSE",
-      "source": "Science Feedback",
-      "url": "https://science.feedback.org/what-is-rcp8-5/",
-      "topic": "Science"
-    },
-    {
       "n": 17,
-      "claim": "Hunt for a ‘global toolkit’: Republic blamed everyone from US deep state to Greta Thunberg for CJP stir",
+      "claim": "RFK Jr.’s Falsehood-Filled CNN Interview",
       "verdict": "FALSE",
-      "source": "Alt News",
-      "url": "https://www.altnews.in/hunt-for-a-global-toolkit-republic-blamed-everyone-from-us-deep-state-to-greta-thunberg-for-cjp-stir/",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/rfk-jr-s-falsehood-filled-cnn-interview/",
       "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Iran says deal with Oman on Strait of Hormuz is in final stages",
+      "headline": "In Odesa, no-one is safe from Russia's new Black Sea strikes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cy8ev4y172yo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-06T01:19:59+00:00"
+      "published": "2026-08-06T05:00:54+00:00"
     },
     {
       "n": 2,
-      "headline": "Ousted Bangladeshi leader vows to return from exile despite facing a death sentence",
+      "headline": "How deep-rooted medical bias creates deadly consequences for addiction patients",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/g-s1-137523/ousted-bangladeshi-leader-vows-to-return-from-exile-despite-facing-a-death-sentence",
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5845162/addiction-treatment-overdose-deaths",
       "topic": "Trending",
-      "published": "2026-08-05T20:43:29+00:00"
+      "published": "2026-08-06T09:52:45+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "US to shut five consulates as critics fear China could fill diplomatic vacuum",
+      "headline": "‘Morocco feels emboldened’: Trump’s influence in spotlight after Ceuta disaster",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/aug/05/us-state-department-consulate-closures",
-      "topic": "World",
-      "published": "2026-08-05T19:20:28+00:00"
+      "url": "https://www.theguardian.com/world/2026/aug/06/trump-influence-morocco-spotlight-ceuta-border-disaster",
+      "topic": "Politics",
+      "published": "2026-08-06T09:45:54+00:00"
     },
     {
       "n": 5,
-      "headline": "FIFA president Infantino to stay on after crisis meeting",
+      "headline": "Germany arrests Ukrainian suspected of spying on arms firm",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fifa-president-infantino-to-stay-on-after-crisis-meeting/a-78258824?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-06T01:10:00+00:00"
+      "url": "https://www.dw.com/en/germany-arrests-ukrainian-suspected-of-spying-on-arms-firm/a-78262186?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-06T09:57:00+00:00"
     },
     {
       "n": 6,
-      "headline": "After deadly Kyiv strike, Ukraine warns interceptor shortage is costing lives",
+      "headline": "Iran says deal with Oman on Strait of Hormuz is in final stages",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cyvlgq2gp2eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-05T18:19:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-06T01:19:59+00:00"
     },
     {
       "n": 7,
-      "headline": "Small Texas law firm set to receive $150M to represent unaccompanied migrant children",
+      "headline": "Celebrity culture is one thing. For TMZ, Congress is the new 'reality show",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/nx-s1-5922451/150-million-contract-to-represent-migrant-children-awarded-to-trump-texas-law-firm",
-      "topic": "World",
-      "published": "2026-08-05T20:23:02+00:00"
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5922731/tmz-congress",
+      "topic": "Politics",
+      "published": "2026-08-06T09:00:00+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "El Niño could push 50m people into acute hunger before end of next year",
+      "headline": "US to shut five consulates as critics fear China could fill diplomatic vacuum",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/aug/05/el-nino-could-push-50m-people-acute-hunger-next-year",
-      "topic": "Trending",
-      "published": "2026-08-05T08:00:13+00:00"
+      "url": "https://www.theguardian.com/us-news/2026/aug/05/us-state-department-consulate-closures",
+      "topic": "World",
+      "published": "2026-08-05T19:20:28+00:00"
     },
     {
       "n": 10,
-      "headline": "US: Abdul El-Sayed wins contentious Michigan Senate primary",
+      "headline": "India news: Student protests in Jharkhand enter 13th day",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-abdul-el-sayed-wins-contentious-michigan-senate-primary/a-78258380?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-05T19:46:00+00:00"
+      "url": "https://www.dw.com/en/india-news-student-protests-in-jharkhand-enter-13th-day/live-78260247?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-06T08:33:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Drone carrying explosives found at German airport, police say",
+      "headline": "Indian journalist Tarun Tejpal sentenced to 10 years in jail for rape",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cx2v551w9v8o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-05T20:01:51+00:00"
+      "published": "2026-08-06T09:49:24+00:00"
     },
     {
       "n": 12,
-      "headline": "Dr. Erica Schwartz confirmed as CDC director, filling a leadership vacuum",
+      "headline": "Gianni Infantino gets internal support at crisis meeting to remain as FIFA president",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/nx-s1-5920379/cdc-director-confirmed-erica-schwartz",
-      "topic": "Trending",
-      "published": "2026-08-05T20:00:24+00:00"
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5923233/infantino-crisis-meeting-fifa",
+      "topic": "Politics",
+      "published": "2026-08-06T08:52:16+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "Wednesday briefing: ​How misinformation and ​a​ hardened immigration policy ​turned Ceuta ​into Europe’s ​latest ​flashpoint",
+      "headline": "El Niño could push 50m people into acute hunger before end of next year",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/05/wednesday-briefing-how-misinformation-and-a-hardened-immigration-policy-turned-ceuta-into-europes-latest-flashpoint",
+      "url": "https://www.theguardian.com/environment/2026/aug/05/el-nino-could-push-50m-people-acute-hunger-next-year",
       "topic": "Trending",
-      "published": "2026-08-05T05:54:54+00:00"
+      "published": "2026-08-05T08:00:13+00:00"
     },
     {
       "n": 15,
-      "headline": "Will Russia start a fresh mobilization drive?",
+      "headline": "Why is Russia selling its gold?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/will-russia-start-a-fresh-mobilization-drive/a-78253252?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/why-is-russia-selling-its-gold/a-78145069?maca=en-rss-en-all-1573-rdf",
       "topic": "World",
-      "published": "2026-08-05T19:43:00+00:00"
+      "published": "2026-08-06T08:21:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Israel strikes south Lebanon after first evacuation warning in weeks",
+      "headline": "Iranian footballers who defied Tehran become Australian citizens",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c998711dyjvo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-05T20:03:36+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cn5nlgxv6vdo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-06T09:04:17+00:00"
     },
     {
       "n": 17,
-      "headline": "How Trump made an estimated $2.2 billion during the first year of his second term",
+      "headline": "Morning news brief",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/nx-s1-5919997/how-trump-made-an-estimated-2-2-billion-during-the-first-year-of-his-second-term",
-      "topic": "Politics",
-      "published": "2026-08-05T17:41:17+00:00"
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5921225/morning-news-brief",
+      "topic": "Trending",
+      "published": "2026-08-06T08:43:07+00:00"
     }
   ]
 }
