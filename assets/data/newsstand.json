@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T17:24:56Z",
+  "generated_at": "2026-08-06T02:07:38Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,38 +8,30 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Surgeon Named 'François Faivre' Died In Paris In June 2026 Or Ever -- Claim Comes From Recycled, AI-Made Falsification",
+      "claim": "FAKE Photo Shows Karoline Leavitt, Usha Vance, Katie Miller Holding Babies as President, Melania Trump Look On",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-no-surgeon-francois-faivre-died-in-paris-in-june-2026.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-photo-shows-karoline-leavitt-usha-vance-katie-miller-holding-babies-as-president-melania-trump-look-on.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Infestation or imagination? 10 fact checks about insects in food",
+      "claim": "Was Mitch McConnell's dead body transported to Kentucky coroner? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/bugs-food-rumors/",
+      "url": "https://www.snopes.com/fact-check/mcconnell-body-kentucky-coroner/",
       "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "RFK Jr.’s Falsehood-Filled CNN Interview",
+      "claim": "Paxton Defies Establishment Expectations, Enters Election Home Stretch As Top GOP Fundraiser",
       "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/rfk-jr-s-falsehood-filled-cnn-interview/",
-      "topic": "Trending"
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/05/ken-paxton-defies-establishment-fundraiser-james-talarico-texas-senate-midterms",
+      "topic": "Politics"
     },
     {
       "n": 4,
-      "claim": "Polls Showed Abdul El-Sayed Would Crush Haley Stevens In Michigan Primary. They Were Dead Wrong",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/05/p",
-      "topic": "Trending"
-    },
-    {
-      "n": 5,
       "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -47,7 +39,7 @@
       "topic": "Trending"
     },
     {
-      "n": 6,
+      "n": 5,
       "claim": "‘Puncture repairers’; brought in from Jafrabad, Saharanpur: Ramesh Bidhuri’s communal dog whistles against Jantar Mantar protesters",
       "verdict": "FALSE",
       "source": "Alt News",
@@ -55,7 +47,7 @@
       "topic": "Trending"
     },
     {
-      "n": 7,
+      "n": 6,
       "claim": "of Muslims praying in Tube carriage is fake",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -63,39 +55,31 @@
       "topic": "Trending"
     },
     {
-      "n": 8,
-      "claim": "FAKE Video Shows Muslim Men Praying On The London Tube -- It's AI-Generated",
-      "verdict": "FALSE",
+      "n": 7,
+      "claim": "Evidence August 3, 2026, Louisville Procession Was To Bring Mitch McConnell's Corpse To Coroner's Office -- It Was For Deceased Officer",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-shows-muslim-men-praying-on-the-london-tube.html",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 9,
-      "claim": "Did chef Joe Gera expose Rand Paul lied about not getting COVID-19 vaccine?",
-      "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/joe-gera-chef-rand-paul-covid-19/",
-      "topic": "Health"
-    },
-    {
-      "n": 10,
-      "claim": "Trump’s Continued Claims of Vandalism at Reflecting Pool Disputed by U.S. Attorney Memo",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trumps-continued-claims-of-vandalism-at-reflecting-pool-disputed-by-u-s-attorney-memo/",
-      "topic": "Politics"
-    },
-    {
-      "n": 11,
-      "claim": "Two Buried Details From Michigan’s Democratic Primary That Should Give Republicans Hope",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/05/abdul-el-sayed-haley-stevens-better-odds-against-mike-rogers-senate-michigan-working-class-voters-dark-money",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-no-evidence-august-3-2026-louisville-procession-was-to-bring-mitch-mcconnells-corpse-to-coroners-office.html",
       "topic": "Trending"
     },
     {
-      "n": 12,
+      "n": 8,
+      "claim": "Did Caitlin Clark respond to Trump's 'attack' with uplifting message?",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/fact-check/caitlin-clark-response-trump-attack/",
+      "topic": "Politics"
+    },
+    {
+      "n": 9,
+      "claim": "Why Does Susan Collins Oppose Confirming Blanche? One Reason Involves Abortion Pills",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/05/susan-collins-todd-blanche-nomination-abortion-pill-",
+      "topic": "Trending"
+    },
+    {
+      "n": 10,
       "claim": "Wellness influencers claim mainstream medicine ignores natural remedies. They’re wrong",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -103,7 +87,7 @@
       "topic": "Health"
     },
     {
-      "n": 13,
+      "n": 11,
       "claim": "Siwan: At least nine rounds fired from AK-47 during students’ demonstration on July 25",
       "verdict": "FALSE",
       "source": "Alt News",
@@ -111,7 +95,7 @@
       "topic": "Trending"
     },
     {
-      "n": 14,
+      "n": 12,
       "claim": "How many prison places did the Conservatives create?",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -119,57 +103,113 @@
       "topic": "Trending"
     },
     {
-      "n": 15,
-      "claim": "Jason R. Day Is NOT Real Artist, Impersonator Who Vanished In 2012 -- He Is AI-Generated Wikipedia Spoof of Professor Jason Arday",
+      "n": 13,
+      "claim": "FAKE 689,235.43 EUR Receipt From Le Club 55 In St. Tropez Was Generated By AI",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-jason-r-day-is-not-real-artist-impersonator-who-vanished-in-2012-he-is-ai-generated-wikipedia-spoof-of-professor-jason-arday.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-receipt-from-le-club-55-in-st-tropez-was-generated-by-ai.html",
       "topic": "Tech / AI"
     },
     {
-      "n": 16,
-      "claim": "Did Trump say grass 'is like human beings'?",
+      "n": 14,
+      "claim": "Did Trump post AI image of himself with Generals Patton and MacArthur?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-grass-quote/",
+      "url": "https://www.snopes.com/fact-check/trump-ai-image-patton-macarthur/",
       "topic": "Politics"
     },
     {
-      "n": 17,
-      "claim": "Paul Distorts Fauci’s Diary Entry About COVID-19 and Wet Market",
+      "n": 15,
+      "claim": "Two Buried Details From Michigan’s Democratic Primary That Should Give Republicans Hope",
       "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/07/paul-distorts-faucis-diary-entry-about-covid-19-and-wet-market/",
-      "topic": "Health"
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/05/abdul-el-sayed-haley-stevens-better-odds-against-mike-rogers-senate-michigan-working-class-voters-dark-money",
+      "topic": "Trending"
+    },
+    {
+      "n": 16,
+      "claim": "What is RCP8.5? Unpacking misleading claims about climate scenarios",
+      "verdict": "FALSE",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/what-is-rcp8-5/",
+      "topic": "Science"
+    },
+    {
+      "n": 17,
+      "claim": "Hunt for a ‘global toolkit’: Republic blamed everyone from US deep state to Greta Thunberg for CJP stir",
+      "verdict": "FALSE",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/hunt-for-a-global-toolkit-republic-blamed-everyone-from-us-deep-state-to-greta-thunberg-for-cjp-stir/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Left-wing political outsider wins Democratic Senate primary in Michigan",
+      "headline": "Iran says deal with Oman on Strait of Hormuz is in final stages",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckgdkpz07kvo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-05T16:20:14+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-06T01:19:59+00:00"
     },
     {
       "n": 2,
-      "headline": "Judge reluctantly dismisses case against Oath Keepers militia group over Jan. 6 riot",
+      "headline": "Ousted Bangladeshi leader vows to return from exile despite facing a death sentence",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/g-s1-137440/judge-dismisses-lawsuit-oath-keepers",
+      "url": "https://www.npr.org/2026/08/05/g-s1-137523/ousted-bangladeshi-leader-vows-to-return-from-exile-despite-facing-a-death-sentence",
       "topic": "Trending",
-      "published": "2026-08-05T17:14:46+00:00"
+      "published": "2026-08-05T20:43:29+00:00"
     },
     {
       "n": 3,
-      "headline": "Judge criticizes Trump's Justice Department as he says he has no choice but to dismiss Jan. 6 seditious conspiracy case",
+      "headline": "WATCH LIVE: Sen. Paul holds contempt vote after Fauci invokes 5th Amendment",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/judge-criticizes-trumps-justice-department-as-he-says-he-has-no-choice-but-to-dismiss-jan-6-seditious-conspiracy-case",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-sen-paul-holds-contempt-vote-after-fauci-invokes-5th-amendment",
       "topic": "Politics",
-      "published": "2026-08-05T17:19:27+00:00"
+      "published": "2026-08-05T23:45:23+00:00"
     },
     {
       "n": 4,
+      "headline": "US to shut five consulates as critics fear China could fill diplomatic vacuum",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/aug/05/us-state-department-consulate-closures",
+      "topic": "World",
+      "published": "2026-08-05T19:20:28+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "FIFA president Infantino to stay on after crisis meeting",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/fifa-president-infantino-to-stay-on-after-crisis-meeting/a-78258824?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-06T01:10:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "After deadly Kyiv strike, Ukraine warns interceptor shortage is costing lives",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cyvlgq2gp2eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-05T18:19:51+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Small Texas law firm set to receive $150M to represent unaccompanied migrant children",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/05/nx-s1-5922451/150-million-contract-to-represent-migrant-children-awarded-to-trump-texas-law-firm",
+      "topic": "World",
+      "published": "2026-08-05T20:23:02+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "What El-Sayed's primary win means for Democrats in November",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/what-el-sayeds-primary-win-means-for-democrats-in-november",
+      "topic": "Trending",
+      "published": "2026-08-05T22:55:28+00:00"
+    },
+    {
+      "n": 9,
       "headline": "El Niño could push 50m people into acute hunger before end of next year",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/environment/2026/aug/05/el-nino-could-push-50m-people-acute-hunger-next-year",
@@ -177,39 +217,39 @@
       "published": "2026-08-05T08:00:13+00:00"
     },
     {
-      "n": 5,
-      "headline": "Germany: Court jails far-right youth terror cell members",
+      "n": 10,
+      "headline": "US: Abdul El-Sayed wins contentious Michigan Senate primary",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-court-jails-far-right-youth-terror-cell-members/a-78253691?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-05T17:09:00+00:00"
+      "url": "https://www.dw.com/en/us-abdul-el-sayed-wins-contentious-michigan-senate-primary/a-78258380?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-05T19:46:00+00:00"
     },
     {
-      "n": 6,
+      "n": 11,
       "headline": "Drone carrying explosives found at German airport, police say",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-05T16:06:30+00:00"
+      "published": "2026-08-05T20:01:51+00:00"
     },
     {
-      "n": 7,
-      "headline": "Pakistan's ruling party leads in Kashmir vote despite boycott call by banned group",
+      "n": 12,
+      "headline": "Dr. Erica Schwartz confirmed as CDC director, filling a leadership vacuum",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/g-s1-137449/pakistans-ruling-party-leads-in-kashmir-vote-despite-boycott-call-by-banned-group",
-      "topic": "Politics",
-      "published": "2026-08-05T16:06:06+00:00"
+      "url": "https://www.npr.org/2026/08/05/nx-s1-5920379/cdc-director-confirmed-erica-schwartz",
+      "topic": "Trending",
+      "published": "2026-08-05T20:00:24+00:00"
     },
     {
-      "n": 8,
-      "headline": "House Democrats just added 12 'safe' Trump districts to their midterm election target list",
+      "n": 13,
+      "headline": "Russian missile attacks on Kyiv expose weakness in Ukraine's air defense",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/house-democrats-just-added-12-safe-trump-districts-to-their-midterm-election-target-list",
-      "topic": "Politics",
-      "published": "2026-08-05T17:02:45+00:00"
+      "url": "https://www.pbs.org/newshour/show/russian-missile-attacks-on-kyiv-expose-weakness-in-ukraines-air-defense",
+      "topic": "Trending",
+      "published": "2026-08-05T22:45:17+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Wednesday briefing: ​How misinformation and ​a​ hardened immigration policy ​turned Ceuta ​into Europe’s ​latest ​flashpoint",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/05/wednesday-briefing-how-misinformation-and-a-hardened-immigration-policy-turned-ceuta-into-europes-latest-flashpoint",
@@ -217,68 +257,28 @@
       "published": "2026-08-05T05:54:54+00:00"
     },
     {
-      "n": 10,
-      "headline": "Germany news: Explosive drone defused at Leipzig airport",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-explosive-drone-defused-at-leipzig-airport/live-78241747?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-05T16:26:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Russia strike kills 21 as Ukraine says it needs more missile interceptors",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c330pxyvzzyo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-05T12:26:26+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Under China's new 'unity' law, Tibetans fight to preserve language and culture",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/g-s1-137436/under-chinas-new-unity-law-tibetans-fight-to-preserve-language-and-culture",
-      "topic": "World",
-      "published": "2026-08-05T15:26:43+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Virginia Democrats pick establishment nominees for 2 House seats they hope to flip",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/virginia-democrats-pick-establishment-nominees-for-2-house-seats-they-hope-to-flip",
-      "topic": "Trending",
-      "published": "2026-08-05T16:38:08+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Hundreds in Morocco gather near Ceuta border in anxious wait for missing loved ones",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/05/hundreds-in-morocco-gather-near-ceuta-border-in-anxious-wait-for-missing-loved-ones",
-      "topic": "World",
-      "published": "2026-08-05T04:00:08+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Fears of renewed conflict in Ethiopia",
+      "headline": "Will Russia start a fresh mobilization drive?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fears-of-renewed-conflict-in-ethiopia/a-78242293?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-05T15:22:00+00:00"
+      "url": "https://www.dw.com/en/will-russia-start-a-fresh-mobilization-drive/a-78253252?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-05T19:43:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Why some scientists are thrilled that a SpaceX rocket has crashed into the Moon",
+      "headline": "Israel strikes south Lebanon after first evacuation warning in weeks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c62q0xerzrno?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-05T11:19:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c998711dyjvo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-05T20:03:36+00:00"
     },
     {
       "n": 17,
-      "headline": "Progressive Abdul El-Sayed wins Michigan's Democratic primary for Senate",
+      "headline": "How Trump made an estimated $2.2 billion during the first year of his second term",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/05/nx-s1-5920403/michigan-senate-el-sayed-stevens-democrats",
+      "url": "https://www.npr.org/2026/08/05/nx-s1-5919997/how-trump-made-an-estimated-2-2-billion-during-the-first-year-of-his-second-term",
       "topic": "Politics",
-      "published": "2026-08-05T13:54:31+00:00"
+      "published": "2026-08-05T17:41:17+00:00"
     }
   ]
 }
