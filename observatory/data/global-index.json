@@ -12,8 +12,8 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 8.8,
-      "trend": "stable",
+      "value": 8.7,
+      "trend": "falling",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -24,7 +24,7 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 4.0,
+      "value": 3.9,
       "trend": "falling",
       "drivers": [
         "GPU instance demand",
@@ -37,7 +37,7 @@
       "label": "AI Subscriptions",
       "weight": 0.1,
       "value": 12.6,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Inference cost",
         "Model competition",
@@ -48,7 +48,7 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 5.7,
+      "value": 5.8,
       "trend": "rising",
       "drivers": [
         "Data center demand",
@@ -60,8 +60,8 @@
     "consumer_electronics": {
       "label": "Consumer Electronics",
       "weight": 0.15,
-      "value": 3.0,
-      "trend": "rising",
+      "value": 2.9,
+      "trend": "falling",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.6,
+      "value": 6.5,
       "trend": "falling",
       "drivers": [
         "AI feature premiums",
@@ -85,7 +85,7 @@
       "label": "Infrastructure & Construction",
       "weight": 0.1,
       "value": 4.5,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-08-06T08:11:24Z",
+  "last_updated": "2026-08-07T06:58:59Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
