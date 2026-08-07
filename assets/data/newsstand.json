@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T02:26:26Z",
+  "generated_at": "2026-08-07T08:53:29Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,8 +8,8 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Abdul El-Sayed Did NOT Say He 'Celebrated 9/11' -- He Said 'I Don't Think 9/11 Was Justified",
-      "verdict": "FALSE",
+      "claim": "Evidence Abdul El-Sayed 'Celebrated 9/11' -- He Said 'I Don't Think 9/11 Was Justified",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
       "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-abdul-el-sayed-did-not-say-he-celebrated-9-11-he-said-i-dont-think-9-11-was-justified.html",
       "topic": "Trending"
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "‘Are you a Muslim?’: Theatre activist beaten in Bengal after he replied, ‘What if I am? Isn’t this country also for Muslims?’",
+      "claim": "presidential assent to ‘Goonda Act’, it’s still a Bill, notes Calcutta high court",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/are-you-a-muslim-theatre-activist-beaten-in-bengal-after-he-replied-what-if-i-am-isnt-this-country-also-for-muslims/",
+      "url": "https://www.altnews.in/no-presidential-assent-to-goonda-act-its-still-a-bill-notes-calcutta-high-court/",
       "topic": "Trending"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "‘Puncture repairers’; brought in from Jafrabad, Saharanpur: Ramesh Bidhuri’s communal dog whistles against Jantar Mantar protesters",
+      "claim": "‘Are you a Muslim?’: Theatre activist beaten in Bengal after he replied, ‘What if I am? Isn’t this country also for Muslims?’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bjp-leader-ramesh-bidhuri-says-protesters-from-jantar-mantar-are-punctre-lagane-vale-tala-banane-vale-than-students/",
+      "url": "https://www.altnews.in/are-you-a-muslim-theatre-activist-beaten-in-bengal-after-he-replied-what-if-i-am-isnt-this-country-also-for-muslims/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump denies US weapons shortage and says information 'leakers' being 'hunted down",
+      "headline": "Meta fined $567m in largest child safety ruling against social media giant",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy8mjd19xm7o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-06T18:53:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-08-07T08:06:40+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump signs 2 immigration actions to curb 'birth tourism,' limit birthright citizenship",
+      "headline": "Morning news brief",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/g-s1-137686/trump-birthright-citizenship-immigration-curb",
-      "topic": "Politics",
-      "published": "2026-08-06T22:06:35+00:00"
+      "url": "https://www.npr.org/2026/08/07/nx-s1-5921269/morning-news-brief",
+      "topic": "Trending",
+      "published": "2026-08-07T08:41:55+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Argentina: Milei's property bill triggers protests, anger",
+      "headline": "Germany news: Exports and factory data lift economic outlook",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/argentina-milei-s-property-bill-triggers-protests-anger/a-78272866?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-exports-and-factory-data-lift-economic-outlook/live-78274476?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-07T01:21:00+00:00"
+      "published": "2026-08-07T08:51:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Meta fined $567m in largest child safety ruling against social media giant",
+      "headline": "Trump again tries to limit US birthright citizenship with new executive orders",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-08-07T00:54:03+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cj63966j95yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-07T00:34:14+00:00"
     },
     {
       "n": 7,
-      "headline": "Iran aims to ban U.S. and Israeli ships from Strait of Hormuz and charge others a toll",
+      "headline": "Student kills at least 6 in a shooting at a high school in Thailand, authorities say",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/nx-s1-5923623/iran-strait-hormuz-us-israel-ban",
-      "topic": "World",
-      "published": "2026-08-06T20:58:56+00:00"
+      "url": "https://www.npr.org/2026/08/07/nx-s1-5924583/student-shoots-multiple-people-at-a-high-school-in-thailand-authorities-say",
+      "topic": "Trending",
+      "published": "2026-08-07T05:34:15+00:00"
     },
     {
       "n": 8,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Trump signs new orders restricting birthright citizenship",
+      "headline": "Testosterone and fertility: the trade-off men aren't told about",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-signs-new-orders-restricting-birthright-citizenship/a-78272447?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-06T23:05:00+00:00"
+      "url": "https://www.dw.com/en/testosterone-and-fertility-the-trade-off-men-aren-t-told-about/a-78216799?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-07T08:47:00+00:00"
     },
     {
       "n": 11,
@@ -234,11 +234,11 @@
     },
     {
       "n": 12,
-      "headline": "Sticky or slippery? Snails can change their slime to meet the moment",
+      "headline": "Court orders Instagram and Facebook's Meta to pay $567M to address kids' mental health online",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/nx-s1-5920383/snail-slime-mucus-inspire-new-materials",
-      "topic": "Trending",
-      "published": "2026-08-06T18:26:45+00:00"
+      "url": "https://www.npr.org/2026/08/07/nx-s1-5924581/court-orders-instagram-and-facebooks-meta-to-pay-567m-to-address-kids-mental-health-online",
+      "topic": "Health",
+      "published": "2026-08-07T05:26:31+00:00"
     },
     {
       "n": 13,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Ebola: Africa CDC plans to use vaccine for different strain as outbreak spreads",
+      "headline": "Was is it really the hottest day ever?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ebola-africa-cdc-plans-to-use-vaccine-for-different-strain-as-outbreak-spreads/a-78271789?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-08-06T21:12:00+00:00"
+      "url": "https://www.dw.com/en/was-is-it-really-the-hottest-day-ever/a-78264330?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-07T08:36:00+00:00"
     },
     {
       "n": 16,
@@ -270,15 +270,15 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c89nqlz5p4qo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-07T02:07:46+00:00"
+      "published": "2026-08-07T05:44:29+00:00"
     },
     {
       "n": 17,
-      "headline": "The park service says Trump's arch would obstruct historic sites. Could it be moved?",
+      "headline": "Trump signs 2 immigration actions to curb 'birth tourism,' limit birthright citizenship",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/nx-s1-5919628/trump-arch-location-historic-sites-nps",
+      "url": "https://www.npr.org/2026/08/06/g-s1-137686/trump-birthright-citizenship-immigration-curb",
       "topic": "Politics",
-      "published": "2026-08-06T18:19:47+00:00"
+      "published": "2026-08-06T22:06:35+00:00"
     }
   ]
 }
