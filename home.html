@@ -213,6 +213,89 @@
     .eport { max-width: 320px; }
   }
 
+  /* ───────── §06 USPTO Patents — impact banner + magazine grid ───────── */
+  .uspto { padding: 0 var(--pad-x) 8px; }
+  .uspto__banner {
+    position: relative; overflow: hidden;
+    border: 1px solid color-mix(in oklch, var(--signal) 26%, var(--rule));
+    border-radius: 16px;
+    background: linear-gradient(120deg, color-mix(in oklch, var(--signal) 14%, var(--bg-2)), var(--bg-2) 62%);
+    padding: 34px 36px; margin-bottom: 14px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 30px; flex-wrap: wrap;
+  }
+  .uspto__banner::after {
+    content: ""; position: absolute; right: -8%; top: -60%;
+    width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, color-mix(in oklch, var(--signal) 34%, transparent), transparent 68%);
+    filter: blur(38px); pointer-events: none;
+  }
+  .uspto__txt { position: relative; z-index: 1; max-width: 46ch; }
+  .uspto__tag {
+    font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--signal);
+  }
+  .uspto__txt h2 {
+    font-family: var(--f-sans); font-size: clamp(22px, 3vw, 32px); font-weight: 500;
+    letter-spacing: -0.03em; color: var(--ink); margin: 12px 0 0; line-height: 1.1;
+  }
+  .uspto__big { position: relative; z-index: 1; display: flex; gap: 34px; }
+  .uspto__big .u b {
+    display: block; font-family: var(--f-sans); font-size: clamp(48px, 7vw, 78px);
+    font-weight: 500; letter-spacing: -0.05em; line-height: .9;
+    background: linear-gradient(160deg, var(--signal), color-mix(in oklch, var(--signal) 40%, var(--ink)));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .uspto__big .u span {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--faint);
+  }
+  .uspto__grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 1fr; gap: 12px;
+  }
+  .uspto__grid .pcard {
+    position: relative; display: flex; flex-direction: column;
+    border: 1px solid var(--rule); border-radius: 10px; background: var(--surface);
+    padding: 18px 20px 16px; text-decoration: none; color: inherit; min-height: 150px;
+    transition: border-color .2s, background .2s, transform .2s, box-shadow .2s;
+  }
+  .uspto__grid .pcard:hover {
+    border-color: color-mix(in oklch, var(--signal) 50%, var(--rule));
+    background: var(--surface-2); transform: translateY(-3px);
+    box-shadow: 0 20px 40px -30px color-mix(in oklch, var(--signal) 60%, transparent);
+  }
+  .uspto__grid .pcard .h {
+    font-family: var(--f-sans); font-size: 15px; font-weight: 700; line-height: 1.28;
+    letter-spacing: -0.01em; color: var(--ink); margin: 0 0 9px;
+  }
+  .uspto__grid .pcard .d {
+    font-size: 11.5px; line-height: 1.5; color: var(--dim); margin: 0 0 14px; flex: 1;
+  }
+  .uspto__grid .pcard .m {
+    font-family: var(--f-mono); font-size: 9.5px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--faint); margin-top: auto;
+    padding-top: 12px; border-top: 1px solid var(--rule);
+  }
+  .uspto__grid .pcard:hover .m { color: var(--signal); }
+  /* flagship AI patent — wider, signal-tinted */
+  .uspto__grid .pcard--wide { grid-column: span 2; }
+  .uspto__grid .pcard--wide {
+    background: linear-gradient(135deg, color-mix(in oklch, var(--signal) 10%, var(--surface)), var(--surface) 72%);
+    border-color: color-mix(in oklch, var(--signal) 24%, var(--rule));
+  }
+  .uspto__grid .pcard--wide .h { font-size: 20px; }
+  .uspto__grid .pcard--wide .d { font-size: 13px; max-width: 54ch; }
+  @media (max-width: 880px) {
+    .uspto__grid { grid-template-columns: 1fr 1fr; }
+    .uspto__grid .pcard--wide { grid-column: span 2; }
+  }
+  @media (max-width: 560px) {
+    .uspto { padding: 0 22px 8px; }
+    .uspto__banner { padding: 26px 24px; }
+    .uspto__grid { grid-template-columns: 1fr; }
+    .uspto__grid .pcard--wide { grid-column: span 1; }
+  }
+
   /* Light theme: re-tint the near-white prose colors so they keep contrast
      on near-white paper (mirrors the .hero__sub / .bio-prose fix in site.css). */
   [data-theme="forest"] .ehero__sub,
@@ -540,53 +623,65 @@
 <div class="shead">
   <div class="shead__left">
     <span class="shead__n">&sect; 06</span>
-    <span class="shead__title">PATENTS &amp; PUBLICATIONS</span>
-    <span class="shead__sub">// eight granted patents, eight technical publications</span>
+    <span class="shead__title">USPTO PATENTS</span>
+    <span class="shead__sub">// eight granted patents &middot; 2012&ndash;2021</span>
   </div>
   <div class="shead__right">FULL LIST ON REQUEST</div>
 </div>
-<div class="patents">
-  <a href="https://patents.google.com/patent/US10928986B1/en?oq=10928986" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">US10928986B1 · 2021</div>
-    <div class="h">Transaction Visibility Frameworks Using AI</div>
-    <div class="d">AI-driven frameworks for transaction visibility in enterprise systems.</div>
-  </a>
-  <a href="https://patents.justia.com/patent/20140302785" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">US20140302785 · 2015</div>
-    <div class="h">Near Field Communication (NFC) Data Transfer</div>
-    <div class="d">NFC-based data transfer methods for device-to-device communication.</div>
-  </a>
-  <a href="https://patents.google.com/patent/US20140040919?oq=puneet+kumar+arora+reminder+message" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">US20140040919A1 · 2014</div>
-    <div class="h">Reminder Messages</div>
-    <div class="d">Context-aware reminder messaging systems.</div>
-  </a>
-  <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130340073.pdf" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">US13/523,707 · 2012</div>
-    <div class="h">Identification to Access Portable Computing Device</div>
-    <div class="d">Identity-based access control for portable computing devices.</div>
-  </a>
-  <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130288597.pdf" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">US13/457,233 · 2012</div>
-    <div class="h">Transferring Data Items via Metadata</div>
-    <div class="d">Metadata-driven transfer of data items across computing devices.</div>
-  </a>
-  <a href="https://patents.justia.com/patent/20170364315#description" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">US15/544,684 · 2017</div>
-    <div class="h">Print Reservation</div>
-    <div class="d">Quota-based print reservation and subscription management.</div>
-  </a>
-  <a href="https://patents.google.com/patent/WO2015092801A1" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">PCT/IN2013/000783 · 2013</div>
-    <div class="h">Wireless Communication of Print Content</div>
-    <div class="d">Wireless protocols for transmitting print-ready content.</div>
-  </a>
-  <a href="https://patents.google.com/patent/WO2015012824A1/tr" target="_blank" rel="noopener" class="cell" style="text-decoration:none; color:inherit;">
-    <div class="id">PCT/US2013/051855 · 2013</div>
-    <div class="h">Marking Agent Credit Adjustments</div>
-    <div class="d">Cost-optimization through marking-agent credit adjustments.</div>
-  </a>
-</div>
+<section class="uspto">
+  <div class="uspto__banner">
+    <div class="uspto__txt">
+      <div class="uspto__tag">United States Patent &amp; Trademark Office</div>
+      <h2>A body of invention, on the record.</h2>
+    </div>
+    <div class="uspto__big">
+      <div class="u"><b>08</b><span>Granted patents</span></div>
+      <div class="u"><b>09</b><span>Years &middot; 2012&ndash;21</span></div>
+    </div>
+  </div>
+  <div class="uspto__grid">
+    <a href="https://patents.google.com/patent/US10928986B1/en?oq=10928986" target="_blank" rel="noopener" class="pcard pcard--wide">
+      <div class="h">Transaction Visibility Frameworks Using AI</div>
+      <div class="d">Uses AI to give enterprises a clear, real-time view of transactions flowing across systems &mdash; surfacing anomalies and status automatically, without manual reconciliation.</div>
+      <div class="m">US10928986B1 &middot; 2021 &middot; Flagship</div>
+    </a>
+    <a href="https://patents.justia.com/patent/20140302785" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Near Field Communication (NFC) Data Transfer</div>
+      <div class="d">Transfers data between two devices over NFC with a single tap &mdash; no pairing, cables, or network setup required.</div>
+      <div class="m">US20140302785 &middot; 2015</div>
+    </a>
+    <a href="https://patents.google.com/patent/US20140040919?oq=puneet+kumar+arora+reminder+message" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Reminder Messages</div>
+      <div class="d">Generates context-aware reminders that adapt to a user's situation and timing, so prompts arrive exactly when they're useful.</div>
+      <div class="m">US20140040919A1 &middot; 2014</div>
+    </a>
+    <a href="https://patents.justia.com/patent/20170364315#description" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Print Reservation</div>
+      <div class="d">Lets users reserve and manage print jobs against a quota or subscription, coordinating shared printers without waste or conflicts.</div>
+      <div class="m">US15/544,684 &middot; 2017</div>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015092801A1" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Wireless Communication of Print Content</div>
+      <div class="d">Wireless protocols for sending print-ready content straight to a device, removing cables and drivers from the print path.</div>
+      <div class="m">PCT/IN2013/000783 &middot; 2013</div>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130340073.pdf" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Identification to Access Portable Computing Device</div>
+      <div class="d">Identity-based access control that unlocks a portable device only for a verified user, hardening security on the go.</div>
+      <div class="m">US13/523,707 &middot; 2012</div>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130288597.pdf" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Transferring Data Items via Metadata</div>
+      <div class="d">Moves data between devices by exchanging lightweight metadata first, making transfers faster and more reliable across platforms.</div>
+      <div class="m">US13/457,233 &middot; 2012</div>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015012824A1/tr" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Marking Agent Credit Adjustments</div>
+      <div class="d">Optimizes printing cost by dynamically adjusting marking-agent (toner/ink) credits based on actual usage.</div>
+      <div class="m">PCT/US2013/051855 &middot; 2013</div>
+    </a>
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer class="foot">
