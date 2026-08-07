@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T10:34:20Z",
+  "generated_at": "2026-08-07T02:26:26Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,34 +8,34 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Photo Shows Karoline Leavitt, Usha Vance, Katie Miller Holding Babies as President, Melania Trump Look On",
+      "claim": "Abdul El-Sayed Did NOT Say He 'Celebrated 9/11' -- He Said 'I Don't Think 9/11 Was Justified",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-photo-shows-karoline-leavitt-usha-vance-katie-miller-holding-babies-as-president-melania-trump-look-on.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-abdul-el-sayed-did-not-say-he-celebrated-9-11-he-said-i-dont-think-9-11-was-justified.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Will Mamdani's city-run grocery stores require ID to shop? Here's the truth",
+      "claim": "Did US military's GPS signal jamming cause fatal plane crash? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mamdani-nyc-grocery-stores-id/",
+      "url": "https://www.snopes.com/news/2026/08/06/us-military-medical-plane-crash/",
       "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Trump Overstates Magnitude of Noncitizen Voting in New Jersey",
+      "claim": "Oz’s Medicaid Fraud Claims About California and Minnesota Lack Context",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trump-overstates-magnitude-of-noncitizen-voting-in-new-jersey/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/08/ozs-medicaid-fraud-claims-about-california-and-minnesota-lack-context/",
+      "topic": "Trending"
     },
     {
       "n": 4,
-      "claim": "Paxton Defies Establishment Expectations, Enters Election Home Stretch As Top GOP Fundraiser",
+      "claim": "Trump Tips Hand On Who He Sees As His Successor",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/05/ken-paxton-defies-establishment-fundraiser-james-talarico-texas-senate-midterms",
+      "url": "https://dailycaller.com/2026/08/06/donald-trump-jd-vance-white-house-2028-election-race",
       "topic": "Politics"
     },
     {
@@ -56,43 +56,43 @@
     },
     {
       "n": 7,
-      "claim": "John Lewis isn’t giving away Maison Francis Kurkdjian perfume for £3",
+      "claim": "Screwfix is not selling display drill sets for less than a tenner",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/john-lewis-maison-francis-kurkdjian-perfume/",
+      "url": "https://fullfact.org/shopping/screwfix-makita-drill-dill-fake-offer/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Evidence August 3, 2026, Louisville Procession Was To Bring Mitch McConnell's Corpse To Coroner's Office -- It Was For Deceased Officer",
-      "verdict": "UNPROVEN",
-      "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-no-evidence-august-3-2026-louisville-procession-was-to-bring-mitch-mcconnells-corpse-to-coroners-office.html",
-      "topic": "Trending"
-    },
-    {
-      "n": 9,
-      "claim": "Does video show Trump appearing to doze off during Fourth of July fireworks?",
+      "claim": "Trump DID Post AI-Generated Image Of Himself With Patton, MacArthur -- All In Historically Inaccurate Uniforms",
       "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-fall-asleep-fireworks/",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-trump-did-post-ai-generated-image-himself-patton-macarthur-all-historically-inaccurate-uniforms.html",
       "topic": "Politics"
     },
     {
+      "n": 9,
+      "claim": "Perez Hilton death hoax spreads online after hospitalization",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/fact-check/perez-hilton-not-dead/",
+      "topic": "Trending"
+    },
+    {
       "n": 10,
-      "claim": "Trump’s Cherry-Picked Inflation Boast",
+      "claim": "Trump Overstates Magnitude of Noncitizen Voting in New Jersey",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trumps-cherry-picked-inflation-boast/",
+      "url": "https://www.factcheck.org/2026/08/trump-overstates-magnitude-of-noncitizen-voting-in-new-jersey/",
       "topic": "Politics"
     },
     {
       "n": 11,
-      "claim": "Why Does Susan Collins Oppose Confirming Blanche? One Reason Involves Abortion Pills",
+      "claim": "More Trouble For Fauci Ahead Even After Congress Is Done With Him",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/05/susan-collins-todd-blanche-nomination-abortion-pill-",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/06/james-uthmeier-covid19-florida-louisiana-west-virginia-anthony-fauci-",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -112,101 +112,101 @@
     },
     {
       "n": 14,
-      "claim": "of Muslims praying in Tube carriage is fake",
+      "claim": "John Lewis isn’t giving away Maison Francis Kurkdjian perfume for £3",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/muslims-praying-london-underground-fake-ai/",
+      "url": "https://fullfact.org/shopping/john-lewis-maison-francis-kurkdjian-perfume/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "FAKE 689,235.43 EUR Receipt From Le Club 55 In St. Tropez Was Generated By AI",
+      "claim": "FAKE Video Shows A Fiery Crash Landing Of A Passenger Plane On A Wet Georgia Highway -- AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-receipt-from-le-club-55-in-st-tropez-was-generated-by-ai.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-shows-a-firey-crash-landing-of-a-passenger-plane-on-a-wet-georgia-highway.html",
       "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "Was Mitch McConnell's dead body transported to Kentucky coroner? Here's the truth",
+      "claim": "Taylor Farms used prison labor in Arizona, documents show",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mcconnell-body-kentucky-coroner/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/taylor-farms-prison-labor-arizona/",
+      "topic": "Celebrity"
     },
     {
       "n": 17,
-      "claim": "RFK Jr.’s Falsehood-Filled CNN Interview",
+      "claim": "Trump’s Cherry-Picked Inflation Boast",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/rfk-jr-s-falsehood-filled-cnn-interview/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/08/trumps-cherry-picked-inflation-boast/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "In Odesa, no-one is safe from Russia's new Black Sea strikes",
+      "headline": "Trump denies US weapons shortage and says information 'leakers' being 'hunted down",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy8ev4y172yo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-06T05:00:54+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cy8mjd19xm7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-06T18:53:51+00:00"
     },
     {
       "n": 2,
-      "headline": "How deep-rooted medical bias creates deadly consequences for addiction patients",
+      "headline": "Trump signs 2 immigration actions to curb 'birth tourism,' limit birthright citizenship",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/nx-s1-5845162/addiction-treatment-overdose-deaths",
-      "topic": "Trending",
-      "published": "2026-08-06T09:52:45+00:00"
+      "url": "https://www.npr.org/2026/08/06/g-s1-137686/trump-birthright-citizenship-immigration-curb",
+      "topic": "Politics",
+      "published": "2026-08-06T22:06:35+00:00"
     },
     {
       "n": 3,
-      "headline": "WATCH LIVE: Sen. Paul holds contempt vote after Fauci invokes 5th Amendment",
+      "headline": "New Mexico court orders Meta to pay $567 million over mental health harms to kids online",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-sen-paul-holds-contempt-vote-after-fauci-invokes-5th-amendment",
-      "topic": "Politics",
-      "published": "2026-08-05T23:45:23+00:00"
+      "url": "https://www.pbs.org/newshour/nation/new-mexico-court-orders-meta-to-pay-567-million-over-mental-health-harms-to-kids-online",
+      "topic": "Health",
+      "published": "2026-08-07T01:18:40+00:00"
     },
     {
       "n": 4,
-      "headline": "‘Morocco feels emboldened’: Trump’s influence in spotlight after Ceuta disaster",
+      "headline": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/06/trump-influence-morocco-spotlight-ceuta-border-disaster",
-      "topic": "Politics",
-      "published": "2026-08-06T09:45:54+00:00"
+      "url": "https://www.theguardian.com/world/2026/aug/06/ebola-virus-drc-mutating",
+      "topic": "Health",
+      "published": "2026-08-06T16:18:46+00:00"
     },
     {
       "n": 5,
-      "headline": "Germany arrests Ukrainian suspected of spying on arms firm",
+      "headline": "Argentina: Milei's property bill triggers protests, anger",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-arrests-ukrainian-suspected-of-spying-on-arms-firm/a-78262186?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/argentina-milei-s-property-bill-triggers-protests-anger/a-78272866?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-06T09:57:00+00:00"
+      "published": "2026-08-07T01:21:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Iran says deal with Oman on Strait of Hormuz is in final stages",
+      "headline": "Meta fined $567m in largest child safety ruling against social media giant",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-06T01:19:59+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-08-07T00:54:03+00:00"
     },
     {
       "n": 7,
-      "headline": "Celebrity culture is one thing. For TMZ, Congress is the new 'reality show",
+      "headline": "Iran aims to ban U.S. and Israeli ships from Strait of Hormuz and charge others a toll",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/nx-s1-5922731/tmz-congress",
-      "topic": "Politics",
-      "published": "2026-08-06T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5923623/iran-strait-hormuz-us-israel-ban",
+      "topic": "World",
+      "published": "2026-08-06T20:58:56+00:00"
     },
     {
       "n": 8,
-      "headline": "What El-Sayed's primary win means for Democrats in November",
+      "headline": "A look at the major changes Head Start faces under Trump proposal",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-el-sayeds-primary-win-means-for-democrats-in-november",
-      "topic": "Trending",
-      "published": "2026-08-05T22:55:28+00:00"
+      "url": "https://www.pbs.org/newshour/show/a-look-at-the-major-changes-head-start-faces-under-trump-proposal",
+      "topic": "Politics",
+      "published": "2026-08-06T22:55:09+00:00"
     },
     {
       "n": 9,
@@ -214,71 +214,71 @@
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/aug/05/us-state-department-consulate-closures",
       "topic": "World",
-      "published": "2026-08-05T19:20:28+00:00"
+      "published": "2026-08-06T15:41:29+00:00"
     },
     {
       "n": 10,
-      "headline": "India news: Student protests in Jharkhand enter 13th day",
+      "headline": "Trump signs new orders restricting birthright citizenship",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-student-protests-in-jharkhand-enter-13th-day/live-78260247?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-06T08:33:00+00:00"
+      "url": "https://www.dw.com/en/trump-signs-new-orders-restricting-birthright-citizenship/a-78272447?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-06T23:05:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Indian journalist Tarun Tejpal sentenced to 10 years in jail for rape",
+      "headline": "Uefa says boycott may still go ahead as FA withdraws Infantino support",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2v551w9v8o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c2k74yevgzwo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-06T09:49:24+00:00"
+      "published": "2026-08-07T01:57:02+00:00"
     },
     {
       "n": 12,
-      "headline": "Gianni Infantino gets internal support at crisis meeting to remain as FIFA president",
+      "headline": "Sticky or slippery? Snails can change their slime to meet the moment",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/nx-s1-5923233/infantino-crisis-meeting-fifa",
-      "topic": "Politics",
-      "published": "2026-08-06T08:52:16+00:00"
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5920383/snail-slime-mucus-inspire-new-materials",
+      "topic": "Trending",
+      "published": "2026-08-06T18:26:45+00:00"
     },
     {
       "n": 13,
-      "headline": "Russian missile attacks on Kyiv expose weakness in Ukraine's air defense",
+      "headline": "News Wrap: Senate committee votes to hold Fauci in contempt of Congress",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/russian-missile-attacks-on-kyiv-expose-weakness-in-ukraines-air-defense",
-      "topic": "Trending",
-      "published": "2026-08-05T22:45:17+00:00"
+      "url": "https://www.pbs.org/newshour/show/news-wrap-senate-committee-votes-to-hold-fauci-in-contempt-of-congress",
+      "topic": "Politics",
+      "published": "2026-08-06T22:50:41+00:00"
     },
     {
       "n": 14,
-      "headline": "El Niño could push 50m people into acute hunger before end of next year",
+      "headline": "Top Ugandan footballer killed by robbers armed with paving stones",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/aug/05/el-nino-could-push-50m-people-acute-hunger-next-year",
+      "url": "https://www.theguardian.com/football/2026/aug/06/top-uganda-footballer-killed-robbery-kampala",
       "topic": "Trending",
-      "published": "2026-08-05T08:00:13+00:00"
+      "published": "2026-08-06T14:30:32+00:00"
     },
     {
       "n": 15,
-      "headline": "Why is Russia selling its gold?",
+      "headline": "Ebola: Africa CDC plans to use vaccine for different strain as outbreak spreads",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/why-is-russia-selling-its-gold/a-78145069?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-06T08:21:00+00:00"
+      "url": "https://www.dw.com/en/ebola-africa-cdc-plans-to-use-vaccine-for-different-strain-as-outbreak-spreads/a-78271789?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-08-06T21:12:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Iranian footballers who defied Tehran become Australian citizens",
+      "headline": "Australian aviation crew carries out daring midwinter Antarctica rescue",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn5nlgxv6vdo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c89nqlz5p4qo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-06T09:04:17+00:00"
+      "published": "2026-08-07T02:07:46+00:00"
     },
     {
       "n": 17,
-      "headline": "Morning news brief",
+      "headline": "The park service says Trump's arch would obstruct historic sites. Could it be moved?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/06/nx-s1-5921225/morning-news-brief",
-      "topic": "Trending",
-      "published": "2026-08-06T08:43:07+00:00"
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5919628/trump-arch-location-historic-sites-nps",
+      "topic": "Politics",
+      "published": "2026-08-06T18:19:47+00:00"
     }
   ]
 }
