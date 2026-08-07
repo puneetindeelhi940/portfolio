@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Lab (Gen-Z preview) — Puneet Arora</title>
+<base href="../">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t&&t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* ============================================================
+     AI LAB — GEN-Z PREVIEW (not wired into nav; for vibe-check)
+     Keeps the lab's structure + tokens; adds:
+     - electric duo-accent (lime + violet) layered over --signal
+     - grainy aurora hero glow
+     - lowercase, dry voice + emoji status pills
+     - marquee run-line, card tilt on hover
+     ============================================================ */
+  :root{
+    --z-lime:#c6ff3d;
+    --z-violet:#b388ff;
+    --z-glow: color-mix(in srgb, var(--z-lime) 60%, transparent);
+  }
+  [data-theme="forest"]{
+    --z-lime:#5bbd00;
+    --z-violet:#7c4dff;
+  }
+
+  .lab{max-width:1120px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
+  @media(max-width:1100px){.lab{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
+  @media(max-width:600px){.lab{padding-left:22px;padding-right:22px;}}
+
+  /* ---------------- HERO ---------------- */
+  .lab-hero{position:relative;padding:72px 0 12px;overflow:hidden;}
+  .lab-hero .lab-hero__glow{position:absolute;inset:-30% -10% auto -10%;height:480px;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(46% 60% at 22% 30%, color-mix(in srgb,var(--z-violet) 42%, transparent), transparent 70%),
+      radial-gradient(50% 55% at 78% 22%, color-mix(in srgb,var(--z-lime) 40%, transparent), transparent 68%),
+      radial-gradient(60% 70% at 55% 70%, color-mix(in srgb,var(--signal) 30%, transparent), transparent 72%);
+    filter:blur(46px);opacity:.55;animation:drift 16s ease-in-out infinite alternate;}
+  @keyframes drift{from{transform:translate3d(-2%,0,0) scale(1);}to{transform:translate3d(3%,3%,0) scale(1.08);}}
+  /* grain */
+  .lab-hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .lab-hero > *{position:relative;z-index:1;}
+
+  .lab-hero .ky{font-family:var(--f-mono);font-size:11px;letter-spacing:0.18em;text-transform:lowercase;color:var(--z-lime);display:inline-flex;align-items:center;gap:9px;padding:6px 12px;border:1px solid color-mix(in srgb,var(--z-lime) 40%,var(--rule));border-radius:999px;background:color-mix(in srgb,var(--z-lime) 8%,transparent);}
+  .lab-hero .ky .dot{width:7px;height:7px;border-radius:50%;background:var(--z-lime);box-shadow:0 0 10px var(--z-glow);}
+  .lab-hero h1{font-size:clamp(34px,7vw,66px);font-weight:900;line-height:1.0;letter-spacing:-0.035em;margin:22px 0 0;max-width:16ch;text-wrap:balance;}
+  .lab-hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--z-lime),var(--z-violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .lab-hero .sub{max-width:60ch;margin-top:22px;font-size:clamp(15px,2vw,18.5px);line-height:1.6;color:var(--dim);}
+  .lab-hero .sub b{color:var(--ink);font-weight:600;}
+
+  /* marquee run-line */
+  .marquee{margin-top:30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:11px 0;overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
+  .marquee__track{display:inline-flex;gap:0;animation:scroll 22s linear infinite;}
+  .marquee:hover .marquee__track{animation-play-state:paused;}
+  .marquee span{font-family:var(--f-mono);font-size:12px;letter-spacing:0.08em;text-transform:lowercase;color:var(--faint);padding:0 20px;}
+  .marquee span b{color:var(--z-lime);font-weight:700;}
+  .marquee span i{color:var(--z-violet);font-style:normal;}
+  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* ---------------- SECTION HEADER ---------------- */
+  .lab-sec{padding:58px 0 0;}
+  .lab-shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--rule);margin-bottom:24px;}
+  .lab-shead .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.12em;font-weight:700;background:linear-gradient(100deg,var(--z-lime),var(--z-violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .lab-shead .t{font-size:24px;font-weight:800;letter-spacing:-0.02em;color:var(--ink);text-transform:none;}
+  .lab-shead .s{font-family:var(--f-mono);font-size:11.5px;letter-spacing:0.04em;color:var(--faint);margin-left:auto;text-transform:lowercase;}
+  @media(max-width:600px){.lab-shead .s{margin-left:0;flex-basis:100%;}}
+  .lab-intro{color:var(--dim);max-width:70ch;font-size:14.8px;line-height:1.6;margin:0 0 24px;}
+
+  /* ---------------- CARDS ---------------- */
+  .lab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:900px){.lab-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:640px){.lab-grid{grid-template-columns:1fr;}}
+
+  .lcard{position:relative;display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:16px;background:var(--surface);padding:22px 22px 20px;text-decoration:none;color:inherit;transition:border-color .18s,transform .18s,box-shadow .18s;transform-style:preserve-3d;}
+  a.lcard:hover{border-color:color-mix(in srgb,var(--z-lime) 60%,var(--rule));transform:translateY(-4px) rotate(-.6deg);box-shadow:0 22px 46px -26px var(--z-glow),0 0 0 1px color-mix(in srgb,var(--z-lime) 24%,transparent);}
+  .lcard__top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px;}
+  .lcard .plabel{font-family:var(--f-mono);font-size:11px;letter-spacing:0.02em;font-weight:600;color:var(--ink);}
+  .lcard .status{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.02em;text-transform:lowercase;color:var(--ink);border:1px solid var(--rule);border-radius:999px;padding:4px 11px 4px 9px;white-space:nowrap;display:inline-flex;align-items:center;gap:5px;background:color-mix(in srgb,var(--z-lime) 6%,transparent);}
+  .lcard h3{font-size:17.5px;font-weight:750;line-height:1.26;letter-spacing:-0.018em;color:var(--ink);margin:0 0 14px;text-wrap:balance;}
+  .lcard .learn{font-size:13.4px;line-height:1.58;color:var(--dim);margin:0;flex:1;}
+  .lcard .learn b{color:var(--z-lime);font-weight:700;text-transform:lowercase;}
+  .lcard__foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;padding-top:13px;border-top:1px solid var(--rule);}
+  .lcard .area{font-family:var(--f-mono);font-size:10px;letter-spacing:0.06em;text-transform:lowercase;color:var(--faint);}
+  .lcard .go{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.04em;text-transform:lowercase;font-weight:600;color:var(--z-violet);white-space:nowrap;}
+
+  .lcard--concept{background:color-mix(in srgb,var(--surface) 50%,transparent);border-style:dashed;}
+  .lcard--concept .plabel{color:var(--faint);}
+  .lcard--concept .go{color:var(--faint);}
+
+  /* flop card accent */
+  .lcard--flop .learn b{color:var(--z-violet);}
+  .lcard--flop .status{background:color-mix(in srgb,var(--z-violet) 8%,transparent);}
+
+  .foot{max-width:1120px;margin:64px auto 0;padding:22px var(--pad-x);border-top:1px solid var(--rule);color:var(--faint);font-size:12.5px;font-family:var(--f-mono);}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand"><span class="dot"></span><b>Puneet Arora</b></a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html" class="is-current">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="lab-hero lab" data-screen-label="hero">
+  <div class="lab-hero__glow"></div>
+  <div class="ky"><span class="dot"></span><span>ai lab · a working lab, not a portfolio</span></div>
+  <h1>questions living <em>rent-free in my head.</em></h1>
+  <p class="sub">not here to prove i can use ai &mdash; everyone can now. i build these to chase the questions that won&rsquo;t quit: <b>how memory should feel, when an agent should ask instead of act, what honest uncertainty looks like on a screen.</b> each card links to the real thing. not the tech &mdash; the thinking.</p>
+  <div class="marquee">
+    <div class="marquee__track">
+      <span><b>6</b> live tools</span><span><i>3</i> prototypes cooking</span><span><b>2</b> deep dives</span><span><i>5</i> frameworks</span><span><b>3</b> still circling</span><span>&#9733; no filler</span>
+      <span><b>6</b> live tools</span><span><i>3</i> prototypes cooking</span><span><b>2</b> deep dives</span><span><i>5</i> frameworks</span><span><b>3</b> still circling</span><span>&#9733; no filler</span>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · EXPERIMENTS -->
+<section class="lab-sec lab" id="experiments">
+  <div class="lab-shead"><span class="n">§ 02</span><span class="t">Experiments</span><span class="s">// prototypes, still cooking 🧪</span></div>
+  <p class="lab-intro">prototypes i&rsquo;m still learning from. each one names the bet it&rsquo;s making and the insight it&rsquo;s chasing &mdash; receipts, not vibes.</p>
+  <div class="lab-grid">
+
+    <a href="opportunity-simulator.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Opportunity Simulator</span><span class="status">🧪 in the lab</span></div>
+      <h3>Can an exec steer the global economy like a live sim?</h3>
+      <p class="learn"><b>the tea:</b> people trust a forecast they can poke, override, and trace back to a cause &mdash; AI-scored rankings and four-order-deep shock sims turn macro noise into moves.</p>
+      <div class="lcard__foot"><span class="area">ai economics</span><span class="go">open the sim &rarr;</span></div>
+    </a>
+
+    <a href="situation-simulator.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Orbital Situation Room</span><span class="status">🧪 in the lab</span></div>
+      <h3>What does working next to an autonomous agent actually feel like?</h3>
+      <p class="learn"><b>the tea:</b> control and auditability are the rent you pay to trust automation. a live 3D ops picture with agent-run collision sims should invite steering, not spectating.</p>
+      <div class="lcard__foot"><span class="area">agent ux</span><span class="go">enter the room &rarr;</span></div>
+    </a>
+
+    <a href="workbench-alt2.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">AI Efficiency Workbench</span><span class="status">🧪 in the lab</span></div>
+      <h3>How do you make enterprise AI cost-aware without losing the plot?</h3>
+      <p class="learn"><b>the tea:</b> governance is a UX problem &mdash; every decision must be visible and defensible. triage every workload, route by cost, send only the 5% that needs a human to a human.</p>
+      <div class="lcard__foot"><span class="area">ai economics</span><span class="go">open the workbench &rarr;</span></div>
+    </a>
+
+  </div>
+</section>
+
+<!-- 04 · FRAMEWORKS -->
+<section class="lab-sec lab" id="frameworks">
+  <div class="lab-shead"><span class="n">§ 04</span><span class="t">The Arora Frameworks</span><span class="s">// reusable IP · saved for reuse ♻️</span></div>
+  <p class="lab-intro">when the same idea shows up in three experiments, i give it a name. these are the models i reach for again and again &mdash; the reusable part of the thinking.</p>
+  <div class="lab-grid">
+
+    <a href="memory-ux-canvas.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Memory UX Canvas</span><span class="status">♻️ framework</span></div>
+      <h3>What should an AI remember, forget, or never store without asking?</h3>
+      <p class="learn"><b>the tea:</b> a worksheet forces the honest call &mdash; separating what earns memory from what&rsquo;s just convenient to hoard.</p>
+      <div class="lcard__foot"><span class="area">memory ux</span><span class="go">read it &rarr;</span></div>
+    </a>
+
+    <a href="ai-decision-confidence-scale.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">AI Decision Confidence Scale</span><span class="status">♻️ framework</span></div>
+      <h3>How sure is the model &mdash; and can the UI say so honestly?</h3>
+      <p class="learn"><b>the tea:</b> a shared language for confidence lets a screen say &lsquo;i&rsquo;m guessing&rsquo; instead of pretending.</p>
+      <div class="lcard__foot"><span class="area">ai trust</span><span class="go">read it &rarr;</span></div>
+    </a>
+
+    <a href="human-override-matrix.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Human Override Matrix</span><span class="status">♻️ framework</span></div>
+      <h3>When should an agent act, ask, or wait?</h3>
+      <p class="learn"><b>the tea:</b> map stakes and reversibility, and the right amount of human control falls out of the grid.</p>
+      <div class="lcard__foot"><span class="area">human-in-loop</span><span class="go">read it &rarr;</span></div>
+    </a>
+
+    <a href="agent-collaboration-model.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Agent Collaboration Model</span><span class="status">♻️ framework</span></div>
+      <h3>How do humans + several agents split work and stay accountable?</h3>
+      <p class="learn"><b>the tea:</b> clean hand-offs are the whole game &mdash; patterns for who owns what, and how the baton passes.</p>
+      <div class="lcard__foot"><span class="area">agent ux</span><span class="go">read it &rarr;</span></div>
+    </a>
+
+    <a href="personalization-maturity-model.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Personalization Maturity Model</span><span class="status">♻️ framework</span></div>
+      <h3>Which stage of personalization are you really at?</h3>
+      <p class="learn"><b>the tea:</b> five honest stages &mdash; from one-size-fits-all to anticipatory &mdash; and a way to tell which one you&rsquo;ve actually reached.</p>
+      <div class="lcard__foot"><span class="area">personalization</span><span class="go">read it &rarr;</span></div>
+    </a>
+
+  </div>
+</section>
+
+<!-- 05 · CONCEPTS -->
+<section class="lab-sec lab" id="concepts">
+  <div class="lab-shead"><span class="n">§ 05</span><span class="t">Concepts</span><span class="s">// framed &amp; argued · still in my drafts 💭</span></div>
+  <p class="lab-intro">questions i&rsquo;m still circling. argued on paper, not yet in code &mdash; half-baked on purpose.</p>
+  <div class="lab-grid">
+
+    <div class="lcard lcard--concept">
+      <div class="lcard__top"><span class="plabel">Prompt-evaluation harness</span><span class="status">💭 just vibes rn</span></div>
+      <h3>How do you tell &lsquo;structurally wrong&rsquo; from &lsquo;just stylistically different&rsquo;?</h3>
+      <p class="learn"><b>the bet:</b> versioned eval cases, side-by-side output diffs, and a rubric scorer that separates the two.</p>
+      <div class="lcard__foot"><span class="area">ai trust</span><span class="go">not built yet</span></div>
+    </div>
+
+    <div class="lcard lcard--concept">
+      <div class="lcard__top"><span class="plabel">Behavioural-nudge library</span><span class="status">💭 just vibes rn</span></div>
+      <h3>Can a nudge library carry its own ethics?</h3>
+      <p class="learn"><b>the bet:</b> each nudge shipped with the mechanism, honest examples, the anti-patterns, and how you&rsquo;d measure it.</p>
+      <div class="lcard__foot"><span class="area">personalization</span><span class="go">not built yet</span></div>
+    </div>
+
+    <div class="lcard lcard--concept">
+      <div class="lcard__top"><span class="plabel">Critique-as-a-Service</span><span class="status">💭 just vibes rn</span></div>
+      <h3>What if a senior critique were there when the senior isn&rsquo;t in the room?</h3>
+      <p class="learn"><b>the bet:</b> an agent that critiques a screen the way a senior IC would &mdash; scored against your team&rsquo;s own rubric.</p>
+      <div class="lcard__foot"><span class="area">agent ux</span><span class="go">not built yet</span></div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="foot">Puneet Kumar Arora — Design Practice &amp; AI Transformation Leadership · gen-z preview build</footer>
+
+</div><!-- /page -->
+<script src="assets/site.js"></script>
+</body>
+</html>
