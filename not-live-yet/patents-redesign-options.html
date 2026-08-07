@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patents Section — 4 Redesign Options · Puneet Arora</title>
+<base href="../">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t&&t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* ================================================================
+     PATENTS — 4 REDESIGN OPTIONS (preview, not live)
+     All built on assets/site.css tokens so both themes hold:
+     --bg --surface --surface-2 --ink --dim --faint --rule --rule-2
+     --signal --signal-ink --f-mono --f-sans --pad-x
+     ================================================================ */
+  .wrap{max-width:1200px;margin:0 auto;padding:0 var(--pad-x);}
+  @media(max-width:900px){.wrap{padding:0 24px;}}
+
+  /* preview scaffolding (not part of any option) */
+  .pv-intro{padding:64px 0 8px;}
+  .pv-intro .kk{font-family:var(--f-mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--signal);}
+  .pv-intro h1{font-size:clamp(28px,4vw,42px);font-weight:600;letter-spacing:-0.03em;color:var(--ink);margin:16px 0 0;}
+  .pv-intro p{max-width:70ch;color:var(--dim);font-size:15px;line-height:1.6;margin-top:14px;}
+  .pv-divider{margin:70px 0 0;padding:16px 0;border-top:1px solid var(--rule-2);border-bottom:1px solid var(--rule);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+  .pv-divider .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--signal-ink);background:var(--signal);padding:5px 12px;border-radius:4px;font-weight:700;}
+  .pv-divider .name{font-size:20px;font-weight:600;letter-spacing:-0.02em;color:var(--ink);}
+  .pv-divider .desc{font-family:var(--f-mono);font-size:11.5px;letter-spacing:0.04em;color:var(--faint);margin-left:auto;}
+  @media(max-width:760px){.pv-divider .desc{margin-left:0;flex-basis:100%;}}
+  .opt{padding:34px 0 6px;}
+
+  /* shared header ornament used by options */
+  .p-eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--signal);}
+
+  /* ================= OPTION A — SPOTLIGHT GRID ================= */
+  .optA{position:relative;}
+  .optA .head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px;}
+  .optA .head h2{font-size:clamp(26px,3.4vw,40px);font-weight:600;letter-spacing:-0.03em;color:var(--ink);margin:8px 0 0;line-height:1.02;}
+  .optA .head h2 em{font-style:normal;color:var(--signal);}
+  .optA .stats{display:flex;gap:26px;flex-wrap:wrap;}
+  .optA .stats .st{text-align:right;}
+  .optA .stats .st b{display:block;font-size:34px;font-weight:600;letter-spacing:-0.03em;color:var(--signal);line-height:1;}
+  .optA .stats .st span{font-family:var(--f-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);}
+  .optA .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  @media(max-width:820px){.optA .grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.optA .grid{grid-template-columns:1fr;}}
+  .optA .pc{position:relative;display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:20px;text-decoration:none;color:inherit;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s;}
+  .optA .pc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--signal);transform:scaleY(0);transform-origin:top;transition:transform .2s;}
+  .optA .pc:hover{border-color:color-mix(in oklch,var(--signal) 55%,var(--rule));transform:translateY(-4px);box-shadow:0 24px 48px -30px color-mix(in oklch,var(--signal) 60%,transparent);}
+  .optA .pc:hover::before{transform:scaleY(1);}
+  .optA .pc .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px;}
+  .optA .pc .id{font-family:var(--f-mono);font-size:10px;letter-spacing:0.12em;color:var(--ink);border:1px solid var(--rule-2);border-radius:999px;padding:4px 10px;background:color-mix(in oklch,var(--signal) 6%,transparent);}
+  .optA .pc .yr{font-family:var(--f-mono);font-size:11px;letter-spacing:0.1em;color:var(--faint);}
+  .optA .pc h3{font-size:15px;font-weight:600;line-height:1.28;letter-spacing:-0.01em;color:var(--ink);margin:0 0 8px;}
+  .optA .pc p{font-size:11.5px;line-height:1.5;color:var(--dim);margin:0;flex:1;}
+  .optA .pc .go{margin-top:14px;font-family:var(--f-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);opacity:0;transform:translateX(-4px);transition:.2s;}
+  .optA .pc:hover .go{opacity:1;transform:translateX(0);}
+  /* featured flagship card */
+  .optA .pc--flag{grid-column:span 2;background:linear-gradient(135deg,color-mix(in oklch,var(--signal) 12%,var(--surface)),var(--surface) 70%);border-color:color-mix(in oklch,var(--signal) 30%,var(--rule));}
+  @media(max-width:560px){.optA .pc--flag{grid-column:span 1;}}
+  .optA .pc--flag h3{font-size:22px;font-weight:600;margin-bottom:10px;max-width:22ch;}
+  .optA .pc--flag p{font-size:13px;max-width:52ch;}
+  .optA .pc--flag .flag{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--signal-ink);background:var(--signal);border-radius:4px;padding:4px 9px;font-weight:700;}
+
+  /* ================= OPTION B — FILING INDEX (LEDGER) ================= */
+  .optB .head{border-left:2px solid var(--signal);padding-left:16px;margin-bottom:24px;}
+  .optB .head .p-eyebrow{color:var(--signal);}
+  .optB .head h2{font-family:var(--f-mono);font-size:clamp(22px,3vw,32px);font-weight:600;letter-spacing:0.02em;color:var(--ink);margin:8px 0 0;}
+  .optB .ledger{border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:var(--surface);}
+  .optB .lr{position:relative;display:grid;grid-template-columns:64px 168px 1fr auto;align-items:center;gap:20px;padding:18px 22px;border-top:1px solid var(--rule);text-decoration:none;color:inherit;transition:background .18s;}
+  .optB .lr:first-child{border-top:none;}
+  .optB .lr::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--signal);opacity:0;transition:opacity .18s;box-shadow:0 0 18px 1px color-mix(in oklch,var(--signal) 70%,transparent);}
+  .optB .lr:hover{background:color-mix(in oklch,var(--signal) 7%,var(--surface));}
+  .optB .lr:hover::before{opacity:1;}
+  .optB .lr .num{font-family:var(--f-mono);font-size:26px;font-weight:600;letter-spacing:-0.02em;color:color-mix(in oklch,var(--signal) 80%,var(--faint));line-height:1;}
+  .optB .lr:hover .num{color:var(--signal);}
+  .optB .lr .id{font-family:var(--f-mono);font-size:11px;letter-spacing:0.1em;color:var(--faint);}
+  .optB .lr .mid .t{display:block;font-size:15px;font-weight:600;letter-spacing:-0.01em;color:var(--ink);}
+  .optB .lr .mid .s{display:block;font-size:11.5px;line-height:1.45;color:var(--dim);margin-top:3px;}
+  .optB .lr .chev{font-family:var(--f-mono);font-size:16px;color:var(--faint);transition:color .18s,transform .18s;}
+  .optB .lr:hover .chev{color:var(--signal);transform:translateX(4px);}
+  @media(max-width:760px){
+    .optB .lr{grid-template-columns:44px 1fr;gap:12px 14px;}
+    .optB .lr .id{grid-column:2;}
+    .optB .lr .mid{grid-column:2;}
+    .optB .lr .chev{display:none;}
+  }
+
+  /* ================= OPTION C — INNOVATION TIMELINE ================= */
+  .optC .head{text-align:center;margin-bottom:40px;}
+  .optC .head h2{font-size:clamp(26px,3.4vw,38px);font-weight:600;letter-spacing:-0.03em;color:var(--ink);margin:10px 0 0;}
+  .optC .head h2 em{font-style:normal;color:var(--signal);}
+  .optC .head p{font-family:var(--f-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);margin-top:10px;}
+  .optC .tl{position:relative;padding-left:34px;}
+  .optC .tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(to bottom,var(--signal),color-mix(in oklch,var(--signal) 20%,transparent));}
+  .optC .node{position:relative;padding:0 0 26px;}
+  .optC .node:last-child{padding-bottom:0;}
+  .optC .node::before{content:"";position:absolute;left:-30px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--signal);box-shadow:0 0 0 4px color-mix(in oklch,var(--signal) 14%,transparent);transition:.2s;}
+  .optC .node:hover::before{background:var(--signal);box-shadow:0 0 16px 2px color-mix(in oklch,var(--signal) 60%,transparent);}
+  .optC .yr{position:absolute;left:-30px;top:-8px;font-family:var(--f-mono);font-size:11px;letter-spacing:0.1em;color:var(--signal);transform:translateX(-100%);padding-right:16px;font-weight:700;}
+  .optC .card{display:block;border:1px solid var(--rule);border-radius:10px;background:var(--surface);padding:16px 20px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,background .2s;}
+  .optC .card:hover{border-color:color-mix(in oklch,var(--signal) 45%,var(--rule));transform:translateX(4px);background:var(--surface-2);}
+  .optC .card .id{font-family:var(--f-mono);font-size:10px;letter-spacing:0.14em;color:var(--faint);margin-bottom:6px;}
+  .optC .card .t{font-size:15.5px;font-weight:600;letter-spacing:-0.01em;color:var(--ink);}
+  .optC .card .d{font-size:12px;line-height:1.5;color:var(--dim);margin-top:5px;}
+
+  /* ================= OPTION D — IMPACT BANNER + MAGAZINE ================= */
+  .optD .banner{position:relative;overflow:hidden;border:1px solid color-mix(in oklch,var(--signal) 26%,var(--rule));border-radius:16px;background:linear-gradient(120deg,color-mix(in oklch,var(--signal) 14%,var(--bg-2)),var(--bg-2) 62%);padding:34px 36px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;}
+  .optD .banner::after{content:"";position:absolute;right:-8%;top:-60%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,color-mix(in oklch,var(--signal) 34%,transparent),transparent 68%);filter:blur(38px);pointer-events:none;}
+  .optD .banner .txt{position:relative;z-index:1;max-width:44ch;}
+  .optD .banner .p-eyebrow{color:var(--signal);}
+  .optD .banner h2{font-size:clamp(24px,3vw,34px);font-weight:600;letter-spacing:-0.03em;color:var(--ink);margin:12px 0 0;line-height:1.1;}
+  .optD .banner .big{position:relative;z-index:1;display:flex;gap:30px;}
+  .optD .banner .big .u b{display:block;font-size:clamp(52px,8vw,84px);font-weight:600;letter-spacing:-0.05em;line-height:.9;background:linear-gradient(160deg,var(--signal),color-mix(in oklch,var(--signal) 40%,var(--ink)));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .optD .banner .big .u span{font-family:var(--f-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);}
+  .optD .mag{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:12px;}
+  @media(max-width:820px){.optD .mag{grid-template-columns:1fr 1fr;}}
+  @media(max-width:520px){.optD .mag{grid-template-columns:1fr;}}
+  .optD .mc{position:relative;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--rule);border-radius:10px;background:var(--surface);padding:16px 18px;text-decoration:none;color:inherit;min-height:120px;transition:border-color .2s,background .2s,transform .2s;}
+  .optD .mc:hover{border-color:color-mix(in oklch,var(--signal) 50%,var(--rule));background:var(--surface-2);transform:translateY(-3px);}
+  .optD .mc .id{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.12em;color:var(--faint);}
+  .optD .mc .t{font-size:14px;font-weight:600;line-height:1.3;letter-spacing:-0.01em;color:var(--ink);margin-top:auto;padding-top:14px;}
+  .optD .mc--wide{grid-column:span 2;}
+  @media(max-width:520px){.optD .mc--wide{grid-column:span 1;}}
+  .optD .mc--wide .t{font-size:18px;}
+  .optD .mc--wide{background:linear-gradient(135deg,color-mix(in oklch,var(--signal) 10%,var(--surface)),var(--surface) 72%);border-color:color-mix(in oklch,var(--signal) 24%,var(--rule));}
+  .optD .mc .d{font-size:11px;line-height:1.45;color:var(--dim);margin-top:6px;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <a href="home.html" class="topbar__brand"><span class="dot"></span><b>Puneet Arora</b></a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="pv-intro wrap">
+  <div class="kk">§ preview · not live · patents section redesign</div>
+  <h1>Patents &amp; Publications — 4 directions</h1>
+  <p>Four ways to make the Patents section stop the scroll, all built on the Intelligence-Terminal theme (the same tokens, the sea-green <b style="color:var(--signal)">signal</b> accent, mono labels). Same eight patents, same links — four different levels of drama. Toggle DARK / LIGHT top-right to test both.</p>
+</section>
+
+<!-- ============ OPTION A ============ -->
+<div class="pv-divider wrap"><span class="tag">Option A</span><span class="name">Spotlight Grid</span><span class="desc">// flagship feature card + hover-lift cards + stat rail</span></div>
+<section class="opt optA wrap">
+  <div class="head">
+    <div>
+      <div class="p-eyebrow">§ 06 · Patents &amp; Publications</div>
+      <h2>Sixteen filings. <em>One throughline.</em></h2>
+    </div>
+    <div class="stats">
+      <div class="st"><b>8</b><span>Granted patents</span></div>
+      <div class="st"><b>8</b><span>Publications</span></div>
+      <div class="st"><b>09</b><span>Years · 2012–21</span></div>
+    </div>
+  </div>
+  <div class="grid">
+    <a href="https://patents.google.com/patent/US10928986B1/en?oq=10928986" target="_blank" rel="noopener" class="pc pc--flag">
+      <div class="row"><span class="flag">Flagship · AI</span><span class="yr">2021</span></div>
+      <h3>Transaction Visibility Frameworks Using AI</h3>
+      <p>AI-driven frameworks for transaction visibility in enterprise systems — the granted patent behind the AI thread that runs through the whole portfolio.</p>
+      <span class="go">US10928986B1 · view on Google Patents →</span>
+    </a>
+    <a href="https://patents.justia.com/patent/20140302785" target="_blank" rel="noopener" class="pc">
+      <div class="row"><span class="id">US20140302785</span><span class="yr">2015</span></div>
+      <h3>Near Field Communication (NFC) Data Transfer</h3>
+      <p>NFC-based data transfer for device-to-device communication.</p>
+      <span class="go">View →</span>
+    </a>
+    <a href="https://patents.google.com/patent/US20140040919?oq=puneet+kumar+arora+reminder+message" target="_blank" rel="noopener" class="pc">
+      <div class="row"><span class="id">US20140040919</span><span class="yr">2014</span></div>
+      <h3>Reminder Messages</h3>
+      <p>Context-aware reminder messaging systems.</p>
+      <span class="go">View →</span>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130340073.pdf" target="_blank" rel="noopener" class="pc">
+      <div class="row"><span class="id">US13/523,707</span><span class="yr">2012</span></div>
+      <h3>Identification to Access Portable Computing Device</h3>
+      <p>Identity-based access control for portable devices.</p>
+      <span class="go">View →</span>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130288597.pdf" target="_blank" rel="noopener" class="pc">
+      <div class="row"><span class="id">US13/457,233</span><span class="yr">2012</span></div>
+      <h3>Transferring Data Items via Metadata</h3>
+      <p>Metadata-driven transfer of data across devices.</p>
+      <span class="go">View →</span>
+    </a>
+    <a href="https://patents.justia.com/patent/20170364315#description" target="_blank" rel="noopener" class="pc">
+      <div class="row"><span class="id">US15/544,684</span><span class="yr">2017</span></div>
+      <h3>Print Reservation</h3>
+      <p>Quota-based print reservation &amp; subscription management.</p>
+      <span class="go">View →</span>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015092801A1" target="_blank" rel="noopener" class="pc">
+      <div class="row"><span class="id">PCT/IN2013</span><span class="yr">2013</span></div>
+      <h3>Wireless Communication of Print Content</h3>
+      <p>Wireless protocols for transmitting print-ready content.</p>
+      <span class="go">View →</span>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015012824A1/tr" target="_blank" rel="noopener" class="pc">
+      <div class="row"><span class="id">PCT/US2013</span><span class="yr">2013</span></div>
+      <h3>Marking Agent Credit Adjustments</h3>
+      <p>Cost-optimization via marking-agent credit adjustments.</p>
+      <span class="go">View →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ OPTION B ============ -->
+<div class="pv-divider wrap"><span class="tag">Option B</span><span class="name">Filing Index</span><span class="desc">// enumerated terminal ledger, glowing left rail</span></div>
+<section class="opt optB wrap">
+  <div class="head">
+    <div class="p-eyebrow">§ 06 · Patents &amp; Publications</div>
+    <h2>THE FILING INDEX / 08 GRANTED</h2>
+  </div>
+  <div class="ledger">
+    <a href="https://patents.google.com/patent/US10928986B1/en?oq=10928986" target="_blank" rel="noopener" class="lr">
+      <span class="num">01</span><span class="id">US10928986B1 · 2021</span>
+      <span class="mid"><span class="t">Transaction Visibility Frameworks Using AI</span><span class="s">AI-driven frameworks for transaction visibility in enterprise systems.</span></span>
+      <span class="chev">→</span>
+    </a>
+    <a href="https://patents.justia.com/patent/20140302785" target="_blank" rel="noopener" class="lr">
+      <span class="num">02</span><span class="id">US20140302785 · 2015</span>
+      <span class="mid"><span class="t">Near Field Communication (NFC) Data Transfer</span><span class="s">NFC-based data transfer for device-to-device communication.</span></span>
+      <span class="chev">→</span>
+    </a>
+    <a href="https://patents.google.com/patent/US20140040919?oq=puneet+kumar+arora+reminder+message" target="_blank" rel="noopener" class="lr">
+      <span class="num">03</span><span class="id">US20140040919A1 · 2014</span>
+      <span class="mid"><span class="t">Reminder Messages</span><span class="s">Context-aware reminder messaging systems.</span></span>
+      <span class="chev">→</span>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130340073.pdf" target="_blank" rel="noopener" class="lr">
+      <span class="num">04</span><span class="id">US13/523,707 · 2012</span>
+      <span class="mid"><span class="t">Identification to Access Portable Computing Device</span><span class="s">Identity-based access control for portable computing devices.</span></span>
+      <span class="chev">→</span>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130288597.pdf" target="_blank" rel="noopener" class="lr">
+      <span class="num">05</span><span class="id">US13/457,233 · 2012</span>
+      <span class="mid"><span class="t">Transferring Data Items via Metadata</span><span class="s">Metadata-driven transfer of data items across computing devices.</span></span>
+      <span class="chev">→</span>
+    </a>
+    <a href="https://patents.justia.com/patent/20170364315#description" target="_blank" rel="noopener" class="lr">
+      <span class="num">06</span><span class="id">US15/544,684 · 2017</span>
+      <span class="mid"><span class="t">Print Reservation</span><span class="s">Quota-based print reservation and subscription management.</span></span>
+      <span class="chev">→</span>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015092801A1" target="_blank" rel="noopener" class="lr">
+      <span class="num">07</span><span class="id">PCT/IN2013/000783 · 2013</span>
+      <span class="mid"><span class="t">Wireless Communication of Print Content</span><span class="s">Wireless protocols for transmitting print-ready content.</span></span>
+      <span class="chev">→</span>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015012824A1/tr" target="_blank" rel="noopener" class="lr">
+      <span class="num">08</span><span class="id">PCT/US2013/051855 · 2013</span>
+      <span class="mid"><span class="t">Marking Agent Credit Adjustments</span><span class="s">Cost-optimization through marking-agent credit adjustments.</span></span>
+      <span class="chev">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ OPTION C ============ -->
+<div class="pv-divider wrap"><span class="tag">Option C</span><span class="name">Innovation Timeline</span><span class="desc">// year-anchored rail, glowing nodes, 2012→2021 story</span></div>
+<section class="opt optC wrap">
+  <div class="head">
+    <div class="p-eyebrow">§ 06 · Patents &amp; Publications</div>
+    <h2>Nine years of <em>filed invention.</em></h2>
+    <p>2012 — 2021 · US &amp; PCT</p>
+  </div>
+  <div class="tl">
+    <div class="node"><span class="yr">2021</span>
+      <a href="https://patents.google.com/patent/US10928986B1/en?oq=10928986" target="_blank" rel="noopener" class="card"><div class="id">US10928986B1</div><div class="t">Transaction Visibility Frameworks Using AI</div><div class="d">AI-driven frameworks for transaction visibility in enterprise systems.</div></a>
+    </div>
+    <div class="node"><span class="yr">2017</span>
+      <a href="https://patents.justia.com/patent/20170364315#description" target="_blank" rel="noopener" class="card"><div class="id">US15/544,684</div><div class="t">Print Reservation</div><div class="d">Quota-based print reservation and subscription management.</div></a>
+    </div>
+    <div class="node"><span class="yr">2015</span>
+      <a href="https://patents.justia.com/patent/20140302785" target="_blank" rel="noopener" class="card"><div class="id">US20140302785</div><div class="t">Near Field Communication (NFC) Data Transfer</div><div class="d">NFC-based data transfer for device-to-device communication.</div></a>
+    </div>
+    <div class="node"><span class="yr">2014</span>
+      <a href="https://patents.google.com/patent/US20140040919?oq=puneet+kumar+arora+reminder+message" target="_blank" rel="noopener" class="card"><div class="id">US20140040919A1</div><div class="t">Reminder Messages</div><div class="d">Context-aware reminder messaging systems.</div></a>
+    </div>
+    <div class="node"><span class="yr">2013</span>
+      <a href="https://patents.google.com/patent/WO2015092801A1" target="_blank" rel="noopener" class="card"><div class="id">PCT/IN2013/000783</div><div class="t">Wireless Communication of Print Content</div><div class="d">Wireless protocols for transmitting print-ready content.</div></a>
+    </div>
+    <div class="node"><span class="yr">2013</span>
+      <a href="https://patents.google.com/patent/WO2015012824A1/tr" target="_blank" rel="noopener" class="card"><div class="id">PCT/US2013/051855</div><div class="t">Marking Agent Credit Adjustments</div><div class="d">Cost-optimization through marking-agent credit adjustments.</div></a>
+    </div>
+    <div class="node"><span class="yr">2012</span>
+      <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130340073.pdf" target="_blank" rel="noopener" class="card"><div class="id">US13/523,707</div><div class="t">Identification to Access Portable Computing Device</div><div class="d">Identity-based access control for portable computing devices.</div></a>
+    </div>
+    <div class="node"><span class="yr">2012</span>
+      <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130288597.pdf" target="_blank" rel="noopener" class="card"><div class="id">US13/457,233</div><div class="t">Transferring Data Items via Metadata</div><div class="d">Metadata-driven transfer of data items across computing devices.</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPTION D ============ -->
+<div class="pv-divider wrap"><span class="tag">Option D</span><span class="name">Impact Banner + Magazine</span><span class="desc">// oversized numerals, signal glow, asymmetric grid</span></div>
+<section class="opt optD wrap">
+  <div class="banner">
+    <div class="txt">
+      <div class="p-eyebrow">§ 06 · Patents &amp; Publications</div>
+      <h2>A body of invention, on the record.</h2>
+    </div>
+    <div class="big">
+      <div class="u"><b>08</b><span>Granted patents</span></div>
+      <div class="u"><b>08</b><span>Publications</span></div>
+    </div>
+  </div>
+  <div class="mag">
+    <a href="https://patents.google.com/patent/US10928986B1/en?oq=10928986" target="_blank" rel="noopener" class="mc mc--wide">
+      <div class="id">US10928986B1 · 2021 · flagship</div>
+      <div class="t">Transaction Visibility Frameworks Using AI</div>
+      <div class="d">AI-driven frameworks for transaction visibility in enterprise systems.</div>
+    </a>
+    <a href="https://patents.justia.com/patent/20140302785" target="_blank" rel="noopener" class="mc">
+      <div class="id">US20140302785 · 2015</div><div class="t">NFC Data Transfer</div>
+    </a>
+    <a href="https://patents.google.com/patent/US20140040919?oq=puneet+kumar+arora+reminder+message" target="_blank" rel="noopener" class="mc">
+      <div class="id">US20140040919 · 2014</div><div class="t">Reminder Messages</div>
+    </a>
+    <a href="https://patents.justia.com/patent/20170364315#description" target="_blank" rel="noopener" class="mc">
+      <div class="id">US15/544,684 · 2017</div><div class="t">Print Reservation</div>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015092801A1" target="_blank" rel="noopener" class="mc">
+      <div class="id">PCT/IN2013 · 2013</div><div class="t">Wireless Print Content</div>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130340073.pdf" target="_blank" rel="noopener" class="mc">
+      <div class="id">US13/523,707 · 2012</div><div class="t">Portable Device Access ID</div>
+    </a>
+    <a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130288597.pdf" target="_blank" rel="noopener" class="mc">
+      <div class="id">US13/457,233 · 2012</div><div class="t">Data Transfer via Metadata</div>
+    </a>
+    <a href="https://patents.google.com/patent/WO2015012824A1/tr" target="_blank" rel="noopener" class="mc">
+      <div class="id">PCT/US2013 · 2013</div><div class="t">Marking Agent Credit Adjustments</div>
+    </a>
+  </div>
+</section>
+
+<footer class="foot" style="margin-top:64px;">
+  <div>Puneet Kumar Arora — Design Practice &amp; AI Transformation Leadership · patents redesign preview</div>
+</footer>
+
+</div><!-- /page -->
+<script src="assets/site.js"></script>
+</body>
+</html>
