@@ -14,6 +14,18 @@
 - If the output has issues or does not match what was asked for, **do not push** and **do not keep iterating**. Stop, inform the user of the issue, and wait for further direction.
 - Do not burn tokens on repeated failed attempts — if a change isn't working after testing, surface the problem immediately instead of trying more fixes.
 
+## Always provide a clickable URL (IMPORTANT — standing instruction from the owner)
+
+- **Every time the owner asks you to build something — whether for preview or to commit — you MUST provide a clickable URL so they can open and visit the page(s) or app you designed.** This applies all the time, with no exceptions.
+- This session runs in a remote cloud container, so `localhost` / `127.0.0.1` links are **not** reachable from the owner's browser. The only reliably clickable URL is a **GitHub Pages** link served from `main`. So the URL rule is satisfied by pushing the page to the repo, never by handing over a localhost link.
+- **The `not-live-yet/` staging folder** is the mechanism for this:
+  - Any page that is **designed or developed for experimentation / preview but not yet meant to go live** on the real site goes in `not-live-yet/` at the repo root.
+  - Commit and push that folder to `main` so each page gets a live, clickable GitHub Pages URL of the form `https://puneetindeelhi940.github.io/portfolio/not-live-yet/<page>.html` — this is how preview links are shared with the owner.
+  - Pages in `not-live-yet/` are **not** wired into the topbar nav and are **not** part of the live site — the folder is a staging area, "pushed but not live." Promoting a page to live means moving it to the repo root and linking it in the nav, as a separate explicit step the owner approves.
+  - Because these pages live in a subfolder, add `<base href="../">` in their `<head>` so `assets/…` and nav links resolve to the repo root.
+- For **committed live** builds (root pages): provide the live GitHub Pages URL for the exact page (e.g. `https://puneetindeelhi940.github.io/portfolio/<page>.html`) once it has deployed from `main`.
+- Screenshots are not a substitute for the URL — always give the link in addition to any screenshot. Put the URL where it's easy to find (top or bottom of your reply), not buried mid-paragraph.
+
 ## Site overview
 
 - Static HTML/CSS/JS, no build step. Entry: `index.html` (soft landing gate) → `home.html`.
