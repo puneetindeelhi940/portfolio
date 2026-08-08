@@ -42,6 +42,9 @@
   .event__gallery.single img { max-height: 420px; }
   /* Academia gallery — images reduced 28% and click-to-expand */
   .event__gallery--academia img { min-height: 137px; max-height: 187px; }
+  /* Fill variant — single-row galleries stretch images to the full card height */
+  .event__gallery--fill { grid-auto-rows: 1fr; }
+  .event__gallery--fill img { min-height: 240px; max-height: none; }
   .event__gallery figcaption { position: absolute; left: 0; right: 0; bottom: 0; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.04em; color: #fff; line-height: 1.4; padding: 18px 12px 9px; background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0)); pointer-events: none; }
   @media (max-width: 820px) {
     .event__body { grid-template-columns: 1fr; }
@@ -205,6 +208,56 @@
       </div>
       <div class="event__gallery single">
         <figure><img src="assets/screenshots/events/india-ai-summit.jpg" alt="Puneet Arora at the India AI Impact Summit, Bharat 2026" loading="lazy"><figcaption>India AI Impact Summit — Bharat 2026</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <article class="event">
+    <div class="event__body">
+      <div class="event__meta">
+        <span class="event__k">Guest Session · Chitkara University</span>
+        <h3 class="event__t">Design thinking, hands on with student teams</h3>
+        <p class="event__p">
+          Invited to Chitkara University to run a hands-on design-thinking studio with student teams —
+          working the wall with sticky notes, not slides. From framing the problem space through affinity
+          mapping and MoSCoW prioritisation to defending a solution, students left with a repeatable method
+          for turning a messy brief into a prioritised, defensible plan.
+        </p>
+        <div class="event__tags">
+          <span>Design Thinking</span>
+          <span>Affinity Mapping</span>
+          <span>MoSCoW Prioritisation</span>
+          <span>Student Mentoring</span>
+        </div>
+      </div>
+      <div class="event__gallery event__gallery--fill">
+        <figure><img src="assets/screenshots/events/chitkara-session-1.jpg" alt="Puneet Arora reviewing a student team's affinity-mapped work at Chitkara University" loading="lazy"><figcaption>Live crit — reviewing a student team&rsquo;s prioritised cards</figcaption></figure>
+        <figure><img src="assets/screenshots/events/chitkara-session-2.jpg" alt="A Chitkara University student presenting ideation and MoSCoW prioritisation" loading="lazy"><figcaption>Students pitching ideation &amp; MoSCoW prioritisation</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <article class="event">
+    <div class="event__body">
+      <div class="event__meta">
+        <span class="event__k">ELEVATE UI/UX Bootcamp · Reflections Infosystems</span>
+        <h3 class="event__t">Design Thinking: transforming your everyday</h3>
+        <p class="event__p">
+          Keynote and workshop at ELEVATE, the UI/UX bootcamp hosted by Reflections Infosystems — a
+          full-room session on making design thinking a daily habit rather than a workshop ritual. Walked
+          practitioners through the discovery-to-framing double diamond live on a Miro board — find the
+          problems, prioritise them, move to solutions — grounded in enterprise UX work at Dell.
+        </p>
+        <div class="event__tags">
+          <span>Keynote</span>
+          <span>Design Thinking</span>
+          <span>Double Diamond</span>
+          <span>UI/UX Bootcamp</span>
+        </div>
+      </div>
+      <div class="event__gallery event__gallery--fill">
+        <figure><img src="assets/screenshots/events/reflections-infosystems-1.jpg" alt="Puneet Arora keynoting the ELEVATE UI/UX Bootcamp on stage" loading="lazy"><figcaption>On stage at ELEVATE — the design-thinking double diamond</figcaption></figure>
+        <figure><img src="assets/screenshots/events/reflections-infosystems-2.jpg" alt="Puneet Arora addressing the room at the Reflections Infosystems bootcamp" loading="lazy"><figcaption>&ldquo;Transforming your everyday&rdquo; — a full-room session</figcaption></figure>
       </div>
     </div>
   </article>
