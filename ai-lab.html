@@ -44,8 +44,12 @@
   .lab-hero{padding:64px 0 8px;}
   .lab-hero .ky{font-family:var(--f-mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--signal);display:flex;align-items:center;gap:11px;flex-wrap:wrap;}
   .lab-hero .ky .dot{width:7px;height:7px;border-radius:50%;background:var(--signal);}
-  .lab-hero h1{font-size:clamp(32px,6vw,58px);font-weight:800;line-height:1.04;letter-spacing:-0.028em;margin:24px 0 0;max-width:17ch;text-wrap:balance;}
+  .lab-hero h1{font-size:clamp(30px,5.4vw,54px);font-weight:800;line-height:1.08;letter-spacing:-0.028em;margin:22px 0 0;max-width:19ch;text-wrap:balance;}
   .lab-hero h1 em{font-style:normal;color:var(--signal);}
+  .lab-hero h1 .kw{font-style:normal;}
+  .lab-hero h1 .kw--learn{color:var(--learn);}
+  .lab-hero h1 .kw--build{color:var(--build);}
+  .lab-hero h1 .kw--trust{color:var(--trust);}
   .lab-hero .sub{max-width:66ch;margin-top:22px;font-size:clamp(15px,2vw,18px);line-height:1.62;color:var(--dim);}
   .lab-hero .sub b{color:var(--ink);font-weight:600;}
 
@@ -164,9 +168,9 @@
 
 <!-- HERO -->
 <section class="lab-hero lab" data-screen-label="hero">
-  <div class="ky"><span class="dot"></span><span>§ AI LAB &middot; the Builder&rsquo;s Universe &middot; one point of view, three galaxies</span></div>
-  <h1>The questions <em>that wouldn&rsquo;t leave me alone.</em></h1>
-  <p class="sub">A working lab, not a portfolio &mdash; and a whole universe, not a single page. Everything I build lives on one spine: <b>Learn</b> the craft, <b>Build</b> it efficiently, earn <b>Trust</b>. Live tools, prototypes still in motion, reusable frameworks, and the Builder&rsquo;s Bible learning platform &mdash; sorted into the three galaxies below.</p>
+  <div class="ky"><span class="dot"></span><span>§ AI LAB &middot; the Builder&rsquo;s Universe</span></div>
+  <h1><span class="kw kw--learn">Learn</span> the craft. <span class="kw kw--build">Build</span> it efficiently. Earn <span class="kw kw--trust">trust.</span></h1>
+  <p class="sub">A working lab, not a portfolio &mdash; and a whole universe, not a single page. The questions that wouldn&rsquo;t leave me alone, sorted into three galaxies: <b>live tools, prototypes still in motion, reusable frameworks, and a learning platform.</b></p>
   <nav class="uni-nav" aria-label="Jump to a galaxy">
     <a class="learn" href="#learn"><span class="d"></span>01 &middot; Learn</a>
     <a class="build" href="#build"><span class="d"></span>02 &middot; Build</a>
