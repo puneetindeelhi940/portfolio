@@ -1,5 +1,13 @@
 # Portfolio — working agreement
 
+## Headlines & text layout (IMPORTANT — standing instruction from the owner)
+
+- **Never artificially split a sentence across 2, 3, or 4 lines.** Let text expand to fill the available horizontal width; a line should only wrap when it genuinely runs out of room (or on smaller viewports where wrapping is unavoidable).
+- Do **not** use tight `max-width` caps in `ch` units on headings, and avoid `text-wrap: balance` that forces short, stacked lines with big empty gutters. Prefer **full-width, left-aligned** headlines that use the whole column.
+- Watch for layout bugs that strand text: e.g. a flex column (`display:flex`) with `margin:0 auto` children can shrink-wrap a block to its content and float it off-center — headings must align to the same left edge as the sections around them.
+- **Only** break a line deliberately (via `<br>` or a fixed arrangement) when the owner **explicitly** asks for a specific line grouping. Absent that instruction, expand the sentence as much as possible.
+- This applies to all pages, projects, and products built for the owner.
+
 ## Deployment / branching (IMPORTANT — standing instruction from the owner)
 
 - **All changes to this portfolio site must be committed and pushed directly to the `main` branch.**

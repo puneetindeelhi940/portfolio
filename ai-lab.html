@@ -32,7 +32,7 @@
      (--bg --surface --ink --dim --faint --rule --signal --pad-x)
      so both themes work; each galaxy re-tints --signal locally.
      ============================================================ */
-  .lab{max-width:1120px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
+  .lab{width:100%;min-width:0;box-sizing:border-box;max-width:1120px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
   @media(max-width:1100px){.lab{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
   @media(max-width:600px){.lab{padding-left:22px;padding-right:22px;}}
 
@@ -44,7 +44,7 @@
   .lab-hero{padding:64px 0 8px;}
   .lab-hero .ky{font-family:var(--f-mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--signal);display:flex;align-items:center;gap:11px;flex-wrap:wrap;}
   .lab-hero .ky .dot{width:7px;height:7px;border-radius:50%;background:var(--signal);}
-  .lab-hero h1{font-size:clamp(30px,5.4vw,54px);font-weight:800;line-height:1.08;letter-spacing:-0.028em;margin:22px 0 0;max-width:19ch;text-wrap:balance;}
+  .lab-hero h1{font-size:clamp(26px,3.4vw,42px);font-weight:800;line-height:1.14;letter-spacing:-0.026em;margin:22px 0 0;max-width:none;text-wrap:pretty;}
   .lab-hero h1 em{font-style:normal;color:var(--signal);}
   .lab-hero h1 .kw{font-style:normal;}
   .lab-hero h1 .kw--learn{color:var(--learn);}
@@ -64,7 +64,7 @@
   .uni-nav a.map{--c:var(--signal);color:var(--signal);border-color:color-mix(in oklch,var(--signal) 45%,var(--rule));}
 
   /* ---------------- GALAXY HEADER ---------------- */
-  .galaxy{max-width:1120px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
+  .galaxy{width:100%;min-width:0;box-sizing:border-box;max-width:1120px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
   @media(max-width:1100px){.galaxy{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
   @media(max-width:600px){.galaxy{padding-left:22px;padding-right:22px;}}
   .galaxy--learn{--signal:var(--learn);}
@@ -87,11 +87,11 @@
   @media(max-width:600px){.gxbar .map{margin-left:0;flex-basis:100%;}}
 
   /* ---------------- UNIFIED CARD ---------------- */
-  .lab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  @media(max-width:900px){.lab-grid{grid-template-columns:1fr 1fr;}}
-  @media(max-width:640px){.lab-grid{grid-template-columns:1fr;}}
+  .lab-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;min-width:0;}
+  @media(max-width:1040px){.lab-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media(max-width:640px){.lab-grid{grid-template-columns:minmax(0,1fr);}}
 
-  .lcard{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:22px 22px 20px;text-decoration:none;color:inherit;transition:border-color .16s,transform .16s,box-shadow .16s;}
+  .lcard{display:flex;flex-direction:column;min-width:0;border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:22px 22px 20px;text-decoration:none;color:inherit;transition:border-color .16s,transform .16s,box-shadow .16s;}
   a.lcard:hover{border-color:var(--signal);transform:translateY(-3px);box-shadow:0 18px 38px -26px rgba(0,0,0,.6);}
   .lcard__top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px;}
   .lcard .plabel{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);}
@@ -127,7 +127,7 @@
   @media(max-width:600px){.lab-shead .s{margin-left:0;flex-basis:100%;}}
 
   /* closing universe CTA */
-  .uni-close{max-width:1120px;margin:0 auto;padding:64px var(--pad-x) 8px;}
+  .uni-close{width:100%;min-width:0;box-sizing:border-box;max-width:1120px;margin:0 auto;padding:64px var(--pad-x) 8px;}
   @media(max-width:1100px){.uni-close{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
   @media(max-width:600px){.uni-close{padding-left:22px;padding-right:22px;}}
   .uni-close__card{border:1px solid var(--rule);border-radius:16px;background:linear-gradient(180deg,color-mix(in oklch,var(--signal) 7%,var(--surface)),var(--surface));padding:40px 34px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
@@ -216,7 +216,7 @@
 <!-- HERO -->
 <section class="lab-hero lab" data-screen-label="hero">
   <div class="ky"><span class="dot"></span><span>§ AI LAB &middot; the Builder&rsquo;s Universe</span></div>
-  <h1><span class="kw kw--learn">Learn</span> the craft. <span class="kw kw--build">Build</span> it efficiently. Earn <span class="kw kw--trust">trust.</span></h1>
+  <h1><span class="kw kw--learn">Learn</span> the craft. <span class="kw kw--build">Build</span> it efficiently.<br>Earn <span class="kw kw--trust">trust.</span></h1>
   <p class="sub">A working lab, not a portfolio &mdash; and a whole universe, not a single page. The questions that wouldn&rsquo;t leave me alone, sorted into three galaxies: <b>live tools, prototypes still in motion, reusable frameworks, and a learning platform.</b></p>
   <nav class="uni-nav" aria-label="Jump to a galaxy">
     <a class="learn" href="#learn"><span class="d"></span>01 &middot; Learn</a>
