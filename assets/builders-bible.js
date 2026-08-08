@@ -1027,14 +1027,64 @@
 
   /* ─────────────────────────── ROUTER ─────────────────────────── */
 
+  // Human labels for the persistent "Where am I?" breadcrumb.
+  var VIEW_LABELS = {
+    home: 'Home', articles: 'Articles', reader: 'Reading', playbooks: 'Playbooks',
+    projects: 'Projects', prompts: 'Prompts', workflows: 'Workflows',
+    resources: 'Resources', dashboard: 'Dashboard', about: 'About'
+  };
+
+  // Update the breadcrumb's trailing "current location" label.
+  function setBreadcrumb(label) {
+    var el = $('#bb-crumb-current');
+    if (el) el.textContent = label;
+  }
+
+  // Reflect the active view in the <main> panels + top-nav highlight.
+  // The reader view has no nav tab of its own, so it borrows the Articles
+  // highlight — the section it belongs to — while the breadcrumb names the piece.
+  function activateView(view) {
+    $all('.bb-view').forEach(function (v) { v.classList.toggle('is-active', v.getAttribute('data-view') === view); });
+    var navView = (view === 'reader') ? 'articles' : view;
+    $all('.bb-topbar .topbar__nav a').forEach(function (a) { a.classList.toggle('is-current', a.getAttribute('data-view') === navView); });
+  }
+
+  // Write a hash to history. Pushes a new entry (so the browser Back button
+  // walks the trail) unless we're replaying a popstate, replacing, or the hash
+  // is already current (in which case we replace to avoid dead duplicate entries).
+  function pushRoute(hash, opts) {
+    if (opts && opts.fromPop) return;
+    if (!history.pushState) return;
+    var full = '#' + hash;
+    try {
+      if ((opts && opts.replace) || (location.hash || '#home') === full) history.replaceState({ r: hash }, '', full);
+      else history.pushState({ r: hash }, '', full);
+    } catch (e) {}
+  }
+
   function navigate(view, opts) {
+    opts = opts || {};
     // Fall back to home for removed/unknown views (e.g. old #tools / #community links).
     if (!$('.bb-view[data-view="' + view + '"]')) view = 'home';
-    $all('.bb-view').forEach(function (v) { v.classList.toggle('is-active', v.getAttribute('data-view') === view); });
-    $all('.bb-topbar .topbar__nav a').forEach(function (a) { a.classList.toggle('is-current', a.getAttribute('data-view') === view); });
-    if (history.replaceState) { try { history.replaceState(null, '', '#' + view); } catch (e) {} }
+    activateView(view);
+    setBreadcrumb(VIEW_LABELS[view] || 'Home');
+    pushRoute(view, opts);
     if (view === 'dashboard') renderDashboard();
-    if (!opts || !opts.keepScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (!opts.keepScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Resolve the current location.hash into a view (or an article reader) and
+  // apply it. Used on first load and on every browser Back/Forward (popstate).
+  function routeFromHash(opts) {
+    var raw = (location.hash || '').replace('#', '');
+    if (raw.indexOf('read-') === 0) {
+      var id = raw.slice(5);
+      if (ARTICLES.some(function (x) { return x.id === id; })) { openArticle(id, opts); return; }
+      navigate('home', opts); return;
+    }
+    var views = $all('.bb-view').map(function (v) { return v.getAttribute('data-view'); });
+    if (raw && views.indexOf(raw) !== -1 && raw !== 'reader') navigate(raw, opts);
+    else navigate('home', opts);
   }
 
   function filterByTopic(topicId) {
@@ -1095,13 +1145,17 @@
     if (rounded > (state.progress[currentReaderId] || 0)) { state.progress[currentReaderId] = rounded; persist(); }
   }
 
-  function openArticle(id) {
+  function openArticle(id, opts) {
+    opts = opts || {};
     var a = ARTICLES.filter(function (x) { return x.id === id; })[0];
     if (a && a.ext) { window.open(a.url, '_blank', 'noopener'); return; }
     renderReader(id);
     state.progress[id] = Math.max(state.progress[id] || 0, 10);
     persist();
-    navigate('reader');
+    activateView('reader');
+    setBreadcrumb(a ? a.title : 'Reading');
+    pushRoute('read-' + id, opts);         // deep-linkable + Back returns to the previous view
+    if (!opts.keepScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
     setTimeout(updateReaderProgress, 60);
   }
 
@@ -1251,11 +1305,11 @@
     initReveal();
     calcAll();
 
-    // deep-link
-    var hash = (location.hash || '').replace('#', '');
-    var views = $all('.bb-view').map(function (v) { return v.getAttribute('data-view'); });
-    if (hash && views.indexOf(hash) !== -1) navigate(hash, { keepScroll: true });
-    else navigate('home', { keepScroll: true });
+    // Browser Back/Forward → sync the view from the hash (no new history push).
+    window.addEventListener('popstate', function () { routeFromHash({ fromPop: true, keepScroll: true }); });
+
+    // deep-link on first load (replace, so Back doesn't bounce out of the portal)
+    routeFromHash({ replace: true, keepScroll: true });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);

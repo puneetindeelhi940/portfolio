@@ -139,14 +139,96 @@ img { max-width: 100%; display: block; }
 .foot a { color: var(--dim); }
 .foot a:hover { color: var(--teal); }
 
+/* ── Persistent "Where am I?" locator ── */
+.locator { position: sticky; top: 58px; z-index: 30; display: flex; align-items: center; gap: 14px;
+  padding: 10px 28px; backdrop-filter: blur(10px); background: color-mix(in oklch, var(--void) 82%, transparent);
+  border-bottom: 1px solid var(--rule); font-family: var(--mono); overflow-x: auto; scrollbar-width: none; }
+.locator::-webkit-scrollbar { display: none; }
+.locator__here { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint); white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+.locator__here .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 10px var(--teal); }
+.locator__map { display: flex; gap: 8px; margin-left: auto; }
+.locator__pill { display: inline-flex; align-items: center; gap: 7px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--dim); border: 1px solid var(--rule); border-radius: 20px; padding: 6px 12px; white-space: nowrap; cursor: pointer; transition: .15s; background: transparent; }
+.locator__pill .d { width: 7px; height: 7px; border-radius: 50%; background: var(--pc); box-shadow: 0 0 8px var(--pc); flex-shrink: 0; }
+.locator__pill:hover { color: var(--ink); border-color: color-mix(in srgb, var(--pc) 55%, transparent); }
+.locator__pill.is-active { color: var(--ink); border-color: var(--pc); background: color-mix(in srgb, var(--pc) 12%, transparent); }
+.locator__pill--bible { --pc: var(--teal); }
+.locator__pill--eff { --pc: var(--amber); }
+.locator__pill--dark { --pc: var(--violet); }
+
+/* ── "Start here" AI guide ── */
+.guide { margin: 8px 0 26px; border: 1px solid var(--rule); border-radius: 18px; overflow: hidden;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--teal) 6%, transparent), rgba(255,255,255,0.01)); }
+.guide__head { display: flex; align-items: center; gap: 14px; padding: 22px 26px 18px; }
+.guide__orb { width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0; position: relative;
+  background: radial-gradient(circle at 40% 35%, #fff, var(--teal) 45%, color-mix(in srgb, var(--teal) 20%, transparent) 80%);
+  box-shadow: 0 0 26px -4px var(--teal); animation: pulse 2.4s ease-in-out infinite; }
+.guide__intro .k { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); }
+.guide__intro .q { font-size: 19px; font-weight: 600; letter-spacing: -0.01em; margin-top: 4px; }
+.guide__opts { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 26px 24px; }
+.guide__opt { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+  color: var(--dim); border: 1px solid var(--rule); border-radius: 24px; padding: 11px 16px; cursor: pointer; transition: .15s; background: transparent; text-align: left; }
+.guide__opt:hover { border-color: var(--teal); color: var(--ink); transform: translateY(-2px); }
+.guide__opt.is-active { border-color: var(--teal); background: color-mix(in srgb, var(--teal) 12%, transparent); color: var(--ink); }
+.guide__answer { display: none; border-top: 1px solid var(--rule); padding: 24px 26px 26px; }
+.guide__answer.is-open { display: block; animation: reveal .4s ease both; }
+.guide__answer .route { font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gc); margin-bottom: 10px; }
+.guide__answer .msg { font-size: 17px; line-height: 1.55; color: var(--ink); font-weight: 300; max-width: 60ch; }
+.guide__answer .msg b { font-weight: 600; color: var(--gc); }
+.guide__answer .acts { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+.guide__answer .gbtn { display: inline-flex; align-items: center; gap: 9px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; font-weight: 700;
+  padding: 12px 20px; border-radius: 26px; background: var(--gc); color: var(--void); cursor: pointer; transition: transform .15s, box-shadow .2s; border: none; }
+.guide__answer .gbtn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px -12px var(--gc); }
+.guide__answer .gbtn--ghost { background: transparent; border: 1px solid var(--rule); color: var(--ink); }
+.guide__answer .gbtn--ghost:hover { border-color: var(--gc); color: var(--gc); }
+.guide--bible { --gc: var(--teal); } .guide--eff { --gc: var(--amber); } .guide--dark { --gc: var(--violet); }
+
+/* ── Explore by problem ── */
+.problems { padding: 12px 0 20px; }
+.problems__intro { text-align: center; margin-bottom: 26px; }
+.problems__intro .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--teal); }
+.problems__intro h2 { font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.02em; font-weight: 600; margin: 14px 0 8px; }
+.problems__intro p { color: var(--dim); font-size: 15px; max-width: 56ch; margin: 0 auto; }
+.problems__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.problem { display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--rule); border-radius: 14px; padding: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.006)); cursor: pointer; text-align: left; color: inherit;
+  transition: transform .2s, border-color .2s, box-shadow .2s; --pc: var(--teal); }
+.problem:hover { transform: translateY(-5px); border-color: color-mix(in srgb, var(--pc) 55%, transparent); box-shadow: 0 22px 50px -28px var(--pc); }
+.problem__q { font-size: 16.5px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); line-height: 1.35; }
+.problem__q::before { content: '“'; color: var(--pc); font-size: 22px; line-height: 0; margin-right: 2px; }
+.problem__go { margin-top: auto; display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; color: var(--pc); }
+.problem__go .gxname { color: var(--dim); }
+.problem--bible { --pc: var(--teal); } .problem--eff { --pc: var(--amber); } .problem--dark { --pc: var(--violet); }
+
+/* ── Journey / cross-links inside each panel ── */
+.journey { border-top: 1px solid var(--rule); padding: 24px 34px 30px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.journey__label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint); }
+.journey__next { display: inline-flex; align-items: center; gap: 12px; border: 1px solid color-mix(in srgb, var(--nc) 45%, transparent); border-radius: 30px; padding: 10px 18px; cursor: pointer; transition: .18s; background: transparent; color: inherit; }
+.journey__next:hover { border-color: var(--nc); background: color-mix(in srgb, var(--nc) 10%, transparent); transform: translateX(3px); }
+.journey__next .step { font-family: var(--mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); }
+.journey__next .t { font-size: 14px; color: var(--ink); font-weight: 500; }
+.journey__next .arr { color: var(--nc); font-size: 16px; }
+.journey__next--bible { --nc: var(--teal); } .journey__next--eff { --nc: var(--amber); } .journey__next--dark { --nc: var(--violet); }
+
 @media (max-width: 900px) {
   .galaxies { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
   .panel__grid { grid-template-columns: 1fr; }
   .panel__sec:nth-child(odd) { border-right: none; }
+  .problems__grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
+}
+@media (max-width: 720px) {
+  .nav { gap: 14px; padding: 0 18px; }
+  .nav__links { gap: 14px; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+  .nav__links::-webkit-scrollbar { display: none; }
+  .locator { top: 56px; padding: 10px 18px; }
+  .guide__head { padding: 18px 20px 14px; }
+  .guide__opts, .guide__answer { padding-left: 20px; padding-right: 20px; }
+  .journey { padding: 20px 22px 24px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .gx__svg { animation: none; }
   .nav__brand .orb { animation: none; }
+  .guide__orb { animation: none; }
 }
 </style>
 </head>
@@ -165,6 +247,16 @@ img { max-width: 100%; display: block; }
   </nav>
 </header>
 
+<!-- PERSISTENT "WHERE AM I?" LOCATOR -->
+<div class="locator" id="locator">
+  <span class="locator__here"><span class="dot"></span><span id="loc-label">You are here · The Universe map</span></span>
+  <div class="locator__map" role="tablist" aria-label="Jump to a galaxy">
+    <button class="locator__pill locator__pill--bible" data-goto="bible"><span class="d"></span>Learn</button>
+    <button class="locator__pill locator__pill--eff" data-goto="eff"><span class="d"></span>Build</button>
+    <button class="locator__pill locator__pill--dark" data-goto="dark"><span class="d"></span>Trust</button>
+  </div>
+</div>
+
 <div class="shell">
 
   <!-- HERO -->
@@ -179,6 +271,25 @@ img { max-width: 100%; display: block; }
       <div class="m"><div class="v">33</div><div class="l">Designers led · 5 zones</div></div>
     </div>
     <div class="hero__hint">↓ Select a galaxy to explore</div>
+  </section>
+
+  <!-- START HERE · AI GUIDE -->
+  <section class="guide guide--bible" id="guide" aria-label="Start here — guided tour">
+    <div class="guide__head">
+      <div class="guide__orb" aria-hidden="true"></div>
+      <div class="guide__intro">
+        <div class="k">Start here · 15-second guide</div>
+        <div class="q">New here? What brings you to the universe?</div>
+      </div>
+    </div>
+    <div class="guide__opts" id="guide-opts" role="listbox" aria-label="What brings you here?">
+      <button class="guide__opt" data-guide="learn">🌱 I want to learn AI properly</button>
+      <button class="guide__opt" data-guide="cost">💸 My AI is getting too expensive</button>
+      <button class="guide__opt" data-guide="trust">🛡️ My team / users don't trust AI</button>
+      <button class="guide__opt" data-guide="build">🛠️ I want to ship a real AI project</button>
+      <button class="guide__opt" data-guide="explore">✦ Just exploring — surprise me</button>
+    </div>
+    <div class="guide__answer" id="guide-answer" aria-live="polite"></div>
   </section>
 
   <!-- GALAXY CARDS -->
@@ -293,6 +404,14 @@ img { max-width: 100%; display: block; }
       <a href="builders-bible.html#articles" class="btn btn--ghost">Read the library</a>
       <span class="note">128 articles · 47 workflows · 36 prompt packs · 18,400+ readers</span>
     </div>
+    <div class="journey">
+      <span class="journey__label">The journey · Learn → <strong style="color:var(--amber)">Build</strong> → Trust</span>
+      <button class="journey__next journey__next--eff" data-goto="eff">
+        <span class="step">Next galaxy</span>
+        <span class="t">Build efficiently</span>
+        <span class="arr">→</span>
+      </button>
+    </div>
   </section>
 
   <!-- BUILDER'S EFFICIENCY -->
@@ -323,6 +442,14 @@ img { max-width: 100%; display: block; }
     <div class="panel__cta">
       <a href="workbench-alt2.html" class="btn btn--solid">Open the Efficiency Workbench →</a>
       <a href="https://aiinflationmonitor.netlify.app/" target="_blank" rel="noopener" class="btn btn--ghost">See the AI Inflation Observatory ↗</a>
+    </div>
+    <div class="journey">
+      <span class="journey__label">The journey · Learn → Build → <strong style="color:var(--violet)">Trust</strong></span>
+      <button class="journey__next journey__next--dark" data-goto="dark">
+        <span class="step">Next galaxy</span>
+        <span class="t">Earn trust</span>
+        <span class="arr">→</span>
+      </button>
     </div>
   </section>
 
@@ -356,6 +483,49 @@ img { max-width: 100%; display: block; }
       <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="btn btn--solid">Open the Trust Intelligence GPT ↗</a>
       <a href="case-dell-chatbot.html" class="btn btn--ghost">Read the Dell trust case</a>
     </div>
+    <div class="journey">
+      <span class="journey__label">You've circled the universe · Learn → Build → Trust</span>
+      <button class="journey__next journey__next--bible" data-goto="bible">
+        <span class="step">Back to the start</span>
+        <span class="t">Keep learning</span>
+        <span class="arr">↺</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- EXPLORE BY PROBLEM -->
+  <section class="problems" id="problems">
+    <div class="problems__intro">
+      <span class="eyebrow">Explore by problem</span>
+      <h2>Start from what's hurting.</h2>
+      <p>Skip the tour — pick the problem that sounds like yours and jump straight to the galaxy that solves it.</p>
+    </div>
+    <div class="problems__grid">
+      <button class="problem problem--bible" data-goto="bible">
+        <div class="problem__q">I don't know where to start with AI</div>
+        <div class="problem__go">→ <span class="gxname">Learn · Builder's Bible roadmaps</span></div>
+      </button>
+      <button class="problem problem--eff" data-goto="eff">
+        <div class="problem__q">My AI bills are spiralling out of control</div>
+        <div class="problem__go">→ <span class="gxname">Build · Efficiency &amp; triage</span></div>
+      </button>
+      <button class="problem problem--dark" data-goto="dark">
+        <div class="problem__q">My team &amp; users don't trust our AI</div>
+        <div class="problem__go">→ <span class="gxname">Trust · Trust-by-design</span></div>
+      </button>
+      <button class="problem problem--eff" data-goto="eff">
+        <div class="problem__q">My agents are slow and expensive to run</div>
+        <div class="problem__go">→ <span class="gxname">Build · Routing &amp; agent efficiency</span></div>
+      </button>
+      <button class="problem problem--dark" data-goto="dark">
+        <div class="problem__q">My interface might be using dark patterns</div>
+        <div class="problem__go">→ <span class="gxname">Trust · Dark-pattern intelligence</span></div>
+      </button>
+      <button class="problem problem--bible" data-goto="bible">
+        <div class="problem__q">I read a lot but never actually build</div>
+        <div class="problem__go">→ <span class="gxname">Learn · Hands-on projects &amp; capstones</span></div>
+      </button>
+    </div>
   </section>
 
   <!-- CLOSING -->
@@ -373,27 +543,118 @@ img { max-width: 100%; display: block; }
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-// Accordion: one galaxy open at a time
+// Galaxies: interactive accordion + locator + "Start here" guide + journey cross-links.
+// One galaxy open at a time; the browser Back button collapses / switches panels.
 (function () {
   var cards = document.querySelectorAll('.gx');
   var panels = { bible: document.getElementById('panel-bible'), eff: document.getElementById('panel-eff'), dark: document.getElementById('panel-dark') };
-  function openPanel(id, scroll) {
+  var GX_NAMES = { bible: 'Learn · Builder’s Bible', eff: 'Build · Efficiency', dark: 'Trust · Darker Patterns' };
+  var locLabel = document.getElementById('loc-label');
+  var locPills = document.querySelectorAll('.locator__pill');
+  var current = null;      // which panel id is open (or null)
+  var suppressHistory = false;
+
+  function syncLocator(id) {
+    if (locLabel) locLabel.textContent = id ? ('You are in · ' + GX_NAMES[id]) : 'You are here · The Universe map';
+    locPills.forEach(function (p) { p.classList.toggle('is-active', p.getAttribute('data-goto') === id); });
+  }
+
+  // Reflect a panel's open/closed state in the DOM (no history side-effects).
+  function applyState(id) {
+    current = id;
     Object.keys(panels).forEach(function (k) { panels[k].classList.toggle('is-open', k === id); });
     cards.forEach(function (c) { var on = c.getAttribute('data-panel') === id; c.classList.toggle('is-open', on); c.setAttribute('aria-expanded', on); });
-    if (scroll) { var p = panels[id]; var y = p.getBoundingClientRect().top + window.scrollY - 74; window.scrollTo({ top: y, behavior: 'smooth' }); }
+    syncLocator(id);
   }
+
+  function pushHash(id) {
+    if (suppressHistory || !history.pushState) return;
+    var full = id ? ('#' + id) : (location.pathname + location.search);
+    try {
+      if (id && (location.hash || '') !== '#' + id) history.pushState({ gx: id }, '', full);
+      else if (!id && location.hash) history.pushState({ gx: null }, '', full);
+    } catch (e) {}
+  }
+
+  // Open a galaxy (scroll it into view) and record a history entry so Back works.
+  function openPanel(id, scroll) {
+    if (!panels[id]) return;
+    applyState(id);
+    pushHash(id);
+    if (scroll) { var p = panels[id]; var y = p.getBoundingClientRect().top + window.scrollY - 84; window.scrollTo({ top: y, behavior: 'smooth' }); }
+  }
+  function closePanel() { applyState(null); pushHash(null); }
+
+  // Galaxy card toggles
   cards.forEach(function (c) {
     c.addEventListener('click', function () {
       var id = c.getAttribute('data-panel');
-      if (c.classList.contains('is-open')) { // toggle closed
-        c.classList.remove('is-open'); c.setAttribute('aria-expanded', 'false'); panels[id].classList.remove('is-open'); return;
-      }
-      openPanel(id, true);
+      if (c.classList.contains('is-open')) closePanel();
+      else openPanel(id, true);
     });
   });
-  // deep link
+
+  // Any [data-goto] control (locator pills, journey "next", problem cards) opens a galaxy.
+  document.querySelectorAll('[data-goto]').forEach(function (el) {
+    el.addEventListener('click', function () { openPanel(el.getAttribute('data-goto'), true); });
+  });
+
+  // Browser Back / Forward → sync panel from the hash (don't push again).
+  window.addEventListener('popstate', function () {
+    suppressHistory = true;
+    var h = (location.hash || '').replace('#', '');
+    applyState(panels[h] ? h : null);
+    suppressHistory = false;
+  });
+
+  // Pointer parallax — nudges each galaxy's core toward the cursor so the
+  // cards feel alive and interactive rather than static.
+  if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+    cards.forEach(function (c) {
+      var svg = c.querySelector('.gx__svg');
+      if (!svg) return;
+      c.addEventListener('pointermove', function (e) {
+        var r = c.getBoundingClientRect();
+        var dx = (e.clientX - r.left) / r.width - 0.5;
+        var dy = (e.clientY - r.top) / r.height - 0.5;
+        svg.style.transform = 'translate(' + (dx * 16).toFixed(1) + 'px,' + (dy * 16).toFixed(1) + 'px) scale(1.05)';
+      });
+      c.addEventListener('pointerleave', function () { svg.style.transform = ''; });
+    });
+  }
+
+  /* ── "Start here" AI guide ── */
+  var GUIDE = {
+    learn:   { gx: 'bible', cls: 'guide--bible', route: 'Recommended galaxy · Learn', msg: 'Start in the <b>Builder’s Bible</b> — paths, topics, and hands-on projects that take you from beginner to shipping, without the tutorial hell.', cta: 'Open the Learn galaxy', href: 'builders-bible.html', href2label: 'Jump to roadmaps', href2: 'builders-bible.html#playbooks' },
+    cost:    { gx: 'eff', cls: 'guide--eff', route: 'Recommended galaxy · Build', msg: 'Head to <b>Builder’s Efficiency</b>. The next AI revolution is smaller bills, not bigger models — triage, routing, and treating cost as a first-class metric.', cta: 'Open the Build galaxy', href2label: 'AI Inflation Observatory ↗', href2: 'https://aiinflationmonitor.netlify.app/' },
+    trust:   { gx: 'dark', cls: 'guide--dark', route: 'Recommended galaxy · Trust', msg: 'You want <b>Darker Patterns</b>. Adoption isn’t an intelligence problem, it’s a trust problem — trust-by-design and tools that make manipulation visible.', cta: 'Open the Trust galaxy', href2label: 'Read the Dell trust case', href2: 'case-dell-chatbot.html' },
+    build:   { gx: 'bible', cls: 'guide--bible', route: 'Recommended galaxy · Learn → Build', msg: 'Ship faster with the <b>Builder’s Bible</b> project gallery and roadmaps, then make it efficient in the <b>Build</b> galaxy. Knowledge that isn’t shipped is trivia.', cta: 'Open the Learn galaxy', href2label: 'See real projects', href2: 'builders-bible.html#projects' },
+    explore: { gx: 'bible', cls: 'guide--bible', route: 'The whole journey', msg: 'One point of view across three galaxies: <b>learn openly, build efficiently, earn trust</b>. Start with Learn and follow the journey — each galaxy hands you to the next.', cta: 'Start with Learn' }
+  };
+  var guideEl = document.getElementById('guide');
+  var guideAns = document.getElementById('guide-answer');
+  document.querySelectorAll('.guide__opt').forEach(function (opt) {
+    opt.addEventListener('click', function () {
+      var g = GUIDE[opt.getAttribute('data-guide')]; if (!g) return;
+      document.querySelectorAll('.guide__opt').forEach(function (o) { o.classList.toggle('is-active', o === opt); });
+      guideEl.className = 'guide ' + g.cls;
+      var second = g.href2 ? '<button class="gbtn gbtn--ghost" data-guidehref="' + g.href2 + '">' + g.href2label + '</button>' : '';
+      guideAns.innerHTML =
+        '<div class="route">' + g.route + '</div>' +
+        '<div class="msg">' + g.msg + '</div>' +
+        '<div class="acts"><button class="gbtn" data-guidego="' + g.gx + '">' + g.cta + ' →</button>' + second + '</div>';
+      guideAns.classList.add('is-open');
+      var go = guideAns.querySelector('[data-guidego]');
+      if (go) go.addEventListener('click', function () { openPanel(go.getAttribute('data-guidego'), true); });
+      var h2 = guideAns.querySelector('[data-guidehref]');
+      if (h2) h2.addEventListener('click', function () { var u = h2.getAttribute('data-guidehref'); if (/^https?:/.test(u)) window.open(u, '_blank', 'noopener'); else window.location.href = u; });
+    });
+  });
+
+  // deep link on load (replace, so Back doesn't get stuck on the same page)
   var h = (location.hash || '').replace('#', '');
-  if (panels[h]) openPanel(h, false);
+  if (panels[h]) { suppressHistory = true; applyState(h); suppressHistory = false; }
+  else syncLocator(null);
 })();
 
 // Starfield

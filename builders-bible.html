@@ -51,6 +51,16 @@
   </div>
 </header>
 
+<!-- ══════════ PERSISTENT "WHERE AM I?" BREADCRUMB ══════════ -->
+<nav class="bb-crumb" aria-label="Breadcrumb">
+  <a href="builders-universe.html" class="bb-crumb__eco" title="Back to the Builder's Universe map">✦&nbsp;Universe</a>
+  <span class="bb-crumb__sep" aria-hidden="true">›</span>
+  <a data-view="home" class="bb-crumb__root bb-nav">Builder's Bible</a>
+  <span class="bb-crumb__sep" aria-hidden="true">›</span>
+  <span class="bb-crumb__current" id="bb-crumb-current" aria-current="page">Home</span>
+  <span class="bb-crumb__galaxy"><span class="bb-crumb__dot"></span>You are in the <b>Learn</b> galaxy</span>
+</nav>
+
 <!-- ══════════ VIEW: HOME ══════════ -->
 <main class="bb-view is-active" data-view="home">
 
@@ -342,9 +352,35 @@
 </div>
 
 <!-- ══════════ FOOTER ══════════ -->
+<!-- ══════════ CROSS-GALAXY: continue the journey ══════════ -->
+<section class="bb-eco" aria-label="The Builder's Universe">
+  <div class="bb-eco__intro">
+    <div class="eyebrow2">Part of the Builder's Universe</div>
+    <h2>Learn → Build → Trust</h2>
+    <p>You're in the <b>Learn</b> galaxy. When you've got the craft, the journey continues — build it efficiently, then earn trust.</p>
+  </div>
+  <div class="bb-eco__grid">
+    <a class="bb-eco__card is-here" href="builders-universe.html#bible">
+      <span class="bb-eco__k">Galaxy 01 · You are here</span>
+      <span class="bb-eco__t">Learn — Builder's Bible</span>
+      <span class="bb-eco__d">Discover, learn, and ship with AI.</span>
+    </a>
+    <a class="bb-eco__card bb-eco--build" href="workbench-alt2.html">
+      <span class="bb-eco__k">Galaxy 02 · Next</span>
+      <span class="bb-eco__t">Build — Efficiency Workbench →</span>
+      <span class="bb-eco__d">Cost-aware AI: triage, route, and measure what you ship.</span>
+    </a>
+    <a class="bb-eco__card bb-eco--trust" href="dark-patterns.html">
+      <span class="bb-eco__k">Galaxy 03 · Then</span>
+      <span class="bb-eco__t">Trust — Darker Patterns →</span>
+      <span class="bb-eco__d">Trust-by-design and the guardrails autonomous systems need.</span>
+    </a>
+  </div>
+</section>
+
 <footer class="foot">
   <div>Builder's Bible — the interactive AI knowledge portal · Built by Puneet Arora · <span id="year"></span></div>
-  <div class="foot__nav"><a href="home.html">Portfolio</a><a data-view="about" style="cursor:pointer">About</a><a href="contact.html">Contact</a></div>
+  <div class="foot__nav"><a href="builders-universe.html">✦ Universe</a><a href="home.html">Portfolio</a><a data-view="about" style="cursor:pointer">About</a><a href="contact.html">Contact</a></div>
 </footer>
 
 </div><!-- /page -->
