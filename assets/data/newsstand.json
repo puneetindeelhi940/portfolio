@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T16:49:13Z",
+  "generated_at": "2026-08-08T01:14:00Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Evidence Abdul El-Sayed 'Celebrated 9/11' -- He Said 'I Don't Think 9/11 Was Justified",
-      "verdict": "UNPROVEN",
+      "claim": "Prebunk: Shocking Courtroom Convictions Judged To Be AI -- Bail Out Reality, Not Fake Defendants",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-abdul-el-sayed-did-not-say-he-celebrated-9-11-he-said-i-dont-think-9-11-was-justified.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/prebunk/2026/08/prebunk-shocking-courtroom-convictions-judged-to-be-ai-bail-out-reality-not-fake-defendants.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Shoppers at Mamdani's NYC-run grocery stores won't need 'special mark' on hand or forehead",
+      "claim": "Trump invoked the Fifth over 400 times in 2022 deposition, judge said",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mamdani-grocery-stores-special-mark/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/08/07/trump-invoke-fifth-amendment/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Bill Cassidy Backs Todd Blanche, Clearing Path To Nomination",
+      "claim": "Senate To Vote On Massive Package Of Bills Before Heading For Exits",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/07/bill-cassidy-reveals-whether-he-will-support-todd-blanche-for-ag",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/07/senate-to-hotline-massive-package-of-bills-before-heading-for-exits",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "Prebunk: AI Policewomen Want To Arrest Your Attention -- Don't Get Caught In Their Emotional Speed Trap",
+      "claim": "FAKE Video REPLACED African Migrant's Original Words -- He Did NOT Discuss Money, Home, English Women",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/prebunk:ai-policewomen-want-to-arrest-your-attention-dont-cet-caught-in-their-emotional-speed-trap.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-replaced-african-migrants-original-words.html",
+      "topic": "World"
     },
     {
       "n": 9,
-      "claim": "8 claims involving Flock, other surveillance tech we've examined",
-      "verdict": "FALSE",
+      "claim": "Footage of Trump's Las Vegas speech sparks unproven wig rumor",
+      "verdict": "UNPROVEN",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/flock-surveillance-tech-claims/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/08/07/trump-wearing-wig-vegas/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "‘DSA Is Our Maga’: The Democratic Establishment Faces A Reckoning",
+      "claim": "Bill Cassidy Backs Todd Blanche, Clearing Path To Nomination",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/07/abdul-el-sayed-michigan-dsa-is-democrats-maga",
+      "url": "https://dailycaller.com/2026/08/07/bill-cassidy-reveals-whether-he-will-support-todd-blanche-for-ag",
       "topic": "Trending"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "Trump DID Post AI-Generated Image Of Himself With Patton, MacArthur -- All In Historically Inaccurate Uniforms",
+      "claim": "Does NOT Show 'Farmer François Lavigne' Reliving Accident On French TV While Dressed-Up Children Sing To Him -- It Is A Serge Gainsbourg Tribute",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-trump-did-post-ai-generated-image-himself-patton-macarthur-all-historically-inaccurate-uniforms.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-video-does-not-show-farmer-francois-lavigne-reliving-accident-on-french-tv-while-dressed-up-children-sing-its-a-serge-gainsbourg-tribute.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "300 generals and officers didn't resign from Defense Department, despite claims",
+      "claim": "Did Iran say it'd only reopen Strait of Hormuz if Trump admits he lost 2020 election?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/department-defense-resignations/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/iran-open-hormuz-trump-lost-election/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,30 +146,110 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Seven killed after Thai student opens fire at home and school",
+      "headline": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c980j3j578do?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-07T15:51:16+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-07T22:13:55+00:00"
     },
     {
       "n": 2,
-      "headline": "Colombia's new president vows to remake the country — and challenge its fragile peace",
+      "headline": "Trump renews push to fire Fed Governor Lisa Cook",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5924775/colombias-new-president-vows-to-remake-the-country-and-challenge-its-fragile-peace",
+      "url": "https://www.npr.org/2026/08/07/nx-s1-5925167/trump-lisa-cook-federal-reserve",
       "topic": "Politics",
-      "published": "2026-08-07T15:41:45+00:00"
+      "published": "2026-08-07T19:35:35+00:00"
     },
     {
       "n": 3,
-      "headline": "A deal with Iran over the Strait of Hormuz may require a compromise from Trump",
+      "headline": "Advocates for former U.S. Marine held for years in Russia say he is near death",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/a-deal-with-iran-over-the-strait-of-hormuz-may-require-a-compromise-from-trump",
-      "topic": "Politics",
-      "published": "2026-08-07T16:39:59+00:00"
+      "url": "https://www.pbs.org/newshour/world/advocates-for-former-u-s-marine-held-for-years-in-russia-say-he-is-near-death",
+      "topic": "World",
+      "published": "2026-08-07T23:41:17+00:00"
     },
     {
       "n": 4,
+      "headline": "Spain to introduce temporary border checks on visitors from Italy",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/07/spain-to-introduce-temporary-border-checks-on-visitors-from-italy",
+      "topic": "World",
+      "published": "2026-08-07T21:44:38+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Colombia: Trump ally De la Espriella takes office",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/colombia-trump-ally-de-la-espriella-takes-office/a-78286636?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-08T00:31:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Thai PM vows to introduce stricter gun laws after eight killed in shooting",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cdewx6rew04o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-07T21:19:27+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Another court blocks White House ballroom work, teeing up a Supreme Court review",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/07/nx-s1-5925123/white-house-ballroom-appeals-court-congress",
+      "topic": "Trending",
+      "published": "2026-08-07T18:10:37+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "ICE will only release body camera video when in agency's 'best interests,' policy says",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/ice-will-only-release-body-camera-video-when-in-agencys-best-interests-policy-says",
+      "topic": "Trending",
+      "published": "2026-08-07T23:35:08+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Judge approves Trump effort to end South Sudan TPS protections",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/aug/07/judge-trump-south-sudan-tps",
+      "topic": "Politics",
+      "published": "2026-08-07T18:34:34+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Iceland’s EU vote: A nation divided over Europe",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/iceland-s-eu-vote-a-nation-divided-over-europe/a-78285133?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-07T19:37:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "I was standing in front of my teacher when she was shot, Thai pupil says",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c07rxz03034o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-07T14:20:27+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Monty Roberts, who trained horses through trust, dies at 91",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/07/nx-s1-5924104/monty-roberts-horse-training",
+      "topic": "Trending",
+      "published": "2026-08-07T17:48:17+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "What the July jobs report reveals about the strength of the economy",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/what-the-july-jobs-report-reveals-about-the-strength-of-the-economy",
+      "topic": "Trending",
+      "published": "2026-08-07T22:55:24+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/06/ebola-virus-drc-mutating",
@@ -177,108 +257,28 @@
       "published": "2026-08-06T16:18:46+00:00"
     },
     {
-      "n": 5,
-      "headline": "Ceuta: Spain warns Italy it will reciprocate entry checks",
+      "n": 15,
+      "headline": "Migrant tunnels in Lithuania direct suspicion towards Minsk",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ceuta-spain-warns-italy-it-will-reciprocate-entry-checks/a-78282840?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-07T16:12:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Spain threatens retaliation if Italy fails to lift border controls after Ceuta crossings",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.dw.com/en/migrant-tunnels-in-lithuania-direct-suspicion-towards-minsk/a-78280640?maca=en-rss-en-all-1573-rdf",
       "topic": "World",
-      "published": "2026-08-07T16:33:50+00:00"
+      "published": "2026-08-07T19:36:00+00:00"
     },
     {
-      "n": 7,
-      "headline": "Blanche's path to confirmation appears clear after winning key Republican's support",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/g-s1-137773/lisa-murkowski-todd-blanche-attorney-general",
-      "topic": "Politics",
-      "published": "2026-08-07T14:12:59+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "I'm very good at grass.' Why Trump goes into the weeds on one of his favorite topics",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/im-very-good-at-grass-why-trump-goes-into-the-weeds-on-one-of-his-favorite-topics",
-      "topic": "Politics",
-      "published": "2026-08-07T16:19:26+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "US to shut five consulates as critics fear China could fill diplomatic vacuum",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/aug/05/us-state-department-consulate-closures",
-      "topic": "World",
-      "published": "2026-08-06T15:41:29+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "How viable is the potential Iran-Oman Hormuz shipping deal?",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/how-viable-is-the-potential-iran-oman-hormuz-shipping-deal/a-78283434?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-07T15:02:00+00:00"
-    },
-    {
-      "n": 11,
+      "n": 16,
       "headline": "Saudi Arabia, Turkey and Pakistan sign defence pact",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-07T15:48:49+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Employers unexpectedly cut 23,000 jobs in a sign of a wilting labor market",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5924786/employers-economy-labor-jobs-federal-reserve",
-      "topic": "Money",
-      "published": "2026-08-07T13:10:10+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Why Mexican avocado exports to the U.S. have once again been stopped",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/why-mexican-avocado-exports-to-the-u-s-have-once-again-been-stopped",
-      "topic": "Trending",
-      "published": "2026-08-07T15:41:55+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Top Ugandan footballer killed by robbers armed with paving stones",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/football/2026/aug/06/top-uganda-footballer-killed-robbery-kampala",
-      "topic": "Trending",
-      "published": "2026-08-06T14:30:32+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "Berlin clubs struggle as drink sales dry up and costs rise",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/berlin-clubs-struggle-as-drink-sales-dry-up-and-costs-rise/a-78283343?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-07T14:44:00+00:00"
-    },
-    {
-      "n": 16,
-      "headline": "Meta fined $567m in largest child safety ruling against social media giant",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-08-07T09:22:03+00:00"
+      "published": "2026-08-07T17:42:54+00:00"
     },
     {
       "n": 17,
-      "headline": "A new vaccine could vanquish a major cause of deadly diarrheal disease",
+      "headline": "Senate passes Russia sanctions bill that was long championed by Lindsey Graham",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/g-s1-137456/diarrhea-disease-vaccine-childhood-deaths-shigella",
-      "topic": "Health",
-      "published": "2026-08-07T11:36:33+00:00"
+      "url": "https://www.npr.org/2026/08/07/nx-s1-5924914/senate-passes-russia-sanctions-bill-that-was-long-championed-by-lindsey-graham",
+      "topic": "Politics",
+      "published": "2026-08-07T17:33:40+00:00"
     }
   ]
 }
