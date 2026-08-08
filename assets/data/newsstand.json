@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T08:34:41Z",
+  "generated_at": "2026-08-08T16:27:13Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Trump invoked the Fifth over 400 times in 2022 deposition, judge said",
+      "claim": "Does this video show SpaceX rocket crashing into the moon?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/07/trump-invoke-fifth-amendment/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/spacex-rocket-crash-moon-video/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Senate To Vote On Massive Package Of Bills Before Heading For Exits",
+      "claim": "Senate Confirms Todd Blanche After Handful Of GOP Holdouts Threatened His Nomination",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/07/senate-to-hotline-massive-package-of-bills-before-heading-for-exits",
+      "url": "https://dailycaller.com/2026/08/08/todd-blanche-confirmed-senate-attorney-general",
       "topic": "Politics"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Footage of Trump's Las Vegas speech sparks unproven wig rumor",
-      "verdict": "UNPROVEN",
+      "claim": "Trump invoked the Fifth over 400 times in 2022 deposition, judge said",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/07/trump-wearing-wig-vegas/",
+      "url": "https://www.snopes.com/news/2026/08/07/trump-invoke-fifth-amendment/",
       "topic": "Politics"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Bill Cassidy Backs Todd Blanche, Clearing Path To Nomination",
+      "claim": "Abdul El-Sayed Had Big Night, But He Still Has Work To Do With Key Demo",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/07/bill-cassidy-reveals-whether-he-will-support-todd-blanche-for-ag",
+      "url": "https://dailycaller.com/2026/08/08/abdul-el-sayed-key-demographic-michigan-senate-race",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Iran say it'd only reopen Strait of Hormuz if Trump admits he lost 2020 election?",
-      "verdict": "FALSE",
+      "claim": "Footage of Trump's Las Vegas speech sparks unproven wig rumor",
+      "verdict": "UNPROVEN",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/iran-open-hormuz-trump-lost-election/",
+      "url": "https://www.snopes.com/news/2026/08/07/trump-wearing-wig-vegas/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Child among three killed in Russian missile attacks near Kyiv",
+      "headline": "Trump's ex-lawyer Todd Blanche narrowly confirmed as US attorney general",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-08T06:12:56+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cewr898jy8go?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-08T15:56:39+00:00"
     },
     {
       "n": 2,
-      "headline": "Women in Maine may choose the victor in this year's Senate race",
+      "headline": "K-pop's global wave inspires Chile's next pop stars",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5915655/women-in-maine-may-choose-the-victor-in-this-years-senate-race",
-      "topic": "Politics",
-      "published": "2026-08-07T20:24:38+00:00"
+      "url": "https://www.npr.org/2026/08/08/nx-s1-5899791/k-pop-chile-bts",
+      "topic": "Trending",
+      "published": "2026-08-08T13:34:45+00:00"
     },
     {
       "n": 3,
-      "headline": "Advocates for former U.S. Marine held for years in Russia say he is near death",
+      "headline": "Lake Mead hits historic low water level as Colorado River struggles",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/advocates-for-former-u-s-marine-held-for-years-in-russia-say-he-is-near-death",
-      "topic": "World",
-      "published": "2026-08-07T23:41:17+00:00"
+      "url": "https://www.pbs.org/newshour/nation/lake-mead-hits-historic-low-water-level-as-colorado-river-struggles",
+      "topic": "Trending",
+      "published": "2026-08-08T16:07:11+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "India wary of potential 100% US tariffs over Russian oil",
+      "headline": "US Senate confirms Trump loyalist Todd Blanche as new AG",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-wary-of-potential-100-us-tariffs-over-russian-oil/live-78287317?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-08T08:25:00+00:00"
+      "url": "https://www.dw.com/en/us-senate-confirms-trump-loyalist-todd-blanche-as-new-ag/a-78289397?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-08T14:25:00+00:00"
     },
     {
       "n": 6,
-      "headline": "The phone book that led us to Assad's spy chief in hiding",
+      "headline": "US offers $1bn to Colombia on new right-wing president's first day of office",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c4gyrzn8p94o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-07T23:23:12+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cy9wy3y0e5wo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-08T16:19:29+00:00"
     },
     {
       "n": 7,
-      "headline": "Trump renews push to fire Fed Governor Lisa Cook",
+      "headline": "Opinion: Europe's summer of heat",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5925167/trump-lisa-cook-federal-reserve",
-      "topic": "Politics",
-      "published": "2026-08-07T19:35:35+00:00"
+      "url": "https://www.npr.org/2026/08/08/nx-s1-5916351/opinion-europes-summer-of-heat",
+      "topic": "Trending",
+      "published": "2026-08-08T12:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "ICE will only release body camera video when in agency's 'best interests,' policy says",
+      "headline": "What to know about Trump's new attempt to limit birthright citizenship",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/ice-will-only-release-body-camera-video-when-in-agencys-best-interests-policy-says",
-      "topic": "Trending",
-      "published": "2026-08-07T23:35:08+00:00"
+      "url": "https://www.pbs.org/newshour/politics/what-to-know-about-trumps-new-attempt-to-limit-birthright-citizenship",
+      "topic": "Politics",
+      "published": "2026-08-08T15:39:17+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Typhoon Dolphin hits Japan as China braces for coming storm",
+      "headline": "Iran war: IRGC says Hormuz to open if US accepts Iran's terms",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/typhoon-dolphin-hits-japan-as-china-braces-for-coming-storm/a-78286728?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/iran-war-irgc-says-hormuz-to-open-if-us-accepts-iran-s-terms/live-78289364?maca=en-rss-en-all-1573-rdf",
       "topic": "World",
-      "published": "2026-08-08T06:24:00+00:00"
+      "published": "2026-08-08T13:33:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
+      "headline": "The phone book that led us to Assad's spy chief in hiding",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-07T22:13:55+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c4gyrzn8p94o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-07T23:23:12+00:00"
     },
     {
       "n": 12,
-      "headline": "Another court blocks White House ballroom work, teeing up a Supreme Court review",
+      "headline": "Switzerland is a neutral nation but has more nuclear bunkers than any country in the world",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5925123/white-house-ballroom-appeals-court-congress",
+      "url": "https://www.npr.org/2026/08/08/g-s1-137635/switzerland-nuclear-bunkers",
       "topic": "Trending",
-      "published": "2026-08-07T18:10:37+00:00"
+      "published": "2026-08-08T11:01:00+00:00"
     },
     {
       "n": 13,
-      "headline": "What the July jobs report reveals about the strength of the economy",
+      "headline": "Todd Blanche narrowly confirmed as Trump's attorney general in overnight vote",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-the-july-jobs-report-reveals-about-the-strength-of-the-economy",
-      "topic": "Trending",
-      "published": "2026-08-07T22:55:24+00:00"
+      "url": "https://www.pbs.org/newshour/politics/todd-blanche-narrowly-confirmed-as-trumps-attorney-general-in-overnight-vote",
+      "topic": "Politics",
+      "published": "2026-08-08T15:18:05+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany debates reintroducing mandatory civilian service",
+      "headline": "War, terror, diplomacy: What if Israel takes Al-Aqsa Mosque?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-debates-reintroducing-mandatory-civilian-service/a-78264088?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-08T05:46:00+00:00"
+      "url": "https://www.dw.com/en/war-terror-diplomacy-what-if-israel-takes-al-aqsa-mosque/a-78284016?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-08T13:31:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Thai PM vows to introduce stricter gun laws after eight killed in shooting",
+      "headline": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cdewx6rew04o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-07T21:19:27+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-08T14:25:19+00:00"
     },
     {
       "n": 17,
-      "headline": "Monty Roberts, who trained horses through trust, dies at 91",
+      "headline": "The Women's Professional Baseball League makes its historic debut",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5924104/monty-roberts-horse-training",
+      "url": "https://www.npr.org/sections/the-picture-show/2026/08/08/nx-s1-5923371/womens-professional-baseball-league-debut",
       "topic": "Trending",
-      "published": "2026-08-07T17:48:17+00:00"
+      "published": "2026-08-08T10:30:00+00:00"
     }
   ]
 }
