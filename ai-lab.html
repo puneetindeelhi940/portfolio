@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Lab — Puneet Arora</title>
-<meta name="description" content="Puneet Arora's AI Lab — the questions behind a body of working AI: live tools, prototypes still in motion, reusable frameworks, and concepts still being argued. The AI News Terminal, Design Intelligence Portal, custom GPTs, the Vigyan Setu case, and the Skills directories.">
+<title>AI Lab — the Builder's Universe of Puneet Arora</title>
+<meta name="description" content="Puneet Arora's AI Lab — the Builder's Universe hub. One point of view across three galaxies: Learn (Builder's Bible), Build (efficiency), and Trust (darker patterns). Live tools, prototypes, frameworks, and a learning platform, all in one place.">
 <link rel="canonical" href="https://puneetindeelhi940.github.io/portfolio/ai-lab.html">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Puneet Arora — Portfolio">
-<meta property="og:title" content="AI Lab — Puneet Arora">
-<meta property="og:description" content="The questions behind a body of working AI — live tools, prototypes, frameworks and concepts. Not the tech. The thinking.">
+<meta property="og:title" content="AI Lab — the Builder's Universe of Puneet Arora">
+<meta property="og:description" content="One point of view across three galaxies — Learn, Build, Trust. Live tools, prototypes, frameworks, and a learning platform.">
 <meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
 <meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/ai-lab.html">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Lab — Puneet Arora">
-<meta name="twitter:description" content="The questions behind a body of working AI — live tools, prototypes, frameworks and concepts. Not the tech. The thinking.">
+<meta name="twitter:title" content="AI Lab — the Builder's Universe of Puneet Arora">
+<meta name="twitter:description" content="One point of view across three galaxies — Learn, Build, Trust. Live tools, prototypes, frameworks, and a learning platform.">
 <meta name="twitter:image" content="https://puneetindeelhi940.github.io/portfolio/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,41 +25,67 @@
 <link rel="stylesheet" href="assets/site.css">
 <style>
   /* ============================================================
-     AI LAB — calm, on-system redesign
-     One card, one accent, § section headers. Built entirely on
-     assets/site.css tokens (--bg --surface --ink --dim --faint
-     --rule --signal --pad-x) so both themes work with no bespoke
-     colour system. Question-led copy; a single "Learned" line.
+     AI LAB — the Builder's Universe hub
+     One page, three galaxies (Learn · Build · Trust). Own-work
+     cards and Builder's Bible deep-links are folded into a single
+     Learn→Build→Trust spine. Built on assets/site.css tokens
+     (--bg --surface --ink --dim --faint --rule --signal --pad-x)
+     so both themes work; each galaxy re-tints --signal locally.
      ============================================================ */
   .lab{max-width:1120px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
   @media(max-width:1100px){.lab{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
   @media(max-width:600px){.lab{padding-left:22px;padding-right:22px;}}
 
-  /* ---------------- HERO (manifesto) ---------------- */
+  /* ---- galaxy accents (theme-aware) ---- */
+  :root{--learn:oklch(72% 0.12 168);--build:oklch(80% 0.13 85);--trust:oklch(72% 0.13 255);}
+  [data-theme="forest"]{--learn:oklch(45% 0.13 168);--build:oklch(52% 0.13 72);--trust:oklch(50% 0.16 262);}
+
+  /* ---------------- HERO (universe hub) ---------------- */
   .lab-hero{padding:64px 0 8px;}
   .lab-hero .ky{font-family:var(--f-mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--signal);display:flex;align-items:center;gap:11px;flex-wrap:wrap;}
   .lab-hero .ky .dot{width:7px;height:7px;border-radius:50%;background:var(--signal);}
   .lab-hero h1{font-size:clamp(32px,6vw,58px);font-weight:800;line-height:1.04;letter-spacing:-0.028em;margin:24px 0 0;max-width:17ch;text-wrap:balance;}
   .lab-hero h1 em{font-style:normal;color:var(--signal);}
-  .lab-hero .sub{max-width:64ch;margin-top:22px;font-size:clamp(15px,2vw,18px);line-height:1.62;color:var(--dim);}
+  .lab-hero .sub{max-width:66ch;margin-top:22px;font-size:clamp(15px,2vw,18px);line-height:1.62;color:var(--dim);}
   .lab-hero .sub b{color:var(--ink);font-weight:600;}
-  .lab-hero .runline{margin-top:26px;font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-  .lab-hero .runline i{width:4px;height:4px;border-radius:50%;background:var(--faint);display:inline-block;}
 
-  /* ---------------- SECTION HEADER (§) ---------------- */
-  .lab-sec{padding:56px 0 0;}
-  .lab-shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--rule);margin-bottom:26px;}
-  .lab-shead .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.14em;color:var(--signal);}
-  .lab-shead .t{font-size:15px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);}
-  .lab-shead .s{font-family:var(--f-mono);font-size:11.5px;letter-spacing:0.06em;color:var(--faint);margin-left:auto;}
-  @media(max-width:600px){.lab-shead .s{margin-left:0;flex-basis:100%;}}
+  /* galaxy jump-nav */
+  .uni-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;}
+  .uni-nav a{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);border:1px solid var(--rule);border-radius:999px;padding:9px 15px;text-decoration:none;transition:border-color .15s,color .15s,transform .15s;}
+  .uni-nav a .d{width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 10px -1px var(--c);}
+  .uni-nav a:hover{color:var(--ink);border-color:var(--c);transform:translateY(-2px);}
+  .uni-nav a.learn{--c:var(--learn);}
+  .uni-nav a.build{--c:var(--build);}
+  .uni-nav a.trust{--c:var(--trust);}
+  .uni-nav a.map{--c:var(--signal);color:var(--signal);border-color:color-mix(in oklch,var(--signal) 45%,var(--rule));}
+
+  /* ---------------- GALAXY HEADER ---------------- */
+  .galaxy{max-width:1120px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x);}
+  @media(max-width:1100px){.galaxy{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
+  @media(max-width:600px){.galaxy{padding-left:22px;padding-right:22px;}}
+  .galaxy--learn{--signal:var(--learn);}
+  .galaxy--build{--signal:var(--build);}
+  .galaxy--trust{--signal:var(--trust);}
+
+  .gxhead{padding:60px 0 0;scroll-margin-top:90px;}
+  .gxhead .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .gxhead .gdot{width:9px;height:9px;border-radius:50%;background:var(--signal);box-shadow:0 0 14px -1px var(--signal);}
+  .gxhead .num{font-family:var(--f-mono);font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--signal);}
+  .gxhead .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);}
+  .gxhead h2{font-size:clamp(24px,3.6vw,36px);font-weight:780;letter-spacing:-0.022em;line-height:1.1;margin:14px 0 0;color:var(--ink);text-wrap:balance;}
+  .gxhead h2 em{font-style:normal;color:var(--signal);}
+  .gxhead .pov{max-width:72ch;margin:14px 0 0;font-size:15px;line-height:1.62;color:var(--dim);}
+  .gxhead .pov b{color:var(--ink);font-weight:600;}
+  .gxbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:22px 0 26px;padding-bottom:14px;border-bottom:1px solid color-mix(in oklch,var(--signal) 50%,var(--rule));}
+  .gxbar .s{font-family:var(--f-mono);font-size:11px;letter-spacing:0.06em;color:var(--faint);}
+  .gxbar .map{font-family:var(--f-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);text-decoration:none;margin-left:auto;white-space:nowrap;}
+  .gxbar .map:hover{text-decoration:underline;}
+  @media(max-width:600px){.gxbar .map{margin-left:0;flex-basis:100%;}}
 
   /* ---------------- UNIFIED CARD ---------------- */
   .lab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   @media(max-width:900px){.lab-grid{grid-template-columns:1fr 1fr;}}
   @media(max-width:640px){.lab-grid{grid-template-columns:1fr;}}
-  .lab-grid--2{grid-template-columns:1fr 1fr;}
-  @media(max-width:760px){.lab-grid--2{grid-template-columns:1fr;}}
 
   .lcard{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:22px 22px 20px;text-decoration:none;color:inherit;transition:border-color .16s,transform .16s,box-shadow .16s;}
   a.lcard:hover{border-color:var(--signal);transform:translateY(-3px);box-shadow:0 18px 38px -26px rgba(0,0,0,.6);}
@@ -77,8 +103,36 @@
   .lcard--concept{background:color-mix(in srgb,var(--surface) 55%,transparent);border-style:dashed;}
   .lcard--concept .plabel{color:var(--faint);}
 
-  /* section intro line */
+  /* platform flagship — full-width feature band */
+  .platform{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap;border:1px solid var(--signal);border-radius:14px;padding:26px 28px;background:color-mix(in oklch,var(--signal) 8%,var(--surface));text-decoration:none;color:inherit;transition:transform .16s,box-shadow .16s;}
+  .platform:hover{transform:translateY(-3px);box-shadow:0 20px 44px -28px rgba(0,0,0,.6);}
+  .platform__l{max-width:62ch;}
+  .platform .plabel{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);}
+  .platform h3{font-size:clamp(20px,2.6vw,26px);font-weight:720;letter-spacing:-0.02em;line-height:1.2;color:var(--ink);margin:10px 0 8px;}
+  .platform p{font-size:14px;line-height:1.58;color:var(--dim);margin:0;}
+  .platform p b{color:var(--ink);font-weight:600;}
+  .platform .cta{font-family:var(--f-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal);white-space:nowrap;border:1px solid var(--signal);border-radius:999px;padding:12px 20px;}
+
+  /* section intro line + generic § head (for Concepts) */
   .lab-intro{color:var(--dim);max-width:70ch;font-size:14.5px;line-height:1.6;margin:0 0 26px;}
+  .lab-sec{padding:56px 0 0;}
+  .lab-shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--rule);margin-bottom:26px;}
+  .lab-shead .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.14em;color:var(--signal);}
+  .lab-shead .t{font-size:15px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);}
+  .lab-shead .s{font-family:var(--f-mono);font-size:11.5px;letter-spacing:0.06em;color:var(--faint);margin-left:auto;}
+  @media(max-width:600px){.lab-shead .s{margin-left:0;flex-basis:100%;}}
+
+  /* closing universe CTA */
+  .uni-close{max-width:1120px;margin:0 auto;padding:64px var(--pad-x) 8px;}
+  @media(max-width:1100px){.uni-close{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
+  @media(max-width:600px){.uni-close{padding-left:22px;padding-right:22px;}}
+  .uni-close__card{border:1px solid var(--rule);border-radius:16px;background:linear-gradient(180deg,color-mix(in oklch,var(--signal) 7%,var(--surface)),var(--surface));padding:40px 34px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
+  .uni-close__l{max-width:60ch;}
+  .uni-close .k{font-family:var(--f-mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--signal);}
+  .uni-close h2{font-size:clamp(22px,3vw,30px);font-weight:740;letter-spacing:-0.02em;line-height:1.16;margin:12px 0 8px;color:var(--ink);}
+  .uni-close p{font-size:14.5px;line-height:1.6;color:var(--dim);margin:0;}
+  .uni-close .btn{font-family:var(--f-mono);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--signal-ink);background:var(--signal);border-radius:999px;padding:14px 24px;text-decoration:none;white-space:nowrap;font-weight:700;}
+  .uni-close .btn:hover{filter:brightness(1.05);}
 </style>
   <link rel="stylesheet" href="assets/typography.css">
 </head>
@@ -110,25 +164,72 @@
 
 <!-- HERO -->
 <section class="lab-hero lab" data-screen-label="hero">
-  <div class="ky"><span class="dot"></span><span>§ AI LAB &middot; a working lab, not a portfolio</span></div>
+  <div class="ky"><span class="dot"></span><span>§ AI LAB &middot; the Builder&rsquo;s Universe &middot; one point of view, three galaxies</span></div>
   <h1>The questions <em>that wouldn&rsquo;t leave me alone.</em></h1>
-  <p class="sub">I don&rsquo;t build these to prove I can use AI &mdash; everyone can now. I build them to chase the questions that won&rsquo;t quit: <b>how memory should feel, when an agent should ask instead of act, what honest uncertainty looks like on a screen.</b> Each one links to the working thing. Not the tech &mdash; the thinking.</p>
-  <div class="runline">
-    <span>6 live tools</span><i></i><span>3 prototypes</span><i></i><span>2 studies</span><i></i><span>5 frameworks</span><i></i><span>3 still circling</span>
-  </div>
+  <p class="sub">A working lab, not a portfolio &mdash; and a whole universe, not a single page. Everything I build lives on one spine: <b>Learn</b> the craft, <b>Build</b> it efficiently, earn <b>Trust</b>. Live tools, prototypes still in motion, reusable frameworks, and the Builder&rsquo;s Bible learning platform &mdash; sorted into the three galaxies below.</p>
+  <nav class="uni-nav" aria-label="Jump to a galaxy">
+    <a class="learn" href="#learn"><span class="d"></span>01 &middot; Learn</a>
+    <a class="build" href="#build"><span class="d"></span>02 &middot; Build</a>
+    <a class="trust" href="#trust"><span class="d"></span>03 &middot; Trust</a>
+    <a class="map" href="builders-universe.html">✦ The full Universe map &rarr;</a>
+  </nav>
 </section>
 
-<!-- 01 · PLAYGROUNDS -->
-<section class="lab-sec lab" id="playgrounds">
-  <div class="lab-shead"><span class="n">§ 01</span><span class="t">Playgrounds</span><span class="s">// live &middot; open right now</span></div>
-  <p class="lab-intro">Shipped tools you can open this second. Each one started as a hunch about how AI should behave, and got tested in the open.</p>
+<!-- ══════════ GALAXY 01 · LEARN ══════════ -->
+<section class="galaxy galaxy--learn" id="learn">
+  <div class="gxhead">
+    <div class="row"><span class="gdot"></span><span class="num">Galaxy 01</span><span class="tag">// The learning platform</span></div>
+    <h2>Learn &mdash; <em>Builder&rsquo;s Bible</em></h2>
+    <p class="pov">AI knowledge shouldn&rsquo;t live behind paywalls and tutorial hell. I build the platform I wish existed &mdash; <b>the depth of documentation, the elegance of a premium product, and the discoverability of a modern learning system</b> &mdash; so a beginner and an expert each find their next step in under twenty seconds.</p>
+  </div>
+  <div class="gxbar">
+    <span class="s">// discover &middot; learn &middot; ship</span>
+    <a class="map" href="builders-universe.html#bible">Open the Learn galaxy on the Universe map &rarr;</a>
+  </div>
   <div class="lab-grid">
 
-    <a href="puneets-news-terminal.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">AI News Terminal</span><span class="status">Live</span></div>
-      <h3>How should an AI remember you &mdash; without feeling like surveillance?</h3>
-      <p class="learn"><b>Learned:</b> forgetting is a feature. Memory only earns trust when you can see it and time-bound it &mdash; a 30-day rolling window beats a permanent record.</p>
-      <div class="lcard__foot"><span class="area">Memory UX</span><span class="go">Open the terminal &rarr;</span></div>
+    <a href="builders-bible.html" class="platform">
+      <div class="platform__l">
+        <span class="plabel">Builder&rsquo;s Bible &middot; the platform</span>
+        <h3>An operating system for AI builders.</h3>
+        <p>Not a newsletter &mdash; a living learning platform. <b>128 articles, 5 staged roadmaps, a prompt library, workflow blueprints, tool comparisons, and calculators</b>, organised for discovery rather than recency. Discover, learn, build, and return.</p>
+      </div>
+      <span class="cta">Enter the Bible &rarr;</span>
+    </a>
+
+    <a href="builders-bible.html#articles" class="lcard">
+      <div class="lcard__top"><span class="plabel">The Library</span><span class="status">128 articles</span></div>
+      <h3>Where do you go when a feed can&rsquo;t teach you a craft?</h3>
+      <p class="learn"><b>The idea:</b> interactive, filterable reads with progress tracking &mdash; bookmark, like, and return. People learn from paths and topics, not reverse chronology.</p>
+      <div class="lcard__foot"><span class="area">Learn</span><span class="go">Open the library &rarr;</span></div>
+    </a>
+
+    <a href="builders-bible.html#playbooks" class="lcard">
+      <div class="lcard__top"><span class="plabel">AI Roadmaps</span><span class="status">5 stages</span></div>
+      <h3>Can a learning path end in something you actually shipped?</h3>
+      <p class="learn"><b>The idea:</b> beginner-to-enterprise roadmaps where every stage ends in a capstone. Knowledge that isn&rsquo;t shipped is trivia.</p>
+      <div class="lcard__foot"><span class="area">Learn</span><span class="go">Start a roadmap &rarr;</span></div>
+    </a>
+
+    <a href="builders-bible.html#prompts" class="lcard">
+      <div class="lcard__top"><span class="plabel">Prompt Library</span><span class="status">Copy-ready</span></div>
+      <h3>What if the best prompts came with the reasoning, not just the text?</h3>
+      <p class="learn"><b>The idea:</b> copy-ready prompts with example output and tips &mdash; expand, copy in one click, and bookmark the ones you reach for.</p>
+      <div class="lcard__foot"><span class="area">Learn</span><span class="go">Open the prompts &rarr;</span></div>
+    </a>
+
+    <a href="skills-lab.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Skills Lab</span><span class="status">Live</span></div>
+      <h3>What if trying a new AI skill cost you almost nothing?</h3>
+      <p class="learn"><b>Learned:</b> most of agentic UX is just lowering the cost of trying the next idea &mdash; a live generator plus 92 skills built for Indian and global builders.</p>
+      <div class="lcard__foot"><span class="area">Agent UX</span><span class="go">Open Skills Lab &rarr;</span></div>
+    </a>
+
+    <a href="30day-agentic-ux-plan.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">30-Day Agentic-UX Plan</span><span class="status">Case study</span></div>
+      <h3>Can agentic-UX craft be built as a daily habit, not a lecture?</h3>
+      <p class="learn"><b>Learned:</b> the hard part was never the prompt &mdash; it&rsquo;s designing the hand-off between human and agent. Craft comes from reps, not reading.</p>
+      <div class="lcard__foot"><span class="area">Agent UX</span><span class="go">Read the plan &rarr;</span></div>
     </a>
 
     <a href="https://pa9401.vercel.app/" target="_blank" rel="noopener" class="lcard">
@@ -145,35 +246,35 @@
       <div class="lcard__foot"><span class="area">Agent UX</span><span class="go">Open in ChatGPT &rarr;</span></div>
     </a>
 
+  </div>
+</section>
+
+<!-- ══════════ GALAXY 02 · BUILD ══════════ -->
+<section class="galaxy galaxy--build" id="build">
+  <div class="gxhead">
+    <div class="row"><span class="gdot"></span><span class="num">Galaxy 02</span><span class="tag">// The efficiency thesis</span></div>
+    <h2>Build &mdash; <em>efficiently, or not at all</em></h2>
+    <p class="pov">Everyone is chasing capability. I argue the real advantage is <b>efficiency &mdash; People, Planet, Profit</b>. The teams that win won&rsquo;t have the biggest model; they&rsquo;ll have the one that&rsquo;s cheapest to run at quality. Triage, route, and measure &mdash; every additional token has a cost.</p>
+  </div>
+  <div class="gxbar">
+    <span class="s">// cost-aware &middot; measured &middot; shipped</span>
+    <a class="map" href="builders-universe.html#eff">Open the Build galaxy on the Universe map &rarr;</a>
+  </div>
+  <div class="lab-grid">
+
+    <a href="workbench-alt2.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">AI Efficiency Workbench</span><span class="status">Prototype</span></div>
+      <h3>How do you make enterprise AI cost-aware without losing the plot?</h3>
+      <p class="learn"><b>Learned:</b> governance is a UX problem &mdash; every decision must be visible and defensible. Triage every workload, route by cost, send only the 5% that needs a human to a human.</p>
+      <div class="lcard__foot"><span class="area">AI Economics</span><span class="go">Open the workbench &rarr;</span></div>
+    </a>
+
     <a href="https://aiinflationmonitor.netlify.app/" target="_blank" rel="noopener" class="lcard">
       <div class="lcard__top"><span class="plabel">AI Inflation Observatory</span><span class="status">Live</span></div>
       <h3>Where is AI quietly making everything more expensive?</h3>
       <p class="learn"><b>Learned:</b> the right question &mdash; &lsquo;where does it hit you first?&rsquo; &mdash; carries the product further than the dashboard does. A composite index across 7 categories and 29 countries, refreshed daily.</p>
       <div class="lcard__foot"><span class="area">AI Economics</span><span class="go">Explore the observatory &rarr;</span></div>
     </a>
-
-    <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="lcard">
-      <div class="lcard__top"><span class="plabel">UX Trust &amp; Dark-Pattern Intelligence</span><span class="status">Live</span></div>
-      <h3>Can an agent tell an honest nudge from a manipulative one?</h3>
-      <p class="learn"><b>Learned:</b> trust is measurable &mdash; and people deserve to see the score, not just feel the manipulation. Paste a screen, get a scored audit with the guardrails built in.</p>
-      <div class="lcard__foot"><span class="area">AI Trust</span><span class="go">Open in ChatGPT &rarr;</span></div>
-    </a>
-
-    <a href="skills-lab.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">Skills Lab</span><span class="status">Live</span></div>
-      <h3>What if trying a new AI skill cost you almost nothing?</h3>
-      <p class="learn"><b>Learned:</b> most of agentic UX is just lowering the cost of trying the next idea &mdash; a live generator plus 92 skills built for Indian and global builders.</p>
-      <div class="lcard__foot"><span class="area">Agent UX</span><span class="go">Open Skills Lab &rarr;</span></div>
-    </a>
-
-  </div>
-</section>
-
-<!-- 02 · EXPERIMENTS -->
-<section class="lab-sec lab" id="experiments">
-  <div class="lab-shead"><span class="n">§ 02</span><span class="t">Experiments</span><span class="s">// functional prototypes, still in motion</span></div>
-  <p class="lab-intro">Prototypes I&rsquo;m still learning from. Each one names the bet it&rsquo;s making and the insight it&rsquo;s chasing.</p>
-  <div class="lab-grid">
 
     <a href="opportunity-simulator.html" class="lcard">
       <div class="lcard__top"><span class="plabel">Opportunity Simulator</span><span class="status">Prototype</span></div>
@@ -189,64 +290,11 @@
       <div class="lcard__foot"><span class="area">Agent UX</span><span class="go">Enter the room &rarr;</span></div>
     </a>
 
-    <a href="workbench-alt2.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">AI Efficiency Workbench</span><span class="status">Prototype</span></div>
-      <h3>How do you make enterprise AI cost-aware without losing the plot?</h3>
-      <p class="learn"><b>Learned:</b> governance is a UX problem &mdash; every decision must be visible and defensible. Triage every workload, route by cost, send only the 5% that needs a human to a human.</p>
-      <div class="lcard__foot"><span class="area">AI Economics</span><span class="go">Open the workbench &rarr;</span></div>
-    </a>
-
-  </div>
-</section>
-
-<!-- 03 · RESEARCH -->
-<section class="lab-sec lab" id="research">
-  <div class="lab-shead"><span class="n">§ 03</span><span class="t">Research</span><span class="s">// studied &amp; documented</span></div>
-  <p class="lab-intro">Deeper investigations &mdash; a real problem chased all the way to what it taught me.</p>
-  <div class="lab-grid lab-grid--2">
-
-    <a href="vigyan-setu.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">Vigyan Setu</span><span class="status">Case study</span></div>
-      <h3>Why did a national AI summit&rsquo;s experience break &mdash; and how would I rebuild it?</h3>
-      <p class="learn"><b>Learned:</b> speculative design only persuades when it&rsquo;s anchored to a real, documented failure. Trust is built in the seams &mdash; wayfinding, timing, and honest status.</p>
-      <div class="lcard__foot"><span class="area">AI Trust &middot; Human-in-loop</span><span class="go">Read the case study &rarr;</span></div>
-    </a>
-
-    <a href="30day-agentic-ux-plan.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">30-Day Agentic-UX Plan</span><span class="status">Case study</span></div>
-      <h3>Can agentic-UX craft be built as a daily habit, not a lecture?</h3>
-      <p class="learn"><b>Learned:</b> the hard part was never the prompt &mdash; it&rsquo;s designing the hand-off between human and agent. Craft comes from reps, not reading.</p>
-      <div class="lcard__foot"><span class="area">Agent UX</span><span class="go">Read the plan &rarr;</span></div>
-    </a>
-
-  </div>
-</section>
-
-<!-- 04 · FRAMEWORKS -->
-<section class="lab-sec lab" id="frameworks">
-  <div class="lab-shead"><span class="n">§ 04</span><span class="t">The Arora Frameworks</span><span class="s">// reusable IP</span></div>
-  <p class="lab-intro">When the same idea shows up in three experiments, I give it a name. These are the models I reach for again and again &mdash; the reusable part of the thinking.</p>
-  <div class="lab-grid">
-
-    <a href="memory-ux-canvas.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">Memory UX Canvas</span><span class="status">Framework</span></div>
-      <h3>What should an AI remember, forget, or never store without asking?</h3>
-      <p class="learn"><b>Learned:</b> a worksheet forces the honest call &mdash; separating what earns memory from what&rsquo;s just convenient to hoard.</p>
-      <div class="lcard__foot"><span class="area">Memory UX</span><span class="go">Read the framework &rarr;</span></div>
-    </a>
-
-    <a href="ai-decision-confidence-scale.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">AI Decision Confidence Scale</span><span class="status">Framework</span></div>
-      <h3>How sure is the model &mdash; and can the interface say so honestly?</h3>
-      <p class="learn"><b>Learned:</b> a shared language for confidence lets a screen say &lsquo;I&rsquo;m guessing&rsquo; instead of pretending.</p>
-      <div class="lcard__foot"><span class="area">AI Trust</span><span class="go">Read the framework &rarr;</span></div>
-    </a>
-
-    <a href="human-override-matrix.html" class="lcard">
-      <div class="lcard__top"><span class="plabel">Human Override Matrix</span><span class="status">Framework</span></div>
-      <h3>When should an agent act, ask, or wait?</h3>
-      <p class="learn"><b>Learned:</b> map stakes and reversibility, and the right amount of human control falls out of the grid.</p>
-      <div class="lcard__foot"><span class="area">Human-in-loop</span><span class="go">Read the framework &rarr;</span></div>
+    <a href="builders-bible.html#workflows" class="lcard">
+      <div class="lcard__top"><span class="plabel">Workflow Blueprints</span><span class="status">Library</span></div>
+      <h3>What&rsquo;s the shortest path from &lsquo;idea&rsquo; to a working automation?</h3>
+      <p class="learn"><b>The idea:</b> automation blueprints with the architecture, tools, build time, and cost &mdash; download the JSON, copy the steps, or save it for later.</p>
+      <div class="lcard__foot"><span class="area">Automation</span><span class="go">Open the blueprints &rarr;</span></div>
     </a>
 
     <a href="agent-collaboration-model.html" class="lcard">
@@ -263,20 +311,99 @@
       <div class="lcard__foot"><span class="area">Personalization</span><span class="go">Read the framework &rarr;</span></div>
     </a>
 
+    <a href="builders-bible.html#resources" class="lcard">
+      <div class="lcard__top"><span class="plabel">Calculators &amp; Toolkit</span><span class="status">Interactive</span></div>
+      <h3>Can you do the math before you commit to the build?</h3>
+      <p class="learn"><b>The idea:</b> live estimates for API spend, automation ROI, and token counts &mdash; plus side-by-side tool comparisons. Every field updates instantly.</p>
+      <div class="lcard__foot"><span class="area">AI Economics</span><span class="go">Open the toolkit &rarr;</span></div>
+    </a>
+
   </div>
 </section>
 
-<!-- 05 · CONCEPTS -->
+<!-- ══════════ GALAXY 03 · TRUST ══════════ -->
+<section class="galaxy galaxy--trust" id="trust">
+  <div class="gxhead">
+    <div class="row"><span class="gdot"></span><span class="num">Galaxy 03</span><span class="tag">// The trust stand</span></div>
+    <h2>Trust &mdash; <em>clever is easy, trusted is the work</em></h2>
+    <p class="pov">AI&rsquo;s biggest enterprise failure isn&rsquo;t intelligence &mdash; <b>it&rsquo;s trust</b>. As interfaces get more persuasive, the line between an ethical nudge and a dark pattern gets thinner. I design for trust before delight, and I build the tools that make manipulation &mdash; and honest uncertainty &mdash; visible.</p>
+  </div>
+  <div class="gxbar">
+    <span class="s">// trust-by-design &middot; guardrails &middot; honest uncertainty</span>
+    <a class="map" href="builders-universe.html#dark">Open the Trust galaxy on the Universe map &rarr;</a>
+  </div>
+  <div class="lab-grid">
+
+    <a href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" class="lcard">
+      <div class="lcard__top"><span class="plabel">UX Trust &amp; Dark-Pattern Intelligence</span><span class="status">Live</span></div>
+      <h3>Can an agent tell an honest nudge from a manipulative one?</h3>
+      <p class="learn"><b>Learned:</b> trust is measurable &mdash; and people deserve to see the score, not just feel the manipulation. Paste a screen, get a scored audit with the guardrails built in.</p>
+      <div class="lcard__foot"><span class="area">AI Trust</span><span class="go">Open in ChatGPT &rarr;</span></div>
+    </a>
+
+    <a href="dark-patterns.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Dark Patterns Masterclass</span><span class="status">Hub</span></div>
+      <h3>What does manipulation look like once you can actually see it?</h3>
+      <p class="learn"><b>Learned:</b> you can&rsquo;t fix what you can&rsquo;t see. An interactive catalogue, live demos, and a scored game &mdash; AI and non-AI dark patterns, made visible.</p>
+      <div class="lcard__foot"><span class="area">AI Trust</span><span class="go">Enter the hub &rarr;</span></div>
+    </a>
+
+    <a href="puneets-news-terminal.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">AI News Terminal</span><span class="status">Live</span></div>
+      <h3>How should an AI remember you &mdash; without feeling like surveillance?</h3>
+      <p class="learn"><b>Learned:</b> forgetting is a feature. Memory only earns trust when you can see it and time-bound it &mdash; a 30-day rolling window beats a permanent record.</p>
+      <div class="lcard__foot"><span class="area">Memory UX</span><span class="go">Open the terminal &rarr;</span></div>
+    </a>
+
+    <a href="vigyan-setu.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Vigyan Setu</span><span class="status">Case study</span></div>
+      <h3>Why did a national AI summit&rsquo;s experience break &mdash; and how would I rebuild it?</h3>
+      <p class="learn"><b>Learned:</b> speculative design only persuades when it&rsquo;s anchored to a real, documented failure. Trust is built in the seams &mdash; wayfinding, timing, and honest status.</p>
+      <div class="lcard__foot"><span class="area">AI Trust &middot; Human-in-loop</span><span class="go">Read the case study &rarr;</span></div>
+    </a>
+
+    <a href="viral-vs-verified.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Viral vs Verified</span><span class="status">Live exhibit</span></div>
+      <h3>Can you feel the pull of a fake before you know it&rsquo;s fake?</h3>
+      <p class="learn"><b>Learned:</b> putting 17 viral fakes beside 17 verified reports makes the manipulation legible &mdash; a live newsstand that refreshes every 8 hours.</p>
+      <div class="lcard__foot"><span class="area">AI Trust</span><span class="go">Open the exhibit &rarr;</span></div>
+    </a>
+
+    <a href="ai-decision-confidence-scale.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">AI Decision Confidence Scale</span><span class="status">Framework</span></div>
+      <h3>How sure is the model &mdash; and can the interface say so honestly?</h3>
+      <p class="learn"><b>Learned:</b> a shared language for confidence lets a screen say &lsquo;I&rsquo;m guessing&rsquo; instead of pretending.</p>
+      <div class="lcard__foot"><span class="area">AI Trust</span><span class="go">Read the framework &rarr;</span></div>
+    </a>
+
+    <a href="human-override-matrix.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Human Override Matrix</span><span class="status">Framework</span></div>
+      <h3>When should an agent act, ask, or wait?</h3>
+      <p class="learn"><b>Learned:</b> map stakes and reversibility, and the right amount of human control falls out of the grid.</p>
+      <div class="lcard__foot"><span class="area">Human-in-loop</span><span class="go">Read the framework &rarr;</span></div>
+    </a>
+
+    <a href="memory-ux-canvas.html" class="lcard">
+      <div class="lcard__top"><span class="plabel">Memory UX Canvas</span><span class="status">Framework</span></div>
+      <h3>What should an AI remember, forget, or never store without asking?</h3>
+      <p class="learn"><b>Learned:</b> a worksheet forces the honest call &mdash; separating what earns memory from what&rsquo;s just convenient to hoard.</p>
+      <div class="lcard__foot"><span class="area">Memory UX</span><span class="go">Read the framework &rarr;</span></div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ══════════ STILL CIRCLING · CONCEPTS ══════════ -->
 <section class="lab-sec lab" id="concepts">
-  <div class="lab-shead"><span class="n">§ 05</span><span class="t">Concepts</span><span class="s">// framed &amp; argued &middot; not yet built</span></div>
-  <p class="lab-intro">Questions I&rsquo;m still circling. Argued on paper, not yet in code.</p>
+  <div class="lab-shead"><span class="n">§ &infin;</span><span class="t">Still circling</span><span class="s">// framed &amp; argued &middot; not yet built</span></div>
+  <p class="lab-intro">Questions I&rsquo;m still circling, across all three galaxies. Argued on paper, not yet in code.</p>
   <div class="lab-grid">
 
     <div class="lcard lcard--concept">
       <div class="lcard__top"><span class="plabel">Prompt-evaluation harness</span><span class="status">Concept</span></div>
       <h3>How do you tell &lsquo;structurally wrong&rsquo; from &lsquo;just stylistically different&rsquo;?</h3>
       <p class="learn"><b>The bet:</b> versioned eval cases, side-by-side output diffs, and a rubric scorer that separates the two.</p>
-      <div class="lcard__foot"><span class="area">AI Trust</span><span class="go">Not yet built</span></div>
+      <div class="lcard__foot"><span class="area">Trust</span><span class="go">Not yet built</span></div>
     </div>
 
     <div class="lcard lcard--concept">
@@ -290,9 +417,21 @@
       <div class="lcard__top"><span class="plabel">Critique-as-a-Service</span><span class="status">Concept</span></div>
       <h3>What if a senior critique were available when the senior isn&rsquo;t in the room?</h3>
       <p class="learn"><b>The bet:</b> an agent that critiques a screen the way a senior IC would &mdash; scored against your team&rsquo;s own rubric.</p>
-      <div class="lcard__foot"><span class="area">Agent UX</span><span class="go">Not yet built</span></div>
+      <div class="lcard__foot"><span class="area">Learn</span><span class="go">Not yet built</span></div>
     </div>
 
+  </div>
+</section>
+
+<!-- ══════════ CLOSING · THE UNIVERSE ══════════ -->
+<section class="uni-close">
+  <div class="uni-close__card">
+    <div class="uni-close__l">
+      <div class="k">✦ Part of the Builder&rsquo;s Universe</div>
+      <h2>One operator across all three galaxies.</h2>
+      <p>Learn openly, build efficiently, earn trust. See how the three galaxies connect &mdash; the point of view, the signature essays, and the guided tour &mdash; on the full Universe map.</p>
+    </div>
+    <a href="builders-universe.html" class="btn">Explore the Universe map &rarr;</a>
   </div>
 </section>
 
