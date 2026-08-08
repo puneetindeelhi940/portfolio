@@ -13,7 +13,7 @@
       "label": "Technology Hardware",
       "weight": 0.2,
       "value": 8.7,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -24,7 +24,7 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 3.9,
+      "value": 3.7,
       "trend": "falling",
       "drivers": [
         "GPU instance demand",
@@ -36,8 +36,8 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 12.6,
-      "trend": "stable",
+      "value": 12.7,
+      "trend": "rising",
       "drivers": [
         "Inference cost",
         "Model competition",
@@ -48,7 +48,7 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 5.8,
+      "value": 6.0,
       "trend": "rising",
       "drivers": [
         "Data center demand",
@@ -61,7 +61,7 @@
       "label": "Consumer Electronics",
       "weight": 0.15,
       "value": 2.9,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,8 +72,8 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.5,
-      "trend": "falling",
+      "value": 6.6,
+      "trend": "rising",
       "drivers": [
         "AI feature premiums",
         "Copilot add-ons",
@@ -84,8 +84,8 @@
     "infrastructure": {
       "label": "Infrastructure & Construction",
       "weight": 0.1,
-      "value": 4.5,
-      "trend": "stable",
+      "value": 4.3,
+      "trend": "falling",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-08-07T06:58:59Z",
+  "last_updated": "2026-08-08T06:29:21Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
