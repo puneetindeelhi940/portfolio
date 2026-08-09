@@ -213,17 +213,34 @@
   function flip(dir){
     if(busy) return;
     var advance = function(){ i = (i + dir + DECK.length) % DECK.length; paint(); };
-    if(reduce || !card.animate){ advance(); schedule(); return; }
+    if(!card.animate){ advance(); schedule(); return; }
     busy = true;
+    if(reduce){
+      // motion-reduced, but still a clearly visible change (fade + slight lift)
+      var f1 = card.animate([{opacity:1,transform:"translateY(0)"},{opacity:0,transform:"translateY(-10px)"}],
+        {duration:220, easing:"ease-in"});
+      f1.onfinish = function(){
+        advance();
+        var f2 = card.animate([{opacity:0,transform:"translateY(10px)"},{opacity:1,transform:"translateY(0)"}],
+          {duration:300, easing:"ease-out"});
+        f2.onfinish = function(){ busy = false; };
+      };
+      schedule(); return;
+    }
+    // notebook page-turn: the page lifts up and over its top edge, the next drops in
     var out = card.animate(
-      [{transform:"rotateX(0deg)",opacity:1},{transform:"rotateX(88deg)",opacity:.06}],
-      {duration:620, easing:"cubic-bezier(.45,0,.85,.3)"}
+      [{transform:"rotateX(0deg)",opacity:1,filter:"brightness(1)"},
+       {transform:"rotateX(50deg)",opacity:.85,offset:.55},
+       {transform:"rotateX(92deg)",opacity:.03,filter:"brightness(1.4)"}],
+      {duration:680, easing:"cubic-bezier(.5,0,.85,.35)"}
     );
     out.onfinish = function(){
       advance();
       var inn = card.animate(
-        [{transform:"rotateX(-88deg)",opacity:.06},{transform:"rotateX(0deg)",opacity:1}],
-        {duration:780, easing:"cubic-bezier(.18,.75,.25,1)"}
+        [{transform:"rotateX(-92deg)",opacity:.03,filter:"brightness(1.35)"},
+         {transform:"rotateX(-38deg)",opacity:.9,offset:.5},
+         {transform:"rotateX(0deg)",opacity:1,filter:"brightness(1)"}],
+        {duration:820, easing:"cubic-bezier(.18,.78,.24,1)"}
       );
       inn.onfinish = function(){ busy = false; };
     };
