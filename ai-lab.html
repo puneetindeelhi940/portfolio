@@ -170,7 +170,12 @@
   .flip-face--front{justify-content:flex-end;}
   .flip-face--front::after{content:"";position:absolute;inset:0;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);pointer-events:none;z-index:3;}
   .flip-front-meta{position:relative;z-index:2;padding:0 20px 18px;}
-  .flip-front-meta .fchip{display:inline-block;font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.92);background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:3px 10px;margin-bottom:11px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);}
+  .flip-front-meta .fchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px;}
+  .flip-front-meta .fchip{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.92);background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:3px 10px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);}
+  .flip-front-meta .fchip--live{color:#fff;background:rgba(52,211,153,0.22);border-color:rgba(52,211,153,0.5);}
+  .flip-front-meta .fchip--live::before{content:"";width:6px;height:6px;border-radius:50%;background:#34d399;box-shadow:0 0 8px 1px rgba(52,211,153,0.85);animation:fpulse 2s ease-in-out infinite;}
+  @keyframes fpulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+  @media(prefers-reduced-motion:reduce){.flip-front-meta .fchip--live::before{animation:none;}}
   .flip-front-meta h3{font-size:20px;font-weight:730;line-height:1.16;letter-spacing:-0.015em;color:#fff;margin:0 0 11px;text-shadow:0 2px 16px rgba(0,0,0,0.7);text-wrap:balance;}
   .flip-hint{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.8);}
   .flip-hint .rot{display:inline-block;transition:transform .5s;}
@@ -192,9 +197,16 @@
   .flip-face--back{background:var(--surface);transform:rotateY(180deg);padding:24px 22px 20px;justify-content:flex-start;}
   .flip-face--back::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--g1),var(--g2));}
   .flip-card:hover .flip-face--back{border-color:var(--signal);}
-  .flip-face--back .btag{font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);margin-bottom:12px;}
-  .flip-face--back p{font-size:13.4px;line-height:1.6;color:var(--dim);margin:0;flex:1;}
-  .flip-face--back .bgo{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);}
+  .flip-face--back .btag{font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);margin-bottom:10px;}
+  .flip-face--back .bdesc{font-size:15px;font-weight:640;line-height:1.3;letter-spacing:-0.01em;color:var(--ink);margin:0 0 16px;}
+  .flip-face--back .bmeta{margin:0;flex:1;display:flex;flex-direction:column;gap:12px;}
+  .flip-face--back .bmeta__row{display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:start;}
+  .flip-face--back .bmeta dt{font-family:var(--f-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);padding-top:3px;}
+  .flip-face--back .bmeta dd{margin:0;font-size:12.4px;line-height:1.45;color:var(--dim);}
+  .flip-face--back .bmeta__tags{display:flex;flex-wrap:wrap;gap:5px;}
+  .flip-face--back .bmeta__tags span{font-size:10.5px;line-height:1;padding:4px 7px;border-radius:6px;background:rgba(127,127,127,0.1);border:1px solid var(--rule);color:var(--ink);}
+  .flip-face--back .bgo{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:10px;letter-spacing:0.09em;text-transform:uppercase;color:var(--signal);margin-top:14px;padding:9px 15px;border:1px solid var(--signal);border-radius:8px;transition:background .15s,color .15s;}
+  .flip-face--back .bgo:hover{background:var(--signal);color:var(--bg);}
 
   @media(prefers-reduced-motion:reduce){
     .flip-card__inner{transition:transform .3s ease;}
@@ -513,14 +525,19 @@
           <div class="flip-tint"></div>
           <div class="flip-scrim"></div>
           <div class="flip-front-meta">
-            <span class="fchip">Live &middot; 60+ sources</span>
+            <span class="fchips"><span class="fchip fchip--live">Live</span><span class="fchip">60+ sources</span></span>
             <h3>AI News Terminal</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Live tool</span>
-          <p>An AI news aggregator with a behavioural signal engine that learns from what you read &mdash; 40+ sources across 12 categories, decay-weighted scoring, and always-fresh content on every visit. Pure vanilla JS, zero dependencies.</p>
+          <p class="bdesc">Behavioural AI news aggregator</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>Analysts &middot; Researchers</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>News aggregation</span><span>Signal scoring</span><span>Trend tracking</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>2&ndash;5 min</dd></div>
+          </dl>
           <span class="bgo">Open the terminal &rarr;</span>
         </div>
       </div>
@@ -534,14 +551,19 @@
           <div class="flip-tint"></div>
           <div class="flip-scrim"></div>
           <div class="flip-front-meta">
-            <span class="fchip">Prototype &middot; Interactive</span>
+            <span class="fchips"><span class="fchip">Prototype</span><span class="fchip">Interactive</span></span>
             <h3>AI Opportunity Simulator</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Prototype</span>
-          <p>A living digital twin of the global economy for executive decision-making. AI-scored country rankings, four-order-deep geopolitical shock simulations, and real-time strategy extraction that turns macro noise into moves.</p>
+          <p class="bdesc">Global-economy digital twin</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>Executives &middot; Strategists</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Country ranking</span><span>Shock simulation</span><span>Strategy extraction</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>5&ndash;10 min</dd></div>
+          </dl>
           <span class="bgo">Open the simulator &rarr;</span>
         </div>
       </div>
@@ -555,14 +577,19 @@
           <div class="flip-tint"></div>
           <div class="flip-scrim"></div>
           <div class="flip-front-meta">
-            <span class="fchip">Prototype &middot; 3D globe</span>
+            <span class="fchips"><span class="fchip">Prototype</span><span class="fchip">3D globe</span></span>
             <h3>Orbital Situation Room</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Prototype</span>
-          <p>A WebGL 3D globe rendering satellites, ground stations, and live network links as a real-time defense-ops interface. AI-driven collision sims, telemetry selection, and failure-risk scoring &mdash; all rendered client-side.</p>
+          <p class="bdesc">Real-time 3D defense-ops room</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>Ops &middot; Defense teams</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Satellite tracking</span><span>Collision sims</span><span>Risk scoring</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>5&ndash;10 min</dd></div>
+          </dl>
           <span class="bgo">Enter the room &rarr;</span>
         </div>
       </div>
@@ -576,14 +603,19 @@
           <div class="flip-tint"></div>
           <div class="flip-scrim"></div>
           <div class="flip-front-meta">
-            <span class="fchip">Prototype &middot; AI economics</span>
+            <span class="fchips"><span class="fchip">Prototype</span><span class="fchip">AI economics</span></span>
             <h3>AI Efficiency Workbench</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Prototype</span>
-          <p>Make enterprise AI cost-aware without losing the plot. Triage every workload, route by cost, and send only the 5% that truly needs a human to a human. Governance treated as a UX problem &mdash; every decision visible and defensible.</p>
+          <p class="bdesc">Cost-aware AI governance console</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>AI leaders &middot; Platform teams</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Workload triage</span><span>Cost routing</span><span>Governance</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>5&ndash;10 min</dd></div>
+          </dl>
           <span class="bgo">Open the workbench &rarr;</span>
         </div>
       </div>
@@ -595,14 +627,19 @@
         <div class="flip-face flip-face--front flip-face--art">
           <span class="flip-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.6 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.4L12 3z"/><path d="M18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z"/></svg></span>
           <div class="flip-front-meta">
-            <span class="fchip">Live &middot; Vibe-coded</span>
+            <span class="fchips"><span class="fchip fchip--live">Live</span><span class="fchip">Vibe-coded</span></span>
             <h3>Design Intelligence Portal</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Live tool</span>
-          <p>A live AI-prompt engineering hub for design teams. CO-STAR, RTF, and Chain-of-Thought frameworks operationalised as ready-to-use tools, not theory &mdash; vibe-coded and shipped as a working instrument teams use daily.</p>
+          <p class="bdesc">Prompt-engineering hub for design teams</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>Design teams &middot; UX leaders</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>CO-STAR</span><span>RTF</span><span>Chain-of-Thought</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>5&ndash;15 min</dd></div>
+          </dl>
           <span class="bgo">Visit the portal &rarr;</span>
         </div>
       </div>
@@ -616,14 +653,19 @@
           <div class="flip-tint"></div>
           <div class="flip-scrim"></div>
           <div class="flip-front-meta">
-            <span class="fchip">Case study &middot; Interactive</span>
+            <span class="fchips"><span class="fchip">Case study</span><span class="fchip">Interactive</span></span>
             <h3>Vigyan Setu</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Case study</span>
-          <p>A 70-slide Double Diamond case study for a speculative event OS, born from the documented failures of the India AI Impact Summit. 30 methods, 10 fault lines, 5 personas, and an interactive phone prototype &mdash; Discover to Deliver.</p>
+          <p class="bdesc">Double-Diamond event-OS case study</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>UX designers &middot; Hiring teams</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Design process</span><span>Prototyping</span><span>Systems thinking</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>15&ndash;20 min</dd></div>
+          </dl>
           <span class="bgo">Read the case study &rarr;</span>
         </div>
       </div>
@@ -635,14 +677,19 @@
         <div class="flip-face flip-face--front flip-face--art">
           <span class="flip-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.2" y1="15.2" x2="20" y2="20"/><line x1="8" y1="10.5" x2="13" y2="10.5"/><line x1="8" y1="8" x2="13" y2="8"/></svg></span>
           <div class="flip-front-meta">
-            <span class="fchip">Custom GPT &middot; Live</span>
+            <span class="fchips"><span class="fchip">Custom GPT</span><span class="fchip fchip--live">Live</span></span>
             <h3>Portfolio Intelligence Lab</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Custom GPT</span>
-          <p>A custom GPT encoding 19.7 years of strategic design thinking. It reasons about work, decisions, and impact &mdash; an AI portfolio reviewer that critiques like an expert, arguing about outcomes, not just what looks nice.</p>
+          <p class="bdesc">AI portfolio critique agent</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>UX Designers &middot; Design Leaders</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Portfolio analysis</span><span>Strategic critique</span><span>Case-study evaluation</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>5&ndash;10 min</dd></div>
+          </dl>
           <span class="bgo">Open in ChatGPT &rarr;</span>
         </div>
       </div>
@@ -654,14 +701,19 @@
         <div class="flip-face flip-face--front flip-face--art">
           <span class="flip-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6l7-3z"/><path d="M9 12l2 2 4-4.2"/></svg></span>
           <div class="flip-front-meta">
-            <span class="fchip">Custom GPT &middot; Live</span>
+            <span class="fchips"><span class="fchip">Custom GPT</span><span class="fchip fchip--live">Live</span></span>
             <h3>UX Trust &amp; Dark-Pattern Intelligence</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Custom GPT</span>
-          <p>A custom GPT that runs AI-driven audits on any interface for trust erosion and dark patterns. Paste a screenshot and get a scored trust audit with actionable findings &mdash; ethical guardrails baked into the model.</p>
+          <p class="bdesc">AI trust &amp; dark-pattern auditor</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>UX designers &middot; Product teams</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Interface audits</span><span>Trust scoring</span><span>Pattern detection</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>5&ndash;10 min</dd></div>
+          </dl>
           <span class="bgo">Open in ChatGPT &rarr;</span>
         </div>
       </div>
@@ -675,14 +727,19 @@
           <div class="flip-tint"></div>
           <div class="flip-scrim"></div>
           <div class="flip-front-meta">
-            <span class="fchip">92 skills &middot; Generator</span>
+            <span class="fchips"><span class="fchip">92 skills</span><span class="fchip">Generator</span></span>
             <h3>Skills Lab</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Live tool</span>
-          <p>Three tools in one: an AI skills generator, 30 Claude skills built for India&rsquo;s builders, and 62 for global builders across engineering, product, design, and growth. Generate, copy, share, and download custom skills on the fly.</p>
+          <p class="bdesc">AI skills generator &amp; library</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>Builders &middot; PMs &middot; Designers</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Skill generation</span><span>Copy &amp; share</span><span>92 ready skills</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>2&ndash;10 min</dd></div>
+          </dl>
           <span class="bgo">Open Skills Lab &rarr;</span>
         </div>
       </div>
@@ -696,14 +753,19 @@
           <div class="flip-tint"></div>
           <div class="flip-scrim"></div>
           <div class="flip-front-meta">
-            <span class="fchip">Playbook &middot; 30 days</span>
+            <span class="fchips"><span class="fchip">Playbook</span><span class="fchip">30 days</span></span>
             <h3>30-Day Agentic-UX Plan</h3>
             <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
           </div>
         </div>
         <div class="flip-face flip-face--back">
           <span class="btag">Guide</span>
-          <p>A structured, day-by-day playbook for designing agentic AI experiences &mdash; from prompt-level fluency to shipping trustworthy autonomous agents. Concepts, hands-on drills, and daily rituals that build real AI-UX craft.</p>
+          <p class="bdesc">Daily agentic-UX craft playbook</p>
+          <dl class="bmeta">
+            <div class="bmeta__row"><dt>For</dt><dd>Designers &middot; AI-curious builders</dd></div>
+            <div class="bmeta__row"><dt>Uses</dt><dd class="bmeta__tags"><span>Daily drills</span><span>Prompt fluency</span><span>Agent design</span></dd></div>
+            <div class="bmeta__row"><dt>Time</dt><dd>30 days</dd></div>
+          </dl>
           <span class="bgo">Read the plan &rarr;</span>
         </div>
       </div>
