@@ -148,14 +148,18 @@
   .flip-shead .ctrls{margin-left:auto;display:flex;gap:8px;}
   .flip-arrow{width:34px;height:34px;border-radius:999px;border:1px solid var(--rule);background:var(--surface);color:var(--dim);font-size:15px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:border-color .15s,color .15s,transform .15s;}
   .flip-arrow:hover{border-color:var(--signal);color:var(--signal);transform:translateY(-1px);}
-  .flip-intro{color:var(--dim);max-width:74ch;font-size:14.5px;line-height:1.6;margin:14px 0 20px;}
-  .flip-intro b{color:var(--ink);font-weight:600;}
+  .flip-sec p.flip-intro{color:var(--dim);max-width:none;font-size:clamp(10px,1.08vw,13px)!important;line-height:1.6;letter-spacing:-0.002em;margin:14px 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .flip-sec p.flip-intro b{color:var(--ink);font-weight:600;}
+  @media(max-width:820px){.flip-sec p.flip-intro{white-space:normal;font-size:13px!important;letter-spacing:0;}}
 
-  .flip-rail{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding:8px 2px 26px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--rule) transparent;}
-  .flip-rail::-webkit-scrollbar{height:8px;}
-  .flip-rail::-webkit-scrollbar-track{background:transparent;}
-  .flip-rail::-webkit-scrollbar-thumb{background:var(--rule);border-radius:999px;}
-  .flip-rail::-webkit-scrollbar-thumb:hover{background:var(--faint);}
+  .flip-rail{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding:8px 2px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;}
+  .flip-rail::-webkit-scrollbar{width:0;height:0;display:none;}
+
+  /* 3-dot carousel indicator */
+  .flip-dots{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:14px;}
+  .flip-dot{width:13px;height:13px;border-radius:50%;padding:0;cursor:pointer;border:2px solid #1f7a5a;background:transparent;transition:background .2s,transform .2s,border-color .2s;}
+  .flip-dot:hover{border-color:#2a9d75;}
+  .flip-dot[aria-current="true"]{background:#1f7a5a;border-color:#1f7a5a;transform:scale(1.18);}
 
   .flip-card{flex:0 0 auto;width:278px;height:380px;perspective:1400px;text-decoration:none;color:inherit;border-radius:18px;outline-offset:4px;}
   .flip-card__inner{position:relative;width:100%;height:100%;transition:transform .9s cubic-bezier(.16,.84,.3,1);transform-style:preserve-3d;}
@@ -706,6 +710,12 @@
     </a>
 
   </div>
+
+  <div class="flip-dots" id="flipDots" role="tablist" aria-label="Card carousel">
+    <button type="button" class="flip-dot" aria-current="true" aria-label="Go to card group 1"></button>
+    <button type="button" class="flip-dot" aria-current="false" aria-label="Go to card group 2"></button>
+    <button type="button" class="flip-dot" aria-current="false" aria-label="Go to card group 3"></button>
+  </div>
 </section>
 
 <!-- ══════════ CLOSING · THE UNIVERSE ══════════ -->
@@ -760,11 +770,33 @@
   rail.addEventListener('pointerdown', pause); /* manual drag / arrow use */
   rail.addEventListener('pointerup',   resumeSoon);
 
+  /* 3-dot carousel indicator */
+  var dots = Array.prototype.slice.call(document.querySelectorAll('#flipDots .flip-dot'));
+  var N = dots.length, lastIdx = -1;
+  function setActive(i){
+    if(i === lastIdx) return;
+    lastIdx = i;
+    dots.forEach(function(d,k){ d.setAttribute('aria-current', k===i ? 'true':'false'); });
+  }
+  dots.forEach(function(d,i){
+    d.addEventListener('click', function(){
+      pause();
+      rail.scrollTo({ left: loopDist() * (i / N), behavior: 'smooth' });
+      setActive(i);
+      resumeSoon();
+    });
+  });
+
   var speed = 0.45;
   function tick(){
     if(!paused && !reduce.matches){
       rail.scrollLeft += speed;
       if(rail.scrollLeft >= loopDist()) rail.scrollLeft -= loopDist();
+    }
+    var d = loopDist();
+    if(d > 0){
+      var frac = (rail.scrollLeft % d) / d;
+      setActive(Math.min(N - 1, Math.floor(frac * N)));
     }
     requestAnimationFrame(tick);
   }
