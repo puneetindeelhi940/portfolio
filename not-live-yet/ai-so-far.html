@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI, So Far — the Good, the Bad & the Ugly</title>
+<meta name="author" content="Puneet Arora">
+<meta name="description" content="A living card of what AI has done so far — the good, the bad, and the ugly. Facts and milestones that rotate every 35 seconds.">
+<meta name="robots" content="noindex">
+<base href="../">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     AI, SO FAR — the Good, the Bad & the Ugly
+     A cinematic, self-cycling fact card. Immersive dark stage,
+     tone-morphing aurora, 35s auto-advance. Standalone preview.
+     Built by Puneet Arora.
+     ============================================================ */
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --f-sans:'Roboto',system-ui,-apple-system,sans-serif;
+    --f-mono:'Roboto Mono',ui-monospace,monospace;
+    --ink:#f4f7f9; --dim:#9aa7b2; --faint:#66727d;
+    --stage:#05070a;
+    /* tone tokens, swapped per category */
+    --tone:#34d399; --tone-2:#0ea5e9; --tone-ink:#062a20;
+    --dur:35s;
+  }
+  html,body{height:100%;}
+  body{
+    font-family:var(--f-sans);color:var(--ink);background:var(--stage);
+    min-height:100svh;overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    transition:background .9s ease;
+  }
+
+  /* ---------------- STAGE + AURORA ---------------- */
+  .stage{position:fixed;inset:0;overflow:hidden;z-index:0;}
+  .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;
+    transition:background 1.1s ease, opacity 1.1s ease;will-change:transform;}
+  .blob--a{width:60vmax;height:60vmax;left:-18vmax;top:-22vmax;background:var(--tone);
+    animation:drift-a 26s ease-in-out infinite;}
+  .blob--b{width:52vmax;height:52vmax;right:-16vmax;top:8vmax;background:var(--tone-2);opacity:.4;
+    animation:drift-b 32s ease-in-out infinite;}
+  .blob--c{width:46vmax;height:46vmax;left:24vmax;bottom:-26vmax;background:var(--tone);opacity:.32;
+    animation:drift-c 38s ease-in-out infinite;}
+  @keyframes drift-a{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(6vmax,4vmax) scale(1.12);}}
+  @keyframes drift-b{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-5vmax,6vmax) scale(1.08);}}
+  @keyframes drift-c{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(4vmax,-5vmax) scale(1.15);}}
+  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .vignette{position:fixed;inset:0;z-index:1;pointer-events:none;
+    background:radial-gradient(120% 90% at 50% 42%,transparent 42%,rgba(3,5,8,.55) 82%,rgba(3,5,8,.86) 100%);}
+
+  /* ---------------- SHELL ---------------- */
+  .wrap{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;
+    max-width:1180px;margin:0 auto;padding:26px clamp(20px,4vw,54px) 22px;}
+
+  header.top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+  .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:inherit;}
+  .brand .mk{font-family:var(--f-mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--ink);font-weight:500;}
+  .brand .mk b{color:var(--tone);transition:color .9s ease;}
+  .back{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--faint);text-decoration:none;border:1px solid rgba(255,255,255,.12);border-radius:999px;
+    padding:7px 14px;transition:color .2s,border-color .2s;}
+  .back:hover{color:var(--ink);border-color:rgba(255,255,255,.34);}
+
+  /* filter chips */
+  .filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .fchip{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--dim);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);
+    border-radius:999px;padding:7px 13px;cursor:pointer;transition:all .18s;display:inline-flex;align-items:center;gap:7px;}
+  .fchip:hover{color:var(--ink);border-color:rgba(255,255,255,.3);}
+  .fchip .d{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.85;}
+  .fchip[data-f="good"] .d{color:#34d399;} .fchip[data-f="bad"] .d{color:#f59e0b;} .fchip[data-f="ugly"] .d{color:#f43f5e;}
+  .fchip[aria-pressed="true"]{color:#05070a;background:var(--ink);border-color:var(--ink);font-weight:600;}
+  .fchip[aria-pressed="true"] .d{color:#05070a;}
+
+  /* ---------------- CARD ---------------- */
+  .stagerow{flex:1;display:flex;align-items:center;justify-content:center;padding:34px 0;}
+  .card{width:100%;max-width:900px;position:relative;
+    border:1px solid rgba(255,255,255,.1);border-radius:26px;
+    background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+    -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+    box-shadow:0 40px 120px -50px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.09);
+    padding:clamp(28px,4.5vw,52px);overflow:hidden;}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+    background:linear-gradient(var(--tone),var(--tone-2));transition:background .9s ease;}
+  .card::after{content:"";position:absolute;right:-30%;top:-40%;width:70%;height:120%;
+    background:radial-gradient(closest-side,color-mix(in srgb,var(--tone) 26%,transparent),transparent);
+    pointer-events:none;transition:background .9s ease;}
+
+  .badge{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:11px;
+    letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--tone-ink);
+    background:var(--tone);border-radius:999px;padding:8px 15px;transition:background .9s ease,color .9s ease;}
+  .badge .ic{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .kicker{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--dim);margin:22px 0 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .kicker .era{color:var(--tone);font-weight:500;transition:color .9s ease;}
+  .kicker .sep{width:5px;height:5px;border-radius:50%;background:var(--faint);}
+  .fact{font-size:clamp(25px,4.6vw,50px);line-height:1.1;letter-spacing:-.025em;font-weight:800;
+    color:var(--ink);text-wrap:balance;}
+  .note{margin-top:20px;font-size:clamp(14px,1.7vw,18px);line-height:1.55;color:var(--dim);max-width:62ch;}
+  .signal{margin-top:26px;display:inline-flex;align-items:center;gap:9px;font-family:var(--f-mono);
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);}
+  .signal .tg{color:var(--tone);transition:color .9s ease;}
+
+  /* enter animation */
+  .anim{animation:rise .7s cubic-bezier(.16,.84,.3,1) both;}
+  @keyframes rise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+
+  /* ---------------- CONTROLS ---------------- */
+  .progress{height:3px;border-radius:999px;background:rgba(255,255,255,.09);overflow:hidden;margin-bottom:20px;}
+  .progress__bar{height:100%;width:0;background:linear-gradient(90deg,var(--tone),var(--tone-2));
+    transition:background .9s ease;}
+  .progress__bar.run{animation:fill var(--dur) linear forwards;}
+  @keyframes fill{from{width:0;}to{width:100%;}}
+
+  .controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+  .btn{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.16);
+    background:rgba(255,255,255,.05);color:var(--ink);cursor:pointer;display:inline-flex;
+    align-items:center;justify-content:center;transition:all .18s;}
+  .btn:hover{border-color:var(--tone);background:color-mix(in srgb,var(--tone) 16%,transparent);transform:translateY(-2px);}
+  .btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+  .btn--play svg{fill:currentColor;stroke:none;}
+  .counter{font-family:var(--f-mono);font-size:13px;letter-spacing:.1em;color:var(--dim);}
+  .counter b{color:var(--ink);font-size:17px;}
+  .hint{margin-left:auto;font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);}
+  .hint kbd{font-family:var(--f-mono);border:1px solid rgba(255,255,255,.16);border-radius:5px;
+    padding:2px 6px;color:var(--dim);font-size:9.5px;}
+
+  footer.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    margin-top:24px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);}
+  .credit{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);}
+  .credit b{color:var(--dim);font-weight:500;}
+  .foot .meta{font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;color:var(--faint);}
+
+  @media(max-width:600px){
+    .hint{display:none;}
+    .stagerow{padding:20px 0;}
+    header.top{gap:12px;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .blob{animation:none;} .anim{animation:none;}
+    .progress__bar.run{animation:none;width:100%;}
+    body,.badge,.card::before,.kicker .era{transition:none;}
+  }
+</style>
+</head>
+<body>
+  <div class="stage" aria-hidden="true">
+    <div class="blob blob--a"></div>
+    <div class="blob blob--b"></div>
+    <div class="blob blob--c"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="ai-lab.html" title="Back to the AI Lab">
+        <span class="mk">AI, <b>SO FAR</b></span>
+      </a>
+      <div class="filters" id="filters" role="group" aria-label="Filter by kind">
+        <button type="button" class="fchip" data-f="" aria-pressed="true">All</button>
+        <button type="button" class="fchip" data-f="good" aria-pressed="false"><span class="d"></span>Good</button>
+        <button type="button" class="fchip" data-f="bad" aria-pressed="false"><span class="d"></span>Bad</button>
+        <button type="button" class="fchip" data-f="ugly" aria-pressed="false"><span class="d"></span>Ugly</button>
+        <a class="back" href="ai-lab.html">&larr; AI Lab</a>
+      </div>
+    </header>
+
+    <div class="stagerow">
+      <article class="card" id="card" aria-live="polite">
+        <span class="badge" id="badge"></span>
+        <div class="kicker" id="kicker"></div>
+        <h1 class="fact" id="fact"></h1>
+        <p class="note" id="note"></p>
+        <div class="signal" id="signal"></div>
+      </article>
+    </div>
+
+    <div class="progress"><div class="progress__bar" id="bar"></div></div>
+    <div class="controls">
+      <button type="button" class="btn" id="prev" aria-label="Previous fact">
+        <svg viewBox="0 0 24 24"><polyline points="15 5 8 12 15 19"/></svg>
+      </button>
+      <button type="button" class="btn btn--play" id="play" aria-label="Pause">
+        <svg viewBox="0 0 24 24" id="playIc"><rect x="7" y="6" width="3.4" height="12" rx="1"/><rect x="13.6" y="6" width="3.4" height="12" rx="1"/></svg>
+      </button>
+      <button type="button" class="btn" id="next" aria-label="Next fact">
+        <svg viewBox="0 0 24 24"><polyline points="9 5 16 12 9 19"/></svg>
+      </button>
+      <span class="counter"><b id="cur">01</b> / <span id="tot">00</span></span>
+      <span class="hint"><kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>space</kbd> pause</span>
+    </div>
+
+    <footer class="foot">
+      <span class="credit">Built by <b>Puneet Arora</b></span>
+      <span class="meta">Auto-advances every 35s &middot; a living view, not the last word</span>
+    </footer>
+  </div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---- tone palettes per kind ---- */
+  var TONES = {
+    good: { tone:"#34d399", tone2:"#0ea5e9", ink:"#052e23", label:"The Good",
+            ic:'<path d="M20 6L9 17l-5-5"/>' },
+    bad:  { tone:"#f59e0b", tone2:"#ef7c1a", ink:"#3a2503", label:"The Bad",
+            ic:'<path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/>' },
+    ugly: { tone:"#f43f5e", tone2:"#b91c47", ink:"#3d0713", label:"The Ugly",
+            ic:'<circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/>' }
+  };
+
+  /* ---- the deck: curated, defensible facts about what AI has done ---- */
+  var DECK = [
+    { k:"good", era:"2022 · DeepMind", fact:"AI mapped the 3-D shape of nearly every protein known to science — about 200 million — and gave the whole database away for free.", note:"AlphaFold compressed a problem biologists had wrestled with for 50 years into an afternoon, accelerating drug and disease research worldwide.", tag:"Structural biology" },
+    { k:"good", era:"2024 · Stockholm", fact:"The Nobel Prizes honoured AI twice in one year — Chemistry for protein folding, Physics for the foundations of neural networks.", note:"Demis Hassabis and John Jumper shared the Chemistry prize; Geoffrey Hinton and John Hopfield the Physics prize — a field's coming-of-age.", tag:"Recognition" },
+    { k:"good", era:"2016 · Seoul", fact:"A machine beat one of the greatest Go players alive, 4 games to 1 — a feat experts had said was a decade away.", note:"AlphaGo's 'move 37' was so alien and so good that it changed how human champions play the game.", tag:"Milestone" },
+    { k:"good", era:"2023 · everywhere", fact:"A chatbot reached an estimated 100 million users in about two months — the fastest a consumer product had ever spread.", note:"ChatGPT put generative AI in ordinary hands overnight and reset expectations for what software can do.", tag:"Adoption" },
+    { k:"good", era:"ongoing · clinics", fact:"AI screening now flags diabetic eye disease and certain cancers earlier — lending expert-level eyes to places that have none.", note:"When calibrated and supervised, these tools extend scarce specialists to millions who would otherwise go unseen.", tag:"Healthcare" },
+    { k:"good", era:"2023 · forecasting", fact:"AI weather models produce 10-day global forecasts in under a minute — often more accurately than the physics-based giants.", note:"GraphCast and its rivals run on a single machine, hinting at cheaper, faster early warnings for extreme weather.", tag:"Climate & weather" },
+    { k:"good", era:"ongoing · roads", fact:"Fully driverless robotaxis now carry paying passengers through several U.S. cities, day and night.", note:"After decades of hype, autonomy is finally a service you can hail — cautiously, and city by city.", tag:"Autonomy" },
+    { k:"good", era:"ongoing · language", fact:"Real-time speech translation across 100+ languages is quietly dissolving barriers that stood for millennia.", note:"From clinics to classrooms, people who could never understand one another now can — instantly.", tag:"Access" },
+    { k:"good", era:"2012 · the spark", fact:"A neural network crushed an image-recognition contest so decisively that it lit the fuse on the entire modern AI era.", note:"'AlexNet' proved deep learning worked at scale, and the industry pivoted almost overnight.", tag:"Origin" },
+
+    { k:"bad", era:"ongoing · trust", fact:"Large language models 'hallucinate' — inventing citations, quotes and facts with complete, fluent confidence.", note:"The same fluency that makes them useful makes their mistakes dangerously easy to believe.", tag:"Reliability" },
+    { k:"bad", era:"2023 · New York", fact:"Lawyers were sanctioned after filing a legal brief full of court cases that ChatGPT had simply made up.", note:"A cautionary tale that went global: convincing text is not the same as true text.", tag:"Misuse" },
+    { k:"bad", era:"2018 · the mirror", fact:"'Gender Shades' showed commercial face-recognition failed far more often on darker-skinned and female faces.", note:"AI inherits the blind spots of its data — and then applies them at scale, to real people.", tag:"Bias" },
+    { k:"bad", era:"ongoing · the grid", fact:"Training and running frontier models burns enormous electricity and water — data-centre demand is straining power grids.", note:"The intelligence is cheap to use and expensive to run; the environmental bill is only now coming due.", tag:"Energy" },
+    { k:"bad", era:"2023– · the courts", fact:"Artists, authors and newsrooms are suing over copyrighted work swept into training data without consent.", note:"Who owns what a model learned from — and who gets paid — is being decided in court, right now.", tag:"Copyright" },
+    { k:"bad", era:"ongoing · the web", fact:"AI-generated text and images are flooding the internet, making it harder to tell what — and who — is real.", note:"As synthetic content trains the next models, the signal of the open web risks drowning in its own noise.", tag:"Information" },
+
+    { k:"ugly", era:"2024 · New Hampshire", fact:"A faked robocall cloning a president's voice tried to talk voters out of showing up to a primary.", note:"Cheap, convincing voice clones turned election interference into a point-and-click affair.", tag:"Disinformation" },
+    { k:"ugly", era:"ongoing · your phone", fact:"Voice-cloning scams now imitate a loved one in distress to extort money from their own family.", note:"A few seconds of audio is enough to weaponise a familiar voice against the people who trust it.", tag:"Fraud" },
+    { k:"ugly", era:"ongoing · consent", fact:"Deepfake tools are used to fabricate non-consensual explicit images — overwhelmingly of women and girls.", note:"The technology to violate someone's likeness is now free, fast, and horrifyingly easy to find.", tag:"Abuse" },
+    { k:"ugly", era:"ongoing · justice", fact:"Wrongful face-recognition matches have led to innocent people being arrested for crimes they did not commit.", note:"When a flawed match is treated as fact, the burden of the machine's error falls on the wrongly accused.", tag:"Surveillance" },
+    { k:"ugly", era:"ongoing · warfare", fact:"Nations are racing to field autonomous weapons that can select and strike targets with little human say.", note:"The debate over handing life-and-death decisions to software is no longer hypothetical.", tag:"Autonomous weapons" },
+    { k:"ugly", era:"ongoing · the worst", fact:"Generative tools have industrialised the creation of child-abuse imagery, overwhelming investigators worldwide.", note:"The same models that delight millions are, in the wrong hands, an engine for the unconscionable.", tag:"Exploitation" }
+  ];
+
+  var root = document.documentElement;
+  var el = {
+    body: document.body, card: document.getElementById("card"),
+    badge: document.getElementById("badge"), kicker: document.getElementById("kicker"),
+    fact: document.getElementById("fact"), note: document.getElementById("note"),
+    signal: document.getElementById("signal"), bar: document.getElementById("bar"),
+    cur: document.getElementById("cur"), tot: document.getElementById("tot"),
+    play: document.getElementById("play"), playIc: document.getElementById("playIc"),
+    mkB: document.querySelector(".brand .mk b")
+  };
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var filter = "";                 // "", good, bad, ugly
+  var view = DECK.slice();         // filtered deck
+  var i = 0;                        // index into view
+  var timer = null, paused = false;
+  var DUR = 35000;
+
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+
+  function applyTone(kind){
+    var t = TONES[kind];
+    root.style.setProperty("--tone", t.tone);
+    root.style.setProperty("--tone-2", t.tone2);
+    root.style.setProperty("--tone-ink", t.ink);
+    // subtle stage wash toward the tone
+    el.body.style.background = "radial-gradient(120% 100% at 50% 0%, " +
+      hexA(t.tone, .10) + " 0%, #05070a 58%)";
+  }
+  function hexA(hex, a){
+    var n = parseInt(hex.slice(1), 16);
+    return "rgba(" + ((n>>16)&255) + "," + ((n>>8)&255) + "," + (n&255) + "," + a + ")";
+  }
+
+  function restartBar(){
+    el.bar.classList.remove("run");
+    void el.bar.offsetWidth;               // reflow to restart the animation
+    if(!paused && !reduce) el.bar.classList.add("run");
+    el.bar.style.width = (paused || reduce) ? el.bar.style.width : "";
+  }
+
+  function render(animate){
+    var d = view[i];
+    var t = TONES[d.k];
+    applyTone(d.k);
+    el.badge.innerHTML = '<svg class="ic" viewBox="0 0 24 24">' + t.ic + "</svg>" + t.label;
+    el.kicker.innerHTML = '<span class="era">' + d.era + "</span>";
+    el.fact.textContent = d.fact;
+    el.note.textContent = d.note;
+    el.signal.innerHTML = 'Signal — <span class="tg">' + d.tag + "</span>";
+    el.cur.textContent = pad(i + 1);
+    el.tot.textContent = pad(view.length);
+
+    if(animate){
+      el.card.classList.remove("anim"); void el.card.offsetWidth; el.card.classList.add("anim");
+    }
+    restartBar();
+  }
+
+  function schedule(){
+    clearTimeout(timer);
+    if(paused) return;
+    timer = setTimeout(function(){ go(1); }, DUR);
+  }
+  function go(dir){
+    i = (i + dir + view.length) % view.length;
+    render(true);
+    schedule();
+  }
+  function setPaused(p){
+    paused = p;
+    el.play.setAttribute("aria-label", p ? "Play" : "Pause");
+    el.playIc.innerHTML = p
+      ? '<path d="M8 5v14l11-7z"/>'
+      : '<rect x="7" y="6" width="3.4" height="12" rx="1"/><rect x="13.6" y="6" width="3.4" height="12" rx="1"/>';
+    if(p){ clearTimeout(timer); el.bar.classList.remove("run");
+           el.bar.style.width = getComputedStyle(el.bar).width; }
+    else { restartBar(); schedule(); }
+  }
+
+  function setFilter(f){
+    filter = f;
+    view = f ? DECK.filter(function(d){ return d.k === f; }) : DECK.slice();
+    i = 0;
+    Array.prototype.forEach.call(document.querySelectorAll("#filters .fchip"), function(b){
+      b.setAttribute("aria-pressed", b.getAttribute("data-f") === f ? "true" : "false");
+    });
+    render(true);
+    if(!paused) schedule();
+  }
+
+  /* ---- wiring ---- */
+  document.getElementById("prev").addEventListener("click", function(){ go(-1); });
+  document.getElementById("next").addEventListener("click", function(){ go(1); });
+  el.play.addEventListener("click", function(){ setPaused(!paused); });
+  document.getElementById("filters").addEventListener("click", function(e){
+    var b = e.target.closest(".fchip"); if(!b) return;
+    setFilter(b.getAttribute("data-f"));
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "ArrowRight"){ e.preventDefault(); go(1); }
+    else if(e.key === "ArrowLeft"){ e.preventDefault(); go(-1); }
+    else if(e.key === " "){ e.preventDefault(); setPaused(!paused); }
+  });
+  // pause when tab is hidden, resume when back
+  document.addEventListener("visibilitychange", function(){
+    if(document.hidden){ clearTimeout(timer); }
+    else if(!paused){ schedule(); }
+  });
+
+  el.tot.textContent = pad(DECK.length);
+  render(true);
+  schedule();
+})();
+</script>
+</body>
+</html>
