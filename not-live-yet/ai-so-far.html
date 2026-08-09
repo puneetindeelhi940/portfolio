@@ -8,6 +8,7 @@
 <meta name="description" content="A living, self-cycling card of what AI has done so far. Tap to flip. Refreshed weekly, with a live news layer.">
 <meta name="robots" content="noindex">
 <base href="../">
+<script>if(/[?&]embed=1/.test(location.search))document.documentElement.classList.add('embed');</script>
 <!-- Social share -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI, So Far — what AI has done">
@@ -110,6 +111,13 @@
   .foot .meta{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.06em;color:var(--faint);}
 
   @media(prefers-reduced-motion:reduce){ .blob,.cardshell::before{animation:none;} }
+
+  /* ---------------- EMBED MODE (?embed=1) — just the card ---------------- */
+  html.embed,html.embed body{background:transparent;min-height:0;height:auto;}
+  html.embed .stage,html.embed .grain,html.embed .vignette,html.embed header.top,html.embed footer.foot{display:none!important;}
+  html.embed .wrap{padding:0;min-height:0;}
+  html.embed .stagerow{padding:14px;min-height:100svh;}
+  html.embed .cardshell{max-width:100%;}
 </style>
 </head>
 <body>
