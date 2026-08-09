@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI, So Far — a living card of what AI has done</title>
 <meta name="author" content="Puneet Arora">
-<meta name="description" content="A living, self-cycling card of what AI has done so far. Facts and milestones rotate every 35 seconds. Refreshed weekly.">
+<meta name="description" content="A living, self-cycling card of what AI has done so far. Tap to flip to the next fact. Refreshed weekly.">
 <meta name="robots" content="noindex">
 <base href="../">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,9 @@
 <style>
   /* ============================================================
      AI, SO FAR — a living GenAI fact card
-     Compact glass card, purple / royal-blue GenAI aurora,
-     35s auto-advance. Deck auto-refreshed weekly.
-     Built by Puneet Arora.
+     Tall, narrow glass card · purple / royal-blue GenAI aurora ·
+     notebook page-flip on change · tap to flip · auto every 35s.
+     Deck auto-refreshed weekly. Built by Puneet Arora.
      ============================================================ */
   *{box-sizing:border-box;margin:0;padding:0;}
   :root{
@@ -24,7 +24,6 @@
     --f-mono:'Roboto Mono',ui-monospace,monospace;
     --ink:#f3f1fb; --dim:#a9a5c9; --faint:#6f6b93;
     --stage:#070510;
-    /* GenAI palette — purple + royal blue */
     --purple:#a855f7; --royal:#4f46e5; --indigo:#6366f1; --blue:#3b82f6;
     --dur:35s;
   }
@@ -41,7 +40,7 @@
   .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;will-change:transform;}
   .blob--a{width:58vmax;height:58vmax;left:-16vmax;top:-20vmax;background:var(--purple);animation:drift-a 26s ease-in-out infinite;}
   .blob--b{width:50vmax;height:50vmax;right:-14vmax;top:6vmax;background:var(--royal);opacity:.42;animation:drift-b 32s ease-in-out infinite;}
-  .blob--c{width:44vmax;height:44vmax;left:26vmax;bottom:-24vmax;background:var(--blue);opacity:.3;animation:drift-c 38s ease-in-out infinite;}
+  .blob--c{width:46vmax;height:46vmax;left:24vmax;bottom:-26vmax;background:var(--blue);opacity:.34;animation:drift-c 38s ease-in-out infinite;}
   @keyframes drift-a{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(6vmax,4vmax) scale(1.12);}}
   @keyframes drift-b{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-5vmax,6vmax) scale(1.08);}}
   @keyframes drift-c{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(4vmax,-5vmax) scale(1.15);}}
@@ -62,51 +61,40 @@
     text-decoration:none;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 14px;transition:color .2s,border-color .2s;}
   .back:hover{color:var(--ink);border-color:rgba(168,85,247,.6);}
 
-  /* ---------------- CARD (compact) ---------------- */
+  /* ---------------- CARD (tall + narrow) ---------------- */
   .stagerow{flex:1;display:flex;align-items:center;justify-content:center;padding:30px 0;}
-  .cardshell{position:relative;width:100%;max-width:460px;}
+  .cardshell{position:relative;width:100%;max-width:382px;perspective:1600px;}
   /* rotating GenAI gradient ring */
   .cardshell::before{content:"";position:absolute;inset:-1.5px;border-radius:22px;z-index:0;
     background:conic-gradient(from 0deg,var(--purple),var(--royal),var(--blue),var(--indigo),var(--purple));
-    filter:blur(9px);opacity:.55;animation:spin 14s linear infinite;}
+    filter:blur(10px);opacity:.55;animation:spin 14s linear infinite;}
   @keyframes spin{to{transform:rotate(360deg);}}
-  .card{position:relative;z-index:1;
-    border:1px solid rgba(168,140,255,.22);border-radius:20px;
-    background:linear-gradient(158deg,rgba(60,40,110,.55),rgba(20,16,40,.72));
+  .card{position:relative;z-index:1;min-height:355px;display:flex;flex-direction:column;cursor:pointer;
+    border:1px solid rgba(168,140,255,.22);border-radius:20px;transform-origin:50% 0%;will-change:transform,opacity;
+    background:
+      radial-gradient(120% 70% at 50% 118%, rgba(59,130,246,.42), transparent 60%),
+      linear-gradient(180deg, rgba(72,48,132,.5) 0%, rgba(46,34,104,.62) 52%, rgba(46,42,138,.78) 100%);
     -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
     box-shadow:0 30px 90px -44px rgba(76,29,149,.9), inset 0 1px 0 rgba(255,255,255,.1);
-    padding:clamp(22px,3vw,30px);overflow:hidden;}
+    padding:clamp(24px,3.4vw,32px);overflow:hidden;}
   .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
     background:linear-gradient(var(--purple),var(--blue));}
   .card::after{content:"";position:absolute;right:-28%;top:-38%;width:66%;height:120%;
     background:radial-gradient(closest-side,rgba(168,85,247,.28),transparent);pointer-events:none;}
+  .card:hover{border-color:rgba(168,140,255,.42);}
 
   .kicker{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
-    color:var(--dim);margin:0 0 12px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+    color:var(--dim);margin:0 0 14px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
   .kicker .era{background:linear-gradient(90deg,var(--purple),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:600;}
-  .fact{font-size:clamp(18px,2.3vw,27px);line-height:1.16;letter-spacing:-.02em;font-weight:800;color:var(--ink);text-wrap:balance;}
-  .note{margin-top:14px;font-size:clamp(12.5px,1.2vw,14px);line-height:1.55;color:var(--dim);}
+  .fact{font-size:clamp(19px,2.2vw,26px);line-height:1.18;letter-spacing:-.02em;font-weight:800;color:var(--ink);text-wrap:balance;}
+  .note{margin-top:15px;font-size:clamp(12.5px,1.2vw,14px);line-height:1.55;color:var(--dim);}
+  .taphint{margin-top:auto;padding-top:18px;font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--faint);display:flex;align-items:center;gap:7px;opacity:.72;}
+  .taphint .dot{width:5px;height:5px;border-radius:50%;background:var(--purple);box-shadow:0 0 8px 1px rgba(168,85,247,.7);}
 
-  /* enter animation */
-  .anim{animation:rise .6s cubic-bezier(.16,.84,.3,1) both;}
-  @keyframes rise{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
-
-  /* ---------------- CONTROLS ---------------- */
-  .underbar{width:100%;max-width:460px;margin:16px auto 0;}
-  .progress{height:3px;border-radius:999px;background:rgba(255,255,255,.09);overflow:hidden;margin-bottom:16px;}
-  .progress__bar{height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--blue));}
-  .progress__bar.run{animation:fill var(--dur) linear forwards;}
-  @keyframes fill{from{width:0;}to{width:100%;}}
-
-  .controls{display:flex;align-items:center;gap:12px;}
-  .btn{width:40px;height:40px;border-radius:50%;border:1px solid rgba(168,140,255,.24);
-    background:rgba(168,85,247,.08);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .18s;}
-  .btn:hover{border-color:var(--purple);background:rgba(168,85,247,.2);transform:translateY(-2px);}
-  .btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;}
-  .counter{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;color:var(--dim);}
-  .counter b{color:var(--ink);font-size:15px;}
-  .hint{margin-left:auto;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);}
-  .hint kbd{font-family:var(--f-mono);border:1px solid rgba(255,255,255,.16);border-radius:5px;padding:2px 6px;color:var(--dim);font-size:9px;}
+  /* notebook page-flip (top-hinged) */
+  @keyframes flipOut{from{transform:rotateX(0);opacity:1;}to{transform:rotateX(84deg);opacity:.12;}}
+  @keyframes flipIn{from{transform:rotateX(-84deg);opacity:.12;}to{transform:rotateX(0);opacity:1;}}
 
   footer.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
     margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);}
@@ -114,11 +102,7 @@
   .credit b{color:var(--dim);font-weight:500;}
   .foot .meta{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.06em;color:var(--faint);}
 
-  @media(max-width:520px){ .hint{display:none;} }
-  @media(prefers-reduced-motion:reduce){
-    .blob,.cardshell::before,.anim{animation:none;}
-    .progress__bar.run{animation:none;width:100%;}
-  }
+  @media(prefers-reduced-motion:reduce){ .blob,.cardshell::before{animation:none;} }
 </style>
 </head>
 <body>
@@ -140,34 +124,18 @@
 
     <div class="stagerow">
       <div class="cardshell">
-        <article class="card" id="card" aria-live="polite">
+        <article class="card" id="card" role="button" tabindex="0" aria-label="Show the next fact" aria-live="polite">
           <div class="kicker" id="kicker"></div>
           <h1 class="fact" id="fact"></h1>
           <p class="note" id="note"></p>
+          <div class="taphint"><span class="dot"></span>Tap to turn the page</div>
         </article>
-      </div>
-    </div>
-
-    <div class="underbar">
-      <div class="progress"><div class="progress__bar" id="bar"></div></div>
-      <div class="controls">
-        <button type="button" class="btn" id="prev" aria-label="Previous">
-          <svg viewBox="0 0 24 24"><polyline points="15 5 8 12 15 19"/></svg>
-        </button>
-        <button type="button" class="btn" id="play" aria-label="Pause">
-          <svg viewBox="0 0 24 24" id="playIc"><rect x="7" y="6" width="3.4" height="12" rx="1"/><rect x="13.6" y="6" width="3.4" height="12" rx="1"/></svg>
-        </button>
-        <button type="button" class="btn" id="next" aria-label="Next">
-          <svg viewBox="0 0 24 24"><polyline points="9 5 16 12 9 19"/></svg>
-        </button>
-        <span class="counter"><b id="cur">01</b> / <span id="tot">00</span></span>
-        <span class="hint"><kbd>&larr;</kbd> <kbd>&rarr;</kbd> &middot; <kbd>space</kbd></span>
       </div>
     </div>
 
     <footer class="foot">
       <span class="credit">Built by <b>Puneet Arora</b></span>
-      <span class="meta">Rotates every 35s &middot; refreshed weekly &middot; <span id="stamp"></span></span>
+      <span class="meta">Tap the card &middot; refreshed weekly &middot; <span id="stamp"></span></span>
     </footer>
   </div>
 
@@ -205,60 +173,55 @@
   /* >>> DECK_END <<< */
   var LAST_REFRESH = "2026-08-09"; /* >>> updated weekly <<< */
 
-  var el = {
-    card: document.getElementById("card"), kicker: document.getElementById("kicker"),
-    fact: document.getElementById("fact"), note: document.getElementById("note"),
-    bar: document.getElementById("bar"), cur: document.getElementById("cur"),
-    tot: document.getElementById("tot"), play: document.getElementById("play"),
-    playIc: document.getElementById("playIc"), stamp: document.getElementById("stamp")
-  };
+  var card   = document.getElementById("card");
+  var kicker = document.getElementById("kicker");
+  var factEl = document.getElementById("fact");
+  var noteEl = document.getElementById("note");
+  document.getElementById("stamp").textContent = "updated " + LAST_REFRESH;
+
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var i = Math.floor(Math.random() * DECK.length);
+  var timer = null, paused = false, busy = false, fT = null, DUR = 35000;
 
-  var i = 0, timer = null, paused = false, DUR = 35000;
-  function pad(n){ return (n < 10 ? "0" : "") + n; }
-
-  function restartBar(){
-    el.bar.classList.remove("run");
-    void el.bar.offsetWidth;
-    if(!paused && !reduce) el.bar.classList.add("run");
-  }
-  function render(animate){
+  function paint(){
     var d = DECK[i];
-    el.kicker.innerHTML = '<span class="era">' + d.era + "</span>";
-    el.fact.textContent = d.fact;
-    el.note.textContent = d.note;
-    el.cur.textContent = pad(i + 1);
-    el.tot.textContent = pad(DECK.length);
-    if(animate){ el.card.classList.remove("anim"); void el.card.offsetWidth; el.card.classList.add("anim"); }
-    restartBar();
+    kicker.innerHTML = '<span class="era">' + d.era + "</span>";
+    factEl.textContent = d.fact;
+    noteEl.textContent = d.note;
   }
   function schedule(){ clearTimeout(timer); if(!paused) timer = setTimeout(function(){ go(1); }, DUR); }
-  function go(dir){ i = (i + dir + DECK.length) % DECK.length; render(true); schedule(); }
-  function setPaused(p){
-    paused = p;
-    el.play.setAttribute("aria-label", p ? "Play" : "Pause");
-    el.playIc.innerHTML = p ? '<path d="M8 5v14l11-7z"/>'
-      : '<rect x="7" y="6" width="3.4" height="12" rx="1"/><rect x="13.6" y="6" width="3.4" height="12" rx="1"/>';
-    if(p){ clearTimeout(timer); el.bar.classList.remove("run"); el.bar.style.width = getComputedStyle(el.bar).width; }
-    else { el.bar.style.width = ""; restartBar(); schedule(); }
+
+  function go(dir){
+    if(busy) return;
+    if(reduce){ i = (i + dir + DECK.length) % DECK.length; paint(); schedule(); return; }
+    busy = true;
+    card.style.animation = "flipOut .28s ease-in forwards";
+    clearTimeout(fT);
+    fT = setTimeout(function(){
+      i = (i + dir + DECK.length) % DECK.length;
+      paint();
+      card.style.animation = "flipIn .34s cubic-bezier(.2,.8,.3,1) forwards";
+      fT = setTimeout(function(){ busy = false; card.style.animation = ""; }, 340);
+    }, 280);
+    schedule();
   }
 
-  document.getElementById("prev").addEventListener("click", function(){ go(-1); });
-  document.getElementById("next").addEventListener("click", function(){ go(1); });
-  el.play.addEventListener("click", function(){ setPaused(!paused); });
+  /* tap / click / keyboard on the card turns the page */
+  card.addEventListener("click", function(){ go(1); });
+  card.addEventListener("keydown", function(e){
+    if(e.key === "Enter" || e.key === " "){ e.preventDefault(); go(1); }
+  });
   document.addEventListener("keydown", function(e){
+    if(e.target === card) return;                 // card handles its own keys
     if(e.key === "ArrowRight"){ e.preventDefault(); go(1); }
     else if(e.key === "ArrowLeft"){ e.preventDefault(); go(-1); }
-    else if(e.key === " "){ e.preventDefault(); setPaused(!paused); }
   });
   document.addEventListener("visibilitychange", function(){
     if(document.hidden){ clearTimeout(timer); } else if(!paused){ schedule(); }
   });
 
-  // shuffle so every visit opens on a different fact
-  i = Math.floor(Math.random() * DECK.length);
-  el.stamp.textContent = "updated " + LAST_REFRESH;
-  render(true);
+  paint();
+  card.style.animation = reduce ? "" : "flipIn .5s cubic-bezier(.2,.8,.3,1) both";
   schedule();
 })();
 </script>
