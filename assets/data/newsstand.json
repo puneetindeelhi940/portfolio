@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T01:18:26Z",
+  "generated_at": "2026-08-09T08:36:18Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,22 +16,14 @@
     },
     {
       "n": 2,
-      "claim": "Texas city planned to build data center. Then residents sued",
+      "claim": "Watch out for fake image of gorilla 'screaming for help' after caretaker's collapse",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/08/texas-data-center-lawsuit/",
+      "url": "https://www.snopes.com/fact-check/gorilla-caretaker-screaming-help/",
       "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Players Guide 2026",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/players-guide-2026/",
-      "topic": "Trending"
-    },
-    {
-      "n": 4,
       "claim": "Senate Confirms Todd Blanche After Handful Of GOP Holdouts Threatened His Nomination",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -39,7 +31,7 @@
       "topic": "Politics"
     },
     {
-      "n": 5,
+      "n": 4,
       "claim": "Shedding light on sunscreen myths",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -47,7 +39,7 @@
       "topic": "Trending"
     },
     {
-      "n": 6,
+      "n": 5,
       "claim": "Demolishing a varsity, dismantling futures: The story of Mohammad Ali Jauhar University’s fight for survival",
       "verdict": "FALSE",
       "source": "Alt News",
@@ -55,7 +47,7 @@
       "topic": "Trending"
     },
     {
-      "n": 7,
+      "n": 6,
       "claim": "Screwfix is not selling display drill sets for less than a tenner",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -63,7 +55,7 @@
       "topic": "Trending"
     },
     {
-      "n": 8,
+      "n": 7,
       "claim": "FAKE Video REPLACED African Migrant's Original Words -- He Did NOT Discuss Money, Home, English Women",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -71,23 +63,15 @@
       "topic": "World"
     },
     {
-      "n": 9,
-      "claim": "11 rumors we've investigated about Trump falling asleep",
+      "n": 8,
+      "claim": "Texas city planned to build data center. Then residents sued",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-sleeping-claims/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/08/08/texas-data-center-lawsuit/",
+      "topic": "Trending"
     },
     {
-      "n": 10,
-      "claim": "Senate Leadership Fund",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/senate-leadership-fund-5/",
-      "topic": "Politics"
-    },
-    {
-      "n": 11,
+      "n": 9,
       "claim": "Rand Paul Hilariously Dunks On Uninformed Liberal Pundit",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -95,7 +79,7 @@
       "topic": "Trending"
     },
     {
-      "n": 12,
+      "n": 10,
       "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -103,7 +87,7 @@
       "topic": "Trending"
     },
     {
-      "n": 13,
+      "n": 11,
       "claim": "presidential assent to ‘Goonda Act’, it’s still a Bill, notes Calcutta high court",
       "verdict": "FALSE",
       "source": "Alt News",
@@ -111,7 +95,7 @@
       "topic": "Trending"
     },
     {
-      "n": 14,
+      "n": 12,
       "claim": "John Lewis isn’t giving away Maison Francis Kurkdjian perfume for £3",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -119,7 +103,7 @@
       "topic": "Trending"
     },
     {
-      "n": 15,
+      "n": 13,
       "claim": "Does NOT Show 'Farmer François Lavigne' Reliving Accident On French TV While Dressed-Up Children Sing To Him -- It Is A Serge Gainsbourg Tribute",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -127,30 +111,46 @@
       "topic": "Trending"
     },
     {
-      "n": 16,
-      "claim": "Does this video show SpaceX rocket crashing into the moon?",
+      "n": 14,
+      "claim": "11 rumors we've investigated about Trump falling asleep",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/spacex-rocket-crash-moon-video/",
+      "url": "https://www.snopes.com/collections/trump-sleeping-claims/",
+      "topic": "Politics"
+    },
+    {
+      "n": 15,
+      "claim": "New York City Forced To Dump Dozens Of Haitian Employees After Court Ruling Ends Temporary Protected Status",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/08/zohran-mamdani-new-york-city-forced-fire-dozens-haitian-employees-court-ruling-ends-temporary-protected-status",
       "topic": "Trending"
     },
     {
-      "n": 17,
-      "claim": "Senate Majority PAC",
+      "n": 16,
+      "claim": "Wellness influencers claim mainstream medicine ignores natural remedies. They’re wrong",
       "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/senate-majority-pac-7/",
-      "topic": "Politics"
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/wellness-influencers-wrongly-claim-mainstream-medicine-ignores-natural-remedies/",
+      "topic": "Health"
+    },
+    {
+      "n": 17,
+      "claim": "‘Are you a Muslim?’: Theatre activist beaten in Bengal after he replied, ‘What if I am? Isn’t this country also for Muslims?’",
+      "verdict": "FALSE",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/are-you-a-muslim-theatre-activist-beaten-in-bengal-after-he-replied-what-if-i-am-isnt-this-country-also-for-muslims/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait",
+      "headline": "Israel accused of weaponising archaeology at ancient West Bank sites",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c934j5y2lq9o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c20d8qre98do?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-08T19:18:57+00:00"
+      "published": "2026-08-08T23:43:44+00:00"
     },
     {
       "n": 2,
@@ -178,19 +178,19 @@
     },
     {
       "n": 5,
-      "headline": "FIFA warns against 'concerted effort' to undermine Gianni Infantino",
+      "headline": "India: Ex-Education Minister Pradhan says Gen Z 'misled",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fifa-warns-against-concerted-effort-to-undermine-gianni-infantino/a-78291551?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-09T00:03:00+00:00"
+      "url": "https://www.dw.com/en/india-ex-education-minister-pradhan-says-gen-z-misled/live-78293276?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-09T08:21:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Trump's ex-lawyer Todd Blanche narrowly confirmed as US attorney general",
+      "headline": "Hundreds arrested over French wildfires, but who is to blame?",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cewr898jy8go?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-08T15:56:39+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvgxjn92x9jo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-08T23:59:23+00:00"
     },
     {
       "n": 7,
@@ -218,19 +218,19 @@
     },
     {
       "n": 10,
-      "headline": "Germany: Interior Minister warns of 'daily' hybrid warfare",
+      "headline": "Australia: Jetstar, Qatar Airways planes almost collide on Sydney Airport tarmac",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-interior-minister-warns-of-daily-hybrid-warfare/a-78291550?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-09T00:00:00+00:00"
+      "url": "https://www.dw.com/en/australia-jetstar-qatar-airways-planes-almost-collide-on-sydney-airport-tarmac/a-78293085?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-09T07:53:00+00:00"
     },
     {
       "n": 11,
-      "headline": "US offers $1bn to Colombia on new right-wing president's first day of office",
+      "headline": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy9wy3y0e5wo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-08T17:58:42+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c934j5y2lq9o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-08T19:18:57+00:00"
     },
     {
       "n": 12,
@@ -258,19 +258,19 @@
     },
     {
       "n": 15,
-      "headline": "Nigeria marries 1,500 couples in mass wedding",
+      "headline": "Germany news: Drone incidents prompt security research boost",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nigeria-marries-1-500-couples-in-mass-wedding/a-78291396?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-drone-incidents-prompt-security-research-boost/live-78287439?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-08T22:37:00+00:00"
+      "published": "2026-08-09T06:25:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Messi's father Jorge dies aged 68 after illness",
+      "headline": "Perez Hilton faces long recovery after reports he self-harmed during livestream",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c70gn3w5ek5o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cg5lnqjz497o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-08T15:51:11+00:00"
+      "published": "2026-08-09T04:32:06+00:00"
     },
     {
       "n": 17,
