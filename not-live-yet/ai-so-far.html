@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI, So Far — a living card of what AI has done</title>
 <meta name="author" content="Puneet Arora">
-<meta name="description" content="A living, self-cycling card of what AI has done so far — plus a live news layer and a timeline. Tap to flip. Refreshed weekly.">
+<meta name="description" content="A living, self-cycling card of what AI has done so far. Tap to flip. Refreshed weekly, with a live news layer.">
 <meta name="robots" content="noindex">
 <base href="../">
 <!-- Social share -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI, So Far — what AI has done">
-<meta property="og:description" content="A living card of AI milestones — good, bad, and ugly — with a live news layer and a timeline. Tap to turn the page.">
+<meta property="og:description" content="A living card of AI milestones — good, bad, and ugly — with a live news layer. Tap to turn the page.">
 <meta property="og:image" content="https://puneetindeelhi940.github.io/portfolio/not-live-yet/ai-so-far-og.png">
 <meta property="og:url" content="https://puneetindeelhi940.github.io/portfolio/not-live-yet/ai-so-far.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI, So Far — what AI has done">
-<meta name="twitter:description" content="A living card of AI milestones — with a live news layer and a timeline.">
+<meta name="twitter:description" content="A living card of AI milestones — with a live news layer.">
 <meta name="twitter:image" content="https://puneetindeelhi940.github.io/portfolio/not-live-yet/ai-so-far-og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +24,9 @@
 <style>
   /* ============================================================
      AI, SO FAR — a living GenAI fact card
-     Tall glass card · purple/royal-blue aurora · stacked-page peek ·
-     notebook page-flip (tap or every 44s) · live news · timeline.
-     Deck auto-refreshed weekly. Built by Puneet Arora.
+     Tall glass card · purple/royal-blue aurora · notebook page-flip
+     (tap or every 44s) · live news layer. Refreshed weekly.
+     Built by Puneet Arora.
      ============================================================ */
   *{box-sizing:border-box;margin:0;padding:0;}
   :root{
@@ -66,28 +66,18 @@
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;}
   .brand .mk{font-family:var(--f-mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink);font-weight:500;}
   .brand .mk b{background:linear-gradient(90deg,var(--purple),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
-  .toprt{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-  .vtoggle{display:inline-flex;border:1px solid rgba(255,255,255,.12);border-radius:999px;overflow:hidden;}
-  .vtoggle button{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
-    color:var(--dim);background:transparent;border:none;padding:7px 14px;cursor:pointer;transition:all .16s;}
-  .vtoggle button[aria-pressed="true"]{color:#0a0616;background:linear-gradient(90deg,var(--purple),var(--blue));font-weight:700;}
   .back{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
     text-decoration:none;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 14px;transition:color .2s,border-color .2s;}
   .back:hover{color:var(--ink);border-color:rgba(168,85,247,.6);}
 
-  /* ---------------- CARD VIEW ---------------- */
+  /* ---------------- CARD ---------------- */
   .stagerow{flex:1;display:flex;align-items:center;justify-content:center;padding:30px 0;}
   .cardshell{position:relative;width:100%;max-width:382px;perspective:1600px;}
   .cardshell::before{content:"";position:absolute;inset:-1.5px;border-radius:22px;z-index:0;
     background:conic-gradient(from 0deg,var(--purple),var(--royal),var(--blue),var(--indigo),var(--purple));
     filter:blur(10px);opacity:.55;animation:spin 14s linear infinite;}
   @keyframes spin{to{transform:rotate(360deg);}}
-  /* stacked-page peek behind the card */
-  .peek{position:absolute;left:9px;right:9px;top:16px;bottom:-9px;border-radius:18px;z-index:1;
-    background:linear-gradient(180deg,rgba(60,45,120,.5),rgba(46,42,138,.62));
-    border:1px solid rgba(168,140,255,.14);box-shadow:0 20px 50px -34px rgba(76,29,149,.8);}
-  .peek--2{left:17px;right:17px;top:28px;bottom:-18px;opacity:.6;}
-  .card{position:relative;z-index:2;min-height:355px;display:flex;flex-direction:column;cursor:pointer;
+  .card{position:relative;z-index:1;min-height:355px;display:flex;flex-direction:column;cursor:pointer;
     border:1px solid rgba(168,140,255,.22);border-radius:20px;transform-origin:50% 0%;
     backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform,opacity;
     background:
@@ -109,38 +99,9 @@
   @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
   .fact{font-size:clamp(19px,2.2vw,26px);line-height:1.18;letter-spacing:-.02em;font-weight:800;color:var(--ink);text-wrap:balance;}
   .note{margin-top:15px;font-size:clamp(12.5px,1.2vw,14px);line-height:1.55;color:var(--dim);}
-  .src{align-self:flex-start;margin-top:14px;display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);
-    font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#c4b5fd;text-decoration:none;
-    border:1px solid rgba(168,140,255,.32);border-radius:8px;padding:6px 11px;transition:all .16s;}
-  .src:hover{background:rgba(168,85,247,.18);border-color:var(--purple);color:#fff;}
   .taphint{margin-top:auto;padding-top:16px;font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;
     text-transform:uppercase;color:var(--faint);display:flex;align-items:center;gap:7px;opacity:.72;}
   .taphint .dot{width:5px;height:5px;border-radius:50%;background:var(--purple);box-shadow:0 0 8px 1px rgba(168,85,247,.7);}
-
-  /* ---------------- TIMELINE VIEW ---------------- */
-  .timeline{flex:1;display:none;flex-direction:column;justify-content:center;padding:20px 0 8px;}
-  .timeline.on{display:flex;}
-  .stagerow.off{display:none;}
-  .tl-head{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:6px;}
-  .tl-head b{background:linear-gradient(90deg,var(--purple),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
-  .tl-scroll{overflow-x:auto;overflow-y:hidden;padding:10px 0 4px;scrollbar-width:thin;scrollbar-color:rgba(168,140,255,.4) transparent;}
-  .tl-scroll::-webkit-scrollbar{height:6px;}
-  .tl-scroll::-webkit-scrollbar-thumb{background:rgba(168,140,255,.4);border-radius:999px;}
-  .tl-rail{position:relative;height:300px;min-width:760px;}
-  .tl-line{position:absolute;left:0;right:0;top:50%;height:2px;pointer-events:none;background:linear-gradient(90deg,rgba(168,85,247,.15),rgba(99,102,241,.6),rgba(59,130,246,.15));}
-  .tl-node{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;}
-  .tl-node .dot{width:13px;height:13px;border-radius:50%;background:var(--indigo);border:2px solid #cbd5ff;
-    box-shadow:0 0 0 4px rgba(99,102,241,.18),0 0 14px 2px rgba(99,102,241,.5);transition:transform .16s,box-shadow .16s;}
-  .tl-node .yr{font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;color:var(--dim);white-space:nowrap;}
-  .tl-node[data-live="1"] .dot{background:#e879f9;border-color:#fbcfe8;box-shadow:0 0 0 4px rgba(232,121,249,.2),0 0 14px 3px rgba(232,121,249,.6);}
-  .tl-node:hover .dot,.tl-node.active .dot{transform:scale(1.35);}
-  .tl-node .connector{position:absolute;left:50%;width:1px;pointer-events:none;background:rgba(168,140,255,.3);}
-  .tl-caption{margin-top:10px;min-height:56px;border-top:1px solid rgba(255,255,255,.08);padding-top:12px;
-    font-size:14px;line-height:1.45;color:var(--ink);}
-  .tl-caption .c-era{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#c4b5fd;margin-right:8px;}
-  .tl-caption .c-hint{color:var(--faint);font-size:12.5px;}
-
-  /* enter/flip handled via Web Animations API in JS */
 
   footer.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
     margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);}
@@ -165,37 +126,18 @@
       <a class="brand" href="ai-lab.html" title="Back to the AI Lab">
         <span class="mk">AI, <b>SO FAR</b></span>
       </a>
-      <div class="toprt">
-        <span class="vtoggle" role="group" aria-label="View">
-          <button type="button" data-view="card" aria-pressed="true">Card</button>
-          <button type="button" data-view="timeline" aria-pressed="false">Timeline</button>
-        </span>
-        <a class="back" href="ai-lab.html">&larr; AI Lab</a>
-      </div>
+      <a class="back" href="ai-lab.html">&larr; AI Lab</a>
     </header>
 
-    <!-- CARD VIEW -->
-    <div class="stagerow" id="cardView">
+    <div class="stagerow">
       <div class="cardshell">
-        <div class="peek peek--2" aria-hidden="true"></div>
-        <div class="peek peek--1" aria-hidden="true"></div>
         <article class="card" id="card" role="button" tabindex="0" aria-label="Show the next fact" aria-live="polite">
           <div class="kicker" id="kicker"></div>
           <h1 class="fact" id="fact"></h1>
           <p class="note" id="note"></p>
-          <a class="src" id="src" href="#" target="_blank" rel="noopener" hidden>Read the story &nearr;</a>
           <div class="taphint"><span class="dot"></span>Tap to turn the page</div>
         </article>
       </div>
-    </div>
-
-    <!-- TIMELINE VIEW -->
-    <div class="timeline" id="timelineView">
-      <div class="tl-head">The arc &mdash; <b>2012 &rarr; now</b></div>
-      <div class="tl-scroll">
-        <div class="tl-rail" id="tlRail"><div class="tl-line"></div></div>
-      </div>
-      <div class="tl-caption" id="tlCaption"><span class="c-hint">Hover a moment to read it &middot; click to open it as a card.</span></div>
     </div>
 
     <footer class="foot">
@@ -242,12 +184,11 @@
   var kicker = document.getElementById("kicker");
   var factEl = document.getElementById("fact");
   var noteEl = document.getElementById("note");
-  var srcEl  = document.getElementById("src");
   document.getElementById("stamp").textContent = "updated " + LAST_REFRESH;
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var i = Math.floor(Math.random() * DECK.length);
-  var timer = null, paused = false, busy = false, DUR = 44000;
+  var timer = null, busy = false, DUR = 44000;
 
   function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 
@@ -258,18 +199,13 @@
       : '<span class="era">' + esc(d.era) + "</span>";
     factEl.textContent = d.fact;
     noteEl.textContent = d.note;
-    if(d.url){ srcEl.href = d.url; srcEl.hidden = false; }
-    else { srcEl.hidden = true; }
   }
 
   /* --- notebook page-flip via Web Animations API (robust, never sticks) --- */
   function flip(dir){
     if(busy) return;
     var advance = function(){ i = (i + dir + DECK.length) % DECK.length; paint(); };
-    if(reduce || !card.animate){
-      card.animate ? card.animate([{opacity:0},{opacity:1}],{duration:180}) : 0;
-      advance(); schedule(); return;
-    }
+    if(reduce || !card.animate){ advance(); schedule(); return; }
     busy = true;
     var out = card.animate(
       [{transform:"rotateX(0deg)",opacity:1},{transform:"rotateX(85deg)",opacity:.08}],
@@ -284,90 +220,21 @@
       inn.onfinish = function(){ busy = false; };
     };
   }
-  function schedule(){ clearTimeout(timer); if(!paused && view==="card") timer = setTimeout(function(){ flip(1); }, DUR); }
+  function schedule(){ clearTimeout(timer); timer = setTimeout(function(){ flip(1); }, DUR); }
 
-  /* tap / click / keyboard on the card turns the page */
-  card.addEventListener("click", function(e){ if(e.target === srcEl) return; flip(1); });
+  /* tap / click / keyboard turns the page */
+  card.addEventListener("click", function(){ flip(1); });
   card.addEventListener("keydown", function(e){
     if(e.key === "Enter" || e.key === " "){ e.preventDefault(); flip(1); }
   });
-  srcEl.addEventListener("click", function(e){ e.stopPropagation(); });
   document.addEventListener("keydown", function(e){
-    if(e.target === card || e.target === srcEl) return;
+    if(e.target === card) return;
     if(e.key === "ArrowRight"){ e.preventDefault(); flip(1); }
     else if(e.key === "ArrowLeft"){ e.preventDefault(); flip(-1); }
   });
   document.addEventListener("visibilitychange", function(){
     if(document.hidden){ clearTimeout(timer); } else { schedule(); }
   });
-
-  /* ---------------- VIEW TOGGLE (card / timeline) ---------------- */
-  var view = "card";
-  var cardView = document.getElementById("cardView");
-  var timelineView = document.getElementById("timelineView");
-  function setView(v){
-    view = v;
-    document.querySelectorAll(".vtoggle button").forEach(function(b){
-      b.setAttribute("aria-pressed", b.getAttribute("data-view") === v ? "true" : "false");
-    });
-    if(v === "timeline"){
-      cardView.classList.add("off"); timelineView.classList.add("on");
-      clearTimeout(timer); buildTimeline();
-    } else {
-      timelineView.classList.remove("on"); cardView.classList.remove("off");
-      schedule();
-    }
-  }
-  document.querySelector(".vtoggle").addEventListener("click", function(e){
-    var b = e.target.closest("button[data-view]"); if(b) setView(b.getAttribute("data-view"));
-  });
-
-  /* ---------------- TIMELINE ---------------- */
-  var rail = document.getElementById("tlRail");
-  var caption = document.getElementById("tlCaption");
-  function yearOf(era){ var m = /(\d{4})/.exec(era || ""); return m ? +m[1] : null; }
-  function buildTimeline(){
-    // keep the axis line, clear old nodes
-    Array.prototype.slice.call(rail.querySelectorAll(".tl-node")).forEach(function(n){ n.remove(); });
-    var dated = [];
-    DECK.forEach(function(d, idx){ var y = d.live ? 2026 : yearOf(d.era); if(y) dated.push({ y:y, idx:idx, live:!!d.live }); });
-    if(!dated.length) return;
-    dated.sort(function(a,b){ return a.y - b.y; });
-    var minY = Math.min(2012, dated[0].y);
-    var maxY = Math.max(2026, dated[dated.length-1].y);
-    var span = Math.max(1, maxY - minY);
-    var bucket = {}; // year -> count so far, for vertical stagger
-    dated.forEach(function(n){
-      var pct = 6 + ((n.y - minY) / span) * 88;            // 6%..94%
-      var k = bucket[n.y] = (bucket[n.y] || 0) + 1;
-      var tier = Math.ceil(k / 2);
-      var dir = (k % 2 === 1) ? -1 : 1;                     // alternate above/below
-      var offset = (k === 1) ? 0 : dir * (tier * 44 - (dir<0?0:0));
-      var node = document.createElement("div");
-      node.className = "tl-node"; node.style.left = pct + "%"; node.style.top = "calc(50% + " + offset + "px)";
-      node.setAttribute("data-idx", n.idx); node.setAttribute("data-live", n.live ? "1" : "0");
-      node.setAttribute("role","button"); node.setAttribute("tabindex","0");
-      node.innerHTML = '<span class="dot"></span><span class="yr">' + (n.live ? "now" : n.y) + "</span>";
-      if(offset !== 0){
-        var h = Math.abs(offset);
-        var conn = '<span class="connector" style="' + (offset<0 ? "top:100%;" : "bottom:100%;") + "height:" + (h-8) + 'px;"></span>';
-        node.insertAdjacentHTML("beforeend", conn);
-      }
-      var show = function(){
-        var d = DECK[n.idx];
-        caption.innerHTML = '<span class="c-era">' + (n.live ? "Live · " + esc(d.src||"News") : esc(d.era)) + "</span>" + esc(d.fact);
-        rail.querySelectorAll(".tl-node.active").forEach(function(x){ x.classList.remove("active"); });
-        node.classList.add("active");
-      };
-      node.addEventListener("mouseenter", show);
-      node.addEventListener("focus", show);
-      node.addEventListener("click", function(){ i = n.idx; paint(); setView("card"); flipIntro(); });
-      node.addEventListener("keydown", function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); i=n.idx; paint(); setView("card"); flipIntro(); } });
-      rail.appendChild(node);
-    });
-    rail.style.minWidth = Math.max(760, dated.length * 46) + "px";
-  }
-  function flipIntro(){ if(!reduce && card.animate){ card.animate([{transform:"rotateX(-70deg)",opacity:.1},{transform:"rotateX(0)",opacity:1}],{duration:360,easing:"cubic-bezier(.2,.8,.3,1)"}); } }
 
   /* ---------------- LIVE NEWS LAYER (Hacker News, keyless + CORS) ---------------- */
   function rel(ts){
@@ -384,7 +251,7 @@
       .sort(function(a,b){ return (b.points||0) - (a.points||0); })
       .slice(0, 4)
       .map(function(h){
-        return { live:true, src:"Hacker News", url:h.url, era:"live",
+        return { live:true, src:"Hacker News", era:"live",
                  fact:h.title, note:(h.points||0) + " points on Hacker News · " + rel(h.created_at_i) };
       });
   }
@@ -396,12 +263,9 @@
     grab(hnURL(45)).then(function(data){
       var live = toLive(data && data.hits);
       if(live.length >= 2) return live;
-      return grab(hnURL(0)).then(function(d2){ return toLive(d2 && d2.hits); }); // fallback: popular all-time
+      return grab(hnURL(0)).then(function(d2){ return toLive(d2 && d2.hits); });
     }).then(function(live){
-      if(live && live.length){
-        DECK = live.concat(DECK);
-        if(view === "timeline") buildTimeline();
-      }
+      if(live && live.length){ DECK = live.concat(DECK); }
     }).catch(function(){ /* offline / blocked — curated deck still works */ });
   }
 
