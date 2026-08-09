@@ -78,7 +78,7 @@
     background:conic-gradient(from 0deg,var(--purple),var(--royal),var(--blue),var(--indigo),var(--purple));
     filter:blur(10px);opacity:.55;animation:spin 14s linear infinite;}
   @keyframes spin{to{transform:rotate(360deg);}}
-  .card{position:relative;z-index:1;min-height:307px;display:flex;flex-direction:column;cursor:pointer;
+  .card{position:relative;z-index:1;min-height:290px;display:flex;flex-direction:column;cursor:pointer;
     border:1px solid rgba(168,140,255,.22);border-radius:20px;transform-origin:50% 0%;
     backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform,opacity;
     background:
@@ -100,8 +100,11 @@
   @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
   .fact{font-size:clamp(19px,2.2vw,26px);line-height:1.18;letter-spacing:-.02em;font-weight:800;color:#fbfaff;text-wrap:balance;}
   .note{margin-top:14px;font-size:clamp(12.5px,1.2vw,14px);line-height:1.55;color:#cbc5e6;}
-  .taphint{margin-top:auto;padding-top:15px;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;
-    text-transform:uppercase;color:#b7afdb;display:flex;align-items:center;gap:7px;opacity:1;}
+  .cardbottom{margin-top:auto;padding-top:14px;display:flex;flex-direction:column;gap:9px;}
+  .cardsrc{font-family:var(--f-mono);font-size:10px;letter-spacing:.05em;color:#948dbb;}
+  .cardsrc b{color:#c3bde2;font-weight:600;}
+  .taphint{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:#b7afdb;display:flex;align-items:center;gap:7px;}
   .taphint .dot{width:5px;height:5px;border-radius:50%;background:#c084fc;box-shadow:0 0 9px 1px rgba(192,132,252,.9);}
 
   footer.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
@@ -143,7 +146,10 @@
           <div class="kicker" id="kicker"></div>
           <h1 class="fact" id="fact"></h1>
           <p class="note" id="note"></p>
-          <div class="taphint"><span class="dot"></span>Tap to turn the page</div>
+          <div class="cardbottom">
+            <div class="cardsrc" id="cardsrc" hidden></div>
+            <div class="taphint"><span class="dot"></span>Tap to turn the page</div>
+          </div>
         </article>
       </div>
     </div>
@@ -192,6 +198,7 @@
   var kicker = document.getElementById("kicker");
   var factEl = document.getElementById("fact");
   var noteEl = document.getElementById("note");
+  var srcEl  = document.getElementById("cardsrc");
   document.getElementById("stamp").textContent = "updated " + LAST_REFRESH;
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -207,7 +214,10 @@
       : '<span class="era">' + esc(d.era) + "</span>";
     factEl.textContent = d.fact;
     noteEl.textContent = d.note;
+    if(d.site){ srcEl.innerHTML = "Source &middot; <b>" + esc(d.site) + "</b>"; srcEl.hidden = false; }
+    else { srcEl.hidden = true; }
   }
+  function hostOf(u){ try{ return new URL(u).hostname.replace(/^www\./,""); }catch(e){ return ""; } }
 
   /* --- notebook page-flip via Web Animations API (robust, never sticks) --- */
   function flip(dir){
@@ -276,7 +286,7 @@
       .sort(function(a,b){ return (b.points||0) - (a.points||0); })
       .slice(0, 4)
       .map(function(h){
-        return { live:true, src:"Hacker News", era:"live",
+        return { live:true, src:"Hacker News", site:hostOf(h.url), era:"live",
                  fact:h.title, note:(h.points||0) + " points on Hacker News · " + rel(h.created_at_i) };
       });
   }

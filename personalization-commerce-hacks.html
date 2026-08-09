@@ -55,6 +55,11 @@
   .fp-hacks h3{grid-column:2;font-size:18px;font-weight:660;letter-spacing:-0.01em;color:var(--ink);margin:0 0 7px;}
   .fp-hacks p{grid-column:2;font-size:15px;line-height:1.62;color:var(--dim);margin:0;}
   .fp-hacks p strong{color:var(--ink);font-weight:600;}
+  .fp-hacks .eg{grid-column:2;margin-top:13px;border-left:2px solid var(--rule);padding-left:15px;display:grid;gap:9px;}
+  .fp-hacks .eg .row{display:grid;grid-template-columns:60px 1fr;gap:12px;align-items:start;font-size:13.5px;line-height:1.55;color:var(--dim);}
+  .fp-hacks .eg .brand{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--th-personalization);padding-top:3px;font-weight:700;}
+  .fp-hacks .eg .row b{color:var(--ink);font-weight:600;}
+  @media(max-width:600px){.fp-hacks .eg .row{grid-template-columns:1fr;gap:2px;}}
 
   .fp-foot{margin-top:64px;border-top:1px solid var(--rule);padding:54px 0 66px;text-align:center;}
   .fp-foot .q{font-size:clamp(18px,3vw,26px);font-weight:720;letter-spacing:-0.02em;max-width:26ch;margin:0 auto 18px;text-wrap:balance;}
@@ -118,47 +123,83 @@
   <ol class="fp-hacks">
     <li>
       <h3>Personalize the first five seconds, not the fiftieth click</h3>
-      <p>You have context before you have history: referrer, campaign, time of day, device, weather, geo, and the search that brought them. Use it to warm up the cold start &mdash; a first-time visitor from a &lsquo;running shoes&rsquo; ad should land on running, not your homepage hero.</p>
+      <p>You have context before you have history: referrer, campaign, time of day, device, geo, and the search that brought them. Use it to warm up the cold start &mdash; don&rsquo;t wait for an account.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>A first click from a &lsquo;noise-cancelling headphones&rsquo; ad lands on an audio deals row with the search box already leaning toward headphones &mdash; <b>before you sign in or build any history</b>.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>Arriving from a &lsquo;gaming laptop&rsquo; search, Dell.com can lead with Alienware and G-series plus a <b>Home-vs-Business chooser</b>, driven by your referrer and region rather than past visits.</span></div>
+      </div>
     </li>
     <li>
       <h3>Re-rank, don&rsquo;t just recommend</h3>
-      <p>The highest-leverage surface isn&rsquo;t a &lsquo;recommended&rsquo; widget &mdash; it&rsquo;s the order of the products already on the page. Reorder category grids, search results, and filters by predicted intent. Same inventory, quietly resequenced, beats a bolt-on carousel almost every time.</p>
+      <p>The highest-leverage surface isn&rsquo;t a &lsquo;recommended&rsquo; widget &mdash; it&rsquo;s the order of the products already on the page. Same inventory, quietly resequenced, beats a bolt-on carousel almost every time.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>Search &lsquo;usb-c cable&rsquo; and the existing results reorder toward the <b>brands, lengths, and price band you&rsquo;ve bought before</b> &mdash; no extra carousel needed.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>The laptop grid re-sequences so the <b>RAM and SSD tiers you keep configuring</b> surface first, instead of showing everyone the same default order.</span></div>
+      </div>
     </li>
     <li>
       <h3>Build the segment-of-one from behaviour, not demographics</h3>
-      <p>What someone did in the last ten minutes predicts the next click far better than their age or gender ever will. Lead with recency and sequence of actions; treat demographics as a weak prior, not the model.</p>
+      <p>What someone did in the last ten minutes predicts the next click far better than their age or gender ever will &mdash; and you should act on it <strong>within the same visit</strong>, not overnight. Lead with recency; treat demographics as a weak prior.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>Viewing three cat-food pages in five minutes tilts the whole homepage to pet supplies <b>faster than any age or gender guess</b> &mdash; and it shifts before you leave.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>Repeated visits to XPS spec sheets read as &lsquo;researching a premium ultrabook&rsquo; &mdash; an intent that should <b>outrank any firmographic segment</b> they hold on you.</span></div>
+      </div>
     </li>
     <li>
       <h3>Make the model explain itself</h3>
       <p>&lsquo;Because you viewed the trail runners&rsquo; converts better than an unlabelled shelf &mdash; and it doubles as a consent signal. A visible reason builds trust <strong>and</strong> gives the user a handle to correct you.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span><b>&lsquo;Because you viewed&hellip;&rsquo;</b> and <b>&lsquo;Frequently bought together&rsquo;</b> put the reason right next to every suggestion.</span></div>
+        <div class="row"><span class="brand">Dell</span><span><b>&lsquo;Recommended for your configuration&rsquo;</b> when it proposes a dock or a longer warranty during configure-to-order.</span></div>
+      </div>
     </li>
     <li>
       <h3>Reserve a slice for exploration</h3>
-      <p>Pure exploitation collapses into a filter bubble: you keep selling people what they already bought. Hold back a fraction of slots for discovery so the catalogue stays alive and the model keeps learning what else a person might want.</p>
+      <p>Pure exploitation collapses into a filter bubble: you keep selling people what they already bought. Hold back a fraction of slots for discovery so the catalogue stays alive and the model keeps learning.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>Slipping a <b>new-release or adjacent-category pick</b> into &lsquo;Inspired by your browsing&rsquo; so it isn&rsquo;t only more of what you already own.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>Surfacing a <b>monitor or accessory you&rsquo;ve never viewed</b> next to the obvious laptop bag &mdash; widening the basket without boxing you in.</span></div>
+      </div>
     </li>
     <li>
       <h3>Personalize the presentation of price, never the price itself</h3>
       <p>Tailor bundles, financing framing, shipping thresholds, and which value proposition you lead with. Do <strong>not</strong> quietly show different people different prices for the same item &mdash; it&rsquo;s a trust bomb and, in many places, a legal one.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>Showing <b>monthly financing, coupons, or Subscribe &amp; Save</b> framing &mdash; while the list price stays the same for everyone.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>Leading with <b>&lsquo;as low as $X/mo&rsquo; and lease framing</b> for Business visitors and bundle savings for consumers &mdash; the item&rsquo;s price is identical either way.</span></div>
+      </div>
     </li>
     <li>
       <h3>Use an LLM for the long tail of intent</h3>
-      <p>Natural-language search and merchandising turn vague queries &mdash; &lsquo;something warm for a rainy commute&rsquo; &mdash; into the right shelf. The long tail of phrasing is exactly where classic keyword search fails and generative retrieval shines.</p>
+      <p>Natural-language search and merchandising turn vague queries into the right shelf. The long tail of phrasing is exactly where classic keyword search fails and generative retrieval shines.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>A <b>Rufus-style shopping assistant</b> turning &lsquo;a quiet blender for a small apartment&rsquo; into the right shelf.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>A <b>&lsquo;help me choose&rsquo; assistant</b> translating &lsquo;laptop for video editing under $1,500&rsquo; into a filtered, ready-to-buy configuration.</span></div>
+      </div>
     </li>
     <li>
       <h3>Design the &lsquo;forget me&rsquo; as carefully as the &lsquo;remember me&rsquo;</h3>
       <p>Let signals decay, keep sensitive sessions ephemeral, and make &lsquo;not interested&rsquo; and &lsquo;reset&rsquo; one tap away. Memory that a person can see and bound is memory they&rsquo;ll forgive.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span><b>&lsquo;Browsing history&rsquo;</b> you can open, delete items from, or switch off &mdash; plus &lsquo;Not interested&rsquo; controls on recommendations.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>Letting you <b>clear a saved configuration</b> and not silently binding a casual research session to your business account.</span></div>
+      </div>
     </li>
     <li>
       <h3>Measure incremental lift with holdouts, not attribution</h3>
       <p>Keep a permanent randomised control that sees no personalization. The gap between it and the treated group is the only number that tells the truth about whether any of this is working.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>At Amazon&rsquo;s scale, a <b>permanent randomised control</b> that sees no recommendations is the only honest read on what the widgets actually add.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>An <b>A/B holdout on the &lsquo;recommended add-ons&rsquo; module</b> shows whether it drives incremental attach &mdash; or just claims credit for warranties people would have bought anyway.</span></div>
+      </div>
     </li>
     <li>
       <h3>Fail to a great default</h3>
       <p>When confidence is low, a strong editorial default beats a confident wrong guess. The worst personalization isn&rsquo;t generic &mdash; it&rsquo;s <strong>specifically wrong</strong>, which reads as &lsquo;this brand doesn&rsquo;t know me and pretends it does&rsquo;.</p>
-    </li>
-    <li>
-      <h3>Close the loop in the same session</h3>
-      <p>Adapt within the visit, not just overnight. If someone bounces off three formal blazers and lingers on denim, the page should feel the shift before they leave &mdash; not surface it in tomorrow&rsquo;s email.</p>
+      <div class="eg">
+        <div class="row"><span class="brand">Amazon</span><span>With no signal to go on, it falls back to <b>best-sellers and editorial rows</b> rather than a confident wrong guess.</span></div>
+        <div class="row"><span class="brand">Dell</span><span>A brand-new visitor sees curated <b>&lsquo;most popular&rsquo; configurations</b>, not a mis-targeted niche build that signals &lsquo;we don&rsquo;t actually know you&rsquo;.</span></div>
+      </div>
     </li>
   </ol>
 </section>
