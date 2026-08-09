@@ -72,12 +72,12 @@
 
   /* ---------------- CARD ---------------- */
   .stagerow{flex:1;display:flex;align-items:center;justify-content:center;padding:30px 0;}
-  .cardshell{position:relative;width:100%;max-width:382px;perspective:1600px;}
+  .cardshell{position:relative;width:100%;max-width:317px;perspective:1600px;}
   .cardshell::before{content:"";position:absolute;inset:-1.5px;border-radius:22px;z-index:0;
     background:conic-gradient(from 0deg,var(--purple),var(--royal),var(--blue),var(--indigo),var(--purple));
     filter:blur(10px);opacity:.55;animation:spin 14s linear infinite;}
   @keyframes spin{to{transform:rotate(360deg);}}
-  .card{position:relative;z-index:1;min-height:355px;display:flex;flex-direction:column;cursor:pointer;
+  .card{position:relative;z-index:1;min-height:327px;display:flex;flex-direction:column;cursor:pointer;
     border:1px solid rgba(168,140,255,.22);border-radius:20px;transform-origin:50% 0%;
     backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform,opacity;
     background:
@@ -208,14 +208,14 @@
     if(reduce || !card.animate){ advance(); schedule(); return; }
     busy = true;
     var out = card.animate(
-      [{transform:"rotateX(0deg)",opacity:1},{transform:"rotateX(85deg)",opacity:.08}],
-      {duration:250, easing:"cubic-bezier(.4,0,.9,.4)"}
+      [{transform:"rotateX(0deg)",opacity:1},{transform:"rotateX(88deg)",opacity:.06}],
+      {duration:620, easing:"cubic-bezier(.45,0,.85,.3)"}
     );
     out.onfinish = function(){
       advance();
       var inn = card.animate(
-        [{transform:"rotateX(-85deg)",opacity:.08},{transform:"rotateX(0deg)",opacity:1}],
-        {duration:320, easing:"cubic-bezier(.2,.8,.3,1)"}
+        [{transform:"rotateX(-88deg)",opacity:.06},{transform:"rotateX(0deg)",opacity:1}],
+        {duration:780, easing:"cubic-bezier(.18,.75,.25,1)"}
       );
       inn.onfinish = function(){ busy = false; };
     };
@@ -271,7 +271,7 @@
 
   /* ---------------- GO ---------------- */
   paint();
-  if(!reduce && card.animate){ card.animate([{transform:"rotateX(-70deg)",opacity:0},{transform:"rotateX(0)",opacity:1}],{duration:520,easing:"cubic-bezier(.2,.8,.3,1)"}); }
+  if(!reduce && card.animate){ card.animate([{transform:"rotateX(-72deg)",opacity:0},{transform:"rotateX(0)",opacity:1}],{duration:820,easing:"cubic-bezier(.18,.75,.25,1)"}); }
   schedule();
   loadLive();
 })();
