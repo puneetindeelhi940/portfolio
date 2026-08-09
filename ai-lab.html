@@ -173,6 +173,70 @@
   /* ---------------- CLOSING ---------------- */
   .uni-close{max-width:1180px;margin:64px auto 0;padding:0 var(--pad-x);}
   @media(max-width:1100px){.uni-close{padding:0 var(--pad-x-sm);}}
+
+  /* ---------------- FLIP-CARD RAIL (hover-to-flip carousel) ---------------- */
+  .flip-sec{max-width:1120px;margin:0 auto;padding:64px var(--pad-x) 0;}
+  @media(max-width:1100px){.flip-sec{padding-left:var(--pad-x-sm);padding-right:var(--pad-x-sm);}}
+  @media(max-width:600px){.flip-sec{padding-left:22px;padding-right:22px;}}
+  .flip-shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--rule);margin-bottom:6px;}
+  .flip-shead .n{font-family:var(--f-mono);font-size:12px;letter-spacing:0.14em;color:var(--signal);}
+  .flip-shead .t{font-size:15px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);}
+  .flip-shead .ctrls{margin-left:auto;display:flex;gap:8px;}
+  .flip-arrow{width:34px;height:34px;border-radius:999px;border:1px solid var(--rule);background:var(--surface);color:var(--dim);font-size:15px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:border-color .15s,color .15s,transform .15s;}
+  .flip-arrow:hover{border-color:var(--signal);color:var(--signal);transform:translateY(-1px);}
+  .flip-sec p.flip-intro{color:var(--dim);max-width:none;font-size:clamp(10px,1.08vw,13px)!important;line-height:1.6;letter-spacing:-0.002em;margin:14px 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .flip-sec p.flip-intro b{color:var(--ink);font-weight:600;}
+  @media(max-width:820px){.flip-sec p.flip-intro{white-space:normal;font-size:13px!important;letter-spacing:0;}}
+
+  .flip-rail{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding:8px 2px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;}
+  .flip-rail::-webkit-scrollbar{width:0;height:0;display:none;}
+
+  /* 3-dot carousel indicator */
+  .flip-dots{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:14px;}
+  .flip-dot{width:13px;height:13px;border-radius:50%;padding:0;cursor:pointer;border:2px solid #1f7a5a;background:transparent;transition:background .2s,transform .2s,border-color .2s;}
+  .flip-dot:hover{border-color:#2a9d75;}
+  .flip-dot[aria-current="true"]{background:#1f7a5a;border-color:#1f7a5a;transform:scale(1.18);}
+
+  .flip-card{flex:0 0 auto;width:278px;height:380px;perspective:1400px;text-decoration:none;color:inherit;border-radius:18px;outline-offset:4px;}
+  .flip-card__inner{position:relative;width:100%;height:100%;transition:transform .9s cubic-bezier(.16,.84,.3,1);transform-style:preserve-3d;}
+  .flip-card:hover .flip-card__inner,.flip-card:focus-visible .flip-card__inner{transform:rotateY(180deg);}
+  .flip-face{position:absolute;inset:0;border-radius:18px;border:1px solid var(--rule);overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:flex;flex-direction:column;box-shadow:0 14px 40px -26px rgba(0,0,0,.75);}
+
+  /* FRONT — shared meta / hint */
+  .flip-face--front{justify-content:flex-end;}
+  .flip-face--front::after{content:"";position:absolute;inset:0;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);pointer-events:none;z-index:3;}
+  .flip-front-meta{position:relative;z-index:2;padding:0 20px 18px;}
+  .flip-front-meta .fchip{display:inline-block;font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.92);background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:3px 10px;margin-bottom:11px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);}
+  .flip-front-meta h3{font-size:20px;font-weight:730;line-height:1.16;letter-spacing:-0.015em;color:#fff;margin:0 0 11px;text-shadow:0 2px 16px rgba(0,0,0,0.7);text-wrap:balance;}
+  .flip-hint{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.8);}
+  .flip-hint .rot{display:inline-block;transition:transform .5s;}
+  .flip-card:hover .flip-hint .rot{transform:rotate(180deg);}
+
+  /* FRONT variant A — real screenshot */
+  .flip-shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;}
+  .flip-face--shot .flip-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,10,12,0) 22%,rgba(8,10,12,.48) 50%,rgba(6,8,10,.94) 100%);}
+  .flip-face--shot .flip-tint{position:absolute;left:0;right:0;top:0;height:78px;z-index:1;background:linear-gradient(180deg,var(--g1),transparent);opacity:.5;mix-blend-mode:multiply;}
+
+  /* FRONT variant B — premium illustration (login/proxy-walled tools) */
+  .flip-face--art{justify-content:space-between;padding:22px;background:linear-gradient(155deg,var(--g1),var(--g2));}
+  .flip-face--art::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(135px 135px at 80% 15%,rgba(255,255,255,.15),transparent 66%),radial-gradient(170px 170px at 10% 98%,rgba(255,255,255,.07),transparent 70%);pointer-events:none;}
+  .flip-face--art .flip-ic{position:relative;z-index:2;width:62px;height:62px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.22);box-shadow:0 0 36px -8px rgba(255,255,255,.42);}
+  .flip-face--art .flip-ic svg{width:32px;height:32px;stroke:rgba(255,255,255,0.96);}
+  .flip-face--art .flip-front-meta{padding:0;}
+
+  /* BACK — description + go */
+  .flip-face--back{background:var(--surface);transform:rotateY(180deg);padding:24px 22px 20px;justify-content:flex-start;}
+  .flip-face--back::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--g1),var(--g2));}
+  .flip-card:hover .flip-face--back{border-color:var(--signal);}
+  .flip-face--back .btag{font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);margin-bottom:12px;}
+  .flip-face--back p{font-size:13.4px;line-height:1.6;color:var(--dim);margin:0;flex:1;}
+  .flip-face--back .bgo{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal);margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);}
+
+  @media(prefers-reduced-motion:reduce){
+    .flip-card__inner{transition:transform .3s ease;}
+    .flip-rail{scroll-behavior:auto;}
+  }
+  @media(hover:none){.flip-hint{color:rgba(255,255,255,0.88);}}
 </style>
   <link rel="stylesheet" href="assets/typography.css">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -325,6 +389,233 @@
   <div class="graph" id="graph"></div>
 </section>
 
+<!-- ══════════ FLIP-CARD RAIL · AI LAB AT A GLANCE ══════════ -->
+<section class="flip-sec" id="glance" data-screen-label="flip-rail">
+  <div class="flip-shead">
+    <span class="n">§ ✦</span>
+    <span class="t">The Lab at a glance</span>
+    <span class="ctrls">
+      <button type="button" class="flip-arrow" aria-label="Scroll cards left" onclick="document.getElementById('flipRail').scrollBy({left:-580,behavior:'smooth'})">&lsaquo;</button>
+      <button type="button" class="flip-arrow" aria-label="Scroll cards right" onclick="document.getElementById('flipRail').scrollBy({left:580,behavior:'smooth'})">&rsaquo;</button>
+    </span>
+  </div>
+  <p class="flip-intro">Every live tool, prototype, custom GPT, and guide in one scrollable shelf. <b>Hover a card to flip it</b> for the story, then click through to open the project.</p>
+
+  <div class="flip-rail" id="flipRail">
+
+    <!-- 1 · AI News Terminal -->
+    <a class="flip-card" href="puneets-news-terminal.html" style="--g1:#0d2b28;--g2:#0a201e;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--shot">
+          <img class="flip-shot" src="assets/screenshots/news-terminal.png" alt="AI News Terminal preview" loading="lazy">
+          <div class="flip-tint"></div>
+          <div class="flip-scrim"></div>
+          <div class="flip-front-meta">
+            <span class="fchip">Live &middot; 60+ sources</span>
+            <h3>AI News Terminal</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Live tool</span>
+          <p>An AI news aggregator with a behavioural signal engine that learns from what you read &mdash; 40+ sources across 12 categories, decay-weighted scoring, and always-fresh content on every visit. Pure vanilla JS, zero dependencies.</p>
+          <span class="bgo">Open the terminal &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 2 · AI Opportunity Simulator -->
+    <a class="flip-card" href="opportunity-simulator.html" style="--g1:#3a2a0c;--g2:#241a08;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--shot">
+          <img class="flip-shot" src="assets/screenshots/opportunity-simulator.png" alt="AI Opportunity Simulator preview" loading="lazy">
+          <div class="flip-tint"></div>
+          <div class="flip-scrim"></div>
+          <div class="flip-front-meta">
+            <span class="fchip">Prototype &middot; Interactive</span>
+            <h3>AI Opportunity Simulator</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Prototype</span>
+          <p>A living digital twin of the global economy for executive decision-making. AI-scored country rankings, four-order-deep geopolitical shock simulations, and real-time strategy extraction that turns macro noise into moves.</p>
+          <span class="bgo">Open the simulator &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 3 · Orbital Situation Room -->
+    <a class="flip-card" href="situation-simulator.html" style="--g1:#101d35;--g2:#0a1424;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--shot">
+          <img class="flip-shot" src="assets/screenshots/situation-simulator.png" alt="Orbital Situation Room preview" loading="lazy">
+          <div class="flip-tint"></div>
+          <div class="flip-scrim"></div>
+          <div class="flip-front-meta">
+            <span class="fchip">Prototype &middot; 3D globe</span>
+            <h3>Orbital Situation Room</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Prototype</span>
+          <p>A WebGL 3D globe rendering satellites, ground stations, and live network links as a real-time defense-ops interface. AI-driven collision sims, telemetry selection, and failure-risk scoring &mdash; all rendered client-side.</p>
+          <span class="bgo">Enter the room &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 4 · AI Efficiency Workbench -->
+    <a class="flip-card" href="workbench-alt2.html" style="--g1:#3a2f10;--g2:#241d08;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--shot">
+          <img class="flip-shot" src="assets/screenshots/workbench.png" alt="AI Efficiency Workbench preview" loading="lazy">
+          <div class="flip-tint"></div>
+          <div class="flip-scrim"></div>
+          <div class="flip-front-meta">
+            <span class="fchip">Prototype &middot; AI economics</span>
+            <h3>AI Efficiency Workbench</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Prototype</span>
+          <p>Make enterprise AI cost-aware without losing the plot. Triage every workload, route by cost, and send only the 5% that truly needs a human to a human. Governance treated as a UX problem &mdash; every decision visible and defensible.</p>
+          <span class="bgo">Open the workbench &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 5 · Design Intelligence Portal -->
+    <a class="flip-card" href="https://pa9401.vercel.app/" target="_blank" rel="noopener" style="--g1:#1a2a4a;--g2:#101d35;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--art">
+          <span class="flip-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.6 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.4L12 3z"/><path d="M18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z"/></svg></span>
+          <div class="flip-front-meta">
+            <span class="fchip">Live &middot; Vibe-coded</span>
+            <h3>Design Intelligence Portal</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Live tool</span>
+          <p>A live AI-prompt engineering hub for design teams. CO-STAR, RTF, and Chain-of-Thought frameworks operationalised as ready-to-use tools, not theory &mdash; vibe-coded and shipped as a working instrument teams use daily.</p>
+          <span class="bgo">Visit the portal &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 6 · Vigyan Setu -->
+    <a class="flip-card" href="vigyan-setu.html" style="--g1:#2a1810;--g2:#1b263b;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--shot">
+          <img class="flip-shot" src="assets/screenshots/vigyan-setu.png" alt="Vigyan Setu case study preview" loading="lazy">
+          <div class="flip-tint"></div>
+          <div class="flip-scrim"></div>
+          <div class="flip-front-meta">
+            <span class="fchip">Case study &middot; Interactive</span>
+            <h3>Vigyan Setu</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Case study</span>
+          <p>A 70-slide Double Diamond case study for a speculative event OS, born from the documented failures of the India AI Impact Summit. 30 methods, 10 fault lines, 5 personas, and an interactive phone prototype &mdash; Discover to Deliver.</p>
+          <span class="bgo">Read the case study &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 7 · Portfolio Intelligence Lab -->
+    <a class="flip-card" href="https://chatgpt.com/g/g-6a25498c775481919f838952bd5cafac-portfolio-intelligence-lab" target="_blank" rel="noopener" style="--g1:#10a37f;--g2:#0d6b4f;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--art">
+          <span class="flip-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.2" y1="15.2" x2="20" y2="20"/><line x1="8" y1="10.5" x2="13" y2="10.5"/><line x1="8" y1="8" x2="13" y2="8"/></svg></span>
+          <div class="flip-front-meta">
+            <span class="fchip">Custom GPT &middot; Live</span>
+            <h3>Portfolio Intelligence Lab</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Custom GPT</span>
+          <p>A custom GPT encoding 19.7 years of strategic design thinking. It reasons about work, decisions, and impact &mdash; an AI portfolio reviewer that critiques like an expert, arguing about outcomes, not just what looks nice.</p>
+          <span class="bgo">Open in ChatGPT &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 8 · UX Trust & Dark-Pattern Intelligence -->
+    <a class="flip-card" href="https://chatgpt.com/g/g-6a284606779881919f6b63bf8855660d-ai-powered-ux-trust-dark-pattern-intelligence" target="_blank" rel="noopener" style="--g1:#5c1630;--g2:#3b0a1a;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--art">
+          <span class="flip-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6l7-3z"/><path d="M9 12l2 2 4-4.2"/></svg></span>
+          <div class="flip-front-meta">
+            <span class="fchip">Custom GPT &middot; Live</span>
+            <h3>UX Trust &amp; Dark-Pattern Intelligence</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Custom GPT</span>
+          <p>A custom GPT that runs AI-driven audits on any interface for trust erosion and dark patterns. Paste a screenshot and get a scored trust audit with actionable findings &mdash; ethical guardrails baked into the model.</p>
+          <span class="bgo">Open in ChatGPT &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 9 · Skills Lab -->
+    <a class="flip-card" href="skills-lab.html" style="--g1:#1f7a5a;--g2:#0a2e1f;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--shot">
+          <img class="flip-shot" src="assets/screenshots/skills-global.png" alt="Skills Lab preview" loading="lazy">
+          <div class="flip-tint"></div>
+          <div class="flip-scrim"></div>
+          <div class="flip-front-meta">
+            <span class="fchip">92 skills &middot; Generator</span>
+            <h3>Skills Lab</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Live tool</span>
+          <p>Three tools in one: an AI skills generator, 30 Claude skills built for India&rsquo;s builders, and 62 for global builders across engineering, product, design, and growth. Generate, copy, share, and download custom skills on the fly.</p>
+          <span class="bgo">Open Skills Lab &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 10 · 30-Day Agentic UX Plan -->
+    <a class="flip-card" href="30day-agentic-ux-plan.html" style="--g1:#4a2f10;--g2:#2a1a08;">
+      <div class="flip-card__inner">
+        <div class="flip-face flip-face--front flip-face--shot">
+          <img class="flip-shot" src="assets/screenshots/agentic-ux.png" alt="30-Day Agentic-UX Plan preview" loading="lazy">
+          <div class="flip-tint"></div>
+          <div class="flip-scrim"></div>
+          <div class="flip-front-meta">
+            <span class="fchip">Playbook &middot; 30 days</span>
+            <h3>30-Day Agentic-UX Plan</h3>
+            <span class="flip-hint"><span class="rot">↻</span> Hover to flip</span>
+          </div>
+        </div>
+        <div class="flip-face flip-face--back">
+          <span class="btag">Guide</span>
+          <p>A structured, day-by-day playbook for designing agentic AI experiences &mdash; from prompt-level fluency to shipping trustworthy autonomous agents. Concepts, hands-on drills, and daily rituals that build real AI-UX craft.</p>
+          <span class="bgo">Read the plan &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="flip-dots" id="flipDots" role="tablist" aria-label="Card carousel">
+    <button type="button" class="flip-dot" aria-current="true" aria-label="Go to card group 1"></button>
+    <button type="button" class="flip-dot" aria-current="false" aria-label="Go to card group 2"></button>
+    <button type="button" class="flip-dot" aria-current="false" aria-label="Go to card group 3"></button>
+  </div>
+</section>
+
 <!-- ══════════ CLOSING · THE UNIVERSE ══════════ -->
 <section class="uni-close">
   <div class="uni-close__card">
@@ -343,6 +634,73 @@
 
 </div><!-- /page -->
 <script src="assets/site.js"></script>
+<script>
+/* Flip-card rail — gentle auto-scroll marquee, pauses on hover / focus / touch */
+(function(){
+  var sec  = document.getElementById('glance');
+  var rail = document.getElementById('flipRail');
+  if(!sec || !rail) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  /* clone the set once so the loop is seamless */
+  var originals = Array.prototype.slice.call(rail.children);
+  var baseLeft  = rail.children[0].offsetLeft;
+  originals.forEach(function(node){
+    var c = node.cloneNode(true);
+    c.setAttribute('aria-hidden','true');
+    c.setAttribute('tabindex','-1');
+    rail.appendChild(c);
+  });
+  var firstClone = rail.children[originals.length];
+  function loopDist(){ return firstClone.offsetLeft - baseLeft; }
+
+  var paused = false, resumeT;
+  function pause(){ paused = true; clearTimeout(resumeT); }
+  function resume(){ paused = false; }
+  function resumeSoon(){ clearTimeout(resumeT); resumeT = setTimeout(function(){ paused = false; }, 1600); }
+
+  sec.addEventListener('mouseenter', pause);
+  sec.addEventListener('mouseleave', resume);
+  sec.addEventListener('focusin',  pause);
+  sec.addEventListener('focusout', resume);
+  rail.addEventListener('touchstart', pause,  {passive:true});
+  rail.addEventListener('touchend',   resumeSoon);
+  rail.addEventListener('pointerdown', pause); /* manual drag / arrow use */
+  rail.addEventListener('pointerup',   resumeSoon);
+
+  /* 3-dot carousel indicator */
+  var dots = Array.prototype.slice.call(document.querySelectorAll('#flipDots .flip-dot'));
+  var N = dots.length, lastIdx = -1;
+  function setActive(i){
+    if(i === lastIdx) return;
+    lastIdx = i;
+    dots.forEach(function(d,k){ d.setAttribute('aria-current', k===i ? 'true':'false'); });
+  }
+  dots.forEach(function(d,i){
+    d.addEventListener('click', function(){
+      pause();
+      rail.scrollTo({ left: loopDist() * (i / N), behavior: 'smooth' });
+      setActive(i);
+      resumeSoon();
+    });
+  });
+
+  var speed = 0.45;
+  function tick(){
+    if(!paused && !reduce.matches){
+      rail.scrollLeft += speed;
+      if(rail.scrollLeft >= loopDist()) rail.scrollLeft -= loopDist();
+    }
+    var d = loopDist();
+    if(d > 0){
+      var frac = (rail.scrollLeft % d) / d;
+      setActive(Math.min(N - 1, Math.floor(frac * N)));
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
 <script>
 /* ============================================================
    AI LAB — content graph + navigator (static, no backend)
