@@ -273,6 +273,93 @@ a { color: inherit; text-decoration: none; }
   color: #15664b;
 }
 
+/* ── My Signals hover tooltip ── */
+.nt-chips-wrap { position: sticky; }
+.nt-signal-tip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: var(--pad);
+  z-index: 120;
+  width: min(360px, calc(100vw - 2 * var(--pad)));
+  background: var(--surface, #fff);
+  border: 1px solid var(--rule);
+  border-top: 3px solid #1a7a5a;
+  border-radius: 12px;
+  box-shadow: 0 18px 44px rgba(15, 40, 30, 0.18);
+  padding: 14px 16px 12px;
+  font-family: var(--font);
+  color: var(--ink);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  pointer-events: none;
+}
+.nt-signal-tip.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nt-signal-tip::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 22px;
+  width: 12px;
+  height: 12px;
+  background: #1a7a5a;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.nt-signal-tip__title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #15664b;
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+.nt-signal-tip__lead {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0 0 8px;
+}
+.nt-signal-tip__list {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.nt-signal-tip__list li {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ink-2);
+  padding-left: 16px;
+}
+.nt-signal-tip__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1a7a5a;
+}
+.nt-signal-tip__list strong { color: var(--ink); font-weight: 650; }
+.nt-signal-tip__foot {
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--ink-3, var(--ink-2));
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+  font-style: italic;
+}
+
 /* ═══════════ AI-INFO STRIP (full-width, below chips) ═══════════ */
 .nt-aiinfo {
   max-width: var(--max-w);
@@ -836,7 +923,7 @@ a { color: inherit; text-decoration: none; }
 <!-- ═══════════ CHIP FILTERS ═══════════ -->
 <div class="nt-chips-wrap">
   <div class="nt-chips" id="chipRow">
-    <button class="nt-chip nt-chip--signals active" data-cat="signals">&#9889; My Signals</button>
+    <button class="nt-chip nt-chip--signals active" data-cat="signals" id="signalsChip" aria-describedby="signalTip">&#9889; My Signals</button>
     <button class="nt-chip" data-cat="popular">Popular</button>
     <button class="nt-chip" data-cat="business">Business</button>
     <button class="nt-chip" data-cat="technology">Technology</button>
@@ -849,6 +936,19 @@ a { color: inherit; text-decoration: none; }
     <button class="nt-chip" data-cat="startups">Startups</button>
     <button class="nt-chip" data-cat="travel">Travel</button>
     <button class="nt-chip" data-cat="sports">Sports</button>
+  </div>
+  <div class="nt-signal-tip" id="signalTip" role="tooltip" aria-hidden="true">
+    <div class="nt-signal-tip__title">&#9889; How your Signal is tuned</div>
+    <p class="nt-signal-tip__lead">This feed isn&rsquo;t generic &mdash; it&rsquo;s ranked from your own behaviour on this page. The signals we read:</p>
+    <ul class="nt-signal-tip__list">
+      <li><strong>Topics you browse</strong> &mdash; every category tab you open nudges that subject up.</li>
+      <li><strong>Stories you open</strong> &mdash; headlines you actually click count the most.</li>
+      <li><strong>Searches you run</strong> &mdash; the keywords you type in shape what surfaces.</li>
+      <li><strong>Time of day</strong> &mdash; mornings lean Business, midday leans Tech &amp; UX, evenings lean Sports &amp; Culture.</li>
+      <li><strong>Day of week</strong> &mdash; weekends favour Travel &amp; Sports; weekdays favour Business &amp; Tech.</li>
+      <li><strong>Recency</strong> &mdash; only the last 30 days count, weighted toward what you did most recently.</li>
+    </ul>
+    <p class="nt-signal-tip__foot">All of this stays in your browser &mdash; nothing about you leaves this device.</p>
   </div>
 </div>
 
@@ -1473,6 +1573,19 @@ a { color: inherit; text-decoration: none; }
     var link = e.target.closest('[data-signal-cat]');
     if (link) recordArticleClick(link.dataset.signalCat);
   });
+
+  // ── "My Signals" explainer tooltip (hover + keyboard focus) ──
+  (function () {
+    var chip = document.getElementById('signalsChip');
+    var tip = document.getElementById('signalTip');
+    if (!chip || !tip) return;
+    function show() { tip.classList.add('is-visible'); tip.setAttribute('aria-hidden', 'false'); }
+    function hide() { tip.classList.remove('is-visible'); tip.setAttribute('aria-hidden', 'true'); }
+    chip.addEventListener('mouseenter', show);
+    chip.addEventListener('mouseleave', hide);
+    chip.addEventListener('focus', show);
+    chip.addEventListener('blur', hide);
+  })();
 
   detectRegion();
   fetchAllNews();
