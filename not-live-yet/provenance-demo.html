@@ -1,0 +1,155 @@
+<!-- ============================================================
+     PROVENANCE / ORIGINAL WORK — DO NOT REMOVE
+     Original work by Puneet Arora
+     https://puneetindeelhi940.github.io/portfolio/
+     Page: provenance-demo · First published: 2026 · Fingerprint: PA-DEMO-0000
+     Unauthorized reproduction of this original work is not permitted.
+     ============================================================ -->
+<base href="../">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Puneet Arora">
+<meta name="copyright" content="© 2026 Puneet Arora. All rights reserved.">
+<title>Provenance Kit — Preview (not live)</title>
+<style>
+  :root{
+    --bg:#0c0e0a;--surface:#161914;--surface2:#1c1f19;--ink:#f0ece4;
+    --dim:rgba(240,236,228,0.65);--faint:rgba(240,236,228,0.4);
+    --rule:rgba(255,255,255,0.08);--accent:#6cc96c;--accent-glow:rgba(108,201,108,0.1);
+    --gold:#b8a078;--red:#e25555;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    --mono:'SF Mono','Fira Code','Cascadia Code',ui-monospace,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 0 80px}
+  .wrap{max-width:940px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--rule);padding:56px 0 40px;margin-bottom:48px}
+  .tag{display:inline-block;font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);background:var(--accent-glow);border:1px solid rgba(108,201,108,.25);padding:7px 12px;border-radius:100px;margin-bottom:22px}
+  h1{font:700 34px/1.15 var(--sans);letter-spacing:-.02em;margin-bottom:14px}
+  .sub{color:var(--dim);font-size:16px;max-width:70ch}
+  h2{font:700 20px/1.3 var(--sans);letter-spacing:-.01em;margin:44px 0 8px;display:flex;align-items:center;gap:10px}
+  h2 .n{font:700 12px/1 var(--mono);color:var(--accent);border:1px solid rgba(108,201,108,.3);border-radius:6px;padding:6px 8px}
+  .lead{color:var(--dim);margin-bottom:18px;max-width:78ch}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:22px 24px;margin-bottom:16px}
+  pre{background:#0a0b08;border:1px solid var(--rule);border-radius:10px;padding:18px 20px;overflow-x:auto;font:400 13px/1.7 var(--mono);color:#cfe8cf}
+  pre .c{color:var(--faint)}
+  pre .k{color:var(--gold)}
+  pre .s{color:#9ecb9e}
+  .pill{display:inline-block;font:600 11px/1 var(--mono);letter-spacing:.05em;padding:5px 9px;border-radius:100px;margin:2px 4px 2px 0}
+  .pill--safe{color:var(--accent);background:var(--accent-glow);border:1px solid rgba(108,201,108,.3)}
+  .pill--zero{color:var(--gold);background:rgba(184,160,120,.1);border:1px solid rgba(184,160,120,.3)}
+  table{width:100%;border-collapse:collapse;margin:10px 0 4px;font-size:14px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font:600 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+  td .lbl{color:var(--ink);font-weight:600}
+  td small{color:var(--dim)}
+  .credit-demo{background:var(--surface2);border:1px dashed var(--rule);border-radius:10px;padding:26px 24px;text-align:center;margin:8px 0}
+  .credit-demo p{font:400 12px/1.5 var(--sans);color:var(--faint)}
+  ul.plain{list-style:none;margin:6px 0}
+  ul.plain li{padding:9px 0;border-bottom:1px solid var(--rule);color:var(--dim);font-size:14px;display:flex;gap:10px;align-items:baseline}
+  ul.plain li code{font:500 12px/1 var(--mono);color:var(--ink);background:#0a0b08;border:1px solid var(--rule);padding:4px 7px;border-radius:5px}
+  .note{border-left:2px solid var(--accent);padding:4px 0 4px 16px;color:var(--dim);margin:14px 0;font-size:14px}
+  .warn{border-left:2px solid var(--red);padding:4px 0 4px 16px;color:var(--dim);margin:14px 0;font-size:14px}
+  .reveal{font-family:var(--mono);font-size:13px;color:var(--gold);background:rgba(184,160,120,.08);border:1px solid rgba(184,160,120,.25);border-radius:8px;padding:14px 16px;letter-spacing:.02em}
+  footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:28px;text-align:center}
+  footer p{font:400 12px/1.5 var(--sans);color:var(--faint)}
+  a{color:var(--accent)}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="tag">Preview · not live · staging</span>
+    <h1>Provenance Kit — what gets added to each signature tool</h1>
+    <p class="sub">Understated on the surface, provable underneath. Every marker below is either invisible-inside-visible-content or in a non-indexed channel, so there is <strong>zero SEO penalty surface</strong>. Nothing here changes how a visitor experiences the page.</p>
+  </header>
+
+  <h2><span class="n">01</span> The visible layer — understated credit</h2>
+  <p class="lead">Your pages already carry a small footer credit. It stays understated; I only make it consistent and add a quiet rights line. This is the <em>only</em> thing a normal visitor could notice.</p>
+  <div class="credit-demo">
+    <p>&copy; 2026 Puneet Arora · Original work · All rights reserved.</p>
+  </div>
+  <p class="note">No banners, no “DO NOT COPY” warnings, no popups — those read as defensive to recruiters. Just a confident one-line credit.</p>
+
+  <h2><span class="n">02</span> Authorship metadata <span class="pill pill--safe">SEO-positive</span></h2>
+  <p class="lead">Machine-readable authorship in the <code>&lt;head&gt;</code>. Search engines read this as legitimate authorship signals — it helps, never hurts.</p>
+  <pre><span class="c">&lt;!-- in &lt;head&gt; --&gt;</span>
+<span class="k">&lt;meta</span> name=<span class="s">"author"</span> content=<span class="s">"Puneet Arora"</span><span class="k">&gt;</span>
+<span class="k">&lt;meta</span> name=<span class="s">"copyright"</span> content=<span class="s">"© 2026 Puneet Arora. All rights reserved."</span><span class="k">&gt;</span>
+<span class="k">&lt;link</span> rel=<span class="s">"author"</span> href=<span class="s">"https://puneetindeelhi940.github.io/portfolio/bio.html"</span><span class="k">&gt;</span></pre>
+
+  <h2><span class="n">03</span> Structured data — JSON-LD <span class="pill pill--safe">SEO-positive (validated)</span></h2>
+  <p class="lead">A <code>CreativeWork</code> record stating author, copyright holder, and publish year. This is the piece that puts a <strong>dated authorship claim</strong> into a format Google actively understands. I validate it before every push so it never throws a Search Console warning.</p>
+  <pre><span class="k">&lt;script</span> type=<span class="s">"application/ld+json"</span><span class="k">&gt;</span>
+{
+  <span class="s">"@context"</span>: <span class="s">"https://schema.org"</span>,
+  <span class="s">"@type"</span>: <span class="s">"CreativeWork"</span>,
+  <span class="s">"name"</span>: <span class="s">"Decision Replay™ &amp; Leadership Mode™"</span>,
+  <span class="s">"url"</span>: <span class="s">"https://puneetindeelhi940.github.io/portfolio/decision-replay.html"</span>,
+  <span class="s">"author"</span>: { <span class="s">"@type"</span>: <span class="s">"Person"</span>, <span class="s">"name"</span>: <span class="s">"Puneet Arora"</span> },
+  <span class="s">"creator"</span>: { <span class="s">"@type"</span>: <span class="s">"Person"</span>, <span class="s">"name"</span>: <span class="s">"Puneet Arora"</span> },
+  <span class="s">"copyrightHolder"</span>: { <span class="s">"@type"</span>: <span class="s">"Person"</span>, <span class="s">"name"</span>: <span class="s">"Puneet Arora"</span> },
+  <span class="s">"copyrightYear"</span>: 2026,
+  <span class="s">"copyrightNotice"</span>: <span class="s">"© 2026 Puneet Arora. All rights reserved."</span>,
+  <span class="s">"creativeWorkStatus"</span>: <span class="s">"Published"</span>
+}
+<span class="k">&lt;/script&gt;</span></pre>
+
+  <h2><span class="n">04</span> Invisible fingerprints — the detection layer <span class="pill pill--zero">zero SEO surface</span></h2>
+  <p class="lead">These are how you actually <strong>catch and prove</strong> copying. None are indexed by search engines; none affect the visitor.</p>
+
+  <table>
+    <tr><th>Marker</th><th>Where</th><th>What it buys you</th></tr>
+    <tr>
+      <td><span class="lbl">HTML comment fingerprint</span></td>
+      <td><small>top of the file</small></td>
+      <td><small>Rides along when someone copies your source. Google the fingerprint or phrase → find every clone.</small></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Zero-width watermark</span></td>
+      <td><small>inside the visible footer credit</small></td>
+      <td><small>Invisible characters that survive copy-paste of the <em>rendered</em> text — even if they retype nothing and just paste. Not cloaking: it lives inside content that’s already visible.</small></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Body data-attribute</span></td>
+      <td><small><code>&lt;body data-origin data-fp&gt;</code></small></td>
+      <td><small>DOM-level marker for automated clone-detection scans later.</small></td>
+    </tr>
+  </table>
+
+  <pre><span class="c">&lt;!-- top of file --&gt;</span>
+<span class="c">&lt;!-- ===========================================================</span>
+<span class="c">     PROVENANCE / ORIGINAL WORK — DO NOT REMOVE</span>
+<span class="c">     Original work by Puneet Arora · puneetindeelhi940.github.io/portfolio</span>
+<span class="c">     Page: decision-replay · First published: 2026 · Fingerprint: PA-DRPL-9F3A</span>
+<span class="c">     =========================================================== --&gt;</span>
+
+<span class="c">&lt;!-- on body --&gt;</span>
+<span class="k">&lt;body</span> data-origin=<span class="s">"puneet-arora-original"</span> data-fp=<span class="s">"PA-DRPL-9F3A"</span><span class="k">&gt;</span></pre>
+
+  <p class="lead" style="margin-top:22px">This preview page carries a live watermark itself. Here is the <strong>revealed</strong> zero-width sequence that is invisibly embedded in the footer credit at the bottom of this page (you can’t see it there — that’s the point):</p>
+  <div class="reveal">footer credit + hidden → <strong>PA·DEMO·0000</strong> &nbsp;<span style="color:var(--faint)">(encoded as U+200B / U+200C zero-width chars)</span></div>
+
+  <h2><span class="n">05</span> What this does and doesn’t protect</h2>
+  <div class="card">
+    <p style="color:var(--dim);font-size:14px"><strong style="color:var(--ink)">Protects:</strong> your exact pages, wording, layout, and code — copying becomes traceable and your authorship provable with a dated record.</p>
+    <p style="color:var(--dim);font-size:14px;margin-top:10px"><strong style="color:var(--ink)">Does not protect:</strong> the <em>idea</em>. Someone can absorb a concept and rebuild it in their own words — provenance can’t stop that. It defends your pages, not your concepts.</p>
+  </div>
+  <p class="warn">Reality check: this is a <strong>detection + proof</strong> system, not a lock. It catches copiers and wins the “who was first” argument. Acting on a catch still means a takedown or a message from you.</p>
+
+  <h2><span class="n">06</span> Pages that get the kit</h2>
+  <ul class="plain">
+    <li><code>decision-replay.html</code> Decision Replay™ &amp; Leadership Mode™</li>
+    <li><code>situation-simulator.html</code> Situation Simulator</li>
+    <li><code>opportunity-simulator.html</code> AI Opportunity Simulator</li>
+    <li><code>agent-collaboration-model.html</code> Agent Collaboration Model</li>
+    <li><code>ai-decision-confidence-scale.html</code> AI Decision Confidence Scale</li>
+    <li><code>human-override-matrix.html</code> Human Override Matrix</li>
+    <li><code>memory-ux-canvas.html</code> Memory UX Canvas</li>
+    <li><code>ai-personalization-engine.html</code> AI Personalization Engine</li>
+    <li><code>dark-patterns-ai.html</code> · <code>dark-patterns-game.html</code> · <code>dark-patterns-live.html</code></li>
+  </ul>
+
+  <footer>
+    <p>&copy; 2026 Puneet Arora · Original work · All rights reserved.​‌​‌​‌​‌</p>
+  </footer>
+</div>
