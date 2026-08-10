@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T09:14:27Z",
+  "generated_at": "2026-08-10T16:50:02Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Group 'stormed' Florida planning meeting to protest nonexistent Muslim city project",
+      "claim": "Hikers didn't discover Dead Sea Scrolls-esque artifacts in Tennessee",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/florida-epic-city-meeting/",
+      "url": "https://www.snopes.com/fact-check/dead-sea-scrolls-tennessee/",
       "topic": "Trending"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "n": 4,
-      "claim": "Big Food Is Creating Fake Health Groups to Confuse Consumers",
+      "claim": "Big Food Is Creating Fake Health Groups To Confuse Consumers",
       "verdict": "FALSE",
       "source": "Check Your Fact",
       "url": "https://dailycaller.com/2026/08/09/big-food-creating-fake-health-groups-confuse-consumers-robert-f-kennedy-jr-calley-means-cyclospora-outbreak",
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "Screwfix is not selling display drill sets for less than a tenner",
+      "claim": "Currys isn’t selling Dyson vacuum cleaners for £8.55",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/screwfix-makita-drill-dill-fake-offer/",
+      "url": "https://fullfact.org/shopping/currys-dyson-cyclone-fake-offer/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Was ICE contractor at Taylor Swift and Travis Kelce's wedding? What we know",
+      "claim": "Will Earth 'lose gravity' for 7 seconds on Aug. 12, 2026? NASA weighs in",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/09/swift-kelce-wedding-ice-contractor/",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/fact-check/earth-lose-gravity-nasa/",
+      "topic": "Science"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Dem Michigan Senate Candidate Abdul El-Sayed Outlines Laying ‘Runway’ By ‘Hauling Up People’ To Hold Trump Admin ‘Accountable’",
+      "claim": "‘Woke 1 Was Crazy’ AOC Declares, Memory-Holing Her Own Role In The Madness",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/09/abdul-el-sayed-hold-donald-trump-administration-accountable-haul-officials-democrat-senate-majority-cnn-state-union-jake-tapper",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/10/woke-1-was-crazy-aoc-francesca-hong-wisconsin-abolish-the-police-memory-hole",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -112,10 +112,10 @@
     },
     {
       "n": 14,
-      "claim": "John Lewis isn’t giving away Maison Francis Kurkdjian perfume for £3",
+      "claim": "Currys isn’t giving away Samsung S25 Ultras to Facebook users",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/john-lewis-maison-francis-kurkdjian-perfume/",
+      "url": "https://fullfact.org/shopping/currys-samsung-s25-fake-offer/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "13 claims we've fact-checked about impact of Trump's tariffs",
+      "claim": "Why you shouldn't worry too much about showering during a thunderstorm",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-tariffs-impact-claims/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/showers-lightning-thunderstorms/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "At least 13 killed in Ukrainian drone strike on Russia's Tatarstan region, officials say",
+      "headline": "At least 13 killed in Ukrainian drone strike deep into Russia",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-10T08:50:02+00:00"
+      "published": "2026-08-10T14:34:25+00:00"
     },
     {
       "n": 2,
-      "headline": "Who really needs testosterone?",
+      "headline": "Despite Mideast wars, 20 million gather in Iraq for Shia pilgrimage",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5920359/health-men-safety-testosterone-fda-hormone-therapy",
+      "url": "https://www.npr.org/2026/08/10/g-s1-137832/iraq-shia-pilgrimage-shia-war",
       "topic": "Trending",
-      "published": "2026-08-10T09:00:00+00:00"
+      "published": "2026-08-10T16:08:06+00:00"
     },
     {
       "n": 3,
-      "headline": "How to spot the Perseid meteor shower, a summer light show that promises to dazzle",
+      "headline": "UK and France prepare for another heat wave as western Europe has its 3rd hottest year on record so far",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/how-to-spot-the-perseid-meteor-shower-a-summer-light-show-that-promises-to-dazzle",
+      "url": "https://www.pbs.org/newshour/world/uk-and-france-prepare-for-another-heat-wave-as-western-europe-has-its-3rd-hottest-year-on-record-so-far",
       "topic": "Trending",
-      "published": "2026-08-09T22:05:27+00:00"
+      "published": "2026-08-10T16:30:14+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Ukrainian drone attack kills at least 12 in central Russia",
+      "headline": "Why the Rhine drought is bad news for Germany’s recovery",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukrainian-drone-attack-kills-at-least-12-in-central-russia/a-78300485?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-10T08:31:00+00:00"
+      "url": "https://www.dw.com/en/why-the-rhine-drought-is-bad-news-for-germany-s-recovery/a-78300076?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-10T15:55:00+00:00"
     },
     {
       "n": 6,
-      "headline": "China evacuates one million from homes as massive storm arrives",
+      "headline": "World's oceans hit record-high July temperatures",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rgzyplg2o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-10T07:23:54+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cpvw8vmmgrwo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-10T10:24:46+00:00"
     },
     {
       "n": 7,
-      "headline": "Voters are sick of the two-party system. A new poll shows they're open to big changes",
+      "headline": "Does spending money make you feel bad? Read this comic",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5920312/proportional-representation-poll",
+      "url": "https://www.npr.org/2026/08/10/nx-s1-5860936/does-spending-money-make-you-feel-bad-read-this-comic",
       "topic": "Trending",
-      "published": "2026-08-10T09:00:00+00:00"
+      "published": "2026-08-10T14:20:35+00:00"
     },
     {
       "n": 8,
-      "headline": "Watchdog for $46 billion tribal gambling industry can't enforce the law without a chairperson",
+      "headline": "Washington grapples with a $1.4 billion National Guard deployment extension until 2029",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/watchdog-for-46-billion-tribal-gambling-industry-cant-enforce-the-law-without-a-chairperson",
+      "url": "https://www.pbs.org/newshour/nation/washington-grapples-with-a-1-4-billion-national-guard-deployment-extension-until-2029",
       "topic": "Trending",
-      "published": "2026-08-09T21:32:55+00:00"
+      "published": "2026-08-10T16:10:38+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Thailand: Gunshots fired in government office, ex-MP arrested",
+      "headline": "India news: Jharkhand police use tear gas, water cannons to disperse student protesters",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/thailand-gunshots-fired-in-government-office-ex-mp-arrested/a-78300045?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/india-news-jharkhand-police-use-tear-gas-water-cannons-to-disperse-student-protesters/live-78299334?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-10T07:47:00+00:00"
+      "published": "2026-08-10T15:06:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Suspected crime boss Daniel Kinahan appears in court after extradition",
+      "headline": "Netanyahu's rejection of Trump's 15-point Gaza plan unlikely to be final word",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c62qd5plzp6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-09T20:58:18+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ce3q5282ep3o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-10T14:43:08+00:00"
     },
     {
       "n": 12,
-      "headline": "The FAA wants to reboot the nation's airspace. This airline shows how it might work",
+      "headline": "Flood death toll in India's Assam reaches 100 as thousands lose their homes",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5872752/airspace-reboot-alaska-airlines-flyways",
+      "url": "https://www.npr.org/2026/08/10/g-s1-138015/flood-death-toll-in-indias-assam-reaches-100-as-thousands-lose-their-homes",
       "topic": "Trending",
-      "published": "2026-08-10T09:00:00+00:00"
+      "published": "2026-08-10T12:39:05+00:00"
     },
     {
       "n": 13,
-      "headline": "El-Sayed spoke with Obama as Michigan Democrats look to unite after a bitter Senate primary",
+      "headline": "Trump announces staff secretary Will Scharf, who helped secure ballroom approval, will be his new White House counsel",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/el-sayed-spoke-with-obama-as-michigan-democrats-look-to-unite-after-a-bitter-senate-primary",
+      "url": "https://www.pbs.org/newshour/politics/trump-announces-staff-secretary-will-scharf-who-helped-secure-ballroom-approval-will-be-his-new-white-house-counsel",
       "topic": "Politics",
-      "published": "2026-08-09T18:54:24+00:00"
+      "published": "2026-08-10T15:03:30+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "India news: Kerala arrest highlights online harassment of women at CJP protest",
+      "headline": "Colombia: Several killed after large earthquake rocks region",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-kerala-arrest-highlights-online-harassment-of-women-at-cjp-protest/live-78299334?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/colombia-several-killed-after-large-earthquake-rocks-region/a-78307841?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-10T07:15:00+00:00"
+      "published": "2026-08-10T14:57:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Israel rejects Trump's 15-point plan for Gaza, Netanyahu says",
+      "headline": "Total incinerated destruction': Canada wildfire evacuees wonder if they still have homes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5yw4lpe0yeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-09T21:25:04+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2lwv032j9o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-10T16:10:56+00:00"
     },
     {
       "n": 17,
-      "headline": "In a competitive Maine Senate race, women voters could be the deciders",
+      "headline": "Decades of abuse revealed at Michigan art school. And, the Iran war's impact on midterms",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5925349/maine-senate-race-susan-collins-troy-jackson-women-voters",
-      "topic": "Politics",
-      "published": "2026-08-10T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/10/g-s1-138013/up-first-newsletter-epstein-interlochen-center-for-the-arts-trump-iran-midterms-wildfires",
+      "topic": "World",
+      "published": "2026-08-10T11:42:58+00:00"
     }
   ]
 }
