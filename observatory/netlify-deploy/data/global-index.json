@@ -1,7 +1,7 @@
 {
   "composite_index": {
-    "current_value": 6.4,
-    "previous_value": 6.3,
+    "current_value": 6.5,
+    "previous_value": 6.4,
     "change_pct": 1.6,
     "trend": "rising",
     "ai_contribution_ppt": 1.0,
@@ -12,8 +12,8 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 8.9,
-      "trend": "rising",
+      "value": 8.6,
+      "trend": "falling",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -24,7 +24,7 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 3.8,
+      "value": 4.0,
       "trend": "rising",
       "drivers": [
         "GPU instance demand",
@@ -36,7 +36,7 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 12.8,
+      "value": 13.0,
       "trend": "rising",
       "drivers": [
         "Inference cost",
@@ -48,8 +48,8 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 6.0,
-      "trend": "stable",
+      "value": 6.2,
+      "trend": "rising",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -60,7 +60,7 @@
     "consumer_electronics": {
       "label": "Consumer Electronics",
       "weight": 0.15,
-      "value": 3.1,
+      "value": 3.4,
       "trend": "rising",
       "drivers": [
         "Component allocation to AI",
@@ -72,8 +72,8 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.6,
-      "trend": "stable",
+      "value": 6.7,
+      "trend": "rising",
       "drivers": [
         "AI feature premiums",
         "Copilot add-ons",
@@ -84,8 +84,8 @@
     "infrastructure": {
       "label": "Infrastructure & Construction",
       "weight": 0.1,
-      "value": 4.1,
-      "trend": "falling",
+      "value": 4.2,
+      "trend": "rising",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-08-09T06:36:06Z",
+  "last_updated": "2026-08-10T07:05:02Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
