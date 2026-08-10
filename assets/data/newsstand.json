@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T01:20:39Z",
+  "generated_at": "2026-08-10T09:14:27Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Was ICE contractor at Taylor Swift and Travis Kelce's wedding? What we know",
+      "claim": "Group 'stormed' Florida planning meeting to protest nonexistent Muslim city project",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/09/swift-kelce-wedding-ice-contractor/",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/fact-check/florida-epic-city-meeting/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "13 claims we've fact-checked about impact of Trump's tariffs",
+      "claim": "Was ICE contractor at Taylor Swift and Travis Kelce's wedding? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-tariffs-impact-claims/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/08/09/swift-kelce-wedding-ice-contractor/",
+      "topic": "Celebrity"
     },
     {
       "n": 10,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "allegedly showing zombie attack in Atlanta nightclub is fake. Here's how we know",
+      "claim": "13 claims we've fact-checked about impact of Trump's tariffs",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/zombie-attack-atlanta-nightclub/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/trump-tariffs-impact-claims/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Suspected crime boss Daniel Kinahan appears in court after extradition",
+      "headline": "At least 13 killed in Ukrainian drone strike on Russia's Tatarstan region, officials say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c62qd5plzp6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-09T20:58:18+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-10T08:50:02+00:00"
     },
     {
       "n": 2,
-      "headline": "Crews battle wildfires in western U.S. and Canada",
+      "headline": "Who really needs testosterone?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/09/nx-s1-5926463/western-us-wildfires-canada-utah",
+      "url": "https://www.npr.org/2026/08/10/nx-s1-5920359/health-men-safety-testosterone-fda-hormone-therapy",
       "topic": "Trending",
-      "published": "2026-08-09T22:03:09+00:00"
+      "published": "2026-08-10T09:00:00+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Netanyahu rejects Trump-backed Gaza peace plan",
+      "headline": "Ukrainian drone attack kills at least 12 in central Russia",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/netanyahu-rejects-trump-backed-gaza-peace-plan/a-78298282?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-09T23:11:00+00:00"
+      "url": "https://www.dw.com/en/ukrainian-drone-attack-kills-at-least-12-in-central-russia/a-78300485?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-10T08:31:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Israel rejects Trump's 15-point plan for Gaza, Netanyahu says",
+      "headline": "China evacuates one million from homes as massive storm arrives",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5yw4lpe0yeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-09T21:25:04+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2rgzyplg2o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-10T07:23:54+00:00"
     },
     {
       "n": 7,
-      "headline": "Demi Vollering wins Tour de France for the 2nd time",
+      "headline": "Voters are sick of the two-party system. A new poll shows they're open to big changes",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/09/g-s1-137991/demi-vollering-tour-de-france-winner",
+      "url": "https://www.npr.org/2026/08/10/nx-s1-5920312/proportional-representation-poll",
       "topic": "Trending",
-      "published": "2026-08-09T22:00:52+00:00"
+      "published": "2026-08-10T09:00:00+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Alleged Irish crime boss Kinahan charged with directing criminal organisation",
+      "headline": "Thailand: Gunshots fired in government office, ex-MP arrested",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/alleged-irish-crime-boss-kinahan-charged-with-directing-criminal-organisation/a-78297919?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/thailand-gunshots-fired-in-government-office-ex-mp-arrested/a-78300045?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-09T20:36:00+00:00"
+      "published": "2026-08-10T07:47:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Evidence that South African special forces murdered top detective shared with BBC",
+      "headline": "Suspected crime boss Daniel Kinahan appears in court after extradition",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cly8djwgem0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c62qd5plzp6o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-09T23:05:29+00:00"
+      "published": "2026-08-09T20:58:18+00:00"
     },
     {
       "n": 12,
-      "headline": "Netanyahu rejects Trump's Gaza Peace Plan, demands Hamas disarm first",
+      "headline": "The FAA wants to reboot the nation's airspace. This airline shows how it might work",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/09/nx-s1-5926459/netanyahu-rejects-trump-gaza-peace-plan-israel-hamas",
-      "topic": "Politics",
-      "published": "2026-08-09T18:21:45+00:00"
+      "url": "https://www.npr.org/2026/08/10/nx-s1-5872752/airspace-reboot-alaska-airlines-flyways",
+      "topic": "Trending",
+      "published": "2026-08-10T09:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Syria says deal agreed with Russia on future of military bases",
+      "headline": "India news: Kerala arrest highlights online harassment of women at CJP protest",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/syria-says-deal-agreed-with-russia-on-future-of-military-bases/a-78297584?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-09T17:19:00+00:00"
+      "url": "https://www.dw.com/en/india-news-kerala-arrest-highlights-online-harassment-of-women-at-cjp-protest/live-78299334?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-10T07:15:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Drones spotted over German base days after Leipzig bomb incident",
+      "headline": "Israel rejects Trump's 15-point plan for Gaza, Netanyahu says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwyeg1ljp2eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-09T16:18:10+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c5yw4lpe0yeo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-09T21:25:04+00:00"
     },
     {
       "n": 17,
-      "headline": "Haunted by Hoover, Trump searches for an endgame in Iran",
+      "headline": "In a competitive Maine Senate race, women voters could be the deciders",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/09/nx-s1-5925960/trump-hoover-iran",
+      "url": "https://www.npr.org/2026/08/10/nx-s1-5925349/maine-senate-race-susan-collins-troy-jackson-women-voters",
       "topic": "Politics",
-      "published": "2026-08-09T12:39:47+00:00"
+      "published": "2026-08-10T09:00:00+00:00"
     }
   ]
 }
