@@ -104,8 +104,10 @@
   .cardsrc{font-family:var(--f-mono);font-size:10px;letter-spacing:.05em;color:#948dbb;}
   .cardsrc b{color:#c3bde2;font-weight:600;}
   .taphint{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;
-    text-transform:uppercase;color:#b7afdb;display:flex;align-items:center;gap:7px;}
-  .taphint .dot{width:5px;height:5px;border-radius:50%;background:#c084fc;box-shadow:0 0 9px 1px rgba(192,132,252,.9);}
+    text-transform:uppercase;color:#b7afdb;display:flex;align-items:center;gap:7px;margin-bottom:15px;}
+  .taphint .dot{width:5px;height:5px;border-radius:50%;background:#c084fc;box-shadow:0 0 9px 1px rgba(192,132,252,.9);animation:tapblink 1s ease-in-out infinite;}
+  @keyframes tapblink{0%,100%{opacity:1;}50%{opacity:0;}}
+  @media(prefers-reduced-motion:reduce){.taphint .dot{animation:none;}}
 
   footer.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
     margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);}
@@ -146,12 +148,12 @@
     <div class="stagerow">
       <div class="cardshell">
         <article class="card" id="card" role="button" tabindex="0" aria-label="Show the next fact" aria-live="polite">
+          <div class="taphint"><span class="dot"></span>Latest on AI</div>
           <div class="kicker" id="kicker"></div>
           <h1 class="fact" id="fact"></h1>
           <p class="note" id="note"></p>
           <div class="cardbottom">
             <div class="cardsrc" id="cardsrc" hidden></div>
-            <div class="taphint"><span class="dot"></span>Tap to turn the page</div>
           </div>
         </article>
       </div>
