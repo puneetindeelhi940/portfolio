@@ -120,9 +120,16 @@
   /* ---------------- EMBED MODE (?embed=1) — just the card ---------------- */
   html.embed,html.embed body{background:transparent;min-height:0;height:auto;}
   html.embed .stage,html.embed .grain,html.embed .vignette,html.embed header.top,html.embed footer.foot{display:none!important;}
-  html.embed .wrap{padding:0;min-height:0;}
-  html.embed .stagerow{padding:14px;min-height:0;align-items:flex-start;}
+  html.embed .wrap{padding:0;min-height:0;max-width:100%;}
+  html.embed .stagerow{padding:0;min-height:0;align-items:flex-start;}
   html.embed .cardshell{max-width:100%;}
+  /* full-width, compact banner on the News Terminal (~35% shorter) */
+  html.embed .card{min-height:0;padding:16px clamp(18px,2.4vw,26px);}
+  html.embed .kicker{margin:0 0 7px;}
+  html.embed .fact{font-size:clamp(16px,1.8vw,21px);line-height:1.15;}
+  html.embed .note{margin-top:7px;font-size:clamp(11.5px,1vw,13px);}
+  html.embed .cardbottom{padding-top:9px;gap:5px;}
+  html.embed .taphint{margin-bottom:10px;}
 </style>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">

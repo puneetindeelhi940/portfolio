@@ -273,6 +273,24 @@ a { color: inherit; text-decoration: none; }
   color: #15664b;
 }
 
+/* ═══════════ AI-INFO STRIP (full-width, below chips) ═══════════ */
+.nt-aiinfo {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 26px var(--pad) 0;
+}
+.nt-aiinfo__embed {
+  width: 100%;
+  height: 168px;
+  border: 0;
+  background: transparent;
+  display: block;
+  overflow: hidden;
+}
+@media (max-width: 760px) {
+  .nt-aiinfo__embed { height: 210px; }
+}
+
 /* ═══════════ TOP ROW: HEADLINE + LATEST BRIEF ═══════════ */
 .nt-top-row {
   max-width: var(--max-w);
@@ -832,6 +850,11 @@ a { color: inherit; text-decoration: none; }
     <button class="nt-chip" data-cat="travel">Travel</button>
     <button class="nt-chip" data-cat="sports">Sports</button>
   </div>
+</div>
+
+<!-- ═══════════ AI-INFO STRIP ═══════════ -->
+<div class="nt-aiinfo">
+  <iframe class="nt-aiinfo__embed" src="not-live-yet/ai-so-far.html?embed=1" title="AI, So Far — a living card of what AI has done so far" loading="lazy" scrolling="no"></iframe>
 </div>
 
 <!-- ═══════════ ERROR BANNER ═══════════ -->
