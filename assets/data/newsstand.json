@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T08:49:10Z",
+  "generated_at": "2026-08-11T16:54:07Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Michigan Senate candidate Abdul El-Sayed say he believes America deserved 9/11? There's no proof",
+      "claim": "Does image show coyote pressing crosswalk button in Arizona?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/el-sayed-america-deserved-911/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/coyote-using-crosswalk-button/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "Demolishing a varsity, dismantling futures: The story of Mohammad Ali Jauhar University’s fight for survival",
+      "claim": "Tracked, doxxed, put on TV trial: How women CJP protesters were hunted down by the Right wing & ‘star’ anchors",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/demolishing-a-varsity-dismantling-futures-the-story-of-mohammad-ali-jauhar-universitys-fight-for-survival/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/tracked-doxxed-put-on-tv-trial-how-women-cjp-protesters-were-hunted-down-by-the-right-wing-star-anchors/",
+      "topic": "Celebrity"
     },
     {
       "n": 7,
-      "claim": "Currys isn’t selling Dyson vacuum cleaners for £8.55",
+      "claim": "People over 70 will not be ordered to retake their driving test under new plans",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/currys-dyson-cyclone-fake-offer/",
+      "url": "https://fullfact.org/politics/over-70s-driving-test-retake-false/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Fauci co-authored paper saying masks caused most Spanish flu deaths",
+      "claim": "25 claims about abortion, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/fauci-spanish-flu-masks/",
+      "url": "https://www.snopes.com/collections/abortion-claims-investigated/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Is There Any Hope For Ohio Republicans To Replace Max Miller?",
+      "claim": "DUKE: What The Hell Is Woke 2?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/10/max-miller-ohio-gop-deadline-midterm-elections",
+      "url": "https://dailycaller.com/2026/08/11/duke-alexandria-ocasio-cortez-woke-1-crazy-francesca-hong",
       "topic": "Trending"
     },
     {
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "presidential assent to ‘Goonda Act’, it’s still a Bill, notes Calcutta high court",
+      "claim": "Demolishing a varsity, dismantling futures: The story of Mohammad Ali Jauhar University’s fight for survival",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/no-presidential-assent-to-goonda-act-its-still-a-bill-notes-calcutta-high-court/",
+      "url": "https://www.altnews.in/demolishing-a-varsity-dismantling-futures-the-story-of-mohammad-ali-jauhar-universitys-fight-for-survival/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Currys isn’t giving away Samsung S25 Ultras to Facebook users",
+      "claim": "appearing to show SpaceX rocket hitting moon is fake",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/currys-samsung-s25-fake-offer/",
+      "url": "https://fullfact.org/technology/spaceX-rocket-moon-crash-video-fake/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Hikers didn't discover Dead Sea Scrolls-esque artifacts in Tennessee",
+      "claim": "Investigating video allegedly showing white woman calling police on Black family at pool",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dead-sea-scrolls-tennessee/",
+      "url": "https://www.snopes.com/news/2026/08/06/white-woman-calling-police-black-family-pool/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "At least 132 killed in Colombia's largest earthquake in years",
+      "headline": "Trump hid in catering truck in secret plane swap over Iran threat, reports say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c20e360lx0vo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-11T04:06:07+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm2g90vvy62o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-11T14:47:28+00:00"
     },
     {
       "n": 2,
-      "headline": "Morning news brief",
+      "headline": "1 year in, National Guard became a part of D.C. life. And, deadly quake hits Colombia",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/11/nx-s1-5923332/morning-news-brief",
+      "url": "https://www.npr.org/2026/08/11/g-s1-138174/up-first-newsletter-national-guard-primaries-wisconsin-colombia-earthquake-childhood-vaccines",
       "topic": "Trending",
-      "published": "2026-08-11T08:32:41+00:00"
+      "published": "2026-08-11T11:11:14+00:00"
     },
     {
       "n": 3,
-      "headline": "Taylor Farms recalls several jalapeño products over salmonella concerns",
+      "headline": "Report: Trump used elaborate ruse to fly out of Turkey following summit because of Iran threat",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/taylor-farms-recalls-several-jalapeno-products-over-salmonella-concerns",
-      "topic": "Celebrity",
-      "published": "2026-08-10T23:59:14+00:00"
+      "url": "https://www.pbs.org/newshour/politics/report-trump-used-elaborate-ruse-to-fly-out-of-turkey-following-summit-because-of-iran-threat",
+      "topic": "Politics",
+      "published": "2026-08-11T16:04:51+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "How one German city is preparing for climate extremes",
+      "headline": "Can the new PKK law bring peace to Turkey?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/how-one-german-city-is-preparing-for-climate-extremes/a-78278373?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-08-11T07:25:00+00:00"
+      "url": "https://www.dw.com/en/can-the-new-pkk-law-bring-peace-to-turkey/a-78326063?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-11T16:28:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Canada flight cancelled after child refuses to wear seat belt",
+      "headline": "Russia using North Korean missiles to strike Ukraine, Zelensky says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj6307x3wdgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-10T21:06:27+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c151dpzwnvxo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-11T16:19:44+00:00"
     },
     {
       "n": 7,
-      "headline": "Turkey's parliament approves a pardon-like bill for thousands of PKK militants",
+      "headline": "The secret economics inside the new Planet Money board game",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/11/g-s1-138162/turkey-kurdish-militants",
-      "topic": "Politics",
-      "published": "2026-08-11T06:03:49+00:00"
+      "url": "https://www.npr.org/sections/planet-money/2026/08/11/g-s1-138059/the-secret-economics-inside-the-new-planet-money-board-game",
+      "topic": "Trending",
+      "published": "2026-08-11T10:30:00+00:00"
     },
     {
       "n": 8,
-      "headline": "Contiguous U.S. broke its record for hottest month ever in July, NOAA says",
+      "headline": "Former U.S. Marine held in Russia for more than 4 years has been released, advocates say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/contiguous-u-s-broke-its-record-for-hottest-month-ever-in-july-noaa-says",
-      "topic": "Trending",
-      "published": "2026-08-10T23:53:13+00:00"
+      "url": "https://www.pbs.org/newshour/politics/former-u-s-marine-held-in-russia-for-more-than-4-years-has-been-released-advocates-say",
+      "topic": "World",
+      "published": "2026-08-11T15:44:10+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "India news: Jharkhand student leader hospitalized after police use force",
+      "headline": "Hungary's parliament elects Orban critic as new president",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-jharkhand-student-leader-hospitalized-after-police-use-force/live-78314106?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-11T07:14:00+00:00"
+      "url": "https://www.dw.com/en/hungary-s-parliament-elects-orban-critic-as-new-president/a-78325589?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-11T16:00:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Watch: What we know about Tupac murder suspect Duane 'Keffe D' Davis",
+      "headline": "Ousted Syrian dictator Bashar al-Assad sentenced to death in absentia",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cjd48zkg5n9o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ce34dkpnyg7o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-10T20:45:29+00:00"
+      "published": "2026-08-11T14:50:10+00:00"
     },
     {
       "n": 12,
-      "headline": "Trump pivots back to sanctions for Iran as other strategies to end his war fizzle",
+      "headline": "Former Syrian President Assad sentenced to death in absentia",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/11/g-s1-138160/us-iran-war",
+      "url": "https://www.npr.org/2026/08/11/g-s1-138166/syria-assad-sentenced-to-death",
       "topic": "Politics",
-      "published": "2026-08-11T05:48:27+00:00"
+      "published": "2026-08-11T10:07:14+00:00"
     },
     {
       "n": 13,
-      "headline": "What we know about the death of Tasia Fortune in Mississippi",
+      "headline": "Live Results: Alabama midterm U.S. House primaries after redistricting",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/what-we-know-about-the-death-of-tasia-fortune-in-mississippi",
-      "topic": "Celebrity",
-      "published": "2026-08-10T23:46:15+00:00"
+      "url": "https://www.pbs.org/newshour/politics/live-results-alabama-midterm-u-s-house-primaries-after-redistricting",
+      "topic": "Trending",
+      "published": "2026-08-11T14:40:05+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany news: Rhine levels could cause production cuts",
+      "headline": "US vaccination executive order: making sense of it",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-rhine-levels-could-cause-production-cuts/live-78313874?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-vaccination-executive-order-making-sense-of-it/a-78321723?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-11T06:39:00+00:00"
+      "published": "2026-08-11T15:03:00+00:00"
     },
     {
       "n": 16,
-      "headline": "At least 13 killed in Ukrainian drone strike deep into Russia",
+      "headline": "Russia releases former US Marine reported in poor health",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-10T14:34:25+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvgj4m8e1ryo?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-08-11T15:47:53+00:00"
     },
     {
       "n": 17,
-      "headline": "Magnitude 7.4 quake rocks western Colombia, killing at least 111 people",
+      "headline": "A midwife crosses 'maternity deserts' to make a difference for Black moms and babies",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5927515/earthquake-western-colombia",
+      "url": "https://www.npr.org/2026/08/11/nx-s1-5678523/maternity-desert-birth-midwife-black-moms-babies",
       "topic": "Trending",
-      "published": "2026-08-11T03:39:40+00:00"
+      "published": "2026-08-11T10:00:00+00:00"
     }
   ]
 }
