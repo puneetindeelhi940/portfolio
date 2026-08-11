@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T01:18:31Z",
+  "generated_at": "2026-08-11T08:49:10Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Senate Leaves Key Bills Up In The Air As They Ditch Town For Month",
+      "claim": "Group Of GOP Senators Said They Would Force Vote To Delay Recess Over SAVE Act. What Gives?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/10/senate-legislation-august-recess-save-act",
+      "url": "https://dailycaller.com/2026/08/10/group-of-gop-senators-didnt-object-to-recess-over-save-act-after-saying-they-would-what-gives",
       "topic": "Politics"
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "n": 11,
-      "claim": "Are There Any Hopes For Ohio Republicans To Replace Max Miller?",
+      "claim": "Is There Any Hope For Ohio Republicans To Replace Max Miller?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
       "url": "https://dailycaller.com/2026/08/10/max-miller-ohio-gop-deadline-midterm-elections",
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "At least 13 killed in Ukrainian drone strike deep into Russia",
+      "headline": "At least 132 killed in Colombia's largest earthquake in years",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-10T14:34:25+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c20e360lx0vo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-11T04:06:07+00:00"
     },
     {
       "n": 2,
-      "headline": "After his Reflecting Pool vandalism case is dismissed, David Hearn looks for closure",
+      "headline": "Morning news brief",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5925117/reflecting-pool-david-hearn-legal-fight",
+      "url": "https://www.npr.org/2026/08/11/nx-s1-5923332/morning-news-brief",
       "topic": "Trending",
-      "published": "2026-08-10T20:49:00+00:00"
+      "published": "2026-08-11T08:32:41+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Turkey MPs back historic law on reintegrating PKK militants",
+      "headline": "How one German city is preparing for climate extremes",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/turkey-mps-back-historic-law-on-reintegrating-pkk-militants/a-78313397?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-10T22:22:00+00:00"
+      "url": "https://www.dw.com/en/how-one-german-city-is-preparing-for-climate-extremes/a-78278373?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-08-11T07:25:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Netanyahu's rejection of Trump's 15-point Gaza plan unlikely to be final word",
+      "headline": "Canada flight cancelled after child refuses to wear seat belt",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ce3q5282ep3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-10T14:43:08+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cj6307x3wdgo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-10T21:06:27+00:00"
     },
     {
       "n": 7,
-      "headline": "Trump and RFK Jr. try again to upend vaccines for kids",
+      "headline": "Turkey's parliament approves a pardon-like bill for thousands of PKK militants",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5927313/trump-rfk-jr-vaccines-autism-executive-order",
+      "url": "https://www.npr.org/2026/08/11/g-s1-138162/turkey-kurdish-militants",
       "topic": "Politics",
-      "published": "2026-08-10T20:25:02+00:00"
+      "published": "2026-08-11T06:03:49+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Russia: Top court bans opposition anti-war party from vote",
+      "headline": "India news: Jharkhand student leader hospitalized after police use force",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russia-top-court-bans-opposition-anti-war-party-from-vote/a-78313252?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-10T20:56:00+00:00"
+      "url": "https://www.dw.com/en/india-news-jharkhand-student-leader-hospitalized-after-police-use-force/live-78314106?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-11T07:14:00+00:00"
     },
     {
       "n": 11,
-      "headline": "We've had a lot of close calls': Canada wildfire evacuees wonder if they still have homes",
+      "headline": "Watch: What we know about Tupac murder suspect Duane 'Keffe D' Davis",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2lwv032j9o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/videos/cjd48zkg5n9o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-10T19:17:11+00:00"
+      "published": "2026-08-10T20:45:29+00:00"
     },
     {
       "n": 12,
-      "headline": "The Nerd Reich' tracks the 'unmasking of Silicon Valley's true politics",
+      "headline": "Trump pivots back to sanctions for Iran as other strategies to end his war fizzle",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/nx-s1-5925350/the-nerd-reich-tracks-the-unmasking-of-silicon-valleys-true-politics",
-      "topic": "Trending",
-      "published": "2026-08-10T17:38:12+00:00"
+      "url": "https://www.npr.org/2026/08/11/g-s1-138160/us-iran-war",
+      "topic": "Politics",
+      "published": "2026-08-11T05:48:27+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Colombia earthquake: Death toll rises to over 100",
+      "headline": "Germany news: Rhine levels could cause production cuts",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/colombia-earthquake-death-toll-rises-to-over-100/a-78307841?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-rhine-levels-could-cause-production-cuts/live-78313874?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-10T18:58:00+00:00"
+      "published": "2026-08-11T06:39:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Canada flight cancelled after child refuses to wear seat belt",
+      "headline": "At least 13 killed in Ukrainian drone strike deep into Russia",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj6307x3wdgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-10T21:06:27+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-10T14:34:25+00:00"
     },
     {
       "n": 17,
-      "headline": "Despite Mideast wars, 20 million gather in Iraq for Shia pilgrimage",
+      "headline": "Magnitude 7.4 quake rocks western Colombia, killing at least 111 people",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/10/g-s1-137832/iraq-shia-pilgrimage-shia-war",
+      "url": "https://www.npr.org/2026/08/10/nx-s1-5927515/earthquake-western-colombia",
       "topic": "Trending",
-      "published": "2026-08-10T16:08:06+00:00"
+      "published": "2026-08-11T03:39:40+00:00"
     }
   ]
 }
