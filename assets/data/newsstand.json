@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T09:07:47Z",
+  "generated_at": "2026-08-12T16:53:06Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Mitch McConnell vote against sick leave 4 times? We checked his record",
+      "claim": "Rosa Parks' husband owned a car during bus boycotts. Here are the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mitch-mcconnell-sick-leave-votes/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/articles/473812/rosa-parks-husband-car-bus-boycotts/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "‘Juicy’ ‘Clown Show’ ‘Carpetbagger’ — Observers Agree Deep Red House Seat Craziest Race In Long Time",
+      "claim": "DSA Darling Francesca Hong Narrowly Loses Wisconsin Primary In Major Upset Following Progressive Snub",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/11/catalina-lauf-congress-primary-florida-madison-cawthorn-chris-collins",
+      "url": "https://dailycaller.com/2026/08/12/dsa-candidate-socialist-francesca-hong-david-crowley-democrats-nomination-primary-wisconsin",
       "topic": "Trending"
     },
     {
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "People over 70 will not be ordered to retake their driving test under new plans",
+      "claim": "Muslim majority countries don’t host refugees recirculates",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/politics/over-70s-driving-test-retake-false/",
+      "url": "https://fullfact.org/world/facebook-muslim-country-refugee-false-repeat/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Making sense of claim Massachusetts legalized 'abortion until birth",
+      "claim": "Did Trump admin pay German energy company RWE $1.2B to stop building offshore wind farms?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/massachusetts-abortion-until-birth/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-rwe-wind-farms/",
+      "topic": "Science"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Trump’s Political Team Reportedly Wanted To Tone Down PR Campaign Seeking Max Miller’s Ouster",
+      "claim": "Meet The 5 Woke Clergy Members Running To Bring Far-Left Politics To Congress",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/11/trump-reportedly-fought-to-keep-max-miller-on-ballot",
+      "url": "https://dailycaller.com/2026/08/12/woke-clergy-democrat-james-talarico-sarah-garriott-robb-ryerse-anna-golladay-lindsay-james",
       "topic": "Politics"
     },
     {
@@ -112,10 +112,10 @@
     },
     {
       "n": 14,
-      "claim": "appearing to show SpaceX rocket hitting moon is fake",
+      "claim": "People over 70 will not be ordered to retake their driving test under new plans",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/technology/spaceX-rocket-moon-crash-video-fake/",
+      "url": "https://fullfact.org/politics/over-70s-driving-test-retake-false/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Michigan Senate candidate Abdul El-Sayed didn't say he believes America deserved 9/11. Here's who did",
+      "claim": "Did Justice Department 'extort' Connecticut hospital to stop offering gender-affirming care for kids?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/abdul-el-sayed-america-deserved-911/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/08/12/trump-connecticut-hospital-trans/",
+      "topic": "Health"
     },
     {
       "n": 17,
@@ -146,30 +146,110 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Rescuers scramble for survivors with 180 dead in Colombia earthquake",
+      "headline": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-11T19:09:52+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-12T16:34:01+00:00"
     },
     {
       "n": 2,
-      "headline": "Feel so busy you don't even realize you're busy? Try doing a time audit",
+      "headline": "Inflation eases in July as gasoline and grocery prices fall",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/12/nx-s1-5896356/find-time-for-things-that-matter-time-audit",
-      "topic": "Trending",
-      "published": "2026-08-12T09:02:00+00:00"
+      "url": "https://www.npr.org/2026/08/12/nx-s1-5929122/inflation-cpi-economy-gas-grocery",
+      "topic": "Money",
+      "published": "2026-08-12T14:00:29+00:00"
     },
     {
       "n": 3,
-      "headline": "How a catering truck helped Trump secretly switch planes amid threat from Iran",
+      "headline": "Lindsay Clancy trial turns focus to medications prescribed before she killed her children",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/how-a-catering-truck-helped-trump-secretly-switch-planes-amid-threat-from-iran",
-      "topic": "Politics",
-      "published": "2026-08-11T22:55:29+00:00"
+      "url": "https://www.pbs.org/newshour/nation/lindsay-clancy-trial-turns-focus-to-medications-prescribed-before-she-killed-her-children",
+      "topic": "Trending",
+      "published": "2026-08-12T15:43:09+00:00"
     },
     {
       "n": 4,
+      "headline": "At least 44 dead after overcrowded ferry capsizes on Lake Kariba in Zimbabwe",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/12/zimbabwe-lake-kariba-ferry-capsize",
+      "topic": "Trending",
+      "published": "2026-08-12T12:21:08+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Mozart tribute ends on sour note after mass figurine theft",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/mozart-tribute-ends-on-sour-note-after-mass-figurine-theft/a-78341647?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-12T16:11:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Israeli settlers besieging Palestinian families in West Bank village",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cn0npjkqrleo?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-08-12T16:14:08+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Greetings from a surreal expanse of sand dunes dotted with freshwater lagoons in Brazil",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/12/g-s1-138022/brazil-sand-dunes-lagoons-lencois-maranhenses-national-park",
+      "topic": "Trending",
+      "published": "2026-08-12T13:38:58+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Peggy Flanagan wins Senate primary in Minnesota, notching another victory for progressive Democrats",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/peggy-flanagan-wins-senate-primary-in-minnesota-notching-another-victory-for-progressive-democrats",
+      "topic": "Politics",
+      "published": "2026-08-12T15:24:43+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Halting the march of the African armyworm: a natural cure offers hope to farmers",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/aug/12/african-armyworm-crop-pest-discovery-fungus-science-hope-farmers",
+      "topic": "Trending",
+      "published": "2026-08-12T11:00:27+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Germany: More power for the intelligence agencies",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/germany-more-power-for-the-intelligence-agencies/a-78341313?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-12T15:54:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Woman pulled alive from rubble 36 hours after Colombia quake",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cz7d2e5wlgno?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-12T11:28:02+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "His wedding guests gave $6k to fund a health startup. Now it's won a $3 million prize",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/12/g-s1-138180/hilton-humanitarian-prize-last-mile-health-liberia-raj-panjabi",
+      "topic": "Health",
+      "published": "2026-08-12T13:00:19+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Sen. Darline Graham, Rep. Ralph Norman advance to GOP runoff in South Carolina",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/sen-darline-graham-rep-ralph-norman-advance-to-gop-runoff-in-south-carolina",
+      "topic": "Trending",
+      "published": "2026-08-12T15:12:05+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Spain to introduce temporary border checks on visitors from Italy",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/07/spain-to-introduce-temporary-border-checks-on-visitors-from-italy",
@@ -177,108 +257,28 @@
       "published": "2026-08-07T21:44:38+00:00"
     },
     {
-      "n": 5,
-      "headline": "Solar eclipse: What to look forward to",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/solar-eclipse-what-to-look-forward-to/a-78330594?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-08-12T07:50:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Trump confirms he switched planes after Nato summit because of possible threat",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c980r4wpl9lo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-12T03:44:55+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "AI chatbots are offering financial advice. Should you trust them?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/12/nx-s1-5924813/ai-chatbots-financial-advice",
-      "topic": "Tech / AI",
-      "published": "2026-08-12T09:00:00+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Search for earthquake survivors in Colombia enters critical phase",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/search-for-earthquake-survivors-in-colombia-enters-critical-phase",
-      "topic": "Trending",
-      "published": "2026-08-11T22:50:55+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Judge approves Trump effort to end South Sudan TPS protections",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/aug/07/judge-trump-south-sudan-tps",
-      "topic": "Politics",
-      "published": "2026-08-07T18:34:34+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Germany news: Transport ministers to talk low river levels",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-transport-ministers-to-talk-low-river-levels/live-78330003?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-12T07:31:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Trump's dramatic plane swap hints at personal stakes of Iran war",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cly8jexn1z9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-12T00:14:42+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Nuclear power push ramps up uranium mill — and tribal health concerns",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/12/nx-s1-5927298/nuclear-power-uranium-health-concerns",
-      "topic": "Health",
-      "published": "2026-08-12T09:00:00+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "News Wrap: Syria sentences Bashar al-Assad to death in absentia",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-syria-sentences-bashar-al-assad-to-death-in-absentia",
-      "topic": "Trending",
-      "published": "2026-08-11T22:45:40+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/06/ebola-virus-drc-mutating",
-      "topic": "Health",
-      "published": "2026-08-06T16:18:46+00:00"
-    },
-    {
       "n": 15,
-      "headline": "India news: IndiGo engine failure triggers airport emergency",
+      "headline": "Eritrea: An emerging key player in the geopolitical gamble at the Horn",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-indigo-engine-failure-triggers-airport-emergency/live-78329904?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/eritrea-an-emerging-key-player-in-the-geopolitical-gamble-at-the-horn/a-78335316?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-12T07:20:00+00:00"
+      "published": "2026-08-12T15:40:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Singapore and S Korea pull Trader Joe's seasoning over poppy seeds",
+      "headline": "LA Lakers to be sold in record $12.5bn deal",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cdewpklnzwxo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/basketball/articles/c04k2dn422xo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-12T07:44:44+00:00"
+      "published": "2026-08-12T16:11:04+00:00"
     },
     {
       "n": 17,
-      "headline": "Here's how gyms, salons and ice cream are changing America's Main Streets",
+      "headline": "Zhu Rongji, who drove China's 1990s economic reforms, has died at 97",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/12/nx-s1-5928083/retail-services-gyms-salons-restaurants-downtown-main-street",
-      "topic": "Trending",
-      "published": "2026-08-12T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/12/1196705508/zhu-rongji-china-former-premier-dead",
+      "topic": "World",
+      "published": "2026-08-12T12:36:30+00:00"
     }
   ]
 }
