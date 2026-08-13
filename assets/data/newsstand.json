@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T09:07:29Z",
+  "generated_at": "2026-08-13T16:52:27Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Karoline Leavitt is stepping down as Trump's press secretary. Here are 25 claims we've investigated about her",
+      "claim": "Is this image of Trump hiding in plane catering cart authentic? Don't believe your eyes",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/karoline-leavitt-press-secretary-claims/",
+      "url": "https://www.snopes.com/fact-check/trump-catering-cart/",
       "topic": "Politics"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "REPORT: White House Construction Projects Reportedly Swell To At Least $900 Million",
+      "claim": "EXCLUSIVE: CCP Intelligence Official Buys Building Steps From White House",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/12/trump-reportedly-spending-over-900-million-construction-white-house-renovation",
+      "url": "https://dailycaller.com/2026/08/13/exclusive-ccp-intel-official-building-purchase-steps-from-white-house",
       "topic": "Trending"
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Government orders trigger sweeping Instagram censorship days after CJP protest",
+      "claim": "RTI reveals at least 10 pellet victims treated in Delhi govt hospitals on July 20",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/government-orders-trigger-sweeping-instagram-censorship-days-after-cjp-protest/",
+      "url": "https://www.altnews.in/at-least-10-persons-suffered-pellet-injuries-on-sansad-chalo-march-20th-july-rti/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Muslim majority countries don’t host refugees recirculates",
+      "claim": "Picture showing total eclipse over Stonehenge is an AI fake",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/facebook-muslim-country-refugee-false-repeat/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/technology/solar-eclipse-totality-stonehenge-picture-fake/",
+      "topic": "Tech / AI"
     },
     {
       "n": 8,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Is this image of Trump hiding in plane catering cart authentic? Don't believe your eyes",
+      "claim": "USS Abraham Lincoln crew reportedly faces food shortages, low morale. Here's what we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-catering-cart/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/08/07/uss-abraham-lincoln-shortages-morale/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Tracked, doxxed, put on TV trial: How women CJP protesters were hunted down by the Right wing & ‘star’ anchors",
+      "claim": "BJP shares Patna video as female protester roughed up by Jharkhand police",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/tracked-doxxed-put-on-tv-trial-how-women-cjp-protesters-were-hunted-down-by-the-right-wing-star-anchors/",
-      "topic": "Celebrity"
+      "url": "https://www.altnews.in/bjp-shares-patna-video-as-female-protester-roughed-up-by-jharkhand-police/",
+      "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "People over 70 will not be ordered to retake their driving test under new plans",
+      "claim": "of children being taught Muslim prayers does not show a school in England",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/politics/over-70s-driving-test-retake-false/",
+      "url": "https://fullfact.org/culture-and-society/video-salah-prayers-not-filmed-in-english-school/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Why rumors about Lindsey Graham's sexuality followed him for decades",
+      "claim": "Harry Potter' fans reportedly forced energy project's relocation to avoid Dobby's grave",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/12/lindsey-graham-gay-rumors/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/08/13/dobby-grave-harry-potter-greenlink/",
+      "topic": "Science"
     },
     {
       "n": 17,
@@ -146,6 +146,46 @@
   "reliable": [
     {
       "n": 1,
+      "headline": "Palestinians told to leave homes in village where Israeli settlers besieged houses",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-13T16:20:41+00:00"
+    },
+    {
+      "n": 2,
+      "headline": "Vladimir Putin's first visit to disputed Pacific islands draws Tokyo protest",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/13/g-s1-138631/vladimir-putins-first-visit-to-disputed-pacific-islands-draws-tokyo-protest",
+      "topic": "Trending",
+      "published": "2026-08-13T16:40:26+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "Republicans see Minnesota fraud scandal as a chance to go on offense in a blue state",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/republicans-see-minnesota-fraud-scandal-as-a-chance-to-go-on-offense-in-a-blue-state",
+      "topic": "Trending",
+      "published": "2026-08-13T16:40:12+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "DRC’s fast-growing Ebola outbreak spreads to sixth province",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/13/ebola-drc-democratic-republic-congo-sixth-province",
+      "topic": "Trending",
+      "published": "2026-08-13T15:17:13+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Israeli military moves as settlers besiege 3 West Bank homes",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/israeli-military-moves-as-settlers-besiege-3-west-bank-homes/a-78355266?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-08-13T15:19:00+00:00"
+    },
+    {
+      "n": 6,
       "headline": "Putin can no longer claim victory in Ukraine, Nobel Peace Prize winner tells BBC",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c74grmy2v7ko?at_medium=RSS&at_campaign=rss",
@@ -153,76 +193,36 @@
       "published": "2026-08-13T04:55:58+00:00"
     },
     {
-      "n": 2,
-      "headline": "Sailors and their families have lives on pause, uncertain if they'll return to Mideast",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/nx-s1-5929463/evacuation-bahrain-troops-iran-war",
-      "topic": "Trending",
-      "published": "2026-08-13T09:00:00+00:00"
-    },
-    {
-      "n": 3,
-      "headline": "Minnesota man killed his wife and child at daycare after killing another relative, police say",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/minnesota-man-killed-his-wife-and-child-at-daycare-after-killing-another-relative-police-say",
-      "topic": "Trending",
-      "published": "2026-08-13T01:15:23+00:00"
-    },
-    {
-      "n": 4,
-      "headline": "Zambia elections haunted by ghost of incumbent president’s arch-rival",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/13/zambia-elections-hakainde-hichilema-haunted-ghost-incumbent-president-arch-rival-edgar-lungu",
-      "topic": "Politics",
-      "published": "2026-08-13T04:00:49+00:00"
-    },
-    {
-      "n": 5,
-      "headline": "India news: Parliament ends turbulent monsoon session",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-parliament-ends-turbulent-monsoon-session/live-78345872?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-13T08:06:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "More troops to be sent to West Bank village besieged by Israeli settlers",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-08-13T08:12:53+00:00"
-    },
-    {
       "n": 7,
-      "headline": "These swing voters in Nevada say they are not dismissing socialist candidates",
+      "headline": "By sky and sea, Ukraine's drone strikes challenge Russia's grip on Crimea",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/nx-s1-5929406/nevada-economy-socialism-focus-groups",
-      "topic": "Trending",
-      "published": "2026-08-13T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/13/nx-s1-5904418/ukraine-crimea-russia-drone-strikes",
+      "topic": "World",
+      "published": "2026-08-13T15:18:27+00:00"
     },
     {
       "n": 8,
-      "headline": "Former SPLC official charged in Justice Department's broader criminal case against group",
+      "headline": "ICE's plan to give officers electric shock gloves draws outrage and fears of misuse",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/former-splc-official-charged-in-justice-departments-broader-criminal-case-against-group",
+      "url": "https://www.pbs.org/newshour/nation/ices-plan-to-give-officers-electric-shock-gloves-draws-outrage-and-fears-of-misuse",
       "topic": "Trending",
-      "published": "2026-08-13T01:02:31+00:00"
+      "published": "2026-08-13T16:21:11+00:00"
     },
     {
       "n": 9,
-      "headline": "At least 44 dead after overcrowded ferry capsizes on Lake Kariba in Zimbabwe",
+      "headline": "French ambassador to CAR investigated over claims he hosted dozens of women",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/12/zimbabwe-lake-kariba-ferry-capsize",
+      "url": "https://www.theguardian.com/world/2026/aug/13/france-ambassador-car-central-african-republic-investigation-bruno-foucher",
       "topic": "Trending",
-      "published": "2026-08-12T12:21:08+00:00"
+      "published": "2026-08-13T14:21:52+00:00"
     },
     {
       "n": 10,
-      "headline": "Colombia earthquake: Rescue operation enters 'final phase",
+      "headline": "Ukraine's monthly civilian casualties highest since 2022",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/colombia-earthquake-rescue-operation-enters-final-phase/a-78345817?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-s-monthly-civilian-casualties-highest-since-2022/live-78351269?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-13T07:45:00+00:00"
+      "published": "2026-08-13T12:25:00+00:00"
     },
     {
       "n": 11,
@@ -234,51 +234,51 @@
     },
     {
       "n": 12,
-      "headline": "Morning news brief",
+      "headline": "Taiwan briefly slows its mobile internet to text-only speed as part of defense drill",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/nx-s1-5927061/morning-news-brief",
+      "url": "https://www.npr.org/2026/08/13/g-s1-138581/taiwan-briefly-slows-its-mobile-internet-to-text-only-speed-as-part-of-defense-drill",
       "topic": "Trending",
-      "published": "2026-08-13T08:44:44+00:00"
+      "published": "2026-08-13T13:18:43+00:00"
     },
     {
       "n": 13,
-      "headline": "Defense in Charlie Kirk's killing argue against death penalty, said shooter hit 'intended target",
+      "headline": "Oklahoma carries out first of 3 executions scheduled for the same day in the U.S.",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/defense-in-charlie-kirks-killing-argue-against-death-penalty-said-shooter-hit-intended-target",
+      "url": "https://www.pbs.org/newshour/nation/oklahoma-carries-out-first-of-3-executions-scheduled-for-the-same-day-in-the-u-s",
       "topic": "Trending",
-      "published": "2026-08-13T00:50:47+00:00"
+      "published": "2026-08-13T15:51:27+00:00"
     },
     {
       "n": 14,
-      "headline": "Halting the march of the African armyworm: a natural cure offers hope to farmers",
+      "headline": "Zambia elections haunted by ghost of incumbent president’s arch-rival",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/aug/12/african-armyworm-crop-pest-discovery-fungus-science-hope-farmers",
-      "topic": "Trending",
-      "published": "2026-08-12T11:00:27+00:00"
+      "url": "https://www.theguardian.com/world/2026/aug/13/zambia-elections-hakainde-hichilema-haunted-ghost-incumbent-president-arch-rival-edgar-lungu",
+      "topic": "Politics",
+      "published": "2026-08-13T04:00:49+00:00"
     },
     {
       "n": 15,
-      "headline": "US: Karoline Leavitt to step down as Trump's spokesperson",
+      "headline": "How Germany's drone defense fails",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-karoline-leavitt-to-step-down-as-trump-s-spokesperson/a-78345847?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-13T07:15:00+00:00"
+      "url": "https://www.dw.com/en/how-germany-s-drone-defense-fails/a-78353414?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-13T12:17:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Why are 'human fridges' being sold in Japan?",
+      "headline": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cjej4y3gvzlo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cyvl2d5j52lo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-12T22:07:47+00:00"
+      "published": "2026-08-13T16:30:06+00:00"
     },
     {
       "n": 17,
-      "headline": "New indictment alleges Nick Reiner was lying in wait before killing his parents",
+      "headline": "Inflation eased slightly in July. And, ICE plans to give officers electric shock gloves",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/g-s1-138566/reiner-indictment",
-      "topic": "Trending",
-      "published": "2026-08-13T06:21:25+00:00"
+      "url": "https://www.npr.org/2026/08/13/g-s1-138578/up-first-newsletter-inflation-colombia-earthquake-ice-gloves-migrant-children-karolina-leavitt",
+      "topic": "Money",
+      "published": "2026-08-13T11:31:18+00:00"
     }
   ]
 }
