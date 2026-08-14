@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T09:03:15Z",
+  "generated_at": "2026-08-14T16:48:31Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,27 +8,27 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Sylvester Stallone Did NOT Say Talking To AOC Was 'Like Listening To A High School Girl",
+      "claim": "Does NOT Show Migrant Eating Rat In Europe -- Scene Is From South Africa",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-sylvester-stallone-did-not-say-talking-to-aoc-was-like-listening-to-a-high-school-girl.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-video-does-not-show-migrant-eating-rat-in-europe-scene-is-from-south-africa.html",
+      "topic": "World"
     },
     {
       "n": 2,
-      "claim": "Was Karoline Leavitt on 'decoy plane' from Turkey after Trump's removal? What we know",
+      "claim": "Did Trump-linked oil company set up drilling operation in Greenland without permission?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/13/karoline-leavitt-decoy-plane-turkey/",
+      "url": "https://www.snopes.com/fact-check/trump-greenland-drilling-oil/",
       "topic": "Politics"
     },
     {
       "n": 3,
-      "claim": "Trump Uses Deceptive Chart in False Inflation Boast",
+      "claim": "Wright’s Hairsplitting Statements About Canceled Energy Grants in Blue States",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trump-uses-deceptive-chart-in-false-inflation-boast/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/08/wrights-hairsplitting-statements-about-canceled-energy-grants-in-blue-states/",
+      "topic": "Science"
     },
     {
       "n": 4,
@@ -56,43 +56,43 @@
     },
     {
       "n": 7,
-      "claim": "Picture showing total eclipse over Stonehenge is an AI fake",
-      "verdict": "FALSE",
+      "claim": "Edited image of Andy Burnham in ‘Free Palestine’ shirt being shared on Facebook",
+      "verdict": "MISLEADING",
       "source": "Full Fact",
-      "url": "https://fullfact.org/technology/solar-eclipse-totality-stonehenge-picture-fake/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/politics/fake-andy-burnham-free-palestine-image/",
+      "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "FAKE Photo Shows Athletes With Medals Flipping The Bird To President Trump's Back During Patriot Games",
+      "claim": "Sylvester Stallone Did NOT Say Talking To AOC Was 'Like Listening To A High School Girl",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-photo-falsely-shows-athletes-with-medals-flipping-the-bird-to-president-trumps-back-during-patriot-games.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-sylvester-stallone-did-not-say-talking-to-aoc-was-like-listening-to-a-high-school-girl.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Why rumors about Lindsey Graham's sexuality followed him for decades",
+      "claim": "Walmart banned comedian Damon Darling, but not for buying other people's groceries",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/12/lindsey-graham-gay-rumors/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/walmart-banned-damon-darling/",
+      "topic": "Money"
     },
     {
       "n": 10,
-      "claim": "Collins Did Not ‘Support’ OBBBA’s Medicaid Cuts, as Democratic Ad Claims",
+      "claim": "Trump Uses Deceptive Chart in False Inflation Boast",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/collins-did-not-support-obbbas-medicaid-cuts-as-democratic-ad-claims/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/08/trump-uses-deceptive-chart-in-false-inflation-boast/",
+      "topic": "Politics"
     },
     {
       "n": 11,
-      "claim": "EXCLUSIVE: Unearthed Data Sheds Light On Military’s Transgenderism Explosion Under Biden",
+      "claim": "Luigi Mangione Pleads Guilty In Killing Of UnitedHealthcare CEO",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/13/exclusive-unearthed-data-transgenderism-explosion-us-military-biden-admin",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/14/luigi-mangione-pleaded-guilty-united-healthcare-ceo-assassination",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -112,64 +112,104 @@
     },
     {
       "n": 14,
-      "claim": "of children being taught Muslim prayers does not show a school in England",
+      "claim": "Old video shared with misleading suggestion it shows migrants recently crossing into Ceuta",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/video-salah-prayers-not-filmed-in-english-school/",
+      "url": "https://fullfact.org/immigration/morocco-ceuta-migrants-video-old-footage/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "FAKE Image Shows AOC In Revealing Sports Bra -- Original Has High-Neck, Full Coverage",
+      "claim": "FAKE Photo Shows Athletes With Medals Flipping The Bird To President Trump's Back During Patriot Games",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-image-shows-aoc-in-revealing-sports-bra-original-has-full-coverage.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-photo-falsely-shows-athletes-with-medals-flipping-the-bird-to-president-trumps-back-during-patriot-games.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Iranian media claims 7 died in brawl aboard USS Abraham Lincoln. US Central Command denies reports",
+      "claim": "Trump's DC construction, renovation projects: 18 claims we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/13/uss-abraham-lincoln-deaths-brawl/",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/collections/trump-dc-renovations-collection/",
+      "topic": "Politics"
     },
     {
       "n": 17,
-      "claim": "Trump and RFK Jr. Repeat False and Misleading Vaccine Claims",
+      "claim": "Collins Did Not ‘Support’ OBBBA’s Medicaid Cuts, as Democratic Ad Claims",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trump-and-rfk-jr-repeat-false-and-misleading-vaccine-claims/",
-      "topic": "Health"
+      "url": "https://www.factcheck.org/2026/08/collins-did-not-support-obbbas-medicaid-cuts-as-democratic-ad-claims/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Unprecedented' rain in Japan kills six people",
+      "headline": "Instagram accounts fuelling Ceuta crisis with paid advice for help to cross",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq561gpen8lo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c89n20wj9kko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-14T07:00:56+00:00"
+      "published": "2026-08-14T12:19:21+00:00"
     },
     {
       "n": 2,
-      "headline": "Morning news brief",
+      "headline": "Is there a summer COVID-19 surge this year? Yep, it's ramping up again",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/14/nx-s1-5927062/morning-news-brief",
-      "topic": "Trending",
-      "published": "2026-08-14T08:45:41+00:00"
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5927115/summer-vaccine-covid-19-surge",
+      "topic": "Health",
+      "published": "2026-08-14T16:37:54+00:00"
     },
     {
       "n": 3,
-      "headline": "Judge drops Nevada case against electors accused of forging 2020 election certificate",
+      "headline": "Luigi Mangione to appear in court for expected guilty plea in killing of UnitedHealthcare CEO",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/judge-drops-nevada-case-against-electors-accused-of-forging-2020-election-certificate",
-      "topic": "Politics",
-      "published": "2026-08-14T00:07:50+00:00"
+      "url": "https://www.pbs.org/newshour/nation/luigi-mangione-to-appear-in-court-for-expected-guilty-plea-in-killing-of-unitedhealthcare-ceo",
+      "topic": "Trending",
+      "published": "2026-08-14T15:07:21+00:00"
     },
     {
       "n": 4,
+      "headline": "American missionary kidnapped in Niger freed after nine months",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
+      "topic": "Trending",
+      "published": "2026-08-14T14:55:17+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Luigi Mangione pleads guilty to federal stalking charges in Brian Thompson death",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/luigi-mangione-pleads-guilty-to-federal-stalking-charges-in-brian-thompson-death/a-78375740?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-14T15:49:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Unprecedented' rain in Japan kills eight people",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq561gpen8lo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-14T10:36:14+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Mangione pleads guilty in federal court, leaving fate of state trial uncertain",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5930700/mangione-federal-charges-guilty-plea",
+      "topic": "Trending",
+      "published": "2026-08-14T16:05:24+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "U.S. retail sales unexpectedly post largest drop in more than a year",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/economy/u-s-retail-sales-unexpectedly-post-largest-drop-in-more-than-a-year",
+      "topic": "Trending",
+      "published": "2026-08-14T14:34:17+00:00"
+    },
+    {
+      "n": 9,
       "headline": "DRC’s fast-growing Ebola outbreak spreads to sixth province",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/13/ebola-drc-democratic-republic-congo-sixth-province",
@@ -177,39 +217,39 @@
       "published": "2026-08-13T15:17:13+00:00"
     },
     {
-      "n": 5,
-      "headline": "Germany news: Wildfire forces evacuations in western woods",
+      "n": 10,
+      "headline": "Germany news: Car industry hemorrhaging jobs",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-wildfire-forces-evacuations-in-western-woods/live-78361311?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-car-industry-hemorrhaging-jobs/live-78374907?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-14T07:35:00+00:00"
+      "published": "2026-08-14T15:04:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Palestinians told to leave homes in village where Israeli settlers besieged houses",
+      "n": 11,
+      "headline": "Trump asks Supreme Court to allow ballroom work to continue",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-13T20:12:17+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3v0yz2r4wlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-14T15:10:41+00:00"
     },
     {
-      "n": 7,
-      "headline": "New aircraft carrier heads toward Mideast after reports of issues on long-deployed USS Lincoln",
+      "n": 12,
+      "headline": "We learned 5 important things about the economy this week",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/14/nx-s1-5931183/new-aircraft-carrier-heads-toward-mideast-after-reports-of-issues-on-long-deployed-uss-lincoln",
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5929422/inflation-spending-economy-groceries-gas",
       "topic": "Trending",
-      "published": "2026-08-14T06:31:29+00:00"
+      "published": "2026-08-14T14:47:15+00:00"
     },
     {
-      "n": 8,
-      "headline": "News Wrap: Earthquake death toll in Colombia tops 260",
+      "n": 13,
+      "headline": "World War II Memorial in Washington vandalized with bubbles and graffiti, upsetting Trump",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-earthquake-death-toll-in-colombia-tops-260",
-      "topic": "Trending",
-      "published": "2026-08-13T22:57:36+00:00"
+      "url": "https://www.pbs.org/newshour/politics/world-war-ii-memorial-in-washington-vandalized-with-bubbles-and-graffiti-upsetting-trump",
+      "topic": "Politics",
+      "published": "2026-08-14T14:29:52+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "French ambassador to CAR investigated over claims he hosted dozens of women",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/13/france-ambassador-car-central-african-republic-investigation-bruno-foucher",
@@ -217,68 +257,28 @@
       "published": "2026-08-13T14:21:52+00:00"
     },
     {
-      "n": 10,
-      "headline": "Hunger stones: The history behind 'If you see me, weep",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/hunger-stones-the-history-behind-if-you-see-me-weep/a-78345729?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-14T07:34:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "US says dozens of countries helped China dodge Trump's tariffs",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-14T08:39:46+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Judge dismisses Trump administration lawsuit alleging antisemitism at Harvard University",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/14/g-s1-138721/trump-antisemitism-harvard",
-      "topic": "Politics",
-      "published": "2026-08-14T06:15:54+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Act of terror': U.S. condemns Israeli settler siege of Palestinian homes in West Bank",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/act-of-terror-u-s-condemns-israeli-settler-siege-of-palestinian-homes-in-west-bank",
-      "topic": "Money",
-      "published": "2026-08-13T22:55:39+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Zambia elections haunted by ghost of incumbent president’s arch-rival",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/13/zambia-elections-hakainde-hichilema-haunted-ghost-incumbent-president-arch-rival-edgar-lungu",
-      "topic": "Politics",
-      "published": "2026-08-13T04:00:49+00:00"
-    },
-    {
       "n": 15,
-      "headline": "UK: Nigel Farage beats a trash can in Clacton by-election",
+      "headline": "France: Top court blocks social media ban for children",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uk-nigel-farage-beats-a-trash-can-in-clacton-by-election/a-78362464?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-14T07:32:00+00:00"
+      "url": "https://www.dw.com/en/france-top-court-blocks-social-media-ban-for-children/a-78373812?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-14T14:22:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Engine parts smashed Ryanair window that man's head was sucked out of, report says",
+      "headline": "Builders unearth €9m gold stash sealed in walls of Belgian property",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr59j4z3vl8o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c5ydzg0dnz7o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-13T21:43:47+00:00"
+      "published": "2026-08-14T13:18:08+00:00"
     },
     {
       "n": 17,
-      "headline": "Judge drops Nevada case against electors accused of forging certificate in 2020 election",
+      "headline": "The Taliban has taken a terrible toll on the education of girls -- and boys as well",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/14/nx-s1-5931179/judge-drops-nevada-case-against-electors-accused-of-forging-certificate-in-2020-election",
-      "topic": "Politics",
-      "published": "2026-08-14T05:42:35+00:00"
+      "url": "https://www.npr.org/2026/08/14/g-s1-138584/taliban-afghanistan-boys-girls-education-school",
+      "topic": "Trending",
+      "published": "2026-08-14T14:41:22+00:00"
     }
   ]
 }
