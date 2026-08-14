@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T16:52:27Z",
+  "generated_at": "2026-08-14T01:28:18Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,27 +8,27 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Shows Landlord Evicting Tenant While New Tenants Are Already on Doorstep -- For Entertainment",
+      "claim": "Sylvester Stallone Did NOT Say Talking To AOC Was 'Like Listening To A High School Girl",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-shows-landlord-evicting-tenant-while-new-tenants-are-already-on-doorstep-for-entertainment.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-sylvester-stallone-did-not-say-talking-to-aoc-was-like-listening-to-a-high-school-girl.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Is this image of Trump hiding in plane catering cart authentic? Don't believe your eyes",
+      "claim": "Was Karoline Leavitt on 'decoy plane' from Turkey after Trump's removal? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-catering-cart/",
+      "url": "https://www.snopes.com/news/2026/08/13/karoline-leavitt-decoy-plane-turkey/",
       "topic": "Politics"
     },
     {
       "n": 3,
-      "claim": "Collins Did Not ‘Support’ OBBBA’s Medicaid Cuts, as Democratic Ad Claims",
+      "claim": "Trump Uses Deceptive Chart in False Inflation Boast",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/collins-did-not-support-obbbas-medicaid-cuts-as-democratic-ad-claims/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/08/trump-uses-deceptive-chart-in-false-inflation-boast/",
+      "topic": "Politics"
     },
     {
       "n": 4,
@@ -64,35 +64,35 @@
     },
     {
       "n": 8,
-      "claim": "Prebunk: FAKE VFX Behind-the-Scenes Footage Is Just Clickbait Effect -- Lights, Camera, AI",
+      "claim": "FAKE Photo Shows Athletes With Medals Flipping The Bird To President Trump's Back During Patriot Games",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/prebunk-fake-vfx-behind-the-scenes-footage-is-just-clickbait-effect-lights-camera-ai.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-photo-falsely-shows-athletes-with-medals-flipping-the-bird-to-president-trumps-back-during-patriot-games.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "USS Abraham Lincoln crew reportedly faces food shortages, low morale. Here's what we know",
+      "claim": "Why rumors about Lindsey Graham's sexuality followed him for decades",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/07/uss-abraham-lincoln-shortages-morale/",
+      "url": "https://www.snopes.com/news/2026/08/12/lindsey-graham-gay-rumors/",
       "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Trump and RFK Jr. Repeat False and Misleading Vaccine Claims",
+      "claim": "Collins Did Not ‘Support’ OBBBA’s Medicaid Cuts, as Democratic Ad Claims",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trump-and-rfk-jr-repeat-false-and-misleading-vaccine-claims/",
-      "topic": "Health"
+      "url": "https://www.factcheck.org/2026/08/collins-did-not-support-obbbas-medicaid-cuts-as-democratic-ad-claims/",
+      "topic": "Trending"
     },
     {
       "n": 11,
-      "claim": "REPORT: SPLC Official Arrested For Allegedly Funneling Money To Lover’s Neo-Nazi Group",
+      "claim": "Democrat Voters Replacing Old Guard Far Faster Than GOP",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/12/splc-cfo-arrested-heidi-beirich-payments-white-supremacist-groups",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/13/democrats-young-candidates-establishment-primaries",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,26 +120,26 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Screenshot Shows Nonexistent White House X Post With 'Nintendo Lives Matter' Images of George Floyd, Derek Chauvin",
+      "claim": "FAKE Image Shows AOC In Revealing Sports Bra -- Original Has High-Neck, Full Coverage",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-screenshot-shows-nonexistent-white-house-x-post-with-nintendo-lives-matter-images-of-george-floyd-derek-chauvin.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-image-shows-aoc-in-revealing-sports-bra-original-has-full-coverage.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Harry Potter' fans reportedly forced energy project's relocation to avoid Dobby's grave",
+      "claim": "Iranian media claims 7 died in brawl aboard USS Abraham Lincoln. US Central Command denies reports",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/13/dobby-grave-harry-potter-greenlink/",
-      "topic": "Science"
+      "url": "https://www.snopes.com/news/2026/08/13/uss-abraham-lincoln-deaths-brawl/",
+      "topic": "Celebrity"
     },
     {
       "n": 17,
-      "claim": "Trump’s False MMR Vaccine Claims",
+      "claim": "Trump and RFK Jr. Repeat False and Misleading Vaccine Claims",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trumps-false-mmr-vaccine-claims/",
+      "url": "https://www.factcheck.org/2026/08/trump-and-rfk-jr-repeat-false-and-misleading-vaccine-claims/",
       "topic": "Health"
     }
   ],
@@ -150,23 +150,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-13T16:20:41+00:00"
+      "published": "2026-08-13T20:12:17+00:00"
     },
     {
       "n": 2,
-      "headline": "Vladimir Putin's first visit to disputed Pacific islands draws Tokyo protest",
+      "headline": "Kennedy Center Board votes again to shut main building down — and add Trump's name back",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/g-s1-138631/vladimir-putins-first-visit-to-disputed-pacific-islands-draws-tokyo-protest",
-      "topic": "Trending",
-      "published": "2026-08-13T16:40:26+00:00"
+      "url": "https://www.npr.org/2026/08/13/nx-s1-5930349/kennedy-center-shut-down-board-vote-trump",
+      "topic": "Politics",
+      "published": "2026-08-13T18:55:30+00:00"
     },
     {
       "n": 3,
-      "headline": "Republicans see Minnesota fraud scandal as a chance to go on offense in a blue state",
+      "headline": "Judge drops Nevada case against electors accused of forging 2020 election certificate",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/republicans-see-minnesota-fraud-scandal-as-a-chance-to-go-on-offense-in-a-blue-state",
-      "topic": "Trending",
-      "published": "2026-08-13T16:40:12+00:00"
+      "url": "https://www.pbs.org/newshour/politics/judge-drops-nevada-case-against-electors-accused-of-forging-2020-election-certificate",
+      "topic": "Politics",
+      "published": "2026-08-14T00:07:50+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Israeli military moves as settlers besiege 3 West Bank homes",
+      "headline": "Romania shuts nuclear plant, Hungary dams dry Danube River",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/israeli-military-moves-as-settlers-besiege-3-west-bank-homes/a-78355266?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-08-13T15:19:00+00:00"
+      "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-13T21:21:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Putin can no longer claim victory in Ukraine, Nobel Peace Prize winner tells BBC",
+      "headline": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c74grmy2v7ko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-13T04:55:58+00:00"
+      "published": "2026-08-13T19:46:27+00:00"
     },
     {
       "n": 7,
-      "headline": "By sky and sea, Ukraine's drone strikes challenge Russia's grip on Crimea",
+      "headline": "Mangione could plead guilty in federal case ahead of N.Y. murder trial",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/nx-s1-5904418/ukraine-crimea-russia-drone-strikes",
-      "topic": "World",
-      "published": "2026-08-13T15:18:27+00:00"
+      "url": "https://www.npr.org/2026/08/13/nx-s1-5930397/mangione-federal-court-hearing-guilty-plea",
+      "topic": "Trending",
+      "published": "2026-08-13T17:29:15+00:00"
     },
     {
       "n": 8,
-      "headline": "ICE's plan to give officers electric shock gloves draws outrage and fears of misuse",
+      "headline": "News Wrap: Earthquake death toll in Colombia tops 260",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/ices-plan-to-give-officers-electric-shock-gloves-draws-outrage-and-fears-of-misuse",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-earthquake-death-toll-in-colombia-tops-260",
       "topic": "Trending",
-      "published": "2026-08-13T16:21:11+00:00"
+      "published": "2026-08-13T22:57:36+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Ukraine's monthly civilian casualties highest since 2022",
+      "headline": "Kennedy Center board approves Trump name on facade, renovation plan",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-s-monthly-civilian-casualties-highest-since-2022/live-78351269?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-13T12:25:00+00:00"
+      "url": "https://www.dw.com/en/kennedy-center-board-approves-trump-name-on-facade-renovation-plan/a-78359935?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-13T20:33:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Ebola outbreak on track to be deadliest ever, WHO chief says",
+      "headline": "Putin can no longer claim victory in Ukraine, Nobel Peace Prize winner tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cgk4pex4mn8o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c74grmy2v7ko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-13T01:31:21+00:00"
+      "published": "2026-08-13T04:55:58+00:00"
     },
     {
       "n": 12,
-      "headline": "Taiwan briefly slows its mobile internet to text-only speed as part of defense drill",
+      "headline": "Vladimir Putin's first visit to disputed Pacific islands draws Tokyo protest",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/g-s1-138581/taiwan-briefly-slows-its-mobile-internet-to-text-only-speed-as-part-of-defense-drill",
+      "url": "https://www.npr.org/2026/08/13/g-s1-138631/vladimir-putins-first-visit-to-disputed-pacific-islands-draws-tokyo-protest",
       "topic": "Trending",
-      "published": "2026-08-13T13:18:43+00:00"
+      "published": "2026-08-13T16:40:26+00:00"
     },
     {
       "n": 13,
-      "headline": "Oklahoma carries out first of 3 executions scheduled for the same day in the U.S.",
+      "headline": "Act of terror': U.S. condemns Israeli settler siege of Palestinian homes in West Bank",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/oklahoma-carries-out-first-of-3-executions-scheduled-for-the-same-day-in-the-u-s",
-      "topic": "Trending",
-      "published": "2026-08-13T15:51:27+00:00"
+      "url": "https://www.pbs.org/newshour/show/act-of-terror-u-s-condemns-israeli-settler-siege-of-palestinian-homes-in-west-bank",
+      "topic": "Money",
+      "published": "2026-08-13T22:55:39+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "How Germany's drone defense fails",
+      "headline": "US disputes reports of trying conditions on carrier in Gulf",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/how-germany-s-drone-defense-fails/a-78353414?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-disputes-reports-of-trying-conditions-on-carrier-in-gulf/a-78359084?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-13T12:17:00+00:00"
+      "published": "2026-08-13T19:02:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
+      "headline": "Engine parts smashed Ryanair window that man's head was sucked out of, report says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cyvl2d5j52lo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cr59j4z3vl8o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-13T16:30:06+00:00"
+      "published": "2026-08-13T21:43:47+00:00"
     },
     {
       "n": 17,
-      "headline": "Inflation eased slightly in July. And, ICE plans to give officers electric shock gloves",
+      "headline": "By sky and sea, Ukraine's drone strikes challenge Russia's grip on Crimea",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/13/g-s1-138578/up-first-newsletter-inflation-colombia-earthquake-ice-gloves-migrant-children-karolina-leavitt",
-      "topic": "Money",
-      "published": "2026-08-13T11:31:18+00:00"
+      "url": "https://www.npr.org/2026/08/13/nx-s1-5904418/ukraine-crimea-russia-drone-strikes",
+      "topic": "World",
+      "published": "2026-08-13T15:18:27+00:00"
     }
   ]
 }
