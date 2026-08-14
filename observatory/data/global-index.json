@@ -1,9 +1,9 @@
 {
   "composite_index": {
-    "current_value": 6.5,
-    "previous_value": 6.4,
-    "change_pct": 1.6,
-    "trend": "rising",
+    "current_value": 6.4,
+    "previous_value": 6.5,
+    "change_pct": -1.5,
+    "trend": "falling",
     "ai_contribution_ppt": 1.0,
     "description": "AI contributed approximately 1.0 percentage points to technology inflation globally this quarter.",
     "period": "Q2 2026"
@@ -12,8 +12,8 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 8.6,
-      "trend": "stable",
+      "value": 8.3,
+      "trend": "falling",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -24,7 +24,7 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 3.9,
+      "value": 4.1,
       "trend": "rising",
       "drivers": [
         "GPU instance demand",
@@ -36,8 +36,8 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 12.9,
-      "trend": "stable",
+      "value": 12.7,
+      "trend": "falling",
       "drivers": [
         "Inference cost",
         "Model competition",
@@ -49,7 +49,7 @@
       "label": "Electricity & Energy",
       "weight": 0.2,
       "value": 6.5,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -60,7 +60,7 @@
     "consumer_electronics": {
       "label": "Consumer Electronics",
       "weight": 0.15,
-      "value": 3.2,
+      "value": 3.1,
       "trend": "falling",
       "drivers": [
         "Component allocation to AI",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.8,
+      "value": 7.0,
       "trend": "rising",
       "drivers": [
         "AI feature premiums",
@@ -85,7 +85,7 @@
       "label": "Infrastructure & Construction",
       "weight": 0.1,
       "value": 4.2,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-08-13T07:07:09Z",
+  "last_updated": "2026-08-14T07:04:25Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
