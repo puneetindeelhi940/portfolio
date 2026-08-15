@@ -1,0 +1,1498 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<title>My 5 Token Saving Techniques — July-Aug 2026</title>
+<style>
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       oklch(17% 0.022 175);
+  --bg-2:     oklch(15% 0.02 175);
+  --surface:  oklch(20% 0.02 175);
+  --surface-2:oklch(22% 0.022 175);
+  --surface-3:oklch(25% 0.025 175);
+  --ink:      oklch(96% 0.01 175);
+  --dim:      oklch(72% 0.02 175);
+  --faint:    oklch(56% 0.018 175);
+  --rule:     oklch(28% 0.02 175);
+  --rule-2:   oklch(32% 0.025 175);
+  --signal:   oklch(72% 0.12 168);
+  --signal-ink:oklch(22% 0.05 168);
+  --gold:     oklch(83% 0.14 85);
+  --silver:   oklch(78% 0.02 260);
+  --bronze:   oklch(72% 0.10 55);
+  --warn:     oklch(74% 0.13 35);
+  --accent-2: oklch(72% 0.12 280);
+  --accent-3: oklch(72% 0.12 340);
+  --f-sans:   'Segoe UI', system-ui, sans-serif;
+  --f-mono:   'Segoe UI', monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── Subtle animated background ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 800px 600px at 20% 30%, oklch(25% 0.06 168 / 0.15), transparent),
+    radial-gradient(ellipse 600px 400px at 80% 70%, oklch(25% 0.06 280 / 0.1), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Header ── */
+.page-header {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 48px 20px;
+}
+
+.page-header .kicker {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--signal);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kicker .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--signal);
+  box-shadow: 0 0 12px oklch(72% 0.12 168 / 0.7);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.page-header h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.page-header h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--signal);
+}
+
+.page-header .subtitle {
+  font-size: 17px;
+  color: var(--dim);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.page-header .subtitle strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.header-rule {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, var(--signal), var(--rule), transparent);
+  margin: 32px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 48px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Cards section ── */
+.cards-section {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 48px 80px;
+}
+
+.cards-instruction {
+  text-align: center;
+  font-size: 13px;
+  color: var(--faint);
+  font-family: var(--f-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  perspective: 1200px;
+}
+
+/* ── Individual card ── */
+.card-container {
+  height: 380px;
+  cursor: pointer;
+  animation: cardEntry 0.7s ease-out both;
+}
+
+.card-container:nth-child(1) { animation-delay: 0.1s; }
+.card-container:nth-child(2) { animation-delay: 0.2s; }
+.card-container:nth-child(3) { animation-delay: 0.3s; }
+.card-container:nth-child(4) { animation-delay: 0.4s; }
+.card-container:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes cardEntry {
+  from { opacity: 0; transform: translateY(40px) rotateX(10deg); }
+  to   { opacity: 1; transform: translateY(0) rotateX(0); }
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.card-container:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-container.active .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--rule-2);
+  overflow: hidden;
+}
+
+/* ── Card front ── */
+.card-front {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 22px;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.card-container:hover .card-front {
+  border-color: var(--signal);
+  box-shadow: 0 8px 40px oklch(72% 0.12 168 / 0.15), inset 0 1px 0 oklch(100% 0 0 / 0.05);
+}
+
+.card-rank {
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.card-rank-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+  flex: 1;
+}
+
+.card-reduction {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.card-reduction-value {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: var(--f-mono);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.card-reduction-label {
+  font-size: 11px;
+  color: var(--faint);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.card-stars {
+  margin-top: 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.card-container[data-rank="1"] .card-reduction-value { color: var(--gold); }
+.card-container[data-rank="2"] .card-reduction-value { color: var(--silver); }
+.card-container[data-rank="3"] .card-reduction-value { color: var(--bronze); }
+.card-container[data-rank="4"] .card-reduction-value { color: var(--signal); }
+.card-container[data-rank="5"] .card-reduction-value { color: var(--signal); }
+
+/* ── Card back ── */
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 22px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface-3) 100%);
+  border-color: var(--signal);
+  box-shadow: 0 8px 40px oklch(72% 0.12 168 / 0.15);
+}
+
+.card-back-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.card-back-desc {
+  font-size: 14px;
+  color: var(--dim);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-back-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: var(--signal);
+  color: var(--signal-ink);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-back-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px oklch(72% 0.12 168 / 0.4);
+}
+
+.card-back-cta svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Slide panel ── */
+.panel-overlay {
+  position: fixed;
+  inset: 0;
+  background: oklch(0% 0 0 / 0.6);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+
+.panel-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.demo-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(720px, 90vw);
+  height: 100vh;
+  background: var(--bg);
+  border-left: 1px solid var(--rule-2);
+  z-index: 101;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  box-shadow: -20px 0 60px oklch(0% 0 0 / 0.4);
+}
+
+.demo-panel.open {
+  transform: translateX(0);
+}
+
+.panel-header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, var(--bg), var(--bg) 85%, oklch(17% 0.022 175 / 0));
+  padding: 32px 36px 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.panel-header-left {
+  flex: 1;
+}
+
+.panel-rank-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--signal);
+  margin-bottom: 10px;
+}
+
+.panel-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.panel-evidence {
+  font-size: 12px;
+  color: var(--faint);
+  font-family: var(--f-mono);
+  letter-spacing: 0.05em;
+}
+
+.panel-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--rule-2);
+  background: var(--surface);
+  color: var(--dim);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.panel-close:hover {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+.panel-body {
+  padding: 12px 36px 48px;
+}
+
+/* ── Demo common styles ── */
+.demo-section {
+  margin-bottom: 32px;
+}
+
+.demo-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 12px;
+}
+
+.demo-box {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+}
+
+.demo-box + .demo-box { margin-top: 12px; }
+
+/* Metrics bar */
+.metrics-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.metric-card.highlight {
+  border-color: var(--signal);
+  background: oklch(20% 0.04 168);
+}
+
+.metric-value {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--f-mono);
+  color: var(--signal);
+  line-height: 1.1;
+  margin-bottom: 4px;
+  transition: all 0.4s ease;
+}
+
+.metric-label {
+  font-size: 11px;
+  color: var(--faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Token chunks for demos */
+.token-chunk {
+  display: inline;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: var(--f-mono);
+  font-size: 13px;
+  line-height: 2;
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.token-chunk.high    { background: oklch(72% 0.12 168 / 0.2); color: var(--ink); }
+.token-chunk.medium  { background: oklch(72% 0.10 85 / 0.2); color: var(--dim); }
+.token-chunk.low     { background: oklch(50% 0.05 0 / 0.15); color: var(--faint); }
+.token-chunk.pruned  { background: oklch(40% 0.05 0 / 0.1); color: oklch(40% 0.02 175); text-decoration: line-through; opacity: 0.4; }
+
+/* Slider control */
+.slider-control {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.slider-control label {
+  font-size: 13px;
+  color: var(--dim);
+  white-space: nowrap;
+}
+
+.slider-control input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--rule);
+  outline: none;
+}
+
+.slider-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--signal);
+  cursor: pointer;
+  box-shadow: 0 2px 8px oklch(0% 0 0 / 0.3);
+}
+
+.slider-value {
+  font-family: var(--f-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--signal);
+  min-width: 36px;
+  text-align: right;
+}
+
+/* Toggle buttons */
+.toggle-group {
+  display: flex;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--dim);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--f-sans);
+}
+
+.toggle-btn.active {
+  background: var(--signal);
+  color: var(--signal-ink);
+  font-weight: 600;
+}
+
+/* Compression levels */
+.compression-level {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--rule);
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: var(--surface);
+}
+
+.compression-level:hover {
+  border-color: var(--rule-2);
+}
+
+.compression-level.active {
+  border-color: var(--signal);
+  background: oklch(20% 0.04 168);
+}
+
+.compression-level-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.compression-level-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.compression-level-tokens {
+  font-family: var(--f-mono);
+  font-size: 13px;
+  color: var(--signal);
+  font-weight: 600;
+}
+
+.compression-level-text {
+  font-size: 13px;
+  color: var(--dim);
+  line-height: 1.6;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+/* Progress bar */
+.token-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--rule);
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.token-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.token-bar-fill.green  { background: var(--signal); }
+.token-bar-fill.gold   { background: var(--gold); }
+.token-bar-fill.warn   { background: var(--warn); }
+
+/* Comparison columns */
+.compare-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.compare-col {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.compare-col.better {
+  border-color: var(--signal);
+}
+
+.compare-col-header {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compare-col-header .badge {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--signal);
+  color: var(--signal-ink);
+  font-weight: 600;
+}
+
+.compare-col p {
+  font-size: 13px;
+  color: var(--dim);
+  line-height: 1.6;
+}
+
+/* Memory entries */
+.memory-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: oklch(22% 0.02 175);
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: var(--dim);
+  transition: all 0.3s ease;
+}
+
+.memory-entry .icon {
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.memory-entry.active {
+  background: oklch(25% 0.04 168);
+  border: 1px solid oklch(40% 0.08 168);
+  color: var(--ink);
+}
+
+/* ── Live demo interactive elements ── */
+.demo-prompt-area {
+  font-family: var(--f-mono);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--dim);
+  min-height: 80px;
+  word-wrap: break-word;
+}
+
+.demo-output {
+  margin-top: 12px;
+  padding: 14px;
+  background: oklch(15% 0.015 175);
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+}
+
+.demo-output .label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.saved-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: oklch(72% 0.12 168 / 0.15);
+  color: var(--signal);
+  font-size: 11px;
+  font-family: var(--f-mono);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Image placeholder for multimodal demo */
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  background: linear-gradient(135deg, oklch(25% 0.04 200), oklch(22% 0.03 280));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--dim);
+  font-size: 13px;
+  border: 1px dashed var(--rule-2);
+  margin-bottom: 12px;
+}
+
+.image-placeholder .big-icon {
+  font-size: 48px;
+  opacity: 0.6;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+/* ── Attribution ── */
+.attribution {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 24px 48px 40px;
+  font-size: 12px;
+  color: var(--faint);
+  font-family: var(--f-mono);
+  letter-spacing: 0.06em;
+}
+
+.attribution a {
+  color: var(--signal);
+  text-decoration: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-container:nth-child(4),
+  .card-container:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: 40px 24px 16px; }
+  .cards-section { padding: 20px 24px 60px; }
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .card-container { height: 340px; }
+  .demo-panel { width: 100vw; }
+  .panel-body { padding: 12px 24px 48px; }
+  .panel-header { padding: 24px 24px 16px; }
+  .metrics-bar { grid-template-columns: 1fr; }
+  .compare-cols { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .cards-grid { grid-template-columns: 1fr; }
+  .card-container { height: 300px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="page-header">
+  <div class="kicker"><span class="dot"></span> Puneet's AI Lab</div>
+  <h1>My 5 <em>token saving</em> techniques from last month (July-Aug 2026)</h1>
+  <p class="subtitle">The techniques I've been using, testing, and refining over the past month to cut token usage without losing output quality. Each card links to a <strong>live, hands-on demo</strong> so you can see the reduction for yourself.</p>
+</header>
+
+<hr class="header-rule">
+
+<!-- Cards -->
+<section class="cards-section">
+  <p class="cards-instruction">Hover to flip &middot; Click to explore the live demo</p>
+
+  <div class="cards-grid" id="cardsGrid">
+
+    <!-- Card 1 -->
+    <div class="card-container" data-rank="1" data-card="0" onclick="openPanel(0)">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-rank">&#129351;</div>
+          <div class="card-rank-label">Rank #1</div>
+          <div class="card-title">Marginal-value context pruning</div>
+          <div class="card-reduction">
+            <div class="card-reduction-value">Up to 73%</div>
+            <div class="card-reduction-label">Token reduction</div>
+          </div>
+          <div class="card-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+        </div>
+        <div class="card-back">
+          <div class="card-back-icon">&#9986;</div>
+          <div class="card-back-desc">Score every chunk of context by how much it actually moves the needle for the current task. Prune anything below the threshold.</div>
+          <button class="card-back-cta" onclick="event.stopPropagation(); openPanel(0)">
+            Try live demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-container" data-rank="2" data-card="1" onclick="openPanel(1)">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-rank">&#129352;</div>
+          <div class="card-rank-label">Rank #2</div>
+          <div class="card-title">Precision evidence packets for agents</div>
+          <div class="card-reduction">
+            <div class="card-reduction-value">39&ndash;52%</div>
+            <div class="card-reduction-label">Token reduction</div>
+          </div>
+          <div class="card-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+        </div>
+        <div class="card-back">
+          <div class="card-back-icon">&#127919;</div>
+          <div class="card-back-desc">Instead of dumping full documents, extract only the precise evidence an agent needs to answer the current sub-question.</div>
+          <button class="card-back-cta" onclick="event.stopPropagation(); openPanel(1)">
+            Try live demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-container" data-rank="3" data-card="2" onclick="openPanel(2)">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-rank">&#129353;</div>
+          <div class="card-rank-label">Rank #3</div>
+          <div class="card-title">Multimodal representation instead of text</div>
+          <div class="card-reduction">
+            <div class="card-reduction-value">3.6&ndash;10.4&times;</div>
+            <div class="card-reduction-label">Fewer input tokens</div>
+          </div>
+          <div class="card-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+        </div>
+        <div class="card-back">
+          <div class="card-back-icon">&#128444;</div>
+          <div class="card-back-desc">When describing layouts, charts, or UI — send a screenshot or diagram instead of a massive text description. The image costs far fewer tokens.</div>
+          <button class="card-back-cta" onclick="event.stopPropagation(); openPanel(2)">
+            Try live demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card-container" data-rank="4" data-card="3" onclick="openPanel(3)">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-rank">4</div>
+          <div class="card-rank-label">Rank #4</div>
+          <div class="card-title">Hierarchical context compression</div>
+          <div class="card-reduction">
+            <div class="card-reduction-value">~80&ndash;90%</div>
+            <div class="card-reduction-label">In some workflows</div>
+          </div>
+          <div class="card-stars">&#11088;&#11088;&#11088;&#11088;&#189;</div>
+        </div>
+        <div class="card-back">
+          <div class="card-back-icon">&#128203;</div>
+          <div class="card-back-desc">Compress context into layered summaries — topic-level, section-level, detail-level — and only expand the layer the model actually needs.</div>
+          <button class="card-back-cta" onclick="event.stopPropagation(); openPanel(3)">
+            Try live demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card-container" data-rank="5" data-card="4" onclick="openPanel(4)">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-rank">5</div>
+          <div class="card-rank-label">Rank #5</div>
+          <div class="card-title">Token-aware memory instead of retrieval-heavy RAG</div>
+          <div class="card-reduction">
+            <div class="card-reduction-value">~70%+</div>
+            <div class="card-reduction-label">vs full-context RAG</div>
+          </div>
+          <div class="card-stars">&#11088;&#11088;&#11088;&#11088;&#189;</div>
+        </div>
+        <div class="card-back">
+          <div class="card-back-icon">&#129504;</div>
+          <div class="card-back-desc">Replace dumping retrieved docs into context with a structured memory layer that stores distilled facts and retrieves only what's needed.</div>
+          <button class="card-back-cta" onclick="event.stopPropagation(); openPanel(4)">
+            Try live demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Overlay -->
+<div class="panel-overlay" id="panelOverlay" onclick="closePanel()"></div>
+
+<!-- Slide panel -->
+<div class="demo-panel" id="demoPanel">
+  <div class="panel-header">
+    <div class="panel-header-left">
+      <div class="panel-rank-badge" id="panelRank"></div>
+      <h2 class="panel-title" id="panelTitle"></h2>
+      <div class="panel-evidence" id="panelEvidence"></div>
+    </div>
+    <button class="panel-close" onclick="closePanel()">&times;</button>
+  </div>
+  <div class="panel-body" id="panelBody"></div>
+</div>
+
+<!-- Attribution -->
+<div class="attribution">
+  Built by <a href="https://puneetindeelhi940.github.io/portfolio/home.html">Puneet Arora</a>
+</div>
+
+<script>
+const techniques = [
+  {
+    rank: '#1',
+    emoji: '&#129351;',
+    title: 'Marginal-value context pruning',
+    evidence: 'New Aug 9 research &middot; Up to 73% reduction',
+    color: 'gold'
+  },
+  {
+    rank: '#2',
+    emoji: '&#129352;',
+    title: 'Precision evidence packets for agents',
+    evidence: 'ContextSniper, Jul 2 &middot; 39-52% reduction',
+    color: 'silver'
+  },
+  {
+    rank: '#3',
+    emoji: '&#129353;',
+    title: 'Multimodal representation instead of text',
+    evidence: 'Aug 7 research &middot; 3.6-10.4x fewer tokens',
+    color: 'bronze'
+  },
+  {
+    rank: '#4',
+    emoji: '4',
+    title: 'Hierarchical context compression',
+    evidence: 'New July/Aug work &middot; ~80-90% in some workflows',
+    color: 'signal'
+  },
+  {
+    rank: '#5',
+    emoji: '5',
+    title: 'Token-aware memory instead of retrieval-heavy RAG',
+    evidence: 'Mem0 + newer memory work &middot; ~70%+ reduction',
+    color: 'signal'
+  }
+];
+
+function openPanel(idx) {
+  const t = techniques[idx];
+  document.getElementById('panelRank').innerHTML = t.rank + ' &mdash; Live Demo';
+  document.getElementById('panelTitle').textContent = t.title;
+  document.getElementById('panelEvidence').innerHTML = t.evidence;
+  document.getElementById('panelBody').innerHTML = buildDemo(idx);
+  document.getElementById('panelOverlay').classList.add('open');
+  document.getElementById('demoPanel').classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  if (idx === 0) initDemo0();
+  if (idx === 1) initDemo1();
+  if (idx === 2) initDemo2();
+  if (idx === 3) initDemo3();
+  if (idx === 4) initDemo4();
+}
+
+function closePanel() {
+  document.getElementById('panelOverlay').classList.remove('open');
+  document.getElementById('demoPanel').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+
+/* ═══════════════════════════════════════════
+   DEMO BUILDERS
+   ═══════════════════════════════════════════ */
+
+function buildDemo(idx) {
+  switch(idx) {
+    case 0: return buildDemo0();
+    case 1: return buildDemo1();
+    case 2: return buildDemo2();
+    case 3: return buildDemo3();
+    case 4: return buildDemo4();
+  }
+}
+
+/* ── Demo 0: Marginal-value context pruning ── */
+function buildDemo0() {
+  return `
+    <div class="demo-section">
+      <div class="demo-label">AI Token Metrics</div>
+      <div class="metrics-bar">
+        <div class="metric-card"><div class="metric-value" id="d0-original">2,847</div><div class="metric-label">Original tokens</div></div>
+        <div class="metric-card highlight"><div class="metric-value" id="d0-pruned">2,847</div><div class="metric-label">After pruning</div></div>
+        <div class="metric-card"><div class="metric-value" id="d0-saved">0%</div><div class="metric-label">Tokens saved</div></div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Context chunks scored by marginal value</div>
+      <p style="font-size:13px;color:var(--dim);margin-bottom:12px;">Drag the threshold slider to prune low-value chunks. Chunks below the threshold get struck through and excluded from the prompt.</p>
+      <div class="slider-control">
+        <label>Prune threshold</label>
+        <input type="range" min="0" max="10" value="0" step="1" id="d0-slider" oninput="updateDemo0()">
+        <span class="slider-value" id="d0-threshold">0</span>
+      </div>
+      <div class="demo-box">
+        <div class="demo-prompt-area" id="d0-chunks"></div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Token usage visualization</div>
+      <div class="demo-box">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--faint);margin-bottom:6px;">
+          <span>Tokens used</span>
+          <span id="d0-bar-label">2,847 / 2,847</span>
+        </div>
+        <div class="token-bar">
+          <div class="token-bar-fill green" id="d0-bar" style="width:100%"></div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+const demo0Chunks = [
+  { text: "User is asking about React performance optimization for a dashboard with 50+ widgets.", score: 9, tokens: 187 },
+  { text: "The dashboard uses Redux for state management and React Query for API calls.", score: 8, tokens: 156 },
+  { text: "Previous conversation discussed unrelated Python deployment issues from two weeks ago.", score: 2, tokens: 342 },
+  { text: "User's system has 16GB RAM, M2 MacBook Pro, running macOS Sonoma 14.3.", score: 4, tokens: 198 },
+  { text: "The current bundle size is 2.4MB and the largest component re-renders on every state change.", score: 9, tokens: 224 },
+  { text: "Company style guide requires Tailwind CSS and prohibits inline styles.", score: 5, tokens: 167 },
+  { text: "Three previous sessions discussed CSS grid layouts for a completely different marketing page.", score: 1, tokens: 487 },
+  { text: "User mentioned they are using React 18 with concurrent features enabled.", score: 7, tokens: 143 },
+  { text: "Boilerplate: standard disclaimer about AI-generated code needing human review.", score: 1, tokens: 298 },
+  { text: "The widget rendering pipeline currently uses useMemo but keys are set incorrectly.", score: 10, tokens: 201 },
+  { text: "Previous session context about an unrelated auth bug that was already resolved.", score: 1, tokens: 444 }
+];
+
+function initDemo0() {
+  updateDemo0();
+}
+
+function updateDemo0() {
+  const threshold = parseInt(document.getElementById('d0-slider').value);
+  document.getElementById('d0-threshold').textContent = threshold;
+  const container = document.getElementById('d0-chunks');
+  const totalTokens = demo0Chunks.reduce((s, c) => s + c.tokens, 0);
+  let keptTokens = 0;
+  let html = '';
+  demo0Chunks.forEach((chunk, i) => {
+    const pruned = chunk.score <= threshold;
+    const cls = pruned ? 'pruned' : (chunk.score >= 8 ? 'high' : chunk.score >= 5 ? 'medium' : 'low');
+    if (!pruned) keptTokens += chunk.tokens;
+    html += `<span class="token-chunk ${cls}" title="Score: ${chunk.score}/10 | ${chunk.tokens} tokens">[${chunk.score}] ${chunk.text} </span>`;
+  });
+  container.innerHTML = html;
+  const saved = totalTokens > 0 ? Math.round((1 - keptTokens / totalTokens) * 100) : 0;
+  document.getElementById('d0-original').textContent = totalTokens.toLocaleString();
+  animateValue('d0-pruned', keptTokens);
+  document.getElementById('d0-saved').textContent = saved + '%';
+  document.getElementById('d0-saved').style.color = saved > 50 ? 'var(--signal)' : saved > 20 ? 'var(--gold)' : 'var(--dim)';
+  document.getElementById('d0-bar').style.width = (keptTokens / totalTokens * 100) + '%';
+  document.getElementById('d0-bar-label').textContent = keptTokens.toLocaleString() + ' / ' + totalTokens.toLocaleString();
+}
+
+/* ── Demo 1: Precision evidence packets ── */
+function buildDemo1() {
+  return `
+    <div class="demo-section">
+      <div class="demo-label">AI Token Metrics</div>
+      <div class="metrics-bar">
+        <div class="metric-card"><div class="metric-value" id="d1-full">4,280</div><div class="metric-label">Full context</div></div>
+        <div class="metric-card highlight"><div class="metric-value" id="d1-sniper">2,054</div><div class="metric-label">Evidence packet</div></div>
+        <div class="metric-card"><div class="metric-value" id="d1-saved">52%</div><div class="metric-label">Tokens saved</div></div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Mode</div>
+      <div class="toggle-group">
+        <button class="toggle-btn active" onclick="switchDemo1('full', this)">Full context</button>
+        <button class="toggle-btn" onclick="switchDemo1('sniper', this)">ContextSniper mode</button>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Agent question: "What is the user's current React version and what performance issues are they seeing?"</div>
+      <div class="demo-box" id="d1-content"></div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Token breakdown</div>
+      <div class="demo-box">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--faint);margin-bottom:6px;">
+          <span>Full context</span><span>4,280 tokens</span>
+        </div>
+        <div class="token-bar"><div class="token-bar-fill warn" style="width:100%"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--faint);margin:12px 0 6px;">
+          <span>Evidence packet</span><span>2,054 tokens</span>
+        </div>
+        <div class="token-bar"><div class="token-bar-fill green" style="width:48%"></div></div>
+        <div class="saved-badge" style="margin-top:12px;">&#10003; 2,226 tokens saved per agent call</div>
+      </div>
+    </div>
+  `;
+}
+
+const d1Full = [
+  { text: "The application is a React-based SaaS dashboard built with Create React App. It was started in 2021 and has grown significantly. The team consists of 4 frontend developers and 2 backend developers.", relevant: false },
+  { text: "Tech stack: React 18.2.0, TypeScript 5.1, Redux Toolkit 1.9, React Query v4, Tailwind CSS, Vite (migrated from CRA in Jan 2024), deployed on AWS with CloudFront CDN.", relevant: true },
+  { text: "The CI/CD pipeline uses GitHub Actions with automated tests running on every PR. Coverage is at 67% and the team aims to reach 80% by Q4.", relevant: false },
+  { text: "Performance issues: The main dashboard page has 50+ widget components. When any Redux store value changes, approximately 35 of these widgets re-render unnecessarily, causing visible jank at ~12 FPS.", relevant: true },
+  { text: "The design system uses a custom component library built on top of Radix UI primitives. All components follow WCAG 2.1 AA guidelines.", relevant: false },
+  { text: "Database is PostgreSQL 15 with Redis caching layer. API responses average 180ms.", relevant: false },
+  { text: "Users report the dashboard feels sluggish after 5 minutes of use. Chrome DevTools profiler shows the React commit phase taking 340ms+ on store updates.", relevant: true }
+];
+
+function initDemo1() {
+  switchDemo1('full', document.querySelector('.toggle-btn'));
+}
+
+function switchDemo1(mode, btn) {
+  document.querySelectorAll('.toggle-group .toggle-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const container = document.getElementById('d1-content');
+  if (mode === 'full') {
+    container.innerHTML = '<div class="demo-prompt-area">' + d1Full.map(c =>
+      `<div style="padding:8px 12px;margin-bottom:6px;border-radius:6px;background:${c.relevant ? 'oklch(25% 0.04 168)' : 'oklch(20% 0.02 175)'}; border:1px solid ${c.relevant ? 'oklch(40% 0.08 168)' : 'var(--rule)'};font-size:13px;color:${c.relevant ? 'var(--ink)' : 'var(--faint)'};">${c.relevant ? '&#9679; ' : ''}${c.text}</div>`
+    ).join('') + '</div><p style="font-size:12px;color:var(--faint);margin-top:10px;">Green-highlighted = actually relevant to the question. The rest is noise the agent has to process.</p>';
+  } else {
+    container.innerHTML = '<div class="demo-prompt-area">' + d1Full.filter(c => c.relevant).map(c =>
+      `<div style="padding:8px 12px;margin-bottom:6px;border-radius:6px;background:oklch(25% 0.04 168);border:1px solid oklch(40% 0.08 168);font-size:13px;color:var(--ink);">&#9679; ${c.text}</div>`
+    ).join('') + '</div><div class="saved-badge" style="margin-top:12px;">&#127919; Only 3 evidence chunks extracted from 7 total &mdash; same answer quality</div>';
+  }
+}
+
+/* ── Demo 2: Multimodal representation ── */
+function buildDemo2() {
+  return `
+    <div class="demo-section">
+      <div class="demo-label">AI Token Metrics</div>
+      <div class="metrics-bar">
+        <div class="metric-card"><div class="metric-value" id="d2-text">6,340</div><div class="metric-label">Text description</div></div>
+        <div class="metric-card highlight"><div class="metric-value" id="d2-image">1,120</div><div class="metric-label">Image tokens</div></div>
+        <div class="metric-card"><div class="metric-value" id="d2-factor">5.7x</div><div class="metric-label">Fewer tokens</div></div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Comparison: describing a dashboard layout</div>
+      <div class="compare-cols">
+        <div class="compare-col">
+          <div class="compare-col-header">
+            <span>Text description</span>
+            <span style="font-family:var(--f-mono);font-size:12px;color:var(--warn);">6,340 tokens</span>
+          </div>
+          <div style="font-size:12px;color:var(--dim);line-height:1.7;max-height:280px;overflow-y:auto;padding-right:8px;">
+            <p style="margin-bottom:8px;">The dashboard has a top navigation bar spanning 100% width at 64px height, containing: a logo (48x48px) on the left with 16px margin, a search input (320px wide, 40px tall, rounded corners 8px) centered, and three action buttons on the right (notifications bell icon, settings gear icon, user avatar 36px circle).</p>
+            <p style="margin-bottom:8px;">Below the nav, there is a sidebar on the left, 280px wide, with a vertical list of 8 menu items. Each item has a 20px icon, 14px text label, and 12px padding. The active item has a left border highlight of 3px in brand blue.</p>
+            <p style="margin-bottom:8px;">The main content area occupies the remaining width. It starts with a row of 4 stat cards in a grid (gap 16px). Each card is ~240px wide, 120px tall, with a large number (32px bold), a label (14px gray), and a sparkline chart (80px wide) in the bottom-right corner.</p>
+            <p style="margin-bottom:8px;">Below the stat cards, there is a large data table spanning full width: header row with 6 columns (Name, Status, Value, Change, Date, Actions), alternating row backgrounds, with sortable column headers indicated by chevron icons. The table shows 15 rows of data with pagination controls at the bottom-right.</p>
+            <p>The bottom section has two side-by-side charts: a line chart (60% width) showing 30-day trends with 3 data series, and a donut chart (40% width) showing category distribution with 5 segments and a center label.</p>
+          </div>
+        </div>
+        <div class="compare-col better">
+          <div class="compare-col-header">
+            <span>Screenshot</span>
+            <span class="badge">5.7x fewer tokens</span>
+          </div>
+          <div class="image-placeholder">
+            <div class="big-icon">&#128200;</div>
+            <span>Dashboard screenshot</span>
+            <span style="font-size:11px;color:var(--faint);">1,120 image tokens (768x512 JPEG)</span>
+          </div>
+          <div class="saved-badge">&#10003; Same information, 5,220 fewer tokens</div>
+        </div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">When to use each approach</div>
+      <div class="demo-box">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;">
+          <div>
+            <div style="font-weight:600;color:var(--ink);margin-bottom:6px;">&#128444; Send an image when:</div>
+            <ul style="color:var(--dim);padding-left:18px;line-height:1.8;">
+              <li>Describing layouts or spatial relationships</li>
+              <li>Showing charts, graphs, or data visualizations</li>
+              <li>Reporting UI bugs or visual regressions</li>
+              <li>Referencing design mockups or wireframes</li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-weight:600;color:var(--ink);margin-bottom:6px;">&#128196; Send text when:</div>
+            <ul style="color:var(--dim);padding-left:18px;line-height:1.8;">
+              <li>The content is primarily code or data</li>
+              <li>Exact character-level accuracy matters</li>
+              <li>Content needs to be searchable/editable</li>
+              <li>Accessibility requirements demand text</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function initDemo2() {}
+
+/* ── Demo 3: Hierarchical context compression ── */
+function buildDemo3() {
+  return `
+    <div class="demo-section">
+      <div class="demo-label">AI Token Metrics</div>
+      <div class="metrics-bar">
+        <div class="metric-card"><div class="metric-value" id="d3-original">12,480</div><div class="metric-label">Full document</div></div>
+        <div class="metric-card highlight"><div class="metric-value" id="d3-current">12,480</div><div class="metric-label">Current level</div></div>
+        <div class="metric-card"><div class="metric-value" id="d3-saved">0%</div><div class="metric-label">Compressed</div></div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Select a compression level (click to expand)</div>
+      <p style="font-size:13px;color:var(--dim);margin-bottom:14px;">Each level preserves progressively less detail. The model only needs the deepest level when it's actively working on that specific section.</p>
+
+      <div class="compression-level active" onclick="switchLevel(0, this)" id="cl-0">
+        <div class="compression-level-header">
+          <span class="compression-level-name">&#128308; Level 0 &mdash; Full document</span>
+          <span class="compression-level-tokens">12,480 tokens</span>
+        </div>
+        <div class="compression-level-text" id="cl-0-text">Complete source with all code, comments, docstrings, and implementation details across 14 modules. Includes authentication flows, database models, API route handlers, middleware stack, error handling, logging configuration, test utilities, and deployment scripts. Every function body, every edge case handler, every config default is present.</div>
+        <div class="token-bar" style="margin-top:8px;"><div class="token-bar-fill warn" style="width:100%"></div></div>
+      </div>
+
+      <div class="compression-level" onclick="switchLevel(1, this)" id="cl-1">
+        <div class="compression-level-header">
+          <span class="compression-level-name">&#128993; Level 1 &mdash; Section summaries</span>
+          <span class="compression-level-tokens">3,120 tokens</span>
+        </div>
+        <div class="compression-level-text" id="cl-1-text">Auth module: JWT-based authentication with refresh token rotation, rate limiting at 100 req/min. Database: PostgreSQL with 8 models (User, Session, Project, Task, Comment, File, AuditLog, Setting), using Alembic migrations. API: 23 REST endpoints across 5 route groups, OpenAPI documented. Middleware: CORS, auth verification, request logging, error serialization. Tests: 142 tests at 78% coverage, using pytest + factory_boy.</div>
+        <div class="token-bar" style="margin-top:8px;"><div class="token-bar-fill gold" style="width:25%"></div></div>
+      </div>
+
+      <div class="compression-level" onclick="switchLevel(2, this)" id="cl-2">
+        <div class="compression-level-header">
+          <span class="compression-level-name">&#128994; Level 2 &mdash; Topic map</span>
+          <span class="compression-level-tokens">780 tokens</span>
+        </div>
+        <div class="compression-level-text" id="cl-2-text">Python FastAPI backend: auth (JWT + refresh), database (Postgres, 8 models), API (23 endpoints, 5 groups), middleware (CORS, auth, logging, errors), tests (142, 78% cov). Deploy: Docker + AWS ECS.</div>
+        <div class="token-bar" style="margin-top:8px;"><div class="token-bar-fill green" style="width:6.25%"></div></div>
+      </div>
+
+      <div class="compression-level" onclick="switchLevel(3, this)" id="cl-3">
+        <div class="compression-level-header">
+          <span class="compression-level-name">&#9989; Level 3 &mdash; One-liner</span>
+          <span class="compression-level-tokens">124 tokens</span>
+        </div>
+        <div class="compression-level-text" id="cl-3-text">FastAPI backend: JWT auth, Postgres (8 models), 23 REST endpoints, Docker/ECS deploy, 78% test coverage.</div>
+        <div class="token-bar" style="margin-top:8px;"><div class="token-bar-fill green" style="width:1%"></div></div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-output">
+        <div class="label-row">
+          <span class="demo-label" style="margin:0;">Compression ratio</span>
+          <span class="saved-badge" id="d3-ratio">1:1 &mdash; no compression</span>
+        </div>
+        <p style="font-size:13px;color:var(--dim);" id="d3-insight">Start at Level 2 or 3 for orientation, then expand only the section the model needs to modify. Most turns never need Level 0.</p>
+      </div>
+    </div>
+  `;
+}
+
+const levelData = [
+  { tokens: 12480, ratio: '1:1', insight: 'Full context — only needed when the model is actively editing code in this file. Most agent turns never need this.' },
+  { tokens: 3120, ratio: '4:1', insight: 'Section summaries are enough for planning which module to change and understanding dependencies between components.' },
+  { tokens: 780, ratio: '16:1', insight: 'The topic map gives the model enough to decide IF this file is relevant to the current task at all — the most common need.' },
+  { tokens: 124, ratio: '100:1', insight: 'The one-liner sits in a project index. The model scans dozens of these to pick which files to look at. 99% token reduction.' }
+];
+
+function initDemo3() {}
+
+function switchLevel(idx, el) {
+  document.querySelectorAll('.compression-level').forEach(e => e.classList.remove('active'));
+  el.classList.add('active');
+  const d = levelData[idx];
+  animateValue('d3-current', d.tokens);
+  const saved = Math.round((1 - d.tokens / 12480) * 100);
+  document.getElementById('d3-saved').textContent = saved + '%';
+  document.getElementById('d3-saved').style.color = saved > 50 ? 'var(--signal)' : saved > 0 ? 'var(--gold)' : 'var(--dim)';
+  document.getElementById('d3-ratio').innerHTML = d.ratio + (saved > 0 ? ' &mdash; ' + saved + '% smaller' : ' &mdash; no compression');
+  document.getElementById('d3-insight').textContent = d.insight;
+}
+
+/* ── Demo 4: Token-aware memory ── */
+function buildDemo4() {
+  return `
+    <div class="demo-section">
+      <div class="demo-label">AI Token Metrics</div>
+      <div class="metrics-bar">
+        <div class="metric-card"><div class="metric-value" id="d4-rag">8,640</div><div class="metric-label">RAG approach</div></div>
+        <div class="metric-card highlight"><div class="metric-value" id="d4-mem">2,180</div><div class="metric-label">Memory approach</div></div>
+        <div class="metric-card"><div class="metric-value" id="d4-saved">74.8%</div><div class="metric-label">Tokens saved</div></div>
+      </div>
+    </div>
+    <div class="demo-section">
+      <div class="demo-label">Mode comparison</div>
+      <div class="toggle-group">
+        <button class="toggle-btn active" id="d4-btn-rag" onclick="switchDemo4('rag')">Traditional RAG</button>
+        <button class="toggle-btn" id="d4-btn-mem" onclick="switchDemo4('memory')">Token-aware memory</button>
+      </div>
+    </div>
+    <div class="demo-section" id="d4-content"></div>
+    <div class="demo-section">
+      <div class="demo-label">Token usage over a 10-turn conversation</div>
+      <div class="demo-box">
+        <div style="display:flex;gap:4px;align-items:flex-end;height:120px;padding:0 4px;" id="d4-chart"></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--faint);margin-top:8px;padding:0 4px;">
+          <span>Turn 1</span><span>Turn 5</span><span>Turn 10</span>
+        </div>
+        <div style="display:flex;gap:16px;margin-top:12px;font-size:12px;color:var(--dim);">
+          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--warn);margin-right:4px;vertical-align:middle;"></span>RAG</span>
+          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--signal);margin-right:4px;vertical-align:middle;"></span>Memory</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+const ragTurns = [4200, 5100, 5800, 6400, 7200, 7800, 8100, 8400, 8640, 8900];
+const memTurns = [1800, 1900, 1950, 2000, 2050, 2100, 2120, 2150, 2180, 2200];
+
+function initDemo4() {
+  switchDemo4('rag');
+  renderChart();
+}
+
+function renderChart() {
+  const chart = document.getElementById('d4-chart');
+  if (!chart) return;
+  const maxVal = Math.max(...ragTurns);
+  let html = '';
+  for (let i = 0; i < 10; i++) {
+    const ragH = (ragTurns[i] / maxVal * 100);
+    const memH = (memTurns[i] / maxVal * 100);
+    html += `<div style="flex:1;display:flex;gap:2px;align-items:flex-end;height:100%;">
+      <div style="flex:1;height:${ragH}%;background:var(--warn);border-radius:3px 3px 0 0;opacity:0.7;transition:height 0.4s ease;"></div>
+      <div style="flex:1;height:${memH}%;background:var(--signal);border-radius:3px 3px 0 0;transition:height 0.4s ease;"></div>
+    </div>`;
+  }
+  chart.innerHTML = html;
+}
+
+const ragContent = `
+  <div class="demo-label">Retrieved documents dumped into context</div>
+  <div class="demo-box">
+    <div style="font-size:13px;color:var(--dim);line-height:1.7;">
+      <div style="padding:8px 12px;margin-bottom:6px;border-radius:6px;background:oklch(22% 0.02 175);border:1px solid var(--rule);">
+        <span style="color:var(--warn);font-weight:600;">Doc 1</span> (1,840 tokens) &mdash; Full API documentation for the payments module including all endpoints, request/response schemas, error codes, rate limits, and webhook configurations...
+      </div>
+      <div style="padding:8px 12px;margin-bottom:6px;border-radius:6px;background:oklch(22% 0.02 175);border:1px solid var(--rule);">
+        <span style="color:var(--warn);font-weight:600;">Doc 2</span> (2,260 tokens) &mdash; Complete database schema reference with all 24 tables, their columns, indexes, foreign keys, and migration history...
+      </div>
+      <div style="padding:8px 12px;margin-bottom:6px;border-radius:6px;background:oklch(22% 0.02 175);border:1px solid var(--rule);">
+        <span style="color:var(--warn);font-weight:600;">Doc 3</span> (1,340 tokens) &mdash; Deployment runbook including CI/CD pipeline steps, environment variables, rollback procedures, and monitoring setup...
+      </div>
+      <div style="padding:8px 12px;border-radius:6px;background:oklch(22% 0.02 175);border:1px solid var(--rule);">
+        <span style="color:var(--warn);font-weight:600;">Doc 4</span> (3,200 tokens) &mdash; Previous conversation context about authentication refactoring, including all code snippets and decision rationale...
+      </div>
+    </div>
+    <div style="margin-top:12px;font-size:12px;color:var(--faint);">Total: 8,640 tokens of retrieved context. The model processes everything, even if only 15% is relevant to the current question.</div>
+  </div>
+`;
+
+const memContent = `
+  <div class="demo-label">Structured memory entries (distilled facts)</div>
+  <div class="demo-box">
+    <div class="memory-entry active"><span class="icon">&#128273;</span><span><strong>Auth:</strong> JWT + refresh rotation, access tokens 15min, refresh 7d. Rate limit 100/min per user.</span></div>
+    <div class="memory-entry active"><span class="icon">&#128451;</span><span><strong>DB:</strong> Postgres 15, payments table has (id, user_id, amount, status, created_at, stripe_id). Index on (user_id, status).</span></div>
+    <div class="memory-entry active"><span class="icon">&#127919;</span><span><strong>Current task:</strong> Add refund endpoint. Needs stripe_id lookup, status transition validation (completed &#8594; refunded only).</span></div>
+    <div class="memory-entry active"><span class="icon">&#9889;</span><span><strong>Constraint:</strong> Refunds must be idempotent. Use Stripe's refund API with idempotency key = payment.stripe_id.</span></div>
+    <div class="memory-entry"><span class="icon">&#128203;</span><span><strong>Style:</strong> All endpoints return {data, error, meta}. Use FastAPI dependency injection for auth.</span></div>
+    <div class="memory-entry"><span class="icon">&#128736;</span><span><strong>Deploy:</strong> Docker + ECS. Env vars in SSM Parameter Store. No manual migrations.</span></div>
+  </div>
+  <div class="saved-badge" style="margin-top:12px;">&#129504; 6 distilled facts replace 4 full documents &mdash; 74.8% fewer tokens, same answer quality</div>
+`;
+
+function switchDemo4(mode) {
+  document.getElementById('d4-btn-rag').classList.toggle('active', mode === 'rag');
+  document.getElementById('d4-btn-mem').classList.toggle('active', mode === 'memory');
+  document.getElementById('d4-content').innerHTML = mode === 'rag' ? ragContent : memContent;
+}
+
+/* ── Utility: animate value ── */
+function animateValue(id, target) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const current = parseInt(el.textContent.replace(/,/g, '')) || 0;
+  const diff = target - current;
+  const steps = 20;
+  const stepTime = 20;
+  let step = 0;
+  const timer = setInterval(() => {
+    step++;
+    const val = Math.round(current + diff * (step / steps));
+    el.textContent = val.toLocaleString();
+    if (step >= steps) clearInterval(timer);
+  }, stepTime);
+}
+</script>
+</body>
+</html>
