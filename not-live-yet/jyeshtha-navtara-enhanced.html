@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <title>Jyeshtha Native Navtara Master Analysis & Activity Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amberBg: '#FDFBF7',
+                        cardBg: '#FFFFFF',
+                        primaryText: '#1E293B',
+                        secondaryText: '#64748B',
+                        sacredGold: '#D97706',
+                        goldHover: '#B45309',
+                        auspiciousGreen: '#059669',
+                        sensitiveYellow: '#D97706',
+                        challengingRed: '#DC2626',
+                        mysticIndigo: '#4F46E5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #1E293B;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 380px;
+        }
+        @media (min-width: 768px) {
+            .chart-container { height: 360px; }
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #F1F5F9; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+        .week-card { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+        .week-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+        .pulse-dot {
+            width: 8px; height: 8px; border-radius: 50%; background: #059669;
+            animation: pulse-ring 1.8s ease-in-out infinite;
+        }
+        @keyframes pulse-ring {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(5,150,105,0.5); }
+            50% { box-shadow: 0 0 0 6px rgba(5,150,105,0); }
+        }
+
+        .task-item { transition: all 0.2s ease; }
+        .task-item:hover { background-color: #FEF3C7; }
+
+        @media print {
+            header, footer, nav, .no-print { display: none !important; }
+            body { background: #fff !important; }
+            .print-section { break-inside: avoid; page-break-inside: avoid; }
+            #print-report { display: block !important; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between custom-scrollbar">
+
+    <!-- Top Navigation Header -->
+    <header class="bg-white border-b border-amber-200/60 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center shadow text-lg">🦂</div>
+                <div>
+                    <h1 class="text-xl font-bold text-slate-900 tracking-tight">Jyeshtha Navtara Explorer</h1>
+                    <p class="text-xs text-amber-700 font-medium">Classical Electional Astrology & Activity Mapping for Jyeshtha Native</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap items-center gap-1.5 text-xs font-semibold">
+                <button onclick="switchTab('nav-transit')" id="btn-transit" class="px-3 py-1.5 rounded-lg bg-amber-500 text-white shadow-sm transition">⚡ Daily Transit</button>
+                <button onclick="switchTab('nav-week')" id="btn-week" class="px-3 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📅 7-Day Forecast</button>
+                <button onclick="switchTab('nav-explorer')" id="btn-explorer" class="px-3 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📜 27 Stars Grid</button>
+                <button onclick="switchTab('nav-domains')" id="btn-domains" class="px-3 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🎯 Life Planner</button>
+                <button onclick="switchTab('nav-compat')" id="btn-compat" class="px-3 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🤝 Compatibility</button>
+                <button onclick="switchTab('nav-tasks')" id="btn-tasks" class="px-3 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📌 My Tasks</button>
+                <button onclick="switchTab('nav-analytics')" id="btn-analytics" class="px-3 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📊 Charts</button>
+                <button onclick="switchTab('nav-remedies')" id="btn-remedies" class="px-3 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🛡️ Remedies</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-grow w-full space-y-6">
+
+        <!-- Archetypal Banner -->
+        <section class="bg-gradient-to-r from-amber-50 via-white to-amber-50 border border-amber-200/80 rounded-2xl p-5 shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center">
+                <div class="lg:col-span-3 space-y-1.5">
+                    <div class="flex items-center space-x-2 flex-wrap gap-y-1">
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Janma Nakshatra Baseline</span>
+                        <span class="text-slate-400 text-xs">•</span>
+                        <span class="text-xs font-semibold text-slate-600">Scorpio 16°40' – 30°00'</span>
+                    </div>
+                    <h2 class="text-lg md:text-xl font-bold text-slate-800">Native Archetype: Jyeshtha ("The Chief One")</h2>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Presided over by <strong>Indra</strong> (King of Deities) and ruled by <strong>Mercury</strong> (<em>Budha</em>), Jyeshtha possesses a <em>Tikshna</em> (Sharp/Dreadful) quality. This application translates the 27 lunar mansion transits across the 3 operational cycles (<em>Paryayas</em>) into actionable timing, color alignment, daily tasks, and remedial protocols.</p>
+                    <!-- FEATURE 1: Live Clock & Auto-Detect -->
+                    <div class="flex flex-wrap items-center gap-3 pt-1">
+                        <div class="flex items-center gap-2 bg-white border border-emerald-200 rounded-lg px-3 py-1.5 shadow-sm">
+                            <div class="pulse-dot"></div>
+                            <div class="text-xs">
+                                <span class="text-slate-500">Current Transit:</span>
+                                <strong id="live-star-name" class="text-emerald-700 ml-1">—</strong>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-slate-200 rounded-lg px-3 py-1.5 shadow-sm text-xs">
+                            <span class="text-slate-500">Time Remaining:</span>
+                            <strong id="live-countdown" class="text-amber-700 ml-1 font-mono">--:--:--</strong>
+                        </div>
+                        <div class="bg-white border border-slate-200 rounded-lg px-3 py-1.5 shadow-sm text-xs">
+                            <span class="text-slate-500">Local Time:</span>
+                            <strong id="live-clock" class="text-slate-700 ml-1 font-mono">--:--:--</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-2 text-center text-xs">
+                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm">
+                        <div class="font-bold text-emerald-600 text-lg">12</div>
+                        <div class="text-slate-500 text-[11px]">Highly Favorable</div>
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm">
+                        <div class="font-bold text-amber-600 text-lg">6</div>
+                        <div class="text-slate-500 text-[11px]">Sensitive / Mixed</div>
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm">
+                        <div class="font-bold text-red-600 text-lg">9</div>
+                        <div class="text-slate-500 text-[11px]">Challenging / Purge</div>
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm">
+                        <div class="font-bold text-indigo-600 text-lg">1</div>
+                        <div class="text-slate-500 text-[11px]">Vainasika Override</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 1: DAILY TRANSIT STRATEGY CALCULATOR -->
+        <section id="nav-transit" class="tab-content block space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>⚡</span> Interactive Daily Transit Strategy Checker</h3>
+                        <p class="text-xs text-slate-500">Select today's or any upcoming transiting Nakshatra to receive fine-tuned rules for a Jyeshtha native.</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-full md:w-72">
+                            <label for="transit-select" class="block text-xs font-bold text-slate-700 mb-1">Select Transiting Nakshatra:</label>
+                            <select id="transit-select" onchange="updateDailyTransitView()" class="w-full bg-amber-50/50 border border-amber-300 text-slate-800 text-sm rounded-xl p-2.5 font-semibold focus:ring-2 focus:ring-amber-500 outline-none"></select>
+                        </div>
+                        <!-- FEATURE 5: Print Report Button -->
+                        <button onclick="printDailyReport()" class="no-print mt-5 px-3 py-2.5 bg-indigo-500 hover:bg-indigo-600 text-white rounded-xl text-xs font-semibold transition flex items-center gap-1.5 shrink-0" title="Print / Export PDF">🖨️ Report</button>
+                    </div>
+                </div>
+                <div id="transit-result-card" class="bg-amber-50/40 rounded-xl p-5 border border-amber-200/70 space-y-5"></div>
+            </div>
+        </section>
+
+        <!-- TAB 2: 7-DAY WEEKLY FORECAST (NEW FEATURE 2) -->
+        <section id="nav-week" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 pb-3">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📅</span> 7-Day Nakshatra Forecast</h3>
+                    <p class="text-xs text-slate-500">Color-coded weekly planner showing upcoming transits with top actions and avoidances at a glance.</p>
+                </div>
+                <div id="weekly-forecast" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3"></div>
+                <div class="bg-slate-50 rounded-xl p-3 border border-slate-200 text-xs text-slate-500">
+                    <strong>Note:</strong> Transit positions are approximated using the Moon's average daily motion of ~13°20'. For precise muhurta timing, cross-reference with a Panchangam or ephemeris for your location.
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: 27 STARS MASTER GRID -->
+        <section id="nav-explorer" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📜</span> 27 Nakshatras Master Navtara Matrix</h3>
+                        <p class="text-xs text-slate-500">Explore all 27 stars calculated specifically for a Jyeshtha native.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2 text-xs">
+                        <input type="text" id="search-input" oninput="filterNakshatras()" placeholder="Search star, color, activity..." class="px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none w-full sm:w-48">
+                        <select id="filter-paryaya" onchange="filterNakshatras()" class="px-2.5 py-2 border border-slate-300 rounded-lg bg-white font-medium">
+                            <option value="ALL">All Cycles</option>
+                            <option value="1">1st (Physical)</option>
+                            <option value="2">2nd (Psychological)</option>
+                            <option value="3">3rd (Spiritual)</option>
+                        </select>
+                        <select id="filter-tara" onchange="filterNakshatras()" class="px-2.5 py-2 border border-slate-300 rounded-lg bg-white font-medium">
+                            <option value="ALL">All Tara Classes</option>
+                            <option value="FAVORABLE">Auspicious</option>
+                            <option value="MIXED">Mixed / Sensitive</option>
+                            <option value="CHALLENGING">Challenging / Purge</option>
+                        </select>
+                        <button onclick="resetFilters()" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold transition">Reset</button>
+                    </div>
+                </div>
+                <div id="nakshatra-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            </div>
+        </section>
+
+        <!-- TAB 4: LIFE DOMAIN ACTIVITY PLANNER -->
+        <section id="nav-domains" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-5">
+                <div class="border-b border-slate-100 pb-3">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>🎯</span> Life Domain Activity Planner for Jyeshtha</h3>
+                    <p class="text-xs text-slate-500">Fine-tuned actionable guidelines for key practical domains of life.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-xs font-semibold border-b border-slate-200 pb-2">
+                    <button onclick="selectDomain('job')" id="domain-btn-job" class="domain-btn px-3 py-2 rounded-lg bg-amber-500 text-white shadow-sm">💼 Job & Business</button>
+                    <button onclick="selectDomain('romance')" id="domain-btn-romance" class="domain-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100">❤️ Romance & Family</button>
+                    <button onclick="selectDomain('travel')" id="domain-btn-travel" class="domain-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100">🚗 Travel & Vehicles</button>
+                    <button onclick="selectDomain('repairs')" id="domain-btn-repairs" class="domain-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100">🔧 DIY & Repairs</button>
+                    <button onclick="selectDomain('declutter')" id="domain-btn-declutter" class="domain-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100">🗑️ Decluttering</button>
+                    <button onclick="selectDomain('finances')" id="domain-btn-finances" class="domain-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100">💰 Finances</button>
+                </div>
+                <div id="domain-content-area" class="space-y-4"></div>
+            </div>
+        </section>
+
+        <!-- TAB 5: NAKSHATRA COMPATIBILITY CALCULATOR (NEW FEATURE 3) -->
+        <section id="nav-compat" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-5">
+                <div class="border-b border-slate-100 pb-3">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>🤝</span> Nakshatra Compatibility Score Calculator</h3>
+                    <p class="text-xs text-slate-500">Enter another person's Janma Nakshatra to get a Tara compatibility analysis for relationships, partnerships, or collaborations.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="space-y-3">
+                        <div class="bg-amber-50/60 p-4 rounded-xl border border-amber-200/80 text-center space-y-2">
+                            <div class="w-12 h-12 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center mx-auto shadow text-xl">🦂</div>
+                            <div class="font-bold text-slate-800 text-sm">Your Star</div>
+                            <div class="text-amber-800 font-bold">Jyeshtha</div>
+                            <div class="text-xs text-slate-500">Mercury • Tikshna • Scorpio</div>
+                        </div>
+                        <div>
+                            <label for="compat-select" class="block text-xs font-bold text-slate-700 mb-1">Select Partner's Nakshatra:</label>
+                            <select id="compat-select" onchange="calculateCompatibility()" class="w-full bg-white border border-amber-300 text-slate-800 text-sm rounded-xl p-2.5 font-semibold focus:ring-2 focus:ring-amber-500 outline-none"></select>
+                        </div>
+                        <button onclick="calculateCompatibility()" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-semibold text-sm transition">Calculate Compatibility</button>
+                    </div>
+                    <div class="md:col-span-2" id="compat-result-area">
+                        <div class="bg-slate-50 rounded-xl p-8 border border-slate-200 text-center text-sm text-slate-400">Select a Nakshatra above to see compatibility analysis</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 6: PERSONAL ACTIVITY SCHEDULER (NEW FEATURE 4) -->
+        <section id="nav-tasks" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-5">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-100 pb-3">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📌</span> Personal Activity Scheduler</h3>
+                        <p class="text-xs text-slate-500">Pin tasks to their best-matching Nakshatras. Tasks are saved locally and persist across sessions.</p>
+                    </div>
+                    <button onclick="openTaskModal()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shrink-0">+ Add New Task</button>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="lg:col-span-2 space-y-3">
+                        <div class="flex items-center gap-2 text-xs">
+                            <select id="task-filter-category" onchange="renderTasks()" class="px-2.5 py-2 border border-slate-300 rounded-lg bg-white font-medium">
+                                <option value="ALL">All Categories</option>
+                                <option value="work">Work / Career</option>
+                                <option value="personal">Personal / Family</option>
+                                <option value="finance">Finance / Shopping</option>
+                                <option value="health">Health / Wellness</option>
+                                <option value="travel">Travel / Vehicle</option>
+                                <option value="home">Home / Repairs</option>
+                            </select>
+                            <select id="task-filter-status" onchange="renderTasks()" class="px-2.5 py-2 border border-slate-300 rounded-lg bg-white font-medium">
+                                <option value="pending">Pending</option>
+                                <option value="completed">Completed</option>
+                                <option value="ALL">All Status</option>
+                            </select>
+                        </div>
+                        <div id="task-list" class="space-y-2"></div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-200 space-y-2">
+                            <h4 class="font-bold text-indigo-900 text-sm">Smart Suggestions</h4>
+                            <p class="text-xs text-indigo-700">Tasks are auto-matched to the best Nakshatra transit based on their category and the classical Navtara system.</p>
+                        </div>
+                        <div id="task-star-summary" class="space-y-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 7: ANALYTICAL CHARTS -->
+        <section id="nav-analytics" class="tab-content hidden space-y-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
+                    <div class="border-b border-slate-100 pb-2">
+                        <h4 class="font-bold text-slate-800 text-sm">Navtara Efficacy & Favorability Distribution</h4>
+                        <p class="text-xs text-slate-500">Classification of 27 transits relative to Jyeshtha Moon</p>
+                    </div>
+                    <div class="chart-container"><canvas id="chartEfficacy"></canvas></div>
+                </div>
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
+                    <div class="border-b border-slate-100 pb-2">
+                        <h4 class="font-bold text-slate-800 text-sm">Three Navakam Spheres (Paryayas)</h4>
+                        <p class="text-xs text-slate-500">Physical (1-9) vs Psychological (10-18) vs Spiritual (19-27)</p>
+                    </div>
+                    <div class="chart-container"><canvas id="chartSpheres"></canvas></div>
+                </div>
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm lg:col-span-2 space-y-3">
+                    <div class="border-b border-slate-100 pb-2">
+                        <h4 class="font-bold text-slate-800 text-sm">Planetary Rulership Compatibility with Jyeshtha (Mercury)</h4>
+                        <p class="text-xs text-slate-500">Functional resonance between Mercury-ruled Jyeshtha and transiting Nakshatra lords</p>
+                    </div>
+                    <div class="chart-container"><canvas id="chartPlanets"></canvas></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 8: SPECIAL EXCEPTIONS & REMEDIES -->
+        <section id="nav-remedies" class="tab-content hidden space-y-5">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-1 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+                    <div class="border-b border-slate-100 pb-2">
+                        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2"><span>⭐</span> Special Sensitive Nakshatras</h3>
+                        <p class="text-xs text-slate-500">Classical positions overriding basic modulo-9 calculations</p>
+                    </div>
+                    <div id="special-stars-list" class="space-y-2.5 text-xs"></div>
+                </div>
+                <div class="lg:col-span-2 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+                    <div class="border-b border-slate-100 pb-2">
+                        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2"><span>🛡️</span> Tara Pariharam (Remedial Neutralization Matrix)</h3>
+                        <p class="text-xs text-slate-500">When unavoidable actions must be executed on difficult transits, perform these elemental donations (<em>Danam</em>) and protocols.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-amber-50/60 p-4 rounded-xl border border-amber-200/80 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-amber-900 text-sm">Janma Tara Remedies</span>
+                                <span class="bg-amber-200 text-amber-800 text-[10px] px-2 py-0.5 rounded font-bold">1st, 10th, 19th</span>
+                            </div>
+                            <p class="text-slate-600"><strong>Transits:</strong> Jyeshtha, Revati, Ashlesha</p>
+                            <p class="text-slate-700"><strong>Danam:</strong> <em>Saka Danam</em> (Yellow pumpkin, green leafy vegetables)</p>
+                            <p class="text-slate-700"><strong>Mantra / Deity:</strong> Lord Ganesha (<em>Sankat Nashan Stotram</em>)</p>
+                            <p class="text-xs text-amber-900 font-medium"><strong>Protocol:</strong> Delay major external launches until after mid-day; avoid long journeys.</p>
+                        </div>
+                        <div class="bg-rose-50/60 p-4 rounded-xl border border-rose-200/80 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-rose-900 text-sm">Vipat Tara Remedies</span>
+                                <span class="bg-rose-200 text-rose-800 text-[10px] px-2 py-0.5 rounded font-bold">3rd, 12th, 21st</span>
+                            </div>
+                            <p class="text-slate-600"><strong>Transits:</strong> Purva Ashadha, Bharani, Purva Phalguni</p>
+                            <p class="text-slate-700"><strong>Danam:</strong> <em>Guda Danam</em> (Jaggery, unrefined sugar, medicines)</p>
+                            <p class="text-slate-700"><strong>Mantra / Deity:</strong> Lord Rama (<em>Ram Raksha Stotra</em>) / Devi Shailputri</p>
+                            <p class="text-xs text-rose-900 font-medium"><strong>Protocol:</strong> Refrain from signing binding financial commitments.</p>
+                        </div>
+                        <div class="bg-orange-50/60 p-4 rounded-xl border border-orange-200/80 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-orange-900 text-sm">Pratyak Tara Remedies</span>
+                                <span class="bg-orange-200 text-orange-800 text-[10px] px-2 py-0.5 rounded font-bold">5th, 14th, 23rd</span>
+                            </div>
+                            <p class="text-slate-600"><strong>Transits:</strong> Shravana, Rohini, Hasta</p>
+                            <p class="text-slate-700"><strong>Danam:</strong> <em>Lavana / Ghee Danam</em> (Rock salt or clarified butter)</p>
+                            <p class="text-slate-700"><strong>Mantra / Deity:</strong> Lord Vishnu / Narasimha (<em>Vishnu Sahasranama</em>)</p>
+                            <p class="text-xs text-orange-900 font-medium"><strong>Protocol:</strong> Double-check paperwork, build buffer time into schedules.</p>
+                        </div>
+                        <div class="bg-purple-50/60 p-4 rounded-xl border border-purple-200/80 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-purple-900 text-sm">Vadha Tara Remedies</span>
+                                <span class="bg-purple-200 text-purple-800 text-[10px] px-2 py-0.5 rounded font-bold">7th, 16th, 25th</span>
+                            </div>
+                            <p class="text-slate-600"><strong>Transits:</strong> Shatabhisha, Ardra, Swati</p>
+                            <p class="text-slate-700"><strong>Danam:</strong> <em>Tila Sahita Suvarna Danam</em> (Sesame seeds with gold / dark items)</p>
+                            <p class="text-slate-700"><strong>Mantra / Deity:</strong> Lord Shiva (<em>Rudra Ashtakam</em>) / Devi Kalratri</p>
+                            <p class="text-xs text-purple-900 font-medium"><strong>Protocol:</strong> Limit actions strictly to demolition, purging, or ending harmful ties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Detail Modal -->
+    <div id="detail-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-xl border border-amber-200 space-y-4 max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <div class="flex items-start justify-between border-b border-slate-100 pb-3">
+                <div class="flex items-center space-x-3">
+                    <div id="modal-color-swatch" class="w-8 h-8 rounded-full border border-slate-300 shadow-sm flex items-center justify-center font-bold text-xs text-white"></div>
+                    <div>
+                        <h3 id="modal-star-name" class="text-lg font-bold text-slate-900">Nakshatra Name</h3>
+                        <p id="modal-star-subtitle" class="text-xs text-slate-500">Tara Class & Cycle</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-xl font-bold p-1">&times;</button>
+            </div>
+            <div id="modal-body-content" class="space-y-4 text-xs"></div>
+            <div class="pt-3 border-t border-slate-100 flex justify-end gap-2">
+                <button onclick="pinTaskFromModal()" class="px-4 py-2 bg-indigo-500 text-white rounded-xl font-semibold hover:bg-indigo-600 transition text-xs">📌 Pin a Task Here</button>
+                <button onclick="closeModal()" class="px-4 py-2 bg-amber-500 text-white rounded-xl font-semibold hover:bg-amber-600 transition text-xs">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Task Add Modal (FEATURE 4) -->
+    <div id="task-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-amber-200 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 class="text-base font-bold text-slate-900">📌 Add Task to Scheduler</h3>
+                <button onclick="closeTaskModal()" class="text-slate-400 hover:text-slate-600 text-xl font-bold p-1">&times;</button>
+            </div>
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">Task Description</label>
+                    <input type="text" id="task-input-name" placeholder="e.g. Schedule dentist appointment" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">Category</label>
+                    <select id="task-input-category" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg bg-white font-medium">
+                        <option value="work">Work / Career</option>
+                        <option value="personal">Personal / Family</option>
+                        <option value="finance">Finance / Shopping</option>
+                        <option value="health">Health / Wellness</option>
+                        <option value="travel">Travel / Vehicle</option>
+                        <option value="home">Home / Repairs</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">Assign to Nakshatra (auto-suggested)</label>
+                    <select id="task-input-star" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg bg-white font-medium"></select>
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">Priority</label>
+                    <select id="task-input-priority" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg bg-white font-medium">
+                        <option value="high">High</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex gap-2 pt-2">
+                <button onclick="saveTask()" class="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-semibold text-sm transition">Save Task</button>
+                <button onclick="closeTaskModal()" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-semibold text-sm transition">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-amber-200/60 py-4 mt-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1">
+            <p><strong>Jyeshtha Native Navtara Analytical Platform</strong> • Enhanced Interactive Application</p>
+            <p>Based on Muhurta Chintamani, Kalaprakasika & Classical Vedic Electional Systems</p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== CORE DATA =====
+        const nakshatraData = [
+            { id:1, name:"Ashwini", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:11, taraClass:"Sampat", taraCategory:"FAVORABLE", color:"Crimson / Blood Red", colorHex:"#DC2626", ruler:"Ketu", nature:"Kshipra / Laghu (Swift)", do:"Fast financial deals, taking delivery of vehicles, short travel, buying tools, medical visits.", avoid:"Holding stagnant cash, slow long-term commitments.", rationale:"2nd cycle Sampat star brings rapid commercial gains and high trade velocity.", danam:"None required; favorable transit." },
+            { id:2, name:"Bharani", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:12, taraClass:"Vipat", taraCategory:"CHALLENGING", specialTitle:"Desa Nakshatra (12th)", color:"Dark Red / Blood Red", colorHex:"#991B1B", ruler:"Venus", nature:"Ugra (Fierce)", do:"Competitor analysis, resolving legal disputes, risk audits, purging unwanted items.", avoid:"Long-distance travel, contract signings, romantic dates, buying luxury goods.", rationale:"12th Desa star combined with Vipat Tara creates elemental friction between Venus and Mercury.", danam:"Guda Danam (Jaggery / Unrefined Sugar)" },
+            { id:3, name:"Krittika", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:13, taraClass:"Kshema", taraCategory:"FAVORABLE", specialTitle:"Abhisheka Nakshatra (13th)", color:"White / Flame Red", colorHex:"#EF4444", ruler:"Sun", nature:"Misra / Mixed", do:"Setting health regimens, executive planning, cooking feasts, home repair planning.", avoid:"Impulsive arguments, reckless financial speculation.", rationale:"13th Abhisheka position under Sun-ruled Kshema provides power, promotion, and health vitality.", danam:"None required; favorable transit." },
+            { id:4, name:"Rohini", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:14, taraClass:"Pratyak", taraCategory:"CHALLENGING", color:"Golden / Bright Pink", colorHex:"#F59E0B", ruler:"Moon", nature:"Sthira (Fixed)", do:"Paperwork audits, clearing administrative backlogs, internal system reviews.", avoid:"Public product debuts, signing joint ventures, launching new outreach campaigns.", rationale:"Sharp clash between steady analytical Mercury and changing emotional Moon tides.", danam:"Lavana / Ghee Danam (Rock salt or Clarified Butter)" },
+            { id:5, name:"Mrigashira", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:15, taraClass:"Sadhaka", taraCategory:"FAVORABLE", color:"Silver Grey", colorHex:"#94A3B8", ruler:"Mars", nature:"Mridu (Soft/Gentle)", do:"Romance, marital date nights, creative arts, technical fix-it tasks, planning travel.", avoid:"Passive procrastination, unfocused multitasking.", rationale:"Soft, Mars-ruled Sadhaka star combines drive with creative precision and emotional harmony.", danam:"None required; highly productive transit." },
+            { id:6, name:"Ardra", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:16, taraClass:"Vadha", taraCategory:"CHALLENGING", specialTitle:"Sanghaatika Nakshatra (16th)", color:"Smoky Grey / Dark Blue", colorHex:"#475569", ruler:"Rahu", nature:"Tikshna (Sharp)", do:"Decluttering, throwing away broken items, pest control, severing toxic ties.", avoid:"Auspicious ceremonies, major purchases, travel, social gatherings, group launches.", rationale:"16th Sanghaatika position under Rahu-ruled Vadha causes group friction and structural stress.", danam:"Tila Sahita Suvarna Danam (Sesame seeds with gold/dark items)" },
+            { id:7, name:"Punarvasu", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:17, taraClass:"Mitra", taraCategory:"FAVORABLE", color:"Off-White / Yellow", colorHex:"#FEF08A", ruler:"Jupiter", nature:"Chara (Movable)", do:"Reconnecting with family, hosting dinners, long-distance travel, team expansion.", avoid:"Aggressive confrontations, forced isolationism.", rationale:"Jupiter-ruled Mitra star brings expansion, reconciliation, and diplomatic ease.", danam:"None required; favorable transit." },
+            { id:8, name:"Pushya", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:18, taraClass:"Parama Mitra", taraCategory:"FAVORABLE", specialTitle:"Saamudaayika Nakshatra (18th)", color:"Golden Yellow", colorHex:"#EAB308", ruler:"Saturn", nature:"Kshipra (Swift)", do:"Buying gold/jewelry, public launches, family reunions, accepting job offers, spiritual vows.", avoid:"Deceptive dealings, regulatory or ethical shortcuts.", rationale:"18th Saamudaayika star offers maximum public success, stability, and enduring prosperity.", danam:"None required; supreme transit." },
+            { id:9, name:"Ashlesha", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:19, taraClass:"Janma", taraCategory:"MIXED", color:"Reddish Black / Dark Red", colorHex:"#7F1D1D", ruler:"Mercury", nature:"Tikshna (Sharp)", do:"Deep research, self-reflection, solitary study, vulnerability analysis.", avoid:"Public launches, long journeys, signing binding personal guarantees.", rationale:"Mercury-ruled Janma star in 3rd cycle activates karmic study but heightens psychological sensitivity.", danam:"Saka Danam (Green vegetables)" },
+            { id:10, name:"Magha", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:20, taraClass:"Sampat", taraCategory:"FAVORABLE", color:"Ivory / Cream White", colorHex:"#FEF3C7", ruler:"Ketu", nature:"Ugra (Fierce)", do:"Ancestral rituals, estate planning, legacy investments, seeking elder blessings.", avoid:"Disrespecting elders/mentors, hasty exits from core revenue streams.", rationale:"Ketu-ruled Sampat star governing Pitris (ancestors) secures long-term family assets.", danam:"None required; favorable transit." },
+            { id:11, name:"Purva Phalguni", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:21, taraClass:"Vipat", taraCategory:"CHALLENGING", color:"Light Brown / Bright Pink", colorHex:"#EC4899", ruler:"Venus", nature:"Ugra (Fierce)", do:"Dispute preparation, risk containment, quiet rest, internal security checks.", avoid:"Weddings, engagements, proposals, contract signings, luxury shopping.", rationale:"Venus-ruled Vipat star induces emotional conflict and resource drain.", danam:"Guda Danam (Jaggery / Sweets)" },
+            { id:12, name:"Uttara Phalguni", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:22, taraClass:"Kshema", taraCategory:"CHALLENGING", specialTitle:"Vainasika Nakshatra (22nd) OVERRIDE", color:"Bright White / Golden", colorHex:"#FACC15", ruler:"Sun", nature:"Uttara / Fixed", do:"Strictly routine background chores, quiet household maintenance.", avoid:"STRICTLY AVOID ALL major life events, launches, weddings, or property deals.", rationale:"CRITICAL EXCEPTION: 22nd star is Vainasika ('The Destroyer'), overriding nominal Kshema status.", danam:"Special Vainasika Shanti & Sun Danam" },
+            { id:13, name:"Hasta", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:23, taraClass:"Pratyak", taraCategory:"CHALLENGING", color:"Deep Green / White", colorHex:"#15803D", ruler:"Moon", nature:"Kshipra (Swift)", do:"Fixing system bugs, adjusting household budgets, refining hands-on crafts quietly.", avoid:"Purchasing long-term capital assets, launching major public campaigns.", rationale:"Moon-ruled Pratyak transit brings practical resistance and uncooperative vendors.", danam:"Lavana / Ghee Danam (Rock salt / Ghee)" },
+            { id:14, name:"Chitra", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:24, taraClass:"Sadhaka", taraCategory:"FAVORABLE", color:"Multi-color / Pearl / Black", colorHex:"#6366F1", ruler:"Mars", nature:"Mridu (Soft)", do:"Technical DIY repairs, architectural drafting, surgical procedures, project execution.", avoid:"Sloppy craftsmanship, rushed or low-quality execution.", rationale:"Mars-ruled Sadhaka star grants high manual dexterity and design precision.", danam:"None required; highly productive transit." },
+            { id:15, name:"Swati", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:25, taraClass:"Vadha", taraCategory:"CHALLENGING", specialTitle:"Maanasa Nakshatra (25th)", color:"Black / Coral", colorHex:"#1E293B", ruler:"Rahu", nature:"Chara (Movable)", do:"Clearing mental clutter, purging unnecessary belongings, ending bad habits.", avoid:"Emotional commitments, long travel, launching projects, major shopping.", rationale:"25th Maanasa position under Rahu-ruled Vadha triggers psychological stress and energy loss.", danam:"Tila Sahita Suvarna Danam (Sesame / Black items)" },
+            { id:16, name:"Vishakha", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:26, taraClass:"Mitra", taraCategory:"FAVORABLE", color:"Golden Yellow / Red-Yellow", colorHex:"#D97706", ruler:"Jupiter", nature:"Misra / Mixed", do:"Joint ventures, strategic partnerships, resolving family disputes, networking.", avoid:"Reneging on shared promises, forced unilateral decisions.", rationale:"Jupiter-ruled Mitra star aligns shared goals and fosters strategic collaboration.", danam:"None required; favorable transit." },
+            { id:17, name:"Anuradha", paryaya:3, cycleName:"Spiritual Sphere", countFromJyeshtha:27, taraClass:"Parama Mitra", taraCategory:"FAVORABLE", color:"Red-Lotus / Deep Red", colorHex:"#B91C1C", ruler:"Saturn", nature:"Mridu (Soft)", do:"Romance, date nights, signing major contracts, business launches, ceremonies.", avoid:"Deceptive dealings; extra caution if transiting Moon is in Pada 4 with malefic aspects.", rationale:"27th star Parama Mitra is soft and exceptionally favorable for enduring success.", danam:"None required; supreme transit." },
+            { id:18, name:"Jyeshtha", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:1, taraClass:"Janma", taraCategory:"MIXED", specialTitle:"Janma Nakshatra (Native Star)", color:"Cream / Dark Green", colorHex:"#047857", ruler:"Mercury", nature:"Tikshna (Sharp)", do:"Self-care, preliminary research, routine administration, purging distasteful chores.", avoid:"Business inaugurations, long travel, marriage, entering binding legal liabilities.", rationale:"Native birth star. Heightens sensitivity; Tikshna quality favors tough defensive chores.", danam:"Saka Danam (Yellow Pumpkin / Green Veggies)" },
+            { id:19, name:"Mula", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:2, taraClass:"Sampat", taraCategory:"FAVORABLE", color:"Golden Brown", colorHex:"#B45309", ruler:"Ketu", nature:"Tikshna (Sharp)", do:"Capital investments, purchasing property/assets, corporate acquisitions, trade.", avoid:"Total liquidations, exiting primary revenue ventures.", rationale:"1st cycle Sampat star cuts through inefficiency to secure baseline financial assets.", danam:"None required; wealth generation transit." },
+            { id:20, name:"Purva Ashadha", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:3, taraClass:"Vipat", taraCategory:"CHALLENGING", color:"Dark Blue / Yellowish White", colorHex:"#1E3A8A", ruler:"Venus", nature:"Ugra (Fierce)", do:"Security audits, cyber-security updates, removing hazardous household items.", avoid:"Major financial outlays, long travel, contract signings, weddings.", rationale:"1st cycle Vipat star induces physical/financial risk and budget overruns.", danam:"Guda Danam (Jaggery / Sugar)" },
+            { id:21, name:"Uttara Ashadha", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:4, taraClass:"Kshema", taraCategory:"FAVORABLE", specialTitle:"Jaati Nakshatra (4th)", color:"Copper / Bright Yellow", colorHex:"#CA8A04", ruler:"Sun", nature:"Sthira (Fixed)", do:"Property acquisition, health regimens, family governance, home repair planning.", avoid:"Reckless physical exposure, radical operational shifts.", rationale:"4th Jaati star under Sun-ruled Kshema establishes stability and social standing.", danam:"None required; protective transit." },
+            { id:22, name:"Shravana", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:5, taraClass:"Pratyak", taraCategory:"CHALLENGING", color:"Light Blue / White", colorHex:"#0284C7", ruler:"Moon", nature:"Chara (Movable)", do:"Active listening/learning, auditing records, correcting paperwork, internal review.", avoid:"Product debuts, signing partnership contracts, house-warming ceremonies.", rationale:"1st cycle Pratyak star introduces counter-party pushback and delays.", danam:"Lavana / Ghee Danam (Rock salt / Ghee)" },
+            { id:23, name:"Dhanishta", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:6, taraClass:"Sadhaka", taraCategory:"FAVORABLE", color:"Silver / Bright Gold", colorHex:"#EAB308", ruler:"Mars", nature:"Chara (Movable)", do:"Travel, vehicle delivery, high-focus repairs, athletic training, completing milestones.", avoid:"Procrastination, passive waiting.", rationale:"1st cycle Sadhaka star provides physical stamina and rapid goal execution.", danam:"None required; high performance transit." },
+            { id:24, name:"Shatabhisha", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:7, taraClass:"Vadha", taraCategory:"CHALLENGING", specialTitle:"Naidhana Nakshatra (7th)", color:"Blue-Green / Aquamarine", colorHex:"#0D9488", ruler:"Rahu", nature:"Chara (Movable)", do:"Total decluttering, throwing away junk, pest control, demolition, medical therapy.", avoid:"All auspicious events, buying long-term assets, starting journeys, contracts.", rationale:"7th Naidhana star under Rahu-ruled Vadha strictly requires termination or purging tasks.", danam:"Tila Sahita Suvarna Danam (Sesame / Gold / Dark items)" },
+            { id:25, name:"Purva Bhadrapada", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:8, taraClass:"Mitra", taraCategory:"FAVORABLE", color:"Silver Grey / Purple", colorHex:"#7C3AED", ruler:"Jupiter", nature:"Ugra (Fierce)", do:"Diplomatic meetings, seeking mentorship, team collaboration, networking.", avoid:"Unilateral aggressive actions bypassing consensus.", rationale:"Jupiter-ruled Mitra star tempers vigilance and builds team consensus.", danam:"None required; favorable transit." },
+            { id:26, name:"Uttara Bhadrapada", paryaya:1, cycleName:"Physical Sphere", countFromJyeshtha:9, taraClass:"Parama Mitra", taraCategory:"FAVORABLE", color:"Deep Blue / Purple", colorHex:"#4338CA", ruler:"Saturn", nature:"Sthira (Fixed)", do:"Foundational family ventures, investments, Griha Pravesh, long-term leases.", avoid:"Unethical practices, regulatory or moral compromises.", rationale:"Saturn-ruled Parama Mitra provides structure, endurance, and supreme alignment.", danam:"None required; highly auspicious transit." },
+            { id:27, name:"Revati", paryaya:2, cycleName:"Psychological Sphere", countFromJyeshtha:10, taraClass:"Janma", taraCategory:"MIXED", specialTitle:"Karma Nakshatra (10th)", color:"Multi-colored / Pearl White", colorHex:"#10B981", ruler:"Mercury", nature:"Mridu (Soft)", do:"Workplace organization, skill development, career planning, routine business.", avoid:"Sudden career exits, entering binding financial guarantees.", rationale:"10th Karma star controls workplace status; soft Mercury energy favors skill updating.", danam:"Saka Danam (Green vegetables)" }
+        ];
+
+        const nakshatraOrder = [
+            "Ashwini","Bharani","Krittika","Rohini","Mrigashira","Ardra","Punarvasu","Pushya","Ashlesha",
+            "Magha","Purva Phalguni","Uttara Phalguni","Hasta","Chitra","Swati","Vishakha","Anuradha","Jyeshtha",
+            "Mula","Purva Ashadha","Uttara Ashadha","Shravana","Dhanishta","Shatabhisha","Purva Bhadrapada","Uttara Bhadrapada","Revati"
+        ];
+
+        // Yoni Kuta data for compatibility
+        const yoniMap = {
+            "Ashwini":"Horse","Bharani":"Elephant","Krittika":"Goat","Rohini":"Serpent","Mrigashira":"Serpent",
+            "Ardra":"Dog","Punarvasu":"Cat","Pushya":"Goat","Ashlesha":"Cat","Magha":"Rat",
+            "Purva Phalguni":"Rat","Uttara Phalguni":"Cow","Hasta":"Buffalo","Chitra":"Tiger","Swati":"Buffalo",
+            "Vishakha":"Tiger","Anuradha":"Deer","Jyeshtha":"Deer","Mula":"Dog","Purva Ashadha":"Monkey",
+            "Uttara Ashadha":"Mongoose","Shravana":"Monkey","Dhanishta":"Lion","Shatabhisha":"Horse",
+            "Purva Bhadrapada":"Lion","Uttara Bhadrapada":"Cow","Revati":"Elephant"
+        };
+
+        const nadiMap = {
+            "Ashwini":"Vata","Bharani":"Pitta","Krittika":"Kapha","Rohini":"Vata","Mrigashira":"Pitta",
+            "Ardra":"Kapha","Punarvasu":"Vata","Pushya":"Pitta","Ashlesha":"Kapha","Magha":"Vata",
+            "Purva Phalguni":"Pitta","Uttara Phalguni":"Kapha","Hasta":"Vata","Chitra":"Pitta","Swati":"Kapha",
+            "Vishakha":"Vata","Anuradha":"Pitta","Jyeshtha":"Kapha","Mula":"Vata","Purva Ashadha":"Pitta",
+            "Uttara Ashadha":"Kapha","Shravana":"Vata","Dhanishta":"Pitta","Shatabhisha":"Kapha",
+            "Purva Bhadrapada":"Vata","Uttara Bhadrapada":"Pitta","Revati":"Kapha"
+        };
+
+        const yoniEnemies = { "Horse":"Buffalo", "Buffalo":"Horse", "Elephant":"Lion", "Lion":"Elephant", "Dog":"Deer", "Deer":"Dog", "Serpent":"Mongoose", "Mongoose":"Serpent", "Rat":"Cat", "Cat":"Rat", "Cow":"Tiger", "Tiger":"Cow", "Monkey":"Goat", "Goat":"Monkey" };
+
+        const domainData = {
+            job: { title:"Job Search, Business Opportunities & Interviews", icon:"💼", description:"Strategy for maximizing offer conversions, interview performance, cold outreach, and salary negotiations.", sections:[
+                { heading:"High-Stakes Interviews & Technical Tests", stars:"Sadhaka Days: Dhanishta, Mrigashira, Chitra", badge:"Auspicious Execution", badgeClass:"bg-emerald-100 text-emerald-800", text:"Schedule final-round interviews, coding challenges, pitch decks, and high-focus presentations. Mars supplies diagnostic precision." },
+                { heading:"Offer Acceptance & Signing Contracts", stars:"Parama Mitra Days: Pushya, Uttara Bhadrapada, Anuradha", badge:"Supreme Alignment", badgeClass:"bg-indigo-100 text-indigo-800", text:"Sign employment contracts, launch new business ventures, accept offer letters, and meet senior executives." },
+                { heading:"Salary Negotiations & Pitching Rates", stars:"Sampat Days: Ashwini, Mula, Magha", badge:"Wealth Inflow", badgeClass:"bg-amber-100 text-amber-800", text:"Negotiate compensation packages, quote client retainers, discuss budget terms, and request fee increases." },
+                { heading:"Cold Outreach & Recruiter Follow-ups", stars:"Mitra & Kshema Days: Punarvasu, Vishakha, Purva Bhadrapada, Krittika, Uttara Ashadha", badge:"Relational Ease", badgeClass:"bg-blue-100 text-blue-800", text:"Send LinkedIn messages, request warm introductions, hold coffee chats. *CRITICAL EXCEPTION:* Skip Uttara Phalguni due to 22nd Vainasika rule." },
+                { heading:"Days to Avoid High-Stakes Pitching", stars:"Vipat & Vadha Days: Bharani, Purva Ashadha, Purva Phalguni, Ardra, Shatabhisha, Swati", badge:"High Friction / Purge", badgeClass:"bg-rose-100 text-rose-800", text:"Strictly avoid scheduling interviews or signing offers. Use exclusively to decline toxic offers or purge dead application leads." }
+            ]},
+            romance: { title:"Romance, Intimacy & Marital Bonding", icon:"❤️", description:"Harmonizing personal relationship dynamics by choosing soft, friendly transits.", sections:[
+                { heading:"Optimal Days for Romance & Date Nights", stars:"Pushya, Anuradha, Mrigashira, Chitra, Punarvasu", badge:"Mridu / Soft Stars", badgeClass:"bg-pink-100 text-pink-800", text:"Plan intimate date nights, marital intimacy, deep heart-to-heart discussions, gift exchanges, and resolving past friction." },
+                { heading:"Colors to Wear for Harmony", stars:"Golden Yellow, Silver Grey, Lotus Red", badge:"Color Resonance", badgeClass:"bg-amber-100 text-amber-800", text:"Wearing soft golden, silver grey, or red-lotus tones softens Jyeshtha's intense edge and invites warmth." },
+                { heading:"Transits to Strictly Avoid", stars:"Purva Ashadha, Bharani, Purva Phalguni (Vipat) & Ardra, Swati (Vadha)", badge:"Ugra / Fierce Conflict", badgeClass:"bg-rose-100 text-rose-800", text:"Fierce Venus and Rahu transits induce ego clashes and misunderstandings. Do not force romantic talks on these days." }
+            ]},
+            travel: { title:"Travel, Family Outings & Driving", icon:"🚗", description:"Navigating journeys, vehicle acquisitions, and road safety.", sections:[
+                { heading:"Best Travel & Vehicle Delivery Days", stars:"Ashwini, Dhanishta, Punarvasu, Pushya", badge:"Chara / Laghu Stars", badgeClass:"bg-emerald-100 text-emerald-800", text:"Plan family road trips, airport travel, long-distance commuting, and taking delivery of new vehicles." },
+                { heading:"The Bharani Travel Exception (Desa Star)", stars:"Bharani (12th Nakshatra from Jyeshtha)", badge:"Desa Conflict", badgeClass:"bg-rose-100 text-rose-800", text:"Bharani is the 12th Desa Nakshatra under Vipat Tara. Traveling leads to traffic bottlenecks, transit delays, or vehicle issues." }
+            ]},
+            repairs: { title:"Home DIY, Servicing & Fixing Things", icon:"🔧", description:"Managing tools, mechanical repairs, plumbing, and physical home maintenance.", sections:[
+                { heading:"Optimal Execution Days for Maintenance", stars:"Dhanishta, Chitra, Mrigashira, Krittika, Uttara Ashadha", badge:"Mars / Sun Driven", badgeClass:"bg-orange-100 text-orange-800", text:"Plumbing, electrical fixes, vehicle servicing, assembling complex furniture, and home DIY projects." },
+                { heading:"Critical Override Warning", stars:"Uttara Phalguni (22nd Vainasika)", badge:"Structural Danger", badgeClass:"bg-red-100 text-red-800", text:"Avoid structural home repairs or renovations on Uttara Phalguni. Hidden flaws under Vainasika lead to recurring damage." }
+            ]},
+            declutter: { title:"Decluttering, Purging & Throwing Away Junk", icon:"🗑️", description:"Channeling destructive transits constructively to remove clutter.", sections:[
+                { heading:"Prime Days for Total Discard & Purging", stars:"Shatabhisha, Ardra, Swati (Vadha) & Jyeshtha (Janma / Tikshna)", badge:"Terminating Energy", badgeClass:"bg-purple-100 text-purple-800", text:"Throwing out broken appliances, deep pest control, clearing garage/attic, discarding old clothes, and dismantling non-viable infrastructure." },
+                { heading:"What NOT to do on Purge Days", stars:"All Vadha Days", badge:"Strict Restriction", badgeClass:"bg-rose-100 text-rose-800", text:"Never buy new capital goods, sign contracts, or hold celebrations on Vadha days." }
+            ]},
+            finances: { title:"Household Budgeting, Banking & Shopping", icon:"💰", description:"Managing capital assets, bulk buying, investments, and financial planning.", sections:[
+                { heading:"Asset Acquisition & Gold Buying", stars:"Pushya, Ashwini, Mula, Magha, Anuradha", badge:"Sampat & Parama Mitra", badgeClass:"bg-amber-100 text-amber-800", text:"Bulk grocery buying, major appliance purchases, buying gold/jewelry (Pushya Swarna Kharidi), opening child savings accounts." },
+                { heading:"Avoid Impulse Spending", stars:"Purva Ashadha, Bharani (Vipat)", badge:"Financial Friction", badgeClass:"bg-rose-100 text-rose-800", text:"Avoid major retail shopping on Vipat days; leads to impulse buying or purchasing defective, overpriced goods." }
+            ]}
+        };
+
+        const specialStarsData = [
+            { title:"Janma Nakshatra", count:"1st", star:"Jyeshtha", note:"Native vitality & body balance. Keep physical stress low." },
+            { title:"Jaati Nakshatra", count:"4th", star:"Uttara Ashadha", note:"Community, family lineage & social standing." },
+            { title:"Naidhana Nakshatra", count:"7th", star:"Shatabhisha", note:"Severe physical vulnerability. Use strictly for purging." },
+            { title:"Karma Nakshatra", count:"10th", star:"Revati", note:"Professional execution, workplace status & career strategy." },
+            { title:"Desa Nakshatra", count:"12th", star:"Bharani", note:"Foreign travel, relocation & territorial movement. Avoid travel." },
+            { title:"Abhisheka Nakshatra", count:"13th", star:"Krittika", note:"Promotions, leadership investiture & executive power." },
+            { title:"Sanghaatika Nakshatra", count:"16th", star:"Ardra", note:"Group ventures & corporate coalitions. Watch for group friction." },
+            { title:"Saamudaayika Nakshatra", count:"18th", star:"Pushya", note:"Public relations, mass endeavors & community success." },
+            { title:"Vainasika Nakshatra", count:"22nd", star:"Uttara Phalguni", note:"Structural ruin. OVERRIDES Kshema rating—strictly avoid major events!" },
+            { title:"Maanasa Nakshatra", count:"25th", star:"Swati", note:"Psychological equilibrium & mental focus. Protect mental peace." }
+        ];
+
+        const categoryStarMap = {
+            work: [8,17,23,5,14,1,19,10],
+            personal: [17,5,7,8,16],
+            finance: [8,1,19,10,17,26],
+            health: [3,21,18,23],
+            travel: [1,23,7,8],
+            home: [23,14,5,3,21]
+        };
+
+        let chartEfficacyInst = null, chartSpheresInst = null, chartPlanetsInst = null;
+        let currentModalStarId = null;
+
+        // ===== INIT =====
+        document.addEventListener('DOMContentLoaded', () => {
+            populateTransitSelect();
+            updateDailyTransitView();
+            renderNakshatraGrid(nakshatraData);
+            selectDomain('job');
+            renderSpecialStars();
+            initCharts();
+            populateCompatSelect();
+            populateTaskStarSelect();
+            renderTasks();
+            renderWeeklyForecast();
+            startLiveClock();
+        });
+
+        // ===== FEATURE 1: LIVE CLOCK & AUTO-DETECT =====
+        function getApproxNakshatraIndex(date) {
+            const ref = new Date(Date.UTC(2024, 0, 11, 0, 0, 0));
+            const refIdx = 11;
+            const msPerDay = 86400000;
+            const daysElapsed = (date.getTime() - ref.getTime()) / msPerDay;
+            const nakshatraDays = 1.0125;
+            const transitsElapsed = daysElapsed / nakshatraDays;
+            let idx = (refIdx + Math.floor(transitsElapsed)) % 27;
+            if (idx < 0) idx += 27;
+            const fraction = transitsElapsed - Math.floor(transitsElapsed);
+            const remainingHours = (1 - fraction) * nakshatraDays * 24;
+            return { index: idx, remainingHours: remainingHours };
+        }
+
+        function startLiveClock() {
+            function update() {
+                const now = new Date();
+                document.getElementById('live-clock').textContent = now.toLocaleTimeString();
+
+                const approx = getApproxNakshatraIndex(now);
+                const starName = nakshatraOrder[approx.index];
+                document.getElementById('live-star-name').textContent = starName;
+
+                const h = Math.floor(approx.remainingHours);
+                const m = Math.floor((approx.remainingHours - h) * 60);
+                const s = Math.floor(((approx.remainingHours - h) * 60 - m) * 60);
+                document.getElementById('live-countdown').textContent =
+                    `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+
+                const starData = nakshatraData.find(s => s.name === starName);
+                if (starData) {
+                    document.getElementById('transit-select').value = starData.id;
+                }
+            }
+            update();
+            setInterval(update, 1000);
+            updateDailyTransitView();
+        }
+
+        // ===== FEATURE 2: WEEKLY FORECAST =====
+        function renderWeeklyForecast() {
+            const container = document.getElementById('weekly-forecast');
+            container.innerHTML = '';
+            const now = new Date();
+            const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+            for (let i = 0; i < 7; i++) {
+                const day = new Date(now.getTime() + i * 86400000);
+                const approx = getApproxNakshatraIndex(day);
+                const starName = nakshatraOrder[approx.index];
+                const starData = nakshatraData.find(s => s.name === starName);
+                if (!starData) continue;
+
+                let borderColor = 'border-emerald-300';
+                let bgColor = 'bg-emerald-50/60';
+                let statusIcon = '✅';
+                if (starData.taraCategory === 'CHALLENGING') { borderColor = 'border-rose-300'; bgColor = 'bg-rose-50/60'; statusIcon = '❌'; }
+                if (starData.taraCategory === 'MIXED') { borderColor = 'border-amber-300'; bgColor = 'bg-amber-50/60'; statusIcon = '⚠️'; }
+
+                const isToday = i === 0;
+                const card = document.createElement('div');
+                card.className = `week-card ${bgColor} rounded-xl p-3 border-2 ${borderColor} ${isToday ? 'ring-2 ring-amber-500 ring-offset-2' : ''} space-y-2 cursor-pointer`;
+                card.onclick = () => { switchTab('nav-transit'); document.getElementById('transit-select').value = starData.id; updateDailyTransitView(); };
+
+                card.innerHTML = `
+                    <div class="text-center">
+                        <div class="text-[10px] font-bold text-slate-400 uppercase">${dayNames[day.getDay()]}</div>
+                        <div class="text-lg font-bold text-slate-800">${day.getDate()}</div>
+                        ${isToday ? '<span class="text-[9px] bg-amber-500 text-white px-1.5 py-0.5 rounded font-bold">TODAY</span>' : ''}
+                    </div>
+                    <div class="text-center">
+                        <div class="w-7 h-7 rounded-full mx-auto flex items-center justify-center text-white text-xs font-bold shadow-sm" style="background-color:${starData.colorHex}">${statusIcon}</div>
+                        <div class="font-bold text-slate-800 text-xs mt-1 leading-tight">${starData.name}</div>
+                        <div class="text-[10px] text-slate-500">${starData.taraClass}</div>
+                    </div>
+                    <div class="text-[10px] text-slate-600 leading-snug border-t border-slate-200/60 pt-1.5">
+                        <div class="text-emerald-700 font-medium line-clamp-2">${starData.do.split(',')[0]}</div>
+                    </div>
+                `;
+                container.appendChild(card);
+            }
+        }
+
+        // ===== TAB SWITCHER =====
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('nav button').forEach(el => {
+                el.classList.remove('bg-amber-500','text-white','shadow-sm');
+                el.classList.add('text-slate-600');
+            });
+            document.getElementById(tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('btn-' + tabId.replace('nav-',''));
+            if (activeBtn) { activeBtn.classList.add('bg-amber-500','text-white','shadow-sm'); activeBtn.classList.remove('text-slate-600'); }
+            if (tabId === 'nav-analytics') {
+                setTimeout(() => {
+                    if (chartEfficacyInst) chartEfficacyInst.resize();
+                    if (chartSpheresInst) chartSpheresInst.resize();
+                    if (chartPlanetsInst) chartPlanetsInst.resize();
+                }, 100);
+            }
+        }
+
+        // ===== TRANSIT SELECT =====
+        function populateTransitSelect() {
+            const select = document.getElementById('transit-select');
+            select.innerHTML = '';
+            nakshatraData.forEach(star => {
+                const opt = document.createElement('option');
+                opt.value = star.id;
+                opt.textContent = `${star.id}. ${star.name} (${star.taraClass} - Cycle ${star.paryaya})`;
+                select.appendChild(opt);
+            });
+        }
+
+        function updateDailyTransitView() {
+            const starId = parseInt(document.getElementById('transit-select').value);
+            const star = nakshatraData.find(s => s.id === starId);
+            if (!star) return;
+            const container = document.getElementById('transit-result-card');
+            let badgeBg = "bg-emerald-100 text-emerald-800 border-emerald-300";
+            if (star.taraCategory === "CHALLENGING") badgeBg = "bg-rose-100 text-rose-800 border-rose-300";
+            if (star.taraCategory === "MIXED") badgeBg = "bg-amber-100 text-amber-800 border-amber-300";
+            container.innerHTML = `
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-amber-200/80 pb-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white shadow" style="background-color:${star.colorHex}">${star.id}</div>
+                        <div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <h4 class="text-base font-bold text-slate-900">${star.name} Nakshatra</h4>
+                                ${star.specialTitle ? `<span class="bg-indigo-100 text-indigo-800 text-[10px] font-bold px-2 py-0.5 rounded-full">${star.specialTitle}</span>` : ''}
+                            </div>
+                            <p class="text-xs text-slate-600"><strong>Tara:</strong> ${star.taraClass} • <strong>Cycle:</strong> ${star.paryaya} (${star.cycleName}) • <strong>Ruler:</strong> ${star.ruler}</p>
+                        </div>
+                    </div>
+                    <div class="px-3 py-1.5 rounded-xl border text-xs font-bold ${badgeBg} self-start sm:self-auto">
+                        ${star.taraCategory === 'FAVORABLE' ? '✅ Auspicious Transit' : (star.taraCategory === 'MIXED' ? '⚠️ Sensitive Transit' : '❌ Challenging / Purge Transit')}
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-1">
+                        <div class="text-slate-400 font-bold uppercase text-[10px]">Wear / Color Alignment</div>
+                        <div class="font-bold text-slate-800 flex items-center gap-1.5">
+                            <span class="w-3.5 h-3.5 rounded-full inline-block border border-slate-300" style="background-color:${star.colorHex}"></span> ${star.color}
+                        </div>
+                        <p class="text-[11px] text-slate-500 pt-1">Harmonizes native Tattva Bal with transiting lunar mansion energy.</p>
+                    </div>
+                    <div class="bg-emerald-50/70 p-3.5 rounded-xl border border-emerald-200 space-y-1">
+                        <div class="text-emerald-800 font-bold uppercase text-[10px]">Recommended Actions (DO)</div>
+                        <p class="text-slate-800 font-medium">${star.do}</p>
+                    </div>
+                    <div class="bg-rose-50/70 p-3.5 rounded-xl border border-rose-200 space-y-1">
+                        <div class="text-rose-800 font-bold uppercase text-[10px]">Actions to Avoid (DON'T)</div>
+                        <p class="text-slate-800 font-medium">${star.avoid}</p>
+                    </div>
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-amber-200/60 text-xs flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <div><strong class="text-slate-900">Classical Rationale:</strong> <span class="text-slate-600">${star.rationale}</span></div>
+                    ${star.danam && !star.danam.startsWith('None required') ? `<div class="bg-amber-100/80 text-amber-900 font-semibold px-2.5 py-1 rounded-lg shrink-0">🛡️ Danam: ${star.danam}</div>` : ''}
+                </div>
+            `;
+        }
+
+        // ===== FEATURE 5: PRINT REPORT =====
+        function printDailyReport() {
+            const starId = parseInt(document.getElementById('transit-select').value);
+            const star = nakshatraData.find(s => s.id === starId);
+            if (!star) return;
+
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-IN', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+
+            const printWin = window.open('','_blank','width=800,height=900');
+            printWin.document.write(`<!DOCTYPE html><html><head><title>Daily Report - ${star.name}</title>
+            <style>
+                body { font-family: system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #1E293B; }
+                h1 { font-size: 20px; margin-bottom: 4px; }
+                h2 { font-size: 14px; color: #D97706; margin-top: 24px; border-bottom: 2px solid #FDE68A; padding-bottom: 4px; }
+                .meta { color: #64748B; font-size: 12px; }
+                .badge { display: inline-block; padding: 4px 12px; border-radius: 8px; font-size: 11px; font-weight: bold; margin: 8px 0; }
+                .favorable { background: #D1FAE5; color: #065F46; }
+                .mixed { background: #FEF3C7; color: #92400E; }
+                .challenging { background: #FEE2E2; color: #991B1B; }
+                .section { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; margin: 8px 0; }
+                .color-box { display: inline-block; width: 16px; height: 16px; border-radius: 4px; border: 1px solid #CBD5E1; vertical-align: middle; margin-right: 6px; }
+                .footer { margin-top: 32px; border-top: 1px solid #E2E8F0; padding-top: 12px; color: #94A3B8; font-size: 10px; text-align: center; }
+                p { font-size: 12px; line-height: 1.6; }
+            </style></head><body>
+                <h1>🦂 Jyeshtha Navtara Daily Report</h1>
+                <p class="meta">${dateStr} • Generated at ${now.toLocaleTimeString()}</p>
+
+                <div class="badge ${star.taraCategory === 'FAVORABLE' ? 'favorable' : star.taraCategory === 'MIXED' ? 'mixed' : 'challenging'}">
+                    ${star.taraCategory === 'FAVORABLE' ? '✅ Auspicious Transit' : star.taraCategory === 'MIXED' ? '⚠️ Sensitive Transit' : '❌ Challenging Transit'} — ${star.taraClass} Tara
+                </div>
+
+                <h2>Transit: ${star.name} Nakshatra (#${star.id})</h2>
+                <div class="section">
+                    <p><strong>Ruler:</strong> ${star.ruler} &nbsp;|&nbsp; <strong>Nature:</strong> ${star.nature} &nbsp;|&nbsp; <strong>Cycle:</strong> Paryaya ${star.paryaya} (${star.cycleName})</p>
+                    <p><strong>Count from Jyeshtha:</strong> ${star.countFromJyeshtha}th Nakshatra</p>
+                    ${star.specialTitle ? `<p><strong>Special:</strong> ${star.specialTitle}</p>` : ''}
+                </div>
+
+                <h2>Color to Wear</h2>
+                <div class="section"><p><span class="color-box" style="background-color:${star.colorHex}"></span><strong>${star.color}</strong></p></div>
+
+                <h2>✅ Recommended Actions</h2>
+                <div class="section"><p>${star.do}</p></div>
+
+                <h2>❌ Actions to Avoid</h2>
+                <div class="section"><p>${star.avoid}</p></div>
+
+                <h2>Classical Rationale</h2>
+                <div class="section"><p>${star.rationale}</p></div>
+
+                ${star.danam && !star.danam.startsWith('None required') ? `<h2>🛡️ Remedial Danam</h2><div class="section"><p>${star.danam}</p></div>` : ''}
+
+                <div class="footer">
+                    <p>Jyeshtha Navtara Analytical Platform • Based on Muhurta Chintamani & Kalaprakasika</p>
+                </div>
+            </body></html>`);
+            printWin.document.close();
+            setTimeout(() => printWin.print(), 500);
+        }
+
+        // ===== GRID RENDER =====
+        function renderNakshatraGrid(data) {
+            const grid = document.getElementById('nakshatra-grid');
+            grid.innerHTML = '';
+            data.forEach(star => {
+                let badgeClass = "bg-emerald-100 text-emerald-800";
+                if (star.taraCategory === "CHALLENGING") badgeClass = "bg-rose-100 text-rose-800";
+                if (star.taraCategory === "MIXED") badgeClass = "bg-amber-100 text-amber-800";
+                const tasks = getTasksForStar(star.id);
+                const taskBadge = tasks.length > 0 ? `<span class="bg-indigo-100 text-indigo-700 text-[10px] font-bold px-1.5 py-0.5 rounded">📌 ${tasks.length} task${tasks.length>1?'s':''}</span>` : '';
+
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-xl p-4 border border-slate-200 hover:border-amber-400 shadow-sm transition hover:shadow-md flex flex-col justify-between space-y-3';
+                card.innerHTML = `
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[11px] font-bold text-slate-400">#${star.id} • Paryaya ${star.paryaya}</span>
+                            <div class="flex items-center gap-1">
+                                ${taskBadge}
+                                <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${badgeClass}">${star.taraClass}</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2.5">
+                            <div class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-white text-xs shrink-0" style="background-color:${star.colorHex}">${star.id}</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm leading-tight">${star.name}</h4>
+                                <p class="text-[11px] text-slate-500">${star.ruler} • ${star.nature}</p>
+                            </div>
+                        </div>
+                        ${star.specialTitle ? `<div class="bg-indigo-50 border border-indigo-200 text-indigo-900 text-[10px] font-bold px-2 py-0.5 rounded">${star.specialTitle}</div>` : ''}
+                        <div class="text-xs space-y-1 pt-1">
+                            <div><strong class="text-slate-700">Color:</strong> <span class="text-slate-600">${star.color}</span></div>
+                            <div class="text-slate-700 line-clamp-2"><strong>Do:</strong> ${star.do}</div>
+                        </div>
+                    </div>
+                    <button onclick="openModal(${star.id})" class="w-full py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 rounded-lg text-xs font-semibold transition text-center">View Deep Insights →</button>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterNakshatras() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const paryaya = document.getElementById('filter-paryaya').value;
+            const tara = document.getElementById('filter-tara').value;
+            const filtered = nakshatraData.filter(s => {
+                const matchesSearch = s.name.toLowerCase().includes(query) || s.color.toLowerCase().includes(query) || s.do.toLowerCase().includes(query) || s.avoid.toLowerCase().includes(query) || s.taraClass.toLowerCase().includes(query);
+                const matchesParyaya = (paryaya === "ALL") || (s.paryaya.toString() === paryaya);
+                const matchesTara = (tara === "ALL") || (s.taraCategory === tara);
+                return matchesSearch && matchesParyaya && matchesTara;
+            });
+            renderNakshatraGrid(filtered);
+        }
+
+        function resetFilters() {
+            document.getElementById('search-input').value = '';
+            document.getElementById('filter-paryaya').value = 'ALL';
+            document.getElementById('filter-tara').value = 'ALL';
+            renderNakshatraGrid(nakshatraData);
+        }
+
+        // ===== DOMAIN PLANNER =====
+        function selectDomain(domainKey) {
+            document.querySelectorAll('.domain-btn').forEach(btn => { btn.classList.remove('bg-amber-500','text-white','shadow-sm'); btn.classList.add('text-slate-600'); });
+            const activeBtn = document.getElementById('domain-btn-' + domainKey);
+            if (activeBtn) { activeBtn.classList.add('bg-amber-500','text-white','shadow-sm'); activeBtn.classList.remove('text-slate-600'); }
+            const data = domainData[domainKey];
+            const area = document.getElementById('domain-content-area');
+            let html = `<div class="bg-amber-50/60 rounded-xl p-4 border border-amber-200/80 space-y-1">
+                <h4 class="text-base font-bold text-slate-900 flex items-center gap-2"><span>${data.icon}</span> ${data.title}</h4>
+                <p class="text-xs text-slate-600">${data.description}</p>
+            </div><div class="grid grid-cols-1 md:grid-cols-2 gap-4">`;
+            data.sections.forEach(sec => {
+                html += `<div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                    <div class="flex items-center justify-between"><h5 class="font-bold text-slate-800 text-xs">${sec.heading}</h5><span class="text-[10px] font-bold px-2 py-0.5 rounded ${sec.badgeClass}">${sec.badge}</span></div>
+                    <div class="text-xs font-semibold text-amber-700">${sec.stars}</div>
+                    <p class="text-xs text-slate-600 leading-relaxed">${sec.text}</p>
+                </div>`;
+            });
+            html += '</div>';
+            area.innerHTML = html;
+        }
+
+        function renderSpecialStars() {
+            const container = document.getElementById('special-stars-list');
+            container.innerHTML = '';
+            specialStarsData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-amber-50/50 p-2.5 rounded-lg border border-amber-200/60 space-y-0.5";
+                card.innerHTML = `<div class="flex items-center justify-between font-bold text-slate-800"><span>${item.title} (${item.count})</span><span class="text-amber-700 font-extrabold">${item.star}</span></div><p class="text-[11px] text-slate-600">${item.note}</p>`;
+                container.appendChild(card);
+            });
+        }
+
+        // ===== MODAL =====
+        function openModal(starId) {
+            currentModalStarId = starId;
+            const star = nakshatraData.find(s => s.id === starId);
+            if (!star) return;
+            document.getElementById('modal-star-name').textContent = `#${star.id}. ${star.name} Nakshatra`;
+            document.getElementById('modal-star-subtitle').textContent = `Count: ${star.countFromJyeshtha} • ${star.taraClass} Tara (${star.cycleName})`;
+            const swatch = document.getElementById('modal-color-swatch');
+            swatch.style.backgroundColor = star.colorHex;
+            swatch.textContent = star.id;
+            document.getElementById('modal-body-content').innerHTML = `
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Planetary Ruler</strong><span class="font-bold text-slate-800">${star.ruler}</span></div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Nakshatra Nature</strong><span class="font-bold text-slate-800">${star.nature}</span></div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Traditional Color</strong><span class="font-bold text-slate-800">${star.color}</span></div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Paryaya (Cycle)</strong><span class="font-bold text-slate-800">Cycle ${star.paryaya}</span></div>
+                </div>
+                ${star.specialTitle ? `<div class="bg-indigo-50 border border-indigo-200 text-indigo-900 p-2.5 rounded-lg font-bold text-xs">Special Classification: ${star.specialTitle}</div>` : ''}
+                <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-200 space-y-1"><strong class="text-emerald-900 uppercase text-[10px] block">Recommended Actions (Do)</strong><p class="text-slate-800 font-medium">${star.do}</p></div>
+                <div class="bg-rose-50 p-3 rounded-lg border border-rose-200 space-y-1"><strong class="text-rose-900 uppercase text-[10px] block">Actions to Avoid (Don't)</strong><p class="text-slate-800 font-medium">${star.avoid}</p></div>
+                <div class="bg-amber-50 p-3 rounded-lg border border-amber-200 space-y-1"><strong class="text-amber-900 uppercase text-[10px] block">Classical Rationale</strong><p class="text-slate-700">${star.rationale}</p></div>
+                <div class="bg-purple-50 p-3 rounded-lg border border-purple-200 space-y-1"><strong class="text-purple-900 uppercase text-[10px] block">Tara Pariharam (Remedy)</strong><p class="text-purple-900 font-medium">${star.danam}</p></div>
+            `;
+            document.getElementById('detail-modal').classList.remove('hidden');
+        }
+        function closeModal() { document.getElementById('detail-modal').classList.add('hidden'); }
+        function pinTaskFromModal() {
+            closeModal();
+            openTaskModal(currentModalStarId);
+        }
+
+        // ===== FEATURE 3: COMPATIBILITY CALCULATOR =====
+        function populateCompatSelect() {
+            const select = document.getElementById('compat-select');
+            select.innerHTML = '<option value="">-- Select Nakshatra --</option>';
+            nakshatraOrder.forEach((name, i) => {
+                const opt = document.createElement('option');
+                opt.value = name;
+                opt.textContent = `${i+1}. ${name}`;
+                select.appendChild(opt);
+            });
+        }
+
+        function calculateCompatibility() {
+            const partnerStar = document.getElementById('compat-select').value;
+            if (!partnerStar) return;
+            const area = document.getElementById('compat-result-area');
+
+            const jIdx = nakshatraOrder.indexOf("Jyeshtha");
+            const pIdx = nakshatraOrder.indexOf(partnerStar);
+            const countFromJ = ((pIdx - jIdx + 27) % 27) + 1;
+            const countFromP = ((jIdx - pIdx + 27) % 27) + 1;
+            const taraNames = ["Janma","Sampat","Vipat","Kshema","Pratyak","Sadhaka","Vadha","Mitra","Parama Mitra"];
+            const taraJ = taraNames[(countFromJ - 1) % 9];
+            const taraP = taraNames[(countFromP - 1) % 9];
+
+            const favorableTaras = ["Sampat","Kshema","Sadhaka","Mitra","Parama Mitra"];
+            const taraScoreJ = favorableTaras.includes(taraJ) ? 3 : (taraJ === "Janma" ? 1.5 : 0);
+            const taraScoreP = favorableTaras.includes(taraP) ? 3 : (taraP === "Janma" ? 1.5 : 0);
+            const taraTotal = taraScoreJ + taraScoreP;
+
+            const yoniJ = yoniMap["Jyeshtha"];
+            const yoniP = yoniMap[partnerStar];
+            let yoniScore = 2;
+            if (yoniJ === yoniP) yoniScore = 4;
+            else if (yoniEnemies[yoniJ] === yoniP) yoniScore = 0;
+
+            const nadiJ = nadiMap["Jyeshtha"];
+            const nadiP = nadiMap[partnerStar];
+            let nadiScore = nadiJ !== nadiP ? 8 : 0;
+
+            const totalScore = taraTotal + yoniScore + nadiScore;
+            const maxScore = 18;
+            const pct = Math.round((totalScore / maxScore) * 100);
+
+            let verdict = '', verdictColor = '', verdictBg = '';
+            if (pct >= 70) { verdict = 'Highly Compatible'; verdictColor = 'text-emerald-800'; verdictBg = 'bg-emerald-100'; }
+            else if (pct >= 45) { verdict = 'Moderately Compatible'; verdictColor = 'text-amber-800'; verdictBg = 'bg-amber-100'; }
+            else { verdict = 'Challenging Pairing'; verdictColor = 'text-rose-800'; verdictBg = 'bg-rose-100'; }
+
+            const partnerData = nakshatraData.find(s => s.name === partnerStar);
+            const partnerRuler = partnerData ? partnerData.ruler : '—';
+
+            area.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-black ${verdictColor}">${pct}%</div>
+                            <div class="px-3 py-1 rounded-full text-xs font-bold ${verdictBg} ${verdictColor} mt-1">${verdict}</div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="w-full bg-slate-200 rounded-full h-3">
+                                <div class="h-3 rounded-full transition-all duration-500" style="width:${pct}%; background: ${pct>=70?'#059669':pct>=45?'#D97706':'#DC2626'}"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1">Jyeshtha ↔ ${partnerStar} • Score: ${totalScore.toFixed(1)} / ${maxScore}</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+                            <div class="font-bold text-slate-800">Tara Kuta</div>
+                            <div class="text-slate-600">Your view: <strong class="${favorableTaras.includes(taraJ)?'text-emerald-700':'text-rose-700'}">${taraJ}</strong></div>
+                            <div class="text-slate-600">Their view: <strong class="${favorableTaras.includes(taraP)?'text-emerald-700':'text-rose-700'}">${taraP}</strong></div>
+                            <div class="font-bold text-amber-700">${taraTotal.toFixed(1)} / 6</div>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+                            <div class="font-bold text-slate-800">Yoni Kuta</div>
+                            <div class="text-slate-600">You: <strong>${yoniJ}</strong></div>
+                            <div class="text-slate-600">Partner: <strong>${yoniP}</strong></div>
+                            <div class="font-bold ${yoniScore>=3?'text-emerald-700':yoniScore>0?'text-amber-700':'text-rose-700'}">${yoniScore} / 4 ${yoniScore===0?' (Enemy Yoni!)':''}</div>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+                            <div class="font-bold text-slate-800">Nadi Kuta</div>
+                            <div class="text-slate-600">You: <strong>${nadiJ}</strong></div>
+                            <div class="text-slate-600">Partner: <strong>${nadiP}</strong></div>
+                            <div class="font-bold ${nadiScore>0?'text-emerald-700':'text-rose-700'}">${nadiScore} / 8 ${nadiScore===0?' (Same Nadi — Dosha!)':''}</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50/60 p-4 rounded-xl border border-amber-200/80 text-xs space-y-2">
+                        <div class="font-bold text-amber-900">Relationship Summary</div>
+                        <p class="text-slate-700">${partnerStar} is ruled by <strong>${partnerRuler}</strong>. From a Jyeshtha native's perspective, ${partnerStar} falls as the <strong>${countFromJ}th star</strong> (${taraJ} Tara). ${taraJ === 'Parama Mitra' || taraJ === 'Mitra' ? 'This is an inherently harmonious pairing where mutual goals align naturally.' : taraJ === 'Sampat' || taraJ === 'Kshema' || taraJ === 'Sadhaka' ? 'This pairing carries positive energy for growth, stability, or productive collaboration.' : taraJ === 'Janma' ? 'This is a karmic connection — deeply familiar but requires conscious effort to avoid triggering sensitivities.' : 'This pairing carries friction and will require deliberate remedial measures and patience to maintain harmony.'}</p>
+                        ${nadiScore === 0 ? '<p class="text-rose-700 font-medium">⚠️ Nadi Dosha detected — same constitutional type. Traditional texts recommend Nadi Shanti Puja before formalizing bonds.</p>' : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        // ===== FEATURE 4: TASK SCHEDULER WITH LOCALSTORAGE =====
+        function getTasks() {
+            try { return JSON.parse(localStorage.getItem('jyeshtha_tasks') || '[]'); } catch { return []; }
+        }
+        function saveTasks(tasks) { localStorage.setItem('jyeshtha_tasks', JSON.stringify(tasks)); }
+        function getTasksForStar(starId) { return getTasks().filter(t => t.starId === starId && t.status === 'pending'); }
+
+        function openTaskModal(presetStarId) {
+            document.getElementById('task-input-name').value = '';
+            document.getElementById('task-input-priority').value = 'medium';
+            if (presetStarId) {
+                document.getElementById('task-input-star').value = presetStarId;
+            }
+            document.getElementById('task-modal').classList.remove('hidden');
+        }
+        function closeTaskModal() { document.getElementById('task-modal').classList.add('hidden'); }
+
+        function populateTaskStarSelect() {
+            const select = document.getElementById('task-input-star');
+            select.innerHTML = '';
+            nakshatraData.forEach(star => {
+                const opt = document.createElement('option');
+                opt.value = star.id;
+                opt.textContent = `${star.name} (${star.taraClass})`;
+                select.appendChild(opt);
+            });
+            document.getElementById('task-input-category').addEventListener('change', (e) => {
+                const cat = e.target.value;
+                const bestStars = categoryStarMap[cat] || [];
+                if (bestStars.length > 0) select.value = bestStars[0];
+            });
+        }
+
+        function saveTask() {
+            const name = document.getElementById('task-input-name').value.trim();
+            if (!name) return;
+            const tasks = getTasks();
+            tasks.push({
+                id: Date.now(),
+                name: name,
+                category: document.getElementById('task-input-category').value,
+                starId: parseInt(document.getElementById('task-input-star').value),
+                priority: document.getElementById('task-input-priority').value,
+                status: 'pending',
+                createdAt: new Date().toISOString()
+            });
+            saveTasks(tasks);
+            closeTaskModal();
+            renderTasks();
+            renderNakshatraGrid(nakshatraData);
+        }
+
+        function toggleTask(taskId) {
+            const tasks = getTasks();
+            const t = tasks.find(x => x.id === taskId);
+            if (t) t.status = t.status === 'pending' ? 'completed' : 'pending';
+            saveTasks(tasks);
+            renderTasks();
+            renderNakshatraGrid(nakshatraData);
+        }
+
+        function deleteTask(taskId) {
+            saveTasks(getTasks().filter(t => t.id !== taskId));
+            renderTasks();
+            renderNakshatraGrid(nakshatraData);
+        }
+
+        function renderTasks() {
+            const tasks = getTasks();
+            const catFilter = document.getElementById('task-filter-category').value;
+            const statusFilter = document.getElementById('task-filter-status').value;
+
+            const filtered = tasks.filter(t => {
+                const matchCat = catFilter === 'ALL' || t.category === catFilter;
+                const matchStatus = statusFilter === 'ALL' || t.status === statusFilter;
+                return matchCat && matchStatus;
+            });
+
+            const list = document.getElementById('task-list');
+            if (filtered.length === 0) {
+                list.innerHTML = '<div class="bg-slate-50 rounded-xl p-6 text-center text-sm text-slate-400 border border-slate-200">No tasks yet. Click "+ Add New Task" to pin activities to their best Nakshatra transit.</div>';
+            } else {
+                list.innerHTML = '';
+                filtered.forEach(t => {
+                    const star = nakshatraData.find(s => s.id === t.starId);
+                    const starName = star ? star.name : '—';
+                    const starColor = star ? star.colorHex : '#94A3B8';
+                    const priorityColors = { high: 'bg-rose-100 text-rose-700', medium: 'bg-amber-100 text-amber-700', low: 'bg-slate-100 text-slate-600' };
+                    const catIcons = { work:'💼', personal:'❤️', finance:'💰', health:'🏥', travel:'🚗', home:'🔧' };
+
+                    const el = document.createElement('div');
+                    el.className = `task-item flex items-center gap-3 p-3 rounded-xl border border-slate-200 ${t.status==='completed'?'opacity-60':''}`;
+                    el.innerHTML = `
+                        <button onclick="toggleTask(${t.id})" class="w-5 h-5 rounded-full border-2 ${t.status==='completed'?'bg-emerald-500 border-emerald-500':'border-slate-300 hover:border-amber-400'} flex items-center justify-center shrink-0 text-white text-xs">${t.status==='completed'?'✓':''}</button>
+                        <div class="flex-1 min-w-0">
+                            <div class="font-semibold text-sm text-slate-800 ${t.status==='completed'?'line-through':''}">${t.name}</div>
+                            <div class="flex items-center gap-2 mt-0.5 text-[11px]">
+                                <span>${catIcons[t.category]||'📌'} ${t.category}</span>
+                                <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full inline-block" style="background-color:${starColor}"></span>${starName}</span>
+                                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${priorityColors[t.priority]}">${t.priority}</span>
+                            </div>
+                        </div>
+                        <button onclick="deleteTask(${t.id})" class="text-slate-300 hover:text-rose-500 text-sm p-1" title="Delete">🗑️</button>
+                    `;
+                    list.appendChild(el);
+                });
+            }
+
+            const summary = document.getElementById('task-star-summary');
+            const pending = tasks.filter(t => t.status === 'pending');
+            const starCounts = {};
+            pending.forEach(t => { starCounts[t.starId] = (starCounts[t.starId]||0) + 1; });
+            const entries = Object.entries(starCounts).sort((a,b) => b[1]-a[1]).slice(0,5);
+            if (entries.length === 0) {
+                summary.innerHTML = '<div class="bg-slate-50 rounded-xl p-3 border border-slate-200 text-xs text-slate-400 text-center">No pending tasks</div>';
+            } else {
+                summary.innerHTML = '<div class="text-xs font-bold text-slate-700 mb-1">Top Stars with Tasks</div>';
+                entries.forEach(([sid, count]) => {
+                    const star = nakshatraData.find(s => s.id === parseInt(sid));
+                    if (!star) return;
+                    const el = document.createElement('div');
+                    el.className = "flex items-center gap-2 bg-white p-2 rounded-lg border border-slate-200 text-xs";
+                    el.innerHTML = `<span class="w-4 h-4 rounded-full shrink-0" style="background-color:${star.colorHex}"></span><span class="font-semibold text-slate-800 flex-1">${star.name}</span><span class="font-bold text-amber-700">${count}</span>`;
+                    summary.appendChild(el);
+                });
+            }
+        }
+
+        // ===== CHARTS =====
+        function initCharts() {
+            const ctx1 = document.getElementById('chartEfficacy').getContext('2d');
+            chartEfficacyInst = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['Sampat','Kshema','Sadhaka','Mitra','P. Mitra','Janma','Vipat','Pratyak','Vadha'],
+                    datasets: [{ label:'Stars', data:[3,3,3,3,3,3,3,3,3], backgroundColor:['#059669','#10B981','#047857','#065F46','#022C22','#D97706','#EF4444','#DC2626','#991B1B'], borderRadius:6 }]
+                },
+                options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, scales:{ y:{beginAtZero:true, max:4, ticks:{stepSize:1}} } }
+            });
+
+            const ctx2 = document.getElementById('chartSpheres').getContext('2d');
+            chartSpheresInst = new Chart(ctx2, {
+                type: 'doughnut',
+                data: { labels:['1st (Physical)','2nd (Psychological)','3rd (Spiritual)'], datasets:[{ data:[9,9,9], backgroundColor:['#D97706','#4F46E5','#059669'], borderWidth:2 }] },
+                options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom', labels:{boxWidth:12, font:{size:11}} } } }
+            });
+
+            const ctx3 = document.getElementById('chartPlanets').getContext('2d');
+            chartPlanetsInst = new Chart(ctx3, {
+                type: 'radar',
+                data: {
+                    labels:['Ketu (Sampat)','Venus (Vipat)','Sun (Kshema)','Moon (Pratyak)','Mars (Sadhaka)','Rahu (Vadha)','Jupiter (Mitra)','Saturn (P. Mitra)','Mercury (Janma)'],
+                    datasets:[{ label:'Harmony Score', data:[85,25,80,30,95,15,85,90,50], borderColor:'#D97706', backgroundColor:'rgba(217,119,6,0.2)', pointBackgroundColor:'#B45309', pointBorderColor:'#fff', pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#B45309' }]
+                },
+                options: { responsive:true, maintainAspectRatio:false, scales:{ r:{ angleLines:{color:'#E2E8F0'}, grid:{color:'#CBD5E1'}, suggestedMin:0, suggestedMax:100 } }, plugins:{ legend:{ position:'bottom', labels:{boxWidth:12} } } }
+            });
+        }
+    </script>
+</body>
+</html>
