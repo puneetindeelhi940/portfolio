@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <title>Jyeshtha Native Navtara Master Analysis & Activity Planner</title>
+    <meta name="author" content="Puneet Arora">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
@@ -69,6 +70,7 @@
                 <button onclick="switchTab('nav-journal')" id="btn-journal" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📓 Journal</button>
                 <button onclick="switchTab('nav-analytics')" id="btn-analytics" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📊 Charts</button>
                 <button onclick="switchTab('nav-remedies')" id="btn-remedies" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🛡️ Remedies</button>
+                <button onclick="switchTab('nav-about')" id="btn-about" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">ℹ️ About</button>
             </nav>
         </div>
     </header>
@@ -373,6 +375,62 @@
                 </div>
             </div>
         </section>
+
+        <!-- TAB: ABOUT -->
+        <section id="nav-about" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-amber-200/80 shadow-sm">
+                <div class="text-center mb-6">
+                    <h2 class="text-2xl font-bold text-slate-900">Jyeshtha Navtara Analytical Platform</h2>
+                    <p class="text-sm text-slate-500 mt-1">10-Feature Enhanced Edition &middot; Built on Classical Vedic Electional Systems</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">⚡</span><h3 class="font-bold text-sm text-slate-900">Daily Transit Dashboard</h3></div>
+                        <p class="text-slate-600">Real-time Nakshatra transit detection with Tara classification, color energy, planetary ruler, and personalized Do/Avoid guidance based on Jyeshtha as Janma Nakshatra. Includes a voice briefing via Web Speech API.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">📅</span><h3 class="font-bold text-sm text-slate-900">7-Day Forecast</h3></div>
+                        <p class="text-slate-600">Week-ahead Nakshatra transit calendar showing each day's star, Tara class, and category at a glance. Plan meetings, travel, and launches around favorable windows before the week begins.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">⏰</span><h3 class="font-bold text-sm text-slate-900">Hora Calculator</h3></div>
+                        <p class="text-slate-600">Planetary hour tracker showing the current Hora ruler and a full 24-hour timeline. Each Hora is rated for specific activities, combining Vara (weekday) and Nakshatra energies into a composite Muhurta score.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">📜</span><h3 class="font-bold text-sm text-slate-900">27 Stars Explorer</h3></div>
+                        <p class="text-slate-600">Complete reference grid of all 27 Nakshatras with their Tara class, Paryaya cycle, color energy, ruler, nature, and actionable guidance. Click any star for an in-depth modal with Do/Avoid lists and Danam prescriptions.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">🎯</span><h3 class="font-bold text-sm text-slate-900">Life Domain Planner</h3></div>
+                        <p class="text-slate-600">Maps 10 life domains (Career, Finance, Health, Education, Relationships, Legal, Spiritual, Travel, Home, Creative) to the best Nakshatras for each, with today's alignment score and a printable report.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">🤝</span><h3 class="font-bold text-sm text-slate-900">Compatibility Checker</h3></div>
+                        <p class="text-slate-600">Multi-factor compatibility analysis using Tara Kuta (transit harmony), Yoni Kuta (temperament), and Nadi Kuta (constitutional dosha). Generates a composite score with detailed breakdowns for any two Nakshatras.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">👨‍👩‍👧‍👦</span><h3 class="font-bold text-sm text-slate-900">Family Dashboard</h3></div>
+                        <p class="text-slate-600">Store family members' Janma Nakshatras and see each person's Tara alignment for today's transit at a glance. Instantly know which family member has a favorable or challenging day ahead.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">📌</span><h3 class="font-bold text-sm text-slate-900">Task Manager</h3></div>
+                        <p class="text-slate-600">Pin tasks to specific Nakshatras so they surface when that star transits. Categorize by Work, Finance, Health, or Travel, set priority levels, and mark complete. Data persists in localStorage across sessions.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">📓</span><h3 class="font-bold text-sm text-slate-900">Outcome Journal</h3></div>
+                        <p class="text-slate-600">Log daily outcomes (Great / Neutral / Tough) against the transiting Nakshatra. Over time, build a personal pattern map that reveals which stars consistently bring you positive or challenging results.</p>
+                    </div>
+                    <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
+                        <div class="flex items-center gap-2"><span class="text-lg">🛡️</span><h3 class="font-bold text-sm text-slate-900">Remedies & Pariharam</h3></div>
+                        <p class="text-slate-600">Classical Tara Pariharam matrix listing Danam (charitable giving) prescriptions and deity mantras for each challenging Tara class. Also highlights special Nakshatras like Desa, Abhisheka, and Vainashika.</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-5 border-t border-amber-200/40 text-center space-y-2">
+                    <p class="text-xs text-slate-500">Based on <em>Muhurta Chintamani</em>, <em>Kalaprakasika</em> & Classical Vedic Electional Systems</p>
+                    <p class="text-xs text-slate-400">Calculations use the Moon's average daily motion for approximate Nakshatra detection. For precise timing, cross-reference with a Panchang or ephemeris.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Detail Modal -->
@@ -449,9 +507,10 @@
     </div>
 
     <footer class="bg-white border-t border-amber-200/60 py-4 mt-8">
-        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1">
-            <p><strong>Jyeshtha Navtara Analytical Platform</strong> • 10-Feature Enhanced Edition</p>
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1.5">
+            <p><strong>Jyeshtha Navtara Analytical Platform</strong> &middot; 10-Feature Enhanced Edition</p>
             <p>Based on Muhurta Chintamani, Kalaprakasika & Classical Vedic Electional Systems</p>
+            <p class="text-[10px] text-slate-400 pt-1">Built by Puneet Arora</p>
         </div>
     </footer>
 
