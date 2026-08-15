@@ -60,7 +60,9 @@
             </div>
             <nav id="main-nav" class="flex flex-wrap items-center gap-1 text-[11px] font-semibold">
                 <button onclick="switchTab('nav-transit')" id="btn-transit" class="nav-btn px-2.5 py-1.5 rounded-lg bg-amber-500 text-white shadow-sm transition">⚡ Daily Transit</button>
-                <button onclick="switchTab('nav-week')" id="btn-week" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📅 7-Day</button>
+                <button onclick="switchTab('nav-thisweek')" id="btn-thisweek" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📅 This Week</button>
+                <button onclick="switchTab('nav-nextweek')" id="btn-nextweek" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📅 Next Week</button>
+                <button onclick="switchTab('nav-month')" id="btn-month" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🗓️ Full Month</button>
                 <button onclick="switchTab('nav-hora')" id="btn-hora" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">⏰ Hora</button>
                 <button onclick="switchTab('nav-explorer')" id="btn-explorer" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📜 27 Stars</button>
                 <button onclick="switchTab('nav-domains')" id="btn-domains" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🎯 Life Planner</button>
@@ -68,7 +70,6 @@
                 <button onclick="switchTab('nav-family')" id="btn-family" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">👨‍👩‍👧‍👦 Family</button>
                 <button onclick="switchTab('nav-tasks')" id="btn-tasks" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📌 Tasks</button>
                 <button onclick="switchTab('nav-journal')" id="btn-journal" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📓 Journal</button>
-                <button onclick="switchTab('nav-analytics')" id="btn-analytics" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📊 Charts</button>
                 <button onclick="switchTab('nav-remedies')" id="btn-remedies" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🛡️ Remedies</button>
                 <button onclick="switchTab('nav-about')" id="btn-about" class="nav-btn px-2.5 py-1.5 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">ℹ️ About</button>
             </nav>
@@ -141,14 +142,61 @@
         </section>
 
         <!-- TAB: 7-DAY FORECAST -->
-        <section id="nav-week" class="tab-content hidden space-y-5">
+        <section id="nav-thisweek" class="tab-content hidden space-y-5">
             <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
                 <div class="border-b border-slate-100 pb-3">
-                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📅</span> 7-Day Nakshatra Forecast</h3>
-                    <p class="text-xs text-slate-500">Color-coded weekly planner showing upcoming transits at a glance.</p>
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📅</span> This Week — Nakshatra Calendar</h3>
+                    <p class="text-xs text-slate-500">Current week's Nakshatra transits. Cross-verified with Drik Panchang methodology (Meeus lunar algorithm + Lahiri Ayanamsha).</p>
                 </div>
-                <div id="weekly-forecast" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3"></div>
-                <div class="bg-slate-50 rounded-xl p-3 border border-slate-200 text-xs text-slate-500"><strong>Note:</strong> Positions approximated using Moon's average daily motion (~13°20'). Cross-reference with a Panchangam for precise timing.</div>
+                <div id="thisweek-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3"></div>
+                <div class="flex flex-wrap gap-2 text-[10px] pt-2 border-t border-slate-100">
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300"></span> Favorable</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-amber-100 border border-amber-300"></span> Sensitive</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-rose-100 border border-rose-300"></span> Challenging</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha</span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-nextweek" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 pb-3">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📅</span> Next Week — Nakshatra Calendar</h3>
+                    <p class="text-xs text-slate-500">Plan ahead with next week's Nakshatra transits.</p>
+                </div>
+                <div id="nextweek-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3"></div>
+                <div class="flex flex-wrap gap-2 text-[10px] pt-2 border-t border-slate-100">
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300"></span> Favorable</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-amber-100 border border-amber-300"></span> Sensitive</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-rose-100 border border-rose-300"></span> Challenging</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha</span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-month" class="tab-content hidden space-y-5">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 pb-3 flex items-center justify-between flex-wrap gap-2">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>🗓️</span> <span id="month-title">Full Month</span> — Nakshatra Calendar</h3>
+                        <p class="text-xs text-slate-500">Complete month view with Nakshatra for each day.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="changeMonth(-1)" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition">← Prev</button>
+                        <button onclick="changeMonth(0)" class="px-3 py-1.5 bg-amber-100 hover:bg-amber-200 text-amber-800 rounded-lg text-xs font-bold transition">Today</button>
+                        <button onclick="changeMonth(1)" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition">Next →</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-400 uppercase">
+                    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                </div>
+                <div id="month-grid" class="grid grid-cols-7 gap-1.5"></div>
+                <div class="flex flex-wrap gap-2 text-[10px] pt-2 border-t border-slate-100">
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300"></span> Favorable</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-amber-100 border border-amber-300"></span> Sensitive</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-rose-100 border border-rose-300"></span> Challenging</span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha</span></span>
+                </div>
             </div>
         </section>
 
@@ -320,22 +368,6 @@
         </section>
 
         <!-- TAB: CHARTS -->
-        <section id="nav-analytics" class="tab-content hidden space-y-5">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
-                    <div class="border-b border-slate-100 pb-2"><h4 class="font-bold text-slate-800 text-sm">Navtara Efficacy Distribution</h4><p class="text-xs text-slate-500">27 transits classified relative to Jyeshtha Moon</p></div>
-                    <div class="chart-container"><canvas id="chartEfficacy"></canvas></div>
-                </div>
-                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
-                    <div class="border-b border-slate-100 pb-2"><h4 class="font-bold text-slate-800 text-sm">Three Navakam Spheres</h4><p class="text-xs text-slate-500">Physical vs Psychological vs Spiritual</p></div>
-                    <div class="chart-container"><canvas id="chartSpheres"></canvas></div>
-                </div>
-                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm lg:col-span-2 space-y-3">
-                    <div class="border-b border-slate-100 pb-2"><h4 class="font-bold text-slate-800 text-sm">Planetary Rulership Compatibility</h4><p class="text-xs text-slate-500">Mercury-ruled Jyeshtha resonance with transiting lords</p></div>
-                    <div class="chart-container"><canvas id="chartPlanets"></canvas></div>
-                </div>
-            </div>
-        </section>
 
         <!-- TAB: REMEDIES -->
         <section id="nav-remedies" class="tab-content hidden space-y-5">
@@ -389,8 +421,8 @@
                         <p class="text-slate-600">Real-time Nakshatra transit detection with Tara classification, color energy, planetary ruler, and personalized Do/Avoid guidance based on Jyeshtha as Janma Nakshatra. Includes a voice briefing via Web Speech API.</p>
                     </div>
                     <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
-                        <div class="flex items-center gap-2"><span class="text-lg">📅</span><h3 class="font-bold text-sm text-slate-900">7-Day Forecast</h3></div>
-                        <p class="text-slate-600">Week-ahead Nakshatra transit calendar showing each day's star, Tara class, and category at a glance. Plan meetings, travel, and launches around favorable windows before the week begins.</p>
+                        <div class="flex items-center gap-2"><span class="text-lg">📅</span><h3 class="font-bold text-sm text-slate-900">Weekly & Monthly Calendars</h3></div>
+                        <p class="text-slate-600">This Week, Next Week, and Full Month calendar views showing Nakshatra transits for each day. Days with Moola, Ashwini, Pushya, and Anuradha are highlighted in dark green as specially auspicious planning windows. Moon position uses Meeus lunar algorithm cross-verified with Drik Panchang.</p>
                     </div>
                     <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
                         <div class="flex items-center gap-2"><span class="text-lg">⏰</span><h3 class="font-bold text-sm text-slate-900">Hora Calculator</h3></div>
@@ -508,7 +540,7 @@
 
     <footer class="bg-white border-t border-amber-200/60 py-4 mt-8">
         <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1.5">
-            <p><strong>Jyeshtha Navtara Analytical Platform</strong> &middot; 10-Feature Enhanced Edition</p>
+            <p><strong>Jyeshtha Navtara Analytical Platform</strong> &middot; Enhanced Edition</p>
             <p>Based on Muhurta Chintamani, Kalaprakasika & Classical Vedic Electional Systems</p>
             <p class="text-[10px] text-slate-400 pt-1">Built by Puneet Arora</p>
         </div>
@@ -608,7 +640,7 @@ const horaScore = { Mercury:3, Jupiter:3, Venus:2, Sun:2, Mars:1, Moon:1, Saturn
 const varaScoreMap = { Sunday:2, Monday:1, Tuesday:1, Wednesday:3, Thursday:3, Friday:2, Saturday:0 };
 const varaNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-let chartEfficacyInst=null, chartSpheresInst=null, chartPlanetsInst=null, chartJournalInst=null;
+let chartJournalInst=null;
 let currentModalStarId=null, selectedOutcome=null;
 
 // ===== INIT =====
@@ -622,27 +654,47 @@ document.addEventListener('DOMContentLoaded', () => {
     selectDomain('job');
     renderSpecialStars();
     renderTasks();
-    renderWeeklyForecast();
     renderHoraGrid();
     renderFamilyDashboard();
     renderJournalChart();
     renderJournalEntries();
     startLiveClock();
-    initCharts();
 });
 
-// ===== LIVE CLOCK & AUTO-DETECT =====
-function getApproxNakshatraIndex(date) {
-    const ref = new Date(Date.UTC(2024,0,11,0,0,0));
-    const msPerDay = 86400000;
-    const daysElapsed = (date.getTime()-ref.getTime())/msPerDay;
-    const nkDays = 1.0125;
-    const transits = daysElapsed/nkDays;
-    let idx = (11+Math.floor(transits))%27;
-    if(idx<0) idx+=27;
-    const frac = transits - Math.floor(transits);
-    return { index:idx, remainingHours:(1-frac)*nkDays*24 };
+// ===== MOON LONGITUDE (Meeus algorithm + Lahiri Ayanamsha) =====
+const SPECIAL_HIGHLIGHT_STARS = ['Mula','Ashwini','Pushya','Anuradha'];
+
+function getSiderealMoonLongitude(date) {
+    const JD = 2440587.5 + date.getTime()/86400000;
+    const T = (JD - 2451545.0) / 36525.0;
+    const toRad = d => d * Math.PI / 180;
+    let Lp = 218.3164477 + 481267.88123421*T - 0.0015786*T*T + T*T*T/538841 - T*T*T*T/65194000;
+    let D = 297.8501921 + 445267.1114034*T - 0.0018819*T*T + T*T*T/545868 - T*T*T*T/113065000;
+    let M = 357.5291092 + 35999.0502909*T - 0.0001536*T*T + T*T*T/24490000;
+    let Mp = 134.9633964 + 477198.8675055*T + 0.0087414*T*T + T*T*T/69699 - T*T*T*T/14712000;
+    let F = 93.2720950 + 483202.0175233*T - 0.0036539*T*T - T*T*T/3526000 + T*T*T*T/863310000;
+    let A1 = 119.75 + 131.849*T, A2 = 53.09 + 479264.290*T;
+    const E = 1 - 0.002516*T - 0.0000074*T*T;
+    let sL = 6288774*Math.sin(toRad(Mp)) + 1274027*Math.sin(toRad(2*D-Mp)) + 658314*Math.sin(toRad(2*D)) + 213618*Math.sin(toRad(2*Mp)) - 185116*E*Math.sin(toRad(M)) - 114332*Math.sin(toRad(2*F)) + 58793*Math.sin(toRad(2*D-2*Mp)) + 57066*E*Math.sin(toRad(2*D-M-Mp)) + 53322*Math.sin(toRad(2*D+Mp)) + 45758*E*Math.sin(toRad(2*D-M)) - 40923*E*Math.sin(toRad(M-Mp)) - 34720*Math.sin(toRad(D)) - 30383*E*Math.sin(toRad(M+Mp)) + 15327*Math.sin(toRad(2*D-2*F)) - 12528*Math.sin(toRad(Mp+2*F)) + 10980*Math.sin(toRad(Mp-2*F)) + 10675*Math.sin(toRad(4*D-Mp)) + 10034*Math.sin(toRad(3*Mp)) + 8548*Math.sin(toRad(4*D-2*Mp)) - 7888*E*Math.sin(toRad(2*D+M-Mp)) - 6766*E*Math.sin(toRad(2*D+M)) - 5163*Math.sin(toRad(D-Mp)) + 4987*E*Math.sin(toRad(D+M)) + 4036*E*Math.sin(toRad(2*D-M+Mp)) + 3994*Math.sin(toRad(2*D+2*Mp)) + 3861*Math.sin(toRad(4*D)) + 3665*Math.sin(toRad(2*D-3*Mp)) - 2689*E*Math.sin(toRad(M-2*Mp)) - 2602*Math.sin(toRad(2*D-Mp+2*F)) + 2390*E*Math.sin(toRad(2*D-M-2*Mp)) - 2348*Math.sin(toRad(D+Mp)) + 2236*E*E*Math.sin(toRad(2*D-2*M)) - 2120*E*Math.sin(toRad(M+2*Mp)) - 2069*E*E*Math.sin(toRad(2*M)) + 2048*E*E*Math.sin(toRad(2*D-2*M-Mp));
+    sL += 3958*Math.sin(toRad(A1)) + 1962*Math.sin(toRad(Lp-F)) + 318*Math.sin(toRad(A2));
+    let lon = Lp + sL/1000000;
+    const ayan = 21.0 + (50.29/3600)*(T*100);
+    lon -= ayan;
+    return ((lon%360)+360)%360;
 }
+
+function getApproxNakshatraIndex(date) {
+    const lon = getSiderealMoonLongitude(date);
+    const nkWidth = 360/27;
+    const idx = Math.floor(lon / nkWidth);
+    const posInNk = (lon % nkWidth) / nkWidth;
+    const moonSpeedDeg = 13.176;
+    const remainingDeg = nkWidth * (1 - posInNk);
+    const remainingHours = (remainingDeg / moonSpeedDeg) * 24;
+    return { index: idx, remainingHours: Math.max(0, remainingHours) };
+}
+
+let currentMonthOffset = 0;
 
 function getCurrentHoraInfo() {
     const now = new Date();
@@ -780,25 +832,105 @@ function renderHoraGrid() {
     }
 }
 
-// ===== WEEKLY FORECAST =====
-function renderWeeklyForecast() {
-    const c = document.getElementById('weekly-forecast'); c.innerHTML='';
-    const now = new Date();
+// ===== CALENDAR RENDERING (This Week / Next Week / Full Month) =====
+function isSpecialStar(name) { return SPECIAL_HIGHLIGHT_STARS.includes(name); }
+
+function renderWeekGrid(containerId, startDate) {
+    const c = document.getElementById(containerId); c.innerHTML='';
     const dn = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    const today = new Date(); today.setHours(0,0,0,0);
     for(let i=0;i<7;i++){
-        const day=new Date(now.getTime()+i*86400000);
-        const a=getApproxNakshatraIndex(day);
-        const sn=nakshatraOrder[a.index];
-        const sd=nakshatraData.find(s=>s.name===sn);
+        const day = new Date(startDate.getTime()+i*86400000);
+        const noon = new Date(day); noon.setHours(12,0,0,0);
+        const a = getApproxNakshatraIndex(noon);
+        const sn = nakshatraOrder[a.index];
+        const sd = nakshatraData.find(s=>s.name===sn);
         if(!sd) continue;
-        let bc='border-emerald-300',bg='bg-emerald-50/60',ic='✅';
-        if(sd.taraCategory==='CHALLENGING'){bc='border-rose-300';bg='bg-rose-50/60';ic='❌';}
-        if(sd.taraCategory==='MIXED'){bc='border-amber-300';bg='bg-amber-50/60';ic='⚠️';}
+        const isToday = day.toDateString()===today.toDateString();
+        const isSpecial = isSpecialStar(sn);
+        let bc,bg,ic,textColor='';
+        if(isSpecial){
+            bc='border-emerald-800'; bg=''; ic='⭐';
+            textColor='color:white';
+        } else if(sd.taraCategory==='FAVORABLE'){bc='border-emerald-300';bg='bg-emerald-50/60';ic='✅';}
+        else if(sd.taraCategory==='CHALLENGING'){bc='border-rose-300';bg='bg-rose-50/60';ic='❌';}
+        else{bc='border-amber-300';bg='bg-amber-50/60';ic='⚠️';}
         const card=document.createElement('div');
-        card.className=`week-card ${bg} rounded-xl p-3 border-2 ${bc} ${i===0?'ring-2 ring-amber-500 ring-offset-2':''} space-y-2 cursor-pointer`;
+        card.className=`week-card ${bg} rounded-xl p-3 border-2 ${bc} ${isToday?'ring-2 ring-amber-500 ring-offset-2':''} space-y-2 cursor-pointer`;
+        if(isSpecial) card.style.cssText='background:#166534;border-color:#14532d;'+textColor;
         card.onclick=()=>{switchTab('nav-transit');document.getElementById('transit-select').value=sd.id;updateDailyTransitView();};
-        card.innerHTML=`<div class="text-center"><div class="text-[10px] font-bold text-slate-400 uppercase">${dn[day.getDay()]}</div><div class="text-lg font-bold text-slate-800">${day.getDate()}</div>${i===0?'<span class="text-[9px] bg-amber-500 text-white px-1.5 py-0.5 rounded font-bold">TODAY</span>':''}</div><div class="text-center"><div class="w-7 h-7 rounded-full mx-auto flex items-center justify-center text-white text-xs font-bold shadow-sm" style="background:${sd.colorHex}">${ic}</div><div class="font-bold text-slate-800 text-xs mt-1 leading-tight">${sd.name}</div><div class="text-[10px] text-slate-500">${sd.taraClass}</div></div><div class="text-[10px] text-slate-600 leading-snug border-t border-slate-200/60 pt-1.5"><div class="text-emerald-700 font-medium line-clamp-2">${sd.do.split(',')[0]}</div></div>`;
+        const nameClass = isSpecial ? 'font-bold text-white text-xs mt-1 leading-tight' : 'font-bold text-slate-800 text-xs mt-1 leading-tight';
+        const taraClass = isSpecial ? 'text-[10px] text-emerald-200' : 'text-[10px] text-slate-500';
+        const dayNumClass = isSpecial ? 'text-lg font-bold text-white' : 'text-lg font-bold text-slate-800';
+        const dayNameClass = isSpecial ? 'text-[10px] font-bold text-emerald-200 uppercase' : 'text-[10px] font-bold text-slate-400 uppercase';
+        const doClass = isSpecial ? 'text-emerald-200 font-medium line-clamp-2' : 'text-emerald-700 font-medium line-clamp-2';
+        const borderClass = isSpecial ? 'border-t border-emerald-600 pt-1.5' : 'border-t border-slate-200/60 pt-1.5';
+        card.innerHTML=`<div class="text-center"><div class="${dayNameClass}">${dn[day.getDay()]}</div><div class="${dayNumClass}">${day.getDate()}</div>${isToday?'<span class="text-[9px] bg-amber-500 text-white px-1.5 py-0.5 rounded font-bold">TODAY</span>':''}</div><div class="text-center"><div class="w-7 h-7 rounded-full mx-auto flex items-center justify-center text-white text-xs font-bold shadow-sm" style="background:${isSpecial?'#052e16':sd.colorHex}">${ic}</div><div class="${nameClass}">${sd.name}</div><div class="${taraClass}">${sd.taraClass}</div></div><div class="text-[10px] leading-snug ${borderClass}"><div class="${doClass}">${sd.do.split(',')[0]}</div></div>`;
         c.appendChild(card);
+    }
+}
+
+function getWeekStart(date) {
+    const d = new Date(date);
+    d.setHours(0,0,0,0);
+    d.setDate(d.getDate() - d.getDay());
+    return d;
+}
+
+function renderThisWeek() { renderWeekGrid('thisweek-grid', getWeekStart(new Date())); }
+function renderNextWeek() {
+    const next = getWeekStart(new Date());
+    next.setDate(next.getDate()+7);
+    renderWeekGrid('nextweek-grid', next);
+}
+
+function changeMonth(dir) {
+    if(dir===0) currentMonthOffset=0;
+    else currentMonthOffset+=dir;
+    renderMonthGrid();
+}
+
+function renderMonthGrid() {
+    const now = new Date();
+    const viewMonth = new Date(now.getFullYear(), now.getMonth()+currentMonthOffset, 1);
+    const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    document.getElementById('month-title').textContent = `${monthNames[viewMonth.getMonth()]} ${viewMonth.getFullYear()}`;
+    const c = document.getElementById('month-grid'); c.innerHTML='';
+    const firstDay = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), 1);
+    const lastDay = new Date(viewMonth.getFullYear(), viewMonth.getMonth()+1, 0);
+    const startDow = firstDay.getDay();
+    const today = new Date(); today.setHours(0,0,0,0);
+
+    for(let i=0;i<startDow;i++){
+        const empty=document.createElement('div');
+        empty.className='h-20';
+        c.appendChild(empty);
+    }
+
+    for(let d=1;d<=lastDay.getDate();d++){
+        const date = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), d, 12, 0, 0);
+        const a = getApproxNakshatraIndex(date);
+        const sn = nakshatraOrder[a.index];
+        const sd = nakshatraData.find(s=>s.name===sn);
+        const isToday = date.toDateString()===today.toDateString();
+        const isSpecial = isSpecialStar(sn);
+        let bg,border,textMain,textSub;
+        if(isSpecial){
+            bg='background:#166534';border='border-color:#14532d';textMain='color:white';textSub='color:#bbf7d0';
+        } else if(sd&&sd.taraCategory==='FAVORABLE'){bg='';border='';textMain='';textSub='';}
+        else if(sd&&sd.taraCategory==='CHALLENGING'){bg='background:#FFF1F2';border='border-color:#FECDD3';textMain='';textSub='';}
+        else {bg='background:#FFFBEB';border='border-color:#FDE68A';textMain='';textSub='';}
+        if(!sd) continue;
+        const cell=document.createElement('div');
+        cell.className=`rounded-lg p-1.5 border border-slate-200 cursor-pointer hover:shadow-md transition text-center space-y-0.5 ${isToday?'ring-2 ring-amber-500':''}`;
+        if(isSpecial||sd.taraCategory!=='FAVORABLE') cell.style.cssText=`${bg};${border}`;
+        if(sd.taraCategory==='FAVORABLE'&&!isSpecial) cell.style.cssText='background:#F0FDF4;border-color:#BBF7D0';
+        cell.onclick=()=>{switchTab('nav-transit');document.getElementById('transit-select').value=sd.id;updateDailyTransitView();};
+        const dateStyle = isSpecial ? 'style="color:white"' : '';
+        const nameStyle = isSpecial ? 'style="color:white"' : '';
+        const taraStyle = isSpecial ? 'style="color:#bbf7d0"' : 'class="text-slate-500"';
+        cell.innerHTML=`<div class="text-xs font-bold" ${dateStyle}>${d}</div><div class="text-[10px] font-bold leading-tight" ${nameStyle}>${sn}</div><div class="text-[9px]" ${taraStyle}>${sd.taraClass}</div>`;
+        c.appendChild(cell);
     }
 }
 
@@ -809,7 +941,9 @@ function switchTab(tabId) {
     document.getElementById(tabId).classList.remove('hidden');
     const btn=document.getElementById('btn-'+tabId.replace('nav-',''));
     if(btn){btn.classList.add('bg-amber-500','text-white','shadow-sm');btn.classList.remove('text-slate-600');}
-    if(tabId==='nav-analytics') setTimeout(()=>{chartEfficacyInst?.resize();chartSpheresInst?.resize();chartPlanetsInst?.resize();},100);
+    if(tabId==='nav-thisweek') renderThisWeek();
+    if(tabId==='nav-nextweek') renderNextWeek();
+    if(tabId==='nav-month') renderMonthGrid();
     if(tabId==='nav-hora') renderHoraGrid();
     if(tabId==='nav-journal'){renderJournalChart();renderJournalEntries();}
 }
@@ -999,12 +1133,6 @@ function renderJournalChart(){
     });
 }
 
-// ===== CHARTS =====
-function initCharts(){
-    chartEfficacyInst=new Chart(document.getElementById('chartEfficacy').getContext('2d'),{type:'bar',data:{labels:['Sampat','Kshema','Sadhaka','Mitra','P.Mitra','Janma','Vipat','Pratyak','Vadha'],datasets:[{label:'Stars',data:[3,3,3,3,3,3,3,3,3],backgroundColor:['#059669','#10B981','#047857','#065F46','#022C22','#D97706','#EF4444','#DC2626','#991B1B'],borderRadius:6}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,max:4,ticks:{stepSize:1}}}}});
-    chartSpheresInst=new Chart(document.getElementById('chartSpheres').getContext('2d'),{type:'doughnut',data:{labels:['Physical','Psychological','Spiritual'],datasets:[{data:[9,9,9],backgroundColor:['#D97706','#4F46E5','#059669'],borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{boxWidth:12,font:{size:11}}}}}});
-    chartPlanetsInst=new Chart(document.getElementById('chartPlanets').getContext('2d'),{type:'radar',data:{labels:['Ketu','Venus','Sun','Moon','Mars','Rahu','Jupiter','Saturn','Mercury'],datasets:[{label:'Harmony',data:[85,25,80,30,95,15,85,90,50],borderColor:'#D97706',backgroundColor:'rgba(217,119,6,0.2)',pointBackgroundColor:'#B45309',pointBorderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,scales:{r:{angleLines:{color:'#E2E8F0'},grid:{color:'#CBD5E1'},suggestedMin:0,suggestedMax:100}},plugins:{legend:{position:'bottom',labels:{boxWidth:12}}}}});
-}
 </script>
 </body>
 </html>
