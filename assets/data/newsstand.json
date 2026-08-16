@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T16:18:13Z",
+  "generated_at": "2026-08-16T01:00:54Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,7 +8,7 @@
   "popular": [
     {
       "n": 1,
-      "claim": "DISHONESTLY Cut Video Shows Political Commentator Hasan Piker Saying America Should Resume Lynching Black People Again -- He Was Criticizing Racists",
+      "claim": "Misrepresents Hassan Piker Quoting Comment Saying America Should Resume Lynching Black People -- Was Denouncing It",
       "verdict": "FALSE",
       "source": "Lead Stories",
       "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-dishonestly-cut-video-shows-political-commentator-hasan-piker-saying-america-should-resume-lynching-black-people-again.html",
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Muslim family bought major Bible publisher. There's no proof",
+      "claim": "How and why Texas deputy used 83K Flock cameras to track woman after abortion: What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/15/muslim-family-buys-bible-publisher/",
+      "url": "https://www.snopes.com/news/2026/08/15/texas-abortion-flock-cameras/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "New Age Bellwether Suggests Trump, GOP Are Walking Straight Off A Cliff",
+      "claim": "Gen Z Embraces High-Risk Gambling As Economic Future Darkens, Survey Finds",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/14/midterms-election-bellwether-shane-gillis-joe-rogan-podcast-bros-donald-trump-iran-war-selling-social-media-access",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/15/generation-z-embraces-sports-gambling-economic-uncertainty-betterment-survey",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Investigating claim USS Abraham Lincoln sailors are trying to jump overboard",
+      "claim": "Strait of Hormuz: 14 claims we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/14/uss-abraham-lincoln-sailors-overboard/",
+      "url": "https://www.snopes.com/collections/iran-war-strait-of-hormuz/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Beijing’s Voyage Through Frozen Waters Could Change Shipping Forever",
+      "claim": "Are The Trump Admin’s Efforts To Combat US Addiction Crisis Actually Working?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/15/china-shipping-route-arctic-sea-legend-line",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/15/trump-administration-opiod-addiction-crisis-fentanyl",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "of Hasan Piker speaking about Black people is heavily edited, missing key context",
-      "verdict": "MISLEADING",
+      "claim": "Muslim family bought major Bible publisher. There's no proof",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/14/hasan-piker-video-black-people/",
+      "url": "https://www.snopes.com/news/2026/08/15/muslim-family-buys-bible-publisher/",
       "topic": "Trending"
     },
     {
@@ -146,38 +146,78 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Powerful magnitude 7.7 earthquake kills at least 47 in Indonesia",
+      "headline": "Rescuers search for survivors of powerful Indonesia earthquake",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5y0zz63gero?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-15T13:35:57+00:00"
+      "published": "2026-08-15T21:49:12+00:00"
     },
     {
       "n": 2,
-      "headline": "ICE detained a Venezuelan soccer pro. His case shows the immigration backlog crisis",
+      "headline": "Are robotaxis finally here?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5928322/ice-detained-a-venezuelan-soccer-pro-his-case-shows-the-immigration-backlog-crisis",
+      "url": "https://www.npr.org/2026/08/15/nx-s1-5918065/are-robotaxis-finally-here",
       "topic": "Trending",
-      "published": "2026-08-15T10:10:00+00:00"
+      "published": "2026-08-15T21:30:21+00:00"
     },
     {
       "n": 3,
-      "headline": "Israeli airstrikes on southern Lebanon kill 11 people, Health Ministry says",
+      "headline": "Cyclospora spreads through human waste — so how did it get on food?",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/israeli-airstrikes-on-southern-lebanon-kill-11-people-health-ministry-says",
-      "topic": "Health",
-      "published": "2026-08-15T15:47:14+00:00"
+      "url": "https://www.pbs.org/newshour/health/cyclospora-spreads-through-human-waste-so-how-did-it-get-on-food",
+      "topic": "Trending",
+      "published": "2026-08-15T22:34:59+00:00"
     },
     {
       "n": 4,
-      "headline": "American missionary kidnapped in Niger freed after nine months",
+      "headline": "Zimbabwe boat accident death toll hits 68 as 22 more bodies recovered",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
+      "url": "https://www.theguardian.com/world/2026/aug/15/more-bodies-recovered-after-zimbabwe-boat-accident",
       "topic": "Trending",
-      "published": "2026-08-14T14:55:17+00:00"
+      "published": "2026-08-15T19:39:07+00:00"
     },
     {
       "n": 5,
+      "headline": "Morocco detains dozens of migrants trying to enter Spanish North African exclave Ceuta",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/morocco-detains-dozens-of-migrants-trying-to-enter-spanish-north-african-exclave-ceuta/a-78385761?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-15T23:26:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Morocco detains dozens of migrants trying to cross into Ceuta, reports say",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckg44x2ey1ro?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-15T20:58:31+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "State Department spokesperson on Iran war and U.S. visa revocations",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/15/nx-s1-5931811/state-department-spokesperson-on-iran-war-and-u-s-visa-revocations",
+      "topic": "World",
+      "published": "2026-08-15T21:20:51+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Indiana authorities say at least 5 people have died as severe weather crosses the state",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/indiana-authorities-say-at-least-5-people-have-died-in-flooding-across-the-state",
+      "topic": "Science",
+      "published": "2026-08-15T20:39:01+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Moroccan police arrest more than 100 people as they attempt to enter Ceuta",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/15/moroccan-police-arrest-more-than-100-people-as-they-attempt-to-enter-ceuta",
+      "topic": "Trending",
+      "published": "2026-08-15T18:08:21+00:00"
+    },
+    {
+      "n": 10,
       "headline": "Lebanon says 11 killed in Israeli airstrikes",
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/lebanon-says-11-killed-in-israeli-airstrikes/a-78383713?maca=en-rss-en-all-1573-rdf",
@@ -185,100 +225,60 @@
       "published": "2026-08-15T15:35:00+00:00"
     },
     {
-      "n": 6,
+      "n": 11,
       "headline": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-15T16:02:49+00:00"
+      "published": "2026-08-15T20:21:14+00:00"
     },
     {
-      "n": 7,
-      "headline": "5 exercises that can prevent (and relieve!) pregnancy pain",
+      "n": 12,
+      "headline": "The Midwest braces for more heavy flooding, as Indiana seeks federal aid",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5930423/strength-exercises-to-relieve-prevent-pregnancy-pain",
+      "url": "https://www.npr.org/2026/08/15/nx-s1-5932552/midwest-flooding-indiana-fema",
       "topic": "Trending",
-      "published": "2026-08-15T09:04:00+00:00"
+      "published": "2026-08-15T20:04:13+00:00"
     },
     {
-      "n": 8,
-      "headline": "Hawaii's Big Island lashed by rain and wind as Tropical Storm Lala closes in",
+      "n": 13,
+      "headline": "Democrats' 2028 presidential calendar gives Black and Latino voters and union members an early say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/hawaiis-big-island-lashed-by-rain-and-wind-as-tropical-storm-lala-closes-in",
+      "url": "https://www.pbs.org/newshour/politics/democrats-2028-presidential-calendar-gives-black-and-latino-voters-and-union-members-an-early-say",
       "topic": "Trending",
-      "published": "2026-08-15T15:17:14+00:00"
+      "published": "2026-08-15T19:00:56+00:00"
     },
     {
-      "n": 9,
-      "headline": "DRC’s fast-growing Ebola outbreak spreads to sixth province",
+      "n": 14,
+      "headline": "American missionary kidnapped in Niger freed after nine months",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/13/ebola-drc-democratic-republic-congo-sixth-province",
+      "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
       "topic": "Trending",
-      "published": "2026-08-13T15:17:13+00:00"
+      "published": "2026-08-14T14:55:17+00:00"
     },
     {
-      "n": 10,
-      "headline": "In Germany, record heat meets climate action fatigue",
+      "n": 15,
+      "headline": "Climate action doesn't seem to be a priority for Germany — despite heat-related deaths and drought. Why aren't more people taking to the streets?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/in-germany-record-heat-meets-climate-action-fatigue/a-78374727?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/climate-action-doesn-t-seem-to-be-a-priority-for-germany-despite-heat-related-deaths-and-drought-why-aren-t-more-people-taking-to-the-streets/a-78374727?maca=en-rss-en-all-1573-rdf",
       "topic": "Science",
       "published": "2026-08-15T14:51:00+00:00"
     },
     {
-      "n": 11,
-      "headline": "BBC seeks to subpoena Trump's family members in Panorama lawsuit",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cd69ely319eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-15T00:01:53+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "They fought for the U.S. in Afghanistan. Now they worry about losing their green cards",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5897606/afghanistan-visa-green-card-deport",
-      "topic": "Trending",
-      "published": "2026-08-15T09:00:00+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Magnitude 7.7 earthquake strikes off Indonesia's coast, killing at least 47 and toppling buildings",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/magnitude-7-7-earthquake-strikes-off-indonesias-coast-killing-at-least-47-and-toppling-buildings",
-      "topic": "Trending",
-      "published": "2026-08-15T15:01:06+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "French ambassador to CAR investigated over claims he hosted dozens of women",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/13/france-ambassador-car-central-african-republic-investigation-bruno-foucher",
-      "topic": "Trending",
-      "published": "2026-08-13T14:21:52+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "Hawaii under state of emergency ahead of historic hurricane",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/hawaii-under-state-of-emergency-ahead-of-historic-hurricane/a-78382001?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-15T12:11:00+00:00"
-    },
-    {
       "n": 16,
-      "headline": "US aircraft carrier on way to relieve USS Lincoln after issues reported aboard",
+      "headline": "Liechtenstein changes succession rule to allow women to ascend the throne",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c171yp5zdrxo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cn9nnxrxg4qo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-14T17:36:27+00:00"
+      "published": "2026-08-15T19:41:57+00:00"
     },
     {
       "n": 17,
-      "headline": "Army temporarily halts Apache helicopter training missions after deadly Texas crash",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/army-temporarily-halts-apache-helicopter-training-missions-after-deadly-texas-crash",
-      "topic": "Trending",
-      "published": "2026-08-14T23:34:27+00:00"
+      "headline": "Families of USS Lincoln crew say Trump should be 'ashamed' of conditions on board",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/15/nx-s1-5932539/uss-lincoln-trump-dire-conditions",
+      "topic": "Politics",
+      "published": "2026-08-15T18:21:32+00:00"
     }
   ]
 }
