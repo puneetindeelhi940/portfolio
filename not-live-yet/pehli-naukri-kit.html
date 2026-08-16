@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="../">
+<title>Pehli Naukri Survival Kit</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#0a0a0f;
+  --card:#14141f;
+  --card-2:#1a1a2e;
+  --text:#f0f0f5;
+  --dim:#9090a8;
+  --purple:#c084fc;
+  --pink:#f472b6;
+  --peach:#fb923c;
+  --mint:#34d399;
+  --blue:#60a5fa;
+  --yellow:#fbbf24;
+  --gradient-1:linear-gradient(135deg,#c084fc,#f472b6);
+  --gradient-2:linear-gradient(135deg,#f472b6,#fb923c);
+  --gradient-3:linear-gradient(135deg,#34d399,#60a5fa);
+  --radius:20px;
+  --radius-sm:14px;
+}
+
+body{
+  font-family:'DM Sans','Space Grotesk',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── Floating blobs background ── */
+.bg-blobs{
+  position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+}
+.bg-blobs span{
+  position:absolute;border-radius:50%;filter:blur(100px);opacity:.18;
+  animation:float 20s ease-in-out infinite alternate;
+}
+.bg-blobs span:nth-child(1){width:500px;height:500px;background:#c084fc;top:-10%;left:-10%;animation-delay:0s}
+.bg-blobs span:nth-child(2){width:400px;height:400px;background:#f472b6;bottom:10%;right:-5%;animation-delay:-7s}
+.bg-blobs span:nth-child(3){width:350px;height:350px;background:#60a5fa;top:40%;left:50%;animation-delay:-14s}
+
+@keyframes float{
+  0%{transform:translate(0,0) scale(1)}
+  100%{transform:translate(60px,40px) scale(1.15)}
+}
+
+/* ── Layout ── */
+.app{
+  position:relative;z-index:1;
+  max-width:480px;margin:0 auto;padding:20px 16px 100px;
+}
+
+/* ── Header ── */
+.header{text-align:center;padding:32px 0 24px}
+.header .app-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--card-2);border:1px solid rgba(255,255,255,.08);
+  padding:6px 14px;border-radius:999px;font-size:11px;
+  color:var(--dim);letter-spacing:.5px;text-transform:uppercase;
+  margin-bottom:16px;
+}
+.header .app-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--mint);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+.header h1{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:28px;font-weight:700;line-height:1.2;
+  background:var(--gradient-1);-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:6px;
+}
+.header .tagline{font-size:14px;color:var(--dim)}
+.header .date{
+  font-size:12px;color:var(--dim);margin-top:12px;
+  opacity:.6;
+}
+
+/* ── Cards ── */
+.card{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);
+  padding:20px;margin-bottom:16px;
+  transition:transform .2s,box-shadow .2s;
+}
+.card:active{transform:scale(.98)}
+.card-header{
+  display:flex;align-items:center;gap:10px;margin-bottom:14px;
+}
+.card-icon{
+  width:40px;height:40px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+}
+.card-title{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600}
+.card-subtitle{font-size:12px;color:var(--dim);margin-top:2px}
+
+/* ── Affirmation Card ── */
+.affirmation-card{
+  background:linear-gradient(135deg,rgba(192,132,252,.12),rgba(244,114,182,.12));
+  border:1px solid rgba(192,132,252,.2);
+}
+.affirmation-card .card-icon{background:rgba(192,132,252,.2)}
+.affirmation-text{
+  font-size:20px;font-weight:600;line-height:1.4;
+  font-family:'Space Grotesk',sans-serif;
+  margin-bottom:12px;
+}
+.affirmation-author{font-size:12px;color:var(--dim)}
+.refresh-btn{
+  background:rgba(255,255,255,.08);border:none;color:var(--text);
+  padding:8px 16px;border-radius:999px;font-size:12px;
+  cursor:pointer;margin-top:12px;display:inline-flex;align-items:center;gap:6px;
+  transition:background .2s;
+}
+.refresh-btn:hover{background:rgba(255,255,255,.14)}
+
+/* ── Budget Tracker ── */
+.budget-card .card-icon{background:rgba(52,211,153,.2)}
+.budget-display{text-align:center;padding:12px 0}
+.budget-amount{
+  font-size:42px;font-weight:700;
+  font-family:'Space Grotesk',sans-serif;
+}
+.budget-amount .rupee{font-size:28px;opacity:.6}
+.budget-label{font-size:12px;color:var(--dim);margin-top:4px}
+.budget-bar{
+  width:100%;height:8px;background:rgba(255,255,255,.06);
+  border-radius:999px;margin:16px 0 12px;overflow:hidden;
+}
+.budget-bar-fill{
+  height:100%;border-radius:999px;
+  background:var(--gradient-3);
+  transition:width .6s cubic-bezier(.22,1,.36,1);
+}
+.budget-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.budget-cat{
+  background:rgba(255,255,255,.04);border-radius:var(--radius-sm);
+  padding:12px;text-align:center;cursor:pointer;
+  transition:background .2s;
+}
+.budget-cat:hover{background:rgba(255,255,255,.08)}
+.budget-cat .emoji{font-size:22px;margin-bottom:4px}
+.budget-cat .cat-name{font-size:11px;color:var(--dim)}
+.budget-cat .cat-amount{font-size:15px;font-weight:600;margin-top:2px}
+.budget-input-row{
+  display:flex;gap:8px;margin-top:14px;
+}
+.budget-input{
+  flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:10px 14px;color:var(--text);
+  font-size:14px;outline:none;font-family:inherit;
+}
+.budget-input:focus{border-color:var(--mint)}
+.budget-input::placeholder{color:rgba(255,255,255,.25)}
+.add-expense-btn{
+  background:var(--mint);color:#0a0a0f;border:none;
+  border-radius:12px;padding:10px 18px;font-size:14px;
+  font-weight:600;cursor:pointer;white-space:nowrap;
+  transition:opacity .2s;
+}
+.add-expense-btn:hover{opacity:.85}
+.category-picker{
+  display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;
+}
+.cat-chip{
+  padding:6px 12px;border-radius:999px;font-size:12px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);
+  cursor:pointer;transition:all .2s;
+}
+.cat-chip.active{background:rgba(52,211,153,.2);border-color:var(--mint);color:var(--mint)}
+
+/* ── Interview Prep ── */
+.interview-card .card-icon{background:rgba(96,165,250,.2)}
+.interview-q{
+  background:rgba(96,165,250,.08);border-radius:var(--radius-sm);
+  padding:16px;margin-bottom:12px;
+}
+.interview-q .q-label{
+  font-size:10px;text-transform:uppercase;letter-spacing:1px;
+  color:var(--blue);margin-bottom:8px;
+}
+.interview-q .q-text{
+  font-size:16px;font-weight:500;line-height:1.5;
+}
+.interview-q .q-category{
+  display:inline-block;margin-top:10px;
+  font-size:11px;padding:4px 10px;border-radius:999px;
+  background:rgba(96,165,250,.15);color:var(--blue);
+}
+.tip-box{
+  background:rgba(251,191,36,.08);border-left:3px solid var(--yellow);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:12px 14px;font-size:13px;color:var(--dim);line-height:1.5;
+}
+.tip-box strong{color:var(--yellow)}
+
+/* ── Outfit Randomizer ── */
+.outfit-card .card-icon{background:rgba(244,114,182,.2)}
+.outfit-result{
+  text-align:center;padding:16px 0;
+}
+.outfit-emoji{font-size:60px;margin-bottom:12px;display:block}
+.outfit-name{font-size:18px;font-weight:600;margin-bottom:4px}
+.outfit-desc{font-size:13px;color:var(--dim);line-height:1.5}
+.outfit-tags{display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.outfit-tag{
+  padding:4px 12px;border-radius:999px;font-size:11px;
+  background:rgba(244,114,182,.12);color:var(--pink);
+  border:1px solid rgba(244,114,182,.2);
+}
+
+/* ── Delhi Food Spot ── */
+.food-card .card-icon{background:rgba(251,147,60,.2)}
+.food-result{text-align:center;padding:12px 0}
+.food-emoji{font-size:48px;margin-bottom:10px;display:block}
+.food-name{font-size:18px;font-weight:600}
+.food-area{font-size:13px;color:var(--dim);margin-top:2px}
+.food-price{
+  display:inline-block;margin-top:8px;
+  padding:4px 12px;border-radius:999px;font-size:12px;
+  background:rgba(52,211,153,.12);color:var(--mint);
+}
+.food-vibe{font-size:13px;color:var(--dim);margin-top:10px;font-style:italic}
+
+/* ── Mood Tracker ── */
+.mood-card .card-icon{background:rgba(251,191,36,.2)}
+.mood-grid{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+.mood-btn{
+  width:52px;height:52px;border-radius:16px;border:2px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.04);font-size:26px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .25s;
+}
+.mood-btn:hover{transform:scale(1.12);border-color:rgba(255,255,255,.2)}
+.mood-btn.selected{
+  border-color:var(--yellow);background:rgba(251,191,36,.12);
+  transform:scale(1.15);box-shadow:0 0 20px rgba(251,191,36,.2);
+}
+.mood-response{
+  text-align:center;font-size:14px;color:var(--dim);
+  margin-top:8px;line-height:1.5;min-height:42px;
+}
+.mood-streak{
+  text-align:center;margin-top:12px;
+  font-size:12px;color:var(--dim);
+}
+.mood-streak span{color:var(--yellow);font-weight:600}
+
+/* ── Shared button ── */
+.shuffle-btn{
+  width:100%;padding:12px;border:none;border-radius:14px;
+  font-size:14px;font-weight:600;cursor:pointer;
+  color:#0a0a0f;transition:all .2s;
+  font-family:inherit;
+}
+.shuffle-btn:hover{opacity:.88;transform:translateY(-1px)}
+.shuffle-btn.purple{background:var(--gradient-1)}
+.shuffle-btn.green{background:var(--gradient-3)}
+.shuffle-btn.pink{background:var(--gradient-2)}
+.shuffle-btn.blue{background:linear-gradient(135deg,#60a5fa,#a78bfa)}
+
+/* ── Footer nav ── */
+.bottom-nav{
+  position:fixed;bottom:0;left:0;right:0;
+  background:rgba(10,10,15,.92);backdrop-filter:blur(20px);
+  border-top:1px solid rgba(255,255,255,.06);
+  padding:8px 0 calc(8px + env(safe-area-inset-bottom));
+  z-index:100;
+}
+.bottom-nav-inner{
+  max-width:480px;margin:0 auto;
+  display:flex;justify-content:space-around;
+}
+.nav-item{
+  display:flex;flex-direction:column;align-items:center;
+  gap:2px;padding:6px 12px;border-radius:12px;
+  cursor:pointer;transition:all .2s;
+  background:none;border:none;color:var(--dim);
+  font-family:inherit;
+}
+.nav-item.active{color:var(--purple)}
+.nav-item .nav-icon{font-size:22px}
+.nav-item .nav-label{font-size:10px;font-weight:500}
+
+/* ── Section visibility ── */
+.section{display:none}
+.section.active{display:block;animation:fadeUp .35s ease}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(12px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ── Toast ── */
+.toast{
+  position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-100px);
+  background:var(--card-2);border:1px solid rgba(255,255,255,.1);
+  padding:12px 20px;border-radius:999px;font-size:13px;
+  z-index:200;transition:transform .4s cubic-bezier(.22,1,.36,1);
+  box-shadow:0 8px 32px rgba(0,0,0,.4);
+}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+/* ── Credit ── */
+.credit{
+  text-align:center;padding:24px 0 80px;
+  font-size:11px;color:rgba(255,255,255,.2);
+}
+.credit a{color:rgba(255,255,255,.3);text-decoration:none}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:4px}
+</style>
+</head>
+<body>
+
+<div class="bg-blobs"><span></span><span></span><span></span></div>
+
+<div class="toast" id="toast"></div>
+
+<div class="app">
+  <!-- Header -->
+  <div class="header">
+    <div class="app-badge"><span class="dot"></span> App of the Day</div>
+    <h1>Pehli Naukri Survival Kit</h1>
+    <p class="tagline">your daily adulting companion, bestie</p>
+    <p class="date" id="dateDisplay"></p>
+  </div>
+
+  <!-- ══ Section: Home ══ -->
+  <div class="section active" id="sec-home">
+    <!-- Affirmation -->
+    <div class="card affirmation-card">
+      <div class="card-header">
+        <div class="card-icon">&#x2728;</div>
+        <div>
+          <div class="card-title">Today's Affirmation</div>
+          <div class="card-subtitle">you needed to hear this</div>
+        </div>
+      </div>
+      <div class="affirmation-text" id="affirmText"></div>
+      <div class="affirmation-author" id="affirmAuthor"></div>
+      <button class="refresh-btn" onclick="nextAffirmation()">&#x1F504; new one</button>
+    </div>
+
+    <!-- Mood Tracker -->
+    <div class="card mood-card">
+      <div class="card-header">
+        <div class="card-icon">&#x1F31F;</div>
+        <div>
+          <div class="card-title">Vibe Check</div>
+          <div class="card-subtitle">how are we feeling today?</div>
+        </div>
+      </div>
+      <div class="mood-grid" id="moodGrid"></div>
+      <div class="mood-response" id="moodResponse"></div>
+      <div class="mood-streak" id="moodStreak"></div>
+    </div>
+  </div>
+
+  <!-- ══ Section: Money ══ -->
+  <div class="section" id="sec-money">
+    <div class="card budget-card">
+      <div class="card-header">
+        <div class="card-icon">&#x1F4B0;</div>
+        <div>
+          <div class="card-title">Paisa Tracker</div>
+          <div class="card-subtitle">because delhi rent won't pay itself</div>
+        </div>
+      </div>
+      <div class="budget-display">
+        <div class="budget-amount"><span class="rupee">&#8377;</span><span id="budgetLeft">25000</span></div>
+        <div class="budget-label">left this month</div>
+      </div>
+      <div class="budget-bar"><div class="budget-bar-fill" id="budgetBar" style="width:100%"></div></div>
+      <div class="budget-grid" id="budgetGrid"></div>
+      <div class="budget-input-row">
+        <input class="budget-input" id="expenseInput" type="number" placeholder="How much? &#8377;">
+        <button class="add-expense-btn" onclick="addExpense()">Add</button>
+      </div>
+      <div class="category-picker" id="catPicker"></div>
+      <button class="shuffle-btn green" style="margin-top:14px" onclick="resetBudget()">Reset Month</button>
+    </div>
+  </div>
+
+  <!-- ══ Section: Prep ══ -->
+  <div class="section" id="sec-prep">
+    <div class="card interview-card">
+      <div class="card-header">
+        <div class="card-icon">&#x1F4BC;</div>
+        <div>
+          <div class="card-title">Interview Prep</div>
+          <div class="card-subtitle">one question a day keeps unemployment away</div>
+        </div>
+      </div>
+      <div class="interview-q">
+        <div class="q-label">Today's Question</div>
+        <div class="q-text" id="interviewQ"></div>
+        <span class="q-category" id="interviewCat"></span>
+      </div>
+      <div class="tip-box" id="interviewTip"></div>
+      <button class="shuffle-btn blue" style="margin-top:14px" onclick="nextQuestion()">&#x1F500; Next Question</button>
+    </div>
+  </div>
+
+  <!-- ══ Section: Style ══ -->
+  <div class="section" id="sec-style">
+    <!-- Outfit Randomizer -->
+    <div class="card outfit-card">
+      <div class="card-header">
+        <div class="card-icon">&#x1F457;</div>
+        <div>
+          <div class="card-title">OOTD Generator</div>
+          <div class="card-subtitle">office-appropriate but make it cute</div>
+        </div>
+      </div>
+      <div class="outfit-result" id="outfitResult"></div>
+      <button class="shuffle-btn pink" onclick="randomOutfit()">&#x1F500; Shuffle Outfit</button>
+    </div>
+
+    <!-- Delhi Food -->
+    <div class="card food-card">
+      <div class="card-header">
+        <div class="card-icon">&#x1F35C;</div>
+        <div>
+          <div class="card-title">Delhi Khana Finder</div>
+          <div class="card-subtitle">budget-friendly eats near you</div>
+        </div>
+      </div>
+      <div class="food-result" id="foodResult"></div>
+      <button class="shuffle-btn purple" onclick="randomFood()">&#x1F500; Find Me Food</button>
+    </div>
+  </div>
+
+  <div class="credit">Built by <a href="https://puneetindeelhi940.github.io/portfolio/">Puneet Arora</a></div>
+</div>
+
+<!-- Bottom Nav -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <button class="nav-item active" onclick="switchTab('home',this)">
+      <span class="nav-icon">&#x1F3E0;</span>
+      <span class="nav-label">Home</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('money',this)">
+      <span class="nav-icon">&#x1F4B8;</span>
+      <span class="nav-label">Paisa</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('prep',this)">
+      <span class="nav-icon">&#x1F4BC;</span>
+      <span class="nav-label">Prep</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('style',this)">
+      <span class="nav-icon">&#x2728;</span>
+      <span class="nav-label">Vibe</span>
+    </button>
+  </div>
+</nav>
+
+<script>
+/* ── Data ── */
+const affirmations = [
+  {text:"Your degree is not a receipt — it's a launchpad. The real education starts now.",author:"— the universe"},
+  {text:"That HR will email back. And if they don't, someone better will.",author:"— your future self"},
+  {text:"You survived Delhi University parking. You can survive anything.",author:"— every DU kid ever"},
+  {text:"The girl who once cried over CGPA is about to make her own money. Let that sink in.",author:"— growth"},
+  {text:"Not getting a response is the universe saying 'I have better plans for you, bestie.'",author:"— trust the process"},
+  {text:"Your parents didn't raise you to settle. Go get that dream offer.",author:"— amma & papa"},
+  {text:"You're not behind. You're building foundations. Every topper peaked in college — you peak in life.",author:"— real talk"},
+  {text:"A 'no' today is just a redirect to a 'heck yes' tomorrow.",author:"— career karma"},
+  {text:"That internship rejection? In two years you'll thank them for the plot twist.",author:"— hindsight"},
+  {text:"You navigated Delhi Metro in rush hour. Corporate politics is nothing.",author:"— metro warrior"},
+  {text:"Your LinkedIn is not your life. Stop comparing your chapter 1 to someone's chapter 20.",author:"— digital detox"},
+  {text:"Every successful person you admire was once exactly where you are — confused, broke, but hungry.",author:"— the grind"},
+];
+
+const moods = [
+  {emoji:"🔥",label:"on fire",response:"Main character energy activated. Go crush that to-do list!"},
+  {emoji:"😊",label:"good",response:"Acha mood hai? Perfect day to manifest that dream job!"},
+  {emoji:"😐",label:"meh",response:"Meh days are valid. Grab a chai, recharge, come back stronger."},
+  {emoji:"😰",label:"anxious",response:"Deep breaths, bestie. You've survived every bad day so far — 100% track record."},
+  {emoji:"😭",label:"low",response:"It's okay to not be okay. Watch comfort reels, order momos, tomorrow is a new day."},
+  {emoji:"😤",label:"angry",response:"Channel that rage into your cover letter. Angry energy = productive energy."},
+];
+
+const categories = [
+  {name:"Rent",emoji:"🏠",key:"rent"},
+  {name:"Food",emoji:"🍕",key:"food"},
+  {name:"Metro",emoji:"🚇",key:"metro"},
+  {name:"Shopping",emoji:"🛍️",key:"shopping"},
+  {name:"Chai/Coffee",emoji:"☕",key:"chai"},
+  {name:"Recharge",emoji:"📱",key:"recharge"},
+  {name:"Going Out",emoji:"🎉",key:"going_out"},
+  {name:"Misc",emoji:"📦",key:"misc"},
+];
+
+const questions = [
+  {q:"Tell me about yourself — but make it professional, not your entire life story.",cat:"HR Classic",tip:"<strong>Pro tip:</strong> Follow the Present-Past-Future formula. What you do now → what you studied/did before → what you want next. Keep it under 90 seconds."},
+  {q:"Where do you see yourself in 5 years?",cat:"HR Classic",tip:"<strong>Pro tip:</strong> Show ambition but stay realistic. 'Growing into a leadership role in [field]' > 'Your job, specifically.'"},
+  {q:"Why should we hire you over other candidates?",cat:"HR Classic",tip:"<strong>Pro tip:</strong> Pick 2-3 strengths that match the JD. Back each with a quick example. Confidence, not arrogance."},
+  {q:"Tell me about a time you faced a conflict in a team.",cat:"Behavioral",tip:"<strong>Pro tip:</strong> Use the STAR method (Situation, Task, Action, Result). College fest organizing counts!"},
+  {q:"What's your biggest weakness?",cat:"HR Trap",tip:"<strong>Pro tip:</strong> Pick a real one you're working on. 'I sometimes take on too much' + 'so I started using task lists' = chef's kiss."},
+  {q:"Why do you want to work at [Company]?",cat:"Research",tip:"<strong>Pro tip:</strong> Mention something specific — a product feature, a recent blog post, their culture page. Generic flattery = instant reject."},
+  {q:"How do you handle pressure and tight deadlines?",cat:"Behavioral",tip:"<strong>Pro tip:</strong> Give a real example (exam season, event planning, freelance gig) where you delivered under pressure."},
+  {q:"What are your salary expectations?",cat:"Negotiation",tip:"<strong>Pro tip:</strong> Research the market range on Glassdoor/AmbitionBox first. Give a range, not a single number. Never go first if you can help it."},
+  {q:"Do you have any questions for us?",cat:"Interview End",tip:"<strong>Pro tip:</strong> ALWAYS ask. Try: 'What does success look like in this role in the first 90 days?' Shows you're already thinking about contributing."},
+  {q:"Describe a project you're most proud of.",cat:"Technical",tip:"<strong>Pro tip:</strong> Academic projects count! Focus on the problem, your approach, and the result. Numbers and outcomes > process description."},
+  {q:"How do you stay updated in your field?",cat:"Growth",tip:"<strong>Pro tip:</strong> Mention specific newsletters, podcasts, creators, or communities. Shows genuine curiosity, not just interview prep."},
+  {q:"What would you do in your first 30 days here?",cat:"Strategy",tip:"<strong>Pro tip:</strong> Listen, learn, build relationships. Show you won't come in guns blazing but also won't just sit around."},
+];
+
+const outfits = [
+  {emoji:"👔",name:"Corporate Cute",desc:"White shirt + black trousers + statement earrings. Classic but make it Gen Z.",tags:["#OfficeReady","#CleanGirl","#PowerDressing"]},
+  {emoji:"🧥",name:"Blazer Babe",desc:"Oversized blazer + basic tee + straight-fit jeans. You look like you run the place.",tags:["#BossBabe","#StreetToOffice","#Blazered"]},
+  {emoji:"👗",name:"Kurti Queen",desc:"A-line kurti + cigarette pants + kolhapuris. Desi vibes, professional energy.",tags:["#DesiGirl","#EthnicChic","#KurtiSeason"]},
+  {emoji:"👖",name:"Smart Casual Slay",desc:"Solid crop blazer + high-waist pants + white sneakers. When the dress code says 'smart casual'.",tags:["#SmartCasual","#MinimalFit","#EffortlessChic"]},
+  {emoji:"🎨",name:"Color Block Queen",desc:"Bold colored top + neutral bottom + matching accessories. You ARE the serotonin.",tags:["#ColorTherapy","#DopamineDressing","#PopOfColor"]},
+  {emoji:"🖤",name:"All Black Everything",desc:"Black turtleneck/top + black pants + black boots. Mysterious, powerful, unbothered.",tags:["#AllBlack","#DarkAcademia","#MainCharacter"]},
+  {emoji:"💼",name:"Interview Armor",desc:"Pastel shirt + navy blazer + tailored trousers. First impression = lasting impression.",tags:["#InterviewReady","#FirstImpression","#DressForSuccess"]},
+  {emoji:"🌸",name:"Soft Girl Friday",desc:"Flowy blouse + pleated skirt/wide-leg pants + dainty jewelry. Because Fridays deserve softness.",tags:["#FridayVibes","#SoftGirl","#FlowingFabrics"]},
+];
+
+const delhiFood = [
+  {emoji:"🥟",name:"Dolma Aunty Momos",area:"Lajpat Nagar",price:"₹60-100",vibe:"The OG momo spot. The chutney alone is worth the trip."},
+  {emoji:"🍛",name:"Baba Nagpal Corner",area:"Lajpat Nagar",price:"₹80-150",vibe:"Chole bhature that'll make you forget your diet exists."},
+  {emoji:"🌯",name:"Al-Bake Shawarma",area:"New Friends Colony",price:"₹120-180",vibe:"That rumali roti shawarma hits different at 11pm."},
+  {emoji:"🍕",name:"Sattvik Pizza",area:"Rajouri Garden",price:"₹150-250",vibe:"When you want pizza but your wallet says 'bro...'"},
+  {emoji:"🧋",name:"Chaayos",area:"Multiple Outlets",price:"₹100-200",vibe:"AC + WiFi + unlimited chai refills = free coworking space."},
+  {emoji:"🫓",name:"Paranthe Wali Gali",area:"Chandni Chowk",price:"₹50-100",vibe:"12 types of paranthas. Tourist trap? Yes. Worth it? Also yes."},
+  {emoji:"🍦",name:"Giani's",area:"Multiple Outlets",price:"₹60-150",vibe:"Rabri faluda after a tough interview = instant mood fix."},
+  {emoji:"🥘",name:"Andhra Bhawan Canteen",area:"India Gate Area",price:"₹100-120",vibe:"Unlimited thali for ₹100. Government subsidized serotonin."},
+  {emoji:"🍔",name:"Burger Singh",area:"Multiple Outlets",price:"₹150-250",vibe:"Desi burgers with names like 'Bunty Tikki Raja'. Need we say more?"},
+  {emoji:"🫖",name:"Tapri Chai Spot",area:"Nearest Metro Station",price:"₹10-20",vibe:"₹10 cutting chai + existential career conversations. Peak Delhi."},
+  {emoji:"🥙",name:"Khan Chacha",area:"Khan Market",price:"₹150-300",vibe:"When you want to feel fancy but your bank balance is basic."},
+  {emoji:"🍜",name:"Wai Yu Mun Ching",area:"Connaught Place",price:"₹120-200",vibe:"Delhi's oldest Chinese restaurant. Chilli chicken that slaps."},
+];
+
+/* ── State ── */
+let affirmIdx = Math.floor(Math.random()*affirmations.length);
+let questionIdx = Math.floor(Math.random()*questions.length);
+let selectedCat = "food";
+let budget = JSON.parse(localStorage.getItem("pnk-budget")||"null") || {
+  total:25000,
+  spent:{rent:0,food:0,metro:0,shopping:0,chai:0,recharge:0,going_out:0,misc:0}
+};
+let moodLog = JSON.parse(localStorage.getItem("pnk-moods")||"[]");
+
+/* ── Init ── */
+document.getElementById("dateDisplay").textContent = new Date().toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+showAffirmation();
+renderMoods();
+renderBudget();
+showQuestion();
+randomOutfit();
+randomFood();
+
+/* ── Tab switching ── */
+function switchTab(id, btn){
+  document.querySelectorAll(".section").forEach(s=>s.classList.remove("active"));
+  document.getElementById("sec-"+id).classList.add("active");
+  document.querySelectorAll(".nav-item").forEach(n=>n.classList.remove("active"));
+  btn.classList.add("active");
+}
+
+/* ── Affirmations ── */
+function showAffirmation(){
+  const a = affirmations[affirmIdx % affirmations.length];
+  document.getElementById("affirmText").textContent = a.text;
+  document.getElementById("affirmAuthor").textContent = a.author;
+}
+function nextAffirmation(){
+  affirmIdx = (affirmIdx+1) % affirmations.length;
+  showAffirmation();
+}
+
+/* ── Mood ── */
+function renderMoods(){
+  const grid = document.getElementById("moodGrid");
+  grid.innerHTML = moods.map((m,i)=>`<button class="mood-btn" onclick="pickMood(${i})" title="${m.label}">${m.emoji}</button>`).join("");
+  const streak = moodLog.length;
+  document.getElementById("moodStreak").innerHTML = streak ? `<span>${streak}</span> day${streak>1?"s":""} tracked ✨` : "Start your streak today!";
+}
+function pickMood(i){
+  document.querySelectorAll(".mood-btn").forEach(b=>b.classList.remove("selected"));
+  document.querySelectorAll(".mood-btn")[i].classList.add("selected");
+  document.getElementById("moodResponse").textContent = moods[i].response;
+  const today = new Date().toDateString();
+  if(!moodLog.length || moodLog[moodLog.length-1].date !== today){
+    moodLog.push({date:today,mood:moods[i].label});
+    localStorage.setItem("pnk-moods",JSON.stringify(moodLog));
+    renderMoods();
+    showToast("Mood logged! 💜");
+  }
+}
+
+/* ── Budget ── */
+function renderBudget(){
+  const totalSpent = Object.values(budget.spent).reduce((a,b)=>a+b,0);
+  const left = budget.total - totalSpent;
+  document.getElementById("budgetLeft").textContent = left.toLocaleString("en-IN");
+  document.getElementById("budgetBar").style.width = Math.max(0,left/budget.total*100)+"%";
+  const barFill = document.getElementById("budgetBar");
+  if(left/budget.total < .2) barFill.style.background = "linear-gradient(135deg,#ef4444,#f97316)";
+  else if(left/budget.total < .5) barFill.style.background = "linear-gradient(135deg,#f97316,#fbbf24)";
+  else barFill.style.background = "var(--gradient-3)";
+
+  const grid = document.getElementById("budgetGrid");
+  grid.innerHTML = categories.slice(0,4).map(c=>`
+    <div class="budget-cat">
+      <div class="emoji">${c.emoji}</div>
+      <div class="cat-name">${c.name}</div>
+      <div class="cat-amount">₹${budget.spent[c.key].toLocaleString("en-IN")}</div>
+    </div>
+  `).join("");
+
+  const picker = document.getElementById("catPicker");
+  picker.innerHTML = categories.map(c=>`<span class="cat-chip ${selectedCat===c.key?"active":""}" onclick="selectCat('${c.key}')">${c.emoji} ${c.name}</span>`).join("");
+}
+function selectCat(key){selectedCat=key;renderBudget()}
+function addExpense(){
+  const input = document.getElementById("expenseInput");
+  const val = parseInt(input.value);
+  if(!val||val<=0)return showToast("Enter an amount!");
+  budget.spent[selectedCat] += val;
+  localStorage.setItem("pnk-budget",JSON.stringify(budget));
+  input.value="";
+  renderBudget();
+  const left = budget.total - Object.values(budget.spent).reduce((a,b)=>a+b,0);
+  if(left < 2000) showToast("Sis, budget tight! 😬");
+  else showToast("Expense added! 💸");
+}
+function resetBudget(){
+  budget.spent = {rent:0,food:0,metro:0,shopping:0,chai:0,recharge:0,going_out:0,misc:0};
+  localStorage.setItem("pnk-budget",JSON.stringify(budget));
+  renderBudget();
+  showToast("Fresh month, fresh start! 🌱");
+}
+
+/* ── Interview ── */
+function showQuestion(){
+  const q = questions[questionIdx % questions.length];
+  document.getElementById("interviewQ").textContent = q.q;
+  document.getElementById("interviewCat").textContent = q.cat;
+  document.getElementById("interviewTip").innerHTML = q.tip;
+}
+function nextQuestion(){
+  questionIdx = (questionIdx+1) % questions.length;
+  showQuestion();
+}
+
+/* ── Outfit ── */
+function randomOutfit(){
+  const o = outfits[Math.floor(Math.random()*outfits.length)];
+  document.getElementById("outfitResult").innerHTML = `
+    <span class="outfit-emoji">${o.emoji}</span>
+    <div class="outfit-name">${o.name}</div>
+    <div class="outfit-desc">${o.desc}</div>
+    <div class="outfit-tags">${o.tags.map(t=>`<span class="outfit-tag">${t}</span>`).join("")}</div>
+  `;
+}
+
+/* ── Food ── */
+function randomFood(){
+  const f = delhiFood[Math.floor(Math.random()*delhiFood.length)];
+  document.getElementById("foodResult").innerHTML = `
+    <span class="food-emoji">${f.emoji}</span>
+    <div class="food-name">${f.name}</div>
+    <div class="food-area">📍 ${f.area}</div>
+    <span class="food-price">${f.price}</span>
+    <div class="food-vibe">"${f.vibe}"</div>
+  `;
+}
+
+/* ── Toast ── */
+function showToast(msg){
+  const t = document.getElementById("toast");
+  t.textContent = msg;t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"),2500);
+}
+</script>
+</body>
+</html>
