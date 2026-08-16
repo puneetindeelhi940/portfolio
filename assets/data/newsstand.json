@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T08:22:29Z",
+  "generated_at": "2026-08-16T16:18:40Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Jill Biden babysit for Joe Biden before they dated? Here's the real story",
+      "claim": "Massachusetts Democrats didn't unveil Molech statue at state Capitol, despite claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/jill-biden-joe-biden-babysitter/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/mass-democrats-molech-statue/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "How and why Texas deputy used 83K Flock cameras to track woman after abortion: What we know",
+      "claim": "Did Jill Biden babysit for Joe Biden before they dated? Here's the real story",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/15/texas-abortion-flock-cameras/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/jill-biden-joe-biden-babysitter/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Nearly One-Third Of Gen Z Steers Clear Of Car Insurance, Survey Finds",
+      "claim": "‘Will Come Back To Bite You’: Top FDA Official Asked Fauci For Vaccine Side Effect Study, Email Shows",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/15/one-third-generation-z-zoomers-skip-car-insurance-costs-consumer-habits-transunion-survey-finds",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/16/anthony-fauci-janet-woodcock-email-covid-vaccine-side-effects",
+      "topic": "Health"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Strait of Hormuz: 14 claims we've investigated",
+      "claim": "How and why Texas deputy used 83K Flock cameras to track woman after abortion: What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/iran-war-strait-of-hormuz/",
+      "url": "https://www.snopes.com/news/2026/08/15/texas-abortion-flock-cameras/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Three killed as Russia launches fresh aerial attacks across Ukraine",
+      "headline": "Russia says at least seven killed in largest Ukrainian attack of 2026",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-16T08:14:56+00:00"
+      "published": "2026-08-16T15:50:12+00:00"
     },
     {
       "n": 2,
-      "headline": "Are robotaxis finally here?",
+      "headline": "Lala is again a tropical storm, sending drenching rain and winds across Hawaii",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5918065/are-robotaxis-finally-here",
+      "url": "https://www.npr.org/2026/08/16/g-s1-138926/lala-tropical-storm-hawaii-hurricane",
       "topic": "Trending",
-      "published": "2026-08-15T21:30:21+00:00"
+      "published": "2026-08-16T15:47:58+00:00"
     },
     {
       "n": 3,
-      "headline": "Cyclospora spreads through human waste — so how did it get on food?",
+      "headline": "Rescuers in Indonesia recover more bodies in earthquake aftermath, raising death toll to 53",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/cyclospora-spreads-through-human-waste-so-how-did-it-get-on-food",
+      "url": "https://www.pbs.org/newshour/world/rescuers-in-indonesia-recover-more-bodies-in-earthquake-aftermath-raising-death-toll-to-53",
       "topic": "Trending",
-      "published": "2026-08-15T22:34:59+00:00"
+      "published": "2026-08-16T15:25:05+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Moscow says 600 drones targeted region overnight",
+      "headline": "Ukraine attacks Wildberries, Russia's biggest online market",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/moscow-says-600-drones-targeted-region-overnight/a-78386779?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-16T08:13:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-16T15:45:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Rescuers search for survivors of powerful Indonesia earthquake",
+      "headline": "Thousands displaced by deadly Indonesia earthquake as rescue efforts continue",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-16T04:13:32+00:00"
+      "published": "2026-08-16T12:37:21+00:00"
     },
     {
       "n": 7,
-      "headline": "State Department spokesperson on Iran war and U.S. visa revocations",
+      "headline": "What really happened in Ceuta? Why we may never find out",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5931811/state-department-spokesperson-on-iran-war-and-u-s-visa-revocations",
-      "topic": "World",
-      "published": "2026-08-15T21:20:51+00:00"
+      "url": "https://www.npr.org/2026/08/16/nx-s1-5927053/what-happened-in-ceuta",
+      "topic": "Trending",
+      "published": "2026-08-16T15:38:22+00:00"
     },
     {
       "n": 8,
-      "headline": "Indiana authorities say at least 5 people have died as severe weather crosses the state",
+      "headline": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/indiana-authorities-say-at-least-5-people-have-died-in-flooding-across-the-state",
-      "topic": "Science",
-      "published": "2026-08-15T20:39:01+00:00"
+      "url": "https://www.pbs.org/newshour/world/ukraine-launches-one-of-its-largest-aerial-attacks-of-the-war-killing-at-least-6-people-in-russia",
+      "topic": "World",
+      "published": "2026-08-16T15:05:50+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Troops from North Korea to boost Russia's Ukraine forces",
+      "headline": "Hundreds flee as Belgium battles wildfire at German border",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/troops-from-north-korea-to-boost-russia-s-ukraine-forces/a-78385524?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/hundreds-flee-as-belgium-battles-wildfire-at-german-border/a-78386242?maca=en-rss-en-all-1573-rdf",
       "topic": "World",
-      "published": "2026-08-16T06:49:00+00:00"
+      "published": "2026-08-16T11:05:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Hurricane Lala lashes Hawaii with strong winds and torrential rain",
+      "headline": "Hurricane Lala sparks flash floods in Hawaii as strong winds and rain persist",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/crmrr7kjy9vo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-16T07:58:02+00:00"
+      "published": "2026-08-16T12:53:43+00:00"
     },
     {
       "n": 12,
-      "headline": "The Midwest braces for more heavy flooding, as Indiana seeks federal aid",
+      "headline": "What are we going to do?' The mom of a trans teen grapples with Trump's Medicaid move",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5932552/midwest-flooding-indiana-fema",
-      "topic": "Trending",
-      "published": "2026-08-15T20:04:13+00:00"
+      "url": "https://www.npr.org/2026/08/16/nx-s1-5932491/transgender-health-care-medicaid-trump-oz",
+      "topic": "Politics",
+      "published": "2026-08-16T11:54:19+00:00"
     },
     {
       "n": 13,
-      "headline": "Democrats' 2028 presidential calendar gives Black and Latino voters and union members an early say",
+      "headline": "Lala is again a tropical storm, sending drenching rain and winds across the Hawaiian islands",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democrats-2028-presidential-calendar-gives-black-and-latino-voters-and-union-members-an-early-say",
+      "url": "https://www.pbs.org/newshour/nation/lala-is-again-a-tropical-storm-sending-drenching-rain-and-winds-across-the-hawaiian-islands",
       "topic": "Trending",
-      "published": "2026-08-15T19:00:56+00:00"
+      "published": "2026-08-16T14:44:14+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "US: Hurricane Lala brings Hawaii heavy rain, strong winds",
+      "headline": "Ukraine launches one of its largest attacks of war",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-hurricane-lala-brings-hawaii-heavy-rain-strong-winds/a-78386551?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-16T05:57:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-launches-one-of-its-largest-attacks-of-war/a-78386779?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-16T10:59:00+00:00"
     },
     {
       "n": 16,
@@ -270,15 +270,15 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-16T07:04:17+00:00"
+      "published": "2026-08-16T10:53:50+00:00"
     },
     {
       "n": 17,
-      "headline": "Families of USS Lincoln crew say Trump should be 'ashamed' of conditions on board",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/15/nx-s1-5932539/uss-lincoln-trump-dire-conditions",
-      "topic": "Politics",
-      "published": "2026-08-15T18:21:32+00:00"
+      "headline": "Cyclospora spreads through human waste — so how did it get on food?",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/health/cyclospora-spreads-through-human-waste-so-how-did-it-get-on-food",
+      "topic": "Trending",
+      "published": "2026-08-15T22:34:59+00:00"
     }
   ]
 }
