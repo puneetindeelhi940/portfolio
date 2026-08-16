@@ -106,6 +106,12 @@
                         <div id="muhurta-badge" class="bg-white border border-slate-200 rounded-lg px-3 py-1.5 shadow-sm text-xs">
                             <span class="text-slate-500">Muhurta:</span> <strong id="live-muhurta" class="ml-1">—</strong>
                         </div>
+                        <div class="bg-white border border-violet-200 rounded-lg px-3 py-1.5 shadow-sm text-xs">
+                            <span class="text-slate-500">Rashi:</span> <strong id="live-rashi" class="text-violet-700 ml-1">—</strong>
+                        </div>
+                        <div class="bg-white border border-red-300 rounded-lg px-3 py-1.5 shadow-sm text-xs">
+                            <span class="text-red-600 font-bold">Rahu Kaal:</span> <strong id="live-rahukaal" class="text-red-600 ml-1 font-extrabold">—</strong>
+                        </div>
                         <!-- Feature 7: Voice Briefing -->
                         <button onclick="playVoiceBriefing()" id="voice-btn" class="no-print bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg px-3 py-1.5 text-xs font-semibold transition flex items-center gap-1" title="Play morning briefing">🔊 Briefing</button>
                     </div>
@@ -715,6 +721,54 @@ function getCurrentHoraInfo() {
     return { planet, horaIdx, minsLeft, dayRuler };
 }
 
+// ===== RASHI (Moon Sign) =====
+const rashiNames = ['Mesha (Aries)','Vrishabha (Taurus)','Mithuna (Gemini)','Karka (Cancer)','Simha (Leo)','Kanya (Virgo)','Tula (Libra)','Vrischika (Scorpio)','Dhanu (Sagittarius)','Makara (Capricorn)','Kumbha (Aquarius)','Meena (Pisces)'];
+
+function getCurrentRashi(date) {
+    const lon = getSiderealMoonLongitude(date);
+    return rashiNames[Math.floor(lon / 30) % 12];
+}
+
+let _rashiTransCache = null, _rashiTransDate = '';
+function getRashiTransitionTime(date) {
+    const ds = date.toDateString();
+    if (_rashiTransDate === ds) return _rashiTransCache;
+    const dayStart = new Date(date); dayStart.setHours(0,0,0,0);
+    let prevIdx = null, boundaryLo = null, boundaryHi = null, prevIdxAtBoundary = null;
+    for (let h = 0; h <= 24; h++) {
+        const t = new Date(dayStart.getTime() + h * 3600000);
+        const idx = Math.floor(getSiderealMoonLongitude(t) / 30) % 12;
+        if (prevIdx !== null && idx !== prevIdx) {
+            boundaryLo = new Date(dayStart.getTime() + (h-1) * 3600000);
+            boundaryHi = t; prevIdxAtBoundary = prevIdx; break;
+        }
+        prevIdx = idx;
+    }
+    if (!boundaryLo) { _rashiTransCache = null; _rashiTransDate = ds; return null; }
+    let lo = boundaryLo, hi = boundaryHi;
+    for (let i = 0; i < 20; i++) {
+        const mid = new Date((lo.getTime() + hi.getTime()) / 2);
+        if (Math.floor(getSiderealMoonLongitude(mid) / 30) % 12 === prevIdxAtBoundary) lo = mid; else hi = mid;
+    }
+    const endIdx = Math.floor(getSiderealMoonLongitude(new Date(hi.getTime() + 60000)) / 30) % 12;
+    _rashiTransCache = { from: rashiNames[prevIdxAtBoundary], to: rashiNames[endIdx], hour: hi.getHours(), min: hi.getMinutes() };
+    _rashiTransDate = ds;
+    return _rashiTransCache;
+}
+
+// ===== RAHU KAAL =====
+function getRahuKaal(date) {
+    const segments = [8, 2, 7, 5, 6, 4, 3];
+    const seg = segments[date.getDay()];
+    const sunrise = 360, sunset = 1080;
+    const dur = (sunset - sunrise) / 8;
+    const startMin = sunrise + (seg - 1) * dur;
+    const endMin = startMin + dur;
+    const fmt = m => `${String(Math.floor(m/60)).padStart(2,'0')}:${String(Math.floor(m%60)).padStart(2,'0')}`;
+    const nowMin = date.getHours() * 60 + date.getMinutes();
+    return { start: fmt(startMin), end: fmt(endMin), isActive: nowMin >= startMin && nowMin < endMin };
+}
+
 function startLiveClock() {
     function update() {
         const now = new Date();
@@ -740,6 +794,18 @@ function startLiveClock() {
         const score = getMuhurtaScore(starData, hora);
         muhurtaEl.textContent = score.label;
         muhurtaEl.className = `ml-1 font-bold ${score.color}`;
+
+        // Rashi
+        const rashiName = getCurrentRashi(now);
+        const rashiTrans = getRashiTransitionTime(now);
+        const rashiEl = document.getElementById('live-rashi');
+        let rashiText = rashiName;
+        if (rashiTrans) rashiText += ` till ${String(rashiTrans.hour).padStart(2,'0')}:${String(rashiTrans.min).padStart(2,'0')}`;
+        rashiEl.textContent = rashiText;
+
+        // Rahu Kaal
+        const rk = getRahuKaal(now);
+        document.getElementById('live-rahukaal').innerHTML = `${rk.start} – ${rk.end}${rk.isActive ? ' ⚠️ NOW' : ''}`;
     }
     update();
     setInterval(update, 1000);
