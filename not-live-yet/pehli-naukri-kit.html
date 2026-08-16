@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,329 +10,408 @@
 
 *{margin:0;padding:0;box-sizing:border-box}
 
-:root{
+/* ── Theme tokens ── */
+:root, [data-theme="dark"]{
   --bg:#0a0a0f;
+  --bg-2:#10101a;
   --card:#14141f;
   --card-2:#1a1a2e;
+  --card-hover:#1e1e32;
   --text:#f0f0f5;
+  --text-2:#d0d0dd;
   --dim:#9090a8;
+  --faint:#606078;
+  --border:rgba(255,255,255,.06);
+  --border-2:rgba(255,255,255,.1);
+  --input-bg:rgba(255,255,255,.06);
+  --input-border:rgba(255,255,255,.1);
+  --input-focus:rgba(192,132,252,.5);
+  --overlay:rgba(10,10,15,.92);
+  --toast-bg:#1a1a2e;
+  --toast-border:rgba(255,255,255,.1);
+  --shadow:rgba(0,0,0,.4);
+  --scrollbar:rgba(255,255,255,.1);
   --purple:#c084fc;
   --pink:#f472b6;
   --peach:#fb923c;
   --mint:#34d399;
   --blue:#60a5fa;
   --yellow:#fbbf24;
+  --red:#ef4444;
   --gradient-1:linear-gradient(135deg,#c084fc,#f472b6);
   --gradient-2:linear-gradient(135deg,#f472b6,#fb923c);
   --gradient-3:linear-gradient(135deg,#34d399,#60a5fa);
+  --gradient-4:linear-gradient(135deg,#60a5fa,#a78bfa);
+  --btn-text:#0a0a0f;
+  --star-empty:rgba(255,255,255,.15);
   --radius:20px;
   --radius-sm:14px;
+  --base-font:15px;
+  --font-scale:1;
+}
+
+[data-theme="light"]{
+  --bg:#f5f5f7;
+  --bg-2:#ebebef;
+  --card:#ffffff;
+  --card-2:#f0f0f4;
+  --card-hover:#e8e8f0;
+  --text:#1a1a2e;
+  --text-2:#2a2a40;
+  --dim:#5a5a72;
+  --faint:#8888a0;
+  --border:rgba(0,0,0,.08);
+  --border-2:rgba(0,0,0,.12);
+  --input-bg:rgba(0,0,0,.04);
+  --input-border:rgba(0,0,0,.12);
+  --input-focus:rgba(192,132,252,.5);
+  --overlay:rgba(245,245,247,.94);
+  --toast-bg:#ffffff;
+  --toast-border:rgba(0,0,0,.1);
+  --shadow:rgba(0,0,0,.08);
+  --scrollbar:rgba(0,0,0,.12);
+  --purple:#9333ea;
+  --pink:#db2777;
+  --peach:#ea580c;
+  --mint:#059669;
+  --blue:#2563eb;
+  --yellow:#d97706;
+  --red:#dc2626;
+  --gradient-1:linear-gradient(135deg,#9333ea,#db2777);
+  --gradient-2:linear-gradient(135deg,#db2777,#ea580c);
+  --gradient-3:linear-gradient(135deg,#059669,#2563eb);
+  --gradient-4:linear-gradient(135deg,#2563eb,#7c3aed);
+  --btn-text:#ffffff;
+  --star-empty:rgba(0,0,0,.12);
 }
 
 body{
   font-family:'DM Sans','Space Grotesk',system-ui,sans-serif;
+  font-size:calc(var(--base-font) * var(--font-scale));
   background:var(--bg);
   color:var(--text);
   min-height:100vh;
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
+  transition:background .3s,color .3s;
 }
 
-/* ── Floating blobs background ── */
-.bg-blobs{
-  position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
-}
-.bg-blobs span{
-  position:absolute;border-radius:50%;filter:blur(100px);opacity:.18;
-  animation:float 20s ease-in-out infinite alternate;
-}
-.bg-blobs span:nth-child(1){width:500px;height:500px;background:#c084fc;top:-10%;left:-10%;animation-delay:0s}
+/* ── Floating blobs ── */
+.bg-blobs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bg-blobs span{position:absolute;border-radius:50%;filter:blur(120px);opacity:.12;animation:float 20s ease-in-out infinite alternate}
+[data-theme="light"] .bg-blobs span{opacity:.06}
+.bg-blobs span:nth-child(1){width:500px;height:500px;background:#c084fc;top:-10%;left:-10%}
 .bg-blobs span:nth-child(2){width:400px;height:400px;background:#f472b6;bottom:10%;right:-5%;animation-delay:-7s}
 .bg-blobs span:nth-child(3){width:350px;height:350px;background:#60a5fa;top:40%;left:50%;animation-delay:-14s}
+@keyframes float{0%{transform:translate(0,0) scale(1)}100%{transform:translate(60px,40px) scale(1.15)}}
 
-@keyframes float{
-  0%{transform:translate(0,0) scale(1)}
-  100%{transform:translate(60px,40px) scale(1.15)}
+/* ── Top bar (theme + text size) ── */
+.top-bar{
+  position:fixed;top:0;left:0;right:0;z-index:150;
+  display:flex;justify-content:flex-end;align-items:center;gap:4px;
+  padding:10px 16px;
+  background:var(--overlay);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
 }
+.top-btn{
+  width:36px;height:36px;border-radius:10px;border:1px solid var(--border-2);
+  background:var(--card);color:var(--text);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:16px;transition:all .2s;
+  flex-shrink:0;
+}
+.top-btn:hover{background:var(--card-hover);transform:scale(1.05)}
+.top-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-/* ── Layout ── */
+/* ── Layout — responsive ── */
 .app{
   position:relative;z-index:1;
-  max-width:480px;margin:0 auto;padding:20px 16px 100px;
+  max-width:800px;margin:0 auto;
+  padding:68px 16px 100px;
+}
+@media(min-width:640px){
+  .app{padding:68px 32px 100px}
+}
+@media(min-width:768px){
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .two-col .card{margin-bottom:0}
 }
 
 /* ── Header ── */
-.header{text-align:center;padding:32px 0 24px}
+.header{text-align:center;padding:20px 0 24px}
 .header .app-badge{
   display:inline-flex;align-items:center;gap:6px;
-  background:var(--card-2);border:1px solid rgba(255,255,255,.08);
-  padding:6px 14px;border-radius:999px;font-size:11px;
+  background:var(--card-2);border:1px solid var(--border-2);
+  padding:6px 14px;border-radius:999px;font-size:0.7em;
   color:var(--dim);letter-spacing:.5px;text-transform:uppercase;
   margin-bottom:16px;
 }
 .header .app-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--mint);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-
 .header h1{
   font-family:'Space Grotesk',sans-serif;
-  font-size:28px;font-weight:700;line-height:1.2;
+  font-size:1.8em;font-weight:700;line-height:1.2;
   background:var(--gradient-1);-webkit-background-clip:text;
   -webkit-text-fill-color:transparent;background-clip:text;
   margin-bottom:6px;
 }
-.header .tagline{font-size:14px;color:var(--dim)}
-.header .date{
-  font-size:12px;color:var(--dim);margin-top:12px;
-  opacity:.6;
-}
+.header .tagline{font-size:0.9em;color:var(--dim)}
+.header .date{font-size:0.75em;color:var(--faint);margin-top:10px}
 
 /* ── Cards ── */
 .card{
-  background:var(--card);
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:var(--radius);
-  padding:20px;margin-bottom:16px;
-  transition:transform .2s,box-shadow .2s;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:20px;margin-bottom:16px;
+  transition:transform .2s,box-shadow .2s,background .3s;
 }
-.card:active{transform:scale(.98)}
-.card-header{
-  display:flex;align-items:center;gap:10px;margin-bottom:14px;
-}
+[data-theme="light"] .card{box-shadow:0 1px 4px var(--shadow)}
+.card:active{transform:scale(.99)}
+.card-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .card-icon{
   width:40px;height:40px;border-radius:12px;
   display:flex;align-items:center;justify-content:center;
-  font-size:20px;flex-shrink:0;
+  font-size:1.25em;flex-shrink:0;
 }
-.card-title{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600}
-.card-subtitle{font-size:12px;color:var(--dim);margin-top:2px}
+.card-title{font-family:'Space Grotesk',sans-serif;font-size:1em;font-weight:600}
+.card-subtitle{font-size:0.78em;color:var(--dim);margin-top:2px}
 
-/* ── Affirmation Card ── */
+/* ── Affirmation ── */
 .affirmation-card{
-  background:linear-gradient(135deg,rgba(192,132,252,.12),rgba(244,114,182,.12));
-  border:1px solid rgba(192,132,252,.2);
+  background:linear-gradient(135deg,rgba(192,132,252,.1),rgba(244,114,182,.1));
+  border-color:rgba(192,132,252,.15);
+}
+[data-theme="light"] .affirmation-card{
+  background:linear-gradient(135deg,rgba(147,51,234,.06),rgba(219,39,119,.06));
+  border-color:rgba(147,51,234,.12);
 }
 .affirmation-card .card-icon{background:rgba(192,132,252,.2)}
-.affirmation-text{
-  font-size:20px;font-weight:600;line-height:1.4;
-  font-family:'Space Grotesk',sans-serif;
-  margin-bottom:12px;
-}
-.affirmation-author{font-size:12px;color:var(--dim)}
+.affirmation-text{font-size:1.25em;font-weight:600;line-height:1.4;font-family:'Space Grotesk',sans-serif;margin-bottom:10px}
+.affirmation-author{font-size:0.78em;color:var(--dim)}
 .refresh-btn{
-  background:rgba(255,255,255,.08);border:none;color:var(--text);
-  padding:8px 16px;border-radius:999px;font-size:12px;
-  cursor:pointer;margin-top:12px;display:inline-flex;align-items:center;gap:6px;
-  transition:background .2s;
+  background:var(--input-bg);border:1px solid var(--border-2);color:var(--text);
+  padding:8px 16px;border-radius:999px;font-size:0.78em;
+  cursor:pointer;margin-top:10px;display:inline-flex;align-items:center;gap:6px;
+  transition:background .2s;font-family:inherit;
 }
-.refresh-btn:hover{background:rgba(255,255,255,.14)}
+.refresh-btn:hover{background:var(--card-hover)}
 
-/* ── Budget Tracker ── */
-.budget-card .card-icon{background:rgba(52,211,153,.2)}
-.budget-display{text-align:center;padding:12px 0}
-.budget-amount{
-  font-size:42px;font-weight:700;
-  font-family:'Space Grotesk',sans-serif;
-}
-.budget-amount .rupee{font-size:28px;opacity:.6}
-.budget-label{font-size:12px;color:var(--dim);margin-top:4px}
-.budget-bar{
-  width:100%;height:8px;background:rgba(255,255,255,.06);
-  border-radius:999px;margin:16px 0 12px;overflow:hidden;
-}
-.budget-bar-fill{
-  height:100%;border-radius:999px;
-  background:var(--gradient-3);
-  transition:width .6s cubic-bezier(.22,1,.36,1);
-}
-.budget-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
-.budget-cat{
-  background:rgba(255,255,255,.04);border-radius:var(--radius-sm);
-  padding:12px;text-align:center;cursor:pointer;
-  transition:background .2s;
-}
-.budget-cat:hover{background:rgba(255,255,255,.08)}
-.budget-cat .emoji{font-size:22px;margin-bottom:4px}
-.budget-cat .cat-name{font-size:11px;color:var(--dim)}
-.budget-cat .cat-amount{font-size:15px;font-weight:600;margin-top:2px}
-.budget-input-row{
-  display:flex;gap:8px;margin-top:14px;
-}
-.budget-input{
-  flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
-  border-radius:12px;padding:10px 14px;color:var(--text);
-  font-size:14px;outline:none;font-family:inherit;
-}
-.budget-input:focus{border-color:var(--mint)}
-.budget-input::placeholder{color:rgba(255,255,255,.25)}
-.add-expense-btn{
-  background:var(--mint);color:#0a0a0f;border:none;
-  border-radius:12px;padding:10px 18px;font-size:14px;
-  font-weight:600;cursor:pointer;white-space:nowrap;
-  transition:opacity .2s;
-}
-.add-expense-btn:hover{opacity:.85}
-.category-picker{
-  display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;
-}
-.cat-chip{
-  padding:6px 12px;border-radius:999px;font-size:12px;
-  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);
-  cursor:pointer;transition:all .2s;
-}
-.cat-chip.active{background:rgba(52,211,153,.2);border-color:var(--mint);color:var(--mint)}
-
-/* ── Interview Prep ── */
-.interview-card .card-icon{background:rgba(96,165,250,.2)}
-.interview-q{
-  background:rgba(96,165,250,.08);border-radius:var(--radius-sm);
-  padding:16px;margin-bottom:12px;
-}
-.interview-q .q-label{
-  font-size:10px;text-transform:uppercase;letter-spacing:1px;
-  color:var(--blue);margin-bottom:8px;
-}
-.interview-q .q-text{
-  font-size:16px;font-weight:500;line-height:1.5;
-}
-.interview-q .q-category{
-  display:inline-block;margin-top:10px;
-  font-size:11px;padding:4px 10px;border-radius:999px;
-  background:rgba(96,165,250,.15);color:var(--blue);
-}
-.tip-box{
-  background:rgba(251,191,36,.08);border-left:3px solid var(--yellow);
-  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
-  padding:12px 14px;font-size:13px;color:var(--dim);line-height:1.5;
-}
-.tip-box strong{color:var(--yellow)}
-
-/* ── Outfit Randomizer ── */
-.outfit-card .card-icon{background:rgba(244,114,182,.2)}
-.outfit-result{
-  text-align:center;padding:16px 0;
-}
-.outfit-emoji{font-size:60px;margin-bottom:12px;display:block}
-.outfit-name{font-size:18px;font-weight:600;margin-bottom:4px}
-.outfit-desc{font-size:13px;color:var(--dim);line-height:1.5}
-.outfit-tags{display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap}
-.outfit-tag{
-  padding:4px 12px;border-radius:999px;font-size:11px;
-  background:rgba(244,114,182,.12);color:var(--pink);
-  border:1px solid rgba(244,114,182,.2);
-}
-
-/* ── Delhi Food Spot ── */
-.food-card .card-icon{background:rgba(251,147,60,.2)}
-.food-result{text-align:center;padding:12px 0}
-.food-emoji{font-size:48px;margin-bottom:10px;display:block}
-.food-name{font-size:18px;font-weight:600}
-.food-area{font-size:13px;color:var(--dim);margin-top:2px}
-.food-price{
-  display:inline-block;margin-top:8px;
-  padding:4px 12px;border-radius:999px;font-size:12px;
-  background:rgba(52,211,153,.12);color:var(--mint);
-}
-.food-vibe{font-size:13px;color:var(--dim);margin-top:10px;font-style:italic}
-
-/* ── Mood Tracker ── */
+/* ── Mood ── */
 .mood-card .card-icon{background:rgba(251,191,36,.2)}
 .mood-grid{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0}
 .mood-btn{
-  width:52px;height:52px;border-radius:16px;border:2px solid rgba(255,255,255,.08);
-  background:rgba(255,255,255,.04);font-size:26px;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  transition:all .25s;
+  width:50px;height:50px;border-radius:14px;border:2px solid var(--border-2);
+  background:var(--input-bg);font-size:1.5em;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .25s;
 }
-.mood-btn:hover{transform:scale(1.12);border-color:rgba(255,255,255,.2)}
-.mood-btn.selected{
-  border-color:var(--yellow);background:rgba(251,191,36,.12);
-  transform:scale(1.15);box-shadow:0 0 20px rgba(251,191,36,.2);
-}
-.mood-response{
-  text-align:center;font-size:14px;color:var(--dim);
-  margin-top:8px;line-height:1.5;min-height:42px;
-}
-.mood-streak{
-  text-align:center;margin-top:12px;
-  font-size:12px;color:var(--dim);
-}
-.mood-streak span{color:var(--yellow);font-weight:600}
+.mood-btn:hover{transform:scale(1.1);border-color:var(--yellow)}
+.mood-btn.selected{border-color:var(--yellow);background:rgba(251,191,36,.15);transform:scale(1.12);box-shadow:0 0 16px rgba(251,191,36,.2)}
+.mood-response{text-align:center;font-size:0.9em;color:var(--dim);margin-top:8px;line-height:1.5;min-height:40px}
+.mood-streak{text-align:center;margin-top:10px;font-size:0.78em;color:var(--faint)}
+.mood-streak strong{color:var(--yellow)}
 
-/* ── Shared button ── */
+/* ── Budget ── */
+.budget-card .card-icon{background:rgba(52,211,153,.2)}
+.budget-display{text-align:center;padding:10px 0}
+.budget-amount{font-size:2.5em;font-weight:700;font-family:'Space Grotesk',sans-serif}
+.budget-amount .rupee{font-size:0.65em;opacity:.6}
+.budget-label{font-size:0.78em;color:var(--dim);margin-top:2px}
+.budget-bar{width:100%;height:8px;background:var(--input-bg);border-radius:999px;margin:14px 0 10px;overflow:hidden}
+.budget-bar-fill{height:100%;border-radius:999px;background:var(--gradient-3);transition:width .6s cubic-bezier(.22,1,.36,1)}
+.budget-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+@media(min-width:640px){.budget-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+.budget-cat{
+  background:var(--input-bg);border-radius:var(--radius-sm);
+  padding:10px;text-align:center;cursor:pointer;transition:background .2s;
+}
+.budget-cat:hover{background:var(--card-hover)}
+.budget-cat .emoji{font-size:1.3em;margin-bottom:2px}
+.budget-cat .cat-name{font-size:0.7em;color:var(--dim)}
+.budget-cat .cat-amount{font-size:0.95em;font-weight:600;margin-top:2px}
+.budget-input-row{display:flex;gap:8px;margin-top:14px}
+.budget-input{
+  flex:1;background:var(--input-bg);border:1px solid var(--input-border);
+  border-radius:12px;padding:10px 14px;color:var(--text);
+  font-size:0.9em;outline:none;font-family:inherit;transition:border-color .2s;
+}
+.budget-input:focus{border-color:var(--input-focus)}
+.budget-input::placeholder{color:var(--faint)}
+.add-expense-btn{
+  background:var(--mint);color:var(--btn-text);border:none;
+  border-radius:12px;padding:10px 18px;font-size:0.9em;
+  font-weight:600;cursor:pointer;white-space:nowrap;transition:opacity .2s;font-family:inherit;
+}
+[data-theme="light"] .add-expense-btn{color:#fff}
+.add-expense-btn:hover{opacity:.85}
+.category-picker{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.cat-chip{
+  padding:6px 12px;border-radius:999px;font-size:0.78em;
+  background:var(--input-bg);border:1px solid var(--border-2);
+  cursor:pointer;transition:all .2s;color:var(--text);
+}
+.cat-chip.active{background:rgba(52,211,153,.15);border-color:var(--mint);color:var(--mint)}
+
+/* ── Interview ── */
+.interview-card .card-icon{background:rgba(96,165,250,.2)}
+.interview-q{background:rgba(96,165,250,.06);border-radius:var(--radius-sm);padding:16px;margin-bottom:12px}
+.interview-q .q-label{font-size:0.65em;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin-bottom:8px}
+.interview-q .q-text{font-size:1.05em;font-weight:500;line-height:1.5}
+.interview-q .q-category{display:inline-block;margin-top:10px;font-size:0.72em;padding:4px 10px;border-radius:999px;background:rgba(96,165,250,.12);color:var(--blue)}
+.tip-box{
+  background:rgba(251,191,36,.06);border-left:3px solid var(--yellow);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:12px 14px;font-size:0.85em;color:var(--dim);line-height:1.5;
+}
+.tip-box strong{color:var(--yellow)}
+
+/* ── Outfit ── */
+.outfit-card .card-icon{background:rgba(244,114,182,.2)}
+.outfit-result{text-align:center;padding:14px 0}
+.outfit-emoji{font-size:3.2em;margin-bottom:10px;display:block}
+.outfit-name{font-size:1.15em;font-weight:600;margin-bottom:4px}
+.outfit-desc{font-size:0.85em;color:var(--dim);line-height:1.5}
+.outfit-tags{display:flex;gap:6px;justify-content:center;margin-top:10px;flex-wrap:wrap}
+.outfit-tag{padding:4px 10px;border-radius:999px;font-size:0.7em;background:rgba(244,114,182,.1);color:var(--pink);border:1px solid rgba(244,114,182,.18)}
+
+/* ── Food ── */
+.food-card .card-icon{background:rgba(251,147,60,.2)}
+.food-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.food-filter{
+  padding:6px 12px;border-radius:999px;font-size:0.75em;
+  background:var(--input-bg);border:1px solid var(--border-2);
+  cursor:pointer;transition:all .2s;color:var(--text);font-family:inherit;
+}
+.food-filter.active{background:rgba(251,147,60,.15);border-color:var(--peach);color:var(--peach)}
+.food-grid{display:grid;gap:10px;margin-bottom:14px}
+@media(min-width:480px){.food-grid{grid-template-columns:1fr 1fr}}
+.food-item{
+  background:var(--input-bg);border-radius:var(--radius-sm);
+  padding:14px;cursor:pointer;transition:all .2s;border:1px solid transparent;
+}
+.food-item:hover{background:var(--card-hover);border-color:var(--border-2)}
+.food-item .fi-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.food-item .fi-emoji{font-size:1.8em}
+.food-item .fi-name{font-size:0.95em;font-weight:600}
+.food-item .fi-type{font-size:0.68em;color:var(--dim);margin-top:1px}
+.food-item .fi-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:6px}
+.food-item .fi-price{font-size:0.78em;font-weight:600;color:var(--mint)}
+.food-item .fi-tags{display:flex;gap:4px;flex-wrap:wrap}
+.food-item .fi-tag{font-size:0.62em;padding:2px 8px;border-radius:999px;background:rgba(96,165,250,.1);color:var(--blue)}
+.food-item .fi-desc{font-size:0.78em;color:var(--dim);margin-top:6px;line-height:1.4;font-style:italic}
+.food-empty{text-align:center;padding:20px;color:var(--faint);font-size:0.9em}
+
+/* ── Feedback ── */
+.feedback-card .card-icon{background:rgba(192,132,252,.2)}
+.fb-section{margin-bottom:18px}
+.fb-label{font-size:0.78em;color:var(--dim);margin-bottom:8px;font-weight:500}
+.thumbs-row{display:flex;gap:10px}
+.thumb-btn{
+  width:52px;height:52px;border-radius:14px;border:2px solid var(--border-2);
+  background:var(--input-bg);font-size:1.5em;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .25s;
+}
+.thumb-btn:hover{transform:scale(1.08)}
+.thumb-btn.up.selected{border-color:var(--mint);background:rgba(52,211,153,.15)}
+.thumb-btn.down.selected{border-color:var(--red);background:rgba(239,68,68,.15)}
+.stars-row{display:flex;gap:4px}
+.star-btn{
+  width:38px;height:38px;border:none;background:none;cursor:pointer;
+  font-size:1.6em;transition:transform .15s;color:var(--star-empty);
+  display:flex;align-items:center;justify-content:center;
+}
+.star-btn:hover{transform:scale(1.15)}
+.star-btn.filled{color:var(--yellow)}
+.star-label{font-size:0.72em;color:var(--faint);margin-top:4px}
+.fb-textarea{
+  width:100%;min-height:80px;background:var(--input-bg);
+  border:1px solid var(--input-border);border-radius:12px;
+  padding:12px;color:var(--text);font-size:0.9em;
+  font-family:inherit;outline:none;resize:vertical;transition:border-color .2s;
+}
+.fb-textarea:focus{border-color:var(--input-focus)}
+.fb-textarea::placeholder{color:var(--faint)}
+
+/* ── Shared buttons ── */
 .shuffle-btn{
   width:100%;padding:12px;border:none;border-radius:14px;
-  font-size:14px;font-weight:600;cursor:pointer;
-  color:#0a0a0f;transition:all .2s;
-  font-family:inherit;
+  font-size:0.9em;font-weight:600;cursor:pointer;
+  color:var(--btn-text);transition:all .2s;font-family:inherit;
 }
+[data-theme="light"] .shuffle-btn{color:#fff}
 .shuffle-btn:hover{opacity:.88;transform:translateY(-1px)}
 .shuffle-btn.purple{background:var(--gradient-1)}
 .shuffle-btn.green{background:var(--gradient-3)}
 .shuffle-btn.pink{background:var(--gradient-2)}
-.shuffle-btn.blue{background:linear-gradient(135deg,#60a5fa,#a78bfa)}
+.shuffle-btn.blue{background:var(--gradient-4)}
 
-/* ── Footer nav ── */
+/* ── Bottom nav ── */
 .bottom-nav{
   position:fixed;bottom:0;left:0;right:0;
-  background:rgba(10,10,15,.92);backdrop-filter:blur(20px);
-  border-top:1px solid rgba(255,255,255,.06);
-  padding:8px 0 calc(8px + env(safe-area-inset-bottom));
+  background:var(--overlay);backdrop-filter:blur(20px);
+  border-top:1px solid var(--border);
+  padding:6px 0 calc(6px + env(safe-area-inset-bottom));
   z-index:100;
 }
 .bottom-nav-inner{
-  max-width:480px;margin:0 auto;
+  max-width:800px;margin:0 auto;
   display:flex;justify-content:space-around;
 }
 .nav-item{
   display:flex;flex-direction:column;align-items:center;
-  gap:2px;padding:6px 12px;border-radius:12px;
+  gap:2px;padding:6px 10px;border-radius:12px;
   cursor:pointer;transition:all .2s;
-  background:none;border:none;color:var(--dim);
-  font-family:inherit;
+  background:none;border:none;color:var(--dim);font-family:inherit;
 }
 .nav-item.active{color:var(--purple)}
-.nav-item .nav-icon{font-size:22px}
-.nav-item .nav-label{font-size:10px;font-weight:500}
+.nav-item .nav-icon{font-size:1.3em}
+.nav-item .nav-label{font-size:0.62em;font-weight:500}
 
-/* ── Section visibility ── */
+/* ── Sections ── */
 .section{display:none}
-.section.active{display:block;animation:fadeUp .35s ease}
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(12px)}
-  to{opacity:1;transform:translateY(0)}
-}
+.section.active{display:block;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
 /* ── Toast ── */
 .toast{
-  position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-100px);
-  background:var(--card-2);border:1px solid rgba(255,255,255,.1);
-  padding:12px 20px;border-radius:999px;font-size:13px;
+  position:fixed;top:60px;left:50%;transform:translateX(-50%) translateY(-80px);
+  background:var(--toast-bg);border:1px solid var(--toast-border);
+  padding:10px 20px;border-radius:999px;font-size:0.85em;
   z-index:200;transition:transform .4s cubic-bezier(.22,1,.36,1);
-  box-shadow:0 8px 32px rgba(0,0,0,.4);
+  box-shadow:0 8px 24px var(--shadow);color:var(--text);
 }
 .toast.show{transform:translateX(-50%) translateY(0)}
 
 /* ── Credit ── */
-.credit{
-  text-align:center;padding:24px 0 80px;
-  font-size:11px;color:rgba(255,255,255,.2);
-}
-.credit a{color:rgba(255,255,255,.3);text-decoration:none}
+.credit{text-align:center;padding:24px 0 80px;font-size:0.7em;color:var(--faint)}
+.credit a{color:var(--dim);text-decoration:none}
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:4px}
+::-webkit-scrollbar-thumb{background:var(--scrollbar);border-radius:4px}
+
+/* ── Print/reduce-motion ── */
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 
 <div class="bg-blobs"><span></span><span></span><span></span></div>
-
 <div class="toast" id="toast"></div>
 
+<!-- Top bar: text size + theme toggle -->
+<div class="top-bar">
+  <button class="top-btn" onclick="changeFont(-1)" title="Decrease text size" aria-label="Decrease text size">
+    <svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg>
+  </button>
+  <button class="top-btn" onclick="changeFont(1)" title="Increase text size" aria-label="Increase text size">
+    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+  </button>
+  <button class="top-btn" id="themeToggle" onclick="toggleTheme()" title="Toggle light/dark mode" aria-label="Toggle theme">
+    <svg id="themeIcon" viewBox="0 0 24 24"></svg>
+  </button>
+</div>
+
 <div class="app">
-  <!-- Header -->
   <div class="header">
     <div class="app-badge"><span class="dot"></span> App of the Day</div>
     <h1>Pehli Naukri Survival Kit</h1>
@@ -340,46 +419,36 @@ body{
     <p class="date" id="dateDisplay"></p>
   </div>
 
-  <!-- ══ Section: Home ══ -->
+  <!-- ══ Home ══ -->
   <div class="section active" id="sec-home">
-    <!-- Affirmation -->
-    <div class="card affirmation-card">
-      <div class="card-header">
-        <div class="card-icon">&#x2728;</div>
-        <div>
-          <div class="card-title">Today's Affirmation</div>
-          <div class="card-subtitle">you needed to hear this</div>
+    <div class="two-col">
+      <div class="card affirmation-card">
+        <div class="card-header">
+          <div class="card-icon">&#x2728;</div>
+          <div><div class="card-title">Today's Affirmation</div><div class="card-subtitle">you needed to hear this</div></div>
         </div>
+        <div class="affirmation-text" id="affirmText"></div>
+        <div class="affirmation-author" id="affirmAuthor"></div>
+        <button class="refresh-btn" onclick="nextAffirmation()">&#x1F504; new one</button>
       </div>
-      <div class="affirmation-text" id="affirmText"></div>
-      <div class="affirmation-author" id="affirmAuthor"></div>
-      <button class="refresh-btn" onclick="nextAffirmation()">&#x1F504; new one</button>
-    </div>
-
-    <!-- Mood Tracker -->
-    <div class="card mood-card">
-      <div class="card-header">
-        <div class="card-icon">&#x1F31F;</div>
-        <div>
-          <div class="card-title">Vibe Check</div>
-          <div class="card-subtitle">how are we feeling today?</div>
+      <div class="card mood-card">
+        <div class="card-header">
+          <div class="card-icon">&#x1F31F;</div>
+          <div><div class="card-title">Vibe Check</div><div class="card-subtitle">how are we feeling today?</div></div>
         </div>
+        <div class="mood-grid" id="moodGrid"></div>
+        <div class="mood-response" id="moodResponse"></div>
+        <div class="mood-streak" id="moodStreak"></div>
       </div>
-      <div class="mood-grid" id="moodGrid"></div>
-      <div class="mood-response" id="moodResponse"></div>
-      <div class="mood-streak" id="moodStreak"></div>
     </div>
   </div>
 
-  <!-- ══ Section: Money ══ -->
+  <!-- ══ Money ══ -->
   <div class="section" id="sec-money">
     <div class="card budget-card">
       <div class="card-header">
         <div class="card-icon">&#x1F4B0;</div>
-        <div>
-          <div class="card-title">Paisa Tracker</div>
-          <div class="card-subtitle">because delhi rent won't pay itself</div>
-        </div>
+        <div><div class="card-title">Paisa Tracker</div><div class="card-subtitle">because rent won't pay itself</div></div>
       </div>
       <div class="budget-display">
         <div class="budget-amount"><span class="rupee">&#8377;</span><span id="budgetLeft">25000</span></div>
@@ -388,7 +457,7 @@ body{
       <div class="budget-bar"><div class="budget-bar-fill" id="budgetBar" style="width:100%"></div></div>
       <div class="budget-grid" id="budgetGrid"></div>
       <div class="budget-input-row">
-        <input class="budget-input" id="expenseInput" type="number" placeholder="How much? &#8377;">
+        <input class="budget-input" id="expenseInput" type="number" placeholder="How much? &#8377;" inputmode="numeric">
         <button class="add-expense-btn" onclick="addExpense()">Add</button>
       </div>
       <div class="category-picker" id="catPicker"></div>
@@ -396,15 +465,12 @@ body{
     </div>
   </div>
 
-  <!-- ══ Section: Prep ══ -->
+  <!-- ══ Prep ══ -->
   <div class="section" id="sec-prep">
     <div class="card interview-card">
       <div class="card-header">
         <div class="card-icon">&#x1F4BC;</div>
-        <div>
-          <div class="card-title">Interview Prep</div>
-          <div class="card-subtitle">one question a day keeps unemployment away</div>
-        </div>
+        <div><div class="card-title">Interview Prep</div><div class="card-subtitle">one question a day keeps unemployment away</div></div>
       </div>
       <div class="interview-q">
         <div class="q-label">Today's Question</div>
@@ -416,32 +482,60 @@ body{
     </div>
   </div>
 
-  <!-- ══ Section: Style ══ -->
+  <!-- ══ Food ══ -->
+  <div class="section" id="sec-food">
+    <div class="card food-card">
+      <div class="card-header">
+        <div class="card-icon">&#x1F35C;</div>
+        <div><div class="card-title">Khana Finder</div><div class="card-subtitle">what are you craving today?</div></div>
+      </div>
+      <div class="fb-label">Meal Type</div>
+      <div class="food-filters" id="mealFilters"></div>
+      <div class="fb-label" style="margin-top:10px">Diet Preference</div>
+      <div class="food-filters" id="dietFilters"></div>
+      <div class="fb-label" style="margin-top:10px">Budget</div>
+      <div class="food-filters" id="priceFilters"></div>
+      <div class="food-grid" id="foodGrid" style="margin-top:14px"></div>
+      <button class="shuffle-btn purple" onclick="shuffleFood()">&#x1F500; Shuffle Options</button>
+    </div>
+  </div>
+
+  <!-- ══ Style ══ -->
   <div class="section" id="sec-style">
-    <!-- Outfit Randomizer -->
     <div class="card outfit-card">
       <div class="card-header">
         <div class="card-icon">&#x1F457;</div>
-        <div>
-          <div class="card-title">OOTD Generator</div>
-          <div class="card-subtitle">office-appropriate but make it cute</div>
-        </div>
+        <div><div class="card-title">OOTD Generator</div><div class="card-subtitle">office-appropriate but make it cute</div></div>
       </div>
       <div class="outfit-result" id="outfitResult"></div>
       <button class="shuffle-btn pink" onclick="randomOutfit()">&#x1F500; Shuffle Outfit</button>
     </div>
+  </div>
 
-    <!-- Delhi Food -->
-    <div class="card food-card">
+  <!-- ══ Feedback ══ -->
+  <div class="section" id="sec-feedback">
+    <div class="card feedback-card">
       <div class="card-header">
-        <div class="card-icon">&#x1F35C;</div>
-        <div>
-          <div class="card-title">Delhi Khana Finder</div>
-          <div class="card-subtitle">budget-friendly eats near you</div>
+        <div class="card-icon">&#x1F4AC;</div>
+        <div><div class="card-title">Share Your Feedback</div><div class="card-subtitle">help us make this better for you</div></div>
+      </div>
+      <div class="fb-section">
+        <div class="fb-label">How's your experience?</div>
+        <div class="thumbs-row">
+          <button class="thumb-btn up" onclick="setThumb('up')" title="Thumbs up" aria-label="Thumbs up">&#x1F44D;</button>
+          <button class="thumb-btn down" onclick="setThumb('down')" title="Thumbs down" aria-label="Thumbs down">&#x1F44E;</button>
         </div>
       </div>
-      <div class="food-result" id="foodResult"></div>
-      <button class="shuffle-btn purple" onclick="randomFood()">&#x1F500; Find Me Food</button>
+      <div class="fb-section">
+        <div class="fb-label">Rate this app (1-7 stars)</div>
+        <div class="stars-row" id="starsRow"></div>
+        <div class="star-label" id="starLabel"></div>
+      </div>
+      <div class="fb-section">
+        <div class="fb-label">Tell us more (optional)</div>
+        <textarea class="fb-textarea" id="fbText" placeholder="What do you love? What should we fix? Any feature requests?" rows="3"></textarea>
+      </div>
+      <button class="shuffle-btn purple" onclick="sendFeedback()">&#x1F4E8; Send Feedback</button>
     </div>
   </div>
 
@@ -451,60 +545,69 @@ body{
 <!-- Bottom Nav -->
 <nav class="bottom-nav">
   <div class="bottom-nav-inner">
-    <button class="nav-item active" onclick="switchTab('home',this)">
-      <span class="nav-icon">&#x1F3E0;</span>
-      <span class="nav-label">Home</span>
+    <button class="nav-item active" onclick="switchTab('home',this)" aria-label="Home">
+      <span class="nav-icon">&#x1F3E0;</span><span class="nav-label">Home</span>
     </button>
-    <button class="nav-item" onclick="switchTab('money',this)">
-      <span class="nav-icon">&#x1F4B8;</span>
-      <span class="nav-label">Paisa</span>
+    <button class="nav-item" onclick="switchTab('money',this)" aria-label="Budget">
+      <span class="nav-icon">&#x1F4B8;</span><span class="nav-label">Paisa</span>
     </button>
-    <button class="nav-item" onclick="switchTab('prep',this)">
-      <span class="nav-icon">&#x1F4BC;</span>
-      <span class="nav-label">Prep</span>
+    <button class="nav-item" onclick="switchTab('prep',this)" aria-label="Interview Prep">
+      <span class="nav-icon">&#x1F4BC;</span><span class="nav-label">Prep</span>
     </button>
-    <button class="nav-item" onclick="switchTab('style',this)">
-      <span class="nav-icon">&#x2728;</span>
-      <span class="nav-label">Vibe</span>
+    <button class="nav-item" onclick="switchTab('food',this)" aria-label="Food">
+      <span class="nav-icon">&#x1F35C;</span><span class="nav-label">Khana</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('style',this)" aria-label="Outfit">
+      <span class="nav-icon">&#x1F457;</span><span class="nav-label">OOTD</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('feedback',this)" aria-label="Feedback">
+      <span class="nav-icon">&#x1F4AC;</span><span class="nav-label">Feedback</span>
     </button>
   </div>
 </nav>
 
 <script>
-/* ── Data ── */
+/* ═══════════════════════════════════════════════
+   DATA
+   ═══════════════════════════════════════════════ */
+
 const affirmations = [
   {text:"Your degree is not a receipt — it's a launchpad. The real education starts now.",author:"— the universe"},
   {text:"That HR will email back. And if they don't, someone better will.",author:"— your future self"},
-  {text:"You survived Delhi University parking. You can survive anything.",author:"— every DU kid ever"},
-  {text:"The girl who once cried over CGPA is about to make her own money. Let that sink in.",author:"— growth"},
+  {text:"You survived four years of college chaos. Corporate politics is nothing.",author:"— every fresher ever"},
+  {text:"The girl who once stressed over CGPA is about to make her own money. Let that sink in.",author:"— growth"},
   {text:"Not getting a response is the universe saying 'I have better plans for you, bestie.'",author:"— trust the process"},
   {text:"Your parents didn't raise you to settle. Go get that dream offer.",author:"— amma & papa"},
   {text:"You're not behind. You're building foundations. Every topper peaked in college — you peak in life.",author:"— real talk"},
   {text:"A 'no' today is just a redirect to a 'heck yes' tomorrow.",author:"— career karma"},
   {text:"That internship rejection? In two years you'll thank them for the plot twist.",author:"— hindsight"},
-  {text:"You navigated Delhi Metro in rush hour. Corporate politics is nothing.",author:"— metro warrior"},
+  {text:"Rush hour commute survivor? You can handle any boardroom.",author:"— city warrior"},
   {text:"Your LinkedIn is not your life. Stop comparing your chapter 1 to someone's chapter 20.",author:"— digital detox"},
   {text:"Every successful person you admire was once exactly where you are — confused, broke, but hungry.",author:"— the grind"},
+  {text:"The canteen conversations shaped you more than any lecture. Carry that energy forward.",author:"— college nostalgia"},
+  {text:"First salary, first independence, first everything — this is YOUR year.",author:"— new beginnings"},
+  {text:"You didn't come this far to only come this far. The best chapters are unwritten.",author:"— manifesting"},
+  {text:"Three rejections means three companies that'll regret not hiring you early.",author:"— the comeback"},
 ];
 
 const moods = [
-  {emoji:"🔥",label:"on fire",response:"Main character energy activated. Go crush that to-do list!"},
-  {emoji:"😊",label:"good",response:"Acha mood hai? Perfect day to manifest that dream job!"},
-  {emoji:"😐",label:"meh",response:"Meh days are valid. Grab a chai, recharge, come back stronger."},
-  {emoji:"😰",label:"anxious",response:"Deep breaths, bestie. You've survived every bad day so far — 100% track record."},
-  {emoji:"😭",label:"low",response:"It's okay to not be okay. Watch comfort reels, order momos, tomorrow is a new day."},
-  {emoji:"😤",label:"angry",response:"Channel that rage into your cover letter. Angry energy = productive energy."},
+  {emoji:"\u{1F525}",label:"on fire",response:"Main character energy activated. Go crush that to-do list!"},
+  {emoji:"\u{1F60A}",label:"good",response:"Good mood? Perfect day to manifest that dream job!"},
+  {emoji:"\u{1F610}",label:"meh",response:"Meh days are valid. Grab a chai, recharge, come back stronger."},
+  {emoji:"\u{1F630}",label:"anxious",response:"Deep breaths, bestie. You've survived every bad day so far — 100% track record."},
+  {emoji:"\u{1F62D}",label:"low",response:"It's okay to not be okay. Watch comfort reels, order comfort food, tomorrow is a new day."},
+  {emoji:"\u{1F624}",label:"angry",response:"Channel that rage into your cover letter. Angry energy = productive energy."},
 ];
 
 const categories = [
-  {name:"Rent",emoji:"🏠",key:"rent"},
-  {name:"Food",emoji:"🍕",key:"food"},
-  {name:"Metro",emoji:"🚇",key:"metro"},
-  {name:"Shopping",emoji:"🛍️",key:"shopping"},
+  {name:"Rent",emoji:"\u{1F3E0}",key:"rent"},
+  {name:"Food",emoji:"\u{1F355}",key:"food"},
+  {name:"Transport",emoji:"\u{1F68C}",key:"transport"},
+  {name:"Shopping",emoji:"\u{1F6CD}️",key:"shopping"},
   {name:"Chai/Coffee",emoji:"☕",key:"chai"},
-  {name:"Recharge",emoji:"📱",key:"recharge"},
-  {name:"Going Out",emoji:"🎉",key:"going_out"},
-  {name:"Misc",emoji:"📦",key:"misc"},
+  {name:"Recharge",emoji:"\u{1F4F1}",key:"recharge"},
+  {name:"Going Out",emoji:"\u{1F389}",key:"going_out"},
+  {name:"Misc",emoji:"\u{1F4E6}",key:"misc"},
 ];
 
 const questions = [
@@ -523,59 +626,145 @@ const questions = [
 ];
 
 const outfits = [
-  {emoji:"👔",name:"Corporate Cute",desc:"White shirt + black trousers + statement earrings. Classic but make it Gen Z.",tags:["#OfficeReady","#CleanGirl","#PowerDressing"]},
-  {emoji:"🧥",name:"Blazer Babe",desc:"Oversized blazer + basic tee + straight-fit jeans. You look like you run the place.",tags:["#BossBabe","#StreetToOffice","#Blazered"]},
-  {emoji:"👗",name:"Kurti Queen",desc:"A-line kurti + cigarette pants + kolhapuris. Desi vibes, professional energy.",tags:["#DesiGirl","#EthnicChic","#KurtiSeason"]},
-  {emoji:"👖",name:"Smart Casual Slay",desc:"Solid crop blazer + high-waist pants + white sneakers. When the dress code says 'smart casual'.",tags:["#SmartCasual","#MinimalFit","#EffortlessChic"]},
-  {emoji:"🎨",name:"Color Block Queen",desc:"Bold colored top + neutral bottom + matching accessories. You ARE the serotonin.",tags:["#ColorTherapy","#DopamineDressing","#PopOfColor"]},
-  {emoji:"🖤",name:"All Black Everything",desc:"Black turtleneck/top + black pants + black boots. Mysterious, powerful, unbothered.",tags:["#AllBlack","#DarkAcademia","#MainCharacter"]},
-  {emoji:"💼",name:"Interview Armor",desc:"Pastel shirt + navy blazer + tailored trousers. First impression = lasting impression.",tags:["#InterviewReady","#FirstImpression","#DressForSuccess"]},
-  {emoji:"🌸",name:"Soft Girl Friday",desc:"Flowy blouse + pleated skirt/wide-leg pants + dainty jewelry. Because Fridays deserve softness.",tags:["#FridayVibes","#SoftGirl","#FlowingFabrics"]},
+  {emoji:"\u{1F454}",name:"Corporate Cute",desc:"White shirt + black trousers + statement earrings. Classic but make it Gen Z.",tags:["#OfficeReady","#CleanGirl","#PowerDressing"]},
+  {emoji:"\u{1F9E5}",name:"Blazer Babe",desc:"Oversized blazer + basic tee + straight-fit jeans. You look like you run the place.",tags:["#BossBabe","#StreetToOffice","#Blazered"]},
+  {emoji:"\u{1F457}",name:"Kurti Queen",desc:"A-line kurti + cigarette pants + kolhapuris. Desi vibes, professional energy.",tags:["#DesiGirl","#EthnicChic","#KurtiSeason"]},
+  {emoji:"\u{1F456}",name:"Smart Casual Slay",desc:"Solid crop blazer + high-waist pants + white sneakers. When the dress code says 'smart casual'.",tags:["#SmartCasual","#MinimalFit","#EffortlessChic"]},
+  {emoji:"\u{1F3A8}",name:"Color Block Queen",desc:"Bold colored top + neutral bottom + matching accessories. You ARE the serotonin.",tags:["#ColorTherapy","#DopamineDressing","#PopOfColor"]},
+  {emoji:"\u{1F5A4}",name:"All Black Everything",desc:"Black turtleneck/top + black pants + black boots. Mysterious, powerful, unbothered.",tags:["#AllBlack","#DarkAcademia","#MainCharacter"]},
+  {emoji:"\u{1F4BC}",name:"Interview Armor",desc:"Pastel shirt + navy blazer + tailored trousers. First impression = lasting impression.",tags:["#InterviewReady","#FirstImpression","#DressForSuccess"]},
+  {emoji:"\u{1F338}",name:"Soft Girl Friday",desc:"Flowy blouse + pleated skirt/wide-leg pants + dainty jewelry. Because Fridays deserve softness.",tags:["#FridayVibes","#SoftGirl","#FlowingFabrics"]},
 ];
 
-const delhiFood = [
-  {emoji:"🥟",name:"Dolma Aunty Momos",area:"Lajpat Nagar",price:"₹60-100",vibe:"The OG momo spot. The chutney alone is worth the trip."},
-  {emoji:"🍛",name:"Baba Nagpal Corner",area:"Lajpat Nagar",price:"₹80-150",vibe:"Chole bhature that'll make you forget your diet exists."},
-  {emoji:"🌯",name:"Al-Bake Shawarma",area:"New Friends Colony",price:"₹120-180",vibe:"That rumali roti shawarma hits different at 11pm."},
-  {emoji:"🍕",name:"Sattvik Pizza",area:"Rajouri Garden",price:"₹150-250",vibe:"When you want pizza but your wallet says 'bro...'"},
-  {emoji:"🧋",name:"Chaayos",area:"Multiple Outlets",price:"₹100-200",vibe:"AC + WiFi + unlimited chai refills = free coworking space."},
-  {emoji:"🫓",name:"Paranthe Wali Gali",area:"Chandni Chowk",price:"₹50-100",vibe:"12 types of paranthas. Tourist trap? Yes. Worth it? Also yes."},
-  {emoji:"🍦",name:"Giani's",area:"Multiple Outlets",price:"₹60-150",vibe:"Rabri faluda after a tough interview = instant mood fix."},
-  {emoji:"🥘",name:"Andhra Bhawan Canteen",area:"India Gate Area",price:"₹100-120",vibe:"Unlimited thali for ₹100. Government subsidized serotonin."},
-  {emoji:"🍔",name:"Burger Singh",area:"Multiple Outlets",price:"₹150-250",vibe:"Desi burgers with names like 'Bunty Tikki Raja'. Need we say more?"},
-  {emoji:"🫖",name:"Tapri Chai Spot",area:"Nearest Metro Station",price:"₹10-20",vibe:"₹10 cutting chai + existential career conversations. Peak Delhi."},
-  {emoji:"🥙",name:"Khan Chacha",area:"Khan Market",price:"₹150-300",vibe:"When you want to feel fancy but your bank balance is basic."},
-  {emoji:"🍜",name:"Wai Yu Mun Ching",area:"Connaught Place",price:"₹120-200",vibe:"Delhi's oldest Chinese restaurant. Chilli chicken that slaps."},
+const foodItems = [
+  {emoji:"\u{1F95F}",name:"Momos",type:"Steamed or fried dumplings",meal:["snacks","lunch","dinner"],diet:["veg","egg"],price:"budget",desc:"The ultimate street food — whether you're in Delhi, Bangalore, or Shillong."},
+  {emoji:"\u{1F35B}",name:"Chole Bhature",type:"Spiced chickpea curry + fried bread",meal:["breakfast","lunch"],diet:["veg"],price:"budget",desc:"Heavy, hearty, and hits every time. Perfect lazy weekend breakfast."},
+  {emoji:"\u{1F959}",name:"Shawarma Roll",type:"Grilled wrap with sauces",meal:["snacks","dinner"],diet:["egg"],price:"budget",desc:"Every city has that one shawarma stall everyone swears by."},
+  {emoji:"\u{1F355}",name:"Pizza Slice",type:"Local pizzeria or Domino's run",meal:["lunch","dinner","snacks"],diet:["veg","egg"],price:"mid",desc:"When you can't decide, pizza never disappoints."},
+  {emoji:"☕",name:"Chai + Biscuit",type:"Cutting chai from the tapri",meal:["breakfast","snacks"],diet:["veg"],price:"budget",desc:"₹10 cutting chai + existential career conversations. Peak India."},
+  {emoji:"\u{1F35D}",name:"Maggi",type:"2-minute noodles, infinite comfort",meal:["breakfast","snacks","dinner"],diet:["veg","egg"],price:"budget",desc:"College is over but Maggi is forever. Add veggies to feel responsible."},
+  {emoji:"\u{1F957}",name:"Green Salad Bowl",type:"Mixed greens + dressing",meal:["lunch","dinner"],diet:["veg","greeny"],price:"mid",desc:"For when you want to feel healthy and post it on Instagram."},
+  {emoji:"\u{1F966}",name:"Palak Paneer + Roti",type:"Creamy spinach + cottage cheese",meal:["lunch","dinner"],diet:["veg","greeny"],price:"mid",desc:"Iron-rich, protein-packed, and tastes like home. Maa would approve."},
+  {emoji:"\u{1F373}",name:"Egg Bhurji Pav",type:"Spiced scrambled eggs + bread",meal:["breakfast","snacks","dinner"],diet:["egg"],price:"budget",desc:"Protein on a budget. Add onions, tomatoes, green chili — chef's kiss."},
+  {emoji:"\u{1F372}",name:"Unlimited Thali",type:"Full meal with refills",meal:["lunch","dinner"],diet:["veg"],price:"mid",desc:"Multiple sabzis, dal, rice, roti, dessert. Government canteen vibes = best value."},
+  {emoji:"\u{1F32F}",name:"Frankie / Kathi Roll",type:"Stuffed flatbread roll",meal:["snacks","lunch"],diet:["veg","egg"],price:"budget",desc:"Mumbai's frankies, Kolkata's rolls — portable, filling, affordable."},
+  {emoji:"\u{1F368}",name:"Kulfi / Falooda",type:"Indian ice cream + rose drink",meal:["snacks"],diet:["veg"],price:"budget",desc:"Post-interview treat or just because. You deserve it."},
+  {emoji:"\u{1F35C}",name:"South Indian Meals",type:"Dosa / Idli / Vada + sambar",meal:["breakfast","lunch"],diet:["veg"],price:"budget",desc:"Crispy dosa at Udupi restaurants — available in every Indian city."},
+  {emoji:"\u{1F96A}",name:"Grilled Sandwich",type:"Veggies + cheese, toasted",meal:["breakfast","snacks"],diet:["veg"],price:"budget",desc:"Quick, cheap, customizable. Add corn and cheese for premium vibes."},
+  {emoji:"\u{1F371}",name:"Rajma Chawal",type:"Kidney bean curry + rice",meal:["lunch","dinner"],diet:["veg"],price:"budget",desc:"Sunday special that works any day. Pure comfort in a plate."},
+  {emoji:"\u{1F963}",name:"Smoothie Bowl",type:"Blended fruits + toppings",meal:["breakfast","snacks"],diet:["veg","greeny"],price:"mid",desc:"Healthy, aesthetic, Instagram-worthy. Granola on top is non-negotiable."},
+  {emoji:"\u{1F354}",name:"Desi Burger",type:"Indian-spiced patty burger",meal:["snacks","dinner"],diet:["veg","egg"],price:"mid",desc:"Tikki burger from a street cart or Burger Singh — desi twist on a classic."},
+  {emoji:"\u{1F35B}",name:"Biryani",type:"Fragrant rice with spices",meal:["lunch","dinner"],diet:["veg","egg"],price:"mid",desc:"Veg or egg biryani — every city has its style and its loyalists."},
+  {emoji:"\u{1F96C}",name:"Sprouts Chaat",type:"Sprouted lentils + chutneys",meal:["snacks","breakfast"],diet:["veg","greeny"],price:"budget",desc:"Protein + fiber on a budget. Squeeze some lemon, add sev on top."},
+  {emoji:"\u{1F370}",name:"Cafe Coffee + Pastry",type:"Coffee shop treat",meal:["snacks"],diet:["veg","egg"],price:"premium",desc:"CCD or local cafe — sometimes you need the WiFi and the vibes."},
+  {emoji:"\u{1F35D}",name:"Chilli Garlic Noodles",type:"Indo-Chinese stir-fry noodles",meal:["lunch","dinner","snacks"],diet:["veg","egg"],price:"budget",desc:"Street-side Chinese is an Indian invention and we're proud of it."},
+  {emoji:"\u{1F969}",name:"Paneer Tikka",type:"Grilled spiced cottage cheese",meal:["snacks","dinner"],diet:["veg"],price:"mid",desc:"Smoky, spicy, and satisfying. Works as a main or a starter."},
+  {emoji:"\u{1F374}",name:"Pasta / White Sauce",type:"Creamy Italian-ish comfort",meal:["lunch","dinner"],diet:["veg","egg"],price:"mid",desc:"Homemade or cafe — this is the ultimate comfort carb."},
+  {emoji:"\u{1F95D}",name:"Fruit Juice / Lassi",type:"Fresh pressed or blended",meal:["breakfast","snacks"],diet:["veg","greeny"],price:"budget",desc:"Mango lassi in summer, mosambi juice year-round. Instant refresh."},
+  {emoji:"\u{1F958}",name:"Dal Khichdi",type:"Lentils + rice comfort bowl",meal:["lunch","dinner"],diet:["veg","greeny"],price:"budget",desc:"When your stomach says 'be gentle.' Light, warm, healing energy."},
+  {emoji:"\u{1F32E}",name:"Pav Bhaji",type:"Spiced veggie mash + buttered bread",meal:["dinner","snacks"],diet:["veg"],price:"budget",desc:"Mumbai's gift to the nation. Extra butter is not optional, it's mandatory."},
+  {emoji:"\u{1F382}",name:"Fancy Brunch",type:"Avocado toast / pancakes / waffles",meal:["breakfast","lunch"],diet:["veg","egg"],price:"premium",desc:"For when payday just hit and you want to treat yourself. You earned it."},
+  {emoji:"\u{1F375}",name:"Filter Coffee",type:"South Indian drip coffee",meal:["breakfast","snacks"],diet:["veg"],price:"budget",desc:"Strong, frothy, served in a steel tumbler. No coffee chain comes close."},
 ];
 
-/* ── State ── */
+const mealTypes = [
+  {key:"breakfast",label:"Breakfast",emoji:"\u{1F373}"},
+  {key:"lunch",label:"Lunch",emoji:"\u{1F35B}"},
+  {key:"snacks",label:"Snacks",emoji:"\u{1F369}"},
+  {key:"dinner",label:"Dinner",emoji:"\u{1F319}"},
+];
+
+const dietTypes = [
+  {key:"veg",label:"Veg",emoji:"\u{1F33F}"},
+  {key:"egg",label:"Eggy",emoji:"\u{1F95A}"},
+  {key:"greeny",label:"Greeny",emoji:"\u{1F96C}"},
+];
+
+const priceTiers = [
+  {key:"budget",label:"Under ₹100",emoji:"\u{1F4B0}"},
+  {key:"mid",label:"₹100-300",emoji:"\u{1F4B3}"},
+  {key:"premium",label:"₹300+",emoji:"✨"},
+];
+
+const starLabels = ["","Terrible","Poor","Below Average","Okay","Good","Great","Amazing!"];
+
+/* ═══════════════════════════════════════════════
+   STATE
+   ═══════════════════════════════════════════════ */
 let affirmIdx = Math.floor(Math.random()*affirmations.length);
 let questionIdx = Math.floor(Math.random()*questions.length);
 let selectedCat = "food";
 let budget = JSON.parse(localStorage.getItem("pnk-budget")||"null") || {
   total:25000,
-  spent:{rent:0,food:0,metro:0,shopping:0,chai:0,recharge:0,going_out:0,misc:0}
+  spent:{rent:0,food:0,transport:0,shopping:0,chai:0,recharge:0,going_out:0,misc:0}
 };
 let moodLog = JSON.parse(localStorage.getItem("pnk-moods")||"[]");
+let activeMeal = "lunch";
+let activeDiet = "veg";
+let activePrice = "budget";
+let feedbackThumb = null;
+let feedbackStars = 0;
+let fontScale = parseFloat(localStorage.getItem("pnk-font")||"1");
 
-/* ── Init ── */
+/* ═══════════════════════════════════════════════
+   INIT
+   ═══════════════════════════════════════════════ */
+document.documentElement.style.setProperty("--font-scale",fontScale);
+const savedTheme = localStorage.getItem("pnk-theme")||"dark";
+document.documentElement.setAttribute("data-theme",savedTheme);
+updateThemeIcon();
+
 document.getElementById("dateDisplay").textContent = new Date().toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
 showAffirmation();
 renderMoods();
 renderBudget();
 showQuestion();
 randomOutfit();
-randomFood();
+renderFoodFilters();
+renderFood();
+renderStars();
 
-/* ── Tab switching ── */
-function switchTab(id, btn){
+/* ═══════════════════════════════════════════════
+   THEME
+   ═══════════════════════════════════════════════ */
+function toggleTheme(){
+  const next = document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
+  document.documentElement.setAttribute("data-theme",next);
+  localStorage.setItem("pnk-theme",next);
+  updateThemeIcon();
+}
+function updateThemeIcon(){
+  const isDark = document.documentElement.getAttribute("data-theme")==="dark";
+  document.getElementById("themeIcon").innerHTML = isDark
+    ? '<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>'
+    : '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';
+}
+
+/* ═══════════════════════════════════════════════
+   FONT SIZE
+   ═══════════════════════════════════════════════ */
+function changeFont(dir){
+  fontScale = Math.min(1.4, Math.max(0.8, fontScale + dir*0.1));
+  fontScale = Math.round(fontScale*10)/10;
+  document.documentElement.style.setProperty("--font-scale",fontScale);
+  localStorage.setItem("pnk-font",fontScale);
+  showToast(dir>0?"Text size increased":"Text size decreased");
+}
+
+/* ═══════════════════════════════════════════════
+   TAB SWITCHING
+   ═══════════════════════════════════════════════ */
+function switchTab(id,btn){
   document.querySelectorAll(".section").forEach(s=>s.classList.remove("active"));
   document.getElementById("sec-"+id).classList.add("active");
   document.querySelectorAll(".nav-item").forEach(n=>n.classList.remove("active"));
   btn.classList.add("active");
+  window.scrollTo({top:0,behavior:"smooth"});
 }
 
-/* ── Affirmations ── */
+/* ═══════════════════════════════════════════════
+   AFFIRMATIONS
+   ═══════════════════════════════════════════════ */
 function showAffirmation(){
   const a = affirmations[affirmIdx % affirmations.length];
   document.getElementById("affirmText").textContent = a.text;
@@ -586,12 +775,14 @@ function nextAffirmation(){
   showAffirmation();
 }
 
-/* ── Mood ── */
+/* ═══════════════════════════════════════════════
+   MOOD TRACKER
+   ═══════════════════════════════════════════════ */
 function renderMoods(){
   const grid = document.getElementById("moodGrid");
-  grid.innerHTML = moods.map((m,i)=>`<button class="mood-btn" onclick="pickMood(${i})" title="${m.label}">${m.emoji}</button>`).join("");
+  grid.innerHTML = moods.map((m,i)=>'<button class="mood-btn" onclick="pickMood('+i+')" title="'+m.label+'">'+m.emoji+'</button>').join("");
   const streak = moodLog.length;
-  document.getElementById("moodStreak").innerHTML = streak ? `<span>${streak}</span> day${streak>1?"s":""} tracked ✨` : "Start your streak today!";
+  document.getElementById("moodStreak").innerHTML = streak ? '<strong>'+streak+'</strong> day'+(streak>1?"s":"")+" tracked" : "Start your streak today!";
 }
 function pickMood(i){
   document.querySelectorAll(".mood-btn").forEach(b=>b.classList.remove("selected"));
@@ -602,92 +793,157 @@ function pickMood(i){
     moodLog.push({date:today,mood:moods[i].label});
     localStorage.setItem("pnk-moods",JSON.stringify(moodLog));
     renderMoods();
-    showToast("Mood logged! 💜");
+    showToast("Mood logged!");
   }
 }
 
-/* ── Budget ── */
+/* ═══════════════════════════════════════════════
+   BUDGET
+   ═══════════════════════════════════════════════ */
 function renderBudget(){
   const totalSpent = Object.values(budget.spent).reduce((a,b)=>a+b,0);
   const left = budget.total - totalSpent;
   document.getElementById("budgetLeft").textContent = left.toLocaleString("en-IN");
-  document.getElementById("budgetBar").style.width = Math.max(0,left/budget.total*100)+"%";
-  const barFill = document.getElementById("budgetBar");
-  if(left/budget.total < .2) barFill.style.background = "linear-gradient(135deg,#ef4444,#f97316)";
-  else if(left/budget.total < .5) barFill.style.background = "linear-gradient(135deg,#f97316,#fbbf24)";
-  else barFill.style.background = "var(--gradient-3)";
+  const pct = Math.max(0,left/budget.total*100);
+  document.getElementById("budgetBar").style.width = pct+"%";
+  const bf = document.getElementById("budgetBar");
+  if(pct<20) bf.style.background="linear-gradient(135deg,#ef4444,#f97316)";
+  else if(pct<50) bf.style.background="linear-gradient(135deg,#f97316,#fbbf24)";
+  else bf.style.background="var(--gradient-3)";
 
-  const grid = document.getElementById("budgetGrid");
-  grid.innerHTML = categories.slice(0,4).map(c=>`
-    <div class="budget-cat">
-      <div class="emoji">${c.emoji}</div>
-      <div class="cat-name">${c.name}</div>
-      <div class="cat-amount">₹${budget.spent[c.key].toLocaleString("en-IN")}</div>
-    </div>
-  `).join("");
+  document.getElementById("budgetGrid").innerHTML = categories.slice(0,4).map(c=>
+    '<div class="budget-cat"><div class="emoji">'+c.emoji+'</div><div class="cat-name">'+c.name+'</div><div class="cat-amount">₹'+budget.spent[c.key].toLocaleString("en-IN")+'</div></div>'
+  ).join("");
 
-  const picker = document.getElementById("catPicker");
-  picker.innerHTML = categories.map(c=>`<span class="cat-chip ${selectedCat===c.key?"active":""}" onclick="selectCat('${c.key}')">${c.emoji} ${c.name}</span>`).join("");
+  document.getElementById("catPicker").innerHTML = categories.map(c=>
+    '<span class="cat-chip '+(selectedCat===c.key?"active":"")+'" onclick="selectCat(\''+c.key+'\')">'+c.emoji+" "+c.name+'</span>'
+  ).join("");
 }
 function selectCat(key){selectedCat=key;renderBudget()}
 function addExpense(){
-  const input = document.getElementById("expenseInput");
-  const val = parseInt(input.value);
+  const input=document.getElementById("expenseInput");
+  const val=parseInt(input.value);
   if(!val||val<=0)return showToast("Enter an amount!");
-  budget.spent[selectedCat] += val;
+  budget.spent[selectedCat]+=val;
   localStorage.setItem("pnk-budget",JSON.stringify(budget));
   input.value="";
   renderBudget();
-  const left = budget.total - Object.values(budget.spent).reduce((a,b)=>a+b,0);
-  if(left < 2000) showToast("Sis, budget tight! 😬");
-  else showToast("Expense added! 💸");
+  const left=budget.total-Object.values(budget.spent).reduce((a,b)=>a+b,0);
+  showToast(left<2000?"Budget getting tight!":"Expense added!");
 }
 function resetBudget(){
-  budget.spent = {rent:0,food:0,metro:0,shopping:0,chai:0,recharge:0,going_out:0,misc:0};
+  budget.spent={rent:0,food:0,transport:0,shopping:0,chai:0,recharge:0,going_out:0,misc:0};
   localStorage.setItem("pnk-budget",JSON.stringify(budget));
   renderBudget();
-  showToast("Fresh month, fresh start! 🌱");
+  showToast("Fresh month, fresh start!");
 }
 
-/* ── Interview ── */
+/* ═══════════════════════════════════════════════
+   INTERVIEW
+   ═══════════════════════════════════════════════ */
 function showQuestion(){
-  const q = questions[questionIdx % questions.length];
-  document.getElementById("interviewQ").textContent = q.q;
-  document.getElementById("interviewCat").textContent = q.cat;
-  document.getElementById("interviewTip").innerHTML = q.tip;
+  const q=questions[questionIdx%questions.length];
+  document.getElementById("interviewQ").textContent=q.q;
+  document.getElementById("interviewCat").textContent=q.cat;
+  document.getElementById("interviewTip").innerHTML=q.tip;
 }
 function nextQuestion(){
-  questionIdx = (questionIdx+1) % questions.length;
+  questionIdx=(questionIdx+1)%questions.length;
   showQuestion();
 }
 
-/* ── Outfit ── */
+/* ═══════════════════════════════════════════════
+   FOOD FINDER
+   ═══════════════════════════════════════════════ */
+function renderFoodFilters(){
+  document.getElementById("mealFilters").innerHTML = mealTypes.map(m=>
+    '<button class="food-filter '+(activeMeal===m.key?"active":"")+'" onclick="setMeal(\''+m.key+'\')">'+m.emoji+" "+m.label+'</button>'
+  ).join("");
+  document.getElementById("dietFilters").innerHTML = dietTypes.map(d=>
+    '<button class="food-filter '+(activeDiet===d.key?"active":"")+'" onclick="setDiet(\''+d.key+'\')">'+d.emoji+" "+d.label+'</button>'
+  ).join("");
+  document.getElementById("priceFilters").innerHTML = priceTiers.map(p=>
+    '<button class="food-filter '+(activePrice===p.key?"active":"")+'" onclick="setPrice(\''+p.key+'\')">'+p.emoji+" "+p.label+'</button>'
+  ).join("");
+}
+function setMeal(k){activeMeal=k;renderFoodFilters();renderFood()}
+function setDiet(k){activeDiet=k;renderFoodFilters();renderFood()}
+function setPrice(k){activePrice=k;renderFoodFilters();renderFood()}
+
+function renderFood(){
+  const filtered = foodItems.filter(f=>
+    f.meal.includes(activeMeal) && f.diet.includes(activeDiet) && f.price===activePrice
+  );
+  const grid=document.getElementById("foodGrid");
+  if(!filtered.length){
+    grid.innerHTML='<div class="food-empty">No matches for this combo. Try changing a filter!</div>';
+    return;
+  }
+  const shuffled=[...filtered].sort(()=>Math.random()-.5).slice(0,4);
+  grid.innerHTML=shuffled.map(f=>{
+    const tags=[];
+    f.meal.forEach(m=>{const mt=mealTypes.find(x=>x.key===m);if(mt)tags.push(mt.emoji+" "+mt.label)});
+    return '<div class="food-item"><div class="fi-top"><span class="fi-emoji">'+f.emoji+'</span><div><div class="fi-name">'+f.name+'</div><div class="fi-type">'+f.type+'</div></div></div><div class="fi-bottom"><span class="fi-price">'+priceTiers.find(p=>p.key===f.price).label+'</span><div class="fi-tags">'+f.diet.map(d=>{const dt=dietTypes.find(x=>x.key===d);return dt?'<span class="fi-tag">'+dt.emoji+" "+dt.label+'</span>':''}).join("")+'</div></div><div class="fi-desc">"'+f.desc+'"</div></div>';
+  }).join("");
+}
+function shuffleFood(){renderFood();showToast("Shuffled!")}
+
+/* ═══════════════════════════════════════════════
+   OUTFIT
+   ═══════════════════════════════════════════════ */
 function randomOutfit(){
-  const o = outfits[Math.floor(Math.random()*outfits.length)];
-  document.getElementById("outfitResult").innerHTML = `
-    <span class="outfit-emoji">${o.emoji}</span>
-    <div class="outfit-name">${o.name}</div>
-    <div class="outfit-desc">${o.desc}</div>
-    <div class="outfit-tags">${o.tags.map(t=>`<span class="outfit-tag">${t}</span>`).join("")}</div>
-  `;
+  const o=outfits[Math.floor(Math.random()*outfits.length)];
+  document.getElementById("outfitResult").innerHTML=
+    '<span class="outfit-emoji">'+o.emoji+'</span><div class="outfit-name">'+o.name+'</div><div class="outfit-desc">'+o.desc+'</div><div class="outfit-tags">'+o.tags.map(t=>'<span class="outfit-tag">'+t+'</span>').join("")+'</div>';
 }
 
-/* ── Food ── */
-function randomFood(){
-  const f = delhiFood[Math.floor(Math.random()*delhiFood.length)];
-  document.getElementById("foodResult").innerHTML = `
-    <span class="food-emoji">${f.emoji}</span>
-    <div class="food-name">${f.name}</div>
-    <div class="food-area">📍 ${f.area}</div>
-    <span class="food-price">${f.price}</span>
-    <div class="food-vibe">"${f.vibe}"</div>
-  `;
+/* ═══════════════════════════════════════════════
+   FEEDBACK
+   ═══════════════════════════════════════════════ */
+function setThumb(dir){
+  feedbackThumb=dir;
+  document.querySelectorAll(".thumb-btn").forEach(b=>b.classList.remove("selected"));
+  document.querySelector(".thumb-btn."+dir).classList.add("selected");
+}
+function renderStars(){
+  const row=document.getElementById("starsRow");
+  let html="";
+  for(let i=1;i<=7;i++){
+    html+='<button class="star-btn '+(i<=feedbackStars?"filled":"")+'" onclick="setStar('+i+')">★</button>';
+  }
+  row.innerHTML=html;
+  document.getElementById("starLabel").textContent=starLabels[feedbackStars]||"";
+}
+function setStar(n){
+  feedbackStars=n;
+  renderStars();
+}
+function sendFeedback(){
+  const text=document.getElementById("fbText").value.trim();
+  if(!feedbackThumb&&!feedbackStars&&!text){
+    return showToast("Please provide some feedback first!");
+  }
+  const subject=encodeURIComponent("Pehli Naukri Kit Feedback");
+  let body="Feedback for Pehli Naukri Survival Kit\n\n";
+  if(feedbackThumb) body+="Reaction: "+(feedbackThumb==="up"?"\u{1F44D} Thumbs Up":"\u{1F44E} Thumbs Down")+"\n";
+  if(feedbackStars) body+="Rating: "+feedbackStars+"/7 stars ("+starLabels[feedbackStars]+")\n";
+  if(text) body+="\nMessage:\n"+text+"\n";
+  body+="\n---\nSent from Pehli Naukri Survival Kit";
+  const mailto="mailto:puneet.ar@gmail.com?subject="+subject+"&body="+encodeURIComponent(body);
+  window.open(mailto,"_blank");
+  showToast("Opening your email app...");
+  feedbackThumb=null;feedbackStars=0;
+  document.getElementById("fbText").value="";
+  document.querySelectorAll(".thumb-btn").forEach(b=>b.classList.remove("selected"));
+  renderStars();
 }
 
-/* ── Toast ── */
+/* ═══════════════════════════════════════════════
+   TOAST
+   ═══════════════════════════════════════════════ */
 function showToast(msg){
-  const t = document.getElementById("toast");
-  t.textContent = msg;t.classList.add("show");
+  const t=document.getElementById("toast");
+  t.textContent=msg;t.classList.add("show");
   setTimeout(()=>t.classList.remove("show"),2500);
 }
 </script>
