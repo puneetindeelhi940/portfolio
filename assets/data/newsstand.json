@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T08:37:05Z",
+  "generated_at": "2026-08-17T16:21:21Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,22 +16,14 @@
     },
     {
       "n": 2,
-      "claim": "Was unvaccinated Canadian man Garnet Harper denied kidney transplant before his death? What we know",
+      "claim": "Are these 20 'life hacks' the real deal? We put them to the test",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/16/garnet-harper-kidney-transplant-vaccine/",
+      "url": "https://www.snopes.com/collections/life-hacks-collection/",
       "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Republicans Revive False Miscarriage Statistic, Twist Fauci’s Texts About COVID-19 Shots",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/republicans-revive-false-miscarriage-statistic-twist-faucis-texts-about-covid-19-shots/",
-      "topic": "Health"
-    },
-    {
-      "n": 4,
       "claim": "‘Will Come Back To Bite You’: Top FDA Official Asked Fauci For Vaccine Side Effect Study, Email Shows",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -39,7 +31,7 @@
       "topic": "Health"
     },
     {
-      "n": 5,
+      "n": 4,
       "claim": "Shedding light on sunscreen myths",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -47,23 +39,23 @@
       "topic": "Trending"
     },
     {
-      "n": 6,
-      "claim": "Digitally altered video of Sara Tendulkar goes viral",
+      "n": 5,
+      "claim": "PM Modi was not walking around as national anthem played; viral video doctored",
       "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/digitally-altered-video-of-sara-tendulkar-goes-viral/",
+      "url": "https://www.altnews.in/no-pm-modi-was-not-walking-around-as-national-anthem-played-viral-video-doctored/",
+      "topic": "Politics"
+    },
+    {
+      "n": 6,
+      "claim": "Smear test brushes are safe",
+      "verdict": "FALSE",
+      "source": "Full Fact",
+      "url": "https://fullfact.org/health/brush-cervical-smear-test-no-evidence-cancer-threat/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Edited image of Andy Burnham in ‘Free Palestine’ shirt being shared on Facebook",
-      "verdict": "MISLEADING",
-      "source": "Full Fact",
-      "url": "https://fullfact.org/politics/fake-andy-burnham-free-palestine-image/",
-      "topic": "Trending"
-    },
-    {
-      "n": 8,
       "claim": "Euronews Did NOT Publish Report Saying Ukrainian Gunman Shot Dead 3 NATO Soldiers in Latvia -- Did NOT Happen",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -71,31 +63,23 @@
       "topic": "World"
     },
     {
-      "n": 9,
-      "claim": "Heritage Foundation committee chair said it's 'not a failure' to have all male Nobel Prize winners",
+      "n": 8,
+      "claim": "Did Facebook remove Jennifer Wilson Hall's Bible verse post? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/heritage-chair-nobel-prize-men/",
+      "url": "https://www.snopes.com/news/2026/08/17/jennifer-wilson-hall-bible-post-facebook/",
+      "topic": "Trending"
+    },
+    {
+      "n": 9,
+      "claim": "How Do You Beat The Rising Left Populists? Republicans Have To Learn On The Fly",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/17/dsa-democrats-2026-midterms-republicans-learn-on-the-fly-economy",
       "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Alaska Senate Candidates Attempt to Link Each Other to Epstein",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/alaska-senate-candidates-attempt-to-link-each-other-to-epstein/",
-      "topic": "Politics"
-    },
-    {
-      "n": 11,
-      "claim": "EXCLUSIVE: Key HHS Official Dr. Stephanie Haridopolos Unpacks Screen Use Advisory And What MAHA Really Means",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/16/stephanie-haridopolos-interview-screen-use-advisory-maha-health-human-services",
-      "topic": "Trending"
-    },
-    {
-      "n": 12,
       "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -103,23 +87,23 @@
       "topic": "Trending"
     },
     {
-      "n": 13,
-      "claim": "CJP activist’s father dies after alleged assault by BJP men in Bengal’s Bankura; 8 arrested",
+      "n": 11,
+      "claim": "Bengal minister Arjun Singh hoisted BJP flag on Independence day? No, old & clipped video falsely viral",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/cjp-activists-father-dies-after-alleged-assault-by-bjp-men-in-bengals-bankura-8-arrested/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/bengal-minister-arjun-singh-hoisted-bjp-flag-on-independence-day-no-old-clipped-video-falsely-viral/",
+      "topic": "Politics"
     },
     {
-      "n": 14,
-      "claim": "Old video shared with misleading suggestion it shows migrants recently crossing into Ceuta",
-      "verdict": "FALSE",
+      "n": 12,
+      "claim": "Edited image of Andy Burnham in ‘Free Palestine’ shirt being shared on Facebook",
+      "verdict": "MISLEADING",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/morocco-ceuta-migrants-video-old-footage/",
+      "url": "https://fullfact.org/politics/fake-andy-burnham-free-palestine-image/",
       "topic": "Trending"
     },
     {
-      "n": 15,
+      "n": 13,
       "claim": "FAKE Video Shows Abdul El-Sayed, Ms. Rachel Talking To Kids About Israeli 'Colonizers",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -127,97 +111,81 @@
       "topic": "Trending"
     },
     {
-      "n": 16,
-      "claim": "20 Einstein rumors we've analyzed",
+      "n": 14,
+      "claim": "Did Muslims in Dearborn try to silence church bells? There's no proof",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/albert-einstein-rumors/",
+      "url": "https://www.snopes.com/fact-check/dearborn-muslims-church-bells/",
       "topic": "Trending"
     },
     {
-      "n": 17,
-      "claim": "Wright’s Hairsplitting Statements About Canceled Energy Grants in Blue States",
+      "n": 15,
+      "claim": "EXCLUSIVE: Key HHS Official Dr. Stephanie Haridopolos Unpacks Screen Use Advisory And What MAHA Really Means",
       "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/wrights-hairsplitting-statements-about-canceled-energy-grants-in-blue-states/",
-      "topic": "Science"
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/16/stephanie-haridopolos-interview-screen-use-advisory-maha-health-human-services",
+      "topic": "Trending"
+    },
+    {
+      "n": 16,
+      "claim": "Wellness influencers claim mainstream medicine ignores natural remedies. They’re wrong",
+      "verdict": "FALSE",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/wellness-influencers-wrongly-claim-mainstream-medicine-ignores-natural-remedies/",
+      "topic": "Health"
+    },
+    {
+      "n": 17,
+      "claim": "Digitally altered video of Sara Tendulkar goes viral",
+      "verdict": "MISLEADING",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/digitally-altered-video-of-sara-tendulkar-goes-viral/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump envoy Kushner arrives in Israel after rare Hamas talks on Gaza peace plan",
+      "headline": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran issue",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-17T04:50:56+00:00"
+      "published": "2026-08-17T14:59:02+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump orders Pentagon to scale back joint exercises with South Korea",
+      "headline": "DHS defends investigating agency critics and giving them warning notices",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/g-s1-138969/trump-exercises-south-korea",
-      "topic": "Politics",
-      "published": "2026-08-17T05:21:39+00:00"
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5934692/dhs-free-speech-investigations",
+      "topic": "Trending",
+      "published": "2026-08-17T13:31:13+00:00"
     },
     {
       "n": 3,
-      "headline": "Firefighters battle massive wildfires in Belgium and Greece as 2 die on an island near Athens",
+      "headline": "Hayden Panettiere, who started her career as a child actor before starring in 'Heroes' and 'Nashville,' dies at 36",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/firefighters-battle-massive-wildfires-in-belgium-and-greece-as-2-die-on-an-island-near-athens",
-      "topic": "Trending",
-      "published": "2026-08-16T22:37:06+00:00"
+      "url": "https://www.pbs.org/newshour/arts/hayden-panettiere-who-started-her-career-as-a-child-actor-before-starring-in-heroes-and-nashville-dies-at-36",
+      "topic": "Celebrity",
+      "published": "2026-08-17T15:51:51+00:00"
     },
     {
       "n": 4,
-      "headline": "Ebola outbreak in Democratic Republic of Congo now deadliest in country’s history",
+      "headline": "Ebola outbreak in Democratic Republic of the Congo now deadliest in country’s history",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/17/ebola-outbreak-drc-democratic-republic-of-congo-deadliest-in-history",
       "topic": "Trending",
-      "published": "2026-08-17T00:09:57+00:00"
+      "published": "2026-08-17T14:07:31+00:00"
     },
     {
       "n": 5,
-      "headline": "India's testing agency in focus after more exams canceled",
+      "headline": "Germany: Bundeswehr troop numbers reach 13-year high",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-s-testing-agency-in-focus-after-more-exams-canceled/live-78391139?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-bundeswehr-troop-numbers-reach-13-year-high/a-78400706?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-17T07:19:00+00:00"
+      "published": "2026-08-17T15:30:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Ukrainian strikes kill six in Russia, acting governor says",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-17T07:41:24+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Multiple people dead as flooding continues in Indiana",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5934670/indiana-flooding-deaths",
-      "topic": "Trending",
-      "published": "2026-08-16T20:38:40+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Zimbabwe boat accident death toll hits 68 as 22 more bodies recovered",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/15/more-bodies-recovered-after-zimbabwe-boat-accident",
-      "topic": "Trending",
-      "published": "2026-08-15T19:39:07+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Fatty food raises risk of colorectal cancer",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fatty-food-raises-risk-of-colorectal-cancer/a-78284704?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-08-17T06:49:00+00:00"
-    },
-    {
-      "n": 10,
       "headline": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
@@ -225,60 +193,92 @@
       "published": "2026-08-17T06:24:31+00:00"
     },
     {
-      "n": 11,
-      "headline": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
+      "n": 7,
+      "headline": "USS Washington to relieve USS Lincoln. And, Jared Kushner to meet with Netanyahu",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
+      "url": "https://www.npr.org/2026/08/17/g-s1-138973/up-first-newsletter-uss-lincoln-meta-israel-hamas-ukraine-russia",
+      "topic": "Trending",
+      "published": "2026-08-17T11:48:21+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Flooding risk remains as deadly storms move from the Midwest to the mid-Atlantic",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/flooding-risk-remains-as-deadly-storms-move-from-the-midwest-to-the-mid-atlantic",
+      "topic": "Trending",
+      "published": "2026-08-17T15:24:09+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Zimbabwe boat accident death toll hits 68 as 22 more bodies recovered",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/15/more-bodies-recovered-after-zimbabwe-boat-accident",
+      "topic": "Trending",
+      "published": "2026-08-15T19:39:07+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Norway wealth fund warns of AI-driven stock market bubble",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/norway-wealth-fund-warns-of-ai-driven-stock-market-bubble/a-78351371?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-08-17T14:00:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Russia and Ukraine trade more deadly strikes",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-16T20:20:22+00:00"
+      "published": "2026-08-17T13:16:50+00:00"
     },
     {
       "n": 12,
-      "headline": "Lake Powell hits record low, threatening key water and electricity supply for millions",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/lake-powell-hits-record-low-threatening-key-water-and-electricity-supply-for-millions",
+      "headline": "Hayden Panettiere, who starred in 'Heroes' and 'Nashville,' dies at 36",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5935226/hayden-panettiere-dies",
       "topic": "Trending",
-      "published": "2026-08-16T21:46:50+00:00"
+      "published": "2026-08-17T10:00:10+00:00"
     },
     {
       "n": 13,
-      "headline": "Moroccan police arrest more than 100 people as they attempt to enter Ceuta",
+      "headline": "Supreme Court again denies Trump's push to toss out $5 million verdict in E. Jean Carroll case",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/supreme-court-again-denies-trumps-push-to-toss-out-5-million-verdict-in-e-jean-carroll-case",
+      "topic": "Politics",
+      "published": "2026-08-17T15:05:23+00:00"
+    },
+    {
+      "n": 14,
+      "headline": "Moroccan police arrest more than 100 people attempting to enter Ceuta",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/15/moroccan-police-arrest-more-than-100-people-as-they-attempt-to-enter-ceuta",
       "topic": "Trending",
       "published": "2026-08-15T18:08:21+00:00"
     },
     {
-      "n": 14,
-      "headline": "Germany news: Belgium blaze kept out of Germany for now",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-belgium-blaze-kept-out-of-germany-for-now/live-78391144?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-17T06:42:00+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Ebola outbreak in DR Congo becomes deadliest in its history",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgll74vvydo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-17T04:41:31+00:00"
+      "headline": "Indonesia neutrality tested by joint naval drill with China",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/indonesia-neutrality-tested-by-joint-naval-drill-with-china/a-78400288?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-17T13:37:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Tommy John, namesake for a pioneering elbow surgery that saved his career, dies at 83",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138941/tommy-john-elbow-surgery-baseball-pitcher-yankees-dodgers",
+      "headline": "Aid shortages and fears of starvation as Indonesia reels from deadly earthquake",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/crl7686r71yo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-16T18:58:25+00:00"
+      "published": "2026-08-17T10:39:24+00:00"
     },
     {
       "n": 17,
-      "headline": "Fact-checking claims about Taylor Farms' donations to Trump-aligned groups",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/fact-checking-claims-about-taylor-farms-donations-to-trump-aligned-groups",
-      "topic": "Politics",
-      "published": "2026-08-16T21:18:10+00:00"
+      "headline": "As wildfires get worse, some states are struggling to pass fire protection rules",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5923975/wildfires-western-community-protection",
+      "topic": "Trending",
+      "published": "2026-08-17T09:00:00+00:00"
     }
   ]
 }
