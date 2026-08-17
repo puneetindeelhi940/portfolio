@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T00:59:02Z",
+  "generated_at": "2026-08-17T08:37:05Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Heritage Foundation committee chair said it's 'not a failure' to have all male Nobel Prize winners",
+      "claim": "Was unvaccinated Canadian man Garnet Harper denied kidney transplant before his death? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/heritage-chair-nobel-prize-men/",
+      "url": "https://www.snopes.com/news/2026/08/16/garnet-harper-kidney-transplant-vaccine/",
       "topic": "Trending"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "‘Zombie drugs’ video shared by Harbhajan Singh is not from Punjab",
-      "verdict": "FALSE",
+      "claim": "Digitally altered video of Sara Tendulkar goes viral",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/zombie-drugs-video-shared-by-harbhajan-singh-is-not-from-punjab/",
+      "url": "https://www.altnews.in/digitally-altered-video-of-sara-tendulkar-goes-viral/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "20 Einstein rumors we've analyzed",
+      "claim": "Heritage Foundation committee chair said it's 'not a failure' to have all male Nobel Prize winners",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/albert-einstein-rumors/",
+      "url": "https://www.snopes.com/fact-check/heritage-chair-nobel-prize-men/",
       "topic": "Trending"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Republic, Gujarat Samachar write reports based on fake Italian Embassy statement",
+      "claim": "CJP activist’s father dies after alleged assault by BJP men in Bengal’s Bankura; 8 arrested",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/republic-gujarat-samachar-write-reports-based-on-fake-italian-embassy-statement/",
+      "url": "https://www.altnews.in/cjp-activists-father-dies-after-alleged-assault-by-bjp-men-in-bengals-bankura-8-arrested/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Massachusetts Democrats didn't unveil Molech statue at state Capitol, despite claims",
+      "claim": "20 Einstein rumors we've analyzed",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mass-democrats-molech-statue/",
+      "url": "https://www.snopes.com/collections/albert-einstein-rumors/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump says US to scale back military drills with South Korea after it stayed out of Iran war",
+      "headline": "Trump envoy Kushner arrives in Israel after rare Hamas talks on Gaza peace plan",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-17T00:06:05+00:00"
+      "published": "2026-08-17T04:50:56+00:00"
     },
     {
       "n": 2,
-      "headline": "Multiple people dead as flooding continues in Indiana",
+      "headline": "Trump orders Pentagon to scale back joint exercises with South Korea",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5934670/indiana-flooding-deaths",
-      "topic": "Trending",
-      "published": "2026-08-16T20:38:40+00:00"
+      "url": "https://www.npr.org/2026/08/17/g-s1-138969/trump-exercises-south-korea",
+      "topic": "Politics",
+      "published": "2026-08-17T05:21:39+00:00"
     },
     {
       "n": 3,
@@ -178,38 +178,30 @@
     },
     {
       "n": 5,
-      "headline": "Italy: Thieves steal key Renaissance paintings in Sicily",
+      "headline": "India's testing agency in focus after more exams canceled",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/italy-thieves-steal-key-renaissance-paintings-in-sicily/a-78389559?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/india-s-testing-agency-in-focus-after-more-exams-canceled/live-78391139?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-16T19:18:00+00:00"
+      "published": "2026-08-17T07:19:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Trump envoy Kushner meets Hamas leader to push Gaza peace plan",
+      "headline": "Ukrainian strikes kill six in Russia, acting governor says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-16T19:58:14+00:00"
+      "published": "2026-08-17T07:41:24+00:00"
     },
     {
       "n": 7,
-      "headline": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
+      "headline": "Multiple people dead as flooding continues in Indiana",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
-      "topic": "World",
-      "published": "2026-08-16T20:20:22+00:00"
+      "url": "https://www.npr.org/2026/08/16/nx-s1-5934670/indiana-flooding-deaths",
+      "topic": "Trending",
+      "published": "2026-08-16T20:38:40+00:00"
     },
     {
       "n": 8,
-      "headline": "Trump orders Pentagon to scale back joint exercises with South Korea",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-orders-pentagon-to-scale-back-joint-exercises-with-south-korea",
-      "topic": "Politics",
-      "published": "2026-08-16T22:01:52+00:00"
-    },
-    {
-      "n": 9,
       "headline": "Zimbabwe boat accident death toll hits 68 as 22 more bodies recovered",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/15/more-bodies-recovered-after-zimbabwe-boat-accident",
@@ -217,31 +209,31 @@
       "published": "2026-08-15T19:39:07+00:00"
     },
     {
-      "n": 10,
-      "headline": "UAE, Saudi Arabia, others condemn Israel's rejection of Trump Gaza plan",
+      "n": 9,
+      "headline": "Fatty food raises risk of colorectal cancer",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uae-saudi-arabia-others-condemn-israel-s-rejection-of-trump-gaza-plan/a-78389399?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/fatty-food-raises-risk-of-colorectal-cancer/a-78284704?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-08-17T06:49:00+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-16T17:31:00+00:00"
+      "published": "2026-08-17T06:24:31+00:00"
     },
     {
       "n": 11,
-      "headline": "Russia says at least seven killed in largest Ukrainian attack of 2026",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+      "headline": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
       "topic": "World",
-      "published": "2026-08-16T19:03:04+00:00"
+      "published": "2026-08-16T20:20:22+00:00"
     },
     {
       "n": 12,
-      "headline": "Tommy John, namesake for a pioneering elbow surgery that saved his career, dies at 83",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138941/tommy-john-elbow-surgery-baseball-pitcher-yankees-dodgers",
-      "topic": "Trending",
-      "published": "2026-08-16T18:58:25+00:00"
-    },
-    {
-      "n": 13,
       "headline": "Lake Powell hits record low, threatening key water and electricity supply for millions",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/nation/lake-powell-hits-record-low-threatening-key-water-and-electricity-supply-for-millions",
@@ -249,7 +241,7 @@
       "published": "2026-08-16T21:46:50+00:00"
     },
     {
-      "n": 14,
+      "n": 13,
       "headline": "Moroccan police arrest more than 100 people as they attempt to enter Ceuta",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/15/moroccan-police-arrest-more-than-100-people-as-they-attempt-to-enter-ceuta",
@@ -257,28 +249,36 @@
       "published": "2026-08-15T18:08:21+00:00"
     },
     {
-      "n": 15,
-      "headline": "Ukraine attacks Wildberries, Russia's biggest online market",
+      "n": 14,
+      "headline": "Germany news: Belgium blaze kept out of Germany for now",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-16T15:45:00+00:00"
+      "url": "https://www.dw.com/en/germany-news-belgium-blaze-kept-out-of-germany-for-now/live-78391144?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-17T06:42:00+00:00"
+    },
+    {
+      "n": 15,
+      "headline": "Ebola outbreak in DR Congo becomes deadliest in its history",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cvgll74vvydo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-17T04:41:31+00:00"
     },
     {
       "n": 16,
-      "headline": "Two dead and hundreds evacuated after twin fires break out on Greek island",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c87nnwlpe5no?at_medium=RSS&at_campaign=rss",
+      "headline": "Tommy John, namesake for a pioneering elbow surgery that saved his career, dies at 83",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/16/g-s1-138941/tommy-john-elbow-surgery-baseball-pitcher-yankees-dodgers",
       "topic": "Trending",
-      "published": "2026-08-16T19:50:36+00:00"
+      "published": "2026-08-16T18:58:25+00:00"
     },
     {
       "n": 17,
-      "headline": "A good – and bad – week for Italy's art police and museum security",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5933052/sicily-art-heist-museum-parma",
-      "topic": "Trending",
-      "published": "2026-08-16T16:27:54+00:00"
+      "headline": "Fact-checking claims about Taylor Farms' donations to Trump-aligned groups",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/fact-checking-claims-about-taylor-farms-donations-to-trump-aligned-groups",
+      "topic": "Politics",
+      "published": "2026-08-16T21:18:10+00:00"
     }
   ]
 }
