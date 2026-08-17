@@ -31,6 +31,7 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
         .week-card { transition: transform 0.15s ease, box-shadow 0.15s ease; }
         .week-card:active { transform: scale(0.98); }
+        .week-card:focus-visible { outline: 2px solid #D97706; outline-offset: 2px; }
         .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: #059669; animation: pulse-ring 1.8s ease-in-out infinite; }
         @keyframes pulse-ring { 0%,100% { box-shadow: 0 0 0 0 rgba(5,150,105,0.5); } 50% { box-shadow: 0 0 0 6px rgba(5,150,105,0); } }
         .task-item { transition: all 0.2s ease; }
@@ -39,10 +40,16 @@
         @keyframes hora-glow { 0%,100% { box-shadow: 0 0 0 0 rgba(217,119,6,0.3); } 50% { box-shadow: 0 0 8px 3px rgba(217,119,6,0.2); } }
         .family-card { transition: all 0.2s ease; }
         /* Horizontal scrollable single-row nav for mobile */
-        #main-nav { display: flex; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+        #main-nav { display: flex; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; position: relative; }
         #main-nav .nav-btn { flex: 0 0 auto; white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+        .nav-scroll-hint { position: relative; }
+        .nav-scroll-hint::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 32px; background: linear-gradient(to right, transparent, white); pointer-events: none; z-index: 1; }
+        .nav-scroll-hint.scrolled-end::after { display: none; }
         select, input[type="text"] { min-height: 44px; }
         .fs-btn { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+        .skip-link { position: absolute; top: -100px; left: 0; background: #D97706; color: white; padding: 8px 16px; z-index: 100; font-weight: bold; font-size: 14px; border-radius: 0 0 8px 0; }
+        .skip-link:focus { top: 0; }
+        .month-cell:focus-visible, .week-card:focus-visible { outline: 2px solid #D97706; outline-offset: 2px; }
         @media print {
             header, footer, nav, .no-print { display: none !important; }
             body { background: #fff !important; }
@@ -53,40 +60,44 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between custom-scrollbar">
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="bg-white border-b border-amber-200/60 sticky top-0 z-30 shadow-sm">
         <div class="w-full px-3 py-3 flex flex-col gap-3">
             <div class="flex items-center justify-between gap-2">
                 <div class="flex items-center space-x-2">
-                    <button onclick="adjustFontSize(-2)" class="fs-btn no-print bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold text-sm" title="Decrease text size">A-</button>
-                    <button onclick="adjustFontSize(2)" class="fs-btn no-print bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold text-base" title="Increase text size">A+</button>
+                    <button onclick="adjustFontSize(-2)" class="fs-btn no-print bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold text-sm" title="Decrease text size" aria-label="Decrease text size">A-</button>
+                    <button onclick="adjustFontSize(2)" class="fs-btn no-print bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold text-base" title="Increase text size" aria-label="Increase text size">A+</button>
                 </div>
                 <div class="flex items-center space-x-3 flex-1 min-w-0 justify-end">
                     <div class="min-w-0 text-right">
                         <h1 class="text-lg font-bold text-slate-900 tracking-tight leading-tight">Jyeshtha Navtara Explorer</h1>
                         <p class="text-xs text-amber-700 font-medium leading-tight">Classical Electional Astrology & Activity Mapping</p>
                     </div>
-                    <div class="w-10 h-10 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center shadow text-lg shrink-0">🦂</div>
+                    <div class="w-10 h-10 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center shadow text-lg shrink-0" aria-hidden="true">🦂</div>
                 </div>
             </div>
-            <nav id="main-nav" class="flex items-center gap-1.5 text-sm font-semibold custom-scrollbar pb-1">
-                <button onclick="switchTab('nav-transit')" id="btn-transit" class="nav-btn px-3 py-2 rounded-lg bg-amber-500 text-white shadow-sm transition">⚡ Daily</button>
-                <button onclick="switchTab('nav-thisweek')" id="btn-thisweek" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📅 This Wk</button>
-                <button onclick="switchTab('nav-nextweek')" id="btn-nextweek" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📅 Next Wk</button>
-                <button onclick="switchTab('nav-month')" id="btn-month" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🗓️ Month</button>
-                <button onclick="switchTab('nav-hora')" id="btn-hora" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">⏰ Hora</button>
-                <button onclick="switchTab('nav-explorer')" id="btn-explorer" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📜 27 Stars</button>
-                <button onclick="switchTab('nav-domains')" id="btn-domains" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🎯 Life</button>
-                <button onclick="switchTab('nav-compat')" id="btn-compat" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🤝 Compat</button>
-                <button onclick="switchTab('nav-family')" id="btn-family" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">👨‍👩‍👧‍👦 Family</button>
-                <button onclick="switchTab('nav-tasks')" id="btn-tasks" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📌 Tasks</button>
-                <button onclick="switchTab('nav-journal')" id="btn-journal" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📓 Journal</button>
-                <button onclick="switchTab('nav-remedies')" id="btn-remedies" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🛡️ Remedies</button>
-                <button onclick="switchTab('nav-about')" id="btn-about" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">ℹ️ About</button>
+            <div class="nav-scroll-hint">
+            <nav id="main-nav" role="tablist" aria-label="Main sections" class="flex items-center gap-1.5 text-sm font-semibold custom-scrollbar pb-1">
+                <button onclick="switchTab('nav-transit')" id="btn-transit" role="tab" aria-selected="true" aria-controls="nav-transit" class="nav-btn px-3 py-2 rounded-lg bg-amber-500 text-white shadow-sm transition">⚡ Daily</button>
+                <button onclick="switchTab('nav-thisweek')" id="btn-thisweek" role="tab" aria-selected="false" aria-controls="nav-thisweek" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">📅 This Wk</button>
+                <button onclick="switchTab('nav-nextweek')" id="btn-nextweek" role="tab" aria-selected="false" aria-controls="nav-nextweek" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">📅 Next Wk</button>
+                <button onclick="switchTab('nav-month')" id="btn-month" role="tab" aria-selected="false" aria-controls="nav-month" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">🗓️ Month</button>
+                <button onclick="switchTab('nav-hora')" id="btn-hora" role="tab" aria-selected="false" aria-controls="nav-hora" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">⏰ Hora</button>
+                <button onclick="switchTab('nav-explorer')" id="btn-explorer" role="tab" aria-selected="false" aria-controls="nav-explorer" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">📜 27 Stars</button>
+                <button onclick="switchTab('nav-domains')" id="btn-domains" role="tab" aria-selected="false" aria-controls="nav-domains" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">🎯 Life</button>
+                <button onclick="switchTab('nav-compat')" id="btn-compat" role="tab" aria-selected="false" aria-controls="nav-compat" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">🤝 Compat</button>
+                <button onclick="switchTab('nav-family')" id="btn-family" role="tab" aria-selected="false" aria-controls="nav-family" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">👨‍👩‍👧‍👦 Family</button>
+                <button onclick="switchTab('nav-tasks')" id="btn-tasks" role="tab" aria-selected="false" aria-controls="nav-tasks" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">📌 Tasks</button>
+                <button onclick="switchTab('nav-journal')" id="btn-journal" role="tab" aria-selected="false" aria-controls="nav-journal" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">📓 Journal</button>
+                <button onclick="switchTab('nav-remedies')" id="btn-remedies" role="tab" aria-selected="false" aria-controls="nav-remedies" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">🛡️ Remedies</button>
+                <button onclick="switchTab('nav-about')" id="btn-about" role="tab" aria-selected="false" aria-controls="nav-about" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition" tabindex="-1">ℹ️ About</button>
             </nav>
+            </div>
         </div>
     </header>
 
-    <main class="w-full px-3 py-4 flex-grow space-y-4">
+    <main id="main-content" class="w-full px-3 py-4 flex-grow space-y-4">
 
         <!-- Banner -->
         <section class="bg-gradient-to-r from-amber-50 via-white to-amber-50 border border-amber-200/80 rounded-2xl p-4 shadow-sm">
@@ -99,13 +110,13 @@
                     </div>
                     <h2 class="text-lg font-bold text-slate-800">Native Archetype: Jyeshtha ("The Chief One")</h2>
                     <p class="text-sm text-slate-600 leading-relaxed">Presided over by <strong>Indra</strong> and ruled by <strong>Mercury</strong> (<em>Budha</em>), Jyeshtha possesses a <em>Tikshna</em> (Sharp) quality. This platform translates 27 lunar mansion transits across 3 Paryayas into actionable timing, color alignment, tasks, and remedial protocols.</p>
-                    <div class="flex flex-wrap items-center gap-2 pt-1">
+                    <div class="flex flex-wrap items-center gap-2 pt-1" aria-live="polite" aria-atomic="false">
                         <div class="flex items-center gap-2 bg-white border border-emerald-200 rounded-lg px-3 py-2 shadow-sm">
-                            <div class="pulse-dot"></div>
+                            <div class="pulse-dot" aria-hidden="true"></div>
                             <div class="text-xs"><span class="text-slate-500">Transit:</span> <strong id="live-star-name" class="text-emerald-700 ml-1">—</strong></div>
                         </div>
                         <div class="bg-white border border-slate-200 rounded-lg px-3 py-2 shadow-sm text-xs">
-                            <span class="text-slate-500">Remaining:</span> <strong id="live-countdown" class="text-amber-700 ml-1 font-mono">--:--:--</strong>
+                            <span class="text-slate-500">Remaining:</span> <strong id="live-countdown" class="text-amber-700 ml-1 font-mono" aria-label="Time remaining in current nakshatra">--:--:--</strong>
                         </div>
                         <div class="bg-white border border-slate-200 rounded-lg px-3 py-2 shadow-sm text-xs">
                             <span class="text-slate-500">Time:</span> <strong id="live-clock" class="text-slate-700 ml-1 font-mono">--:--:--</strong>
@@ -122,7 +133,7 @@
                         <div class="bg-white border border-red-300 rounded-lg px-3 py-2 shadow-sm text-xs min-h-[44px] flex items-center">
                             <span class="text-red-600 font-bold">Rahu Kaal:</span> <strong id="live-rahukaal" class="text-red-600 ml-1 font-extrabold">—</strong>
                         </div>
-                        <button onclick="playVoiceBriefing()" id="voice-btn" class="no-print bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg px-3 py-2 text-xs font-semibold transition flex items-center gap-1 min-h-[44px]" title="Play morning briefing">🔊 Briefing</button>
+                        <button onclick="playVoiceBriefing()" id="voice-btn" class="no-print bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg px-3 py-2 text-xs font-semibold transition flex items-center gap-1 min-h-[44px]" title="Play morning briefing" aria-label="Play morning voice briefing" aria-live="polite">🔊 Briefing</button>
                     </div>
                 </div>
                 <div class="grid grid-cols-4 gap-2 text-center text-xs">
@@ -135,7 +146,7 @@
         </section>
 
         <!-- TAB: DAILY TRANSIT -->
-        <section id="nav-transit" class="tab-content block space-y-4">
+        <section id="nav-transit" role="tabpanel" aria-labelledby="btn-transit" class="tab-content block space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="flex flex-col gap-3 border-b border-slate-100 pb-4">
                     <div>
@@ -156,7 +167,7 @@
         </section>
 
         <!-- TAB: 7-DAY FORECAST -->
-        <section id="nav-thisweek" class="tab-content hidden space-y-4">
+        <section id="nav-thisweek" role="tabpanel" aria-labelledby="btn-thisweek" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="border-b border-slate-100 pb-3">
                     <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📅</span> This Week — Nakshatra Calendar</h3>
@@ -167,12 +178,12 @@
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300"></span> Favorable</span>
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-amber-100 border border-amber-300"></span> Sensitive</span>
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-rose-100 border border-rose-300"></span> Challenging</span>
-                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha</span></span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha / Chitra</span></span>
                 </div>
             </div>
         </section>
 
-        <section id="nav-nextweek" class="tab-content hidden space-y-4">
+        <section id="nav-nextweek" role="tabpanel" aria-labelledby="btn-nextweek" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="border-b border-slate-100 pb-3">
                     <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>📅</span> Next Week — Nakshatra Calendar</h3>
@@ -183,12 +194,12 @@
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300"></span> Favorable</span>
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-amber-100 border border-amber-300"></span> Sensitive</span>
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-rose-100 border border-rose-300"></span> Challenging</span>
-                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha</span></span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha / Chitra</span></span>
                 </div>
             </div>
         </section>
 
-        <section id="nav-month" class="tab-content hidden space-y-4">
+        <section id="nav-month" role="tabpanel" aria-labelledby="btn-month" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="border-b border-slate-100 pb-3 flex flex-col gap-2">
                     <div>
@@ -209,13 +220,13 @@
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300"></span> Favorable</span>
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-amber-100 border border-amber-300"></span> Sensitive</span>
                     <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-rose-100 border border-rose-300"></span> Challenging</span>
-                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha</span></span>
+                    <span class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:#166534"></span> <span class="text-slate-600">Moola / Ashwini / Pushya / Anuradha / Chitra</span></span>
                 </div>
             </div>
         </section>
 
         <!-- TAB: HORA CALCULATOR -->
-        <section id="nav-hora" class="tab-content hidden space-y-4">
+        <section id="nav-hora" role="tabpanel" aria-labelledby="btn-hora" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="border-b border-slate-100 pb-3">
                     <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>⏰</span> Panchang-Aware Hora Calculator</h3>
@@ -248,7 +259,7 @@
         </section>
 
         <!-- TAB: 27 STARS GRID -->
-        <section id="nav-explorer" class="tab-content hidden space-y-4">
+        <section id="nav-explorer" role="tabpanel" aria-labelledby="btn-explorer" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="flex flex-col gap-3 border-b border-slate-100 pb-4">
                     <div>
@@ -269,7 +280,7 @@
         </section>
 
         <!-- TAB: LIFE DOMAIN PLANNER -->
-        <section id="nav-domains" class="tab-content hidden space-y-4">
+        <section id="nav-domains" role="tabpanel" aria-labelledby="btn-domains" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="border-b border-slate-100 pb-3">
                     <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>🎯</span> Life Domain Activity Planner</h3>
@@ -288,7 +299,7 @@
         </section>
 
         <!-- TAB: COMPATIBILITY -->
-        <section id="nav-compat" class="tab-content hidden space-y-4">
+        <section id="nav-compat" role="tabpanel" aria-labelledby="btn-compat" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="border-b border-slate-100 pb-3">
                     <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>🤝</span> Nakshatra Compatibility Calculator</h3>
@@ -316,7 +327,7 @@
         </section>
 
         <!-- TAB: FAMILY DASHBOARD -->
-        <section id="nav-family" class="tab-content hidden space-y-4">
+        <section id="nav-family" role="tabpanel" aria-labelledby="btn-family" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="flex flex-col gap-3 border-b border-slate-100 pb-3">
                     <div>
@@ -332,7 +343,7 @@
         </section>
 
         <!-- TAB: TASKS -->
-        <section id="nav-tasks" class="tab-content hidden space-y-4">
+        <section id="nav-tasks" role="tabpanel" aria-labelledby="btn-tasks" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="flex flex-col gap-3 border-b border-slate-100 pb-3">
                     <div>
@@ -361,7 +372,7 @@
         </section>
 
         <!-- TAB: JOURNAL / PATTERN TRACKER -->
-        <section id="nav-journal" class="tab-content hidden space-y-4">
+        <section id="nav-journal" role="tabpanel" aria-labelledby="btn-journal" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                 <div class="flex flex-col gap-3 border-b border-slate-100 pb-3">
                     <div>
@@ -384,7 +395,7 @@
         </section>
 
         <!-- TAB: REMEDIES -->
-        <section id="nav-remedies" class="tab-content hidden space-y-4">
+        <section id="nav-remedies" role="tabpanel" aria-labelledby="btn-remedies" class="tab-content hidden space-y-4">
             <div class="grid grid-cols-1 gap-4">
                 <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-4">
                     <div class="border-b border-slate-100 pb-2"><h3 class="text-base font-bold text-slate-900 flex items-center gap-2"><span>⭐</span> Special Nakshatras</h3></div>
@@ -423,7 +434,7 @@
         </section>
 
         <!-- TAB: ABOUT -->
-        <section id="nav-about" class="tab-content hidden space-y-4">
+        <section id="nav-about" role="tabpanel" aria-labelledby="btn-about" class="tab-content hidden space-y-4">
             <div class="bg-white rounded-2xl p-4 border border-amber-200/80 shadow-sm">
                 <div class="text-center mb-6">
                     <h2 class="text-xl font-bold text-slate-900">Jyeshtha Navtara Analytical Platform</h2>
@@ -436,7 +447,7 @@
                     </div>
                     <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
                         <div class="flex items-center gap-2"><span class="text-lg">📅</span><h3 class="font-bold text-sm text-slate-900">Weekly & Monthly Calendars with Transition Times</h3></div>
-                        <p class="text-slate-600">This Week, Next Week, and Full Month calendar views showing Nakshatra transits for each day, including the approximate hour:minute the Moon crosses into the next Nakshatra. Days with Moola, Ashwini, Pushya, and Anuradha are highlighted in dark green as specially auspicious planning windows. Moon position uses Meeus lunar algorithm cross-verified with Drik Panchang.</p>
+                        <p class="text-slate-600">This Week, Next Week, and Full Month calendar views showing Nakshatra transits for each day, including the approximate hour:minute the Moon crosses into the next Nakshatra. Days with Moola, Ashwini, Pushya, Anuradha, and Chitra are highlighted in dark green as specially auspicious planning windows. Moon position uses Meeus lunar algorithm cross-verified with Drik Panchang.</p>
                     </div>
                     <div class="bg-amber-50/50 rounded-xl p-4 border border-amber-200/60 space-y-1.5">
                         <div class="flex items-center gap-2"><span class="text-lg">⏰</span><h3 class="font-bold text-sm text-slate-900">Hora Calculator</h3></div>
@@ -484,14 +495,14 @@
     </main>
 
     <!-- Detail Modal -->
-    <div id="detail-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
+    <div id="detail-modal" role="dialog" aria-modal="true" aria-label="Nakshatra details" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
         <div class="bg-white rounded-2xl max-w-2xl w-full p-4 shadow-xl border border-amber-200 space-y-4 max-h-[90vh] overflow-y-auto custom-scrollbar">
             <div class="flex items-start justify-between border-b border-slate-100 pb-3">
                 <div class="flex items-center space-x-3">
-                    <div id="modal-color-swatch" class="w-8 h-8 rounded-full border border-slate-300 shadow-sm flex items-center justify-center font-bold text-xs"></div>
+                    <div id="modal-color-swatch" class="w-8 h-8 rounded-full border border-slate-300 shadow-sm flex items-center justify-center font-bold text-xs" aria-hidden="true"></div>
                     <div><h3 id="modal-star-name" class="text-lg font-bold text-slate-900"></h3><p id="modal-star-subtitle" class="text-xs text-slate-500"></p></div>
                 </div>
-                <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]">&times;</button>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]" aria-label="Close dialog">&times;</button>
             </div>
             <div id="modal-body-content" class="space-y-4 text-sm"></div>
             <div class="pt-3 border-t border-slate-100 flex justify-end gap-2">
@@ -502,9 +513,9 @@
     </div>
 
     <!-- Task Modal -->
-    <div id="task-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
+    <div id="task-modal" role="dialog" aria-modal="true" aria-label="Add task" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
         <div class="bg-white rounded-2xl max-w-md w-full p-4 shadow-xl border border-amber-200 space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3"><h3 class="text-base font-bold text-slate-900">📌 Add Task</h3><button onclick="closeTaskModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]">&times;</button></div>
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3"><h3 class="text-base font-bold text-slate-900">📌 Add Task</h3><button onclick="closeTaskModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]" aria-label="Close dialog">&times;</button></div>
             <div class="space-y-3 text-sm">
                 <div><label class="block font-bold text-slate-700 mb-1">Task</label><input type="text" id="task-input-name" placeholder="e.g. Schedule dentist" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm"></div>
                 <div><label class="block font-bold text-slate-700 mb-1">Category</label><select id="task-input-category" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg bg-white font-medium"><option value="work">Work</option><option value="personal">Personal</option><option value="finance">Finance</option><option value="health">Health</option><option value="travel">Travel</option><option value="home">Home</option></select></div>
@@ -519,9 +530,9 @@
     </div>
 
     <!-- Family Member Modal -->
-    <div id="family-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
+    <div id="family-modal" role="dialog" aria-modal="true" aria-label="Add family member" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
         <div class="bg-white rounded-2xl max-w-md w-full p-4 shadow-xl border border-amber-200 space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3"><h3 class="text-base font-bold text-slate-900">👨‍👩‍👧‍👦 Add Family Member</h3><button onclick="closeFamilyModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]">&times;</button></div>
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3"><h3 class="text-base font-bold text-slate-900">👨‍👩‍👧‍👦 Add Family Member</h3><button onclick="closeFamilyModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]" aria-label="Close dialog">&times;</button></div>
             <div class="space-y-3 text-sm">
                 <div><label class="block font-bold text-slate-700 mb-1">Name</label><input type="text" id="family-input-name" placeholder="e.g. Spouse, Child" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm"></div>
                 <div><label class="block font-bold text-slate-700 mb-1">Relation</label><select id="family-input-relation" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg bg-white font-medium"><option value="spouse">Spouse</option><option value="child">Child</option><option value="parent">Parent</option><option value="sibling">Sibling</option><option value="partner">Business Partner</option><option value="other">Other</option></select></div>
@@ -535,16 +546,16 @@
     </div>
 
     <!-- Journal Log Modal -->
-    <div id="journal-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
+    <div id="journal-modal" role="dialog" aria-modal="true" aria-label="Log today's outcome" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 hidden">
         <div class="bg-white rounded-2xl max-w-md w-full p-4 shadow-xl border border-amber-200 space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3"><h3 class="text-base font-bold text-slate-900">📓 Log Today's Outcome</h3><button onclick="closeJournalModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]">&times;</button></div>
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3"><h3 class="text-base font-bold text-slate-900">📓 Log Today's Outcome</h3><button onclick="closeJournalModal()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]" aria-label="Close dialog">&times;</button></div>
             <div class="space-y-3 text-sm">
                 <div id="journal-star-info" class="bg-amber-50 p-3 rounded-xl border border-amber-200 text-sm font-semibold text-amber-800"></div>
                 <div><label class="block font-bold text-slate-700 mb-2">How was your day?</label>
                     <div class="grid grid-cols-3 gap-2">
-                        <button onclick="selectOutcome('great')" id="outcome-great" class="outcome-btn p-3 rounded-xl border-2 border-slate-200 text-center hover:border-emerald-400 transition min-h-[44px]"><div class="text-2xl">😊</div><div class="text-xs font-bold mt-1">Great</div></button>
-                        <button onclick="selectOutcome('neutral')" id="outcome-neutral" class="outcome-btn p-3 rounded-xl border-2 border-slate-200 text-center hover:border-amber-400 transition min-h-[44px]"><div class="text-2xl">😐</div><div class="text-xs font-bold mt-1">Neutral</div></button>
-                        <button onclick="selectOutcome('tough')" id="outcome-tough" class="outcome-btn p-3 rounded-xl border-2 border-slate-200 text-center hover:border-rose-400 transition min-h-[44px]"><div class="text-2xl">😓</div><div class="text-xs font-bold mt-1">Tough</div></button>
+                        <button onclick="selectOutcome('great')" id="outcome-great" aria-pressed="false" class="outcome-btn p-3 rounded-xl border-2 border-slate-200 text-center hover:border-emerald-400 transition min-h-[44px]"><div class="text-2xl" aria-hidden="true">😊</div><div class="text-xs font-bold mt-1">Great</div></button>
+                        <button onclick="selectOutcome('neutral')" id="outcome-neutral" aria-pressed="false" class="outcome-btn p-3 rounded-xl border-2 border-slate-200 text-center hover:border-amber-400 transition min-h-[44px]"><div class="text-2xl" aria-hidden="true">😐</div><div class="text-xs font-bold mt-1">Neutral</div></button>
+                        <button onclick="selectOutcome('tough')" id="outcome-tough" aria-pressed="false" class="outcome-btn p-3 rounded-xl border-2 border-slate-200 text-center hover:border-rose-400 transition min-h-[44px]"><div class="text-2xl" aria-hidden="true">😓</div><div class="text-xs font-bold mt-1">Tough</div></button>
                     </div>
                 </div>
                 <div><label class="block font-bold text-slate-700 mb-1">Quick Note (optional)</label><input type="text" id="journal-note" placeholder="Brief note about the day..." class="w-full px-3 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm"></div>
@@ -706,7 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ===== MOON LONGITUDE (Meeus algorithm + Lahiri Ayanamsha) =====
-const SPECIAL_HIGHLIGHT_STARS = ['Mula','Ashwini','Pushya','Anuradha'];
+const SPECIAL_HIGHLIGHT_STARS = ['Mula','Ashwini','Pushya','Anuradha','Chitra'];
 
 function getSiderealMoonLongitude(date) {
     const JD = 2440587.5 + date.getTime()/86400000;
@@ -988,6 +999,74 @@ function renderHoraGrid() {
 // ===== CALENDAR RENDERING (This Week / Next Week / Full Month) =====
 function isSpecialStar(name) { return SPECIAL_HIGHLIGHT_STARS.includes(name); }
 
+function showDayDetail(day) {
+    const noon = new Date(day); noon.setHours(12,0,0,0);
+    const a = getApproxNakshatraIndex(noon);
+    const sn = nakshatraOrder[a.index];
+    const sd = nakshatraData.find(s=>s.name===sn);
+    if(!sd) return;
+    const rashi = getCurrentRashi(noon);
+    const rashiTrans = getRashiTransitionTime(day);
+    const rk = getRahuKaal(day);
+    const trans = getNakshatraTransitionTime(day);
+    const dn = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    const dateStr = day.toLocaleDateString('en-IN', {year:'numeric', month:'long', day:'numeric'});
+
+    let transText = '';
+    if (trans) {
+        if (trans.starAtStart === sn) transText = `${sn} until ${pad2(trans.transitionHour)}:${pad2(trans.transitionMin)}, then ${trans.starAtEnd}`;
+        else if (trans.starAtEnd === sn) transText = `${trans.starAtStart} until ${pad2(trans.transitionHour)}:${pad2(trans.transitionMin)}, then ${sn}`;
+    }
+
+    let rashiText = rashi;
+    if (rashiTrans) rashiText += ` (changes to ${rashiTrans.to} at ${pad2(rashiTrans.hour)}:${pad2(rashiTrans.min)})`;
+
+    let bb="bg-emerald-100 text-emerald-800 border-emerald-300";
+    if(sd.taraCategory==="CHALLENGING") bb="bg-rose-100 text-rose-800 border-rose-300";
+    if(sd.taraCategory==="MIXED") bb="bg-amber-100 text-amber-800 border-amber-300";
+
+    saveFocusBeforeModal();
+    const modal = document.getElementById('detail-modal');
+    document.getElementById('modal-star-name').textContent = `${dn[day.getDay()]}, ${dateStr}`;
+    document.getElementById('modal-star-subtitle').textContent = `${sd.name} • ${sd.taraClass} • ${sd.cycleName} Cycle`;
+    const sw = document.getElementById('modal-color-swatch');
+    sw.style.backgroundColor = sd.colorHex; sw.style.color = getTextColorForBg(sd.colorHex); sw.textContent = sd.id;
+
+    document.getElementById('modal-body-content').innerHTML = `
+        <div class="grid grid-cols-1 gap-3">
+            <div class="bg-violet-50 p-3.5 rounded-xl border border-violet-200 space-y-1">
+                <div class="text-violet-800 font-bold uppercase text-[10px]">Moon Rashi (Sign)</div>
+                <p class="text-slate-800 font-bold text-sm">${rashiText}</p>
+            </div>
+            <div class="bg-red-50 p-3.5 rounded-xl border border-red-200 space-y-1">
+                <div class="text-red-800 font-bold uppercase text-[10px]">Rahu Kaal</div>
+                <p class="text-red-700 font-extrabold text-sm">${rk.start} – ${rk.end}</p>
+                <p class="text-xs text-red-600">Avoid starting new activities during this window.</p>
+            </div>
+            <div class="bg-indigo-50 p-3.5 rounded-xl border border-indigo-200 space-y-1">
+                <div class="text-indigo-800 font-bold uppercase text-[10px]">Nakshatra Transit</div>
+                <div class="flex items-center gap-2"><span class="w-4 h-4 rounded-full inline-block border border-slate-300" style="background:${sd.colorHex}" aria-hidden="true"></span><span class="font-bold text-slate-800">${sd.name}</span><span class="px-2 py-0.5 rounded-full text-xs font-bold ${bb}">${sd.taraClass}</span></div>
+                ${transText ? `<p class="text-xs text-indigo-700 font-semibold mt-1">${transText}</p>` : '<p class="text-xs text-indigo-600">Single nakshatra throughout the day.</p>'}
+            </div>
+            <div class="bg-emerald-50/70 p-3.5 rounded-xl border border-emerald-200 space-y-1">
+                <div class="text-emerald-800 font-bold uppercase text-[10px]">DO</div>
+                <p class="text-slate-800 font-medium text-sm">${sd.do}</p>
+            </div>
+            <div class="bg-rose-50/70 p-3.5 rounded-xl border border-rose-200 space-y-1">
+                <div class="text-rose-800 font-bold uppercase text-[10px]">DON'T</div>
+                <p class="text-slate-800 font-medium text-sm">${sd.avoid}</p>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200/60 text-sm space-y-1">
+                <div class="text-amber-800 font-bold uppercase text-[10px]">Details</div>
+                <p class="text-slate-700"><strong>Ruler:</strong> ${sd.ruler} &bull; <strong>Nature:</strong> ${sd.nature} &bull; <strong>Color:</strong> ${sd.color}</p>
+                ${sd.danam && !sd.danam.startsWith('None') ? `<p class="text-amber-900 font-semibold mt-1">🛡️ ${sd.danam}</p>` : ''}
+            </div>
+        </div>
+    `;
+    modal.classList.remove('hidden');
+    modal.querySelector('button').focus();
+}
+
 function renderWeekGrid(containerId, startDate) {
     const c = document.getElementById(containerId); c.innerHTML='';
     const dn = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
@@ -1002,7 +1081,6 @@ function renderWeekGrid(containerId, startDate) {
         const isToday = day.toDateString()===today.toDateString();
         const isSpecial = isSpecialStar(sn);
 
-        // Transition time for this calendar day
         const trans = getNakshatraTransitionTime(day);
         let transText = '';
         if (trans) {
@@ -1019,8 +1097,13 @@ function renderWeekGrid(containerId, startDate) {
         else{bc='border-amber-300';bg='bg-amber-50/60';ic='⚠️';}
         const card=document.createElement('div');
         card.className=`week-card ${bg} rounded-xl p-3 border-2 ${bc} ${isToday?'ring-2 ring-amber-500 ring-offset-2':''} space-y-2 cursor-pointer`;
+        card.setAttribute('tabindex','0');
+        card.setAttribute('role','button');
+        card.setAttribute('aria-label', `${dn[day.getDay()]} ${day.getDate()} — ${sd.name}, ${sd.taraClass}. Tap for rashi, rahu kaal and details.`);
         if(isSpecial) card.style.cssText='background:#166534;border-color:#14532d;'+textColor;
-        card.onclick=()=>{switchTab('nav-transit');document.getElementById('transit-select').value=sd.id;updateDailyTransitView();};
+        const dayRef = new Date(day.getTime());
+        card.onclick=()=>{ showDayDetail(dayRef); };
+        card.onkeydown=(e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();showDayDetail(dayRef);} };
         const nameClass = isSpecial ? 'font-bold text-white text-sm mt-1 leading-tight' : 'font-bold text-slate-800 text-sm mt-1 leading-tight';
         const taraClass = isSpecial ? 'text-xs text-emerald-200' : 'text-xs text-slate-500';
         const dayNumClass = isSpecial ? 'text-xl font-bold text-white' : 'text-xl font-bold text-slate-800';
@@ -1028,7 +1111,7 @@ function renderWeekGrid(containerId, startDate) {
         const doClass = isSpecial ? 'text-emerald-200 font-medium' : 'text-emerald-700 font-medium';
         const transClass = isSpecial ? 'text-emerald-100 font-semibold' : 'text-indigo-600 font-semibold';
         const borderClass = isSpecial ? 'border-t border-emerald-600 pt-1.5' : 'border-t border-slate-200/60 pt-1.5';
-        card.innerHTML=`<div class="flex items-center justify-between"><div><div class="${dayNameClass}">${dn[day.getDay()]}</div><div class="${dayNumClass}">${day.getDate()}</div></div>${isToday?'<span class="text-[10px] bg-amber-500 text-white px-1.5 py-0.5 rounded font-bold">TODAY</span>':''}</div><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold shadow-sm shrink-0" style="background:${isSpecial?'#052e16':sd.colorHex};color:${isSpecial?'#fff':getTextColorForBg(sd.colorHex)}">${ic}</div><div><div class="${nameClass}">${sd.name}</div><div class="${taraClass}">${sd.taraClass}</div></div></div><div class="text-xs leading-snug ${borderClass} space-y-1"><div class="${doClass}">${sd.do.split(',')[0]}</div>${transText?`<div class="${transClass}">→ ${transText}</div>`:''}</div>`;
+        card.innerHTML=`<div class="flex items-center justify-between"><div><div class="${dayNameClass}">${dn[day.getDay()]}</div><div class="${dayNumClass}">${day.getDate()}</div></div>${isToday?'<span class="text-[10px] bg-amber-500 text-white px-1.5 py-0.5 rounded font-bold">TODAY</span>':''}</div><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold shadow-sm shrink-0" style="background:${isSpecial?'#052e16':sd.colorHex};color:${isSpecial?'#fff':getTextColorForBg(sd.colorHex)}" aria-hidden="true">${ic}</div><div><div class="${nameClass}">${sd.name}</div><div class="${taraClass}">${sd.taraClass}</div></div></div><div class="text-xs leading-snug ${borderClass} space-y-1"><div class="${doClass}">${sd.do.split(',')[0]}</div>${transText?`<div class="${transClass}">→ ${transText}</div>`:''}</div>`;
         c.appendChild(card);
     }
 }
@@ -1094,10 +1177,15 @@ function renderMonthGrid() {
         }
 
         const cell=document.createElement('div');
-        cell.className=`rounded-lg p-1 border border-slate-200 cursor-pointer hover:shadow-md transition text-center space-y-0.5 ${isToday?'ring-2 ring-amber-500':''}`;
+        cell.className=`month-cell rounded-lg p-1 border border-slate-200 cursor-pointer hover:shadow-md transition text-center space-y-0.5 ${isToday?'ring-2 ring-amber-500':''}`;
+        cell.setAttribute('tabindex','0');
+        cell.setAttribute('role','button');
+        cell.setAttribute('aria-label', `${d} — ${sn}, ${sd.taraClass}`);
         if(isSpecial||sd.taraCategory!=='FAVORABLE') cell.style.cssText=`${bg};${border}`;
         if(sd.taraCategory==='FAVORABLE'&&!isSpecial) cell.style.cssText='background:#F0FDF4;border-color:#BBF7D0';
-        cell.onclick=()=>{switchTab('nav-transit');document.getElementById('transit-select').value=sd.id;updateDailyTransitView();};
+        const dayRef = new Date(dayMidnight.getTime());
+        cell.onclick=()=>{ showDayDetail(dayRef); };
+        cell.onkeydown=(e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();showDayDetail(dayRef);} };
         const dateStyle = isSpecial ? 'style="color:white"' : '';
         const nameStyle = isSpecial ? 'style="color:white"' : '';
         const taraStyle = isSpecial ? 'style="color:#bbf7d0"' : 'class="text-slate-600"';
@@ -1110,16 +1198,52 @@ function renderMonthGrid() {
 // ===== TAB SWITCHER =====
 function switchTab(tabId) {
     document.querySelectorAll('.tab-content').forEach(el=>el.classList.add('hidden'));
-    document.querySelectorAll('.nav-btn').forEach(el=>{el.classList.remove('bg-amber-500','text-white','shadow-sm');el.classList.add('text-slate-600');});
+    document.querySelectorAll('.nav-btn').forEach(el=>{
+        el.classList.remove('bg-amber-500','text-white','shadow-sm');
+        el.classList.add('text-slate-600');
+        el.setAttribute('aria-selected','false');
+        el.setAttribute('tabindex','-1');
+    });
     document.getElementById(tabId).classList.remove('hidden');
     const btn=document.getElementById('btn-'+tabId.replace('nav-',''));
-    if(btn){btn.classList.add('bg-amber-500','text-white','shadow-sm');btn.classList.remove('text-slate-600');btn.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});}
+    if(btn){
+        btn.classList.add('bg-amber-500','text-white','shadow-sm');
+        btn.classList.remove('text-slate-600');
+        btn.setAttribute('aria-selected','true');
+        btn.setAttribute('tabindex','0');
+        btn.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
+    }
     if(tabId==='nav-thisweek') renderThisWeek();
     if(tabId==='nav-nextweek') renderNextWeek();
     if(tabId==='nav-month') renderMonthGrid();
     if(tabId==='nav-hora') renderHoraGrid();
     if(tabId==='nav-journal'){renderJournalChart();renderJournalEntries();}
 }
+
+// Keyboard arrow navigation for tab strip
+document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.getElementById('main-nav');
+    nav.addEventListener('keydown', e => {
+        const tabs = Array.from(nav.querySelectorAll('.nav-btn'));
+        const idx = tabs.indexOf(document.activeElement);
+        if (idx === -1) return;
+        let next = -1;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { next = (idx + 1) % tabs.length; }
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { next = (idx - 1 + tabs.length) % tabs.length; }
+        else if (e.key === 'Home') { next = 0; }
+        else if (e.key === 'End') { next = tabs.length - 1; }
+        if (next >= 0) { e.preventDefault(); tabs[next].focus(); tabs[next].click(); }
+    });
+
+    // Scroll hint: hide gradient when scrolled to end
+    const hintWrap = document.querySelector('.nav-scroll-hint');
+    if (hintWrap && nav) {
+        nav.addEventListener('scroll', () => {
+            const atEnd = nav.scrollLeft + nav.clientWidth >= nav.scrollWidth - 8;
+            hintWrap.classList.toggle('scrolled-end', atEnd);
+        });
+    }
+});
 
 // ===== TRANSIT =====
 function populateTransitSelect() {
@@ -1151,9 +1275,38 @@ function selectDomain(k){document.querySelectorAll('.domain-btn').forEach(b=>{b.
 function renderSpecialStars(){const c=document.getElementById('special-stars-list');c.innerHTML='';specialStarsData.forEach(i=>{const d=document.createElement('div');d.className="bg-amber-50/50 p-3 rounded-lg border border-amber-200/60 space-y-0.5";d.innerHTML=`<div class="flex items-center justify-between font-bold text-slate-800 text-sm"><span>${i.title} (${i.count})</span><span class="text-amber-700">${i.star}</span></div><p class="text-xs text-slate-600">${i.note}</p>`;c.appendChild(d);});}
 
 // ===== MODAL =====
-function openModal(id){currentModalStarId=id;const s=nakshatraData.find(x=>x.id===id);if(!s)return;document.getElementById('modal-star-name').textContent=`#${s.id}. ${s.name}`;document.getElementById('modal-star-subtitle').textContent=`Count: ${s.countFromJyeshtha} • ${s.taraClass} (${s.cycleName})`;const sw=document.getElementById('modal-color-swatch');sw.style.backgroundColor=s.colorHex;sw.style.color=getTextColorForBg(s.colorHex);sw.textContent=s.id;document.getElementById('modal-body-content').innerHTML=`<div class="grid grid-cols-2 gap-2 text-xs"><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Ruler</strong><span class="font-bold text-slate-800">${s.ruler}</span></div><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Nature</strong><span class="font-bold text-slate-800">${s.nature}</span></div><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Color</strong><span class="font-bold text-slate-800">${s.color}</span></div><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Cycle</strong><span class="font-bold text-slate-800">${s.paryaya}</span></div></div>${s.specialTitle?`<div class="bg-indigo-50 border border-indigo-200 text-indigo-900 p-2.5 rounded-lg font-bold text-xs">${s.specialTitle}</div>`:''}<div class="bg-emerald-50 p-3 rounded-lg border border-emerald-200 space-y-1"><strong class="text-emerald-900 uppercase text-[10px] block">Do</strong><p class="text-slate-800 font-medium">${s.do}</p></div><div class="bg-rose-50 p-3 rounded-lg border border-rose-200 space-y-1"><strong class="text-rose-900 uppercase text-[10px] block">Don't</strong><p class="text-slate-800 font-medium">${s.avoid}</p></div><div class="bg-amber-50 p-3 rounded-lg border border-amber-200 space-y-1"><strong class="text-amber-900 uppercase text-[10px] block">Rationale</strong><p class="text-slate-700">${s.rationale}</p></div><div class="bg-purple-50 p-3 rounded-lg border border-purple-200 space-y-1"><strong class="text-purple-900 uppercase text-[10px] block">Remedy</strong><p class="text-purple-900 font-medium">${s.danam}</p></div>`;document.getElementById('detail-modal').classList.remove('hidden');}
-function closeModal(){document.getElementById('detail-modal').classList.add('hidden');}
+function openModal(id){saveFocusBeforeModal();currentModalStarId=id;const s=nakshatraData.find(x=>x.id===id);if(!s)return;document.getElementById('modal-star-name').textContent=`#${s.id}. ${s.name}`;document.getElementById('modal-star-subtitle').textContent=`Count: ${s.countFromJyeshtha} • ${s.taraClass} (${s.cycleName})`;const sw=document.getElementById('modal-color-swatch');sw.style.backgroundColor=s.colorHex;sw.style.color=getTextColorForBg(s.colorHex);sw.textContent=s.id;document.getElementById('modal-body-content').innerHTML=`<div class="grid grid-cols-2 gap-2 text-xs"><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Ruler</strong><span class="font-bold text-slate-800">${s.ruler}</span></div><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Nature</strong><span class="font-bold text-slate-800">${s.nature}</span></div><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Color</strong><span class="font-bold text-slate-800">${s.color}</span></div><div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200"><strong class="text-slate-500 text-[10px] uppercase block">Cycle</strong><span class="font-bold text-slate-800">${s.paryaya}</span></div></div>${s.specialTitle?`<div class="bg-indigo-50 border border-indigo-200 text-indigo-900 p-2.5 rounded-lg font-bold text-xs">${s.specialTitle}</div>`:''}<div class="bg-emerald-50 p-3 rounded-lg border border-emerald-200 space-y-1"><strong class="text-emerald-900 uppercase text-[10px] block">Do</strong><p class="text-slate-800 font-medium">${s.do}</p></div><div class="bg-rose-50 p-3 rounded-lg border border-rose-200 space-y-1"><strong class="text-rose-900 uppercase text-[10px] block">Don't</strong><p class="text-slate-800 font-medium">${s.avoid}</p></div><div class="bg-amber-50 p-3 rounded-lg border border-amber-200 space-y-1"><strong class="text-amber-900 uppercase text-[10px] block">Rationale</strong><p class="text-slate-700">${s.rationale}</p></div><div class="bg-purple-50 p-3 rounded-lg border border-purple-200 space-y-1"><strong class="text-purple-900 uppercase text-[10px] block">Remedy</strong><p class="text-purple-900 font-medium">${s.danam}</p></div>`;document.getElementById('detail-modal').classList.remove('hidden');}
+function closeModal(){document.getElementById('detail-modal').classList.add('hidden');restoreFocusAfterModal();}
 function pinTaskFromModal(){closeModal();openTaskModal(currentModalStarId);}
+
+// ===== MODAL ACCESSIBILITY: Escape key + focus trap =====
+let _priorFocusBeforeModal = null;
+function saveFocusBeforeModal() { _priorFocusBeforeModal = document.activeElement; }
+function restoreFocusAfterModal() { if (_priorFocusBeforeModal) { _priorFocusBeforeModal.focus(); _priorFocusBeforeModal = null; } }
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        if (!document.getElementById('detail-modal').classList.contains('hidden')) closeModal();
+        else if (!document.getElementById('task-modal').classList.contains('hidden')) closeTaskModal();
+        else if (!document.getElementById('family-modal').classList.contains('hidden')) closeFamilyModal();
+        else if (!document.getElementById('journal-modal').classList.contains('hidden')) closeJournalModal();
+    }
+    if (e.key === 'Tab') {
+        const modals = ['detail-modal','task-modal','family-modal','journal-modal'];
+        for (const id of modals) {
+            const modal = document.getElementById(id);
+            if (!modal.classList.contains('hidden')) {
+                const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                if (focusable.length === 0) return;
+                const first = focusable[0], last = focusable[focusable.length - 1];
+                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+                else if (!modal.contains(document.activeElement)) { e.preventDefault(); first.focus(); }
+                break;
+            }
+        }
+    }
+});
 
 // ===== COMPATIBILITY =====
 function populateCompatSelect(){const s=document.getElementById('compat-select');s.innerHTML='<option value="">-- Select --</option>';nakshatraOrder.forEach((n,i)=>{const o=document.createElement('option');o.value=n;o.textContent=`${i+1}. ${n}`;s.appendChild(o);});}
@@ -1164,8 +1317,8 @@ a.innerHTML=`<div class="space-y-4"><div class="flex items-center gap-4 border-b
 function getFamily(){try{return JSON.parse(localStorage.getItem('jyeshtha_family')||'[]');}catch{return[];}}
 function saveFamily(f){localStorage.setItem('jyeshtha_family',JSON.stringify(f));}
 function populateFamilyStarSelect(){const s=document.getElementById('family-input-star');s.innerHTML='';nakshatraOrder.forEach((n,i)=>{const o=document.createElement('option');o.value=n;o.textContent=`${i+1}. ${n}`;s.appendChild(o);});}
-function openFamilyModal(){document.getElementById('family-input-name').value='';document.getElementById('family-modal').classList.remove('hidden');}
-function closeFamilyModal(){document.getElementById('family-modal').classList.add('hidden');}
+function openFamilyModal(){saveFocusBeforeModal();document.getElementById('family-input-name').value='';document.getElementById('family-modal').classList.remove('hidden');document.getElementById('family-input-name').focus();}
+function closeFamilyModal(){document.getElementById('family-modal').classList.add('hidden');restoreFocusAfterModal();}
 function saveFamilyMember(){const name=document.getElementById('family-input-name').value.trim();if(!name)return;const f=getFamily();f.push({id:Date.now(),name,relation:document.getElementById('family-input-relation').value,star:document.getElementById('family-input-star').value});saveFamily(f);closeFamilyModal();renderFamilyDashboard();}
 function deleteFamilyMember(id){saveFamily(getFamily().filter(m=>m.id!==id));renderFamilyDashboard();}
 
@@ -1210,7 +1363,7 @@ function renderFamilyDashboard(){
         if(m.cat==='MIXED'){bc='border-amber-200 bg-amber-50/40';tc='text-amber-700';icon='⚠️';}
         const c=document.createElement('div');
         c.className=`family-card rounded-xl p-4 border ${bc} space-y-2`;
-        c.innerHTML=`<div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="text-lg">${relIcons[m.relation]||'👤'}</span><div><div class="font-bold text-slate-800 text-sm">${m.name}</div><div class="text-xs text-slate-500 capitalize">${m.relation} • ${m.star}</div></div></div><button onclick="deleteFamilyMember(${m.id})" class="text-slate-300 hover:text-rose-500 text-sm p-2">🗑️</button></div>
+        c.innerHTML=`<div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="text-lg">${relIcons[m.relation]||'👤'}</span><div><div class="font-bold text-slate-800 text-sm">${m.name}</div><div class="text-xs text-slate-500 capitalize">${m.relation} • ${m.star}</div></div></div><button onclick="deleteFamilyMember(${m.id})" aria-label="Remove ${m.name} from family" class="text-slate-300 hover:text-rose-500 text-sm p-2">🗑️</button></div>
         <div class="flex items-center justify-between text-xs"><span class="${tc} font-bold">${icon} ${m.tara} Tara</span><span class="text-slate-500">${transitName} is ${m.count}th from ${m.star}</span></div>
         <p class="text-xs text-slate-600">${m.cat==='FAVORABLE'?'Favorable transit — good day for joint activities with '+m.name+'.':m.cat==='MIXED'?'Sensitive transit — '+m.name+' may need extra space today.':'Challenging transit for '+m.name+' — avoid pressuring or planning big events together.'}</p>`;
         grid.appendChild(c);
@@ -1221,13 +1374,13 @@ function renderFamilyDashboard(){
 function getTasks(){try{return JSON.parse(localStorage.getItem('jyeshtha_tasks')||'[]');}catch{return[];}}
 function saveTasks(t){localStorage.setItem('jyeshtha_tasks',JSON.stringify(t));}
 function getTasksForStar(id){return getTasks().filter(t=>t.starId===id&&t.status==='pending');}
-function openTaskModal(presetId){document.getElementById('task-input-name').value='';document.getElementById('task-input-priority').value='medium';if(presetId)document.getElementById('task-input-star').value=presetId;document.getElementById('task-modal').classList.remove('hidden');}
-function closeTaskModal(){document.getElementById('task-modal').classList.add('hidden');}
+function openTaskModal(presetId){saveFocusBeforeModal();document.getElementById('task-input-name').value='';document.getElementById('task-input-priority').value='medium';if(presetId)document.getElementById('task-input-star').value=presetId;document.getElementById('task-modal').classList.remove('hidden');document.getElementById('task-input-name').focus();}
+function closeTaskModal(){document.getElementById('task-modal').classList.add('hidden');restoreFocusAfterModal();}
 function populateTaskStarSelect(){const s=document.getElementById('task-input-star');s.innerHTML='';nakshatraData.forEach(star=>{const o=document.createElement('option');o.value=star.id;o.textContent=`${star.name} (${star.taraClass})`;s.appendChild(o);});document.getElementById('task-input-category').addEventListener('change',e=>{const best=categoryStarMap[e.target.value]||[];if(best.length)s.value=best[0];});}
 function saveTask(){const n=document.getElementById('task-input-name').value.trim();if(!n)return;const t=getTasks();t.push({id:Date.now(),name:n,category:document.getElementById('task-input-category').value,starId:parseInt(document.getElementById('task-input-star').value),priority:document.getElementById('task-input-priority').value,status:'pending',createdAt:new Date().toISOString()});saveTasks(t);closeTaskModal();renderTasks();renderNakshatraGrid(nakshatraData);}
 function toggleTask(id){const t=getTasks();const x=t.find(a=>a.id===id);if(x)x.status=x.status==='pending'?'completed':'pending';saveTasks(t);renderTasks();renderNakshatraGrid(nakshatraData);}
 function deleteTask(id){saveTasks(getTasks().filter(t=>t.id!==id));renderTasks();renderNakshatraGrid(nakshatraData);}
-function renderTasks(){const tasks=getTasks();const cf=document.getElementById('task-filter-category').value;const sf=document.getElementById('task-filter-status').value;const filtered=tasks.filter(t=>(cf==='ALL'||t.category===cf)&&(sf==='ALL'||t.status===sf));const list=document.getElementById('task-list');if(!filtered.length){list.innerHTML='<div class="bg-slate-50 rounded-xl p-6 text-center text-sm text-slate-400 border border-slate-200">No tasks. Tap "+ Add Task" to start.</div>';} else {list.innerHTML='';filtered.forEach(t=>{const s=nakshatraData.find(x=>x.id===t.starId);const sn=s?s.name:'—';const sc=s?s.colorHex:'#94A3B8';const pc={high:'bg-rose-100 text-rose-700',medium:'bg-amber-100 text-amber-700',low:'bg-slate-100 text-slate-600'};const ci={work:'💼',personal:'❤️',finance:'💰',health:'🏥',travel:'🚗',home:'🔧'};const el=document.createElement('div');el.className=`task-item flex items-center gap-3 p-3 rounded-xl border border-slate-200 ${t.status==='completed'?'opacity-60':''}`;el.innerHTML=`<button onclick="toggleTask(${t.id})" class="w-6 h-6 rounded-full border-2 ${t.status==='completed'?'bg-emerald-500 border-emerald-500':'border-slate-300 hover:border-amber-400'} flex items-center justify-center shrink-0 text-white text-xs">${t.status==='completed'?'✓':''}</button><div class="flex-1 min-w-0"><div class="font-semibold text-sm text-slate-800 ${t.status==='completed'?'line-through':''}">${t.name}</div><div class="flex items-center gap-2 mt-0.5 text-xs flex-wrap"><span>${ci[t.category]||'📌'} ${t.category}</span><span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full inline-block" style="background:${sc}"></span>${sn}</span><span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${pc[t.priority]}">${t.priority}</span></div></div><button onclick="deleteTask(${t.id})" class="text-slate-300 hover:text-rose-500 text-sm p-2">🗑️</button>`;list.appendChild(el);});}
+function renderTasks(){const tasks=getTasks();const cf=document.getElementById('task-filter-category').value;const sf=document.getElementById('task-filter-status').value;const filtered=tasks.filter(t=>(cf==='ALL'||t.category===cf)&&(sf==='ALL'||t.status===sf));const list=document.getElementById('task-list');if(!filtered.length){list.innerHTML='<div class="bg-slate-50 rounded-xl p-6 text-center text-sm text-slate-400 border border-slate-200">No tasks. Tap "+ Add Task" to start.</div>';} else {list.innerHTML='';filtered.forEach(t=>{const s=nakshatraData.find(x=>x.id===t.starId);const sn=s?s.name:'—';const sc=s?s.colorHex:'#94A3B8';const pc={high:'bg-rose-100 text-rose-700',medium:'bg-amber-100 text-amber-700',low:'bg-slate-100 text-slate-600'};const ci={work:'💼',personal:'❤️',finance:'💰',health:'🏥',travel:'🚗',home:'🔧'};const el=document.createElement('div');el.className=`task-item flex items-center gap-3 p-3 rounded-xl border border-slate-200 ${t.status==='completed'?'opacity-60':''}`;el.innerHTML=`<button onclick="toggleTask(${t.id})" aria-label="${t.status==='completed'?'Mark '+t.name+' as pending':'Mark '+t.name+' as completed'}" class="w-6 h-6 rounded-full border-2 ${t.status==='completed'?'bg-emerald-500 border-emerald-500':'border-slate-300 hover:border-amber-400'} flex items-center justify-center shrink-0 text-white text-xs">${t.status==='completed'?'✓':''}</button><div class="flex-1 min-w-0"><div class="font-semibold text-sm text-slate-800 ${t.status==='completed'?'line-through':''}">${t.name}</div><div class="flex items-center gap-2 mt-0.5 text-xs flex-wrap"><span>${ci[t.category]||'📌'} ${t.category}</span><span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full inline-block" style="background:${sc}" aria-hidden="true"></span>${sn}</span><span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${pc[t.priority]}">${t.priority}</span></div></div><button onclick="deleteTask(${t.id})" aria-label="Delete task ${t.name}" class="text-slate-300 hover:text-rose-500 text-sm p-2">🗑️</button>`;list.appendChild(el);});}
 const sm=document.getElementById('task-star-summary');const pend=tasks.filter(t=>t.status==='pending');const sc={};pend.forEach(t=>{sc[t.starId]=(sc[t.starId]||0)+1;});const entries=Object.entries(sc).sort((a,b)=>b[1]-a[1]).slice(0,5);if(!entries.length){sm.innerHTML='<div class="bg-slate-50 rounded-xl p-3 border border-slate-200 text-xs text-slate-400 text-center">No pending</div>';}else{sm.innerHTML='<div class="text-xs font-bold text-slate-700 mb-1">Top Stars</div>';entries.forEach(([sid,cnt])=>{const s=nakshatraData.find(x=>x.id===parseInt(sid));if(!s)return;const e=document.createElement('div');e.className="flex items-center gap-2 bg-white p-2 rounded-lg border border-slate-200 text-xs";e.innerHTML=`<span class="w-4 h-4 rounded-full shrink-0" style="background:${s.colorHex}"></span><span class="font-semibold text-slate-800 flex-1">${s.name}</span><span class="font-bold text-amber-700">${cnt}</span>`;sm.appendChild(e);});}}
 
 // ===== JOURNAL =====
@@ -1243,13 +1396,14 @@ function logTodayOutcome(){
     document.querySelectorAll('.outcome-btn').forEach(b=>{b.classList.remove('border-emerald-500','border-amber-500','border-rose-500','bg-emerald-50','bg-amber-50','bg-rose-50');b.classList.add('border-slate-200');});
     document.getElementById('journal-modal').classList.remove('hidden');
 }
-function closeJournalModal(){document.getElementById('journal-modal').classList.add('hidden');}
+function closeJournalModal(){document.getElementById('journal-modal').classList.add('hidden');restoreFocusAfterModal();}
 function selectOutcome(o){
     selectedOutcome=o;
-    document.querySelectorAll('.outcome-btn').forEach(b=>{b.classList.remove('border-emerald-500','border-amber-500','border-rose-500','bg-emerald-50','bg-amber-50','bg-rose-50');b.classList.add('border-slate-200');});
+    document.querySelectorAll('.outcome-btn').forEach(b=>{b.classList.remove('border-emerald-500','border-amber-500','border-rose-500','bg-emerald-50','bg-amber-50','bg-rose-50');b.classList.add('border-slate-200');b.setAttribute('aria-pressed','false');});
     const colors={great:['border-emerald-500','bg-emerald-50'],neutral:['border-amber-500','bg-amber-50'],tough:['border-rose-500','bg-rose-50']};
     const btn=document.getElementById('outcome-'+o);
     btn.classList.remove('border-slate-200');colors[o].forEach(c=>btn.classList.add(c));
+    btn.setAttribute('aria-pressed','true');
 }
 function saveJournalEntry(){
     if(!selectedOutcome){alert('Please select an outcome.');return;}
