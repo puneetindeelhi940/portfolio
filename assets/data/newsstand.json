@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T16:18:40Z",
+  "generated_at": "2026-08-17T00:59:02Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Massachusetts Democrats didn't unveil Molech statue at state Capitol, despite claims",
+      "claim": "Heritage Foundation committee chair said it's 'not a failure' to have all male Nobel Prize winners",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mass-democrats-molech-statue/",
+      "url": "https://www.snopes.com/fact-check/heritage-chair-nobel-prize-men/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Gen Z Embraces High-Risk Gambling As Economic Future Darkens, Survey Finds",
+      "claim": "‘Will Come Back To Bite You’: Top FDA Official Asked Fauci For Vaccine Side Effect Study, Email Shows",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/15/generation-z-embraces-sports-gambling-economic-uncertainty-betterment-survey",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/16/anthony-fauci-janet-woodcock-email-covid-vaccine-side-effects",
+      "topic": "Health"
     },
     {
       "n": 5,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Jill Biden babysit for Joe Biden before they dated? Here's the real story",
+      "claim": "20 Einstein rumors we've analyzed",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/jill-biden-joe-biden-babysitter/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/albert-einstein-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "‘Will Come Back To Bite You’: Top FDA Official Asked Fauci For Vaccine Side Effect Study, Email Shows",
+      "claim": "EXCLUSIVE: Key HHS Official Dr. Stephanie Haridopolos Unpacks Screen Use Advisory And What MAHA Really Means",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/16/anthony-fauci-janet-woodcock-email-covid-vaccine-side-effects",
-      "topic": "Health"
+      "url": "https://dailycaller.com/2026/08/16/stephanie-haridopolos-interview-screen-use-advisory-maha-health-human-services",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "How and why Texas deputy used 83K Flock cameras to track woman after abortion: What we know",
+      "claim": "Massachusetts Democrats didn't unveil Molech statue at state Capitol, despite claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/15/texas-abortion-flock-cameras/",
+      "url": "https://www.snopes.com/fact-check/mass-democrats-molech-statue/",
       "topic": "Trending"
     },
     {
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Russia says at least seven killed in largest Ukrainian attack of 2026",
+      "headline": "Trump says US to scale back military drills with South Korea after it stayed out of Iran war",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-16T15:50:12+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-17T00:06:05+00:00"
     },
     {
       "n": 2,
-      "headline": "Lala is again a tropical storm, sending drenching rain and winds across Hawaii",
+      "headline": "Multiple people dead as flooding continues in Indiana",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138926/lala-tropical-storm-hawaii-hurricane",
+      "url": "https://www.npr.org/2026/08/16/nx-s1-5934670/indiana-flooding-deaths",
       "topic": "Trending",
-      "published": "2026-08-16T15:47:58+00:00"
+      "published": "2026-08-16T20:38:40+00:00"
     },
     {
       "n": 3,
-      "headline": "Rescuers in Indonesia recover more bodies in earthquake aftermath, raising death toll to 53",
+      "headline": "Firefighters battle massive wildfires in Belgium and Greece as 2 die on an island near Athens",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/rescuers-in-indonesia-recover-more-bodies-in-earthquake-aftermath-raising-death-toll-to-53",
+      "url": "https://www.pbs.org/newshour/world/firefighters-battle-massive-wildfires-in-belgium-and-greece-as-2-die-on-an-island-near-athens",
       "topic": "Trending",
-      "published": "2026-08-16T15:25:05+00:00"
+      "published": "2026-08-16T22:37:06+00:00"
     },
     {
       "n": 4,
+      "headline": "Ebola outbreak in Democratic Republic of Congo now deadliest in country’s history",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/17/ebola-outbreak-drc-democratic-republic-of-congo-deadliest-in-history",
+      "topic": "Trending",
+      "published": "2026-08-17T00:09:57+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Italy: Thieves steal key Renaissance paintings in Sicily",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/italy-thieves-steal-key-renaissance-paintings-in-sicily/a-78389559?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-16T19:18:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Trump envoy Kushner meets Hamas leader to push Gaza peace plan",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-16T19:58:14+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
+      "topic": "World",
+      "published": "2026-08-16T20:20:22+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Trump orders Pentagon to scale back joint exercises with South Korea",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/trump-orders-pentagon-to-scale-back-joint-exercises-with-south-korea",
+      "topic": "Politics",
+      "published": "2026-08-16T22:01:52+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Zimbabwe boat accident death toll hits 68 as 22 more bodies recovered",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/15/more-bodies-recovered-after-zimbabwe-boat-accident",
@@ -177,39 +217,39 @@
       "published": "2026-08-15T19:39:07+00:00"
     },
     {
-      "n": 5,
-      "headline": "Ukraine attacks Wildberries, Russia's biggest online market",
+      "n": 10,
+      "headline": "UAE, Saudi Arabia, others condemn Israel's rejection of Trump Gaza plan",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-16T15:45:00+00:00"
+      "url": "https://www.dw.com/en/uae-saudi-arabia-others-condemn-israel-s-rejection-of-trump-gaza-plan/a-78389399?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-16T17:31:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Thousands displaced by deadly Indonesia earthquake as rescue efforts continue",
+      "n": 11,
+      "headline": "Russia says at least seven killed in largest Ukrainian attack of 2026",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-16T12:37:21+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "What really happened in Ceuta? Why we may never find out",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5927053/what-happened-in-ceuta",
-      "topic": "Trending",
-      "published": "2026-08-16T15:38:22+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/ukraine-launches-one-of-its-largest-aerial-attacks-of-the-war-killing-at-least-6-people-in-russia",
+      "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-16T15:05:50+00:00"
+      "published": "2026-08-16T19:03:04+00:00"
     },
     {
-      "n": 9,
+      "n": 12,
+      "headline": "Tommy John, namesake for a pioneering elbow surgery that saved his career, dies at 83",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/16/g-s1-138941/tommy-john-elbow-surgery-baseball-pitcher-yankees-dodgers",
+      "topic": "Trending",
+      "published": "2026-08-16T18:58:25+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Lake Powell hits record low, threatening key water and electricity supply for millions",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/lake-powell-hits-record-low-threatening-key-water-and-electricity-supply-for-millions",
+      "topic": "Trending",
+      "published": "2026-08-16T21:46:50+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Moroccan police arrest more than 100 people as they attempt to enter Ceuta",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/15/moroccan-police-arrest-more-than-100-people-as-they-attempt-to-enter-ceuta",
@@ -217,68 +257,28 @@
       "published": "2026-08-15T18:08:21+00:00"
     },
     {
-      "n": 10,
-      "headline": "Hundreds flee as Belgium battles wildfire at German border",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/hundreds-flee-as-belgium-battles-wildfire-at-german-border/a-78386242?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-16T11:05:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Hurricane Lala sparks flash floods in Hawaii as strong winds and rain persist",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crmrr7kjy9vo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-16T12:53:43+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "What are we going to do?' The mom of a trans teen grapples with Trump's Medicaid move",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5932491/transgender-health-care-medicaid-trump-oz",
-      "topic": "Politics",
-      "published": "2026-08-16T11:54:19+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Lala is again a tropical storm, sending drenching rain and winds across the Hawaiian islands",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/lala-is-again-a-tropical-storm-sending-drenching-rain-and-winds-across-the-hawaiian-islands",
-      "topic": "Trending",
-      "published": "2026-08-16T14:44:14+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "American missionary kidnapped in Niger freed after nine months",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
-      "topic": "Trending",
-      "published": "2026-08-14T14:55:17+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Ukraine launches one of its largest attacks of war",
+      "headline": "Ukraine attacks Wildberries, Russia's biggest online market",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-launches-one-of-its-largest-attacks-of-war/a-78386779?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-all-1573-rdf",
       "topic": "World",
-      "published": "2026-08-16T10:59:00+00:00"
+      "published": "2026-08-16T15:45:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Twelve killed as Polish bus veers off Hungarian motorway",
+      "headline": "Two dead and hundreds evacuated after twin fires break out on Greek island",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c87nnwlpe5no?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-16T10:53:50+00:00"
+      "published": "2026-08-16T19:50:36+00:00"
     },
     {
       "n": 17,
-      "headline": "Cyclospora spreads through human waste — so how did it get on food?",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/cyclospora-spreads-through-human-waste-so-how-did-it-get-on-food",
+      "headline": "A good – and bad – week for Italy's art police and museum security",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/16/nx-s1-5933052/sicily-art-heist-museum-parma",
       "topic": "Trending",
-      "published": "2026-08-15T22:34:59+00:00"
+      "published": "2026-08-16T16:27:54+00:00"
     }
   ]
 }
