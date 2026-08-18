@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T08:30:36Z",
+  "generated_at": "2026-08-18T16:25:29Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Trump Post Referred to Servicemembers At USS Lincoln As 'Suckers And Losers",
+      "claim": "Midterms: North American Fact Checkers Launch Weekly Newsletter",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-trump-post-referred-to-servicemembers-at-uss-lincoln-crew-as-suckers-and-losers.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/analysis/2026/08/north-american-fact-checkers-coalition-newsletter-launches.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "8 claims involving Flock, other surveillance tech we've examined",
+      "claim": "7 claims we've inspected about USS Abraham Lincoln",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/flock-surveillance-tech-claims/",
+      "url": "https://www.snopes.com/collections/uss-abraham-lincoln-rumors/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Cornyn Aide Takes Job With Talarico: REPORT",
+      "claim": "Trump Endorses Mass Amnesty Cheerleader Who Routinely Undermines Him",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/17/john-cornyn-aide-joins-james-talarico-democrat-senate-campaign",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/18/donald-trump-endorses-maria-salaza-mass-amnesty-cheerleader-midterms-florida-primary",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -48,34 +48,34 @@
     },
     {
       "n": 6,
-      "claim": "‘Bharpet kha lena hi jeevan nahi hai’: Mohammad Irfan asks India to listen",
+      "claim": "New BJP social media team members delete or hide X posts, deactivate handles",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bharpet-kha-lena-hi-jeevan-nahi-hai-mohammad-irfan-asks-india-to-listen/",
+      "url": "https://www.altnews.in/new-bjp-social-media-team-members-delete-or-hide-x-posts-deactivate-handles/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Smear test brushes are safe",
+      "claim": "The Cancer Act 1939 doesn’t make it ‘illegal to cure cancer’",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/brush-cervical-smear-test-no-evidence-cancer-threat/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/health/cancer-act-1939-illegal-to-cure-cancer/",
+      "topic": "Health"
     },
     {
       "n": 8,
-      "claim": "BBC DID Report That USDA Listed Wakanda As Trade Partner -- But The Mistake Was An Accident From 2019",
+      "claim": "FAKE Trump Post Referred to Servicemembers At USS Lincoln As 'Suckers And Losers",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-bbc-did-report-that-usda-listed-wakanda-as-trade-partner-2019-accident.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-trump-post-referred-to-servicemembers-at-uss-lincoln-crew-as-suckers-and-losers.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Don't fall for claim Trump said 'only suckers and losers would enlist' in US Navy and then complain",
+      "claim": "Did Secret Service agent share private details about how Trump acts in presidential limousine?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-suckers-losers-navy/",
+      "url": "https://www.snopes.com/fact-check/trump-limo-secret-service-agent/",
       "topic": "Politics"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "House Ethics Committee Opens Investigation Into Democrat Rep Jimmy Gomez For Sexual Misconduct",
+      "claim": "Witkoff, Trump Family Crypto Firm Backs AI Venture Tied To Restricted Chinese Companies",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/17/house-ethics-committee-investigation-democrat-jimmy-gomez",
+      "url": "https://dailycaller.com/2026/08/18/witkoff-trump-crypto-firm-world-liberty-financial-bank-hong-kong-restricted-chinese-ai",
       "topic": "Politics"
     },
     {
@@ -104,34 +104,34 @@
     },
     {
       "n": 13,
-      "claim": "PM Modi was not walking around as national anthem played; viral video doctored",
-      "verdict": "MISLEADING",
+      "claim": "‘Bharpet kha lena hi jeevan nahi hai’: Mohammad Irfan asks India to listen",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/no-pm-modi-was-not-walking-around-as-national-anthem-played-viral-video-doctored/",
-      "topic": "Politics"
-    },
-    {
-      "n": 14,
-      "claim": "Edited image of Andy Burnham in ‘Free Palestine’ shirt being shared on Facebook",
-      "verdict": "MISLEADING",
-      "source": "Full Fact",
-      "url": "https://fullfact.org/politics/fake-andy-burnham-free-palestine-image/",
+      "url": "https://www.altnews.in/bharpet-kha-lena-hi-jeevan-nahi-hai-mohammad-irfan-asks-india-to-listen/",
       "topic": "Trending"
     },
     {
+      "n": 14,
+      "claim": "of migrant saying he wants money, free house and English woman has been edited",
+      "verdict": "MISLEADING",
+      "source": "Full Fact",
+      "url": "https://fullfact.org/immigration/video-migrant-money-free-house-altered/",
+      "topic": "World"
+    },
+    {
       "n": 15,
-      "claim": "FAKE Video Shows AOC Saying 'The Fruit Or The Color?' When Asked To Spell 'Orange",
+      "claim": "BBC DID Report That USDA Listed Wakanda As Trade Partner -- But The Mistake Was An Accident From 2019",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-shows-aoc-saying-fruit-or-color-asked-to-spell-orange.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-bbc-did-report-that-usda-listed-wakanda-as-trade-partner-2019-accident.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Trump order USS Abraham Lincoln sailors to sign NDAs before they can leave ship?",
+      "claim": "Did Trump admin declare brass instruments a national security threat?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-uss-lincoln-nda/",
+      "url": "https://www.snopes.com/fact-check/trump-brass-instrument-natsec-threat/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "IVF staff accused of misleading UK parents about sperm and egg donors in northern Cyprus",
+      "headline": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c75gv9xnr3po?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-18T08:07:37+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-18T12:36:11+00:00"
     },
     {
       "n": 2,
-      "headline": "A dispute about fact vs. fiction at the trial over Tupac Shakur's 1996 killing",
+      "headline": "S. Korea stresses US alliance amid confusion over Trump drill cut",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial",
-      "topic": "Trending",
-      "published": "2026-08-18T05:56:44+00:00"
+      "url": "https://www.npr.org/2026/08/18/g-s1-139096/s-korea-stresses-us-alliance-amid-confusion-over-trump-drill-cut",
+      "topic": "Politics",
+      "published": "2026-08-18T15:19:40+00:00"
     },
     {
       "n": 3,
-      "headline": "Live Results: Wyoming midterm primaries",
+      "headline": "Dan Sullivan, another Dan Sullivan and an ex-congresswoman face off in Alaska's U.S. Senate primary",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/live-results-wyoming-midterm-primaries",
-      "topic": "Trending",
-      "published": "2026-08-18T00:00:49+00:00"
+      "url": "https://www.pbs.org/newshour/politics/dan-sullivan-another-dan-sullivan-and-an-ex-congresswoman-face-off-in-alaskas-u-s-senate-primary",
+      "topic": "Politics",
+      "published": "2026-08-18T15:31:58+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Do not inhale! How wildfire smoke 'affects the whole body",
+      "headline": "Middle East: No talks or conversations with Iran, Trump says",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/do-not-inhale-how-wildfire-smoke-affects-the-whole-body/a-76039654?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-18T08:22:00+00:00"
+      "url": "https://www.dw.com/en/middle-east-no-talks-or-conversations-with-iran-trump-says/live-78419518?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-18T16:13:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Russia says UK 'will pay' for supplying drones to Ukraine",
+      "headline": "Inside secret police warehouse as Germany targets small boats gangs",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-18T06:40:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-18T05:02:58+00:00"
     },
     {
       "n": 7,
-      "headline": "Palestinian American returns to his West Bank home, under siege by Israeli settlers",
+      "headline": "U.S. and Iran miss peace talks deadline. And, Alaska, Florida and Wyoming primaries",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/18/nx-s1-5936098/palestinian-american-return-west-bank",
-      "topic": "Money",
-      "published": "2026-08-18T05:51:50+00:00"
+      "url": "https://www.npr.org/2026/08/18/g-s1-139072/up-first-newsletter-iran-south-korea-jared-kushner-florida-wyoming-alaska-primaries-luigi-mangione",
+      "topic": "World",
+      "published": "2026-08-18T11:40:35+00:00"
     },
     {
       "n": 8,
-      "headline": "Live Results: Alaska midterm primaries",
+      "headline": "U.S. and Canada hold last-minute negotiations to prevent Trump's 50% tariffs",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/live-results-alaska-midterm-primaries",
-      "topic": "Trending",
-      "published": "2026-08-18T00:00:32+00:00"
+      "url": "https://www.pbs.org/newshour/world/u-s-and-canada-hold-last-minute-negotiations-to-prevent-trumps-50-tariffs",
+      "topic": "Politics",
+      "published": "2026-08-18T15:26:35+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Meta trial over social media harm to children begins",
+      "headline": "Afghanistan: Only 5% of labor market are women under Taliban",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/meta-trial-over-social-media-harm-to-children-begins/a-78408050?maca=en-rss-en-all-1573-rdf",
-      "topic": "Tech / AI",
-      "published": "2026-08-18T08:02:00+00:00"
+      "url": "https://www.dw.com/en/afghanistan-only-5-of-labor-market-are-women-under-taliban/a-78415895?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-08-18T15:21:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Tupac murder trial: 'All hell broke loose' night of rapper's shooting, witness says",
+      "headline": "Brazil's President Lula hails oil discovery near Amazon river",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cp3r0kz775ko?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-18T05:24:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c4gd7xd8e8lo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-18T13:13:54+00:00"
     },
     {
       "n": 12,
-      "headline": "Part of a key firearms law lapsed following a federal court decision. What happens now?",
+      "headline": "The grueling fight over who profits from AI music",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5935562/firearms-law-lapsed-federal-court-ruling",
-      "topic": "Trending",
-      "published": "2026-08-17T22:37:58+00:00"
+      "url": "https://www.npr.org/sections/planet-money/2026/08/18/g-s1-138852/grueling-fight-over-who-profits-from-ai-music",
+      "topic": "Tech / AI",
+      "published": "2026-08-18T10:30:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Live Results: Florida midterm primaries",
+      "headline": "Florida holds primaries for governor and Congress, testing Trump's grip on adopted state",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/live-results-florida-midterm-primaries",
-      "topic": "Trending",
-      "published": "2026-08-18T00:00:04+00:00"
+      "url": "https://www.pbs.org/newshour/politics/florida-holds-primaries-for-governor-and-congress-testing-trumps-grip-on-adopted-state",
+      "topic": "Politics",
+      "published": "2026-08-18T14:40:39+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany updates: new drone research center to be opened",
+      "headline": "As drought hits Germany's harvest, will food prices rise?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-updates-new-drone-research-center-to-be-opened/live-78407037?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/as-drought-hits-germany-s-harvest-will-food-prices-rise/a-78408203?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-18T07:31:00+00:00"
+      "published": "2026-08-18T14:46:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Inside secret police warehouse as Germany targets small boats gangs",
+      "headline": "Hayden Panettiere's ex Wladimir Klitschko says family in 'profound shock and grief",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c5ywe951z80o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-18T05:02:58+00:00"
+      "published": "2026-08-18T08:44:10+00:00"
     },
     {
       "n": 17,
-      "headline": "Palestinian family in West Bank fear settler violence will rob them of home",
+      "headline": "In Portland, this soap box derby combines downhill speed with extreme pageantry",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5933860/palestinian-american-family-in-west-bank-fear-settler-violence-will-rob-them-of-home",
-      "topic": "Money",
-      "published": "2026-08-17T21:27:58+00:00"
+      "url": "https://www.npr.org/2026/08/18/nx-s1-5935518/portland-oregon-soap-box-derby-race-pdx",
+      "topic": "Trending",
+      "published": "2026-08-18T09:30:00+00:00"
     }
   ]
 }
