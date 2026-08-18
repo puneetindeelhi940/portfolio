@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T16:21:21Z",
+  "generated_at": "2026-08-18T00:57:30Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,70 +8,30 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Misrepresents Hassan Piker Quoting Comment Saying America Should Resume Lynching Black People -- Was Denouncing It",
+      "claim": "FAKE Trump Post Referred to Servicemembers At USS Lincoln As 'Suckers And Losers",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-dishonestly-cut-video-shows-political-commentator-hasan-piker-saying-america-should-resume-lynching-black-people-again.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-trump-post-referred-to-servicemembers-at-uss-lincoln-crew-as-suckers-and-losers.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Are these 20 'life hacks' the real deal? We put them to the test",
+      "claim": "8 claims involving Flock, other surveillance tech we've examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/life-hacks-collection/",
+      "url": "https://www.snopes.com/collections/flock-surveillance-tech-claims/",
       "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "‘Will Come Back To Bite You’: Top FDA Official Asked Fauci For Vaccine Side Effect Study, Email Shows",
+      "claim": "Republicans Revive False Miscarriage Statistic, Twist Fauci’s Texts About COVID-19 Shots",
       "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/16/anthony-fauci-janet-woodcock-email-covid-vaccine-side-effects",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/republicans-revive-false-miscarriage-statistic-twist-faucis-texts-about-covid-19-shots/",
       "topic": "Health"
     },
     {
       "n": 4,
-      "claim": "Shedding light on sunscreen myths",
-      "verdict": "FALSE",
-      "source": "Science Feedback",
-      "url": "https://science.feedback.org/shedding-light-on-sunscreen-myths/",
-      "topic": "Trending"
-    },
-    {
-      "n": 5,
-      "claim": "PM Modi was not walking around as national anthem played; viral video doctored",
-      "verdict": "MISLEADING",
-      "source": "Alt News",
-      "url": "https://www.altnews.in/no-pm-modi-was-not-walking-around-as-national-anthem-played-viral-video-doctored/",
-      "topic": "Politics"
-    },
-    {
-      "n": 6,
-      "claim": "Smear test brushes are safe",
-      "verdict": "FALSE",
-      "source": "Full Fact",
-      "url": "https://fullfact.org/health/brush-cervical-smear-test-no-evidence-cancer-threat/",
-      "topic": "Trending"
-    },
-    {
-      "n": 7,
-      "claim": "Euronews Did NOT Publish Report Saying Ukrainian Gunman Shot Dead 3 NATO Soldiers in Latvia -- Did NOT Happen",
-      "verdict": "FALSE",
-      "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-euronews-did-not-publish-report-saying-ukrainian-gunman-shot-dead-3-nato-soldiers-in-latvia.html",
-      "topic": "World"
-    },
-    {
-      "n": 8,
-      "claim": "Did Facebook remove Jennifer Wilson Hall's Bible verse post? What we know",
-      "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/17/jennifer-wilson-hall-bible-post-facebook/",
-      "topic": "Trending"
-    },
-    {
-      "n": 9,
       "claim": "How Do You Beat The Rising Left Populists? Republicans Have To Learn On The Fly",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -79,7 +39,63 @@
       "topic": "Trending"
     },
     {
+      "n": 5,
+      "claim": "Shedding light on sunscreen myths",
+      "verdict": "FALSE",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/shedding-light-on-sunscreen-myths/",
+      "topic": "Trending"
+    },
+    {
+      "n": 6,
+      "claim": "PM Modi was not walking around as national anthem played; viral video doctored",
+      "verdict": "MISLEADING",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/no-pm-modi-was-not-walking-around-as-national-anthem-played-viral-video-doctored/",
+      "topic": "Politics"
+    },
+    {
+      "n": 7,
+      "claim": "Smear test brushes are safe",
+      "verdict": "FALSE",
+      "source": "Full Fact",
+      "url": "https://fullfact.org/health/brush-cervical-smear-test-no-evidence-cancer-threat/",
+      "topic": "Trending"
+    },
+    {
+      "n": 8,
+      "claim": "BBC DID Report That USDA Listed Wakanda As Trade Partner -- But The Mistake Was An Accident From 2019",
+      "verdict": "FALSE",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-bbc-did-report-that-usda-listed-wakanda-as-trade-partner-2019-accident.html",
+      "topic": "Trending"
+    },
+    {
+      "n": 9,
+      "claim": "Don't fall for claim Trump said 'only suckers and losers would enlist' in US Navy and then complain",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/fact-check/trump-suckers-losers-navy/",
+      "topic": "Politics"
+    },
+    {
       "n": 10,
+      "claim": "Alaska Senate Candidates Attempt to Link Each Other to Epstein",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/alaska-senate-candidates-attempt-to-link-each-other-to-epstein/",
+      "topic": "Politics"
+    },
+    {
+      "n": 11,
+      "claim": "House Ethics Committee Opens Investigation Into Democrat Rep Jimmy Gomez For Sexual Misconduct",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/08/17/house-ethics-committee-investigation-democrat-jimmy-gomez",
+      "topic": "Politics"
+    },
+    {
+      "n": 12,
       "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -87,7 +103,7 @@
       "topic": "Trending"
     },
     {
-      "n": 11,
+      "n": 13,
       "claim": "Bengal minister Arjun Singh hoisted BJP flag on Independence day? No, old & clipped video falsely viral",
       "verdict": "FALSE",
       "source": "Alt News",
@@ -95,7 +111,7 @@
       "topic": "Politics"
     },
     {
-      "n": 12,
+      "n": 14,
       "claim": "Edited image of Andy Burnham in ‘Free Palestine’ shirt being shared on Facebook",
       "verdict": "MISLEADING",
       "source": "Full Fact",
@@ -103,70 +119,54 @@
       "topic": "Trending"
     },
     {
-      "n": 13,
-      "claim": "FAKE Video Shows Abdul El-Sayed, Ms. Rachel Talking To Kids About Israeli 'Colonizers",
+      "n": 15,
+      "claim": "FAKE Video Shows AOC Saying 'The Fruit Or The Color?' When Asked To Spell 'Orange",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-shows-abdul-el-sayed-ms-rachel-talking-to-kids-about-israeli-colonizers.html",
-      "topic": "Trending"
-    },
-    {
-      "n": 14,
-      "claim": "Did Muslims in Dearborn try to silence church bells? There's no proof",
-      "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dearborn-muslims-church-bells/",
-      "topic": "Trending"
-    },
-    {
-      "n": 15,
-      "claim": "EXCLUSIVE: Key HHS Official Dr. Stephanie Haridopolos Unpacks Screen Use Advisory And What MAHA Really Means",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/16/stephanie-haridopolos-interview-screen-use-advisory-maha-health-human-services",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-shows-aoc-saying-fruit-or-color-asked-to-spell-orange.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Wellness influencers claim mainstream medicine ignores natural remedies. They’re wrong",
+      "claim": "Did Trump order USS Abraham Lincoln sailors to sign NDAs before they can leave ship?",
       "verdict": "FALSE",
-      "source": "Science Feedback",
-      "url": "https://science.feedback.org/wellness-influencers-wrongly-claim-mainstream-medicine-ignores-natural-remedies/",
-      "topic": "Health"
+      "source": "Snopes",
+      "url": "https://www.snopes.com/fact-check/trump-uss-lincoln-nda/",
+      "topic": "Politics"
     },
     {
       "n": 17,
-      "claim": "Digitally altered video of Sara Tendulkar goes viral",
-      "verdict": "MISLEADING",
-      "source": "Alt News",
-      "url": "https://www.altnews.in/digitally-altered-video-of-sara-tendulkar-goes-viral/",
-      "topic": "Trending"
+      "claim": "Wright’s Hairsplitting Statements About Canceled Energy Grants in Blue States",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/wrights-hairsplitting-statements-about-canceled-energy-grants-in-blue-states/",
+      "topic": "Science"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran issue",
+      "headline": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-17T14:59:02+00:00"
+      "published": "2026-08-17T19:25:05+00:00"
     },
     {
       "n": 2,
-      "headline": "DHS defends investigating agency critics and giving them warning notices",
+      "headline": "Part of a key firearms law lapsed following a federal court decision. What happens now?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5934692/dhs-free-speech-investigations",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5935562/firearms-law-lapsed-federal-court-ruling",
       "topic": "Trending",
-      "published": "2026-08-17T13:31:13+00:00"
+      "published": "2026-08-17T22:37:58+00:00"
     },
     {
       "n": 3,
-      "headline": "Hayden Panettiere, who started her career as a child actor before starring in 'Heroes' and 'Nashville,' dies at 36",
+      "headline": "Live Results: Wyoming midterm primaries",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/arts/hayden-panettiere-who-started-her-career-as-a-child-actor-before-starring-in-heroes-and-nashville-dies-at-36",
-      "topic": "Celebrity",
-      "published": "2026-08-17T15:51:51+00:00"
+      "url": "https://www.pbs.org/newshour/politics/live-results-wyoming-midterm-primaries",
+      "topic": "Trending",
+      "published": "2026-08-18T00:00:49+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Germany: Bundeswehr troop numbers reach 13-year high",
+      "headline": "US tourist killed by lightning on Sicily's Mount Etna",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-bundeswehr-troop-numbers-reach-13-year-high/a-78400706?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-tourist-killed-by-lightning-on-sicily-s-mount-etna/a-78405901?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-17T15:30:00+00:00"
+      "published": "2026-08-17T22:48:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+      "headline": "Russia and Ukraine trade more deadly strikes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-17T06:24:31+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-17T13:16:50+00:00"
     },
     {
       "n": 7,
-      "headline": "USS Washington to relieve USS Lincoln. And, Jared Kushner to meet with Netanyahu",
+      "headline": "Former federal prosecutor is suing DOJ for 'unlawful and retaliatory' firing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/g-s1-138973/up-first-newsletter-uss-lincoln-meta-israel-hamas-ukraine-russia",
+      "url": "https://www.npr.org/2026/08/17/g-s1-138997/former-federal-prosecutor-sue-doj-retaliatory-firing",
       "topic": "Trending",
-      "published": "2026-08-17T11:48:21+00:00"
+      "published": "2026-08-17T21:01:54+00:00"
     },
     {
       "n": 8,
-      "headline": "Flooding risk remains as deadly storms move from the Midwest to the mid-Atlantic",
+      "headline": "Live Results: Alaska midterm primaries",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/flooding-risk-remains-as-deadly-storms-move-from-the-midwest-to-the-mid-atlantic",
+      "url": "https://www.pbs.org/newshour/politics/live-results-alaska-midterm-primaries",
       "topic": "Trending",
-      "published": "2026-08-17T15:24:09+00:00"
+      "published": "2026-08-18T00:00:32+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Norway wealth fund warns of AI-driven stock market bubble",
+      "headline": "Somalia: Pirates seize commercial cargo ship",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/norway-wealth-fund-warns-of-ai-driven-stock-market-bubble/a-78351371?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-08-17T14:00:00+00:00"
+      "url": "https://www.dw.com/en/somalia-pirates-seize-commercial-cargo-ship/a-78405330?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-17T18:57:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Russia and Ukraine trade more deadly strikes",
+      "headline": "Russia's prominent anti-war politician jailed for 11 years",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-17T13:16:50+00:00"
+      "published": "2026-08-17T16:17:34+00:00"
     },
     {
       "n": 12,
-      "headline": "Hayden Panettiere, who starred in 'Heroes' and 'Nashville,' dies at 36",
+      "headline": "Democratic Rep. Jimmy Gomez being investigated over sexual misconduct allegations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5935226/hayden-panettiere-dies",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5935513/jimmy-gomez-house-ethics-investigation",
       "topic": "Trending",
-      "published": "2026-08-17T10:00:10+00:00"
+      "published": "2026-08-17T19:53:37+00:00"
     },
     {
       "n": 13,
-      "headline": "Supreme Court again denies Trump's push to toss out $5 million verdict in E. Jean Carroll case",
+      "headline": "Live Results: Florida midterm primaries",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/supreme-court-again-denies-trumps-push-to-toss-out-5-million-verdict-in-e-jean-carroll-case",
-      "topic": "Politics",
-      "published": "2026-08-17T15:05:23+00:00"
+      "url": "https://www.pbs.org/newshour/politics/live-results-florida-midterm-primaries",
+      "topic": "Trending",
+      "published": "2026-08-18T00:00:04+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Indonesia neutrality tested by joint naval drill with China",
+      "headline": "UAE economy: On the verge of collapse or on way to recovery?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/indonesia-neutrality-tested-by-joint-naval-drill-with-china/a-78400288?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-17T13:37:00+00:00"
+      "url": "https://www.dw.com/en/uae-economy-on-the-verge-of-collapse-or-on-way-to-recovery/a-78402980?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-17T17:46:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Aid shortages and fears of starvation as Indonesia reels from deadly earthquake",
+      "headline": "French PM heckled over wildfire response as blazes continue across Europe",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crl7686r71yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-17T10:39:24+00:00"
+      "published": "2026-08-17T18:00:55+00:00"
     },
     {
       "n": 17,
-      "headline": "As wildfires get worse, some states are struggling to pass fire protection rules",
+      "headline": "DHS defends investigating agency critics and giving them warning notices",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5923975/wildfires-western-community-protection",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5934692/dhs-free-speech-investigations",
       "topic": "Trending",
-      "published": "2026-08-17T09:00:00+00:00"
+      "published": "2026-08-17T13:31:13+00:00"
     }
   ]
 }
