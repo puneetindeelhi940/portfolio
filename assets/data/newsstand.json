@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T00:57:30Z",
+  "generated_at": "2026-08-18T08:30:36Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "How Do You Beat The Rising Left Populists? Republicans Have To Learn On The Fly",
+      "claim": "Cornyn Aide Takes Job With Talarico: REPORT",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/17/dsa-democrats-2026-midterms-republicans-learn-on-the-fly-economy",
+      "url": "https://dailycaller.com/2026/08/17/john-cornyn-aide-joins-james-talarico-democrat-senate-campaign",
       "topic": "Trending"
     },
     {
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "PM Modi was not walking around as national anthem played; viral video doctored",
-      "verdict": "MISLEADING",
+      "claim": "‘Bharpet kha lena hi jeevan nahi hai’: Mohammad Irfan asks India to listen",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/no-pm-modi-was-not-walking-around-as-national-anthem-played-viral-video-doctored/",
-      "topic": "Politics"
+      "url": "https://www.altnews.in/bharpet-kha-lena-hi-jeevan-nahi-hai-mohammad-irfan-asks-india-to-listen/",
+      "topic": "Trending"
     },
     {
       "n": 7,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Bengal minister Arjun Singh hoisted BJP flag on Independence day? No, old & clipped video falsely viral",
-      "verdict": "FALSE",
+      "claim": "PM Modi was not walking around as national anthem played; viral video doctored",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bengal-minister-arjun-singh-hoisted-bjp-flag-on-independence-day-no-old-clipped-video-falsely-viral/",
+      "url": "https://www.altnews.in/no-pm-modi-was-not-walking-around-as-national-anthem-played-viral-video-doctored/",
       "topic": "Politics"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+      "headline": "IVF staff accused of misleading UK parents about sperm and egg donors in northern Cyprus",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-17T19:25:05+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c75gv9xnr3po?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-18T08:07:37+00:00"
     },
     {
       "n": 2,
-      "headline": "Part of a key firearms law lapsed following a federal court decision. What happens now?",
+      "headline": "A dispute about fact vs. fiction at the trial over Tupac Shakur's 1996 killing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5935562/firearms-law-lapsed-federal-court-ruling",
+      "url": "https://www.npr.org/2026/08/18/g-s1-139061/tupac-shakur-killing-trial",
       "topic": "Trending",
-      "published": "2026-08-17T22:37:58+00:00"
+      "published": "2026-08-18T05:56:44+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "US tourist killed by lightning on Sicily's Mount Etna",
+      "headline": "Do not inhale! How wildfire smoke 'affects the whole body",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-tourist-killed-by-lightning-on-sicily-s-mount-etna/a-78405901?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/do-not-inhale-how-wildfire-smoke-affects-the-whole-body/a-76039654?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-17T22:48:00+00:00"
+      "published": "2026-08-18T08:22:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Russia and Ukraine trade more deadly strikes",
+      "headline": "Russia says UK 'will pay' for supplying drones to Ukraine",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-17T13:16:50+00:00"
+      "published": "2026-08-18T06:40:00+00:00"
     },
     {
       "n": 7,
-      "headline": "Former federal prosecutor is suing DOJ for 'unlawful and retaliatory' firing",
+      "headline": "Palestinian American returns to his West Bank home, under siege by Israeli settlers",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/g-s1-138997/former-federal-prosecutor-sue-doj-retaliatory-firing",
-      "topic": "Trending",
-      "published": "2026-08-17T21:01:54+00:00"
+      "url": "https://www.npr.org/2026/08/18/nx-s1-5936098/palestinian-american-return-west-bank",
+      "topic": "Money",
+      "published": "2026-08-18T05:51:50+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Somalia: Pirates seize commercial cargo ship",
+      "headline": "Meta trial over social media harm to children begins",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/somalia-pirates-seize-commercial-cargo-ship/a-78405330?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-17T18:57:00+00:00"
+      "url": "https://www.dw.com/en/meta-trial-over-social-media-harm-to-children-begins/a-78408050?maca=en-rss-en-all-1573-rdf",
+      "topic": "Tech / AI",
+      "published": "2026-08-18T08:02:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Russia's prominent anti-war politician jailed for 11 years",
+      "headline": "Tupac murder trial: 'All hell broke loose' night of rapper's shooting, witness says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-17T16:17:34+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cp3r0kz775ko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-18T05:24:15+00:00"
     },
     {
       "n": 12,
-      "headline": "Democratic Rep. Jimmy Gomez being investigated over sexual misconduct allegations",
+      "headline": "Part of a key firearms law lapsed following a federal court decision. What happens now?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5935513/jimmy-gomez-house-ethics-investigation",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5935562/firearms-law-lapsed-federal-court-ruling",
       "topic": "Trending",
-      "published": "2026-08-17T19:53:37+00:00"
+      "published": "2026-08-17T22:37:58+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "UAE economy: On the verge of collapse or on way to recovery?",
+      "headline": "Germany updates: new drone research center to be opened",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uae-economy-on-the-verge-of-collapse-or-on-way-to-recovery/a-78402980?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-updates-new-drone-research-center-to-be-opened/live-78407037?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-17T17:46:00+00:00"
+      "published": "2026-08-18T07:31:00+00:00"
     },
     {
       "n": 16,
-      "headline": "French PM heckled over wildfire response as blazes continue across Europe",
+      "headline": "Inside secret police warehouse as Germany targets small boats gangs",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-17T18:00:55+00:00"
+      "published": "2026-08-18T05:02:58+00:00"
     },
     {
       "n": 17,
-      "headline": "DHS defends investigating agency critics and giving them warning notices",
+      "headline": "Palestinian family in West Bank fear settler violence will rob them of home",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/17/nx-s1-5934692/dhs-free-speech-investigations",
-      "topic": "Trending",
-      "published": "2026-08-17T13:31:13+00:00"
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5933860/palestinian-american-family-in-west-bank-fear-settler-violence-will-rob-them-of-home",
+      "topic": "Money",
+      "published": "2026-08-17T21:27:58+00:00"
     }
   ]
 }
