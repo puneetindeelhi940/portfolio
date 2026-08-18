@@ -12,8 +12,8 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 8.5,
-      "trend": "stable",
+      "value": 8.3,
+      "trend": "falling",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -25,7 +25,7 @@
       "label": "Cloud Computing",
       "weight": 0.15,
       "value": 4.0,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "GPU instance demand",
         "Data center expansion",
@@ -36,8 +36,8 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 12.7,
-      "trend": "stable",
+      "value": 12.5,
+      "trend": "falling",
       "drivers": [
         "Inference cost",
         "Model competition",
@@ -49,7 +49,7 @@
       "label": "Electricity & Energy",
       "weight": 0.2,
       "value": 7.2,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -60,7 +60,7 @@
     "consumer_electronics": {
       "label": "Consumer Electronics",
       "weight": 0.15,
-      "value": 3.3,
+      "value": 3.5,
       "trend": "rising",
       "drivers": [
         "Component allocation to AI",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 7.3,
+      "value": 7.4,
       "trend": "rising",
       "drivers": [
         "AI feature premiums",
@@ -84,8 +84,8 @@
     "infrastructure": {
       "label": "Infrastructure & Construction",
       "weight": 0.1,
-      "value": 4.1,
-      "trend": "falling",
+      "value": 4.2,
+      "trend": "rising",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-08-17T06:30:11Z",
+  "last_updated": "2026-08-18T06:21:17Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
