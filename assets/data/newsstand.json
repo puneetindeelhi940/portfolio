@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T08:31:01Z",
+  "generated_at": "2026-08-19T16:25:11Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump collapse while trying to get into vehicle?",
+      "claim": "8 stories about Flock, other surveillance tech we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-fell-video-ai/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/flock-safety-surveillance-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Trump-Endorsed Byron Donalds To Face GOP Turncoat In Florida Governor Race",
+      "claim": "Dozens Of Towns Reject AI Cameras That Track Your Every Move",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/18/t",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/19/flock-cameras-surviellance-towns-united-states-arizona-alcu",
+      "topic": "Tech / AI"
     },
     {
       "n": 5,
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "New BJP social media team members delete or hide X posts, deactivate handles",
+      "claim": "1967 photo of Australian go-go dancers falsely shared to attack Sonia Gandhi",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/new-bjp-social-media-team-members-delete-or-hide-x-posts-deactivate-handles/",
+      "url": "https://www.altnews.in/1967-photo-of-australian-go-go-dancers-falsely-shared-to-attack-sonia-gandhi/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "The Cancer Act 1939 doesn’t make it ‘illegal to cure cancer’",
+      "claim": "Indonesian earthquake video compilation includes old clips from Philippines and Taiwan",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/cancer-act-1939-illegal-to-cure-cancer/",
-      "topic": "Health"
+      "url": "https://fullfact.org/world/video-compilation-indonesian-earthquake-clips-philippines-ttaiwan/",
+      "topic": "Trending"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Someone tweeted 'Stop chat gpt' in 2012, but it likely wasn't a prophecy",
+      "claim": "Eric Clapton brought deaf teen onstage in 1992. Tune out the noise",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/stop-chat-gpt-tweet-2012/",
+      "url": "https://www.snopes.com/fact-check/eric-clapton-deaf-teen/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Witkoff, Trump Family Crypto Firm Backs AI Venture Tied To Restricted Chinese Companies",
+      "claim": "Primary Voters Giving House Reps The Boot At Rate Not Seen Since Vietnam Era",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/18/witkoff-trump-crypto-firm-world-liberty-financial-bank-hong-kong-restricted-chinese-ai",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/19/primary-voters-incumbents-2026-elections",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,35 +104,35 @@
     },
     {
       "n": 13,
-      "claim": "‘Bharpet kha lena hi jeevan nahi hai’: Mohammad Irfan asks India to listen",
+      "claim": "Instagram censorship puzzle: Alt News post survives only after ‘Burhan Wani’ is removed",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bharpet-kha-lena-hi-jeevan-nahi-hai-mohammad-irfan-asks-india-to-listen/",
+      "url": "https://www.altnews.in/instagram-censorship-puzzle-alt-news-post-survives-only-after-burhan-wani-is-removed/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "of migrant saying he wants money, free house and English woman has been edited",
-      "verdict": "MISLEADING",
+      "claim": "Starbucks never pledged to hire 10,000 Muslims",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/video-migrant-money-free-house-altered/",
-      "topic": "World"
+      "url": "https://fullfact.org/economy/starbucks-hire-10000-refugees-not-specifically-muslims/",
+      "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "Evidence of Glass Water Tank Torture Video Linked to Epstein Files -- Posted Without Sourcing",
-      "verdict": "UNPROVEN",
+      "claim": "Glass Water Tank Torture Video NOT From Epstein Island -- Was A Scene In A 2016 Egyptian Television Series",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-no-evidence-of-glass-water-tank-torture-video-linked-to-epstein-files.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-glass-water-tank-torture-video-not-from-epstein-island-was-a-scene-in-a-2016-egyptian-television-series.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Fox News aired graphic falsely suggesting gas prices fell since August 2025",
+      "claim": "UNICEF report didn't disprove famine in Gaza, contrary to claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/fox-news-gas-prices-graphic/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/gaza-famine-unicef-date/",
+      "topic": "World"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
+      "headline": "Israel confirms soldiers fired at car in which Hind Rajab was killed and opens criminal investigation",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/crl7yjlpx2po?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-19T15:33:32+00:00"
+    },
+    {
+      "n": 2,
+      "headline": "Why does the U.S. military seem stymied in the war with Iran?",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/19/nx-s1-5937516/why-does-the-u-s-military-seem-stymied-in-the-war-with-iran",
+      "topic": "World",
+      "published": "2026-08-19T16:18:35+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "WATCH LIVE: Tipping Point — The Colorado River Reimagined | A PBS News Special",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/watch-live-tipping-point-the-colorado-river-reimagined-a-pbs-news-special",
+      "topic": "Trending",
+      "published": "2026-08-19T16:07:55+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Spain to allow 500 children in Ceuta to go to mainland in immigration U-turn",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/19/spain-allows-500-migrant-minors-in-ceuta-to-relocate-to-the-mainland-in-u-turn",
+      "topic": "Trending",
+      "published": "2026-08-19T14:33:24+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "India 'Cockroach' movement takes aim at government schools",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/india-cockroach-movement-takes-aim-at-government-schools/a-78431291?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-19T14:11:00+00:00"
+    },
+    {
+      "n": 6,
       "headline": "Sacked Ukrainian defence minister calls for presidential election",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-19T07:14:50+00:00"
+      "published": "2026-08-19T11:00:21+00:00"
     },
     {
-      "n": 2,
-      "headline": "Israel strikes an air base in Syria to prevent Turkish troops from deploying",
+      "n": 7,
+      "headline": "This high-speed star is whipping around the black hole in the middle of our galaxy",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/19/nx-s1-5937400/israel-strikes-syria",
-      "topic": "World",
-      "published": "2026-08-19T07:51:59+00:00"
+      "url": "https://www.npr.org/2026/08/19/nx-s1-5936479/fastest-star-galaxy-black-hole-sagittarius-a-milky-way",
+      "topic": "Celebrity",
+      "published": "2026-08-19T15:38:57+00:00"
     },
     {
-      "n": 3,
-      "headline": "ABC says FCC waging a retaliatory campaign violating free speech rights",
+      "n": 8,
+      "headline": "No serious dispute' that Comey's seashell post could be read as a Trump threat, prosecutors say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/abc-says-fcc-waging-a-retaliatory-campaign-violating-free-speech-rights",
-      "topic": "Trending",
-      "published": "2026-08-18T22:50:29+00:00"
+      "url": "https://www.pbs.org/newshour/politics/no-serious-dispute-that-comeys-seashell-post-could-be-read-as-a-trump-threat-prosecutors-say",
+      "topic": "Politics",
+      "published": "2026-08-19T15:57:25+00:00"
     },
     {
-      "n": 4,
+      "n": 9,
       "headline": "Ebola outbreak in Democratic Republic of the Congo now deadliest in country’s history",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/17/ebola-outbreak-drc-democratic-republic-of-congo-deadliest-in-history",
@@ -177,39 +217,39 @@
       "published": "2026-08-17T14:07:31+00:00"
     },
     {
-      "n": 5,
-      "headline": "Messi retirement hint highlights football era nearing an end",
+      "n": 10,
+      "headline": "Why the US is going after the International Criminal Court",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/messi-retirement-hint-highlights-football-era-nearing-an-end/a-78415527?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/why-the-us-is-going-after-the-international-criminal-court/a-78006596?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-19T08:15:00+00:00"
+      "published": "2026-08-19T13:19:00+00:00"
     },
     {
-      "n": 6,
+      "n": 11,
       "headline": "Trump pauses new tariffs on Canada for three days, saying deal close",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cy9wz79ze29o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-19T03:56:35+00:00"
+      "published": "2026-08-19T15:47:31+00:00"
     },
     {
-      "n": 7,
-      "headline": "Liberia agrees to take 1,200 third-country deportees from the U.S.",
+      "n": 12,
+      "headline": "A real-world study of Oregon's nonmedical psilocybin program shows promise",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/19/nx-s1-5937389/liberia-to-take-deportees-from-us",
-      "topic": "Trending",
-      "published": "2026-08-19T06:57:51+00:00"
+      "url": "https://www.npr.org/2026/08/19/nx-s1-5936443/oregon-psilocybin-ptsd-depression-anxiety",
+      "topic": "Science",
+      "published": "2026-08-19T15:22:35+00:00"
     },
     {
-      "n": 8,
-      "headline": "News Wrap: Meta faces trial over arguments its platforms harm children",
+      "n": 13,
+      "headline": "Kennedy Center tells court it won't try to restore Trump's name to the building before Sept. 8",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-meta-faces-trial-over-arguments-its-platforms-harm-children",
-      "topic": "Tech / AI",
-      "published": "2026-08-18T22:45:26+00:00"
+      "url": "https://www.pbs.org/newshour/politics/kennedy-center-tells-court-it-wont-try-to-restore-trumps-name-to-the-building-before-sept-8",
+      "topic": "Politics",
+      "published": "2026-08-19T15:40:04+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Zimbabwe boat accident death toll hits 68 as 22 more bodies recovered",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/15/more-bodies-recovered-after-zimbabwe-boat-accident",
@@ -217,68 +257,28 @@
       "published": "2026-08-15T19:39:07+00:00"
     },
     {
-      "n": 10,
-      "headline": "Ukraine updates: Ousted minister Fedorov calls for elections",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-updates-ousted-minister-fedorov-calls-for-elections/live-78421712?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-19T08:11:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Meta hooked children on Facebook and Instagram, US court hears",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cly5r7vr7q1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-08-18T22:11:07+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian imports",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/19/g-s1-139156/trump-canada-tariffs",
-      "topic": "Politics",
-      "published": "2026-08-19T04:55:08+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "2020 election deniers on the ballot for key offices in battleground states",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/2020-election-deniers-on-the-ballot-for-key-offices-in-battleground-states",
-      "topic": "Politics",
-      "published": "2026-08-18T22:40:08+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Moroccan police arrest more than 100 people attempting to enter Ceuta",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/15/moroccan-police-arrest-more-than-100-people-as-they-attempt-to-enter-ceuta",
-      "topic": "Trending",
-      "published": "2026-08-15T18:08:21+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Nigeria: Campaign kicks off for 2027 presidential election",
+      "headline": "Germany's rusting sea munitions are a toxic time bomb",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nigeria-campaign-kicks-off-for-2027-presidential-election/a-78421873?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-19T08:06:00+00:00"
+      "url": "https://www.dw.com/en/germany-s-rusting-sea-munitions-are-a-toxic-time-bomb/a-78419545?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-19T13:10:00+00:00"
     },
     {
       "n": 16,
-      "headline": "South Korea shortens war games with US, citing Washington request",
+      "headline": "Israel opens up tenders for controversial West Bank settlement project",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cnvn0j31qj8o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cly50gn1e54o?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-19T05:53:53+00:00"
+      "published": "2026-08-19T15:50:22+00:00"
     },
     {
       "n": 17,
-      "headline": "Key results from Florida primaries, so far",
+      "headline": "Greetings from Trouville-sur-Mer, a beach town little changed since Monet painted it",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/18/nx-s1-5936403/what-to-watch-for-in-the-florida-primaries",
+      "url": "https://www.npr.org/2026/08/19/g-s1-139174/trouville-sur-mer-france-normandy-monet-beach",
       "topic": "Trending",
-      "published": "2026-08-18T21:01:17+00:00"
+      "published": "2026-08-19T14:19:20+00:00"
     }
   ]
 }
