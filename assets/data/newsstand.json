@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T16:25:29Z",
+  "generated_at": "2026-08-19T00:57:54Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,34 +8,34 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Midterms: North American Fact Checkers Launch Weekly Newsletter",
+      "claim": "What We Know About Ring Video Showing Man Looking Through Mailbox While Holding Campaign Flyer for Rep. Randy Fine",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/analysis/2026/08/north-american-fact-checkers-coalition-newsletter-launches.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-what-we-know-about-ring-video-showing-man-looking-through-mailbox-while-holding-campaign-flyer-for-rep-randy-fine.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "7 claims we've inspected about USS Abraham Lincoln",
+      "claim": "Did Trump collapse while trying to get into vehicle?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/uss-abraham-lincoln-rumors/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-fell-video-ai/",
+      "topic": "Politics"
     },
     {
       "n": 3,
-      "claim": "Republicans Revive False Miscarriage Statistic, Twist Fauci’s Texts About COVID-19 Shots",
+      "claim": "RFK Jr. Falsely Claims New Evidence Supports Splitting MMR Vaccine",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/republicans-revive-false-miscarriage-statistic-twist-faucis-texts-about-covid-19-shots/",
+      "url": "https://www.factcheck.org/2026/08/rfk-jr-falsely-claims-new-evidence-supports-splitting-mmr-vaccine/",
       "topic": "Health"
     },
     {
       "n": 4,
-      "claim": "Trump Endorses Mass Amnesty Cheerleader Who Routinely Undermines Him",
+      "claim": "Trump-Endorsed Byron Donalds To Face GOP Turncoat In Florida Governor Race",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/18/donald-trump-endorses-maria-salaza-mass-amnesty-cheerleader-midterms-florida-primary",
+      "url": "https://dailycaller.com/2026/08/18/t",
       "topic": "Politics"
     },
     {
@@ -64,27 +64,27 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Trump Post Referred to Servicemembers At USS Lincoln As 'Suckers And Losers",
+      "claim": "Nick Shirley Did NOT Tell Joe Rogan He Was Going To Investigate 'Clinton Body Bags' List -- It's Satire",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-trump-post-referred-to-servicemembers-at-uss-lincoln-crew-as-suckers-and-losers.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-nick-shirley-did-not-tell-joe-rogan-he-was-going-to-investigate-clinton-body-bag-list-its-satire.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Did Secret Service agent share private details about how Trump acts in presidential limousine?",
+      "claim": "Someone tweeted 'Stop chat gpt' in 2012, but it likely wasn't a prophecy",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-limo-secret-service-agent/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/stop-chat-gpt-tweet-2012/",
+      "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Alaska Senate Candidates Attempt to Link Each Other to Epstein",
+      "claim": "Republicans Revive False Miscarriage Statistic, Twist Fauci’s Texts About COVID-19 Shots",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/alaska-senate-candidates-attempt-to-link-each-other-to-epstein/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/08/republicans-revive-false-miscarriage-statistic-twist-faucis-texts-about-covid-19-shots/",
+      "topic": "Health"
     },
     {
       "n": 11,
@@ -120,53 +120,53 @@
     },
     {
       "n": 15,
-      "claim": "BBC DID Report That USDA Listed Wakanda As Trade Partner -- But The Mistake Was An Accident From 2019",
-      "verdict": "FALSE",
+      "claim": "Evidence of Glass Water Tank Torture Video Linked to Epstein Files -- Posted Without Sourcing",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-bbc-did-report-that-usda-listed-wakanda-as-trade-partner-2019-accident.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-no-evidence-of-glass-water-tank-torture-video-linked-to-epstein-files.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Trump admin declare brass instruments a national security threat?",
+      "claim": "Fox News aired graphic falsely suggesting gas prices fell since August 2025",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-brass-instrument-natsec-threat/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/fox-news-gas-prices-graphic/",
+      "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "Wright’s Hairsplitting Statements About Canceled Energy Grants in Blue States",
+      "claim": "Alaska Senate Candidates Attempt to Link Each Other to Epstein",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/wrights-hairsplitting-statements-about-canceled-energy-grants-in-blue-states/",
-      "topic": "Science"
+      "url": "https://www.factcheck.org/2026/08/alaska-senate-candidates-attempt-to-link-each-other-to-epstein/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
+      "headline": "Meta hooked children on Facebook and Instagram, court hears",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-18T12:36:11+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cly5r7vr7q1o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-08-18T22:11:07+00:00"
     },
     {
       "n": 2,
-      "headline": "S. Korea stresses US alliance amid confusion over Trump drill cut",
+      "headline": "Embattled Florida Republican Rep. Cory Mills loses his fight to keep his House seat",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/18/g-s1-139096/s-korea-stresses-us-alliance-amid-confusion-over-trump-drill-cut",
+      "url": "https://www.npr.org/2026/08/18/nx-s1-5936435/mills-elijah-florida-republican-primary",
       "topic": "Politics",
-      "published": "2026-08-18T15:19:40+00:00"
+      "published": "2026-08-18T20:04:18+00:00"
     },
     {
       "n": 3,
-      "headline": "Dan Sullivan, another Dan Sullivan and an ex-congresswoman face off in Alaska's U.S. Senate primary",
+      "headline": "ABC says FCC waging a retaliatory campaign violating free speech rights",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/dan-sullivan-another-dan-sullivan-and-an-ex-congresswoman-face-off-in-alaskas-u-s-senate-primary",
-      "topic": "Politics",
-      "published": "2026-08-18T15:31:58+00:00"
+      "url": "https://www.pbs.org/newshour/show/abc-says-fcc-waging-a-retaliatory-campaign-violating-free-speech-rights",
+      "topic": "Trending",
+      "published": "2026-08-18T22:50:29+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Middle East: No talks or conversations with Iran, Trump says",
+      "headline": "US imposes new sanctions on ICC president, senior lawyer in latest escalation",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/middle-east-no-talks-or-conversations-with-iran-trump-says/live-78419518?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-imposes-new-sanctions-on-icc-president-senior-lawyer-in-latest-escalation/a-78420261?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-08-18T16:13:00+00:00"
+      "published": "2026-08-18T21:45:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Inside secret police warehouse as Germany targets small boats gangs",
+      "headline": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-18T05:02:58+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-18T12:36:11+00:00"
     },
     {
       "n": 7,
-      "headline": "U.S. and Iran miss peace talks deadline. And, Alaska, Florida and Wyoming primaries",
+      "headline": "ABC and Disney sue FCC, alleging First Amendment violations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/18/g-s1-139072/up-first-newsletter-iran-south-korea-jared-kushner-florida-wyoming-alaska-primaries-luigi-mangione",
-      "topic": "World",
-      "published": "2026-08-18T11:40:35+00:00"
+      "url": "https://www.npr.org/2026/08/18/nx-s1-5936406/abc-and-disney-sue-fcc-alleging-first-amendment-violations",
+      "topic": "Trending",
+      "published": "2026-08-18T19:51:27+00:00"
     },
     {
       "n": 8,
-      "headline": "U.S. and Canada hold last-minute negotiations to prevent Trump's 50% tariffs",
+      "headline": "News Wrap: Meta faces trial over arguments its platforms harm children",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/u-s-and-canada-hold-last-minute-negotiations-to-prevent-trumps-50-tariffs",
-      "topic": "Politics",
-      "published": "2026-08-18T15:26:35+00:00"
+      "url": "https://www.pbs.org/newshour/show/news-wrap-meta-faces-trial-over-arguments-its-platforms-harm-children",
+      "topic": "Tech / AI",
+      "published": "2026-08-18T22:45:26+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Afghanistan: Only 5% of labor market are women under Taliban",
+      "headline": "Minors living alone on Ceuta's streets at risk of abuse",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/afghanistan-only-5-of-labor-market-are-women-under-taliban/a-78415895?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-08-18T15:21:00+00:00"
+      "url": "https://www.dw.com/en/minors-living-alone-on-ceuta-s-streets-at-risk-of-abuse/a-78416604?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-18T17:07:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Brazil's President Lula hails oil discovery near Amazon river",
+      "headline": "Earthquake rocks Spain's historic Granada, injuring three",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c4gd7xd8e8lo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-18T13:13:54+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cdx755dyy1yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-18T17:15:39+00:00"
     },
     {
       "n": 12,
-      "headline": "The grueling fight over who profits from AI music",
+      "headline": "Profits won.' The child safety trial against Meta kicks off in federal court",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/08/18/g-s1-138852/grueling-fight-over-who-profits-from-ai-music",
+      "url": "https://www.npr.org/2026/08/18/nx-s1-5935458/meta-child-safety-social-media-addiction-trial-opening",
       "topic": "Tech / AI",
-      "published": "2026-08-18T10:30:00+00:00"
+      "published": "2026-08-18T17:39:29+00:00"
     },
     {
       "n": 13,
-      "headline": "Florida holds primaries for governor and Congress, testing Trump's grip on adopted state",
+      "headline": "2020 election deniers on the ballot for key offices in battleground states",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/florida-holds-primaries-for-governor-and-congress-testing-trumps-grip-on-adopted-state",
+      "url": "https://www.pbs.org/newshour/show/2020-election-deniers-on-the-ballot-for-key-offices-in-battleground-states",
       "topic": "Politics",
-      "published": "2026-08-18T14:40:39+00:00"
+      "published": "2026-08-18T22:40:08+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "As drought hits Germany's harvest, will food prices rise?",
+      "headline": "Nigeria: Dozens killed in Plateau state attack",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/as-drought-hits-germany-s-harvest-will-food-prices-rise/a-78408203?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/nigeria-dozens-killed-in-plateau-state-attack/a-78419529?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-18T14:46:00+00:00"
+      "published": "2026-08-18T16:35:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Hayden Panettiere's ex Wladimir Klitschko says family in 'profound shock and grief",
+      "headline": "Brazil's President Lula hails oil discovery near Amazon river",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5ywe951z80o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-18T08:44:10+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c4gd7xd8e8lo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-18T13:13:54+00:00"
     },
     {
       "n": 17,
-      "headline": "In Portland, this soap box derby combines downhill speed with extreme pageantry",
+      "headline": "S. Korea stresses US alliance amid confusion over Trump drill cut",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/18/nx-s1-5935518/portland-oregon-soap-box-derby-race-pdx",
-      "topic": "Trending",
-      "published": "2026-08-18T09:30:00+00:00"
+      "url": "https://www.npr.org/2026/08/18/g-s1-139096/s-korea-stresses-us-alliance-amid-confusion-over-trump-drill-cut",
+      "topic": "Politics",
+      "published": "2026-08-18T15:19:40+00:00"
     }
   ]
 }
