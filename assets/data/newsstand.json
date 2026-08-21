@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T01:00:57Z",
+  "generated_at": "2026-08-21T08:34:36Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Longtime Conservatives In Texas Consider The Unthinkable: Voting For A Democrat",
+      "claim": "Swampers Moan About The $40 Trillion Debt They Helped Create",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/20/longtime-conservatives-rural-voters-texas-greg-abbott-data-centers-gina-hinojosa",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/20/swampers-moan-about-the-40-trillion-debt-they-helped-create",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "UK, France, Germany, Italy and Canada condemn Israel's West Bank settlement project",
+      "headline": "Israel re-establishes closed West Bank settlement, defying growing international protests",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-20T18:55:14+00:00"
+      "published": "2026-08-21T05:00:57+00:00"
     },
     {
       "n": 2,
-      "headline": "Record cyclosporiasis outbreak tests the response of a 'weakened' health system",
+      "headline": "Charter plane crash kills 8 near remote radar site in western Alaska, military says",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/20/nx-s1-5930462/trump-health-foodborne-illness-outbreak-cyclospora",
-      "topic": "Health",
-      "published": "2026-08-20T19:54:19+00:00"
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5940552/charter-plane-crash-kills-8-alaska-military",
+      "topic": "Trending",
+      "published": "2026-08-21T06:41:33+00:00"
     },
     {
       "n": 3,
-      "headline": "Karmelo Anthony's lawyer asks for new trial over track meet killing as new details emerge",
+      "headline": "State lawmaker Aisha Wahab wins California special election to replace former Rep. Swalwell",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/karmelo-anthonys-lawyer-asks-for-new-trial-over-track-meet-killing-as-new-details-emerge",
-      "topic": "Trending",
-      "published": "2026-08-21T00:57:53+00:00"
+      "url": "https://www.pbs.org/newshour/politics/state-lawmaker-aisha-wahab-wins-california-special-election-to-replace-former-rep-swalwell",
+      "topic": "Politics",
+      "published": "2026-08-21T01:12:20+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Pakistan: Former PM Khan moved to private hospital",
+      "headline": "Why is Israel's military presence growing in Syria?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pakistan-former-pm-khan-moved-to-private-hospital/a-78451553?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-08-20T21:56:00+00:00"
+      "url": "https://www.dw.com/en/why-is-israel-s-military-presence-growing-in-syria/a-78435811?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-21T08:33:00+00:00"
     },
     {
       "n": 6,
-      "headline": "How much could Trump's 'economic D-Day' hurt Iran?",
+      "headline": "UK, France, Germany, Italy and Canada condemn Israel's West Bank settlement project",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-20T23:16:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-20T18:55:14+00:00"
     },
     {
       "n": 7,
-      "headline": "The Iran war and tariffs are costing farmers. Will Republicans pay in November?",
+      "headline": "Survival mode': Indiana residents endure a ninth day without power",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/20/nx-s1-5914684/farmers-trump-pennsylvania-midterms",
-      "topic": "World",
-      "published": "2026-08-20T19:22:20+00:00"
+      "url": "https://www.npr.org/2026/08/21/g-s1-139527/indiana-storm-outages",
+      "topic": "Trending",
+      "published": "2026-08-21T06:40:26+00:00"
     },
     {
       "n": 8,
-      "headline": "Congo to receive 70,000 doses of Ervebo Ebola vaccine, which was effective in past outbreaks",
+      "headline": "Karmelo Anthony's lawyer asks for new trial over track meet killing as new details emerge",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/congo-to-receive-70000-doses-of-ervebo-ebola-vaccine-which-was-effective-in-past-outbreaks",
-      "topic": "Health",
-      "published": "2026-08-20T22:57:24+00:00"
+      "url": "https://www.pbs.org/newshour/nation/karmelo-anthonys-lawyer-asks-for-new-trial-over-track-meet-killing-as-new-details-emerge",
+      "topic": "Trending",
+      "published": "2026-08-21T00:57:53+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Peru: Strong earthquake shakes southern Andes",
+      "headline": "Panama Canal to cap ship transits due to El Nino drought",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/peru-strong-earthquake-shakes-southern-andes/a-78450656?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/panama-canal-to-cap-ship-transits-due-to-el-nino-drought/a-78453054?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-20T18:43:00+00:00"
+      "published": "2026-08-21T07:30:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Russia 'purposefully' hit critical infrastructure in latest strikes, Kyiv mayor says",
+      "headline": "How much could Trump's 'economic D-Day' hurt Iran?",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-20T17:14:55+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-20T23:16:45+00:00"
     },
     {
       "n": 12,
-      "headline": "3 things to know about the $40 trillion federal debt",
+      "headline": "Federal agents seize devices from ex-Rep. Eric Swalwell in sexual misconduct probe, AP source says",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/20/nx-s1-5939473/40-trillion-federal-debt",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5940542/federal-agents-seize-eric-swalwell-sexual-misconduct-probe",
       "topic": "Trending",
-      "published": "2026-08-20T16:50:41+00:00"
+      "published": "2026-08-21T05:49:48+00:00"
     },
     {
       "n": 13,
-      "headline": "Why Treasury yields are at 20-year highs – and why it matters",
+      "headline": "Congo to receive 70,000 doses of Ervebo Ebola vaccine, which was effective in past outbreaks",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/why-treasury-yields-are-at-20-year-highs-and-why-it-matters",
-      "topic": "Trending",
-      "published": "2026-08-20T22:55:50+00:00"
+      "url": "https://www.pbs.org/newshour/health/congo-to-receive-70000-doses-of-ervebo-ebola-vaccine-which-was-effective-in-past-outbreaks",
+      "topic": "Health",
+      "published": "2026-08-20T22:57:24+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Nigeria: Dozens dead after boat capsizes in Sokoto",
+      "headline": "Alaska charter flight crash kills 8",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nigeria-dozens-dead-after-boat-capsizes-in-sokoto/a-78449903?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/alaska-charter-flight-crash-kills-8/a-78453258?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-20T17:40:00+00:00"
+      "published": "2026-08-21T07:16:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Trump wants to be friends with Kim - but South Korea could pay the price",
+      "headline": "Hong Kong's Tiananmen activists guilty in national security trial",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c4gj1vje8dxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-20T22:01:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c1l10mdrld5o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-21T05:47:32+00:00"
     },
     {
       "n": 17,
-      "headline": "What to know about Dr. Heidi Overton, Trump's pick to lead the FDA",
+      "headline": "Jurors hear 'Keffe D' say his nephew fired fatal shots at Tupac Shakur in 1996 drive-by shooting",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/20/nx-s1-5939549/heidi-overton-fda-commissioner-trump-senate-nomination",
-      "topic": "Politics",
-      "published": "2026-08-20T16:49:11+00:00"
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5940538/jurors-hear-keffe-d-say-his-nephew-fired-fatal-shots-at-tupac-shakur-in-1996-drive-by-shooting",
+      "topic": "Trending",
+      "published": "2026-08-21T05:41:15+00:00"
     }
   ]
 }
