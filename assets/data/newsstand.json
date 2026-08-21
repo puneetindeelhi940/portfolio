@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T08:34:36Z",
+  "generated_at": "2026-08-21T16:27:10Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Natalie Harp's cancer survival story: What we know",
+      "claim": "Did Maya Angelou say this popular quote about forgiving yourself?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/20/natalie-harp-bone-cancer/",
-      "topic": "Health"
+      "url": "https://www.snopes.com/fact-check/maya-angelou-forgive-yourself-quote/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Feds Confront Eric Swalwell, Seize Electronics Amid Sexual Misconduct Probe",
+      "claim": "Swampers Moan About The $40 Trillion Debt They Helped Create",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/20/feds-confront-eric-swalwell-seize-electronics-amid-sexual-misconduct-fbi-congress",
+      "url": "https://dailycaller.com/2026/08/20/swampers-moan-about-the-40-trillion-debt-they-helped-create",
       "topic": "Trending"
     },
     {
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "Indonesian earthquake video compilation includes old clips from Philippines and Taiwan",
+      "claim": "Argos isn’t selling a garden storage bench for as little as £3",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/video-compilation-indonesian-earthquake-clips-philippines-ttaiwan/",
+      "url": "https://fullfact.org/shopping/argos-bench-3-fake-offer/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Home Depot class action lawsuit over parking lot surveillance: What posts get right, wrong",
-      "verdict": "FALSE",
+      "claim": "Did Ron Johnson say seniors 'misuse Social Security'? There's no evidence",
+      "verdict": "UNPROVEN",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/home-depot-flock-lawsuit/",
+      "url": "https://www.snopes.com/fact-check/ron-johnson-social-security-quote/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Swampers Moan About The $40 Trillion Debt They Helped Create",
+      "claim": "INGERSOLL: That’s It, Ban Women From Using The Internet",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/20/swampers-moan-about-the-40-trillion-debt-they-helped-create",
+      "url": "https://dailycaller.com/2026/08/21/instagram-fundraisers-lindsay-clancy-teenage-girls-instagram-social-media-studies-radicalism-albany-bombing-plot-bowie",
       "topic": "Trending"
     },
     {
@@ -112,10 +112,10 @@
     },
     {
       "n": 14,
-      "claim": "Starbucks never pledged to hire 10,000 Muslims",
+      "claim": "Reform corrects claim that ‘rising’ share of Universal Credit went to foreign nationals",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/starbucks-hire-10000-refugees-not-specifically-muslims/",
+      "url": "https://fullfact.org/immigration/what-proportion-of-universal-credit-goes-to-non-british-citizens/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Does photo show Trump and White House aide Natalie Harp looking out helicopter window?",
+      "claim": "Rumors are swirling about 'lab-grown' eggs being sold in the US. Here's what to know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/photo-trump-natalie-harp-helicopter/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/lab-grown-us-eggs/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Charter plane crash kills 8 near remote radar site in western Alaska, military says",
+      "headline": "Top Iran official says US focus on economic warfare shows it has failed militarily",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/21/nx-s1-5940552/charter-plane-crash-kills-8-alaska-military",
-      "topic": "Trending",
-      "published": "2026-08-21T06:41:33+00:00"
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5940610/iran-us-threat-economic-warfare",
+      "topic": "World",
+      "published": "2026-08-21T11:42:10+00:00"
     },
     {
       "n": 3,
-      "headline": "State lawmaker Aisha Wahab wins California special election to replace former Rep. Swalwell",
+      "headline": "Enrollment in SNAP grocery aid is dropping faster than expected",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/state-lawmaker-aisha-wahab-wins-california-special-election-to-replace-former-rep-swalwell",
-      "topic": "Politics",
-      "published": "2026-08-21T01:12:20+00:00"
+      "url": "https://www.pbs.org/newshour/nation/enrollment-in-snap-grocery-aid-is-dropping-faster-than-expected",
+      "topic": "Trending",
+      "published": "2026-08-21T15:28:29+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Why is Israel's military presence growing in Syria?",
+      "headline": "Iran's president: Time to end war in 'position of strength",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/why-is-israel-s-military-presence-growing-in-syria/a-78435811?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-21T08:33:00+00:00"
+      "url": "https://www.dw.com/en/iran-s-president-time-to-end-war-in-position-of-strength/a-78460267?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-21T15:37:00+00:00"
     },
     {
       "n": 6,
-      "headline": "UK, France, Germany, Italy and Canada condemn Israel's West Bank settlement project",
+      "headline": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-20T18:55:14+00:00"
+      "published": "2026-08-21T13:07:00+00:00"
     },
     {
       "n": 7,
-      "headline": "Survival mode': Indiana residents endure a ninth day without power",
+      "headline": "Trump declares economic warfare on Iran. And, SCOTUS to rule on White House ballroom",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/21/g-s1-139527/indiana-storm-outages",
-      "topic": "Trending",
-      "published": "2026-08-21T06:40:26+00:00"
+      "url": "https://www.npr.org/2026/08/21/g-s1-139542/up-first-newsletter-trump-iran-economy-white-house-ballroom-bond-market",
+      "topic": "Politics",
+      "published": "2026-08-21T11:25:10+00:00"
     },
     {
       "n": 8,
-      "headline": "Karmelo Anthony's lawyer asks for new trial over track meet killing as new details emerge",
+      "headline": "WATCH LIVE: Trump stumps for S.C. Sen. Darline Graham ahead of GOP runoff",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/karmelo-anthonys-lawyer-asks-for-new-trial-over-track-meet-killing-as-new-details-emerge",
-      "topic": "Trending",
-      "published": "2026-08-21T00:57:53+00:00"
+      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-stumps-for-s-c-sen-darline-graham-ahead-of-gop-runoff",
+      "topic": "Politics",
+      "published": "2026-08-21T14:34:57+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Panama Canal to cap ship transits due to El Nino drought",
+      "headline": "40 years after the Lake Nyos disaster in Cameroon",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/panama-canal-to-cap-ship-transits-due-to-el-nino-drought/a-78453054?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/40-years-after-the-lake-nyos-disaster-in-cameroon/a-78459694?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-21T07:30:00+00:00"
+      "published": "2026-08-21T14:00:00+00:00"
     },
     {
       "n": 11,
-      "headline": "How much could Trump's 'economic D-Day' hurt Iran?",
+      "headline": "Hong Kong's Tiananmen activists guilty in national security trial",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-20T23:16:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c1l10mdrld5o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-21T05:47:32+00:00"
     },
     {
       "n": 12,
-      "headline": "Federal agents seize devices from ex-Rep. Eric Swalwell in sexual misconduct probe, AP source says",
+      "headline": "What to know about this weekend's IndyCar race on the National Mall",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/21/nx-s1-5940542/federal-agents-seize-eric-swalwell-sexual-misconduct-probe",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5939443/dc-indycar-race-overview-watch-politics",
       "topic": "Trending",
-      "published": "2026-08-21T05:49:48+00:00"
+      "published": "2026-08-21T09:01:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Congo to receive 70,000 doses of Ervebo Ebola vaccine, which was effective in past outbreaks",
+      "headline": "State lawmaker Aisha Wahab wins California special election to replace former Rep. Swalwell",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/congo-to-receive-70000-doses-of-ervebo-ebola-vaccine-which-was-effective-in-past-outbreaks",
-      "topic": "Health",
-      "published": "2026-08-20T22:57:24+00:00"
+      "url": "https://www.pbs.org/newshour/politics/state-lawmaker-aisha-wahab-wins-california-special-election-to-replace-former-rep-swalwell",
+      "topic": "Politics",
+      "published": "2026-08-21T01:12:20+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Alaska charter flight crash kills 8",
+      "headline": "Ukraine's farmers struggle to sell harvest amid war, drought",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/alaska-charter-flight-crash-kills-8/a-78453258?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-21T07:16:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-s-farmers-struggle-to-sell-harvest-amid-war-drought/a-78435344?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-21T13:51:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Hong Kong's Tiananmen activists guilty in national security trial",
+      "headline": "Several injured after sword attack at Swedish school",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c1l10mdrld5o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-21T05:47:32+00:00"
+      "published": "2026-08-21T15:42:47+00:00"
     },
     {
       "n": 17,
-      "headline": "Jurors hear 'Keffe D' say his nephew fired fatal shots at Tupac Shakur in 1996 drive-by shooting",
+      "headline": "Federal government thins the herds of wild horses in Colorado",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/21/nx-s1-5940538/jurors-hear-keffe-d-say-his-nephew-fired-fatal-shots-at-tupac-shakur-in-1996-drive-by-shooting",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5920407/colorado-wild-horses-federal-government-roundup",
       "topic": "Trending",
-      "published": "2026-08-21T05:41:15+00:00"
+      "published": "2026-08-21T09:00:00+00:00"
     }
   ]
 }
