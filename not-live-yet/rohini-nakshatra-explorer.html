@@ -11,6 +11,15 @@
     <script>
         try {
             tailwind.config = {
+                safelist: [
+                    {pattern: /bg-(emerald|amber|red|indigo|violet|blue|teal|purple|orange|slate|white)-(50|100|200|300|400|500|600|700|800|900)/},
+                    {pattern: /text-(emerald|amber|red|indigo|violet|blue|slate|orange)-(500|600|700|800|900)/},
+                    {pattern: /border-(emerald|amber|red|indigo|violet|blue|slate|orange)-(100|200|300)/},
+                    {pattern: /from-(emerald|indigo)-(50)/},
+                    {pattern: /to-(teal|purple)-(50)/},
+                    {pattern: /ring-(amber)-(500)/},
+                    'bg-gradient-to-r','ring-2','ring-offset-1','aspect-square'
+                ],
                 theme: {
                     extend: {
                         colors: {
@@ -66,6 +75,10 @@
             body { background: #fff !important; }
             .print-section { break-inside: avoid; }
         }
+        .heatmap-cell { width: 100%; aspect-ratio: 1; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; cursor: pointer; transition: transform 0.15s; }
+        .heatmap-cell:hover { transform: scale(1.1); z-index: 2; }
+        .activity-window { transition: all 0.2s ease; }
+        .activity-window:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
     </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between custom-scrollbar">
@@ -111,6 +124,8 @@
                 </div>
                 <button onclick="switchTab('nav-journal')" id="btn-journal" role="tab" aria-selected="false" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">📓 Journal</button>
                 <button onclick="switchTab('nav-remedies')" id="btn-remedies" role="tab" aria-selected="false" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🛡️ Remedies</button>
+                <button onclick="openDoNow()" id="btn-donow" class="nav-btn px-3 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm transition font-bold">⚡ Do NOW</button>
+                <button onclick="switchTab('nav-lucky')" id="btn-lucky" role="tab" aria-selected="false" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">🍀 Lucky Days</button>
                 <button onclick="switchTab('nav-about')" id="btn-about" role="tab" aria-selected="false" class="nav-btn px-3 py-2 rounded-lg text-slate-600 hover:bg-amber-100/60 transition">ℹ️ About</button>
             </nav>
         </div>
@@ -120,8 +135,8 @@
 
         <!-- Banner -->
         <section class="bg-gradient-to-r from-amber-50 via-white to-amber-50 border border-amber-200/80 rounded-2xl p-4 md:p-5 shadow-sm">
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center">
-                <div class="lg:col-span-3 space-y-1.5">
+            <div class="grid grid-cols-1 gap-4 items-center">
+                <div class="space-y-1.5">
                     <div class="flex items-center space-x-2 flex-wrap gap-y-1">
                         <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Janma Nakshatra Baseline</span>
                         <span class="text-slate-400 text-xs">•</span>
@@ -155,12 +170,6 @@
                         <button onclick="toggleVoiceBriefing()" id="voice-btn" class="no-print bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg px-3 py-1.5 md:py-2 text-xs font-semibold transition flex items-center gap-1 min-h-[44px]" title="Play/Pause morning briefing" aria-label="Play or pause morning voice briefing">&#9654; Briefing</button>
                     </div>
                 </div>
-                <div class="grid grid-cols-4 lg:grid-cols-2 gap-2 text-center text-xs">
-                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm"><div class="font-bold text-emerald-600 text-lg">14</div><div class="text-slate-600 text-[11px]">Favorable</div></div>
-                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm"><div class="font-bold text-amber-600 text-lg">3</div><div class="text-slate-600 text-[11px]">Sensitive</div></div>
-                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm"><div class="font-bold text-red-600 text-lg">9</div><div class="text-slate-600 text-[11px]">Challenging</div></div>
-                    <div class="bg-white p-2.5 rounded-xl border border-amber-100 shadow-sm"><div class="font-bold text-indigo-600 text-lg">1</div><div class="text-slate-600 text-[11px]">Override</div></div>
-                </div>
             </div>
         </section>
 
@@ -181,6 +190,7 @@
                     </div>
                 </div>
                 <div id="muhurta-composite" class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4 border border-indigo-200/60 space-y-2"></div>
+                <div id="daily-activity-boxes" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
                 <div id="transit-result-card" class="bg-amber-50/40 rounded-xl p-4 md:p-5 border border-amber-200/70 space-y-5"></div>
             </div>
         </section>
@@ -470,6 +480,19 @@
                 </div>
             </div>
         </section>
+
+        <!-- TAB: LUCKY DAYS -->
+        <section id="nav-lucky" class="tab-content hidden space-y-4 md:space-y-5">
+            <div class="bg-white rounded-2xl p-4 md:p-6 border border-slate-200 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 pb-3">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2"><span>🍀</span> My Lucky Days — Personal Monthly Planner</h3>
+                    <p class="text-xs md:text-sm text-slate-500">Next 30 days scored by Nakshatra + Tara + Hora + Tithi + Yoga alignment for Rohini natives.</p>
+                </div>
+                <div id="lucky-heatmap" class="space-y-2"></div>
+                <div id="lucky-best-days" class="space-y-3"></div>
+                <div id="lucky-best-window" class="space-y-2"></div>
+            </div>
+        </section>
     </main>
 
     <!-- Detail Modal -->
@@ -626,6 +649,20 @@
         </div>
     </div>
 
+    <!-- Do NOW Modal -->
+    <div id="donow-modal" role="dialog" aria-modal="true" aria-label="What should I do now" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 md:p-4 z-50 hidden">
+        <div class="bg-white rounded-2xl max-w-2xl w-full p-4 md:p-6 shadow-xl border border-emerald-200 space-y-4 max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <div class="flex items-center justify-between border-b border-emerald-100 pb-3">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">⚡ What Should I Do NOW?</h3>
+                    <p class="text-xs text-slate-500">Real-time analysis for Rohini natives</p>
+                </div>
+                <button onclick="closeDoNow()" class="text-slate-400 hover:text-slate-600 text-2xl font-bold p-1 min-w-[44px] min-h-[44px]" aria-label="Close">&times;</button>
+            </div>
+            <div id="donow-content" class="space-y-4"></div>
+        </div>
+    </div>
+
     <footer class="bg-white border-t border-amber-200/60 py-4 mt-6 md:mt-8">
         <div class="max-w-7xl mx-auto px-3 md:px-4 text-center text-xs text-slate-500 space-y-1.5">
             <p><strong>Rohini Nakshatra Explorer</strong> &middot; Unified Edition</p>
@@ -709,13 +746,227 @@ const activityKeywords={
     declutter:["Vadha"],purge:["Vadha"],clean:["Vadha"],repair:["Sadhaka","Kshema"]
 };
 
+function _meeusSunLon(date){const JD=2440587.5+date.getTime()/86400000;const T=(JD-2451545.0)/36525.0;const L0=280.46646+36000.76983*T+0.0003032*T*T;const M=357.52911+35999.05029*T-0.0001537*T*T;const Mrad=M*Math.PI/180;const C=(1.914602-0.004817*T-0.000014*T*T)*Math.sin(Mrad)+(0.019993-0.000101*T)*Math.sin(2*Mrad)+0.000289*Math.sin(3*Mrad);let sunLon=L0+C;const ayan=23.853+(50.29/3600)*(T*100);sunLon-=ayan;return((sunLon%360)+360)%360;}
+
+function getTithiInfo(date){const ml=getSiderealMoonLongitude(date);const sl=_meeusSunLon(date);const diff=((ml-sl)%360+360)%360;const num=Math.floor(diff/12)+1;const names=['Pratipada','Dwitiya','Tritiya','Chaturthi','Panchami','Shashthi','Saptami','Ashtami','Navami','Dashami','Ekadashi','Dwadashi','Trayodashi','Chaturdashi','Purnima'];const paksha=num<=15?'Shukla':'Krishna';return{num,name:names[(num-1)%15],paksha};}
+function getYogaInfo(date){const ml=getSiderealMoonLongitude(date);const sl=_meeusSunLon(date);const sum=((ml+sl)%360+360)%360;const num=Math.floor(sum/(360/27))+1;const names=['Vishkambha','Preeti','Ayushman','Saubhagya','Shobhana','Atiganda','Sukarma','Dhriti','Shoola','Ganda','Vriddhi','Dhruva','Vyaghata','Harshana','Vajra','Siddhi','Vyatipata','Variyana','Parigha','Shiva','Siddha','Sadhya','Shubha','Shukla','Brahma','Indra','Vaidhriti'];return{num,name:names[(num-1)%27]};}
+function getKaranaInfo(date){const ml=getSiderealMoonLongitude(date);const sl=_meeusSunLon(date);const diff=((ml-sl)%360+360)%360;const num=Math.floor(diff/6)+1;const moving=['Bava','Balava','Kaulava','Taitila','Garaja','Vanija','Vishti'];const fixed=['Shakuni','Chatushpada','Nagava','Kimstughna'];let name;if(num===1)name=fixed[3];else if(num>=2&&num<=57)name=moving[(num-2)%7];else if(num===58)name=fixed[0];else if(num===59)name=fixed[1];else name=fixed[2];return{num,name,isVishti:name==='Vishti'};}
+
+const ACTIVITIES=[
+{key:'money',label:'Money & Finance',icon:'💰',horaAff:{Mercury:3,Jupiter:3,Venus:2,Sun:1,Moon:0,Mars:0,Saturn:1},bestTaras:['Sampat','Parama Mitra','Kshema'],bestVaras:[3,4,5]},
+{key:'relationships',label:'Relationships',icon:'🤝',horaAff:{Venus:3,Moon:2,Jupiter:2,Mercury:1,Sun:0,Mars:0,Saturn:0},bestTaras:['Mitra','Parama Mitra','Sadhaka'],bestVaras:[1,5]},
+{key:'negotiations',label:'Negotiations',icon:'⚖️',horaAff:{Mercury:3,Mars:2,Jupiter:2,Sun:1,Venus:1,Moon:0,Saturn:0},bestTaras:['Sampat','Sadhaka','Mitra'],bestVaras:[2,3,4]},
+{key:'travel',label:'Travel',icon:'✈️',horaAff:{Jupiter:3,Mercury:2,Venus:2,Moon:1,Sun:1,Mars:0,Saturn:0},bestTaras:['Sadhaka','Mitra','Sampat'],bestVaras:[1,3,4]},
+{key:'shopping',label:'Shopping',icon:'🛍️',horaAff:{Venus:3,Jupiter:2,Mercury:2,Moon:1,Sun:0,Mars:0,Saturn:0},bestTaras:['Sampat','Parama Mitra','Kshema'],bestVaras:[3,5]},
+{key:'romance',label:'Romance',icon:'❤️',horaAff:{Venus:3,Moon:2,Jupiter:1,Mercury:0,Sun:0,Mars:1,Saturn:0},bestTaras:['Parama Mitra','Sadhaka','Mitra'],bestVaras:[1,5]},
+{key:'eating',label:'Eating & Dining',icon:'🍽️',horaAff:{Moon:2,Venus:2,Jupiter:2,Mercury:1,Sun:1,Mars:0,Saturn:0},bestTaras:['Kshema','Mitra','Parama Mitra'],bestVaras:[1,5,4]},
+{key:'career',label:'Career & Leadership',icon:'💼',horaAff:{Sun:3,Jupiter:3,Mars:2,Mercury:2,Venus:0,Moon:0,Saturn:1},bestTaras:['Sampat','Sadhaka','Parama Mitra'],bestVaras:[0,2,4]},
+{key:'health',label:'Health & Medical',icon:'🏥',horaAff:{Sun:2,Moon:2,Jupiter:2,Mars:1,Venus:1,Mercury:1,Saturn:0},bestTaras:['Kshema','Mitra','Parama Mitra'],bestVaras:[0,1,4]},
+{key:'spiritual',label:'Spiritual Practice',icon:'🙏',horaAff:{Jupiter:3,Saturn:2,Moon:2,Sun:1,Venus:0,Mercury:0,Mars:0},bestTaras:['Kshema','Parama Mitra','Mitra'],bestVaras:[4,1,6]},
+{key:'learning',label:'Learning & Study',icon:'📚',horaAff:{Mercury:3,Jupiter:3,Moon:1,Venus:1,Sun:0,Mars:0,Saturn:0},bestTaras:['Sadhaka','Mitra','Sampat'],bestVaras:[3,4]}
+];
+const GOOD_TITHIS=[2,3,5,7,10,11,13];
+const GOOD_YOGAS=['Preeti','Ayushman','Saubhagya','Shobhana','Sukarma','Dhriti','Vriddhi','Dhruva','Harshana','Siddhi','Variyana','Shiva','Siddha','Sadhya','Shubha','Shukla','Brahma','Indra'];
+
+function scoreActivityAt(date,activity){
+const nkW=360/27;const lon=getSiderealMoonLongitude(date);const nkIdx=Math.floor(lon/nkW)%27;
+const starName=nakshatraOrder[nkIdx];const star=nakshatraData.find(s=>s.name===starName);
+if(!star)return{score:0};
+const nowMin=date.getHours()*60+date.getMinutes();
+const sched=getHoraSchedule(date);let horaP='Saturn';
+for(const h of sched.horas){if(nowMin>=h.startMin&&nowMin<h.endMin){horaP=h.planet;break;}}
+const horaS=activity.horaAff[horaP]||0;
+let taraS=0;if(star.taraCategory==='FAVORABLE')taraS=2;else if(star.taraCategory==='MIXED')taraS=1;
+if(activity.bestTaras.includes(star.taraClass))taraS=3;
+const dow=date.getDay();const varaS=activity.bestVaras.includes(dow)?2:1;
+const tithi=getTithiInfo(date);const tithiS=GOOD_TITHIS.includes(tithi.num%15||15)?1:0;
+const yoga=getYogaInfo(date);const yogaS=GOOD_YOGAS.includes(yoga.name)?1:0;
+const karana=getKaranaInfo(date);const karanaS=karana.isVishti?-1:0;
+const rk=getRahuKaal(date);const rkPs=rk.start.split(':').map(Number);const rkSt=rkPs[0]*60+rkPs[1];
+const rkPe=rk.end.split(':').map(Number);const rkEn=rkPe[0]*60+rkPe[1];
+const rahuS=(nowMin>=rkSt&&nowMin<rkEn)?-3:0;
+const vainS=(star.specialTitle&&star.specialTitle.includes('Vainasika'))?-2:0;
+const raw=horaS+taraS+varaS+tithiS+yogaS+karanaS+rahuS+vainS;
+const score=Math.max(0,Math.min(100,Math.round((raw/10)*100)));
+return{score,hora:horaP,star:starName,tara:star.taraClass,taraCategory:star.taraCategory,tithi:tithi.name,yoga:yoga.name,karana:karana.name,isRahu:rahuS<0,isVishti:karana.isVishti};}
+
+function scanDayWindows(date){
+const results={};
+ACTIVITIES.forEach(act=>{const windows=[];
+for(let m=300;m<=1380;m+=30){const t=new Date(date);t.setHours(0,0,0,0);t.setMinutes(m);
+const info=scoreActivityAt(t,act);windows.push({startMin:m,endMin:m+30,...info});}
+windows.sort((a,b)=>b.score-a.score);
+results[act.key]={best:windows[0],nextBest:windows[1],worst:windows[windows.length-1]};});
+return results;}
+
+function renderDailyBoxes(){
+const now=new Date();const wins=scanDayWindows(now);
+const container=document.getElementById('daily-activity-boxes');if(!container)return;
+const boxes=[
+{title:"Today's Best",key:'best',bgColor:'#ecfdf5',borderColor:'#6ee7b7',headerBg:'#059669'},
+{title:'Next Best',key:'nextBest',bgColor:'#fffbeb',borderColor:'#fcd34d',headerBg:'#f59e0b'},
+{title:'Totally Avoid',key:'worst',bgColor:'#fef2f2',borderColor:'#fca5a5',headerBg:'#dc2626'}
+];
+container.innerHTML=boxes.map(box=>{
+const items=ACTIVITIES.map(act=>{const w=wins[act.key][box.key];if(!w)return'';
+const sc=w.score>=70?'#047857':w.score>=40?'#b45309':'#b91c1c';
+return`<div class="activity-window" style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;background:#fff;border:1px solid #f1f5f9;font-size:12px;margin-bottom:6px">
+<div style="display:flex;align-items:center;gap:8px"><span>${act.icon}</span><span style="font-weight:600;color:#1e293b">${act.label}</span></div>
+<div style="text-align:right"><div style="font-weight:700;color:${sc}">${fmtMin(w.startMin)}–${fmtMin(w.endMin)}</div>
+<div style="font-size:10px;color:#64748b">${w.hora} Hora • ${w.score}/100</div></div></div>`;}).join('');
+return`<div style="border-radius:12px;border:2px solid ${box.borderColor};background:${box.bgColor};overflow:hidden">
+<div style="background:${box.headerBg};color:#fff;padding:10px 16px;font-weight:700;font-size:14px">${box.title}</div>
+<div style="padding:12px">${items}</div></div>`;}).join('');}
+
+function openDoNow(){
+const now=new Date();const hora=getCurrentHoraInfo();const tm=horaTaskMap[hora.planet];
+const approx=getApproxNakshatraIndex(now);const sn=nakshatraOrder[approx.index];
+const star=nakshatraData.find(s=>s.name===sn);
+const rashi=getCurrentRashi(now);const tithi=getTithiInfo(now);const yoga=getYogaInfo(now);
+const karana=getKaranaInfo(now);const rk=getRahuKaal(now);
+const actScores=ACTIVITIES.map(act=>({...act,result:scoreActivityAt(now,act)})).sort((a,b)=>b.result.score-a.result.score);
+const excellent=actScores.filter(a=>a.result.score>=60);
+const avoid=actScores.filter(a=>a.result.score<30);
+const sched=getHoraSchedule(now);
+let nextStr=null;
+for(let i=hora.horaIdx+1;i<24;i++){const h=sched.horas[i];const hs=horaScore[h.planet]||0;
+if(hs>=(horaScore[hora.planet]||0)+1){nextStr={planet:h.planet,time:fmtMin(h.startMin)};break;}}
+const content=document.getElementById('donow-content');
+const _s='font-size:12px;';const _b='font-weight:700;';const _bb='font-weight:900;';
+const panchCards=[
+{label:'Tithi',value:`${tithi.paksha} ${tithi.name}`,bg:'#f5f3ff',bc:'#ddd6fe',tc:'#5b21b6'},
+{label:'Yoga',value:yoga.name,bg:'#eef2ff',bc:'#c7d2fe',tc:'#3730a3'},
+{label:'Karana',value:`${karana.name}${karana.isVishti?' ⚠️':''}`,bg:'#eff6ff',bc:'#bfdbfe',tc:'#1e40af'},
+{label:'Rahu Kaal',value:`${rk.start}–${rk.end}${rk.isActive?' ⚠️ NOW':''}`,bg:'#fef2f2',bc:'#fecaca',tc:'#991b1b'}
+];
+content.innerHTML=`
+<div style="background:linear-gradient(to right,#ecfdf5,#f0fdfa);border-radius:12px;padding:16px;border:1px solid #a7f3d0">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;${_b}box-shadow:0 4px 6px rgba(0,0,0,.1);background:${horaColors[hora.planet]};color:${getTextColorForBg(horaColors[hora.planet])}">${tm.emoji}</div>
+<div><div style="${_s}color:#64748b;text-transform:uppercase;${_b}">NOW — ${hora.planet} Hora</div>
+<div style="font-size:20px;${_bb}color:#0f172a">${hora.minsLeft} minutes remaining</div>
+<div style="font-size:14px;color:#475569">${sn} (${star?star.taraClass:'—'}) • ${rashi}</div></div></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;${_s}margin-top:8px">
+${panchCards.map(c=>`<div style="background:${c.bg};padding:10px;border-radius:8px;border:1px solid ${c.bc}"><div style="color:${c.tc};${_b}font-size:10px;text-transform:uppercase">${c.label}</div><div style="${_b}color:#1e293b">${c.value}</div></div>`).join('')}
+</div>
+<div style="background:#ecfdf5;border-radius:12px;padding:16px;border:1px solid #a7f3d0;margin-top:8px">
+<div style="color:#065f46;${_b}font-size:14px;text-transform:uppercase;margin-bottom:8px">Excellent for:</div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px">
+${(excellent.length?excellent:actScores.slice(0,4)).map(a=>`<div style="display:flex;align-items:center;gap:8px;background:#fff;padding:10px;border-radius:8px;border:1px solid #d1fae5">
+<span style="font-size:18px">${a.icon}</span><div><div style="${_b}font-size:14px;color:#1e293b">${a.label}</div>
+<div style="${_s}color:#047857">${a.result.score}/100 alignment</div></div></div>`).join('')}
+</div>
+${tm?`<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">${tm.tasks.map(t=>`<span style="padding:4px 8px;background:#d1fae5;color:#065f46;border-radius:8px;${_s}font-weight:500">${t}</span>`).join('')}</div>`:''}
+</div>
+${avoid.length?`<div style="background:#fef2f2;border-radius:12px;padding:16px;border:1px solid #fecaca;margin-top:8px">
+<div style="color:#991b1b;${_b}font-size:14px;text-transform:uppercase;margin-bottom:8px">Avoid right now:</div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px">
+${avoid.map(a=>`<div style="display:flex;align-items:center;gap:8px;background:#fff;padding:10px;border-radius:8px;border:1px solid #fee2e2">
+<span style="font-size:18px">${a.icon}</span><div><div style="${_b}font-size:14px;color:#1e293b">${a.label}</div>
+<div style="${_s}color:#b91c1c">${a.result.score}/100 — poor alignment</div></div></div>`).join('')}
+</div></div>`:''}
+${nextStr?`<div style="background:#eef2ff;border-radius:12px;padding:12px 16px;border:1px solid #c7d2fe;display:flex;align-items:center;justify-content:space-between;margin-top:8px">
+<div><div style="color:#3730a3;${_b}${_s}text-transform:uppercase">Next stronger window</div>
+<div style="font-size:18px;${_bb}color:#312e81">${nextStr.time}</div></div>
+<div style="text-align:right"><div style="font-size:14px;${_b}color:#4338ca">${nextStr.planet} Hora</div>
+<div style="${_s}color:#64748b">${horaTaskMap[nextStr.planet]?.tasks[0]||''}</div></div></div>`:''}
+<div style="display:grid;gap:6px;${_s}margin-top:8px">
+<div style="${_b}color:#334155;text-transform:uppercase;font-size:10px">All activities — current alignment</div>
+${actScores.map(a=>{const bg=a.result.score>=60?'#ecfdf5':a.result.score>=30?'#fffbeb':'#fef2f2';const bc=a.result.score>=60?'#d1fae5':a.result.score>=30?'#fde68a':'#fee2e2';const barC=a.result.score>=60?'#10b981':a.result.score>=30?'#f59e0b':'#ef4444';const tc=a.result.score>=60?'#047857':a.result.score>=30?'#b45309':'#b91c1c';
+return`<div style="display:flex;align-items:center;gap:8px;padding:8px;border-radius:8px;background:${bg};border:1px solid ${bc}">
+<span>${a.icon}</span><span style="font-weight:600;color:#1e293b;flex:1">${a.label}</span>
+<div style="width:80px;background:#e2e8f0;border-radius:9999px;height:6px"><div style="height:6px;border-radius:9999px;background:${barC};width:${a.result.score}%"></div></div>
+<span style="${_b}width:32px;text-align:right;color:${tc}">${a.result.score}</span></div>`;}).join('')}
+</div>`;
+document.getElementById('donow-modal').classList.remove('hidden');}
+function closeDoNow(){document.getElementById('donow-modal').classList.add('hidden');}
+
+function calculateLuckyDays(numDays){
+const days=[];const now=new Date();
+for(let d=0;d<numDays;d++){const day=new Date(now);day.setDate(day.getDate()+d);day.setHours(12,0,0,0);
+const nkW=360/27;const nkIdx=Math.floor(getSiderealMoonLongitude(day)/nkW)%27;
+const starName=nakshatraOrder[nkIdx];const star=nakshatraData.find(s=>s.name===starName);
+if(!star)continue;
+const vara=varaNames[day.getDay()];const varaS=varaScoreMap[vara]||1;
+const taraS=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;
+const taraMatch=star.taraClass;
+const sched=getHoraSchedule(day);let bestHoraS=0;
+sched.horas.slice(0,12).forEach(h=>{const s=horaScore[h.planet]||0;if(s>bestHoraS)bestHoraS=s;});
+const tithi=getTithiInfo(day);const tithiS=GOOD_TITHIS.includes(tithi.num%15||15)?1:0;
+const yoga=getYogaInfo(day);const yogaS=GOOD_YOGAS.includes(yoga.name)?1:0;
+const karana=getKaranaInfo(day);const karanaP=karana.isVishti?-1:0;
+const vainP=(star.specialTitle&&star.specialTitle.includes('Vainasika'))?-2:0;
+const raw=varaS+taraS+bestHoraS+tithiS+yogaS+karanaP+vainP;
+const score=Math.max(0,Math.min(100,Math.round((raw/11)*100)));
+let level='avoid';if(score>=75)level='excellent';else if(score>=55)level='good';else if(score>=40)level='mixed';else if(score>=25)level='sensitive';
+const bestActs=ACTIVITIES.map(act=>{const tm=act.bestTaras.includes(taraMatch)?3:0;const vm=act.bestVaras.includes(day.getDay())?2:0;return{label:act.label,icon:act.icon,s:tm+vm};}).sort((a,b)=>b.s-a.s).slice(0,2).filter(a=>a.s>0);
+days.push({date:new Date(day),score,level,star:starName,tara:taraMatch,taraCategory:star.taraCategory,vara,tithi:tithi.name,yoga:yoga.name,bestActivities:bestActs});}
+return days;}
+
+function findStrongestWindowThisWeek(){
+const now=new Date();let best=null;
+for(let d=0;d<7;d++){const day=new Date(now);day.setDate(day.getDate()+d);
+const sched=getHoraSchedule(day);
+for(let i=0;i<12;i++){const h=sched.horas[i];
+const midTime=new Date(day);midTime.setHours(0,0,0,0);midTime.setMinutes((h.startMin+h.endMin)/2);
+if(midTime<now)continue;
+const nkW=360/27;const nkIdx=Math.floor(getSiderealMoonLongitude(midTime)/nkW)%27;
+const starName=nakshatraOrder[nkIdx];const star=nakshatraData.find(s=>s.name===starName);
+if(!star)continue;
+const taraS=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;
+const horaS=horaScore[h.planet]||0;const varaS=varaScoreMap[varaNames[day.getDay()]]||1;
+const rk=getRahuKaal(day);const rkPs=rk.start.split(':').map(Number);const rkSt=rkPs[0]*60+rkPs[1];
+const rkPe=rk.end.split(':').map(Number);const rkEn=rkPe[0]*60+rkPe[1];
+const midMin=(h.startMin+h.endMin)/2;if(midMin>=rkSt&&midMin<rkEn)continue;
+const score=taraS+horaS+varaS;
+if(!best||score>best.score){best={score,date:new Date(day),startMin:h.startMin,endMin:h.endMin,planet:h.planet,star:starName,tara:star.taraClass};}}}
+return best;}
+
+function renderLuckyDays(){
+const days=calculateLuckyDays(30);const hm=document.getElementById('lucky-heatmap');
+const bd=document.getElementById('lucky-best-days');const bw=document.getElementById('lucky-best-window');
+const levelColors={excellent:'#059669',good:'#0284C7',mixed:'#D97706',sensitive:'#EA580C',avoid:'#DC2626'};
+const levelLabels={excellent:'Excellent',good:'Good',mixed:'Mixed',sensitive:'Sensitive',avoid:'Avoid'};
+const first=days[0].date;const firstDow=first.getDay();
+const _gc='display:grid;grid-template-columns:repeat(7,1fr);gap:4px;';
+let hmHtml=`<div style="font-size:14px;font-weight:700;color:#1e293b;margin-bottom:8px">Next 30 Days</div>`;
+hmHtml+=`<div style="${_gc}text-align:center;font-size:10px;font-weight:700;color:#64748b;margin-bottom:4px"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div>`;
+hmHtml+=`<div style="${_gc}">`;
+for(let i=0;i<firstDow;i++)hmHtml+=`<div></div>`;
+days.forEach((d,idx)=>{const isToday=idx===0;const c=levelColors[d.level];
+hmHtml+=`<div class="heatmap-cell" style="background:${c};color:#fff;${isToday?'box-shadow:0 0 0 2px #f59e0b,0 0 0 4px #fff;':''}" title="${d.date.toLocaleDateString('en-IN',{weekday:'short',month:'short',day:'numeric'})} — ${d.star} (${d.tara}) — ${d.score}/100">${d.date.getDate()}</div>`;});
+hmHtml+=`</div>`;
+hmHtml+=`<div style="display:flex;flex-wrap:wrap;gap:8px;font-size:10px;margin-top:8px">${Object.entries(levelLabels).map(([k,v])=>`<span style="display:flex;align-items:center;gap:4px"><span style="width:12px;height:12px;border-radius:4px;background:${levelColors[k]}"></span>${v}</span>`).join('')}</div>`;
+hm.innerHTML=hmHtml;
+const sorted=[...days].sort((a,b)=>b.score-a.score);const top3=sorted.slice(0,3);
+const dayNames=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+let bdHtml=`<div style="font-size:14px;font-weight:700;color:#1e293b;margin-bottom:8px">Best 3 Days for You</div><div style="display:grid;gap:8px">`;
+top3.forEach((d,i)=>{const medal=['🥇','🥈','🥉'][i];const sc=d.score>=75?'#047857':d.score>=55?'#1d4ed8':'#b45309';
+bdHtml+=`<div style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:12px;border:2px solid ${i===0?'#6ee7b7':'#e2e8f0'};background:${i===0?'rgba(236,253,245,0.6)':'#fff'};cursor:pointer">
+<div style="font-size:24px">${medal}</div>
+<div style="flex:1"><div style="font-weight:700;color:#0f172a">${dayNames[d.date.getDay()]} — ${d.date.toLocaleDateString('en-IN',{month:'short',day:'numeric'})}</div>
+<div style="font-size:12px;color:#475569">${d.star} (${d.tara}) • ${d.vara} • ${d.tithi}</div>
+${d.bestActivities.length?`<div style="font-size:12px;color:#047857;font-weight:600;margin-top:2px">${d.bestActivities.map(a=>a.icon+' '+a.label).join(' + ')}</div>`:''}
+</div>
+<div style="text-align:right"><div style="font-size:24px;font-weight:900;color:${sc}">${d.score}</div><div style="font-size:10px;color:#64748b;font-weight:700">/100</div></div></div>`;});
+bdHtml+=`</div>`;bd.innerHTML=bdHtml;
+const bestW=findStrongestWindowThisWeek();
+if(bestW){bw.innerHTML=`<div style="background:linear-gradient(to right,#eef2ff,#faf5ff);border-radius:12px;padding:16px;border:1px solid #c7d2fe">
+<div style="color:#3730a3;font-weight:700;font-size:12px;text-transform:uppercase">Strongest window this week</div>
+<div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px">
+<div><div style="font-size:18px;font-weight:900;color:#312e81">${dayNames[bestW.date.getDay()]} ${fmtMin(bestW.startMin)} – ${fmtMin(bestW.endMin)}</div>
+<div style="font-size:14px;color:#475569">${bestW.star} (${bestW.tara}) • ${bestW.planet} Hora</div></div>
+<div style="font-size:30px;font-weight:900;color:#4f46e5">${Math.round((bestW.score/9)*100)}<span style="font-size:14px">/100</span></div></div></div>`;}
+else{bw.innerHTML='';}}
+
 let chartJournalInst=null,currentModalStarId=null,selectedOutcome=null,currentMonthOffset=0;
 let _rashiTransCache=null,_rashiTransDate='';
 
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded',()=>{
     populateTransitSelect();populateTaskStarSelect();populateFamilyStarSelect();populateJournalNakshatraSelect();
-    updateDailyTransitView();renderNakshatraGrid(nakshatraData);selectDomain('job');renderSpecialStars();renderTasks();renderHoraGrid();renderFamilyDashboard();renderJournalChart();renderJournalEntries();startLiveClock();
+    updateDailyTransitView();renderNakshatraGrid(nakshatraData);selectDomain('job');renderSpecialStars();renderTasks();renderHoraGrid();renderFamilyDashboard();renderJournalChart();renderJournalEntries();startLiveClock();renderDailyBoxes();
     document.getElementById('journal-nakshatra').addEventListener('change',updateJournalTara);
     document.addEventListener('click',e=>{if(!e.target.closest('.nav-dd-wrapper'))closeDropdowns();});
 });
@@ -813,7 +1064,7 @@ function switchTab(tabId){document.querySelectorAll('.tab-content').forEach(el=>
     'calendar-dd':['nav-transit','nav-thisweek','nav-nextweek','nav-month'],
     'life-dd':['nav-domains','nav-tasks','nav-family']
 };if(tabs[dd]&&tabs[dd].includes(tabId)){parentBtn.classList.add('bg-amber-800','text-white','shadow-sm');parentBtn.classList.remove('text-slate-600');}});
-if(tabId==='nav-thisweek')renderThisWeek();if(tabId==='nav-nextweek')renderNextWeek();if(tabId==='nav-month')renderMonthGrid();if(tabId==='nav-hora')renderHoraGrid();if(tabId==='nav-journal'){renderJournalChart();renderJournalEntries();}}
+if(tabId==='nav-thisweek')renderThisWeek();if(tabId==='nav-nextweek')renderNextWeek();if(tabId==='nav-month')renderMonthGrid();if(tabId==='nav-hora')renderHoraGrid();if(tabId==='nav-journal'){renderJournalChart();renderJournalEntries();}if(tabId==='nav-lucky')renderLuckyDays();}
 
 // ===== TRANSIT =====
 function populateTransitSelect(){const s=document.getElementById('transit-select');s.innerHTML='';nakshatraData.forEach(star=>{const o=document.createElement('option');o.value=star.id;o.textContent=`${star.id}. ${star.name} (${star.taraClass})`;s.appendChild(o);});}
@@ -837,7 +1088,7 @@ function openModal(id){saveFocusBeforeModal();currentModalStarId=id;const s=naks
 function closeModal(){document.getElementById('detail-modal').classList.add('hidden');restoreFocusAfterModal();}
 function pinTaskFromModal(){closeModal();openTaskModal(currentModalStarId);}
 
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){['detail-modal','task-modal','family-modal','journal-modal'].forEach(id=>{const m=document.getElementById(id);if(!m.classList.contains('hidden')){m.classList.add('hidden');restoreFocusAfterModal();}});}if(e.key==='Tab'){['detail-modal','task-modal','family-modal','journal-modal'].forEach(id=>{const m=document.getElementById(id);if(!m.classList.contains('hidden')){const foc=m.querySelectorAll('button,[href],input,select,textarea,[tabindex]:not([tabindex="-1"])');if(!foc.length)return;const f=foc[0],l=foc[foc.length-1];if(e.shiftKey&&document.activeElement===f){e.preventDefault();l.focus();}else if(!e.shiftKey&&document.activeElement===l){e.preventDefault();f.focus();}else if(!m.contains(document.activeElement)){e.preventDefault();f.focus();}}});}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){['detail-modal','task-modal','family-modal','journal-modal','donow-modal'].forEach(id=>{const m=document.getElementById(id);if(!m.classList.contains('hidden')){m.classList.add('hidden');restoreFocusAfterModal();}});}if(e.key==='Tab'){['detail-modal','task-modal','family-modal','journal-modal','donow-modal'].forEach(id=>{const m=document.getElementById(id);if(!m.classList.contains('hidden')){const foc=m.querySelectorAll('button,[href],input,select,textarea,[tabindex]:not([tabindex="-1"])');if(!foc.length)return;const f=foc[0],l=foc[foc.length-1];if(e.shiftKey&&document.activeElement===f){e.preventDefault();l.focus();}else if(!e.shiftKey&&document.activeElement===l){e.preventDefault();f.focus();}else if(!m.contains(document.activeElement)){e.preventDefault();f.focus();}}});}});
 
 // ===== FAMILY =====
 function getFamily(){try{return JSON.parse(localStorage.getItem('rohini_family')||'[]');}catch{return[];}}
