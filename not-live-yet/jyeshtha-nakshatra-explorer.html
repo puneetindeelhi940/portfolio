@@ -145,6 +145,7 @@
                         </div>
                         <button onclick="toggleVoiceBriefing()" id="voice-btn" class="no-print bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg px-3 py-1.5 md:py-2 text-xs font-semibold transition flex items-center gap-1 min-h-[44px]" title="Play/Pause morning briefing" aria-label="Play or pause morning voice briefing">&#9654; Briefing</button>
                     </div>
+                    <div id="tz-notice" class="hidden items-center gap-1.5 text-[11px] text-amber-900 bg-amber-100/70 border border-amber-300/70 rounded-lg px-2.5 py-1.5 mt-1 w-fit"></div>
                 </div>
             </div>
         </section>
@@ -166,8 +167,16 @@
                     </div>
                 </div>
                 <div id="muhurta-composite" class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4 border border-indigo-200/60 space-y-2"></div>
-                <div id="daily-activity-boxes" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
-                <div id="transit-result-card" class="bg-amber-50/40 rounded-xl p-4 md:p-5 border border-amber-200/70 space-y-5"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-[3fr_3fr_4fr] gap-3">
+                    <div id="daily-best-box"></div>
+                    <div id="daily-avoid-box"></div>
+                    <!-- The card is taken out of flow on lg so it can never drive the
+                         row's height; it fills whatever the two time columns set and
+                         scrolls internally instead. -->
+                    <div class="relative min-h-0">
+                        <div id="transit-result-card" class="bg-amber-50/40 rounded-xl p-4 border border-amber-200/70 space-y-5 lg:absolute lg:inset-0 lg:overflow-y-auto"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -702,7 +711,29 @@ const horaScore={Mercury:3,Jupiter:3,Venus:2,Sun:2,Mars:1,Moon:1,Saturn:0};
 const varaScoreMap={Sunday:2,Monday:1,Tuesday:1,Wednesday:3,Thursday:3,Friday:2,Saturday:0};
 const varaNames=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const SPECIAL_HIGHLIGHT_STARS=['Mula','Ashwini','Pushya','Anuradha','Chitra','Magha'];
-const LOCATION={lat:28.6139,lon:77.209,tzOffsetMin:330,name:'Delhi'};
+const LOCATION={lat:28.6139,lon:77.209,tzOffsetMin:330,name:'Delhi',tzLabel:'IST'};
+
+// ===== LOCATION TIME =====
+// A hora is a property of a place, not of whoever opens the page, so every
+// clock reading below is the wall-clock at LOCATION regardless of the viewer's
+// browser timezone. `toLoc` shifts an instant so its UTC fields hold the
+// location's wall-clock; read those fields with getUTC* and never getHours().
+function toLoc(d){return new Date(d.getTime()+LOCATION.tzOffsetMin*60000);}
+function locMin(d){const l=toLoc(d);return l.getUTCHours()*60+l.getUTCMinutes()+l.getUTCSeconds()/60;}
+function locDow(d){return toLoc(d).getUTCDay();}
+function locYMD(d){const l=toLoc(d);return{y:l.getUTCFullYear(),m:l.getUTCMonth(),d:l.getUTCDate()};}
+function locKey(d){return toLoc(d).toISOString().slice(0,10);}
+// Absolute instant of location-midnight for the location-date containing d.
+function locMidnight(d){const{y,m,d:dd}=locYMD(d);return new Date(Date.UTC(y,m,dd)-LOCATION.tzOffsetMin*60000);}
+// Absolute instant `min` minutes after that midnight.
+function locAt(d,min){return new Date(locMidnight(d).getTime()+min*60000);}
+function viewerTzDiffers(){try{return -new Date().getTimezoneOffset()!==LOCATION.tzOffsetMin;}catch(e){return false;}}
+// Times are always the location's, so tell a viewer elsewhere before they read
+// them as local.
+function renderTzNotice(){const el=document.getElementById('tz-notice');if(!el)return;
+if(!viewerTzDiffers()){el.classList.add('hidden');el.classList.remove('flex');return;}
+el.innerHTML=`<span aria-hidden="true">🌍</span><span>All times shown in <strong>${LOCATION.tzLabel}</strong> (${LOCATION.name}) — not your device's local time.</span>`;
+el.classList.remove('hidden');el.classList.add('flex');}
 
 // Hora task recommendations
 const horaTaskMap={
@@ -753,18 +784,16 @@ function scoreActivityAt(date,activity){
 const nkW=360/27;const lon=getSiderealMoonLongitude(date);const nkIdx=Math.floor(lon/nkW)%27;
 const starName=nakshatraOrder[nkIdx];const star=nakshatraData.find(s=>s.name===starName);
 if(!star)return{score:0};
-const nowMin=date.getHours()*60+date.getMinutes();
+const nowMin=locMin(date);
 const horaP=getHoraAt(date).planet;
 const horaS=activity.horaAff[horaP]||0;
 let taraS=0;if(star.taraCategory==='FAVORABLE')taraS=2;else if(star.taraCategory==='MIXED')taraS=1;
 if(activity.bestTaras.includes(star.taraClass))taraS=3;
-const dow=date.getDay();const varaS=activity.bestVaras.includes(dow)?2:1;
+const dow=locDow(date);const varaS=activity.bestVaras.includes(dow)?2:1;
 const tithi=getTithiInfo(date);const tithiS=GOOD_TITHIS.includes(tithi.num%15||15)?1:0;
 const yoga=getYogaInfo(date);const yogaS=GOOD_YOGAS.includes(yoga.name)?1:0;
 const karana=getKaranaInfo(date);const karanaS=karana.isVishti?-1:0;
-const rk=getRahuKaal(date);const rkPs=rk.start.split(':').map(Number);const rkSt=rkPs[0]*60+rkPs[1];
-const rkPe=rk.end.split(':').map(Number);const rkEn=rkPe[0]*60+rkPe[1];
-const rahuS=(nowMin>=rkSt&&nowMin<rkEn)?-3:0;
+const rk=getRahuKaal(date);const rahuS=(nowMin>=rk.startMin&&nowMin<rk.endMin)?-3:0;
 const vainS=(star.specialTitle&&star.specialTitle.includes('Vainasika'))?-2:0;
 const raw=horaS+taraS+varaS+tithiS+yogaS+karanaS+rahuS+vainS;
 const score=Math.max(0,Math.min(100,Math.round((raw/10)*100)));
@@ -773,7 +802,7 @@ return{score,hora:horaP,star:starName,tara:star.taraClass,taraCategory:star.tara
 function scanDayWindows(date){
 const results={};const sunsetMin=getSunriseSunset(date).sunsetMin;
 ACTIVITIES.forEach(act=>{const dayW=[],eveW=[];
-for(let m=300;m<1440;m+=30){const t=new Date(date);t.setHours(0,0,0,0);t.setMinutes(m);
+for(let m=300;m<1440;m+=30){const t=locAt(date,m);
 const info=scoreActivityAt(t,act);const w={startMin:m,endMin:m+30,...info};
 (m>=sunsetMin?eveW:dayW).push(w);}
 const byScore=(a,b)=>b.score-a.score;
@@ -785,26 +814,26 @@ return results;}
 
 function renderDailyBoxes(){
 const now=new Date();const wins=scanDayWindows(now);
-const container=document.getElementById('daily-activity-boxes');if(!container)return;
 const boxes=[
-{title:"Today's Best",dayKey:'bestDay',eveKey:'bestEve',bgColor:'#ecfdf5',borderColor:'#6ee7b7',headerBg:'#059669'},
-{title:'Totally Avoid',dayKey:'worstDay',eveKey:'worstEve',bgColor:'#fef2f2',borderColor:'#fca5a5',headerBg:'#dc2626'}
+{title:"Today's Best",target:'daily-best-box',dayKey:'bestDay',eveKey:'bestEve',bgColor:'#ecfdf5',borderColor:'#6ee7b7',headerBg:'#059669'},
+{title:'Totally Avoid',target:'daily-avoid-box',dayKey:'worstDay',eveKey:'worstEve',bgColor:'#fef2f2',borderColor:'#fca5a5',headerBg:'#dc2626'}
 ];
+if(!document.getElementById(boxes[0].target))return;
 const slotLine=(w,icon,label)=>{if(!w)return'';
 const sc=w.score>=70?'#047857':w.score>=40?'#b45309':'#b91c1c';
 return`<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 0">
 <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#64748b;font-weight:600"><span>${icon}</span><span>${label}</span></div>
 <div style="text-align:right"><div style="font-weight:700;font-size:12px;color:${sc}">${fmtMin(w.startMin)}–${fmtMin(w.endMin)}</div>
 <div style="font-size:10px;color:#64748b">${w.hora} Hora • ${w.score}/100</div></div></div>`;};
-container.innerHTML=boxes.map(box=>{
+boxes.forEach(box=>{
 const items=ACTIVITIES.map(act=>{const dw=wins[act.key][box.dayKey],ew=wins[act.key][box.eveKey];
 if(!dw&&!ew)return'';
 return`<div class="activity-window" style="padding:8px 10px;border-radius:8px;background:#fff;border:1px solid #f1f5f9;margin-bottom:6px">
 <div style="display:flex;align-items:center;gap:8px;font-size:12px"><span>${act.icon}</span><span style="font-weight:700;color:#1e293b">${act.label}</span></div>
 <div style="border-top:1px solid #f1f5f9;margin-top:4px">${slotLine(dw,'☀️','Day')}${slotLine(ew,'🌙','Evening')}</div></div>`;}).join('');
-return`<div style="border-radius:12px;border:2px solid ${box.borderColor};background:${box.bgColor};overflow:hidden">
+document.getElementById(box.target).innerHTML=`<div style="border-radius:12px;border:2px solid ${box.borderColor};background:${box.bgColor};overflow:hidden">
 <div style="background:${box.headerBg};color:#fff;padding:10px 16px;font-weight:700;font-size:14px">${box.title}</div>
-<div style="padding:12px">${items}</div></div>`;}).join('');}
+<div style="padding:12px">${items}</div></div>`;});}
 
 function openDoNow(){
 const now=new Date();const hora=getCurrentHoraInfo();const tm=horaTaskMap[hora.planet];
@@ -872,11 +901,11 @@ function closeDoNow(){document.getElementById('donow-modal').classList.add('hidd
 
 function calculateLuckyDays(numDays){
 const days=[];const now=new Date();
-for(let d=0;d<numDays;d++){const day=new Date(now);day.setDate(day.getDate()+d);day.setHours(12,0,0,0);
+for(let d=0;d<numDays;d++){const day=locAt(new Date(now.getTime()+d*86400000),720);
 const nkW=360/27;const nkIdx=Math.floor(getSiderealMoonLongitude(day)/nkW)%27;
 const starName=nakshatraOrder[nkIdx];const star=nakshatraData.find(s=>s.name===starName);
 if(!star)continue;
-const vara=varaNames[day.getDay()];const varaS=varaScoreMap[vara]||1;
+const vara=varaNames[locDow(day)];const varaS=varaScoreMap[vara]||1;
 const taraS=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;
 const taraMatch=star.taraClass;
 const sched=getHoraSchedule(day);let bestHoraS=0;
@@ -888,25 +917,24 @@ const vainP=(star.specialTitle&&star.specialTitle.includes('Vainasika'))?-2:0;
 const raw=varaS+taraS+bestHoraS+tithiS+yogaS+karanaP+vainP;
 const score=Math.max(0,Math.min(100,Math.round((raw/11)*100)));
 let level='avoid';if(score>=75)level='excellent';else if(score>=55)level='good';else if(score>=40)level='mixed';else if(score>=25)level='sensitive';
-const bestActs=ACTIVITIES.map(act=>{const tm=act.bestTaras.includes(taraMatch)?3:0;const vm=act.bestVaras.includes(day.getDay())?2:0;return{label:act.label,icon:act.icon,s:tm+vm};}).sort((a,b)=>b.s-a.s).slice(0,2).filter(a=>a.s>0);
+const bestActs=ACTIVITIES.map(act=>{const tm=act.bestTaras.includes(taraMatch)?3:0;const vm=act.bestVaras.includes(locDow(day))?2:0;return{label:act.label,icon:act.icon,s:tm+vm};}).sort((a,b)=>b.s-a.s).slice(0,2).filter(a=>a.s>0);
 days.push({date:new Date(day),score,level,star:starName,tara:taraMatch,taraCategory:star.taraCategory,vara,tithi:tithi.name,yoga:yoga.name,bestActivities:bestActs});}
 return days;}
 
 function findStrongestWindowThisWeek(){
 const now=new Date();let best=null;
-for(let d=0;d<7;d++){const day=new Date(now);day.setDate(day.getDate()+d);
+for(let d=0;d<7;d++){const day=new Date(now.getTime()+d*86400000);
 const sched=getHoraSchedule(day);
-for(let i=0;i<12;i++){const h=sched.horas[i];
-const midTime=new Date(day);midTime.setHours(0,0,0,0);midTime.setMinutes((h.startMin+h.endMin)/2);
+for(let i=0;i<24;i++){const h=sched.horas[i];
+const midTime=locAt(day,(h.startMin+h.endMin)/2);
 if(midTime<now)continue;
 const nkW=360/27;const nkIdx=Math.floor(getSiderealMoonLongitude(midTime)/nkW)%27;
 const starName=nakshatraOrder[nkIdx];const star=nakshatraData.find(s=>s.name===starName);
 if(!star)continue;
 const taraS=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;
-const horaS=horaScore[h.planet]||0;const varaS=varaScoreMap[varaNames[day.getDay()]]||1;
-const rk=getRahuKaal(day);const rkPs=rk.start.split(':').map(Number);const rkSt=rkPs[0]*60+rkPs[1];
-const rkPe=rk.end.split(':').map(Number);const rkEn=rkPe[0]*60+rkPe[1];
-const midMin=(h.startMin+h.endMin)/2;if(midMin>=rkSt&&midMin<rkEn)continue;
+const horaS=horaScore[h.planet]||0;const varaS=varaScoreMap[varaNames[locDow(day)]]||1;
+const rk=getRahuKaal(day);
+const midMin=(h.startMin+h.endMin)/2;if(midMin>=rk.startMin&&midMin<rk.endMin)continue;
 const score=taraS+horaS+varaS;
 if(!best||score>best.score){best={score,date:new Date(day),startMin:h.startMin,endMin:h.endMin,planet:h.planet,star:starName,tara:star.taraClass};}}}
 return best;}
@@ -956,6 +984,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     populateTransitSelect();populateTaskStarSelect();populateFamilyStarSelect();populateJournalNakshatraSelect();
     updateDailyTransitView();renderNakshatraGrid(nakshatraData);selectDomain('job');renderSpecialStars();renderTasks();renderHoraGrid();renderFamilyDashboard();renderJournalChart();renderJournalEntries();startLiveClock();
     renderDailyBoxes();
+    renderTzNotice();
     document.getElementById('journal-nakshatra').addEventListener('change',updateJournalTara);
     // Close dropdowns on outside click
     document.addEventListener('click',e=>{if(!e.target.closest('.nav-dd-wrapper'))closeDropdowns();});
@@ -973,29 +1002,29 @@ function getSiderealMoonLongitude(date){return _sweReady?_sweLon(date):_meeusMoo
 function getApproxNakshatraIndex(date){return _sweReady?_sweNk(date):_meeusNkIdx(date);}
 function getNakshatraTransitionTime(date){const ds=new Date(date);ds.setHours(0,0,0,0);const nkW=360/27;let prev=null,bLo=null,bHi=null,pIdx=null;for(let h=0;h<=24;h++){const t=new Date(ds.getTime()+h*3600000);const idx=Math.floor(getSiderealMoonLongitude(t)/nkW)%27;if(prev!==null&&idx!==prev){bLo=new Date(ds.getTime()+(h-1)*3600000);bHi=t;pIdx=prev;break;}prev=idx;}if(!bLo)return null;let lo=bLo,hi=bHi;for(let i=0;i<24;i++){const mid=new Date((lo.getTime()+hi.getTime())/2);if(Math.floor(getSiderealMoonLongitude(mid)/nkW)%27===pIdx)lo=mid;else hi=mid;}const eIdx=Math.floor(getSiderealMoonLongitude(new Date(hi.getTime()+60000))/nkW)%27;return{starAtStart:nakshatraOrder[pIdx],starAtEnd:nakshatraOrder[eIdx],transitionHour:hi.getHours(),transitionMin:hi.getMinutes()};}
 function fmtMin(m){m=((m%1440)+1440)%1440;return pad2(Math.floor(m/60))+':'+pad2(Math.floor(m%60));}
-function getSunriseSunset(date){const rad=Math.PI/180,lat=LOCATION.lat,lon=LOCATION.lon,tz=LOCATION.tzOffsetMin;const doy=Math.floor((date-new Date(date.getFullYear(),0,0))/86400000);const g=2*Math.PI/365*(doy-1);const eqt=229.18*(0.000075+0.001868*Math.cos(g)-0.032077*Math.sin(g)-0.014615*Math.cos(2*g)-0.040849*Math.sin(2*g));const decl=0.006918-0.399912*Math.cos(g)+0.070257*Math.sin(g)-0.006758*Math.cos(2*g)+0.000907*Math.sin(2*g)-0.002697*Math.cos(3*g)+0.00148*Math.sin(3*g);const ha=Math.acos(Math.cos(90.833*rad)/(Math.cos(lat*rad)*Math.cos(decl))-Math.tan(lat*rad)*Math.tan(decl));const sr=720-4*(lon+ha/rad)-eqt+tz;const ss=720-4*(lon-ha/rad)-eqt+tz;return{sunriseMin:sr,sunsetMin:ss};}
-function getHoraSchedule(date){const ss=getSunriseSunset(date);const tom=new Date(date.getTime()+86400000);const tss=getSunriseSunset(tom);const dayDur=(ss.sunsetMin-ss.sunriseMin)/12;const nightDur=(1440+tss.sunriseMin-ss.sunsetMin)/12;const dr=dayRulers[date.getDay()];const si=horaOrder.indexOf(dr);const horas=[];for(let i=0;i<12;i++){horas.push({planet:horaOrder[(si+i)%7],startMin:ss.sunriseMin+i*dayDur,endMin:ss.sunriseMin+(i+1)*dayDur});}for(let i=0;i<12;i++){horas.push({planet:horaOrder[(si+12+i)%7],startMin:ss.sunsetMin+i*nightDur,endMin:ss.sunsetMin+(i+1)*nightDur});}return{horas,sunriseMin:ss.sunriseMin,sunsetMin:ss.sunsetMin,dayRuler:dr};}
+function getSunriseSunset(date){const rad=Math.PI/180,lat=LOCATION.lat,lon=LOCATION.lon,tz=LOCATION.tzOffsetMin;const _y=locYMD(date);const doy=Math.round((Date.UTC(_y.y,_y.m,_y.d)-Date.UTC(_y.y,0,0))/86400000);const g=2*Math.PI/365*(doy-1);const eqt=229.18*(0.000075+0.001868*Math.cos(g)-0.032077*Math.sin(g)-0.014615*Math.cos(2*g)-0.040849*Math.sin(2*g));const decl=0.006918-0.399912*Math.cos(g)+0.070257*Math.sin(g)-0.006758*Math.cos(2*g)+0.000907*Math.sin(2*g)-0.002697*Math.cos(3*g)+0.00148*Math.sin(3*g);const ha=Math.acos(Math.cos(90.833*rad)/(Math.cos(lat*rad)*Math.cos(decl))-Math.tan(lat*rad)*Math.tan(decl));const sr=720-4*(lon+ha/rad)-eqt+tz;const ss=720-4*(lon-ha/rad)-eqt+tz;return{sunriseMin:sr,sunsetMin:ss};}
+function getHoraSchedule(date){const ss=getSunriseSunset(date);const tom=new Date(date.getTime()+86400000);const tss=getSunriseSunset(tom);const dayDur=(ss.sunsetMin-ss.sunriseMin)/12;const nightDur=(1440+tss.sunriseMin-ss.sunsetMin)/12;const dr=dayRulers[locDow(date)];const si=horaOrder.indexOf(dr);const horas=[];for(let i=0;i<12;i++){horas.push({planet:horaOrder[(si+i)%7],startMin:ss.sunriseMin+i*dayDur,endMin:ss.sunriseMin+(i+1)*dayDur});}for(let i=0;i<12;i++){horas.push({planet:horaOrder[(si+12+i)%7],startMin:ss.sunsetMin+i*nightDur,endMin:ss.sunsetMin+(i+1)*nightDur});}return{horas,sunriseMin:ss.sunriseMin,sunsetMin:ss.sunsetMin,dayRuler:dr};}
 // Resolve the hora covering any instant. Before sunrise the governing chain is
 // still the previous day's, so fall back to it rather than defaulting a planet.
-function getHoraAt(date){let nowMin=date.getHours()*60+date.getMinutes()+date.getSeconds()/60;
+function getHoraAt(date){let nowMin=locMin(date);
 let schedule=getHoraSchedule(date);
 if(nowMin<schedule.sunriseMin){schedule=getHoraSchedule(new Date(date.getTime()-86400000));nowMin+=1440;}
 let activeIdx=-1;for(let i=0;i<24;i++){if(nowMin>=schedule.horas[i].startMin&&nowMin<schedule.horas[i].endMin){activeIdx=i;break;}}
 if(activeIdx===-1)activeIdx=23;const h=schedule.horas[activeIdx];
 return{planet:h.planet,horaIdx:activeIdx,minsLeft:Math.max(0,Math.round(h.endMin-nowMin)),schedule};}
-function getCurrentHoraInfo(){const now=new Date();const r=getHoraAt(now);return{planet:r.planet,horaIdx:r.horaIdx,minsLeft:r.minsLeft,dayRuler:dayRulers[now.getDay()]};}
+function getCurrentHoraInfo(){const now=new Date();const r=getHoraAt(now);return{planet:r.planet,horaIdx:r.horaIdx,minsLeft:r.minsLeft,dayRuler:dayRulers[locDow(now)]};}
 const rashiNames=['Mesha (Aries)','Vrishabha (Taurus)','Mithuna (Gemini)','Karka (Cancer)','Simha (Leo)','Kanya (Virgo)','Tula (Libra)','Vrischika (Scorpio)','Dhanu (Sagittarius)','Makara (Capricorn)','Kumbha (Aquarius)','Meena (Pisces)'];
 function getCurrentRashi(date){return rashiNames[Math.floor(getSiderealMoonLongitude(date)/30)%12];}
-function getRashiTransitionTime(date){const ds=date.toDateString();if(_rashiTransDate===ds)return _rashiTransCache;const d0=new Date(date);d0.setHours(0,0,0,0);let prev=null,bLo=null,bHi=null,pIdx=null;for(let h=0;h<=24;h++){const t=new Date(d0.getTime()+h*3600000);const idx=Math.floor(getSiderealMoonLongitude(t)/30)%12;if(prev!==null&&idx!==prev){bLo=new Date(d0.getTime()+(h-1)*3600000);bHi=t;pIdx=prev;break;}prev=idx;}if(!bLo){_rashiTransCache=null;_rashiTransDate=ds;return null;}let lo=bLo,hi=bHi;for(let i=0;i<20;i++){const mid=new Date((lo.getTime()+hi.getTime())/2);if(Math.floor(getSiderealMoonLongitude(mid)/30)%12===pIdx)lo=mid;else hi=mid;}const eIdx=Math.floor(getSiderealMoonLongitude(new Date(hi.getTime()+60000))/30)%12;_rashiTransCache={from:rashiNames[pIdx],to:rashiNames[eIdx],hour:hi.getHours(),min:hi.getMinutes()};_rashiTransDate=ds;return _rashiTransCache;}
-function getRahuKaal(date){const segs=[8,2,7,5,6,4,3];const seg=segs[date.getDay()];const ss=getSunriseSunset(date);const dayLen=ss.sunsetMin-ss.sunriseMin;const segDur=dayLen/8;const startMin=ss.sunriseMin+(seg-1)*segDur;const endMin=startMin+segDur;const nowMin=date.getHours()*60+date.getMinutes();return{start:fmtMin(startMin),end:fmtMin(endMin),isActive:nowMin>=startMin&&nowMin<endMin};}
+function getRashiTransitionTime(date){const ds=locKey(date);if(_rashiTransDate===ds)return _rashiTransCache;const d0=locMidnight(date);let prev=null,bLo=null,bHi=null,pIdx=null;for(let h=0;h<=24;h++){const t=new Date(d0.getTime()+h*3600000);const idx=Math.floor(getSiderealMoonLongitude(t)/30)%12;if(prev!==null&&idx!==prev){bLo=new Date(d0.getTime()+(h-1)*3600000);bHi=t;pIdx=prev;break;}prev=idx;}if(!bLo){_rashiTransCache=null;_rashiTransDate=ds;return null;}let lo=bLo,hi=bHi;for(let i=0;i<20;i++){const mid=new Date((lo.getTime()+hi.getTime())/2);if(Math.floor(getSiderealMoonLongitude(mid)/30)%12===pIdx)lo=mid;else hi=mid;}const eIdx=Math.floor(getSiderealMoonLongitude(new Date(hi.getTime()+60000))/30)%12;const _hl=toLoc(hi);_rashiTransCache={from:rashiNames[pIdx],to:rashiNames[eIdx],hour:_hl.getUTCHours(),min:_hl.getUTCMinutes()};_rashiTransDate=ds;return _rashiTransCache;}
+function getRahuKaal(date){const segs=[8,2,7,5,6,4,3];const seg=segs[locDow(date)];const ss=getSunriseSunset(date);const dayLen=ss.sunsetMin-ss.sunriseMin;const segDur=dayLen/8;const startMin=ss.sunriseMin+(seg-1)*segDur;const endMin=startMin+segDur;const nowMin=locMin(date);return{start:fmtMin(startMin),end:fmtMin(endMin),startMin,endMin,isActive:nowMin>=startMin&&nowMin<endMin};}
 
-function startLiveClock(){function update(){const now=new Date();document.getElementById('live-clock').textContent=now.toLocaleTimeString();const approx=getApproxNakshatraIndex(now);const sn=nakshatraOrder[approx.index];const el=document.getElementById('live-star-name');el.textContent=sn;const _sd=nakshatraData.find(x=>x.name===sn);if(_sd&&_sd.taraCategory==='CHALLENGING')el.className='ml-1 font-extrabold text-red-600';else if(_sd&&_sd.taraCategory==='MIXED')el.className='ml-1 font-bold text-amber-700';else el.className='text-emerald-700 ml-1 font-bold';const h=Math.floor(approx.remainingHours),m=Math.floor((approx.remainingHours-h)*60),s=Math.floor(((approx.remainingHours-h)*60-m)*60);document.getElementById('live-countdown').textContent=`${pad2(h)}:${pad2(m)}:${pad2(s)}`;const hora=getCurrentHoraInfo();document.getElementById('live-hora').textContent=`${hora.planet} (${hora.minsLeft}m left)`;const sd=nakshatraData.find(x=>x.name===sn);if(sd){document.getElementById('transit-select').value=sd.id;updateMuhurtaComposite(sd,hora);}const mEl=document.getElementById('live-muhurta');const sc=getMuhurtaScore(sd,hora);mEl.textContent=sc.label;mEl.className=`ml-1 font-bold ${sc.color}`;const rn=getCurrentRashi(now);const rt=getRashiTransitionTime(now);const rEl=document.getElementById('live-rashi');let rtx=rn;if(rt)rtx+=` till ${pad2(rt.hour)}:${pad2(rt.min)}`;rEl.textContent=rtx;const rk=getRahuKaal(now);document.getElementById('live-rahukaal').innerHTML=`${rk.start} – ${rk.end}${rk.isActive?' ⚠️ NOW':''}`;}update();setInterval(update,1000);updateDailyTransitView();}
+function startLiveClock(){function update(){const now=new Date();const _l=toLoc(now);document.getElementById('live-clock').textContent=`${pad2(_l.getUTCHours())}:${pad2(_l.getUTCMinutes())}:${pad2(_l.getUTCSeconds())}`;const approx=getApproxNakshatraIndex(now);const sn=nakshatraOrder[approx.index];const el=document.getElementById('live-star-name');el.textContent=sn;const _sd=nakshatraData.find(x=>x.name===sn);if(_sd&&_sd.taraCategory==='CHALLENGING')el.className='ml-1 font-extrabold text-red-600';else if(_sd&&_sd.taraCategory==='MIXED')el.className='ml-1 font-bold text-amber-700';else el.className='text-emerald-700 ml-1 font-bold';const h=Math.floor(approx.remainingHours),m=Math.floor((approx.remainingHours-h)*60),s=Math.floor(((approx.remainingHours-h)*60-m)*60);document.getElementById('live-countdown').textContent=`${pad2(h)}:${pad2(m)}:${pad2(s)}`;const hora=getCurrentHoraInfo();document.getElementById('live-hora').textContent=`${hora.planet} (${hora.minsLeft}m left)`;const sd=nakshatraData.find(x=>x.name===sn);if(sd){document.getElementById('transit-select').value=sd.id;updateMuhurtaComposite(sd,hora);}const mEl=document.getElementById('live-muhurta');const sc=getMuhurtaScore(sd,hora);mEl.textContent=sc.label;mEl.className=`ml-1 font-bold ${sc.color}`;const rn=getCurrentRashi(now);const rt=getRashiTransitionTime(now);const rEl=document.getElementById('live-rashi');let rtx=rn;if(rt)rtx+=` till ${pad2(rt.hour)}:${pad2(rt.min)}`;rEl.textContent=rtx;const rk=getRahuKaal(now);document.getElementById('live-rahukaal').innerHTML=`${rk.start} – ${rk.end}${rk.isActive?' ⚠️ NOW':''}`;}update();setInterval(update,1000);updateDailyTransitView();}
 
-function getMuhurtaScore(star,hora){if(!star)return{label:'—',color:'text-slate-500',value:0};const now=new Date();const vs=varaScoreMap[varaNames[now.getDay()]]||1;const ts=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;const hs=horaScore[hora.planet]||0;const tot=vs+ts+hs;if(tot>=7)return{label:'Excellent',color:'text-emerald-700',value:tot};if(tot>=5)return{label:'Good',color:'text-blue-700',value:tot};if(tot>=3)return{label:'Moderate',color:'text-amber-700',value:tot};return{label:'Cautious',color:'text-rose-700',value:tot};}
-function updateMuhurtaComposite(star,hora){const now=new Date();const vara=varaNames[now.getDay()];const vs=varaScoreMap[vara]||1;const ts=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;const hs=horaScore[hora.planet]||0;const tot=vs+ts+hs;const pct=Math.round((tot/9)*100);let bc='#059669',lb='Excellent';if(tot<7){bc='#0284C7';lb='Good';}if(tot<5){bc='#D97706';lb='Moderate';}if(tot<3){bc='#DC2626';lb='Cautious';}document.getElementById('muhurta-composite').innerHTML=`<div class="flex flex-col gap-3 text-xs"><div class="flex items-center gap-4"><div class="text-center"><div class="text-2xl font-black" style="color:${bc}">${pct}%</div><div class="text-[10px] font-bold text-slate-500">Muhurta Score</div></div><div class="flex-1 bg-slate-200 rounded-full h-2.5"><div class="h-2.5 rounded-full transition-all" style="width:${pct}%;background:${bc}"></div></div></div><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded-lg bg-white border border-slate-200"><strong>Vara:</strong> ${vara} <span class="font-bold" style="color:${bc}">(${vs}/3)</span></span><span class="px-2 py-1 rounded-lg bg-white border border-slate-200"><strong>Tara:</strong> ${star.taraClass} <span class="font-bold" style="color:${bc}">(${ts}/3)</span></span><span class="px-2 py-1 rounded-lg bg-white border border-slate-200"><strong>Hora:</strong> ${hora.planet} <span class="font-bold" style="color:${bc}">(${hs}/3)</span></span><span class="px-2.5 py-1 rounded-lg font-bold text-white" style="background:${bc}">${lb}</span></div></div>`;}
+function getMuhurtaScore(star,hora){if(!star)return{label:'—',color:'text-slate-500',value:0};const now=new Date();const vs=varaScoreMap[varaNames[locDow(now)]]||1;const ts=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;const hs=horaScore[hora.planet]||0;const tot=vs+ts+hs;if(tot>=7)return{label:'Excellent',color:'text-emerald-700',value:tot};if(tot>=5)return{label:'Good',color:'text-blue-700',value:tot};if(tot>=3)return{label:'Moderate',color:'text-amber-700',value:tot};return{label:'Cautious',color:'text-rose-700',value:tot};}
+function updateMuhurtaComposite(star,hora){const now=new Date();const vara=varaNames[locDow(now)];const vs=varaScoreMap[vara]||1;const ts=star.taraCategory==='FAVORABLE'?3:star.taraCategory==='MIXED'?1.5:0;const hs=horaScore[hora.planet]||0;const tot=vs+ts+hs;const pct=Math.round((tot/9)*100);let bc='#059669',lb='Excellent';if(tot<7){bc='#0284C7';lb='Good';}if(tot<5){bc='#D97706';lb='Moderate';}if(tot<3){bc='#DC2626';lb='Cautious';}document.getElementById('muhurta-composite').innerHTML=`<div class="flex flex-col gap-3 text-xs"><div class="flex items-center gap-4"><div class="text-center"><div class="text-2xl font-black" style="color:${bc}">${pct}%</div><div class="text-[10px] font-bold text-slate-500">Muhurta Score</div></div><div class="flex-1 bg-slate-200 rounded-full h-2.5"><div class="h-2.5 rounded-full transition-all" style="width:${pct}%;background:${bc}"></div></div></div><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded-lg bg-white border border-slate-200"><strong>Vara:</strong> ${vara} <span class="font-bold" style="color:${bc}">(${vs}/3)</span></span><span class="px-2 py-1 rounded-lg bg-white border border-slate-200"><strong>Tara:</strong> ${star.taraClass} <span class="font-bold" style="color:${bc}">(${ts}/3)</span></span><span class="px-2 py-1 rounded-lg bg-white border border-slate-200"><strong>Hora:</strong> ${hora.planet} <span class="font-bold" style="color:${bc}">(${hs}/3)</span></span><span class="px-2.5 py-1 rounded-lg font-bold text-white" style="background:${bc}">${lb}</span></div></div>`;}
 
 // ===== ENHANCED HORA with task recommendations =====
-function renderHoraGrid(){const now=new Date();const hora=getCurrentHoraInfo();const sched=getHoraSchedule(now);const curH=hora.horaIdx;const nowMin=now.getHours()*60+now.getMinutes()+now.getSeconds()/60;const isBeforeSunrise=nowMin<sched.sunriseMin;
+function renderHoraGrid(){const now=new Date();const hora=getCurrentHoraInfo();const sched=getHoraSchedule(now);const curH=hora.horaIdx;const nowMin=locMin(now);const isBeforeSunrise=nowMin<sched.sunriseMin;
 const tm=horaTaskMap[hora.planet];const ac=document.getElementById('hora-action-card');const sc=horaScore[hora.planet];let scLabel='⭐ Excellent',scColor='text-emerald-700';if(sc<3){scLabel='Good';scColor='text-blue-700';}if(sc<2){scLabel='Fair';scColor='text-amber-700';}if(sc<1){scLabel='Avoid';scColor='text-rose-700';}
 const nextIdx=(curH+1)%24;const nextPlanet=isBeforeSunrise?sched.horas[0].planet:(curH<23?sched.horas[curH+1<24?curH+1:0].planet:sched.horas[0].planet);const nextTime=isBeforeSunrise?fmtMin(sched.sunriseMin):fmtMin(sched.horas[curH<23?curH+1:0].startMin);
 ac.innerHTML=`<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -1016,12 +1045,12 @@ function startHoraTasks(planet){const tm=horaTaskMap[planet];if(!tm)return;alert
 function findBestWindow(){const input=document.getElementById('window-input').value.trim().toLowerCase();if(!input){document.getElementById('window-results').innerHTML='<div class="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center text-sm text-slate-400">Enter an activity above to find the best windows.</div>';return;}
 let matchedTaras=[];Object.entries(activityKeywords).forEach(([kw,taras])=>{if(input.includes(kw))matchedTaras.push(...taras);});if(!matchedTaras.length)matchedTaras=["Sampat","Sadhaka","Mitra","Parama Mitra","Kshema"];matchedTaras=[...new Set(matchedTaras)];
 const windows=[];const now=new Date();
-for(let d=0;d<7;d++){const day=new Date(now.getTime()+d*86400000);const noon=new Date(day);noon.setHours(12,0,0,0);const nkI=getApproxNakshatraIndex(noon);const sn=nakshatraOrder[nkI.index];const sd=nakshatraData.find(s=>s.name===sn);if(!sd)continue;
-const vara=varaNames[day.getDay()];const varaS=varaScoreMap[vara]||1;const taraS=sd.taraCategory==='FAVORABLE'?3:sd.taraCategory==='MIXED'?1.5:0;const taraMatch=matchedTaras.includes(sd.taraClass)?2:0;
-const sched=getHoraSchedule(day);const rk=getRahuKaal(day);const rkStart=parseInt(rk.start.split(':')[0])*60+parseInt(rk.start.split(':')[1]);const rkEnd=parseInt(rk.end.split(':')[0])*60+parseInt(rk.end.split(':')[1]);
-for(let hourAbs=8;hourAbs<=18;hourAbs++){const hourMin=hourAbs*60;if(hourMin>=rkStart&&hourMin<rkEnd)continue;const midMin=hourAbs*60+30;const horaSlot=sched.horas.find(h=>midMin>=h.startMin&&midMin<h.endMin);if(!horaSlot)continue;const planet=horaSlot.planet;const horaS=horaScore[planet]||0;
+for(let d=0;d<7;d++){const day=new Date(now.getTime()+d*86400000);const noon=locAt(day,720);const nkI=getApproxNakshatraIndex(noon);const sn=nakshatraOrder[nkI.index];const sd=nakshatraData.find(s=>s.name===sn);if(!sd)continue;
+const vara=varaNames[locDow(day)];const varaS=varaScoreMap[vara]||1;const taraS=sd.taraCategory==='FAVORABLE'?3:sd.taraCategory==='MIXED'?1.5:0;const taraMatch=matchedTaras.includes(sd.taraClass)?2:0;
+const sched=getHoraSchedule(day);const rk=getRahuKaal(day);
+for(let hourAbs=6;hourAbs<=23;hourAbs++){const hourMin=hourAbs*60;if(hourMin>=rk.startMin&&hourMin<rk.endMin)continue;const midMin=hourAbs*60+30;const horaSlot=sched.horas.find(h=>midMin>=h.startMin&&midMin<h.endMin);if(!horaSlot)continue;const planet=horaSlot.planet;const horaS=horaScore[planet]||0;
 const total=varaS+taraS+horaS+taraMatch;const pct=Math.round((total/11)*100);
-windows.push({day:new Date(day),dayName:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day.getDay()],dateStr:day.toLocaleDateString('en-IN',{month:'short',day:'numeric'}),startH:hourAbs,endH:(hourAbs+1)%24,planet,star:sn,tara:sd.taraClass,category:sd.taraCategory,score:pct,total,vara});}}
+windows.push({day:new Date(day),dayName:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][locDow(day)],dateStr:toLoc(day).toLocaleDateString('en-IN',{month:'short',day:'numeric',timeZone:'UTC'}),startH:hourAbs,endH:(hourAbs+1)%24,planet,star:sn,tara:sd.taraClass,category:sd.taraCategory,score:pct,total,vara});}}
 windows.sort((a,b)=>b.score-a.score);
 const top=windows.slice(0,3);const avoid=windows.filter(w=>w.score<40).slice(-2);
 const rc=document.getElementById('window-results');if(!top.length){rc.innerHTML='<div class="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center text-sm text-slate-400">No suitable windows found. Try a different activity.</div>';return;}
