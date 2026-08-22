@@ -733,7 +733,7 @@ function getSiderealMoonLongitude(date) {
     let sL = 6288774*Math.sin(toRad(Mp)) + 1274027*Math.sin(toRad(2*D-Mp)) + 658314*Math.sin(toRad(2*D)) + 213618*Math.sin(toRad(2*Mp)) - 185116*E*Math.sin(toRad(M)) - 114332*Math.sin(toRad(2*F)) + 58793*Math.sin(toRad(2*D-2*Mp)) + 57066*E*Math.sin(toRad(2*D-M-Mp)) + 53322*Math.sin(toRad(2*D+Mp)) + 45758*E*Math.sin(toRad(2*D-M)) - 40923*E*Math.sin(toRad(M-Mp)) - 34720*Math.sin(toRad(D)) - 30383*E*Math.sin(toRad(M+Mp)) + 15327*Math.sin(toRad(2*D-2*F)) - 12528*Math.sin(toRad(Mp+2*F)) + 10980*Math.sin(toRad(Mp-2*F)) + 10675*Math.sin(toRad(4*D-Mp)) + 10034*Math.sin(toRad(3*Mp)) + 8548*Math.sin(toRad(4*D-2*Mp)) - 7888*E*Math.sin(toRad(2*D+M-Mp)) - 6766*E*Math.sin(toRad(2*D+M)) - 5163*Math.sin(toRad(D-Mp)) + 4987*E*Math.sin(toRad(D+M)) + 4036*E*Math.sin(toRad(2*D-M+Mp)) + 3994*Math.sin(toRad(2*D+2*Mp)) + 3861*Math.sin(toRad(4*D)) + 3665*Math.sin(toRad(2*D-3*Mp)) - 2689*E*Math.sin(toRad(M-2*Mp)) - 2602*Math.sin(toRad(2*D-Mp+2*F)) + 2390*E*Math.sin(toRad(2*D-M-2*Mp)) - 2348*Math.sin(toRad(D+Mp)) + 2236*E*E*Math.sin(toRad(2*D-2*M)) - 2120*E*Math.sin(toRad(M+2*Mp)) - 2069*E*E*Math.sin(toRad(2*M)) + 2048*E*E*Math.sin(toRad(2*D-2*M-Mp));
     sL += 3958*Math.sin(toRad(A1)) + 1962*Math.sin(toRad(Lp-F)) + 318*Math.sin(toRad(A2));
     let lon = Lp + sL/1000000;
-    const ayan = 21.0 + (50.29/3600)*(T*100);
+    const ayan = 23.853 + (50.29/3600)*(T*100);
     lon -= ayan;
     return ((lon%360)+360)%360;
 }
@@ -743,9 +743,9 @@ function getApproxNakshatraIndex(date) {
     const nkWidth = 360/27;
     const idx = Math.floor(lon / nkWidth);
     const posInNk = (lon % nkWidth) / nkWidth;
-    const moonSpeedDeg = 13.176;
-    const remainingDeg = nkWidth * (1 - posInNk);
-    const remainingHours = (remainingDeg / moonSpeedDeg) * 24;
+    const lon2 = getSiderealMoonLongitude(new Date(date.getTime() + 3600000));
+    let speed = lon2 - lon; if (speed < 0) speed += 360;
+    const remainingHours = Math.max(0, nkWidth * (1 - posInNk) / speed);
     return { index: idx, remainingHours: Math.max(0, remainingHours) };
 }
 
