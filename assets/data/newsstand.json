@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T08:22:56Z",
+  "generated_at": "2026-08-22T16:17:46Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Is Trump admin allowing sale of protected wild horses to slaughterhouses? What we know",
+      "claim": "Macron never posted fake image of Epstein kissing Melania Trump",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/21/trump-selling-wild-horses-slaughter/",
+      "url": "https://www.snopes.com/fact-check/macron-epstein-kissing-melania-image/",
       "topic": "Politics"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "7 claims about Trump aide Natalie Harp, examined",
+      "claim": "Is Trump admin allowing sale of protected wild horses to slaughterhouses? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/natalie-harp-trump-claims/",
+      "url": "https://www.snopes.com/news/2026/08/21/trump-selling-wild-horses-slaughter/",
       "topic": "Politics"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "INGERSOLL: That’s It, Ban Women From Using The Internet",
+      "claim": "Biden-Era Law That Created Medicare Drug Price Controls Could Hike Up Prices, Analysts Warn",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/21/instagram-fundraisers-lindsay-clancy-teenage-girls-instagram-social-media-studies-radicalism-albany-bombing-plot-bowie",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/22/drug-price-controls-medicare-biden-trump-analysts",
+      "topic": "Health"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Natalie Harp allegedly sent 2 emotional letters to Trump. Here's what we know",
+      "claim": "7 claims about Trump aide Natalie Harp, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/21/natalie-harp-letters-trump/",
+      "url": "https://www.snopes.com/collections/natalie-harp-trump-claims/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Canada says it will match US tariffs 'dollar for dollar' as trade talks break down",
+      "headline": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgvyy4x2mvo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-08-22T04:46:33+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-22T16:05:04+00:00"
     },
     {
       "n": 2,
-      "headline": "U.S.-Canada trade talks collapse minutes before deadline for tariffs to take effect",
+      "headline": "Opinion: Mr. Rogers keeps finding a new neighborhood",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
+      "url": "https://www.npr.org/2026/08/22/nx-s1-5932426/opinion-mr-rogers-keeps-finding-a-new-neighborhood",
       "topic": "Trending",
-      "published": "2026-08-22T04:36:27+00:00"
+      "published": "2026-08-22T12:00:00+00:00"
     },
     {
       "n": 3,
-      "headline": "Stars and Stripes editor, reporter fired for insubordination after doing CBS interview",
+      "headline": "Federal officials announce water cuts as Colorado River supplies continue to plunge",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/stars-and-stripes-editor-reporter-fired-for-insubordination-after-doing-cbs-interview",
+      "url": "https://www.pbs.org/newshour/nation/federal-officials-announce-water-cuts-as-colorado-river-supplies-continue-to-plunge",
       "topic": "Trending",
-      "published": "2026-08-21T23:42:26+00:00"
+      "published": "2026-08-22T15:42:37+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Germany news: Friedrich Merz to visit area struck by fires",
+      "headline": "Germany news: Friedrich Merz visits area struck by fires",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-friedrich-merz-to-visit-area-struck-by-fires/live-78467416?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-friedrich-merz-visits-area-struck-by-fires/live-78467416?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-22T08:20:00+00:00"
+      "published": "2026-08-22T15:48:00+00:00"
     },
     {
       "n": 6,
-      "headline": "TikTok to pay $400m to US in one of largest child privacy settlements",
+      "headline": "Carney faces crucial test after walking away from Trump's deal",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwyr0l45xjro?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-21T22:36:12+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3040pn8lmmo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-22T15:00:27+00:00"
     },
     {
       "n": 7,
-      "headline": "A battle over 'Italian brainrot' could shape who owns AI art",
+      "headline": "U.S.-Canada trade talks collapse just before deadline for tariffs",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/19/nx-s1-5867638/artificial-intelligence-brainrot-memes-copyright-spyder-tung-tung-sahur",
-      "topic": "Tech / AI",
-      "published": "2026-08-21T22:16:46+00:00"
+      "url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
+      "topic": "Trending",
+      "published": "2026-08-22T04:36:27+00:00"
     },
     {
       "n": 8,
-      "headline": "From White House ballroom to IndyCar race, Trump's spectacles take center stage in D.C.",
+      "headline": "U.S. imposes 50% tariffs on $20 billion worth of Canadian products. Canada will impose retaliatory tariffs",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/from-white-house-ballroom-to-indycar-race-trumps-spectacles-take-center-stage-in-d-c",
-      "topic": "Politics",
-      "published": "2026-08-21T22:55:27+00:00"
+      "url": "https://www.pbs.org/newshour/world/u-s-imposes-50-tariffs-on-20-billion-worth-of-canadian-products-canada-says-it-will-retaliate",
+      "topic": "Trending",
+      "published": "2026-08-22T15:30:49+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Germany investigates arms cache found in woods near Berlin",
+      "headline": "Kazakhstan's future after the elections: Russia, EU or China",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-investigates-arms-cache-found-in-woods-near-berlin/a-78371750?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-22T04:31:00+00:00"
+      "url": "https://www.dw.com/en/kazakhstan-s-future-after-the-elections-russia-eu-or-china/a-78449637?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-22T14:42:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Israel re-establishes closed West Bank settlement, defying growing international protests",
+      "headline": "TikTok to pay $400m to US in one of largest child privacy settlements",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-21T05:00:57+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwyr0l45xjro?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-21T22:36:12+00:00"
     },
     {
       "n": 12,
-      "headline": "Supreme Court allows Trump's ballroom construction to continue for now",
+      "headline": "A battle over 'Italian brainrot' could shape who owns AI art",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/21/nx-s1-5935417/supreme-court-allows-trumps-ballroom-construction-to-continue-for-now",
-      "topic": "Politics",
-      "published": "2026-08-21T18:47:48+00:00"
+      "url": "https://www.npr.org/2026/08/19/nx-s1-5867638/artificial-intelligence-brainrot-memes-copyright-spyder-tung-tung-sahur",
+      "topic": "Tech / AI",
+      "published": "2026-08-21T22:16:46+00:00"
     },
     {
       "n": 13,
-      "headline": "News Wrap: Defense rests in murder trial of Lindsay Clancy",
+      "headline": "Stars and Stripes editor, reporter fired for insubordination after doing CBS interview",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-defense-rests-in-murder-trial-of-lindsay-clancy",
+      "url": "https://www.pbs.org/newshour/politics/stars-and-stripes-editor-reporter-fired-for-insubordination-after-doing-cbs-interview",
       "topic": "Trending",
-      "published": "2026-08-21T22:45:40+00:00"
+      "published": "2026-08-21T23:42:26+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Pentagon fires military newspaper leadership for 'insubordination",
+      "headline": "Spain battles forest fire a short drive from flash flood",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pentagon-fires-military-newspaper-leadership-for-insubordination/a-78466373?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/spain-battles-forest-fire-a-short-drive-from-flash-flood/a-78469115?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-22T02:55:00+00:00"
+      "published": "2026-08-22T14:35:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall",
+      "headline": "Fourteen killed in strike on Myanmar monastery",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqlxlvz01z1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-22T06:40:30+00:00"
+      "published": "2026-08-22T13:48:06+00:00"
     },
     {
       "n": 17,
-      "headline": "Beatty files emergency request to stop Trump's name from returning to Kennedy Center",
+      "headline": "Supreme Court allows Trump's ballroom construction to continue for now",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/21/nx-s1-5940799/kennedy-center-president-trump-filing",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5935417/supreme-court-allows-trumps-ballroom-construction-to-continue-for-now",
       "topic": "Politics",
-      "published": "2026-08-21T16:40:59+00:00"
+      "published": "2026-08-21T18:47:48+00:00"
     }
   ]
 }
