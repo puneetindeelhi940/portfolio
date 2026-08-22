@@ -675,6 +675,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ===== MOON LONGITUDE (Meeus algorithm + Lahiri Ayanamsha) =====
 const SPECIAL_HIGHLIGHT_STARS = ['Mula','Ashwini','Pushya','Anuradha','Chitra','Magha'];
+const LOCATION = { lat: 28.6139, lon: 77.209, tzOffsetMin: 330, name: 'Delhi' };
 
 var _sweReady = false, _sweLon = null, _sweNk = null;
 function _meeusMoonLon(date) {
@@ -710,17 +711,53 @@ function getApproxNakshatraIndex(date){return _sweReady?_sweNk(date):_meeusNkIdx
 
 let currentMonthOffset = 0;
 
+function fmtMin(m) { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(Math.floor(m % 60)).padStart(2, '0'); }
+
+function getSunriseSunset(date) {
+    const rad = Math.PI / 180, lat = LOCATION.lat, lon = LOCATION.lon, tz = LOCATION.tzOffsetMin;
+    const doy = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 86400000);
+    const g = 2 * Math.PI / 365 * (doy - 1);
+    const eqt = 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g) - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g));
+    const decl = 0.006918 - 0.399912 * Math.cos(g) + 0.070257 * Math.sin(g) - 0.006758 * Math.cos(2 * g) + 0.000907 * Math.sin(2 * g) - 0.002697 * Math.cos(3 * g) + 0.00148 * Math.sin(3 * g);
+    const ha = Math.acos(Math.cos(90.833 * rad) / (Math.cos(lat * rad) * Math.cos(decl)) - Math.tan(lat * rad) * Math.tan(decl));
+    const sr = 720 - 4 * (lon + ha / rad) - eqt + tz;
+    const ss = 720 - 4 * (lon - ha / rad) - eqt + tz;
+    return { sunriseMin: sr, sunsetMin: ss };
+}
+
+function getHoraSchedule(date) {
+    const ss = getSunriseSunset(date);
+    const tom = new Date(date.getTime() + 86400000);
+    const tss = getSunriseSunset(tom);
+    const dayDur = (ss.sunsetMin - ss.sunriseMin) / 12;
+    const nightDur = (1440 + tss.sunriseMin - ss.sunsetMin) / 12;
+    const dr = dayRulers[date.getDay()];
+    const si = horaOrder.indexOf(dr);
+    const horas = [];
+    for (let i = 0; i < 12; i++) { horas.push({ planet: horaOrder[(si + i) % 7], startMin: ss.sunriseMin + i * dayDur, endMin: ss.sunriseMin + (i + 1) * dayDur }); }
+    for (let i = 0; i < 12; i++) { horas.push({ planet: horaOrder[(si + 12 + i) % 7], startMin: ss.sunsetMin + i * nightDur, endMin: ss.sunsetMin + (i + 1) * nightDur }); }
+    return { horas, sunriseMin: ss.sunriseMin, sunsetMin: ss.sunsetMin, dayRuler: dr };
+}
+
 function getCurrentHoraInfo() {
     const now = new Date();
-    const dayRuler = dayRulers[now.getDay()];
-    const startIdx = horaOrder.indexOf(dayRuler);
-    const sunrise = new Date(now); sunrise.setHours(6,0,0,0);
-    const hoursSinceSunrise = (now - sunrise) / 3600000;
-    let horaIdx = Math.floor(hoursSinceSunrise < 0 ? hoursSinceSunrise+24 : hoursSinceSunrise);
-    if(horaIdx<0) horaIdx=0; if(horaIdx>23) horaIdx=23;
-    const planet = horaOrder[(startIdx + horaIdx)%7];
-    const minsLeft = 60 - now.getMinutes();
-    return { planet, horaIdx, minsLeft, dayRuler };
+    let nowMin = now.getHours() * 60 + now.getMinutes() + now.getSeconds() / 60;
+    const todaySS = getSunriseSunset(now);
+    let schedule, activeIdx = -1;
+    if (nowMin < todaySS.sunriseMin) {
+        const yesterday = new Date(now.getTime() - 86400000);
+        schedule = getHoraSchedule(yesterday);
+        nowMin += 1440;
+    } else {
+        schedule = getHoraSchedule(now);
+    }
+    for (let i = 0; i < 24; i++) {
+        if (nowMin >= schedule.horas[i].startMin && nowMin < schedule.horas[i].endMin) { activeIdx = i; break; }
+    }
+    if (activeIdx === -1) activeIdx = 23;
+    const h = schedule.horas[activeIdx];
+    const minsLeft = Math.max(0, Math.round(h.endMin - nowMin));
+    return { planet: h.planet, horaIdx: activeIdx, minsLeft, dayRuler: dayRulers[now.getDay()] };
 }
 
 // ===== RASHI (Moon Sign) =====
@@ -762,13 +799,13 @@ function getRashiTransitionTime(date) {
 function getRahuKaal(date) {
     const segments = [8, 2, 7, 5, 6, 4, 3];
     const seg = segments[date.getDay()];
-    const sunrise = 360, sunset = 1080;
-    const dur = (sunset - sunrise) / 8;
-    const startMin = sunrise + (seg - 1) * dur;
-    const endMin = startMin + dur;
-    const fmt = m => `${String(Math.floor(m/60)).padStart(2,'0')}:${String(Math.floor(m%60)).padStart(2,'0')}`;
+    const ss = getSunriseSunset(date);
+    const dayLen = ss.sunsetMin - ss.sunriseMin;
+    const segDur = dayLen / 8;
+    const startMin = ss.sunriseMin + (seg - 1) * segDur;
+    const endMin = startMin + segDur;
     const nowMin = date.getHours() * 60 + date.getMinutes();
-    return { start: fmt(startMin), end: fmt(endMin), isActive: nowMin >= startMin && nowMin < endMin };
+    return { start: fmtMin(startMin), end: fmtMin(endMin), isActive: nowMin >= startMin && nowMin < endMin };
 }
 
 function startLiveClock() {
@@ -879,35 +916,35 @@ function playVoiceBriefing() {
 // ===== FEATURE 8: HORA GRID =====
 function renderHoraGrid() {
     const now = new Date();
-    const dayRuler = dayRulers[now.getDay()];
-    const startIdx = horaOrder.indexOf(dayRuler);
-    const sunrise = new Date(now); sunrise.setHours(6,0,0,0);
-    const currentHoraNum = Math.floor((now-sunrise)/3600000);
+    const hora = getCurrentHoraInfo();
+    const sched = getHoraSchedule(now);
+    const curH = hora.horaIdx;
+    const nowMin = now.getHours() * 60 + now.getMinutes() + now.getSeconds() / 60;
+    const isBeforeSunrise = nowMin < sched.sunriseMin;
 
     const dayGrid = document.getElementById('hora-day-grid');
     const nightGrid = document.getElementById('hora-night-grid');
     dayGrid.innerHTML = ''; nightGrid.innerHTML = '';
 
-    for(let i=0;i<24;i++){
-        const planet = horaOrder[(startIdx+i)%7];
-        const startH = (6+i)%24;
-        const endH = (7+i)%24;
-        const isActive = i === (currentHoraNum>=0&&currentHoraNum<24?currentHoraNum:-1);
+    for (let i = 0; i < 24; i++) {
+        const h = sched.horas[i];
+        const planet = h.planet;
+        const isActive = !isBeforeSunrise && i === curH;
         const score = horaScore[planet];
         let scoreBg = 'bg-rose-50 border-rose-200';
-        if(score>=3) scoreBg = 'bg-emerald-50 border-emerald-200';
-        else if(score>=2) scoreBg = 'bg-blue-50 border-blue-200';
-        else if(score>=1) scoreBg = 'bg-amber-50 border-amber-200';
+        if (score >= 3) scoreBg = 'bg-emerald-50 border-emerald-200';
+        else if (score >= 2) scoreBg = 'bg-blue-50 border-blue-200';
+        else if (score >= 1) scoreBg = 'bg-amber-50 border-amber-200';
 
         const el = document.createElement('div');
-        el.className = `flex items-center gap-3 p-2.5 rounded-lg border ${scoreBg} text-xs ${isActive?'hora-active ring-2 ring-amber-500':''}`;
+        el.className = `flex items-center gap-3 p-2.5 rounded-lg border ${scoreBg} text-xs ${isActive ? 'hora-active ring-2 ring-amber-500' : ''}`;
         el.innerHTML = `
-            <div class="w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0" style="background:${horaColors[planet]};color:${getTextColorForBg(horaColors[planet])}">${planet.substring(0,2)}</div>
-            <div class="flex-1"><div class="font-bold text-slate-800">${planet} Hora</div><div class="text-slate-500">${String(startH).padStart(2,'0')}:00 – ${String(endH).padStart(2,'0')}:00</div></div>
-            <div class="font-bold ${score>=3?'text-emerald-700':score>=2?'text-blue-700':score>=1?'text-amber-700':'text-rose-700'}">${'★'.repeat(Math.max(score,0))}${score===0?'✗':''}</div>
-            ${isActive?'<span class="px-2 py-0.5 bg-amber-500 text-white rounded text-[10px] font-bold">NOW</span>':''}
+            <div class="w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0" style="background:${horaColors[planet]};color:${getTextColorForBg(horaColors[planet])}">${planet.substring(0, 2)}</div>
+            <div class="flex-1"><div class="font-bold text-slate-800">${planet} Hora</div><div class="text-slate-500">${fmtMin(h.startMin)} – ${fmtMin(h.endMin)}</div></div>
+            <div class="font-bold ${score >= 3 ? 'text-emerald-700' : score >= 2 ? 'text-blue-700' : score >= 1 ? 'text-amber-700' : 'text-rose-700'}">${'★'.repeat(Math.max(score, 0))}${score === 0 ? '✗' : ''}</div>
+            ${isActive ? '<span class="px-2 py-0.5 bg-amber-500 text-white rounded text-[10px] font-bold">NOW</span>' : ''}
         `;
-        if(i<12) dayGrid.appendChild(el); else nightGrid.appendChild(el);
+        if (i < 12) dayGrid.appendChild(el); else nightGrid.appendChild(el);
     }
 }
 
