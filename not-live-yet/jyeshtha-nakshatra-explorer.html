@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div id="muhurta-composite" class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4 border border-indigo-200/60 space-y-2"></div>
-                <div id="daily-activity-boxes" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
+                <div id="daily-activity-boxes" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
                 <div id="transit-result-card" class="bg-amber-50/40 rounded-xl p-4 md:p-5 border border-amber-200/70 space-y-5"></div>
             </div>
         </section>
@@ -785,7 +785,6 @@ const now=new Date();const wins=scanDayWindows(now);
 const container=document.getElementById('daily-activity-boxes');if(!container)return;
 const boxes=[
 {title:"Today's Best",key:'best',bgColor:'#ecfdf5',borderColor:'#6ee7b7',headerBg:'#059669'},
-{title:'Next Best',key:'nextBest',bgColor:'#fffbeb',borderColor:'#fcd34d',headerBg:'#f59e0b'},
 {title:'Totally Avoid',key:'worst',bgColor:'#fef2f2',borderColor:'#fca5a5',headerBg:'#dc2626'}
 ];
 container.innerHTML=boxes.map(box=>{
