@@ -44,6 +44,13 @@
 - Topbar nav is the single source of navigation; page footers show only the copyright line.
 - Run / preview / screenshot the site with the `run-portfolio` skill (`.claude/skills/run-portfolio`).
 
+## Always ask about location (IMPORTANT — standing instruction from the owner)
+
+- **At the start of every session, before doing any work that is location-dependent, ask the owner for their current city and timezone.**
+- This applies to **all** location-sensitive work: time calculations, dates, astronomical/panchang computations, scheduling, weather, maps, local event references, and any design or coding that depends on geography or timezone.
+- Do **not** assume a default location. Do **not** silently fall back to any city (Delhi, Bangalore, Dearborn, UTC, etc.) without asking first.
+- Once the owner provides their location for a session, use it consistently for the remainder of that session.
+
 ## PPTX deck quality gate (IMPORTANT — standing instruction from the owner)
 
 - **Before sharing any generated PPTX deck, validate and fix alignment and text overlapping issues.**
