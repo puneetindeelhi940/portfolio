@@ -772,28 +772,37 @@ const score=Math.max(0,Math.min(100,Math.round((raw/10)*100)));
 return{score,hora:horaP,star:starName,tara:star.taraClass,taraCategory:star.taraCategory,tithi:tithi.name,yoga:yoga.name,karana:karana.name,isRahu:rahuS<0,isVishti:karana.isVishti};}
 
 function scanDayWindows(date){
-const results={};
-ACTIVITIES.forEach(act=>{const windows=[];
-for(let m=300;m<=1380;m+=30){const t=new Date(date);t.setHours(0,0,0,0);t.setMinutes(m);
-const info=scoreActivityAt(t,act);windows.push({startMin:m,endMin:m+30,...info});}
-windows.sort((a,b)=>b.score-a.score);
-results[act.key]={best:windows[0],nextBest:windows[1],worst:windows[windows.length-1]};});
+const results={};const sunsetMin=getSunriseSunset(date).sunsetMin;
+ACTIVITIES.forEach(act=>{const dayW=[],eveW=[];
+for(let m=300;m<1440;m+=30){const t=new Date(date);t.setHours(0,0,0,0);t.setMinutes(m);
+const info=scoreActivityAt(t,act);const w={startMin:m,endMin:m+30,...info};
+(m>=sunsetMin?eveW:dayW).push(w);}
+const byScore=(a,b)=>b.score-a.score;
+dayW.sort(byScore);eveW.sort(byScore);
+results[act.key]={
+bestDay:dayW[0],bestEve:eveW[0],
+worstDay:dayW[dayW.length-1],worstEve:eveW[eveW.length-1]};});
 return results;}
 
 function renderDailyBoxes(){
 const now=new Date();const wins=scanDayWindows(now);
 const container=document.getElementById('daily-activity-boxes');if(!container)return;
 const boxes=[
-{title:"Today's Best",key:'best',bgColor:'#ecfdf5',borderColor:'#6ee7b7',headerBg:'#059669'},
-{title:'Totally Avoid',key:'worst',bgColor:'#fef2f2',borderColor:'#fca5a5',headerBg:'#dc2626'}
+{title:"Today's Best",dayKey:'bestDay',eveKey:'bestEve',bgColor:'#ecfdf5',borderColor:'#6ee7b7',headerBg:'#059669'},
+{title:'Totally Avoid',dayKey:'worstDay',eveKey:'worstEve',bgColor:'#fef2f2',borderColor:'#fca5a5',headerBg:'#dc2626'}
 ];
-container.innerHTML=boxes.map(box=>{
-const items=ACTIVITIES.map(act=>{const w=wins[act.key][box.key];if(!w)return'';
+const slotLine=(w,icon,label)=>{if(!w)return'';
 const sc=w.score>=70?'#047857':w.score>=40?'#b45309':'#b91c1c';
-return`<div class="activity-window" style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;background:#fff;border:1px solid #f1f5f9;font-size:12px;margin-bottom:6px">
-<div style="display:flex;align-items:center;gap:8px"><span>${act.icon}</span><span style="font-weight:600;color:#1e293b">${act.label}</span></div>
-<div style="text-align:right"><div style="font-weight:700;color:${sc}">${fmtMin(w.startMin)}–${fmtMin(w.endMin)}</div>
-<div style="font-size:10px;color:#64748b">${w.hora} Hora • ${w.score}/100</div></div></div>`;}).join('');
+return`<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 0">
+<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#64748b;font-weight:600"><span>${icon}</span><span>${label}</span></div>
+<div style="text-align:right"><div style="font-weight:700;font-size:12px;color:${sc}">${fmtMin(w.startMin)}–${fmtMin(w.endMin)}</div>
+<div style="font-size:10px;color:#64748b">${w.hora} Hora • ${w.score}/100</div></div></div>`;};
+container.innerHTML=boxes.map(box=>{
+const items=ACTIVITIES.map(act=>{const dw=wins[act.key][box.dayKey],ew=wins[act.key][box.eveKey];
+if(!dw&&!ew)return'';
+return`<div class="activity-window" style="padding:8px 10px;border-radius:8px;background:#fff;border:1px solid #f1f5f9;margin-bottom:6px">
+<div style="display:flex;align-items:center;gap:8px;font-size:12px"><span>${act.icon}</span><span style="font-weight:700;color:#1e293b">${act.label}</span></div>
+<div style="border-top:1px solid #f1f5f9;margin-top:4px">${slotLine(dw,'☀️','Day')}${slotLine(ew,'🌙','Evening')}</div></div>`;}).join('');
 return`<div style="border-radius:12px;border:2px solid ${box.borderColor};background:${box.bgColor};overflow:hidden">
 <div style="background:${box.headerBg};color:#fff;padding:10px 16px;font-weight:700;font-size:14px">${box.title}</div>
 <div style="padding:12px">${items}</div></div>`;}).join('');}
