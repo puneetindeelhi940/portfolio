@@ -6,32 +6,8 @@
     <base href="../">
     <title>Jyeshtha Nakshatra Explorer</title>
     <meta name="author" content="Puneet Arora">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/jyeshtha-tailwind.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        try {
-            tailwind.config = {
-                safelist: [
-                    {pattern: /bg-(emerald|amber|red|indigo|violet|blue|teal|purple|orange|slate|white)-(50|100|200|300|400|500|600|700|800|900)/},
-                    {pattern: /text-(emerald|amber|red|indigo|violet|blue|slate|orange)-(500|600|700|800|900)/},
-                    {pattern: /border-(emerald|amber|red|indigo|violet|blue|slate|orange)-(100|200|300)/},
-                    {pattern: /from-(emerald|indigo)-(50)/},
-                    {pattern: /to-(teal|purple)-(50)/},
-                    {pattern: /ring-(amber)-(500)/},
-                    'bg-gradient-to-r','ring-2','ring-offset-1','aspect-square'
-                ],
-                theme: {
-                    extend: {
-                        colors: {
-                            amberBg: '#FDFBF7', cardBg: '#FFFFFF', primaryText: '#1E293B', secondaryText: '#64748B',
-                            sacredGold: '#D97706', goldHover: '#B45309', auspiciousGreen: '#059669',
-                            sensitiveYellow: '#D97706', challengingRed: '#DC2626', mysticIndigo: '#4F46E5'
-                        }
-                    }
-                }
-            }
-        } catch(e) {}
-    </script>
     <style>
         .hidden { display: none !important; }
         html { font-size: 16px; }
