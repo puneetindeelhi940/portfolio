@@ -676,7 +676,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===== MOON LONGITUDE (Meeus algorithm + Lahiri Ayanamsha) =====
 const SPECIAL_HIGHLIGHT_STARS = ['Mula','Ashwini','Pushya','Anuradha','Chitra','Magha'];
 
-function getSiderealMoonLongitude(date) {
+var _sweReady = false, _sweLon = null, _sweNk = null;
+function _meeusMoonLon(date) {
     const JD = 2440587.5 + date.getTime()/86400000;
     const T = (JD - 2451545.0) / 36525.0;
     const toRad = d => d * Math.PI / 180;
@@ -694,17 +695,18 @@ function getSiderealMoonLongitude(date) {
     lon -= ayan;
     return ((lon%360)+360)%360;
 }
-
-function getApproxNakshatraIndex(date) {
-    const lon = getSiderealMoonLongitude(date);
+function _meeusNkIdx(date) {
+    const lon = _meeusMoonLon(date);
     const nkWidth = 360/27;
     const idx = Math.floor(lon / nkWidth);
     const posInNk = (lon % nkWidth) / nkWidth;
-    const lon2 = getSiderealMoonLongitude(new Date(date.getTime() + 3600000));
+    const lon2 = _meeusMoonLon(new Date(date.getTime() + 3600000));
     let speed = lon2 - lon; if (speed < 0) speed += 360;
     const remainingHours = Math.max(0, nkWidth * (1 - posInNk) / speed);
     return { index: idx, remainingHours: Math.max(0, remainingHours) };
 }
+function getSiderealMoonLongitude(date){return _sweReady?_sweLon(date):_meeusMoonLon(date);}
+function getApproxNakshatraIndex(date){return _sweReady?_sweNk(date):_meeusNkIdx(date);}
 
 let currentMonthOffset = 0;
 
@@ -1212,6 +1214,15 @@ function renderJournalChart(){
     });
 }
 
+</script>
+<script type="module">
+import { initSwissEph, getSiderealMoonLongitude, getApproxNakshatraIndex } from './assets/swisseph/nakshatra-calc.js';
+initSwissEph().then(() => {
+    window._sweLon = getSiderealMoonLongitude;
+    window._sweNk = getApproxNakshatraIndex;
+    window._sweReady = true;
+    console.log('Swiss Ephemeris WASM loaded — nakshatra calculations upgraded');
+}).catch(e => console.warn('Swiss Ephemeris WASM failed to load, using Meeus fallback:', e));
 </script>
 </body>
 </html>
