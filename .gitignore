@@ -8,3 +8,4 @@ package.json
 simcraft-src/.next/
 simcraft-src/out/
 simcraft-src/next-env.d.ts
+test-results/
