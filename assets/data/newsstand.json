@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T08:23:17Z",
+  "generated_at": "2026-08-23T16:19:22Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "of Trump in Moscow is real, but not from his first visit in 1987",
+      "claim": "Did AOC say GOP is trying to rig elections by only letting citizens vote? Here's the real story",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-moscow-visit-1987-photo/",
+      "url": "https://www.snopes.com/fact-check/aoc-republicans-rig-elections/",
       "topic": "Politics"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did AOC say GOP is trying to rig elections by only letting citizens vote? Here's the real story",
+      "claim": "How you can stop Google AI from accessing your Gmail, chat information",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/aoc-republicans-rig-elections/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/08/23/google-ai-gmail-chats/",
+      "topic": "Tech / AI"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Trump Brushes Off $40,000,000,000,000 Gov’t Debt Crisis, Claims US Economy Can Grow Its Way Out Of Spiraling Spending Problem",
+      "claim": "Gavin Newsom Signs Law Dubbed ‘Stop Nick Shirley Act’ Days After YouTuber Was Confronted With Crude Sign",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/22/donald-trump-brushes-off-40-trillion-dollar-debt-crisis-claims-economic-growth",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/23/newsom-signs-stop-nick-shirley-act-immigration-privacy-law",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "10 COVID-19 vaccine claims we've investigated during Trump's 2nd term",
+      "claim": "of Trump in Moscow is real, but not from his first visit in 1987",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/covid-19-vaccine-trump-2nd-term/",
-      "topic": "Health"
+      "url": "https://www.snopes.com/fact-check/trump-moscow-visit-1987-photo/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Trump administration's 75-country visa ban was illegal, judge rules",
+      "headline": "Becerra, running for governor of California, faces a health insurance problem",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5941765/trump-immigration-visa-ban-75-countries",
-      "topic": "Politics",
-      "published": "2026-08-22T20:53:19+00:00"
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5941143/california-governor-xavier-becerra-health-insurance",
+      "topic": "Health",
+      "published": "2026-08-23T12:50:09+00:00"
     },
     {
       "n": 3,
-      "headline": "What to know about Trump's 50% tariffs on Canadian goods that just went into effect",
+      "headline": "Carney warned about economic coercion. Now Trump is testing the Canadian prime minister",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/what-to-know-about-trumps-50-tariffs-on-canadian-goods-that-just-went-into-effect",
+      "url": "https://www.pbs.org/newshour/world/carney-warned-about-economic-coercion-now-trump-is-testing-the-canadian-prime-minister",
       "topic": "Politics",
-      "published": "2026-08-22T21:24:51+00:00"
+      "published": "2026-08-23T15:54:12+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Search resumes for 22 crew after cargo ship sinks off India",
+      "headline": "Iran: President defends deal with US as best option for peace",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/search-resumes-for-22-crew-after-cargo-ship-sinks-off-india/a-78472142?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-23T07:49:00+00:00"
+      "url": "https://www.dw.com/en/iran-president-defends-deal-with-us-as-best-option-for-peace/a-78477486?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-23T14:49:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Carney faces crucial test after walking away from Trump's deal",
+      "headline": "Zelensky should be asked what he knew about government corruption, sacked minister tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3040pn8lmmo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-22T20:02:46+00:00"
+      "published": "2026-08-23T12:56:43+00:00"
     },
     {
       "n": 7,
-      "headline": "Opinion: Mr. Rogers keeps finding a new neighborhood",
+      "headline": "Tropical Storm Moke to cause more flooding as Hawaii recovers from Lala",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5932426/opinion-mr-rogers-keeps-finding-a-new-neighborhood",
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5941769/tropical-storm-moke-hawaii",
       "topic": "Trending",
-      "published": "2026-08-22T12:00:00+00:00"
+      "published": "2026-08-23T12:48:05+00:00"
     },
     {
       "n": 8,
-      "headline": "Enriched uranium stockpile undercuts Trump claim of Iran's 'essential denuclearization",
+      "headline": "Iran's president says U.S. memorandum is best path out of stalled war, and other Middle East news",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/enriched-uranium-stockpile-undercuts-trump-claim-of-irans-essential-denuclearization",
+      "url": "https://www.pbs.org/newshour/world/irans-president-says-u-s-memorandum-is-best-path-out-of-stalled-war-and-other-middle-east-news",
       "topic": "Politics",
-      "published": "2026-08-22T19:41:51+00:00"
+      "published": "2026-08-23T15:40:37+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Trump hits out at Canada over retaliatory tariffs",
+      "headline": "Could Russia's growing fuel crisis help end the Ukraine war?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-hits-out-at-canada-over-retaliatory-tariffs/a-78471618?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-23T07:31:00+00:00"
+      "url": "https://www.dw.com/en/could-russia-s-growing-fuel-crisis-help-end-the-ukraine-war/a-78472138?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-23T14:42:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Zelensky has 'questions to answer' about corruption in his government, sacked minister says",
+      "headline": "DR Congo and M23 rebels agree roadmap for peace talks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-23T08:02:22+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-23T12:52:08+00:00"
     },
     {
       "n": 12,
-      "headline": "As Flock battles public scrutiny, other police surveillance companies see an opening",
+      "headline": "Body cam shows federal agent was 'unjustified' in Memphis shooting, attorney says",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5931446/flock-fallout-competitors-see-opportunity",
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5936573/memphis-task-force-shooting-video-jonah-neal",
       "topic": "Trending",
-      "published": "2026-08-22T11:43:32+00:00"
+      "published": "2026-08-23T09:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Tropical Storm Moke advances toward Hawaii as winds strengthen",
+      "headline": "Trump will kick off the IndyCar race before cars zoom through Washington's streets",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/tropical-storm-moke-advances-toward-hawaii-as-winds-strengthen",
-      "topic": "Trending",
-      "published": "2026-08-22T19:15:24+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-will-kick-off-the-indycar-race-before-cars-zoom-through-washingtons-streets",
+      "topic": "Politics",
+      "published": "2026-08-23T15:21:21+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Australia confirms H5N1 bird flu case in local mammal",
+      "headline": "Congo, M23 rebels agree to peace roadmap",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/australia-confirms-h5n1-bird-flu-case-in-local-mammal/a-78473874?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/congo-m23-rebels-agree-to-peace-roadmap/a-78476169?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-23T06:58:00+00:00"
+      "published": "2026-08-23T12:37:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Girl, 17, killed in Swedish sword attack, police say",
+      "headline": "Dozens of co-ordinated arson attacks hit southern Thailand",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8jnjp0lwlwo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c8enegx4xy3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-23T01:34:15+00:00"
+      "published": "2026-08-23T11:50:59+00:00"
     },
     {
       "n": 17,
-      "headline": "Hours after U.S. imposes tariffs, Canada says it'll strike back starting Sept. 8",
+      "headline": "Trump administration's 75-country visa ban was illegal, judge rules",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
-      "topic": "Trending",
-      "published": "2026-08-22T04:36:27+00:00"
+      "url": "https://www.npr.org/2026/08/22/nx-s1-5941765/trump-immigration-visa-ban-75-countries",
+      "topic": "Politics",
+      "published": "2026-08-22T20:53:19+00:00"
     }
   ]
 }
