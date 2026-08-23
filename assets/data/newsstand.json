@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T01:02:38Z",
+  "generated_at": "2026-08-23T08:23:17Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did AOC say GOP is trying to rig elections by only letting citizens vote? Here's the real story",
+      "claim": "of Trump in Moscow is real, but not from his first visit in 1987",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/aoc-republicans-rig-elections/",
+      "url": "https://www.snopes.com/fact-check/trump-moscow-visit-1987-photo/",
       "topic": "Politics"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "10 COVID-19 vaccine claims we've investigated during Trump's 2nd term",
+      "claim": "Did AOC say GOP is trying to rig elections by only letting citizens vote? Here's the real story",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/covid-19-vaccine-trump-2nd-term/",
-      "topic": "Health"
+      "url": "https://www.snopes.com/fact-check/aoc-republicans-rig-elections/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Pentagon Executes Shakeup In Stars And Stripes Leadership Amid Accusations Of ‘Insubordination’",
+      "claim": "Trump Brushes Off $40,000,000,000,000 Gov’t Debt Crisis, Claims US Economy Can Grow Its Way Out Of Spiraling Spending Problem",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/22/pentagon-executes-shakeup-stars-and-stripes-leadership-amid-accusations-insubordination",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/22/donald-trump-brushes-off-40-trillion-dollar-debt-crisis-claims-economic-growth",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Macron never posted fake image of Epstein kissing Melania Trump",
+      "claim": "10 COVID-19 vaccine claims we've investigated during Trump's 2nd term",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/macron-epstein-kissing-melania-image/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/covid-19-vaccine-trump-2nd-term/",
+      "topic": "Health"
     },
     {
       "n": 17,
@@ -146,11 +146,11 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
+      "headline": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-08-22T20:10:00+00:00"
+      "published": "2026-08-23T05:46:43+00:00"
     },
     {
       "n": 2,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Iran warns countries against joining US 'economic war",
+      "headline": "Search resumes for 22 crew after cargo ship sinks off India",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-warns-countries-against-joining-us-economic-war/a-78473222?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-23T00:50:00+00:00"
+      "url": "https://www.dw.com/en/search-resumes-for-22-crew-after-cargo-ship-sinks-off-india/a-78472142?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-23T07:49:00+00:00"
     },
     {
       "n": 6,
@@ -218,19 +218,19 @@
     },
     {
       "n": 10,
-      "headline": "Canada to hit back with retaliatory tariffs after US trade talks fail",
+      "headline": "Trump hits out at Canada over retaliatory tariffs",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/canada-to-hit-back-with-retaliatory-tariffs-after-us-trade-talks-fail/a-78471618?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-22T22:12:00+00:00"
+      "url": "https://www.dw.com/en/trump-hits-out-at-canada-over-retaliatory-tariffs/a-78471618?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-23T07:31:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Rescuers dig through Ukraine mall wreckage as Zelensky condemns 'despicable' Russian strike",
+      "headline": "Zelensky has 'questions to answer' about corruption in his government, sacked minister says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-22T13:13:16+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-23T08:02:22+00:00"
     },
     {
       "n": 12,
@@ -258,19 +258,19 @@
     },
     {
       "n": 15,
-      "headline": "Cargo vessel sinks off Indian coast",
+      "headline": "Australia confirms H5N1 bird flu case in local mammal",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/cargo-vessel-sinks-off-indian-coast/a-78472142?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/australia-confirms-h5n1-bird-flu-case-in-local-mammal/a-78473874?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-22T19:24:00+00:00"
+      "published": "2026-08-23T06:58:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Father leaves 7-year-old son alone on Mount Fuji to continue hike",
+      "headline": "Girl, 17, killed in Swedish sword attack, police say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c93403wg288o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c8jnjp0lwlwo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-22T14:35:11+00:00"
+      "published": "2026-08-23T01:34:15+00:00"
     },
     {
       "n": 17,
