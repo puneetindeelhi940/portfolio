@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T01:00:12Z",
+  "generated_at": "2026-08-24T08:41:44Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Does this image show creepy 'spider' on Mars?",
+      "claim": "Are US, Israeli militaries 'merging'? What defense bill actually says",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/image-mars-spider/",
+      "url": "https://www.snopes.com/news/2026/08/24/us-israeli-militaries-merging-claims/",
       "topic": "Trending"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "‘Only Hindus will live in Bengal and enjoy their rights’: Avijit Das and the campaign for ‘Hindu Banga’",
+      "claim": "Arun Yadav deletes over 60,000 tweets after IT cell appointment; Old posts reveal history of abuse & communal hate",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/only-hindus-will-live-in-bengal-and-enjoy-their-rights-avijit-das-and-the-campaign-for-hindu-banga/",
+      "url": "https://www.altnews.in/arun-yadav-became-bjp-social-media-coordinator-deleted-60-thousand-old-tweets-abusive-and-racist-comments/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "9 rumors tied to Nancy Mace, investigated",
+      "claim": "Does this image show creepy 'spider' on Mars?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/nancy-mace-rumors-collection/",
+      "url": "https://www.snopes.com/fact-check/image-mars-spider/",
       "topic": "Trending"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "1967 photo of Australian go-go dancers falsely shared to attack Sonia Gandhi",
+      "claim": "‘Only Hindus will live in Bengal and enjoy their rights’: Avijit Das and the campaign for ‘Hindu Banga’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/1967-photo-of-australian-go-go-dancers-falsely-shared-to-attack-sonia-gandhi/",
+      "url": "https://www.altnews.in/only-hindus-will-live-in-bengal-and-enjoy-their-rights-avijit-das-and-the-campaign-for-hindu-banga/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did AOC say GOP is trying to rig elections by only letting citizens vote? Here's the real story",
+      "claim": "9 rumors tied to Nancy Mace, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/aoc-republicans-rig-elections/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/nancy-mace-rumors-collection/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Zelensky should be asked what he knew about government corruption, sacked minister tells BBC",
+      "headline": "Divorce, smartphones and control - BBC sees how Taliban run Afghanistan",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-23T12:56:43+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckgvk9p2n7ko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-24T05:00:22+00:00"
     },
     {
       "n": 2,
-      "headline": "Thousands in northwest Indiana still without power nearly two weeks after storm",
+      "headline": "Thousands forced to evacuate parts of Reno, Nevada, as new wildfire rages",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5942292/thousands-in-northwest-indiana-still-without-power-nearly-two-weeks-after-storm",
+      "url": "https://www.npr.org/2026/08/23/g-s1-139729/thousands-forced-to-evacuate-parts-of-reno-nevada-as-new-wildfire-rages",
       "topic": "Trending",
-      "published": "2026-08-23T16:55:37+00:00"
+      "published": "2026-08-24T03:47:04+00:00"
     },
     {
       "n": 3,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Norway: King Harald's health has 'deteriorated,' palace says",
+      "headline": "Scientists discover new 'immune hubs' in skull bone marrow",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/norway-king-harald-s-health-has-deteriorated-palace-says/a-78479515?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-08-23T23:14:00+00:00"
+      "url": "https://www.dw.com/en/scientists-discover-new-immune-hubs-in-skull-bone-marrow/a-78460417?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-24T08:17:00+00:00"
     },
     {
       "n": 6,
@@ -194,11 +194,11 @@
     },
     {
       "n": 7,
-      "headline": "Nonprofits are helping musicians pay for insurance in Austin, Texas, and beyond",
+      "headline": "Learning to live in a post-American world",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5901338/health-alliance-austin-musicians-texas-health-premiums-obamacare-marketplace-uninsured",
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5939846/learning-to-live-in-a-post-american-world",
       "topic": "Trending",
-      "published": "2026-08-23T16:15:30+00:00"
+      "published": "2026-08-23T21:21:23+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Kazakhstan parliamentary vote cements president's power",
+      "headline": "Iran's medicine crisis prices patients out of treatment",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/kazakhstan-parliamentary-vote-cements-president-s-power/a-78474598?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-23T20:38:00+00:00"
+      "url": "https://www.dw.com/en/iran-s-medicine-crisis-prices-patients-out-of-treatment/a-78455430?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-24T08:13:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Guinea rubbish landfill collapse kills 30",
+      "headline": "Nearly three million Teslas recalled in China over hidden door handles",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c4g3g36z7p6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-23T18:17:37+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c4g6ggdg030o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-24T05:01:17+00:00"
     },
     {
       "n": 12,
-      "headline": "Becerra, running for governor of California, faces a health insurance problem",
+      "headline": "Thousands in northwest Indiana still without power nearly two weeks after storm",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5941143/california-governor-xavier-becerra-health-insurance",
-      "topic": "Health",
-      "published": "2026-08-23T12:50:09+00:00"
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5942292/thousands-in-northwest-indiana-still-without-power-nearly-two-weeks-after-storm",
+      "topic": "Trending",
+      "published": "2026-08-23T16:55:37+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Zelenskyy repeats Ukraine not behind Nord Stream attack",
+      "headline": "India news: Police used 'excessive force' on CJP protesters",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/zelenskyy-repeats-ukraine-not-behind-nord-stream-attack/a-78478791?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/india-news-police-used-excessive-force-on-cjp-protesters/live-78480551?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-23T19:50:00+00:00"
+      "published": "2026-08-24T08:05:00+00:00"
     },
     {
       "n": 16,
-      "headline": "DR Congo and M23 rebels agree roadmap for peace talks",
+      "headline": "King of Norway's health has worsened, palace says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-23T12:52:08+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c36lnekj659o?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-08-24T08:31:55+00:00"
     },
     {
       "n": 17,
-      "headline": "Tropical Storm Moke to cause more flooding as Hawaii recovers from Lala",
+      "headline": "Nonprofits are helping musicians pay for insurance in Austin, Texas, and beyond",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5941769/tropical-storm-moke-hawaii",
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5901338/health-alliance-austin-musicians-texas-health-premiums-obamacare-marketplace-uninsured",
       "topic": "Trending",
-      "published": "2026-08-23T12:48:05+00:00"
+      "published": "2026-08-23T16:15:30+00:00"
     }
   ]
 }
