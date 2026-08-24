@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T08:41:44Z",
+  "generated_at": "2026-08-24T16:31:07Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Are US, Israeli militaries 'merging'? What defense bill actually says",
+      "claim": "Gary Sinise takes fallen soldiers' families to Disney World every year",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/24/us-israeli-militaries-merging-claims/",
+      "url": "https://www.snopes.com/fact-check/forrest-gump-actor-fallen-soldiers/",
       "topic": "Trending"
     },
     {
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "Arun Yadav deletes over 60,000 tweets after IT cell appointment; Old posts reveal history of abuse & communal hate",
+      "claim": "Meta restricts posts by Indian Youth Congress, AAP, Opposition leaders",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/arun-yadav-became-bjp-social-media-coordinator-deleted-60-thousand-old-tweets-abusive-and-racist-comments/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/meta-bans-posts-by-indian-youth-congress-aam-aadmi-party-and-other-leaders/",
+      "topic": "Politics"
     },
     {
       "n": 7,
-      "claim": "Argos isn’t selling a garden storage bench for as little as £3",
+      "claim": "Fake portraits of police officers killed in crash shared online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/argos-bench-3-fake-offer/",
+      "url": "https://fullfact.org/crime/ai-generated-images-officers-killed-in-crash/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Does this image show creepy 'spider' on Mars?",
+      "claim": "Did activist Marion Stokes record more than 300K hours of news footage?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/image-mars-spider/",
+      "url": "https://www.snopes.com/fact-check/marion-stokes-news-footage/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Red, White And Vroom?: Racing Fans, Legends Take Over DC As America 250 Goes Out With An Engine’s Roar",
+      "claim": "EXCLUSIVE: Big Four Accounting Firms Under Fire Over Climate Commitments",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/23/freedom-250-grand-prix-indycar-mark-campbell-eddie-allison-national-mall-washington-district-columbia",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/24/big-four-accounting-firms-climate-commitments",
+      "topic": "Science"
     },
     {
       "n": 12,
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "‘Only Hindus will live in Bengal and enjoy their rights’: Avijit Das and the campaign for ‘Hindu Banga’",
+      "claim": "Arun Yadav deletes over 60,000 tweets after IT cell appointment; Old posts reveal history of abuse & communal hate",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/only-hindus-will-live-in-bengal-and-enjoy-their-rights-avijit-das-and-the-campaign-for-hindu-banga/",
+      "url": "https://www.altnews.in/arun-yadav-became-bjp-social-media-coordinator-deleted-60-thousand-old-tweets-abusive-and-racist-comments/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Reform corrects claim that ‘rising’ share of Universal Credit went to foreign nationals",
+      "claim": "Fake Currys JBL speaker offers shared on Facebook",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/what-proportion-of-universal-credit-goes-to-non-british-citizens/",
+      "url": "https://fullfact.org/shopping/currys-fake-speaker-offer/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "9 rumors tied to Nancy Mace, investigated",
+      "claim": "Rumors are swirling about 'lab-grown' eggs being sold in the US. Here's what to know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/nancy-mace-rumors-collection/",
+      "url": "https://www.snopes.com/fact-check/lab-grown-us-eggs/",
       "topic": "Trending"
     },
     {
@@ -146,30 +146,110 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Divorce, smartphones and control - BBC sees how Taliban run Afghanistan",
+      "headline": "Iran faces 'greatest financial offensive ever', says US treasury secretary",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckgvk9p2n7ko?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-24T05:00:22+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-24T13:35:07+00:00"
     },
     {
       "n": 2,
-      "headline": "Thousands forced to evacuate parts of Reno, Nevada, as new wildfire rages",
+      "headline": "Treasury Secretary Scott Bessent is set to unveil new economic sanctions on Iran",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/g-s1-139729/thousands-forced-to-evacuate-parts-of-reno-nevada-as-new-wildfire-rages",
-      "topic": "Trending",
-      "published": "2026-08-24T03:47:04+00:00"
+      "url": "https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran",
+      "topic": "World",
+      "published": "2026-08-24T12:26:00+00:00"
     },
     {
       "n": 3,
-      "headline": "He was waiting for his son to return from the USS Lincoln. Then Border Patrol arrested him.",
+      "headline": "Officials warn wildland firefighters about the risks of using the supplement glutathione for smoke exposure",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/he-was-waiting-for-his-son-to-return-from-the-uss-lincoln-then-border-patrol-arrested-him",
-      "topic": "World",
-      "published": "2026-08-23T22:02:09+00:00"
+      "url": "https://www.pbs.org/newshour/nation/officials-warn-wildland-firefighters-about-the-risks-of-using-the-supplement-glutathione-for-smoke-exposure",
+      "topic": "Trending",
+      "published": "2026-08-24T16:06:34+00:00"
     },
     {
       "n": 4,
+      "headline": "Video shows hundreds held captive after Nigeria mosque kidnapping",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/24/video-shows-hundreds-held-captive-after-nigeria-mosque-kidnapping",
+      "topic": "Trending",
+      "published": "2026-08-24T14:19:14+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "DR Congo peace roadmap: Can it end the fighting?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/dr-congo-peace-roadmap-can-it-end-the-fighting/a-78487489?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-24T16:25:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "UK PM Burnham vows support for Ukraine despite 'outrageous threats' from Russia",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-24T15:54:16+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "U.S. to detail new economic pressures on Iran. And, Canada to impose tariffs on U.S.",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/24/g-s1-139736/up-first-newsletter-iran-economic-pressures-canada-tariffs-trump-visa-ban",
+      "topic": "World",
+      "published": "2026-08-24T11:27:44+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Trump issues new threats to Canada as trade war escalates",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/trump-issues-new-threats-to-canada-as-trade-war-escalates",
+      "topic": "Politics",
+      "published": "2026-08-24T15:28:17+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Children make up half of mpox cases in Guinea-Bissau as epidemic spreads",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/aug/24/children-half-mpox-disease-cases-guinea-bissau-epidemic-spreads-west-africa",
+      "topic": "Trending",
+      "published": "2026-08-24T10:11:34+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "The new Bundesliga season is here, but has the glow gone?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/the-new-bundesliga-season-is-here-but-has-the-glow-gone/a-78062032?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-24T14:54:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Russia's second-biggest online retailer targeted in Ukrainian strikes",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cg598yvrzpro?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-24T10:40:22+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Washington, D.C.'s first IndyCar race packed the National Mall",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/24/nx-s1-5939827/washington-d-c-s-first-indycar-race-packed-the-national-mall",
+      "topic": "Trending",
+      "published": "2026-08-24T09:36:13+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Canada should be ready to cut electricity, critical minerals, Ontario's premier says",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/canada-should-be-ready-to-cut-electricity-critical-minerals-ontarios-premier-says",
+      "topic": "Trending",
+      "published": "2026-08-24T15:15:57+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Landslide at waste mound in Guinea capital kills 30, government says",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/23/landslide-waste-mound-conakry-guinea-kills-dozens",
@@ -177,108 +257,28 @@
       "published": "2026-08-23T22:16:53+00:00"
     },
     {
-      "n": 5,
-      "headline": "Scientists discover new 'immune hubs' in skull bone marrow",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/scientists-discover-new-immune-hubs-in-skull-bone-marrow/a-78460417?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-24T08:17:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-23T19:11:30+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Learning to live in a post-American world",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5939846/learning-to-live-in-a-post-american-world",
-      "topic": "Trending",
-      "published": "2026-08-23T21:21:23+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Human-caused wildfire approaches Reno, Nevada, forcing thousands of evacuations",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/human-caused-wildfire-approaches-reno-nevada-forcing-thousands-of-evacuations",
-      "topic": "Trending",
-      "published": "2026-08-23T21:16:34+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "US deports 20 people to Liberia, the first of 1,200 migrants under Trump deal",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/aug/20/liberia-deportation-agreement",
-      "topic": "Politics",
-      "published": "2026-08-20T19:57:59+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Iran's medicine crisis prices patients out of treatment",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-s-medicine-crisis-prices-patients-out-of-treatment/a-78455430?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-24T08:13:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Nearly three million Teslas recalled in China over hidden door handles",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c4g6ggdg030o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-24T05:01:17+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Thousands in northwest Indiana still without power nearly two weeks after storm",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5942292/thousands-in-northwest-indiana-still-without-power-nearly-two-weeks-after-storm",
-      "topic": "Trending",
-      "published": "2026-08-23T16:55:37+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Report: Jared Kushner and Democratic leader Jeffries meet with House control at stake in November",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/jared-kushner-and-democratic-leader-jeffries-meet-with-house-control-at-stake-in-november",
-      "topic": "Trending",
-      "published": "2026-08-23T19:34:55+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "More than 100 dead after goldmine collapses in Central African Republic",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/20/gold-mine-collapse-deadly-landslide-central-african-republic",
-      "topic": "Trending",
-      "published": "2026-08-20T00:14:17+00:00"
-    },
-    {
       "n": 15,
-      "headline": "India news: Police used 'excessive force' on CJP protesters",
+      "headline": "Trump says Canada to face 50% auto, steel tariffs from 2027",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-police-used-excessive-force-on-cjp-protesters/live-78480551?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-24T08:05:00+00:00"
+      "url": "https://www.dw.com/en/trump-says-canada-to-face-50-auto-steel-tariffs-from-2027/a-78487268?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-24T14:13:00+00:00"
     },
     {
       "n": 16,
-      "headline": "King of Norway's health has worsened, palace says",
+      "headline": "Israel warns of 'forceful' response to kites flown from Gaza",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c36lnekj659o?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-08-24T08:31:55+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-24T13:56:22+00:00"
     },
     {
       "n": 17,
-      "headline": "Nonprofits are helping musicians pay for insurance in Austin, Texas, and beyond",
+      "headline": "In candid interviews, National Guard members speak out about D.C. deployment",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5901338/health-alliance-austin-musicians-texas-health-premiums-obamacare-marketplace-uninsured",
+      "url": "https://www.npr.org/2026/08/24/nx-s1-5939973/national-guard-members-washington-dc-deployment",
       "topic": "Trending",
-      "published": "2026-08-23T16:15:30+00:00"
+      "published": "2026-08-24T09:00:00+00:00"
     }
   ]
 }
