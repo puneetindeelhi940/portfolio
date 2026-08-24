@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T16:19:22Z",
+  "generated_at": "2026-08-24T01:00:12Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did AOC say GOP is trying to rig elections by only letting citizens vote? Here's the real story",
+      "claim": "Does this image show creepy 'spider' on Mars?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/aoc-republicans-rig-elections/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/image-mars-spider/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "US-Canada Trade Deal Falls Apart In Potential Blow To Auto Industry",
+      "claim": "Data Center Backlash Brings Thousands Of Projects To A Screeching Halt",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/22/united-states-canada-automobile-steel-trade-deal-falls-apart-jamieson-greer",
+      "url": "https://dailycaller.com/2026/08/23/data-center-backlash-brings-thousands-projects-screeching-halt-texas-new-york",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "How you can stop Google AI from accessing your Gmail, chat information",
+      "claim": "9 rumors tied to Nancy Mace, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/23/google-ai-gmail-chats/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/collections/nancy-mace-rumors-collection/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Gavin Newsom Signs Law Dubbed ‘Stop Nick Shirley Act’ Days After YouTuber Was Confronted With Crude Sign",
+      "claim": "Red, White And Vroom?: Racing Fans, Legends Take Over DC As America 250 Goes Out With An Engine’s Roar",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/23/newsom-signs-stop-nick-shirley-act-immigration-privacy-law",
+      "url": "https://dailycaller.com/2026/08/23/freedom-250-grand-prix-indycar-mark-campbell-eddie-allison-national-mall-washington-district-columbia",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "of Trump in Moscow is real, but not from his first visit in 1987",
+      "claim": "Did AOC say GOP is trying to rig elections by only letting citizens vote? Here's the real story",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-moscow-visit-1987-photo/",
+      "url": "https://www.snopes.com/fact-check/aoc-republicans-rig-elections/",
       "topic": "Politics"
     },
     {
@@ -146,46 +146,6 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-23T05:46:43+00:00"
-    },
-    {
-      "n": 2,
-      "headline": "Becerra, running for governor of California, faces a health insurance problem",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5941143/california-governor-xavier-becerra-health-insurance",
-      "topic": "Health",
-      "published": "2026-08-23T12:50:09+00:00"
-    },
-    {
-      "n": 3,
-      "headline": "Carney warned about economic coercion. Now Trump is testing the Canadian prime minister",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/carney-warned-about-economic-coercion-now-trump-is-testing-the-canadian-prime-minister",
-      "topic": "Politics",
-      "published": "2026-08-23T15:54:12+00:00"
-    },
-    {
-      "n": 4,
-      "headline": "US deports 20 people to Liberia, the first of 1,200 migrants under Trump deal",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/aug/20/liberia-deportation-agreement",
-      "topic": "Politics",
-      "published": "2026-08-20T19:57:59+00:00"
-    },
-    {
-      "n": 5,
-      "headline": "Iran: President defends deal with US as best option for peace",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-president-defends-deal-with-us-as-best-option-for-peace/a-78477486?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-23T14:49:00+00:00"
-    },
-    {
-      "n": 6,
       "headline": "Zelensky should be asked what he knew about government corruption, sacked minister tells BBC",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss",
@@ -193,23 +153,103 @@
       "published": "2026-08-23T12:56:43+00:00"
     },
     {
-      "n": 7,
-      "headline": "Tropical Storm Moke to cause more flooding as Hawaii recovers from Lala",
+      "n": 2,
+      "headline": "Thousands in northwest Indiana still without power nearly two weeks after storm",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5941769/tropical-storm-moke-hawaii",
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5942292/thousands-in-northwest-indiana-still-without-power-nearly-two-weeks-after-storm",
       "topic": "Trending",
-      "published": "2026-08-23T12:48:05+00:00"
+      "published": "2026-08-23T16:55:37+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "He was waiting for his son to return from the USS Lincoln. Then Border Patrol arrested him.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/he-was-waiting-for-his-son-to-return-from-the-uss-lincoln-then-border-patrol-arrested-him",
+      "topic": "World",
+      "published": "2026-08-23T22:02:09+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Landslide at waste mound in Guinea capital kills 30, government says",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/23/landslide-waste-mound-conakry-guinea-kills-dozens",
+      "topic": "Trending",
+      "published": "2026-08-23T22:16:53+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Norway: King Harald's health has 'deteriorated,' palace says",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/norway-king-harald-s-health-has-deteriorated-palace-says/a-78479515?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-08-23T23:14:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-23T19:11:30+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Nonprofits are helping musicians pay for insurance in Austin, Texas, and beyond",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5901338/health-alliance-austin-musicians-texas-health-premiums-obamacare-marketplace-uninsured",
+      "topic": "Trending",
+      "published": "2026-08-23T16:15:30+00:00"
     },
     {
       "n": 8,
-      "headline": "Iran's president says U.S. memorandum is best path out of stalled war, and other Middle East news",
+      "headline": "Human-caused wildfire approaches Reno, Nevada, forcing thousands of evacuations",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/irans-president-says-u-s-memorandum-is-best-path-out-of-stalled-war-and-other-middle-east-news",
-      "topic": "Politics",
-      "published": "2026-08-23T15:40:37+00:00"
+      "url": "https://www.pbs.org/newshour/nation/human-caused-wildfire-approaches-reno-nevada-forcing-thousands-of-evacuations",
+      "topic": "Trending",
+      "published": "2026-08-23T21:16:34+00:00"
     },
     {
       "n": 9,
+      "headline": "US deports 20 people to Liberia, the first of 1,200 migrants under Trump deal",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/aug/20/liberia-deportation-agreement",
+      "topic": "Politics",
+      "published": "2026-08-20T19:57:59+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Kazakhstan parliamentary vote cements president's power",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/kazakhstan-parliamentary-vote-cements-president-s-power/a-78474598?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-23T20:38:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Guinea rubbish landfill collapse kills 30",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c4g3g36z7p6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-23T18:17:37+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Becerra, running for governor of California, faces a health insurance problem",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5941143/california-governor-xavier-becerra-health-insurance",
+      "topic": "Health",
+      "published": "2026-08-23T12:50:09+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Report: Jared Kushner and Democratic leader Jeffries meet with House control at stake in November",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/jared-kushner-and-democratic-leader-jeffries-meet-with-house-control-at-stake-in-november",
+      "topic": "Trending",
+      "published": "2026-08-23T19:34:55+00:00"
+    },
+    {
+      "n": 14,
       "headline": "More than 100 dead after goldmine collapses in Central African Republic",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/aug/20/gold-mine-collapse-deadly-landslide-central-african-republic",
@@ -217,15 +257,15 @@
       "published": "2026-08-20T00:14:17+00:00"
     },
     {
-      "n": 10,
-      "headline": "Could Russia's growing fuel crisis help end the Ukraine war?",
+      "n": 15,
+      "headline": "Zelenskyy repeats Ukraine not behind Nord Stream attack",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/could-russia-s-growing-fuel-crisis-help-end-the-ukraine-war/a-78472138?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-23T14:42:00+00:00"
+      "url": "https://www.dw.com/en/zelenskyy-repeats-ukraine-not-behind-nord-stream-attack/a-78478791?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-23T19:50:00+00:00"
     },
     {
-      "n": 11,
+      "n": 16,
       "headline": "DR Congo and M23 rebels agree roadmap for peace talks",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo?at_medium=RSS&at_campaign=rss",
@@ -233,52 +273,12 @@
       "published": "2026-08-23T12:52:08+00:00"
     },
     {
-      "n": 12,
-      "headline": "Body cam shows federal agent was 'unjustified' in Memphis shooting, attorney says",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/23/nx-s1-5936573/memphis-task-force-shooting-video-jonah-neal",
-      "topic": "Trending",
-      "published": "2026-08-23T09:00:00+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Trump will kick off the IndyCar race before cars zoom through Washington's streets",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-will-kick-off-the-indycar-race-before-cars-zoom-through-washingtons-streets",
-      "topic": "Politics",
-      "published": "2026-08-23T15:21:21+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Five Americans among seven killed in safari helicopter crash in Kenya",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/19/kenya-helicopter-safari-crash",
-      "topic": "Trending",
-      "published": "2026-08-19T20:17:39+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "Congo, M23 rebels agree to peace roadmap",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/congo-m23-rebels-agree-to-peace-roadmap/a-78476169?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-23T12:37:00+00:00"
-    },
-    {
-      "n": 16,
-      "headline": "Dozens of co-ordinated arson attacks hit southern Thailand",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8enegx4xy3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-23T11:50:59+00:00"
-    },
-    {
       "n": 17,
-      "headline": "Trump administration's 75-country visa ban was illegal, judge rules",
+      "headline": "Tropical Storm Moke to cause more flooding as Hawaii recovers from Lala",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5941765/trump-immigration-visa-ban-75-countries",
-      "topic": "Politics",
-      "published": "2026-08-22T20:53:19+00:00"
+      "url": "https://www.npr.org/2026/08/23/nx-s1-5941769/tropical-storm-moke-hawaii",
+      "topic": "Trending",
+      "published": "2026-08-23T12:48:05+00:00"
     }
   ]
 }
