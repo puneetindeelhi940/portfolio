@@ -132,6 +132,11 @@ h1 em{font-style:normal;background:linear-gradient(96deg,#ff5470,#a855f7 52%,#38
 .rev .cost{color:var(--mut);font-size:13.5px;margin-top:10px;padding-left:12px;
  border-left:2px solid var(--ln)}
 .rev .cost b{color:var(--fg)}
+.push{margin-top:16px;padding:14px 16px;border-radius:12px;
+ background:rgba(255,84,112,.06);border:1px solid rgba(255,84,112,.22)}
+.push .pq{font-size:14px;color:#ffa8b6}
+.push .pq b{color:var(--no);font-weight:750;letter-spacing:.02em}
+.push .pa{font-size:14.5px;color:var(--mut);margin-top:8px}
 
 /* ── CLOSE ────────────────────────────── */
 .about{margin-top:38px;border-top:1px solid var(--ln);padding-top:28px}
@@ -141,7 +146,15 @@ h1 em{font-style:normal;background:linear-gradient(96deg,#ff5470,#a855f7 52%,#38
 .tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
 .tags span{font-size:12px;color:var(--mut);border:1px solid var(--ln);border-radius:99px;
  padding:5px 11px}
-.cta{margin-top:24px;background:var(--pan);border:1px solid var(--ln);border-radius:16px;
+.also{margin-top:22px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;
+ border:1px solid var(--ln);border-radius:16px;padding:16px 18px;background:var(--pan)}
+.also .t{font-size:15px;font-weight:650}
+.also .d{font-size:13.5px;color:var(--mut);margin-top:2px}
+.also a{margin-left:auto;text-decoration:none;background:var(--vio);color:#14071f;
+ padding:10px 17px;border-radius:10px;font-weight:700;font-size:14px;transition:.18s}
+@media(max-width:520px){.also a{margin-left:0;width:100%;text-align:center}}
+.also a:hover{background:#c084fc;transform:translateY(-2px)}
+.cta{margin-top:16px;background:var(--pan);border:1px solid var(--ln);border-radius:16px;
  padding:20px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
 .cta .n{font-size:19px;font-weight:750;letter-spacing:-.015em}
 .cta .r{font-size:13.5px;color:var(--mut);margin-top:2px}
@@ -215,12 +228,22 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--dim)}
   </p>
   <p>
     So this page hands you the decisions first. <b>You commit, then I answer.</b> Whether we agree
-    matters far less than whether the reasoning holds up once you can see it.
+    matters far less than whether the reasoning holds up once you can see it. So each answer also
+    carries the sharpest objection I could construct against it, and my response &mdash; including
+    the one where the objection is simply better than what I did.
   </p>
   <div class="tags">
     <span>GenAI product design</span><span>Design org leadership</span><span>Intent estimation</span>
     <span>Prompt engineering</span><span>Safety-critical systems</span><span>Design systems</span>
     <span>Executive alignment</span><span>8 granted patents</span>
+  </div>
+
+  <div class="also">
+    <div>
+      <div class="t">Want the postings rather than the decisions?</div>
+      <div class="d">Twenty years as a split-flap departure board — where each one went, and whether it landed.</div>
+    </div>
+    <a href="not-live-yet/departures.html">Arrivals and departures &rarr;</a>
   </div>
 
   <div class="cta">
@@ -251,6 +274,8 @@ const D = [
  me:false,
  said:'I put six on it — and thirteen on the e-commerce revenue that already existed.',
  why:'The mandate wanted a moonshot. What the business could actually absorb was a prompt library, intent estimation and adaptive layout landing inside a surface that already had traffic. Small team, real users, a measurable definition of better.',
+ push:'Easy to claim restraint once you know it worked. And six people on the CEO&rsquo;s stated top priority could read as quietly under-serving the mandate.',
+ ans:'It read exactly that way at the time, and I defended it twice. What made it defensible was never restraint as a virtue &mdash; it was speed to evidence. Six people on a trafficked surface produced real signal in weeks; sixteen on a greenfield moonshot would have produced a prototype in months. Framed as caution, I lose that argument. Framed as evidence, I win it.',
  cost:'Sixteen designers would have produced a magnificent internal showcase and a budget conversation in month nine that I would have lost, because nobody could point at revenue.'},
 
 {q:'Budget is being cut. Research and evaluation is four headcount and produces no visible artefact. Do you protect it?',
@@ -259,6 +284,8 @@ const D = [
  me:true,
  said:'I protected all four — and justified them again in every single review.',
  why:'That headcount is the reason the chatbot work could be defended later: we could say what "better" actually meant. An AI feature without an evaluation practice is a demo with a launch date attached.',
+ push:'Twelve percent of your org on work that ships nothing is only obviously right in hindsight, after the awards landed.',
+ ans:'Fair. I&rsquo;d add that the four weren&rsquo;t idle &mdash; their evaluations are what told us which of three approaches to kill. The prospective argument is narrower: without a definition of &ldquo;better&rdquo;, you cannot distinguish a model regression from a bad week, and you will eventually ship one believing it is the other.',
  cost:'It was the easiest line item to argue away, which is exactly why it needed someone willing to keep arguing. I spent political capital on it that I could have spent elsewhere.'},
 
 {q:'A model gives you a complete, plausible intent taxonomy in four seconds. Do you use it as your starting point?',
@@ -267,6 +294,8 @@ const D = [
  me:false,
  said:'I threw it away and derived the taxonomy from session logs instead.',
  why:'A model will always produce a plausible taxonomy, because plausible taxonomies are what its training data is full of. Roughly a third of our real categories were things nobody on the team would have guessed — the largest cluster was people shopping for someone who was not there to consult.',
+ push:'Discarding it outright is the wrong lesson. The sophisticated move is to treat the model&rsquo;s taxonomy as a hypothesis and test it against the logs &mdash; same rigour, two weeks cheaper.',
+ ans:'That is the better method and I&rsquo;ll take the correction; as a general rule it is strictly superior to mine. What I&rsquo;d defend is this specific case: we had no labelled log data yet, so there was nothing to test the hypothesis against, and an untestable prior sitting in the room stops being a hypothesis and becomes an anchor. On the next iteration, once logs existed, we did precisely what you describe.',
  cost:'Three weeks, and an uncomfortable conversation about why we were not using the tool we were supposedly championing. Accepting the fluent version would have cost a quarter and taught us nothing.'},
 
 {q:'You can cut 40% of costs by changing how design specifies work — but it means telling engineering their intake process is the problem. Do you say it?',
@@ -275,6 +304,8 @@ const D = [
  me:true,
  said:'I said it — then had to prove it with a number somebody else already tracked.',
  why:'The saving came from moving specification decisions earlier so ambiguity resolved before engineering committed. That reduced incoming defect change requests: a specific, counted artefact. An award committee signed off on it, not a designer.',
+ push:'That percentage is the least auditable number on your r&eacute;sum&eacute;. Defect requests fall for a dozen reasons that have nothing to do with design.',
+ ans:'Agreed, and I hold it more loosely than I hold the awards. I stand behind the mechanism and the direction, not the precision. An HP committee attached that figure; I&rsquo;d give it a wider error bar than they did, and I would always rather be asked about the mechanism than the number.',
  cost:'It only worked because I picked a metric my critics already believed in. Had I argued it in design language, it would have been received as an opinion and filed.'},
 
 {q:'Your personalisation system can lift quarterly engagement measurably by nudging harder. The counter-metric is not on the dashboard. Do you ship it?',
@@ -283,6 +314,8 @@ const D = [
  me:false,
  said:'Not until the counter-metric was on the same dashboard, at the same size.',
  why:'A nudge that wins the quarter and loses the customer is a defect wearing a metric. Engagement moves first and fastest, so it always wins the review; the cost lands in month nine as churn nobody traces back.',
+ push:'&ldquo;Not until&rdquo; is doing a lot of work in that sentence. Did you actually block a launch, or ask for a dashboard change and then proceed?',
+ ans:'I delayed it by one cycle, and what unblocked it was instrumentation rather than a redesign. So no &mdash; I did not heroically kill a feature. I made the cost visible before we shipped, which is the smaller and far more repeatable version of the same act, and the only version a team will actually sustain after I leave the room.',
  cost:'A slower launch, and a quarter where my numbers looked less impressive than they could have. If you cannot see both numbers at once you are not measuring — you are choosing which harm to be surprised by.'},
 
 {q:'An agent you are designing can complete the task end to end without a human seeing it. Shipping the review step will measurably slow adoption. Do you ship the review step?',
@@ -291,6 +324,8 @@ const D = [
  me:true,
  said:'Yes — for anything irreversible or customer-facing, every time, with no remembered preference.',
  why:'I classify every action by reversibility before designing a single screen. Reversible: let it run. Costly: confirm. Irreversible or external-facing: a human, always. That taxonomy came from nine years in firmware and two in aviation, where it is assumed rather than debated.',
+ push:'You slowed adoption on principle. Did you ever measure what that principle cost?',
+ ans:'Yes, and it was real: the review step measurably reduced completion. But the comparison is not step versus no-step, it is step versus the incident. I have not seen an organisation remove human review from an irreversible, customer-facing action and not reinstate it later &mdash; usually after an expensive week and a post-mortem.',
  cost:'Slower adoption, and a real argument with people who saw the step as a lack of confidence in the model. Automation complacency is the failure nobody plans for: accuracy improving actually increases the damage of the rare failure.'},
 
 {q:'You are leading AI transformation, mid-career and fully occupied. Do you start a Master\'s in Philosophy?',
@@ -299,6 +334,8 @@ const D = [
  me:true,
  said:'Yes — alongside the AI work, not instead of it.',
  why:'Intent estimation is an epistemology question wearing an engineering costume: what may a system justifiably infer about a person, and at what confidence does inferring become presuming? I did not get that framing from a design conference.',
+ push:'This reads as intellectual signalling. Name one thing it actually changed in the product.',
+ ans:'The confidence model. Our thresholds ended up with a &ldquo;presume nothing&rdquo; band rather than a binary act-or-ask, because the interesting case is the middle one where the system has a belief it is not entitled to act on. That distinction came out of an argument about justified belief, not out of a design review.',
  cost:'Time I did not have, taken at a point in life when it cost considerably more than it would have at twenty-five. That is rather the point — and it is the last line on my résumé, not the first.'},
 
 {q:'Your team has shipped. The design system you deprioritised two quarters ago is now visibly straining. Do you admit that publicly in the review?',
@@ -307,6 +344,8 @@ const D = [
  me:true,
  said:'I named it as my call, in the review, before anyone else raised it.',
  why:'I under-funded the design system for two quarters to protect shipping and evaluation. That was a deliberate trade and it was mine. We paid interest on it for about a year.',
+ push:'Naming your own mistake after the wins landed is cheap. Would you have named it if the quarter had gone badly?',
+ ans:'It is easier with wins in hand, and I won&rsquo;t pretend otherwise. What I&rsquo;d point at is the timing rather than the confession: I named the design-system debt in the same review where I asked for the next quarter&rsquo;s headcount. That is the expensive moment to raise it, not the safe one.',
  cost:'A visibly imperfect scorecard. But a leader who only reports the trades that worked is not giving their org a usable model of how to make trades — and the team is watching which failures you are willing to own.'},
 ];
 
@@ -426,6 +465,10 @@ function finish(){
           <p class="said">${d.said}</p>
           <p class="why">${d.why}</p>
           <p class="cost"><b>What it cost:</b> ${d.cost}</p>
+          <div class="push">
+            <p class="pq"><b>The pushback:</b> ${d.push}</p>
+            <p class="pa">${d.ans}</p>
+          </div>
         </div>
       </details>`}).join('')}`;
   results.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});

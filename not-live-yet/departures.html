@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Departures — Puneet Arora</title>
+<meta name="description" content="Twenty years of design leadership as a departure board — Dell, Boeing, HP, Software AG. Each posting: where it went, what was carried, whether it landed.">
+<meta name="author" content="Puneet Arora">
+<meta name="theme-color" content="#0a0a08">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Departures — Puneet Arora">
+<meta property="og:description" content="Twenty years of design leadership as a departure board. Each posting: where it went, what was carried, whether it landed.">
+<meta property="og:image" content="assets/og-departures.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Departures — Puneet Arora">
+<meta name="twitter:description" content="Twenty years of design leadership as a departure board.">
+<meta name="twitter:image" content="assets/og-departures.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a08'/%3E%3Crect x='6' y='9' width='20' height='6' rx='1.5' fill='%23ffb300'/%3E%3Crect x='6' y='18' width='13' height='5' rx='1.5' fill='%23ffb300' opacity='.55'/%3E%3C/svg%3E">
+<style>
+:root{
+ --bg:#0a0a08;--pan:#111310;--pan2:#0c0e0a;--ln:#22241f;
+ --amb:#ffb300;--amb2:#ffd166;--fg:#f4f1e8;--mut:#8d8a7d;--dim:#5c5a50;
+ --ok:#4ade80;--warn:#ffb300;
+ --pad:clamp(16px,4vw,24px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);
+ font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+ padding-bottom:env(safe-area-inset-bottom)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 var(--pad) 76px}
+a{color:var(--amb2)}
+:focus-visible{outline:2px solid var(--amb);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+ clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.wrap *{max-width:100%}
+.flap{max-width:100%}
+
+/* ── HERO ── */
+header{padding:clamp(28px,6vw,48px) 0 0}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(30px,6.6vw,54px);line-height:1.02;letter-spacing:-.032em;margin:13px 0 0;font-weight:780}
+h1 em{font-style:normal;color:var(--amb)}
+.sub{color:var(--mut);max-width:60ch;margin-top:14px;font-size:clamp(15px,2.3vw,17px)}
+.who{margin-top:18px;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;
+ border:1px solid var(--ln);background:rgba(17,19,16,.8);border-radius:99px;
+ padding:8px 15px;font-size:13px;color:var(--mut)}
+.who b{color:var(--fg);font-weight:650}
+.who i{width:5px;height:5px;border-radius:50%;background:var(--amb);display:block;flex:none}
+
+/* ── BOARD ── */
+.board{margin-top:24px;background:var(--pan);border:1px solid var(--ln);border-radius:14px;
+ overflow:hidden;box-shadow:0 40px 90px -60px #000,inset 0 1px 0 rgba(255,255,255,.05)}
+.bhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:15px 20px;
+ border-bottom:1px solid var(--ln);background:linear-gradient(180deg,#16180f,#0e100c)}
+.bhead h2{font-size:clamp(16px,3vw,23px);letter-spacing:.16em;text-transform:uppercase;
+ font-weight:750;color:var(--amb)}
+.live{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--mut)}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--ok);display:block;
+ animation:pulse 1.9s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.4}}
+
+.cols,.rowgrid{display:grid;grid-template-columns:86px 1fr 152px 100px 78px;gap:0;align-items:center}
+.cols{padding:9px 20px;border-bottom:1px solid var(--ln);
+ font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.row{width:100%;text-align:left;background:transparent;border:0;color:inherit;font:inherit;
+ padding:15px 20px;border-bottom:1px solid var(--ln);cursor:pointer;transition:background .2s;
+ display:block}
+.row:hover{background:rgba(255,179,0,.05)}
+.row[aria-expanded="true"]{background:rgba(255,179,0,.08)}
+@media(max-width:840px){
+ .cols{display:none}
+ .rowgrid{grid-template-columns:1fr auto;gap:5px 12px}
+ .c-yr{order:1}.c-dest{order:2;grid-column:1/-1}.c-role{order:3}
+ .c-stat{order:4;text-align:right}.c-gate{order:5;grid-column:1/-1}
+ .row{padding:14px 16px}
+}
+.flap{display:inline-flex;gap:2px;flex-wrap:wrap}
+.c-role .flap,.c-stat .flap,.c-gate .flap,.c-yr .flap{flex-wrap:nowrap}
+.ch{display:inline-block;min-width:.62em;padding:2px 1px;border-radius:2px;text-align:center;
+ background:#1c1e17;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(0,0,0,.6);
+ font-family:ui-monospace,Menlo,monospace;color:var(--amb2);
+ box-shadow:inset 0 -6px 8px -6px rgba(0,0,0,.9)}
+.c-yr .ch{font-size:13.5px}
+.c-dest .ch{font-size:clamp(14px,2.6vw,16px)}
+.c-role .ch,.c-stat .ch,.c-gate .ch{font-size:11.5px}
+.c-stat .ch{color:var(--ok)}
+.c-stat.warn .ch{color:var(--amb)}
+
+.det{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,1,.36,1);
+ border-bottom:1px solid var(--ln);background:var(--pan2)}
+.det.on{max-height:760px}
+.detin{padding:18px 22px 24px;display:grid;grid-template-columns:1fr 236px;gap:20px}
+@media(max-width:840px){.detin{grid-template-columns:1fr;padding:16px}}
+.detin p{color:var(--mut);font-size:14.5px}.detin p+p{margin-top:9px}
+.detin b{color:var(--fg)}
+.detin .learn{margin-top:12px;padding:12px 14px;border-left:2px solid var(--amb);
+ background:rgba(255,179,0,.05);border-radius:0 9px 9px 0}
+.detin .learn .k{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--amb);
+ font-weight:700}
+.detin .learn p{color:var(--fg);font-size:14.5px;margin-top:4px}
+.chips{display:flex;flex-direction:column;gap:7px}
+.chip{border:1px solid var(--ln);border-radius:9px;padding:9px 11px;background:var(--pan)}
+.chip .k{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.chip .v{font-family:ui-monospace,Menlo,monospace;font-size:15px;color:var(--amb2);margin-top:2px}
+
+/* ── CLOSE ── */
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:12px;color:var(--dim)}
+.legend b{color:var(--mut);font-weight:600}
+.about{margin-top:38px;border-top:1px solid var(--ln);padding-top:26px}
+.about h2{font-size:21px;letter-spacing:-.02em;font-weight:750}
+.about p{color:var(--mut);margin-top:10px;font-size:15.5px;max-width:68ch}
+.about p b{color:var(--fg);font-weight:650}
+.also{margin-top:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;
+ border:1px solid var(--ln);border-radius:14px;padding:16px 18px;background:var(--pan)}
+.also .t{font-size:15px;font-weight:650}
+.also .d{font-size:13.5px;color:var(--mut);margin-top:2px}
+.also a{margin-left:auto;text-decoration:none;background:var(--amb);color:#231700;
+ padding:10px 17px;border-radius:10px;font-weight:700;font-size:14px;transition:.18s}
+@media(max-width:520px){.also a{margin-left:0;width:100%;text-align:center}}
+.also a:hover{background:var(--amb2);transform:translateY(-2px)}
+.cta{margin-top:16px;background:var(--pan);border:1px solid var(--ln);border-radius:14px;
+ padding:18px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.cta .n{font-size:18px;font-weight:750;letter-spacing:-.015em}
+.cta .r{font-size:13.5px;color:var(--mut);margin-top:2px}
+.cta a.btn{background:transparent;border:1px solid var(--amb);color:var(--amb);text-decoration:none;
+ padding:10px 18px;border-radius:10px;font-weight:700;font-size:14px;transition:.18s}
+.cta a.btn:hover{background:var(--amb);color:#231700}
+.ph-note{margin-top:9px;font-size:12.5px;color:#ffb86b;text-align:right;
+ background:rgba(255,184,107,.08);border:1px dashed rgba(255,184,107,.35);
+ border-radius:9px;padding:7px 11px}
+footer{margin-top:28px;text-align:center;font-size:12px;color:var(--dim)}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{
+ body{background:#fff;color:#000}
+ .live,.legend,.also{display:none}
+ .board,.cta{border:1px solid #ccc;background:#fff}
+ .bhead{background:#fff;border-bottom:1px solid #999}
+ .bhead h2,h1 em{color:#000}
+ .det{max-height:none!important;overflow:visible;background:#fff}
+ .ch{background:#fff;color:#000;box-shadow:none;border:0;padding:0}
+ .detin p,.about p{color:#333}
+ .chip{border:1px solid #ddd}.chip .v{color:#000}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Twenty years · six postings · one board</p>
+  <h1>Arrivals and <em>departures.</em></h1>
+  <p class="sub">
+    A career rendered as the thing it most resembles: a board of postings, each with a destination,
+    a payload, and a status. Built as a split-flap because I spent two years designing airspace and
+    airport systems at Boeing — and because a board that clatters tells you something a table never will.
+  </p>
+  <p class="who"><i></i><b>Puneet Arora</b> · Design leadership for AI-mediated products · Bangalore</p>
+</header>
+
+<main>
+  <div class="board">
+    <div class="bhead">
+      <h2>Departures</h2>
+      <span class="live" aria-hidden="true"><i></i>Board live &middot; <span id="clk" class="mono">--:--:--</span></span>
+    </div>
+    <div class="cols" aria-hidden="true">
+      <span>Year</span><span>Destination</span><span>Role</span><span>Status</span><span>Gate</span>
+    </div>
+    <div id="rows"></div>
+  </div>
+
+  <p class="legend">
+    <span><b>Click or press Enter</b> on any row to open it</span>
+    <span><b>ON TIME</b> — landed as intended</span>
+    <span><b>BOARDED</b> — the long apprenticeship</span>
+    <span><b>DELAYED</b> — deliberately</span>
+  </p>
+</main>
+
+<section class="about">
+  <h2>Why a board, and not a timeline</h2>
+  <p>
+    A timeline implies each posting ended and the next began. A board is closer to the truth: every
+    row is still departing somewhere. The reversibility rule I learned writing printer firmware is
+    the same rule I applied to AI agents twenty years later. The failure-state discipline from
+    aviation is why the Dell chatbot had a designed dead end before it had a happy path.
+  </p>
+  <p>
+    <b>The status column is the honest part.</b> Five rows read on time. One reads delayed, and it
+    is the one I would most want to be asked about.
+  </p>
+
+  <div class="also">
+    <div>
+      <div class="t">Prefer to be tested rather than told?</div>
+      <div class="d">Eight real decisions from these postings, stripped of hindsight. You decide first.</div>
+    </div>
+    <a href="not-live-yet/the-call.html">Would you have made the call? →</a>
+  </div>
+
+  <div class="cta">
+    <div>
+      <div class="n">Puneet Arora</div>
+      <div class="r">Dell Technologies · Boeing · Hewlett Packard · Software AG · 8 granted patents</div>
+    </div>
+    <!-- TODO(Puneet): replace href with your LinkedIn URL or mailto: before sharing.
+         The note below is deliberately visible so this cannot ship unedited. -->
+    <a class="btn" href="#" id="contact" data-placeholder="1">Get in touch →</a>
+  </div>
+  <p class="ph-note">↑ Placeholder — point this at your LinkedIn or email before sharing.</p>
+</section>
+
+<footer>Built by Puneet Arora · no libraries, no trackers, works offline</footer>
+</div>
+
+<script>
+"use strict";
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const GLYPH='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ·&.-';
+
+/* Animate a string into split-flap characters.
+   The flapping spans are aria-hidden and mirrored by real text for screen
+   readers — otherwise assistive tech reads the scrambling mid-flip. */
+function flap(el,txt){
+  el.innerHTML='';
+  const target=txt.toUpperCase();
+  const vis=document.createElement('span');
+  vis.className='flap'; vis.setAttribute('aria-hidden','true');
+  const sr=document.createElement('span'); sr.className='sr'; sr.textContent=txt;
+  el.append(vis,sr);
+  [...target].forEach(ch=>{
+    const s=document.createElement('span'); s.className='ch';
+    s.textContent = reduce ? ch : ' ';
+    vis.appendChild(s);
+    if(reduce) return;
+    const steps=6+Math.floor(Math.random()*7);
+    let n=0;
+    const t=setInterval(()=>{
+      n++;
+      s.textContent = n>=steps ? ch : GLYPH[Math.floor(Math.random()*GLYPH.length)];
+      if(n>=steps) clearInterval(t);
+    },34);
+  });
+}
+
+const F=[
+{yr:'2021',dest:'AI Transformation',role:'Principal',stat:'ON TIME',gate:'DELL',warn:false,
+ p:['<b>Principal Product Design — AI-Design Transformation.</b> Founded and led the AI-Design &amp; Innovation Centre of Excellence for Dell Digital Design: prompt library, intent estimation, multi-modal adaptive layouts and behavioural-science nudges, shipped pan-organisation rather than piloted in a corner.',
+    'The GenAI chatbot on Dell.com came out of this work and won both the President&rsquo;s Award and the Game Changer Award. Six designers, a surface that already carried traffic, and an evaluation practice that could say what &ldquo;better&rdquo; meant.'],
+ learn:'A moonshot staffed at six on a trafficked surface beats one staffed at sixteen on a greenfield. Evidence arrives in weeks instead of quarters, and evidence is what buys the next quarter.',
+ c:[['Awards','President&rsquo;s + GC'],['Team on it','6'],['Scope','Pan-Dell']]},
+
+{yr:'2018',dest:'AI Products',role:'Sr Manager',stat:'ON TIME',gate:'DELL',warn:false,
+ p:['<b>Senior Manager &amp; Global UX Practice Lead — AI Products.</b> 33 designers, 4 product experiences, 5 time zones, and the whole talent lifecycle: interviewing, onboarding, mentoring, and aligning 3-6-9 month roadmaps to business KPIs.',
+    'Digital LifeCare, from this period, won ET Digital Healthcare Platform of the Year in 2022. National scale is where the edge case stops being a percentage and becomes a person standing in a queue.'],
+ learn:'Headcount is a weak signal of leadership. The number I would rather be judged on is how many of the 33 were promoted past me.',
+ c:[['Designers','33'],['Time zones','5'],['Products','4']]},
+
+{yr:'2016',dest:'Aviation Systems',role:'Sr Designer',stat:'ON TIME',gate:'BOEING',warn:false,
+ p:['<b>Boeing India.</b> Full UX lifecycle for Fuel Efficiency Solutions and the Total Airspace and Airport Modeller — design sprints against genuinely hard engineering constraints, then heuristic evaluation and usability review.',
+    'Nobody in that building ever asked me to make the error message friendlier. They asked what the system does when it is wrong, and they asked it first.'],
+ learn:'The failure state is the design, not an appendix to it. This is the single most transferable thing I know, and it is why AI surfaces I work on get their dead ends designed before their happy paths.',
+ c:[['Systems','FES + TAAM'],['Class','Safety-critical'],['Years','2']]},
+
+{yr:'2015',dest:'Enterprise UX',role:'Sr Designer',stat:'ON TIME',gate:'SAG',warn:false,
+ p:['<b>Software AG R&amp;D.</b> Redesigned core workflows for One Data and Eclipse Designer, and authored the enterprise design-system guidelines covering both internal tooling and external corporate branding.',
+    'Ran Train-the-Trainer, Crazy 8s and Think-Aloud workshops so engineering teams could design rather than queue for a designer.'],
+ learn:'A design system is an argument about what will not be reinvented. Authoring one taught me to write constraints people would actually follow, which is a different craft from drawing components.',
+ c:[['Authored','Design system'],['Workshops','3 formats'],['Surface','Enterprise']]},
+
+{yr:'2006',dest:'Firmware & Devices',role:'Design Eng II',stat:'BOARDED',gate:'HP',warn:true,
+ p:['<b>Hewlett Packard R&amp;D — nine years.</b> Control flows for Copy, Print, Fax and Connectivity across consumer and enterprise printer lines: high-density interfaces on small, low-end screens, built to HP One Voice standards and localised for the Indian market.',
+    'The HP Director Award (APJ) came from this period — 40% cost savings across Global Business Units by moving specification decisions earlier, so ambiguity resolved before engineering committed. That reduced a counted artefact: incoming defect change requests.'],
+ learn:'A control you cannot undo is a different species from one you can. Nine years of not having enough pixels is the best design education money cannot buy — and the origin of the reversibility taxonomy I still apply to agents.',
+ c:[['Years','9'],['Cost removed','40%'],['Patents from era','8']]},
+
+{yr:'NOW',dest:'Philosophy M.A.',role:'In progress',stat:'DELAYED',gate:'SELF',warn:true,
+ p:['<b>Taken deliberately, and late.</b> Alongside the AI work rather than instead of it, and the last line on my r&eacute;sum&eacute; rather than the first.',
+    'Intent estimation is an epistemology problem wearing an engineering costume: what may a system justifiably infer about a person, and at what confidence does inferring become presuming? It is why our confidence thresholds ended up with a &ldquo;presume nothing&rdquo; band rather than a binary act-or-ask.'],
+ learn:'Marked delayed because it is — and because the delay is the point. It cost considerably more to take now than it would have at twenty-five.',
+ c:[['Status','Ongoing'],['Reason','Deliberate'],['Applied to','Intent estimation']]},
+];
+
+const rows=document.getElementById('rows');
+F.forEach((f,i)=>{
+  const btn=document.createElement('button');
+  btn.className='row'; btn.type='button';
+  btn.setAttribute('aria-expanded','false');
+  btn.id='row-'+i; btn.setAttribute('aria-controls','det-'+i);
+  btn.innerHTML=`<span class="rowgrid">
+    <span class="c-yr flap-slot"></span><span class="c-dest flap-slot"></span>
+    <span class="c-role flap-slot"></span><span class="c-stat flap-slot${f.warn?' warn':''}"></span>
+    <span class="c-gate flap-slot"></span></span>`;
+  const det=document.createElement('div');
+  det.className='det'; det.id='det-'+i; det.setAttribute('role','region');
+  det.setAttribute('aria-labelledby','row-'+i);
+  det.innerHTML=`<div class="detin">
+    <div>${f.p.map(p=>'<p>'+p+'</p>').join('')}
+      <div class="learn"><div class="k">What it taught</div><p>${f.learn}</p></div></div>
+    <div class="chips">${f.c.map(c=>`<div class="chip"><div class="k">${c[0]}</div><div class="v">${c[1]}</div></div>`).join('')}</div>
+  </div>`;
+  rows.append(btn,det);
+
+  const cells=[['c-yr',f.yr],['c-dest',f.dest],['c-role',f.role],['c-stat',f.stat],['c-gate',f.gate]];
+  setTimeout(()=>cells.forEach(([cls,val],j)=>
+    setTimeout(()=>flap(btn.querySelector('.'+cls),val), reduce?0:j*55)
+  ), reduce?0:i*160);
+
+  btn.addEventListener('click',()=>{
+    const on=det.classList.toggle('on');
+    btn.setAttribute('aria-expanded',String(on));
+    if(on&&!reduce) flap(btn.querySelector('.c-dest'),f.dest);
+  });
+});
+
+function clock(){
+  const d=new Date();
+  const p=n=>String(n).padStart(2,'0');
+  document.getElementById('clk').textContent=`${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
+}
+clock(); setInterval(clock,1000);
+</script>
+</body>
+</html>
