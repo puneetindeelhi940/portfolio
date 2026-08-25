@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Departures — Puneet Arora</title>
+<style>
+:root{--bg:#0a0a08;--pan:#111310;--amb:#ffb300;--amb2:#ffd166;--fg:#f4f1e8;--mut:#8d8a7d;--dim:#5c5a50;--ln:#22241f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1120px;margin:0 auto;padding:34px 16px 90px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+.board{background:var(--pan);border:1px solid var(--ln);border-radius:14px;overflow:hidden;
+ box-shadow:0 40px 90px -60px #000,inset 0 1px 0 rgba(255,255,255,.05)}
+.bhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 20px;
+ border-bottom:1px solid var(--ln);background:linear-gradient(180deg,#16180f,#0e100c)}
+.bhead h1{font-size:clamp(19px,3.4vw,28px);letter-spacing:.16em;text-transform:uppercase;
+ font-weight:700;color:var(--amb)}
+.live{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.18em;
+ text-transform:uppercase;color:var(--mut)}
+.live i{width:8px;height:8px;border-radius:50%;background:#22c55e;display:block;
+ animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{opacity:.55;box-shadow:0 0 0 6px rgba(34,197,94,0)}}
+
+.cols{display:grid;grid-template-columns:96px 1fr 128px 108px 92px;gap:0;padding:9px 20px;
+ border-bottom:1px solid var(--ln);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.row{display:grid;grid-template-columns:96px 1fr 128px 108px 92px;gap:0;padding:15px 20px;
+ border-bottom:1px solid var(--ln);cursor:pointer;transition:background .2s;align-items:center}
+.row:hover{background:rgba(255,179,0,.05)}
+.row[aria-expanded="true"]{background:rgba(255,179,0,.07)}
+@media(max-width:820px){
+ .cols{display:none}
+ .row{grid-template-columns:1fr auto;gap:6px 12px;padding:14px 16px}
+ .row .c-gate{grid-column:1/-1;order:5}
+ .row .c-yr{order:1}.row .c-dest{order:2;grid-column:1/-1}.row .c-role{order:3}.row .c-stat{order:4;text-align:right}
+}
+.flap{display:inline-flex;gap:2px}
+.ch{display:inline-block;min-width:.62em;padding:2px 1px;border-radius:2px;text-align:center;
+ background:#1c1e17;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(0,0,0,.6);
+ font-family:ui-monospace,Menlo,monospace;color:var(--amb2);
+ box-shadow:inset 0 -6px 8px -6px rgba(0,0,0,.9)}
+.c-yr .ch{font-size:14px} .c-dest .ch{font-size:16px} .c-role .ch,.c-stat .ch,.c-gate .ch{font-size:12px}
+.c-dest{font-weight:600}
+.c-stat .ch{color:#4ade80}
+.c-stat.warn .ch{color:var(--amb)}
+.det{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,1,.36,1);
+ border-bottom:1px solid var(--ln);background:#0c0e0a}
+.det.on{max-height:420px}
+.detin{padding:18px 22px 22px;display:grid;grid-template-columns:1fr 250px;gap:20px}
+@media(max-width:820px){.detin{grid-template-columns:1fr;padding:16px}}
+.detin p{color:var(--mut);font-size:14.5px}.detin p+p{margin-top:9px}
+.detin b{color:var(--fg)}
+.chips{display:flex;flex-direction:column;gap:7px}
+.chip{border:1px solid var(--ln);border-radius:9px;padding:8px 11px;background:#111310}
+.chip .k{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.chip .v{font-family:ui-monospace,Menlo,monospace;font-size:15px;color:var(--amb2);margin-top:1px}
+
+.kick{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
+.lede{color:var(--mut);max-width:62ch;margin:16px 0 22px;font-size:16px}
+.foot{color:var(--dim);font-size:12px;margin-top:38px;text-align:center}
+@media(prefers-reduced-motion:reduce){.live i{animation:none}.det{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kick">Concept 10 · arrivals & departures</p>
+  <p class="lede">
+    Twenty years as a departure board. Each row is a posting — where it went, what was carried,
+    whether it landed. Built as a split-flap because I spent two years designing airspace systems
+    at Boeing, and because a board that <em>clatters</em> tells you something a table never will.
+  </p>
+
+  <div class="board">
+    <div class="bhead">
+      <h1>Departures</h1>
+      <span class="live"><i></i> Board live · <span id="clk" class="mono"></span></span>
+    </div>
+    <div class="cols"><span>Year</span><span>Destination</span><span>Role</span><span>Status</span><span>Gate</span></div>
+    <div id="rows"></div>
+  </div>
+
+  <p class="foot">Concept 10 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const CH='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ·&.-';
+function flap(el,txt,delayBase){
+  el.innerHTML='';
+  [...txt.toUpperCase()].forEach((target,i)=>{
+    const s=document.createElement('span'); s.className='ch'; s.textContent=reduce?target:' ';
+    el.appendChild(s);
+    if(reduce) return;
+    const steps=6+Math.floor(Math.random()*7);
+    let n=0;
+    const t=setInterval(()=>{
+      n++;
+      s.textContent = n>=steps ? target : CH[Math.floor(Math.random()*CH.length)];
+      if(n>=steps) clearInterval(t);
+    }, 34);
+    setTimeout(()=>{},delayBase+i*26);
+  });
+}
+const F=[
+{yr:'2021',dest:'AI Transformation',role:'Principal',stat:'ON TIME',gate:'DELL',warn:false,
+ p:['<b>Principal Product Design, AI-Design Transformation.</b> Founded and led the AI-Design &amp; Innovation Centre of Excellence for Dell Digital Design — prompt library, intent estimation, multi-modal adaptive layouts, behavioural-science nudges, shipped pan-org rather than piloted.',
+    'The GenAI chatbot on Dell.com came out of this. It won the President\'s Award and the Game Changer Award. Six designers, a surface that already had traffic, and a measurable definition of "better".'],
+ c:[['Awards','P + GC'],['Team on it','6'],['Scope','Pan-Dell']]},
+{yr:'2018',dest:'AI Products',role:'Sr Manager',stat:'ON TIME',gate:'DELL',warn:false,
+ p:['<b>Senior Manager &amp; Global UX Practice Lead, AI Products.</b> 33 designers, 4 product experiences, 5 time zones, and the entire talent lifecycle — interviewing, onboarding, mentoring — while aligning 3-6-9 month roadmaps to business KPIs.',
+    'Also the ET Digital Healthcare Platform of the Year in 2022, for Digital LifeCare. National scale is where the edge case stops being a percentage.'],
+ c:[['Designers','33'],['Time zones','5'],['Products','4']]},
+{yr:'2016',dest:'Aviation Systems',role:'Sr Designer',stat:'ON TIME',gate:'BOEING',warn:false,
+ p:['<b>Boeing India.</b> Full UX lifecycle for Fuel Efficiency Solutions and the Total Airspace and Airport Modeller — running design sprints against genuinely hard engineering constraints, then heuristic evaluation and usability review.',
+    'Aviation is where I stopped treating the failure state as an appendix. In that building it <em>is</em> the design.'],
+ c:[['Systems','FES + TAAM'],['Class','Safety-critical'],['Years','2']]},
+{yr:'2015',dest:'Enterprise UX',role:'Sr Designer',stat:'ON TIME',gate:'SAG',warn:false,
+ p:['<b>Software AG R&amp;D.</b> Redesigned core workflows for One Data and Eclipse Designer, and authored the enterprise design-system guidelines for internal and external branding.',
+    'Also ran Train-the-Trainer, Crazy 8s and Think-Aloud workshops to get engineering teams designing rather than waiting for design.'],
+ c:[['Authored','Design system'],['Workshops','3 formats'],['Surface','Enterprise']]},
+{yr:'2006',dest:'Firmware & Devices',role:'Design Eng II',stat:'BOARDED',gate:'HP',warn:true,
+ p:['<b>Hewlett Packard R&amp;D — nine years.</b> Control flows for Copy, Print, Fax and Connectivity across consumer and enterprise printers. High-density interfaces on small, low-end screens, built to HP One Voice standards, localised for the Indian market.',
+    'The HP Director Award (APJ) came from here: 40% cost savings across Global Business Units by cutting incoming defect change requests — design moving decisions earlier, not making screens prettier.'],
+ c:[['Years','9'],['Cost cut','40%'],['Patents from era','8']]},
+{yr:'NOW',dest:'Philosophy M.A.',role:'In progress',stat:'DELAYED',gate:'SELF',warn:true,
+ p:['<b>Taken deliberately, and late.</b> Alongside the AI work rather than instead of it.',
+    'Intent estimation is an epistemology problem wearing an engineering costume: what may a system justifiably infer about a person, and at what confidence does inferring become presuming? Marked <em>delayed</em> because it is — and because the delay is the point. It cost more to take now than it would have at twenty-five.'],
+ c:[['Status','Ongoing'],['Reason','Deliberate'],['Related','Intent estimation']]},
+];
+const rows=document.getElementById('rows');
+F.forEach((f,i)=>{
+  const r=document.createElement('div');
+  r.className='row'; r.tabIndex=0; r.setAttribute('role','button'); r.setAttribute('aria-expanded','false');
+  r.innerHTML=`<span class="c-yr flap"></span><span class="c-dest flap"></span>
+    <span class="c-role flap"></span><span class="c-stat flap${f.warn?' warn':''}"></span>
+    <span class="c-gate flap"></span>`;
+  const d=document.createElement('div'); d.className='det';
+  d.innerHTML=`<div class="detin"><div>${f.p.map(p=>'<p>'+p+'</p>').join('')}</div>
+    <div class="chips">${f.c.map(c=>`<div class="chip"><div class="k">${c[0]}</div><div class="v">${c[1]}</div></div>`).join('')}</div></div>`;
+  rows.appendChild(r); rows.appendChild(d);
+  setTimeout(()=>{
+    flap(r.querySelector('.c-yr'),f.yr,0);
+    flap(r.querySelector('.c-dest'),f.dest,60);
+    flap(r.querySelector('.c-role'),f.role,120);
+    flap(r.querySelector('.c-stat'),f.stat,180);
+    flap(r.querySelector('.c-gate'),f.gate,240);
+  }, reduce?0:i*170);
+  const tog=()=>{const on=d.classList.toggle('on'); r.setAttribute('aria-expanded',on);
+    if(on&&!reduce){ // re-clatter the destination when opened
+      flap(r.querySelector('.c-dest'),f.dest,0);}};
+  r.addEventListener('click',tog);
+  r.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();tog()}});
+});
+function clock(){const d=new Date();
+  document.getElementById('clk').textContent=
+    String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')+':'+String(d.getSeconds()).padStart(2,'0');}
+clock(); setInterval(clock,1000);
+</script>
+</body>
+</html>

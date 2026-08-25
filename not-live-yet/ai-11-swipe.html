@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swipe — Puneet Arora</title>
+<style>
+:root{--bg:#0d0b12;--fg:#f6f3fb;--mut:#a09bb0;--dim:#6b6580;--ln:#241f2e;
+ --yes:#22c55e;--no:#f43f5e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+ background-image:radial-gradient(800px 500px at 50% -10%,rgba(168,85,247,.18),transparent 65%)}
+.wrap{max-width:640px;margin:0 auto;padding:34px 20px 80px;text-align:center}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.kick{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(30px,6.4vw,50px);line-height:1;letter-spacing:-.03em;margin:12px 0 0;font-weight:750}
+h1 em{font-style:normal;background:linear-gradient(92deg,#f43f5e,#a855f7 60%,#22d3ee);
+ -webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--mut);margin:12px auto 0;max-width:46ch;font-size:15.5px}
+
+.stagewrap{position:relative;height:460px;margin-top:26px}
+.stack{position:absolute;inset:0}
+.c{position:absolute;left:0;right:0;margin:0 auto;width:min(100%,380px);height:400px;
+ background:#151221;border:1px solid var(--ln);border-radius:22px;padding:24px;
+ box-shadow:0 30px 70px -40px #000,inset 0 1px 0 rgba(255,255,255,.06);
+ display:flex;flex-direction:column;text-align:left;cursor:grab;touch-action:pan-y;
+ will-change:transform}
+.c:active{cursor:grabbing}
+.c .no{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.c h2{font-size:23px;line-height:1.16;letter-spacing:-.02em;margin-top:10px;font-weight:700}
+.c .q{color:var(--mut);font-size:15px;margin-top:12px;flex:1}
+.c .meta{border-top:1px solid var(--ln);padding-top:12px;font-size:12.5px;color:var(--dim)}
+.badge{position:absolute;top:22px;font-size:15px;font-weight:900;letter-spacing:.14em;
+ padding:7px 14px;border-radius:10px;border:3px solid;opacity:0;transform:rotate(-12deg);pointer-events:none}
+.badge.y{left:22px;color:var(--yes);border-color:var(--yes)}
+.badge.n{right:22px;color:var(--no);border-color:var(--no);transform:rotate(12deg)}
+
+.btns{display:flex;gap:14px;justify-content:center;margin-top:22px}
+.btns button{width:62px;height:62px;border-radius:50%;border:1px solid var(--ln);background:#151221;
+ color:var(--fg);font-size:23px;cursor:pointer;transition:.18s;display:grid;place-items:center}
+.btns button:hover{transform:translateY(-3px) scale(1.06)}
+.btns .b-n:hover{border-color:var(--no);color:var(--no);box-shadow:0 0 0 4px rgba(244,63,94,.14)}
+.btns .b-y:hover{border-color:var(--yes);color:var(--yes);box-shadow:0 0 0 4px rgba(34,197,94,.14)}
+.prog{display:flex;gap:5px;justify-content:center;margin-top:18px}
+.prog i{width:26px;height:3px;border-radius:2px;background:var(--ln);display:block;transition:.3s}
+.prog i.done{background:#a855f7}
+.tally{font-size:12px;color:var(--dim);margin-top:12px}
+.tally b{color:var(--fg)}
+
+.end{display:none;text-align:left;background:#151221;border:1px solid var(--ln);border-radius:22px;
+ padding:26px;margin-top:8px}
+.end.on{display:block;animation:pop .5s cubic-bezier(.2,1,.3,1)}
+@keyframes pop{from{opacity:0;transform:scale(.94) translateY(14px)}to{opacity:1;transform:none}}
+.end h3{font-size:25px;letter-spacing:-.02em;font-weight:750}
+.end p{color:var(--mut);margin-top:10px;font-size:15px}
+.end .score{font-size:56px;font-weight:800;letter-spacing:-.04em;
+ background:linear-gradient(92deg,#f43f5e,#a855f7,#22d3ee);-webkit-background-clip:text;
+ background-clip:text;color:transparent;line-height:1}
+.again{margin-top:16px;background:transparent;border:1px solid var(--ln);color:var(--mut);
+ padding:10px 16px;border-radius:10px;font:inherit;font-size:13px;cursor:pointer}
+.again:hover{border-color:#a855f7;color:var(--fg)}
+.foot{color:var(--dim);font-size:12px;margin-top:34px}
+@media(prefers-reduced-motion:reduce){.c{transition:none!important}.end.on{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kick">Concept 11 · swipe to decide</p>
+  <h1>Would you have<br><em>made the call?</em></h1>
+  <p class="lede">
+    Six real decisions from twenty years. No context, no hindsight — just the choice as it arrived.
+    Swipe right if you'd have done it. Left if you wouldn't. I'll tell you what I did, and what happened.
+  </p>
+
+  <div class="stagewrap"><div class="stack" id="stack"></div></div>
+
+  <div class="btns" id="btns">
+    <button class="b-n" aria-label="You would not">✕</button>
+    <button class="b-y" aria-label="You would">✓</button>
+  </div>
+  <div class="prog" id="prog"></div>
+  <p class="tally" id="tally">Drag the card, or use the buttons · <b>0</b> of 6 decided</p>
+
+  <div class="end" id="end"></div>
+  <p class="foot">Concept 11 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const D=[
+{q:'Your CEO has mandated GenAI. You have 33 designers. Do you put 16 of them on the moonshot?',
+ meta:'Dell · 2021 · the mandate arrives',
+ me:false,
+ said:'I put six on it, and thirteen on the e-commerce revenue that already existed.',
+ why:'The mandate wanted a moonshot; what the business could absorb was a prompt library and intent estimation landing inside a surface that already had traffic. Small team, real users, measurable. Sixteen designers would have produced a magnificent internal demo and a budget conversation I\'d have lost in month nine.'},
+{q:'Budget is being cut. Research and evaluation is four headcount and produces no visible artefact. Do you protect it?',
+ meta:'Dell · every review, for five years',
+ me:true,
+ said:'I protected all four, and justified them again in every single review.',
+ why:'That headcount is the reason the chatbot work could be defended later — we could say what "better" actually meant. An AI feature without an evaluation practice is a demo with a launch date. It was also the easiest line item to argue away, which is precisely why it needed someone to keep arguing.'},
+{q:'A model gives you a complete, plausible intent taxonomy in four seconds. Do you use it as the starting point?',
+ meta:'Dell · designing intent estimation',
+ me:false,
+ said:'I threw it away and derived the taxonomy from session logs instead.',
+ why:'A model will always produce a plausible taxonomy, because plausible taxonomies are what its training data is full of. About a third of our real categories were things nobody on the team would have guessed — the largest cluster was people shopping for someone who wasn\'t there to consult. Accepting the fluent version would have cost a quarter and taught us nothing.'},
+{q:'You can cut 40% of costs by changing how design specifies work — but it means telling engineering their intake process is the problem. Do you say it?',
+ meta:'HP · APJ region',
+ me:true,
+ said:'I said it, and then had to prove it with a counted artefact.',
+ why:'The saving came from moving specification decisions earlier so ambiguity resolved before engineering committed — which reduced incoming defect change requests, a number somebody already tracked. That\'s the only reason it survived scrutiny: an award committee signed off on it, not a designer. Pick the metric your critic already believes in.'},
+{q:'You are 45+, leading AI transformation, and busy. Do you start a Master\'s in Philosophy?',
+ meta:'Ongoing · taken deliberately, late',
+ me:true,
+ said:'Yes — alongside the AI work, not instead of it.',
+ why:'Intent estimation is an epistemology question in an engineering costume: what may a system justifiably infer, and at what confidence does inferring become presuming? I did not get that framing from a design conference. It cost more to take now than it would have at twenty-five, and that is rather the point.'},
+{q:'Your personalisation system can lift quarterly engagement measurably by nudging harder. The counter-metric is not on the dashboard. Do you ship it?',
+ meta:'Dell · behavioural-science nudges',
+ me:false,
+ said:'Not until the counter-metric was on the same dashboard, at the same size.',
+ why:'A nudge that wins the quarter and loses the customer is a defect wearing a metric. Engagement moves first and fastest, so it wins the review; the cost lands in month nine as churn nobody attributes back. If you cannot see both numbers at once, you are not measuring — you are choosing which harm to be surprised by.'},
+];
+const stack=document.getElementById('stack'), prog=document.getElementById('prog'),
+      tally=document.getElementById('tally'), endEl=document.getElementById('end');
+let idx=0, agree=0, answers=[];
+prog.innerHTML=D.map(()=>'<i></i>').join('');
+function build(){
+  stack.innerHTML='';
+  D.slice(idx,idx+3).reverse().forEach((d,ri)=>{
+    const realIdx=idx+(Math.min(3,D.length-idx)-1-ri);
+    const el=document.createElement('div'); el.className='c';
+    const depth=Math.min(3,D.length-idx)-1-ri;
+    el.style.transform=`translateY(${depth*10}px) scale(${1-depth*.04})`;
+    el.style.zIndex=10-depth;
+    el.innerHTML=`<span class="badge y">WOULD</span><span class="badge n">WOULDN'T</span>
+      <div class="no mono">Decision ${String(realIdx+1).padStart(2,'0')} / 06</div>
+      <h2>${D[realIdx].q}</h2><div class="q"></div>
+      <div class="meta">${D[realIdx].meta}</div>`;
+    stack.appendChild(el);
+    if(depth===0) attach(el);
+  });
+}
+function attach(el){
+  let sx=0,sy=0,dx=0,dy=0,drag=false;
+  const y=el.querySelector('.badge.y'), n=el.querySelector('.badge.n');
+  const down=e=>{drag=true;sx=e.clientX;sy=e.clientY;el.setPointerCapture(e.pointerId);
+    el.style.transition='none'};
+  const move=e=>{if(!drag)return;dx=e.clientX-sx;dy=e.clientY-sy;
+    el.style.transform=`translate(${dx}px,${dy*.35}px) rotate(${dx*.055}deg)`;
+    const t=Math.min(Math.abs(dx)/110,1);
+    y.style.opacity=dx>0?t:0; n.style.opacity=dx<0?t:0;};
+  const up=()=>{if(!drag)return;drag=false;el.style.transition='transform .45s cubic-bezier(.2,.9,.3,1),opacity .4s';
+    if(Math.abs(dx)>105){fly(el,dx>0);}
+    else{el.style.transform='';y.style.opacity=0;n.style.opacity=0;}
+    dx=0;};
+  el.addEventListener('pointerdown',down);
+  el.addEventListener('pointermove',move);
+  el.addEventListener('pointerup',up);
+  el.addEventListener('pointercancel',up);
+}
+function fly(el,yes){
+  el.style.transform=`translate(${yes?900:-900}px,${yes?-60:60}px) rotate(${yes?38:-38}deg)`;
+  el.style.opacity='0';
+  record(yes);
+  setTimeout(()=>{idx++;render();}, reduce?0:330);
+}
+function record(yes){
+  answers.push(yes);
+  if(yes===D[idx].me) agree++;
+  prog.children[idx].classList.add('done');
+}
+function render(){
+  if(idx>=D.length){ finish(); return; }
+  build();
+  tally.innerHTML=`Drag the card, or use the buttons · <b>${idx}</b> of ${D.length} decided`;
+}
+function finish(){
+  stack.innerHTML=''; document.getElementById('btns').style.display='none';
+  tally.style.display='none';
+  const pct=Math.round(agree/D.length*100);
+  const head = agree>=5?'We think alike.' : agree>=3?'Close, but you\'d have run it differently.' : 'You\'d have run a very different org.';
+  endEl.innerHTML=`<div class="score">${agree}/${D.length}</div>
+    <h3 style="margin-top:6px">${head}</h3>
+    <p>You matched my actual call ${pct}% of the time. Here's what I did on each, and why —
+    the reasoning matters more than the tally.</p>
+    ${D.map((d,i)=>`<div style="margin-top:18px;padding-top:16px;border-top:1px solid var(--ln)">
+      <div style="font-size:12px;color:${answers[i]===d.me?'var(--yes)':'var(--no)'};
+        letter-spacing:.14em;text-transform:uppercase;font-weight:700">
+        ${answers[i]===d.me?'✓ you agreed':'✕ you differed'} · you said ${answers[i]?'would':'wouldn\'t'} · I ${d.me?'did':'didn\'t'}</div>
+      <div style="font-weight:650;margin-top:6px;font-size:16px">${d.q}</div>
+      <p style="margin-top:7px;color:var(--fg);font-size:14.5px"><b>${d.said}</b></p>
+      <p style="margin-top:5px;font-size:14.5px">${d.why}</p></div>`).join('')}
+    <button class="again" id="again">Run it again ↺</button>`;
+  endEl.classList.add('on');
+  document.getElementById('again').onclick=()=>{
+    idx=0;agree=0;answers=[];endEl.classList.remove('on');endEl.innerHTML='';
+    document.getElementById('btns').style.display='';tally.style.display='';
+    [...prog.children].forEach(p=>p.classList.remove('done'));render();};
+}
+document.querySelector('.b-y').onclick=()=>{const c=stack.querySelector('.c:last-child');
+  if(c){c.style.transition='transform .45s cubic-bezier(.2,.9,.3,1),opacity .4s';fly(c,true)}};
+document.querySelector('.b-n').onclick=()=>{const c=stack.querySelector('.c:last-child');
+  if(c){c.style.transition='transform .45s cubic-bezier(.2,.9,.3,1),opacity .4s';fly(c,false)}};
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mission Control — Puneet Arora</title>
+<style>
+:root{--bg:#050807;--pan:#0a100d;--ln:#16241d;--fg:#dffbee;--mut:#6f9285;--dim:#456358;
+ --gr:#22e39a;--am:#ffc23d;--rd:#ff5d6c;--cy:#3ddbff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);
+ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+ font-size:13px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9;opacity:.35;
+ background:repeating-linear-gradient(0deg,rgba(0,0,0,.45) 0 1px,transparent 1px 3px)}
+.wrap{position:relative;z-index:1;max-width:1260px;margin:0 auto;padding:22px 16px 70px}
+
+.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;border:1px solid var(--ln);
+ border-radius:12px;padding:14px 18px;background:var(--pan)}
+.top h1{font-family:system-ui,sans-serif;font-size:clamp(17px,3vw,25px);letter-spacing:.16em;
+ text-transform:uppercase;font-weight:750;color:var(--gr)}
+.top .sub{color:var(--dim);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.stat-ok{margin-left:auto;display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.14em;
+ text-transform:uppercase;color:var(--gr)}
+.stat-ok i{width:9px;height:9px;border-radius:50%;background:var(--gr);display:block;
+ box-shadow:0 0 12px var(--gr);animation:bl 1.6s ease-in-out infinite}
+@keyframes bl{50%{opacity:.35}}
+
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:12px}
+.p{background:var(--pan);border:1px solid var(--ln);border-radius:12px;padding:14px;position:relative;
+ overflow:hidden}
+.p::after{content:"";position:absolute;top:0;left:0;width:26px;height:1px;background:var(--gr);opacity:.7}
+.p h2{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:10px}
+.c12{grid-column:span 12}.c8{grid-column:span 8}.c6{grid-column:span 6}
+.c4{grid-column:span 4}.c3{grid-column:span 3}
+@media(max-width:900px){.c8,.c6,.c4,.c3{grid-column:span 12}}
+
+.kpi b{display:block;font-size:clamp(30px,4.6vw,46px);line-height:1;letter-spacing:-.03em;
+ font-family:system-ui,sans-serif;font-weight:800}
+.kpi span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+ display:block;margin-top:6px}
+.spark{width:100%;height:34px;display:block;margin-top:9px}
+
+.gauge{display:flex;align-items:center;gap:14px}
+.gauge svg{flex:none}
+.gauge .lab{font-size:11px;color:var(--mut)}
+.gauge .lab b{display:block;font-size:19px;color:var(--fg);font-family:system-ui,sans-serif}
+
+.bars{display:flex;flex-direction:column;gap:9px}
+.bar{display:grid;grid-template-columns:120px 1fr 44px;gap:9px;align-items:center;font-size:11.5px}
+@media(max-width:520px){.bar{grid-template-columns:92px 1fr 38px}}
+.bar .tr{height:7px;background:#0f1b16;border-radius:4px;overflow:hidden;border:1px solid var(--ln)}
+.bar .tr i{display:block;height:100%;width:0;border-radius:4px;transition:width 1.4s cubic-bezier(.2,1,.3,1)}
+.bar .vv{text-align:right;color:var(--mut)}
+
+.log{height:158px;overflow:hidden;position:relative}
+.log .line{display:flex;gap:9px;padding:3px 0;font-size:11.5px;border-bottom:1px dotted #12201a}
+.log .t{color:var(--dim);flex:none}
+.log .m{color:var(--mut)}
+.log .m b{color:var(--fg);font-weight:600}
+
+.radar{display:grid;place-items:center}
+.radar svg{max-width:100%}
+.sweep{transform-origin:100px 100px;animation:sw 4.2s linear infinite}
+@keyframes sw{to{transform:rotate(360deg)}}
+.blip{opacity:0;animation:bp 4.2s linear infinite}
+@keyframes bp{0%,6%{opacity:1}45%,100%{opacity:0}}
+
+.sysrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:9px}
+.sys{border:1px solid var(--ln);border-radius:9px;padding:10px;background:#081009}
+.sys .n{font-size:10.5px;color:var(--mut)}
+.sys .s{font-size:12px;margin-top:3px;letter-spacing:.1em}
+.foot{color:var(--dim);font-size:11px;margin-top:26px;text-align:center;letter-spacing:.12em;text-transform:uppercase}
+@media(prefers-reduced-motion:reduce){
+ .stat-ok i,.sweep,.blip{animation:none}
+ .bar .tr i{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Puneet Arora · Mission Control</h1>
+      <div class="sub">Design leadership · AI-mediated systems · Bangalore</div>
+    </div>
+    <span class="stat-ok"><i></i>All systems nominal · <span id="up"></span></span>
+  </div>
+
+  <div class="grid">
+    <div class="p c3 kpi"><h2>Years in service</h2><b id="k1" style="color:var(--gr)">0</b>
+      <span>2006 → 2026</span><canvas class="spark" data-sp="0"></canvas></div>
+    <div class="p c3 kpi"><h2>Granted patents</h2><b id="k2" style="color:var(--am)">0</b>
+      <span>+ 8 publications</span><canvas class="spark" data-sp="1"></canvas></div>
+    <div class="p c3 kpi"><h2>Designers led</h2><b id="k3" style="color:var(--cy)">0</b>
+      <span>across 5 time zones</span><canvas class="spark" data-sp="2"></canvas></div>
+    <div class="p c3 kpi"><h2>Cost removed · HP</h2><b id="k4" style="color:var(--rd)">0%</b>
+      <span>APJ Director Award</span><canvas class="spark" data-sp="3"></canvas></div>
+
+    <div class="p c8">
+      <h2>Capability telemetry — self-assessed, with the weak ones shown</h2>
+      <div class="bars" id="bars"></div>
+    </div>
+
+    <div class="p c4 radar">
+      <h2 style="align-self:flex-start">Domain coverage</h2>
+      <svg width="200" height="200" viewBox="0 0 200 200" aria-label="Domain coverage radar">
+        <defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#22e39a" stop-opacity="0"/>
+          <stop offset="1" stop-color="#22e39a" stop-opacity=".55"/></linearGradient></defs>
+        <g stroke="#16241d" fill="none">
+          <circle cx="100" cy="100" r="82"/><circle cx="100" cy="100" r="60"/>
+          <circle cx="100" cy="100" r="38"/><circle cx="100" cy="100" r="16"/>
+          <line x1="18" y1="100" x2="182" y2="100"/><line x1="100" y1="18" x2="100" y2="182"/>
+        </g>
+        <polygon id="poly" points="" fill="rgba(34,227,154,.16)" stroke="#22e39a" stroke-width="1.4"/>
+        <g class="sweep"><path d="M100,100 L182,100 A82,82 0 0,0 158,42 Z" fill="url(#sg)"/></g>
+        <g id="blips"></g>
+      </svg>
+      <div style="font-size:10.5px;color:var(--dim);margin-top:8px;text-align:center">
+        AI · Leadership · Craft · High-stakes · Invention · Comms
+      </div>
+    </div>
+
+    <div class="p c6">
+      <h2>Mission log — live feed</h2>
+      <div class="log" id="log"></div>
+    </div>
+
+    <div class="p c6">
+      <h2>Subsystem status</h2>
+      <div class="sysrow" id="sys"></div>
+      <div style="margin-top:12px;font-size:11.5px;color:var(--mut);border-top:1px dotted #12201a;padding-top:10px">
+        <b style="color:var(--am)">DEGRADED</b> entries are real. A dashboard where everything reads
+        green is a dashboard nobody calibrated.
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">Concept 14 · Built by Puneet Arora · no libraries</p>
+</div>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// ---- counters ----
+function count(el,to,suf=''){
+  if(reduce){el.textContent=to+suf;return}
+  const t0=performance.now(),dur=1500;
+  (function f(t){const p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,3);
+    el.textContent=Math.round(to*e)+suf; if(p<1)requestAnimationFrame(f)})(t0);
+}
+count(document.getElementById('k1'),20);
+count(document.getElementById('k2'),8);
+count(document.getElementById('k3'),33);
+count(document.getElementById('k4'),40,'%');
+
+// ---- sparklines ----
+const SP=[[3,4,5,6,7,9,11,12,14,16,18,20],[0,0,1,2,3,4,5,6,7,8,8,8],
+          [2,4,6,9,14,20,26,30,33,33,31,33],[4,9,14,19,26,31,35,38,40,40,39,40]];
+document.querySelectorAll('.spark').forEach(cv=>{
+  const d=SP[+cv.dataset.sp],dpr=Math.min(devicePixelRatio||1,2);
+  const W=cv.clientWidth||220,H=34;cv.width=W*dpr;cv.height=H*dpr;
+  const c=cv.getContext('2d');c.setTransform(dpr,0,0,dpr,0,0);
+  const mx=Math.max(...d),col=['#22e39a','#ffc23d','#3ddbff','#ff5d6c'][+cv.dataset.sp];
+  c.beginPath();
+  d.forEach((v,i)=>{const x=i/(d.length-1)*W,y=H-4-(v/mx)*(H-9);i?c.lineTo(x,y):c.moveTo(x,y)});
+  c.strokeStyle=col;c.lineWidth=1.6;c.stroke();
+  c.lineTo(W,H);c.lineTo(0,H);c.closePath();
+  const g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,col+'44');g.addColorStop(1,col+'00');
+  c.fillStyle=g;c.fill();
+});
+
+// ---- capability bars ----
+const CAP=[['GenAI product',92,'var(--gr)'],['Org leadership',94,'var(--gr)'],
+ ['Enterprise systems',88,'var(--cy)'],['Safety-critical',85,'var(--cy)'],
+ ['Executive comms',90,'var(--gr)'],['Invention / IP',82,'var(--am)'],
+ ['Brand identity',38,'var(--rd)'],['Seed-stage improv',44,'var(--rd)']];
+document.getElementById('bars').innerHTML=CAP.map(([n,v,c])=>
+ `<div class="bar"><span style="color:var(--mut)">${n}</span>
+  <span class="tr"><i data-w="${v}" style="background:${c}"></i></span>
+  <span class="vv">${v}</span></div>`).join('');
+setTimeout(()=>document.querySelectorAll('.bar i').forEach(i=>i.style.width=i.dataset.w+'%'),150);
+
+// ---- radar polygon ----
+const R=[95,94,88,86,80,90]; // AI, leadership, craft, stakes, invention, comms
+const pts=R.map((v,i)=>{const a=-Math.PI/2+i/R.length*Math.PI*2,r=v/100*82;
+ return (100+Math.cos(a)*r).toFixed(1)+','+(100+Math.sin(a)*r).toFixed(1)}).join(' ');
+document.getElementById('poly').setAttribute('points',pts);
+document.getElementById('blips').innerHTML=R.map((v,i)=>{
+ const a=-Math.PI/2+i/R.length*Math.PI*2,r=v/100*82;
+ return `<circle class="blip" cx="${(100+Math.cos(a)*r).toFixed(1)}" cy="${(100+Math.sin(a)*r).toFixed(1)}"
+   r="3" fill="#22e39a" style="animation-delay:${(i/R.length*4.2).toFixed(2)}s"/>`}).join('');
+
+// ---- mission log ----
+const LOG=[
+ ['2006','HP R&D — <b>firmware UX</b>, dense interfaces on low-end hardware'],
+ ['2009','Localisation for the Indian market · HP One Voice standards'],
+ ['2013','<b>RHoK hackathon</b> won — social-impact application blueprint'],
+ ['2014','<b>HP Director Award (APJ)</b> — 40% cost removed across GBUs'],
+ ['2015','Software AG — authored <b>enterprise design system</b> guidelines'],
+ ['2016','Boeing — <b>FES</b> + <b>TAAM</b>, safety-critical aviation systems'],
+ ['2018','Dell — Global UX Practice Lead, <b>AI Products</b>'],
+ ['2021','Founded the <b>AI-Design &amp; Innovation CoE</b>'],
+ ['2022','<b>ET Healthcare Platform of the Year</b> — Digital LifeCare'],
+ ['2023','<b>Dell.com GenAI chatbot</b> — President\'s + Game Changer'],
+ ['2024','Intent estimation · multi-modal adaptive layouts in production'],
+ ['NOW','<b>M.A. Philosophy</b> — in progress, taken deliberately'],
+];
+const log=document.getElementById('log');
+let li=0;
+function push(){
+  const [t,m]=LOG[li%LOG.length];li++;
+  const d=document.createElement('div');d.className='line';
+  d.innerHTML=`<span class="t">${t}</span><span class="m">${m}</span>`;
+  log.prepend(d);
+  while(log.children.length>7) log.lastChild.remove();
+}
+for(let i=0;i<7;i++) push();
+if(!reduce) setInterval(push,2600);
+
+// ---- subsystems ----
+const SYS=[['AI practice','NOMINAL','var(--gr)'],['Org scaling','NOMINAL','var(--gr)'],
+ ['Exec alignment','NOMINAL','var(--gr)'],['Safety-critical','NOMINAL','var(--gr)'],
+ ['Brand identity','DEGRADED','var(--am)'],['Seed-stage','DEGRADED','var(--am)'],
+ ['Patents','ARCHIVED','var(--dim)'],['Philosophy','RUNNING','var(--cy)']];
+document.getElementById('sys').innerHTML=SYS.map(([n,s,c])=>
+ `<div class="sys"><div class="n">${n}</div><div class="s" style="color:${c}">${s}</div></div>`).join('');
+
+// ---- uptime ----
+const t0=Date.now();
+function up(){const s=Math.floor((Date.now()-t0)/1000);
+ document.getElementById('up').textContent=
+  'T+'+String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+up();setInterval(up,1000);
+</script>
+</body>
+</html>

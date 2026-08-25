@@ -1,120 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<base href="../">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Four AI Résumé Concepts — Puneet Arora</title>
+<meta charset="utf-8"><base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Concepts — Puneet Arora</title>
 <style>
-:root{--bg:#0b0c0f;--fg:#eef1f5;--mut:#98a1af;--faint:#646d7c;--line:#1e222b;--card:#12141a}
+:root{--bg:#06070b;--fg:#eff2f8;--mut:#98a1b4;--dim:#5d6577;--ln:#1a1e29;--card:#0e1118}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1080px;margin:0 auto;padding:44px 20px 90px}
+ line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+ background:radial-gradient(900px 560px at 12% -8%,rgba(124,58,237,.22),transparent 62%),
+            radial-gradient(760px 480px at 88% 4%,rgba(6,182,212,.16),transparent 62%)}
+.wrap{position:relative;z-index:1;max-width:1220px;margin:0 auto;padding:44px 20px 90px}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-.kick{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
-h1{font-size:clamp(30px,5vw,50px);line-height:1.05;letter-spacing:-.025em;margin:14px 0 0;font-weight:600}
-.lede{color:var(--mut);max-width:66ch;margin-top:16px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:34px}
-a.card{display:block;text-decoration:none;color:inherit;background:var(--card);
-  border:1px solid var(--line);border-radius:14px;padding:22px;transition:.2s;position:relative;overflow:hidden}
-a.card:hover{border-color:#3a4152;transform:translateY(-3px)}
-.sw{display:flex;gap:5px;margin-bottom:14px}
-.sw i{width:26px;height:26px;border-radius:6px;display:block}
-.n{font-size:11px;letter-spacing:.2em;color:var(--faint)}
-h2{font-size:20px;margin:8px 0 2px;font-weight:600;letter-spacing:-.01em}
+.kick{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(32px,6.6vw,66px);line-height:.98;letter-spacing:-.035em;margin:12px 0 0;font-weight:780}
+h1 span{background:linear-gradient(92deg,#a78bfa,#22d3ee 52%,#f0abfc);-webkit-background-clip:text;
+ background-clip:text;color:transparent}
+.lede{color:var(--mut);max-width:62ch;margin-top:16px;font-size:16.5px}
+
+.secttl{display:flex;align-items:baseline;gap:14px;margin:44px 0 4px;flex-wrap:wrap}
+.secttl h2{font-size:19px;font-weight:700;letter-spacing:-.01em}
+.secttl .tag{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;
+ padding:3px 9px;border-radius:99px;background:rgba(167,139,250,.16);color:#c4b5fd}
+.secttl p{color:var(--dim);font-size:13.5px;width:100%;max-width:70ch}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;margin-top:18px}
+a.card{position:relative;display:block;text-decoration:none;color:inherit;background:var(--card);
+ border:1px solid var(--ln);border-radius:18px;overflow:hidden;
+ transition:transform .35s cubic-bezier(.2,1,.3,1),border-color .3s,box-shadow .35s}
+a.card:hover{transform:translateY(-6px);border-color:#39415a;box-shadow:0 28px 60px -34px #000}
+.viz{height:132px;position:relative;overflow:hidden;border-bottom:1px solid var(--ln)}
+.body{padding:18px}
+.n{font-size:10.5px;letter-spacing:.2em;color:var(--dim)}
+.card h3{font-size:21px;margin:7px 0 3px;font-weight:720;letter-spacing:-.018em}
 .tl{color:var(--mut);font-size:14px}
-.dl{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--faint)}
-.dl b{color:var(--mut);font-weight:600}
-.go{margin-top:12px;font-size:12px;color:#7dd3fc}
-.note{margin-top:34px;border-left:3px solid #3a4152;padding-left:16px;color:var(--mut);max-width:70ch;font-size:14px}
-.foot{color:var(--faint);font-size:12px;margin-top:40px;text-align:center}
+.dl{margin-top:13px;padding-top:11px;border-top:1px solid var(--ln);font-size:12.5px;color:var(--dim)}
+.dl b{color:var(--mut);font-weight:650}
+.go{margin-top:11px;font-size:12px;color:#7dd3fc;letter-spacing:.04em}
+
+/* per-card motion previews */
+.viz i{position:absolute;display:block}
+.holoP{background:conic-gradient(from 0deg,#ff0080,#ffd600,#00ffc4,#4078ff,#ff0080);
+ inset:-30%;filter:blur(26px);opacity:.5;animation:sp 9s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.flapP{inset:0;background:repeating-linear-gradient(0deg,#141610 0 9px,#0d0f0a 9px 10px)}
+.flapP::after{content:"DEPARTURES";position:absolute;inset:0;display:grid;place-items:center;
+ font-family:ui-monospace,Menlo,monospace;font-size:19px;letter-spacing:.2em;color:#ffb300;
+ animation:flick 3.4s steps(1) infinite}
+@keyframes flick{0%,88%{opacity:1}90%{opacity:.25}92%{opacity:1}94%{opacity:.4}96%{opacity:1}}
+.swipeP i{width:76px;height:100px;border-radius:11px;background:#1d1830;border:1px solid #322a4d;
+ top:16px;left:50%}
+.swipeP i:nth-child(1){transform:translateX(-50%) rotate(-9deg) translateY(6px)}
+.swipeP i:nth-child(2){transform:translateX(-50%) rotate(5deg) translateY(3px)}
+.swipeP i:nth-child(3){background:#2a2247;animation:fly 3.6s ease-in-out infinite}
+@keyframes fly{0%,55%{transform:translateX(-50%) rotate(0)}
+ 75%{transform:translateX(60px) rotate(20deg);opacity:0}
+ 76%{transform:translateX(-50%) rotate(0);opacity:0}100%{transform:translateX(-50%);opacity:1}}
+.starP i{width:7px;height:7px;border-radius:50%;animation:pu 3s ease-in-out infinite}
+@keyframes pu{50%{transform:scale(1.7);opacity:.55}}
+.kinP{inset:0;background:linear-gradient(100deg,#0a0a0a 0 25%,#f2f0eb 25% 50%,#0b1f4d 50% 75%,#8c1c13 75%);
+ animation:slide2 7s ease-in-out infinite alternate}
+@keyframes slide2{to{transform:translateX(-22%)}}
+.hudP{inset:0;background:#050807}
+.hudP::after{content:"";position:absolute;inset:0;
+ background:repeating-linear-gradient(0deg,rgba(34,227,154,.10) 0 1px,transparent 1px 4px)}
+.hudP::before{content:"";position:absolute;width:96px;height:96px;border-radius:50%;
+ border:1px solid rgba(34,227,154,.4);top:18px;left:50%;transform:translateX(-50%);
+ background:conic-gradient(from 0deg,rgba(34,227,154,.45),transparent 42%);animation:sp 3.6s linear infinite}
+
+.prev{margin-top:44px;border-top:1px solid var(--ln);padding-top:22px}
+.prev h2{font-size:15px;font-weight:700;color:var(--mut)}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
+.chips a{font-size:12.5px;color:var(--dim);text-decoration:none;border:1px solid var(--ln);
+ padding:7px 12px;border-radius:99px;transition:.2s}
+.chips a:hover{border-color:#39415a;color:var(--fg)}
+.note{margin-top:26px;border-left:3px solid #39415a;padding-left:16px;color:var(--mut);
+ max-width:72ch;font-size:14px}
+.foot{color:var(--dim);font-size:12px;margin-top:40px;text-align:center}
+@media(prefers-reduced-motion:reduce){.viz *{animation:none!important}a.card{transition:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="kick">Puneet Arora · round two</div>
-  <h1>Four things that are not<br>a résumé in AI costume.</h1>
+  <p class="kick">Puneet Arora · round three</p>
+  <h1>Six cards that<br><span>move, tilt and clatter.</span></h1>
   <p class="lede">
-    Round one varied the costume — the same document, dressed as four AI artefacts. This round varies
-    the <em>form</em>: who holds the agency, what the medium is, and what the page is actually for.
-    One is a game you lose. One is a free tool that never mentions hiring until the footer. One is a
-    transcript. One refuses to be interactive at all.
+    Bolder, card-based, motion built in — and six different <em>motion languages</em>, not one effect
+    reskinned six times. Every page is zero-dependency, works offline, and honours
+    <span class="mono" style="font-size:13px">prefers-reduced-motion</span>, because a design
+    leader's portfolio that ignores that is making an argument against itself.
   </p>
+
+  <div class="secttl">
+    <h2>Round three</h2><span class="tag">Motion</span>
+    <p>Each card below previews its own motion language. Hover them.</p>
+  </div>
 
   <div class="grid">
 
-    <a class="card" href="not-live-yet/ai-05-run-my-org.html">
-      <div class="sw"><i style="background:#0f1115;border:1px solid #252a34"></i><i style="background:#38bdf8"></i><i style="background:#f87171"></i></div>
-      <div class="n mono">05 · YOU PLAY</div>
-      <h2>Run My Org</h2>
-      <p class="tl">A playable quarter. 33 designers, 4 products, a GenAI mandate, 13 weeks. You allocate; the sim shows what breaks; then it reveals what he actually did and what it cost.</p>
-      <div class="dl">
-        <b>Medium:</b> simulation, not document.<br>
-        <b>Agency:</b> the visitor's — you are the one being tested.<br>
-        <b>Proves:</b> leadership judgment, which bullets cannot carry.
-      </div>
-      <div class="go">Play the quarter →</div>
+    <a class="card" href="not-live-yet/ai-09-holo-deck.html">
+      <div class="viz"><i class="holoP"></i></div>
+      <div class="body"><div class="n mono">09 · 3D TILT + FOIL</div>
+        <h3>The Deck</h3>
+        <p class="tl">Nine collectible cards with rarity tiers. Pointer-tracked 3D tilt, holographic conic sheen, flip to read what each one cost. One card is mythic.</p>
+        <div class="dl"><b>Motion:</b> real-time 3D transform + pointer-following foil.<br>
+          <b>Hook:</b> a résumé claims equal weight; a deck doesn't.</div>
+        <div class="go">Deal the cards →</div></div>
     </a>
 
-    <a class="card" href="not-live-yet/ai-06-premortem.html">
-      <div class="sw"><i style="background:#fcfcfa"></i><i style="background:#0f766e"></i><i style="background:#b91c1c"></i></div>
-      <div class="n mono">06 · YOU GAIN</div>
-      <h2>The AI Feature Pre-Mortem</h2>
-      <p class="tl">A genuinely useful free tool. Describe your AI feature; get back the failure modes that will bite you, ranked, with mitigations. No sign-up. His name appears once, at the bottom.</p>
-      <div class="dl">
-        <b>Medium:</b> instrument, not portfolio.<br>
-        <b>Posture:</b> value first — earns attention instead of asking for it.<br>
-        <b>Proves:</b> expertise, by being useful before being seen.
-      </div>
-      <div class="go">Use the tool →</div>
+    <a class="card" href="not-live-yet/ai-10-departures.html">
+      <div class="viz"><i class="flapP"></i></div>
+      <div class="body"><div class="n mono">10 · SPLIT-FLAP</div>
+        <h3>Departures</h3>
+        <p class="tl">An airport board where every character clatters into place — 243 of them. Rows expand into the posting behind them. Built as a nod to the Boeing years.</p>
+        <div class="dl"><b>Motion:</b> per-character flap animation, staggered on load.<br>
+          <b>Hook:</b> the Philosophy M.A. is marked <em>DELAYED</em>, on purpose.</div>
+        <div class="go">Read the board →</div></div>
     </a>
 
-    <a class="card" href="not-live-yet/ai-07-margin.html">
-      <div class="sw"><i style="background:#f6f4ef"></i><i style="background:#1d4ed8"></i><i style="background:#a4133c"></i></div>
-      <div class="n mono">07 · YOU WATCH</div>
-      <h2>The Margin</h2>
-      <p class="tl">A working session with a model, published with his margin notes — including the moment he rejects a fluent, confident, completely hollow answer. The annotations are the portfolio.</p>
-      <div class="dl">
-        <b>Medium:</b> annotated transcript.<br>
-        <b>Shows:</b> taste in <em>directing</em> a model, not using one.<br>
-        <b>Proves:</b> the one thing a model could not have written for him.
-      </div>
-      <div class="go">Read the session →</div>
+    <a class="card" href="not-live-yet/ai-11-swipe.html">
+      <div class="viz swipeP"><i></i><i></i><i></i></div>
+      <div class="body"><div class="n mono">11 · DRAG PHYSICS</div>
+        <h3>Would You Have Made the Call?</h3>
+        <p class="tl">Six real decisions, stripped of hindsight. Swipe right if you'd have done it. At the end it scores your agreement and explains what he actually chose.</p>
+        <div class="dl"><b>Motion:</b> pointer drag, rotation, fling-off, spring return.<br>
+          <b>Hook:</b> you're the one being assessed.</div>
+        <div class="go">Start swiping →</div></div>
     </a>
 
-    <a class="card" href="not-live-yet/ai-08-analog.html">
-      <div class="sw"><i style="background:#efe9dc"></i><i style="background:#8c2b1e"></i><i style="background:#191512"></i></div>
-      <div class="n mono">08 · YOU STOP</div>
-      <h2>Judgment Is the Bottleneck</h2>
-      <p class="tl">A letterpress broadside. No animation, no gradient, no assistant in the corner. Argues his AI credibility precisely by refusing every AI aesthetic — because when generation is free, restraint is the signal.</p>
-      <div class="dl">
-        <b>Medium:</b> print object, rendered in a browser.<br>
-        <b>Interaction:</b> none. Deliberately. Zero scripts.<br>
-        <b>Proves:</b> taste, and the confidence to leave things out.
-      </div>
-      <div class="go">Read the broadside →</div>
+    <a class="card" href="not-live-yet/ai-12-constellation.html">
+      <div class="viz starP" style="background:radial-gradient(600px 200px at 40% 30%,rgba(56,189,248,.16),transparent)">
+        <i style="background:#38bdf8;top:38px;left:26%"></i><i style="background:#a78bfa;top:70px;left:44%;animation-delay:.5s"></i>
+        <i style="background:#34d399;top:44px;left:62%;animation-delay:1s"></i><i style="background:#fb7185;top:88px;left:76%;animation-delay:1.5s"></i>
+        <i style="background:#fbbf24;top:26px;left:84%;animation-delay:2s"></i></div>
+      <div class="body"><div class="n mono">12 · FORCE SIMULATION</div>
+        <h3>Constellation</h3>
+        <p class="tl">A live force-directed graph of twenty years. Drag any node and the whole system reorganises. Lines are transferred lessons — firmware reversibility still connects to AI agents.</p>
+        <div class="dl"><b>Motion:</b> continuous physics on canvas, 60fps, hand-written.<br>
+          <b>Hook:</b> a timeline implies each job ended.</div>
+        <div class="go">Disturb the system →</div></div>
+    </a>
+
+    <a class="card" href="not-live-yet/ai-13-kinetic.html">
+      <div class="viz"><i class="kinP"></i></div>
+      <div class="body"><div class="n mono">13 · SCROLL-LINKED</div>
+        <h3>Kinetic Manifesto</h3>
+        <p class="tl">Six full-bleed snap-scroll panels, each a different colour world. Headlines assemble word by word as they enter; marquees run behind them.</p>
+        <div class="dl"><b>Motion:</b> per-word reveal, drifting orbs, infinite marquee.<br>
+          <b>Hook:</b> "The failure state is the design." at 168px.</div>
+        <div class="go">Scroll it →</div></div>
+    </a>
+
+    <a class="card" href="not-live-yet/ai-14-mission-control.html">
+      <div class="viz"><i class="hudP"></i></div>
+      <div class="body"><div class="n mono">14 · LIVE TELEMETRY</div>
+        <h3>Mission Control</h3>
+        <p class="tl">A CRT flight-deck HUD. Animated counters, sparklines, a sweeping radar, a live-scrolling mission log — and a subsystem panel that reads <em>DEGRADED</em> where it should.</p>
+        <div class="dl"><b>Motion:</b> eased counters, radar sweep, streaming log.<br>
+          <b>Hook:</b> a dashboard where everything is green is uncalibrated.</div>
+        <div class="go">Enter the deck →</div></div>
     </a>
   </div>
 
-  <p class="note" style="margin-top:26px">
-    <strong>Round one, for reference.</strong> Four AI-format documents —
-    <a style="color:#7dd3fc" href="not-live-yet/ai-01-latent-space.html">Latent Space</a>,
-    <a style="color:#7dd3fc" href="not-live-yet/ai-02-context-window.html">Context Window</a>,
-    <a style="color:#7dd3fc" href="not-live-yet/ai-03-red-team.html">Red Team</a> and
-    <a style="color:#7dd3fc" href="not-live-yet/ai-04-model-card.html">Model Card</a>.
-    Red Team still earns its place; the other three are one idea in three outfits, which is the
-    critique that produced this round.
-  </p>
+  <div class="prev">
+    <h2>Earlier rounds</h2>
+    <div class="chips">
+      <a href="not-live-yet/ai-05-run-my-org.html">05 · Run My Org</a>
+      <a href="not-live-yet/ai-06-premortem.html">06 · Pre-Mortem tool</a>
+      <a href="not-live-yet/ai-07-margin.html">07 · The Margin</a>
+      <a href="not-live-yet/ai-08-analog.html">08 · Judgment (broadside)</a>
+      <a href="not-live-yet/ai-03-red-team.html">03 · Red Team</a>
+      <a href="not-live-yet/ai-01-latent-space.html">01 · Latent Space</a>
+      <a href="not-live-yet/ai-02-context-window.html">02 · Context Window</a>
+      <a href="not-live-yet/ai-04-model-card.html">04 · Model Card</a>
+    </div>
+  </div>
 
   <p class="note">
-    <strong>What all four still refuse.</strong> No gradient hero, no drifting neural-network particles,
-    and no "Ask my résumé anything" chatbot. That last one has become the default move, which is
-    precisely what disqualifies it — a RAG box over a two-page PDF demonstrates a weekend tutorial,
-    not twenty years.
+    <strong>One deliberate restraint.</strong> Motion here is always attached to meaning — the cards
+    clatter because a departure board clatters, the graph moves because a career genuinely does
+    reorganise. None of it is ambient decoration, and every page still holds up with animation
+    switched off. That distinction is the difference between a designer who can use motion and one
+    who reaches for it.
   </p>
 
-  <p class="foot">Concepts for Puneet Arora · zero external dependencies · works offline</p>
+  <p class="foot">Concepts for Puneet Arora · no libraries · works offline</p>
 </div>
 </body>
 </html>

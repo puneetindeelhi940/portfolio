@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kinetic — Puneet Arora</title>
+<style>
+:root{--ink:#0a0a0a;--paper:#f2f0eb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ -webkit-font-smoothing:antialiased;overflow-x:hidden}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+main{scroll-snap-type:y proximity}
+section{min-height:100svh;scroll-snap-align:start;display:grid;place-items:center;
+ padding:70px 22px;position:relative;overflow:hidden}
+.in{max-width:1080px;width:100%;position:relative;z-index:2}
+.num{position:absolute;top:26px;left:22px;font-size:11px;letter-spacing:.3em;opacity:.42;z-index:3}
+.big{font-size:clamp(44px,12.5vw,168px);line-height:.84;letter-spacing:-.05em;font-weight:800;
+ text-transform:uppercase}
+.mid{font-size:clamp(26px,5vw,60px);line-height:1.02;letter-spacing:-.03em;font-weight:750}
+.say{font-size:clamp(16px,2.1vw,22px);line-height:1.45;max-width:52ch;margin-top:22px;opacity:.72}
+.word{display:inline-block;transform:translateY(105%);opacity:0}
+.on .word{animation:rise .82s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes rise{to{transform:none;opacity:1}}
+.fade{opacity:0;transform:translateY(22px);transition:opacity .9s .35s,transform .9s .35s}
+.on .fade{opacity:1;transform:none}
+
+/* section skins */
+.s1{background:var(--ink)}
+.s2{background:#f2f0eb;color:#0a0a0a}
+.s3{background:#0b1f4d;color:#eaf0ff}
+.s4{background:#8c1c13;color:#fff2ef}
+.s5{background:#052e26;color:#e6fff7}
+.s6{background:var(--ink)}
+
+/* motion decor */
+.grain{position:absolute;inset:0;opacity:.5;pointer-events:none;
+ background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:3px 3px}
+.s2 .grain{background-image:radial-gradient(rgba(0,0,0,.055) 1px,transparent 1px)}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none;
+ animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(60px,-50px) scale(1.22)}}
+.marq{position:absolute;left:0;right:0;white-space:nowrap;overflow:hidden;opacity:.10;
+ font-size:clamp(60px,13vw,160px);font-weight:800;letter-spacing:-.04em;text-transform:uppercase;
+ pointer-events:none;user-select:none}
+.marq span{display:inline-block;padding-right:.5em;animation:slide 26s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2px;margin-top:34px}
+.st{padding:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.s2 .st{background:rgba(0,0,0,.05);border-color:rgba(0,0,0,.1)}
+.st b{display:block;font-size:clamp(30px,5.5vw,54px);line-height:1;letter-spacing:-.035em;font-weight:800}
+.st span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.62;margin-top:7px;display:block}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:32px}
+.k{border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:20px;
+ background:rgba(255,255,255,.05);transform:translateY(26px);opacity:0;
+ transition:transform .7s cubic-bezier(.16,1,.3,1),opacity .7s}
+.on .k{transform:none;opacity:1}
+.on .k:nth-child(2){transition-delay:.10s}.on .k:nth-child(3){transition-delay:.20s}
+.on .k:nth-child(4){transition-delay:.30s}
+.k h3{font-size:17px;font-weight:700;letter-spacing:-.01em}
+.k p{font-size:14px;opacity:.7;margin-top:7px}
+.k .t{font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.55}
+.scroll{position:fixed;left:0;top:0;height:3px;background:#fff;z-index:99;width:0;mix-blend-mode:difference}
+.cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:10.5px;
+ letter-spacing:.24em;text-transform:uppercase;opacity:.5;animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translate(-50%,7px)}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .word{transform:none;opacity:1;animation:none!important}
+ .fade,.k{opacity:1;transform:none;transition:none}
+ .orb,.marq span,.cue{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="scroll" id="sb"></div>
+<main>
+
+<section class="s1" data-r>
+  <span class="num mono">01 / 06</span>
+  <div class="orb" style="width:520px;height:520px;background:#4c1d95;top:-90px;right:-90px"></div>
+  <div class="orb" style="width:420px;height:420px;background:#0e7490;bottom:-100px;left:-60px;animation-delay:-8s"></div>
+  <div class="grain"></div>
+  <div class="in">
+    <h1 class="big" data-split>Generation is free.</h1>
+    <p class="say fade">Judgment is not. I have spent twenty years accumulating the second kind,
+      one expensive mistake at a time, in rooms where being wrong had a price attached.</p>
+  </div>
+  <span class="cue">scroll</span>
+</section>
+
+<section class="s2" data-r>
+  <span class="num mono">02 / 06</span>
+  <div class="marq" style="top:12%"><span>printer · aircraft · hospital · storefront · printer · aircraft · hospital · storefront · </span></div>
+  <div class="grain"></div>
+  <div class="in">
+    <h2 class="mid" data-split>I have been wrong in a printer, in an aircraft, in a hospital system, and on a storefront.</h2>
+    <p class="say fade">Each taught something a model cannot hand you, because the lesson was never in the
+      artefact. It was in the consequence.</p>
+  </div>
+</section>
+
+<section class="s3" data-r>
+  <span class="num mono">03 / 06</span>
+  <div class="orb" style="width:600px;height:600px;background:#1d4ed8;top:-140px;left:-120px"></div>
+  <div class="grain"></div>
+  <div class="in">
+    <h2 class="mid" data-split>Then I built the generative systems.</h2>
+    <div class="cards">
+      <div class="k"><div class="t">Founded</div><h3>AI-Design CoE</h3><p>Dell Digital Design. Prompt library, intent estimation, multi-modal adaptive layouts — pan-org, not a pilot.</p></div>
+      <div class="k"><div class="t">Shipped</div><h3>Dell.com GenAI chatbot</h3><p>President's Award and Game Changer Award. Six designers on a surface that already had traffic.</p></div>
+      <div class="k"><div class="t">Protected</div><h3>Evaluation practice</h3><p>Four headcount defended in every review. It's why we could say what "better" meant.</p></div>
+      <div class="k"><div class="t">Refused</div><h3>The fluent taxonomy</h3><p>A model handed me a complete intent taxonomy in seconds. We derived ours from session logs instead.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s4" data-r>
+  <span class="num mono">04 / 06</span>
+  <div class="marq" style="bottom:9%"><span>failure states · failure states · failure states · failure states · failure states · </span></div>
+  <div class="grain"></div>
+  <div class="in">
+    <h2 class="big" data-split>The failure state is the design.</h2>
+    <p class="say fade">Aviation taught me that, and it is the single most transferable thing I know.
+      Everyone designs the happy path. The turn that decides whether anyone comes back is the one
+      where the system says it cannot help.</p>
+  </div>
+</section>
+
+<section class="s5" data-r>
+  <span class="num mono">05 / 06</span>
+  <div class="orb" style="width:540px;height:540px;background:#047857;bottom:-140px;right:-110px"></div>
+  <div class="grain"></div>
+  <div class="in">
+    <h2 class="mid" data-split>Verifiable, and unembellished.</h2>
+    <div class="stats">
+      <div class="st"><b>20</b><span>Years</span></div>
+      <div class="st"><b>8</b><span>Granted patents</span></div>
+      <div class="st"><b>33</b><span>Designers led</span></div>
+      <div class="st"><b>5</b><span>Time zones</span></div>
+      <div class="st"><b>40%</b><span>Cost removed at HP</span></div>
+      <div class="st"><b>5</b><span>Awards, adjudicated</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="s6" data-r>
+  <span class="num mono">06 / 06</span>
+  <div class="orb" style="width:520px;height:520px;background:#7c3aed;top:50%;left:50%;transform:translate(-50%,-50%);opacity:.32"></div>
+  <div class="grain"></div>
+  <div class="in" style="text-align:center">
+    <h2 class="big" data-split>Puneet Arora</h2>
+    <p class="say fade" style="margin:22px auto 0">Design leadership for AI-mediated products.<br>
+      Dell · Boeing · HP · Software AG. Bangalore.</p>
+    <p class="say fade mono" style="margin:26px auto 0;font-size:13px;opacity:.5">
+      Built by Puneet Arora · concept 13 · no libraries, no dependencies</p>
+  </div>
+</section>
+</main>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// split headlines into animatable words
+document.querySelectorAll('[data-split]').forEach(h=>{
+  const words=h.textContent.trim().split(/\s+/);
+  h.innerHTML=words.map((w,i)=>
+    `<span class="word" style="animation-delay:${i*52}ms">${w}</span>`).join(' ');
+});
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('on'); });
+},{threshold:.28});
+document.querySelectorAll('[data-r]').forEach(s=>io.observe(s));
+if(reduce) document.querySelectorAll('[data-r]').forEach(s=>s.classList.add('on'));
+const sb=document.getElementById('sb');
+addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  sb.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+},{passive:true});
+</script>
+</body>
+</html>

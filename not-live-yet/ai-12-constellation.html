@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Constellation — Puneet Arora</title>
+<style>
+:root{--bg:#04060d;--fg:#eaf0fb;--mut:#8b97ad;--dim:#525d73;--ln:#161d2c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1240px;margin:0 auto;padding:32px 18px 70px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.kick{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(30px,6vw,58px);line-height:1;letter-spacing:-.032em;margin:12px 0 0;font-weight:750}
+h1 em{font-style:normal;background:linear-gradient(92deg,#38bdf8,#818cf8 50%,#f0abfc);
+ -webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--mut);max-width:58ch;margin-top:12px;font-size:16px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.f{background:transparent;border:1px solid var(--ln);color:var(--mut);padding:7px 13px;
+ border-radius:99px;font:inherit;font-size:12.5px;cursor:pointer;transition:.18s;display:flex;gap:7px;align-items:center}
+.f i{width:8px;height:8px;border-radius:50%;display:block}
+.f:hover{border-color:var(--dim);color:var(--fg)}
+.f[aria-pressed="true"]{background:rgba(129,140,248,.14);border-color:#818cf8;color:#fff}
+
+.sky{position:relative;margin-top:18px;border:1px solid var(--ln);border-radius:16px;overflow:hidden;
+ background:radial-gradient(900px 500px at 30% 20%,rgba(56,189,248,.09),transparent 60%),#060912;
+ height:min(70vh,620px);touch-action:none}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.pop{position:absolute;width:290px;background:rgba(11,16,28,.96);border:1px solid #2b3550;
+ border-radius:14px;padding:16px;pointer-events:none;opacity:0;transform:translate(-50%,-108%) scale(.94);
+ transition:opacity .25s,transform .25s cubic-bezier(.2,1,.3,1);z-index:5;
+ box-shadow:0 26px 60px -30px #000;backdrop-filter:blur(6px)}
+.pop.on{opacity:1;transform:translate(-50%,-112%) scale(1)}
+.pop .t{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.pop h3{font-size:17px;letter-spacing:-.015em;margin-top:5px;font-weight:700;line-height:1.2}
+.pop p{font-size:13.5px;color:var(--mut);margin-top:7px}
+.pop .yr{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--dim);margin-top:9px}
+.legend{position:absolute;left:14px;bottom:12px;font-size:10.5px;color:var(--dim);
+ letter-spacing:.1em;text-transform:uppercase;pointer-events:none}
+.hintbar{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--dim)}
+.hintbar b{color:var(--mut);font-weight:600}
+.foot{color:var(--dim);font-size:12px;margin-top:32px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kick">Concept 12 · a career has edges, not rows</p>
+  <h1>Nothing I learned<br><em>stayed where I learned it.</em></h1>
+  <p class="lede">
+    A timeline implies each job ended. This is the truer shape: a live graph where firmware
+    constraints still connect to GenAI failure states. Drag a node. The whole thing reorganises,
+    because it always does.
+  </p>
+
+  <div class="filters" id="filters"></div>
+
+  <div class="sky" id="sky">
+    <canvas id="cv"></canvas>
+    <div class="pop" id="pop"></div>
+    <div class="legend">Drag nodes · click to pin · lines are transferred lessons</div>
+  </div>
+  <p class="hintbar"><span><b>Hover</b> a node to read it</span><span><b>Drag</b> to disturb the system</span>
+    <span><b>Filter</b> to isolate a domain</span></p>
+
+  <p class="foot">Concept 12 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const DOM={
+ ai:{l:'AI & GenAI',c:'#38bdf8'}, lead:{l:'Leadership',c:'#a78bfa'},
+ craft:{l:'Craft & systems',c:'#34d399'}, stakes:{l:'High-stakes',c:'#fb7185'},
+ ip:{l:'Invention',c:'#fbbf24'}};
+const N=[
+{id:'coe',d:'ai',r:17,t:'AI-Design CoE',y:'Dell · 2021',p:'Founded the AI-Design & Innovation Centre of Excellence — prompt library, intent estimation, multi-modal adaptive layouts, shipped pan-org.'},
+{id:'bot',d:'ai',r:15,t:'Dell.com GenAI chatbot',y:'President\'s + Game Changer',p:'Led the winning team. Six designers on a surface that already had traffic, not sixteen on a moonshot.'},
+{id:'intent',d:'ai',r:12,t:'Intent estimation',y:'the primitive',p:'What may a system justifiably infer about a person — and at what confidence does inferring become presuming?'},
+{id:'nudge',d:'ai',r:10,t:'Behavioural nudges',y:'personalisation',p:'Optimised for ROI and delight, in that order. A nudge that wins the quarter and loses the customer is a defect wearing a metric.'},
+{id:'org',d:'lead',r:16,t:'33 designers, 5 zones',y:'Dell · 2018–26',p:'Four product experiences, full talent lifecycle, 3-6-9 roadmaps tied to business KPIs.'},
+{id:'exec',d:'lead',r:11,t:'C-suite narrative',y:'the funding skill',p:'Design work that cannot be narrated upward does not get a second quarter.'},
+{id:'mentor',d:'lead',r:10,t:'Mentoring & talent',y:'the real metric',p:'The number I would rather be judged on is how many were promoted past me.'},
+{id:'cost',d:'lead',r:12,t:'40% cost cut',y:'HP Director Award, APJ',p:'Moved specification decisions earlier so ambiguity resolved before engineering committed. Design as a cost lever.'},
+{id:'fw',d:'craft',r:13,t:'Firmware UX',y:'HP · 9 years',p:'Dense interfaces on small, low-end screens. Nine years of not having enough pixels.'},
+{id:'ds',d:'craft',r:11,t:'Design systems',y:'Software AG',p:'Authored the enterprise design-system guidelines for internal and external branding.'},
+{id:'undo',d:'craft',r:9,t:'Reversibility',y:'the transferable law',p:'A control you cannot undo is a different species from one you can. Learned in firmware, applied to agents.'},
+{id:'air',d:'stakes',r:14,t:'Boeing airspace',y:'FES + TAAM',p:'Fuel Efficiency Solutions and the Total Airspace and Airport Modeller. Safety-critical aviation systems.'},
+{id:'fail',d:'stakes',r:11,t:'Failure states',y:'the design, not an appendix',p:'Aviation is where I stopped treating the error path as something you add at the end.'},
+{id:'health',d:'stakes',r:12,t:'Digital LifeCare',y:'ET Platform of the Year 2022',p:'National scale, where the edge case stops being a percentage and becomes a person in a queue.'},
+{id:'pat',d:'ip',r:14,t:'8 granted patents',y:'2006–2015',p:'Design systems, layout, cloud and cost-effective printing, print automation, retail, mobile security.'},
+{id:'phil',d:'ip',r:12,t:'M.A. Philosophy',y:'in progress, taken late',p:'Epistemology, pursued during the AI work rather than before it. The questions turned out to be the same questions.'},
+];
+const L=[['coe','bot'],['coe','intent'],['coe','nudge'],['bot','intent'],['intent','phil'],
+ ['nudge','cost'],['org','coe'],['org','mentor'],['org','exec'],['exec','cost'],['cost','fw'],
+ ['fw','undo'],['undo','air'],['air','fail'],['fail','bot'],['health','fail'],['health','org'],
+ ['ds','fw'],['ds','craft'],['pat','fw'],['pat','ds'],['phil','intent'],['phil','pat'],
+ ['air','pat'],['ds','coe'],['mentor','fw']].filter(l=>N.find(n=>n.id===l[0])&&N.find(n=>n.id===l[1]));
+
+const sky=document.getElementById('sky'),cv=document.getElementById('cv'),ctx=cv.getContext('2d'),
+      pop=document.getElementById('pop');
+let W=0,H=0,dpr=Math.min(devicePixelRatio||1,2);
+const P=N.map((n,i)=>({...n,x:0,y:0,vx:0,vy:0,fx:null,fy:null,on:true}));
+const byId=Object.fromEntries(P.map(p=>[p.id,p]));
+const E=L.map(([a,b])=>({a:byId[a],b:byId[b]}));
+function size(){
+  const r=sky.getBoundingClientRect(); W=r.width;H=r.height;
+  cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+function seed(){P.forEach((p,i)=>{const a=i/P.length*Math.PI*2;
+  p.x=W/2+Math.cos(a)*Math.min(W,H)*.3;p.y=H/2+Math.sin(a)*Math.min(W,H)*.3;});}
+size();seed();
+addEventListener('resize',()=>{size();});
+
+const active=new Set(Object.keys(DOM));
+const fl=document.getElementById('filters');
+Object.entries(DOM).forEach(([k,v])=>{
+  const b=document.createElement('button'); b.className='f'; b.setAttribute('aria-pressed','true');
+  b.innerHTML=`<i style="background:${v.c}"></i>${v.l}`;
+  b.onclick=()=>{const on=b.getAttribute('aria-pressed')==='true';
+    b.setAttribute('aria-pressed',!on); on?active.delete(k):active.add(k);
+    P.forEach(p=>p.on=active.has(p.d));};
+  fl.appendChild(b);
+});
+
+let hov=null,pin=null,drag=null;
+function tick(){
+  // forces
+  for(const p of P){
+    if(!p.on) continue;
+    p.vx+=(W/2-p.x)*0.0011; p.vy+=(H/2-p.y)*0.0013;
+    for(const q of P){ if(q===p||!q.on) continue;
+      const dx=p.x-q.x,dy=p.y-q.y,d2=dx*dx+dy*dy||1,d=Math.sqrt(d2);
+      const rep=1900/d2; p.vx+=dx/d*rep; p.vy+=dy/d*rep;
+    }
+  }
+  for(const e of E){ if(!e.a.on||!e.b.on) continue;
+    const dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,d=Math.hypot(dx,dy)||1;
+    const f=(d-135)*0.0055;
+    e.a.vx+=dx/d*f; e.a.vy+=dy/d*f; e.b.vx-=dx/d*f; e.b.vy-=dy/d*f;
+  }
+  for(const p of P){
+    if(p===drag){p.x=p.fx;p.y=p.fy;p.vx=p.vy=0;continue}
+    p.vx*=.86;p.vy*=.86;p.x+=p.vx;p.y+=p.vy;
+    const m=p.r+8; p.x=Math.max(m,Math.min(W-m,p.x)); p.y=Math.max(m,Math.min(H-m,p.y));
+  }
+  draw();
+  raf=requestAnimationFrame(tick);
+}
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  for(const e of E){
+    if(!e.a.on||!e.b.on) continue;
+    const hot = hov&&(e.a===hov||e.b===hov) || pin&&(e.a===pin||e.b===pin);
+    ctx.beginPath();ctx.moveTo(e.a.x,e.a.y);ctx.lineTo(e.b.x,e.b.y);
+    ctx.strokeStyle=hot?'rgba(148,180,255,.55)':'rgba(120,150,210,.13)';
+    ctx.lineWidth=hot?1.6:.8;ctx.stroke();
+  }
+  for(const p of P){
+    if(!p.on) continue;
+    const c=DOM[p.d].c, hot=(p===hov||p===pin);
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r+(hot?7:0),0,7);
+    ctx.fillStyle=hot?c+'44':c+'1e';ctx.fill();
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);
+    ctx.fillStyle=c;ctx.globalAlpha=hot?1:.85;ctx.fill();ctx.globalAlpha=1;
+    ctx.font='600 11px system-ui,sans-serif';ctx.textAlign='center';
+    ctx.fillStyle=hot?'#fff':'rgba(210,222,244,.62)';
+    ctx.fillText(p.t.length>19?p.t.slice(0,18)+'…':p.t,p.x,p.y+p.r+15);
+  }
+}
+function at(x,y){return P.find(p=>p.on&&Math.hypot(p.x-x,p.y-y)<p.r+9)}
+function showPop(p){
+  if(!p){pop.classList.remove('on');return}
+  const c=DOM[p.d].c;
+  pop.innerHTML=`<div class="t" style="color:${c}">${DOM[p.d].l}</div>
+    <h3>${p.t}</h3><p>${p.p}</p><div class="yr">${p.y}</div>`;
+  pop.style.left=Math.max(150,Math.min(W-150,p.x))+'px';
+  pop.style.top=Math.max(120,p.y-p.r)+'px';
+  pop.classList.add('on');
+}
+sky.addEventListener('pointermove',e=>{
+  const r=sky.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+  if(drag){drag.fx=x;drag.fy=y;return}
+  const n=at(x,y); sky.style.cursor=n?'pointer':'default';
+  if(n!==hov){hov=n; if(!pin) showPop(n)}
+});
+sky.addEventListener('pointerdown',e=>{
+  const r=sky.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+  const n=at(x,y); if(n){drag=n;n.fx=x;n.fy=y;sky.setPointerCapture(e.pointerId)}
+});
+sky.addEventListener('pointerup',e=>{
+  const r=sky.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+  const n=at(x,y);
+  if(drag&&Math.hypot(drag.fx-x,drag.fy-y)<4){pin=(pin===n)?null:n;showPop(pin||n)}
+  drag=null;
+});
+sky.addEventListener('pointerleave',()=>{drag=null;if(!pin)showPop(null)});
+let raf; if(reduce){for(let i=0;i<220;i++){/* settle without animating */
+  for(const p of P){p.vx+=(W/2-p.x)*.0011;p.vy+=(H/2-p.y)*.0013;
+   for(const q of P){if(q===p)continue;const dx=p.x-q.x,dy=p.y-q.y,d2=dx*dx+dy*dy||1,d=Math.sqrt(d2);
+    const rep=1900/d2;p.vx+=dx/d*rep;p.vy+=dy/d*rep}}
+  for(const e of E){const dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,d=Math.hypot(dx,dy)||1,f=(d-135)*.0055;
+   e.a.vx+=dx/d*f;e.a.vy+=dy/d*f;e.b.vx-=dx/d*f;e.b.vy-=dy/d*f}
+  for(const p of P){p.vx*=.86;p.vy*=.86;p.x+=p.vx;p.y+=p.vy;
+   const m=p.r+8;p.x=Math.max(m,Math.min(W-m,p.x));p.y=Math.max(m,Math.min(H-m,p.y))}}
+  draw();
+} else tick();
+</script>
+</body>
+</html>
