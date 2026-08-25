@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Would You Have Made the Call? — Puneet Arora</title>
+<meta name="description" content="Eight real decisions from twenty years of design leadership at Dell, Boeing and HP — stripped of hindsight. Decide for yourself, then see what I actually chose and what it cost.">
+<meta name="author" content="Puneet Arora">
+<meta name="theme-color" content="#0d0b12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Would You Have Made the Call? — Puneet Arora">
+<meta property="og:description" content="Eight real design-leadership decisions, stripped of hindsight. Decide, then see what I actually chose — and what it cost.">
+<meta property="og:image" content="assets/og-the-call.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Would You Have Made the Call? — Puneet Arora">
+<meta name="twitter:description" content="Eight real design-leadership decisions, stripped of hindsight.">
+<meta name="twitter:image" content="assets/og-the-call.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0b12'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' stroke='%23a855f7' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+ --bg:#0d0b12;--fg:#f7f4fc;--mut:#a49fb4;--dim:#6d6784;--ln:#241f2f;--pan:#151221;
+ --yes:#2ee08a;--no:#ff5470;--vio:#a855f7;--cy:#38d9ff;
+ --pad:clamp(16px,4vw,24px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);
+ font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+ padding-bottom:env(safe-area-inset-bottom)}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+ background:radial-gradient(900px 560px at 50% -12%,rgba(168,85,247,.20),transparent 64%),
+            radial-gradient(700px 460px at 88% 12%,rgba(56,217,255,.10),transparent 62%)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:0 var(--pad) 72px}
+a{color:var(--cy)}
+:focus-visible{outline:2px solid var(--vio);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+ clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ── HERO ─────────────────────────────── */
+header{padding:clamp(30px,7vw,56px) 0 0;text-align:center}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(31px,7.6vw,58px);line-height:1.02;letter-spacing:-.033em;
+ margin:14px 0 0;font-weight:780}
+h1 em{font-style:normal;background:linear-gradient(96deg,#ff5470,#a855f7 52%,#38d9ff);
+ -webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);max-width:50ch;margin:16px auto 0;font-size:clamp(15px,2.4vw,17px)}
+.who{margin-top:22px;display:inline-flex;align-items:center;gap:11px;flex-wrap:wrap;
+ justify-content:center;border:1px solid var(--ln);background:rgba(21,18,33,.7);
+ border-radius:99px;padding:8px 16px;font-size:13px;color:var(--mut)}
+.who b{color:var(--fg);font-weight:650}
+.who i{width:5px;height:5px;border-radius:50%;background:var(--vio);display:block;flex:none}
+
+.creds{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:26px;
+ background:var(--ln);border:1px solid var(--ln);border-radius:14px;overflow:hidden}
+@media(max-width:520px){.creds{grid-template-columns:repeat(2,1fr)}}
+.cred{background:var(--pan);padding:14px 8px;text-align:center}
+.cred b{display:block;font-size:clamp(20px,4.4vw,27px);font-weight:780;letter-spacing:-.02em;line-height:1}
+.cred span{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+ color:var(--dim);margin-top:5px}
+
+/* ── STAGE ────────────────────────────── */
+.stagewrap{position:relative;height:clamp(420px,74vw,470px);margin-top:30px}
+.stack{position:absolute;inset:0}
+.card{position:absolute;left:0;right:0;margin:0 auto;width:min(100%,400px);
+ height:clamp(400px,72vw,440px);background:var(--pan);border:1px solid var(--ln);
+ border-radius:22px;padding:clamp(18px,4.4vw,24px);display:flex;flex-direction:column;
+ box-shadow:0 30px 70px -42px #000,inset 0 1px 0 rgba(255,255,255,.06);
+ cursor:grab;touch-action:pan-y;will-change:transform;user-select:none}
+.card:active{cursor:grabbing}
+.card .idx{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.card h2{font-size:clamp(19px,4.4vw,23px);line-height:1.22;letter-spacing:-.018em;
+ margin-top:11px;font-weight:700}
+.card .ctx{color:var(--mut);font-size:14.5px;margin-top:12px;flex:1}
+.card .meta{border-top:1px solid var(--ln);padding-top:12px;font-size:12.5px;color:var(--dim);
+ display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.badge{position:absolute;top:22px;font-size:14px;font-weight:900;letter-spacing:.13em;
+ padding:7px 13px;border-radius:9px;border:3px solid;opacity:0;pointer-events:none}
+.badge.y{left:20px;color:var(--yes);border-color:var(--yes);transform:rotate(-11deg)}
+.badge.n{right:20px;color:var(--no);border-color:var(--no);transform:rotate(11deg)}
+
+.controls{display:flex;gap:15px;justify-content:center;align-items:center;margin-top:20px}
+.controls button{width:64px;height:64px;border-radius:50%;border:1px solid var(--ln);
+ background:var(--pan);color:var(--fg);font-size:24px;cursor:pointer;
+ transition:transform .18s,border-color .18s,box-shadow .18s;display:grid;place-items:center}
+.controls button:hover{transform:translateY(-3px) scale(1.06)}
+.b-n:hover{border-color:var(--no);color:var(--no);box-shadow:0 0 0 5px rgba(255,84,112,.13)}
+.b-y:hover{border-color:var(--yes);color:var(--yes);box-shadow:0 0 0 5px rgba(46,224,138,.13)}
+.controls .keys{font-size:11px;color:var(--dim);text-align:center;line-height:1.35}
+.controls .keys kbd{font-family:ui-monospace,Menlo,monospace;background:var(--pan);
+ border:1px solid var(--ln);border-radius:5px;padding:1px 5px;font-size:11px}
+
+.prog{display:flex;gap:5px;justify-content:center;margin-top:18px}
+.prog i{width:24px;height:3px;border-radius:2px;background:var(--ln);transition:background .35s}
+.prog i.y{background:var(--yes)} .prog i.n{background:var(--no)}
+.tally{font-size:12.5px;color:var(--dim);text-align:center;margin-top:11px}
+
+/* ── RESULTS ──────────────────────────── */
+.results{display:none}
+.results.on{display:block}
+.scorecard{background:var(--pan);border:1px solid var(--ln);border-radius:20px;
+ padding:clamp(20px,5vw,30px);text-align:center;margin-top:8px}
+.scorecard .big{font-size:clamp(50px,13vw,84px);font-weight:800;letter-spacing:-.045em;line-height:1;
+ background:linear-gradient(96deg,#ff5470,#a855f7,#38d9ff);-webkit-background-clip:text;
+ background-clip:text;color:transparent}
+.scorecard h2{font-size:clamp(21px,4.8vw,28px);letter-spacing:-.022em;margin-top:10px;font-weight:750}
+.scorecard p{color:var(--mut);margin-top:9px;font-size:15px;max-width:46ch;margin-inline:auto}
+.share{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.share button{background:transparent;border:1px solid var(--ln);color:var(--mut);
+ padding:9px 15px;border-radius:10px;font:inherit;font-size:13px;cursor:pointer;transition:.18s}
+.share button:hover{border-color:var(--vio);color:var(--fg)}
+
+.rev{margin-top:14px;background:var(--pan);border:1px solid var(--ln);border-radius:16px;
+ overflow:hidden}
+.rev .rh{width:100%;text-align:left;background:transparent;border:0;color:inherit;
+ font:inherit;padding:16px 18px;cursor:pointer;display:grid;
+ grid-template-columns:auto 1fr auto;gap:12px;align-items:start}
+.rev .rh:hover{background:rgba(255,255,255,.03)}
+.verdict{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;
+ padding:4px 8px;border-radius:99px;white-space:nowrap;margin-top:2px}
+.verdict.ok{background:rgba(46,224,138,.15);color:var(--yes)}
+.verdict.dif{background:rgba(255,84,112,.15);color:var(--no)}
+.rev .q{font-weight:650;font-size:16px;line-height:1.3}
+.rev .mini{font-size:12px;color:var(--dim);margin-top:4px}
+.chev{color:var(--dim);transition:transform .3s;margin-top:4px}
+.rev[open] .chev{transform:rotate(180deg)}
+.rev .rb{padding:0 18px 18px;border-top:1px solid var(--ln);margin-top:2px}
+.rev .said{color:var(--fg);font-weight:650;font-size:15px;margin-top:14px}
+.rev .why{color:var(--mut);font-size:14.5px;margin-top:8px}
+.rev .cost{color:var(--mut);font-size:13.5px;margin-top:10px;padding-left:12px;
+ border-left:2px solid var(--ln)}
+.rev .cost b{color:var(--fg)}
+
+/* ── CLOSE ────────────────────────────── */
+.about{margin-top:38px;border-top:1px solid var(--ln);padding-top:28px}
+.about h2{font-size:22px;letter-spacing:-.02em;font-weight:750}
+.about p{color:var(--mut);margin-top:11px;font-size:15.5px}
+.about p b{color:var(--fg);font-weight:650}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.tags span{font-size:12px;color:var(--mut);border:1px solid var(--ln);border-radius:99px;
+ padding:5px 11px}
+.cta{margin-top:24px;background:var(--pan);border:1px solid var(--ln);border-radius:16px;
+ padding:20px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.cta .n{font-size:19px;font-weight:750;letter-spacing:-.015em}
+.cta .r{font-size:13.5px;color:var(--mut);margin-top:2px}
+.cta a.btn{background:var(--vio);color:#14071f;text-decoration:none;padding:11px 20px;
+ border-radius:11px;font-weight:700;font-size:14.5px;transition:.18s;white-space:nowrap}
+.cta a.btn:hover{background:#c084fc;transform:translateY(-2px)}
+.ph-note{margin-top:9px;font-size:12.5px;color:#ffb86b;text-align:right;
+ background:rgba(255,184,107,.08);border:1px dashed rgba(255,184,107,.35);
+ border-radius:9px;padding:7px 11px}
+footer{margin-top:30px;text-align:center;font-size:12px;color:var(--dim)}
+
+@media(prefers-reduced-motion:reduce){
+ *{animation:none!important;transition:none!important}
+}
+@media print{
+ body::before,.stagewrap,.controls,.prog,.tally,.share{display:none!important}
+ body{background:#fff;color:#000}
+ .results{display:block!important}
+ .rev .rb{display:block!important}
+ .scorecard,.rev,.cta{border:1px solid #ccc;background:#fff}
+ .scorecard .big{color:#000;-webkit-text-fill-color:#000}
+ h1 em{color:#000;-webkit-text-fill-color:#000}
+ .about p,.rev .why,.card .ctx{color:#333}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Twenty years · eight decisions · no hindsight</p>
+  <h1>Would you have<br><em>made the call?</em></h1>
+  <p class="sub">
+    Eight real decisions from my career at Dell, Boeing and HP — presented exactly as they arrived,
+    before anyone knew how they'd turn out. Decide for yourself. Then I'll show you what I chose,
+    and what it cost me.
+  </p>
+  <p class="who"><i></i><b>Puneet Arora</b> · Design leadership for AI-mediated products · Bangalore</p>
+
+  <div class="creds">
+    <div class="cred"><b>20</b><span>Years</span></div>
+    <div class="cred"><b>8</b><span>Patents</span></div>
+    <div class="cred"><b>33</b><span>Designers led</span></div>
+    <div class="cred"><b>6</b><span>Awards</span></div>
+  </div>
+</header>
+
+<main>
+  <section id="game" aria-label="Decision game">
+    <div class="stagewrap"><div class="stack" id="stack"></div></div>
+    <div class="controls">
+      <button class="b-n" id="bn" aria-label="You would not have done this">✕</button>
+      <span class="keys"><kbd>←</kbd> wouldn't · <kbd>→</kbd> would<br>or drag the card</span>
+      <button class="b-y" id="by" aria-label="You would have done this">✓</button>
+    </div>
+    <div class="prog" id="prog" aria-hidden="true"></div>
+    <p class="tally" id="tally"></p>
+    <p class="sr" id="live" role="status" aria-live="polite"></p>
+  </section>
+
+  <section class="results" id="results" aria-label="Your results"></section>
+</main>
+
+<section class="about">
+  <h2>Why I built this instead of a case study</h2>
+  <p>
+    A case study shows you an outcome that already worked. It cannot show you the moment before —
+    when the mandate was loud, the evidence was thin, and the obvious move was the wrong one.
+    That moment is the whole job, and it is the only thing a hiring conversation is really trying
+    to get at.
+  </p>
+  <p>
+    So this page hands you the decisions first. <b>You commit, then I answer.</b> Whether we agree
+    matters far less than whether the reasoning holds up once you can see it.
+  </p>
+  <div class="tags">
+    <span>GenAI product design</span><span>Design org leadership</span><span>Intent estimation</span>
+    <span>Prompt engineering</span><span>Safety-critical systems</span><span>Design systems</span>
+    <span>Executive alignment</span><span>8 granted patents</span>
+  </div>
+
+  <div class="cta">
+    <div>
+      <div class="n">Puneet Arora</div>
+      <div class="r">Dell Technologies · Boeing · Hewlett Packard · Software AG</div>
+    </div>
+    <!-- TODO(Puneet): replace href with your LinkedIn URL or mailto: before sharing.
+         The note below is deliberately visible so this cannot ship unedited. -->
+    <a class="btn" href="#" id="contact" data-placeholder="1">Get in touch →</a>
+  </div>
+  <p class="ph-note" id="phNote">↑ Placeholder — point this at your LinkedIn or email before sharing.</p>
+</section>
+
+<footer>
+  Built by Puneet Arora · no libraries, no trackers, works offline
+</footer>
+</div>
+
+<script>
+"use strict";
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const D = [
+{q:'Your CEO has mandated GenAI. You have 33 designers. Do you put 16 of them on the moonshot?',
+ ctx:'The mandate is loud and public. Every peer org is staffing up visibly. Doing less will look like a lack of ambition.',
+ where:'Dell · 2021', tag:'Staffing',
+ me:false,
+ said:'I put six on it — and thirteen on the e-commerce revenue that already existed.',
+ why:'The mandate wanted a moonshot. What the business could actually absorb was a prompt library, intent estimation and adaptive layout landing inside a surface that already had traffic. Small team, real users, a measurable definition of better.',
+ cost:'Sixteen designers would have produced a magnificent internal showcase and a budget conversation in month nine that I would have lost, because nobody could point at revenue.'},
+
+{q:'Budget is being cut. Research and evaluation is four headcount and produces no visible artefact. Do you protect it?',
+ ctx:'Everyone agrees research matters. Nobody wants to be the one defending four non-shipping headcount in a cost review.',
+ where:'Dell · every review, five years', tag:'Evaluation',
+ me:true,
+ said:'I protected all four — and justified them again in every single review.',
+ why:'That headcount is the reason the chatbot work could be defended later: we could say what "better" actually meant. An AI feature without an evaluation practice is a demo with a launch date attached.',
+ cost:'It was the easiest line item to argue away, which is exactly why it needed someone willing to keep arguing. I spent political capital on it that I could have spent elsewhere.'},
+
+{q:'A model gives you a complete, plausible intent taxonomy in four seconds. Do you use it as your starting point?',
+ ctx:'It is genuinely good. It would save the team roughly three weeks of research, and the deadline is real.',
+ where:'Dell · designing intent estimation', tag:'AI judgment',
+ me:false,
+ said:'I threw it away and derived the taxonomy from session logs instead.',
+ why:'A model will always produce a plausible taxonomy, because plausible taxonomies are what its training data is full of. Roughly a third of our real categories were things nobody on the team would have guessed — the largest cluster was people shopping for someone who was not there to consult.',
+ cost:'Three weeks, and an uncomfortable conversation about why we were not using the tool we were supposedly championing. Accepting the fluent version would have cost a quarter and taught us nothing.'},
+
+{q:'You can cut 40% of costs by changing how design specifies work — but it means telling engineering their intake process is the problem. Do you say it?',
+ ctx:'You are a designer in a hardware company, and you are about to tell an engineering organisation that the defect rate is a design-process failure.',
+ where:'HP · APJ region', tag:'Influence',
+ me:true,
+ said:'I said it — then had to prove it with a number somebody else already tracked.',
+ why:'The saving came from moving specification decisions earlier so ambiguity resolved before engineering committed. That reduced incoming defect change requests: a specific, counted artefact. An award committee signed off on it, not a designer.',
+ cost:'It only worked because I picked a metric my critics already believed in. Had I argued it in design language, it would have been received as an opinion and filed.'},
+
+{q:'Your personalisation system can lift quarterly engagement measurably by nudging harder. The counter-metric is not on the dashboard. Do you ship it?',
+ ctx:'The lift is real and immediate. The harm, if any, is diffuse, delayed, and will be attributed to something else entirely.',
+ where:'Dell · behavioural-science nudges', tag:'Ethics',
+ me:false,
+ said:'Not until the counter-metric was on the same dashboard, at the same size.',
+ why:'A nudge that wins the quarter and loses the customer is a defect wearing a metric. Engagement moves first and fastest, so it always wins the review; the cost lands in month nine as churn nobody traces back.',
+ cost:'A slower launch, and a quarter where my numbers looked less impressive than they could have. If you cannot see both numbers at once you are not measuring — you are choosing which harm to be surprised by.'},
+
+{q:'An agent you are designing can complete the task end to end without a human seeing it. Shipping the review step will measurably slow adoption. Do you ship the review step?',
+ ctx:'Users are asking for less friction. Competitors are shipping without it. The failure rate in testing is genuinely low.',
+ where:'Applied throughout · the reversibility rule', tag:'Safety',
+ me:true,
+ said:'Yes — for anything irreversible or customer-facing, every time, with no remembered preference.',
+ why:'I classify every action by reversibility before designing a single screen. Reversible: let it run. Costly: confirm. Irreversible or external-facing: a human, always. That taxonomy came from nine years in firmware and two in aviation, where it is assumed rather than debated.',
+ cost:'Slower adoption, and a real argument with people who saw the step as a lack of confidence in the model. Automation complacency is the failure nobody plans for: accuracy improving actually increases the damage of the rare failure.'},
+
+{q:'You are leading AI transformation, mid-career and fully occupied. Do you start a Master\'s in Philosophy?',
+ ctx:'Nobody is asking you to. It will not appear on any performance review. The field is moving faster than it ever has.',
+ where:'Ongoing · taken deliberately, late', tag:'The long game',
+ me:true,
+ said:'Yes — alongside the AI work, not instead of it.',
+ why:'Intent estimation is an epistemology question wearing an engineering costume: what may a system justifiably infer about a person, and at what confidence does inferring become presuming? I did not get that framing from a design conference.',
+ cost:'Time I did not have, taken at a point in life when it cost considerably more than it would have at twenty-five. That is rather the point — and it is the last line on my résumé, not the first.'},
+
+{q:'Your team has shipped. The design system you deprioritised two quarters ago is now visibly straining. Do you admit that publicly in the review?',
+ ctx:'Nobody has connected the two yet. You could fund the fix quietly and let the shipped work speak for itself.',
+ where:'Dell · the quarter after', tag:'Accountability',
+ me:true,
+ said:'I named it as my call, in the review, before anyone else raised it.',
+ why:'I under-funded the design system for two quarters to protect shipping and evaluation. That was a deliberate trade and it was mine. We paid interest on it for about a year.',
+ cost:'A visibly imperfect scorecard. But a leader who only reports the trades that worked is not giving their org a usable model of how to make trades — and the team is watching which failures you are willing to own.'},
+];
+
+const stack=document.getElementById('stack'), prog=document.getElementById('prog'),
+      tally=document.getElementById('tally'), results=document.getElementById('results'),
+      live=document.getElementById('live'), game=document.getElementById('game');
+let idx=0, answers=[];
+prog.innerHTML = D.map(()=>'<i></i>').join('');
+
+function build(){
+  stack.innerHTML='';
+  const depthCount=Math.min(3,D.length-idx);
+  for(let d=depthCount-1; d>=0; d--){
+    const i=idx+d, dat=D[i];
+    const el=document.createElement('div');
+    el.className='card';
+    el.style.transform=`translateY(${d*11}px) scale(${1-d*.038})`;
+    el.style.zIndex=String(10-d);
+    el.style.opacity=d===2?'.55':'1';
+    el.innerHTML=`
+      <span class="badge y">WOULD</span><span class="badge n">WOULDN'T</span>
+      <div class="idx mono">Decision ${String(i+1).padStart(2,'0')} / ${String(D.length).padStart(2,'0')} · ${dat.tag}</div>
+      <h2>${dat.q}</h2>
+      <p class="ctx">${dat.ctx}</p>
+      <div class="meta"><span>${dat.where}</span><span class="mono">drag or ← →</span></div>`;
+    if(d===0){ el.tabIndex=0; el.setAttribute('role','group');
+      el.setAttribute('aria-label',`Decision ${i+1} of ${D.length}. ${dat.q}`); attach(el); }
+    else el.setAttribute('aria-hidden','true');
+    stack.appendChild(el);
+  }
+  tally.innerHTML=`<b>${idx}</b> of ${D.length} decided`;
+  live.textContent=`Decision ${idx+1} of ${D.length}. ${D[idx].q}`;
+}
+function attach(el){
+  let sx=0,dx=0,dy=0,dragging=false,pid=null;
+  const by=el.querySelector('.badge.y'), bn=el.querySelector('.badge.n');
+  el.addEventListener('pointerdown',e=>{
+    if(e.button!==0&&e.pointerType==='mouse')return;
+    dragging=true;pid=e.pointerId;sx=e.clientX;el.setPointerCapture(pid);
+    el.style.transition='none';
+  });
+  el.addEventListener('pointermove',e=>{
+    if(!dragging)return;
+    dx=e.clientX-sx; dy=Math.abs(dx)*.12;
+    el.style.transform=`translate(${dx}px,${dy}px) rotate(${dx*.055}deg)`;
+    const t=Math.min(Math.abs(dx)/105,1);
+    by.style.opacity=dx>0?String(t):'0';
+    bn.style.opacity=dx<0?String(t):'0';
+  });
+  const release=()=>{
+    if(!dragging)return; dragging=false;
+    el.style.transition='transform .46s cubic-bezier(.2,.9,.3,1),opacity .42s';
+    if(Math.abs(dx)>100) fly(el,dx>0);
+    else{el.style.transform='';by.style.opacity='0';bn.style.opacity='0';}
+    dx=0;
+  };
+  el.addEventListener('pointerup',release);
+  el.addEventListener('pointercancel',release);
+}
+function topCard(){return stack.querySelector('.card:last-child')}
+function fly(el,yes){
+  if(el.dataset.gone)return; el.dataset.gone='1';
+  el.style.transition='transform .46s cubic-bezier(.2,.9,.3,1),opacity .42s';
+  el.style.transform=`translate(${yes?760:-760}px,${yes?-70:70}px) rotate(${yes?34:-34}deg)`;
+  el.style.opacity='0';
+  const cur=idx;
+  answers.push(yes);
+  prog.children[cur].classList.add(yes===D[cur].me?'y':'n');
+  live.textContent=`Recorded: you ${yes?'would':'would not'}.`;
+  idx++;
+  setTimeout(()=>{ idx>=D.length ? finish() : build(); }, reduce?0:300);
+}
+function decide(yes){ const c=topCard(); if(c) fly(c,yes); }
+document.getElementById('by').addEventListener('click',()=>decide(true));
+document.getElementById('bn').addEventListener('click',()=>decide(false));
+addEventListener('keydown',e=>{
+  if(idx>=D.length)return;
+  if(e.key==='ArrowRight'){e.preventDefault();decide(true)}
+  if(e.key==='ArrowLeft'){e.preventDefault();decide(false)}
+});
+
+function finish(){
+  const agree=answers.filter((a,i)=>a===D[i].me).length;
+  const pct=Math.round(agree/D.length*100);
+  const head = agree>=7?'We think alike.'
+    : agree>=5?'Broadly aligned, with real differences.'
+    : agree>=3?'You would have run this differently.'
+    : 'We would have built very different organisations.';
+  const sub = agree>=5
+    ? 'The disagreements are the interesting part — those are the ones worth an hour of conversation.'
+    : 'That is genuinely useful to know before a first interview rather than after one.';
+  game.style.display='none';
+  results.classList.add('on');
+  results.innerHTML=`
+    <div class="scorecard">
+      <div class="big">${agree}/${D.length}</div>
+      <h2>${head}</h2>
+      <p>You matched my actual call ${pct}% of the time. ${sub}</p>
+      <div class="share">
+        <button id="copy">Copy my result</button>
+        <button id="again">Play again ↺</button>
+      </div>
+    </div>
+    <p class="tally" style="margin-top:20px;text-align:left;color:var(--mut);font-size:14px">
+      Every decision below, with what I chose and what it cost. Expand any of them.</p>
+    ${D.map((d,i)=>{
+      const ok=answers[i]===d.me;
+      return `<details class="rev"${i===0?' open':''}>
+        <summary class="rh">
+          <span class="verdict ${ok?'ok':'dif'}">${ok?'agreed':'differed'}</span>
+          <span><span class="q">${d.q}</span>
+            <span class="mini">${d.where} · you said <b>${answers[i]?'would':'wouldn\'t'}</b> ·
+            I ${d.me?'did':'didn\'t'}</span></span>
+          <span class="chev">⌄</span>
+        </summary>
+        <div class="rb">
+          <p class="said">${d.said}</p>
+          <p class="why">${d.why}</p>
+          <p class="cost"><b>What it cost:</b> ${d.cost}</p>
+        </div>
+      </details>`}).join('')}`;
+  results.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+  live.textContent=`Complete. You matched ${agree} of ${D.length}.`;
+
+  document.getElementById('again').onclick=()=>{
+    idx=0;answers=[];results.classList.remove('on');results.innerHTML='';
+    game.style.display='';[...prog.children].forEach(p=>p.className='');
+    build();game.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+  };
+  document.getElementById('copy').onclick=async e=>{
+    const txt=`I matched ${agree}/${D.length} of Puneet Arora's real design-leadership calls.\n${location.href}`;
+    try{ await navigator.clipboard.writeText(txt); e.target.textContent='Copied ✓';
+      setTimeout(()=>e.target.textContent='Copy my result',1800);
+    }catch{ e.target.textContent='Press ⌘C'; }
+  };
+}
+build();
+</script>
+</body>
+</html>
