@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puneet Arora — Context Window</title>
+<style>
+:root{
+  --paper:#f7f4ee; --ink:#1b1a17; --mut:#6d675c; --faint:#a49c8e;
+  --line:#e2ddd2; --card:#fffdf9;
+  --am:#b45309; --grn:#166534; --blu:#1d4ed8; --red:#9f1239; --vio:#6d28d9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:13.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:34px 20px 90px}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--mut);border:1px solid var(--line);padding:4px 9px;border-radius:99px;background:var(--card)}
+h1{font-size:clamp(26px,4.4vw,40px);line-height:1.1;letter-spacing:-.02em;margin:16px 0 0;font-weight:600}
+.lede{color:var(--mut);max-width:66ch;margin-top:12px}
+
+/* the context window frame */
+.ctx{margin-top:26px;border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;
+  box-shadow:0 1px 0 rgba(0,0,0,.03),0 12px 40px -28px rgba(0,0,0,.4)}
+.ctxbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  padding:10px 14px;border-bottom:1px solid var(--line);background:#f2eee5}
+.dotrow{display:flex;gap:6px}
+.dotrow i{width:9px;height:9px;border-radius:50%;background:#d9d2c4;display:block}
+.ctxname{font-size:12px;color:var(--mut)}
+.meter{margin-left:auto;display:flex;align-items:center;gap:9px;font-size:11px;color:var(--mut)}
+.track{width:150px;height:5px;background:#e6e0d4;border-radius:99px;overflow:hidden}
+.track i{display:block;height:100%;width:32%;background:linear-gradient(90deg,var(--grn),var(--am));transition:width .5s}
+
+.block{padding:16px 18px;border-bottom:1px solid var(--line)}
+.block:last-child{border-bottom:0}
+.klabel{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+.k-sys{color:var(--vio)} .k-tool{color:var(--blu)} .k-mem{color:var(--am)}
+.k-con{color:var(--red)} .k-out{color:var(--grn)}
+.block p{color:var(--ink)}
+.block p+p{margin-top:9px}
+.mut{color:var(--mut)}
+.hl{background:#fdf0d5;padding:0 3px;border-radius:3px}
+
+/* tool schemas */
+.tool{border:1px solid var(--line);border-radius:9px;background:var(--paper);padding:11px 13px;margin-top:9px}
+.tool summary{cursor:pointer;list-style:none;font-size:13px;color:var(--blu);font-weight:600}
+.tool summary::-webkit-details-marker{display:none}
+.tool summary::before{content:"▸ ";color:var(--faint)}
+.tool[open] summary::before{content:"▾ "}
+.tool pre{margin-top:9px;font-size:11.5px;color:var(--mut);white-space:pre-wrap;line-height:1.55}
+.str{color:var(--grn)} .key{color:var(--red)} .num{color:var(--vio)}
+
+/* temperature */
+.temp{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  padding:13px 18px;background:#f2eee5;border-bottom:1px solid var(--line)}
+.temp label{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--mut)}
+input[type=range]{flex:1 1 200px;accent-color:var(--am);min-width:140px}
+.tval{font-size:12px;color:var(--am);width:34px;font-weight:700}
+
+.note{margin-top:24px;border-left:3px solid var(--am);padding:2px 0 2px 14px;color:var(--mut);max-width:70ch}
+.foot{color:var(--faint);font-size:12px;margin-top:40px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <span class="tag">Option 02 · concept</span>
+  <h1>If you instantiated me as an agent,<br>this is the context you'd load.</h1>
+  <p class="lede">
+    Most résumés describe capability. This one is <em>formatted</em> as capability — a system prompt,
+    a tool manifest, a memory buffer, and an honest constraints block. If you build with LLMs, you can
+    read this in ten seconds and know whether I think in the same primitives you do.
+  </p>
+
+  <div class="ctx">
+    <div class="ctxbar">
+      <span class="dotrow"><i></i><i></i><i></i></span>
+      <span class="ctxname">puneet_arora.context · v20.0 · loaded</span>
+      <span class="meter"><span class="track"><i id="tk"></i></span><span id="tkn">6,412 / 20,000 tokens</span></span>
+    </div>
+
+    <div class="temp">
+      <label for="t">Temperature</label>
+      <input id="t" type="range" min="0" max="2" step="1" value="1" aria-label="Sampling temperature">
+      <span class="tval" id="tv">0.7</span>
+      <span class="mut" style="font-size:11.5px" id="thint">balanced — how I'd brief a peer</span>
+    </div>
+
+    <div class="block">
+      <div class="klabel k-sys">system</div>
+      <p id="sys"></p>
+    </div>
+
+    <div class="block">
+      <div class="klabel k-tool">tools — functions I can actually be called with</div>
+
+      <details class="tool" open><summary>scale_design_org()</summary>
+<pre><span class="key">"description"</span>: <span class="str">"Stand up or rescue a multi-disciplinary design org."</span>
+<span class="key">"proven_at"</span>: <span class="str">"33 designers · 4 product experiences · 5 time zones"</span>
+<span class="key">"params"</span>: { headcount, timezones, maturity: <span class="str">"greenfield" | "inherited" | "in-crisis"</span> }
+<span class="key">"side_effects"</span>: <span class="str">"owns hiring, onboarding, mentoring, 3-6-9 roadmaps tied to KPIs"</span></pre></details>
+
+      <details class="tool"><summary>found_ai_practice()</summary>
+<pre><span class="key">"description"</span>: <span class="str">"Create an AI design capability where none exists."</span>
+<span class="key">"proven_at"</span>: <span class="str">"Founded the AI-Design &amp; Innovation CoE, Dell Digital Design"</span>
+<span class="key">"returns"</span>: { prompt_library, intent_estimation, multimodal_adaptive_layout }
+<span class="key">"note"</span>: <span class="str">"Pan-org, not a pilot. Behavioural-science nudges included."</span></pre></details>
+
+      <details class="tool"><summary>ship_genai_product()</summary>
+<pre><span class="key">"description"</span>: <span class="str">"Take a GenAI surface from concept to production traffic."</span>
+<span class="key">"proven_at"</span>: <span class="str">"Dell.com GenAI chatbot — President's + Game Changer awards"</span>
+<span class="key">"constraints"</span>: <span class="str">"enterprise scale, real customers, legal + brand review"</span></pre></details>
+
+      <details class="tool"><summary>design_under_high_stakes()</summary>
+<pre><span class="key">"description"</span>: <span class="str">"Operate where errors are expensive or unsafe."</span>
+<span class="key">"proven_at"</span>: [<span class="str">"Boeing — Fuel Efficiency Solutions"</span>, <span class="str">"Boeing — TAAM airspace modeller"</span>,
+               <span class="str">"Digital LifeCare — ET Healthcare Platform of the Year 2022"</span>]</pre></details>
+
+      <details class="tool"><summary>convert_design_into_margin()</summary>
+<pre><span class="key">"description"</span>: <span class="str">"Argue design in the finance department's language."</span>
+<span class="key">"proven_at"</span>: <span class="str">"HP Director Award (APJ) — 40% cost saving across Global Business Units"</span>
+<span class="key">"mechanism"</span>: <span class="str">"cut incoming defect change requests at the design layer"</span></pre></details>
+
+      <details class="tool"><summary>invent()</summary>
+<pre><span class="key">"description"</span>: <span class="str">"Produce defensible IP, not just screens."</span>
+<span class="key">"returns"</span>: { granted_patents: <span class="num">8</span>, technical_publications: <span class="num">8</span> }
+<span class="key">"domains"</span>: [<span class="str">"design systems"</span>, <span class="str">"layout"</span>, <span class="str">"cloud + cost-effective printing"</span>,
+             <span class="str">"print automation"</span>, <span class="str">"retail"</span>, <span class="str">"mobile security"</span>]</pre></details>
+    </div>
+
+    <div class="block">
+      <div class="klabel k-mem">memory — long context, compacted</div>
+      <p class="mut">
+        <span class="hl">2006–2015</span> HP R&amp;D — firmware and device UX; dense interfaces on low-end hardware.
+        <span class="hl">2015–2016</span> Software AG — enterprise modernisation; authored the design system guidelines.
+        <span class="hl">2016–2018</span> Boeing — aviation products where the cost of a bad affordance is measured differently.
+        <span class="hl">2018–2026</span> Dell — global UX practice lead for AI products, then Principal, AI-Design Transformation.
+      </p>
+      <p class="mut">Twenty years is not a number on this page. It is the reason the earlier entries are one line each.</p>
+    </div>
+
+    <div class="block">
+      <div class="klabel k-con">constraints — the part most résumés omit</div>
+      <p id="con"></p>
+    </div>
+
+    <div class="block">
+      <div class="klabel k-out">expected output</div>
+      <p id="out"></p>
+    </div>
+  </div>
+
+  <p class="note">
+    <strong>Why this works:</strong> it filters. A hiring manager who doesn't build with models will
+    find it odd. One who does will recognise every field name and conclude — correctly — that I've
+    spent real time inside these systems rather than adjacent to them. Self-selecting collateral is
+    a feature, not a risk.
+  </p>
+
+  <p class="foot">Concept 02 of 4 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const COPY={
+ sys:[
+  "Design leader. 20 years. Dell, Boeing, HP, Software AG. Founded Dell's AI-Design CoE. 8 granted patents. Led 33 designers across 5 time zones. Ships.",
+  "You are a global design leader with twenty years of range — device firmware to enterprise AI. You have built a GenAI design practice inside a Fortune 100 from nothing, led thirty-three designers across five time zones, and hold eight granted patents. You are most useful where the problem is still ambiguous and the org is not yet aligned. You argue design in the language of the business, because that is the only language that funds it.",
+  "Consider what it means to design for a machine that reasons. For twenty years I have moved between the very small — a control flow on a low-end printer — and the very large — a pan-organisational GenAI initiative touching millions of Dell customers. The through-line is not a tool or a framework; it is a stubborn interest in how humans form intent, and how a system can meet that intent halfway without pretending to be human. I am, not coincidentally, finishing a Master's in Philosophy while building these things. The questions turn out to be the same questions."
+ ],
+ con:[
+  "Deep in AI, enterprise, hardware. Not a visual-brand specialist. Not a founder. Won't pretend otherwise.",
+  "I am strongest in ambiguity and weakest in ceremony. My depth is AI, enterprise systems and hardware-adjacent products — not brand identity or consumer-social. I have led inside large organisations, not founded companies. I will tell a stakeholder their favourite feature is unfunded before I will quietly redesign around it.",
+  "Every capability implies a shape, and a shape implies a limit. Mine: I have spent my career inside large, slow, consequential organisations — Boeing, HP, Dell — and that has made me good at moving institutions and less practised at the improvisation a seed-stage company demands. I am a systems person before I am a stylist; if you need a brand invented from a feeling, I am not your first call. And I would rather surface an uncomfortable tradeoff in week one than discover it in quarter three, which some teams experience as friction. That is a real cost, and I am naming it here rather than in an exit interview."
+ ],
+ out:[
+  "An org that ships AI products on purpose, with metrics attached, and designers who outgrow me.",
+  "A design organisation that treats AI as a material rather than a headline — with a prompt and evaluation practice that outlives any single model, roadmaps that survive contact with finance, and a bench of designers who are being promoted past me. That last one is the actual measure.",
+  "What I want to leave behind is not a body of work but a functioning capability: a team that can reason about probabilistic systems without either fearing them or worshipping them, that knows the difference between a demo and a product, and that has internalised the unglamorous truth that most of the value in AI design lies in the failure states. If, three years after I leave, the practice still holds when the model underneath it is replaced — that was the job."
+ ]
+};
+const HINT=["deterministic — how I'd write a filing","balanced — how I'd brief a peer","expansive — how I'd think out loud"];
+const TVAL=["0.0","0.7","1.4"];
+const TOK=[3140,6412,11980];
+const t=document.getElementById('t');
+function render(){
+  const i=+t.value;
+  document.getElementById('sys').textContent=COPY.sys[i];
+  document.getElementById('con').textContent=COPY.con[i];
+  document.getElementById('out').textContent=COPY.out[i];
+  document.getElementById('tv').textContent=TVAL[i];
+  document.getElementById('thint').textContent=HINT[i];
+  document.getElementById('tkn').textContent=TOK[i].toLocaleString()+' / 20,000 tokens';
+  document.getElementById('tk').style.width=(TOK[i]/20000*100)+'%';
+}
+t.addEventListener('input',render); render();
+</script>
+</body>
+</html>

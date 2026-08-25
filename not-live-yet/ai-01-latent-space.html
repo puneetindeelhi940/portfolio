@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puneet Arora — Latent Space</title>
+<style>
+:root{
+  --bg:#08090c; --panel:#0e1016; --line:#1c2029; --dim:#5b6470;
+  --fg:#e7ecf2; --mut:#8a94a3;
+  --cy:#22d3ee; --mg:#f472b6; --am:#fbbf24; --gr:#34d399;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 80px}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.04;letter-spacing:-.02em;font-weight:500;margin:14px 0 0}
+h1 em{font-style:normal;color:var(--cy)}
+.lede{color:var(--mut);max-width:64ch;margin-top:14px;font-size:14px}
+.rule{height:1px;background:var(--line);margin:28px 0}
+
+/* query bar */
+.qbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.qin{flex:1 1 320px;min-width:0;background:var(--panel);border:1px solid var(--line);
+  color:var(--fg);padding:11px 13px;border-radius:8px;font:inherit;outline:none}
+.qin:focus{border-color:var(--cy);box-shadow:0 0 0 3px rgba(34,211,238,.12)}
+.chip{background:transparent;border:1px solid var(--line);color:var(--mut);
+  padding:7px 11px;border-radius:99px;font:inherit;font-size:12px;cursor:pointer;transition:.15s}
+.chip:hover{border-color:var(--cy);color:var(--cy)}
+.chip[aria-pressed="true"]{background:rgba(34,211,238,.12);border-color:var(--cy);color:var(--cy)}
+
+/* plot */
+.stage{display:grid;grid-template-columns:1fr 340px;gap:16px}
+@media(max-width:900px){.stage{grid-template-columns:1fr}}
+.plot{position:relative;background:
+   linear-gradient(var(--line) 1px,transparent 1px) 0 0/100% 12.5%,
+   linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/12.5% 100%,
+   var(--panel);
+  border:1px solid var(--line);border-radius:12px;aspect-ratio:1/.82;overflow:hidden}
+.axis{position:absolute;font-size:10px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.axis.x{bottom:8px;right:12px}.axis.y{top:12px;left:10px}
+.node{position:absolute;transform:translate(-50%,-50%);cursor:pointer;
+  transition:left .7s cubic-bezier(.22,1,.36,1),top .7s cubic-bezier(.22,1,.36,1),opacity .4s}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--dim);
+  box-shadow:0 0 0 0 rgba(34,211,238,0);transition:.35s}
+.node.flip .lbl{left:auto;right:14px;text-align:right}
+.node .lbl{position:absolute;left:14px;top:-5px;white-space:nowrap;font-size:11px;
+  color:var(--mut);opacity:0;transition:.25s;pointer-events:none;
+  background:rgba(8,9,12,.86);padding:2px 6px;border-radius:4px}
+.node:hover .lbl,.node.hot .lbl{opacity:1}
+.node.hot .dot{background:var(--cy);box-shadow:0 0 0 5px rgba(34,211,238,.13)}
+.node.warm .dot{background:var(--mg)}
+.node.hot .lbl{color:var(--fg)}
+
+/* ranked list */
+.side{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;
+  max-height:560px;overflow:auto}
+.side h2{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:500}
+.rank{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.rank:last-child{border-bottom:0}
+.score{font-size:11px;color:var(--cy);width:38px;flex:none;padding-top:2px}
+.rk-t{font-size:13px;color:var(--fg)}
+.rk-m{font-size:11px;color:var(--dim);margin-top:2px}
+.bar{height:2px;background:var(--line);margin-top:5px;border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--cy);transition:width .6s}
+
+/* prose */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h3{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--am);font-weight:500;margin-bottom:8px}
+.card p{color:var(--mut);font-size:13px}
+.big{font-size:30px;color:var(--fg);letter-spacing:-.02em}
+.foot{color:var(--dim);font-size:12px;margin-top:36px;text-align:center}
+a{color:var(--cy)}
+mark{background:rgba(251,191,36,.16);color:var(--am);padding:0 3px;border-radius:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">Option 01 · concept</div>
+  <h1>i don't have a résumé.<br>i have a <em>latent space</em>.</h1>
+  <p class="lede">
+    A CV is a list sorted by date — the least useful ordering for the question you actually have,
+    which is <mark>"can he do the thing I need?"</mark> So this page doesn't sort by date. Type the
+    role you're hiring for and twenty years re-ranks itself against your intent, live, in the browser.
+    That re-ranking is the same primitive I shipped at Dell: intent estimation driving adaptive layout.
+  </p>
+
+  <div class="rule"></div>
+
+  <div class="qbar">
+    <input class="qin" id="q" type="text" autocomplete="off"
+      placeholder="type an intent —  e.g.  scale a design org under GenAI pressure"
+      aria-label="Query the career latent space">
+    <button class="chip" data-q="build and lead an AI design practice from zero">AI practice, zero→one</button>
+    <button class="chip" data-q="scale a global multi timezone design org and mentor managers">scale a global org</button>
+    <button class="chip" data-q="prompt engineering multimodal personalization research">applied GenAI craft</button>
+    <button class="chip" data-q="regulated safety critical enterprise complexity aviation healthcare">high-stakes systems</button>
+  </div>
+
+  <div class="stage">
+    <div class="plot" id="plot">
+      <span class="axis y">← systems craft · org leadership →</span>
+      <span class="axis x">← shipped · invented →</span>
+    </div>
+    <div class="side">
+      <h2>Ranked by cosine similarity</h2>
+      <div id="ranks"></div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Why this, and not a timeline</h3>
+      <p>Every hiring manager arrives with a different query vector. A timeline forces all of them
+      through the same linear scan. Re-ranking respects the reader's intent — and quietly proves
+      I understand embeddings well enough to build the interaction, not just name-drop it.</p>
+    </div>
+    <div class="card">
+      <h3>What's actually running</h3>
+      <p>A hand-built term–vector model over 24 career nodes, cosine-scored against your query,
+      driving position, scale and opacity. No API, no key, no network call. It works on a plane.
+      Under a hundred lines of JavaScript — the restraint is the point.</p>
+    </div>
+    <div class="card">
+      <h3>The tell</h3>
+      <p><span class="big">8</span> granted patents · <span class="big">33</span> designers ·
+      <span class="big">5</span> time zones · <span class="big">20</span> years.
+      Numbers a recruiter can verify, positioned as coordinates rather than bullets.</p>
+    </div>
+  </div>
+
+  <p class="foot">Concept 01 of 4 · Built by Puneet Arora</p>
+</div>
+
+<script>
+// ---- career corpus: each node carries weighted terms ----
+const N=[
+ {t:"AI-Design & Innovation CoE",m:"Dell · founded it",x:.80,y:.72,k:{ai:3,leader:3,zero:3,strategy:2,genai:3,org:2}},
+ {t:"GenAI chatbot, Dell.com",m:"President + Game Changer award",x:.72,y:.30,k:{ai:3,genai:3,ship:3,ecom:2,award:2}},
+ {t:"Pan-Dell GenAI personalization",m:"analytics + behavioural nudges",x:.66,y:.44,k:{ai:3,genai:3,strategy:3,research:2,ecom:2}},
+ {t:"Prompt library + intent estimation",m:"foundational AI research",x:.60,y:.20,k:{ai:3,genai:3,prompt:3,research:3,craft:3}},
+ {t:"Multi-modal adaptive layouts",m:"layout that reads intent",x:.55,y:.26,k:{ai:3,genai:2,craft:3,system:2,research:2}},
+ {t:"33 designers, 4 products",m:"5 time zones",x:.30,y:.88,k:{org:3,leader:3,scale:3,mentor:3}},
+ {t:"3-6-9 month roadmaps → KPIs",m:"design tied to business metrics",x:.22,y:.80,k:{org:3,leader:3,strategy:3,exec:2}},
+ {t:"Talent lifecycle ownership",m:"hire · onboard · mentor",x:.16,y:.92,k:{org:3,mentor:3,leader:2,scale:2}},
+ {t:"C-suite design evangelism",m:"executive narrative",x:.26,y:.66,k:{exec:3,leader:3,story:3,strategy:2}},
+ {t:"Digital LifeCare",m:"ET Healthcare Platform of the Year 2022",x:.44,y:.52,k:{ship:3,stakes:3,award:2,scale:2,health:3}},
+ {t:"Dell Champion Award",m:"sales application innovation",x:.50,y:.36,k:{ship:2,award:2,ecom:2,craft:2}},
+ {t:"HP Director Award (APJ)",m:"40% cost saving across GBUs",x:.34,y:.42,k:{ship:3,process:3,award:2,metric:3,scale:2}},
+ {t:"Defect-change-request reduction",m:"design as cost lever",x:.30,y:.34,k:{process:3,metric:3,system:2,strategy:2}},
+ {t:"8 granted patents",m:"design systems · printing · security",x:.92,y:.44,k:{invent:3,craft:3,system:2,patent:3}},
+ {t:"8 technical publications",m:"written record",x:.88,y:.36,k:{invent:3,story:2,craft:2,patent:2}},
+ {t:"Boeing — Fuel Efficiency Solutions",m:"aviation, safety-critical",x:.60,y:.60,k:{stakes:3,complex:3,ship:2,aero:3}},
+ {t:"Boeing — TAAM airspace modeller",m:"airport + airspace simulation",x:.64,y:.56,k:{stakes:3,complex:3,system:3,aero:3}},
+ {t:"Design sprints w/ engineers",m:"translating constraint into form",x:.40,y:.48,k:{craft:3,process:2,mentor:2,complex:2}},
+ {t:"Software AG — enterprise UX",m:"One Data · Eclipse Designer",x:.46,y:.44,k:{system:3,craft:2,complex:2,ent:3}},
+ {t:"Enterprise design system guidelines",m:"authored the standard",x:.52,y:.62,k:{system:3,craft:3,process:2,ent:2}},
+ {t:"Train-the-Trainer · Crazy 8s",m:"upskilling engineering orgs",x:.20,y:.58,k:{mentor:3,process:2,org:2,story:2}},
+ {t:"HP — printer firmware UX",m:"low-end hardware, dense UI",x:.74,y:.14,k:{craft:3,complex:3,ship:2,hw:3}},
+ {t:"Localization for Indian market",m:"requirements → features",x:.68,y:.10,k:{craft:2,research:2,ship:2,hw:2}},
+ {t:"M.A. Philosophy (in progress)",m:"epistemology, while building AI",x:.10,y:.20,k:{invent:2,story:3,think:3,ethics:3,phil:3}},
+];
+// query terms -> corpus dimensions
+const SYN={
+ ai:["ai","genai","llm","artificial","intelligence","model","ml"],
+ genai:["genai","generative","gpt","chatbot","llm","copilot"],
+ prompt:["prompt","prompting","engineering","context"],
+ leader:["lead","leader","leadership","head","director","manage","manager","principal"],
+ org:["org","organisation","organization","team","teams","practice","group","hiring"],
+ scale:["scale","scaling","global","large","grow","growth"],
+ mentor:["mentor","coach","mentoring","develop","talent","people"],
+ exec:["executive","c-suite","csuite","stakeholder","board","vp"],
+ strategy:["strategy","strategic","vision","roadmap","transformation"],
+ ship:["ship","shipped","deliver","launch","product","built","build"],
+ craft:["craft","design","ux","ui","interaction","visual","layout","prototype"],
+ system:["system","systems","design-system","architecture","platform","standard"],
+ research:["research","insight","user","behaviour","behavior","analytics","data"],
+ metric:["metric","roi","kpi","measure","cost","savings","impact","business"],
+ process:["process","operations","ops","efficiency","governance","quality"],
+ invent:["invent","patent","innovation","novel","ip","publication","research"],
+ patent:["patent","ip","publication","granted"],
+ stakes:["safety","critical","regulated","high-stakes","risk","compliance","enterprise"],
+ complex:["complex","complexity","technical","engineering","hard","ambiguous"],
+ ecom:["ecommerce","e-commerce","commerce","sales","retail","conversion","personalization"],
+ health:["health","healthcare","medical","clinical","care"],
+ aero:["aviation","aerospace","aircraft","airline","airspace","boeing"],
+ ent:["enterprise","b2b","saas","internal"],
+ hw:["hardware","firmware","device","embedded","printer","iot"],
+ story:["story","storytelling","narrative","communicate","writing","present"],
+ think:["think","thinking","philosophy","reasoning","first-principles","epistemology"],
+ ethics:["ethic","ethics","responsible","safety","alignment","trust"],
+ phil:["philosophy","philosophical","ethics","meaning"],
+ award:["award","recognition","won","winning"],
+ zero:["zero","0-1","greenfield","new","found","founded","start"],
+};
+const plot=document.getElementById('plot'), ranks=document.getElementById('ranks');
+const els=N.map((n,i)=>{
+  const d=document.createElement('div'); d.className='node'; d.dataset.i=i;
+  d.style.left=(n.x*100)+'%'; d.style.top=((1-n.y)*100)+'%';
+  if(n.x>.66)d.classList.add('flip');
+  d.innerHTML='<div class="dot"></div><span class="lbl">'+n.t+'</span>';
+  plot.appendChild(d); return d;
+});
+function vec(q){
+  const words=q.toLowerCase().split(/[^a-z0-9-]+/).filter(Boolean);
+  const v={};
+  for(const dim in SYN) for(const w of words)
+    if(SYN[dim].some(s=>s.startsWith(w)&&w.length>2||w===s)) v[dim]=(v[dim]||0)+1;
+  return v;
+}
+function cos(a,b){
+  let dot=0,na=0,nb=0;
+  const keys=new Set([...Object.keys(a),...Object.keys(b)]);
+  keys.forEach(k=>{const x=a[k]||0,y=b[k]||0;dot+=x*y;na+=x*x;nb+=y*y;});
+  return (na&&nb)?dot/Math.sqrt(na*nb):0;
+}
+function run(q){
+  const v=vec(q), empty=Object.keys(v).length===0;
+  const scored=N.map((n,i)=>({i,n,s:empty?0:cos(v,n.k)}));
+  scored.sort((a,b)=>b.s-a.s);
+  const top=scored.filter(x=>x.s>0).slice(0,8);
+  const hot=new Set(top.slice(0,4).map(x=>x.i)), warm=new Set(top.slice(4).map(x=>x.i));
+  els.forEach((el,i)=>{
+    const sc=scored.find(x=>x.i===i).s;
+    el.classList.toggle('hot',hot.has(i));
+    el.classList.toggle('warm',warm.has(i));
+    el.style.opacity = empty?1:(sc>0?1:.24);
+    // gravity: relevant nodes drift toward the centre of attention
+    const gx=.5,gy=.55,pull=empty?0:Math.min(sc,1)*.30;
+    el.style.left=((N[i].x+(gx-N[i].x)*pull)*100)+'%';
+    el.style.top=((1-(N[i].y+(gy-N[i].y)*pull))*100)+'%';
+  });
+  ranks.innerHTML = (empty?scored.slice(0,8):top).map(x=>
+    `<div class="rank"><div class="score">${empty?'—':x.s.toFixed(2)}</div>
+     <div style="flex:1;min-width:0"><div class="rk-t">${x.n.t}</div>
+     <div class="rk-m">${x.n.m}</div>
+     <div class="bar"><i style="width:${empty?0:Math.round(x.s*100)}%"></i></div></div></div>`).join('')
+    || '<div class="rk-m">No match. Try: leadership, patents, GenAI, aviation, mentoring.</div>';
+}
+const q=document.getElementById('q');
+q.addEventListener('input',()=>{document.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed','false'));run(q.value);});
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip').forEach(o=>o.setAttribute('aria-pressed','false'));
+  c.setAttribute('aria-pressed','true'); q.value=c.dataset.q; run(q.value);
+}));
+run('');
+</script>
+</body>
+</html>

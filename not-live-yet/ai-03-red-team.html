@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puneet Arora — Red Team</title>
+<style>
+:root{
+  --bone:#f4f1ea; --ink:#141210; --ox:#7a1220; --oxl:#a11b2c;
+  --mut:#5f5850; --faint:#9a9188; --line:#ddd6ca; --card:#fffefb;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bone);color:var(--ink);
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:40px 22px 100px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.kicker{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ox);font-weight:700}
+h1{font-size:clamp(32px,6vw,58px);line-height:1.02;letter-spacing:-.022em;margin:16px 0 0;font-weight:600}
+h1 span{color:var(--ox);font-style:italic}
+.lede{margin-top:18px;max-width:62ch;color:var(--mut);font-size:18px}
+.hr{height:2px;background:var(--ink);margin:34px 0 8px;opacity:.85}
+.hr.thin{height:1px;background:var(--line);opacity:1;margin:26px 0}
+
+.counter{display:flex;gap:22px;flex-wrap:wrap;margin-top:14px;color:var(--faint);font-size:12px}
+.counter b{color:var(--ink);font-size:22px;display:block;font-weight:600}
+
+.claim{background:var(--card);border:1px solid var(--line);border-radius:2px;margin-top:18px;
+  box-shadow:0 14px 34px -30px rgba(0,0,0,.6)}
+.chead{display:flex;gap:14px;align-items:baseline;padding:18px 20px 0}
+.num{font-size:12px;color:var(--faint)}
+.ctitle{font-size:21px;line-height:1.28;font-weight:600;flex:1}
+.stage{padding:14px 20px 20px}
+.pill{display:inline-block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  padding:3px 9px;border-radius:99px;font-weight:700;margin-bottom:10px}
+.p-claim{background:#eef1f5;color:#33507a}
+.p-atk{background:#f7e4e6;color:var(--ox)}
+.p-res{background:#e6efe8;color:#1d5b34}
+.body{min-height:118px}
+.body p+p{margin-top:11px}
+.ctrl{display:flex;gap:10px;align-items:center;padding:0 20px 18px;flex-wrap:wrap}
+button.adv{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;
+  background:var(--ink);color:var(--bone);border:0;padding:9px 15px;border-radius:2px;cursor:pointer;
+  letter-spacing:.06em;transition:.15s}
+button.adv:hover{background:var(--ox)}
+button.adv[disabled]{background:#ccc5ba;cursor:default}
+.steps{display:flex;gap:5px;margin-left:auto}
+.steps i{width:22px;height:3px;background:var(--line);display:block;border-radius:2px;transition:.25s}
+.steps i.on{background:var(--ox)}
+
+.close{margin-top:36px;border-left:3px solid var(--ox);padding-left:18px;max-width:64ch}
+.close h2{font-size:22px;font-weight:600;margin-bottom:8px}
+.close p{color:var(--mut)}
+.foot{color:var(--faint);font-size:12px;margin-top:44px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">Option 03 · concept</div>
+  <h1>Don't read my résumé.<br><span>Attack it.</span></h1>
+  <p class="lede">
+    Every claim below is followed by the strongest objection I can construct against it — written
+    to win, not to be knocked down — and then my answer. If you are hiring someone to lead AI design,
+    the relevant question is not whether I can present. It is whether I can survive scrutiny of my
+    own work. So here is the scrutiny, pre-loaded.
+  </p>
+
+  <div class="counter">
+    <span><b>6</b> claims</span>
+    <span><b>6</b> steelmanned attacks</span>
+    <span><b>0</b> claims withdrawn</span>
+    <span><b>2</b> partially conceded</span>
+  </div>
+
+  <div class="hr"></div>
+  <p class="mono" style="font-size:11.5px;color:var(--faint);letter-spacing:.1em">
+    CLICK EACH CARD TO ADVANCE · CLAIM → ATTACK → RESPONSE
+  </p>
+
+  <div id="deck"></div>
+
+  <div class="close">
+    <h2>Why a designer should build this page</h2>
+    <p>
+      Red-teaming is the daily work of shipping AI responsibly — you assume the system will be
+      misused and you design for that first. A portfolio that only presents the happy path is,
+      by that standard, an unevaluated model. This one publishes its own adversarial set.
+      It also happens to be the most honest possible use of a Philosophy degree taken mid-career.
+    </p>
+  </div>
+
+  <p class="foot">Concept 03 of 4 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const C=[
+{t:"I founded Dell's AI-Design & Innovation Centre of Excellence.",
+ claim:"I conceptualised and led the AI-Design & Innovation CoE for Dell Digital Design — the function that took GenAI from scattered experiments to a pan-organisational design capability with a prompt library, intent estimation and multi-modal adaptive layouts.",
+ atk:"\"CoE\" is one of the most abused nouns in enterprise. Plenty of them are a slide, a Slack channel and a monthly sync that dissolves at the next reorg. Founding a CoE proves you can name a thing. It does not prove the thing produced anything a customer ever touched.",
+ res:"Fair — and the test I'd apply to anyone else is output, so apply it here. The CoE's work shipped into Dell.com's GenAI chatbot, which won both the President's and Game Changer awards. The prompt library and intent-estimation work weren't artefacts of the CoE; they were the reason the surface shipped at all. If the CoE had produced only governance, the objection would land."},
+
+{t:"I led 33 designers across 5 time zones.",
+ claim:"I drove design strategy across AI and e-commerce PoDs, managing 4 product experiences and 33 designers, owning the full talent lifecycle and aligning 3-6-9 month roadmaps to business metrics.",
+ atk:"Headcount is the laziest proxy for leadership in our industry. Thirty-three designers across five time zones can equally describe someone who inherited a large org and spent four years keeping it from getting worse. Where is the evidence of judgment rather than administration?",
+ res:"Partially conceded: headcount alone is a weak signal, and I'd discount it in a candidate too. The judgment shows in a narrower place — I tied design deliverables to a 3-6-9 roadmap against business KPIs, which means I chose, publicly and repeatedly, what the team would not do. The measure I'd actually offer is the promotions out of my org rather than its size. That's the number I'd bring to a reference check."},
+
+{t:"Design cut costs 40% across HP's Global Business Units.",
+ claim:"I received the HP Director Award (APJ) for process improvement, driving 40% cost savings across GBUs by introducing design optimisations that reduced incoming defect change requests.",
+ atk:"A 40% saving attributed to design is exactly the kind of figure that survives because nobody audits it. Defect change requests fall for a dozen reasons — a quieter release cycle, a tooling upgrade, a headcount change. Attribution to design is convenient and unfalsifiable.",
+ res:"The mechanism is the defence. The saving didn't come from designing better screens; it came from moving specification decisions earlier, so ambiguity was resolved before engineering committed. That reduced a specific, counted artefact — incoming change requests — which is why an award committee at HP, not a designer, signed off on it. I'd still hold this number more loosely than the awards, and I'd say so in the room."},
+
+{t:"I hold 8 granted patents.",
+ claim:"Eight granted patents and eight technical publications across design systems, layout, cloud and cost-effective printing, print automation, retail and mobile security.",
+ atk:"Large hardware companies file patents as a portfolio-defence strategy and reward engineers for volume. Eight grants over a long HP tenure may say more about HP's filing culture than about the originality of any single idea. Have any of them mattered?",
+ res:"Largely conceded, and I won't overclaim. Corporate filing culture is real, and I benefited from it. What the patents do prove is narrower but not nothing: that I could take a design idea to the level of specificity a patent examiner requires — claims, prior art, defensible novelty. That's a different muscle from a portfolio piece, and it's the one that transfers to writing an evaluation spec for a model."},
+
+{t:"Twenty years of range, from printer firmware to enterprise GenAI.",
+ claim:"Device and firmware UX at HP, enterprise modernisation at Software AG, safety-critical aviation products at Boeing, and AI transformation at Dell.",
+ atk:"Twenty years of range is also twenty years of moving on. Four employers, several domains, no single product owned from birth to maturity. That reads as breadth acquired at the cost of depth — a generalist arriving at AI late, with the vocabulary but not the scar tissue.",
+ res:"The tenure record answers this better than I can: nine years at HP, eight at Dell. That's seventeen of twenty years in two organisations, which is the opposite of moving on. On arriving late — I'd argue the reverse. I spent a decade designing for constrained, deterministic systems where a wrong affordance had physical consequences. That is unusually good preparation for probabilistic systems, where the failure states are the design problem."},
+
+{t:"I'm finishing a Master's in Philosophy while leading AI design.",
+ claim:"M.A. Philosophy, in progress — taken deliberately, alongside the AI work, not instead of it.",
+ atk:"This is the most decorative line on the résumé. A philosophy degree signals intellectual seriousness without demonstrating it, and it invites the suspicion that your attention is divided at exactly the moment the field is moving fastest. What has it actually changed about your work?",
+ res:"The sharpest attack here, and the one I most want to answer. It changed what I consider a design problem. Intent estimation — the thing I shipped — is an epistemology question wearing an engineering costume: what can a system justifiably infer about what a person wants, and at what confidence does inferring become presuming? I did not get that framing from a design conference. If it were decorative I'd have listed it first, not last, and I'd have finished it years ago when it cost me less."}
+];
+const STAGE=[
+ {pill:"Claim",cls:"p-claim",key:"claim"},
+ {pill:"Steelmanned attack",cls:"p-atk",key:"atk"},
+ {pill:"Response",cls:"p-res",key:"res"}
+];
+const deck=document.getElementById('deck');
+C.forEach((c,i)=>{
+  const el=document.createElement('article');
+  el.className='claim'; el.dataset.s='0';
+  el.innerHTML=`
+    <div class="chead"><span class="num mono">${String(i+1).padStart(2,'0')}</span>
+      <h3 class="ctitle">${c.t}</h3></div>
+    <div class="stage">
+      <span class="pill p-claim">Claim</span>
+      <div class="body"><p>${c.claim}</p></div>
+    </div>
+    <div class="ctrl">
+      <button class="adv">SEE THE ATTACK →</button>
+      <span class="steps"><i class="on"></i><i></i><i></i></span>
+    </div>`;
+  const btn=el.querySelector('.adv'), pill=el.querySelector('.pill'),
+        body=el.querySelector('.body'), steps=el.querySelectorAll('.steps i');
+  const LABEL=["SEE THE ATTACK →","SEE MY RESPONSE →","— END OF EXCHANGE"];
+  function go(){
+    let s=(+el.dataset.s+1)%3;
+    if(+el.dataset.s===2) s=0;
+    el.dataset.s=s;
+    const st=STAGE[s];
+    pill.className='pill '+st.cls; pill.textContent=st.pill;
+    body.innerHTML='<p>'+c[st.key]+'</p>';
+    body.animate([{opacity:0,transform:'translateY(4px)'},{opacity:1,transform:'none'}],
+                 {duration:260,easing:'cubic-bezier(.22,1,.36,1)'});
+    steps.forEach((n,j)=>n.classList.toggle('on',j<=s));
+    btn.textContent = s===2 ? "RESTART EXCHANGE ↺" : LABEL[s];
+  }
+  btn.addEventListener('click',go);
+  el.addEventListener('click',e=>{if(e.target!==btn)go();});
+  deck.appendChild(el);
+});
+</script>
+</body>
+</html>
