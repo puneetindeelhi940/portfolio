@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Margin — Puneet Arora</title>
+<style>
+:root{--pg:#f6f4ef;--sheet:#fffefb;--ln:#e3ded2;--ink:#1a1814;--mut:#5b564c;--dim:#9a9384;
+ --ann:#1d4ed8;--warn:#b45309;--kill:#a4133c;--ok:#15803d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--pg);color:var(--ink);
+ font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;
+ -webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:36px 20px 90px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.kick{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(30px,5.2vw,50px);line-height:1.03;letter-spacing:-.028em;margin:12px 0 0;font-weight:660}
+.lede{color:var(--mut);max-width:62ch;margin-top:14px;font-size:17px}
+.disc{margin-top:16px;font-size:13px;color:var(--mut);background:#fdf6e7;border:1px solid #f0e0bd;
+ border-left:3px solid var(--warn);padding:11px 14px;border-radius:0 8px 8px 0;max-width:74ch}
+
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px;font-size:12.5px;color:var(--mut)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:11px;height:11px;border-radius:3px;display:block}
+
+.doc{margin-top:22px}
+.turn{display:grid;grid-template-columns:1fr 300px;gap:0;border-bottom:1px solid var(--ln);
+ align-items:start}
+@media(max-width:900px){.turn{grid-template-columns:1fr}}
+.side{padding:18px 22px}
+.left{background:var(--sheet);border-left:1px solid var(--ln);border-right:1px solid var(--ln)}
+.right{padding-top:22px}
+@media(max-width:900px){.left{border-right:0}.right{padding-top:0;padding-bottom:22px}}
+.who{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:7px}
+.who.me{color:var(--ink)} .who.ai{color:var(--dim)}
+.msg{font-size:15px}
+.msg.ai{color:var(--mut)}
+.msg p+p{margin-top:9px}
+.msg code{background:var(--pg);padding:1px 5px;border-radius:4px;font-size:13px;border:1px solid var(--ln)}
+
+.note{border-left:3px solid var(--ann);padding:2px 0 2px 13px;font-size:14px;color:var(--ink)}
+.note.warn{border-left-color:var(--warn)}
+.note.kill{border-left-color:var(--kill)}
+.note.ok{border-left-color:var(--ok)}
+.note .tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+ display:block;margin-bottom:3px;color:var(--ann)}
+.note.warn .tag{color:var(--warn)} .note.kill .tag{color:var(--kill)} .note.ok .tag{color:var(--ok)}
+.note p+p{margin-top:7px}
+
+.close{margin-top:34px;border-top:2px solid var(--ink);padding-top:20px;max-width:68ch}
+.close h2{font-size:22px;font-weight:660;letter-spacing:-.015em}
+.close p{color:var(--mut);margin-top:9px;font-size:15.5px}
+.foot{color:var(--dim);font-size:12px;margin-top:38px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kick">Concept 07 · the transcript is the portfolio</div>
+  <h1>Everyone says they<br>work with AI. Watch me do it.</h1>
+  <p class="lede">
+    A working session, published with my margin notes. Not the polished output — the session itself,
+    including the places I stopped trusting it. Anyone can claim fluency with these tools. The
+    difference between someone who uses a model and someone who <em>directs</em> one is visible only
+    in the margins, so that is what this page is.
+  </p>
+  <p class="disc">
+    <strong>Note on this draft:</strong> the exchange below is a worked illustration of the format,
+    written to show how the annotation layer reads. If you like the concept, the shipping version
+    should use a real transcript from an actual session — the format only has value if the session
+    is genuine.
+  </p>
+
+  <div class="legend">
+    <span><i style="background:var(--ann)"></i> reasoning</span>
+    <span><i style="background:var(--warn)"></i> caution — where it drifted</span>
+    <span><i style="background:var(--kill)"></i> rejected — and why</span>
+    <span><i style="background:var(--ok)"></i> kept — what earned its place</span>
+  </div>
+
+  <div class="doc" id="doc"></div>
+
+  <div class="close">
+    <h2>Why publish the working, not the result</h2>
+    <p>
+      A finished artefact proves a model can produce output. It says nothing about whether the person
+      holding it can tell good output from plausible output — which, now that generation is free, is
+      the entire remaining skill.
+    </p>
+    <p>
+      The margin notes are the portfolio. They show where I applied twenty years of pattern-matching
+      to overrule a fluent answer, and they are the one thing on any of my pages that a model could
+      not have produced on my behalf.
+    </p>
+  </div>
+
+  <p class="foot">Concept 07 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const T=[
+{w:'me',b:[`I'm designing intent estimation for a commerce assistant. When a shopper types something ambiguous — "I need something for my son's college" — how should the interface behave before it's confident what they mean?`],
+ n:{k:'', tag:'Framing', p:[`I opened with the ambiguous case on purpose. Ask a model for the happy path and it will give you a good one; ask it for the uncertain state and you find out quickly whether it has anything real to say.`]}},
+
+{w:'ai',b:[`Great question! Here's a robust approach:`,
+ `<b>1. Clarifying questions.</b> Ask the user follow-ups to narrow intent — budget, course of study, device preference.<br>
+  <b>2. Confidence thresholds.</b> Set a threshold (e.g. 0.7); above it, act. Below it, ask.<br>
+  <b>3. Progressive disclosure.</b> Start broad, narrow as signals accumulate.<br>
+  <b>4. Graceful fallback.</b> Offer browse if intent can't be resolved.`],
+ n:{k:'warn', tag:'Caution — fluent and generic', p:[`This is a competent answer and I've read it a hundred times. It's a summary of the literature, not a design. Notice there is nothing in it that couldn't have been written without knowing anything about my product.`,
+ `The tell is item 2. "Set a threshold, e.g. 0.7" — where did 0.7 come from? It's a plausible-sounding number with no referent. That's the moment to push, not to accept.`]}},
+
+{w:'me',b:[`0.7 against what distribution? And clarifying questions cost me the shopper — every question is an exit. Assume I can ask at most one, ever. What changes?`],
+ n:{k:'', tag:'Reasoning', p:[`Two moves at once: challenge the invented number, and impose a real constraint from the business. The one-question budget isn't hypothetical — it came from funnel data. Constraints are how you get a model off the generic path.`]}},
+
+{w:'ai',b:[`Understood — with a one-question budget the design changes materially:`,
+ `Rather than clarifying, <b>commit to a provisional interpretation and make it cheap to correct.</b> Render the assumption as an editable object — "Shopping for: a student, laptop, under $900" — as a chip row above the results. The single question becomes an artefact the shopper can amend rather than a gate they must pass.`,
+ `Then reserve the one question for the dimension with the highest variance in outcome — typically budget, since it reshapes the entire result set.`],
+ n:{k:'ok', tag:'Kept — this is the actual idea', p:[`This is the turn where the session became worth having. "Make the assumption editable rather than asking" is a real design position, and it inverts the usual pattern: the system commits and exposes its reasoning instead of interrogating the user.`,
+ `It's also the seed of the adaptive-layout work — the interface reshapes around an inferred intent that the user can see and overrule. I'd have got here myself, but not in four minutes.`]}},
+
+{w:'me',b:[`Good. Now argue against it. What breaks?`],
+ n:{k:'', tag:'Reasoning', p:[`I ask for the counter-case on anything I intend to use. A model will defend its last answer indefinitely if you let it — the useful signal is what it produces when explicitly told to attack itself.`]}},
+
+{w:'ai',b:[`Fair — the main risks: (1) a wrong provisional guess is more annoying than a question, because it implies the system thinks it knows you; (2) chips add visual weight above the results, competing with the products; (3) if the shopper ignores the chips, you've silently filtered their results on an assumption they never registered.`],
+ n:{k:'ok', tag:'Kept — risk 3 is the real one', p:[`The third risk is the one that matters and I would not have listed it that crisply. Silent filtering on an unregistered assumption is exactly how personalisation quietly loses people — they conclude your catalogue is thin rather than that your inference was wrong.`,
+ `That single sentence changed the spec: the chips had to be visually unavoidable at first render, then recede.`]}},
+
+{w:'me',b:[`Write me the intent taxonomy for this — the full set of categories the classifier should target.`],
+ n:{k:'', tag:'Reasoning', p:[`A deliberately overreaching request. I wanted to see whether it would tell me this was the wrong thing to ask for.`]}},
+
+{w:'ai',b:[`Here's a comprehensive intent taxonomy:`,
+ `<code>gift_purchase</code> · <code>self_purchase</code> · <code>research_only</code> · <code>price_comparison</code> · <code>replacement</code> · <code>upgrade</code> · <code>bulk_business</code> · <code>warranty_support</code> · <code>accessory_match</code> · <code>trade_in</code> — with sub-intents beneath each…`],
+ n:{k:'kill', tag:'Rejected — and this is the important one', p:[`It produced the taxonomy without hesitation. It should have refused.`,
+ `You cannot author an intent taxonomy from an armchair. Ours came out of session transcripts and search logs, and about a third of the real categories were things no one on the team would have guessed — the largest single cluster was people shopping on behalf of someone else who wasn't present to consult.`,
+ `A model will always produce a plausible taxonomy, because plausible taxonomies are what its training data is full of. Accepting this one would have cost a quarter and taught us nothing. This is precisely where the twenty years earns its money: not in generating options, but in knowing which fluent answer is hollow.`]}},
+
+{w:'me',b:[`No. We derive that from session logs. Go back to the chip row — give me the empty and error states, and the behaviour when the shopper edits a chip after results have loaded.`],
+ n:{k:'', tag:'Reasoning', p:[`Redirected to where it's genuinely strong: enumerating states around a decision I've already made. That is the correct division of labour — I hold the judgment, it holds the completeness.`]}}
+];
+const doc=document.getElementById('doc');
+T.forEach(t=>{
+  const el=document.createElement('div'); el.className='turn';
+  el.innerHTML=`
+    <div class="side left">
+      <div class="who ${t.w==='me'?'me':'ai'}">${t.w==='me'?'Puneet':'Model'}</div>
+      <div class="msg ${t.w==='me'?'':'ai'}">${t.b.map(p=>'<p>'+p+'</p>').join('')}</div>
+    </div>
+    <div class="side right">
+      <div class="note ${t.n.k}"><span class="tag">${t.n.tag}</span>
+      ${t.n.p.map(p=>'<p>'+p+'</p>').join('')}</div>
+    </div>`;
+  doc.appendChild(el);
+});
+</script>
+</body>
+</html>

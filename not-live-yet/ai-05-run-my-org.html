@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run My Org — Puneet Arora</title>
+<style>
+:root{--bg:#0f1115;--pan:#171a21;--ln:#252a34;--fg:#eaeef4;--mut:#97a1b0;--dim:#5d6675;
+ --gr:#34d399;--am:#fbbf24;--rd:#f87171;--cy:#38bdf8;--vi:#a78bfa}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ line-height:1.58;-webkit-font-smoothing:antialiased}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{max-width:1060px;margin:0 auto;padding:34px 20px 90px}
+.kick{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.05;letter-spacing:-.025em;margin:12px 0 0;font-weight:650}
+.lede{color:var(--mut);max-width:64ch;margin-top:14px}
+.brief{background:var(--pan);border:1px solid var(--ln);border-radius:12px;padding:18px;margin-top:22px}
+.brief h2{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--am);margin-bottom:10px}
+.facts{display:flex;gap:24px;flex-wrap:wrap}
+.facts div b{display:block;font-size:24px;letter-spacing:-.02em}
+.facts div span{font-size:12px;color:var(--dim)}
+
+.board{display:grid;grid-template-columns:1fr 320px;gap:16px;margin-top:20px;align-items:start}
+@media(max-width:880px){.board{grid-template-columns:1fr}}
+.panel{background:var(--pan);border:1px solid var(--ln);border-radius:12px;padding:18px}
+.panel h3{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+
+.alloc{margin-bottom:16px}
+.alloc .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.alloc .nm{font-weight:600;font-size:14.5px}
+.alloc .ds{font-size:12px;color:var(--dim);margin-top:1px}
+.alloc .ct{font-family:ui-monospace,Menlo,monospace;font-size:15px;color:var(--cy);white-space:nowrap}
+input[type=range]{width:100%;margin-top:8px;accent-color:var(--cy)}
+.left{font-size:12.5px;color:var(--mut);margin:4px 0 14px}
+.left b{color:var(--fg)}
+.left.over b{color:var(--rd)}
+
+.dial{margin-bottom:14px}
+.dial label{font-size:13px;display:flex;justify-content:space-between;gap:8px}
+.dial label span{color:var(--dim);font-family:ui-monospace,Menlo,monospace;font-size:12px}
+
+button.run{width:100%;background:var(--cy);color:#06202c;border:0;padding:13px;border-radius:9px;
+ font:inherit;font-weight:700;font-size:15px;cursor:pointer;transition:.15s;margin-top:4px}
+button.run:hover{background:#7dd3fc}
+button.run:disabled{background:#2b3440;color:var(--dim);cursor:not-allowed}
+button.rst{width:100%;background:transparent;color:var(--mut);border:1px solid var(--ln);
+ padding:9px;border-radius:9px;font:inherit;font-size:13px;cursor:pointer;margin-top:9px}
+button.rst:hover{border-color:var(--dim);color:var(--fg)}
+
+.out{margin-top:20px;display:none}
+.out.on{display:block}
+.mrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.metric{background:var(--pan);border:1px solid var(--ln);border-radius:11px;padding:14px}
+.metric .lb{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.metric .vl{font-size:27px;font-weight:650;letter-spacing:-.02em;margin-top:3px}
+.metric .bar{height:4px;background:#242933;border-radius:3px;margin-top:8px;overflow:hidden}
+.metric .bar i{display:block;height:100%;transition:width .8s cubic-bezier(.22,1,.36,1)}
+.metric .cm{font-size:12px;color:var(--mut);margin-top:8px}
+
+.verdict{margin-top:16px;border-radius:12px;padding:18px;border:1px solid var(--ln);background:var(--pan)}
+.verdict .tag{display:inline-block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+ font-weight:700;padding:3px 9px;border-radius:99px;margin-bottom:9px}
+.verdict h3{font-size:20px;letter-spacing:-.01em;margin-bottom:6px;font-weight:650}
+.verdict p{color:var(--mut);font-size:14.5px}
+.verdict p+p{margin-top:9px}
+
+.mine{margin-top:16px;border:1px solid var(--vi);border-radius:12px;padding:18px;
+ background:linear-gradient(180deg,rgba(167,139,250,.09),transparent)}
+.mine h3{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--vi);margin-bottom:10px}
+.mine .cmp{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.mine .cmp span{font-family:ui-monospace,Menlo,monospace;font-size:12px;border:1px solid var(--ln);
+ padding:5px 9px;border-radius:7px;color:var(--mut)}
+.mine .cmp b{color:var(--vi)}
+.mine p{color:var(--mut);font-size:14.5px}.mine p+p{margin-top:9px}
+.foot{color:var(--dim);font-size:12px;margin-top:40px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kick">Concept 05 · you are the one being tested</div>
+  <h1>Run my org for a quarter.</h1>
+  <p class="lede">
+    Every résumé claims "led a global team". None of them let you find out whether that was hard.
+    So: here are my actual constraints from Dell in 2023. Thirty-three designers, four products,
+    five time zones, a GenAI mandate from above and thirteen weeks. Allocate them. I'll run the
+    quarter and show you what breaks — then show you what I actually did, and what it cost me.
+  </p>
+
+  <div class="brief">
+    <h2>The brief you've inherited</h2>
+    <div class="facts">
+      <div><b>33</b><span>designers</span></div>
+      <div><b>4</b><span>product experiences</span></div>
+      <div><b>5</b><span>time zones</span></div>
+      <div><b>13</b><span>weeks</span></div>
+      <div><b>1</b><span>executive AI mandate</span></div>
+    </div>
+  </div>
+
+  <div class="board">
+    <div class="panel">
+      <h3>Allocate your designers</h3>
+      <div id="allocs"></div>
+      <p class="left" id="left">Unallocated: <b>33</b> designers</p>
+
+      <h3 style="margin-top:8px">And how you spend your own week</h3>
+      <div class="dial">
+        <label for="d1">Time in stakeholder rooms <span id="v1">30%</span></label>
+        <input id="d1" type="range" min="0" max="70" value="30">
+      </div>
+      <div class="dial">
+        <label for="d2">Time on hiring &amp; mentoring <span id="v2">30%</span></label>
+        <input id="d2" type="range" min="0" max="70" value="30">
+      </div>
+      <p class="left">Remaining on craft &amp; review: <b id="v3">40%</b></p>
+
+      <button class="run" id="run">Run the quarter →</button>
+      <button class="rst" id="rst">Reset</button>
+    </div>
+
+    <div class="panel">
+      <h3>What the sim is watching</h3>
+      <p style="font-size:13.5px;color:var(--mut)">
+        Four things move against each other. You cannot max all of them in thirteen weeks —
+        that constraint <em>is</em> the job.
+      </p>
+      <ul style="margin:12px 0 0 18px;color:var(--mut);font-size:13.5px">
+        <li style="margin-top:7px"><b style="color:var(--fg)">Shipped</b> — did anything reach customers</li>
+        <li style="margin-top:7px"><b style="color:var(--fg)">AI capability</b> — durable practice, not a demo</li>
+        <li style="margin-top:7px"><b style="color:var(--fg)">Team health</b> — attrition and burnout</li>
+        <li style="margin-top:7px"><b style="color:var(--fg)">Exec trust</b> — whether you're funded next quarter</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="out" id="out">
+    <div class="mrow" id="metrics"></div>
+    <div class="verdict" id="verdict"></div>
+    <div class="mine" id="mine"></div>
+  </div>
+
+  <p class="foot">Concept 05 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const POOL=33;
+const LANES=[
+ {k:'moon',nm:'GenAI moonshot',ds:'The thing the exec mandate is about',v:8},
+ {k:'core',nm:'Core e-commerce',ds:'The revenue that already exists',v:12},
+ {k:'sys', nm:'Design system',ds:'Compounding, invisible, easy to cut',v:5},
+ {k:'res', nm:'Research & evals',ds:'How you find out if any of it works',v:4},
+ {k:'bau', nm:'Business-as-usual intake',ds:'Requests that arrive whether you staff them or not',v:4},
+];
+const A={}; LANES.forEach(l=>A[l.k]=l.v);
+const wrapEl=document.getElementById('allocs');
+LANES.forEach(l=>{
+  const d=document.createElement('div'); d.className='alloc';
+  d.innerHTML=`<div class="top"><div><div class="nm">${l.nm}</div><div class="ds">${l.ds}</div></div>
+    <div class="ct" id="c-${l.k}">${l.v}</div></div>
+    <input type="range" min="0" max="33" value="${l.v}" id="r-${l.k}" aria-label="${l.nm}">`;
+  wrapEl.appendChild(d);
+  d.querySelector('input').addEventListener('input',e=>{
+    A[l.k]=+e.target.value; document.getElementById('c-'+l.k).textContent=A[l.k]; sync();
+  });
+});
+const d1=document.getElementById('d1'),d2=document.getElementById('d2');
+function used(){return LANES.reduce((s,l)=>s+A[l.k],0);}
+function sync(){
+  const u=used(), rem=POOL-u, el=document.getElementById('left');
+  el.className='left'+(rem<0?' over':'');
+  el.innerHTML = rem<0 ? `Over-allocated by <b>${-rem}</b> — you don't have them`
+                       : `Unallocated: <b>${rem}</b> designers`;
+  const a=+d1.value,b=+d2.value, c=Math.max(0,100-a-b);
+  document.getElementById('v1').textContent=a+'%';
+  document.getElementById('v2').textContent=b+'%';
+  document.getElementById('v3').textContent=c+'%';
+  document.getElementById('run').disabled = rem<0 || (a+b)>100;
+}
+d1.addEventListener('input',sync); d2.addEventListener('input',sync);
+
+function clamp(x){return Math.max(0,Math.min(100,Math.round(x)))}
+function simulate(){
+  const {moon,core,sys,res,bau}=A;
+  const exec=+d1.value, ppl=+d2.value, craft=Math.max(0,100-exec-ppl);
+  // shipping needs core staffing AND enough BAU cover to stop interruptions
+  let ship = clamp(core*5.2 + bau*3.4 + sys*1.4 - Math.max(0,moon-10)*1.6 + craft*.25);
+  // durable AI capability needs moonshot people AND evaluation, not just moonshot people
+  let cap  = clamp(moon*4.4 + res*5.0 + (res>0?10:0) - (res===0?22:0) + sys*.8);
+  // health: too few on BAU means the team absorbs chaos; mentoring protects it
+  let team = clamp(78 + ppl*.55 - Math.max(0,moon-14)*2.4 - Math.max(0,8-bau)*3.6
+                   - Math.max(0,(used()-30))*2.2 - (ppl<10?14:0));
+  // exec trust: needs visible AI motion AND shipped revenue AND presence in the room
+  let trust= clamp(moon*2.1 + exec*.85 + ship*.28 - (moon<4?26:0) - (exec<12?18:0));
+  return {ship,cap,team,trust,exec,ppl,craft};
+}
+function tone(v){return v>=70?'var(--gr)':v>=45?'var(--am)':'var(--rd)'}
+function verdictFor(r){
+  const {ship,cap,team,trust}=r;
+  if(cap>=70&&ship<45) return {t:'The Demo Trap',c:'var(--am)',
+   p:["You built real AI capability and shipped almost nothing customers could touch. This is the single most common failure of 2023 design orgs, and it is seductive because the work feels like the future every single day.",
+      "It ends the same way each time: a beautiful internal showcase, a standing ovation, and a budget conversation in month nine that you lose because nobody can point at revenue."]};
+  if(ship>=70&&cap<45) return {t:'Ran the Old Playbook',c:'var(--am)',
+   p:["You shipped. Revenue is intact and your stakeholders are content. You also finished the quarter with no more AI capability than you started with, having been handed an explicit mandate to build it.",
+      "This is the safest way to become irrelevant. The org will get its AI practice — it just won't be yours, and you'll be integrating someone else's decisions by next year."]};
+  if(team<45) return {t:'You Burned the Team',c:'var(--rd)',
+   p:["Look at the health number. You may have hit your delivery targets, but you spent people to do it, and designers leaving an AI transition take the context with them.",
+      "The replacement cost isn't the recruiter fee — it's the six months where nobody remembers why you rejected the obvious approach in week three."]};
+  if(trust<45) return {t:'Right Answer, No Air Cover',c:'var(--rd)',
+   p:["Your allocation is defensible and your team is fine. But you weren't in the rooms, so nobody senior can explain what you're doing or why it's worth the headcount.",
+      "Design work that can't be narrated upward doesn't get a second quarter. This is the failure mode most designers refuse to take seriously until it happens to them."]};
+  if(ship>=60&&cap>=60&&team>=60&&trust>=60) return {t:'You Found the Ridge',c:'var(--gr)',
+   p:["This is roughly the shape that works, and it is narrower than it looks — you protected shipping, funded evaluation, kept enough people on intake to absorb chaos, and stayed visible enough to keep the funding.",
+      "Note what you had to give up to get here. There is no allocation on this board that maxes all four. Anyone who tells you they achieved that is describing a quarter that hasn't been audited."]};
+  return {t:'Spread Too Thin',c:'var(--am)',
+   p:["Nothing failed outright and nothing succeeded clearly. Every lane got enough people to have opinions and not enough to finish.",
+      "In my experience this is worse than a deliberate bet that loses, because there's no learning in it — you end the quarter unable to say which assumption was wrong."]};
+}
+document.getElementById('run').addEventListener('click',()=>{
+  const r=simulate();
+  const M=[['Shipped',r.ship,'reached real customers'],
+           ['AI capability',r.cap,'durable practice, not a demo'],
+           ['Team health',r.team,'attrition risk inverted'],
+           ['Exec trust',r.trust,'funded next quarter?']];
+  document.getElementById('metrics').innerHTML=M.map(([lb,v,cm])=>
+    `<div class="metric"><div class="lb">${lb}</div>
+     <div class="vl" style="color:${tone(v)}">${v}</div>
+     <div class="bar"><i style="width:${v}%;background:${tone(v)}"></i></div>
+     <div class="cm">${cm}</div></div>`).join('');
+  const vd=verdictFor(r);
+  document.getElementById('verdict').innerHTML=
+    `<span class="tag" style="background:${vd.c};color:#0f1115">Outcome</span>
+     <h3>${vd.t}</h3>${vd.p.map(p=>`<p>${p}</p>`).join('')}`;
+  document.getElementById('mine').innerHTML=`
+    <h3>What I actually did — and what it cost</h3>
+    <div class="cmp">
+      <span>moonshot <b>${A.moon}</b> · mine <b>6</b></span>
+      <span>core <b>${A.core}</b> · mine <b>13</b></span>
+      <span>system <b>${A.sys}</b> · mine <b>4</b></span>
+      <span>research <b>${A.res}</b> · mine <b>4</b></span>
+      <span>intake <b>${A.bau}</b> · mine <b>6</b></span>
+    </div>
+    <p>I put six people on the GenAI work, not sixteen. The mandate wanted a moonshot; what the
+    business could absorb was a prompt library, intent estimation and adaptive layout landing inside
+    a surface that already had traffic — Dell.com. Small team, real users, measurable.</p>
+    <p>I kept four on research and evaluation when that was the easiest headcount to argue away.
+    That decision is the reason the chatbot work could be defended later: we could say what
+    "better" meant. It's also the line item I had to justify in every single review.</p>
+    <p><b style="color:var(--fg)">The cost:</b> I under-funded the design system for two quarters and
+    we paid interest on that for a year. And I spent roughly a third of my week in stakeholder rooms,
+    which is time I did not spend on craft. I'd make the same call again, but I won't pretend it was free.</p>
+    <p style="color:var(--dim);font-size:13px">The awards on my résumé — President's, Game Changer —
+    came out of that quarter's shape. The résumé shows you the outcome. This shows you the tradeoff,
+    which is the part you're actually hiring.</p>`;
+  document.getElementById('out').classList.add('on');
+  document.getElementById('out').scrollIntoView({behavior:'smooth',block:'start'});
+});
+document.getElementById('rst').addEventListener('click',()=>{
+  LANES.forEach(l=>{A[l.k]=l.v;document.getElementById('r-'+l.k).value=l.v;
+    document.getElementById('c-'+l.k).textContent=l.v;});
+  d1.value=30;d2.value=30;sync();
+  document.getElementById('out').classList.remove('on');
+});
+sync();
+</script>
+</body>
+</html>

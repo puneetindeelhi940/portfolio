@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The AI Feature Pre-Mortem — a free tool</title>
+<style>
+:root{--bg:#fcfcfa;--pan:#fff;--ln:#e6e4dd;--ink:#16150f;--mut:#5c5a50;--dim:#96938a;
+ --ac:#0f766e;--wr:#b45309;--dg:#b91c1c;--ok:#15803d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:36px 20px 90px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.kick{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ac);font-weight:700}
+h1{font-size:clamp(30px,5.2vw,48px);line-height:1.04;letter-spacing:-.028em;margin:12px 0 0;font-weight:680}
+.lede{color:var(--mut);max-width:62ch;margin-top:14px;font-size:17px}
+.free{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-size:13px;
+ background:#ecfdf5;border:1px solid #a7f3d0;color:var(--ok);padding:6px 12px;border-radius:99px}
+
+.tool{margin-top:26px;background:var(--pan);border:1px solid var(--ln);border-radius:14px;
+ padding:22px;box-shadow:0 18px 50px -40px rgba(0,0,0,.5)}
+.tool h2{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
+.arche{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px}
+.arche button{text-align:left;background:var(--bg);border:1px solid var(--ln);border-radius:10px;
+ padding:11px 12px;cursor:pointer;font:inherit;transition:.15s}
+.arche button:hover{border-color:var(--ac)}
+.arche button[aria-pressed="true"]{border-color:var(--ac);background:#f0fdfa;
+ box-shadow:inset 0 0 0 1px var(--ac)}
+.arche .n{font-weight:650;font-size:14px}
+.arche .s{font-size:12px;color:var(--dim);margin-top:2px}
+textarea{width:100%;margin-top:14px;background:var(--bg);border:1px solid var(--ln);border-radius:10px;
+ padding:12px;font:inherit;font-size:14.5px;color:var(--ink);resize:vertical;min-height:78px;outline:none}
+textarea:focus{border-color:var(--ac)}
+.go{margin-top:12px;background:var(--ac);color:#fff;border:0;padding:12px 20px;border-radius:10px;
+ font:inherit;font-weight:650;font-size:15px;cursor:pointer}
+.go:hover{background:#0d5f59}
+.go:disabled{background:#cfcdc6;cursor:not-allowed}
+
+.res{margin-top:24px;display:none}.res.on{display:block}
+.rhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+ border-bottom:2px solid var(--ink);padding-bottom:9px}
+.rhead h2{font-size:20px;font-weight:680;letter-spacing:-.015em}
+.rhead .cnt{font-size:13px;color:var(--dim);margin-left:auto}
+.risk{border:1px solid var(--ln);border-left-width:4px;border-radius:0 11px 11px 0;
+ background:var(--pan);padding:16px 18px;margin-top:13px}
+.risk.hi{border-left-color:var(--dg)}
+.risk.md{border-left-color:var(--wr)}
+.risk.lo{border-left-color:var(--ac)}
+.risk .rt{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.risk h3{font-size:17px;font-weight:650;letter-spacing:-.01em}
+.sev{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+ padding:3px 8px;border-radius:99px}
+.sev.hi{background:#fee2e2;color:var(--dg)} .sev.md{background:#fef3c7;color:var(--wr)}
+.sev.lo{background:#ccfbf1;color:var(--ac)}
+.risk .sym{color:var(--mut);font-size:14.5px;margin-top:7px}
+.risk .fix{margin-top:11px;padding-top:11px;border-top:1px solid var(--ln)}
+.risk .fix .lb{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);font-weight:700}
+.risk .fix p{font-size:14.5px;margin-top:4px}
+.risk .src{font-size:12.5px;color:var(--dim);margin-top:8px;font-style:italic}
+
+.sig{margin-top:34px;border-top:1px solid var(--ln);padding-top:22px;
+ display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start}
+@media(max-width:640px){.sig{grid-template-columns:1fr}}
+.sig p{color:var(--mut);font-size:14.5px;max-width:56ch}
+.sig .who{font-size:13px;color:var(--dim);text-align:right}
+@media(max-width:640px){.sig .who{text-align:left}}
+.sig .who b{display:block;color:var(--ink);font-size:15px;font-weight:650}
+.foot{color:var(--dim);font-size:12px;margin-top:38px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kick">Concept 06 · a tool, not a portfolio</div>
+  <h1>The AI Feature<br>Pre-Mortem.</h1>
+  <p class="lede">
+    Describe the AI feature you're about to build. This returns the failure modes that will actually
+    bite you, ranked, with the design mitigation for each. It's free, it works offline, and it doesn't
+    ask who you are.
+  </p>
+  <span class="free">✓ No sign-up · no email · nothing sent anywhere</span>
+
+  <div class="tool">
+    <h2>1 — What are you building?</h2>
+    <div class="arche" id="arche"></div>
+    <h2 style="margin-top:20px">2 — Add anything specific (optional)</h2>
+    <textarea id="desc" placeholder="e.g. an agent that drafts replies inside our support tool and can send them without review"></textarea>
+    <button class="go" id="go" disabled>Run the pre-mortem →</button>
+  </div>
+
+  <div class="res" id="res">
+    <div class="rhead"><h2>It's six months from now and this failed.</h2>
+      <span class="cnt" id="cnt"></span></div>
+    <div id="risks"></div>
+  </div>
+
+  <div class="sig">
+    <p>
+      I've spent twenty years designing systems where the failure states mattered more than the happy
+      path — printer firmware, airspace modelling, national healthcare, and most recently a GenAI
+      surface on Dell.com. Everything in this tool is a mistake I've either made or been in the room for.
+      If it's useful, take it. There's nothing to sign up for.
+    </p>
+    <div class="who">
+      <b>Puneet Arora</b>
+      Design leadership, AI products<br>
+      Dell · Boeing · HP · Software AG<br>
+      8 granted patents · Bangalore
+    </div>
+  </div>
+
+  <p class="foot">Concept 06 · Built by Puneet Arora</p>
+</div>
+
+<script>
+const ARCHE=[
+ {k:'chat',n:'Conversational',s:'chatbot, assistant, copilot'},
+ {k:'rec', n:'Recommender',s:'personalisation, ranking, feed'},
+ {k:'gen', n:'Generator',s:'drafts copy, images, code'},
+ {k:'agent',n:'Agent',s:'takes actions on the user’s behalf'},
+ {k:'ext', n:'Extractor',s:'summarise, classify, pull structure'},
+ {k:'search',n:'Semantic search',s:'retrieval, Q&A over documents'},
+];
+// risk library — keyed by archetype, plus modifiers triggered by the free-text
+const R={
+chat:[
+ {s:'hi',t:'Users treat confident phrasing as accuracy',
+  y:'The model is most fluent exactly where it is least grounded. Your users have no way to tell those apart, because you rendered both in the same typeface.',
+  f:'Vary the interface by confidence, not just the text. Show sources inline for grounded answers and visibly degrade the presentation for ungrounded ones — narrower claims, hedged verbs, a different container. If the UI looks identical at 95% and 40% confidence, you have designed a trust bug.',
+  src:'Learned building conversational commerce on Dell.com, where a wrong spec is a return, not a shrug.'},
+ {s:'hi',t:'Nobody designed the dead end',
+  y:'Roughly a fifth of real sessions are outside what the system can do. Teams spend months on the happy path and thirty minutes on "I can’t help with that", which is the turn that decides whether anyone comes back.',
+  f:'Design the failure turn first and staff it properly: name what it can’t do, hand off to something that can, and preserve everything the user already typed. Measure exit-after-failure as a first-class metric.',
+  src:'The single highest-leverage screen in any assistant, and the one that always gets designed last.'},
+ {s:'md',t:'The scope creeps until it means nothing',
+  y:'It launches answering three questions well. By month four it answers forty questions badly, because every team wants their use case in the box.',
+  f:'Publish an explicit out-of-scope list at launch and defend it in writing. A scoped assistant that says no is more trusted than a general one that guesses.',
+  src:'The governance failure I saw most often standing up an AI practice pan-org.'}],
+rec:[
+ {s:'hi',t:'It optimises the quarter and loses the customer',
+  y:'Engagement metrics move first and fastest, so they win the review. The cost lands in month nine as churn nobody attributes back to this system.',
+  f:'Pick the counter-metric before launch and put it on the same dashboard, at the same size. Ours paired ROI with an explicit delight measure — not because it’s nice, but because a nudge that wins the quarter and loses the customer is a defect wearing a metric.',
+  src:'Directly from the behavioural-science nudge work in the Dell personalisation initiative.'},
+ {s:'md',t:'The cold start defines you',
+  y:'Your best experience needs history you don’t have yet. Every new user meets the worst version and forms their whole opinion there.',
+  f:'Design the zero-data state as a real product surface, not a fallback. Ask for one high-signal preference explicitly rather than inferring five badly.',
+  src:''},
+ {s:'md',t:'Nobody can explain why they saw it',
+  y:'When a recommendation is wrong in a way that feels personal, the absence of a reason turns an error into an insult.',
+  f:'Attach a short, honest "why this" to every item — and make it removable. The ability to say "not this" is the only real control your user has.',
+  src:''}],
+gen:[
+ {s:'hi',t:'Users edit less than you assume',
+  y:'You designed a draft. They ship it verbatim. Whatever the model gets subtly wrong is now in your customer’s inbox with your logo on it.',
+  f:'Raise the cost of accepting slightly. Require one deliberate interaction before send — a field to confirm, a diff to review. Friction is a safety feature here, and the only question is whether you place it or an incident does.',
+  src:''},
+ {s:'md',t:'It flattens the house voice',
+  y:'Everything sounds competent and identical. Six months in, the brand reads generic and nobody can point to when it happened.',
+  f:'Give the system a voice specification with negative examples — the phrases it must never produce. Constraints are more enforceable than aspirations.',
+  src:''},
+ {s:'lo',t:'The blank-page problem just moved',
+  y:'People now stare at a full page they didn’t write, which is a harder editing task than starting fresh.',
+  f:'Generate two or three genuinely divergent options rather than one polished draft. Choosing is cognitively cheaper than rewriting.',
+  src:''}],
+agent:[
+ {s:'hi',t:'Irreversible actions with reversible-action UI',
+  y:'The interface makes sending an email look the same as drafting one. The first time that gap is discovered will be by a customer, in public.',
+  f:'Classify every action by reversibility before you design a single screen. Reversible: let it run. Costly: confirm. Irreversible or external-facing: require a human, every time, no remembered preference. Then design the undo path for the middle tier before you build the happy path.',
+  src:'Non-negotiable habit from aviation and healthcare work, where this taxonomy is assumed rather than debated.'},
+ {s:'hi',t:'No legible trace of what it did',
+  y:'Something goes wrong on step four of nine. Nobody — not the user, not support, not you — can reconstruct what happened or where to intervene.',
+  f:'Make the plan visible before execution and the log visible after, in the user’s language rather than tool calls. If your support team can’t explain an incident from the UI alone, you shipped an unauditable system.',
+  src:''},
+ {s:'md',t:'Automation complacency',
+  y:'It’s right often enough that people stop checking. Your accuracy improving actually increases the damage of the rare failure.',
+  f:'Design for intermittent vigilance: surface the specific step you’re least sure about rather than asking for blanket approval. Blanket approval is where oversight goes to die.',
+  src:'Well-documented in aviation human factors long before it arrived in software.'}],
+ext:[
+ {s:'hi',t:'Silent omission beats visible error',
+  y:'A wrong value gets caught. A missing one doesn’t — the user never learns there was a fourth clause.',
+  f:'Show coverage, not just output. Render what was found against what was searched, and mark the regions the system couldn’t parse. Absence has to be visible to be checkable.',
+  src:''},
+ {s:'md',t:'Schema drift on real documents',
+  y:'It works on the twenty samples you tested. Production has scanned faxes, three languages and a table split across pages.',
+  f:'Build the low-confidence review queue in v1, not v2. What you actually ship is the correction workflow; the extraction is just what fills it.',
+  src:'Recognisable from enterprise data work at Software AG.'}],
+search:[
+ {s:'hi',t:'Confidently answering from the wrong document',
+  y:'Retrieval pulls a plausible near-match, the model writes a fluent answer over it, and nothing in the UI signals that the source is unrelated.',
+  f:'Show the retrieved passage next to the answer, always, and make "I found nothing good enough" a designed, dignified state rather than an empty div.',
+  src:''},
+ {s:'md',t:'Stale content, current tone',
+  y:'The system answers from a two-year-old policy with exactly the same confidence as today’s.',
+  f:'Surface source dates in the answer itself and let staleness change the rendering. Freshness is a design property, not an indexing detail.',
+  src:''}]
+};
+const MODS=[
+ {re:/\b(send|auto|automatic|without review|autonomous|on its own|unattended)\b/i,
+  r:{s:'hi',t:'You said it acts without review',
+   y:'You described the system taking an action a human doesn’t see first. That single property changes the risk class of everything else on this list — the failure is no longer a bad suggestion, it’s a bad action already taken.',
+   f:'Before anything else, write down the worst irreversible action it can perform and who finds out. If you can’t name the person who notices within an hour, you don’t yet have a design — you have an exposure.',
+   src:''}},
+ {re:/\b(child|kid|minor|student|patient|health|medical|clinical|legal|loan|credit|hiring|candidate)\b/i,
+  r:{s:'hi',t:'This touches a protected or high-consequence domain',
+   y:'You mentioned a context where errors carry legal, medical or life consequences and where affected people usually have no way to contest an automated decision.',
+   f:'Add a contest path — a visible, low-friction route to a human with authority to override. And log inputs, not just outputs, because you will eventually need to prove what the system was told.',
+   src:'The habit came from healthcare and aviation, where this is a requirement rather than a value.'}},
+ {re:/\b(enterprise|b2b|internal|employee|workflow|admin)\b/i,
+  r:{s:'md',t:'Enterprise: the buyer is not the user',
+   y:'The person who signs is optimising for control and audit. The person who uses it is optimising for speed. Designed for the buyer alone, it gets bought and not used — which looks like success for three quarters.',
+   f:'Instrument voluntary usage separately from seat licences, and report both. Adoption is the only number that survives a renewal conversation.',
+   src:'Eight years designing enterprise and sales surfaces at Dell.'}},
+];
+const sel=new Set();
+const wrap=document.getElementById('arche');
+ARCHE.forEach(a=>{
+  const b=document.createElement('button');
+  b.setAttribute('aria-pressed','false');
+  b.innerHTML=`<div class="n">${a.n}</div><div class="s">${a.s}</div>`;
+  b.onclick=()=>{
+    const on=b.getAttribute('aria-pressed')==='true';
+    b.setAttribute('aria-pressed',!on); on?sel.delete(a.k):sel.add(a.k);
+    document.getElementById('go').disabled=sel.size===0;
+  };
+  wrap.appendChild(b);
+});
+document.getElementById('go').addEventListener('click',()=>{
+  const txt=document.getElementById('desc').value;
+  let list=[];
+  sel.forEach(k=>list.push(...R[k]));
+  MODS.forEach(m=>{if(m.re.test(txt))list.unshift(m.r)});
+  const ord={hi:0,md:1,lo:2};
+  list.sort((a,b)=>ord[a.s]-ord[b.s]);
+  const seen=new Set();
+  list=list.filter(r=>seen.has(r.t)?false:(seen.add(r.t),true));
+  const SEV={hi:'Will bite',md:'Likely',lo:'Watch'};
+  document.getElementById('cnt').textContent=list.length+' failure modes';
+  document.getElementById('risks').innerHTML=list.map(r=>`
+    <div class="risk ${r.s}">
+      <div class="rt"><h3>${r.t}</h3><span class="sev ${r.s}">${SEV[r.s]}</span></div>
+      <p class="sym">${r.y}</p>
+      <div class="fix"><div class="lb">Design mitigation</div><p>${r.f}</p>
+      ${r.src?`<p class="src">${r.src}</p>`:''}</div>
+    </div>`).join('');
+  const res=document.getElementById('res');
+  res.classList.add('on');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+});
+</script>
+</body>
+</html>
