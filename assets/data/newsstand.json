@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T16:31:14Z",
+  "generated_at": "2026-08-26T01:01:12Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,35 +8,35 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Image Shows Spider-Man Punching Jake Lang At A Minneapolis Protest -- It Is AI-Generated",
+      "claim": "Trump's Truth Social Account Did NOT Post Image Of Him Walking On Water With Caption 'Pastor. President. Protector.",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-image-shows-spider-man-punching-jake-lang-at-a-minneapolis-protest.html",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 2,
-      "claim": "Is Trump admin allowing sale of protected wild horses to slaughterhouses? What we know",
-      "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/21/trump-selling-wild-horses-slaughter/",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-trumps-truth-social-account-did-not-post-image-of-him-walking-on-water-with-caption-pastor-president-protector.html",
       "topic": "Politics"
     },
     {
+      "n": 2,
+      "claim": "Dolly Parton has died at 80. Here are 20 rumors we've examined about the country music legend",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/collections/dolly-parton-death-rumors-collection/",
+      "topic": "Celebrity"
+    },
+    {
       "n": 3,
-      "claim": "Kennedy Distorts Stat in Celebrating Obesity Drop",
+      "claim": "The NRSC’s Weak Ties Between Brown and Deadly Interstate Crash in Ohio",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/kennedy-distorts-stat-in-celebrating-obesity-drop/",
+      "url": "https://www.factcheck.org/2026/08/the-nrscs-weak-ties-between-brown-and-deadly-interstate-crash-in-ohio/",
       "topic": "Trending"
     },
     {
       "n": 4,
-      "claim": "Trump Admin To Rescind 200,000 Visas In Largest Mass Revocation Ever: REPORT",
+      "claim": "Legendary Dolly Parton Dead At 80",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/24/trump-admin-to-rescind-200000-visas-in-largest-mass-revocation-ever-report",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/25/dolly-parton-dead-80-country-music-legend-illness",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -64,34 +64,34 @@
     },
     {
       "n": 8,
-      "claim": "FAKE McLaren Stunt Video Showing Car Crash Is NOT Real -- Made With AI",
+      "claim": "Marco Rubio Did NOT Refuse To Protect Tom Hanks From Greek 'Impropriety' Investigation -- It Is Satire",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-video-of-stunt-resulting-in-car-crash-is-not-real.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-marco-rubio-did-not-say-he-would-not-protect-tom-hanks-from-greek-impoproprity-investigation.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "allegedly shows baby in car seat suspended outside vehicle. Is it real?",
+      "claim": "Did Yellowstone ravens learn to open car doors?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/image-baby-car-seat-outside/",
+      "url": "https://www.snopes.com/fact-check/yellowstone-ravens-open-car-doors/",
       "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Americans for Prosperity",
+      "claim": "Trump’s ‘No Tax on Tips’ Claim Doesn’t Add Up",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/americans-for-prosperity-8/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/08/trumps-no-tax-on-tips-claim-doesnt-add-up/",
+      "topic": "Politics"
     },
     {
       "n": 11,
-      "claim": "‘Are You Circumcised?’: Abdul El-Sayed’s Interview With Jesse Watters Goes Off The Rails",
+      "claim": "Code Red: The Huge Warning Signs Buried In America’s Economic Numbers",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/25/abdul-el-sayed-jesse-watters-fox-news-circumcision",
+      "url": "https://dailycaller.com/2026/08/11/opinion-economy-households-purchasing-power-james-carter-john-silvia",
       "topic": "Trending"
     },
     {
@@ -120,53 +120,53 @@
     },
     {
       "n": 15,
-      "claim": "Epstein Cannibalism Photos, Videos Are FAKE -- Mix Of Photos From Horror Trailer Production And AI Videos Based On Them",
+      "claim": "REAL Photo Shows 'Minneapolis Spider-Man' Winding Up To Punch Jake Lang At Protest",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-epstein-cannibalism-photos-videos-are-fake-mix-of-photos-from-horror-trailer-production-and-ai-videos.html",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 16,
-      "claim": "linking Abdul El-Sayed's mother to charity with ties to Hamas, terrorist groups is missing key context",
-      "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/25/el-sayed-mother-charity-terrorism/",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-real-photo-shows-spider-man-winding-up-to-punch-jake-lang-at-minneapolis-protest.html",
       "topic": "Trending"
     },
     {
+      "n": 16,
+      "claim": "Did Trump say US was 'dumb' country led by 'very stupid person' one year ago?",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/fact-check/trump-dumb-stupid-country-quote/",
+      "topic": "Politics"
+    },
+    {
       "n": 17,
-      "claim": "American Bridge 21st Century/AB PAC",
+      "claim": "Kennedy Distorts Stat in Celebrating Obesity Drop",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/american-bridge-21st-century-ab-pac-4/",
+      "url": "https://www.factcheck.org/2026/08/kennedy-distorts-stat-in-celebrating-obesity-drop/",
       "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
+      "headline": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-25T11:53:36+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-08-25T19:50:57+00:00"
     },
     {
       "n": 2,
-      "headline": "Canada announces retaliatory tariffs on the U.S. as the countries' trade fight deepens",
+      "headline": "Instagram head Adam Mosseri testifies in defense of Meta in child safety trial",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/25/nx-s1-5944240/canada-us-tariffs",
-      "topic": "Trending",
-      "published": "2026-08-25T15:20:18+00:00"
+      "url": "https://www.npr.org/2026/08/25/nx-s1-5944266/adam-mosseri-instagram-meta-child-safety-trial",
+      "topic": "Tech / AI",
+      "published": "2026-08-25T22:50:57+00:00"
     },
     {
       "n": 3,
-      "headline": "How Trump's trade war with Canada could rattle states with key Senate races",
+      "headline": "Canada retaliates with tariffs against U.S. as relations deteriorate",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/how-trumps-trade-war-with-canada-could-rattle-states-with-key-senate-races",
-      "topic": "Politics",
-      "published": "2026-08-25T15:57:45+00:00"
+      "url": "https://www.pbs.org/newshour/show/canada-retaliates-with-tariffs-against-u-s-as-relations-deteriorate",
+      "topic": "Trending",
+      "published": "2026-08-25T22:55:27+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "CIA director in Moscow for meetings — US media reports",
+      "headline": "Remembering Dolly Parton: 8 facts about the icon",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/cia-director-in-moscow-for-meetings-us-media-reports/a-78500042?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/remembering-dolly-parton-8-facts-about-the-icon/a-75503168?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-25T16:23:00+00:00"
+      "published": "2026-08-25T18:42:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Brain disease in dead NFL players 'higher than previously shown",
+      "headline": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/american-football/articles/cew9l95kyp0o?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-08-25T11:54:40+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-08-25T11:53:36+00:00"
     },
     {
       "n": 7,
-      "headline": "Forget about going back': 9 years on, Rohingya crisis enters dangerous phase",
+      "headline": "South Carolina U.S. Senate runoff election will test Trump's endorsement",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/25/g-s1-140007/forget-about-going-back-9-years-on-rohingya-crisis-enters-dangerous-phase",
-      "topic": "Trending",
-      "published": "2026-08-25T14:59:12+00:00"
+      "url": "https://www.npr.org/2026/08/25/nx-s1-5943041/south-carolina-senate-runoff-graham-norman-trump-endorsement",
+      "topic": "Politics",
+      "published": "2026-08-25T20:47:54+00:00"
     },
     {
       "n": 8,
-      "headline": "WATCH LIVE: Canada announces retaliatory tariffs against the U.S.",
+      "headline": "Canadian trade minister says reaching deal with U.S. in best interest for both countries",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/watch-live-canada-announces-retaliatory-tariffs-against-the-u-s",
-      "topic": "Trending",
-      "published": "2026-08-25T15:12:34+00:00"
+      "url": "https://www.pbs.org/newshour/show/canadian-trade-minister-says-reaching-deal-with-u-s-in-best-interest-for-both-countries",
+      "topic": "Politics",
+      "published": "2026-08-25T22:52:52+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Houthi strikes threaten to pull Yemen back into full-scale war",
+      "headline": "US country music legend Dolly Parton dies aged 80",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/houthi-strikes-threaten-to-pull-yemen-back-into-full-scale-war/a-78497448?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-08-25T15:31:00+00:00"
+      "url": "https://www.dw.com/en/us-country-music-legend-dolly-parton-dies-aged-80/a-78501931?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-25T18:11:00+00:00"
     },
     {
       "n": 11,
-      "headline": "CIA chief in Moscow for unannounced talks, US media reports",
+      "headline": "CIA chief travels to Moscow for unannounced talks, US media reports",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-25T16:08:26+00:00"
+      "published": "2026-08-25T19:48:14+00:00"
     },
     {
       "n": 12,
-      "headline": "Several states will decide voter ID ballot measures this year",
+      "headline": "Dolly Parton, one of country music's most singular performers, has died at age 80",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/25/nx-s1-5940004/voter-id-citizenship-ballot-measures",
-      "topic": "Trending",
-      "published": "2026-08-25T14:40:36+00:00"
+      "url": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "topic": "Celebrity",
+      "published": "2026-08-25T18:17:32+00:00"
     },
     {
       "n": 13,
-      "headline": "Federal judge rejects Ghislaine Maxwell's 'miscarriage of justice' claim and bid for prison release",
+      "headline": "News Wrap: 2 unvaccinated people die from measles in Pennsylvania",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/federal-judge-rejects-ghislaine-maxwells-miscarriage-of-justice-claim-and-bid-for-prison-release",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-2-unvaccinated-people-die-from-measles-in-pennsylvania",
       "topic": "Trending",
-      "published": "2026-08-25T15:00:31+00:00"
+      "published": "2026-08-25T22:49:25+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Canada announces retaliatory tariffs on US goods",
+      "headline": "Grain exports stall as Ukraine steps up attacks on Russia's Black Sea ports",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/canada-announces-retaliatory-tariffs-on-us-goods/a-78491819?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-25T15:17:00+00:00"
+      "url": "https://www.dw.com/en/grain-exports-stall-as-ukraine-steps-up-attacks-on-russia-s-black-sea-ports/a-78499629?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-08-25T18:04:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Tornado tears through French village, leaving dozens hurt and homes ravaged",
+      "headline": "Mass arrests in global crackdown on West African cyber-crime networks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c0m3npvpgdno?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cq5xdnxppl4o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-25T08:52:17+00:00"
+      "published": "2026-08-25T19:30:37+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump calls leaders to isolate Iran. And, SCOTUS backs Trump for now on mail-in voting",
+      "headline": "DHS acknowledges the noncitizen numbers it touted on voter rolls were inflated",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/25/g-s1-140004/up-first-newsletter-iran-economic-war-scotus-mail-in-voting-dhs-privacy",
-      "topic": "Politics",
-      "published": "2026-08-25T11:09:01+00:00"
+      "url": "https://www.npr.org/2026/08/25/nx-s1-5940807/noncitizen-voters-trump-nevada-call",
+      "topic": "Trending",
+      "published": "2026-08-25T18:15:23+00:00"
     }
   ]
 }
