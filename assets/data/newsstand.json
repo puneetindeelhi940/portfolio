@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T08:37:20Z",
+  "generated_at": "2026-08-26T16:44:32Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Dolly Parton has died at 80. Here are 20 rumors we've examined about the country music legend",
+      "claim": "Did Trump ask, 'Is it wrong to be more sexually attracted to your own daughter than your wife'? There's no proof",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/dolly-parton-death-rumors-collection/",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/news/2026/08/26/trump-attracted-daughter-quote/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Legendary Dolly Parton Dead At 80",
+      "claim": "Dolly Parton’s Final Goodbye: Cause Of Death, Intimate Funeral Details Revealed",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/25/dolly-parton-dead-80-country-music-legend-illness",
+      "url": "https://dailycaller.com/2026/08/26/dolly-parton-dead-cancer-80-funeral-obituary-final-song-treasure-time-capsule",
       "topic": "Trending"
     },
     {
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "Toby Carvery isn’t giving away free roasts to people who like or share posts on Facebook",
+      "claim": "Bexley Council did not send letter advising residents to keep daughters inside",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/toby-carvery-not-giving-away-free-roasts-august/",
+      "url": "https://fullfact.org/immigration/bexley-council-fake-letter-asylum-seekers/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Yellowstone ravens learn to open car doors?",
+      "claim": "Steve Buscemi was hospitalized after NYC attack, but it happened in 2024",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/yellowstone-ravens-open-car-doors/",
+      "url": "https://www.snopes.com/fact-check/steve-buscemi-attacked-2024/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Darline Graham Secures Victory In Runoff Race To Replace Late Brother On Ballot",
+      "claim": "Ralph Norman Tells Crowd He’s Baffled Why Trump Spent So Much Energy On Lindsey Graham’s Sister",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/25/darline-graham-ralph-norman-south-carolina-runoff",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/26/ralph-norman-trump-non-battleground-state-south-carolina",
+      "topic": "Science"
     },
     {
       "n": 12,
@@ -112,10 +112,10 @@
     },
     {
       "n": 14,
-      "claim": "compilation of police tackling ‘scooter thieves’ is fake",
+      "claim": "Claims people are posing as ‘Home Affairs Officers’ to rob houses are a hoax",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/crime/scooter-thieves-police-compilation-video-fake/",
+      "url": "https://fullfact.org/hoaxes/home-affairs-officers-hoax-posts/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump say US was 'dumb' country led by 'very stupid person' one year ago?",
+      "claim": "has it 'necrophilia brothel' was shut down in Missouri. Don't be fooled",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-dumb-stupid-country-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/necrophilia-brothel-missouri/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,6 +146,126 @@
   "reliable": [
     {
       "n": 1,
+      "headline": "Heart, hope and a steely determination: Dolly Parton's musical legacy",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c74k8zwvez0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-26T11:32:11+00:00"
+    },
+    {
+      "n": 2,
+      "headline": "Will Trump's latest beef plan make your hamburger cheaper? Not much, experts say",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/26/nx-s1-5944265/ground-beef-trump-tariffs",
+      "topic": "Politics",
+      "published": "2026-08-26T14:58:58+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "Tim Curry, iconic character actor and star of 'Rocky Horror Picture Show,' dies at 80",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/arts/tim-curry-iconic-character-actor-and-star-of-rocky-horror-picture-show-dies-at-80",
+      "topic": "Celebrity",
+      "published": "2026-08-26T16:31:37+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "South African police arrest two Thai men for allegedly smuggling parrot eggs",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/aug/26/south-african-police-arrest-two-thai-men-smuggling-parrot-eggs",
+      "topic": "Trending",
+      "published": "2026-08-26T15:09:58+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Tim Curry, of 'The Rocky Horror Picture Show,' dies at 80",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/tim-curry-of-the-rocky-horror-picture-show-dies-at-80/a-78514945?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-26T16:40:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Door was locked at Pakistan hospital where fire killed 14 babies, witnesses say",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/czdz13elezlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-08-26T14:42:03+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "How Dolly Parton wrote the story of a changing America",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/26/nx-s1-5944468/dolly-parton-legacy-songwriting",
+      "topic": "Trending",
+      "published": "2026-08-26T13:46:34+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "WATCH LIVE: Presentation of evidence expected to conclude in Lindsay Clancy trial",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/watch-live-presentation-of-evidence-expected-to-conclude-in-lindsay-clancy-trial",
+      "topic": "Trending",
+      "published": "2026-08-26T16:22:26+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Mpox is back – and in new countries. How can this outbreak be contained?",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/aug/26/global-health-mpox-outbreak-explainer-children",
+      "topic": "Trending",
+      "published": "2026-08-26T11:00:12+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "This extremely successful author polarizes German readers",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/this-extremely-successful-author-polarizes-german-readers/a-78500452?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-26T15:18:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Trump officials threaten Kennedy Center demolition if court blocks renovations",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c62mr97n936o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-26T15:42:45+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Meta, states agree to $17 billion settlement in child safety trial",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/08/26/nx-s1-5944781/meta-settlement-child-safety-lawsuit",
+      "topic": "Tech / AI",
+      "published": "2026-08-26T13:33:39+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Democratic states file new lawsuit seeking to block Trump's order limiting mail voting in midterms",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/democratic-states-file-new-lawsuit-seeking-to-block-trumps-order-limiting-mail-voting-in-midterms",
+      "topic": "Politics",
+      "published": "2026-08-26T16:07:52+00:00"
+    },
+    {
+      "n": 14,
+      "headline": "Moringa lattes and tigernut kebabs: the Ghanaians ‘taking back the power’ of their food",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/aug/26/moringa-lattes-and-tigernut-kebabs-the-young-ghanaians-taking-back-the-power-of-their-food",
+      "topic": "Trending",
+      "published": "2026-08-26T09:00:39+00:00"
+    },
+    {
+      "n": 15,
+      "headline": "Saxony-Anhalt a state dominated by the Chemical industry and a strong AfD",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/saxony-anhalt-a-state-dominated-by-the-chemical-industry-and-a-strong-afd/a-78482588?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-26T14:24:00+00:00"
+    },
+    {
+      "n": 16,
       "headline": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
@@ -153,132 +273,12 @@
       "published": "2026-08-25T19:50:57+00:00"
     },
     {
-      "n": 2,
-      "headline": "Hospital nursery fire kills 14 newborns in Pakistan's capital, officials order immediate inquiry",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944808/hospital-nursery-fire-kills-14-newborns-pakistan",
-      "topic": "Health",
-      "published": "2026-08-26T07:34:59+00:00"
-    },
-    {
-      "n": 3,
-      "headline": "Canada retaliates with tariffs against U.S. as relations deteriorate",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/canada-retaliates-with-tariffs-against-u-s-as-relations-deteriorate",
-      "topic": "Trending",
-      "published": "2026-08-25T22:55:27+00:00"
-    },
-    {
-      "n": 4,
-      "headline": "Prince Harry quits board of wildlife charity after rangers’ human rights abuses",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/uk-news/2026/aug/24/prince-harry-quits-board-wildlife-charity-african-parks-human-rights-abuses",
-      "topic": "Celebrity",
-      "published": "2026-08-24T17:34:50+00:00"
-    },
-    {
-      "n": 5,
-      "headline": "NYC: Mamdani opposes rally with Hindu nationalist leader",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nyc-mamdani-opposes-rally-with-hindu-nationalist-leader/a-78502850?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-26T07:54:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-25T11:53:36+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Test your global economic knowledge with this quick Planet Money quiz!",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/g-s1-138847/planet-money-summer-school-quiz-2026",
-      "topic": "Trending",
-      "published": "2026-08-26T07:30:00+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Canadian trade minister says reaching deal with U.S. in best interest for both countries",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/canadian-trade-minister-says-reaching-deal-with-u-s-in-best-interest-for-both-countries",
-      "topic": "Politics",
-      "published": "2026-08-25T22:52:52+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Video shows hundreds held captive after Nigeria mosque kidnapping",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/24/video-shows-hundreds-held-captive-after-nigeria-mosque-kidnapping",
-      "topic": "Trending",
-      "published": "2026-08-24T14:19:14+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Pakistan: Islamabad hospital fire kills at least 14 infants",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pakistan-islamabad-hospital-fire-kills-at-least-14-infants/a-78503056?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-08-26T05:23:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "CIA chief travels to Moscow for unannounced talks, US media reports",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-25T19:48:14+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Target faces renewed backlash for Halloween costume with 'minstrel show features",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/g-s1-140195/target-halloween-costume-backlash",
-      "topic": "Trending",
-      "published": "2026-08-26T05:45:58+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "News Wrap: 2 unvaccinated people die from measles in Pennsylvania",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-2-unvaccinated-people-die-from-measles-in-pennsylvania",
-      "topic": "Trending",
-      "published": "2026-08-25T22:49:25+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Children make up half of suspected mpox cases in Guinea-Bissau as epidemic spreads",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/aug/24/children-half-mpox-disease-cases-guinea-bissau-epidemic-spreads-west-africa",
-      "topic": "Trending",
-      "published": "2026-08-24T10:11:34+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "Despite international bans, landmines are back in force",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/despite-international-bans-landmines-are-back-in-force/a-78501702?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-26T05:18:00+00:00"
-    },
-    {
-      "n": 16,
-      "headline": "Mass arrests in global crackdown on West African cyber-crime networks",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq5xdnxppl4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-25T19:30:37+00:00"
-    },
-    {
       "n": 17,
-      "headline": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead",
+      "headline": "At least 75 killed and hundreds missing after flash floods in Nepal and China",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944787/50-kidnapped-haiti-gang-attack-47-dead",
-      "topic": "Trending",
-      "published": "2026-08-26T05:45:34+00:00"
+      "url": "https://www.npr.org/2026/08/26/g-s1-140211/nepal-china-floods",
+      "topic": "World",
+      "published": "2026-08-26T12:27:19+00:00"
     }
   ]
 }
