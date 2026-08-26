@@ -290,12 +290,27 @@
     .uspto__grid { grid-template-columns: 1fr 1fr; }
     .uspto__grid .pcard--wide { grid-column: span 2; }
   }
+  @media (max-width: 940px) {
+    /* nowrap headline would overflow the banner on narrow viewports */
+    .uspto__txt h2 { white-space: normal; }
+    .uspto__txt { max-width: none; }
+  }
   @media (max-width: 560px) {
     .uspto { padding: 0 22px 8px; }
     .uspto__banner { padding: 26px 24px; }
     .uspto__grid { grid-template-columns: 1fr; }
     .uspto__grid .pcard--wide { grid-column: span 1; }
   }
+
+
+  /* ───────── §07 Technical Publications — reuses .uspto styling ───────── */
+  .pubs .pcard--wide .d { max-width: none; }
+  .pubs .pcard--tbd {
+    border-style: dashed; background: transparent; cursor: default;
+    opacity: .55;
+  }
+  .pubs .pcard--tbd .h { color: var(--dim); font-weight: 500; }
+  .pubs .pcard--tbd .d { color: var(--faint); }
 
   /* Light theme: re-tint the near-white prose colors so they keep contrast
      on near-white paper (mirrors the .hero__sub / .bio-prose fix in site.css). */
@@ -680,6 +695,68 @@
       <div class="d">Optimizes printing cost by dynamically adjusting marking-agent (toner/ink) credits based on actual usage.</div>
       <div class="m">PCT/US2013/051855 &middot; 2013</div>
     </a>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<div class="shead">
+  <div class="shead__left">
+    <span class="shead__n">&sect; 07</span>
+    <span class="shead__title">TECHNICAL PUBLICATIONS AND WHITEPAPERS</span>
+    <span class="shead__sub">// eight technical publications &middot; 2012&ndash;2014</span>
+  </div>
+</div>
+<section class="uspto pubs">
+  <div class="uspto__banner">
+    <div class="uspto__txt">
+      <div class="uspto__tag">Research Disclosure &middot; Defensive Publications</div>
+      <h2>Ideas published, before they were patented.</h2>
+    </div>
+    <div class="uspto__big">
+      <div class="u"><b>08</b><span>Publications</span></div>
+    </div>
+  </div>
+  <div class="uspto__grid">
+    <a href="http://www.researchdisclosure.com/" target="_blank" rel="noopener" class="pcard pcard--wide">
+      <div class="h">Virtual Keyboard for Enhancing Transactional Privacy</div>
+      <div class="d">Protects people paying on a tablet or phone by shuffling the on-screen keyboard layout as they type &mdash; so a shoulder-surfer or a screen recording can&rsquo;t reconstruct a PIN or password from finger positions alone.</div>
+      <div class="m">Research Disclosure &middot; Aug 2014 &middot; Flagship</div>
+    </a>
+    <a href="http://www.researchdisclosure.com/" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Automated Shopper</div>
+      <div class="d">A mobile-commerce agent that shops on the user&rsquo;s behalf &mdash; tracking intent, prices and availability, then completing the purchase without manual steps.</div>
+      <div class="m">Research Disclosure &middot; Oct 2012</div>
+    </a>
+    <a href="http://www.researchdisclosure.com/" target="_blank" rel="noopener" class="pcard">
+      <div class="h">Priority List</div>
+      <div class="d">Ranks what a user sees and acts on by inferred priority, so the most relevant items surface first instead of arriving in raw chronological order.</div>
+      <div class="m">Research Disclosure &middot; Mar 2012</div>
+    </a>
+    <div class="pcard pcard--tbd" aria-hidden="true">
+      <div class="h">Publication 04</div>
+      <div class="d">Title, venue and abstract to be added.</div>
+      <div class="m">Awaiting details</div>
+    </div>
+    <div class="pcard pcard--tbd" aria-hidden="true">
+      <div class="h">Publication 05</div>
+      <div class="d">Title, venue and abstract to be added.</div>
+      <div class="m">Awaiting details</div>
+    </div>
+    <div class="pcard pcard--tbd" aria-hidden="true">
+      <div class="h">Publication 06</div>
+      <div class="d">Title, venue and abstract to be added.</div>
+      <div class="m">Awaiting details</div>
+    </div>
+    <div class="pcard pcard--tbd" aria-hidden="true">
+      <div class="h">Publication 07</div>
+      <div class="d">Title, venue and abstract to be added.</div>
+      <div class="m">Awaiting details</div>
+    </div>
+    <div class="pcard pcard--tbd" aria-hidden="true">
+      <div class="h">Publication 08</div>
+      <div class="d">Title, venue and abstract to be added.</div>
+      <div class="m">Awaiting details</div>
+    </div>
   </div>
 </section>
 
