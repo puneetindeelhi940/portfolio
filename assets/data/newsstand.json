@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T16:44:32Z",
+  "generated_at": "2026-08-27T06:56:04Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,26 +8,26 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Trump's Truth Social Account Did NOT Post Image Of Him Walking On Water With Caption 'Pastor. President. Protector.",
+      "claim": "FAKE Video Shows Woman Jumping From Helicopter To Trampoline Near Roman Colosseum -- Video Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-trumps-truth-social-account-did-not-post-image-of-him-walking-on-water-with-caption-pastor-president-protector.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-shows-woman-jumping-from-helicopter-to-trampoline-near-roman-colosseum.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Did Trump ask, 'Is it wrong to be more sexually attracted to your own daughter than your wife'? There's no proof",
+      "claim": "Don't fall for phony recording of Dolly Parton's 'final wish",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/26/trump-attracted-daughter-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/dolly-parton-final-wish/",
+      "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "The NRSC’s Weak Ties Between Brown and Deadly Interstate Crash in Ohio",
+      "claim": "Ad Attacking Cooper Makes False Connection to Murder",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/the-nrscs-weak-ties-between-brown-and-deadly-interstate-crash-in-ohio/",
+      "url": "https://www.factcheck.org/2026/08/ad-attacking-cooper-makes-false-connection-to-murder/",
       "topic": "Trending"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Japan and India did not sign a ‘contract’ allowing 50 million Hindus to settle in Japan",
+      "claim": "Meet Priti Gandhi: The ‘huge Godse fan’ now steering BJP’s social media cell",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/no-japan-and-india-did-not-sign-a-contract-allowing-50-million-hindus-to-settle-in-japan/",
+      "url": "https://www.altnews.in/meet-priti-gandhi-the-huge-godse-fan-now-steering-bjps-social-media-cell/",
       "topic": "Trending"
     },
     {
@@ -64,35 +64,35 @@
     },
     {
       "n": 8,
-      "claim": "Marco Rubio Did NOT Refuse To Protect Tom Hanks From Greek 'Impropriety' Investigation -- It Is Satire",
+      "claim": "FAKE Video Of Lion Reuniting With Caretaker Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-marco-rubio-did-not-say-he-would-not-protect-tom-hanks-from-greek-impoproprity-investigation.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-video-of-lion-reuniting-with-caretaker-ai.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Steve Buscemi was hospitalized after NYC attack, but it happened in 2024",
+      "claim": "Is Trump admin importing contaminated beef from Argentina? Unpacking the claim",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/steve-buscemi-attacked-2024/",
-      "topic": "Trending"
-    },
-    {
-      "n": 10,
-      "claim": "Trump’s ‘No Tax on Tips’ Claim Doesn’t Add Up",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trumps-no-tax-on-tips-claim-doesnt-add-up/",
+      "url": "https://www.snopes.com/news/2026/08/26/trump-importing-beef-argentina/",
       "topic": "Politics"
     },
     {
+      "n": 10,
+      "claim": "The NRSC’s Weak Ties Between Brown and Deadly Interstate Crash in Ohio",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/08/the-nrscs-weak-ties-between-brown-and-deadly-interstate-crash-in-ohio/",
+      "topic": "Trending"
+    },
+    {
       "n": 11,
-      "claim": "Ralph Norman Tells Crowd He’s Baffled Why Trump Spent So Much Energy On Lindsey Graham’s Sister",
+      "claim": "EXCLUSIVE: Watchdog Sounds Alarm On The Left’s Massive Foreign Money Pipeline",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/26/ralph-norman-trump-non-battleground-state-south-carolina",
-      "topic": "Science"
+      "url": "https://dailycaller.com/2026/08/26/exclusive-apt-database-foreign-money-american-politics",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "man seen with Ashutosh Ranka in Rajasthan is not the one who threatened Nepal-like violence at Jantar Mantar",
+      "claim": "Japan and India did not sign a ‘contract’ allowing 50 million Hindus to settle in Japan",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/no-man-seen-with-ashutosh-ranka-in-rajasthan-is-not-the-one-who-threatened-nepal-like-violence-at-jantar-mantar/",
+      "url": "https://www.altnews.in/no-japan-and-india-did-not-sign-a-contract-allowing-50-million-hindus-to-settle-in-japan/",
       "topic": "Trending"
     },
     {
@@ -120,27 +120,27 @@
     },
     {
       "n": 15,
-      "claim": "REAL Photo Shows 'Minneapolis Spider-Man' Winding Up To Punch Jake Lang At Protest",
+      "claim": "FAKE Image Of Dad Dressed In Wife's Clothes To Pick Up Son From School -- It Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-real-photo-shows-spider-man-winding-up-to-punch-jake-lang-at-minneapolis-protest.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-image-of-dad-dressed-in-his-wifes-clothes-is-not-real.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "has it 'necrophilia brothel' was shut down in Missouri. Don't be fooled",
+      "claim": "Girl Scouts responds to misleading claims about 'Muslim badges",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/necrophilia-brothel-missouri/",
+      "url": "https://www.snopes.com/fact-check/girl-scouts-muslim-badges/",
       "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "Kennedy Distorts Stat in Celebrating Obesity Drop",
+      "claim": "Trump’s ‘No Tax on Tips’ Claim Doesn’t Add Up",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/kennedy-distorts-stat-in-celebrating-obesity-drop/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/08/trumps-no-tax-on-tips-claim-doesnt-add-up/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Will Trump's latest beef plan make your hamburger cheaper? Not much, experts say",
+      "headline": "Official leading Trump's Gaza ceasefire effort criticizes Israel for its attacks",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944265/ground-beef-trump-tariffs",
+      "url": "https://www.npr.org/2026/08/27/g-s1-140400/israel-gaza-ceasefire",
       "topic": "Politics",
-      "published": "2026-08-26T14:58:58+00:00"
+      "published": "2026-08-27T06:04:56+00:00"
     },
     {
       "n": 3,
-      "headline": "Tim Curry, iconic character actor and star of 'Rocky Horror Picture Show,' dies at 80",
+      "headline": "$17B Meta settlement puts focus on youth mental health crisis, Colorado AG says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/arts/tim-curry-iconic-character-actor-and-star-of-rocky-horror-picture-show-dies-at-80",
-      "topic": "Celebrity",
-      "published": "2026-08-26T16:31:37+00:00"
+      "url": "https://www.pbs.org/newshour/show/17b-meta-settlement-puts-focus-on-youth-mental-health-crisis-colorado-ag-says",
+      "topic": "Health",
+      "published": "2026-08-26T22:55:13+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Tim Curry, of 'The Rocky Horror Picture Show,' dies at 80",
+      "headline": "Bundesliga season 2026-27: All you need to know",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/tim-curry-of-the-rocky-horror-picture-show-dies-at-80/a-78514945?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/bundesliga-season-2026-27-all-you-need-to-know/a-78061925?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-26T16:40:00+00:00"
+      "published": "2026-08-27T06:39:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "How Dolly Parton wrote the story of a changing America",
+      "headline": "Yayoi Kusama, high priestess of polka dots, has died",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944468/dolly-parton-legacy-songwriting",
-      "topic": "Trending",
-      "published": "2026-08-26T13:46:34+00:00"
+      "url": "https://www.npr.org/2026/08/26/1102916697/yayoi-kusama-high-priestess-of-polka-dots-has-died",
+      "topic": "Celebrity",
+      "published": "2026-08-27T03:42:56+00:00"
     },
     {
       "n": 8,
-      "headline": "WATCH LIVE: Presentation of evidence expected to conclude in Lindsay Clancy trial",
+      "headline": "Wall of mud and debris floods communities in Nepal and Tibet",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/watch-live-presentation-of-evidence-expected-to-conclude-in-lindsay-clancy-trial",
+      "url": "https://www.pbs.org/newshour/show/wall-of-mud-and-debris-floods-communities-in-nepal-and-tibet",
       "topic": "Trending",
-      "published": "2026-08-26T16:22:26+00:00"
+      "published": "2026-08-26T22:50:35+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "This extremely successful author polarizes German readers",
+      "headline": "Nepal floods: More than 160 killed, nearly 1,400 missing",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/this-extremely-successful-author-polarizes-german-readers/a-78500452?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/nepal-floods-more-than-160-killed-nearly-1-400-missing/a-78519407?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-26T15:18:00+00:00"
+      "published": "2026-08-27T05:54:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "Meta, states agree to $17 billion settlement in child safety trial",
+      "headline": "Drugstores say Medicare's $50 obesity drug program is catching on",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944781/meta-settlement-child-safety-lawsuit",
-      "topic": "Tech / AI",
-      "published": "2026-08-26T13:33:39+00:00"
+      "url": "https://www.npr.org/2026/08/26/nx-s1-5940761/medicare-weight-loss-drugs",
+      "topic": "Health",
+      "published": "2026-08-26T21:11:42+00:00"
     },
     {
       "n": 13,
-      "headline": "Democratic states file new lawsuit seeking to block Trump's order limiting mail voting in midterms",
+      "headline": "News Wrap: States sue USPS, challenging Trump's order on mail-in voting",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democratic-states-file-new-lawsuit-seeking-to-block-trumps-order-limiting-mail-voting-in-midterms",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-states-sue-usps-challenging-trumps-order-on-mail-in-voting",
       "topic": "Politics",
-      "published": "2026-08-26T16:07:52+00:00"
+      "published": "2026-08-26T22:45:22+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Saxony-Anhalt a state dominated by the Chemical industry and a strong AfD",
+      "headline": "Japanese artist Yayoi Kusama dies at 97",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/saxony-anhalt-a-state-dominated-by-the-chemical-industry-and-a-strong-afd/a-78482588?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/japanese-artist-yayoi-kusama-dies-at-97/a-78518473?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-26T14:24:00+00:00"
+      "published": "2026-08-27T02:58:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
+      "headline": "At least 12 dead as wildfires sweep through northern Algeria",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-08-25T19:50:57+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvgyd4x6nj4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-27T02:10:18+00:00"
     },
     {
       "n": 17,
-      "headline": "At least 75 killed and hundreds missing after flash floods in Nepal and China",
+      "headline": "Immigration arrests soar, hitting 50,000 in July",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/26/g-s1-140211/nepal-china-floods",
-      "topic": "World",
-      "published": "2026-08-26T12:27:19+00:00"
+      "url": "https://www.npr.org/2026/08/26/nx-s1-5945127/immigration-arrests-record",
+      "topic": "Trending",
+      "published": "2026-08-26T18:08:05+00:00"
     }
   ]
 }
