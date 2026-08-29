@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T00:21:22Z",
+  "generated_at": "2026-08-29T13:33:20Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Lake Ontario isn't named after Canadian province",
+      "claim": "Did Disney buy Dollywood? Claim is pure fantasy",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/lake-ontario-name-canada/",
+      "url": "https://www.snopes.com/fact-check/disney-buy-dollywood-false/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Dolly Parton's Imagination Library donate books to children in Israel?",
+      "claim": "Lake Ontario isn't named after Canadian province",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dolly-parton-imagination-library-israel/",
-      "topic": "World"
+      "url": "https://www.snopes.com/fact-check/lake-ontario-name-canada/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "US Military Uses Laser At Border To Shoot Down Drug Cartel Drones",
+      "claim": "Trump Announces ‘Historic’ Deal With Venezuela That ‘MORE THAN DOUBLES’ U.S. Oil Reserves",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/28/us-military-laser-border-shoot-down-drug-cartel-drones-joint-task-force-border-security",
-      "topic": "Health"
+      "url": "https://dailycaller.com/2026/08/29/trump-venezuela-oil-reserves-deal",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "CCTV footage shows deadly flood destroying Nepal-China border crossing",
+      "claim": "Did Dolly Parton's Imagination Library donate books to children in Israel?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/china-nepal-border-flooding/",
+      "url": "https://www.snopes.com/fact-check/dolly-parton-imagination-library-israel/",
       "topic": "World"
     },
     {
@@ -150,15 +150,15 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-08-28T22:05:41+00:00"
+      "published": "2026-08-29T03:54:11+00:00"
     },
     {
       "n": 2,
-      "headline": "Sae Joon Park, a Purple Heart veteran who self-deported, receives pardon",
+      "headline": "Opinion: Remembering Dolly Parton",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/28/nx-s1-5948185/south-korea-deported-veteran-sae-joon-park-pardon",
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5941650/opinion-remembering-dolly-parton",
       "topic": "Trending",
-      "published": "2026-08-29T00:06:04+00:00"
+      "published": "2026-08-29T12:00:00+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Trump hails major oil deal with Venezuela",
+      "headline": "Niger's defense ministry says soldiers attempted mutiny",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-hails-major-oil-deal-with-venezuela/a-78553607?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-28T23:23:00+00:00"
+      "url": "https://www.dw.com/en/niger-s-defense-ministry-says-soldiers-attempted-mutiny/a-78554001?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-29T12:23:00+00:00"
     },
     {
       "n": 6,
-      "headline": "US and Venezuela reach 'historic' oil deal, Trump says",
+      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-28T23:54:19+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-29T12:55:39+00:00"
     },
     {
       "n": 7,
-      "headline": "After 6 months of war, Iran's battered regime remains entrenched",
+      "headline": "The bridges of Rwanda open up new worlds",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/28/nx-s1-5947854/us-iran-war",
-      "topic": "World",
-      "published": "2026-08-28T19:35:24+00:00"
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5927173/bridges-remote-communities-rwanda",
+      "topic": "Trending",
+      "published": "2026-08-29T11:54:36+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "US arrests far-right provocateur Milo Yiannopoulos",
+      "headline": "Germany news: Sick leave wage bill doubles in 15 years",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-arrests-far-right-provocateur-milo-yiannopoulos/a-78553559?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-sick-leave-wage-bill-doubles-in-15-years/live-78555302?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-28T21:45:00+00:00"
+      "published": "2026-08-29T12:12:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Norway mourns King Harald as Haakon VIII ascends throne",
+      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm2rzxrdr71o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-28T19:40:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-29T13:16:43+00:00"
     },
     {
       "n": 12,
-      "headline": "Fed's Kevin Warsh warns inflation is too high, sparking bets rate hikes are coming",
+      "headline": "Lights out, Instagram off? The changes to Meta for teens could be a big deal",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/28/nx-s1-5947903/federal-reserve-inflation-jackson-hole-interest-rates",
-      "topic": "Money",
-      "published": "2026-08-28T16:05:40+00:00"
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5947960/instagram-meta-social-media-teens",
+      "topic": "Tech / AI",
+      "published": "2026-08-29T11:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Spain asks EU's Frontex for help in processing Ceuta migrants",
+      "headline": "Russian strike on warehouse near Kyiv kills dozens",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/spain-asks-eu-s-frontex-for-help-in-processing-ceuta-migrants/a-78553545?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/russian-strike-on-warehouse-near-kyiv-kills-dozens/a-78556008?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-28T21:23:00+00:00"
+      "published": "2026-08-29T10:30:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Oslo mayor calls off wedding ceremony after death of Norway's king",
+      "headline": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5ydgk3v60eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-08-28T13:50:34+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-29T00:32:17+00:00"
     },
     {
       "n": 17,
-      "headline": "New Jersey is a fossil hotspot, with answers about the day the dinosaurs died",
+      "headline": "Trump cuts to science advisory boards have long-lasting consequences, researchers say",
       "source": "NPR",
-      "url": "https://www.npr.org/2024/08/16/g-s1-140898/paleontologist-ken-lacovara-and-the-fifth-extinction-that-killed-the-dinosaurs",
-      "topic": "Celebrity",
-      "published": "2026-08-28T14:38:25+00:00"
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5945029/trump-cut-science-advisory-committees-consequences",
+      "topic": "Politics",
+      "published": "2026-08-29T10:00:00+00:00"
     }
   ]
 }
