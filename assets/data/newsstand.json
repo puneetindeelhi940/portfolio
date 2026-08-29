@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T13:33:20Z",
+  "generated_at": "2026-08-29T19:06:56Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Disney buy Dollywood? Claim is pure fantasy",
+      "claim": "Target: 20 rumors we've analyzed",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/disney-buy-dollywood-false/",
+      "url": "https://www.snopes.com/collections/target-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: ‘Delete From The Deleted File’ — Fauci Tried To Destroy Gain-Of-Function Research Email, New Docs Reveal",
+      "claim": "This Flock AI Tool Finds You Without A Name Or Plate",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/28/exclusive-anthony-fauci-gain-of-function-email-new-documents",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/29/flock-safety-investigate-nightshift-ai-tool-name-license-plate",
+      "topic": "Tech / AI"
     },
     {
       "n": 5,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Lake Ontario isn't named after Canadian province",
+      "claim": "Did Disney buy Dollywood? Claim is pure fantasy",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/lake-ontario-name-canada/",
+      "url": "https://www.snopes.com/fact-check/disney-buy-dollywood-false/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Trump Announces ‘Historic’ Deal With Venezuela That ‘MORE THAN DOUBLES’ U.S. Oil Reserves",
+      "claim": "It’s Harder For Zoomers To Afford These Five Mainstays Of Life That Boomers Could When They Were Their Age",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/29/trump-venezuela-oil-reserves-deal",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/29/life-mainstays-college-housing-childcare-higher-costs-generation-z-zoomer-baby-boomer-bc-game-study",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Dolly Parton's Imagination Library donate books to children in Israel?",
+      "claim": "Lake Ontario isn't named after Canadian province",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dolly-parton-imagination-library-israel/",
-      "topic": "World"
+      "url": "https://www.snopes.com/fact-check/lake-ontario-name-canada/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Opinion: Remembering Dolly Parton",
+      "headline": "Russian strike near Kyiv kills 37, in one of the year's deadliest attacks",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5941650/opinion-remembering-dolly-parton",
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
       "topic": "Trending",
-      "published": "2026-08-29T12:00:00+00:00"
+      "published": "2026-08-29T15:54:40+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump says U.S. has entered deal with Venezuela to control 65 billion barrels of its oil reserves",
+      "headline": "6 months in, Iran's leaders are defying the U.S. and signaling no tolerance for dissent",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-says-u-s-has-entered-deal-with-venezuela-to-control-65-billion-barrels-of-its-oil-reserves",
-      "topic": "Politics",
-      "published": "2026-08-28T23:35:32+00:00"
+      "url": "https://www.pbs.org/newshour/world/6-months-in-irans-leaders-are-defying-the-u-s-and-signaling-no-tolerance-for-dissent",
+      "topic": "World",
+      "published": "2026-08-29T18:55:14+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Niger's defense ministry says soldiers attempted mutiny",
+      "headline": "Zimbabwe crash involving church minibus kills 27",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/niger-s-defense-ministry-says-soldiers-attempted-mutiny/a-78554001?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/zimbabwe-crash-involving-church-minibus-kills-27/a-78558710?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-29T12:23:00+00:00"
+      "published": "2026-08-29T17:48:00+00:00"
     },
     {
       "n": 6,
@@ -190,23 +190,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-29T12:55:39+00:00"
+      "published": "2026-08-29T15:27:56+00:00"
     },
     {
       "n": 7,
-      "headline": "The bridges of Rwanda open up new worlds",
+      "headline": "Photos: See the aftermath of deadly flash floods in Nepal",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5927173/bridges-remote-communities-rwanda",
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5948209/photos-see-the-aftermath-of-deadly-flash-floods-in-nepal",
       "topic": "Trending",
-      "published": "2026-08-29T11:54:36+00:00"
+      "published": "2026-08-29T14:22:19+00:00"
     },
     {
       "n": 8,
-      "headline": "Devastating scale of Himalayan floods comes into focus as rescuers arrive",
+      "headline": "The Earth is sizzling, but climate isn't a hot topic for Democrats in this year's campaigns",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/devastating-scale-of-himalayan-floods-comes-into-focus-as-rescuers-arrive",
-      "topic": "Trending",
-      "published": "2026-08-28T22:55:20+00:00"
+      "url": "https://www.pbs.org/newshour/politics/the-earth-is-sizzling-but-climate-isnt-a-hot-topic-for-democrats-in-this-years-campaigns",
+      "topic": "Science",
+      "published": "2026-08-29T18:40:12+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Germany news: Sick leave wage bill doubles in 15 years",
+      "headline": "Russian-American heads Trump's planned Caucasus trade route",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-sick-leave-wage-bill-doubles-in-15-years/live-78555302?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-29T12:12:00+00:00"
+      "url": "https://www.dw.com/en/russian-american-heads-trump-s-planned-caucasus-trade-route/a-78547064?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-29T16:20:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
+      "headline": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-08-29T13:16:43+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-29T17:52:42+00:00"
     },
     {
       "n": 12,
-      "headline": "Lights out, Instagram off? The changes to Meta for teens could be a big deal",
+      "headline": "Opinion: Remembering Dolly Parton",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5947960/instagram-meta-social-media-teens",
-      "topic": "Tech / AI",
-      "published": "2026-08-29T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5941650/opinion-remembering-dolly-parton",
+      "topic": "Trending",
+      "published": "2026-08-29T12:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "NASA is preparing to launch the Nancy Grace Roman Space Telescope. Here's what to know",
+      "headline": "Trump cannot deport students for criticizing Israel, judge rules",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/nasa-is-preparing-to-launch-the-nancy-grace-roman-space-telescope-heres-what-to-know",
-      "topic": "Science",
-      "published": "2026-08-28T22:51:27+00:00"
+      "url": "https://www.pbs.org/newshour/nation/trump-cannot-deport-students-for-criticizing-israel-judge-rules",
+      "topic": "Politics",
+      "published": "2026-08-29T18:14:48+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Russian strike on warehouse near Kyiv kills dozens",
+      "headline": "Saxony-Anhalt election: Why the AfD is so strong",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russian-strike-on-warehouse-near-kyiv-kills-dozens/a-78556008?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-29T10:30:00+00:00"
+      "url": "https://www.dw.com/en/saxony-anhalt-election-why-the-afd-is-so-strong/a-78482588?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-29T16:17:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
+      "headline": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-29T00:32:17+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-08-29T16:15:56+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump cuts to science advisory boards have long-lasting consequences, researchers say",
+      "headline": "The bridges of Rwanda open up new worlds",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5945029/trump-cut-science-advisory-committees-consequences",
-      "topic": "Politics",
-      "published": "2026-08-29T10:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5927173/bridges-remote-communities-rwanda",
+      "topic": "Trending",
+      "published": "2026-08-29T11:54:36+00:00"
     }
   ]
 }
