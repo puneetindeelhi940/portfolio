@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T13:28:47Z",
+  "generated_at": "2026-08-30T19:00:12Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Does photo show Hakeem Jeffries with Epstein?",
+      "claim": "19 rumors about the US Navy, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/hakeem-jeffries-epstein-photo-fake/",
+      "url": "https://www.snopes.com/collections/us-navy-rumor-collection/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "This Flock AI Tool Finds You Without A Name Or Plate",
+      "claim": "Catch Them While You Can: Here’s What House Has To Tackle In Brief Return",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/29/flock-safety-investigate-nightshift-ai-tool-name-license-plate",
-      "topic": "Tech / AI"
+      "url": "https://dailycaller.com/2026/08/30/house-return-august-recess-september-agenda",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Faroe Islands woman used sheep to map country. Here's how and why",
+      "claim": "Does photo show Hakeem Jeffries with Epstein?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/faroe-islands-sheep-map/",
+      "url": "https://www.snopes.com/fact-check/hakeem-jeffries-epstein-photo-fake/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "UN Agency Tells Merchants Not To Arm Against Pirates Despite 90 Sailors Being Held Hostage",
+      "claim": "From Miscarriages To Judgement Day: We Took A Look At All The AI Takes The Internet Has To Offer",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/30/un-agency-tells-merchants-not-to-arm-against-pirates-despite-90-sailors-being-held-hostage",
-      "topic": "World"
+      "url": "https://dailycaller.com/2026/08/30/artificial-intelligence-takes-mistruths-aquifers-power-bills-skynet-chris-johnson",
+      "topic": "Tech / AI"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Judge ruled certain AI-generated child sex abuse material is protected by First Amendment. Here's context",
+      "claim": "Faroe Islands woman used sheep to map country. Here's how and why",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/judge-ai-child-sex-abuse-ruling/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/fact-check/faroe-islands-sheep-map/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Iceland votes against restarting talks on joining EU",
+      "headline": "Eight killed and others missing after ferry capsizes off northern Cyprus",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-30T10:49:11+00:00"
+      "published": "2026-08-30T18:31:17+00:00"
     },
     {
       "n": 2,
-      "headline": "Exclusive: Meet the inaugural winner of Fat Marmot Week",
+      "headline": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/30/nx-s1-5945683/exclusive-meet-the-inaugural-winner-of-fat-marmot-week",
-      "topic": "Trending",
-      "published": "2026-08-30T12:45:00+00:00"
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5949254/lake-ontario-america-doug-ford-trump-sign-google",
+      "topic": "Politics",
+      "published": "2026-08-30T14:36:44+00:00"
     },
     {
       "n": 3,
-      "headline": "What we know about Trump's deal giving U.S. access to vast oil reserves in Venezuela",
+      "headline": "Lake Ontario to 'Lake America': Who gets to decide what goes on maps?",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/what-we-know-about-trumps-deal-giving-u-s-access-to-vast-oil-reserves-in-venezuela",
-      "topic": "Politics",
-      "published": "2026-08-29T19:44:42+00:00"
+      "url": "https://www.pbs.org/newshour/nation/lake-ontario-to-lake-america-who-gets-to-decide-what-goes-on-maps",
+      "topic": "Trending",
+      "published": "2026-08-30T18:16:37+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Germany news: Politicians call for ban on radical AfD state branches",
+      "headline": "Germany news: Merz warns of 'problems' in Saxony-Anhalt under AfD",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-politicians-call-for-ban-on-radical-afd-state-branches/live-78555302?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-merz-warns-of-problems-in-saxony-anhalt-under-afd/live-78555302?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-30T13:09:00+00:00"
+      "published": "2026-08-30T18:32:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Manhunt after shooting at Swiss rave kills woman, 22, and injures five",
+      "headline": "Iceland votes against restarting EU membership talks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9qr750je1go?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-30T12:44:08+00:00"
+      "published": "2026-08-30T16:11:44+00:00"
     },
     {
       "n": 7,
-      "headline": "Are you sure that Kimmel clip was real? Late-night AI deepfakes are spreading online",
+      "headline": "Exclusive: Meet the inaugural winner of Fat Marmot Week",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/30/nx-s1-5943190/jimmy-kimmel-deepfake-jon-stewart-abc-ai",
-      "topic": "Tech / AI",
-      "published": "2026-08-30T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5945683/exclusive-meet-the-inaugural-winner-of-fat-marmot-week",
+      "topic": "Trending",
+      "published": "2026-08-30T12:45:00+00:00"
     },
     {
       "n": 8,
-      "headline": "6 months in, Iran's leaders are defying the U.S. and signaling no tolerance for dissent",
+      "headline": "Inside the 24-hour mutiny that threatened Niger's ruling junta",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/6-months-in-irans-leaders-are-defying-the-u-s-and-signaling-no-tolerance-for-dissent",
-      "topic": "World",
-      "published": "2026-08-29T18:55:14+00:00"
+      "url": "https://www.pbs.org/newshour/world/inside-the-24-hour-mutiny-that-threatened-nigers-ruling-junta",
+      "topic": "Trending",
+      "published": "2026-08-30T17:52:33+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Guinea-Bissau votes to reshape presidency",
+      "headline": "NASA launches first telescope named after female scientist",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/guinea-bissau-votes-to-reshape-presidency/a-78562523?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-30T12:01:00+00:00"
+      "url": "https://www.dw.com/en/nasa-launches-first-telescope-named-after-female-scientist/a-78565941?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-08-30T16:36:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Large Lake Ontario sign installed in Canada in latest jab at US",
+      "headline": "Manhunt after shooting at Swiss rave kills woman, 22, and injures five",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c9qr750je1go?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-30T00:17:25+00:00"
+      "published": "2026-08-30T17:49:31+00:00"
     },
     {
       "n": 12,
-      "headline": "NASA has successfully launched its newest space telescope",
+      "headline": "Are you sure that Kimmel clip was real? Late-night AI deepfakes are spreading online",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/30/nx-s1-5948814/launch-nancy-grace-roman-space-telescope-nasa",
-      "topic": "Science",
-      "published": "2026-08-30T10:30:00+00:00"
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5943190/jimmy-kimmel-deepfake-jon-stewart-abc-ai",
+      "topic": "Tech / AI",
+      "published": "2026-08-30T11:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "The Earth is sizzling, but climate isn't a hot topic for Democrats in this year's campaigns",
+      "headline": "1 dead and 5 wounded in a shooting at a rave in Switzerland",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/the-earth-is-sizzling-but-climate-isnt-a-hot-topic-for-democrats-in-this-years-campaigns",
-      "topic": "Science",
-      "published": "2026-08-29T18:40:12+00:00"
+      "url": "https://www.pbs.org/newshour/world/1-dead-and-5-wounded-in-a-shooting-at-a-rave-in-switzerland",
+      "topic": "Trending",
+      "published": "2026-08-30T17:34:19+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "At least six people died after a ferry carrying more than 260 people capsized off northern Cyprus, Turkish media reported",
+      "headline": "Germany's Christian Churches take a stand against far right",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/at-least-six-people-died-after-a-ferry-carrying-more-than-260-people-capsized-off-northern-cyprus-turkish-media-reported/a-78562769?maca=en-rss-en-all-1573-rdf",
-      "topic": "Celebrity",
-      "published": "2026-08-30T11:32:00+00:00"
+      "url": "https://www.dw.com/en/germany-s-christian-churches-take-a-stand-against-far-right/a-78482465?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-08-30T15:56:00+00:00"
     },
     {
       "n": 16,
-      "headline": "WhatsApp chat used to send cash for crime and extremism",
+      "headline": "Nasa launches new space telescope able to see 100 times more than Hubble",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cgk57lg7566o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-30T04:59:56+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-08-30T18:53:53+00:00"
     },
     {
       "n": 17,
-      "headline": "How a comic book store got swept into the tariff storm",
+      "headline": "A glorious dawn launch': NASA's newest space telescope has left the Earth",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/30/nx-s1-5939521/tariff-refunds-canada-trade-war",
-      "topic": "Trending",
-      "published": "2026-08-30T10:00:00+00:00"
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5948814/launch-nancy-grace-roman-space-telescope-nasa",
+      "topic": "Science",
+      "published": "2026-08-30T10:30:00+00:00"
     }
   ]
 }
