@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T03:16:04Z",
+  "generated_at": "2026-08-30T13:28:47Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Faroe Islands woman used sheep to map country. Here's how and why",
+      "claim": "Does photo show Hakeem Jeffries with Epstein?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/faroe-islands-sheep-map/",
+      "url": "https://www.snopes.com/fact-check/hakeem-jeffries-epstein-photo-fake/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Judge ruled certain AI-generated child sex abuse material is protected by First Amendment. Here's context",
+      "claim": "Faroe Islands woman used sheep to map country. Here's how and why",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/judge-ai-child-sex-abuse-ruling/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/fact-check/faroe-islands-sheep-map/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Watchdog Group Claims Major Corporations Are Keeping ‘Woke 1.0’ Alive",
+      "claim": "UN Agency Tells Merchants Not To Arm Against Pirates Despite 90 Sailors Being Held Hostage",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/29/consumers-research-report-claims-corporations-embrace-diversity-equity-inclusion-practices",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/08/30/un-agency-tells-merchants-not-to-arm-against-pirates-despite-90-sailors-being-held-hostage",
+      "topic": "World"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump demand changes to Canada's French language rules for trade deal? What we know",
+      "claim": "Judge ruled certain AI-generated child sex abuse material is protected by First Amendment. Here's context",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/27/trump-canada-french-language-rules/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/judge-ai-child-sex-abuse-ruling/",
+      "topic": "Tech / AI"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
+      "headline": "Iceland votes against restarting talks on joining EU",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-29T03:54:11+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-08-30T10:49:11+00:00"
     },
     {
       "n": 2,
-      "headline": "Icelanders vote on whether they want to join the EU",
+      "headline": "Exclusive: Meet the inaugural winner of Fat Marmot Week",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5948759/iceland-european-union-referendum-vote",
-      "topic": "Politics",
-      "published": "2026-08-30T01:47:44+00:00"
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5945683/exclusive-meet-the-inaugural-winner-of-fat-marmot-week",
+      "topic": "Trending",
+      "published": "2026-08-30T12:45:00+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "Egyptian queen’s 673-diamond necklace stolen in Vienna smash-and-grab raid",
+      "headline": "People fleeing Sudan civil war face ‘dire and deteriorating’ conditions in refuge city",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/artanddesign/2026/aug/28/egyptian-queen-diamond-necklace-stolen-vienna-raid",
-      "topic": "Trending",
-      "published": "2026-08-28T14:46:25+00:00"
+      "url": "https://www.theguardian.com/world/2026/aug/30/humanitarian-crisis-worsening-refuge-civilians-sudan-el-obeid",
+      "topic": "World",
+      "published": "2026-08-30T06:00:48+00:00"
     },
     {
       "n": 5,
-      "headline": "Iceland EU referendum sees slim, early lead for 'yes' camp",
+      "headline": "Germany news: Politicians call for ban on radical AfD state branches",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iceland-eu-referendum-sees-slim-early-lead-for-yes-camp/a-78560633?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-politicians-call-for-ban-on-radical-afd-state-branches/live-78555302?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-30T02:48:00+00:00"
+      "published": "2026-08-30T13:09:00+00:00"
     },
     {
       "n": 6,
-      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "headline": "Manhunt after shooting at Swiss rave kills woman, 22, and injures five",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c9qr750je1go?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-29T20:13:16+00:00"
+      "published": "2026-08-30T12:44:08+00:00"
     },
     {
       "n": 7,
-      "headline": "Milo Yiannopoulos, far-right critic of U.S. immigration, is deported from U.S.",
+      "headline": "Are you sure that Kimmel clip was real? Late-night AI deepfakes are spreading online",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5948731/milo-yiannopoulos-arrested-overstaying-us-visa",
-      "topic": "Trending",
-      "published": "2026-08-29T21:09:14+00:00"
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5943190/jimmy-kimmel-deepfake-jon-stewart-abc-ai",
+      "topic": "Tech / AI",
+      "published": "2026-08-30T11:00:00+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "What could Meta’s US settlement mean around the world – and what now for other claims against firm?",
+      "headline": "Egyptian queen’s 673-diamond necklace stolen in Vienna smash-and-grab raid",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/technology/2026/aug/28/meta-facebook-us-lawsuit-settlement-world-impact",
-      "topic": "Tech / AI",
-      "published": "2026-08-28T04:00:48+00:00"
+      "url": "https://www.theguardian.com/artanddesign/2026/aug/28/egyptian-queen-diamond-necklace-stolen-vienna-raid",
+      "topic": "Trending",
+      "published": "2026-08-28T14:46:25+00:00"
     },
     {
       "n": 10,
-      "headline": "Germany news: Merkel tells voters to 'stand up' for democracy",
+      "headline": "Guinea-Bissau votes to reshape presidency",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-merkel-tells-voters-to-stand-up-for-democracy/live-78555302?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/guinea-bissau-votes-to-reshape-presidency/a-78562523?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-29T23:09:00+00:00"
+      "published": "2026-08-30T12:01:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
+      "headline": "Large Lake Ontario sign installed in Canada in latest jab at US",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-29T17:52:42+00:00"
+      "published": "2026-08-30T00:17:25+00:00"
     },
     {
       "n": 12,
-      "headline": "Russian strike near Kyiv kills 37, in one of the year's deadliest attacks",
+      "headline": "NASA has successfully launched its newest space telescope",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
-      "topic": "Trending",
-      "published": "2026-08-29T15:54:40+00:00"
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5948814/launch-nancy-grace-roman-space-telescope-nasa",
+      "topic": "Science",
+      "published": "2026-08-30T10:30:00+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "UK urged to help free British-Egyptian ‘arrested in Cairo over sister’s activism’",
+      "headline": "What could Meta’s US settlement mean around the world – and what now for other claims against firm?",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/aug/27/uk-urged-to-help-free-british-egyptian-arrested-in-cairo-over-sisters-activism",
-      "topic": "Trending",
-      "published": "2026-08-27T08:00:09+00:00"
+      "url": "https://www.theguardian.com/technology/2026/aug/28/meta-facebook-us-lawsuit-settlement-world-impact",
+      "topic": "Tech / AI",
+      "published": "2026-08-28T04:00:48+00:00"
     },
     {
       "n": 15,
-      "headline": "Norway’s new King Haakon remembers ‘dear father’ Harald in first speech as sovereign",
+      "headline": "At least six people died after a ferry carrying more than 260 people capsized off northern Cyprus, Turkish media reported",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/norway-s-new-king-haakon-remembers-dear-father-harald-in-first-speech-as-sovereign/a-78560155?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-29T22:22:00+00:00"
+      "url": "https://www.dw.com/en/at-least-six-people-died-after-a-ferry-carrying-more-than-260-people-capsized-off-northern-cyprus-turkish-media-reported/a-78562769?maca=en-rss-en-all-1573-rdf",
+      "topic": "Celebrity",
+      "published": "2026-08-30T11:32:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Canada installs large Lake Ontario sign in latest jab at US",
+      "headline": "WhatsApp chat used to send cash for crime and extremism",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cgk57lg7566o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-30T00:17:25+00:00"
+      "published": "2026-08-30T04:59:56+00:00"
     },
     {
       "n": 17,
-      "headline": "Photos: See the aftermath of deadly flash floods in Nepal",
+      "headline": "How a comic book store got swept into the tariff storm",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5948209/photos-see-the-aftermath-of-deadly-flash-floods-in-nepal",
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5939521/tariff-refunds-canada-trade-war",
       "topic": "Trending",
-      "published": "2026-08-29T14:22:19+00:00"
+      "published": "2026-08-30T10:00:00+00:00"
     }
   ]
 }
