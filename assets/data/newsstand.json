@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T03:15:53Z",
+  "generated_at": "2026-09-01T12:59:56Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump attack 9/11 memorial in NYC because he wasn't allowed to speak at remembrance?",
+      "claim": "Did Trump's mom once call him an 'idiot with zero common sense'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-911-post/",
+      "url": "https://www.snopes.com/news/2026/09/01/trumps-mother-common-sense-idiot/",
       "topic": "Politics"
     },
     {
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "Nepal floods: Unrelated videos of past disasters, AI visuals falsely viral",
+      "claim": "Saffron-clad men gherao Anandabazar Patrika office in Kolkata, paint walls saffron",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/nepal-floods-unrelated-videos-of-past-disasters-ai-visuals-falsely-viral/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/saffron-clad-men-gherao-anandabazar-patrika-office-in-kolkata-paint-walls-saffron/",
+      "topic": "Trending"
     },
     {
       "n": 7,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Don't believe claim Canadian officials are refusing passage to ships bound for 'Lake America",
+      "claim": "Unpacking claims about funding cuts to Dolly Parton's Imagination Library",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/canada-lake-ontario-america-ships/",
+      "url": "https://www.snopes.com/tracker/dolly-parton-imagination-library/",
       "topic": "Trending"
     },
     {
@@ -104,11 +104,11 @@
     },
     {
       "n": 13,
-      "claim": "VHP, Bajrang Dal ‘attack’ reading session in Ahmedabad; tear Malala, Anne Frank books",
+      "claim": "Nepal floods: Unrelated videos of past disasters, AI visuals falsely viral",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/vhp-bajrang-dal-attack-reading-session-in-ahmedabad-tear-malala-anne-frank-books/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/nepal-floods-unrelated-videos-of-past-disasters-ai-visuals-falsely-viral/",
+      "topic": "Tech / AI"
     },
     {
       "n": 14,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "DOGE cuts to USAID halted program that built flood early-warning system in Nepal?",
+      "claim": "Did Trump attack 9/11 memorial in NYC because he wasn't allowed to speak at remembrance?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/08/31/usaid-doge-cuts-nepal-flood/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-911-post/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "What it was like inside court for Tupac Shakur’s murder trial verdict",
+      "headline": "I've never been to Afghanistan': Six million deportees forced to start over under the Taliban",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cz6zp2pwzx5o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c2e074nn8eko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-01T02:30:45+00:00"
+      "published": "2026-09-01T05:00:34+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump officials cut political interference ban after unusual Census Bureau report",
+      "headline": "SCOTUS allows Trump's ballroom project to continue. And, the Army secretary resigns",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/31/nx-s1-5948057/department-commerce-census-bureau-scientific-integrity",
+      "url": "https://www.npr.org/2026/09/01/g-s1-141357/up-first-newsletter-trump-white-house-ballroom-dan-driscoll-g20-iran-usps-mail-in-voting",
       "topic": "Politics",
-      "published": "2026-08-31T22:24:12+00:00"
+      "published": "2026-09-01T11:23:46+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Tupac Shakur murder trial: Duane 'Keffe D' Davis guilty",
+      "headline": "Will Bangladesh join the Mecca defense pact?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/tupac-shakur-murder-trial-duane-keffe-d-davis-guilty/a-78581756?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/will-bangladesh-join-the-mecca-defense-pact/a-78613944?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-01T00:27:00+00:00"
+      "published": "2026-09-01T12:40:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Nepal rescuers blast hillside in search of hydropower workers as families wait anxiously",
+      "headline": "Nepal death toll crosses 1,000 as rescuers race to find workers trapped in mud-filled tunnels",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-01T02:18:26+00:00"
+      "published": "2026-09-01T07:37:24+00:00"
     },
     {
       "n": 7,
-      "headline": "Whatever happened to the U.S. famine alert system that Trump shut down, then reopened",
+      "headline": "They live by a shrine to a saint. Why are their homes being demolished?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/01/nx-s1-5944472/famine-usaid-fews-net",
-      "topic": "Politics",
-      "published": "2026-08-31T20:42:17+00:00"
+      "url": "https://www.npr.org/2026/09/01/g-s1-139926/india-saint-slum-home-destruction",
+      "topic": "Trending",
+      "published": "2026-09-01T11:21:41+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "US Supreme Court allows Trump ballroom project to proceed",
+      "headline": "Norway's new King Haakon VIII takes oath in parliament",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-supreme-court-allows-trump-ballroom-project-to-proceed/a-78581275?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/norway-s-new-king-haakon-viii-takes-oath-in-parliament/a-78606923?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-08-31T21:54:00+00:00"
+      "published": "2026-09-01T12:23:00+00:00"
     },
     {
       "n": 11,
-      "headline": "US singer D4vd's celebrity lawyers withdraw from murder case",
+      "headline": "Russian attack hits rail workers in new deadly strikes on Kyiv",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crr451lpl4no?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-08-31T17:54:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2zmdgry3do?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-01T10:30:55+00:00"
     },
     {
       "n": 12,
-      "headline": "Kalshi bans former congressman George Santos for life after State of the Union trades",
+      "headline": "Whistleblower claims USPS plan for Trump's mail voting order could 'derail' midterms",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/31/nx-s1-5950432/george-santos-kalshi-ban-prediction-markets",
-      "topic": "Trending",
-      "published": "2026-08-31T20:21:47+00:00"
+      "url": "https://www.npr.org/2026/09/01/nx-s1-5950869/trump-mail-in-voting-usps",
+      "topic": "Politics",
+      "published": "2026-09-01T10:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Poland launches sabotage probe in drone factory fire",
+      "headline": "Germany's SPD is fighting for survival",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/poland-launches-sabotage-probe-in-drone-factory-fire/a-78580918?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-s-spd-is-fighting-for-survival/a-78586448?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-31T19:43:00+00:00"
+      "published": "2026-09-01T11:37:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Man arrested after Swiss rave shooting that killed woman",
+      "headline": "The final minutes before floodwater crashed through Nepal-China border",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-31T13:11:35+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c0qxw1qw3g7o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-01T06:02:27+00:00"
     },
     {
       "n": 17,
-      "headline": "The U.S. sues Amazon again",
+      "headline": "A NY hospital tried to close its birthing center. This city united to fight back",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/31/nx-s1-5950482/ftc-amazon-advertising-lawsuit",
-      "topic": "Money",
-      "published": "2026-08-31T20:17:03+00:00"
+      "url": "https://www.npr.org/2026/09/01/nx-s1-5945612/baby-new-york-hospital-birth",
+      "topic": "Health",
+      "published": "2026-09-01T09:00:00+00:00"
     }
   ]
 }
