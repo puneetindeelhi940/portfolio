@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T21:16:22Z",
+  "generated_at": "2026-09-01T03:15:53Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,10 +8,10 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Trump Post Announces 'Melania Canal' To Bypass Welland Canal -- It Originated From A Satire Account",
+      "claim": "Trump Did NOT Post Threat To Close New York's 9/11 Memorial Because He Was Not Allowed To Speak",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-trump-post-announces-melania-canal-to-bypass-welland-canal.html",
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-donald-trump-did-not-post-threat-to-close-new-yorks-911-memorial-because-he-was-not-allowed-to-speak.html",
       "topic": "Politics"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Here Are The 20 Biggest Donors In The 2026 Midterm Election Cycle So Far",
+      "claim": "Trump’s White House Ballroom Scores Major Supreme Court Victory",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/31/20-megadonors-2026-midterm-elections",
+      "url": "https://dailycaller.com/2026/08/31/supreme-court-order-donald-trump-white-house-east-wing-modernization-ballroom-construction",
       "topic": "Politics"
     },
     {
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "Does NOT Show Real Ukrainian Soldier Crying And Begging For Help On The Way To Front Lines",
+      "claim": "Trump DID Make Post On Truth Social About Kharg Island Using An AI-Generated Video",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-video-does-not-show-real-ukrainian-soldier-crying-on-the-way-to-frontlines.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-trump-did-make-post-on-truth-social-about-kharg-island-using-an-ai-video.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Did Muslim cashier demand Christian boy remove cross necklace? Here's the truth",
+      "claim": "Don't believe claim Canadian officials are refusing passage to ships bound for 'Lake America",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/muslim-cashier-cross-necklace/",
+      "url": "https://www.snopes.com/fact-check/canada-lake-ontario-america-ships/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Trump Voters Suffer More Pain At The Pump Than Democrats. A New Gas Proposal Could Make It Worse",
+      "claim": "Pentagon Quietly Hired MAGA Influencers To Push Hegseth’s Agenda: REPORT",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/08/31/notus-report-trump-voters-gas-prices-iran-war-e15-ethanol-farm-bill-epa-rules-smog-ozone",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/08/31/pentagon-hires-conservative-influencers-military-vets-wapo-report-pete-hegseth",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "Suspect In Canadian Church Fire Is NOT A Palestinian Muslim Migrant -- He Is From The Community",
+      "claim": "FAKE Trump Post Announces 'Melania Canal' To Bypass Welland Canal -- It Originated From A Satire Account",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-suspect-in-canadian-church-fire-is-not-a-palestinian-muslim-migrant.html",
-      "topic": "World"
+      "url": "https://leadstories.com/hoax-alert/2026/08/fact-check-fake-trump-post-announces-melania-canal-to-bypass-welland-canal.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "18 rumors about the US Navy, examined",
+      "claim": "DOGE cuts to USAID halted program that built flood early-warning system in Nepal?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/us-navy-rumor-collection/",
+      "url": "https://www.snopes.com/news/2026/08/31/usaid-doge-cuts-nepal-flood/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Nepal rescuers blast hillside in search of hydropower workers as families wait anxiously",
+      "headline": "What it was like inside court for Tupac Shakur’s murder trial verdict",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/videos/cz6zp2pwzx5o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-31T17:30:47+00:00"
+      "published": "2026-09-01T02:30:45+00:00"
     },
     {
       "n": 2,
-      "headline": "The U.S. sues Amazon again",
+      "headline": "Trump officials cut political interference ban after unusual Census Bureau report",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/31/nx-s1-5950482/ftc-amazon-advertising-lawsuit",
-      "topic": "Money",
-      "published": "2026-08-31T20:17:03+00:00"
+      "url": "https://www.npr.org/2026/08/31/nx-s1-5948057/department-commerce-census-bureau-scientific-integrity",
+      "topic": "Politics",
+      "published": "2026-08-31T22:24:12+00:00"
     },
     {
       "n": 3,
-      "headline": "Prosecutor urges jurors to convict Duane 'Keffe D' Davis at Tupac Shakur murder trial",
+      "headline": "U.S. and Iran trade strikes for first time in weeks over Strait of Hormuz control",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/prosecutor-urges-jurors-to-convict-duane-keffe-d-davis-at-tupac-shakur-murder-trial",
-      "topic": "Trending",
-      "published": "2026-08-31T20:52:03+00:00"
+      "url": "https://www.pbs.org/newshour/show/u-s-and-iran-trade-strikes-for-first-time-in-weeks-over-strait-of-hormuz-control",
+      "topic": "World",
+      "published": "2026-08-31T22:55:43+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US Supreme Court allows Trump ballroom project to proceed",
+      "headline": "Tupac Shakur murder trial: Duane 'Keffe D' Davis guilty",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-supreme-court-allows-trump-ballroom-project-to-proceed/a-78581275?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-08-31T20:38:00+00:00"
+      "url": "https://www.dw.com/en/tupac-shakur-murder-trial-duane-keffe-d-davis-guilty/a-78581756?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-01T00:27:00+00:00"
     },
     {
       "n": 6,
-      "headline": "US and Iran trade strikes for first time in weeks",
+      "headline": "Nepal rescuers blast hillside in search of hydropower workers as families wait anxiously",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-08-31T13:47:30+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-01T02:18:26+00:00"
     },
     {
       "n": 7,
-      "headline": "Paperwork, lines, hours on hold: There's a 'Time Tax' on Americans who need help most",
+      "headline": "Whatever happened to the U.S. famine alert system that Trump shut down, then reopened",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/31/nx-s1-5946449/time-tax-annie-lowrey-government-assistance-unemployment",
-      "topic": "Money",
-      "published": "2026-08-31T17:06:39+00:00"
+      "url": "https://www.npr.org/2026/09/01/nx-s1-5944472/famine-usaid-fews-net",
+      "topic": "Politics",
+      "published": "2026-08-31T20:42:17+00:00"
     },
     {
       "n": 8,
-      "headline": "Teen who recorded San Diego mosque shooting livestream has been charged with murder, DA says",
+      "headline": "What the latest U.S.-Iran strikes mean for oil supplies and maritime safety",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/teen-who-recorded-san-diego-mosque-shooting-livestream-has-been-charged-with-murder-da-says",
-      "topic": "Trending",
-      "published": "2026-08-31T20:44:53+00:00"
+      "url": "https://www.pbs.org/newshour/show/what-the-latest-u-s-iran-strikes-mean-for-oil-supplies-and-maritime-safety",
+      "topic": "World",
+      "published": "2026-08-31T22:52:42+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Poland launches sabotage probe in drone factory fire",
+      "headline": "US Supreme Court allows Trump ballroom project to proceed",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/poland-launches-sabotage-probe-in-drone-factory-fire/a-78580918?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-08-31T19:43:00+00:00"
+      "url": "https://www.dw.com/en/us-supreme-court-allows-trump-ballroom-project-to-proceed/a-78581275?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-08-31T21:54:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Man arrested after Swiss rave shooting that killed woman",
+      "headline": "US singer D4vd's celebrity lawyers withdraw from murder case",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-08-31T13:11:35+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/crr451lpl4no?at_medium=RSS&at_campaign=rss",
+      "topic": "Celebrity",
+      "published": "2026-08-31T17:54:23+00:00"
     },
     {
       "n": 12,
-      "headline": "Lionel Messi says he's retiring from playing internationally for Argentina",
+      "headline": "Kalshi bans former congressman George Santos for life after State of the Union trades",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/31/nx-s1-5950427/lionel-messi-retires-international-soccer",
+      "url": "https://www.npr.org/2026/08/31/nx-s1-5950432/george-santos-kalshi-ban-prediction-markets",
       "topic": "Trending",
-      "published": "2026-08-31T16:37:05+00:00"
+      "published": "2026-08-31T20:21:47+00:00"
     },
     {
       "n": 13,
-      "headline": "Supreme Court allows White House to continue construction on Trump's $400 million ballroom",
+      "headline": "Grand Canyon flash flood leaves 2 dead, others missing",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/supreme-court-allows-white-house-to-continue-construction-on-trumps-400-million-ballroom",
-      "topic": "Politics",
-      "published": "2026-08-31T20:27:04+00:00"
+      "url": "https://www.pbs.org/newshour/show/grand-canyon-flash-flood-leaves-2-dead-others-missing",
+      "topic": "Trending",
+      "published": "2026-08-31T22:51:36+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Lionel Messi announces retirement from international football",
+      "headline": "Poland launches sabotage probe in drone factory fire",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/lionel-messi-announces-retirement-from-international-football/a-78579502?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/poland-launches-sabotage-probe-in-drone-factory-fire/a-78580918?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-08-31T15:30:00+00:00"
+      "published": "2026-08-31T19:43:00+00:00"
     },
     {
       "n": 16,
-      "headline": "She slipped out of my hand' - children missing after ferry sinks off northern Cyprus",
+      "headline": "Man arrested after Swiss rave shooting that killed woman",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c1mv5ggg1l8o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-08-31T14:50:36+00:00"
+      "published": "2026-08-31T13:11:35+00:00"
     },
     {
       "n": 17,
-      "headline": "Nepal's hesitance to accept foreign help for flood relief comes under scrutiny",
+      "headline": "The U.S. sues Amazon again",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/08/31/nx-s1-5949971/nepals-hesitance-help-flood",
-      "topic": "Trending",
-      "published": "2026-08-31T11:50:17+00:00"
+      "url": "https://www.npr.org/2026/08/31/nx-s1-5950482/ftc-amazon-advertising-lawsuit",
+      "topic": "Money",
+      "published": "2026-08-31T20:17:03+00:00"
     }
   ]
 }
