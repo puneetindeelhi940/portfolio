@@ -1,9 +1,9 @@
 {
   "composite_index": {
     "current_value": 6.5,
-    "previous_value": 6.6,
-    "change_pct": -1.5,
-    "trend": "falling",
+    "previous_value": 6.5,
+    "change_pct": 0.0,
+    "trend": "stable",
     "ai_contribution_ppt": 1.0,
     "description": "AI contributed approximately 1.0 percentage points to technology inflation globally this quarter.",
     "period": "Q2 2026"
@@ -24,7 +24,7 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 4.1,
+      "value": 3.9,
       "trend": "falling",
       "drivers": [
         "GPU instance demand",
@@ -36,7 +36,7 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 12.6,
+      "value": 12.5,
       "trend": "falling",
       "drivers": [
         "Inference cost",
@@ -48,7 +48,7 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 7.3,
+      "value": 7.4,
       "trend": "rising",
       "drivers": [
         "Data center demand",
@@ -61,7 +61,7 @@
       "label": "Consumer Electronics",
       "weight": 0.15,
       "value": 3.9,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,8 +72,8 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.7,
-      "trend": "falling",
+      "value": 6.8,
+      "trend": "rising",
       "drivers": [
         "AI feature premiums",
         "Copilot add-ons",
@@ -84,7 +84,7 @@
     "infrastructure": {
       "label": "Infrastructure & Construction",
       "weight": 0.1,
-      "value": 3.6,
+      "value": 3.4,
       "trend": "falling",
       "drivers": [
         "Data center construction",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-09-01T10:36:48Z",
+  "last_updated": "2026-09-02T10:02:20Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
