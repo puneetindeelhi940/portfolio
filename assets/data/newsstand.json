@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T02:40:57Z",
+  "generated_at": "2026-09-03T12:31:08Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump divert first responders to DC beautification projects before Grand Canyon flash flood?",
+      "claim": "Trump didn't post about building 'Melania Canal,' despite claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/02/trump-grand-canyon-flood-first-responders/",
+      "url": "https://www.snopes.com/fact-check/trump-melania-canal/",
       "topic": "Politics"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Assault on Bangladeshi Muslim woman falsely communalised on social media",
+      "claim": "Glacier burst video from Alaska falsely viral as Nepal flash flood trigger",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/assault-on-bangladeshi-muslim-woman-falsely-communalised-on-social-media/",
+      "url": "https://www.altnews.in/glacier-burst-video-from-alaska-falsely-viral-as-nepal-flash-flood-trigger/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "US airman's widow was allegedly denied benefits because Iran war is undeclared. Here's what we know",
+      "claim": "What former White House chef Andre Rush has said about Trump's work ethic, demeanor",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/02/john-alex-klinner-wife-death-benefits/",
-      "topic": "World"
+      "url": "https://www.snopes.com/fact-check/trump-white-house-chef-andre-rush/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "BJP men led the group that raided Anandabazar Patrika office in Kolkata",
+      "claim": "Sculpture made in April-May 2026 goes viral as 170-million-year-old Shaligram found in Nepal after floods",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bjp-men-led-the-group-that-raided-anandabazar-patrika-office-in-kolkata/",
+      "url": "https://www.altnews.in/17-crore-year-old-shaligram-found-in-nepal-after-floods-man-made-idol-visuals-shared-with-misleading-claims/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump order that weeping willows be cut down outside Kennedy Center?",
+      "claim": "Did Trump divert first responders to DC beautification projects before Grand Canyon flash flood?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/weeping-willows-kennedy-center/",
+      "url": "https://www.snopes.com/news/2026/09/02/trump-grand-canyon-flood-first-responders/",
       "topic": "Politics"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Iranian attack on Saudi tanker killed two Filipino sailors, Saudi Arabia says",
+      "headline": "UN warns of 'supersized' El Niño as countries prepare for impact",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-02T17:33:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c17jqp0xzpzo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-03T06:01:54+00:00"
     },
     {
       "n": 2,
-      "headline": "NBA suspends Clippers owner Ballmer, fines team $30M, Kawhi Leonard $700K in cap circumvention case",
+      "headline": "Dems demand DHS fund election security. And, journalist Gloria Steinem has died",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5954825/nba-suspends-clippers-owner-ballmer-fines-team-30m-kawhi-leonard-700k-in-cap-circumvention-case",
-      "topic": "Trending",
-      "published": "2026-09-02T21:59:14+00:00"
+      "url": "https://www.npr.org/2026/09/03/g-s1-141784/up-first-newsletter-election-security-venezuela-oil-lindsay-clancy-gloria-steinem",
+      "topic": "Politics",
+      "published": "2026-09-03T11:17:01+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "New constitution in Guinea-Bissau will undermine democracy, opponents say",
+      "headline": "Victims sue South African government over 1961 Sharpeville massacre that left 91 dead",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/02/guinea-bissau-voters-approve-constitution-elections",
+      "url": "https://www.theguardian.com/world/2026/sep/03/victims-sue-south-african-government-sharpeville-massacre-apartheid",
       "topic": "Trending",
-      "published": "2026-09-02T09:20:55+00:00"
+      "published": "2026-09-03T10:11:37+00:00"
     },
     {
       "n": 5,
-      "headline": "US: 3 dead including suspect in Minneapolis shooting",
+      "headline": "Malaysia's middle path between China and US faces new tests",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-3-dead-including-suspect-in-minneapolis-shooting/a-78815092?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-03T00:45:00+00:00"
+      "url": "https://www.dw.com/en/malaysia-s-middle-path-between-china-and-us-faces-new-tests/a-78865212?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-03T12:00:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Protests in Spain over government's handling of Ceuta migrant crisis",
+      "headline": "Toxic wildfire haze spreads across South East Asia as 'super' El Niño intensifies",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c1mvn2yp9n2o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-02T21:34:27+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/clyqw44w142o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-03T11:35:52+00:00"
     },
     {
       "n": 7,
-      "headline": "The IRS slashed its staff. One result? More taxes going uncollected",
+      "headline": "Gloria Steinem, trailblazing journalist and activist, dies at 92",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5954022/irs-tax-collection-job-reductions",
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5718381/gloria-steinem-dies",
       "topic": "Trending",
-      "published": "2026-09-02T19:56:58+00:00"
+      "published": "2026-09-03T11:14:24+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "Almost half of world’s farmers poisoned by pesticides every year, experts find",
+      "headline": "New constitution in Guinea-Bissau will undermine democracy, opponents say",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/sep/02/50-per-cent-world-farmers-poisoned-pesticides-every-year-experts",
+      "url": "https://www.theguardian.com/world/2026/sep/02/guinea-bissau-voters-approve-constitution-elections",
       "topic": "Trending",
-      "published": "2026-09-02T06:00:25+00:00"
+      "published": "2026-09-02T09:20:55+00:00"
     },
     {
       "n": 10,
-      "headline": "UNICEF: 1 in 5 youths targeted by online sexual abuse",
+      "headline": "Iran bets on shadow networks to evade US sanctions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/unicef-1-in-5-youths-targeted-by-online-sexual-abuse/a-78654173?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-03T00:05:00+00:00"
+      "url": "https://www.dw.com/en/iran-bets-on-shadow-networks-to-evade-us-sanctions/a-78863283?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-03T11:59:00+00:00"
     },
     {
       "n": 11,
-      "headline": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
+      "headline": "Feminist activist and journalist Gloria Steinem dies, aged 92",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-02T16:49:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/clyeq3ngwe4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-03T11:45:22+00:00"
     },
     {
       "n": 12,
-      "headline": "A jury in Malta acquits a businessman in the killing of reporter Daphne Caruana Galizia",
+      "headline": "An epic train chase is turning 100 — and Buster Keaton fans are celebrating",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5954420/daphne-caruana-galizia-case-yorgen-fenech-acquitted-malta",
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5921324/the-general-buster-keaton-anniversary",
       "topic": "Trending",
-      "published": "2026-09-02T19:48:18+00:00"
+      "published": "2026-09-03T11:00:00+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "South African airline defends dramatic low-level flyby before rugby union clash",
+      "headline": "Almost half of world’s farmers poisoned by pesticides every year, experts find",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/sport/2026/aug/31/south-african-airline-defends-dramatic-low-level-flyby-before-rugby-union-springboks-new-zealand",
+      "url": "https://www.theguardian.com/environment/2026/sep/02/50-per-cent-world-farmers-poisoned-pesticides-every-year-experts",
       "topic": "Trending",
-      "published": "2026-08-31T13:44:39+00:00"
+      "published": "2026-09-02T06:00:25+00:00"
     },
     {
       "n": 15,
-      "headline": "Spain: Tens of thousands rally over Ceuta crisis",
+      "headline": "India news: Jaishankar offers help to end war in Ukraine",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/spain-tens-of-thousands-rally-over-ceuta-crisis/a-78814756?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-02T23:51:00+00:00"
+      "url": "https://www.dw.com/en/india-news-jaishankar-offers-help-to-end-war-in-ukraine/live-78815659?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-03T11:33:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Rosenberg: Putin's veiled threat to UK part of Russia's campaign against West",
+      "headline": "Channel smuggling gangs resort to 'mega-dinghies' as crackdown limits small boat supply",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c62j50n131mo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-02T11:47:11+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ce3rn93de9eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-03T05:00:04+00:00"
     },
     {
       "n": 17,
-      "headline": "New Jersey asks Supreme Court to resolve fight over Kalshi's future",
+      "headline": "As millions of kids lose SNAP food benefits, free school meals are also at risk",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5954230/supreme-court-prediction-markets-kalshi-new-jersey",
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5954205/snap-food-free-school-lunch-usda",
       "topic": "Trending",
-      "published": "2026-09-02T18:17:19+00:00"
+      "published": "2026-09-03T09:00:00+00:00"
     }
   ]
 }
