@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T12:31:08Z",
+  "generated_at": "2026-09-03T19:03:06Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,35 +8,35 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Denzel Washington Did NOT Say A Conversation With AOC Is \"Like Talking To A High School Girl\" -- Quote Pulled From Satire Page",
+      "claim": "FAKE Photo Shows Ursula von der Leyen With Jeffrey Epstein -- Made With AI",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-denzel-washington-did-not-say-a-conversation-with-aoc-is-like-talking-to-a-high-school-girl.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photo-ursula-von-der-leyen-jeffrey-epstein-ai.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Trump didn't post about building 'Melania Canal,' despite claims",
+      "claim": "15 claims involving Tupac Shakur we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-melania-canal/",
-      "topic": "Politics"
-    },
-    {
-      "n": 3,
-      "claim": "Rising Measles Cases Driven by Falling Vaccination, Not Illegal Immigration",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/rising-measles-cases-driven-by-falling-vaccination-not-illegal-immigration/",
+      "url": "https://www.snopes.com/collections/tupac-shakur-rumors-collection/",
       "topic": "Trending"
     },
     {
+      "n": 3,
+      "claim": "Social Media Posts Push False Claim of Trump Chopping Down 60 Cherry Trees",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/09/social-media-posts-push-false-claim-of-trump-chopping-down-60-cherry-trees/",
+      "topic": "Politics"
+    },
+    {
       "n": 4,
-      "claim": "EXCLUSIVE: Trump Admin Moves To Revoke Tax Exempt Status For Racially Discriminatory Schools",
+      "claim": "Local Mom Dragged Into Court For Trying To Obtain Info On Secret Data Center Deals",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/02/trump-bessent-irs-revoke-tax-exempt-status-schools-racial-discrimination-dei",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/03/arkansas-data-center-entergy-google-arkansas-democrat-gazette-jessica-kivell-foia-documents",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -64,34 +64,34 @@
     },
     {
       "n": 8,
-      "claim": "'Palm Beach Pete' Does NOT Have A Girlfriend Called 'Lishgaine' -- She Is A Digital Creation",
-      "verdict": "FALSE",
+      "claim": "Suspect In Minneapolis Mass Shooting Was NOT Trans Shooter Samantha Hyde -- Edited Image",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-palm-beach-pete-does-not-have-a-girlfriend-called-lishgaine-she-is-a-digital-creation.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-suspect-in-minneapolis-mass-shooting-was-not-trans-shooter-samantha-hyde.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "What former White House chef Andre Rush has said about Trump's work ethic, demeanor",
+      "claim": "Talarico voted against bill meant to protect Texas land from Chinese interests. Here's why",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-white-house-chef-andre-rush/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/talarico-china-texas-land-bill/",
+      "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Trump Claims Credit for Drug Price Decline. Experts Say It’s More Complicated.",
+      "claim": "Rising Measles Cases Driven by Falling Vaccination, Not Illegal Immigration",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/trump-claims-credit-for-drug-price-decline-experts-say-its-more-complicated/",
-      "topic": "Health"
+      "url": "https://www.factcheck.org/2026/09/rising-measles-cases-driven-by-falling-vaccination-not-illegal-immigration/",
+      "topic": "Trending"
     },
     {
       "n": 11,
-      "claim": "Woman Arrested Outside Lindsay Clancy Trial Over Alleged Jury Intimidation",
+      "claim": "Fox News Abruptly Announces Departure Of Maria Bartiromo",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/02/lindsay-clancy-trial-arrest-dawn-light-jury-intimidation-criminal-charges",
+      "url": "https://dailycaller.com/2026/09/03/fox-news-announces-departure-maria-bartiromo-fox-business",
       "topic": "Trending"
     },
     {
@@ -120,27 +120,27 @@
     },
     {
       "n": 15,
-      "claim": "Does NOT Show Bullet 'Jumping' Out Of Pamela Cisneros' Body -- It Is A Taser Probe Stuck In Her Shirt",
+      "claim": "Denzel Washington Did NOT Say A Conversation With AOC Is \"Like Talking To A High School Girl\" -- Quote Pulled From Satire Page",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-does-not-show-bullet-jumping-out-of-pamela-cisneros-body.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-denzel-washington-did-not-say-a-conversation-with-aoc-is-like-talking-to-a-high-school-girl.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Trump divert first responders to DC beautification projects before Grand Canyon flash flood?",
+      "claim": "Trump didn't post about building 'Melania Canal,' despite claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/02/trump-grand-canyon-flood-first-responders/",
+      "url": "https://www.snopes.com/fact-check/trump-melania-canal/",
       "topic": "Politics"
     },
     {
       "n": 17,
-      "claim": "What We Know About Pennsylvania’s Two ‘Measles-Associated’ Deaths",
+      "claim": "Trump Claims Credit for Drug Price Decline. Experts Say It’s More Complicated.",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/08/what-we-know-about-pennsylvanias-two-measles-associated-deaths/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/08/trump-claims-credit-for-drug-price-decline-experts-say-its-more-complicated/",
+      "topic": "Health"
     }
   ],
   "reliable": [
@@ -154,35 +154,35 @@
     },
     {
       "n": 2,
-      "headline": "Dems demand DHS fund election security. And, journalist Gloria Steinem has died",
+      "headline": "Later in life, Gloria Steinem found herself free of the 'demands of gender",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/g-s1-141784/up-first-newsletter-election-security-venezuela-oil-lindsay-clancy-gloria-steinem",
-      "topic": "Politics",
-      "published": "2026-09-03T11:17:01+00:00"
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5955479/gloria-steinem-fresh-air",
+      "topic": "Trending",
+      "published": "2026-09-03T18:42:39+00:00"
     },
     {
       "n": 3,
-      "headline": "U.S. strikes Iran again as Tehran targets American allies in Gulf region",
+      "headline": "Democrats promise a big agenda if they win control of Congress, but their unity is being tested",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/u-s-strikes-iran-again-as-tehran-targets-american-allies-in-gulf-region",
-      "topic": "World",
-      "published": "2026-09-02T22:55:26+00:00"
+      "url": "https://www.pbs.org/newshour/politics/democrats-promise-a-big-agenda-if-they-win-control-of-congress-but-their-unity-is-being-tested",
+      "topic": "Politics",
+      "published": "2026-09-03T17:33:43+00:00"
     },
     {
       "n": 4,
-      "headline": "Victims sue South African government over 1961 Sharpeville massacre that left 91 dead",
+      "headline": "Spain’s PM says no evidence ‘whatsoever’ Morocco behind Ceuta border breach",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/03/victims-sue-south-african-government-sharpeville-massacre-apartheid",
-      "topic": "Trending",
-      "published": "2026-09-03T10:11:37+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/03/spain-pm-evidence-morocco-ceuta-border-breach",
+      "topic": "World",
+      "published": "2026-09-03T12:52:08+00:00"
     },
     {
       "n": 5,
-      "headline": "Malaysia's middle path between China and US faces new tests",
+      "headline": "Indonesia: Thousands fall sick from free school meals",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/malaysia-s-middle-path-between-china-and-us-faces-new-tests/a-78865212?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-03T12:00:00+00:00"
+      "url": "https://www.dw.com/en/indonesia-thousands-fall-sick-from-free-school-meals/a-78894485?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-03T17:59:00+00:00"
     },
     {
       "n": 6,
@@ -194,35 +194,35 @@
     },
     {
       "n": 7,
-      "headline": "Gloria Steinem, trailblazing journalist and activist, dies at 92",
+      "headline": "ICE officer faces federal charges for lying over shooting of Venezuelan immigrant",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5718381/gloria-steinem-dies",
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5955654/justice-department-charges-castro-ice-officer",
       "topic": "Trending",
-      "published": "2026-09-03T11:14:24+00:00"
+      "published": "2026-09-03T18:14:53+00:00"
     },
     {
       "n": 8,
-      "headline": "Prolonged Iran war creating major dent in global economy, Cliff Kupchan says",
+      "headline": "EPA proposal could leave the public in the dark on data center plans",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/prolonged-iran-war-creating-major-dent-in-global-economy-cliff-kupchan-says",
-      "topic": "World",
-      "published": "2026-09-02T22:50:15+00:00"
+      "url": "https://www.pbs.org/newshour/politics/epa-proposal-could-leave-the-public-in-the-dark-on-data-center-plans",
+      "topic": "Trending",
+      "published": "2026-09-03T16:14:48+00:00"
     },
     {
       "n": 9,
-      "headline": "New constitution in Guinea-Bissau will undermine democracy, opponents say",
+      "headline": "‘We continue to suffer’: victims of apartheid-era Sharpeville massacre demand compensation",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/02/guinea-bissau-voters-approve-constitution-elections",
+      "url": "https://www.theguardian.com/world/2026/sep/03/victims-sue-south-african-government-sharpeville-massacre-apartheid",
       "topic": "Trending",
-      "published": "2026-09-02T09:20:55+00:00"
+      "published": "2026-09-03T10:11:37+00:00"
     },
     {
       "n": 10,
-      "headline": "Iran bets on shadow networks to evade US sanctions",
+      "headline": "Trump's Iran strategy: Could this become a forever war?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-bets-on-shadow-networks-to-evade-us-sanctions/a-78863283?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-03T11:59:00+00:00"
+      "url": "https://www.dw.com/en/trump-s-iran-strategy-could-this-become-a-forever-war/a-78875030?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-03T17:46:00+00:00"
     },
     {
       "n": 11,
@@ -230,39 +230,39 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/clyeq3ngwe4o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-03T11:45:22+00:00"
+      "published": "2026-09-03T18:04:34+00:00"
     },
     {
       "n": 12,
-      "headline": "An epic train chase is turning 100 — and Buster Keaton fans are celebrating",
+      "headline": "Fox News star Maria Bartiromo is out at the network",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5921324/the-general-buster-keaton-anniversary",
-      "topic": "Trending",
-      "published": "2026-09-03T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5955645/maria-bartiromo-fox-news",
+      "topic": "Celebrity",
+      "published": "2026-09-03T18:05:57+00:00"
     },
     {
       "n": 13,
-      "headline": "News Wrap: Lindsay Clancy jury deadlocked and unable to reach verdict",
+      "headline": "WATCH LIVE: Vance holds White House briefing after Leavitt's departure",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-lindsay-clancy-jury-deadlocked-and-unable-to-reach-verdict",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-vance-holds-white-house-briefing-after-leavitts-departure",
       "topic": "Trending",
-      "published": "2026-09-02T22:45:39+00:00"
+      "published": "2026-09-03T15:52:56+00:00"
     },
     {
       "n": 14,
-      "headline": "Almost half of world’s farmers poisoned by pesticides every year, experts find",
+      "headline": "New constitution in Guinea-Bissau will undermine democracy, opponents say",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/sep/02/50-per-cent-world-farmers-poisoned-pesticides-every-year-experts",
+      "url": "https://www.theguardian.com/world/2026/sep/02/guinea-bissau-voters-approve-constitution-elections",
       "topic": "Trending",
-      "published": "2026-09-02T06:00:25+00:00"
+      "published": "2026-09-02T09:20:55+00:00"
     },
     {
       "n": 15,
-      "headline": "India news: Jaishankar offers help to end war in Ukraine",
+      "headline": "Berlin BER airport Terminal 1 evacuated after security scare",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-jaishankar-offers-help-to-end-war-in-ukraine/live-78815659?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-03T11:33:00+00:00"
+      "url": "https://www.dw.com/en/berlin-ber-airport-terminal-1-evacuated-after-security-scare/a-78895207?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-03T17:27:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "As millions of kids lose SNAP food benefits, free school meals are also at risk",
+      "headline": "Kissing apes, anti-splash urinals: This year's Ig Nobels showcase surprising science",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5954205/snap-food-free-school-lunch-usda",
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5950370/ig-nobel-awards-kissing-urinals-move-switzerland",
       "topic": "Trending",
-      "published": "2026-09-03T09:00:00+00:00"
+      "published": "2026-09-03T17:00:00+00:00"
     }
   ]
 }
