@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T19:10:32Z",
+  "generated_at": "2026-09-03T02:40:57Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Of Woman Who Stabbed Someone In NYC Dancing With Pair Of Knives -- It Is Digitally Edited",
-      "verdict": "MISLEADING",
+      "claim": "Denzel Washington Did NOT Say A Conversation With AOC Is \"Like Talking To A High School Girl\" -- Quote Pulled From Satire Page",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-of-woman-who-stabbed-someone-in-nyc-dancing-with-pair-of-knives.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-denzel-washington-did-not-say-a-conversation-with-aoc-is-like-talking-to-a-high-school-girl.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Trump cut down dozens of cherry trees for DC golf course renovations?",
+      "claim": "Did Trump divert first responders to DC beautification projects before Grand Canyon flash flood?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/01/trump-dc-cherry-trees/",
+      "url": "https://www.snopes.com/news/2026/09/02/trump-grand-canyon-flood-first-responders/",
       "topic": "Politics"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Cheap Labor, Deadly Consequences: How Trucking Companies Benefit From Illegal Alien Drivers",
+      "claim": "EXCLUSIVE: Trump Admin Moves To Revoke Tax Exempt Status For Racially Discriminatory Schools",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/01/trucking-companies-benefit-from-illegal-alien-drivers",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/02/trump-bessent-irs-revoke-tax-exempt-status-schools-racial-discrimination-dei",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Report Alleges Billie Eilish Lost $800,000 In Property After She 'Left Her Tribeca Penthouse Doors Unlocked For 72 Hours To Prove That New York City Is Safe",
+      "claim": "'Palm Beach Pete' Does NOT Have A Girlfriend Called 'Lishgaine' -- She Is A Digital Creation",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-report-alleges-billie-eilish-lost-800-000-in-property-after-keeping-her-tribeca-penthouse-unloked-for-72-hours.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-palm-beach-pete-does-not-have-a-girlfriend-called-lishgaine-she-is-a-digital-creation.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "RFK Jr.'s hospice comments referred to fraud, not patients' life expectancy burdening taxpayers",
+      "claim": "US airman's widow was allegedly denied benefits because Iran war is undeclared. Here's what we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/rfk-jr-hospice-comment/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/09/02/john-alex-klinner-wife-death-benefits/",
+      "topic": "World"
     },
     {
       "n": 10,
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "UNRELATED Video Clips Misrepresent News Of 163 Missing Children Found In Florida Law Enforcement Sweep",
+      "claim": "Does NOT Show Bullet 'Jumping' Out Of Pamela Cisneros' Body -- It Is A Taser Probe Stuck In Her Shirt",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-unrelated-video-clips-misrepresent-news-of-163-missing-children-found-in-florida-law-enforcement-sweep.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-does-not-show-bullet-jumping-out-of-pamela-cisneros-body.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "What to know about EPA approving pesticide trifludimoxazin",
+      "claim": "Did Trump order that weeping willows be cut down outside Kennedy Center?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trifludimoxazin-epa-approval/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/weeping-willows-kennedy-center/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Iran says US strike killed four at wedding in 'war crime' as US denies targeting civilians",
+      "headline": "Iranian attack on Saudi tanker killed two Filipino sailors, Saudi Arabia says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-02T15:33:19+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-02T17:33:45+00:00"
     },
     {
       "n": 2,
-      "headline": "New Jersey asks Supreme Court to resolve fight over Kalshi's future",
+      "headline": "NBA suspends Clippers owner Ballmer, fines team $30M, Kawhi Leonard $700K in cap circumvention case",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5954230/supreme-court-prediction-markets-kalshi-new-jersey",
+      "url": "https://www.npr.org/2026/09/02/nx-s1-5954825/nba-suspends-clippers-owner-ballmer-fines-team-30m-kawhi-leonard-700k-in-cap-circumvention-case",
       "topic": "Trending",
-      "published": "2026-09-02T18:17:19+00:00"
+      "published": "2026-09-02T21:59:14+00:00"
     },
     {
       "n": 3,
-      "headline": "Tiger Woods pleads no contest to reckless driving charge over rollover crash in Florida",
+      "headline": "U.S. strikes Iran again as Tehran targets American allies in Gulf region",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/tiger-woods-pleads-no-contest-to-reckless-driving-charge-over-rollover-crash-in-florida",
-      "topic": "Trending",
-      "published": "2026-09-02T18:53:58+00:00"
+      "url": "https://www.pbs.org/newshour/show/u-s-strikes-iran-again-as-tehran-targets-american-allies-in-gulf-region",
+      "topic": "World",
+      "published": "2026-09-02T22:55:26+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Berlin's punitive measures unlikely to deter Putin: experts",
+      "headline": "US: 3 dead including suspect in Minneapolis shooting",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/berlin-s-punitive-measures-unlikely-to-deter-putin-experts/a-78803217?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-3-dead-including-suspect-in-minneapolis-shooting/a-78815092?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-02T17:37:00+00:00"
+      "published": "2026-09-03T00:45:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Iranian attack on Saudi tanker killed two Filipino sailors, Saudi Arabia says",
+      "headline": "Protests in Spain over government's handling of Ceuta migrant crisis",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-02T17:33:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c1mvn2yp9n2o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-02T21:34:27+00:00"
     },
     {
       "n": 7,
-      "headline": "New immigration court tactic leads to huge lines and chaos in Miami",
+      "headline": "The IRS slashed its staff. One result? More taxes going uncollected",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5951523/immigration-court-miami-backlog-mega-master",
+      "url": "https://www.npr.org/2026/09/02/nx-s1-5954022/irs-tax-collection-job-reductions",
       "topic": "Trending",
-      "published": "2026-09-02T16:42:48+00:00"
+      "published": "2026-09-02T19:56:58+00:00"
     },
     {
       "n": 8,
-      "headline": "AI agents are hacking systems without any input from humans. How did we get here?",
+      "headline": "Prolonged Iran war creating major dent in global economy, Cliff Kupchan says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/ai-agents-are-hacking-systems-without-any-input-from-humans-how-did-we-get-here",
-      "topic": "Tech / AI",
-      "published": "2026-09-02T18:46:26+00:00"
+      "url": "https://www.pbs.org/newshour/show/prolonged-iran-war-creating-major-dent-in-global-economy-cliff-kupchan-says",
+      "topic": "World",
+      "published": "2026-09-02T22:50:15+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Unity at last: Is Libya's damaging power struggle at an end?",
+      "headline": "UNICEF: 1 in 5 youths targeted by online sexual abuse",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/unity-at-last-is-libya-s-damaging-power-struggle-at-an-end/a-78758325?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/unicef-1-in-5-youths-targeted-by-online-sexual-abuse/a-78654173?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-02T17:35:00+00:00"
+      "published": "2026-09-03T00:05:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "Understanding the tech giants' oversized influence in American schools",
+      "headline": "A jury in Malta acquits a businessman in the killing of reporter Daphne Caruana Galizia",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5953878/understanding-the-tech-giants-oversized-influence-in-american-schools",
+      "url": "https://www.npr.org/2026/09/02/nx-s1-5954420/daphne-caruana-galizia-case-yorgen-fenech-acquitted-malta",
       "topic": "Trending",
-      "published": "2026-09-02T16:08:31+00:00"
+      "published": "2026-09-02T19:48:18+00:00"
     },
     {
       "n": 13,
-      "headline": "Jury in Lindsay Clancy trial tells judge for a second time that it can't agree on a verdict",
+      "headline": "News Wrap: Lindsay Clancy jury deadlocked and unable to reach verdict",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/jury-in-lindsay-clancy-trial-tells-judge-for-a-second-time-that-it-cant-agree-on-a-verdict",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-lindsay-clancy-jury-deadlocked-and-unable-to-reach-verdict",
       "topic": "Trending",
-      "published": "2026-09-02T18:32:15+00:00"
+      "published": "2026-09-02T22:45:39+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Germany: How to woo voters with an immigrant background",
+      "headline": "Spain: Tens of thousands rally over Ceuta crisis",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-how-to-woo-voters-with-an-immigrant-background/a-78790775?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/spain-tens-of-thousands-rally-over-ceuta-crisis/a-78814756?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-02T16:03:00+00:00"
+      "published": "2026-09-02T23:51:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Iran fires on its Gulf neighbors, retaliating for U.S. strikes after a monthlong lull",
+      "headline": "New Jersey asks Supreme Court to resolve fight over Kalshi's future",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/02/nx-s1-5954013/us-iran-war-latest-updates",
-      "topic": "World",
-      "published": "2026-09-02T15:18:09+00:00"
+      "url": "https://www.npr.org/2026/09/02/nx-s1-5954230/supreme-court-prediction-markets-kalshi-new-jersey",
+      "topic": "Trending",
+      "published": "2026-09-02T18:17:19+00:00"
     }
   ]
 }
