@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:03:06Z",
+  "generated_at": "2026-09-04T02:37:25Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Photo Shows Ursula von der Leyen With Jeffrey Epstein -- Made With AI",
+      "claim": "FAKE Secretly Recorded Footage Shows Elon Musk Observing A Portal At SpaceX -- Video Is Associated With AI Creator",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photo-ursula-von-der-leyen-jeffrey-epstein-ai.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-secretive-footage-shows-elon-musk-observing-a-portal-at-spacex.html",
       "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "15 claims involving Tupac Shakur we've investigated",
+      "claim": "Did Trump say US has 'too many non-working holidays' that cost country 'billions'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/tupac-shakur-rumors-collection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-non-working-holidays-post/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Local Mom Dragged Into Court For Trying To Obtain Info On Secret Data Center Deals",
+      "claim": "Fox News Abruptly Announces Departure Of Maria Bartiromo",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/03/arkansas-data-center-entergy-google-arkansas-democrat-gazette-jessica-kivell-foia-documents",
+      "url": "https://dailycaller.com/2026/09/03/fox-news-announces-departure-maria-bartiromo-fox-business",
       "topic": "Trending"
     },
     {
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "Suspect In Minneapolis Mass Shooting Was NOT Trans Shooter Samantha Hyde -- Edited Image",
-      "verdict": "MISLEADING",
+      "claim": "Evidence Pop Base Posted 'President Trump Has Died At The Age of 80",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-suspect-in-minneapolis-mass-shooting-was-not-trans-shooter-samantha-hyde.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-pop-base-posted-president-trump-has-died-at-the-age-of-80.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Talarico voted against bill meant to protect Texas land from Chinese interests. Here's why",
+      "claim": "What to know about EPA approving pesticide trifludimoxazin",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/talarico-china-texas-land-bill/",
+      "url": "https://www.snopes.com/fact-check/trifludimoxazin-epa-approval/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Fox News Abruptly Announces Departure Of Maria Bartiromo",
+      "claim": "House GOP Leadership Says Current Congress Is ‘Most Productive.’ Americans Don’t Seem To Feel That Way",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/03/fox-news-announces-departure-maria-bartiromo-fox-business",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/03/house-leadership-congress-was-most-productive",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "Denzel Washington Did NOT Say A Conversation With AOC Is \"Like Talking To A High School Girl\" -- Quote Pulled From Satire Page",
+      "claim": "Trump Did NOT Write 'Too Many Non-Working Holidays In America' Ahead Of Labor Day 2026 -- Post Is From Summer 2025",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-denzel-washington-did-not-say-a-conversation-with-aoc-is-like-talking-to-a-high-school-girl.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-write-too-many-non-working-holidays-in-america-ahead-of-labor-day-2026-post-is-from-summer-2025.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Trump didn't post about building 'Melania Canal,' despite claims",
+      "claim": "Did Trump divert first responders to DC beautification projects before Grand Canyon flash flood?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-melania-canal/",
+      "url": "https://www.snopes.com/news/2026/09/02/trump-grand-canyon-flood-first-responders/",
       "topic": "Politics"
     },
     {
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "UN warns of 'supersized' El Niño as countries prepare for impact",
+      "headline": "Trump hints US would not back UK over Falkland Islands due to lack of Iran war support",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c17jqp0xzpzo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-03T06:01:54+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c1kx4m70l4yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-03T16:16:49+00:00"
     },
     {
       "n": 2,
-      "headline": "Later in life, Gloria Steinem found herself free of the 'demands of gender",
+      "headline": "The Trump administration still aims to make state citizenship lists ahead of midterms",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5955479/gloria-steinem-fresh-air",
-      "topic": "Trending",
-      "published": "2026-09-03T18:42:39+00:00"
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5955822/voting-citizenship-lists-dhs-uscis-lawsuit",
+      "topic": "Politics",
+      "published": "2026-09-03T23:59:35+00:00"
     },
     {
       "n": 3,
-      "headline": "Democrats promise a big agenda if they win control of Congress, but their unity is being tested",
+      "headline": "Trump again appeals to Supreme Court on mail voting restrictions as midterms loom",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democrats-promise-a-big-agenda-if-they-win-control-of-congress-but-their-unity-is-being-tested",
+      "url": "https://www.pbs.org/newshour/politics/trump-again-appeals-to-supreme-court-on-mail-voting-restrictions-as-midterms-loom",
       "topic": "Politics",
-      "published": "2026-09-03T17:33:43+00:00"
+      "published": "2026-09-04T00:25:01+00:00"
     },
     {
       "n": 4,
+      "headline": "UN to vote on adopting new world map that shows Africa’s true scale",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
+      "topic": "Politics",
+      "published": "2026-09-04T02:00:54+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Volkswagen to cut 100,000 jobs by end of decade",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/volkswagen-to-cut-100-000-jobs-by-end-of-decade/a-78896123?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-04T00:06:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "US investigating if missile hit Iran wedding, Vance says",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zvk3z2k1o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-03T22:19:59+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Leon Black defies subpoena to testify in Epstein inquiry and sues House panel",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5955643/leon-black-jeffrey-epstein-lawsuit",
+      "topic": "Trending",
+      "published": "2026-09-03T22:19:02+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Fed governor Waller muddies outlook on possible rate hike later this month",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/economy/fed-governor-waller-muddies-outlook-on-possible-rate-hike-later-this-month",
+      "topic": "Politics",
+      "published": "2026-09-04T00:08:19+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Spain’s PM says no evidence ‘whatsoever’ Morocco behind Ceuta border breach",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/03/spain-pm-evidence-morocco-ceuta-border-breach",
@@ -177,39 +217,39 @@
       "published": "2026-09-03T12:52:08+00:00"
     },
     {
-      "n": 5,
-      "headline": "Indonesia: Thousands fall sick from free school meals",
+      "n": 10,
+      "headline": "FIFA blames UEFA for 'smear campaign' against Infantino",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/indonesia-thousands-fall-sick-from-free-school-meals/a-78894485?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/fifa-blames-uefa-for-smear-campaign-against-infantino/a-78896105?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-03T17:59:00+00:00"
+      "published": "2026-09-03T22:35:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Toxic wildfire haze spreads across South East Asia as 'super' El Niño intensifies",
+      "n": 11,
+      "headline": "UN warns of 'supersized' El Niño as countries prepare for impact",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/clyqw44w142o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-03T11:35:52+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c17jqp0xzpzo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-03T06:01:54+00:00"
     },
     {
-      "n": 7,
-      "headline": "ICE officer faces federal charges for lying over shooting of Venezuelan immigrant",
+      "n": 12,
+      "headline": "Trump asks Supreme Court to lift block on USPS plan to restrict mail voting",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5955654/justice-department-charges-castro-ice-officer",
-      "topic": "Trending",
-      "published": "2026-09-03T18:14:53+00:00"
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5955614/trump-mail-in-voting-ruling-court-usps",
+      "topic": "Politics",
+      "published": "2026-09-03T20:48:21+00:00"
     },
     {
-      "n": 8,
-      "headline": "EPA proposal could leave the public in the dark on data center plans",
+      "n": 13,
+      "headline": "Proud of their oil, Venezuelans view major U.S. stake in their reserves as a surrender",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/epa-proposal-could-leave-the-public-in-the-dark-on-data-center-plans",
+      "url": "https://www.pbs.org/newshour/world/proud-of-their-oil-venezuelans-view-major-u-s-stake-in-their-reserves-as-a-surrender",
       "topic": "Trending",
-      "published": "2026-09-03T16:14:48+00:00"
+      "published": "2026-09-03T23:49:55+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "‘We continue to suffer’: victims of apartheid-era Sharpeville massacre demand compensation",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/03/victims-sue-south-african-government-sharpeville-massacre-apartheid",
@@ -217,68 +257,28 @@
       "published": "2026-09-03T10:11:37+00:00"
     },
     {
-      "n": 10,
-      "headline": "Trump's Iran strategy: Could this become a forever war?",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-s-iran-strategy-could-this-become-a-forever-war/a-78875030?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-03T17:46:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Feminist activist and journalist Gloria Steinem dies, aged 92",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/clyeq3ngwe4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-03T18:04:34+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Fox News star Maria Bartiromo is out at the network",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5955645/maria-bartiromo-fox-news",
-      "topic": "Celebrity",
-      "published": "2026-09-03T18:05:57+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "WATCH LIVE: Vance holds White House briefing after Leavitt's departure",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-vance-holds-white-house-briefing-after-leavitts-departure",
-      "topic": "Trending",
-      "published": "2026-09-03T15:52:56+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "New constitution in Guinea-Bissau will undermine democracy, opponents say",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/02/guinea-bissau-voters-approve-constitution-elections",
-      "topic": "Trending",
-      "published": "2026-09-02T09:20:55+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Berlin BER airport Terminal 1 evacuated after security scare",
+      "headline": "Berlin: BER Airport Terminal 1 reopened after security scare",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/berlin-ber-airport-terminal-1-evacuated-after-security-scare/a-78895207?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/berlin-ber-airport-terminal-1-reopened-after-security-scare/a-78895207?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-03T17:27:00+00:00"
+      "published": "2026-09-03T21:25:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Channel smuggling gangs resort to 'mega-dinghies' as crackdown limits small boat supply",
+      "headline": "Transplanted pig kidney works in US man's body for record 271 days",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ce3rn93de9eo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c305qn2jeggo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-03T05:00:04+00:00"
+      "published": "2026-09-03T22:31:23+00:00"
     },
     {
       "n": 17,
-      "headline": "Kissing apes, anti-splash urinals: This year's Ig Nobels showcase surprising science",
+      "headline": "Tributes to Gloria Steinem are flooding in, from Hollywood to Capitol Hill",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5950370/ig-nobel-awards-kissing-urinals-move-switzerland",
-      "topic": "Trending",
-      "published": "2026-09-03T17:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5955579/gloria-steinem-tributes",
+      "topic": "Celebrity",
+      "published": "2026-09-03T19:04:19+00:00"
     }
   ]
 }
