@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T18:46:27Z",
+  "generated_at": "2026-09-05T02:38:53Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE 'Epstein Files' Video Shows People Locked In Cages -- It Is From Horror YouTube Channel 'Life Of Luxury",
+      "claim": "FAKE Image Shows AOC Wearing Workout Clothes In Her Kitchen -- Original Is Sleeveless Polka-Dot Dress",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-not-from-epstein-files-shows-crying-pregnant-woman-people-locked-in-cages.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-shows-aoc-wearing-workout-clothes-in-her-kitchen.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "HHS report cites inaccurate data to claim more than 5,500 trans minors received 'sex change surgeries",
+      "claim": "Did Lindsay Clancy GoFundMe amass over $1M, while mom who saved kids from fire raised $42K?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/hhs-report-trans-minors-surgeries/",
+      "url": "https://www.snopes.com/fact-check/lindsay-clancy-emma-schols-fundraisers/",
       "topic": "Trending"
     },
     {
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "AOC Did NOT Say 'Under Capitalism, Man Oppresses Man, Under Socialism, It's the Other Way Round",
+      "claim": "About Mike Johnson Moving Jasmine Crockett's Office Into Filing Room With No Windows Did NOT Come From Real News Website",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-aoc-did-not-say-under-capitalism-man-oppresses-man-under-socialism-its-the-other-way-round.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-false-rumor-about-mike-johnson-moving-jasmine-crocketts-office-into-filing-room-with-no-windows-did-not-come-from-real-news-website.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Why adding a stamp to your ballot won't make it first-class mail",
+      "claim": "Did Gloria Steinem work with the CIA? The truth about her past",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/usps-stamp-ballot-first-class-mail/",
+      "url": "https://www.snopes.com/fact-check/gloria-steinem-cia-connection/",
       "topic": "Trending"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Secretly Recorded Footage Shows Elon Musk Observing A Portal At SpaceX -- Video Is Associated With AI Creator",
+      "claim": "FAKE 'Epstein Files' Video Shows People Locked In Cages -- It Is From Horror YouTube Channel 'Life Of Luxury",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-secretive-footage-shows-elon-musk-observing-a-portal-at-spacex.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-not-from-epstein-files-shows-crying-pregnant-woman-people-locked-in-cages.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Trump renamed Lake Ontario to 'Lake America.' We've investigated these 4 claims",
+      "claim": "Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-lake-ontario-renaming/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/09/04/canada-chinese-steel-us-tariffs/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
+      "headline": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-04T16:49:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-04T22:48:38+00:00"
     },
     {
       "n": 2,
-      "headline": "Whatever happened to the U.S. campaign to ban child marriage?",
+      "headline": "The U.N. backs a new world map showing Africa in its true relative size",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/04/g-s1-141468/child-marriage-united-states-india-global",
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5958611/africa-world-map-un-vote",
       "topic": "Trending",
-      "published": "2026-09-04T17:01:24+00:00"
+      "published": "2026-09-04T22:26:35+00:00"
     },
     {
       "n": 3,
-      "headline": "Russian drone strikes Ukraine security service headquarters as U.S. talks on the war are expected",
+      "headline": "Federal judge extends block on Trump order seeking to limit mail voting in the midterms",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/russian-drone-strikes-ukraine-security-service-headquarters-as-u-s-talks-on-the-war-are-expected",
-      "topic": "World",
-      "published": "2026-09-04T18:32:34+00:00"
+      "url": "https://www.pbs.org/newshour/politics/federal-judge-extends-block-on-trump-order-seeking-to-limit-mail-voting-in-the-midterms",
+      "topic": "Politics",
+      "published": "2026-09-05T00:19:17+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Germany's alliance against the far right",
+      "headline": "US envoys to visit Russia, Ukraine with plan 'to end war",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-s-alliance-against-the-far-right/a-79009105?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-04T18:36:00+00:00"
+      "url": "https://www.dw.com/en/us-envoys-to-visit-russia-ukraine-with-plan-to-end-war/a-79040773?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-05T01:27:00+00:00"
     },
     {
       "n": 6,
-      "headline": "A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
+      "headline": "Trump's peace envoys to visit Moscow and Kyiv over weekend",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cd79vp91321o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-04T14:40:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c23x0z48x0no?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-04T20:03:52+00:00"
     },
     {
       "n": 7,
-      "headline": "With jury deadlocked, Judge declares a mistrial in Lindsay Clancy's murder case",
+      "headline": "4 things investigators learned about the dysfunction at Trump's Labor Department",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/04/nx-s1-5950421/lindsay-clancy-trial-verdict-mistrial",
-      "topic": "Trending",
-      "published": "2026-09-04T16:20:30+00:00"
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5958601/labor-department-inspector-general-secretary-chavez-deremer",
+      "topic": "Politics",
+      "published": "2026-09-04T21:47:19+00:00"
     },
     {
       "n": 8,
-      "headline": "Trump administration pushes to remove tax exemption for private colleges with DEI policies",
+      "headline": "Technology is reshaping education. But is it helping students learn?",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/education/trump-administration-pushes-to-remove-tax-exemption-for-private-colleges-with-dei-policies",
-      "topic": "Politics",
-      "published": "2026-09-04T18:13:08+00:00"
+      "url": "https://www.pbs.org/newshour/video/horizons/2026/09/technology-is-reshaping-education-but-is-it-helping-students-learn",
+      "topic": "Trending",
+      "published": "2026-09-04T23:00:08+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Nigeria: Suspected oil thieves dead after inhaling fumes",
+      "headline": "UN approves world map reflecting true size of Africa",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nigeria-suspected-oil-thieves-dead-after-inhaling-fumes/a-79001997?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-04T15:35:00+00:00"
+      "url": "https://www.dw.com/en/un-approves-world-map-reflecting-true-size-of-africa/a-79040629?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-04T23:34:00+00:00"
     },
     {
       "n": 11,
-      "headline": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
+      "headline": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn45jg3zlz4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-04T11:54:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-04T16:49:15+00:00"
     },
     {
       "n": 12,
-      "headline": "Pulling the SNAP lever + Why Gen Zers bet (invest?) differently",
+      "headline": "Hidden tribunals': Immigration court due process in tumult with new locations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/04/nx-s1-5955821/pulling-the-snap-lever-why-gen-zers-bet-invest-differently",
+      "url": "https://www.npr.org/2026/09/04/g-s1-142042/immigration-court-hidden-tribunals",
       "topic": "Trending",
-      "published": "2026-09-04T15:04:53+00:00"
+      "published": "2026-09-04T21:11:56+00:00"
     },
     {
       "n": 13,
-      "headline": "Missouri court blocks Trump-backed U.S. House map and orders it to be put to a vote",
+      "headline": "Why the U.S. job market remains resilient in face of global pressures and inflation",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/missouri-court-blocks-trump-backed-u-s-house-map-and-orders-it-to-be-put-to-a-vote",
-      "topic": "Politics",
-      "published": "2026-09-04T17:48:45+00:00"
+      "url": "https://www.pbs.org/newshour/show/why-the-u-s-job-market-remains-resilient-in-face-of-global-pressures-and-inflation",
+      "topic": "Money",
+      "published": "2026-09-04T22:55:43+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany, partners aim to finalize 'return hubs' by year end",
+      "headline": "Outrage as Maltese tycoon acquitted in journalist's murder",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-partners-aim-to-finalize-return-hubs-by-year-end/a-79004242?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/outrage-as-maltese-tycoon-acquitted-in-journalist-s-murder/a-79027008?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-04T14:08:00+00:00"
+      "published": "2026-09-04T19:31:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
+      "headline": "UN votes to adopt new world map to reflect Africa's true size",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5yep7y48x2o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-09-04T16:02:32+00:00"
+      "published": "2026-09-05T00:53:11+00:00"
     },
     {
       "n": 17,
-      "headline": "Philippine vice president is ordered arrested for threats against the president",
+      "headline": "The health system in Nepal is not prepared for this",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/04/g-s1-142016/philippine-vice-president-is-ordered-arrested-for-threats-against-the-president",
-      "topic": "Politics",
-      "published": "2026-09-04T13:42:10+00:00"
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5954050/nepal-flood-waters-physical-mental-health",
+      "topic": "Health",
+      "published": "2026-09-04T20:41:08+00:00"
     }
   ]
 }
