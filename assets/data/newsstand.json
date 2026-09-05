@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T11:33:35Z",
+  "generated_at": "2026-09-05T17:52:38Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Lindsay Clancy GoFundMe amass over $1M, while mom who saved kids from fire raised $42K?",
+      "claim": "Did Trump sign executive order changing name of New Mexico to 'New America'? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/lindsay-clancy-emma-schols-fundraisers/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/rename-new-mexico-to-new-america/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Judge Declares Mistrial In Lindsay Clancy Case After Lone Juror Refuses To Budge",
+      "claim": "House GOP Leaders Don’t Crack The Whip To Advance Agenda Like Dems Do",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/04/judge-lindsay-clancy-mistrial-emergency-stay-massachusetts-supreme-court",
+      "url": "https://dailycaller.com/2026/09/05/democrat-republican-leadership-rules-break-from-majority",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Gloria Steinem work with the CIA? The truth about her past",
+      "claim": "Did Lindsay Clancy GoFundMe amass over $1M, while mom who saved kids from fire raised $42K?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/gloria-steinem-cia-connection/",
+      "url": "https://www.snopes.com/fact-check/lindsay-clancy-emma-schols-fundraisers/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Diesel Prices Now Higher Than They Were Under Biden",
+      "claim": "‘Most Of Us Will Be Very Upset’: Many 9/11 Families Not Too Thrilled About Mamdani Attendance At Memorial Ceremony",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/04/diesel-prices-higher-joe-biden-iran-war-ukraine",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/05/9-11-families-mamdani-memorial-ceremony-petition",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know",
+      "claim": "Did Gloria Steinem work with the CIA? The truth about her past",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/04/canada-chinese-steel-us-tariffs/",
+      "url": "https://www.snopes.com/fact-check/gloria-steinem-cia-connection/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
+      "headline": "US envoys meet Putin in Moscow for Ukraine talks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-04T22:48:38+00:00"
+      "published": "2026-09-05T17:18:31+00:00"
     },
     {
       "n": 2,
-      "headline": "Whatever happened to the floating schools of Bangladesh?",
+      "headline": "US military hits 3 Iranian oil tankers after saying Navy warships were targeted",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/05/g-s1-141464/climate-change-floating-schools-bangladesh",
+      "url": "https://www.npr.org/2026/09/05/nx-s1-5959159/us-iran-warships-targeted",
       "topic": "Trending",
-      "published": "2026-09-05T11:26:09+00:00"
+      "published": "2026-09-05T15:05:08+00:00"
     },
     {
       "n": 3,
-      "headline": "Federal judge extends block on Trump order seeking to limit mail voting in the midterms",
+      "headline": "Kennedy Center renews call for Trump-backed shutdown after part of a ceiling collapses",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/federal-judge-extends-block-on-trump-order-seeking-to-limit-mail-voting-in-the-midterms",
+      "url": "https://www.pbs.org/newshour/politics/kennedy-center-renews-call-for-trump-backed-shutdown-after-part-of-a-ceiling-collapses",
       "topic": "Politics",
-      "published": "2026-09-05T00:19:17+00:00"
+      "published": "2026-09-05T17:33:29+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US envoys fly to Russia, then Ukraine with plan 'to end war",
+      "headline": "Croatia: Toxic waste protest draws tens of thousands",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-envoys-fly-to-russia-then-ukraine-with-plan-to-end-war/a-79040773?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-05T10:37:00+00:00"
+      "url": "https://www.dw.com/en/croatia-toxic-waste-protest-draws-tens-of-thousands/a-79049228?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-05T17:32:00+00:00"
     },
     {
       "n": 6,
-      "headline": "US envoys arrive in Moscow ahead of Ukraine talks",
+      "headline": "US hits three Iranian oil tankers after saying its warships were targeted",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-05T11:07:08+00:00"
+      "published": "2026-09-05T17:15:05+00:00"
     },
     {
       "n": 7,
-      "headline": "U.S. envoys in Moscow in new push for peace between Russia and Ukraine",
+      "headline": "Opinion: A sculpture in perpetual motion, removed",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/05/nx-s1-5959114/us-envoys-in-moscow-in-new-push-for-peace",
-      "topic": "World",
-      "published": "2026-09-05T11:08:57+00:00"
+      "url": "https://www.npr.org/2026/09/05/nx-s1-5948663/opinion-a-sculpture-in-perpetual-motion-removed",
+      "topic": "Trending",
+      "published": "2026-09-05T12:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "Technology is reshaping education. But is it helping students learn?",
+      "headline": "U.S.-Venezuela oil deal won't reduce domestic gasoline prices anytime soon, experts say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/video/horizons/2026/09/technology-is-reshaping-education-but-is-it-helping-students-learn",
+      "url": "https://www.pbs.org/newshour/economy/u-s-venezuela-oil-deal-wont-reduce-domestic-gasoline-prices-anytime-soon-experts-say",
       "topic": "Trending",
-      "published": "2026-09-04T23:00:08+00:00"
+      "published": "2026-09-05T17:17:40+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Iran war: Explosions reported near Kharg Island",
+      "headline": "Masked anti-migrant protesters block UK's Dover terminal",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-war-explosions-reported-near-kharg-island/live-79044467?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/masked-anti-migrant-protesters-block-uk-s-dover-terminal/a-79046929?maca=en-rss-en-all-1573-rdf",
       "topic": "World",
-      "published": "2026-09-05T08:16:00+00:00"
+      "published": "2026-09-05T14:00:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
+      "headline": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-04T16:49:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-04T22:48:38+00:00"
     },
     {
       "n": 12,
-      "headline": "Voters are fed up with data centers. Both parties are trying to cash in for midterms",
+      "headline": "Trump administration to dig at triumphal arch site despite no final federal approvals",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/05/nx-s1-5913671/ai-data-center-campaign-spending",
-      "topic": "Money",
-      "published": "2026-09-05T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/05/nx-s1-5957875/trump-administration-to-dig-at-triumphal-arch-site-despite-no-final-federal-approvals",
+      "topic": "Politics",
+      "published": "2026-09-05T11:43:24+00:00"
     },
     {
       "n": 13,
-      "headline": "Why the U.S. job market remains resilient in face of global pressures and inflation",
+      "headline": "For feminists, the deaths of Parton and Steinem days apart deliver a double dose of grief",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/why-the-u-s-job-market-remains-resilient-in-face-of-global-pressures-and-inflation",
-      "topic": "Money",
-      "published": "2026-09-04T22:55:43+00:00"
+      "url": "https://www.pbs.org/newshour/nation/for-feminists-the-deaths-of-parton-and-steinem-days-apart-deliver-a-double-dose-of-grief",
+      "topic": "Trending",
+      "published": "2026-09-05T16:56:30+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany: From emigration to immigration destination",
+      "headline": "Fact check: Germany's postal voting system isn't rigged",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-from-emigration-to-immigration-destination/a-78805541?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/fact-check-germany-s-postal-voting-system-isn-t-rigged/a-78958438?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-05T08:07:00+00:00"
+      "published": "2026-09-05T13:55:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Nepal rescuers try to reach dozens trapped in tunnel after two found alive",
+      "headline": "At least two dead in blast at Bolivia military barracks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c7903j1vpe5o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c3v45xy67g5o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-04T12:30:56+00:00"
+      "published": "2026-09-05T15:22:41+00:00"
     },
     {
       "n": 17,
-      "headline": "Flock cameras draw opposition from across the political spectrum",
+      "headline": "Whatever happened to the floating schools of Bangladesh?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/05/nx-s1-5955778/flock-surveillance-camera-opposition-politics",
+      "url": "https://www.npr.org/2026/09/05/g-s1-141464/climate-change-floating-schools-bangladesh",
       "topic": "Trending",
-      "published": "2026-09-05T09:00:00+00:00"
+      "published": "2026-09-05T11:26:09+00:00"
     }
   ]
 }
