@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T17:52:38Z",
+  "generated_at": "2026-09-06T02:36:07Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump sign executive order changing name of New Mexico to 'New America'? Here's the truth",
+      "claim": "15 rumors about gender-affirming care, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/rename-new-mexico-to-new-america/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/gender-affirming-care-claims/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Lindsay Clancy GoFundMe amass over $1M, while mom who saved kids from fire raised $42K?",
+      "claim": "Some Target baskets can track you in-store. Here's what to know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/lindsay-clancy-emma-schols-fundraisers/",
+      "url": "https://www.snopes.com/fact-check/target-basket-trackers/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "‘Most Of Us Will Be Very Upset’: Many 9/11 Families Not Too Thrilled About Mamdani Attendance At Memorial Ceremony",
+      "claim": "What Happens With The US-Venezuela Oil Deal After 2028?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/05/9-11-families-mamdani-memorial-ceremony-petition",
+      "url": "https://dailycaller.com/2026/09/05/opinion-venezuela-oil-deal-2028-david-blackmon",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Gloria Steinem work with the CIA? The truth about her past",
+      "claim": "18 claims about Trump's National Park Service during his 2nd term, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/gloria-steinem-cia-connection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/trump-national-park-service/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US envoys meet Putin in Moscow for Ukraine talks",
+      "headline": "US envoys set for Ukraine talks after meeting Putin in Moscow",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-05T17:18:31+00:00"
+      "published": "2026-09-06T02:24:16+00:00"
     },
     {
       "n": 2,
-      "headline": "US military hits 3 Iranian oil tankers after saying Navy warships were targeted",
+      "headline": "Jazz legend John Coltrane's Philadelphia house to become a cultural heritage site",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/05/nx-s1-5955500/saxophone-legend-john-coltranes-philadelphia-house-to-become-a-cultural-heritage-site",
+      "topic": "Trending",
+      "published": "2026-09-05T21:01:10+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "Here's a look at 'reach' election races where Democrats hope to pull off House upsets",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/heres-a-look-at-reach-election-races-where-democrats-hope-to-pull-off-house-upsets",
+      "topic": "Politics",
+      "published": "2026-09-05T22:36:33+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Egyptian TV presenter among 12 sentenced to death for drug crime",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
+      "topic": "Health",
+      "published": "2026-09-05T18:00:15+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Saxony-Anhalt's state election will have a nationwide impact",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/saxony-anhalt-s-state-election-will-have-a-nationwide-impact/a-78874569?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-06T01:43:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "US and Iran trade retaliatory attacks on ships as conflict flares",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-05T22:44:07+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "U.S. strikes Iranian oil tankers in retaliation for missile attacks on Navy ships",
       "source": "NPR",
       "url": "https://www.npr.org/2026/09/05/nx-s1-5959159/us-iran-warships-targeted",
       "topic": "Trending",
       "published": "2026-09-05T15:05:08+00:00"
     },
     {
-      "n": 3,
-      "headline": "Kennedy Center renews call for Trump-backed shutdown after part of a ceiling collapses",
+      "n": 8,
+      "headline": "Why Mexican cartels are increasingly using car bombs and other explosives",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/kennedy-center-renews-call-for-trump-backed-shutdown-after-part-of-a-ceiling-collapses",
-      "topic": "Politics",
-      "published": "2026-09-05T17:33:29+00:00"
+      "url": "https://www.pbs.org/newshour/world/why-mexican-cartels-are-increasingly-using-car-bombs-and-other-explosives",
+      "topic": "Trending",
+      "published": "2026-09-05T21:56:52+00:00"
     },
     {
-      "n": 4,
+      "n": 9,
       "headline": "UN votes to adopt new world map that shows Africa’s true scale",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
@@ -177,23 +217,23 @@
       "published": "2026-09-04T16:49:29+00:00"
     },
     {
-      "n": 5,
-      "headline": "Croatia: Toxic waste protest draws tens of thousands",
+      "n": 10,
+      "headline": "US envoys meet with Putin, leave Russia for Kyiv",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/croatia-toxic-waste-protest-draws-tens-of-thousands/a-79049228?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-05T17:32:00+00:00"
+      "url": "https://www.dw.com/en/us-envoys-meet-with-putin-leave-russia-for-kyiv/a-79040773?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-05T22:45:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "US hits three Iranian oil tankers after saying its warships were targeted",
+      "n": 11,
+      "headline": "TV presenter among 11 sentenced to death in Egypt drugs case",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c5y7gk9knnlo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-05T17:15:05+00:00"
+      "published": "2026-09-05T21:29:38+00:00"
     },
     {
-      "n": 7,
+      "n": 12,
       "headline": "Opinion: A sculpture in perpetual motion, removed",
       "source": "NPR",
       "url": "https://www.npr.org/2026/09/05/nx-s1-5948663/opinion-a-sculpture-in-perpetual-motion-removed",
@@ -201,15 +241,15 @@
       "published": "2026-09-05T12:00:00+00:00"
     },
     {
-      "n": 8,
-      "headline": "U.S.-Venezuela oil deal won't reduce domestic gasoline prices anytime soon, experts say",
+      "n": 13,
+      "headline": "Flock cameras become midterm campaign target as voters balk at tech companies' power",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/u-s-venezuela-oil-deal-wont-reduce-domestic-gasoline-prices-anytime-soon-experts-say",
+      "url": "https://www.pbs.org/newshour/politics/flock-cameras-become-midterm-campaign-target-as-voters-balk-at-tech-companies-power",
       "topic": "Trending",
-      "published": "2026-09-05T17:17:40+00:00"
+      "published": "2026-09-05T21:07:22+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Spain’s PM says no evidence ‘whatsoever’ Morocco behind Ceuta border breach",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/03/spain-pm-evidence-morocco-ceuta-border-breach",
@@ -217,68 +257,28 @@
       "published": "2026-09-03T12:52:08+00:00"
     },
     {
-      "n": 10,
-      "headline": "Masked anti-migrant protesters block UK's Dover terminal",
+      "n": 15,
+      "headline": "German company successfully launches rocket to space",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/masked-anti-migrant-protesters-block-uk-s-dover-terminal/a-79046929?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-05T14:00:00+00:00"
+      "url": "https://www.dw.com/en/german-company-successfully-launches-rocket-to-space/a-79050717?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-05T22:26:00+00:00"
     },
     {
-      "n": 11,
-      "headline": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
+      "n": 16,
+      "headline": "Watch: Moment 64-year-old Nepali woman is found alive in mud-buried home",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/videos/c4gd24d1d0do?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-04T22:48:38+00:00"
+      "published": "2026-09-06T01:54:29+00:00"
     },
     {
-      "n": 12,
+      "n": 17,
       "headline": "Trump administration to dig at triumphal arch site despite no final federal approvals",
       "source": "NPR",
       "url": "https://www.npr.org/2026/09/05/nx-s1-5957875/trump-administration-to-dig-at-triumphal-arch-site-despite-no-final-federal-approvals",
       "topic": "Politics",
       "published": "2026-09-05T11:43:24+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "For feminists, the deaths of Parton and Steinem days apart deliver a double dose of grief",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/for-feminists-the-deaths-of-parton-and-steinem-days-apart-deliver-a-double-dose-of-grief",
-      "topic": "Trending",
-      "published": "2026-09-05T16:56:30+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "‘We continue to suffer’: victims of apartheid-era Sharpeville massacre demand compensation",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/03/victims-sue-south-african-government-sharpeville-massacre-apartheid",
-      "topic": "Trending",
-      "published": "2026-09-03T10:11:37+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "Fact check: Germany's postal voting system isn't rigged",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fact-check-germany-s-postal-voting-system-isn-t-rigged/a-78958438?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-05T13:55:00+00:00"
-    },
-    {
-      "n": 16,
-      "headline": "At least two dead in blast at Bolivia military barracks",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3v45xy67g5o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-05T15:22:41+00:00"
-    },
-    {
-      "n": 17,
-      "headline": "Whatever happened to the floating schools of Bangladesh?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/05/g-s1-141464/climate-change-floating-schools-bangladesh",
-      "topic": "Trending",
-      "published": "2026-09-05T11:26:09+00:00"
     }
   ]
 }
