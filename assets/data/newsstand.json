@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T11:53:29Z",
+  "generated_at": "2026-09-06T17:57:50Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "15 rumors about gender-affirming care, examined",
+      "claim": "Why federal judge ruled First Amendment protects certain AI-generated child sex abuse material",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/gender-affirming-care-claims/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/judge-first-amendment-ai-csam/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Some Target baskets can track you in-store. Here's what to know",
+      "claim": "15 rumors about gender-affirming care, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/target-basket-trackers/",
+      "url": "https://www.snopes.com/collections/gender-affirming-care-claims/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "What Happens With The US-Venezuela Oil Deal After 2028?",
+      "claim": "Energy Secretary Gives Reality Check After US Military Takes Out Three Iranian Oil Tankers",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/05/opinion-venezuela-oil-deal-2028-david-blackmon",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/06/chris-wright-reality-check-cnn-state-union-dana-bash-hormuz-strait-traffic",
+      "topic": "Science"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "18 claims about Trump's National Park Service during his 2nd term, investigated",
+      "claim": "Some Target baskets can track you in-store. Here's what to know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-national-park-service/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/target-basket-trackers/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US envoys arrive in Ukraine for talks after meeting Putin in Russia",
+      "headline": "US envoys hold talks with Zelensky in Kyiv after meeting Putin",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-06T11:19:30+00:00"
+      "topic": "Trending",
+      "published": "2026-09-06T15:32:27+00:00"
     },
     {
       "n": 2,
-      "headline": "American Muslims are giving Texas barbecue a halal makeover",
+      "headline": "German exit polls suggest far-right party has big lead in regional election",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5927184/american-muslims-are-giving-texas-barbecue-a-halal-makeover",
-      "topic": "Trending",
-      "published": "2026-09-06T10:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5955677/german-exit-polls-suggest-far-right-party-big-lead-in-regional-election",
+      "topic": "Politics",
+      "published": "2026-09-06T16:36:48+00:00"
     },
     {
       "n": 3,
-      "headline": "Here's a look at 'reach' election races where Democrats hope to pull off House upsets",
+      "headline": "Iran claims a strike on a U.S. ship in the Strait of Hormuz but the U.S. denies it",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/heres-a-look-at-reach-election-races-where-democrats-hope-to-pull-off-house-upsets",
-      "topic": "Politics",
-      "published": "2026-09-05T22:36:33+00:00"
+      "url": "https://www.pbs.org/newshour/world/iran-claims-a-strike-on-a-u-s-ship-in-the-strait-of-hormuz-but-the-u-s-denies-it",
+      "topic": "World",
+      "published": "2026-09-06T17:48:51+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "India news: Rahul Gandhi backs student protests in Maharashtra",
+      "headline": "Saxony-Anhalt: Far-right AfD secures huge lead in key vote",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-rahul-gandhi-backs-student-protests-in-maharashtra/live-79043198?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-06T10:57:00+00:00"
+      "url": "https://www.dw.com/en/saxony-anhalt-far-right-afd-secures-huge-lead-in-key-vote/live-78754934?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-06T16:02:00+00:00"
     },
     {
       "n": 6,
-      "headline": "US and Iran trade retaliatory attacks on ships as conflict flares",
+      "headline": "German far-right set for big win in eastern state - projections",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-05T22:44:07+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-06T17:42:19+00:00"
     },
     {
       "n": 7,
-      "headline": "U.S. envoys Witkoff and Kushner land for talks in Kyiv after meeting Putin in Moscow",
+      "headline": "American Muslims are giving Texas barbecue a halal makeover",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5959657/us-envoys-witkoff-kushner-talks-in-kyiv-putin-moscow",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5927184/american-muslims-are-giving-texas-barbecue-a-halal-makeover",
       "topic": "Trending",
-      "published": "2026-09-06T09:51:04+00:00"
+      "published": "2026-09-06T10:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "Why Mexican cartels are increasingly using car bombs and other explosives",
+      "headline": "German far-right party set for strong win in regional election but uncertain of governing",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/why-mexican-cartels-are-increasingly-using-car-bombs-and-other-explosives",
-      "topic": "Trending",
-      "published": "2026-09-05T21:56:52+00:00"
+      "url": "https://www.pbs.org/newshour/world/german-far-right-party-set-for-strong-win-in-regional-election-but-uncertain-of-governing",
+      "topic": "Politics",
+      "published": "2026-09-06T17:34:11+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Germany, Kosovo unite against ticks carrying deadly virus",
+      "headline": "Israeli strikes on Lebanon kill several despite truce",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-kosovo-unite-against-ticks-carrying-deadly-virus/a-78655223?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-09-06T10:25:00+00:00"
+      "url": "https://www.dw.com/en/israeli-strikes-on-lebanon-kill-several-despite-truce/a-79065011?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-06T15:31:00+00:00"
     },
     {
       "n": 11,
-      "headline": "TV presenter among 12 sentenced to death in Egypt drugs case",
+      "headline": "Volcano eruption leaves 170,000 passengers stranded in Indonesia",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5y7gk9knnlo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-06T08:05:22+00:00"
+      "published": "2026-09-06T16:00:21+00:00"
     },
     {
       "n": 12,
-      "headline": "QUIZ: Ugh, I'll do it later. How much do you know about procrastination?",
+      "headline": "Witkoff and Kushner call Kyiv talks 'substantive' after Moscow Putin meeting",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5957512/quiz-ugh-ill-do-it-later-how-much-do-you-know-about-procrastination",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5959657/us-envoys-witkoff-kushner-talks-in-kyiv-putin-moscow",
       "topic": "Trending",
-      "published": "2026-09-06T09:01:00+00:00"
+      "published": "2026-09-06T09:51:04+00:00"
     },
     {
       "n": 13,
-      "headline": "Flock cameras become midterm campaign target as voters balk at tech companies' power",
+      "headline": "U.S. tourism groups want to win Canadian visitors back. A testy trade war isn't helping",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/flock-cameras-become-midterm-campaign-target-as-voters-balk-at-tech-companies-power",
-      "topic": "Trending",
-      "published": "2026-09-05T21:07:22+00:00"
+      "url": "https://www.pbs.org/newshour/economy/u-s-tourism-groups-want-to-win-canadian-visitors-back-a-testy-trade-war-isnt-helping",
+      "topic": "World",
+      "published": "2026-09-06T17:07:16+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany plans anti-drone shield after Leipzig attack: report",
+      "headline": "US envoys Witkoff, Kushner arrive in Kiyv after Putin talks",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-plans-anti-drone-shield-after-leipzig-attack-report/a-79052604?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-envoys-witkoff-kushner-arrive-in-kiyv-after-putin-talks/a-79054779?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-06T10:11:00+00:00"
+      "published": "2026-09-06T13:02:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Volcano eruption leaves 150,000 passengers stranded in Indonesia",
+      "headline": "Dozens feared trapped in collapsed building in Delhi",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c8r6ezx1jmro?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-06T09:56:39+00:00"
+      "published": "2026-09-06T16:54:34+00:00"
     },
     {
       "n": 17,
-      "headline": "Whatever happened to kindness? Spoiler alert: Our readers prove it's alive and well",
+      "headline": "QUIZ: Ugh, I'll do it later. How much do you know about procrastination?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/g-s1-141564/kindness-respect-feelings",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5957512/quiz-ugh-ill-do-it-later-how-much-do-you-know-about-procrastination",
       "topic": "Trending",
-      "published": "2026-09-06T08:44:48+00:00"
+      "published": "2026-09-06T09:01:00+00:00"
     }
   ]
 }
