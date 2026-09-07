@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T17:57:50Z",
+  "generated_at": "2026-09-07T02:33:56Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Why federal judge ruled First Amendment protects certain AI-generated child sex abuse material",
+      "claim": "Did RFK Jr. once testify that brain damage prevented him from holding a job?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/judge-first-amendment-ai-csam/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/news/2026/09/07/rfk-jr-brain-damage-job/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "House GOP Leaders Don’t Crack The Whip To Advance Agenda Like Dems Do",
+      "claim": "Here’s How Loaded Supreme Court’s Second Amendment Caseload Could Get",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/05/democrat-republican-leadership-rules-break-from-majority",
+      "url": "https://dailycaller.com/2026/09/06/heres-how-heavy-the-supreme-courts-second-amendment-caseload-could-get",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "15 rumors about gender-affirming care, examined",
+      "claim": "Oklahoma inmates made $2 an hour working for political call centers, documents show",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/gender-affirming-care-claims/",
+      "url": "https://www.snopes.com/fact-check/oklahoma-inmates-call-center-pac/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Energy Secretary Gives Reality Check After US Military Takes Out Three Iranian Oil Tankers",
+      "claim": "Trump Administration Floats Subsidizing Parents To Raise Children At Home",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/06/chris-wright-reality-check-cnn-state-union-dana-bash-hormuz-strait-traffic",
-      "topic": "Science"
+      "url": "https://dailycaller.com/2026/09/06/trump-subsidize-stay-at-home-parents-child-care",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Some Target baskets can track you in-store. Here's what to know",
+      "claim": "Are you concerned about contaminated food? Here are 15 rumors we've inspected",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/target-basket-trackers/",
+      "url": "https://www.snopes.com/collections/contaminated-food-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US envoys hold talks with Zelensky in Kyiv after meeting Putin",
+      "headline": "Germany's far-right AfD set for big win in eastern state, just short of majority",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-06T15:32:27+00:00"
+      "published": "2026-09-06T23:02:45+00:00"
     },
     {
       "n": 2,
-      "headline": "German exit polls suggest far-right party has big lead in regional election",
+      "headline": "Five dead after Amazon cargo plane crashes at Miami airport",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5955677/german-exit-polls-suggest-far-right-party-big-lead-in-regional-election",
-      "topic": "Politics",
-      "published": "2026-09-06T16:36:48+00:00"
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5959749/amazon-cargo-plane-crashes-at-miami-airport",
+      "topic": "Money",
+      "published": "2026-09-06T19:54:28+00:00"
     },
     {
       "n": 3,
-      "headline": "Iran claims a strike on a U.S. ship in the Strait of Hormuz but the U.S. denies it",
+      "headline": "Hawaii residents told to expect tropical storm conditions as Hurricane Lowell passes to the west",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/iran-claims-a-strike-on-a-u-s-ship-in-the-strait-of-hormuz-but-the-u-s-denies-it",
-      "topic": "World",
-      "published": "2026-09-06T17:48:51+00:00"
+      "url": "https://www.pbs.org/newshour/nation/hawaii-residents-told-to-expect-tropical-storm-conditions-as-hurricane-lowell-passes-to-the-west",
+      "topic": "Trending",
+      "published": "2026-09-06T22:28:24+00:00"
     },
     {
       "n": 4,
@@ -178,38 +178,30 @@
     },
     {
       "n": 5,
-      "headline": "Saxony-Anhalt: Far-right AfD secures huge lead in key vote",
+      "headline": "Saxony-Anhalt: Preliminary official results show AfD tops vote",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/saxony-anhalt-far-right-afd-secures-huge-lead-in-key-vote/live-78754934?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/saxony-anhalt-preliminary-official-results-show-afd-tops-vote/live-78754934?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-09-06T16:02:00+00:00"
+      "published": "2026-09-07T01:35:00+00:00"
     },
     {
       "n": 6,
-      "headline": "German far-right set for big win in eastern state - projections",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-06T17:42:19+00:00"
+      "headline": "German exit polls suggest far-right party has big lead in regional election",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5955677/german-afd-far-right-exit",
+      "topic": "Politics",
+      "published": "2026-09-06T16:36:48+00:00"
     },
     {
       "n": 7,
-      "headline": "American Muslims are giving Texas barbecue a halal makeover",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5927184/american-muslims-are-giving-texas-barbecue-a-halal-makeover",
-      "topic": "Trending",
-      "published": "2026-09-06T10:00:00+00:00"
+      "headline": "At least 5 dead after Amazon cargo plane barreled off runway at Miami airport",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/at-least-5-dead-after-amazon-cargo-plane-barreled-off-runway-at-miami-airport",
+      "topic": "Money",
+      "published": "2026-09-06T21:56:35+00:00"
     },
     {
       "n": 8,
-      "headline": "German far-right party set for strong win in regional election but uncertain of governing",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/german-far-right-party-set-for-strong-win-in-regional-election-but-uncertain-of-governing",
-      "topic": "Politics",
-      "published": "2026-09-06T17:34:11+00:00"
-    },
-    {
-      "n": 9,
       "headline": "UN votes to adopt new world map that shows Africa’s true scale",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
@@ -217,39 +209,39 @@
       "published": "2026-09-04T16:49:29+00:00"
     },
     {
-      "n": 10,
-      "headline": "Israeli strikes on Lebanon kill several despite truce",
+      "n": 9,
+      "headline": "Several killed in Amazon cargo plane crash in Miami",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/israeli-strikes-on-lebanon-kill-several-despite-truce/a-79065011?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-06T15:31:00+00:00"
+      "url": "https://www.dw.com/en/several-killed-in-amazon-cargo-plane-crash-in-miami/a-79107365?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-09-06T23:19:00+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Zelensky says he expects war to continue into winter after talks with US envoys",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-06T20:41:58+00:00"
     },
     {
       "n": 11,
-      "headline": "Volcano eruption leaves 170,000 passengers stranded in Indonesia",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
+      "headline": "American Muslims are giving Texas barbecue a halal makeover",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5927184/american-muslims-are-giving-texas-barbecue-a-halal-makeover",
       "topic": "Trending",
-      "published": "2026-09-06T16:00:21+00:00"
+      "published": "2026-09-06T10:00:00+00:00"
     },
     {
       "n": 12,
-      "headline": "Witkoff and Kushner call Kyiv talks 'substantive' after Moscow Putin meeting",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5959657/us-envoys-witkoff-kushner-talks-in-kyiv-putin-moscow",
+      "headline": "Explosion of fireworks in central Mexico kills at least 10, injures 64",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/explosion-of-fireworks-in-central-mexico-kills-at-least-10-injures-64",
       "topic": "Trending",
-      "published": "2026-09-06T09:51:04+00:00"
+      "published": "2026-09-06T21:10:40+00:00"
     },
     {
       "n": 13,
-      "headline": "U.S. tourism groups want to win Canadian visitors back. A testy trade war isn't helping",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/u-s-tourism-groups-want-to-win-canadian-visitors-back-a-testy-trade-war-isnt-helping",
-      "topic": "World",
-      "published": "2026-09-06T17:07:16+00:00"
-    },
-    {
-      "n": 14,
       "headline": "Spain’s PM says no evidence ‘whatsoever’ Morocco behind Ceuta border breach",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/03/spain-pm-evidence-morocco-ceuta-border-breach",
@@ -257,28 +249,36 @@
       "published": "2026-09-03T12:52:08+00:00"
     },
     {
-      "n": 15,
-      "headline": "US envoys Witkoff, Kushner arrive in Kiyv after Putin talks",
+      "n": 14,
+      "headline": "US envoys Witkoff and Kushner hold Ukraine talks after meeting Putin",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-envoys-witkoff-kushner-arrive-in-kiyv-after-putin-talks/a-79054779?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-envoys-witkoff-and-kushner-hold-ukraine-talks-after-meeting-putin/a-79054779?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-06T13:02:00+00:00"
+      "published": "2026-09-06T22:22:00+00:00"
+    },
+    {
+      "n": 15,
+      "headline": "Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-06T20:52:12+00:00"
     },
     {
       "n": 16,
-      "headline": "Dozens feared trapped in collapsed building in Delhi",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8r6ezx1jmro?at_medium=RSS&at_campaign=rss",
+      "headline": "Witkoff and Kushner call Kyiv talks 'substantive' after Moscow Putin meeting",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5959657/us-envoys-witkoff-kushner-talks-in-kyiv-putin-moscow",
       "topic": "Trending",
-      "published": "2026-09-06T16:54:34+00:00"
+      "published": "2026-09-06T09:51:04+00:00"
     },
     {
       "n": 17,
-      "headline": "QUIZ: Ugh, I'll do it later. How much do you know about procrastination?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5957512/quiz-ugh-ill-do-it-later-how-much-do-you-know-about-procrastination",
+      "headline": "Decades after 9/11, toxic dust and PTSD may be accelerating brain aging among first responders",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/health/decades-after-9-11-toxic-dust-and-ptsd-may-be-accelerating-brain-aging-among-first-responders",
       "topic": "Trending",
-      "published": "2026-09-06T09:01:00+00:00"
+      "published": "2026-09-06T18:35:49+00:00"
     }
   ]
 }
