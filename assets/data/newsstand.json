@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T02:33:56Z",
+  "generated_at": "2026-09-07T13:54:34Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did RFK Jr. once testify that brain damage prevented him from holding a job?",
+      "claim": "9 false or misleading claims RFK Jr. has made, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/07/rfk-jr-brain-damage-job/",
+      "url": "https://www.snopes.com/collections/rfk-false-misleading-claims/",
       "topic": "Trending"
     },
     {
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "BJP’s violent meme war: The attacks on opponents and dissenters as ‘Dimagi Naxals’",
+      "claim": "Saurav Das shares fake Gaurav Bhatia quote on Swatantra Bhardwaj; deletes after being called out",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bjps-violent-meme-war-aggressive-attacks-brand-opposition-dimaagi-naxals/",
-      "topic": "World"
+      "url": "https://www.altnews.in/saurav-das-shares-fake-gaurav-bhatia-quote-on-swatantra-bhardwaj-deletes-after-being-called-out/",
+      "topic": "Trending"
     },
     {
       "n": 7,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Oklahoma inmates made $2 an hour working for political call centers, documents show",
+      "claim": "Did TV chef Jamie Oliver win lawsuit against McDonald's over 'toxic' food claims?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/oklahoma-inmates-call-center-pac/",
+      "url": "https://www.snopes.com/news/2026/09/07/chef-jamie-oliver-mcdonalds/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Trump Administration Floats Subsidizing Parents To Raise Children At Home",
+      "claim": "Mamdani Signs 9/11 Order Recognizing Day Of Remembrance, Then Hands Symbolic Pen To Al-Qaeda Lawyer",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/06/trump-subsidize-stay-at-home-parents-child-care",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/06/mamdani-9-11-pen-aide-al-qaeda-lawyer",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "‘Godi Media Haye Haye’ to heckling on the ground: Why TV reporters became a target during CJP protests",
+      "claim": "‘They dragged us… hit us with batons… I could not breathe’: Journalist Shaheen Khan recounts ‘assault’ at Saket PS",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/godi-media-haye-haye-to-heckling-on-the-ground-why-tv-reporters-became-a-target-during-cjp-protests/",
+      "url": "https://www.altnews.in/they-dragged-us-hit-us-with-batons-i-could-not-breathe-journalist-shaheen-khan-recounts-assault-at-saket-ps/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Are you concerned about contaminated food? Here are 15 rumors we've inspected",
+      "claim": "4 claims about Abdul El-Sayed, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/contaminated-food-rumors-collection/",
+      "url": "https://www.snopes.com/collections/el-sayed-claims/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Germany's far-right AfD set for big win in eastern state, just short of majority",
+      "headline": "Germany's far-right AfD says 'democracy demands' parties work with them after state election win",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-06T23:02:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-07T12:22:39+00:00"
     },
     {
       "n": 2,
-      "headline": "Five dead after Amazon cargo plane crashes at Miami airport",
+      "headline": "As Nepal identifies those killed in the floods, questions grow over China's reporting",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5959749/amazon-cargo-plane-crashes-at-miami-airport",
-      "topic": "Money",
-      "published": "2026-09-06T19:54:28+00:00"
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5960357/nepal-floods-questions-over-chinas-reporting",
+      "topic": "World",
+      "published": "2026-09-07T13:31:16+00:00"
     },
     {
       "n": 3,
@@ -170,30 +170,38 @@
     },
     {
       "n": 4,
-      "headline": "Egyptian TV presenter among 12 sentenced to death for drug crime",
+      "headline": "Weather tracker: Typhoon Saudel causes mass evacuations in south-east China",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
-      "topic": "Health",
-      "published": "2026-09-05T18:00:15+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/07/typhoon-saudel-mass-evacuations-south-east-china-weather-tracker",
+      "topic": "Science",
+      "published": "2026-09-07T08:27:08+00:00"
     },
     {
       "n": 5,
-      "headline": "Saxony-Anhalt: Preliminary official results show AfD tops vote",
+      "headline": "EU's Von der Leyen pledges $232 million Greenland investment",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/saxony-anhalt-preliminary-official-results-show-afd-tops-vote/live-78754934?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-07T01:35:00+00:00"
+      "url": "https://www.dw.com/en/eu-s-von-der-leyen-pledges-232-million-greenland-investment/a-79109197?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-07T13:35:00+00:00"
     },
     {
       "n": 6,
-      "headline": "German exit polls suggest far-right party has big lead in regional election",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5955677/german-afd-far-right-exit",
-      "topic": "Politics",
-      "published": "2026-09-06T16:36:48+00:00"
+      "headline": "Israeli strikes in southern Lebanese village kill 12",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c5yl96vz0edo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-07T13:39:23+00:00"
     },
     {
       "n": 7,
+      "headline": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany",
+      "topic": "Politics",
+      "published": "2026-09-07T11:11:51+00:00"
+    },
+    {
+      "n": 8,
       "headline": "At least 5 dead after Amazon cargo plane barreled off runway at Miami airport",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/nation/at-least-5-dead-after-amazon-cargo-plane-barreled-off-runway-at-miami-airport",
@@ -201,39 +209,39 @@
       "published": "2026-09-06T21:56:35+00:00"
     },
     {
-      "n": 8,
-      "headline": "UN votes to adopt new world map that shows Africa’s true scale",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
-      "topic": "World",
-      "published": "2026-09-04T16:49:29+00:00"
-    },
-    {
       "n": 9,
-      "headline": "Several killed in Amazon cargo plane crash in Miami",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/several-killed-in-amazon-cargo-plane-crash-in-miami/a-79107365?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-09-06T23:19:00+00:00"
+      "headline": "Egyptian TV presenter among 12 sentenced to death for drug crime",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
+      "topic": "Health",
+      "published": "2026-09-05T18:00:15+00:00"
     },
     {
       "n": 10,
-      "headline": "Zelensky says he expects war to continue into winter after talks with US envoys",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-06T20:41:58+00:00"
+      "headline": "Threatening letters revive fears among Kashmiri Pandits",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/threatening-letters-revive-fears-among-kashmiri-pandits/a-79144481?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-07T12:41:00+00:00"
     },
     {
       "n": 11,
-      "headline": "American Muslims are giving Texas barbecue a halal makeover",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5927184/american-muslims-are-giving-texas-barbecue-a-halal-makeover",
+      "headline": "New videos of man in 9/11 lawsuit reveal extremist links",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cr4vn1e207go?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-06T10:00:00+00:00"
+      "published": "2026-09-07T05:31:06+00:00"
     },
     {
       "n": 12,
+      "headline": "Her body temperature was 106': How heat is killing Americans in their homes",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5644782/heat-deaths-manufactured-mobile-homes",
+      "topic": "Trending",
+      "published": "2026-09-07T09:00:00+00:00"
+    },
+    {
+      "n": 13,
       "headline": "Explosion of fireworks in central Mexico kills at least 10, injures 64",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/world/explosion-of-fireworks-in-central-mexico-kills-at-least-10-injures-64",
@@ -241,44 +249,36 @@
       "published": "2026-09-06T21:10:40+00:00"
     },
     {
-      "n": 13,
-      "headline": "Spain’s PM says no evidence ‘whatsoever’ Morocco behind Ceuta border breach",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/03/spain-pm-evidence-morocco-ceuta-border-breach",
-      "topic": "World",
-      "published": "2026-09-03T12:52:08+00:00"
-    },
-    {
       "n": 14,
-      "headline": "US envoys Witkoff and Kushner hold Ukraine talks after meeting Putin",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-envoys-witkoff-and-kushner-hold-ukraine-talks-after-meeting-putin/a-79054779?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-06T22:22:00+00:00"
+      "headline": "UN votes to adopt new world map that shows Africa’s true scale",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
+      "topic": "World",
+      "published": "2026-09-04T16:49:29+00:00"
     },
     {
       "n": 15,
-      "headline": "Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-06T20:52:12+00:00"
+      "headline": "Saxony-Anhalt: Germany wakes up to 'unsettling' AfD victory",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/saxony-anhalt-germany-wakes-up-to-unsettling-afd-victory/live-78754934?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-07T12:30:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Witkoff and Kushner call Kyiv talks 'substantive' after Moscow Putin meeting",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5959657/us-envoys-witkoff-kushner-talks-in-kyiv-putin-moscow",
+      "headline": "Probe begins into why cargo plane overran Miami runway",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c0e3p1j7n3ro?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-06T09:51:04+00:00"
+      "published": "2026-09-07T09:54:40+00:00"
     },
     {
       "n": 17,
-      "headline": "Decades after 9/11, toxic dust and PTSD may be accelerating brain aging among first responders",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/decades-after-9-11-toxic-dust-and-ptsd-may-be-accelerating-brain-aging-among-first-responders",
+      "headline": "The first day of school: Bells, bikes, buses and big feelings",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5887297/new-school-year-starts",
       "topic": "Trending",
-      "published": "2026-09-06T18:35:49+00:00"
+      "published": "2026-09-07T09:00:00+00:00"
     }
   ]
 }
