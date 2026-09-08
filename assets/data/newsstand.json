@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T19:33:19Z",
+  "generated_at": "2026-09-08T02:47:10Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,10 +8,10 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Former U.S. Army Chief Of Staff Gen. Randy George Did NOT Say 'Donald Trump Absolutely Needs To Be Hospitalized, I'm Seriously Concerned About His Mental State",
+      "claim": "Trump Did NOT Make Post Saying FBI Should Investigate Hunter Biden's Cryptocurrency Coin",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-former-u-s-army-chief-of-staff-gen-randy-george-did-not-say-donald-trump-absolutely-needs-to-be-hospitalized-im-seriously-concerned-about-his-mental-state.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-make-post-saying-fbi-should-investigate-hunter-biden-cryptocurrency-coin.html",
       "topic": "Politics"
     },
     {
@@ -64,10 +64,10 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Image Of Robert De Niro With 'Trump Is My President' Shirt Was Posted On Trump's Truth Social Account -- It Is AI-Generated",
+      "claim": "Trump Did NOT Post Photo Of Himself In Military Uniform Covered In Medals",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-of-robert-deniro-with-trump-is-my-president-shirt-was-posted-on-trumps-truth-social-account.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-post-photo-of-himself-in-military-uniform-covered-in-medals.html",
       "topic": "Politics"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Illegal Immigrant On Run Crashes Into Mayor’s Wife, Sends Her To Hospital",
+      "claim": "Trump Admin Splinters Over AI’s Right To Train On Americans’ Copyrighted Work",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/07/illegal-immigrant-crashes-east-brunswick-nj-mayor-wife-penelope-cohen-ice-agents",
-      "topic": "Health"
+      "url": "https://dailycaller.com/2026/09/07/white-house-doj-artificial-intelligence-copyrighted-train-evan-swarztrauber",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,11 +120,11 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Image Shows AOC Wearing Workout Clothes In Her Kitchen -- Original Is Sleeveless Polka-Dot Dress",
+      "claim": "FAKE Video Of Golf Carts Crossing Into Traffic In Naperville, Illinois Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-shows-aoc-wearing-workout-clothes-in-her-kitchen.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-of-golf-carts-crossing-through-traffic-in-naperville-illinois-is-ai-generated.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
@@ -146,11 +146,11 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Germany's far-right AfD says 'democracy demands' parties work with them after state election win",
+      "headline": "Flight recorders recovered from 'devastating' Amazon cargo plane crash",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-07T14:04:01+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ce8e32n8epeo?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-09-07T22:23:03+00:00"
     },
     {
       "n": 2,
@@ -162,11 +162,11 @@
     },
     {
       "n": 3,
-      "headline": "Israeli airstrikes on a village in southern Lebanon kill 12 people, including 2 children",
+      "headline": "What went wrong before an Amazon cargo jet barreled off the runway in Miami",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/israeli-airstrikes-on-a-village-in-southern-lebanon-kill-12-people-including-2-children",
-      "topic": "Trending",
-      "published": "2026-09-07T19:10:51+00:00"
+      "url": "https://www.pbs.org/newshour/show/what-went-wrong-before-an-amazon-cargo-jet-barreled-off-the-runway-in-miami",
+      "topic": "Money",
+      "published": "2026-09-07T22:55:11+00:00"
     },
     {
       "n": 4,
@@ -178,19 +178,19 @@
     },
     {
       "n": 5,
-      "headline": "3 years on, Morocco earthquake victims still wait for help",
+      "headline": "Eiffel Tower employees strike after female staff removed",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/3-years-on-morocco-earthquake-victims-still-wait-for-help/a-78874844?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/eiffel-tower-employees-strike-after-female-staff-removed/a-79152603?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-07T18:57:00+00:00"
+      "published": "2026-09-07T22:23:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Thousands turn out in Serbia for funeral of 'Butcher of Bosnia' Ratko Mladić",
+      "headline": "Palestinian parents fear for children's lives at school as settler attacks grow",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn5dkk7yw74o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c3wj45g73g1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-07T14:50:50+00:00"
+      "published": "2026-09-07T21:12:37+00:00"
     },
     {
       "n": 7,
@@ -202,11 +202,11 @@
     },
     {
       "n": 8,
-      "headline": "Pope Leo returns to sanctuary where he prayed after election and unveils a fresco depicting the event",
+      "headline": "Far-right AfD win signals shift in Germany, raises alarm in Europe",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/pope-leo-returns-to-sanctuary-where-he-prayed-after-election-and-unveils-a-fresco-depicting-the-event",
-      "topic": "Politics",
-      "published": "2026-09-07T18:47:42+00:00"
+      "url": "https://www.pbs.org/newshour/show/far-right-afd-win-signals-shift-in-germany-raises-alarm-in-europe",
+      "topic": "Trending",
+      "published": "2026-09-07T22:50:01+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Werner Herzog: Germany's wild man of cinema is back",
+      "headline": "3 years on, Morocco earthquake victims still wait for help",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/werner-herzog-germany-s-wild-man-of-cinema-is-back/a-78949324?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/3-years-on-morocco-earthquake-victims-still-wait-for-help/a-78874844?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-07T16:41:00+00:00"
+      "published": "2026-09-07T18:57:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Israeli strikes in southern Lebanese village kill 12",
+      "headline": "Germany's far-right AfD says 'democracy demands' parties work with them after state election win",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5yl96vz0edo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-07T13:39:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-07T14:04:01+00:00"
     },
     {
       "n": 12,
-      "headline": "The first day of school: Bells, bikes, buses and big feelings",
+      "headline": "The copper peptide trend has gone from creams to injections — ahead of the science",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5887297/new-school-year-starts",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5955552/copper-peptides-skin-aging-health-safe",
       "topic": "Trending",
       "published": "2026-09-07T09:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump keeps heralding an economic boom, but even a solid jobs report is causing problems for him",
+      "headline": "News Wrap: Tropical Storm Marie brings dangerous surf to California coast",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-keeps-heralding-an-economic-boom-but-even-a-solid-jobs-report-is-causing-problems-for-him",
-      "topic": "Politics",
-      "published": "2026-09-07T18:46:50+00:00"
+      "url": "https://www.pbs.org/newshour/show/news-wrap-tropical-storm-marie-brings-dangerous-surf-to-california-coast",
+      "topic": "Trending",
+      "published": "2026-09-07T22:45:56+00:00"
     },
     {
       "n": 14,
@@ -258,25 +258,25 @@
     },
     {
       "n": 15,
-      "headline": "Nicaragua challenges German arms exports to Israel at ICJ",
+      "headline": "Werner Herzog: Germany's wild man of cinema is back",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nicaragua-challenges-german-arms-exports-to-israel-at-icj/a-79148044?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-07T16:26:00+00:00"
+      "url": "https://www.dw.com/en/werner-herzog-germany-s-wild-man-of-cinema-is-back/a-78949324?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-07T16:41:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Investigators begin work on why cargo plane overran Miami runway",
+      "headline": "Eiffel Tower shut by staff protest after female workers moved for religious visit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c0e3p1j7n3ro?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/clyenxp540vo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-07T17:46:25+00:00"
+      "published": "2026-09-07T23:46:44+00:00"
     },
     {
       "n": 17,
-      "headline": "Her body temperature was 106': How heat is killing Americans in their homes",
+      "headline": "The first day of school: Bells, bikes, buses and big feelings",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5644782/heat-deaths-manufactured-mobile-homes",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5887297/new-school-year-starts",
       "topic": "Trending",
       "published": "2026-09-07T09:00:00+00:00"
     }
