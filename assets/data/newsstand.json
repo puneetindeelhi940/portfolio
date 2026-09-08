@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T02:47:10Z",
+  "generated_at": "2026-09-08T12:34:04Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Story about 'K9 Valor' surviving suicide bomber, saving 47 soldiers isn't what it seems",
+      "claim": "Is image of Pope Leo XIV wearing Nike sneakers real?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/k9-valor-suicide-bombing-survive/",
+      "url": "https://www.snopes.com/fact-check/image-pope-leo-nike-sneakers/",
       "topic": "Trending"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Saurav Das shares fake Gaurav Bhatia quote on Swatantra Bhardwaj; deletes after being called out",
+      "claim": "‘YouTuber’, ‘influencer’, ‘goon activist’: How mainstream media sanitised Swatantra Bhardwaj",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/saurav-das-shares-fake-gaurav-bhatia-quote-on-swatantra-bhardwaj-deletes-after-being-called-out/",
+      "url": "https://www.altnews.in/youtuber-influencer-goon-activist-how-mainstream-media-sanitised-swatantra-bhardwaj/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "9 false or misleading claims RFK Jr. has made, investigated",
+      "claim": "20 claims about public figures defying Trump, debunked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/rfk-false-misleading-claims/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/celebrities-against-trump-ai-slop/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "‘They dragged us… hit us with batons… I could not breathe’: Journalist Shaheen Khan recounts ‘assault’ at Saket PS",
+      "claim": "Saurav Das shares fake Gaurav Bhatia quote on Swatantra Bhardwaj; deletes after being called out",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/they-dragged-us-hit-us-with-batons-i-could-not-breathe-journalist-shaheen-khan-recounts-assault-at-saket-ps/",
+      "url": "https://www.altnews.in/saurav-das-shares-fake-gaurav-bhatia-quote-on-swatantra-bhardwaj-deletes-after-being-called-out/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did TV chef Jamie Oliver win lawsuit against McDonald's over 'toxic' food claims?",
+      "claim": "Story about 'K9 Valor' surviving suicide bomber, saving 47 soldiers isn't what it seems",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/07/chef-jamie-oliver-mcdonalds/",
+      "url": "https://www.snopes.com/fact-check/k9-valor-suicide-bombing-survive/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Flight recorders recovered from 'devastating' Amazon cargo plane crash",
+      "headline": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ce8e32n8epeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-09-07T22:23:03+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-08T12:23:22+00:00"
     },
     {
       "n": 2,
-      "headline": "As Nepal identifies those killed in the floods, questions grow over China's reporting",
+      "headline": "GOP to host unusual midterm convention. And, Canada's retaliatory tariffs take effect",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5960357/nepal-floods-questions-over-chinas-reporting",
-      "topic": "World",
-      "published": "2026-09-07T13:31:16+00:00"
+      "url": "https://www.npr.org/2026/09/08/g-s1-142302/up-first-newsletter-trumpapalooza-amazon-cargo-plane-crash-canada-tariffs",
+      "topic": "Trending",
+      "published": "2026-09-08T11:20:05+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "Weather tracker: Typhoon Saudel causes mass evacuations in south-east China",
+      "headline": "Hijacking pirates exploit regional chaos to return to seas off Somalia",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/07/typhoon-saudel-mass-evacuations-south-east-china-weather-tracker",
-      "topic": "Science",
-      "published": "2026-09-07T08:27:08+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
+      "topic": "Trending",
+      "published": "2026-09-08T04:00:27+00:00"
     },
     {
       "n": 5,
-      "headline": "Eiffel Tower employees strike after female staff removed",
+      "headline": "Japan's empty temples seek new ways to survive",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/eiffel-tower-employees-strike-after-female-staff-removed/a-79152603?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/japan-s-empty-temples-seek-new-ways-to-survive/a-79157964?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-07T22:23:00+00:00"
+      "published": "2026-09-08T12:31:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Palestinian parents fear for children's lives at school as settler attacks grow",
+      "headline": "At least two people dead after Russian strikes on Kyiv",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3wj45g73g1o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-07T21:12:37+00:00"
+      "published": "2026-09-08T10:23:01+00:00"
     },
     {
       "n": 7,
-      "headline": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
+      "headline": "Has the economy gone C-shaped?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany",
-      "topic": "Politics",
-      "published": "2026-09-07T11:11:51+00:00"
+      "url": "https://www.npr.org/sections/planet-money/2026/09/08/g-s1-142029/has-the-economy-gone-c-shaped",
+      "topic": "Trending",
+      "published": "2026-09-08T10:30:00+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "Egyptian TV presenter among 12 sentenced to death for drug crime",
+      "headline": "Weather tracker: Typhoon Saudel causes mass evacuations in south-east China",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
-      "topic": "Health",
-      "published": "2026-09-05T18:00:15+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/07/typhoon-saudel-mass-evacuations-south-east-china-weather-tracker",
+      "topic": "Science",
+      "published": "2026-09-07T08:27:08+00:00"
     },
     {
       "n": 10,
-      "headline": "3 years on, Morocco earthquake victims still wait for help",
+      "headline": "Afghanistan's women: A national team without a home",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/3-years-on-morocco-earthquake-victims-still-wait-for-help/a-78874844?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/afghanistan-s-women-a-national-team-without-a-home/a-79139500?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-07T18:57:00+00:00"
+      "published": "2026-09-08T11:03:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Germany's far-right AfD says 'democracy demands' parties work with them after state election win",
+      "headline": "Investigation after female staff at Eiffel Tower replaced by men for religious visit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-07T14:04:01+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/clyenxp540vo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-08T11:38:07+00:00"
     },
     {
       "n": 12,
-      "headline": "The copper peptide trend has gone from creams to injections — ahead of the science",
+      "headline": "Houthi attacks on Saudi Arabia ignite fires at oil facilities and wound 73 people",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5955552/copper-peptides-skin-aging-health-safe",
+      "url": "https://www.npr.org/2026/09/08/g-s1-142296/houthi-attacks-saudi-arabia",
       "topic": "Trending",
-      "published": "2026-09-07T09:00:00+00:00"
+      "published": "2026-09-08T09:09:46+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "UN votes to adopt new world map that shows Africa’s true scale",
+      "headline": "Egyptian TV presenter among 12 sentenced to death for drug crime",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
-      "topic": "World",
-      "published": "2026-09-04T16:49:29+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
+      "topic": "Health",
+      "published": "2026-09-05T18:00:15+00:00"
     },
     {
       "n": 15,
-      "headline": "Werner Herzog: Germany's wild man of cinema is back",
+      "headline": "German police arrest suspect in power grid sabotage case",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/werner-herzog-germany-s-wild-man-of-cinema-is-back/a-78949324?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/german-police-arrest-suspect-in-power-grid-sabotage-case/a-79161142?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-07T16:41:00+00:00"
+      "published": "2026-09-08T10:54:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Eiffel Tower shut by staff protest after female workers moved for religious visit",
+      "headline": "Highest paid world leader to get salary increase of $1 million",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/clyenxp540vo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c5y5kn143d1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-07T23:46:44+00:00"
+      "published": "2026-09-08T09:20:05+00:00"
     },
     {
       "n": 17,
-      "headline": "The first day of school: Bells, bikes, buses and big feelings",
+      "headline": "60 years later, 'Star Trek' continues to 'live long and prosper",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5887297/new-school-year-starts",
-      "topic": "Trending",
-      "published": "2026-09-07T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/08/nx-s1-5593092/star-trek-60-year-anniversary",
+      "topic": "Celebrity",
+      "published": "2026-09-08T09:00:00+00:00"
     }
   ]
 }
