@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T02:46:32Z",
+  "generated_at": "2026-09-09T12:40:00Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Why Biden administration renamed 650 geographic features",
+      "claim": "Did Jeffrey Dahmer say he didn't eat people with tattoos?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/biden-rename-geographic-features/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/09/09/jeffrey-dahmer-tattoos-quote/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "‘YouTuber’, ‘influencer’, ‘goon activist’: How mainstream media sanitised Swatantra Bhardwaj",
+      "claim": "Reality check for Mohan Bhagwat: Muslims threatened by BJP MLA; voters targeted for deletion; FIR over namaz, mosque razed in UP",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/youtuber-influencer-goon-activist-how-mainstream-media-sanitised-swatantra-bhardwaj/",
+      "url": "https://www.altnews.in/reality-check-for-mohan-bhagwat-muslims-threatened-by-bjp-mla-voters-targeted-for-deletion-fir-over-namaz-mosque-razed-in-up/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know",
+      "claim": "21 claims about 9/11 we've investigated in 25 years since the attacks",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/04/canada-chinese-steel-us-tariffs/",
+      "url": "https://www.snopes.com/collections/911-rumors-25-anniversary/",
       "topic": "Trending"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Saurav Das shares fake Gaurav Bhatia quote on Swatantra Bhardwaj; deletes after being called out",
+      "claim": "‘YouTuber’, ‘influencer’, ‘goon activist’: How mainstream media sanitised Swatantra Bhardwaj",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/saurav-das-shares-fake-gaurav-bhatia-quote-on-swatantra-bhardwaj-deletes-after-being-called-out/",
+      "url": "https://www.altnews.in/youtuber-influencer-goon-activist-how-mainstream-media-sanitised-swatantra-bhardwaj/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "9 false or misleading claims RFK Jr. has made, investigated",
+      "claim": "Why Biden administration renamed 650 geographic features",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/rfk-false-misleading-claims/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/biden-rename-geographic-features/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
+      "headline": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-09-09T01:45:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-09T09:47:39+00:00"
     },
     {
       "n": 2,
-      "headline": "New report shows the economic toll of ICE raids",
+      "headline": "U.S. military destroys 5 Iranian oil tankers. And, the Smithsonian head resigns",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/08/nx-s1-5955787/new-report-shows-the-economic-toll-of-ice-raids",
+      "url": "https://www.npr.org/2026/09/09/g-s1-142496/up-first-newsletter-iran-us-uk-israel-palestine-lonnie-bunch-smithsonian",
       "topic": "Trending",
-      "published": "2026-09-08T20:17:22+00:00"
+      "published": "2026-09-09T11:12:27+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "Hijacking pirates exploit regional chaos to return to seas off Somalia",
+      "headline": "Babies born to anaemic mothers have smaller brains, study finds",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
-      "topic": "Trending",
-      "published": "2026-09-08T04:00:27+00:00"
+      "url": "https://www.theguardian.com/global-development/2026/sep/09/babies-born-to-anaemic-mothers-have-smaller-brains-study-finds",
+      "topic": "Science",
+      "published": "2026-09-09T04:00:58+00:00"
     },
     {
       "n": 5,
-      "headline": "Israel's Netanyahu denies UAE warned him of October 7 attack",
+      "headline": "EU proposes more restrictions for Airbnb, holiday rentals",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/israel-s-netanyahu-denies-uae-warned-him-of-october-7-attack/a-79194436?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-09T00:37:00+00:00"
+      "url": "https://www.dw.com/en/eu-proposes-more-restrictions-for-airbnb-holiday-rentals/a-79202023?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-09T12:27:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Paul Adams: British-Israeli relations at lowest ebb in decades",
+      "headline": "US to ban imports of some Canadian alcohol, dairy goods and motorbikes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-08T21:46:31+00:00"
+      "published": "2026-09-09T10:20:40+00:00"
     },
     {
       "n": 7,
-      "headline": "Kenya's foreign trader crackdown sparks fear among migrant communities",
+      "headline": "Cargo jet tried to abort unsteady landing before Miami crash, flight data indicates",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/08/nx-s1-5958636/kenya-immigration-foreign-xenophobia-africa",
-      "topic": "World",
-      "published": "2026-09-08T19:55:43+00:00"
+      "url": "https://www.npr.org/2026/09/09/g-s1-142482/cargo-plane-crash-miami",
+      "topic": "Trending",
+      "published": "2026-09-09T09:09:32+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "Weather tracker: Typhoon Saudel causes mass evacuations in south-east China",
+      "headline": "Hijacking pirates exploit regional chaos to return to seas off Somalia",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/07/typhoon-saudel-mass-evacuations-south-east-china-weather-tracker",
-      "topic": "Science",
-      "published": "2026-09-07T08:27:08+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
+      "topic": "Trending",
+      "published": "2026-09-08T04:00:27+00:00"
     },
     {
       "n": 10,
-      "headline": "US strikes oil tankers off coast of Iran",
+      "headline": "Syria: How the 'house of sisters' threat split society",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-08T21:56:00+00:00"
+      "url": "https://www.dw.com/en/syria-how-the-house-of-sisters-threat-split-society/a-79192163?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-09T11:27:00+00:00"
     },
     {
       "n": 11,
-      "headline": "US slaps import ban on Canadian alcohol and other goods",
+      "headline": "Russia and Ukraine exchange strikes as two killed at Moldova border",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-09T01:09:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-09T10:59:18+00:00"
     },
     {
       "n": 12,
-      "headline": "Australian social media users to be offered choice to opt out of algorithms",
+      "headline": "National Guard member arrested in DC, accused of drawing gun on fellow Guard member",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/08/g-s1-142311/australian-social-media-users-to-be-offered-choice-to-opt-out-of-algorithms",
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5962678/national-guard-arrested",
       "topic": "Trending",
-      "published": "2026-09-08T13:24:00+00:00"
+      "published": "2026-09-09T09:05:03+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "Egyptian TV presenter among 12 sentenced to death for drug crime",
+      "headline": "Weather tracker: Typhoon Saudel causes mass evacuations in south-east China",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
-      "topic": "Health",
-      "published": "2026-09-05T18:00:15+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/07/typhoon-saudel-mass-evacuations-south-east-china-weather-tracker",
+      "topic": "Science",
+      "published": "2026-09-07T08:27:08+00:00"
     },
     {
       "n": 15,
-      "headline": "German economy frets about Saxony-Anhalt election results",
+      "headline": "LIV Golf in financial turmoil: what's next for the sport?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-08T18:35:00+00:00"
+      "url": "https://www.dw.com/en/liv-golf-in-financial-turmoil-what-s-next-for-the-sport/a-79199569?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-09T11:16:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Constantly on my mind' - 9/11 agony goes on for bereaved, 25 years on",
+      "headline": "Germany's Merz attacks AfD in stormy debate after far-right election win",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/clyrjw1yj75o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-08T23:11:32+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-09T11:24:10+00:00"
     },
     {
       "n": 17,
-      "headline": "U.K. accuses Israeli settlers of 'ethnic cleansing' in West Bank and bans their goods",
+      "headline": "COMIC: If we fight, is our love doomed? And other honest questions about conflict",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
-      "topic": "Money",
-      "published": "2026-09-08T13:05:20+00:00"
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5961264/conflict-and-relationships-comic-priya-parker",
+      "topic": "Trending",
+      "published": "2026-09-09T09:01:00+00:00"
     }
   ]
 }
