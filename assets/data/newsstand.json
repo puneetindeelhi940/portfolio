@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T12:40:00Z",
+  "generated_at": "2026-09-09T19:01:38Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Trump Did NOT Declare Moon 'A U.S.A. Territory",
+      "claim": "Trump Did NOT Defend Natalie Harp After She Posted Nuclear Codes on Instagram -- Story Is From Borowitz Report Satire",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-declare-moon-a-usa-territory.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-defend-natalie-harp-after-she-posted-nuclear-codes-on-instagram.html",
       "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Did Jeffrey Dahmer say he didn't eat people with tattoos?",
+      "claim": "Did Trump post video of himself hitting Mark Carney with hockey stick? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/09/jeffrey-dahmer-tattoos-quote/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-carney-hockey-stick-video/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: Mitch McConnell’s Wife Elaine Chao Held Appointments From Chinese Communist Party Organizations While Serving In Cabinet",
+      "claim": "US-Iran War Roars Back As Tankers Burn, Missiles Fly And Oil Tops $100",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/08/exclusive-mitch-mcconnell-wife-elaine-chao-ccp-appointments",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/09/us-iran-war-roars-back-strait-of-hormuz",
+      "topic": "World"
     },
     {
       "n": 5,
@@ -56,26 +56,26 @@
     },
     {
       "n": 7,
-      "claim": "How much does the UK spend promoting family planning and condoms in Pakistan?",
+      "claim": "‘fact’ sheet about UK Muslims recirculates",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/politics/matt-goodwin-lbc-condoms-pakistan/",
+      "url": "https://fullfact.org/culture-and-society/misleading-fact-sheet-muslims-recirculates/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Prebunk: Don't Let Fake Father-Daughter Hospital Scenes Put Your Judgment In A Coma -- AI Clickbait Preying On Your Prayers",
+      "claim": "Trump Did NOT Declare Moon 'A U.S.A. Territory",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-dont-let-fake-father-daughter-hospital-scenes-put-your-judgment-in-a-coma.html",
-      "topic": "Health"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-declare-moon-a-usa-territory.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "21 claims about 9/11 we've investigated in 25 years since the attacks",
+      "claim": "Why adding a stamp to your ballot won't make it first-class mail",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/911-rumors-25-anniversary/",
+      "url": "https://www.snopes.com/fact-check/usps-stamp-ballot-first-class-mail/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "ROOKE: Trump Admin’s Boastful Post Shows We’re Leaving Half Of Country Behind",
+      "claim": "‘AI Could Kill Us All’: Anthropic Researcher Quits, Blasts Labs For ‘Gambling With Our Lives’",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/08/women-workforce-bureau-labor-statistics-net-payroll-growth-report-consequences-effects",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/09/anthropic-researcher-quits-ai-could-kill-us-all-jacob-coxon-evan-hubinger",
+      "topic": "Tech / AI"
     },
     {
       "n": 12,
@@ -112,27 +112,27 @@
     },
     {
       "n": 14,
-      "claim": "Fake images of Portsmouth small boats protest circulate online",
+      "claim": "How much does the UK spend promoting family planning and condoms in Pakistan?",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/fake-portsmouth-protest-images/",
+      "url": "https://fullfact.org/politics/matt-goodwin-lbc-condoms-pakistan/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "Arnold Schwarzenegger Did NOT Say He Is Removing 'Negger' From His Name Because It 'Could Be Offensive",
+      "claim": "Prebunk: Don't Let Fake Father-Daughter Hospital Scenes Put Your Judgment In A Coma -- AI Clickbait Preying On Your Prayers",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-arnold-schwarzenegger-did-not-say-he-is-removing-negger-from-name-could-be-offensive.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-dont-let-fake-father-daughter-hospital-scenes-put-your-judgment-in-a-coma.html",
+      "topic": "Health"
     },
     {
       "n": 16,
-      "claim": "Why Biden administration renamed 650 geographic features",
+      "claim": "Why MI5 swapped Boy Scouts for Girl Guide messengers during WWI",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/biden-rename-geographic-features/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/mi5-boy-girl-scouts-wwi/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
+      "headline": "Germany's Merz attacks AfD in stormy debate after far-right election win",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-09T09:47:39+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-09T13:29:33+00:00"
     },
     {
       "n": 2,
-      "headline": "U.S. military destroys 5 Iranian oil tankers. And, the Smithsonian head resigns",
+      "headline": "Fold the phone: Apple's new CEO unveils a foldable iPhone",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/g-s1-142496/up-first-newsletter-iran-us-uk-israel-palestine-lonnie-bunch-smithsonian",
-      "topic": "Trending",
-      "published": "2026-09-09T11:12:27+00:00"
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5961487/apple-duo-foldable-iphone-john-ternus",
+      "topic": "Tech / AI",
+      "published": "2026-09-09T18:39:57+00:00"
     },
     {
       "n": 3,
-      "headline": "U.S. will ban dairy products, motorcycles and most alcoholic beverages from Canada",
+      "headline": "Republicans gather in Dallas for two-day midterm convention billed as 'Trump-a-Palooza",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/u-s-will-ban-dairy-products-motorcycles-and-most-alcoholic-beverages-from-canada",
-      "topic": "Trending",
-      "published": "2026-09-09T00:20:23+00:00"
+      "url": "https://www.pbs.org/newshour/politics/republicans-gather-in-dallas-for-two-day-midterm-convention-billed-as-trump-a-palooza",
+      "topic": "Politics",
+      "published": "2026-09-09T18:07:44+00:00"
     },
     {
       "n": 4,
+      "headline": "Uganda to withdraw from Invictus Games ‘out of respect for King Charles’, says military chief",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/09/uganda-withdraws-invictus-games-out-of-respect-king-charles",
+      "topic": "Trending",
+      "published": "2026-09-09T18:20:24+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Ceuta: EU grants Spain €115 million in emergency aid",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/ceuta-eu-grants-spain-€115-million-in-emergency-aid/a-79206505?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-09T17:53:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Google picks Finland for its largest single investment in Europe",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c8r6y4me2g6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-09-09T17:06:48+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Special education head at Education Department abruptly resigns",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5962899/special-education-kelly-rogers-resigns",
+      "topic": "Trending",
+      "published": "2026-09-09T17:48:56+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Jurors speak out about Lindsay Clancy mistrial and the lone holdout",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/jurors-speak-out-about-lindsay-clancy-mistrial-and-the-lone-holdout",
+      "topic": "Trending",
+      "published": "2026-09-09T16:34:18+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Babies born to anaemic mothers have smaller brains, study finds",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/sep/09/babies-born-to-anaemic-mothers-have-smaller-brains-study-finds",
@@ -177,39 +217,39 @@
       "published": "2026-09-09T04:00:58+00:00"
     },
     {
-      "n": 5,
-      "headline": "EU proposes more restrictions for Airbnb, holiday rentals",
+      "n": 10,
+      "headline": "Germany's connection to the September 11, 2001 attacks",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/eu-proposes-more-restrictions-for-airbnb-holiday-rentals/a-79202023?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-s-connection-to-the-september-11-2001-attacks/a-79202918?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-09T12:27:00+00:00"
+      "published": "2026-09-09T17:52:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "US to ban imports of some Canadian alcohol, dairy goods and motorbikes",
+      "n": 11,
+      "headline": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-09T10:20:40+00:00"
+      "published": "2026-09-09T16:46:53+00:00"
     },
     {
-      "n": 7,
-      "headline": "Cargo jet tried to abort unsteady landing before Miami crash, flight data indicates",
+      "n": 12,
+      "headline": "Andrew Tate is denied bail and will remain in jail during his extradition fight",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/g-s1-142482/cargo-plane-crash-miami",
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5954174/andrew-tate-bail-extradition-jail",
       "topic": "Trending",
-      "published": "2026-09-09T09:09:32+00:00"
+      "published": "2026-09-09T17:23:15+00:00"
     },
     {
-      "n": 8,
-      "headline": "What to watch as Republicans gather in Dallas for Trump's unusual midterm convention",
+      "n": 13,
+      "headline": "With Sununu vs. Pappas, familiar names will compete in New Hampshire Senate race",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/what-to-watch-as-republicans-gather-in-dallas-for-trumps-unusual-midterm-convention",
+      "url": "https://www.pbs.org/newshour/politics/with-sununu-vs-pappas-familiar-names-will-compete-in-new-hampshire-senate-race",
       "topic": "Politics",
-      "published": "2026-09-08T23:49:11+00:00"
+      "published": "2026-09-09T15:45:12+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Hijacking pirates exploit regional chaos to return to seas off Somalia",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
@@ -217,68 +257,28 @@
       "published": "2026-09-08T04:00:27+00:00"
     },
     {
-      "n": 10,
-      "headline": "Syria: How the 'house of sisters' threat split society",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/syria-how-the-house-of-sisters-threat-split-society/a-79192163?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-09T11:27:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Russia and Ukraine exchange strikes as two killed at Moldova border",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-09T10:59:18+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "National Guard member arrested in DC, accused of drawing gun on fellow Guard member",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5962678/national-guard-arrested",
-      "topic": "Trending",
-      "published": "2026-09-09T09:05:03+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Canadian tariffs on U.S. goods take effect, marking turning point in relations",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/canadian-tariffs-on-u-s-goods-take-effect-marking-turning-point-in-relations",
-      "topic": "Trending",
-      "published": "2026-09-08T22:55:04+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Weather tracker: Typhoon Saudel causes mass evacuations in south-east China",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/07/typhoon-saudel-mass-evacuations-south-east-china-weather-tracker",
-      "topic": "Science",
-      "published": "2026-09-07T08:27:08+00:00"
-    },
-    {
       "n": 15,
-      "headline": "LIV Golf in financial turmoil: what's next for the sport?",
+      "headline": "Serbia, the conflicted EU candidate",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/liv-golf-in-financial-turmoil-what-s-next-for-the-sport/a-79199569?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/serbia-the-conflicted-eu-candidate/a-79203774?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-09T11:16:00+00:00"
+      "published": "2026-09-09T16:50:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Germany's Merz attacks AfD in stormy debate after far-right election win",
+      "headline": "US to ban imports of some Canadian alcohol, dairy goods and motorbikes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-09T11:24:10+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-09T10:20:40+00:00"
     },
     {
       "n": 17,
-      "headline": "COMIC: If we fight, is our love doomed? And other honest questions about conflict",
+      "headline": "Greetings from Paris, where the 2024 Olympics balloon rises again",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5961264/conflict-and-relationships-comic-priya-parker",
+      "url": "https://www.npr.org/2026/09/09/g-s1-142424/paris-olympic-balloon-cauldron-tuileries",
       "topic": "Trending",
-      "published": "2026-09-09T09:01:00+00:00"
+      "published": "2026-09-09T13:56:23+00:00"
     }
   ]
 }
