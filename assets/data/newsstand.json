@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T19:01:38Z",
+  "generated_at": "2026-09-10T02:48:05Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,35 +8,35 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Trump Did NOT Defend Natalie Harp After She Posted Nuclear Codes on Instagram -- Story Is From Borowitz Report Satire",
+      "claim": "NYC Mayor Mamdani Did NOT Write Post About Interview With Charlie Kirk In September 2025",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-defend-natalie-harp-after-she-posted-nuclear-codes-on-instagram.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-nyc-mayor-mamdani-did-not-write-post-about-interview-with-charlie-kirk-in-september-2025.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Trump post video of himself hitting Mark Carney with hockey stick? Here's the truth",
+      "claim": "Story of black bear taking wounded animals to wildlife center is too good to be true",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-carney-hockey-stick-video/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/bear-rescued-animals-wildlife-center/",
+      "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Ad Attacking N.C. Republican Senate Candidate Uses His Own (Dated) Words Against Him",
+      "claim": "Ohio Democratic Ads Connect Husted to Bribery Scandal, Despite No Charges of Wrongdoing",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/ad-attacking-n-c-republican-senate-candidate-uses-his-own-dated-words-against-him/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/09/ohio-democratic-ads-connect-husted-to-bribery-scandal-despite-no-charges-of-wrongdoing/",
+      "topic": "Trending"
     },
     {
       "n": 4,
-      "claim": "US-Iran War Roars Back As Tankers Burn, Missiles Fly And Oil Tops $100",
+      "claim": "Fetterman Praises McCormick, Vows To Work With Trump In Pre-Recorded Midterm Convention Video",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/09/us-iran-war-roars-back-strait-of-hormuz",
-      "topic": "World"
+      "url": "https://dailycaller.com/2026/09/09/john-fetterman-praises-trump-dallas-gop-midterm-convention-video",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -64,27 +64,27 @@
     },
     {
       "n": 8,
-      "claim": "Trump Did NOT Declare Moon 'A U.S.A. Territory",
+      "claim": "FAKE Ad Featuring Sydney Sweeney In Nike Branding Is AI-Generated -- No Official Nike Campaign Exists",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-declare-moon-a-usa-territory.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-ad-featuring-sydney-sweeney-in-nike-branding-is-ai-generated-no-official-nike-campaign-exists.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Why adding a stamp to your ballot won't make it first-class mail",
+      "claim": "Elon Musk's VoteSafe.org shares users' personal information. Here's how we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/usps-stamp-ballot-first-class-mail/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/votesafeorg-elon-musk/",
+      "topic": "Tech / AI"
     },
     {
       "n": 10,
-      "claim": "Ossoff Ad Takes Collins’ Quote Out of Context",
-      "verdict": "MISLEADING",
+      "claim": "Ad Attacking N.C. Republican Senate Candidate Uses His Own (Dated) Words Against Him",
+      "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/ossoff-ad-takes-collins-quote-out-of-context/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/09/ad-attacking-n-c-republican-senate-candidate-uses-his-own-dated-words-against-him/",
+      "topic": "Politics"
     },
     {
       "n": 11,
@@ -120,53 +120,53 @@
     },
     {
       "n": 15,
-      "claim": "Prebunk: Don't Let Fake Father-Daughter Hospital Scenes Put Your Judgment In A Coma -- AI Clickbait Preying On Your Prayers",
-      "verdict": "FALSE",
+      "claim": "Evidence AI-Generated Image Trump Shared Is Official New Space Force Uniform",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-dont-let-fake-father-daughter-hospital-scenes-put-your-judgment-in-a-coma.html",
-      "topic": "Health"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-ai-generated-image-trump-actual-space-force-uniform-proposal.html",
+      "topic": "Science"
     },
     {
       "n": 16,
-      "claim": "Why MI5 swapped Boy Scouts for Girl Guide messengers during WWI",
+      "claim": "Riley Gaines called WNBA fans in Minneapolis a 'bunch of disgruntled lesbians",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mi5-boy-girl-scouts-wwi/",
+      "url": "https://www.snopes.com/fact-check/riley-gaines-wnba-quote/",
       "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "Social Media Posts Push False Claim of Trump Chopping Down 60 Cherry Trees",
-      "verdict": "FALSE",
+      "claim": "Ossoff Ad Takes Collins’ Quote Out of Context",
+      "verdict": "MISLEADING",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/social-media-posts-push-false-claim-of-trump-chopping-down-60-cherry-trees/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/09/ossoff-ad-takes-collins-quote-out-of-context/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Germany's Merz attacks AfD in stormy debate after far-right election win",
+      "headline": "Spanish intelligence warned of Ceuta mass crossing plans before surge",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-09T13:29:33+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ced7vj2gv82o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-09T21:23:45+00:00"
     },
     {
       "n": 2,
-      "headline": "Fold the phone: Apple's new CEO unveils a foldable iPhone",
+      "headline": "Fetterman, already at odds with his party, makes surprise video for GOP convention",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5961487/apple-duo-foldable-iphone-john-ternus",
-      "topic": "Tech / AI",
-      "published": "2026-09-09T18:39:57+00:00"
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5963916/john-fetterman-gop-midterm-convention-trump",
+      "topic": "Trending",
+      "published": "2026-09-10T01:17:28+00:00"
     },
     {
       "n": 3,
-      "headline": "Republicans gather in Dallas for two-day midterm convention billed as 'Trump-a-Palooza",
+      "headline": "AI researcher warns companies are ignoring catastrophic risks",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/republicans-gather-in-dallas-for-two-day-midterm-convention-billed-as-trump-a-palooza",
-      "topic": "Politics",
-      "published": "2026-09-09T18:07:44+00:00"
+      "url": "https://www.pbs.org/newshour/show/ai-researcher-warns-companies-are-ignoring-catastrophic-risks",
+      "topic": "Tech / AI",
+      "published": "2026-09-09T22:55:11+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Ceuta: EU grants Spain €115 million in emergency aid",
+      "headline": "Philippines: Several killed, dozens missing after fire on ferry",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ceuta-eu-grants-spain-€115-million-in-emergency-aid/a-79206505?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/philippines-several-killed-dozens-missing-after-fire-on-ferry/a-79208236?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-09T17:53:00+00:00"
+      "published": "2026-09-10T01:48:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Special education head at Education Department abruptly resigns",
+      "headline": "Conductor Julian Wachner receives suspended sentence for possession of child sex abuse material",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5962899/special-education-kelly-rogers-resigns",
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5962805/conductor-julian-wachner-suspended-sentence-for-possession-of-child-sex-abuse-material",
       "topic": "Trending",
-      "published": "2026-09-09T17:48:56+00:00"
+      "published": "2026-09-09T20:42:19+00:00"
     },
     {
       "n": 8,
-      "headline": "Jurors speak out about Lindsay Clancy mistrial and the lone holdout",
+      "headline": "News Wrap: White House defends Trump's $45,000 gifts to Natalie Harp and other aides",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/jurors-speak-out-about-lindsay-clancy-mistrial-and-the-lone-holdout",
-      "topic": "Trending",
-      "published": "2026-09-09T16:34:18+00:00"
+      "url": "https://www.pbs.org/newshour/show/news-wrap-white-house-defends-trumps-45000-gifts-to-natalie-harp-and-other-aides",
+      "topic": "Politics",
+      "published": "2026-09-09T22:45:05+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Germany's connection to the September 11, 2001 attacks",
+      "headline": "Finland: Google announces €13 billion AI, energy investment",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-s-connection-to-the-september-11-2001-attacks/a-79202918?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-09T17:52:00+00:00"
+      "url": "https://www.dw.com/en/finland-google-announces-€13-billion-ai-energy-investment/a-79208034?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-09T22:27:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "Andrew Tate is denied bail and will remain in jail during his extradition fight",
+      "headline": "Fold the phone: Apple's new CEO unveils a foldable iPhone",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5954174/andrew-tate-bail-extradition-jail",
-      "topic": "Trending",
-      "published": "2026-09-09T17:23:15+00:00"
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5961487/apple-duo-foldable-iphone-john-ternus",
+      "topic": "Tech / AI",
+      "published": "2026-09-09T18:39:57+00:00"
     },
     {
       "n": 13,
-      "headline": "With Sununu vs. Pappas, familiar names will compete in New Hampshire Senate race",
+      "headline": "What to expect from the GOP's first-ever midterm convention",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/with-sununu-vs-pappas-familiar-names-will-compete-in-new-hampshire-senate-race",
-      "topic": "Politics",
-      "published": "2026-09-09T15:45:12+00:00"
+      "url": "https://www.pbs.org/newshour/show/what-to-expect-from-the-gops-first-ever-midterm-convention",
+      "topic": "Trending",
+      "published": "2026-09-09T22:40:53+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Serbia, the conflicted EU candidate",
+      "headline": "Norway's PM: Zelenskyy's plane almost hit by drone",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/serbia-the-conflicted-eu-candidate/a-79203774?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/norway-s-pm-zelenskyy-s-plane-almost-hit-by-drone/a-79207528?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-09T16:50:00+00:00"
+      "published": "2026-09-09T20:01:00+00:00"
     },
     {
       "n": 16,
-      "headline": "US to ban imports of some Canadian alcohol, dairy goods and motorbikes",
+      "headline": "Iran referred to UN Security Council for nuclear non-compliance",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-09T10:20:40+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckgwj4kl5lno?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-09T20:22:51+00:00"
     },
     {
       "n": 17,
-      "headline": "Greetings from Paris, where the 2024 Olympics balloon rises again",
+      "headline": "Special education head at Education Department abruptly resigns",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/09/g-s1-142424/paris-olympic-balloon-cauldron-tuileries",
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5962899/special-education-kelly-rogers-resigns",
       "topic": "Trending",
-      "published": "2026-09-09T13:56:23+00:00"
+      "published": "2026-09-09T17:48:56+00:00"
     }
   ]
 }
