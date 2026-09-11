@@ -1,18 +1,18 @@
 {
   "composite_index": {
-    "current_value": 6.6,
-    "previous_value": 6.7,
+    "current_value": 6.5,
+    "previous_value": 6.6,
     "change_pct": -1.5,
     "trend": "falling",
-    "ai_contribution_ppt": 1.1,
-    "description": "AI contributed approximately 1.1 percentage points to technology inflation globally this quarter.",
+    "ai_contribution_ppt": 1.0,
+    "description": "AI contributed approximately 1.0 percentage points to technology inflation globally this quarter.",
     "period": "Q2 2026"
   },
   "components": {
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 8.6,
+      "value": 8.3,
       "trend": "falling",
       "drivers": [
         "GPU demand",
@@ -24,8 +24,8 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 3.6,
-      "trend": "falling",
+      "value": 3.8,
+      "trend": "rising",
       "drivers": [
         "GPU instance demand",
         "Data center expansion",
@@ -48,7 +48,7 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 7.3,
+      "value": 7.2,
       "trend": "falling",
       "drivers": [
         "Data center demand",
@@ -61,7 +61,7 @@
       "label": "Consumer Electronics",
       "weight": 0.15,
       "value": 4.3,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.5,
+      "value": 6.4,
       "trend": "falling",
       "drivers": [
         "AI feature premiums",
@@ -84,8 +84,8 @@
     "infrastructure": {
       "label": "Infrastructure & Construction",
       "weight": 0.1,
-      "value": 2.9,
-      "trend": "falling",
+      "value": 3.0,
+      "trend": "rising",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-09-10T10:08:11Z",
+  "last_updated": "2026-09-11T10:05:07Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
