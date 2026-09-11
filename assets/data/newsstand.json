@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T02:41:36Z",
+  "generated_at": "2026-09-11T12:31:16Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump threaten to turn off Niagara Falls water unless Canada pays tariff?",
+      "claim": "Did Trump propose shutting down 9/11 memorial in NYC over remembrance ceremony snub?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-niagara-falls-post/",
+      "url": "https://www.snopes.com/fact-check/trump-shut-down-911-memorial-post/",
       "topic": "Politics"
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Jadavpur University vandalism: ABVP leaders, BJP functionaries identified in CCTV footage",
-      "verdict": "FALSE",
+      "claim": "Alt News Impact: Meta removes doctored, AI generated visuals of women CJP protesters",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/jadavpur-university-vandalism-abvp-leaders-bjp-functionaries-identified-in-cctv-footage/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/alt-news-impact-meta-removes-ai-manipulated-videos-of-women-from-jantar-mantar-protest/",
+      "topic": "Tech / AI"
     },
     {
       "n": 7,
-      "claim": "Are UK household energy bills the ‘highest in Europe’?",
+      "claim": "Kent Police didn’t say 76% of Dover protestors have previous convictions",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/environment/andy-burnham-nigel-farage-household-energy-bills/",
-      "topic": "Science"
+      "url": "https://fullfact.org/crime/kent-police-76-percent-dover-protestors-previous-convictions-false/",
+      "topic": "Trending"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "about Erika Kirk pregnancy announcement recirculates 1 year after husband's death",
+      "claim": "10 alleged 9/11 photos, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/erika-kirk-pregnancy-announcement/",
+      "url": "https://www.snopes.com/collections/911-images-collection/",
       "topic": "Trending"
     },
     {
@@ -104,19 +104,19 @@
     },
     {
       "n": 13,
-      "claim": "Reality check for Mohan Bhagwat: Muslims threatened by BJP MLA; voters targeted for deletion; FIR over namaz, mosque razed in UP",
+      "claim": "Jadavpur University vandalism: ABVP leaders, BJP functionaries identified in CCTV footage",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/reality-check-for-mohan-bhagwat-muslims-threatened-by-bjp-mla-voters-targeted-for-deletion-fir-over-namaz-mosque-razed-in-up/",
+      "url": "https://www.altnews.in/jadavpur-university-vandalism-abvp-leaders-bjp-functionaries-identified-in-cctv-footage/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "‘fact’ sheet about UK Muslims recirculates",
+      "claim": "Are UK household energy bills the ‘highest in Europe’?",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/misleading-fact-sheet-muslims-recirculates/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/environment/andy-burnham-nigel-farage-household-energy-bills/",
+      "topic": "Science"
     },
     {
       "n": 15,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Trump pledged $5K 'dividend' to every US adult if GOP wins midterms. Can he do that?",
+      "claim": "Did Trump threaten to turn off Niagara Falls water unless Canada pays tariff?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-5000-dollar-dividend/",
+      "url": "https://www.snopes.com/fact-check/trump-niagara-falls-post/",
       "topic": "Politics"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Yemen's Houthis reportedly seize strategic Red Sea port of Mokha",
+      "headline": "Anthropic blocks possible attempt to use AI to make biological weapons",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c4g7vr0lngwo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-10T18:15:47+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-09-11T08:15:25+00:00"
     },
     {
       "n": 2,
-      "headline": "This summer was hot. August shattered global heat records",
+      "headline": "Remembering 9/11. And, Vance, Trump urge voters to back Republicans in the midterms",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/10/nx-s1-5963899/august-heat-summer-hottest",
-      "topic": "Trending",
-      "published": "2026-09-10T21:30:52+00:00"
+      "url": "https://www.npr.org/2026/09/11/g-s1-142846/up-first-newsletter-september-11-remembrance-republican-midterm-convention-scotus-missouri-redistricting",
+      "topic": "Politics",
+      "published": "2026-09-11T11:55:49+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "Secret son revelation ignites bitter succession dispute in Ugandan kingdom",
+      "headline": "$15m fund launched to create ‘unstoppable momentum’ to end FGM worldwide",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/10/uganda-king-secret-son-succession-dispute",
+      "url": "https://www.theguardian.com/global-development/2026/sep/11/15m-fund-launched-to-create-unstoppable-momentum-to-end-fgm-worldwide",
       "topic": "Trending",
-      "published": "2026-09-10T17:29:20+00:00"
+      "published": "2026-09-11T04:00:04+00:00"
     },
     {
       "n": 5,
-      "headline": "Algeria cuts diplomatic ties with UAE",
+      "headline": "BRICS Summit 2026: Putin, Modi reaffirm partnership",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/algeria-cuts-diplomatic-ties-with-uae/a-79222141?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-10T22:27:00+00:00"
+      "url": "https://www.dw.com/en/brics-summit-2026-putin-modi-reaffirm-partnership/live-79224239?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-11T12:22:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Can Trump really pay $5,000 to every American adult?",
+      "headline": "Hong Kong's Tiananmen activists sentenced to up to seven years in prison",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8r6vj7r8rko?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-10T16:48:37+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvgyvk2djk4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-11T05:41:54+00:00"
     },
     {
       "n": 7,
-      "headline": "Lawsuit challenges intimidation of DHS observers across the country",
+      "headline": "US diesel prices soar past $6 a gallon, deepening strain for hauling everyday goods",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/10/nx-s1-5961220/dhs-ice-observers-surveillance-lawsuit",
+      "url": "https://www.npr.org/2026/09/11/g-s1-142842/us-diesel-6-a-gallon",
       "topic": "Trending",
-      "published": "2026-09-10T21:07:38+00:00"
+      "published": "2026-09-11T10:04:04+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "Uganda to withdraw from Invictus Games ‘out of respect for King Charles’, says military chief",
+      "headline": "Secret son revelation ignites bitter succession dispute in Ugandan kingdom",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/09/uganda-withdraws-invictus-games-out-of-respect-king-charles",
+      "url": "https://www.theguardian.com/world/2026/sep/10/uganda-king-secret-son-succession-dispute",
       "topic": "Trending",
-      "published": "2026-09-09T18:20:24+00:00"
+      "published": "2026-09-10T17:29:20+00:00"
     },
     {
       "n": 10,
-      "headline": "Several killed in coach crash in eastern Switzerland",
+      "headline": "Iran war: Saudi-Houthi escalation intensifies Yemen conflict",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/several-killed-in-coach-crash-in-eastern-switzerland/a-79221766?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-10T19:10:00+00:00"
+      "url": "https://www.dw.com/en/iran-war-saudi-houthi-escalation-intensifies-yemen-conflict/a-79226627?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-11T11:52:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Pilot warned Amazon cargo plane going too fast before deadly crash, data shows",
+      "headline": "Israel says it has destroyed major underground Hezbollah base",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj4jynv59ddo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-09-10T16:31:30+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c4gl92lw8vpo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-11T11:34:07+00:00"
     },
     {
       "n": 12,
-      "headline": "A fossil feather from the age of dinosaurs may explain why only some birds survived",
+      "headline": "Will you get $5,000 to do the news quiz? No. But will it be fun? Maybe",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/10/nx-s1-5963519/best-fossilized-bird-feather-dinosaur-feces-extinction",
+      "url": "https://www.npr.org/2026/09/11/g-s1-142657/will-you-get-5-000-to-do-the-news-quiz-no-but-will-it-be-fun-maybe",
       "topic": "Trending",
-      "published": "2026-09-10T18:07:57+00:00"
+      "published": "2026-09-11T09:01:00+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "Babies born to anaemic mothers have smaller brains, study finds",
+      "headline": "Uganda to withdraw from Invictus Games ‘out of respect for King Charles’, says military chief",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/sep/09/babies-born-to-anaemic-mothers-have-smaller-brains-study-finds",
-      "topic": "Science",
-      "published": "2026-09-09T04:00:58+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/09/uganda-withdraws-invictus-games-out-of-respect-king-charles",
+      "topic": "Trending",
+      "published": "2026-09-09T18:20:24+00:00"
     },
     {
       "n": 15,
-      "headline": "Digital data leeches: trading on our profiles",
+      "headline": "Germany charges 7 suspected Hamas members over attack plot",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/digital-data-leeches-trading-on-our-profiles/a-79219770?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-charges-7-suspected-hamas-members-over-attack-plot/a-79230171?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-10T19:08:00+00:00"
+      "published": "2026-09-11T11:36:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Israel's Netanyahu to sue newspaper over claim UAE warned him of 7 October attack",
+      "headline": "Buddhist monk arrested in suspected $3m embezzlement scandal",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c1kxwm870g1o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-10T15:54:17+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c5yjkxlngjyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-11T10:50:04+00:00"
     },
     {
       "n": 17,
-      "headline": "How the WNBA became a political prop in the culture wars",
+      "headline": "On the 25th anniversary of 9/11, a divided U.S. gathers to remember and grieve",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/10/nx-s1-5957546/wnba-culture-wars",
+      "url": "https://www.npr.org/2026/09/11/nx-s1-5961366/9-11-memorial-events",
       "topic": "Trending",
-      "published": "2026-09-10T17:22:34+00:00"
+      "published": "2026-09-11T09:00:00+00:00"
     }
   ]
 }
