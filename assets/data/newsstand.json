@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T12:31:16Z",
+  "generated_at": "2026-09-11T18:56:10Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Grindr Outage Did NOT Take Place in Dallas During 2026 Republican National Convention",
+      "claim": "25 Years Later: The Top 9/11 Conspiracy Theory Fact Checks Readers Are Searching For On Lead Stories",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-grindr-outage-did-not-take-place-in-dallas-during-2026-republican-national-convention.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/analysis/2026/09/fact-check-25-years-later-top-911-conspiracy-theory-factchecks-readers-search.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Trump propose shutting down 9/11 memorial in NYC over remembrance ceremony snub?",
+      "claim": "Did Trump say he saved people on Titanic? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-shut-down-911-memorial-post/",
+      "url": "https://www.snopes.com/fact-check/trump-titanic-quote/",
       "topic": "Politics"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: Noncitizen Arrested After Voting In 2024 Presidential Election",
+      "claim": "9/11 Family Members Demand Trump Admin Release Docs ‘Deep State Has Hidden’ During Memorial",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/10/illegal-alien-arrested-after-voting-in-2024-presidential-election-ice-hsi-kansas",
+      "url": "https://dailycaller.com/2026/09/11/911-saudi-arabia",
       "topic": "Politics"
     },
     {
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "Kent Police didn’t say 76% of Dover protestors have previous convictions",
+      "claim": "Baseless 9/11 claim recirculates on 25th anniversary of the attacks",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/crime/kent-police-76-percent-dover-protestors-previous-convictions-false/",
+      "url": "https://fullfact.org/us/world-trade-center-collapse-claims/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Arizona Sen. Mark Kelly Is NOT Dropping Bid For Re-Election -- It's Satire",
+      "claim": "Grindr Outage Did NOT Take Place in Dallas During 2026 Republican National Convention",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-arizona-sen-mark-kelly-not-dropping-bid-for-reelection-its-satire.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-grindr-outage-did-not-take-place-in-dallas-during-2026-republican-national-convention.html",
       "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "10 alleged 9/11 photos, fact-checked",
+      "claim": "Was Trump rescued by 2 firefighters after 9/11?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/911-images-collection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/09/11/trump-911-firefighters-rescue/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "‘Suspected Chinese Spy’: Internet Demands Probe After Mitch McConnell’s Wife Reportedly Revealed To Have CCP Ties",
+      "claim": "Fellow Juror Reveals Holdout Lindsay Clancy Trial Juror A Black Man",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/09/reactions-elaine-chao-mitch-mcconnell-ccp-appointments-marjorie-taylor-greene-gordon-chang",
+      "url": "https://dailycaller.com/2026/09/11/hold-out-lindsay-clancy-trial-juror-black-man-paula-devlin-gayle-king",
       "topic": "Trending"
     },
     {
@@ -112,26 +112,26 @@
     },
     {
       "n": 14,
-      "claim": "Are UK household energy bills the ‘highest in Europe’?",
+      "claim": "Solar panels do not currently occupy ‘thousands of square miles’ of farmland",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/environment/andy-burnham-nigel-farage-household-energy-bills/",
+      "url": "https://fullfact.org/environment/lee-anderson-solar-panels-farmland/",
       "topic": "Science"
     },
     {
       "n": 15,
-      "claim": "FAKE Images Illustrate Story Of Bear Carrying Injured Animals To Wildlife Center -- Images Are AI-Generated",
+      "claim": "Arizona Sen. Mark Kelly Is NOT Dropping Bid For Re-Election -- It's Satire",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-images-illustrate-baseless-story-of-a-bear-that-carried-injured-raccoon-and-fox-to-wildlife-center.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-arizona-sen-mark-kelly-not-dropping-bid-for-reelection-its-satire.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Did Trump threaten to turn off Niagara Falls water unless Canada pays tariff?",
+      "claim": "Was Trump at Ground Zero with group of workers days after 9/11, as he claimed?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-niagara-falls-post/",
+      "url": "https://www.snopes.com/news/2026/09/11/trump-911-ground-zero-workers/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Anthropic blocks possible attempt to use AI to make biological weapons",
+      "headline": "Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-09-11T08:15:25+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-11T16:58:34+00:00"
     },
     {
       "n": 2,
-      "headline": "Remembering 9/11. And, Vance, Trump urge voters to back Republicans in the midterms",
+      "headline": "As diseases loom, CDC's response to measles deaths stirs fears about agency's reliability",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/11/g-s1-142846/up-first-newsletter-september-11-remembrance-republican-midterm-convention-scotus-missouri-redistricting",
-      "topic": "Politics",
-      "published": "2026-09-11T11:55:49+00:00"
+      "url": "https://www.npr.org/2026/09/11/nx-s1-5950002/as-diseases-loom-cdcs-response-to-measles-deaths-stirs-fears-about-agencys-reliability",
+      "topic": "Trending",
+      "published": "2026-09-11T15:34:51+00:00"
     },
     {
       "n": 3,
-      "headline": "WATCH LIVE: Trump delivers remarks at Pentagon's Sept. 11 observance ceremony",
+      "headline": "Afghan woman whose case was the first for a long-dormant court has been deported, officials say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-delivers-remarks-at-pentagons-sept-11-observance-ceremony",
-      "topic": "Politics",
-      "published": "2026-09-11T00:21:12+00:00"
+      "url": "https://www.pbs.org/newshour/politics/afghan-woman-whose-case-was-the-first-for-a-long-dormant-court-has-been-deported-officials-say",
+      "topic": "Trending",
+      "published": "2026-09-11T18:42:05+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "BRICS Summit 2026: Putin, Modi reaffirm partnership",
+      "headline": "Ukraine: Russian strike on Kyiv gas station kills 2",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brics-summit-2026-putin-modi-reaffirm-partnership/live-79224239?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-11T12:22:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-russian-strike-on-kyiv-gas-station-kills-2/a-79238219?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-11T15:53:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Hong Kong's Tiananmen activists sentenced to up to seven years in prison",
+      "headline": "Norway's Princess Astrid dies two days after attending brother King Harald's funeral",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvgyvk2djk4o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cgjq1qy98vjo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-11T05:41:54+00:00"
+      "published": "2026-09-11T16:00:59+00:00"
     },
     {
       "n": 7,
-      "headline": "US diesel prices soar past $6 a gallon, deepening strain for hauling everyday goods",
+      "headline": "Is Patagonia the new data center hub? + Harley-Davidson's role in the trade war",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/11/g-s1-142842/us-diesel-6-a-gallon",
-      "topic": "Trending",
-      "published": "2026-09-11T10:04:04+00:00"
+      "url": "https://www.npr.org/2026/09/11/nx-s1-5966498/is-patagonia-the-new-data-center-hub-harley-davidsons-role-in-the-trade-war",
+      "topic": "World",
+      "published": "2026-09-11T14:16:35+00:00"
     },
     {
       "n": 8,
-      "headline": "Yemen risks return to civil war as Iran-backed Houthis target vital oil shipping route",
+      "headline": "Ebola outbreak in Congo spreads to a 7th province",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/yemen-risks-return-to-civil-war-as-iran-backed-houthis-target-vital-oil-shipping-route",
-      "topic": "World",
-      "published": "2026-09-11T00:05:43+00:00"
+      "url": "https://www.pbs.org/newshour/world/ebola-outbreak-in-congo-spreads-to-a-7th-province",
+      "topic": "Trending",
+      "published": "2026-09-11T18:16:58+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Iran war: Saudi-Houthi escalation intensifies Yemen conflict",
+      "headline": "US commemorates 25 years since 9/11 terror attack",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-war-saudi-houthi-escalation-intensifies-yemen-conflict/a-79226627?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-11T11:52:00+00:00"
+      "url": "https://www.dw.com/en/us-commemorates-25-years-since-9-11-terror-attack/a-79237898?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-11T15:26:00+00:00"
     },
     {
       "n": 11,
@@ -230,23 +230,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c4gl92lw8vpo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-09-11T11:34:07+00:00"
+      "published": "2026-09-11T15:50:23+00:00"
     },
     {
       "n": 12,
-      "headline": "Will you get $5,000 to do the news quiz? No. But will it be fun? Maybe",
+      "headline": "The voices of Sept. 11: 'My first thought was ... I can't believe that I survived",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/11/g-s1-142657/will-you-get-5-000-to-do-the-news-quiz-no-but-will-it-be-fun-maybe",
+      "url": "https://www.npr.org/2026/09/11/nx-s1-5965794/the-voices-of-sept-11-my-first-thought-was-i-cant-believe-that-i-survived",
       "topic": "Trending",
-      "published": "2026-09-11T09:01:00+00:00"
+      "published": "2026-09-11T13:37:18+00:00"
     },
     {
       "n": 13,
-      "headline": "Zelenskyy visits Canada to seek more military support for Ukraine against Russia",
+      "headline": "Senators from both parties question OpenAI on breach of AI startup Hugging Face",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/zelenskyy-visits-canada-to-seek-more-military-support-for-ukraine-against-russia",
-      "topic": "World",
-      "published": "2026-09-10T23:50:52+00:00"
+      "url": "https://www.pbs.org/newshour/politics/senators-from-both-parties-question-openai-on-breach-of-ai-startup-hugging-face",
+      "topic": "Tech / AI",
+      "published": "2026-09-11T17:56:42+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany charges 7 suspected Hamas members over attack plot",
+      "headline": "Iran pursues cautious escalation ahead of US midterms",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-charges-7-suspected-hamas-members-over-attack-plot/a-79230171?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-11T11:36:00+00:00"
+      "url": "https://www.dw.com/en/iran-pursues-cautious-escalation-ahead-of-us-midterms/a-79237061?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-11T14:54:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Buddhist monk arrested in suspected $3m embezzlement scandal",
+      "headline": "Princess Diana's 'revenge dress' goes up for auction",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5yjkxlngjyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c0lrk7d7j0no?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-11T10:50:04+00:00"
+      "published": "2026-09-11T12:04:46+00:00"
     },
     {
       "n": 17,
-      "headline": "On the 25th anniversary of 9/11, a divided U.S. gathers to remember and grieve",
+      "headline": "Remembering 9/11. And, Vance, Trump urge voters to back Republicans in the midterms",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/11/nx-s1-5961366/9-11-memorial-events",
-      "topic": "Trending",
-      "published": "2026-09-11T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/11/g-s1-142846/up-first-newsletter-september-11-remembrance-republican-midterm-convention-scotus-missouri-redistricting",
+      "topic": "Politics",
+      "published": "2026-09-11T11:55:49+00:00"
     }
   ]
 }
