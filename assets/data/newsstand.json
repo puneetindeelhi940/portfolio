@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T11:56:12Z",
+  "generated_at": "2026-09-12T18:02:28Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Vulgar sign awaits Trump on his Ireland flight path?",
+      "claim": "18 rumors about mail-in ballots, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/11/vulgar-sign-trump-ireland/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/mail-in-ballots-midterms-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "Alt News Impact: Meta removes doctored, AI generated visuals of women CJP protesters",
-      "verdict": "MISLEADING",
+      "claim": "Forty-six days on, taps in Kolkata’s Jyotinagar Colony still run dry",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/alt-news-impact-meta-removes-ai-manipulated-videos-of-women-from-jantar-mantar-protest/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/forty-six-days-on-taps-in-kolkatas-jyotinagar-colony-still-run-dry/",
+      "topic": "Trending"
     },
     {
       "n": 7,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did FCC threaten Jimmy Kimmel over Talarico interview? What we know",
+      "claim": "Marsha Blackburn didn't say she would bring back school segregation in Tennessee if elected governor",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/11/fcc-jimmy-kimmel-talarico/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/marsha-blackburn-tennessee-school-segregation/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "9/11 Family Members Demand Trump Admin Release Docs ‘Deep State Has Hidden’ During Memorial",
+      "claim": "Man Waiving Palestinian Flag Runs Into Field At Yankee Stadium On 25th Anniversary Of 9/11",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/11/911-saudi-arabia",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/12/palestinian-flag-yankee-stadium-field-9-11-anniversary",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,11 +104,11 @@
     },
     {
       "n": 13,
-      "claim": "Jadavpur University vandalism: ABVP leaders, BJP functionaries identified in CCTV footage",
-      "verdict": "FALSE",
+      "claim": "Alt News Impact: Meta removes doctored, AI generated visuals of women CJP protesters",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/jadavpur-university-vandalism-abvp-leaders-bjp-functionaries-identified-in-cctv-footage/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/alt-news-impact-meta-removes-ai-manipulated-videos-of-women-from-jantar-mantar-protest/",
+      "topic": "Tech / AI"
     },
     {
       "n": 14,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Mark Carney offer Americans $6K to vote against Republicans?",
+      "claim": "Vulgar sign awaits Trump on his Ireland flight path?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mark-carney-offer-americans-6000/",
+      "url": "https://www.snopes.com/news/2026/09/11/vulgar-sign-trump-ireland/",
       "topic": "Politics"
     },
     {
@@ -146,14 +146,94 @@
   "reliable": [
     {
       "n": 1,
+      "headline": "Anthropic boss Dario Amodei calls for AI development to slow down",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-09-12T17:42:38+00:00"
+    },
+    {
+      "n": 2,
+      "headline": "People are still afraid of those three letters': Fighting the stigma of HIV",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/12/g-s1-142404/hiv-aids-brazil-stigma",
+      "topic": "Trending",
+      "published": "2026-09-12T13:03:20+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "Trump touches a nerve while in Ireland by saying reunification would be 'fantastic",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/trump-touches-a-nerve-while-in-ireland-by-saying-reunification-would-be-fantastic",
+      "topic": "Politics",
+      "published": "2026-09-12T17:11:01+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Burial of King Oyo takes place in Uganda as news anchor prepares for throne",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/12/burial-king-oyo-uganda",
+      "topic": "Trending",
+      "published": "2026-09-12T15:09:05+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Baghdad confirms attack on Saudi pipeline came from Iraq",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/baghdad-confirms-attack-on-saudi-pipeline-came-from-iraq/a-79247086?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-12T17:36:00+00:00"
+    },
+    {
+      "n": 6,
       "headline": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-12T11:00:34+00:00"
+      "published": "2026-09-12T12:15:50+00:00"
     },
     {
-      "n": 2,
+      "n": 7,
+      "headline": "OPINION: 25 years on, a nation still mourns",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/12/nx-s1-5958560/opinion-25-years-on-a-nation-still-mourns",
+      "topic": "Trending",
+      "published": "2026-09-12T12:00:00+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Saudi Arabia has few options as it faces mounting threats from Iran and its allies",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/saudi-arabia-has-few-options-as-it-faces-mounting-threats-from-iran-and-its-allies",
+      "topic": "World",
+      "published": "2026-09-12T16:52:06+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Six Nigerians extradited to US over $6M online romance scam",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/sep/12/nigerians-extradited-online-romance-scams",
+      "topic": "Trending",
+      "published": "2026-09-12T14:05:45+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Why are European banks moving gold out of United States?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/why-are-european-banks-moving-gold-out-of-united-states/a-79213013?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-12T15:32:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "A united Ireland would be 'fantastic' says Trump during Irish visit",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cy0zvx15rywo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-12T13:56:20+00:00"
+    },
+    {
+      "n": 12,
       "headline": "A cancer survivor hoped to work — then she lost her Medicaid disability coverage",
       "source": "NPR",
       "url": "https://www.npr.org/2026/09/12/nx-s1-5966884/insurance-coverage-cancer-disability-medicaid",
@@ -161,15 +241,15 @@
       "published": "2026-09-12T11:00:00+00:00"
     },
     {
-      "n": 3,
-      "headline": "Officials in Nashville unite across the aisle over renaming airport after Dolly Parton",
+      "n": 13,
+      "headline": "BRICS leaders voice concern over Middle East, condemn unilateral sanctions at India summit",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/officials-in-nashville-unite-across-the-aisle-over-renaming-airport-after-dolly-parton",
+      "url": "https://www.pbs.org/newshour/world/brics-leaders-voice-concern-over-middle-east-condemn-unilateral-sanctions-at-india-summit",
       "topic": "Trending",
-      "published": "2026-09-12T00:11:40+00:00"
+      "published": "2026-09-12T16:28:01+00:00"
     },
     {
-      "n": 4,
+      "n": 14,
       "headline": "$15m fund launched to create ‘unstoppable momentum’ to end FGM worldwide",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/sep/11/15m-fund-launched-to-create-unstoppable-momentum-to-end-fgm-worldwide",
@@ -177,108 +257,28 @@
       "published": "2026-09-11T04:00:04+00:00"
     },
     {
-      "n": 5,
-      "headline": "Uganda lays 'boy king' Oyo to rest amid succession row",
+      "n": 15,
+      "headline": "Ukraine: Several killed in series of Russian strikes",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uganda-lays-boy-king-oyo-to-rest-amid-succession-row/a-79243428?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-several-killed-in-series-of-russian-strikes/a-79245980?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-12T11:41:00+00:00"
+      "published": "2026-09-12T15:01:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "A united Ireland would be 'fantastic' says Trump during Irish visit",
+      "n": 16,
+      "headline": "French officials investigate if malicious act caused train derailment",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy0zvx15rywo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-12T11:27:44+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c33kp533nn6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-12T15:05:53+00:00"
     },
     {
-      "n": 7,
+      "n": 17,
       "headline": "Trump meets Ireland's leaders before heading to his golf club in Doonbeg",
       "source": "NPR",
       "url": "https://www.npr.org/2026/09/12/g-s1-143076/trump-meets-irelands-leaders",
       "topic": "Politics",
       "published": "2026-09-12T10:55:14+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Federal court rejects Trump administration order keeping Michigan coal plant open",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/federal-court-rejects-trump-administration-order-keeping-michigan-coal-plant-open",
-      "topic": "Politics",
-      "published": "2026-09-11T23:02:58+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Secret son revelation ignites bitter succession dispute in Ugandan kingdom",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/10/uganda-king-secret-son-succession-dispute",
-      "topic": "Trending",
-      "published": "2026-09-10T17:29:20+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "BRICS summit leaders urge 'maximum restraint' in Middle East",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brics-summit-leaders-urge-maximum-restraint-in-middle-east/live-79224239?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-12T11:39:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Tragic death of woman who testified against father in notorious mafia murder of mother",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c39mr81j2j1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-09-11T20:34:29+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "The secret quest to preserve Palestinian writer Raja Shehadeh's diaries",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/12/g-s1-142760/palestinian-writer-archive-scotland-israel-shehadeh",
-      "topic": "Trending",
-      "published": "2026-09-12T10:00:00+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Americans remember the lives lost in the 9/11 attacks 25 years ago",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/americans-remember-the-lives-lost-in-the-9-11-attacks-25-years-ago",
-      "topic": "Trending",
-      "published": "2026-09-11T22:55:08+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Uganda to withdraw from Invictus Games ‘out of respect for King Charles’, says military chief",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/09/uganda-withdraws-invictus-games-out-of-respect-king-charles",
-      "topic": "Trending",
-      "published": "2026-09-09T18:20:24+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "Russian GRU spies behind failed Leipzig attack: reports",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russian-gru-spies-behind-failed-leipzig-attack-reports/a-79244858?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-12T11:30:00+00:00"
-    },
-    {
-      "n": 16,
-      "headline": "Never, ever forget' - America marks 25th anniversary of 9/11 attacks",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/clyjqvjzlwno?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-12T00:43:00+00:00"
-    },
-    {
-      "n": 17,
-      "headline": "Why are the people building the most powerful AI so worried about what it could do?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/12/nx-s1-5950588/openai-anthropic-ai-safety-researchers-hacks",
-      "topic": "Tech / AI",
-      "published": "2026-09-12T09:00:00+00:00"
     }
   ]
 }
