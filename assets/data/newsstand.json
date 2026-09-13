@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T02:49:25Z",
+  "generated_at": "2026-09-13T13:03:57Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Does photo show experimental circular forest in Japan?",
+      "claim": "AG Todd Blanche didn't say predators in Epstein files wouldn't be prosecuted",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/experimental-circular-forest-japan/",
+      "url": "https://www.snopes.com/fact-check/todd-blanche-predators-epstein-files/",
       "topic": "Trending"
     },
     {
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "Forty-six days on, taps in Kolkata’s Jyotinagar Colony still run dry",
+      "claim": "Modi gifted self portrait to Xi Jinping? No, old video falsely viral",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/forty-six-days-on-taps-in-kolkatas-jyotinagar-colony-still-run-dry/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/modi-gifted-self-portrait-to-xi-jinping-no-old-video-falsely-viral/",
+      "topic": "Politics"
     },
     {
       "n": 7,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "18 rumors about mail-in ballots, examined",
+      "claim": "Does photo show experimental circular forest in Japan?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/mail-in-ballots-midterms-rumors/",
+      "url": "https://www.snopes.com/fact-check/experimental-circular-forest-japan/",
       "topic": "Trending"
     },
     {
@@ -104,11 +104,11 @@
     },
     {
       "n": 13,
-      "claim": "Alt News Impact: Meta removes doctored, AI generated visuals of women CJP protesters",
-      "verdict": "MISLEADING",
+      "claim": "Forty-six days on, taps in Kolkata’s Jyotinagar Colony still run dry",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/alt-news-impact-meta-removes-ai-manipulated-videos-of-women-from-jantar-mantar-protest/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/forty-six-days-on-taps-in-kolkatas-jyotinagar-colony-still-run-dry/",
+      "topic": "Trending"
     },
     {
       "n": 14,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Marsha Blackburn didn't say she would bring back school segregation in Tennessee if elected governor",
+      "claim": "18 rumors about mail-in ballots, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/marsha-blackburn-tennessee-school-segregation/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/mail-in-ballots-midterms-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Anthropic boss Dario Amodei calls for AI development to slow down",
+      "headline": "AI staff 'genuinely frightened' for humanity's future, ex-Anthropic researcher tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&at_campaign=rss",
       "topic": "Tech / AI",
-      "published": "2026-09-12T21:16:47+00:00"
+      "published": "2026-09-13T11:13:07+00:00"
     },
     {
       "n": 2,
-      "headline": "Celine Dion returns to the stage after battling rare illness",
+      "headline": "Can you imagine a universe without a new 'Star Trek' on the horizon?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
-      "topic": "Trending",
-      "published": "2026-09-12T23:54:06+00:00"
+      "url": "https://www.npr.org/2026/09/13/nx-s1-5957544/star-trek-anniversary",
+      "topic": "Celebrity",
+      "published": "2026-09-13T11:00:00+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "France: Attack ruled out in train derailment",
+      "headline": "Ukraine, Poland say Russia hit Warsaw-bound passenger train",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-attack-ruled-out-in-train-derailment/a-79241365?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-13T01:14:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-poland-say-russia-hit-warsaw-bound-passenger-train/a-79251428?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-13T12:55:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
+      "headline": "Iran war reshapes Brics ties but also exposes divisions",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-12T12:15:50+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ce8767g4jdpo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-13T11:23:42+00:00"
     },
     {
       "n": 7,
-      "headline": "Alien Terrorist Removal Court deports legal US resident to Afghanistan in first-ever case",
+      "headline": "Indonesian passenger ship overturns, sparking search for about 130 missing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/12/nx-s1-5967476/alien-removal-court-deportation-afganistan",
+      "url": "https://www.npr.org/2026/09/13/g-s1-143114/about-130-missing-after-indonesian-passenger-ship-overturns",
       "topic": "Trending",
-      "published": "2026-09-12T18:29:18+00:00"
+      "published": "2026-09-13T10:31:10+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Anthropic boss Dario Amodei calls for AI slowdown",
+      "headline": "Russians on the Goethe-Institut: 'Hostage to politics",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/anthropic-boss-dario-amodei-calls-for-ai-slowdown/a-79247690?maca=en-rss-en-all-1573-rdf",
-      "topic": "Tech / AI",
-      "published": "2026-09-12T23:32:00+00:00"
+      "url": "https://www.dw.com/en/russians-on-the-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-13T11:50:00+00:00"
     },
     {
       "n": 11,
-      "headline": "They lost their jobs after posting about Charlie Kirk, but some have no regrets",
+      "headline": "Six dead, 130 missing after Indonesian ferry capsizes in Java Sea",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cvgykzgljlyo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-13T00:49:08+00:00"
+      "published": "2026-09-13T12:56:39+00:00"
     },
     {
       "n": 12,
-      "headline": "People are still afraid of those three letters': Fighting the stigma of HIV",
+      "headline": "How a young woman became an ISIS bride — and then an informant, helping save others",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/12/g-s1-142404/hiv-aids-brazil-stigma",
+      "url": "https://www.npr.org/2026/09/13/nx-s1-5963568/canada-woman-escapes-isis",
       "topic": "Trending",
-      "published": "2026-09-12T13:03:20+00:00"
+      "published": "2026-09-13T09:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany news: Thousands protest against AfD in Düsseldorf",
+      "headline": "Croatia: 'Monster' fire triggers evacuation on Brac island",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-thousands-protest-against-afd-in-düsseldorf/live-79223427?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/croatia-monster-fire-triggers-evacuation-on-brac-island/a-79250480?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-12T23:18:00+00:00"
+      "published": "2026-09-13T10:55:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Trump's comments on a united Ireland may have targeted audience across the Atlantic",
+      "headline": "They lost their jobs after posting about Charlie Kirk, but some have no regrets",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwyzppd1d5lo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-12T21:25:28+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-13T00:49:08+00:00"
     },
     {
       "n": 17,
-      "headline": "OPINION: 25 years on, a nation still mourns",
+      "headline": "Celine Dion returns to the stage after battling rare illness",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/12/nx-s1-5958560/opinion-25-years-on-a-nation-still-mourns",
+      "url": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
       "topic": "Trending",
-      "published": "2026-09-12T12:00:00+00:00"
+      "published": "2026-09-12T23:54:06+00:00"
     }
   ]
 }
