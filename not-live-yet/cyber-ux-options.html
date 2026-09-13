@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><base href="../">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Puneet Arora">
+<meta name="description" content="Three cybersecurity UX demo concepts for senior design hiring — SOC triage, AI agent consent, and real-time scam interception.">
+<title>Threat Surface — Three Cybersecurity UX Demos · Puneet Arora</title>
+<style>
+:root{
+  --ivory:#F5F1E8; --ivory-2:#EDE7DA; --paper:#FBF8F1;
+  --ink:#14110F; --ink-2:#3A342E; --ink-3:#6B635A;
+  --red:#C8102E; --red-2:#8F0B20; --red-tint:rgba(200,16,46,.08);
+  --rule:#15120F; --hair:rgba(20,17,15,.16);
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ivory); color:var(--ink);
+  font-family:Roboto,"Segoe UI",system-ui,-apple-system,sans-serif;
+  line-height:1.55; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:radial-gradient(rgba(20,17,15,.14) 1px,transparent 1px);
+  background-size:4px 4px;
+}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 24px 110px}
+
+/* ── hazard tape ───────────────────────────────── */
+.tape{
+  position:relative;z-index:2;height:26px;
+  background:repeating-linear-gradient(135deg,var(--red) 0 22px,var(--ink) 22px 44px);
+  background-size:62px 62px;
+  animation:crawl 2.4s linear infinite;
+}
+@keyframes crawl{to{background-position:62px 0}}
+@media (prefers-reduced-motion:reduce){.tape{animation:none}}
+
+/* ── type ──────────────────────────────────────── */
+.mono{font-family:var(--mono)}
+.kick{
+  font-family:var(--mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--red);font-weight:700;
+}
+.kick .sep{color:var(--ink-3)}
+h1{
+  font-size:clamp(38px,7.4vw,92px);line-height:.92;letter-spacing:-.04em;
+  font-weight:900;margin:18px 0 0;text-transform:uppercase;
+}
+h1 em{font-style:normal;color:var(--red)}
+.lede{
+  margin-top:22px;font-size:clamp(16px,1.7vw,20px);color:var(--ink-2);
+  font-weight:400;
+}
+.lede b{font-weight:700;color:var(--ink);box-shadow:inset 0 -.55em var(--red-tint)}
+
+header.hd{padding:54px 0 40px;border-bottom:4px solid var(--rule)}
+.hd-meta{
+  display:flex;gap:10px 26px;flex-wrap:wrap;margin-top:28px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+.hd-meta b{color:var(--ink);font-weight:700}
+
+h2.sec{
+  font-size:clamp(24px,3.6vw,42px);line-height:1.02;letter-spacing:-.028em;
+  font-weight:900;text-transform:uppercase;margin:0;
+}
+.sechead{margin:76px 0 0;padding-top:22px;border-top:2px solid var(--rule)}
+.sechead .num{font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:var(--red);font-weight:700}
+.sechead p{margin-top:12px;color:var(--ink-2);font-size:16.5px}
+
+/* ── intel strip ───────────────────────────────── */
+.intel{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;margin-top:30px;
+  border:2px solid var(--rule);background:var(--paper)}
+.intel .cell{padding:24px 22px 22px;border-right:1px solid var(--hair)}
+.intel .cell:last-child{border-right:0}
+.intel .stat{font-size:clamp(34px,5vw,52px);font-weight:900;letter-spacing:-.045em;
+  line-height:.9;color:var(--red)}
+.intel .stat small{font-size:.42em;letter-spacing:-.01em;font-weight:800;color:var(--ink)}
+.intel h3{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin:14px 0 7px}
+.intel p{font-size:14px;color:var(--ink-2);line-height:1.5}
+.intel .src{margin-top:11px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-3)}
+@media(max-width:860px){.intel .cell{border-right:0;border-bottom:1px solid var(--hair)}
+  .intel .cell:last-child{border-bottom:0}}
+
+/* ── option blocks ─────────────────────────────── */
+.opt{margin-top:34px;border:2px solid var(--rule);background:var(--paper);
+  box-shadow:9px 9px 0 var(--ink)}
+.opt.pick{box-shadow:9px 9px 0 var(--red)}
+.opt-top{display:grid;grid-template-columns:1.25fr .9fr;gap:0;border-bottom:2px solid var(--rule)}
+@media(max-width:940px){.opt-top{grid-template-columns:1fr}}
+.opt-id{padding:30px 30px 26px;border-right:2px solid var(--rule)}
+@media(max-width:940px){.opt-id{border-right:0;border-bottom:2px solid var(--rule)}}
+.opt-id .tagrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.badge{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:800;padding:5px 10px;border:1.5px solid var(--rule);background:var(--ivory-2);color:var(--ink)}
+.badge.hot{background:var(--red);border-color:var(--red);color:#fff}
+.opt-id .idx{font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:var(--ink-3);font-weight:700}
+.opt-id h3{font-size:clamp(32px,5.4vw,58px);line-height:.94;letter-spacing:-.04em;
+  font-weight:900;text-transform:uppercase;margin:14px 0 0}
+.opt-id h3 em{font-style:normal;color:var(--red)}
+.opt-id .sub{margin-top:12px;font-size:17px;color:var(--ink-2);font-weight:500}
+.opt-id .ctx{margin-top:16px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3)}
+
+/* ── mini mock previews (pure CSS) ─────────────── */
+.mock{position:relative;min-height:260px;background:var(--ivory-2);overflow:hidden;padding:20px}
+.mock .lbl{position:absolute;bottom:10px;right:12px;font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+
+/* mock A — case queue + blast radius */
+.mkA .row{display:flex;align-items:center;gap:8px;background:var(--paper);border:1.5px solid var(--rule);
+  padding:7px 9px;margin-bottom:7px;font-family:var(--mono);font-size:10px;letter-spacing:.06em}
+.mkA .dot{width:9px;height:9px;flex:0 0 9px;background:var(--ink)}
+.mkA .row.hi{border-color:var(--red);box-shadow:3px 3px 0 var(--red)}
+.mkA .row.hi .dot{background:var(--red);animation:blip 1.3s steps(1) infinite}
+@keyframes blip{50%{opacity:.15}}
+.mkA .bar{flex:1;height:5px;background:rgba(20,17,15,.12);position:relative}
+.mkA .bar i{position:absolute;inset:0 40% 0 0;background:var(--ink)}
+.mkA .row.hi .bar i{inset:0 18% 0 0;background:var(--red)}
+.mkA .ring{position:absolute;right:-78px;bottom:-78px;width:206px;height:206px;border-radius:50%;
+  border:2px solid var(--red);opacity:.4;pointer-events:none}
+.mkA .ring:nth-of-type(2){right:-52px;bottom:-52px;width:152px;height:152px;opacity:.3}
+.mkA .ring:nth-of-type(3){right:-26px;bottom:-26px;width:98px;height:98px;opacity:.7;
+  background:var(--red-tint)}
+
+/* mock B — consent leash */
+.mkB .card{background:var(--paper);border:2px solid var(--rule);padding:13px}
+.mkB .ttl{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:700}
+.mkB .perm{display:flex;align-items:center;gap:9px;margin-top:9px;font-size:11.5px;font-weight:600}
+.mkB .sw{width:30px;height:16px;border:1.5px solid var(--rule);background:var(--ivory-2);
+  position:relative;flex:0 0 30px}
+.mkB .sw i{position:absolute;top:1.5px;left:1.5px;width:10px;height:10px;background:var(--ink)}
+.mkB .perm.on .sw{background:var(--red);border-color:var(--red)}
+.mkB .perm.on .sw i{left:auto;right:1.5px;background:#fff}
+.mkB .perm.off{color:var(--ink-3)}
+.mkB .leash{position:relative;height:34px;margin-top:12px}
+.mkB .leash::before{content:"";position:absolute;left:0;right:0;top:16px;height:2px;
+  background:repeating-linear-gradient(90deg,var(--ink) 0 7px,transparent 7px 13px)}
+.mkB .leash::after{content:"";position:absolute;top:8px;width:18px;height:18px;border-radius:50%;
+  background:var(--red);animation:tug 3.4s ease-in-out infinite}
+@keyframes tug{0%,100%{left:0}50%{left:calc(100% - 18px)}}
+.mkB .exp{margin-top:11px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--red);font-weight:700}
+
+/* mock C — the pause */
+.mkC{display:grid;place-items:center;padding-bottom:38px}
+.mkC .lbl{right:auto;left:12px}
+.mkC .phone{width:158px;height:212px;background:var(--paper);border:2.5px solid var(--rule);
+  padding:13px;position:relative;box-shadow:6px 6px 0 var(--red)}
+.mkC .warn{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--red);line-height:1.25}
+.mkC .msg{margin-top:9px;font-size:10.5px;color:var(--ink-2);line-height:1.4}
+.mkC .count{margin-top:13px;font-family:var(--mono);font-size:30px;font-weight:900;
+  letter-spacing:-.04em;color:var(--ink)}
+.mkC .count span{animation:tick 1s steps(1) infinite}
+@keyframes tick{50%{opacity:.25}}
+.mkC .prog{margin-top:7px;height:7px;border:1.5px solid var(--rule);position:relative;overflow:hidden}
+.mkC .prog i{position:absolute;inset:0;background:var(--red);transform-origin:left;
+  animation:drain 9s linear infinite}
+@keyframes drain{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+.mkC .cta{margin-top:11px;font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3)}
+
+/* ── option body ───────────────────────────────── */
+.opt-body{display:grid;grid-template-columns:1.05fr 1fr;gap:0}
+@media(max-width:940px){.opt-body{grid-template-columns:1fr}}
+.pane{padding:28px 30px 30px;border-right:1px solid var(--hair)}
+.pane:last-child{border-right:0}
+@media(max-width:940px){.pane{border-right:0;border-bottom:1px solid var(--hair)}
+  .pane:last-child{border-bottom:0}}
+.pane h4{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  font-weight:800;color:var(--red);padding-bottom:9px;border-bottom:2px solid var(--rule);margin-bottom:15px}
+.pane p{font-size:15.5px;color:var(--ink-2);margin-bottom:12px}
+.pane p strong{color:var(--ink);font-weight:700}
+.screens{list-style:none}
+.screens li{position:relative;padding:11px 0 11px 40px;border-bottom:1px solid var(--hair);font-size:15px}
+.screens li:last-child{border-bottom:0}
+.screens li::before{content:counter(s,decimal-leading-zero);counter-increment:s;
+  position:absolute;left:0;top:11px;font-family:var(--mono);font-size:11px;font-weight:800;
+  color:#fff;background:var(--ink);padding:3px 6px;letter-spacing:.06em}
+.screens{counter-reset:s}
+.screens li b{font-weight:800;color:var(--ink)}
+
+.signal{margin-top:18px;padding:15px 17px;background:var(--red);color:#fff}
+.signal .h{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:800;opacity:.85}
+.signal p{margin:7px 0 0;font-size:15px;color:#fff;font-weight:500}
+
+.opt-foot{border-top:2px solid var(--rule);display:flex;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.opt-foot div{padding:14px 20px;border-right:1px solid var(--hair);color:var(--ink-3)}
+.opt-foot div:last-child{border-right:0}
+.opt-foot b{color:var(--ink);font-weight:800}
+
+/* ── matrix ────────────────────────────────────── */
+.tblwrap{overflow-x:auto;margin-top:30px;border:2px solid var(--rule);background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th,td{text-align:left;padding:15px 18px;border-bottom:1px solid var(--hair);font-size:14.5px}
+thead th{background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.18em;text-transform:uppercase;font-weight:700;border-bottom:0}
+tbody th{font-weight:800;font-size:14px;white-space:nowrap}
+td.score{font-family:var(--mono);font-weight:800;letter-spacing:.05em}
+td.hi{color:var(--red)}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+
+/* ── verdict ───────────────────────────────────── */
+.verdict{margin-top:34px;border:2px solid var(--red);background:var(--paper);
+  box-shadow:9px 9px 0 var(--red);padding:34px 32px}
+.verdict .kick{margin-bottom:12px}
+.verdict h3{font-size:clamp(24px,3.4vw,38px);line-height:1.03;letter-spacing:-.03em;
+  font-weight:900;text-transform:uppercase}
+.verdict p{margin-top:16px;font-size:16.5px;color:var(--ink-2)}
+.verdict p b{color:var(--ink);font-weight:800}
+
+/* ── deliverables ──────────────────────────────── */
+.deliv{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px}
+.deliv .d{border:2px solid var(--rule);background:var(--paper);padding:24px 22px}
+.deliv .d .n{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--red);font-weight:800}
+.deliv .d h4{font-size:20px;font-weight:900;letter-spacing:-.02em;margin:10px 0 9px;text-transform:uppercase}
+.deliv .d p{font-size:14.5px;color:var(--ink-2)}
+.deliv .d ul{margin:11px 0 0 17px;font-size:14px;color:var(--ink-2)}
+.deliv .d li{margin-bottom:5px}
+
+.ask{margin-top:30px;border-left:6px solid var(--red);padding:4px 0 4px 20px}
+.ask h4{font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.ask ol{margin:12px 0 0 20px;font-size:15.5px;color:var(--ink-2)}
+.ask li{margin-bottom:8px}
+
+footer.ft{margin-top:80px;padding-top:22px;border-top:4px solid var(--rule);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+footer.ft b{color:var(--ink);font-weight:800}
+.srcs{margin-top:26px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink-3);line-height:1.9}
+.srcs a{color:var(--ink-3);text-decoration:underline;text-underline-offset:3px}
+.srcs a:hover{color:var(--red)}
+</style>
+</head>
+<body>
+
+<div class="tape"></div>
+
+<div class="wrap">
+
+<header class="hd">
+  <div class="kick">Threat Surface <span class="sep">//</span> Concept Selection <span class="sep">//</span> Sept 2026</div>
+  <h1>Three cybersecurity UX demos. One of them gets you in the <em>room</em>.</h1>
+  <p class="lede">Security is the last domain where UX is still treated as decoration — which is exactly why a designer who can do it well is <b>unusually hard to hire</b>. Below: what the field actually looks like in late 2026, three concepts built against real unsolved problems, and an honest ranking of which one buys the most credibility with AI platform companies and with a bank like JPMorgan Chase.</p>
+  <div class="hd-meta">
+    <span>Audience <b>AI platforms · Tier-1 banking</b></span>
+    <span>Deliverable <b>Interactive demo + case study</b></span>
+    <span>Status <b>Awaiting selection</b></span>
+    <span>Built by <b>Puneet Arora</b></span>
+  </div>
+</header>
+
+<!-- ══ INTEL ══════════════════════════════════ -->
+<div class="sechead">
+  <div class="num">01 — Field Scan</div>
+  <h2 class="sec">What the ground actually looks like</h2>
+  <p>Four shifts that moved between 2024 and now. Every concept below is aimed at one of them.</p>
+</div>
+
+<div class="intel">
+  <div class="cell">
+    <div class="stat">8.5<small>s</small></div>
+    <h3>Auth got solved. Meaning didn't.</h3>
+    <p>Passkey sign-in averages 8.5s against 31.2s for passwords, at ~99% phishing resistance. The hard problem moved: it is no longer entering a credential, it is <strong>understanding what you just approved</strong>. Recovery is where most rollouts still fail.</p>
+    <div class="src">FIDO · MSFT Digital Defense</div>
+  </div>
+  <div class="cell">
+    <div class="stat">1–5<small>%</small></div>
+    <h3>The SOC is underwater</h3>
+    <p>Analysts face 100,000+ daily alerts of which 1–5% are true positives; 40–62% are never opened at all. AI triage cuts false positives 60–80%. The real design move: stop treating <strong>the alert</strong> as the unit of work.</p>
+    <div class="src">Intezer · arXiv 2605.08316</div>
+  </div>
+  <div class="cell">
+    <div class="stat">RFC<small>—draft</small></div>
+    <h3>Agent consent is unwritten</h3>
+    <p>An IETF draft exists for OAuth on-behalf-of-user because OAuth's assumptions break: it presumes <strong>synchronous consent and single-hop delegation</strong>. Agents act asynchronously and chain calls across services. No one has designed this surface well yet.</p>
+    <div class="src">IETF draft-oauth-ai-agents</div>
+  </div>
+  <div class="cell">
+    <div class="stat">11<small>%</small></div>
+    <h3>Fraud targets the person, live</h3>
+    <p>Deepfakes are 11% of global fraud. Banks now detect an <strong>active call during a high-risk transfer</strong> and intervene mid-flow with pauses and prompts. Timing has become the design material.</p>
+    <div class="src">Sumsub · arXiv 2502.03964</div>
+  </div>
+</div>
+
+<!-- ══ OPTIONS ════════════════════════════════ -->
+<div class="sechead">
+  <div class="num">02 — The Options</div>
+  <h2 class="sec">Three builds, three different bets</h2>
+  <p>Each one is scoped as a clickable demo plus a senior-level case study. They are not variations on a theme — they signal three different things about you.</p>
+</div>
+
+<!-- ── OPTION 1 ── -->
+<section class="opt">
+  <div class="opt-top">
+    <div class="opt-id">
+      <div class="tagrow">
+        <span class="idx">Option 01</span>
+        <span class="badge">Enterprise SOC</span>
+        <span class="badge">Desktop</span>
+        <span class="badge">Expert users</span>
+      </div>
+      <h3>Blast <em>Radius</em></h3>
+      <p class="sub">The triage console where the AI does the work but never gets the last word.</p>
+      <p class="ctx">Reads to: CrowdStrike · Wiz · Abnormal · Torq · JPMC Cybersecurity Ops</p>
+    </div>
+    <div class="mock mkA">
+      <div class="row"><i class="dot"></i><span>CASE-4471</span><span class="bar"><i></i></span><span>BENIGN 94%</span></div>
+      <div class="row hi"><i class="dot"></i><span>CASE-4472</span><span class="bar"><i></i></span><span>ESCALATE 61%</span></div>
+      <div class="row"><i class="dot"></i><span>CASE-4473</span><span class="bar"><i></i></span><span>BENIGN 88%</span></div>
+      <div class="row"><i class="dot"></i><span>CASE-4474</span><span class="bar"><i></i></span><span>BENIGN 91%</span></div>
+      <span class="ring"></span><span class="ring"></span><span class="ring"></span>
+      <span class="lbl">Case queue + downstream blast radius</span>
+    </div>
+  </div>
+  <div class="opt-body">
+    <div class="pane">
+      <h4>The problem worth solving</h4>
+      <p>Alert fatigue is not a volume problem, it is a <strong>unit-of-work problem</strong>. Every console on the market hands the analyst a list of rows and calls it triage. High-performing SOCs have already moved to correlated cases — but almost nobody has designed the interface for that shift.</p>
+      <p>Layer two: AI now produces the verdict. Which means the analyst's job quietly became <strong>adjudicating a machine's confidence under time pressure</strong> — and there is no established design language for that at all.</p>
+    </div>
+    <div class="pane">
+      <h4>What I'd build</h4>
+      <ol class="screens">
+        <li><b>Case, not alert.</b> Related signals collapse into one investigable story with a timeline, so the queue shrinks by an order of magnitude before a human touches it.</li>
+        <li><b>The dissent panel.</b> Every AI verdict ships with the argument against itself: "82% benign — here is the 18% case, and here is what would change my mind."</li>
+        <li><b>Blast radius map.</b> Before you dismiss, you see what is downstream if you are wrong. Consequence made visible at the moment of decision.</li>
+        <li><b>One-key override that teaches.</b> The analyst's call visibly feeds back into the queue — disagreement becomes training data, not a dead end.</li>
+      </ol>
+      <div class="signal">
+        <div class="h">Hiring signal</div>
+        <p>"This person can design for experts operating under load, where a wrong click has consequences." The rarest signal in the UX market.</p>
+      </div>
+    </div>
+  </div>
+  <div class="opt-foot">
+    <div>Build <b>Heaviest</b></div>
+    <div>Demo drama <b>Medium</b></div>
+    <div>Differentiation <b>High</b></div>
+    <div>Connects to <b>Human Override Matrix · AI Decision Confidence Scale</b></div>
+  </div>
+</section>
+
+<!-- ── OPTION 2 ── -->
+<section class="opt pick">
+  <div class="opt-top">
+    <div class="opt-id">
+      <div class="tagrow">
+        <span class="idx">Option 02</span>
+        <span class="badge hot">Recommended</span>
+        <span class="badge">Agent identity</span>
+        <span class="badge">Cross-platform</span>
+      </div>
+      <h3>The <em>Leash</em></h3>
+      <p class="sub">Consent UI for AI agents that can act while you're asleep.</p>
+      <p class="ctx">Reads to: Anthropic · OpenAI · Okta/Auth0 · Stytch · WorkOS · JPMC agentic platform teams</p>
+    </div>
+    <div class="mock mkB">
+      <div class="card">
+        <div class="ttl">Grant · Research Agent</div>
+        <div class="perm on"><span class="sw"><i></i></span>Read inbox · 7 days</div>
+        <div class="perm on"><span class="sw"><i></i></span>Draft replies</div>
+        <div class="perm off"><span class="sw"><i></i></span>Send on my behalf</div>
+        <div class="perm off"><span class="sw"><i></i></span>Spend · any amount</div>
+        <div class="leash"></div>
+        <div class="exp">Auto-revokes in 7d · 1-tap kill</div>
+      </div>
+      <span class="lbl">Scope · blast radius · time · reversibility</span>
+    </div>
+  </div>
+  <div class="opt-body">
+    <div class="pane">
+      <h4>The problem worth solving</h4>
+      <p>Today's agent consent screen is a checkbox list inherited from 2012 OAuth. It answers "what APIs" and not one of the four questions a person actually has: <strong>how far, how long, how bad if wrong, and how do I stop it?</strong></p>
+      <p>The standards bodies are openly writing that this is a gap — agents act asynchronously, chain calls across services, and sub-delegate to other agents, all of which OAuth's consent model was never built for. This is the rare case where a designer can arrive <strong>before the pattern exists</strong> rather than after.</p>
+    </div>
+    <div class="pane">
+      <h4>What I'd build</h4>
+      <ol class="screens">
+        <li><b>Consent as four dimensions.</b> Scope, blast radius, duration, reversibility — "read your inbox for 7 days, send nothing, spend nothing, revocable in one tap."</li>
+        <li><b>The dry run.</b> Before granting, watch a simulation of what this agent would actually do with these permissions. Consent you can see rather than consent you infer.</li>
+        <li><b>Standing rules, not interrupts.</b> Set escalation thresholds once ("ask me above $200") instead of being poked forty times a day. Consent fatigue is the real failure mode.</li>
+        <li><b>The receipt trail.</b> "What did it do while I was asleep?" gets an answer — a readable ledger with one-tap undo on anything reversible.</li>
+        <li><b>Sub-delegation view.</b> When your agent hires another agent, you can see the chain and cut it anywhere along the line.</li>
+      </ol>
+      <div class="signal">
+        <div class="h">Hiring signal</div>
+        <p>"This person is ahead of the market, not competent within it." And it is the exact inverse of the dark-patterns work already in the portfolio — you catalogued manipulative consent, now you design the honest version.</p>
+      </div>
+    </div>
+  </div>
+  <div class="opt-foot">
+    <div>Build <b>Medium</b></div>
+    <div>Demo drama <b>High</b></div>
+    <div>Differentiation <b>Highest</b></div>
+    <div>Connects to <b>Dark Patterns · Agent Collaboration Model</b></div>
+  </div>
+</section>
+
+<!-- ── OPTION 3 ── -->
+<section class="opt">
+  <div class="opt-top">
+    <div class="opt-id">
+      <div class="tagrow">
+        <span class="idx">Option 03</span>
+        <span class="badge">Consumer banking</span>
+        <span class="badge">Mobile</span>
+        <span class="badge">Behavioural</span>
+      </div>
+      <h3>The <em>Pause</em></h3>
+      <p class="sub">Fifteen seconds to interrupt a scam that is happening right now.</p>
+      <p class="ctx">Reads to: JPMorgan Chase · Wells Fargo · Zelle/EWS · Revolut · Monzo fraud teams</p>
+    </div>
+    <div class="mock mkC">
+      <div class="phone">
+        <div class="warn">Are you on a call<br>right now?</div>
+        <div class="msg">The person on that call cannot see this screen. That is deliberate.</div>
+        <div class="count"><span>00:09</span></div>
+        <div class="prog"><i></i></div>
+        <div class="cta">Hold · Name a witness · Continue</div>
+      </div>
+      <span class="lbl">Friction as a feature</span>
+    </div>
+  </div>
+  <div class="opt-body">
+    <div class="pane">
+      <h4>The problem worth solving</h4>
+      <p>Authorised push payment fraud is the one attack where every control passes. Correct credentials, correct device, correct biometrics — and a person who has been <strong>emotionally captured by someone on a phone call</strong>. The bank's signals already know: active call, new payee, unusual amount, 2am.</p>
+      <p>So the entire design surface is <strong>fifteen seconds</strong>. And the hardest constraint is not the scam victim — it is the ninety-nine people who are not being scammed and just want to send money. False-positive UX is where these products die.</p>
+    </div>
+    <div class="pane">
+      <h4>What I'd build</h4>
+      <ol class="screens">
+        <li><b>Graduated interruption.</b> Risk signals map to escalating friction — from nothing, to a line of copy, to a hard cooling pause. Calibration is the whole craft.</li>
+        <li><b>Copy for a captured mind.</b> Written for someone who is not reading carefully, because they are being talked at. Short, direct, and it names the manipulation out loud.</li>
+        <li><b>Name a witness.</b> The single most effective intervention in the research: break the isolation the scammer engineered by asking who else knows about this transfer.</li>
+        <li><b>The graceful false positive.</b> The legitimate user gets through fast and does not feel accused — the make-or-break screen nobody puts in a portfolio.</li>
+        <li><b>The after-report.</b> What the bank saw and why it stepped in, so trust survives the interruption.</li>
+      </ol>
+      <div class="signal">
+        <div class="h">Hiring signal</div>
+        <p>"This person designs for human beings at their most vulnerable, and still respects the happy path." Demos in 90 seconds and the room goes quiet. Directly on-target for JPMC.</p>
+      </div>
+    </div>
+  </div>
+  <div class="opt-foot">
+    <div>Build <b>Lightest</b></div>
+    <div>Demo drama <b>Highest</b></div>
+    <div>Differentiation <b>Medium</b></div>
+    <div>Connects to <b>Dark Patterns · Situation Simulator</b></div>
+  </div>
+</section>
+
+<!-- ══ MATRIX ═════════════════════════════════ -->
+<div class="sechead">
+  <div class="num">03 — Side by Side</div>
+  <h2 class="sec">Scored against the two audiences you named</h2>
+  <p>Honest read. No option is bad; they buy different things.</p>
+</div>
+
+<div class="tblwrap">
+<table>
+  <thead>
+    <tr><th>Dimension</th><th>01 · Blast Radius</th><th>02 · The Leash</th><th>03 · The Pause</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>Pull with AI platform cos.</th><td class="score">Strong</td><td class="score hi">Exceptional</td><td class="score">Moderate</td></tr>
+    <tr><th>Pull with JPMorgan Chase</th><td class="score hi">Exceptional</td><td class="score">Strong</td><td class="score hi">Exceptional</td></tr>
+    <tr><th>Seniority signal</th><td class="score">Systems thinking</td><td class="score hi">Market foresight</td><td class="score">Human judgement</td></tr>
+    <tr><th>How crowded is this space</th><td>Contested — real incumbents to be compared against</td><td>Empty — no established pattern yet</td><td>Emerging — some bank patterns exist</td></tr>
+    <tr><th>Demo in 90 seconds?</th><td>Needs setup</td><td>Yes, with a live dry-run moment</td><td class="score hi">Yes, instantly</td></tr>
+    <tr><th>Interview defensibility</th><td>High — but experts will probe your domain depth</td><td class="score hi">Highest — nothing to compare it to</td><td>High — but "is this real?" will come up</td></tr>
+    <tr><th>Build effort</th><td>~Heaviest</td><td>~Medium</td><td>~Lightest</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="verdict">
+  <div class="kick">Recommendation</div>
+  <h3>Build The Leash. It is the only one where you arrive early rather than merely good.</h3>
+  <p>Given the two audiences you named, <b>Option 02 is the single strongest bet</b> — it is the one concept that lands hard with AI platform companies <b>and</b> is directly relevant to a bank standing up agentic systems with real money attached. It is also unfalsifiable in the best sense: there is no incumbent product a reviewer can hold it up against, so the conversation becomes about your thinking rather than your pixel parity.</p>
+  <p>If you want a second piece later, pair it with <b>The Pause</b> — lightest to build, highest emotional payload, and squarely JPMC's problem. Together they read as a designer who can work at both the <b>infrastructure</b> layer and the <b>human</b> layer, which is exactly the staff-level story.</p>
+  <p>The one I would <b>not</b> lead with: Blast Radius. It is excellent work, but security practitioners will interrogate your domain depth, and that is a fight to pick on your second piece, not your first.</p>
+</div>
+
+<!-- ══ DELIVERABLES ═══════════════════════════ -->
+<div class="sechead">
+  <div class="num">04 — What You Get</div>
+  <h2 class="sec">Both halves, because a demo alone doesn't get hired</h2>
+  <p>The prototype proves you can make it. The case study proves you knew why.</p>
+</div>
+
+<div class="deliv">
+  <div class="d">
+    <div class="n">Part A</div>
+    <h4>The interactive demo</h4>
+    <p>A live, clickable prototype in the portfolio — not a video, not a static mock. Reviewers can push on it themselves.</p>
+    <ul>
+      <li>Real interaction states and edge cases</li>
+      <li>A scripted "money shot" moment for the 90-second walkthrough</li>
+      <li>Works on a phone, because that is where it will actually be opened</li>
+    </ul>
+  </div>
+  <div class="d">
+    <div class="n">Part B</div>
+    <h4>The case study</h4>
+    <p>Senior/staff narrative structure — strategic framing over process documentation.</p>
+    <ul>
+      <li>The bet: what you believed that others didn't</li>
+      <li>Constraints, trade-offs, and what you deliberately cut</li>
+      <li>The false-positive / failure case, argued honestly</li>
+      <li>What you'd measure and what would prove you wrong</li>
+    </ul>
+  </div>
+  <div class="d">
+    <div class="n">Part C</div>
+    <h4>The interview kit</h4>
+    <p>So the piece survives contact with a hiring panel.</p>
+    <ul>
+      <li>A 90-second and a 10-minute version of the story</li>
+      <li>Prepared answers for the three hardest questions</li>
+      <li>Optional: a PPTX cut for portfolio reviews</li>
+    </ul>
+  </div>
+</div>
+
+<div class="ask">
+  <h4>To start, I need four things from you</h4>
+  <ol>
+    <li><b>Which option</b> — or tell me to build two, in which case I'd sequence Leash first, Pause second.</li>
+    <li><b>Real or fictional framing.</b> Is this positioned as speculative concept work, or dressed as a project for an unnamed platform/bank? Changes the tone of every line of copy.</li>
+    <li><b>How much of your own history goes in.</b> Any adjacent real work from Dell, Boeing, or elsewhere I can honestly anchor the narrative to — it makes a concept piece land far harder.</li>
+    <li><b>Deadline.</b> If there is a specific application in flight, say so and I'll scope to fit it.</li>
+  </ol>
+</div>
+
+<div class="srcs">
+  Sources —
+  <a href="https://www.descope.com/blog/post/passkey-trends">Descope · Passkey trends 2026</a> ·
+  <a href="https://clerk.com/articles/authentication-trends-in-2026-passkeys-ai-agents-and-edge">Clerk · Auth trends 2026</a> ·
+  <a href="https://intezer.com/guides/ai-soc/reducing-alert-fatigue">Intezer · AI SOC alert fatigue</a> ·
+  <a href="https://arxiv.org/html/2605.08316v1">arXiv · AI alert screening survey</a> ·
+  <a href="https://www.ietf.org/archive/id/draft-oauth-ai-agents-on-behalf-of-user-00.html">IETF · OAuth on-behalf-of-user for AI agents</a> ·
+  <a href="https://arxiv.org/pdf/2501.09674">arXiv · Authenticated delegation for AI agents</a> ·
+  <a href="https://sumsub.com/blog/fraud-trends/">Sumsub · Fraud trends 2026</a> ·
+  <a href="https://arxiv.org/pdf/2502.03964">arXiv · LLM real-time phone scam detection</a>
+</div>
+
+<footer class="ft">
+  <span>Built by <b>Puneet Arora</b></span>
+  <span>Staging · not live</span>
+  <span>Threat Surface <b>v1</b></span>
+</footer>
+
+</div>
+</body>
+</html>
