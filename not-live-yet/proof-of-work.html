@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<base href="../">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof of Work — Puneet Arora</title>
+<meta name="author" content="Puneet Arora">
+<meta name="robots" content="noindex">
+<meta name="description" content="Puneet Arora — Principal UX Designer. 19.7 years at the seam between executives, engineers and end users. Four org-scale systems, the outcomes they moved, and what you can hire me to do next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('pa-theme');if(t!=='default')document.documentElement.setAttribute('data-theme','forest');}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<style>
+  /* ── Proof of Work — page-local layer on the Intelligence Terminal system ── */
+
+  /* Masthead: the 12-second block. Full-width, left-aligned, no artificial wraps. */
+  .pw-head { padding: 70px var(--pad-x) 0; }
+  .pw-head__eyebrow {
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--signal); margin-bottom: 26px;
+  }
+  .pw-head__name {
+    font-family: var(--f-sans); font-size: 46px; font-weight: 500;
+    letter-spacing: -0.03em; line-height: 1.08; margin: 0 0 18px; color: var(--ink);
+  }
+  .pw-head__name em { font-style: normal; color: var(--signal); }
+  .pw-head__line {
+    font-family: var(--f-sans); font-size: 19px; font-weight: 300; line-height: 1.5;
+    color: var(--dim); margin: 0 0 30px;
+  }
+  .pw-head__facts {
+    display: flex; flex-wrap: wrap; gap: 10px 26px; align-items: baseline;
+    padding-bottom: 34px;
+  }
+  .pw-head__facts span {
+    font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--faint);
+  }
+  .pw-head__facts b { color: var(--ink); font-weight: 500; }
+  .pw-head__facts .open { color: var(--signal); }
+
+  /* Metric ribbon — the four numbers a hiring manager reads before anything else */
+  .pw-metrics {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    background: var(--rule);  gap: 1px;
+  }
+  .pw-metric { background: var(--bg); padding: 26px var(--pad-x) 24px; }
+  .pw-metric:not(:first-child) { padding-left: 26px; }
+  .pw-metric .v {
+    display: block; font-family: var(--f-sans); font-size: 30px; font-weight: 500;
+    letter-spacing: -0.025em; color: var(--ink); line-height: 1;
+  }
+  .pw-metric .l {
+    display: block; margin-top: 10px; font-family: var(--f-mono); font-size: 10.5px;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); line-height: 1.5;
+  }
+
+  /* Record rows — one per system, scannable, every claim a door */
+  .pw-rows { border-bottom: 1px solid var(--rule); }
+  .pw-row {
+    display: grid; grid-template-columns: 130px 1fr 300px;
+    gap: 34px; align-items: start;
+    padding: 30px var(--pad-x); border-bottom: 1px solid var(--rule);
+    text-decoration: none; color: inherit; transition: background .15s;
+  }
+  .pw-row:last-child { border-bottom: 0; }
+  .pw-row:hover { background: var(--surface); }
+  .pw-row__k { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; line-height: 1.9; }
+  .pw-row__k .id { display: block; color: var(--signal); }
+  .pw-row__k .yr, .pw-row__k .co { display: block; color: var(--faint); text-transform: uppercase; }
+  .pw-row__t {
+    font-family: var(--f-sans); font-size: 21px; font-weight: 500;
+    letter-spacing: -0.018em; line-height: 1.25; margin: 0 0 10px; color: var(--ink);
+  }
+  .pw-row__p { font-family: var(--f-sans); font-size: 14.5px; color: var(--dim); line-height: 1.65; margin: 0 0 14px; }
+  .pw-row__scope {
+    font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--faint);
+  }
+  .pw-row__out { border-left: 1px solid var(--rule); padding-left: 26px; }
+  .pw-row__out .k {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--signal); margin-bottom: 13px;
+  }
+  .pw-row__out li {
+    list-style: none; font-family: var(--f-sans); font-size: 14px; color: var(--ink);
+    line-height: 1.5; padding: 5px 0 5px 16px; position: relative;
+  }
+  .pw-row__out li::before {
+    content: "›"; position: absolute; left: 0; color: var(--signal); font-family: var(--f-mono);
+  }
+  .pw-row__out ul { margin: 0; padding: 0; }
+  .pw-row__go {
+    display: inline-block; margin-top: 14px; font-family: var(--f-mono); font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim);
+    transition: color .12s, transform .14s;
+  }
+  .pw-row:hover .pw-row__go { color: var(--signal); transform: translateX(3px); }
+  .pw-row--flat { cursor: default; }
+  .pw-row--flat:hover { background: transparent; }
+
+  /* Altitude — the scope read, for hiring managers sizing the role */
+  .pw-alt { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border-bottom: 1px solid var(--rule); }
+  .pw-alt__c { background: var(--bg); padding: 28px var(--pad-x) 30px; }
+  .pw-alt__c:not(:first-child) { padding-left: 26px; }
+  .pw-alt__c .k {
+    font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--signal); margin-bottom: 14px;
+  }
+  .pw-alt__c h3 {
+    font-family: var(--f-sans); font-size: 17px; font-weight: 500; letter-spacing: -0.012em;
+    margin: 0 0 9px; color: var(--ink); line-height: 1.25;
+  }
+  .pw-alt__c p { font-family: var(--f-sans); font-size: 14px; color: var(--dim); line-height: 1.6; margin: 0; }
+
+  /* Hire-me band (consulting) */
+  .pw-band { padding: 30px var(--pad-x) 34px; }
+  .pw-band__lede {
+    font-family: var(--f-sans); font-size: 16px; font-weight: 300; color: var(--dim);
+    line-height: 1.65; margin: 0 0 26px;
+  }
+  .pw-shapes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .pw-shape { background: var(--bg); padding: 24px 22px; }
+  .pw-shape .k {
+    font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--signal); margin-bottom: 12px;
+  }
+  .pw-shape h3 { font-family: var(--f-sans); font-size: 16.5px; font-weight: 500; letter-spacing: -0.012em; margin: 0 0 8px; color: var(--ink); line-height: 1.3; }
+  .pw-shape p { font-family: var(--f-sans); font-size: 13.5px; color: var(--dim); line-height: 1.6; margin: 0; }
+
+  /* Teaching strip */
+  .pw-teach { display: grid; grid-template-columns: 1.15fr 1fr; gap: 44px; padding: 30px var(--pad-x) 36px; align-items: start; }
+  .pw-teach p { font-family: var(--f-sans); font-size: 15.5px; font-weight: 300; color: var(--dim); line-height: 1.7; margin: 0 0 16px; }
+  .pw-teach .kv-row { display: grid; grid-template-columns: 128px 1fr; gap: 18px; padding: 13px 0; border-bottom: 1px solid var(--rule); }
+  .pw-teach .kv-row:first-child { border-top: 1px solid var(--rule); }
+  .pw-teach .kv-row .k { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--faint); }
+  .pw-teach .kv-row .v { font-family: var(--f-sans); font-size: 14.5px; color: var(--ink); line-height: 1.5; }
+
+  /* Close */
+  .pw-close { padding: 44px var(--pad-x) 20px; border-top: 1px solid var(--rule); }
+  .pw-close h2 {
+    font-family: var(--f-sans); font-size: 30px; font-weight: 500; letter-spacing: -0.025em;
+    line-height: 1.2; margin: 0 0 16px; color: var(--ink);
+  }
+  .pw-close p { font-family: var(--f-sans); font-size: 16px; font-weight: 300; color: var(--dim); line-height: 1.65; margin: 0 0 28px; }
+  .pw-close__ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 40px; }
+  .pw-human {
+    font-family: var(--f-serif); font-size: 17px; font-style: italic; color: var(--dim);
+    border-left: 2px solid var(--signal); padding: 4px 0 4px 20px; margin: 0 0 8px; line-height: 1.6;
+  }
+  .pw-human cite { display: block; margin-top: 10px; font-family: var(--f-mono); font-size: 10.5px; font-style: normal; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); }
+
+  .pw-sig { padding: 0 var(--pad-x) 10px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
+
+  @media (max-width: 1080px) {
+    .pw-metrics { grid-template-columns: repeat(2, 1fr); }
+    .pw-alt { grid-template-columns: repeat(2, 1fr); }
+    .pw-row { grid-template-columns: 112px 1fr; }
+    .pw-row__out { grid-column: 1 / -1; border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; padding-top: 18px; }
+    .pw-teach { grid-template-columns: 1fr; gap: 26px; }
+  }
+  @media (max-width: 820px) {
+    .pw-head { padding: 52px var(--pad-x-sm) 0; }
+    .pw-head__name { font-size: 34px; }
+    .pw-head__line { font-size: 17px; }
+    .pw-metric, .pw-alt__c { padding-left: var(--pad-x-sm) !important; padding-right: var(--pad-x-sm); }
+    .pw-row { grid-template-columns: 1fr; gap: 16px; padding: 26px var(--pad-x-sm); }
+    .pw-row__k { display: flex; gap: 16px; }
+    .pw-band, .pw-teach, .pw-close, .pw-sig { padding-left: var(--pad-x-sm); padding-right: var(--pad-x-sm); }
+    /* Section heads are a flex row site-wide, which strands long titles in a
+       narrow left column with an empty gutter on phones. Stack them instead so
+       the title gets the full width and only wraps when it truly runs out. */
+    .shead {
+      flex-direction: column; align-items: flex-start; gap: 10px;
+      padding: 46px var(--pad-x-sm) 18px;
+    }
+    .pw-shapes { grid-template-columns: 1fr; }
+    .pw-close h2 { font-size: 25px; }
+  }
+  @media (max-width: 560px) {
+    .pw-metrics { grid-template-columns: 1fr; }
+    .pw-alt { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- TOPBAR -->
+<header class="topbar" data-screen-label="topbar">
+  <a href="home.html" class="topbar__brand">
+    <span class="dot"></span>
+    <b>Puneet Arora</b>
+  </a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="work.html">WORK</a>
+    <a href="ai-lab.html">AI LAB</a>
+    <a href="ai-sme.html">AI SME</a>
+    <a href="consulting.html">CONSULTING</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="development.html">DEVELOPMENT</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+  <div class="topbar__meta">
+    <span class="theme-toggle" role="radiogroup" aria-label="Color theme">
+      <button type="button" class="theme-toggle__opt" data-theme-set="default" role="radio" aria-checked="true" title="Dark theme">DARK</button>
+      <button type="button" class="theme-toggle__opt" data-theme-set="forest" role="radio" aria-checked="false" title="Light theme">LIGHT</button>
+    </span>
+  </div>
+</header>
+
+<!-- MASTHEAD — the 12-second block -->
+<section class="pw-head" data-screen-label="masthead">
+  <div class="pw-head__eyebrow">Proof of work · one page</div>
+  <h1 class="pw-head__name">Puneet Arora — Principal UX Designer, <em>designing the connective tissue of product orgs.</em></h1>
+  <p class="pw-head__line">19.7 years at the seam between executives, engineers and end users — from printer firmware UIs at H-P R&amp;D, to operations cockpits at Boeing, to GenAI personalization on Dell.com. Four systems below, at four different scales, each with the number it moved and the full case behind it.</p>
+  <div class="pw-head__facts">
+    <span>Based <b>Bangalore, IST</b></span>
+    <span>Open to <b>relocation</b></span>
+    <span>Certified <b>Scrum Master · PRINCE2</b></span>
+    <span class="open">Open to Principal / Director roles &amp; advisory</span>
+  </div>
+</section>
+
+<!-- METRIC RIBBON -->
+<section class="pw-metrics" data-screen-label="metrics">
+  <div class="pw-metric"><span class="v">19.7 yrs</span><span class="l">H-P R&amp;D → Boeing → Software AG → Dell</span></div>
+  <div class="pw-metric"><span class="v">4.4% → 80%</span><span class="l">Engagement, Dell.com GenAI assistant</span></div>
+  <div class="pw-metric"><span class="v">49%</span><span class="l">Avg conversion lift, personalization at scale</span></div>
+  <div class="pw-metric"><span class="v">900+</span><span class="l">Participants across 45+ usability tests</span></div>
+</section>
+
+<!-- THE RECORD -->
+<section data-screen-label="record">
+  <div class="shead">
+    <div class="shead__left">
+      <span class="shead__n">§ 01</span>
+      <span class="shead__title">THE RECORD</span>
+    </div>
+    <div class="shead__right"><span class="shead__sub">// four systems, four scales, every claim a door</span></div>
+  </div>
+
+  <div class="pw-rows">
+
+    <a class="pw-row" href="case-dell-chatbot.html">
+      <div class="pw-row__k"><span class="id">D.001</span><span class="yr">2024–26</span><span class="co">Dell Technologies</span></div>
+      <div>
+        <h3 class="pw-row__t">Dell.com — Generative AI Virtual Assistant</h3>
+        <p class="pw-row__p">Led design for Dell's first GenAI assistant on Dell.com, unifying a fragmented chatbot landscape across Shop, My Account and Support. HAX-grounded research, a full brand system, an AI icon adopted into the Dell Design System, and a 26-component library handed to the AI Design CoE.</p>
+        <div class="pw-row__scope">Enterprise × GenAI · Double Diamond · HAX toolkit · MVP Q3 FY25</div>
+      </div>
+      <div class="pw-row__out">
+        <div class="k">Outcome</div>
+        <ul>
+          <li>4.4% → 80% engagement</li>
+          <li>14% conversion uplift</li>
+          <li>President's &amp; Game Changer Awards</li>
+        </ul>
+        <span class="pw-row__go">Read research &amp; outcomes →</span>
+      </div>
+    </a>
+
+    <a class="pw-row" href="ai-personalization-engine.html">
+      <div class="pw-row__k"><span class="id">D.002</span><span class="yr">2025–26</span><span class="co">Dell Technologies</span></div>
+      <div>
+        <h3 class="pw-row__t">Dell.com — AI-driven personalization at scale</h3>
+        <p class="pw-row__p">Designed and prototyped the Sarvagya Personalization Platform — a real-time system that builds a Customer DNA for every Dell.com visitor and adapts products, pricing, messaging and layout. The working prototype runs three persona journeys end to end, from personalized homepage through checkout, cross-sell and an admin analytics view.</p>
+        <div class="pw-row__scope">E-commerce × AI personalization · Customer DNA · 3 persona journeys · real-time</div>
+      </div>
+      <div class="pw-row__out">
+        <div class="k">Outcome</div>
+        <ul>
+          <li>49% avg conversion lift</li>
+          <li>50% engagement increase</li>
+          <li>11.5× recommendation ROI</li>
+        </ul>
+        <span class="pw-row__go">Open the prototype →</span>
+      </div>
+    </a>
+
+    <a class="pw-row" href="case-boeing-taam.html">
+      <div class="pw-row__k"><span class="id">D.003</span><span class="yr">2016–18</span><span class="co">Boeing India</span></div>
+      <div>
+        <h3 class="pw-row__t">TAAM — the runway simulation cockpit, revamped</h3>
+        <p class="pw-row__p">End-to-end UX for the Total Airspace and Airport Modeller, Boeing's fast-time simulation platform for hub airports, ANSPs and aerodrome consultancies. Ran a day-long Design Thinking workshop, took it lo-fi to hi-fi, tested under restriction with the TAAM User Group, and shipped landing-page v2 in TAAM 2018.1.0.</p>
+        <div class="pw-row__scope">Platform · aviation ops · Crazy-8 · 5-WHYs · Think-Aloud · SUS</div>
+      </div>
+      <div class="pw-row__out">
+        <div class="k">Outcome</div>
+        <ul>
+          <li>SUS 71 → 84</li>
+          <li>−47% time-to-first-action</li>
+          <li>Downstream adoption across the user group</li>
+        </ul>
+        <span class="pw-row__go">Read research &amp; outcomes →</span>
+      </div>
+    </a>
+
+    <div class="pw-row pw-row--flat">
+      <div class="pw-row__k"><span class="id">D.004</span><span class="yr">2023–26</span><span class="co">Dell Digital Design</span></div>
+      <div>
+        <h3 class="pw-row__t">AI-Design &amp; Innovation Centre of Excellence</h3>
+        <p class="pw-row__p">Conceptualised and led the AI-Design &amp; Innovation CoE for Dell Digital Design. The brief was to turn AI fluency into an org capability rather than a workshop deck — so the output was prompt rituals, evaluation rubrics, sandbox tooling, and a quarterly cadence that put working examples in front of designers instead of slides about AI.</p>
+        <div class="pw-row__scope">Org · design leadership · practice rituals · evaluation rubrics</div>
+      </div>
+      <div class="pw-row__out">
+        <div class="k">Outcome</div>
+        <ul>
+          <li>CoE established and running</li>
+          <li>Cross-DDD adoption</li>
+          <li>Tied to the AI-Design Portal</li>
+        </ul>
+        <span class="pw-row__go" style="color:var(--faint)">Full case on request</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ALTITUDE -->
+<section data-screen-label="altitude">
+  <div class="shead">
+    <div class="shead__left">
+      <span class="shead__n">§ 02</span>
+      <span class="shead__title">THE ALTITUDE</span>
+    </div>
+    <div class="shead__right"><span class="shead__sub">// what I actually operate on, above the artboard</span></div>
+  </div>
+  <div class="pw-alt">
+    <div class="pw-alt__c">
+      <div class="k">01 · Org</div>
+      <h3>Practice, not projects</h3>
+      <p>Led the Global UX practice for AI/ML, e-commerce and CSAT across four product lines and five time zones, then built the AI-Design CoE on top of it.</p>
+    </div>
+    <div class="pw-alt__c">
+      <div class="k">02 · Alignment</div>
+      <h3>Five truths at once</h3>
+      <p>Executives, engineering SMEs, PMs, sales, customers. The job is shipping something all five can defend in their own language.</p>
+    </div>
+    <div class="pw-alt__c">
+      <div class="k">03 · Systems</div>
+      <h3>The product is a node</h3>
+      <p>The org is the graph. Most product problems are coordination problems wearing UX clothes — fix the coordination and the UX follows.</p>
+    </div>
+    <div class="pw-alt__c">
+      <div class="k">04 · Evidence</div>
+      <h3>Rituals, rubrics, receipts</h3>
+      <p>Eight years of Dell.com taught me that a design org stays coherent while experimenting at speed only if the evaluation layer is designed too.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTING BAND -->
+<section data-screen-label="consulting">
+  <div class="shead">
+    <div class="shead__left">
+      <span class="shead__n">§ 03</span>
+      <span class="shead__title">HIRING THE WORK, NOT THE ROLE</span>
+    </div>
+    <div class="shead__right"><span class="shead__sub">// advisory · embedded · fractional</span></div>
+  </div>
+  <div class="pw-band">
+    <p class="pw-band__lede">Same operator, different contract. I partner with product and design leaders to turn ambiguous AI ambition into experiences customers trust and organisations can sustain after launch. Three problem-shapes come up most often.</p>
+    <div class="pw-shapes">
+      <div class="pw-shape">
+        <div class="k">Shape 01</div>
+        <h3>GenAI product strategy</h3>
+        <p>You have AI ambition and a roadmap that keeps dissolving on contact with reality. I turn it into a shippable experience thesis with an evaluation layer attached.</p>
+      </div>
+      <div class="pw-shape">
+        <div class="k">Shape 02</div>
+        <h3>Personalization at scale</h3>
+        <p>Real-time adaptation across products, pricing, messaging and layout — designed so it lifts conversion without spending the customer's trust to get there.</p>
+      </div>
+      <div class="pw-shape">
+        <div class="k">Shape 03</div>
+        <h3>Design-org maturity</h3>
+        <p>The rituals, rubrics and sandbox tooling that keep a design practice coherent while it experiments fast. The CoE work, portable to your org.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<section data-screen-label="teaching">
+  <div class="shead">
+    <div class="shead__left">
+      <span class="shead__n">§ 04</span>
+      <span class="shead__title">TEACHING &amp; SPEAKING</span>
+    </div>
+    <div class="shead__right"><span class="shead__sub">// the fluency, handed over</span></div>
+  </div>
+  <div class="pw-teach">
+    <div>
+      <p>I help designers and organisations build genuine AI fluency — not prompt tricks, but the judgement to evaluate, structure and ship AI experiences. These are the same frameworks I operationalised across Dell Digital Design, taught as workshops, mentoring and programs.</p>
+      <p>It is also the fastest way to see how I think: a practice you can teach is a practice you actually understand.</p>
+      <a class="btn btn--ghost" href="education.html">See the teaching practice →</a>
+    </div>
+    <div>
+      <div class="kv-row"><span class="k">Teaches</span><span class="v">AI design fluency &amp; craft</span></div>
+      <div class="kv-row"><span class="k">Format</span><span class="v">Workshops · mentoring · programs</span></div>
+      <div class="kv-row"><span class="k">Audiences</span><span class="v">Designers · teams · students</span></div>
+      <div class="kv-row"><span class="k">Frameworks</span><span class="v">CO-STAR · Chain-of-Thought · eval rubrics</span></div>
+      <div class="kv-row"><span class="k">Practiced at</span><span class="v">Dell Digital Design · skills programs · design communities</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section class="pw-close" data-screen-label="close">
+  <h2>The next decade of design leadership is about designing with agents in the room as colleagues, not tools.</h2>
+  <p>If that is the problem on your desk — as a role to fill or an engagement to start — the shortest path is a conversation. I will bring the receipts above and you can pressure-test any of them.</p>
+  <div class="pw-close__ctas">
+    <a class="btn btn--primary" href="contact.html">Start a conversation →</a>
+    <a class="btn btn--ghost" href="work.html">See all work</a>
+    <a class="btn btn--ghost" href="bio.html">Read the full bio</a>
+  </div>
+  <blockquote class="pw-human">
+    “Grow the core, while adding some more.”
+    <cite>— the line I have worked to for 19.7 years</cite>
+  </blockquote>
+</section>
+
+<div class="pw-sig">Designed &amp; built by Puneet Arora</div>
+
+<footer class="foot">
+  <div>Puneet Kumar Arora - Design Practice &amp; AI Transformation Leadership</div>
+</footer>
+
+</div><!-- /page -->
+
+<script src="assets/site.js"></script>
+</body>
+</html>
