@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T13:03:57Z",
+  "generated_at": "2026-09-13T18:29:33Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Anthropic CEO Urges Industry To Pace Itself Following String Of Runaway, Close-Call Incidents",
+      "claim": "If That Grocery Store Receipt Was Already Making Your Eyes Water … Just Wait",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/12/anthropic-dario-amodei-urges-artificial-intelligence-industry-pace-frontier-development-blog-essay",
+      "url": "https://dailycaller.com/2026/09/13/grocery-store-prices-iran-war-houthis",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "AI staff 'genuinely frightened' for humanity's future, ex-Anthropic researcher tells BBC",
+      "headline": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-09-13T11:13:07+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-13T17:38:29+00:00"
     },
     {
       "n": 2,
-      "headline": "Can you imagine a universe without a new 'Star Trek' on the horizon?",
+      "headline": "Wisconsin congressman survives emergency plane landing, swims to safety",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/13/nx-s1-5957544/star-trek-anniversary",
-      "topic": "Celebrity",
-      "published": "2026-09-13T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/13/nx-s1-5968081/wisconsin-congressman-survives-emergency-plane-landing-swims-to-safety",
+      "topic": "Trending",
+      "published": "2026-09-13T17:45:33+00:00"
     },
     {
       "n": 3,
-      "headline": "Minnesota churches roiled by legal battle over ICE surveillance and right to protest",
+      "headline": "The secret ballot has been an article of faith in U.S. elections. That's being tested in Georgia",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/minnesota-churches-roiled-by-legal-battle-over-ice-surveillance-and-right-to-protest",
+      "url": "https://www.pbs.org/newshour/politics/the-secret-ballot-has-been-an-article-of-faith-in-u-s-elections-thats-being-tested-in-georgia",
       "topic": "Trending",
-      "published": "2026-09-12T21:25:55+00:00"
+      "published": "2026-09-13T18:19:30+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Ukraine, Poland say Russia hit Warsaw-bound passenger train",
+      "headline": "Turkey: 162 arrested in LGBTQ+ raids",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-poland-say-russia-hit-warsaw-bound-passenger-train/a-79251428?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-13T12:55:00+00:00"
+      "url": "https://www.dw.com/en/turkey-162-arrested-in-lgbtq-raids/a-79251409?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-13T13:14:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Iran war reshapes Brics ties but also exposes divisions",
+      "headline": "Trump downplays warnings of AI risks, citing rivalry with China",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ce8767g4jdpo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-13T11:23:42+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-13T18:03:44+00:00"
     },
     {
       "n": 7,
-      "headline": "Indonesian passenger ship overturns, sparking search for about 130 missing",
+      "headline": "Actor Tatyana Ali is advocating for Black and Indigenous maternal health",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/13/g-s1-143114/about-130-missing-after-indonesian-passenger-ship-overturns",
-      "topic": "Trending",
-      "published": "2026-09-13T10:31:10+00:00"
+      "url": "https://www.npr.org/2026/09/13/nx-s1-5966885/birth-black-and-indigenous-maternal-health",
+      "topic": "Health",
+      "published": "2026-09-13T14:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "Anthropic CEO says AI industry needs to give safety measures time to catch up",
+      "headline": "Strike on Iranian cargo ship in the Strait of Hormuz kills 1, Iranian media say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/anthropic-ceo-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up",
-      "topic": "Tech / AI",
-      "published": "2026-09-12T19:15:26+00:00"
+      "url": "https://www.pbs.org/newshour/world/strike-on-iranian-cargo-ship-in-the-strait-of-hormuz-kills-1-iranian-media-say",
+      "topic": "Trending",
+      "published": "2026-09-13T17:58:51+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Russians on the Goethe-Institut: 'Hostage to politics",
+      "headline": "Ukraine, Poland say Russia hit Warsaw-bound passenger train",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russians-on-the-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-13T11:50:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-poland-say-russia-hit-warsaw-bound-passenger-train/a-79251428?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-13T12:55:00+00:00"
     },
     {
       "n": 11,
@@ -230,23 +230,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvgykzgljlyo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-13T12:56:39+00:00"
+      "published": "2026-09-13T13:30:38+00:00"
     },
     {
       "n": 12,
-      "headline": "How a young woman became an ISIS bride — and then an informant, helping save others",
+      "headline": "Politics chat: Trump's $5,000 promise to voters, Vance invokes Charlie Kirk",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/13/nx-s1-5963568/canada-woman-escapes-isis",
-      "topic": "Trending",
-      "published": "2026-09-13T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/13/nx-s1-5964863/politics-chat-trumps-5-000-promise-to-voters-vance-invokes-charlie-kirk",
+      "topic": "Politics",
+      "published": "2026-09-13T12:04:27+00:00"
     },
     {
       "n": 13,
-      "headline": "AP analysis: Justice Department went after protesters for felony assault, but juries and judges were unconvinced",
+      "headline": "Rep. Tom Tiffany swims to safety after plane makes emergency landing in a Wisconsin lake",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/ap-analysis-justice-department-went-after-protesters-for-felony-assault-but-juries-and-judges-were-unconvinced",
+      "url": "https://www.pbs.org/newshour/politics/rep-tom-tiffany-swims-to-safety-after-plane-makes-emergency-landing-in-a-wisconsin-lake",
       "topic": "Trending",
-      "published": "2026-09-12T18:46:38+00:00"
+      "published": "2026-09-13T16:12:04+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Croatia: 'Monster' fire triggers evacuation on Brac island",
+      "headline": "Russians on the Goethe-Institut: 'Hostage to politics",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/croatia-monster-fire-triggers-evacuation-on-brac-island/a-79250480?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/russians-on-the-goethe-institut-hostage-to-politics/a-79218936?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-13T10:55:00+00:00"
+      "published": "2026-09-13T11:50:00+00:00"
     },
     {
       "n": 16,
-      "headline": "They lost their jobs after posting about Charlie Kirk, but some have no regrets",
+      "headline": "Turkish police detain dozens in raids on gay bars and homes of LGBTQ+ activists",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cpve191wy47o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-13T00:49:08+00:00"
+      "published": "2026-09-13T14:25:56+00:00"
     },
     {
       "n": 17,
-      "headline": "Celine Dion returns to the stage after battling rare illness",
+      "headline": "Can you imagine a universe without a new 'Star Trek' on the horizon?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
-      "topic": "Trending",
-      "published": "2026-09-12T23:54:06+00:00"
+      "url": "https://www.npr.org/2026/09/13/nx-s1-5957544/star-trek-anniversary",
+      "topic": "Celebrity",
+      "published": "2026-09-13T11:00:00+00:00"
     }
   ]
 }
