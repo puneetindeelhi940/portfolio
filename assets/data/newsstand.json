@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:40:25Z",
+  "generated_at": "2026-09-14T20:07:25Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Image of Dead Osama Bin Laden Was Made Using Image From 'Black Hawk Down' -- No Real Images Made Public",
-      "verdict": "FALSE",
+      "claim": "FAKE Image Shows Natalie Harp Smiling With Prominent Teeth And Gums -- Image Is AI-Altered",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-of-dead-osama-bin-laden-was-made-using-image-from-black-hawk-down.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-shows-natalie-harp-smiling-with-prominent-teeth-and-gums.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Did Trump say Republicans are 'dumbest group of voters' in 1998?",
+      "claim": "10 alleged 9/11 photos, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-republicans-dumbest-voters-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/911-images-collection/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "If That Grocery Store Receipt Was Already Making Your Eyes Water … Just Wait",
+      "claim": "Saudi Arabia’s Oil Lifeline Just Went Down. The World May Be Running Out Of Time",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/13/grocery-store-prices-iran-war-houthis",
+      "url": "https://dailycaller.com/2026/09/14/saudi-arabia-oil-pipeline-straight-hormuz-attacks-iran-war",
       "topic": "Trending"
     },
     {
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "Baseless 9/11 claim recirculates on 25th anniversary of the attacks",
+      "claim": "London’s white population has not ‘plummeted to 34%’",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/us/world-trade-center-collapse-claims/",
+      "url": "https://fullfact.org/immigration/london-white-population/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Evidence Kim Jong Un Called For Benjamin Netanyahu Arrest",
-      "verdict": "UNPROVEN",
+      "claim": "FAKE AI-Generated Images Marked July 1985 Shows Trump and Epstein On Yacht In Swim Briefs",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-kim-jong-un-called-for-benjamin-netanyahu-arrest.html",
-      "topic": "World"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-marked-july-1985-shows-trump-and-epstein-on-yacht-in-swim-briefs.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Face the music: Eric Clapton didn't bring deaf teen onstage in 1992",
+      "claim": "Did Trump say Republicans are 'dumbest group of voters' in 1998?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/eric-clapton-deaf-teen-1992/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-republicans-dumbest-voters-quote/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Saudi Arabia’s Oil Lifeline Just Went Down. The World May Be Running Out Of Time",
+      "claim": "Former CIA Director John Brennan Subpoenaed Over Russiagate Conspiracy Against Trump",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/14/saudi-arabia-oil-pipeline-straight-hormuz-attacks-iran-war",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/14/john-brennan-subpoenaed-russiagate",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -112,26 +112,26 @@
     },
     {
       "n": 14,
-      "claim": "Solar panels do not currently occupy ‘thousands of square miles’ of farmland",
+      "claim": "Baseless 9/11 claim recirculates on 25th anniversary of the attacks",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/environment/lee-anderson-solar-panels-farmland/",
-      "topic": "Science"
+      "url": "https://fullfact.org/us/world-trade-center-collapse-claims/",
+      "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "FAKE AI-Generated Image Shows Damage From Folding On iPhone Duo -- Original Photos Show No Such Damage",
+      "claim": "FAKE Image of Trump Clearing Rubble at Ground Zero After 9/11 Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-ai-edits-produced-damage-from-folding-in-iphone-duo-in-viral-image.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-of-trump-clearing-rubble-at-ground-zero-after-9-11-is-ai-generated.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Dolly Parton became abandoned baby's legal guardian. Don't be fooled",
+      "claim": "Face the music: Eric Clapton didn't bring deaf teen onstage in 1992",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dolly-parton-adopting-baby/",
+      "url": "https://www.snopes.com/fact-check/eric-clapton-deaf-teen-1992/",
       "topic": "Trending"
     },
     {
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "The producer of Fleabag and Baby Reindeer's tip for finding a hit? Don't look for one",
+      "headline": "10 years after taking a knee, Colin Kaepernick is still waging a 'Perilous Fight",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5968566/francesca-moody-fleabag-producer-hits-edinburgh",
+      "url": "https://www.npr.org/2026/09/14/nx-s1-5965828/colin-kaepernick-football-the-perilous-fight",
       "topic": "Trending",
-      "published": "2026-09-14T14:03:14+00:00"
+      "published": "2026-09-14T18:45:21+00:00"
     },
     {
       "n": 3,
-      "headline": "Carney pitches Canada to global investors amid trade war with Trump",
+      "headline": "WATCH LIVE: Patel testifies on FBI oversight before Senate panel amid troubled tenure",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/carney-pitches-canada-to-global-investors-amid-trade-war-with-trump",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-patel-testifies-on-fbi-oversight-before-senate-panel-amid-troubled-tenure",
       "topic": "Politics",
-      "published": "2026-09-14T14:32:13+00:00"
+      "published": "2026-09-14T19:48:46+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Nigeria: What's the real motivation behind Dangote's IPO 'for the people?",
+      "headline": "Arctic power plays: EU searches for a new strategy",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nigeria-what-s-the-real-motivation-behind-dangote-s-ipo-for-the-people/a-79263398?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/arctic-power-plays-eu-searches-for-a-new-strategy/a-79266739?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-14T14:12:00+00:00"
+      "published": "2026-09-14T19:28:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+      "headline": "Kennedy Center says it's on the brink of bankruptcy, might close as early as Tuesday",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/g-s1-143148/up-first-newsletter-ai-anthropic-openai-midterms-trump-oman-iran-talks",
-      "topic": "World",
-      "published": "2026-09-14T11:39:06+00:00"
+      "url": "https://www.npr.org/2026/09/14/nx-s1-5968690/kennedy-center-financial-physical-state",
+      "topic": "Trending",
+      "published": "2026-09-14T18:25:04+00:00"
     },
     {
       "n": 8,
-      "headline": "WATCH LIVE: House meets as pressure to regulate AI grows",
+      "headline": "Live Results: Delaware midterm primaries",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-house-meets-as-pressure-to-regulate-ai-grows",
-      "topic": "Tech / AI",
-      "published": "2026-09-14T14:29:54+00:00"
+      "url": "https://www.pbs.org/newshour/politics/live-results-delaware-midterm-primaries",
+      "topic": "Trending",
+      "published": "2026-09-14T19:38:50+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Germany news: Merz urges CDU discipline as pressure grows",
+      "headline": "Ukraine, Russia set for new round of US-mediated talks",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-merz-urges-cdu-discipline-as-pressure-grows/live-79256902?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-14T13:52:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-russia-set-for-new-round-of-us-mediated-talks/a-79261147?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-14T18:46:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Thousands demand end to violence in Mexican cartel hotspot",
+      "headline": "Swedish left-wing bloc narrowly ahead with election too close to call",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cde06rxw5g6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-14T11:28:36+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-14T08:36:09+00:00"
     },
     {
       "n": 12,
-      "headline": "This city led the way on reparations for Black people. Trump is trying to stop it",
+      "headline": "The producer of Fleabag and Baby Reindeer's tip for finding a hit? Don't look for one",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5869793/evanston-illinois-reparations-trump-administration",
-      "topic": "Politics",
-      "published": "2026-09-14T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/14/nx-s1-5968566/francesca-moody-fleabag-producer-hits-edinburgh",
+      "topic": "Trending",
+      "published": "2026-09-14T14:03:14+00:00"
     },
     {
       "n": 13,
-      "headline": "Amazon suspends use of 21 Air, the cargo carrier whose plane careened off Miami runway and killed 5",
+      "headline": "Some Democrats recalibrating approach to transgender issues",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/amazon-suspends-use-of-21-air-the-cargo-carrier-whose-plane-careened-off-miami-runway-and-killed-5",
-      "topic": "Money",
-      "published": "2026-09-14T14:18:20+00:00"
+      "url": "https://www.pbs.org/newshour/politics/some-democrats-recalibrating-approach-to-transgender-issues",
+      "topic": "Trending",
+      "published": "2026-09-14T18:59:07+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ukraine: AfD questions German aid, Berlin remains committed",
+      "headline": "Trump seeks halt to energy attacks by both Russia, Ukraine",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-afd-questions-german-aid-berlin-remains-committed/a-79257524?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-14T12:46:00+00:00"
+      "url": "https://www.dw.com/en/trump-seeks-halt-to-energy-attacks-by-both-russia-ukraine/a-79265774?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-14T17:59:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Swedish left-wing bloc narrowly ahead with election too close to call",
+      "headline": "Wild dogs record 2,500-mile trek across Zambia in search of a mate",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-14T08:36:09+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cy459y5y9yxo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-14T14:08:12+00:00"
     },
     {
       "n": 17,
-      "headline": "The powerful millionaires hiding in plain sight",
+      "headline": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/09/14/g-s1-143041/the-powerful-millionaires-hiding-in-plain-sight",
-      "topic": "Trending",
-      "published": "2026-09-14T10:30:00+00:00"
+      "url": "https://www.npr.org/2026/09/14/g-s1-143148/up-first-newsletter-ai-anthropic-openai-midterms-trump-oman-iran-talks",
+      "topic": "World",
+      "published": "2026-09-14T11:39:06+00:00"
     }
   ]
 }
