@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:05:01Z",
+  "generated_at": "2026-09-15T19:28:20Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,11 +8,11 @@
   "popular": [
     {
       "n": 1,
-      "claim": "AI Image of Trump Wetting Chair After Meeting With Irish President Catherine Connolly -- NOT Real Photo",
+      "claim": "Nikki Haley Did NOT Say She Wants To Bring Palestinian Refugees To The U.S. -- She Called It 'A Total Lie",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-not-real-image-of-trump-wetting-chair-after-meeting-with-irish-president-catherine-connolly.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-nikki-haley-did-not-say-she-wants-to-bring-palestinian-refugees-to-the-us.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Mitch McConnell Returns To Senate After Months Of Missed Votes",
+      "claim": "Thomas Massie To Force Vote On Impeaching Pete Hegseth",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/14/mitch-mcconnell-returns-capitol-hill",
+      "url": "https://dailycaller.com/2026/09/15/massie-forces-vote-impeach-pete-hegseth",
       "topic": "Politics"
     },
     {
@@ -48,35 +48,35 @@
     },
     {
       "n": 6,
-      "claim": "Zee News fined ₹2 lakh for ‘inflammatory’ AMU protest coverage, asked to pull down content within seven days",
+      "claim": "‘Nothing communal’: On camera, victim’s son interrupts Bengal BJP MLA’s ‘jihadi’ claim over Titagarh murder",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/zee-news-fined-%e2%82%b92-lakh-for-inflammatory-amu-protest-coverage-asked-to-pull-down-content-within-seven-days/",
+      "url": "https://www.altnews.in/nothing-communal-on-camera-victims-son-interrupts-bengal-bjp-mlas-jihadi-claim-over-titagarh-murder/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "London’s white population has not ‘plummeted to 34%’",
+      "claim": "Fake image of Nepal house goes viral",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/london-white-population/",
+      "url": "https://fullfact.org/world/nepal-miracle-house/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "'Foreign Press' Did NOT Report Irish President Refused To Sit Near Donald Trump Due To 'Fecal' Odor",
+      "claim": "AI Image of Trump Wetting Chair After Meeting With Irish President Catherine Connolly -- NOT Real Photo",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-foreign-press-did-not-repor-Irish-president-sit-donald-trump-fecal-odor.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-not-real-image-of-trump-wetting-chair-after-meeting-with-irish-president-catherine-connolly.html",
       "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Is image of shirtless Trump and Epstein on boat real? Don't be fooled",
+      "claim": "Did US postmaster general say he'd block mail-in ballots? Claim distorts facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/image-trump-epstein-shirtless-boat/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/postmaster-general-block-ballots/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Former CIA Director John Brennan Subpoenaed Over Russiagate Conspiracy Against Trump",
+      "claim": "ROOKE: Dallas Debate About Future Of The Right Wasn’t At The RNC",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/14/john-brennan-subpoenaed-russiagate",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/15/rooke-forum-rnc-texas-dallas-immigration-ai-data-center",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,34 +104,34 @@
     },
     {
       "n": 13,
-      "claim": "Bela Estate: Farmland and homes gone, 728 Delhi pavement dwellers now fight to retain voting rights",
+      "claim": "Zee News fined ₹2 lakh for ‘inflammatory’ AMU protest coverage, asked to pull down content within seven days",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bela-estate-farmland-and-homes-gone-728-delhi-pavement-dwellers-now-fight-to-retain-voting-rights/",
+      "url": "https://www.altnews.in/zee-news-fined-%e2%82%b92-lakh-for-inflammatory-amu-protest-coverage-asked-to-pull-down-content-within-seven-days/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Baseless 9/11 claim recirculates on 25th anniversary of the attacks",
+      "claim": "claims Bill Gates wrote an article on depopulating the earth with ‘forced vaccines’ recirculate",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/us/world-trade-center-collapse-claims/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/health/bill-gates-vaccine-depopulation-article/",
+      "topic": "Science"
     },
     {
       "n": 15,
-      "claim": "FAKE Image Shows Natalie Harp Smiling With Prominent Teeth And Gums -- Image Is AI-Altered",
-      "verdict": "MISLEADING",
+      "claim": "'Foreign Press' Did NOT Report Irish President Refused To Sit Near Donald Trump Due To 'Fecal' Odor",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-shows-natalie-harp-smiling-with-prominent-teeth-and-gums.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-foreign-press-did-not-repor-Irish-president-sit-donald-trump-fecal-odor.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Did man with Trump face tattoo claim job rejected him over MAGA hat?",
+      "claim": "Old Trump post about Obama using handouts to buy election spreads online after $5K 'dividend' promise",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/man-trump-tattoo-face/",
+      "url": "https://www.snopes.com/fact-check/trump-obama-post-dividend-promise/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump says AI safety fears a 'hoax' as he rejects calls for greater safeguards",
+      "headline": "Denmark says Russian warship fired flares at military helicopter",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-15T08:49:31+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-15T11:40:00+00:00"
     },
     {
       "n": 2,
-      "headline": "Geopolitics and grain don't mix, say these Montana farmers",
+      "headline": "State of U.S. democracy reaches new low, report finds",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/nx-s1-5964930/canada-tariffs-hurting-montana-farmers",
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5969741/state-of-u-s-democracy-reaches-new-low-report-finds",
       "topic": "Trending",
-      "published": "2026-09-15T12:33:19+00:00"
+      "published": "2026-09-15T18:57:42+00:00"
     },
     {
       "n": 3,
-      "headline": "Supreme Court rejects Trump mail ballot restrictions ahead of midterms",
+      "headline": "Kennedy Center board votes to close over Trump naming dispute and financial trouble, AP sources say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/supreme-court-rejects-trump-mail-ballot-restrictions-ahead-of-midterms",
+      "url": "https://www.pbs.org/newshour/arts/kennedy-center-board-votes-to-close-over-trump-naming-dispute-and-financial-trouble-ap-sources-say",
       "topic": "Politics",
-      "published": "2026-09-15T01:02:29+00:00"
+      "published": "2026-09-15T18:29:40+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US think tank's military plan alarms allies in Asia",
+      "headline": "High fuel prices challenge the German government",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-think-tank-s-military-plan-alarms-allies-in-asia/a-79275554?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/high-fuel-prices-challenge-the-german-government/a-79282456?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-15T12:32:00+00:00"
+      "published": "2026-09-15T16:43:00+00:00"
     },
     {
       "n": 6,
-      "headline": "AI regulation faces political deadlock as calls grow for Congress to act",
+      "headline": "What weapon could the US have put into space?",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck20989806e9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-15T02:50:36+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-09-15T14:23:14+00:00"
     },
     {
       "n": 7,
-      "headline": "SCOTUS rejects Trump's mail voting limits. And, the Kennedy Center financial crisis",
+      "headline": "Family income rose and poverty fell in 2025 — but safety net cuts could erase gains",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys",
-      "topic": "Politics",
-      "published": "2026-09-15T11:35:49+00:00"
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5968648/census-poverty-income-health-insurance-report",
+      "topic": "Trending",
+      "published": "2026-09-15T18:29:49+00:00"
     },
     {
       "n": 8,
-      "headline": "Mahmoud Khalil lawsuit says Columbia University failed to protect pro-Palestinian activists",
+      "headline": "Carney says Canada can emerge from Trump's trade war with a stronger and independent economy",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/mahmoud-khalil-lawsuit-says-columbia-university-failed-to-protect-pro-palestinian-activists",
-      "topic": "Trending",
-      "published": "2026-09-14T23:02:54+00:00"
+      "url": "https://www.pbs.org/newshour/world/carney-says-canada-can-emerge-from-trumps-trade-war-with-a-stronger-and-independent-economy",
+      "topic": "Politics",
+      "published": "2026-09-15T18:27:29+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Iran: 'Woman, Life, Freedom' lives on despite war",
+      "headline": "Knobloch: 'It is a very dangerous situation at the moment",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-woman-life-freedom-lives-on-despite-war/a-79276123?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-15T12:27:00+00:00"
+      "url": "https://www.dw.com/en/knobloch-it-is-a-very-dangerous-situation-at-the-moment/a-79278429?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-15T16:36:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Denmark says Russian warship fired flares at military helicopter",
+      "headline": "Suspected sabotage causes major Netherlands rail disruption",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-15T11:40:00+00:00"
+      "published": "2026-09-15T16:55:04+00:00"
     },
     {
       "n": 12,
-      "headline": "Air pollution spiked after the Trump administration stopped embassy monitoring",
+      "headline": "Judge blocks plan to return Trump's name to the Kennedy Center",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/nx-s1-5966503/air-pollution-spiked-after-the-trump-administration-stopped-embassy-monitoring",
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5969905/kennedy-center-trump-name",
       "topic": "Politics",
-      "published": "2026-09-15T10:26:08+00:00"
+      "published": "2026-09-15T17:49:07+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump pushes back as AI leaders fuel calls to rein in rapidly advancing technology",
+      "headline": "NFL players overwhelmingly find grass to be the better choice over artificial turf",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/trump-pushes-back-as-ai-leaders-fuel-calls-to-rein-in-rapidly-advancing-technology",
-      "topic": "Politics",
-      "published": "2026-09-14T22:55:54+00:00"
+      "url": "https://www.pbs.org/newshour/nation/nfl-players-overwhelmingly-find-grass-to-be-the-better-choice-over-artificial-turf",
+      "topic": "Trending",
+      "published": "2026-09-15T18:14:17+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Bangladesh court sentences 7 Hasina allies to death",
+      "headline": "South Africa probes deaths of 7 women near Johannesburg",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/bangladesh-court-sentences-7-hasina-allies-to-death/a-79276131?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/south-africa-probes-deaths-of-7-women-near-johannesburg/a-79278296?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-15T12:21:00+00:00"
+      "published": "2026-09-15T16:26:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Welsh actor Matthew Rhys makes Emmy Awards history with double win",
+      "headline": "South African president vows justice as more women's bodies found near Johannesburg",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqlykdx48xrpo?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-09-15T03:50:06+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/crgqde1nex2vo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-15T18:01:51+00:00"
     },
     {
       "n": 17,
-      "headline": "NATO jets shoot down a drone in Lithuanian airspace",
+      "headline": "Prosecutors won't seek the death penalty for Nick Reiner",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/g-s1-143284/nato-jets-down-drone-in-lithuanian-airspace",
-      "topic": "World",
-      "published": "2026-09-15T09:06:30+00:00"
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5969890/nick-reiner-rob-reiner-murder-charges-death-penalty",
+      "topic": "Trending",
+      "published": "2026-09-15T17:36:49+00:00"
     }
   ]
 }
