@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T20:07:25Z",
+  "generated_at": "2026-09-15T03:05:57Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Image Shows Natalie Harp Smiling With Prominent Teeth And Gums -- Image Is AI-Altered",
-      "verdict": "MISLEADING",
+      "claim": "NOT Real -- Image of Trump Wetting Chair After Meeting With Irish President Catherine Connolly",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-shows-natalie-harp-smiling-with-prominent-teeth-and-gums.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-not-real-image-of-trump-wetting-chair-after-meeting-with-irish-president-catherine-connolly.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "10 alleged 9/11 photos, fact-checked",
+      "claim": "Does video show Mamdani and AOC smiling, laughing at 9/11 ceremony? Claim omits key context",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/911-images-collection/",
+      "url": "https://www.snopes.com/fact-check/mamdani-aoc-laughing-911-ceremony/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Saudi Arabia’s Oil Lifeline Just Went Down. The World May Be Running Out Of Time",
+      "claim": "Mitch McConnell Returns To Senate After Months Of Missed Votes",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/14/saudi-arabia-oil-pipeline-straight-hormuz-attacks-iran-war",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/14/mitch-mcconnell-returns-capitol-hill",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Bela Estate: Farmland and homes gone, 728 Delhi pavement dwellers now fight to retain voting rights",
+      "claim": "Zee News fined ₹2 lakh for ‘inflammatory’ AMU protest coverage, asked to pull down content within seven days",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bela-estate-farmland-and-homes-gone-728-delhi-pavement-dwellers-now-fight-to-retain-voting-rights/",
+      "url": "https://www.altnews.in/zee-news-fined-%e2%82%b92-lakh-for-inflammatory-amu-protest-coverage-asked-to-pull-down-content-within-seven-days/",
       "topic": "Trending"
     },
     {
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "FAKE AI-Generated Images Marked July 1985 Shows Trump and Epstein On Yacht In Swim Briefs",
+      "claim": "'Foreign Press' Did NOT Report Irish President Refused To Sit Near Donald Trump Due To 'Fecal' Odor",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-marked-july-1985-shows-trump-and-epstein-on-yacht-in-swim-briefs.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-foreign-press-did-not-repor-Irish-president-sit-donald-trump-fecal-odor.html",
       "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Did Trump say Republicans are 'dumbest group of voters' in 1998?",
+      "claim": "10 alleged 9/11 photos, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-republicans-dumbest-voters-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/911-images-collection/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -104,11 +104,11 @@
     },
     {
       "n": 13,
-      "claim": "Modi gifted self portrait to Xi Jinping? No, old video falsely viral",
+      "claim": "Bela Estate: Farmland and homes gone, 728 Delhi pavement dwellers now fight to retain voting rights",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/modi-gifted-self-portrait-to-xi-jinping-no-old-video-falsely-viral/",
-      "topic": "Politics"
+      "url": "https://www.altnews.in/bela-estate-farmland-and-homes-gone-728-delhi-pavement-dwellers-now-fight-to-retain-voting-rights/",
+      "topic": "Trending"
     },
     {
       "n": 14,
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Image of Trump Clearing Rubble at Ground Zero After 9/11 Is AI-Generated",
-      "verdict": "FALSE",
+      "claim": "FAKE Image Shows Natalie Harp Smiling With Prominent Teeth And Gums -- Image Is AI-Altered",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-of-trump-clearing-rubble-at-ground-zero-after-9-11-is-ai-generated.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-image-shows-natalie-harp-smiling-with-prominent-teeth-and-gums.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "Face the music: Eric Clapton didn't bring deaf teen onstage in 1992",
+      "claim": "Did Trump say Republicans are 'dumbest group of voters' in 1998?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/eric-clapton-deaf-teen-1992/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-republicans-dumbest-voters-quote/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "10 years after taking a knee, Colin Kaepernick is still waging a 'Perilous Fight",
+      "headline": "Emmys 2026: Here's the list of winners",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5965828/colin-kaepernick-football-the-perilous-fight",
+      "url": "https://www.npr.org/2026/09/14/nx-s1-5957565/emmys-2026-winners",
       "topic": "Trending",
-      "published": "2026-09-14T18:45:21+00:00"
+      "published": "2026-09-14T23:55:49+00:00"
     },
     {
       "n": 3,
-      "headline": "WATCH LIVE: Patel testifies on FBI oversight before Senate panel amid troubled tenure",
+      "headline": "Supreme Court rejects Trump mail ballot restrictions ahead of midterms",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-patel-testifies-on-fbi-oversight-before-senate-panel-amid-troubled-tenure",
+      "url": "https://www.pbs.org/newshour/politics/supreme-court-rejects-trump-mail-ballot-restrictions-ahead-of-midterms",
       "topic": "Politics",
-      "published": "2026-09-14T19:48:46+00:00"
+      "published": "2026-09-15T01:02:29+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Arctic power plays: EU searches for a new strategy",
+      "headline": "US Supreme Court denies Trump bid to restrict mail-in ballots",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/arctic-power-plays-eu-searches-for-a-new-strategy/a-79266739?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-14T19:28:00+00:00"
+      "url": "https://www.dw.com/en/us-supreme-court-denies-trump-bid-to-restrict-mail-in-ballots/a-79267854?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-15T01:38:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Kennedy Center says it's on the brink of bankruptcy, might close as early as Tuesday",
+      "headline": "The Supreme Court rejects Trump's mail voting restrictions for this year's midterms",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5968690/kennedy-center-financial-physical-state",
-      "topic": "Trending",
-      "published": "2026-09-14T18:25:04+00:00"
+      "url": "https://www.npr.org/2026/09/14/nx-s1-5962190/supreme-court-mail-in-voting-trump",
+      "topic": "Politics",
+      "published": "2026-09-14T23:38:40+00:00"
     },
     {
       "n": 8,
-      "headline": "Live Results: Delaware midterm primaries",
+      "headline": "Mahmoud Khalil lawsuit says Columbia University failed to protect pro-Palestinian activists",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/live-results-delaware-midterm-primaries",
+      "url": "https://www.pbs.org/newshour/nation/mahmoud-khalil-lawsuit-says-columbia-university-failed-to-protect-pro-palestinian-activists",
       "topic": "Trending",
-      "published": "2026-09-14T19:38:50+00:00"
+      "published": "2026-09-14T23:02:54+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Ukraine, Russia set for new round of US-mediated talks",
+      "headline": "Germany news: Merz urges CDU discipline as pressure grows",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-russia-set-for-new-round-of-us-mediated-talks/a-79261147?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-14T18:46:00+00:00"
+      "url": "https://www.dw.com/en/germany-news-merz-urges-cdu-discipline-as-pressure-grows/live-79256902?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-15T00:02:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "The producer of Fleabag and Baby Reindeer's tip for finding a hit? Don't look for one",
+      "headline": "Mitch McConnell returns to Senate after fall that led to an extended medical absence",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5968566/francesca-moody-fleabag-producer-hits-edinburgh",
-      "topic": "Trending",
-      "published": "2026-09-14T14:03:14+00:00"
+      "url": "https://www.npr.org/2026/09/14/nx-s1-5968909/mitch-mcconnell-senate-return",
+      "topic": "Politics",
+      "published": "2026-09-14T22:36:33+00:00"
     },
     {
       "n": 13,
-      "headline": "Some Democrats recalibrating approach to transgender issues",
+      "headline": "Trump pushes back as AI leaders fuel calls to rein in rapidly advancing technology",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/some-democrats-recalibrating-approach-to-transgender-issues",
-      "topic": "Trending",
-      "published": "2026-09-14T18:59:07+00:00"
+      "url": "https://www.pbs.org/newshour/show/trump-pushes-back-as-ai-leaders-fuel-calls-to-rein-in-rapidly-advancing-technology",
+      "topic": "Politics",
+      "published": "2026-09-14T22:55:54+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Trump seeks halt to energy attacks by both Russia, Ukraine",
+      "headline": "Kremlin-linked Russian oligarch helped fund Trump Jr.'s wedding celebration",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-seeks-halt-to-energy-attacks-by-both-russia-ukraine/a-79265774?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-09-14T17:59:00+00:00"
+      "url": "https://www.dw.com/en/kremlin-linked-russian-oligarch-helped-fund-trump-jr-s-wedding-celebration/a-79267341?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-14T23:02:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Key leaders sound the alarm on AI. And, Iran-Gulf diplomacy hits a setback",
+      "headline": "Federal agents may have broken state laws in voter fraud hunt, whistleblower claims",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/g-s1-143148/up-first-newsletter-ai-anthropic-openai-midterms-trump-oman-iran-talks",
-      "topic": "World",
-      "published": "2026-09-14T11:39:06+00:00"
+      "url": "https://www.npr.org/2026/09/14/nx-s1-5968892/dhs-whistleblower-voter-fraud",
+      "topic": "Trending",
+      "published": "2026-09-14T22:05:06+00:00"
     }
   ]
 }
