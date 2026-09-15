@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T03:05:57Z",
+  "generated_at": "2026-09-15T13:05:01Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,7 +8,7 @@
   "popular": [
     {
       "n": 1,
-      "claim": "NOT Real -- Image of Trump Wetting Chair After Meeting With Irish President Catherine Connolly",
+      "claim": "AI Image of Trump Wetting Chair After Meeting With Irish President Catherine Connolly -- NOT Real Photo",
       "verdict": "FALSE",
       "source": "Lead Stories",
       "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-not-real-image-of-trump-wetting-chair-after-meeting-with-irish-president-catherine-connolly.html",
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Does video show Mamdani and AOC smiling, laughing at 9/11 ceremony? Claim omits key context",
+      "claim": "A Georgia widow's farm faced foreclosure. Then Trump stepped in to help",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mamdani-aoc-laughing-911-ceremony/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-georgia-widow-farm-foreclosure/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "10 alleged 9/11 photos, fact-checked",
+      "claim": "Is image of shirtless Trump and Epstein on boat real? Don't be fooled",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/911-images-collection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/image-trump-epstein-shirtless-boat/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump say Republicans are 'dumbest group of voters' in 1998?",
+      "claim": "Did man with Trump face tattoo claim job rejected him over MAGA hat?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-republicans-dumbest-voters-quote/",
+      "url": "https://www.snopes.com/fact-check/man-trump-tattoo-face/",
       "topic": "Politics"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "China criticises idea it is in 'malicious competition' over AI",
+      "headline": "Trump says AI safety fears a 'hoax' as he rejects calls for greater safeguards",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cn8me133119o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-14T11:31:39+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-15T08:49:31+00:00"
     },
     {
       "n": 2,
-      "headline": "Emmys 2026: Here's the list of winners",
+      "headline": "Geopolitics and grain don't mix, say these Montana farmers",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5957565/emmys-2026-winners",
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5964930/canada-tariffs-hurting-montana-farmers",
       "topic": "Trending",
-      "published": "2026-09-14T23:55:49+00:00"
+      "published": "2026-09-15T12:33:19+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "The London hospital funded by donors who invested in the slave trade",
+      "headline": "‘I believed the hype’: the white South Africans denied refugee status in the US",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/uk-news/ng-interactive/2026/sep/14/london-hospital-st-barts-funded-donors-invested-slave-trade",
-      "topic": "Health",
-      "published": "2026-09-14T13:00:58+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/15/white-south-africans-denied-refugee-status-us",
+      "topic": "World",
+      "published": "2026-09-15T04:00:27+00:00"
     },
     {
       "n": 5,
-      "headline": "US Supreme Court denies Trump bid to restrict mail-in ballots",
+      "headline": "US think tank's military plan alarms allies in Asia",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-supreme-court-denies-trump-bid-to-restrict-mail-in-ballots/a-79267854?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-15T01:38:00+00:00"
+      "url": "https://www.dw.com/en/us-think-tank-s-military-plan-alarms-allies-in-asia/a-79275554?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-15T12:32:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station",
+      "headline": "AI regulation faces political deadlock as calls grow for Congress to act",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-14T12:18:13+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck20989806e9o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-15T02:50:36+00:00"
     },
     {
       "n": 7,
-      "headline": "The Supreme Court rejects Trump's mail voting restrictions for this year's midterms",
+      "headline": "SCOTUS rejects Trump's mail voting limits. And, the Kennedy Center financial crisis",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5962190/supreme-court-mail-in-voting-trump",
+      "url": "https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys",
       "topic": "Politics",
-      "published": "2026-09-14T23:38:40+00:00"
+      "published": "2026-09-15T11:35:49+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "Africa’s richest man aiming to make $23bn from continent’s biggest-ever IPO",
+      "headline": "Ebola outbreak in DRC has peaked, say authorities, as infection rates slow",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/14/aliko-dangote-nigeria-africa-richest-man-ipo",
+      "url": "https://www.theguardian.com/global-development/2026/sep/15/ebola-outbreak-in-drc-has-peaked-say-authorities-as-infection-rates-slow",
       "topic": "Trending",
-      "published": "2026-09-14T12:38:51+00:00"
+      "published": "2026-09-15T04:00:26+00:00"
     },
     {
       "n": 10,
-      "headline": "Germany news: Merz urges CDU discipline as pressure grows",
+      "headline": "Iran: 'Woman, Life, Freedom' lives on despite war",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-merz-urges-cdu-discipline-as-pressure-grows/live-79256902?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-15T00:02:00+00:00"
+      "url": "https://www.dw.com/en/iran-woman-life-freedom-lives-on-despite-war/a-79276123?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-15T12:27:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Swedish left-wing bloc narrowly ahead with election too close to call",
+      "headline": "Denmark says Russian warship fired flares at military helicopter",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-14T08:36:09+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-15T11:40:00+00:00"
     },
     {
       "n": 12,
-      "headline": "Mitch McConnell returns to Senate after fall that led to an extended medical absence",
+      "headline": "Air pollution spiked after the Trump administration stopped embassy monitoring",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5968909/mitch-mcconnell-senate-return",
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5966503/air-pollution-spiked-after-the-trump-administration-stopped-embassy-monitoring",
       "topic": "Politics",
-      "published": "2026-09-14T22:36:33+00:00"
+      "published": "2026-09-15T10:26:08+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "Burial of King Oyo takes place in Uganda as news anchor prepares for throne",
+      "headline": "The London hospital funded by donors who invested in the slave trade",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/12/burial-king-oyo-uganda",
-      "topic": "Trending",
-      "published": "2026-09-12T15:09:05+00:00"
+      "url": "https://www.theguardian.com/uk-news/ng-interactive/2026/sep/14/london-hospital-st-barts-funded-donors-invested-slave-trade",
+      "topic": "Health",
+      "published": "2026-09-14T13:00:58+00:00"
     },
     {
       "n": 15,
-      "headline": "Kremlin-linked Russian oligarch helped fund Trump Jr.'s wedding celebration",
+      "headline": "Bangladesh court sentences 7 Hasina allies to death",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/kremlin-linked-russian-oligarch-helped-fund-trump-jr-s-wedding-celebration/a-79267341?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-14T23:02:00+00:00"
+      "url": "https://www.dw.com/en/bangladesh-court-sentences-7-hasina-allies-to-death/a-79276131?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-15T12:21:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Wild dogs record 2,500-mile trek across Zambia in search of a mate",
+      "headline": "Welsh actor Matthew Rhys makes Emmy Awards history with double win",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cy459y5y9yxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-14T14:08:12+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqlykdx48xrpo?at_medium=RSS&at_campaign=rss",
+      "topic": "Celebrity",
+      "published": "2026-09-15T03:50:06+00:00"
     },
     {
       "n": 17,
-      "headline": "Federal agents may have broken state laws in voter fraud hunt, whistleblower claims",
+      "headline": "NATO jets shoot down a drone in Lithuanian airspace",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/14/nx-s1-5968892/dhs-whistleblower-voter-fraud",
-      "topic": "Trending",
-      "published": "2026-09-14T22:05:06+00:00"
+      "url": "https://www.npr.org/2026/09/15/g-s1-143284/nato-jets-down-drone-in-lithuanian-airspace",
+      "topic": "World",
+      "published": "2026-09-15T09:06:30+00:00"
     }
   ]
 }
