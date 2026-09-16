@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T03:02:32Z",
+  "generated_at": "2026-09-16T13:02:03Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Is image of Trump kissing Natalie Harp on golf course real?",
+      "claim": "Did Trump say he now owned 'tallest' building in downtown Manhattan during 9/11 interview?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/15/trump-kissing-natalie-harp-photo/",
+      "url": "https://www.snopes.com/fact-check/trump-tallest-building-nyc-911/",
       "topic": "Politics"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "‘Nothing communal’: On camera, victim’s son interrupts Bengal BJP MLA’s ‘jihadi’ claim over Titagarh murder",
+      "claim": "Alok Bhatt: Abusive posts, withheld X handle and the Pamphlet connection no one wants to acknowledge",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/nothing-communal-on-camera-victims-son-interrupts-bengal-bjp-mlas-jihadi-claim-over-titagarh-murder/",
+      "url": "https://www.altnews.in/alok-bhatt-abusive-posts-withheld-x-handle-and-the-pamphlet-connection-no-one-wants-to-acknowledge/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Chinese government warn people not to respond to aliens and call UN hotline instead?",
+      "claim": "How current Congress stacks up",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/china-warning-aliens-un-hotline/",
-      "topic": "World"
+      "url": "https://www.snopes.com/fact-check/mike-johnson-productive-congress/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Zee News fined ₹2 lakh for ‘inflammatory’ AMU protest coverage, asked to pull down content within seven days",
-      "verdict": "FALSE",
+      "claim": "Doctored video of woman bathing in Ganga in bikini goes viral",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/zee-news-fined-%e2%82%b92-lakh-for-inflammatory-amu-protest-coverage-asked-to-pull-down-content-within-seven-days/",
+      "url": "https://www.altnews.in/doctored-video-of-woman-bathing-in-ganga-in-bikini-goes-viral/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump, Vance skip 9/11 observance in Pennsylvania that was rescheduled so they could attend?",
+      "claim": "Old video shows Trump saying US should take Iran's oil",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/15/trump-vance-911-observance/",
+      "url": "https://www.snopes.com/fact-check/trump-video-iran-oil/",
       "topic": "Politics"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "All support acts on Ed Sheeran's US tour quit after Macklemore dropped",
+      "headline": "EU chief backs plan for Canada to become 'associate member",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3vgyn49y4l7o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-16T01:29:20+00:00"
+      "published": "2026-09-16T12:36:51+00:00"
     },
     {
       "n": 2,
-      "headline": "Turkish habit of stashing gold \"under the pillow' hurts economy, government says",
+      "headline": "Fed expected to raise interest rates. And, board votes to close Kennedy Center",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/g-s1-143414/turkey-gold-economy",
-      "topic": "Trending",
-      "published": "2026-09-16T00:55:41+00:00"
+      "url": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception",
+      "topic": "Money",
+      "published": "2026-09-16T11:19:46+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "‘I believed the hype’: the white South Africans denied refugee status in the US",
+      "headline": "US to bar some South Africans over claims of anti-white discrimination",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/15/white-south-africans-denied-refugee-status-us",
-      "topic": "World",
-      "published": "2026-09-15T04:00:27+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/16/us-visa-restrictions-south-africans-trump-claims-anti-white-discrimination",
+      "topic": "Trending",
+      "published": "2026-09-16T12:35:45+00:00"
     },
     {
       "n": 5,
-      "headline": "Supporting acts pull out of Ed Sheeran's tour over dropping Macklemore",
+      "headline": "Poland reiterates Ukraine support after Russia drone attacks",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/supporting-acts-pull-out-of-ed-sheeran-s-tour-over-dropping-macklemore/a-79284880?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-16T00:34:00+00:00"
+      "url": "https://www.dw.com/en/poland-reiterates-ukraine-support-after-russia-drone-attacks/a-79291144?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-16T12:04:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Denmark says Russian warship fired flares at military helicopter",
+      "headline": "OpenAI boss says world 'right to be afraid' but should trust AI firms",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-15T11:40:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-09-16T10:02:05+00:00"
     },
     {
       "n": 7,
-      "headline": "Turks often keep gold as a hedge against inflation. It may be hurting Turkey's future",
+      "headline": "EU's Ursula von der Leyen says she wants Canada to become an associate member",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/nx-s1-5949212/turks-often-keep-gold-as-a-hedge-against-inflation-it-may-be-hurting-turkeys-future",
-      "topic": "Money",
-      "published": "2026-09-15T22:26:14+00:00"
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member",
+      "topic": "Trending",
+      "published": "2026-09-16T10:48:22+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "Ebola outbreak in DRC has peaked, say authorities, as infection rates slow",
+      "headline": "‘We are prey’: discovery of seven women’s bodies fuels anger over femicide in South Africa",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/sep/15/ebola-outbreak-in-drc-has-peaked-say-authorities-as-infection-rates-slow",
+      "url": "https://www.theguardian.com/world/2026/sep/16/discovery-women-bodies-anger-femicide-south-africa",
       "topic": "Trending",
-      "published": "2026-09-15T04:00:26+00:00"
+      "published": "2026-09-16T07:00:14+00:00"
     },
     {
       "n": 10,
-      "headline": "AI leaders call for regulations, Trump dismisses 'hoaxes",
+      "headline": "Belarus to release 25 more prisoners as US eases sanctions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ai-leaders-call-for-regulations-trump-dismisses-hoaxes/a-79284638?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-15T22:38:00+00:00"
+      "url": "https://www.dw.com/en/belarus-to-release-25-more-prisoners-as-us-eases-sanctions/a-79290676?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-16T12:00:00+00:00"
     },
     {
       "n": 11,
-      "headline": "What weapon could the US have put into space?",
+      "headline": "All support acts on Ed Sheeran's US tour quit after Macklemore dropped",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-09-15T14:23:14+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3vgyn49y4l7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-16T09:36:54+00:00"
     },
     {
       "n": 12,
-      "headline": "State of U.S. democracy reaches new low, report finds",
+      "headline": "Senators question Trump's picks for top health positions, including surgeon general",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/nx-s1-5969741/state-of-u-s-democracy-reaches-new-low-report-finds",
-      "topic": "Trending",
-      "published": "2026-09-15T18:57:42+00:00"
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5968780/trump-rfk-jr-health-nomination-surgeon-general",
+      "topic": "Health",
+      "published": "2026-09-16T10:00:00+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "The London hospital funded by donors who invested in the slave trade",
+      "headline": "Al-Qaida and IS-linked violence in Africa’s Sahel belt set to hit record levels this year",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/uk-news/ng-interactive/2026/sep/14/london-hospital-st-barts-funded-donors-invested-slave-trade",
-      "topic": "Health",
-      "published": "2026-09-14T13:00:58+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/16/al-qaida-and-is-linked-violence-in-africas-sahel-belt-set-to-hit-record-levels-this-year",
+      "topic": "Trending",
+      "published": "2026-09-16T06:00:12+00:00"
     },
     {
       "n": 15,
-      "headline": "Criticism of LGBTQ+ raids in Turkey is growing",
+      "headline": "Congo's Ebola epidemic might have gone unnoticed for months",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/criticism-of-lgbtq-raids-in-turkey-is-growing/a-79284021?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/congo-s-ebola-epidemic-might-have-gone-unnoticed-for-months/a-79281803?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-15T19:32:00+00:00"
+      "published": "2026-09-16T11:49:00+00:00"
     },
     {
       "n": 16,
-      "headline": "South African president vows justice as more women's bodies found near Johannesburg",
+      "headline": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crgqde1nex2vo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-15T18:01:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-16T12:26:16+00:00"
     },
     {
       "n": 17,
-      "headline": "Family income rose and poverty fell in 2025 — but safety net cuts could erase gains",
+      "headline": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/15/nx-s1-5968648/census-poverty-income-health-insurance-report",
-      "topic": "Trending",
-      "published": "2026-09-15T18:29:49+00:00"
+      "url": "https://www.npr.org/2026/09/16/g-s1-143560/kosovo-former-president-war-crimes",
+      "topic": "Politics",
+      "published": "2026-09-16T09:57:03+00:00"
     }
   ]
 }
