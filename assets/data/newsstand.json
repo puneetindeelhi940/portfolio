@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T03:06:03Z",
+  "generated_at": "2026-09-17T12:59:44Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,14 +16,22 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump open US to 660M pounds of beef after meeting with JBS owner?",
+      "claim": "Did Mitch McConnell vote against sick leave during 4 separate years?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-jbs-brazil-beef-imports/",
+      "url": "https://www.snopes.com/fact-check/mcconnell-sick-leave-votes/",
       "topic": "Politics"
     },
     {
       "n": 3,
+      "claim": "Paxton’s AI-Heavy Ad Leaves Out Context of Talarico Remarks About Christianity",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/09/paxtons-ai-heavy-ad-leaves-out-context-of-talarico-remarks-about-christianity/",
+      "topic": "Tech / AI"
+    },
+    {
+      "n": 4,
       "claim": "EXCLUSIVE: DHS Cracks Down On Immigration Attorneys Who File ‘Meritless’ Asylum Claims",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -31,7 +39,15 @@
       "topic": "Trending"
     },
     {
-      "n": 4,
+      "n": 5,
+      "claim": "Shedding light on sunscreen myths",
+      "verdict": "FALSE",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/shedding-light-on-sunscreen-myths/",
+      "topic": "Trending"
+    },
+    {
+      "n": 6,
       "claim": "Alok Bhatt: Abusive posts, withheld X handle and the Pamphlet connection no one wants to acknowledge",
       "verdict": "FALSE",
       "source": "Alt News",
@@ -39,7 +55,7 @@
       "topic": "Trending"
     },
     {
-      "n": 5,
+      "n": 7,
       "claim": "the NASA astronauts killed in the 1986 Challenger disaster are not still alive",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -47,7 +63,7 @@
       "topic": "Science"
     },
     {
-      "n": 6,
+      "n": 8,
       "claim": "John Roberts, Amy Coney Barrett Have NOT Both Disclosed 'Gifts' From George Soros Foundation",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -55,15 +71,23 @@
       "topic": "Trending"
     },
     {
-      "n": 7,
-      "claim": "Leaked' photos allegedly show Iranian damage to US bases in Middle East. Here's what we know",
+      "n": 9,
+      "claim": "8 claims about Trump aide Natalie Harp, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/16/us-bases-damage-iran/",
+      "url": "https://www.snopes.com/collections/natalie-harp-trump-aide-claims/",
+      "topic": "Politics"
+    },
+    {
+      "n": 10,
+      "claim": "Day Two of the GOP Midterm Convention",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/09/factchecking-day-two-of-the-gop-midterm-convention/",
       "topic": "Trending"
     },
     {
-      "n": 8,
+      "n": 11,
       "claim": "House Passes Lindsey Graham’s Neocon Russia Sanctions Bill",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -71,7 +95,15 @@
       "topic": "World"
     },
     {
-      "n": 9,
+      "n": 12,
+      "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
+      "verdict": "FALSE",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/el-nino-misinformation/",
+      "topic": "Trending"
+    },
+    {
+      "n": 13,
       "claim": "Doctored video of woman bathing in Ganga in bikini goes viral",
       "verdict": "MISLEADING",
       "source": "Alt News",
@@ -79,7 +111,7 @@
       "topic": "Trending"
     },
     {
-      "n": 10,
+      "n": 14,
       "claim": "Fake image of Nepal house goes viral",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -87,7 +119,7 @@
       "topic": "Trending"
     },
     {
-      "n": 11,
+      "n": 15,
       "claim": "Parents Have NOT Gone Public To Complain About Child Deaths Under Lindsay Clancy's Nursing Care",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -95,73 +127,81 @@
       "topic": "Trending"
     },
     {
-      "n": 12,
-      "claim": "Robert Kraft, who blocked Macklemore performances, faced solicitation charge and appeared in Epstein files",
+      "n": 16,
+      "claim": "Did Trump open US to 660M pounds of beef after meeting with JBS owner?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/robert-kraft-solicitation-epstein-connection/",
-      "topic": "Trending"
-    },
-    {
-      "n": 13,
-      "claim": "Same 2 Democrats Come To Rescue Republicans’ Agenda",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/16/democrats-rescue-republicans-jared-golden-marie-glusenkamp-perez",
-      "topic": "Trending"
-    },
-    {
-      "n": 14,
-      "claim": "‘Nothing communal’: On camera, victim’s son interrupts Bengal BJP MLA’s ‘jihadi’ claim over Titagarh murder",
-      "verdict": "FALSE",
-      "source": "Alt News",
-      "url": "https://www.altnews.in/nothing-communal-on-camera-victims-son-interrupts-bengal-bjp-mlas-jihadi-claim-over-titagarh-murder/",
-      "topic": "Trending"
-    },
-    {
-      "n": 15,
-      "claim": "claims Bill Gates wrote an article on depopulating the earth with ‘forced vaccines’ recirculate",
-      "verdict": "FALSE",
-      "source": "Full Fact",
-      "url": "https://fullfact.org/health/bill-gates-vaccine-depopulation-article/",
-      "topic": "Science"
-    },
-    {
-      "n": 16,
-      "claim": "Dolly Parton's Family Did NOT Deny Taylor Swift Request To Headline Tribute Concert -- It Is Satire",
-      "verdict": "FALSE",
-      "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-dolly-parton-family-did-not-deny-taylor-swift-request-headline-tribute-concert-satire.html",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/fact-check/trump-jbs-brazil-beef-imports/",
+      "topic": "Politics"
     },
     {
       "n": 17,
-      "claim": "Is image of Trump kissing Natalie Harp on golf course real?",
+      "claim": "Trump’s Midterm Convention Speech",
       "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/15/trump-kissing-natalie-harp-photo/",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/09/factchecking-trumps-midterm-convention-speech/",
       "topic": "Politics"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "US interest rates raised for first time in three years",
+      "headline": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-17T00:40:17+00:00"
+      "published": "2026-09-17T05:00:18+00:00"
     },
     {
       "n": 2,
-      "headline": "Here's why an Arizona medical examiner is working to track heat-related deaths",
+      "headline": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
       "source": "NPR",
-      "url": "https://www.npr.org/2024/05/30/nx-s1-4854224/death-heat-arizona-climate-change-medical-examiner",
-      "topic": "Trending",
-      "published": "2026-09-16T23:07:40+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
+      "topic": "World",
+      "published": "2026-09-17T12:33:36+00:00"
     },
     {
       "n": 3,
+      "headline": "Carney embraces EU associate membership proposal as Trump pushes Canada closer to Europe",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/carney-embraces-eu-associate-membership-proposal-as-trump-pushes-canada-closer-to-europe",
+      "topic": "Politics",
+      "published": "2026-09-17T12:36:44+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "‘Like a Disney movie’: Three wild dog brothers make Africa’s longest journey",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/environment/2026/sep/17/wildlife-african-wild-dogs-longest-journey-zambia-conservation-aoe",
+      "topic": "Trending",
+      "published": "2026-09-17T04:00:39+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Fact check: How disinformation fuels Houthi-Saudi conflict",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/fact-check-how-disinformation-fuels-houthi-saudi-conflict/a-79307257?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-17T12:51:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-09-17T08:22:12+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union",
+      "topic": "Money",
+      "published": "2026-09-17T10:54:18+00:00"
+    },
+    {
+      "n": 8,
       "headline": "EU chief Ursula von der Leyen proposes Canada becoming the bloc's 1st associate member",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/world/eu-chief-ursula-von-der-leyen-proposes-canada-becoming-the-blocs-1st-associate-member",
@@ -169,7 +209,7 @@
       "published": "2026-09-17T00:15:08+00:00"
     },
     {
-      "n": 4,
+      "n": 9,
       "headline": "‘We are prey’: discovery of seven women’s bodies fuels anger over femicide in South Africa",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/16/discovery-women-bodies-anger-femicide-south-africa",
@@ -177,31 +217,31 @@
       "published": "2026-09-16T15:02:19+00:00"
     },
     {
-      "n": 5,
-      "headline": "Ukraine: Russian strikes injure several in Kyiv, Odesa",
+      "n": 10,
+      "headline": "South Africa: Police find 9th body of woman amid spree fears",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-russian-strikes-injure-several-in-kyiv-odesa/a-79299579?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/south-africa-police-find-9th-body-of-woman-amid-spree-fears/a-79310945?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-17T02:32:00+00:00"
+      "published": "2026-09-17T12:45:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Snapchat considering daily time limits for teens, boss tells BBC",
+      "n": 11,
+      "headline": "Ninth woman's body found as South African police investigate string of deaths",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-16T23:41:57+00:00"
+      "published": "2026-09-17T12:07:23+00:00"
     },
     {
-      "n": 7,
-      "headline": "House passes Russia sanctions, sending bill named for Lindsey Graham to Trump's desk",
+      "n": 12,
+      "headline": "Pressure on global chokepoints drives Asia's increased use of Arctic Trade Routes",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5971289/russia-sanctions-house-vote-lindsey-graham",
-      "topic": "Politics",
-      "published": "2026-09-16T22:30:46+00:00"
+      "url": "https://www.npr.org/2026/09/17/g-s1-143712/pressure-on-global-chokepoints-drives-asias-increased-use-of-arctic-trade-routes",
+      "topic": "Trending",
+      "published": "2026-09-17T10:00:00+00:00"
     },
     {
-      "n": 8,
+      "n": 13,
       "headline": "Speaker Johnson recesses House early, blocking Massie's push to impeach Hegseth",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/politics/speaker-johnson-recesses-house-early-blocking-massies-push-to-impeach-hegseth",
@@ -209,7 +249,7 @@
       "published": "2026-09-17T00:01:45+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "US to bar some South Africans over claims of anti-white discrimination",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/16/us-visa-restrictions-south-africans-trump-claims-anti-white-discrimination",
@@ -217,68 +257,28 @@
       "published": "2026-09-16T12:35:45+00:00"
     },
     {
-      "n": 10,
-      "headline": "Trump threatens EU with further sanctions over Canada",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-threatens-eu-with-further-sanctions-over-canada/a-79299548?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-17T01:35:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Photos show widespread damage at US sites from Iranian attacks",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-16T18:36:16+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "You'd expect homeowners to save their stuff. Federal policy pays them to leave it",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/16/g-s1-143708/video-houses-collapse-north-carolina-ocean",
-      "topic": "Trending",
-      "published": "2026-09-16T21:20:59+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Interest rate hike a 'reassuring' sign Fed is acting independently, economist says",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/interest-rate-hike-a-reassuring-sign-fed-is-acting-independently-economist-says",
-      "topic": "Money",
-      "published": "2026-09-16T22:55:51+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Al-Qaida and IS-linked violence in Africa’s Sahel belt set to hit record levels this year",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/16/al-qaida-and-is-linked-violence-in-africas-sahel-belt-set-to-hit-record-levels-this-year",
-      "topic": "Trending",
-      "published": "2026-09-16T06:00:12+00:00"
-    },
-    {
       "n": 15,
-      "headline": "How climate change worsened Nepal's deadly mountain collapse",
+      "headline": "Europe seeks stricter age limits for TikTok, Instagram and Facebook",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/how-climate-change-worsened-nepal-s-deadly-mountain-collapse/a-79293578?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-09-16T23:03:00+00:00"
+      "url": "https://www.dw.com/en/europe-seeks-stricter-age-limits-for-tiktok-instagram-and-facebook/a-79310207?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-17T12:37:00+00:00"
     },
     {
       "n": 16,
-      "headline": "EU chief backs plan for Canada to become 'associate member",
+      "headline": "Swedish PM Kristersson resigns after election loss",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-17T00:32:05+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-17T12:41:05+00:00"
     },
     {
       "n": 17,
-      "headline": "Committee investigating Epstein holds billionaire Leon Black in contempt of Congress",
+      "headline": "Why reshaping memories may hold the key to raising self-esteem",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5954258/leon-black-jeffrey-epstein-contempt-congress",
-      "topic": "Politics",
-      "published": "2026-09-16T21:12:27+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5971141/boost-self-worth-self-esteem",
+      "topic": "Trending",
+      "published": "2026-09-17T09:02:00+00:00"
     }
   ]
 }
