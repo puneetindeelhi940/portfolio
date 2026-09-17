@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T19:20:11Z",
+  "generated_at": "2026-09-17T03:06:03Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,46 +8,30 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Parents Have NOT Gone Public To Complain About Child Deaths Under Lindsay Clancy's Nursing Care",
+      "claim": "Prebunk: AI-Generated Earthquake Posts About Various U.S. States Causing Tremors Online -- Shake-And-Rattle Grip On Reality",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-parents-have-not-gone-public-to-complain-about-child-deaths-under-lindsay-clancys-nursing-care.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/prebunk-ai-generated-earthquake-posts-about-various-us-states-causing-tremors-online.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Is image of Trump kissing Natalie Harp on golf course real?",
+      "claim": "Did Trump open US to 660M pounds of beef after meeting with JBS owner?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/15/trump-kissing-natalie-harp-photo/",
+      "url": "https://www.snopes.com/fact-check/trump-jbs-brazil-beef-imports/",
       "topic": "Politics"
     },
     {
       "n": 3,
-      "claim": "Paxton’s AI-Heavy Ad Leaves Out Context of Talarico Remarks About Christianity",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/paxtons-ai-heavy-ad-leaves-out-context-of-talarico-remarks-about-christianity/",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 4,
-      "claim": "House Ditching Capitol Hill Early Without Touching AI, Debt Or Mass Surveillance",
+      "claim": "EXCLUSIVE: DHS Cracks Down On Immigration Attorneys Who File ‘Meritless’ Asylum Claims",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/16/house-ditching-early-until-after-midterm-elections",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 5,
-      "claim": "Shedding light on sunscreen myths",
-      "verdict": "FALSE",
-      "source": "Science Feedback",
-      "url": "https://science.feedback.org/shedding-light-on-sunscreen-myths/",
+      "url": "https://dailycaller.com/2026/09/16/dhs-immigration-attorneys-meritless-asylum-claims-department-of-homeland-security",
       "topic": "Trending"
     },
     {
-      "n": 6,
+      "n": 4,
       "claim": "Alok Bhatt: Abusive posts, withheld X handle and the Pamphlet connection no one wants to acknowledge",
       "verdict": "FALSE",
       "source": "Alt News",
@@ -55,7 +39,7 @@
       "topic": "Trending"
     },
     {
-      "n": 7,
+      "n": 5,
       "claim": "the NASA astronauts killed in the 1986 Challenger disaster are not still alive",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -63,47 +47,31 @@
       "topic": "Science"
     },
     {
-      "n": 8,
-      "claim": "Dolly Parton's Family Did NOT Deny Taylor Swift Request To Headline Tribute Concert -- It Is Satire",
+      "n": 6,
+      "claim": "John Roberts, Amy Coney Barrett Have NOT Both Disclosed 'Gifts' From George Soros Foundation",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-dolly-parton-family-did-not-deny-taylor-swift-request-headline-tribute-concert-satire.html",
-      "topic": "Celebrity"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-john-roberts-amy-coney-barrett-have-not-both-disclosed-gifts-from-george-soros-foundation.html",
+      "topic": "Trending"
     },
     {
-      "n": 9,
-      "claim": "Did United Airlines ship military cargo to Israel? What we know",
+      "n": 7,
+      "claim": "Leaked' photos allegedly show Iranian damage to US bases in Middle East. Here's what we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/16/israel-united-airlines-military-cargo/",
+      "url": "https://www.snopes.com/news/2026/09/16/us-bases-damage-iran/",
+      "topic": "Trending"
+    },
+    {
+      "n": 8,
+      "claim": "House Passes Lindsey Graham’s Neocon Russia Sanctions Bill",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/09/16/house-passes-russia-sanctions-bill-lindsey-graham",
       "topic": "World"
     },
     {
-      "n": 10,
-      "claim": "Day Two of the GOP Midterm Convention",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/factchecking-day-two-of-the-gop-midterm-convention/",
-      "topic": "Trending"
-    },
-    {
-      "n": 11,
-      "claim": "Same 2 Democrats Come To Rescue Republicans’ Agenda",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/16/democrats-rescue-republicans-jared-golden-marie-glusenkamp-perez",
-      "topic": "Trending"
-    },
-    {
-      "n": 12,
-      "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
-      "verdict": "FALSE",
-      "source": "Science Feedback",
-      "url": "https://science.feedback.org/el-nino-misinformation/",
-      "topic": "Trending"
-    },
-    {
-      "n": 13,
+      "n": 9,
       "claim": "Doctored video of woman bathing in Ganga in bikini goes viral",
       "verdict": "MISLEADING",
       "source": "Alt News",
@@ -111,7 +79,7 @@
       "topic": "Trending"
     },
     {
-      "n": 14,
+      "n": 10,
       "claim": "Fake image of Nepal house goes viral",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -119,54 +87,86 @@
       "topic": "Trending"
     },
     {
-      "n": 15,
-      "claim": "Gavin Newsom's Winery Did NOT Receive 'State Wildfire Payout' -- It Got A Private Settlement With Hundred Acre",
+      "n": 11,
+      "claim": "Parents Have NOT Gone Public To Complain About Child Deaths Under Lindsay Clancy's Nursing Care",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-ca-governor-newsom-did-not-receive-state-wildfire-payout-winery-after-fire.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-parents-have-not-gone-public-to-complain-about-child-deaths-under-lindsay-clancys-nursing-care.html",
       "topic": "Trending"
     },
     {
-      "n": 16,
-      "claim": "Does image show Trump left brown stain on chair in Ireland? Here's the truth",
+      "n": 12,
+      "claim": "Robert Kraft, who blocked Macklemore performances, faced solicitation charge and appeared in Epstein files",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-ireland-brown-stain/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/robert-kraft-solicitation-epstein-connection/",
+      "topic": "Trending"
+    },
+    {
+      "n": 13,
+      "claim": "Same 2 Democrats Come To Rescue Republicans’ Agenda",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/09/16/democrats-rescue-republicans-jared-golden-marie-glusenkamp-perez",
+      "topic": "Trending"
+    },
+    {
+      "n": 14,
+      "claim": "‘Nothing communal’: On camera, victim’s son interrupts Bengal BJP MLA’s ‘jihadi’ claim over Titagarh murder",
+      "verdict": "FALSE",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/nothing-communal-on-camera-victims-son-interrupts-bengal-bjp-mlas-jihadi-claim-over-titagarh-murder/",
+      "topic": "Trending"
+    },
+    {
+      "n": 15,
+      "claim": "claims Bill Gates wrote an article on depopulating the earth with ‘forced vaccines’ recirculate",
+      "verdict": "FALSE",
+      "source": "Full Fact",
+      "url": "https://fullfact.org/health/bill-gates-vaccine-depopulation-article/",
+      "topic": "Science"
+    },
+    {
+      "n": 16,
+      "claim": "Dolly Parton's Family Did NOT Deny Taylor Swift Request To Headline Tribute Concert -- It Is Satire",
+      "verdict": "FALSE",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-dolly-parton-family-did-not-deny-taylor-swift-request-headline-tribute-concert-satire.html",
+      "topic": "Celebrity"
     },
     {
       "n": 17,
-      "claim": "Trump’s Midterm Convention Speech",
+      "claim": "Is image of Trump kissing Natalie Harp on golf course real?",
       "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/factchecking-trumps-midterm-convention-speech/",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/news/2026/09/15/trump-kissing-natalie-harp-photo/",
       "topic": "Politics"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "EU chief backs plan for Canada to become 'associate member",
+      "headline": "US interest rates raised for first time in three years",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-16T12:36:51+00:00"
+      "published": "2026-09-17T00:40:17+00:00"
     },
     {
       "n": 2,
-      "headline": "Congress is under pressure to act on AI — here's what that could look like",
+      "headline": "Here's why an Arizona medical examiner is working to track heat-related deaths",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5969933/congress-ai-regulation",
-      "topic": "Politics",
-      "published": "2026-09-16T17:32:44+00:00"
+      "url": "https://www.npr.org/2024/05/30/nx-s1-4854224/death-heat-arizona-climate-change-medical-examiner",
+      "topic": "Trending",
+      "published": "2026-09-16T23:07:40+00:00"
     },
     {
       "n": 3,
-      "headline": "House votes to hold billionaire Leon Black in contempt of Congress over Epstein investigation",
+      "headline": "EU chief Ursula von der Leyen proposes Canada becoming the bloc's 1st associate member",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/house-votes-to-hold-billionaire-leon-black-in-contempt-of-congress-over-epstein-investigation",
-      "topic": "Politics",
-      "published": "2026-09-16T19:12:33+00:00"
+      "url": "https://www.pbs.org/newshour/world/eu-chief-ursula-von-der-leyen-proposes-canada-becoming-the-blocs-1st-associate-member",
+      "topic": "Trending",
+      "published": "2026-09-17T00:15:08+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US Fed raises key rate for first time in 3 years",
+      "headline": "Ukraine: Russian strikes injure several in Kyiv, Odesa",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-fed-raises-key-rate-for-first-time-in-3-years/a-79297295?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-09-16T18:24:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-russian-strikes-injure-several-in-kyiv-odesa/a-79299579?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-17T02:32:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Photos show widespread damage at US sites from Iranian attacks",
+      "headline": "Snapchat considering daily time limits for teens, boss tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-16T18:36:16+00:00"
+      "published": "2026-09-16T23:41:57+00:00"
     },
     {
       "n": 7,
-      "headline": "DOJ charges Russian agents with plotting attacks, including in US",
+      "headline": "House passes Russia sanctions, sending bill named for Lindsey Graham to Trump's desk",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/16/g-s1-143590/us-justice-department-russian-operatives-attacks",
-      "topic": "Trending",
-      "published": "2026-09-16T17:19:49+00:00"
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5971289/russia-sanctions-house-vote-lindsey-graham",
+      "topic": "Politics",
+      "published": "2026-09-16T22:30:46+00:00"
     },
     {
       "n": 8,
-      "headline": "What the Fed rate hike likely means for you",
+      "headline": "Speaker Johnson recesses House early, blocking Massie's push to impeach Hegseth",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/what-the-fed-rate-hike-likely-means-for-you",
-      "topic": "Money",
-      "published": "2026-09-16T19:08:08+00:00"
+      "url": "https://www.pbs.org/newshour/politics/speaker-johnson-recesses-house-early-blocking-massies-push-to-impeach-hegseth",
+      "topic": "Trending",
+      "published": "2026-09-17T00:01:45+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Germany: Oktoberfest beer prices rise, outpacing inflation",
+      "headline": "Trump threatens EU with further sanctions over Canada",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-oktoberfest-beer-prices-rise-outpacing-inflation/a-79296932?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-09-16T18:00:00+00:00"
+      "url": "https://www.dw.com/en/trump-threatens-eu-with-further-sanctions-over-canada/a-79299548?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-17T01:35:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
+      "headline": "Photos show widespread damage at US sites from Iranian attacks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-16T17:16:47+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-16T18:36:16+00:00"
     },
     {
       "n": 12,
-      "headline": "A tumultuous congressional primary season closes with record departures and defeats",
+      "headline": "You'd expect homeowners to save their stuff. Federal policy pays them to leave it",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5971264/congress-retirement-2026-house-senate-primary-defeat",
+      "url": "https://www.npr.org/2026/09/16/g-s1-143708/video-houses-collapse-north-carolina-ocean",
       "topic": "Trending",
-      "published": "2026-09-16T17:05:41+00:00"
+      "published": "2026-09-16T21:20:59+00:00"
     },
     {
       "n": 13,
-      "headline": "WATCH: House Democrats blasts 'do nothing' Republican majority in midterm pitch to voters",
+      "headline": "Interest rate hike a 'reassuring' sign Fed is acting independently, economist says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-house-democrats-blasts-do-nothing-republican-majority-in-midterm-pitch-to-voters",
-      "topic": "Politics",
-      "published": "2026-09-16T18:28:08+00:00"
+      "url": "https://www.pbs.org/newshour/show/interest-rate-hike-a-reassuring-sign-fed-is-acting-independently-economist-says",
+      "topic": "Money",
+      "published": "2026-09-16T22:55:51+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "UK: Village votes to 'secede' in asylum center plan protest",
+      "headline": "How climate change worsened Nepal's deadly mountain collapse",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uk-village-votes-to-secede-in-asylum-center-plan-protest/a-79295826?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-16T17:41:00+00:00"
+      "url": "https://www.dw.com/en/how-climate-change-worsened-nepal-s-deadly-mountain-collapse/a-79293578?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-16T23:03:00+00:00"
     },
     {
       "n": 16,
-      "headline": "US accuses Russia of trying to kill Ukrainian allies overseas",
+      "headline": "EU chief backs plan for Canada to become 'associate member",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-16T12:26:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-17T00:32:05+00:00"
     },
     {
       "n": 17,
-      "headline": "How Jared Kushner is mixing U.S. diplomacy with his billion-dollar business",
+      "headline": "Committee investigating Epstein holds billionaire Leon Black in contempt of Congress",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5971125/how-jared-kushner-is-mixing-u-s-diplomacy-with-his-billion-dollar-business",
-      "topic": "Money",
-      "published": "2026-09-16T16:14:19+00:00"
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5954258/leon-black-jeffrey-epstein-contempt-congress",
+      "topic": "Politics",
+      "published": "2026-09-16T21:12:27+00:00"
     }
   ]
 }
