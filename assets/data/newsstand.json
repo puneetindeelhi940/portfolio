@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T12:59:44Z",
+  "generated_at": "2026-09-17T19:29:40Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,34 +8,34 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Prebunk: AI-Generated Earthquake Posts About Various U.S. States Causing Tremors Online -- Shake-And-Rattle Grip On Reality",
+      "claim": "Ed Sheeran Did NOT Donate Concert Tickets To Veterans After Macklemore Palestine Controversy -- It Is Satire",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/prebunk-ai-generated-earthquake-posts-about-various-us-states-causing-tremors-online.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-ed-sheeran-did-not-donate-thousands-of-unsold-tickets-to-his-us-concerts-to-veterans.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Mitch McConnell vote against sick leave during 4 separate years?",
+      "claim": "Charlie Kirk once called George Floyd a 'scumbag.' Here's what he said next",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mcconnell-sick-leave-votes/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/george-floyd-charlie-kirk-quote/",
+      "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Paxton’s AI-Heavy Ad Leaves Out Context of Talarico Remarks About Christianity",
+      "claim": "Midterm Ads Clash Over GOP Law’s Impact on Rural Healthcare",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/paxtons-ai-heavy-ad-leaves-out-context-of-talarico-remarks-about-christianity/",
-      "topic": "Tech / AI"
+      "url": "https://www.factcheck.org/2026/09/midterm-ads-clash-over-gop-laws-impact-on-rural-healthcare/",
+      "topic": "Trending"
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: DHS Cracks Down On Immigration Attorneys Who File ‘Meritless’ Asylum Claims",
+      "claim": "EXCLUSIVE: University Of Washington Scrubbed Pentagon-Funded Professor’s Ties To Chinese Military Firm, Report Finds",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/16/dhs-immigration-attorneys-meritless-asylum-claims-department-of-homeland-security",
+      "url": "https://dailycaller.com/2026/09/17/university-washington-dayong-gao-origincell-chinese-company",
       "topic": "Trending"
     },
     {
@@ -48,51 +48,51 @@
     },
     {
       "n": 6,
-      "claim": "Alok Bhatt: Abusive posts, withheld X handle and the Pamphlet connection no one wants to acknowledge",
+      "claim": "IPS officer Bushara Bano transferred after Right-wing outrage over use of Arabic words in video address to students",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/alok-bhatt-abusive-posts-withheld-x-handle-and-the-pamphlet-connection-no-one-wants-to-acknowledge/",
+      "url": "https://www.altnews.in/ips-officer-bushara-bano-transferred-after-right-wing-outrage-over-use-of-arabic-words-in-video-address-to-students/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "the NASA astronauts killed in the 1986 Challenger disaster are not still alive",
+      "claim": "Scottish council corrects outdated asylum seeker support figure",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/technology/challenger-astronauts-not-still-alive/",
-      "topic": "Science"
+      "url": "https://fullfact.org/immigration/stirling-council-asylum-support-correction/",
+      "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "John Roberts, Amy Coney Barrett Have NOT Both Disclosed 'Gifts' From George Soros Foundation",
+      "claim": "Muslim Man Was NOT Proven To Have Spiked Millie Taplin's Drink -- Essex Police Say Claim Is 'Deliberately False",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-john-roberts-amy-coney-barrett-have-not-both-disclosed-gifts-from-george-soros-foundation.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-muslim-man-was-not-proven-to-have-spiked-millie-taplins-drink-paralyzing-her.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "8 claims about Trump aide Natalie Harp, investigated",
+      "claim": "Democrats shot 4 presidents, MLK Jr. and Charlie Kirk gets the facts wrong",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/natalie-harp-trump-aide-claims/",
-      "topic": "Politics"
-    },
-    {
-      "n": 10,
-      "claim": "Day Two of the GOP Midterm Convention",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/factchecking-day-two-of-the-gop-midterm-convention/",
+      "url": "https://www.snopes.com/fact-check/democrats-assassination-attempts-charlie-kirk-presidents/",
       "topic": "Trending"
     },
     {
+      "n": 10,
+      "claim": "Paxton’s AI-Heavy Ad Leaves Out Context of Talarico Remarks About Christianity",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/09/paxtons-ai-heavy-ad-leaves-out-context-of-talarico-remarks-about-christianity/",
+      "topic": "Tech / AI"
+    },
+    {
       "n": 11,
-      "claim": "House Passes Lindsey Graham’s Neocon Russia Sanctions Bill",
+      "claim": "Secretary Chris Wright Tells Daily Caller Editor-In-Chief US Energy Policy Must Prioritize Cost, Reliability",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/16/house-passes-russia-sanctions-bill-lindsey-graham",
-      "topic": "World"
+      "url": "https://dailycaller.com/2026/09/17/daily-caller-live-chris-wright-energy-policy-cost-reliability-coal-china-amber-duke",
+      "topic": "Science"
     },
     {
       "n": 12,
@@ -104,69 +104,69 @@
     },
     {
       "n": 13,
-      "claim": "Doctored video of woman bathing in Ganga in bikini goes viral",
-      "verdict": "MISLEADING",
+      "claim": "Alok Bhatt: Abusive posts, withheld X handle and the Pamphlet connection no one wants to acknowledge",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/doctored-video-of-woman-bathing-in-ganga-in-bikini-goes-viral/",
+      "url": "https://www.altnews.in/alok-bhatt-abusive-posts-withheld-x-handle-and-the-pamphlet-connection-no-one-wants-to-acknowledge/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Fake image of Nepal house goes viral",
-      "verdict": "FALSE",
+      "claim": "Edited video of South Tower on 9/11 circulates again",
+      "verdict": "MISLEADING",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/nepal-miracle-house/",
+      "url": "https://fullfact.org/us/edited-video-south-tower-9-11/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "Parents Have NOT Gone Public To Complain About Child Deaths Under Lindsay Clancy's Nursing Care",
+      "claim": "Old Ed Sheeran Video Does NOT Show Him Performing Since His Band Quit -- Filmed in 2022 At Wembley Stadium",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-parents-have-not-gone-public-to-complain-about-child-deaths-under-lindsay-clancys-nursing-care.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-old-ed-sheeran-video-does-not-show-him-performing-since-his-band-quit.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Trump open US to 660M pounds of beef after meeting with JBS owner?",
+      "claim": "Did Mitch McConnell vote against sick leave during 4 separate years?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-jbs-brazil-beef-imports/",
+      "url": "https://www.snopes.com/fact-check/mcconnell-sick-leave-votes/",
       "topic": "Politics"
     },
     {
       "n": 17,
-      "claim": "Trump’s Midterm Convention Speech",
+      "claim": "Day Two of the GOP Midterm Convention",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/factchecking-trumps-midterm-convention-speech/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/09/factchecking-day-two-of-the-gop-midterm-convention/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
+      "headline": "Canada welcomes EU proposal to become 'associate member",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-17T05:00:18+00:00"
+      "published": "2026-09-17T12:27:18+00:00"
     },
     {
       "n": 2,
-      "headline": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+      "headline": "A year ago, President Trump pledged to lower Medicaid drug prices. Has that happened?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
-      "topic": "World",
-      "published": "2026-09-17T12:33:36+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5971066/trump-rx-medicaid-generous-drug-prices-pfizer-favored-nation",
+      "topic": "Health",
+      "published": "2026-09-17T16:45:58+00:00"
     },
     {
       "n": 3,
-      "headline": "Carney embraces EU associate membership proposal as Trump pushes Canada closer to Europe",
+      "headline": "About 35 million people have been put into new House districts in the fight over congressional maps, report says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/carney-embraces-eu-associate-membership-proposal-as-trump-pushes-canada-closer-to-europe",
-      "topic": "Politics",
-      "published": "2026-09-17T12:36:44+00:00"
+      "url": "https://www.pbs.org/newshour/politics/about-35-million-people-have-been-put-into-new-house-districts-in-the-fight-over-congressional-maps-report-says",
+      "topic": "Trending",
+      "published": "2026-09-17T18:59:33+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Fact check: How disinformation fuels Houthi-Saudi conflict",
+      "headline": "Russian birth tourism to Brazil increases",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fact-check-how-disinformation-fuels-houthi-saudi-conflict/a-79307257?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/russian-birth-tourism-to-brazil-increases/a-79312304?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-17T12:51:00+00:00"
+      "published": "2026-09-17T19:19:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
+      "headline": "Ninth woman's body found as South African police investigate string of deaths",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-09-17T08:22:12+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-17T13:44:07+00:00"
     },
     {
       "n": 7,
-      "headline": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member",
+      "headline": "American Scoundrel' traces Roy Cohn's playbook from McCarthyism to Trump",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union",
-      "topic": "Money",
-      "published": "2026-09-17T10:54:18+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5965831/american-scoundrel-traces-roy-cohns-playbook-from-mccarthyism-to-trump",
+      "topic": "Politics",
+      "published": "2026-09-17T16:14:06+00:00"
     },
     {
       "n": 8,
-      "headline": "EU chief Ursula von der Leyen proposes Canada becoming the bloc's 1st associate member",
+      "headline": "A global AI safety strategy depends on U.S.-China cooperation. They each see the other as the problem",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/eu-chief-ursula-von-der-leyen-proposes-canada-becoming-the-blocs-1st-associate-member",
-      "topic": "Trending",
-      "published": "2026-09-17T00:15:08+00:00"
+      "url": "https://www.pbs.org/newshour/world/a-global-ai-safety-strategy-depends-on-u-s-china-cooperation-they-each-see-the-other-as-the-problem",
+      "topic": "World",
+      "published": "2026-09-17T18:10:32+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "South Africa: Police find 9th body of woman amid spree fears",
+      "headline": "A war-fatigued and anxious Russia picks a new parliament",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/south-africa-police-find-9th-body-of-woman-amid-spree-fears/a-79310945?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-17T12:45:00+00:00"
+      "url": "https://www.dw.com/en/a-war-fatigued-and-anxious-russia-picks-a-new-parliament/a-79312440?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-17T16:42:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Ninth woman's body found as South African police investigate string of deaths",
+      "headline": "UN experts say grounds to believe US committed war crimes in Iran strikes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-17T12:07:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-17T15:07:47+00:00"
     },
     {
       "n": 12,
-      "headline": "Pressure on global chokepoints drives Asia's increased use of Arctic Trade Routes",
+      "headline": "Greetings from Beijing, where baozi are worth the wait in line",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/g-s1-143712/pressure-on-global-chokepoints-drives-asias-increased-use-of-arctic-trade-routes",
+      "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi",
       "topic": "Trending",
-      "published": "2026-09-17T10:00:00+00:00"
+      "published": "2026-09-17T13:59:17+00:00"
     },
     {
       "n": 13,
-      "headline": "Speaker Johnson recesses House early, blocking Massie's push to impeach Hegseth",
+      "headline": "Florida congresswoman running for reelection breaks with Trump on immigration",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/speaker-johnson-recesses-house-early-blocking-massies-push-to-impeach-hegseth",
-      "topic": "Trending",
-      "published": "2026-09-17T00:01:45+00:00"
+      "url": "https://www.pbs.org/newshour/politics/florida-congresswoman-running-for-reelection-breaks-with-trump-on-immigration",
+      "topic": "Politics",
+      "published": "2026-09-17T17:21:00+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Europe seeks stricter age limits for TikTok, Instagram and Facebook",
+      "headline": "Germany: Third malaria death linked to Frankfurt Airport",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/europe-seeks-stricter-age-limits-for-tiktok-instagram-and-facebook/a-79310207?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-third-malaria-death-linked-to-frankfurt-airport/a-79315012?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-17T12:37:00+00:00"
+      "published": "2026-09-17T16:16:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Swedish PM Kristersson resigns after election loss",
+      "headline": "Hyrox athlete apologises for continuing race after soiling herself",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-17T12:41:05+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck0e35qyqlx0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-17T15:05:13+00:00"
     },
     {
       "n": 17,
-      "headline": "Why reshaping memories may hold the key to raising self-esteem",
+      "headline": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5971141/boost-self-worth-self-esteem",
-      "topic": "Trending",
-      "published": "2026-09-17T09:02:00+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
+      "topic": "World",
+      "published": "2026-09-17T12:33:36+00:00"
     }
   ]
 }
