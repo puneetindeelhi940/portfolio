@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:53:39Z",
+  "generated_at": "2026-09-18T12:38:48Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Macklemore apologized for 2014 costume featuring antisemitic tropes",
+      "claim": "Do new laws require booster seats for drivers under 5 foot 2?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/macklemore-antisemitic-costume/",
+      "url": "https://www.snopes.com/fact-check/booster-seat-laws-five-two/",
       "topic": "Trending"
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Mallikarjun Kharge ‘kept away’ from Rahul Gandhi-Anwar Ibrahim’s breakfast table? Morphed photo viral",
+      "claim": "of Swatantra Bhardwaj threatening Bhim Army chief predates his September 17 release on interim bail",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/mallikarjun-kharge-kept-away-from-rahul-gandhi-anwar-ibrahims-breakfast-table-morphed-photo-viral/",
+      "url": "https://www.altnews.in/viral-video-of-swatantra-bhardwaj-threatening-bhim-army-chief-predates-his-september-17-release-on-interim-bail/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Scottish council corrects outdated asylum seeker support figure",
+      "claim": "Monzo bank hasn’t launched its own online casino site",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/stirling-council-asylum-support-correction/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/economy/fake-monzo-casino-adverts/",
+      "topic": "Money"
     },
     {
       "n": 8,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Legal observer said she saw forklift repeatedly hit Kennedy Center pillars",
+      "claim": "allegedly shows 104-year-old woman Mabel Rose Thompson chiding Trump. Is it real or AI?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/forklift-hit-kennedy-center-pillars/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/video-trump-mabel-rose-thompson/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "IPS officer Bushara Bano transferred after Right-wing outrage over use of Arabic words in video address to students",
+      "claim": "Mallikarjun Kharge ‘kept away’ from Rahul Gandhi-Anwar Ibrahim’s breakfast table? Morphed photo viral",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/ips-officer-bushara-bano-transferred-after-right-wing-outrage-over-use-of-arabic-words-in-video-address-to-students/",
+      "url": "https://www.altnews.in/mallikarjun-kharge-kept-away-from-rahul-gandhi-anwar-ibrahims-breakfast-table-morphed-photo-viral/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Edited video of South Tower on 9/11 circulates again",
-      "verdict": "MISLEADING",
+      "claim": "Scottish council corrects outdated asylum seeker support figure",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/us/edited-video-south-tower-9-11/",
+      "url": "https://fullfact.org/immigration/stirling-council-asylum-support-correction/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Are US truck drivers going on strike starting Oct. 1, 2026?",
+      "claim": "Macklemore apologized for 2014 costume featuring antisemitic tropes",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/17/trucker-strike-oct-1st/",
+      "url": "https://www.snopes.com/fact-check/macklemore-antisemitic-costume/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Canada welcomes EU proposal to become 'associate member",
+      "headline": "Three dead and eight injured in Philippines school shooting",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-17T12:27:18+00:00"
+      "published": "2026-09-18T11:01:46+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump withdraws Lance Schroyer, a former Oklahoma state trooper, as his nominee to lead ICE",
+      "headline": "Judge says Trump can't demolish Kennedy Center. And, lawsuits target voter intimidation",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5973271/trump-withdraws-lance-schroyer-a-former-oklahoma-state-trooper-as-his-nominee-to-lead-ice",
+      "url": "https://www.npr.org/2026/09/18/g-s1-143913/up-first-newsletter-kennedy-center-trump-voter-intimidation-lawsuit-poland-russia-ukraine",
       "topic": "Politics",
-      "published": "2026-09-17T21:17:39+00:00"
+      "published": "2026-09-18T11:09:24+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "Almost 50 dead in Nigeria after drinking alcohol suspected to contain methanol",
+      "headline": "British woman who was kidnapped in Malawi rescued by police after shootout",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/18/nigeria-deaths-suspected-methanol-alcohol-brew-drink",
+      "url": "https://www.theguardian.com/world/2026/sep/18/british-woman-kidnapped-malawi-police-shootout",
       "topic": "Trending",
-      "published": "2026-09-18T00:23:31+00:00"
+      "published": "2026-09-18T11:21:36+00:00"
     },
     {
       "n": 5,
-      "headline": "UN mission notes possible US war crimes in Iran strikes",
+      "headline": "The rise of the AfD: The all-or-nothing party",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/un-mission-notes-possible-us-war-crimes-in-iran-strikes/a-79316385?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-17T23:48:00+00:00"
+      "url": "https://www.dw.com/en/the-rise-of-the-afd-the-all-or-nothing-party/a-79326208?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-18T12:24:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Ninth woman's body found as South African police investigate string of deaths",
+      "headline": "Police begin operation to move migrants from Ceuta beaches",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-17T13:44:07+00:00"
+      "published": "2026-09-18T11:59:42+00:00"
     },
     {
       "n": 7,
-      "headline": "ICE agent appears in Minnesota court to face charges in the shooting of a Venezuelan immigrant",
+      "headline": "Ms. Rachel has entered her album era, and she is so happy about it",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5973127/ice-agent-court-extradition-minnesota-immigrant-shooting",
+      "url": "https://www.npr.org/2026/09/18/nx-s1-5938847/ms-rachel-mr-aron-new-album-im-so-happy",
       "topic": "Trending",
-      "published": "2026-09-17T20:23:34+00:00"
+      "published": "2026-09-18T11:00:00+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "‘Like a Disney movie’: Three wild dog brothers make Africa’s longest journey",
+      "headline": "Louisiana firefighters find feline native to sub-Saharan Africa while responding to house fire",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/sep/17/wildlife-african-wild-dogs-longest-journey-zambia-conservation-aoe",
+      "url": "https://www.theguardian.com/us-news/2026/sep/18/louisiana-firefighters-sub-saharan-africa-feline",
       "topic": "Trending",
-      "published": "2026-09-17T04:00:39+00:00"
+      "published": "2026-09-18T10:00:15+00:00"
     },
     {
       "n": 10,
-      "headline": "Trump hails 'major progress' in setting up US base in Poland",
+      "headline": "Philippines: At least 3 students killed in school shooting",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-hails-major-progress-in-setting-up-us-base-in-poland/a-79316328?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-17T21:55:00+00:00"
+      "url": "https://www.dw.com/en/philippines-at-least-3-students-killed-in-school-shooting/a-79319854?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-18T11:33:00+00:00"
     },
     {
       "n": 11,
-      "headline": "UN experts say grounds to believe US committed war crimes in Iran strikes",
+      "headline": "Lindsay Clancy holdout juror had no doubt she deliberately killed her children",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-17T20:34:30+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-18T11:49:46+00:00"
     },
     {
       "n": 12,
-      "headline": "Retired Olympic superstar Jessie Diggins wins her first-ever 100 mile trail race",
+      "headline": "Warren Buffett steps down as Berkshire Hathaway chairman",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5948171/retired-olympic-superstar-jessie-diggins-wins-her-first-ever-100-mile-trail-race",
+      "url": "https://www.npr.org/2026/09/18/nx-s1-5973852/warren-buffett-steps-down",
       "topic": "Trending",
-      "published": "2026-09-17T20:00:35+00:00"
+      "published": "2026-09-18T10:58:49+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "‘We are prey’: discovery of seven women’s bodies fuels anger over femicide in South Africa",
+      "headline": "‘We demand the truth’: Olga Tokarczuk and JM Coetzee lead calls for proof of life of disappeared Eritrean writers",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/16/discovery-women-bodies-anger-femicide-south-africa",
+      "url": "https://www.theguardian.com/books/2026/sep/18/olga-tokarczuk-j-m-coetzee-lead-calls-for-release-of-disappeared-eritrean-writers",
       "topic": "Trending",
-      "published": "2026-09-16T15:02:19+00:00"
+      "published": "2026-09-18T08:30:12+00:00"
     },
     {
       "n": 15,
-      "headline": "US: Trump administration weakens Endangered Species Act",
+      "headline": "Germany news: Fuel costs dominate debate ahead of polls",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-trump-administration-weakens-endangered-species-act/a-79316188?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-17T20:29:00+00:00"
+      "url": "https://www.dw.com/en/germany-news-fuel-costs-dominate-debate-ahead-of-polls/live-79324526?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-18T11:30:00+00:00"
     },
     {
       "n": 16,
-      "headline": "US to allow Iran delegation to attend UN meetings in New York as war passes half-year mark",
+      "headline": "At least 16 killed after vehicle loaded with explosives rams into Pakistan mosque",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n8m72r13ngo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-17T21:41:19+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-18T11:39:11+00:00"
     },
     {
       "n": 17,
-      "headline": "To prevent deaths in childbirth, Kenyan moms turn to an AI powered chatbot",
+      "headline": "South Africa 'feels like a prison' for women amid spate of femicides",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health",
-      "topic": "Tech / AI",
-      "published": "2026-09-17T19:33:30+00:00"
+      "url": "https://www.npr.org/2026/09/18/nx-s1-5973822/south-africa-feels-like-a-prison-for-women-amid-spate-of-femicides",
+      "topic": "Trending",
+      "published": "2026-09-18T10:39:14+00:00"
     }
   ]
 }
