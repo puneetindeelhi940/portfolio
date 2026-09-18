@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T19:29:40Z",
+  "generated_at": "2026-09-18T02:53:39Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Ed Sheeran Did NOT Donate Concert Tickets To Veterans After Macklemore Palestine Controversy -- It Is Satire",
-      "verdict": "FALSE",
+      "claim": "ALTERED Video Does NOT Show David Byrne Criticizing Ed Sheeran In Real Life",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-ed-sheeran-did-not-donate-thousands-of-unsold-tickets-to-his-us-concerts-to-veterans.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-altered-video-does-not-show-david-byrne-criticizing-ed-sheeran-in-real-life.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Charlie Kirk once called George Floyd a 'scumbag.' Here's what he said next",
+      "claim": "Macklemore apologized for 2014 costume featuring antisemitic tropes",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/george-floyd-charlie-kirk-quote/",
+      "url": "https://www.snopes.com/fact-check/macklemore-antisemitic-costume/",
       "topic": "Trending"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: University Of Washington Scrubbed Pentagon-Funded Professor’s Ties To Chinese Military Firm, Report Finds",
+      "claim": "EXCLUSIVE: Talarico’s Spiritual Mentor Caught On Camera Touting ‘Inclusive’ Bible",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/17/university-washington-dayong-gao-origincell-chinese-company",
+      "url": "https://dailycaller.com/2026/09/17/james-talarico-undercover-video-st-andrews-church-inclusive-bible-gendered-language",
       "topic": "Trending"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "IPS officer Bushara Bano transferred after Right-wing outrage over use of Arabic words in video address to students",
+      "claim": "Mallikarjun Kharge ‘kept away’ from Rahul Gandhi-Anwar Ibrahim’s breakfast table? Morphed photo viral",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/ips-officer-bushara-bano-transferred-after-right-wing-outrage-over-use-of-arabic-words-in-video-address-to-students/",
+      "url": "https://www.altnews.in/mallikarjun-kharge-kept-away-from-rahul-gandhi-anwar-ibrahims-breakfast-table-morphed-photo-viral/",
       "topic": "Trending"
     },
     {
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "Muslim Man Was NOT Proven To Have Spiked Millie Taplin's Drink -- Essex Police Say Claim Is 'Deliberately False",
+      "claim": "FAKE Video Shows Foods From Europe And America Compared -- Video Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-muslim-man-was-not-proven-to-have-spiked-millie-taplins-drink-paralyzing-her.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-shows-foods-form-europe-and-america-compared.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Democrats shot 4 presidents, MLK Jr. and Charlie Kirk gets the facts wrong",
+      "claim": "Legal observer said she saw forklift repeatedly hit Kennedy Center pillars",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/democrats-assassination-attempts-charlie-kirk-presidents/",
+      "url": "https://www.snopes.com/fact-check/forklift-hit-kennedy-center-pillars/",
       "topic": "Trending"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Alok Bhatt: Abusive posts, withheld X handle and the Pamphlet connection no one wants to acknowledge",
+      "claim": "IPS officer Bushara Bano transferred after Right-wing outrage over use of Arabic words in video address to students",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/alok-bhatt-abusive-posts-withheld-x-handle-and-the-pamphlet-connection-no-one-wants-to-acknowledge/",
+      "url": "https://www.altnews.in/ips-officer-bushara-bano-transferred-after-right-wing-outrage-over-use-of-arabic-words-in-video-address-to-students/",
       "topic": "Trending"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "Old Ed Sheeran Video Does NOT Show Him Performing Since His Band Quit -- Filmed in 2022 At Wembley Stadium",
+      "claim": "FAKE Video Shows Masked Police Officers Walking Around Polling Station, Looking At How People Are Voting",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-old-ed-sheeran-video-does-not-show-him-performing-since-his-band-quit.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-shows-masked-police-officers-walking-around-polling-station-looking-at-how-people-are-voting.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Mitch McConnell vote against sick leave during 4 separate years?",
+      "claim": "Are US truck drivers going on strike starting Oct. 1, 2026?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mcconnell-sick-leave-votes/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/09/17/trucker-strike-oct-1st/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -154,35 +154,35 @@
     },
     {
       "n": 2,
-      "headline": "A year ago, President Trump pledged to lower Medicaid drug prices. Has that happened?",
+      "headline": "Trump withdraws Lance Schroyer, a former Oklahoma state trooper, as his nominee to lead ICE",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5971066/trump-rx-medicaid-generous-drug-prices-pfizer-favored-nation",
-      "topic": "Health",
-      "published": "2026-09-17T16:45:58+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5973271/trump-withdraws-lance-schroyer-a-former-oklahoma-state-trooper-as-his-nominee-to-lead-ice",
+      "topic": "Politics",
+      "published": "2026-09-17T21:17:39+00:00"
     },
     {
       "n": 3,
-      "headline": "About 35 million people have been put into new House districts in the fight over congressional maps, report says",
+      "headline": "WATCH: RFK Jr. speaks at conference for anti-vaccine group he founded",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/about-35-million-people-have-been-put-into-new-house-districts-in-the-fight-over-congressional-maps-report-says",
-      "topic": "Trending",
-      "published": "2026-09-17T18:59:33+00:00"
+      "url": "https://www.pbs.org/newshour/politics/watch-rfk-jr-speaks-at-conference-for-anti-vaccine-group-he-founded",
+      "topic": "Health",
+      "published": "2026-09-18T00:34:18+00:00"
     },
     {
       "n": 4,
-      "headline": "‘Like a Disney movie’: Three wild dog brothers make Africa’s longest journey",
+      "headline": "Almost 50 dead in Nigeria after drinking alcohol suspected to contain methanol",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/sep/17/wildlife-african-wild-dogs-longest-journey-zambia-conservation-aoe",
+      "url": "https://www.theguardian.com/world/2026/sep/18/nigeria-deaths-suspected-methanol-alcohol-brew-drink",
       "topic": "Trending",
-      "published": "2026-09-17T04:00:39+00:00"
+      "published": "2026-09-18T00:23:31+00:00"
     },
     {
       "n": 5,
-      "headline": "Russian birth tourism to Brazil increases",
+      "headline": "UN mission notes possible US war crimes in Iran strikes",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russian-birth-tourism-to-brazil-increases/a-79312304?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-17T19:19:00+00:00"
+      "url": "https://www.dw.com/en/un-mission-notes-possible-us-war-crimes-in-iran-strikes/a-79316385?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-17T23:48:00+00:00"
     },
     {
       "n": 6,
@@ -194,35 +194,35 @@
     },
     {
       "n": 7,
-      "headline": "American Scoundrel' traces Roy Cohn's playbook from McCarthyism to Trump",
+      "headline": "ICE agent appears in Minnesota court to face charges in the shooting of a Venezuelan immigrant",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5965831/american-scoundrel-traces-roy-cohns-playbook-from-mccarthyism-to-trump",
-      "topic": "Politics",
-      "published": "2026-09-17T16:14:06+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5973127/ice-agent-court-extradition-minnesota-immigrant-shooting",
+      "topic": "Trending",
+      "published": "2026-09-17T20:23:34+00:00"
     },
     {
       "n": 8,
-      "headline": "A global AI safety strategy depends on U.S.-China cooperation. They each see the other as the problem",
+      "headline": "Work has stopped on system that was key to Trump effort to limit mail voting, USPS chief says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/a-global-ai-safety-strategy-depends-on-u-s-china-cooperation-they-each-see-the-other-as-the-problem",
-      "topic": "World",
-      "published": "2026-09-17T18:10:32+00:00"
+      "url": "https://www.pbs.org/newshour/politics/work-has-stopped-on-system-that-was-key-to-trump-effort-to-limit-mail-voting-usps-chief-says",
+      "topic": "Politics",
+      "published": "2026-09-18T00:19:24+00:00"
     },
     {
       "n": 9,
-      "headline": "‘We are prey’: discovery of seven women’s bodies fuels anger over femicide in South Africa",
+      "headline": "‘Like a Disney movie’: Three wild dog brothers make Africa’s longest journey",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/16/discovery-women-bodies-anger-femicide-south-africa",
+      "url": "https://www.theguardian.com/environment/2026/sep/17/wildlife-african-wild-dogs-longest-journey-zambia-conservation-aoe",
       "topic": "Trending",
-      "published": "2026-09-16T15:02:19+00:00"
+      "published": "2026-09-17T04:00:39+00:00"
     },
     {
       "n": 10,
-      "headline": "A war-fatigued and anxious Russia picks a new parliament",
+      "headline": "Trump hails 'major progress' in setting up US base in Poland",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/a-war-fatigued-and-anxious-russia-picks-a-new-parliament/a-79312440?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/trump-hails-major-progress-in-setting-up-us-base-in-poland/a-79316328?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-09-17T16:42:00+00:00"
+      "published": "2026-09-17T21:55:00+00:00"
     },
     {
       "n": 11,
@@ -230,55 +230,55 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-09-17T15:07:47+00:00"
+      "published": "2026-09-17T20:34:30+00:00"
     },
     {
       "n": 12,
-      "headline": "Greetings from Beijing, where baozi are worth the wait in line",
+      "headline": "Retired Olympic superstar Jessie Diggins wins her first-ever 100 mile trail race",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi",
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5948171/retired-olympic-superstar-jessie-diggins-wins-her-first-ever-100-mile-trail-race",
       "topic": "Trending",
-      "published": "2026-09-17T13:59:17+00:00"
+      "published": "2026-09-17T20:00:35+00:00"
     },
     {
       "n": 13,
-      "headline": "Florida congresswoman running for reelection breaks with Trump on immigration",
+      "headline": "Man who sprayed Rep. Ilhan Omar with vinegar sentenced to 14 months in prison",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/florida-congresswoman-running-for-reelection-breaks-with-trump-on-immigration",
-      "topic": "Politics",
-      "published": "2026-09-17T17:21:00+00:00"
+      "url": "https://www.pbs.org/newshour/politics/man-who-sprayed-rep-ilhan-omar-with-vinegar-sentenced-to-14-months-in-prison",
+      "topic": "Trending",
+      "published": "2026-09-17T23:07:19+00:00"
     },
     {
       "n": 14,
-      "headline": "US to bar some South Africans over claims of anti-white discrimination",
+      "headline": "‘We are prey’: discovery of seven women’s bodies fuels anger over femicide in South Africa",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/16/us-visa-restrictions-south-africans-trump-claims-anti-white-discrimination",
+      "url": "https://www.theguardian.com/world/2026/sep/16/discovery-women-bodies-anger-femicide-south-africa",
       "topic": "Trending",
-      "published": "2026-09-16T12:35:45+00:00"
+      "published": "2026-09-16T15:02:19+00:00"
     },
     {
       "n": 15,
-      "headline": "Germany: Third malaria death linked to Frankfurt Airport",
+      "headline": "US: Trump administration weakens Endangered Species Act",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-third-malaria-death-linked-to-frankfurt-airport/a-79315012?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-17T16:16:00+00:00"
+      "url": "https://www.dw.com/en/us-trump-administration-weakens-endangered-species-act/a-79316188?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-17T20:29:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Hyrox athlete apologises for continuing race after soiling herself",
+      "headline": "US to allow Iran delegation to attend UN meetings in New York as war passes half-year mark",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck0e35qyqlx0o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-17T15:05:13+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6n8m72r13ngo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-17T21:41:19+00:00"
     },
     {
       "n": 17,
-      "headline": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+      "headline": "To prevent deaths in childbirth, Kenyan moms turn to an AI powered chatbot",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
-      "topic": "World",
-      "published": "2026-09-17T12:33:36+00:00"
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health",
+      "topic": "Tech / AI",
+      "published": "2026-09-17T19:33:30+00:00"
     }
   ]
 }
