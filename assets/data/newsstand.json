@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T12:13:39Z",
+  "generated_at": "2026-09-19T18:21:38Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,22 +16,14 @@
     },
     {
       "n": 2,
-      "claim": "Images of Gazan child before deadly airstrike are from real video, but likely AI-enhanced",
+      "claim": "Mitch McConnell's health: 12 claims we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/18/israel-airstrike-gaza-child-photos/",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 3,
-      "claim": "RFK Jr.’s Children’s Health Defense Keynote",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/factchecking-rfk-jr-s-childrens-health-defense-keynote/",
+      "url": "https://www.snopes.com/collections/mitch-mcconnell-health-rumors/",
       "topic": "Health"
     },
     {
-      "n": 4,
+      "n": 3,
       "claim": "Trump Announces U.S. Will Have ‘Permanent Control Over Security’ In Greenland",
       "verdict": "FALSE",
       "source": "Check Your Fact",
@@ -39,7 +31,7 @@
       "topic": "Politics"
     },
     {
-      "n": 5,
+      "n": 4,
       "claim": "Shedding light on sunscreen myths",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -47,15 +39,15 @@
       "topic": "Trending"
     },
     {
-      "n": 6,
-      "claim": "of ‘puffed rice vendor’ being assaulted is a scripted skit",
+      "n": 5,
+      "claim": "‘Go back to your country’: Manipuri musician’s killing reignites concerns over racism against Northeasterners & govt inaction",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/viral-video-of-poor-puffed-rice-vendor-being-assaulted-is-a-scripted-skit/",
+      "url": "https://www.altnews.in/go-back-to-your-country-manipuri-musicians-killing-reignites-concerns-over-racism-against-northeasterners-govt-inaction/",
       "topic": "Trending"
     },
     {
-      "n": 7,
+      "n": 6,
       "claim": "Monzo bank hasn’t launched its own online casino site",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -63,7 +55,7 @@
       "topic": "Money"
     },
     {
-      "n": 8,
+      "n": 7,
       "claim": "Evidence Republican Activist Konner Earnest Has Admitted To Having Sex With A Dog",
       "verdict": "UNPROVEN",
       "source": "Lead Stories",
@@ -71,31 +63,23 @@
       "topic": "Politics"
     },
     {
-      "n": 9,
-      "claim": "Converse apologized for ad that people compared to lynching, Ku Klux Klan imagery",
+      "n": 8,
+      "claim": "Trump admin considers giving Cumberland Island National Seashore land to private owners",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/converse-ad-lynching-kkk-imagery/",
+      "url": "https://www.snopes.com/fact-check/cumberland-island-national-seashore-trump/",
+      "topic": "Politics"
+    },
+    {
+      "n": 9,
+      "claim": "Anti-Data Center Group Planned Massive ‘Revolt.’ Barely A Soul Showed Up",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/09/19/humans-first-amy-kremer-data-center-revolt-innovation-council-artificial-intelligence",
       "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "GOP Ad Attacks Ossoff’s Vote Against Trump Tax Cuts",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/gop-ad-attacks-ossoffs-vote-against-trump-tax-cuts/",
-      "topic": "Politics"
-    },
-    {
-      "n": 11,
-      "claim": "Trump Outright Bans ‘Fake News’ Media Outlets From The White House",
-      "verdict": "FALSE",
-      "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/18/trump-bans-cnn-msnow-politico-white-house-first-amendment-press-freedom",
-      "topic": "Politics"
-    },
-    {
-      "n": 12,
       "claim": "2026’s El Niño may bring storms, heatwaves – and misinformation",
       "verdict": "FALSE",
       "source": "Science Feedback",
@@ -103,15 +87,15 @@
       "topic": "Trending"
     },
     {
-      "n": 13,
-      "claim": "of Swatantra Bhardwaj threatening Bhim Army chief predates his September 17 release on interim bail",
+      "n": 11,
+      "claim": "of ‘puffed rice vendor’ being assaulted is a scripted skit",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/viral-video-of-swatantra-bhardwaj-threatening-bhim-army-chief-predates-his-september-17-release-on-interim-bail/",
+      "url": "https://www.altnews.in/viral-video-of-poor-puffed-rice-vendor-being-assaulted-is-a-scripted-skit/",
       "topic": "Trending"
     },
     {
-      "n": 14,
+      "n": 12,
       "claim": "Scottish council corrects outdated asylum seeker support figure",
       "verdict": "FALSE",
       "source": "Full Fact",
@@ -119,7 +103,7 @@
       "topic": "Trending"
     },
     {
-      "n": 15,
+      "n": 13,
       "claim": "Spotify Did NOT Remove Ed Sheeran's Songs",
       "verdict": "FALSE",
       "source": "Lead Stories",
@@ -127,26 +111,42 @@
       "topic": "Trending"
     },
     {
-      "n": 16,
-      "claim": "Did Spotify remove Ed Sheeran's music from its platform?",
+      "n": 14,
+      "claim": "Images of Gazan child before deadly airstrike are from real video, but likely AI-enhanced",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ed-sheeran-music-spotify/",
+      "url": "https://www.snopes.com/news/2026/09/18/israel-airstrike-gaza-child-photos/",
+      "topic": "Tech / AI"
+    },
+    {
+      "n": 15,
+      "claim": "Virginia Democrats Want Abortion In The Constitution. 700,000 Catholics Could Stand In Their Way",
+      "verdict": "FALSE",
+      "source": "Check Your Fact",
+      "url": "https://dailycaller.com/2026/09/19/virginia-catholics-abortion-diocese-arlington-richmond-question-michael-burbidge",
       "topic": "Trending"
     },
     {
-      "n": 17,
-      "claim": "RFK Jr.’s Faulty Claim that U.S. Measles Response Is ‘Better’ Than ‘Any Other Country’",
+      "n": 16,
+      "claim": "Wellness influencers claim mainstream medicine ignores natural remedies. They’re wrong",
       "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/rfk-jr-s-faulty-claim-that-u-s-measles-response-is-better-than-any-other-country/",
+      "source": "Science Feedback",
+      "url": "https://science.feedback.org/wellness-influencers-wrongly-claim-mainstream-medicine-ignores-natural-remedies/",
+      "topic": "Health"
+    },
+    {
+      "n": 17,
+      "claim": "of Swatantra Bhardwaj threatening Bhim Army chief predates his September 17 release on interim bail",
+      "verdict": "FALSE",
+      "source": "Alt News",
+      "url": "https://www.altnews.in/viral-video-of-swatantra-bhardwaj-threatening-bhim-army-chief-predates-his-september-17-release-on-interim-bail/",
       "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "US and Denmark reach deal over Greenland after Trump annexation threats",
+      "headline": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Opinion: Remembering Annie Dillard, nature writer",
+      "headline": "CNN, MS NOW, Politico reporters denied access to White House following Trump ban",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/19/nx-s1-5966624/opinion-remembering-annie-dillard-nature-writer",
-      "topic": "Trending",
-      "published": "2026-09-19T12:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/19/nx-s1-5974854/trump-cnn-msnow-politico-ban",
+      "topic": "Politics",
+      "published": "2026-09-19T15:26:31+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump administration begins building border wall in Big Bend region of Texas",
+      "headline": "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-administration-begins-building-border-wall-in-big-bend-region-of-texas",
-      "topic": "Politics",
-      "published": "2026-09-19T00:07:59+00:00"
+      "url": "https://www.pbs.org/newshour/nation/lawsuit-says-anthropic-openai-spacexai-and-google-made-illegal-agreement-on-ai-slowdown",
+      "topic": "Tech / AI",
+      "published": "2026-09-19T17:10:44+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Thousands protest Kennedy Center demolition fears",
+      "headline": "Trump announces new 'AI force' amid mounting pressure",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/thousands-protest-kennedy-center-demolition-fears/a-79337558?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-19T11:09:00+00:00"
+      "url": "https://www.dw.com/en/trump-announces-new-ai-force-amid-mounting-pressure/a-79339935?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-19T17:37:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Trump says he is banning CNN and Politico from White House",
+      "headline": "Houthis claim attack on Saudi capital after smoke seen rising near Riyadh airport",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-19T05:36:36+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-19T17:50:14+00:00"
     },
     {
       "n": 7,
-      "headline": "Ancient teeth pose a mystery: What made those strange grooves?",
+      "headline": "Opinion: Remembering Annie Dillard, nature writer",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/19/g-s1-144054/ancient-teeth-betel-nuts-mind-altering-drugs",
+      "url": "https://www.npr.org/2026/09/19/nx-s1-5966624/opinion-remembering-annie-dillard-nature-writer",
       "topic": "Trending",
-      "published": "2026-09-19T11:21:56+00:00"
+      "published": "2026-09-19T12:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "What's in the Greenland agreement between U.S. and Denmark",
+      "headline": "Dodgers owner Mark Walter sued over alleged failure to disclose federal probe to policyholders",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/whats-in-the-greenland-agreement-between-u-s-and-denmark",
+      "url": "https://www.pbs.org/newshour/nation/dodgers-owner-mark-walter-sued-over-alleged-failure-to-disclose-federal-probe-to-policyholders",
       "topic": "Trending",
-      "published": "2026-09-18T22:57:29+00:00"
+      "published": "2026-09-19T16:49:37+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Oktoberfest 2026: Everything you need to know",
+      "headline": "German-Russian relations at freezing point",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/oktoberfest-2026-everything-you-need-to-know/a-79311285?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/german-russian-relations-at-freezing-point/a-79330741?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-19T09:40:00+00:00"
+      "published": "2026-09-19T16:34:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Google's Gemini AI hacked three companies in security test",
+      "headline": "Journalists denied White House access after Trump banned some media outlets",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-09-19T04:27:11+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cj4gklz9dxplo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-19T15:19:39+00:00"
     },
     {
       "n": 12,
-      "headline": "An Alaska storm scattered artifacts. Archaeologists are racing to save what's left",
+      "headline": "Life in Kabul 5 years after the Taliban's return",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/19/nx-s1-5966568/ex-typhoon-halong-nunallaq-artifacts-archaeological-dig-site-alaska-quinhagak",
+      "url": "https://www.npr.org/2026/09/19/nx-s1-5961263/life-in-kabul-5-years-after-the-talibans-return",
       "topic": "Trending",
-      "published": "2026-09-19T09:01:00+00:00"
+      "published": "2026-09-19T11:40:40+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump says he's banning 3 outlets from White House in his latest attack on press freedom",
+      "headline": "Trump announces all 50 states joining Medicaid drug pricing model",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/trump-says-hes-banning-3-outlets-from-white-house-in-his-latest-attack-on-press-freedom",
-      "topic": "Politics",
-      "published": "2026-09-18T22:56:04+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-announces-all-50-states-joining-medicaid-drug-pricing-model",
+      "topic": "Health",
+      "published": "2026-09-19T16:37:05+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ed Sheeran continues US tour amid Palestinian controversy",
+      "headline": "Ukraine steps up measures to protect railways",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ed-sheeran-continues-us-tour-amid-palestinian-controversy/a-79336537?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-steps-up-measures-to-protect-railways/a-79339087?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-19T09:14:00+00:00"
+      "published": "2026-09-19T15:37:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Trump signs sweeping Russia sanctions bill",
+      "headline": "Converse pulls 'deeply upsetting' advert after backlash",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-18T22:05:47+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/crwyzj53pl1lo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-19T14:05:01+00:00"
     },
     {
       "n": 17,
-      "headline": "Ever wonder how the Fed's interest rate actually works? We've got answers",
+      "headline": "Betel nuts are a top mind-affecting substance. Now there's evidence of ancient use",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/19/nx-s1-5969816/federal-reserve-interest-rate-inflation-economy",
-      "topic": "Money",
-      "published": "2026-09-19T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/19/g-s1-144054/ancient-teeth-betel-nuts-mind-altering-drugs",
+      "topic": "Trending",
+      "published": "2026-09-19T11:21:56+00:00"
     }
   ]
 }
