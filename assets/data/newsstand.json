@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T18:49:41Z",
+  "generated_at": "2026-09-19T02:52:22Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,35 +8,35 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Does NOT Accurately Depict Kash Patel's Height Running Alongside FBI New Agent Trainees -- Digitally Altered",
-      "verdict": "MISLEADING",
+      "claim": "Prebunk: Storm Of Made-Up Severe Weather Posts Floods Timelines -- Bring An Umbrella Against This Torrent Of AI Warnings",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-image-does-not-accurately-depict-kash-patels-height-running-alongside-fbi-new-agent-trainees.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-storm-of-made-up-severe-weather-posts-floods-timelines-bring-an-umbrella-against-this-torrent-of-ai-warnings.html",
+      "topic": "Science"
     },
     {
       "n": 2,
-      "claim": "Trump, Clinton, Bezos: 11 bogus images of Epstein with public figures we've debunked",
+      "claim": "Images of Gazan child before deadly airstrike are from real video, but likely AI-enhanced",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/epstein-fake-images-collection/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/09/18/israel-airstrike-gaza-child-photos/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
-      "claim": "GOP Ad Attacks Ossoff’s Vote Against Trump Tax Cuts",
+      "claim": "RFK Jr.’s Children’s Health Defense Keynote",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/gop-ad-attacks-ossoffs-vote-against-trump-tax-cuts/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/09/factchecking-rfk-jr-s-childrens-health-defense-keynote/",
+      "topic": "Health"
     },
     {
       "n": 4,
-      "claim": "Dem Lawmakers Demand Federal Probe Into ‘Modern-Day Lynchings’ That Are Anything But",
+      "claim": "Trump Announces U.S. Will Have ‘Permanent Control Over Security’ In Greenland",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/18/aoc-ayanna-pressley-congress-democrats-lynching-blm-race-ben-crump-hoax",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/18/trump-denmark-greenland-military",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -48,7 +48,7 @@
     },
     {
       "n": 6,
-      "claim": "of ‘poor puffed rice vendor’ being assaulted is a scripted skit",
+      "claim": "of ‘puffed rice vendor’ being assaulted is a scripted skit",
       "verdict": "FALSE",
       "source": "Alt News",
       "url": "https://www.altnews.in/viral-video-of-poor-puffed-rice-vendor-being-assaulted-is-a-scripted-skit/",
@@ -64,35 +64,35 @@
     },
     {
       "n": 8,
-      "claim": "Trump Did NOT Post A Map With \"United States\" Covering Russia and U.S. -- Screenshot Is Made-Up",
-      "verdict": "FALSE",
+      "claim": "Evidence Republican Activist Konner Earnest Has Admitted To Having Sex With A Dog",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-post-map-with-united-states-covering-russia-and-us-screenshot-is-made-up.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-republican-activist-konner-earnest-has-admitted-to-having-sex-with-a-dog.html",
       "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Is image of Trump kissing Natalie Harp on golf course real?",
+      "claim": "Converse apologized for ad that people compared to lynching, Ku Klux Klan imagery",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/15/trump-kissing-natalie-harp-photo/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/converse-ad-lynching-kkk-imagery/",
+      "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "RFK Jr.’s Faulty Claim that U.S. Measles Response Is ‘Better’ Than ‘Any Other Country’",
+      "claim": "GOP Ad Attacks Ossoff’s Vote Against Trump Tax Cuts",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/rfk-jr-s-faulty-claim-that-u-s-measles-response-is-better-than-any-other-country/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/09/gop-ad-attacks-ossoffs-vote-against-trump-tax-cuts/",
+      "topic": "Politics"
     },
     {
       "n": 11,
-      "claim": "EXCLUSIVE: Former US Ambassador Barred From Leaving Allied Nation Speaks Out To Daily Caller",
+      "claim": "Trump Outright Bans ‘Fake News’ Media Outlets From The White House",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/18/morse-tan-ambassador-south-korea-trial-free-speech-travel-ban-donald-trump-china-north-korea",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/18/trump-bans-cnn-msnow-politico-white-house-first-amendment-press-freedom",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,32 +120,72 @@
     },
     {
       "n": 15,
-      "claim": "Mel Gibson Video Criticizing Gavin Newsom And Karen Bass Is NOT Fake -- AI Tools And Reporting Confirm It Is Real",
+      "claim": "Spotify Did NOT Remove Ed Sheeran's Songs",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-of-mel-gibson-talking-about-newsom-and-bass-is-not-fake.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-spotify-did-not-remove-ed-sheerans-songs.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Macklemore apologized for 2014 costume featuring antisemitic tropes",
+      "claim": "Did Spotify remove Ed Sheeran's music from its platform?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/macklemore-antisemitic-costume/",
+      "url": "https://www.snopes.com/fact-check/ed-sheeran-music-spotify/",
       "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "Midterm Ads Clash Over GOP Law’s Impact on Rural Healthcare",
+      "claim": "RFK Jr.’s Faulty Claim that U.S. Measles Response Is ‘Better’ Than ‘Any Other Country’",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/midterm-ads-clash-over-gop-laws-impact-on-rural-healthcare/",
+      "url": "https://www.factcheck.org/2026/09/rfk-jr-s-faulty-claim-that-u-s-measles-response-is-better-than-any-other-country/",
       "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
+      "headline": "US and Denmark reach deal over Greenland after Trump annexation threats",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-18T22:58:55+00:00"
+    },
+    {
+      "n": 2,
+      "headline": "Alaska's salmon-feasting bears face off in biggest Fat Bear Week ever",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/18/nx-s1-5973938/fat-bear-week-2026-bracket",
+      "topic": "Trending",
+      "published": "2026-09-18T21:13:14+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "Trump administration begins building border wall in Big Bend region of Texas",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/trump-administration-begins-building-border-wall-in-big-bend-region-of-texas",
+      "topic": "Politics",
+      "published": "2026-09-19T00:07:59+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Men deported from US bound and beaten in Equatorial Guinea detention hotel, lawyers say",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/sep/18/us-men-deported-hotel-equatorial-guinea",
+      "topic": "Trending",
+      "published": "2026-09-18T23:08:49+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Trump signs broad Russia sanctions bill",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/trump-signs-broad-russia-sanctions-bill/a-79335115?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-19T01:27:00+00:00"
+    },
+    {
+      "n": 6,
       "headline": "Russian hybrid attacks against Europe intensifying, says Macron",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss",
@@ -153,23 +193,23 @@
       "published": "2026-09-18T18:04:38+00:00"
     },
     {
-      "n": 2,
-      "headline": "What expensive sulfur means for your dinner table",
+      "n": 7,
+      "headline": "Trump says he is banning CNN, MS NOW and Politico from the White House",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/09/18/nx-s1-5974103/what-expensive-sulfur-means-for-your-dinner-table",
-      "topic": "Trending",
-      "published": "2026-09-18T16:40:58+00:00"
+      "url": "https://www.npr.org/2026/09/18/g-s1-144112/trump-ban-cnn-msnow-politico-white-house-media",
+      "topic": "Politics",
+      "published": "2026-09-18T20:15:53+00:00"
     },
     {
-      "n": 3,
-      "headline": "Holdout juror in Clancy trial says he didn't have 'any doubts' that she was responsible for killing her kids",
+      "n": 8,
+      "headline": "What's in the Greenland agreement between U.S. and Denmark",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/holdout-juror-in-clancy-trial-says-he-didnt-have-any-doubts-that-she-was-responsible-for-killing-her-kids",
+      "url": "https://www.pbs.org/newshour/show/whats-in-the-greenland-agreement-between-u-s-and-denmark",
       "topic": "Trending",
-      "published": "2026-09-18T18:05:33+00:00"
+      "published": "2026-09-18T22:57:29+00:00"
     },
     {
-      "n": 4,
+      "n": 9,
       "headline": "Survivors recount panic and struggle to breathe in Nigerian prison cell where 37 died",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
@@ -177,39 +217,39 @@
       "published": "2026-09-18T17:27:39+00:00"
     },
     {
-      "n": 5,
-      "headline": "Ebola: DR Congo outbreak not slowing, MSF warns",
+      "n": 10,
+      "headline": "Deal with Denmark gives US 'permanent control' over Greenland security, Trump says",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ebola-dr-congo-outbreak-not-slowing-msf-warns/a-79333719?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-18T18:36:00+00:00"
+      "url": "https://www.dw.com/en/deal-with-denmark-gives-us-permanent-control-over-greenland-security-trump-says/a-79334915?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-18T21:53:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Three dead and eight injured in Philippines school shooting",
+      "n": 11,
+      "headline": "Trump says he is banning CNN and Politico from White House",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-18T11:01:46+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-18T23:26:48+00:00"
     },
     {
-      "n": 7,
-      "headline": "Will even one of the U.N.'s 17 'sustainable development goals' be met by 2030?",
+      "n": 12,
+      "headline": "When Trump and Xi meet they will discuss AI. 'Track Two' talks are already buzzing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/18/g-s1-143738/united-nations-sustainable-development-goals-hunger-climate-gender",
-      "topic": "Trending",
-      "published": "2026-09-18T16:07:51+00:00"
+      "url": "https://www.npr.org/2026/09/18/nx-s1-5971481/trump-xi-meeting-ai-track-two-talks",
+      "topic": "Politics",
+      "published": "2026-09-18T19:14:15+00:00"
     },
     {
-      "n": 8,
-      "headline": "Attorney General Blanche blurs Justice Department boundaries by appearing at political events",
+      "n": 13,
+      "headline": "Trump says he's banning 3 outlets from White House in his latest attack on press freedom",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/attorney-general-blanche-blurs-justice-department-boundaries-by-appearing-at-political-events",
-      "topic": "Trending",
-      "published": "2026-09-18T16:44:56+00:00"
+      "url": "https://www.pbs.org/newshour/show/trump-says-hes-banning-3-outlets-from-white-house-in-his-latest-attack-on-press-freedom",
+      "topic": "Politics",
+      "published": "2026-09-18T22:56:04+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "British woman who was kidnapped in Malawi rescued by police after shootout",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/18/british-woman-kidnapped-malawi-police-shootout",
@@ -217,68 +257,28 @@
       "published": "2026-09-18T11:21:36+00:00"
     },
     {
-      "n": 10,
-      "headline": "Airport malaria in Germany remains infrequent",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/airport-malaria-in-germany-remains-infrequent/a-79333920?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-18T18:23:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Shots heard as police start moving migrants from Ceuta beaches",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-18T11:59:42+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Judge says Trump can't demolish Kennedy Center. And, lawsuits target voter intimidation",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/18/g-s1-143913/up-first-newsletter-kennedy-center-trump-voter-intimidation-lawsuit-poland-russia-ukraine",
-      "topic": "Politics",
-      "published": "2026-09-18T11:09:24+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Early voting begins in U.S. midterm elections that could flip control of Congress",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/early-voting-begins-in-u-s-midterm-elections-that-could-flip-control-of-congress",
-      "topic": "Politics",
-      "published": "2026-09-18T16:16:11+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Louisiana firefighters find feline native to sub-Saharan Africa while responding to house fire",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/sep/18/louisiana-firefighters-sub-saharan-africa-feline",
-      "topic": "Trending",
-      "published": "2026-09-18T10:00:15+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Fact Check: False video alleges Berlin votes destroyed",
+      "headline": "Trump bars CNN, MS NOW and Politico from White House",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fact-check-false-video-alleges-berlin-votes-destroyed/a-79333344?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-18T18:15:00+00:00"
+      "url": "https://www.dw.com/en/trump-bars-cnn-ms-now-and-politico-from-white-house/a-79334846?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-18T20:26:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
+      "headline": "Is the Kennedy Center losing 'hundreds of millions of dollars'?",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/videos/cqy4zw4xr717o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-18T11:49:46+00:00"
+      "published": "2026-09-18T18:56:17+00:00"
     },
     {
       "n": 17,
-      "headline": "Ms. Rachel has entered her album era, and she is so happy about it",
+      "headline": "Syrian regime planned American journalist's kidnapping for weeks",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/18/nx-s1-5938847/ms-rachel-mr-aron-new-album-im-so-happy",
+      "url": "https://www.npr.org/2026/09/18/nx-s1-5974166/assad-austin-tice-kidnapping-bbc-embedded",
       "topic": "Trending",
-      "published": "2026-09-18T11:00:00+00:00"
+      "published": "2026-09-18T19:13:52+00:00"
     }
   ]
 }
