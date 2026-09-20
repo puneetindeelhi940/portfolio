@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T12:49:06Z",
+  "generated_at": "2026-09-20T18:26:47Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "What we know about Alice Weidel, the far-right German politician with a Sri Lankan-born wife",
+      "claim": "23 AI-generated Trump rumors we've debunked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/20/alice-weidel-policy-contradictions/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/trump-ai-rumors-collection/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Ilhan Omar marry her brother? No evidence backing Mullin's claim",
-      "verdict": "UNPROVEN",
+      "claim": "How Lindsay Clancy GoFundMe compares to funds raised for mom who saved kids from fire",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/19/ilhan-omar-married-brother-mullin/",
+      "url": "https://www.snopes.com/fact-check/lindsay-clancy-emma-schols-donations/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Trump Returns To White House A Day Early Amid Houthi Strikes On Saudi Arabia, State Department Warning",
+      "claim": "Manifest Destiny Is Born Again Among Young Conservatives On Social Media",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/19/trump-returns-white-house-early-houthi-strikes-saudi-arabia",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/20/the-american-empire-is-rising-according-to-young-conservatives-on-social-media",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Mitch McConnell's health: 12 claims we've investigated",
+      "claim": "What we know about Alice Weidel, the far-right German politician with a Sri Lankan-born wife",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/mitch-mcconnell-health-rumors/",
-      "topic": "Health"
+      "url": "https://www.snopes.com/news/2026/09/20/alice-weidel-policy-contradictions/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
+      "headline": "German Chancellor Merz calls state election a 'disaster' for his party but vows to stay on",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-20T10:45:39+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-20T17:46:57+00:00"
     },
     {
       "n": 2,
-      "headline": "PHOTOS: The precarious life of fisherfolk",
+      "headline": "Germany's Merz vows to press ahead with reforms after historic state election defeat",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/g-s1-143447/photos-fishermen-sea-india",
-      "topic": "Trending",
-      "published": "2026-09-20T12:24:02+00:00"
+      "url": "https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat",
+      "topic": "Politics",
+      "published": "2026-09-20T17:29:29+00:00"
     },
     {
       "n": 3,
-      "headline": "For Palestinian aid groups, Macklemore's $1M pledge brings relief and attention to ongoing suffering",
+      "headline": "Russia wraps up first wartime parliamentary election with Kremlin dominance all but assured",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/arts/for-palestinian-aid-groups-macklemores-1m-pledge-brings-relief-and-attention-to-ongoing-suffering",
-      "topic": "Trending",
-      "published": "2026-09-19T22:09:41+00:00"
+      "url": "https://www.pbs.org/newshour/world/russia-wraps-up-first-wartime-parliamentary-election-with-kremlin-dominance-all-but-assured",
+      "topic": "Politics",
+      "published": "2026-09-20T18:12:27+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Russia: Ukrainian drone strike on Moscow kills 2",
+      "headline": "Germany faces energy tax losses as EV sales rise",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russia-ukrainian-drone-strike-on-moscow-kills-2/a-79341964?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-20T08:37:00+00:00"
+      "url": "https://www.dw.com/en/germany-faces-energy-tax-losses-as-ev-sales-rise/a-79320422?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-20T14:02:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
+      "headline": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm780ll1de18o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-20T04:49:11+00:00"
+      "published": "2026-09-20T10:45:39+00:00"
     },
     {
       "n": 7,
-      "headline": "In New Orleans, an empty building becomes a free store — and roller skating rink",
+      "headline": "Trump says his D.C. arch will serve as 'military complex' with snipers and drones",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5940784/new-orleans-lower-ninth-ward-free-store",
-      "topic": "Trending",
-      "published": "2026-09-20T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/20/nx-s1-5975449/trump-washington-dc-arch-military-complex-snipers-drones",
+      "topic": "Politics",
+      "published": "2026-09-20T15:05:47+00:00"
     },
     {
       "n": 8,
-      "headline": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile",
+      "headline": "Iran-backed Houthi rebels warn against joining Saudi Arabia in Yemen's growing civil war",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile",
-      "topic": "Trending",
-      "published": "2026-09-19T20:45:21+00:00"
+      "url": "https://www.pbs.org/newshour/world/iran-backed-houthi-rebels-warn-against-joining-saudi-arabia-in-yemens-growing-civil-war",
+      "topic": "World",
+      "published": "2026-09-20T17:53:16+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Ed Sheeran speaks on Gaza in concert after Macklemore controversy",
+      "headline": "Peter Thiel: Power, Palantir, and the antichrist",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ed-sheeran-speaks-on-gaza-in-concert-after-macklemore-controversy/a-79341971?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-20T08:00:00+00:00"
+      "url": "https://www.dw.com/en/peter-thiel-power-palantir-and-the-antichrist/a-79313426?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-20T13:29:00+00:00"
     },
     {
       "n": 11,
-      "headline": "German elections under way which could decide fate of Chancellor Merz",
+      "headline": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm780ll1de18o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-20T07:57:32+00:00"
+      "published": "2026-09-20T04:49:11+00:00"
     },
     {
       "n": 12,
-      "headline": "Judge orders Fox to hand over hundreds of documents in shareholders' case",
+      "headline": "PHOTOS: The precarious life of fisherfolk",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5974900/fox-shareholders-murdoch-lawsuit",
+      "url": "https://www.npr.org/2026/09/20/g-s1-143447/photos-fishermen-sea-india",
       "topic": "Trending",
-      "published": "2026-09-20T10:01:00+00:00"
+      "published": "2026-09-20T12:24:02+00:00"
     },
     {
       "n": 13,
-      "headline": "Michigan city defends itself against accusations of favoring Muslim holidays over other faiths",
+      "headline": "Alaskans will decide fate of ranked choice voting system after chaotic end to state's primary",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/michigan-city-defends-itself-against-accusations-of-favoring-muslim-holidays-over-other-faiths",
+      "url": "https://www.pbs.org/newshour/politics/alaskans-will-decide-fate-of-ranked-choice-voting-system-after-chaotic-end-to-states-primary",
       "topic": "Trending",
-      "published": "2026-09-19T20:30:57+00:00"
+      "published": "2026-09-20T17:34:29+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "In cosmopolitan Berlin, elections still closed to foreigners",
+      "headline": "Russia: Ukrainian drone strike on Moscow kills 2",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/in-cosmopolitan-berlin-elections-still-closed-to-foreigners/a-78744579?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-20T07:11:00+00:00"
+      "url": "https://www.dw.com/en/russia-ukrainian-drone-strike-on-moscow-kills-2/a-79341964?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-20T08:37:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Houthis say they targeted Saudi capital with ballistic missiles",
+      "headline": "Trump says triumphal arch will be military complex with drones and snipers",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-19T23:49:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-20T16:36:43+00:00"
     },
     {
       "n": 17,
-      "headline": "U.S. childcare costs are astronomical. More families are turning to grandparents",
+      "headline": "In New Orleans, an empty building becomes a free store — and roller skating rink",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5963506/us-childcare-costs-astronomical-families-turning-to-grandparents",
+      "url": "https://www.npr.org/2026/09/20/nx-s1-5940784/new-orleans-lower-ninth-ward-free-store",
       "topic": "Trending",
-      "published": "2026-09-20T10:00:00+00:00"
+      "published": "2026-09-20T11:00:00+00:00"
     }
   ]
 }
