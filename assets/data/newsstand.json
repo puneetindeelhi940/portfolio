@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T14:47:22Z",
+  "generated_at": "2026-09-21T20:14:13Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Prebunk: Storm Of Made-Up Severe Weather Posts Floods Timelines -- Bring An Umbrella Against This Torrent Of AI Warnings",
-      "verdict": "FALSE",
+      "claim": "FAKE Video Shows Trump Making Kissy Faces And Sounds In Front Of Sarah Huckabee Sanders -- It Is An Altered Satire Video",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-storm-of-made-up-severe-weather-posts-floods-timelines-bring-an-umbrella-against-this-torrent-of-ai-warnings.html",
-      "topic": "Science"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-shows-trump-making-kissy-faces-and-sounds-in-front-of-sarah-huckabee-sanders-satire-video.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "11 claims involving the Kennedy Center we've investigated",
+      "claim": "Did Trump call Iran war 'small potatoes'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/kennedy-center-claims/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-iran-war-small-potatoes-quote/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: H-1B Visas Are The One Topic Vivek Ramaswamy Refuses To Talk About",
+      "claim": "EXCLUSIVE: Dem Candidate May Have Violated FEC Law By Hiring Foreign National",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/21/vivek-ramaswamy-ohio-governor-interview-amy-acton-success-iran-war-data-centers-immigration",
+      "url": "https://dailycaller.com/2026/09/21/democrat-blake-gendebien-foreign-national-ukraine-fec-campaign-elise-stefanik",
       "topic": "Trending"
     },
     {
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "The UK’s foreign-born population in 2024 was not ‘up 143% in a decade’",
+      "claim": "Old video of Alaskan glacier shared with claims it shows cause of Nepal flood",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/foreign-born-population-zia-yusuf/",
+      "url": "https://fullfact.org/world/old-video-alaska-glacier-shared-as-nepal-flood-cause/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Evidence Republican Activist Konner Earnest Has Admitted To Having Sex With A Dog",
-      "verdict": "UNPROVEN",
+      "claim": "FAKE AI-Generated Images Falsely Claim To Show Sam Smith In 2016 And 2025",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-republican-activist-konner-earnest-has-admitted-to-having-sex-with-a-dog.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photos-show-sam-smith-in-2016-and-2025-images-generated-with-artificial-intelligence.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "The truth behind Trump's 13 'acts of kindness,' from checks to cancer treatments",
+      "claim": "17 claims about Greenland, examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-acts-kindness/",
-      "topic": "Health"
+      "url": "https://www.snopes.com/collections/greenland-rumors-collection/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "GOP Rep Maria Salazar Reveals ‘Very Good Conversation’ With Trump After Her Ad Claimed His Immigration Enforcement Went ‘Too Far’",
+      "claim": "The Liberal Scold Who Spent Years Wagging Her Fingers At Conservatives Admits She Raised Her Child All Wrong",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/20/maria-salazar-reveals-good-conversation-donald-trump-critical-ad-hispanics-immigration-cbs-news-face-nation-margaret-brennan",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/21/nikole-hannah-jones-daughter-najya-public-school-nyc-antiracism-ps-307-urban-assembly-unison",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -112,27 +112,27 @@
     },
     {
       "n": 14,
-      "claim": "Monzo bank hasn’t launched its own online casino site",
+      "claim": "Covid vaccines have not been shown to cause ‘turbo cancer’",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/fake-monzo-casino-adverts/",
-      "topic": "Money"
+      "url": "https://fullfact.org/health/prostate-cancer-covid-vaccine/",
+      "topic": "Health"
     },
     {
       "n": 15,
-      "claim": "Spotify Did NOT Remove Ed Sheeran's Songs",
+      "claim": "Prebunk: Storm Of Made-Up Severe Weather Posts Floods Timelines -- Bring An Umbrella Against This Torrent Of AI Warnings",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-spotify-did-not-remove-ed-sheerans-songs.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-storm-of-made-up-severe-weather-posts-floods-timelines-bring-an-umbrella-against-this-torrent-of-ai-warnings.html",
+      "topic": "Science"
     },
     {
       "n": 16,
-      "claim": "Did Trump say or do these things pre-presidency? 17 claims, investigated",
+      "claim": "Converse apologized for ad that people compared to lynching, Ku Klux Klan imagery",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-before-president-claims/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/converse-ad-lynching-kkk-imagery/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Merz vows to keep coalition together for Germany's 'democratic future",
+      "headline": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-21T14:26:29+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-21T14:14:16+00:00"
     },
     {
       "n": 2,
-      "headline": "World leaders convene for UNGA. And, Trump says D.C. arch will be a 'military complex",
+      "headline": "What the equinox 'henge' effect tells us about U.S. cities",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
-      "topic": "Politics",
-      "published": "2026-09-21T11:24:27+00:00"
+      "url": "https://www.npr.org/2026/09/21/nx-s1-5973179/equinox-henge-sunrise-sunset",
+      "topic": "Trending",
+      "published": "2026-09-21T19:50:13+00:00"
     },
     {
       "n": 3,
-      "headline": "Presley Gerber, son of Cindy Crawford, dies at 27",
+      "headline": "States settle lawsuit over Paramount-Warner merger, clearing key hurdle for $81 billion deal",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/presley-gerber-son-of-cindy-crawford-dies-at-27",
+      "url": "https://www.pbs.org/newshour/nation/states-settle-lawsuit-over-paramount-warner-merger-clearing-key-hurdle-for-81-billion-deal",
       "topic": "Trending",
-      "published": "2026-09-21T14:39:35+00:00"
+      "published": "2026-09-21T19:53:59+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Nuclear power is back on Southeast Asia's energy agenda",
+      "headline": "US-China rivalry is reshaping global trade — and Europe is caught in the middle.",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nuclear-power-is-back-on-southeast-asia-s-energy-agenda/a-79358744?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-09-21T13:47:00+00:00"
+      "url": "https://www.dw.com/en/us-china-rivalry-is-reshaping-global-trade-and-europe-is-caught-in-the-middle/a-79356540?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-21T18:40:00+00:00"
     },
     {
       "n": 6,
-      "headline": "CNN, MS NOW and Politico to file lawsuit against Trump's White House ban",
+      "headline": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-21T14:30:38+00:00"
+      "published": "2026-09-21T15:58:53+00:00"
     },
     {
       "n": 7,
-      "headline": "German chancellor stands his ground after his party loses in state elections",
+      "headline": "Aviation regulators turn to AI to help manage the nation's airspace",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/g-s1-144231/germany-state-elections-merz",
-      "topic": "Trending",
-      "published": "2026-09-21T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/21/nx-s1-5976816/faa-ai-manage-airspace",
+      "topic": "Tech / AI",
+      "published": "2026-09-21T17:37:56+00:00"
     },
     {
       "n": 8,
-      "headline": "Main Kremlin party keeps control of Russian parliament after a carefully orchestrated vote",
+      "headline": "Technical problems at a key air traffic center disrupt flights across Northeast",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/main-kremlin-party-keeps-control-of-russian-parliament-after-a-carefully-orchestrated-vote",
-      "topic": "Politics",
-      "published": "2026-09-21T14:17:24+00:00"
+      "url": "https://www.pbs.org/newshour/nation/technical-problems-at-a-key-air-traffic-center-disrupt-flights-across-northeast",
+      "topic": "Trending",
+      "published": "2026-09-21T19:44:49+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Why gender-based violence persists in Southern Africa",
+      "headline": "US news outlets sue Trump over White House ban",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/why-gender-based-violence-persists-in-southern-africa/a-79356560?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-21T13:42:00+00:00"
+      "url": "https://www.dw.com/en/us-news-outlets-sue-trump-over-white-house-ban/a-79362618?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-21T16:44:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
+      "headline": "Merz vows to keep coalition together for Germany's 'democratic future",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-21T14:06:12+00:00"
+      "published": "2026-09-21T16:54:56+00:00"
     },
     {
       "n": 12,
-      "headline": "Many GOP candidates still echo Trump's 2020 claims. Lots of voters want to move on",
+      "headline": "Paramount makes concessions to salvage $111 billion Warner Bros. Discovery deal",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/nx-s1-5974313/election-denial-trump-2026",
-      "topic": "Politics",
-      "published": "2026-09-21T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/21/nx-s1-5974909/paramount-warner-bros-lawsuit",
+      "topic": "Trending",
+      "published": "2026-09-21T16:40:28+00:00"
     },
     {
       "n": 13,
-      "headline": "Patrick Clancy gives first TV interview on '60 Minutes' after Lindsay Clancy mistrial",
+      "headline": "WATCH LIVE: Day 1 of the 2026 United Nations General Assembly",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/patrick-clancy-gives-first-tv-interview-on-60-minutes-after-lindsay-clancy-mistrial",
+      "url": "https://www.pbs.org/newshour/world/watch-live-day-1-of-the-2026-united-nations-general-assembly",
       "topic": "Trending",
-      "published": "2026-09-21T13:16:23+00:00"
+      "published": "2026-09-21T19:36:05+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "As US and China talk, middle powers jostle for position",
+      "headline": "Nuclear power is back on Southeast Asia's energy agenda",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/as-us-and-china-talk-middle-powers-jostle-for-position/a-79356540?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-21T12:58:00+00:00"
+      "url": "https://www.dw.com/en/nuclear-power-is-back-on-southeast-asia-s-energy-agenda/a-79358744?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-21T13:47:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Russia's elections had few surprises - but how the Kremlin uses the results will be crucial",
+      "headline": "First UK charges brought over 1994 Rwanda genocide",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx4gqv239043o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-21T00:05:11+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cr2092216nywo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-21T17:48:23+00:00"
     },
     {
       "n": 17,
-      "headline": "This farm raised thousands of pigs for slaughter. Now it's growing mushrooms instead",
+      "headline": "World leaders convene for UNGA. And, Trump says D.C. arch will be a 'military complex",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
-      "topic": "Trending",
-      "published": "2026-09-21T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
+      "topic": "Politics",
+      "published": "2026-09-21T11:24:27+00:00"
     }
   ]
 }
