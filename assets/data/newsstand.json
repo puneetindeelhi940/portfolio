@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T03:00:58Z",
+  "generated_at": "2026-09-21T14:47:22Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "12 AI-generated dog stories, fact-checked",
+      "claim": "11 claims involving the Kennedy Center we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/fake-dog-images-rumors-collection/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/collections/kennedy-center-claims/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Supreme Court Likely To Invoke 5 Major Decisions In Landmark Semi-Auto Gun Ruling",
+      "claim": "EXCLUSIVE: H-1B Visas Are The One Topic Vivek Ramaswamy Refuses To Talk About",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/20/supreme-court-likely-to-invoke-5-major-decisions-in-landmark-semi-auto-gun-ruling",
+      "url": "https://dailycaller.com/2026/09/21/vivek-ramaswamy-ohio-governor-interview-amy-acton-success-iran-war-data-centers-immigration",
       "topic": "Trending"
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "‘Go back to your country’: Manipuri musician’s killing reignites concerns over racism against Northeasterners & govt inaction",
+      "claim": "Bengal bypolls: Suvendu Adhikari tells minorities to pass October 6 ‘test’ to ‘stay with government’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/go-back-to-your-country-manipuri-musicians-killing-reignites-concerns-over-racism-against-northeasterners-govt-inaction/",
+      "url": "https://www.altnews.in/bengal-bypolls-suvendu-adhikari-tells-minorities-to-pass-october-6-test-to-stay-with-government/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Monzo bank hasn’t launched its own online casino site",
+      "claim": "The UK’s foreign-born population in 2024 was not ‘up 143% in a decade’",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/fake-monzo-casino-adverts/",
-      "topic": "Money"
+      "url": "https://fullfact.org/immigration/foreign-born-population-zia-yusuf/",
+      "topic": "Trending"
     },
     {
       "n": 8,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Walmart give employees this commemorative 9/11 pin? What we know",
+      "claim": "The truth behind Trump's 13 'acts of kindness,' from checks to cancer treatments",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/20/walmart-9-11-pin/",
-      "topic": "Money"
+      "url": "https://www.snopes.com/fact-check/trump-acts-kindness/",
+      "topic": "Health"
     },
     {
       "n": 10,
@@ -104,19 +104,19 @@
     },
     {
       "n": 13,
-      "claim": "of ‘puffed rice vendor’ being assaulted is a scripted skit",
+      "claim": "‘Go back to your country’: Manipuri musician’s killing reignites concerns over racism against Northeasterners & govt inaction",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/viral-video-of-poor-puffed-rice-vendor-being-assaulted-is-a-scripted-skit/",
+      "url": "https://www.altnews.in/go-back-to-your-country-manipuri-musicians-killing-reignites-concerns-over-racism-against-northeasterners-govt-inaction/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Scottish council corrects outdated asylum seeker support figure",
+      "claim": "Monzo bank hasn’t launched its own online casino site",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/stirling-council-asylum-support-correction/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/economy/fake-monzo-casino-adverts/",
+      "topic": "Money"
     },
     {
       "n": 15,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "23 AI-generated Trump rumors we've debunked",
+      "claim": "Did Trump say or do these things pre-presidency? 17 claims, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-ai-rumors-collection/",
+      "url": "https://www.snopes.com/collections/trump-before-president-claims/",
       "topic": "Politics"
     },
     {
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "German Chancellor Merz calls state election a 'disaster' for his party but vows to stay on",
+      "headline": "Merz vows to keep coalition together for Germany's 'democratic future",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-20T20:21:40+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-21T14:26:29+00:00"
     },
     {
       "n": 2,
-      "headline": "Federal immigration agent shoots and injures man in Austin, Texas",
+      "headline": "World leaders convene for UNGA. And, Trump says D.C. arch will be a 'military complex",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5975517/ice-shooting-austin-texas",
-      "topic": "Trending",
-      "published": "2026-09-20T21:53:00+00:00"
+      "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
+      "topic": "Politics",
+      "published": "2026-09-21T11:24:27+00:00"
     },
     {
       "n": 3,
-      "headline": "ICE agent shoots and wounds man in Austin, Texas, officials say",
+      "headline": "Presley Gerber, son of Cindy Crawford, dies at 27",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/ice-agent-shoots-and-wounds-man-in-austin-texas-officials-say",
+      "url": "https://www.pbs.org/newshour/nation/presley-gerber-son-of-cindy-crawford-dies-at-27",
       "topic": "Trending",
-      "published": "2026-09-20T21:46:19+00:00"
+      "published": "2026-09-21T14:39:35+00:00"
     },
     {
       "n": 4,
+      "headline": "Banished to alien lands: Trump’s secret deportation deals",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/sep/21/trump-deportation-deals",
+      "topic": "Politics",
+      "published": "2026-09-21T05:00:38+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Nuclear power is back on Southeast Asia's energy agenda",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/nuclear-power-is-back-on-southeast-asia-s-energy-agenda/a-79358744?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-21T13:47:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "CNN, MS NOW and Politico to file lawsuit against Trump's White House ban",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-21T14:30:38+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "German chancellor stands his ground after his party loses in state elections",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/21/g-s1-144231/germany-state-elections-merz",
+      "topic": "Trending",
+      "published": "2026-09-21T09:00:00+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Main Kremlin party keeps control of Russian parliament after a carefully orchestrated vote",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/main-kremlin-party-keeps-control-of-russian-parliament-after-a-carefully-orchestrated-vote",
+      "topic": "Politics",
+      "published": "2026-09-21T14:17:24+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Men deported from US bound and beaten in Equatorial Guinea detention hotel, lawyers say",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/sep/18/us-men-deported-hotel-equatorial-guinea",
@@ -177,39 +217,39 @@
       "published": "2026-09-18T23:08:49+00:00"
     },
     {
-      "n": 5,
-      "headline": "Iran closes language center in Tehran, France vows response",
+      "n": 10,
+      "headline": "Why gender-based violence persists in Southern Africa",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-closes-language-center-in-tehran-france-vows-response/a-79348984?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-21T01:20:00+00:00"
+      "url": "https://www.dw.com/en/why-gender-based-violence-persists-in-southern-africa/a-79356560?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-21T13:42:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
+      "n": 11,
+      "headline": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-20T10:45:39+00:00"
+      "published": "2026-09-21T14:06:12+00:00"
     },
     {
-      "n": 7,
-      "headline": "Poison suspected in deaths of ten lions in game reserve in Tanzania",
+      "n": 12,
+      "headline": "Many GOP candidates still echo Trump's 2020 claims. Lots of voters want to move on",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5975478/poison-suspected-in-deaths-of-ten-lions-in-game-reserve-in-tanzania",
-      "topic": "Trending",
-      "published": "2026-09-20T21:39:24+00:00"
+      "url": "https://www.npr.org/2026/09/21/nx-s1-5974313/election-denial-trump-2026",
+      "topic": "Politics",
+      "published": "2026-09-21T09:00:00+00:00"
     },
     {
-      "n": 8,
-      "headline": "Carney and Macron deepen ties as Canada turns toward Europe and away from U.S. dependence",
+      "n": 13,
+      "headline": "Patrick Clancy gives first TV interview on '60 Minutes' after Lindsay Clancy mistrial",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/carney-and-macron-deepen-ties-as-canada-turns-toward-europe-and-away-from-u-s-dependence",
+      "url": "https://www.pbs.org/newshour/nation/patrick-clancy-gives-first-tv-interview-on-60-minutes-after-lindsay-clancy-mistrial",
       "topic": "Trending",
-      "published": "2026-09-20T21:15:28+00:00"
+      "published": "2026-09-21T13:16:23+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Survivors recount panic and struggle to breathe in Nigerian prison cell where 37 died",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
@@ -217,68 +257,28 @@
       "published": "2026-09-18T17:27:39+00:00"
     },
     {
-      "n": 10,
-      "headline": "Canada, France agree to closer ties in defense, economy",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/canada-france-agree-to-closer-ties-in-defense-economy/a-79348843?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-20T21:29:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm780ll1de18o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-20T04:49:11+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Germany's Merz vows to press ahead with reforms after historic state election defeat",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat",
-      "topic": "Politics",
-      "published": "2026-09-20T17:29:29+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Converse apologizes and pulls sneaker ad that critics said included racist imagery",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/converse-apologizes-and-pulls-sneaker-ad-that-critics-said-included-racist-imagery",
-      "topic": "Trending",
-      "published": "2026-09-20T20:03:11+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "British woman who was kidnapped in Malawi rescued by police after shootout",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/18/british-woman-kidnapped-malawi-police-shootout",
-      "topic": "Trending",
-      "published": "2026-09-18T11:21:36+00:00"
-    },
-    {
       "n": 15,
-      "headline": "German state elections deal a blow to Chancellor Friedrich Merz",
+      "headline": "As US and China talk, middle powers jostle for position",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/german-state-elections-deal-a-blow-to-chancellor-friedrich-merz/a-79348585?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-20T21:20:00+00:00"
+      "url": "https://www.dw.com/en/as-us-and-china-talk-middle-powers-jostle-for-position/a-79356540?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-21T12:58:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Trump says triumphal arch will be military complex with drones and snipers",
+      "headline": "Russia's elections had few surprises - but how the Kremlin uses the results will be crucial",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-20T16:36:43+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx4gqv239043o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-21T00:05:11+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump says his D.C. arch will serve as 'military complex' with snipers and drones",
+      "headline": "This farm raised thousands of pigs for slaughter. Now it's growing mushrooms instead",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5975449/trump-washington-dc-arch-military-complex-snipers-drones",
-      "topic": "Politics",
-      "published": "2026-09-20T15:05:47+00:00"
+      "url": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
+      "topic": "Trending",
+      "published": "2026-09-21T09:00:00+00:00"
     }
   ]
 }
