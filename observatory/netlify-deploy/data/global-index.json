@@ -1,9 +1,9 @@
 {
   "composite_index": {
-    "current_value": 6.5,
+    "current_value": 6.4,
     "previous_value": 6.5,
-    "change_pct": 0.0,
-    "trend": "stable",
+    "change_pct": -1.5,
+    "trend": "falling",
     "ai_contribution_ppt": 1.0,
     "description": "AI contributed approximately 1.0 percentage points to technology inflation globally this quarter.",
     "period": "Q2 2026"
@@ -12,7 +12,7 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 7.9,
+      "value": 7.7,
       "trend": "falling",
       "drivers": [
         "GPU demand",
@@ -24,8 +24,8 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 4.2,
-      "trend": "stable",
+      "value": 4.1,
+      "trend": "falling",
       "drivers": [
         "GPU instance demand",
         "Data center expansion",
@@ -48,8 +48,8 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 7.2,
-      "trend": "stable",
+      "value": 7.4,
+      "trend": "rising",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -61,7 +61,7 @@
       "label": "Consumer Electronics",
       "weight": 0.15,
       "value": 4.0,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.3,
+      "value": 6.2,
       "trend": "falling",
       "drivers": [
         "AI feature premiums",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-09-20T10:11:38Z",
+  "last_updated": "2026-09-21T11:14:17Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
