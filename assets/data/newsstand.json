@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T18:26:47Z",
+  "generated_at": "2026-09-21T03:00:58Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "23 AI-generated Trump rumors we've debunked",
+      "claim": "12 AI-generated dog stories, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-ai-rumors-collection/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/fake-dog-images-rumors-collection/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Virginia Democrats Want Abortion In The Constitution. 700,000 Catholics Could Stand In Their Way",
+      "claim": "Supreme Court Likely To Invoke 5 Major Decisions In Landmark Semi-Auto Gun Ruling",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/19/virginia-catholics-abortion-diocese-arlington-richmond-question-michael-burbidge",
+      "url": "https://dailycaller.com/2026/09/20/supreme-court-likely-to-invoke-5-major-decisions-in-landmark-semi-auto-gun-ruling",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "How Lindsay Clancy GoFundMe compares to funds raised for mom who saved kids from fire",
+      "claim": "Did Walmart give employees this commemorative 9/11 pin? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/lindsay-clancy-emma-schols-donations/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/09/20/walmart-9-11-pin/",
+      "topic": "Money"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Manifest Destiny Is Born Again Among Young Conservatives On Social Media",
+      "claim": "GOP Rep Maria Salazar Reveals ‘Very Good Conversation’ With Trump After Her Ad Claimed His Immigration Enforcement Went ‘Too Far’",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/20/the-american-empire-is-rising-according-to-young-conservatives-on-social-media",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/20/maria-salazar-reveals-good-conversation-donald-trump-critical-ad-hispanics-immigration-cbs-news-face-nation-margaret-brennan",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "What we know about Alice Weidel, the far-right German politician with a Sri Lankan-born wife",
+      "claim": "23 AI-generated Trump rumors we've debunked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/20/alice-weidel-policy-contradictions/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/trump-ai-rumors-collection/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -150,23 +150,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-20T17:46:57+00:00"
+      "published": "2026-09-20T20:21:40+00:00"
     },
     {
       "n": 2,
-      "headline": "Germany's Merz vows to press ahead with reforms after historic state election defeat",
+      "headline": "Federal immigration agent shoots and injures man in Austin, Texas",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat",
-      "topic": "Politics",
-      "published": "2026-09-20T17:29:29+00:00"
+      "url": "https://www.npr.org/2026/09/20/nx-s1-5975517/ice-shooting-austin-texas",
+      "topic": "Trending",
+      "published": "2026-09-20T21:53:00+00:00"
     },
     {
       "n": 3,
-      "headline": "Russia wraps up first wartime parliamentary election with Kremlin dominance all but assured",
+      "headline": "ICE agent shoots and wounds man in Austin, Texas, officials say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/russia-wraps-up-first-wartime-parliamentary-election-with-kremlin-dominance-all-but-assured",
-      "topic": "Politics",
-      "published": "2026-09-20T18:12:27+00:00"
+      "url": "https://www.pbs.org/newshour/nation/ice-agent-shoots-and-wounds-man-in-austin-texas-officials-say",
+      "topic": "Trending",
+      "published": "2026-09-20T21:46:19+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Germany faces energy tax losses as EV sales rise",
+      "headline": "Iran closes language center in Tehran, France vows response",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-faces-energy-tax-losses-as-ev-sales-rise/a-79320422?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-09-20T14:02:00+00:00"
+      "url": "https://www.dw.com/en/iran-closes-language-center-in-tehran-france-vows-response/a-79348984?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-21T01:20:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Trump says his D.C. arch will serve as 'military complex' with snipers and drones",
+      "headline": "Poison suspected in deaths of ten lions in game reserve in Tanzania",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5975449/trump-washington-dc-arch-military-complex-snipers-drones",
-      "topic": "Politics",
-      "published": "2026-09-20T15:05:47+00:00"
+      "url": "https://www.npr.org/2026/09/20/nx-s1-5975478/poison-suspected-in-deaths-of-ten-lions-in-game-reserve-in-tanzania",
+      "topic": "Trending",
+      "published": "2026-09-20T21:39:24+00:00"
     },
     {
       "n": 8,
-      "headline": "Iran-backed Houthi rebels warn against joining Saudi Arabia in Yemen's growing civil war",
+      "headline": "Carney and Macron deepen ties as Canada turns toward Europe and away from U.S. dependence",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/iran-backed-houthi-rebels-warn-against-joining-saudi-arabia-in-yemens-growing-civil-war",
-      "topic": "World",
-      "published": "2026-09-20T17:53:16+00:00"
+      "url": "https://www.pbs.org/newshour/world/carney-and-macron-deepen-ties-as-canada-turns-toward-europe-and-away-from-u-s-dependence",
+      "topic": "Trending",
+      "published": "2026-09-20T21:15:28+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Peter Thiel: Power, Palantir, and the antichrist",
+      "headline": "Canada, France agree to closer ties in defense, economy",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/peter-thiel-power-palantir-and-the-antichrist/a-79313426?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/canada-france-agree-to-closer-ties-in-defense-economy/a-79348843?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-20T13:29:00+00:00"
+      "published": "2026-09-20T21:29:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "PHOTOS: The precarious life of fisherfolk",
+      "headline": "Germany's Merz vows to press ahead with reforms after historic state election defeat",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/g-s1-143447/photos-fishermen-sea-india",
-      "topic": "Trending",
-      "published": "2026-09-20T12:24:02+00:00"
+      "url": "https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat",
+      "topic": "Politics",
+      "published": "2026-09-20T17:29:29+00:00"
     },
     {
       "n": 13,
-      "headline": "Alaskans will decide fate of ranked choice voting system after chaotic end to state's primary",
+      "headline": "Converse apologizes and pulls sneaker ad that critics said included racist imagery",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/alaskans-will-decide-fate-of-ranked-choice-voting-system-after-chaotic-end-to-states-primary",
+      "url": "https://www.pbs.org/newshour/nation/converse-apologizes-and-pulls-sneaker-ad-that-critics-said-included-racist-imagery",
       "topic": "Trending",
-      "published": "2026-09-20T17:34:29+00:00"
+      "published": "2026-09-20T20:03:11+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Russia: Ukrainian drone strike on Moscow kills 2",
+      "headline": "German state elections deal a blow to Chancellor Friedrich Merz",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russia-ukrainian-drone-strike-on-moscow-kills-2/a-79341964?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-20T08:37:00+00:00"
+      "url": "https://www.dw.com/en/german-state-elections-deal-a-blow-to-chancellor-friedrich-merz/a-79348585?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-20T21:20:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "In New Orleans, an empty building becomes a free store — and roller skating rink",
+      "headline": "Trump says his D.C. arch will serve as 'military complex' with snipers and drones",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5940784/new-orleans-lower-ninth-ward-free-store",
-      "topic": "Trending",
-      "published": "2026-09-20T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/20/nx-s1-5975449/trump-washington-dc-arch-military-complex-snipers-drones",
+      "topic": "Politics",
+      "published": "2026-09-20T15:05:47+00:00"
     }
   ]
 }
