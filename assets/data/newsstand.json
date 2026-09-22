@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T03:00:55Z",
+  "generated_at": "2026-09-22T13:01:58Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,7 +8,7 @@
   "popular": [
     {
       "n": 1,
-      "claim": "of Furries Does NOT Show Anti-AfD March in Germany",
+      "claim": "Does NOT Show September 12, 2026 Anti-AfD March in Germany",
       "verdict": "FALSE",
       "source": "Lead Stories",
       "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-of-furries-does-not-show-anti-afd-march-in-germany.html",
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Biden revoke more than 400 press passes? How changes compare to Trump's media ban",
+      "claim": "Did Trump's kindness 'ruin' Secret Service agent? Don't fall for tall tale",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/biden-press-passes-trump-ban/",
+      "url": "https://www.snopes.com/fact-check/secret-service-kindness-trump/",
       "topic": "Politics"
     },
     {
@@ -56,11 +56,11 @@
     },
     {
       "n": 7,
-      "claim": "Old video of Alaskan glacier shared with claims it shows cause of Nepal flood",
+      "claim": "cancer is ‘trying to heal’ shared online yet again",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/old-video-alaska-glacier-shared-as-nepal-flood-cause/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/health/cancer-heal-false-repeat/",
+      "topic": "Health"
     },
     {
       "n": 8,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Broncos quarterback Bo Nix rebuke Trump for calling female reporter a pig?",
+      "claim": "Did Mike Rogers receive donations from people in Epstein files? We followed the paper trail",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/bo-nix-trump-piggy/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/mike-rogers-epstein-donations/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Federal Appeals Court Pulls Another Switcheroo On GOP-Friendly Missouri Map",
+      "claim": "DUKE: The People Progressives Forget When They’re Busy Saving Everyone Else",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/21/appeals-court-revives-gop-missouri-map-midterms",
+      "url": "https://dailycaller.com/2026/09/22/duke-nikole-hannah-jones-1619-project-school-daughter-empathy-liberal-conservative-heat-map",
       "topic": "Trending"
     },
     {
@@ -112,11 +112,11 @@
     },
     {
       "n": 14,
-      "claim": "Covid vaccines have not been shown to cause ‘turbo cancer’",
+      "claim": "Currys isn’t giving away KitchenAid mixers for £10",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/prostate-cancer-covid-vaccine/",
-      "topic": "Health"
+      "url": "https://fullfact.org/shopping/currys-kitchenaid-artisan-series5-fake/",
+      "topic": "Trending"
     },
     {
       "n": 15,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump call Iran war 'small potatoes'?",
+      "claim": "Too cute to be true? Video really shows rhino and tiny deer headbutting",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-iran-war-small-potatoes-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/rhino-deer-headbutt-video/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
+      "headline": "Major US outlets boycott shared Trump coverage in protest at media ban",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-21T14:14:16+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cje3rezd92y3o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-22T08:17:15+00:00"
     },
     {
       "n": 2,
-      "headline": "What the equinox 'henge' effect tells us about U.S. cities",
+      "headline": "CNN, MS NOW and Politico sue Trump. And, Paramount settles in massive merger lawsuit",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/nx-s1-5973179/equinox-henge-sunrise-sunset",
-      "topic": "Trending",
-      "published": "2026-09-21T19:50:13+00:00"
+      "url": "https://www.npr.org/2026/09/22/g-s1-144512/up-first-newsletter-press-lawsuit-cnn-msnow-politico-unga-trump-speech-paramount-deal",
+      "topic": "Politics",
+      "published": "2026-09-22T11:01:01+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "UK: Man charged over suspected role in Rwanda genocide",
+      "headline": "After floods, Nepal minister demands 'climate justice",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uk-man-charged-over-suspected-role-in-rwanda-genocide/a-79364493?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-21T21:57:00+00:00"
+      "url": "https://www.dw.com/en/after-floods-nepal-minister-demands-climate-justice/a-79372239?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-22T12:37:00+00:00"
     },
     {
       "n": 6,
-      "headline": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban",
+      "headline": "Lithuania ready to 'fight back' but has evacuation plans in face of Russia threats, PM tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-22T00:16:06+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck5yw8npxzrlo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-22T10:45:47+00:00"
     },
     {
       "n": 7,
-      "headline": "Aviation regulators turn to AI to help manage the nation's airspace",
+      "headline": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/nx-s1-5976816/faa-ai-manage-airspace",
-      "topic": "Tech / AI",
-      "published": "2026-09-21T17:37:56+00:00"
+      "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
+      "topic": "Trending",
+      "published": "2026-09-22T10:59:37+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "US-China rivalry is reshaping global trade — and Europe is caught in the middle.",
+      "headline": "Could we see MMA at the Olympics?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-china-rivalry-is-reshaping-global-trade-and-europe-is-caught-in-the-middle/a-79356540?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-21T18:40:00+00:00"
+      "url": "https://www.dw.com/en/could-we-see-mma-at-the-olympics/a-79369605?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-22T12:14:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Merz vows to keep coalition together for Germany's 'democratic future",
+      "headline": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-21T16:54:56+00:00"
+      "published": "2026-09-22T12:59:22+00:00"
     },
     {
       "n": 12,
-      "headline": "Paramount makes concessions to salvage $111 billion Warner Bros. Discovery deal",
+      "headline": "New DNA analysis adds evidence Jefferson fathered children with Sally Hemings",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/nx-s1-5974909/paramount-warner-bros-lawsuit",
+      "url": "https://www.npr.org/2026/09/22/nx-s1-5791513/thomas-jefferson-sally-hemings-dna-hair-smithsonian",
       "topic": "Trending",
-      "published": "2026-09-21T16:40:28+00:00"
+      "published": "2026-09-22T10:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "US news outlets sue Trump over White House ban",
+      "headline": "Iran war spreads through region as Trump seeks way out",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-news-outlets-sue-trump-over-white-house-ban/a-79362618?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/iran-war-spreads-through-region-as-trump-seeks-way-out/a-79370506?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-09-21T16:44:00+00:00"
+      "published": "2026-09-22T11:29:00+00:00"
     },
     {
       "n": 16,
-      "headline": "First UK charges brought over 1994 Rwanda genocide",
+      "headline": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr2092216nywo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-21T17:48:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwm2qpmepmlzo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-22T07:14:12+00:00"
     },
     {
       "n": 17,
-      "headline": "World leaders convene for UNGA. And, Trump says D.C. arch will be a 'military complex",
+      "headline": "AI solved one of math's hardest problems. Humanity learned nothing (so far)",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
-      "topic": "Politics",
-      "published": "2026-09-21T11:24:27+00:00"
+      "url": "https://www.npr.org/2026/09/22/nx-s1-5968588/openai-navier-stokes-problem-mathematicians-learn-little",
+      "topic": "Tech / AI",
+      "published": "2026-09-22T09:01:00+00:00"
     }
   ]
 }
