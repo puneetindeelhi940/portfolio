@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T20:14:13Z",
+  "generated_at": "2026-09-22T03:00:55Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Shows Trump Making Kissy Faces And Sounds In Front Of Sarah Huckabee Sanders -- It Is An Altered Satire Video",
-      "verdict": "MISLEADING",
+      "claim": "of Furries Does NOT Show Anti-AfD March in Germany",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-shows-trump-making-kissy-faces-and-sounds-in-front-of-sarah-huckabee-sanders-satire-video.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-of-furries-does-not-show-anti-afd-march-in-germany.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Trump call Iran war 'small potatoes'?",
+      "claim": "Did Biden revoke more than 400 press passes? How changes compare to Trump's media ban",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-iran-war-small-potatoes-quote/",
+      "url": "https://www.snopes.com/fact-check/biden-press-passes-trump-ban/",
       "topic": "Politics"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: Dem Candidate May Have Violated FEC Law By Hiring Foreign National",
+      "claim": "Defamation Case Ruling Supports Claim That Dems’ Star J6 Witness Lied Under Oath",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/21/democrat-blake-gendebien-foreign-national-ukraine-fec-campaign-elise-stefanik",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/21/defamation-case-jan-6-droped-lied-under-oath-andrew-weissmann-stefan-passantino-cassidy-hutchinson",
+      "topic": "Celebrity"
     },
     {
       "n": 5,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "FAKE AI-Generated Images Falsely Claim To Show Sam Smith In 2016 And 2025",
+      "claim": "Paris Butcher Was NOT Arrested For Selling Human Meat -- That Never Happened, Video Was Filmed In Dubai",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photos-show-sam-smith-in-2016-and-2025-images-generated-with-artificial-intelligence.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-paris-butcher-was-not-arrested-for-selling-human-meat-that-never-happened-video-was-filmed-in-dubai.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "17 claims about Greenland, examined",
+      "claim": "Did Broncos quarterback Bo Nix rebuke Trump for calling female reporter a pig?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/greenland-rumors-collection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/bo-nix-trump-piggy/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "The Liberal Scold Who Spent Years Wagging Her Fingers At Conservatives Admits She Raised Her Child All Wrong",
+      "claim": "Federal Appeals Court Pulls Another Switcheroo On GOP-Friendly Missouri Map",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/21/nikole-hannah-jones-daughter-najya-public-school-nyc-antiracism-ps-307-urban-assembly-unison",
+      "url": "https://dailycaller.com/2026/09/21/appeals-court-revives-gop-missouri-map-midterms",
       "topic": "Trending"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "Prebunk: Storm Of Made-Up Severe Weather Posts Floods Timelines -- Bring An Umbrella Against This Torrent Of AI Warnings",
+      "claim": "FAKE Video of JD Vance Asking For 'Another Chance,' Saying 'Things Are Bad' Is AI",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-storm-of-made-up-severe-weather-posts-floods-timelines-bring-an-umbrella-against-this-torrent-of-ai-warnings.html",
-      "topic": "Science"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-of-jd-vance-asking-for-another-chance-saying-things-are-bad-is-ai.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "Converse apologized for ad that people compared to lynching, Ku Klux Klan imagery",
+      "claim": "Did Trump call Iran war 'small potatoes'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/converse-ad-lynching-kkk-imagery/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-iran-war-small-potatoes-quote/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -162,27 +162,27 @@
     },
     {
       "n": 3,
-      "headline": "States settle lawsuit over Paramount-Warner merger, clearing key hurdle for $81 billion deal",
+      "headline": "Press pool declines to cover Trump in protest of his ban on news outlets",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/states-settle-lawsuit-over-paramount-warner-merger-clearing-key-hurdle-for-81-billion-deal",
-      "topic": "Trending",
-      "published": "2026-09-21T19:53:59+00:00"
+      "url": "https://www.pbs.org/newshour/show/press-pool-declines-to-cover-trump-in-protest-of-his-ban-on-news-outlets",
+      "topic": "Politics",
+      "published": "2026-09-21T22:55:26+00:00"
     },
     {
       "n": 4,
-      "headline": "Banished to alien lands: Trump’s secret deportation deals",
+      "headline": "Healthcare in Africa ‘under growing strain’ after US withdrawal from aid programs, report warns",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/sep/21/trump-deportation-deals",
-      "topic": "Politics",
-      "published": "2026-09-21T05:00:38+00:00"
+      "url": "https://www.theguardian.com/us-news/2026/sep/21/africa-healthcare-aid-program-withdrawl",
+      "topic": "Trending",
+      "published": "2026-09-21T22:33:40+00:00"
     },
     {
       "n": 5,
-      "headline": "US-China rivalry is reshaping global trade — and Europe is caught in the middle.",
+      "headline": "UK: Man charged over suspected role in Rwanda genocide",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-china-rivalry-is-reshaping-global-trade-and-europe-is-caught-in-the-middle/a-79356540?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-21T18:40:00+00:00"
+      "url": "https://www.dw.com/en/uk-man-charged-over-suspected-role-in-rwanda-genocide/a-79364493?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-21T21:57:00+00:00"
     },
     {
       "n": 6,
@@ -190,7 +190,7 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-21T15:58:53+00:00"
+      "published": "2026-09-22T00:16:06+00:00"
     },
     {
       "n": 7,
@@ -202,27 +202,27 @@
     },
     {
       "n": 8,
-      "headline": "Technical problems at a key air traffic center disrupt flights across Northeast",
+      "headline": "Trump's attacks on free press echo rhetoric used by autocrats, Jodie Ginsberg says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/technical-problems-at-a-key-air-traffic-center-disrupt-flights-across-northeast",
-      "topic": "Trending",
-      "published": "2026-09-21T19:44:49+00:00"
+      "url": "https://www.pbs.org/newshour/show/trumps-attacks-on-free-press-echo-rhetoric-used-by-autocrats-jodie-ginsberg-says",
+      "topic": "Politics",
+      "published": "2026-09-21T22:50:37+00:00"
     },
     {
       "n": 9,
-      "headline": "Men deported from US bound and beaten in Equatorial Guinea detention hotel, lawyers say",
+      "headline": "Banished to alien lands: Trump’s secret deportation deals",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/sep/18/us-men-deported-hotel-equatorial-guinea",
-      "topic": "Trending",
-      "published": "2026-09-18T23:08:49+00:00"
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/sep/21/trump-deportation-deals",
+      "topic": "Politics",
+      "published": "2026-09-21T05:00:38+00:00"
     },
     {
       "n": 10,
-      "headline": "US news outlets sue Trump over White House ban",
+      "headline": "US-China rivalry is reshaping global trade — and Europe is caught in the middle.",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-news-outlets-sue-trump-over-white-house-ban/a-79362618?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-21T16:44:00+00:00"
+      "url": "https://www.dw.com/en/us-china-rivalry-is-reshaping-global-trade-and-europe-is-caught-in-the-middle/a-79356540?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-21T18:40:00+00:00"
     },
     {
       "n": 11,
@@ -242,27 +242,27 @@
     },
     {
       "n": 13,
-      "headline": "WATCH LIVE: Day 1 of the 2026 United Nations General Assembly",
+      "headline": "News Wrap: FAA issues ground stops at major East Coast airports due to equipment failure",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/watch-live-day-1-of-the-2026-united-nations-general-assembly",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-faa-issues-ground-stops-at-major-east-coast-airports-due-to-equipment-failure",
       "topic": "Trending",
-      "published": "2026-09-21T19:36:05+00:00"
+      "published": "2026-09-21T22:45:16+00:00"
     },
     {
       "n": 14,
-      "headline": "Survivors recount panic and struggle to breathe in Nigerian prison cell where 37 died",
+      "headline": "Men deported from US bound and beaten in Equatorial Guinea detention hotel, lawyers say",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
-      "topic": "Celebrity",
-      "published": "2026-09-18T17:27:39+00:00"
+      "url": "https://www.theguardian.com/us-news/2026/sep/18/us-men-deported-hotel-equatorial-guinea",
+      "topic": "Trending",
+      "published": "2026-09-18T23:08:49+00:00"
     },
     {
       "n": 15,
-      "headline": "Nuclear power is back on Southeast Asia's energy agenda",
+      "headline": "US news outlets sue Trump over White House ban",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nuclear-power-is-back-on-southeast-asia-s-energy-agenda/a-79358744?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-09-21T13:47:00+00:00"
+      "url": "https://www.dw.com/en/us-news-outlets-sue-trump-over-white-house-ban/a-79362618?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-21T16:44:00+00:00"
     },
     {
       "n": 16,
