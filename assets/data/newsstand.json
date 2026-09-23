@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T03:00:50Z",
+  "generated_at": "2026-09-23T13:16:49Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Obama ban Fox News from White House briefings? Claim distorts the facts",
+      "claim": "21 fact checks about gas prices from our archives",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/obama-ban-fox-news-white-house/",
+      "url": "https://www.snopes.com/collections/gas-prices-fact-checks/",
       "topic": "Trending"
     },
     {
@@ -56,11 +56,11 @@
     },
     {
       "n": 7,
-      "claim": "Toby Carvery isn’t giving away free carvery on Facebook to celebrate ‘National Spud Week’",
+      "claim": "AI-generated video of people marching in London shared online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/toby-carvery-not-giving-away-free-carvery-spud-week/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/politics/AI-video-march-London/",
+      "topic": "Tech / AI"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "5 claims about the White House press corps, fact-checked",
+      "claim": "Did Obama ban Fox News from White House briefings? Claim distorts the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/white-house-press-corps-fact-checks/",
+      "url": "https://www.snopes.com/fact-check/obama-ban-fox-news-white-house/",
       "topic": "Trending"
     },
     {
@@ -112,11 +112,11 @@
     },
     {
       "n": 14,
-      "claim": "cancer is ‘trying to heal’ shared online yet again",
+      "claim": "How are tax threshold freezes impacting pensioners?",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/cancer-heal-false-repeat/",
-      "topic": "Health"
+      "url": "https://fullfact.org/economy/nigel-farage-income-tax-threshold-freeze/",
+      "topic": "Money"
     },
     {
       "n": 15,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did prices rise more under Biden than Trump? We checked the data",
+      "claim": "Democrats allegedly gave 'illegals' in Chicago $20K in government benefits. Here are the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-biden-inflation-data/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/09/23/chicago-illegals-government-benefits/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,110 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump threatens to 'annihilate' Iran in UN speech as officials from both countries meet on sidelines",
+      "headline": "US and Iran hold first talks since June after Trump's 'annihilation' threat",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck62m1631d7po?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-23T02:57:00+00:00"
+      "published": "2026-09-23T06:12:56+00:00"
     },
     {
       "n": 2,
-      "headline": "Questions remain after grand jury declines indictment in Nolan Wells' death",
+      "headline": "Is Nepal's flood a harbinger of what's to come in the Himalayas?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/22/nx-s1-5977673/questions-remain-after-grand-jury-declines-indictment-in-nolan-wells-death",
+      "url": "https://www.npr.org/2026/09/23/g-s1-144536/floods-climate-nepal-himalayas-dams-hydropower",
       "topic": "Trending",
-      "published": "2026-09-22T21:47:51+00:00"
+      "published": "2026-09-23T11:48:00+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump defends Iran war and threatens annihilation at UN General Assembly",
+      "headline": "WATCH LIVE: Day 2 of the 2026 United Nations General Assembly",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/trump-defends-iran-war-and-threatens-annihilation-at-un-general-assembly",
-      "topic": "Politics",
-      "published": "2026-09-22T22:55:13+00:00"
+      "url": "https://www.pbs.org/newshour/world/watch-live-day-2-of-the-2026-united-nations-general-assembly",
+      "topic": "Trending",
+      "published": "2026-09-23T13:00:04+00:00"
     },
     {
       "n": 4,
+      "headline": "Indian billionaire’s payments firm plots biggest London flotation in years",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/business/2026/sep/23/indian-billionaire-payments-firm-london-flotation-airtel-money",
+      "topic": "Trending",
+      "published": "2026-09-23T11:08:01+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Ethiopia: Fighting resumes in Tigray",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/ethiopia-fighting-resumes-in-tigray/a-79394192?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-23T12:06:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Reports of violence against women in Gaza surge, UN agency finds",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c94gm7dp40y0o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-23T05:02:26+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Dems have an edge over GOP, poll finds. And, ICE looks into 'mobile detention centers",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/23/g-s1-144632/up-first-newsletter-npr-polls-voter-approval-cnn-msnow-politico-trump-unga-speech-ice",
+      "topic": "Trending",
+      "published": "2026-09-23T11:13:32+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Voters don't like data centers. They really don't like them close to home",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/voters-dont-like-data-centers-they-really-dont-like-them-close-to-home",
+      "topic": "Trending",
+      "published": "2026-09-23T09:00:57+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Top South African police officer charged with raping woman, 18, and grooming 16-year-old girl",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/23/south-africa-top-police-officer-shadrack-sibiya-charged-rape-grooming",
+      "topic": "Trending",
+      "published": "2026-09-23T09:38:06+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "ICC convicts CAR ex-rebel leader of crimes against humanity",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/icc-convicts-car-ex-rebel-leader-of-crimes-against-humanity/a-79387178?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-23T11:50:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Tigray forces seize main airport in northern Ethiopia from police, residents tell the BBC",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-23T11:42:52+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Will FDA advisers recommend a multi-cancer blood test for approval? They'll vote",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5978122/fda-blood-cancer-test-galleri",
+      "topic": "Health",
+      "published": "2026-09-23T10:00:00+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Democrats lead in new poll as Trump looms over midterms",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/democrats-lead-in-new-poll-as-trump-looms-over-midterms",
+      "topic": "Politics",
+      "published": "2026-09-23T09:00:44+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Healthcare in Africa ‘under growing strain’ after US withdrawal from aid programs, report warns",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/sep/21/africa-healthcare-aid-program-withdrawl",
@@ -177,108 +257,28 @@
       "published": "2026-09-21T22:33:40+00:00"
     },
     {
-      "n": 5,
-      "headline": "Trump signs 'tremendous' Greenland security deal",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-signs-tremendous-greenland-security-deal/a-79381148?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-22T23:14:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Burnham expects to find 'common ground' with Trump in first meeting",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqevwpmvpekeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-22T06:03:22+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Girl accuses Braden Peters, social media influencer known as 'Clavicular,' of rape",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/22/nx-s1-5978033/braden-peters-clavicular-looksmaxxing-rape-accusation",
-      "topic": "Trending",
-      "published": "2026-09-22T21:37:28+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "News Wrap: Grand jury declines to bring charges in death of Nolan Wells",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-grand-jury-declines-to-bring-charges-in-death-of-nolan-wells",
-      "topic": "Celebrity",
-      "published": "2026-09-22T22:45:43+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Banished to alien lands: Trump’s secret deportation deals",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/sep/21/trump-deportation-deals",
-      "topic": "Politics",
-      "published": "2026-09-21T05:00:38+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "EU drops sanctions for Russian oligarchs Usmanov and Fridman",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/eu-drops-sanctions-for-russian-oligarchs-usmanov-and-fridman/a-79381048?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-22T19:43:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "US to build two military bases in Greenland under new deal with Denmark",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-22T21:36:55+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "White House launches 'Trump TV' after ban on major news outlets",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/22/nx-s1-5977768/trump-tv-media-ban-white-house",
-      "topic": "Politics",
-      "published": "2026-09-22T21:31:01+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "What the Paramount-Warner Bros. merger settlement means for Hollywood",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-the-paramount-warner-bros-merger-settlement-means-for-hollywood",
-      "topic": "Celebrity",
-      "published": "2026-09-22T22:40:32+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Men deported from US bound and beaten in Equatorial Guinea detention hotel, lawyers say",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/sep/18/us-men-deported-hotel-equatorial-guinea",
-      "topic": "Trending",
-      "published": "2026-09-18T23:08:49+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Amateur archeologist unearths Germany's largest trove of Roman coins",
+      "headline": "As the EU advances free trade with Southeast Asia, why is there no ASEAN-wide deal?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/amateur-archeologist-unearths-germany-s-largest-trove-of-roman-coins/a-79379127?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/as-the-eu-advances-free-trade-with-southeast-asia-why-is-there-no-asean-wide-deal/a-79388278?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-22T17:32:00+00:00"
+      "published": "2026-09-23T11:49:00+00:00"
     },
     {
       "n": 16,
-      "headline": "How Ceuta, football and Israel are shaping Morocco's election",
+      "headline": "Dramatic eviction of woman aged 87 highlights Spain's housing shortage",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8r4v7n6py97o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-22T20:59:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6vgy55lm8z1o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-23T12:31:31+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump's D.C. arch is now a military complex. Here's how that complicates things",
+      "headline": "DOJ defends White House media ban, urges court to reject lawsuit",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/22/nx-s1-5977646/trump-dc-arch-military-complex-questions",
-      "topic": "Politics",
-      "published": "2026-09-22T19:25:05+00:00"
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5978614/doj-defend-white-house-media-ban",
+      "topic": "Trending",
+      "published": "2026-09-23T09:06:47+00:00"
     }
   ]
 }
