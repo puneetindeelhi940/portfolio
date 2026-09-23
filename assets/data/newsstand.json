@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T13:16:49Z",
+  "generated_at": "2026-09-23T19:24:38Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Prebunk: Videos Of Medical Robots Run Away From Reality -- AI Running In Data Center, Not Robot In City Center",
+      "claim": "DOJ Did NOT Delete Trump's Pardons From Their Website -- List Was Off The Site For Hours But Returned",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-videos-of-medical-robots-run-away-from-reality.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-doj-did-not-delete-trumps-pardons-from-their-website-list-was-off-the-site-for-hours-but-returned.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "21 fact checks about gas prices from our archives",
+      "claim": "Did Biden revoke more than 400 press passes? How changes compare to Trump's media ban",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/gas-prices-fact-checks/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/biden-press-passes-trump-ban/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Tehran Dangles Peace Deal Hours Before Trump Threatens To ‘Annihilate’ Iran",
+      "claim": "Christian Persecution: The Tense Topic Trump And Xi Want To Avoid But Shouldn’t",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/22/iran-peace-offer-hormuz-donald-trump-un-annihilate",
+      "url": "https://dailycaller.com/2026/09/23/donald-trump-xi-jinping-china-christian-persecution-summit-joseph-zen-jimmy-lai",
       "topic": "Politics"
     },
     {
@@ -56,26 +56,26 @@
     },
     {
       "n": 7,
-      "claim": "AI-generated video of people marching in London shared online",
+      "claim": "Labour by-election candidate has British nationality, contrary to social media claims",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/politics/AI-video-march-London/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/politics/Sagal-Abdi-Wali-uk-citizen/",
+      "topic": "Politics"
     },
     {
       "n": 8,
-      "claim": "Prebunk: Automatic Haircut Machines Do Not Cut Permanent Reality -- AI Videos Wash, Rinse And Condition The Truth",
+      "claim": "Is NOT From World Trade Center On 9/11 -- Shows Fatal 2013 Lahore Development Authority Fire In Pakistan",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/prebunk-automatic-haircut-machines-dont-cut-permanent-reality-ai-videos-wash-rinse-and-condition-the-truth.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-photo-not-from-world-trade-center-on-911-shows-fatal-2013-lahore-development-authority-fire-in-pakistan.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Did Obama ban Fox News from White House briefings? Claim distorts the facts",
+      "claim": "Don't go bananas over tale of chimp rescuing zookeeper",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/obama-ban-fox-news-white-house/",
+      "url": "https://www.snopes.com/fact-check/chimp-rescue-zookeeper-tale/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "GOP Senator Calls On Senate Judiciary Committee To Investigate Don Jr., Hunter Biden. Most Members Haven’t Even Opened The Letter",
+      "claim": "EXCLUSIVE: Turner Vows HUD Will Get ‘Out Of The Way’ Of Homebuilders, Cut Red Tape At ‘Made In America’ Showcase",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/22/senate-judiciary-committee-john-curtis-letter-don-jr-hunter-biden",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/23/scott-turner-hud-innovative-housing-showcase-deregulation-housing-affordability-crisis-report",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -112,19 +112,19 @@
     },
     {
       "n": 14,
-      "claim": "How are tax threshold freezes impacting pensioners?",
+      "claim": "of teachers saying they would quit over pride flag removal is AI-generated",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/nigel-farage-income-tax-threshold-freeze/",
-      "topic": "Money"
+      "url": "https://fullfact.org/culture-and-society/ai-image-teachers-pride-flag/",
+      "topic": "Tech / AI"
     },
     {
       "n": 15,
-      "claim": "'Wonder Years' Actor Fred Savage Is NOT Dead At Age 50 -- No Credible Reports Of His Death",
+      "claim": "Prebunk: Videos Of Medical Robots Run Away From Reality -- AI Running In Data Center, Not Robot In City Center",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fred-savage-not-dead-age-50.html",
-      "topic": "Celebrity"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-prebunk-videos-of-medical-robots-run-away-from-reality.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US and Iran hold first talks since June after Trump's 'annihilation' threat",
+      "headline": "Iran's president tells Trump it will never 'bend the knee",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck62m1631d7po?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-23T06:12:56+00:00"
+      "published": "2026-09-23T18:15:31+00:00"
     },
     {
       "n": 2,
-      "headline": "Is Nepal's flood a harbinger of what's to come in the Himalayas?",
+      "headline": "Trump set to greet Xi for high-stakes state visit",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/g-s1-144536/floods-climate-nepal-himalayas-dams-hydropower",
-      "topic": "Trending",
-      "published": "2026-09-23T11:48:00+00:00"
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
+      "topic": "Politics",
+      "published": "2026-09-23T18:23:19+00:00"
     },
     {
       "n": 3,
-      "headline": "WATCH LIVE: Day 2 of the 2026 United Nations General Assembly",
+      "headline": "Sen. Bernie Sanders unveils bill to ban artificial superintelligence and create Department of AI",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/watch-live-day-2-of-the-2026-united-nations-general-assembly",
-      "topic": "Trending",
-      "published": "2026-09-23T13:00:04+00:00"
+      "url": "https://www.pbs.org/newshour/politics/sen-bernie-sanders-unveils-bill-to-ban-artificial-superintelligence-and-create-department-of-ai",
+      "topic": "Tech / AI",
+      "published": "2026-09-23T18:10:58+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Ethiopia: Fighting resumes in Tigray",
+      "headline": "Harvey Weinstein resentenced to 15 years for sexual assault",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ethiopia-fighting-resumes-in-tigray/a-79394192?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/harvey-weinstein-resentenced-to-15-years-for-sexual-assault/a-79403381?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-23T12:06:00+00:00"
+      "published": "2026-09-23T17:45:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Reports of violence against women in Gaza surge, UN agency finds",
+      "headline": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c94gm7dp40y0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-09-23T05:02:26+00:00"
+      "published": "2026-09-23T16:53:37+00:00"
     },
     {
       "n": 7,
-      "headline": "Dems have an edge over GOP, poll finds. And, ICE looks into 'mobile detention centers",
+      "headline": "Iran's president gives a rare wartime speech at the U.N.",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/g-s1-144632/up-first-newsletter-npr-polls-voter-approval-cnn-msnow-politico-trump-unga-speech-ice",
-      "topic": "Trending",
-      "published": "2026-09-23T11:13:32+00:00"
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5978863/iran-president-united-nations-general-assembly",
+      "topic": "Politics",
+      "published": "2026-09-23T18:14:40+00:00"
     },
     {
       "n": 8,
-      "headline": "Voters don't like data centers. They really don't like them close to home",
+      "headline": "Mississippi police make 2nd arrest in death of Tasia Fortune, seek 3rd suspect",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/voters-dont-like-data-centers-they-really-dont-like-them-close-to-home",
-      "topic": "Trending",
-      "published": "2026-09-23T09:00:57+00:00"
+      "url": "https://www.pbs.org/newshour/nation/mississippi-police-make-2nd-arrest-in-death-of-tasia-fortune-seek-3rd-suspect",
+      "topic": "Celebrity",
+      "published": "2026-09-23T17:55:12+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "ICC convicts CAR ex-rebel leader of crimes against humanity",
+      "headline": "Eviction of 87-year-old woman sparks housing protests in Madrid",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/icc-convicts-car-ex-rebel-leader-of-crimes-against-humanity/a-79387178?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/eviction-of-87-year-old-woman-sparks-housing-protests-in-madrid/a-79399342?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-23T11:50:00+00:00"
+      "published": "2026-09-23T16:58:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Tigray forces seize main airport in northern Ethiopia from police, residents tell the BBC",
+      "headline": "White House rolling out red carpet for historic Xi Jinping visit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6n9w410v3vzo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-23T11:42:52+00:00"
+      "published": "2026-09-23T14:32:37+00:00"
     },
     {
       "n": 12,
-      "headline": "Will FDA advisers recommend a multi-cancer blood test for approval? They'll vote",
+      "headline": "A Catholic media star will be beatified in St Louis, moving a step closer to sainthood",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5978122/fda-blood-cancer-test-galleri",
-      "topic": "Health",
-      "published": "2026-09-23T10:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/23/g-s1-144677/a-catholic-media-star-will-be-beatified-in-st-louis-moving-a-step-closer-to-sainthood",
+      "topic": "Celebrity",
+      "published": "2026-09-23T18:09:31+00:00"
     },
     {
       "n": 13,
-      "headline": "Democrats lead in new poll as Trump looms over midterms",
+      "headline": "Senior NATO commander warns Putin is becoming more cavalier and open to risk as Ukraine war drags on",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democrats-lead-in-new-poll-as-trump-looms-over-midterms",
-      "topic": "Politics",
-      "published": "2026-09-23T09:00:44+00:00"
+      "url": "https://www.pbs.org/newshour/world/senior-nato-commander-warns-putin-is-becoming-more-cavalier-and-open-to-risk-as-ukraine-war-drags-on",
+      "topic": "World",
+      "published": "2026-09-23T17:03:12+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "As the EU advances free trade with Southeast Asia, why is there no ASEAN-wide deal?",
+      "headline": "Trump's Board of Peace proposes $2.45B for reconstruction in Gaza",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/as-the-eu-advances-free-trade-with-southeast-asia-why-is-there-no-asean-wide-deal/a-79388278?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-23T11:49:00+00:00"
+      "url": "https://www.dw.com/en/trump-s-board-of-peace-proposes-2-45b-for-reconstruction-in-gaza/a-79401612?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-23T16:29:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "DOJ defends White House media ban, urges court to reject lawsuit",
+      "headline": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5978614/doj-defend-white-house-media-ban",
-      "topic": "Trending",
-      "published": "2026-09-23T09:06:47+00:00"
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
+      "topic": "Politics",
+      "published": "2026-09-23T16:13:52+00:00"
     }
   ]
 }
