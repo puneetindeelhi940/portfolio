@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T02:52:18Z",
+  "generated_at": "2026-09-24T13:06:47Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Denmark play 'Send in the Clowns' when Rubio arrived at Greenland deal ceremony?",
+      "claim": "12 claims about CNN we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/23/denmark-play-send-in-clowns-rubio/",
+      "url": "https://www.snopes.com/collections/cnn-claims-fact-checked/",
       "topic": "Trending"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Bengal bypolls: Suvendu Adhikari tells minorities to pass October 6 ‘test’ to ‘stay with government’",
+      "claim": "Discrepancy in Nandigram BJP candidate Hashirani Rath’s poll affidavit: Age 60, Class X in 1965",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bengal-bypolls-suvendu-adhikari-tells-minorities-to-pass-october-6-test-to-stay-with-government/",
+      "url": "https://www.altnews.in/discrepancy-in-nandigram-bjp-candidate-hashirani-raths-poll-affidavit-age-60-class-x-in-1965/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Does image show Trump left brown stain on chair in Ireland? Here's the truth",
+      "claim": "Did Denmark play 'Send in the Clowns' when Rubio arrived at Greenland deal ceremony?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-ireland-brown-stain/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/09/23/denmark-play-send-in-clowns-rubio/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "‘Go back to your country’: Manipuri musician’s killing reignites concerns over racism against Northeasterners & govt inaction",
+      "claim": "Independent journalists reporting on MP child deaths face surveillance, have Instagram accounts disabled",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/go-back-to-your-country-manipuri-musicians-killing-reignites-concerns-over-racism-against-northeasterners-govt-inaction/",
+      "url": "https://www.altnews.in/mp-bhalaghat-deaths-of-adivasi-children-instagram-accounts-of-journalists-suspended/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Biden revoke more than 400 press passes? How changes compare to Trump's media ban",
+      "claim": "Does footage show 'overflow' crowd at 2026 Minnesota Trump rally? Here's the real story",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/biden-press-passes-trump-ban/",
+      "url": "https://www.snopes.com/fact-check/minnesota-trump-rally-overflow-crowd/",
       "topic": "Politics"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "AI superpower ambitions take centre stage as Trump and Xi meet",
+      "headline": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-23T22:01:17+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-24T07:10:58+00:00"
     },
     {
       "n": 2,
-      "headline": "Judge considers restoring journalists' access to White House after Trump's ban",
+      "headline": "Trump rolls out red carpet for Xi as high-stakes summit begins",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5979101/federal-judge-hearing-trump-ban-cnn-ms-now-politico",
+      "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-rolls-out-red-carpet-for-xi-as-high-stakes-summit-begins",
       "topic": "Politics",
-      "published": "2026-09-23T22:40:39+00:00"
+      "published": "2026-09-24T12:43:15+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Germany sets out plan to phase out fossil fuels by 2045",
+      "headline": "Germany news: Berlin officially withdraws Olympics bid",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-sets-out-plan-to-phase-out-fossil-fuels-by-2045/a-79404028?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-berlin-officially-withdraws-olympics-bid/live-79406294?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-24T01:37:00+00:00"
+      "published": "2026-09-24T12:42:00+00:00"
     },
     {
       "n": 6,
-      "headline": "OpenAI agent 'infiltrated' Australian government website, PM says",
+      "headline": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-24T02:23:54+00:00"
+      "published": "2026-09-24T11:59:23+00:00"
     },
     {
       "n": 7,
-      "headline": "Trump and Xi meet at moment of global consequence",
+      "headline": "Judge restores journalists' White House access. And, Tucker Carlson on his MAGA split",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
-      "topic": "Politics",
-      "published": "2026-09-23T18:23:19+00:00"
+      "url": "https://www.npr.org/2026/09/24/g-s1-144850/up-first-newsletter-cnn-msnow-politico-iran-ukraine-unga-china-xi-jinping-trump",
+      "topic": "Trending",
+      "published": "2026-09-24T11:10:14+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Live updates: Trump welcomes Xi to Washington",
+      "headline": "Czech PM Andrej Babis reiterates importance of NATO for his country but rejects calls to increase defense spending",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/live-updates-trump-welcomes-xi-to-washington/live-79404511?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-23T22:49:00+00:00"
+      "url": "https://www.dw.com/en/czech-pm-andrej-babis-reiterates-importance-of-nato-for-his-country-but-rejects-calls-to-increase-defense-spending/a-79411066?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-24T12:11:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Iran's president tells Trump it will never 'bend the knee",
+      "headline": "Judge temporarily overturns Trump's White House media ban",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqm2mg34x2v7o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-23T18:15:31+00:00"
+      "published": "2026-09-24T10:29:35+00:00"
     },
     {
       "n": 12,
-      "headline": "Iran's president gives a rare wartime speech at the U.N.",
+      "headline": "Needy couples got cash and a spending plan. Results were good -- and bad",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5978863/iran-president-united-nations-general-assembly",
-      "topic": "Politics",
-      "published": "2026-09-23T18:14:40+00:00"
+      "url": "https://www.npr.org/2026/09/24/g-s1-144544/cash-transfer-poverty-liberia-partner-violence",
+      "topic": "Trending",
+      "published": "2026-09-24T10:43:25+00:00"
     },
     {
       "n": 13,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Berlin Airport briefly suspends flights over drone sighting",
+      "headline": "Pope fever' takes hold as Pope Leo visits France",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/berlin-airport-briefly-suspends-flights-over-drone-sighting/a-79403865?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/pope-fever-takes-hold-as-pope-leo-visits-france/a-79401291?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-23T19:43:00+00:00"
+      "published": "2026-09-24T12:03:00+00:00"
     },
     {
       "n": 16,
@@ -270,15 +270,15 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-09-23T16:53:37+00:00"
+      "published": "2026-09-24T09:28:33+00:00"
     },
     {
       "n": 17,
-      "headline": "A Catholic media star will be beatified in St. Louis, moving a step closer to sainthood",
+      "headline": "The Education Dept. hasn't been dismantled. It's become more inefficient, staff say",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/23/g-s1-144677/a-catholic-media-star-will-be-beatified-in-st-louis-moving-a-step-closer-to-sainthood",
-      "topic": "Celebrity",
-      "published": "2026-09-23T18:09:31+00:00"
+      "url": "https://www.npr.org/2026/09/24/nx-s1-5968605/education-department-dismantling-how-its-going",
+      "topic": "Trending",
+      "published": "2026-09-24T09:00:00+00:00"
     }
   ]
 }
