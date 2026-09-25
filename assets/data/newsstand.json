@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T13:12:16Z",
+  "generated_at": "2026-09-25T19:46:48Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,34 +8,34 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE New York Times Videos Of Alyssa Milano, Rachael Harris, Sean Astin, Falsely Claim They Support 'All Democrats Are Criminals",
+      "claim": "FAKE Story Claims $140 Million Found At Home Of Ukraine's Zhumadilov, Marked 'Servant Of The People' -- Came From FAKE NV Website",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-new-york-times-videos-of-alyssa-milano-rachael-harris-sean-astin-falsely-claim-they-support-all-democrats-are-criminals.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-story-claims-140-million-found-at-home-of-ukraines-zhumadilov-marked-servant-of-the-people-nv-website-originated-it.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Newsom 'forcing' closure of California refineries cause US gas prices to spike?",
+      "claim": "Is Trump adding his name to Ford's Theatre?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/newsom-gas-prices-refineries-close/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/09/24/trump-fords-theatre/",
+      "topic": "Politics"
     },
     {
       "n": 3,
-      "claim": "League of Conservation Voters",
+      "claim": "Republican Ad Attacks Cooper with Misleading Claim About Rape Kits",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/league-of-conservation-voters-5/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/09/republican-ad-attacks-cooper-with-misleading-claim-about-rape-kits/",
+      "topic": "Politics"
     },
     {
       "n": 4,
-      "claim": "As Trump Meets Xi, Experts Say China Targets Weak Spots In Western Tech",
+      "claim": "Dem Governor Moves To Oust Hand-Picked No. 2 Amid Sexual Harassment Allegations",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/24/donald-trump-xi-jinping-china-tech-jason-rathje-thomas-duesterberg",
+      "url": "https://dailycaller.com/2026/09/25/new-jersey-governor-mikie-sherrill-dale-caldwell-resign-sexual-harassment-allegations",
       "topic": "Politics"
     },
     {
@@ -56,42 +56,42 @@
     },
     {
       "n": 7,
-      "claim": "claims resurface that Covid vaccines tripled cancer and miscarriage rates",
+      "claim": "Morrisons isn’t giving away free food boxes to people who comment on Facebook posts",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/covid-vaccine-dod-data-error-repeat/",
-      "topic": "Health"
+      "url": "https://fullfact.org/shopping/morrisons-isnt-giving-away-free-food-boxes-to-people-who-comment-on-facebook-posts/",
+      "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "FAKE New York Times Videos Of Leonardo DiCaprio, Eric Braeden, Other Celebs, Falsely Claim They Support 'All Democrats Are Criminals",
+      "claim": "New York Post Did NOT Publish Article About Jewish Student's Dorm Door Being Targeted By Antisemitic Attack -- Fake News",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-new-york-times-videos-of-leonardo-dicaprio-eric-braeden-other-celebs-falsely-claim-they-support-all-democrats-are-criminals.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-new-york-post-did-not-publish-article-about-jewish-students-dorm-door-being-targeted-by-antisemitic-attack.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Physician euthanized severely disabled 2-year-old in the Netherlands. Here's what we know",
+      "claim": "Did Canada's Mark Carney say he was prepared for US invasion?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/toddler-euthanized-netherlands/",
+      "url": "https://www.snopes.com/fact-check/canada-mark-carney-us-invasion-quote/",
       "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Trump’s Ban of News Organizations Goes Beyond Obama, Biden Actions",
+      "claim": "League of Conservation Voters",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/trumps-ban-of-news-organizations-goes-beyond-obama-biden-actions/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/09/league-of-conservation-voters-5/",
+      "topic": "Trending"
     },
     {
       "n": 11,
-      "claim": "Notorious GOP Consultant Was Hired By Illegal Immigrant Scammer To Help Lighten Sentence, Prosecutors Say",
+      "claim": "EXCLUSIVE: ‘Absolute Hate’ Farm Attack Victim Recounts Experience With Anti-White Ravagers",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/24/gop-consultant-jeff-roe-siddharth-jawahar-illegal-alien-scammer",
+      "url": "https://dailycaller.com/2026/09/25/farm-attack-survivor-south-africa-government-permission-trump-visa",
       "topic": "Trending"
     },
     {
@@ -112,61 +112,61 @@
     },
     {
       "n": 14,
-      "claim": "that migrants intercepted by rescue ships in the Channel automatically get refugee status misunderstands asylum rules",
+      "claim": "Small boat crossings didn’t start after the Brexit referendum",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/migrant-boat-arrivals-asylum-status/",
-      "topic": "World"
+      "url": "https://fullfact.org/immigration/max-wilkinson-brexit-small-boats/",
+      "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "FAKE Breaking News Video Titled 'Sad News: 30 Minutes Ago In Ohio, JD Vance Was Confirmed As...' Is AI-Generated Clickbait",
+      "claim": "FAKE New York Times Videos Of Alyssa Milano, Rachael Harris, Sean Astin, Falsely Claim They Support 'All Democrats Are Criminals",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-breaking-news-video-titled-sad-news-30-minutes-ago-in-ohio-jd-vance-confirmed-as-is-ai-generated.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-new-york-times-videos-of-alyssa-milano-rachael-harris-sean-astin-falsely-claim-they-support-all-democrats-are-criminals.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "8 Harvey Weinstein rumors, fact-checked",
+      "claim": "Did Newsom 'forcing' closure of California refineries cause US gas prices to spike?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/weinstein-rumors-collection/",
+      "url": "https://www.snopes.com/fact-check/newsom-gas-prices-refineries-close/",
       "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "GOP Ads Mislead on Public Option Proposals’ Impact on Rural Hospitals",
-      "verdict": "MISLEADING",
+      "claim": "Trump’s Ban of News Organizations Goes Beyond Obama, Biden Actions",
+      "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/gop-ads-mislead-on-public-option-proposals-impact-on-rural-hospitals/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/09/trumps-ban-of-news-organizations-goes-beyond-obama-biden-actions/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
+      "headline": "Zelensky says Russia has widened attacks to hit Ukraine's data centres",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-25T10:36:55+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-25T18:02:55+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump and Xi strike cordial tone at summit. And, Netanyahu gives defiant UNGA speech",
+      "headline": "Takeaways from the Trump-Xi state visit: Pageantry and pandas",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/25/g-s1-144994/up-first-newsletter-trump-xi-netanyahu-united-nations-mortgage-rates",
+      "url": "https://www.npr.org/2026/09/25/nx-s1-5981265/takeaways-trump-xi-state-visit-pageantry-pandas",
       "topic": "Politics",
-      "published": "2026-09-25T11:18:52+00:00"
+      "published": "2026-09-25T19:11:47+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump administration appeals to Supreme Court as 3rd-country deportations are thrown into question",
+      "headline": "Report finds many security deficiencies at Utah university where Charlie Kirk was killed",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-administration-appeals-to-supreme-court-as-3rd-country-deportations-are-thrown-into-question",
-      "topic": "Politics",
-      "published": "2026-09-25T00:58:15+00:00"
+      "url": "https://www.pbs.org/newshour/nation/report-finds-many-security-deficiencies-at-utah-university-where-charlie-kirk-was-killed",
+      "topic": "Trending",
+      "published": "2026-09-25T19:09:45+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "How Bulgaria become a global leader in battery storage and what this means for the country's grid and energy market?",
+      "headline": "Iranian President Pezeshkian brought a diplomatic tone to New York for UNGA. What did his remarks signal?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/how-bulgaria-become-a-global-leader-in-battery-storage-and-what-this-means-for-the-country-s-grid-and-energy-market/a-79428289?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-09-25T11:38:00+00:00"
+      "url": "https://www.dw.com/en/iranian-president-pezeshkian-brought-a-diplomatic-tone-to-new-york-for-unga-what-did-his-remarks-signal/a-79428890?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-25T18:56:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Xi got Trump's red carpet welcome - but not everything he wanted",
+      "headline": "Special agents' blood and urine test results stolen in FBI hack",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr93e4x7kdjjo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-25T03:57:09+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-25T13:56:16+00:00"
     },
     {
       "n": 7,
-      "headline": "Why this Pokémon set is dropping in value",
+      "headline": "Woman who accused Jay-Z of sexual assault says her claims were false",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/09/25/nx-s1-5980393/why-this-pokemon-set-is-dropping-in-value",
+      "url": "https://www.npr.org/2026/09/25/nx-s1-5981154/jay-z-sexual-assault-accuser-claims-false",
       "topic": "Trending",
-      "published": "2026-09-25T11:00:00+00:00"
+      "published": "2026-09-25T16:14:24+00:00"
     },
     {
       "n": 8,
-      "headline": "Congo faces health worker shortage as Ebola remains out of control, WHO says",
+      "headline": "Hurricane Nolo threatening Hawaii with heavy rain as Polo churns near Mexico",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/congo-faces-health-worker-shortage-as-ebola-remains-out-of-control-who-says",
-      "topic": "Health",
-      "published": "2026-09-25T00:13:56+00:00"
+      "url": "https://www.pbs.org/newshour/nation/hurricane-nolo-threatening-hawaii-with-heavy-rain-as-polo-churns-near-mexico",
+      "topic": "Trending",
+      "published": "2026-09-25T18:41:42+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Iranian President Pezeshkian brought a diplomatic tone to New York for UNGA. What did his remarks signal?",
+      "headline": "Pakistan's Sharif rails against India, praises Trump at UNGA",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iranian-president-pezeshkian-brought-a-diplomatic-tone-to-new-york-for-unga-what-did-his-remarks-signal/a-79428890?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/pakistan-s-sharif-rails-against-india-praises-trump-at-unga/live-79366211?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-09-25T11:37:00+00:00"
+      "published": "2026-09-25T15:26:00+00:00"
     },
     {
       "n": 11,
@@ -230,23 +230,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
       "topic": "Tech / AI",
-      "published": "2026-09-25T12:44:08+00:00"
+      "published": "2026-09-25T15:06:41+00:00"
     },
     {
       "n": 12,
-      "headline": "Netanyahu rages against critics, including Mamdani, at the U.N. General Assembly",
+      "headline": "There's a global pandemic treaty that's signed -- and in 'limbo.' What's the holdup?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/25/nx-s1-5979852/israels-prime-minister-addresses-u-n-general-assembly",
+      "url": "https://www.npr.org/2026/09/25/g-s1-144948/pandemic-prevention-treaty-agreement-world-health-organization",
       "topic": "Trending",
-      "published": "2026-09-25T10:25:03+00:00"
+      "published": "2026-09-25T15:57:35+00:00"
     },
     {
       "n": 13,
-      "headline": "Son of Israel's ambassador to U.S. critically injured in attack in occupied West Bank",
+      "headline": "New Mexico jury finds Facebook liable of deceiving users about privacy protections",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/son-of-israels-ambassador-to-u-s-critically-injured-in-attack-in-occupied-west-bank",
-      "topic": "World",
-      "published": "2026-09-25T00:08:59+00:00"
+      "url": "https://www.pbs.org/newshour/nation/new-mexico-jury-finds-facebook-liable-of-deceiving-users-about-privacy-protections",
+      "topic": "Trending",
+      "published": "2026-09-25T18:28:18+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage?",
+      "headline": "Germany news: Parliament approves fuel tax cut",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/after-xi-trump-summit-us-china-rivalry-remains-frozen-is-this-to-beijing-s-advantage/a-79427127?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-parliament-approves-fuel-tax-cut/live-79424882?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-09-25T11:35:00+00:00"
+      "published": "2026-09-25T15:21:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
+      "headline": "Supreme Court allows Trump to use controversial database to check voter citizenship",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-25T12:34:31+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck05rrj3jeylo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-25T19:13:35+00:00"
     },
     {
       "n": 17,
-      "headline": "Mom! Mom! MOM! 3 ways to stay calm in stressful parenting moments",
+      "headline": "The Supreme Court revives a controversial data system for citizenship checks",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/25/nx-s1-5978936/how-to-manage-mom-rage",
+      "url": "https://www.npr.org/2026/09/25/nx-s1-5976804/supreme-court-trump-save-noncitizen-voting",
       "topic": "Trending",
-      "published": "2026-09-25T09:01:00+00:00"
+      "published": "2026-09-25T15:40:57+00:00"
     }
   ]
 }
