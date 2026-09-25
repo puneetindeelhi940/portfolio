@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T03:08:22Z",
+  "generated_at": "2026-09-25T13:12:16Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Pope Leo XIV and Vance trade blows about compassion?",
+      "claim": "Did Newsom 'forcing' closure of California refineries cause US gas prices to spike?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/pope-leo-vance-compassion/",
+      "url": "https://www.snopes.com/fact-check/newsom-gas-prices-refineries-close/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Unpacking allegations FCC Chair Brendan Carr was in 'sex trafficking cult",
+      "claim": "Physician euthanized severely disabled 2-year-old in the Netherlands. Here's what we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/24/fcc-brendan-carr-sex-cult/",
+      "url": "https://www.snopes.com/fact-check/toddler-euthanized-netherlands/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Denmark play 'Send in the Clowns' when Rubio arrived at Greenland deal ceremony?",
+      "claim": "8 Harvey Weinstein rumors, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/23/denmark-play-send-in-clowns-rubio/",
+      "url": "https://www.snopes.com/collections/weinstein-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+      "headline": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-25T00:44:04+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-25T10:36:55+00:00"
     },
     {
       "n": 2,
-      "headline": "Long agenda, short meeting: Trump and Xi meet",
+      "headline": "Trump and Xi strike cordial tone at summit. And, Netanyahu gives defiant UNGA speech",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/24/nx-s1-5973112/long-agenda-short-meeting-trump-and-xi-meet",
+      "url": "https://www.npr.org/2026/09/25/g-s1-144994/up-first-newsletter-trump-xi-netanyahu-united-nations-mortgage-rates",
       "topic": "Politics",
-      "published": "2026-09-24T22:10:00+00:00"
+      "published": "2026-09-25T11:18:52+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Jürgen Klopp starts Germany job with shaky Netherlands draw",
+      "headline": "How Bulgaria become a global leader in battery storage and what this means for the country's grid and energy market?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/jürgen-klopp-starts-germany-job-with-shaky-netherlands-draw/a-79420143?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-24T22:16:00+00:00"
+      "url": "https://www.dw.com/en/how-bulgaria-become-a-global-leader-in-battery-storage-and-what-this-means-for-the-country-s-grid-and-energy-market/a-79428289?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-09-25T11:38:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Media outlets banned by Trump denied access to White House dinner despite judge's order",
+      "headline": "Xi got Trump's red carpet welcome - but not everything he wanted",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cr93e4x7kdjjo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-25T01:10:35+00:00"
+      "published": "2026-09-25T03:57:09+00:00"
     },
     {
       "n": 7,
-      "headline": "In one of their last votes before November, Senate GOP blocks effort to end Iran war",
+      "headline": "Why this Pokémon set is dropping in value",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/24/nx-s1-5980318/senate-iran-war-powers-vote",
-      "topic": "Politics",
-      "published": "2026-09-24T19:46:53+00:00"
+      "url": "https://www.npr.org/sections/planet-money/2026/09/25/nx-s1-5980393/why-this-pokemon-set-is-dropping-in-value",
+      "topic": "Trending",
+      "published": "2026-09-25T11:00:00+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "UNGA: Gaza dominates agenda as Abbas, Netanyahu speak",
+      "headline": "Iranian President Pezeshkian brought a diplomatic tone to New York for UNGA. What did his remarks signal?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/unga-gaza-dominates-agenda-as-abbas-netanyahu-speak/live-79366211?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-24T19:11:00+00:00"
+      "url": "https://www.dw.com/en/iranian-president-pezeshkian-brought-a-diplomatic-tone-to-new-york-for-unga-what-did-his-remarks-signal/a-79428890?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-25T11:37:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Hundreds of thousands expected in Paris for Pope's visit",
+      "headline": "Pope warns against 'losing humanity' to AI machines",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-24T23:17:00+00:00"
+      "topic": "Tech / AI",
+      "published": "2026-09-25T12:44:08+00:00"
     },
     {
       "n": 12,
-      "headline": "RFK Jr.'s ethics filing reveals book deals worth millions of dollars",
+      "headline": "Netanyahu rages against critics, including Mamdani, at the U.N. General Assembly",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/24/nx-s1-5979867/rfk-ethics-book-deals",
+      "url": "https://www.npr.org/2026/09/25/nx-s1-5979852/israels-prime-minister-addresses-u-n-general-assembly",
       "topic": "Trending",
-      "published": "2026-09-24T17:51:40+00:00"
+      "published": "2026-09-25T10:25:03+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Three-way battle for power in world chess: Who will be elected FIDE president in Samarkand?",
+      "headline": "After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/three-way-battle-for-power-in-world-chess-who-will-be-elected-fide-president-in-samarkand/a-79413301?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/after-xi-trump-summit-us-china-rivalry-remains-frozen-is-this-to-beijing-s-advantage/a-79427127?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-09-24T18:59:00+00:00"
+      "published": "2026-09-25T11:35:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
+      "headline": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-24T18:06:40+00:00"
+      "published": "2026-09-25T12:34:31+00:00"
     },
     {
       "n": 17,
-      "headline": "Mortgage rates have just surpassed 7% for the first time in well over a year",
+      "headline": "Mom! Mom! MOM! 3 ways to stay calm in stressful parenting moments",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/24/nx-s1-5977796/mortgage-rates-freddie-mac-homebuying",
+      "url": "https://www.npr.org/2026/09/25/nx-s1-5978936/how-to-manage-mom-rage",
       "topic": "Trending",
-      "published": "2026-09-24T16:01:44+00:00"
+      "published": "2026-09-25T09:01:00+00:00"
     }
   ]
 }
