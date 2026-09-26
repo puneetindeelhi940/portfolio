@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T12:37:36Z",
+  "generated_at": "2026-09-26T18:56:32Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Is Christopher Nolan directing 'Star Wars' movie about Darth Vader?",
+      "claim": "25 claims about US-Canada relations we've investigated since Trump was reelected",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/christopher-nolan-star-wars-darth-vader/",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/collections/us-canada-trump-collection/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Major Midterm Forecaster Delivers Grim Update For Republicans",
+      "claim": "Classic American Town Hosts Soft Core Smut Drag And Burlesque Show With Kids Present",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/25/major-midterm-forecaster-delivers-grim-update-republicans-gop-trump-iran-war-house-congress-senate",
+      "url": "https://dailycaller.com/2026/09/26/oneonta-new-york-draglesque-festival-minor-children-burlesque",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Netanyahu compared Oct. 7 attack to '16 9/11s",
+      "claim": "The truth behind footage that supposedly shows Italy's PM Meloni wearing Palestinian flag at UN event with Netanyahu",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/netanyahu-oct-7-16-911s/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/palestinian-flag-meloni-netanyahu/",
+      "topic": "World"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "EXCLUSIVE: ‘Absolute Hate’ Farm Attack Victim Recounts Experience With Anti-White Ravagers",
+      "claim": "China’s Chip Industry Is On The Rise",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/25/farm-attack-survivor-south-africa-government-permission-trump-visa",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/26/china-chip-industry-rise-artificial-intelligence-huawei",
+      "topic": "World"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Is photo of Donald and Melania Trump frowning real?",
+      "claim": "Is Christopher Nolan directing 'Star Wars' movie about Darth Vader?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/donald-melania-trump-frowning-photo/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/christopher-nolan-star-wars-darth-vader/",
+      "topic": "Celebrity"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Iran offers US deal to reopen Strait of Hormuz in seven days",
+      "headline": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-26T05:03:09+00:00"
+      "topic": "Politics",
+      "published": "2026-09-26T18:17:12+00:00"
     },
     {
       "n": 2,
-      "headline": "OPINION: Trump's U.N. speech, a stark contrast with past presidents",
+      "headline": "OpenAI says its models engaged with US government websites in misbehavior disclosure",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5974096/essay-09-26-26",
-      "topic": "Politics",
-      "published": "2026-09-26T12:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/26/nx-s1-5981979/openai-us-government-websites-misbehavior",
+      "topic": "Trending",
+      "published": "2026-09-26T17:10:04+00:00"
     },
     {
       "n": 3,
-      "headline": "Hacks by autonomous AI agents raise thorny questions of legal accountability",
+      "headline": "Bodies of 6 people, including 4 Americans, recovered from collapsed building in Athens",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/hacks-by-autonomous-ai-agents-raise-thorny-questions-of-legal-accountability",
-      "topic": "Tech / AI",
-      "published": "2026-09-25T23:02:57+00:00"
+      "url": "https://www.pbs.org/newshour/world/bodies-of-6-people-including-4-americans-recovered-from-collapsed-building-in-athens",
+      "topic": "Trending",
+      "published": "2026-09-26T18:02:00+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Propaganda in Russian schools prepares students to die for their country",
+      "headline": "Backlash over data centers tests Europe's AI ambitions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/propaganda-in-russian-schools-prepares-students-to-die-for-their-country/a-79417294?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-26T11:55:00+00:00"
+      "url": "https://www.dw.com/en/backlash-over-data-centers-tests-europe-s-ai-ambitions/a-79419800?maca=en-rss-en-all-1573-rdf",
+      "topic": "Tech / AI",
+      "published": "2026-09-26T18:08:00+00:00"
     },
     {
       "n": 6,
-      "headline": "OpenAI bots meddled with multiple US government agency sites",
+      "headline": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-26T02:50:56+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-09-26T16:53:32+00:00"
     },
     {
       "n": 7,
-      "headline": "Meth is a key driver in Fiji's fast-growing HIV epidemic: 1 in 60 adults are affected",
+      "headline": "OPINION: Trump's U.N. speech, a stark contrast with past presidents",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/g-s1-144667/hiv-crystal-meth-epidemic-fiji",
-      "topic": "Trending",
-      "published": "2026-09-26T11:31:18+00:00"
+      "url": "https://www.npr.org/2026/09/26/nx-s1-5974096/essay-09-26-26",
+      "topic": "Politics",
+      "published": "2026-09-26T12:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "What the Supreme Court's voter-citizenship database decision means for the midterms",
+      "headline": "China and U.S. agree to establish AI safety channel and continue trade and military talks",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-the-supreme-courts-voter-citizenship-database-decision-means-for-the-midterms",
-      "topic": "Trending",
-      "published": "2026-09-25T22:55:46+00:00"
+      "url": "https://www.pbs.org/newshour/world/china-and-u-s-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks",
+      "topic": "World",
+      "published": "2026-09-26T17:53:24+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Paris: Pope Leo XIV to celebrate Mass before huge crowd",
+      "headline": "China, US agree to set up channel for AI safety incidents",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/paris-pope-leo-xiv-to-celebrate-mass-before-huge-crowd/a-79442864?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-26T11:51:00+00:00"
+      "url": "https://www.dw.com/en/china-us-agree-to-set-up-channel-for-ai-safety-incidents/a-79443351?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-26T16:26:00+00:00"
     },
     {
       "n": 11,
-      "headline": "At least two dead after explosion destroys building close to Acropolis in Athens",
+      "headline": "British national among six dead in building explosion close to Acropolis in Athens",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6p3kk78l4l1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-26T10:18:51+00:00"
+      "published": "2026-09-26T12:47:25+00:00"
     },
     {
       "n": 12,
-      "headline": "The AI safety debate is confusing. Here's our guide to the different factions",
+      "headline": "Powerful nor'easter brings winds, floods to East Coast",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5979085/the-ai-safety-debate-is-confusing-heres-our-guide-to-the-different-factions",
-      "topic": "Tech / AI",
-      "published": "2026-09-26T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/26/nx-s1-5981392/noreaster-pounds-mid-atlantic-new-england-coastlines-hurricane-nolo-targets-hawaii",
+      "topic": "Trending",
+      "published": "2026-09-26T11:38:00+00:00"
     },
     {
       "n": 13,
-      "headline": "News Wrap: Xi wraps up 3-day state visit with Trump",
+      "headline": "Trump administration uses rare authority to claw back nearly $1B in spending approved by Congress",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-xi-wraps-up-3-day-state-visit-with-trump",
+      "url": "https://www.pbs.org/newshour/politics/trump-administration-uses-rare-authority-to-claw-back-nearly-1b-in-spending-approved-by-congress",
       "topic": "Politics",
-      "published": "2026-09-25T22:45:24+00:00"
+      "published": "2026-09-26T17:20:24+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "A HRW report shows how South Korean women face systemic barriers to climbing the career ladder",
+      "headline": "Trump rejects Iran proposal to reopen Strait of Hormuz",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/a-hrw-report-shows-how-south-korean-women-face-systemic-barriers-to-climbing-the-career-ladder/a-79431285?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-26T10:44:00+00:00"
+      "url": "https://www.dw.com/en/trump-rejects-iran-proposal-to-reopen-strait-of-hormuz/a-79444893?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-26T16:16:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Bangkok roads submerged as flood disaster declared",
+      "headline": "Security lapses at Utah campus where Charlie Kirk was killed, review says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wxx8n2x3zo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cq4g55r76d9lo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-26T07:21:30+00:00"
+      "published": "2026-09-26T15:12:25+00:00"
     },
     {
       "n": 17,
-      "headline": "Meal deliveries can save money and improve health. Will they survive Medicaid cuts?",
+      "headline": "Why this island paradise has the world's fastest-growing HIV epidemic",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5946434/medically-tailored-meal-deliveries-medicaid-cuts",
-      "topic": "Health",
-      "published": "2026-09-26T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/26/g-s1-144667/hiv-crystal-meth-epidemic-fiji",
+      "topic": "Trending",
+      "published": "2026-09-26T11:31:18+00:00"
     }
   ]
 }
