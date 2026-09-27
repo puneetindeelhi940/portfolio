@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T03:19:44Z",
+  "generated_at": "2026-09-27T13:29:14Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "Churches vandalised, prayers disrupted, pastors beaten up: Christian groups in Bengal face Hindutva outfits’ ire",
+      "claim": "BJP’s poll spending: Actor involved in Kolkata beef row admits to taking money, but claims it was not for the pub incident",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/churches-vandalised-prayers-disrupted-pastors-beaten-up-christian-groups-in-bengal-face-hindutva-outfits-ire/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/bjps-poll-spending-actor-involved-in-kolkata-beef-row-admits-to-taking-money-but-claims-it-was-not-for-the-pub-incident/",
+      "topic": "Celebrity"
     },
     {
       "n": 7,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "‘Bring your sisters & daughters, our boys are also ready’: BJP MLA’s remark on Muslims attending Garba sparks row",
+      "claim": "Churches vandalised, prayers disrupted, pastors beaten up: Christian groups in Bengal face Hindutva outfits’ ire",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bring-your-sisters-daughters-our-boys-are-also-ready-bjp-mlas-remark-on-muslims-attending-garba-sparks-row/",
+      "url": "https://www.altnews.in/churches-vandalised-prayers-disrupted-pastors-beaten-up-christian-groups-in-bengal-face-hindutva-outfits-ire/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
+      "headline": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmvgyyw2jeego?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-09-26T22:15:59+00:00"
+      "published": "2026-09-27T07:44:11+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump gave Xi Jinping a warm welcome. What did the talks accomplish?",
+      "headline": "South Africa reels from spate of mass shootings that killed 38 people in a week",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5980066/trump-gave-xi-jinping-a-warm-welcome-what-did-the-talks-accomplish",
-      "topic": "Politics",
-      "published": "2026-09-26T21:13:54+00:00"
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week",
+      "topic": "Trending",
+      "published": "2026-09-27T13:01:27+00:00"
     },
     {
       "n": 3,
@@ -170,39 +170,39 @@
     },
     {
       "n": 4,
-      "headline": "Rebel offensive against Ethiopian army stokes fears of return to civil war",
+      "headline": "‘It’s hard to sell a house when it’s covered in baboon faeces’: Cape Town divided over plan to remove its monkeys",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/24/fears-return-to-war-tigray-rebels-launch-offensive-against-ethiopian-army",
-      "topic": "World",
-      "published": "2026-09-24T15:29:42+00:00"
+      "url": "https://www.theguardian.com/environment/2026/sep/27/baboons-cape-town-divided-over-plan-to-remove-its-monkeys-aoe",
+      "topic": "Trending",
+      "published": "2026-09-27T11:00:03+00:00"
     },
     {
       "n": 5,
-      "headline": "Spain: Thousands protest in Madrid against housing crisis",
+      "headline": "UK: 5 arrested after 'major incident' near Fairford air base",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/spain-thousands-protest-in-madrid-against-housing-crisis/a-79446662?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/uk-5-arrested-after-major-incident-near-fairford-air-base/a-79447992?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-27T01:53:00+00:00"
+      "published": "2026-09-27T13:16:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
+      "headline": "Scourge' of abuse must be rooted out, says Pope, during Lourdes visit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-09-26T19:48:06+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-27T11:38:03+00:00"
     },
     {
       "n": 7,
-      "headline": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable",
+      "headline": "Playing 'La Bamba' for an hour? Must be a Mexican fandango!",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5981990/trump-rejects-iranian-deal-strait-of-hormuz",
-      "topic": "Politics",
-      "published": "2026-09-26T20:08:28+00:00"
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5973237/la-bamba-mexico-fandango",
+      "topic": "Trending",
+      "published": "2026-09-27T12:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "Hurricane Nolo expected to unleash powerful winds and flash flooding on Hawaii",
+      "headline": "Hurricane Nolo skirts Hawaii but could still unleash powerful winds and flash flooding",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/nation/hurricane-nolo-expected-to-unleash-powerful-winds-and-flash-flooding-on-hawaii",
       "topic": "Trending",
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "Indian billionaire’s payments firm plots biggest London flotation in years",
+      "headline": "At least 27 dead after two mass shootings in South Africa, police say",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/business/2026/sep/23/indian-billionaire-payments-firm-london-flotation-airtel-money",
+      "url": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town",
       "topic": "Trending",
-      "published": "2026-09-23T11:08:01+00:00"
+      "published": "2026-09-27T08:19:24+00:00"
     },
     {
       "n": 10,
-      "headline": "Germany news: EU ministers meet for migration showdown",
+      "headline": "Switzerland: Voters reject stricter view of neutrality",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-eu-ministers-meet-for-migration-showdown/live-79441034?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/switzerland-voters-reject-stricter-view-of-neutrality/a-79446996?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-26T19:09:00+00:00"
+      "published": "2026-09-27T11:59:00+00:00"
     },
     {
       "n": 11,
-      "headline": "British national among six dead in building explosion close to Acropolis in Athens",
+      "headline": "Two mass shootings in South Africa leave 27 dead",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6p3kk78l4l1o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-26T12:47:25+00:00"
+      "published": "2026-09-27T10:00:36+00:00"
     },
     {
       "n": 12,
-      "headline": "OpenAI says its models engaged with US government websites in misbehavior disclosure",
+      "headline": "Photos: These shepherds climb down a mountain to go to night school",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5981979/openai-us-government-websites-misbehavior",
+      "url": "https://www.npr.org/2026/09/27/g-s1-143582/night-school-shepherds-lesotho",
       "topic": "Trending",
-      "published": "2026-09-26T17:10:04+00:00"
+      "published": "2026-09-27T11:53:42+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "Top South African police officer charged with raping woman, 18, and grooming 16-year-old girl",
+      "headline": "Rebel offensive against Ethiopian army stokes fears of return to civil war",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/23/south-africa-top-police-officer-shadrack-sibiya-charged-rape-grooming",
-      "topic": "Trending",
-      "published": "2026-09-23T09:38:06+00:00"
+      "url": "https://www.theguardian.com/world/2026/sep/24/fears-return-to-war-tigray-rebels-launch-offensive-against-ethiopian-army",
+      "topic": "World",
+      "published": "2026-09-24T15:29:42+00:00"
     },
     {
       "n": 15,
-      "headline": "Backlash over data centers tests Europe's AI ambitions",
+      "headline": "Pope decries 'scourge' of sexual abuse during France visit",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/backlash-over-data-centers-tests-europe-s-ai-ambitions/a-79419800?maca=en-rss-en-all-1573-rdf",
-      "topic": "Tech / AI",
-      "published": "2026-09-26T18:08:00+00:00"
+      "url": "https://www.dw.com/en/pope-decries-scourge-of-sexual-abuse-during-france-visit/a-79449335?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-27T11:51:00+00:00"
     },
     {
       "n": 16,
-      "headline": "German town bans 'stumbling stone' memorials to Nazi victims",
+      "headline": "Killer Christa Pike is to be executed within days but her defence say she's a victim too",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqm2mm4y5dkko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-26T15:48:51+00:00"
+      "published": "2026-09-26T23:04:08+00:00"
     },
     {
       "n": 17,
-      "headline": "OPINION: Trump's U.N. speech, a stark contrast with past presidents",
+      "headline": "From professor to patient: One man's journey on the frontier of lung cancer treatment",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5974096/essay-09-26-26",
-      "topic": "Politics",
-      "published": "2026-09-26T12:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5981264/lung-cancer-treatment-mrna-affordability",
+      "topic": "Health",
+      "published": "2026-09-27T11:00:00+00:00"
     }
   ]
 }
