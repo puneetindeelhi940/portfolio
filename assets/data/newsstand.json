@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T13:29:14Z",
+  "generated_at": "2026-09-27T19:28:34Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Screenshot Swaps Photo Of Real CNN Article 'Cuckolding Can Be Positive For Some Couples",
+      "claim": "AI-Enhanced Picture of Fairford Suspects NOT An Original Photograph -- Based On Blurry Viral Photo",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photo-used-real-cnn-article-cuckolding-positive-some-couples.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-ai-enhanced-picture-of-fairford-suspects-not-original-photograph.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "14 rumors we've investigated about US-China relations",
+      "claim": "10 rumors involving the Secret Service we've unraveled",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/us-china-relationship-claims/",
-      "topic": "World"
+      "url": "https://www.snopes.com/collections/secret-service-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "Evidence Real Photo Shows Zelenskyy Wearing Platform Shoes At European Council Event",
-      "verdict": "UNPROVEN",
+      "claim": "FAKE Screenshot Swaps Photo Of Real CNN Article 'Cuckolding Can Be Positive For Some Couples",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-real-photo-shows-zelenskyy-wearing-platform-shoes.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photo-used-real-cnn-article-cuckolding-positive-some-couples.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "25 claims about US-Canada relations we've investigated since Trump was reelected",
+      "claim": "14 rumors we've investigated about US-China relations",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/us-canada-trump-collection/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/us-china-relationship-claims/",
+      "topic": "World"
     },
     {
       "n": 10,
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Photo Of Trump State Dinner With Xi, Elon Musk, Jeff Bezos At The Head Table Is Al-Generated",
-      "verdict": "FALSE",
+      "claim": "Evidence Real Photo Shows Zelenskyy Wearing Platform Shoes At European Council Event",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photo-trump-state-dinner-xi-elon-musk-jeff-bezos-head-table-ai-generated.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-real-photo-shows-zelenskyy-wearing-platform-shoes.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "The truth behind footage that supposedly shows Italy's PM Meloni wearing Palestinian flag at UN event with Netanyahu",
+      "claim": "25 claims about US-Canada relations we've investigated since Trump was reelected",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/palestinian-flag-meloni-netanyahu/",
-      "topic": "World"
+      "url": "https://www.snopes.com/collections/us-canada-trump-collection/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -162,14 +162,54 @@
     },
     {
       "n": 3,
-      "headline": "House Democrats plan vast oversight of Trump administration. Impeachment is an option",
+      "headline": "Hurricane Nolo gains speed as it moves away from Hawaii, but high winds, flash floods are still risk",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/house-democrats-plan-vast-oversight-of-trump-administration-impeachment-is-an-option",
-      "topic": "Politics",
-      "published": "2026-09-26T21:53:39+00:00"
+      "url": "https://www.pbs.org/newshour/nation/hurricane-nolo-gains-speed-as-it-moves-away-from-hawaii-but-high-winds-flash-floods-are-still-risk",
+      "topic": "Trending",
+      "published": "2026-09-27T18:07:43+00:00"
     },
     {
       "n": 4,
+      "headline": "At least 27 dead after two mass shootings in South Africa, police say",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town",
+      "topic": "Trending",
+      "published": "2026-09-27T13:46:49+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Yemen: Houthis report deadly Saudi strikes on Taiz market",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/yemen-houthis-report-deadly-saudi-strikes-on-taiz-market/a-79450102?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-09-27T17:51:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Two mass shootings in South Africa leave 27 dead",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-27T14:09:22+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Trump wants to remove a question about race in the census. We look back at the history",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5966883/trump-wants-to-remove-a-question-about-race-in-the-census-we-look-back-at-the-history",
+      "topic": "Politics",
+      "published": "2026-09-27T12:17:31+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Supreme Court vote shadows Maine Sen. Susan Collins in her first race after abortion rights decision",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/supreme-court-vote-shadows-maine-sen-susan-collins-in-her-first-race-after-abortion-rights-decision",
+      "topic": "Politics",
+      "published": "2026-09-27T17:38:17+00:00"
+    },
+    {
+      "n": 9,
       "headline": "‘It’s hard to sell a house when it’s covered in baboon faeces’: Cape Town divided over plan to remove its monkeys",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/environment/2026/sep/27/baboons-cape-town-divided-over-plan-to-remove-its-monkeys-aoe",
@@ -177,76 +217,36 @@
       "published": "2026-09-27T11:00:03+00:00"
     },
     {
-      "n": 5,
-      "headline": "UK: 5 arrested after 'major incident' near Fairford air base",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uk-5-arrested-after-major-incident-near-fairford-air-base/a-79447992?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-27T13:16:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Scourge' of abuse must be rooted out, says Pope, during Lourdes visit",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-27T11:38:03+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Playing 'La Bamba' for an hour? Must be a Mexican fandango!",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/27/nx-s1-5973237/la-bamba-mexico-fandango",
-      "topic": "Trending",
-      "published": "2026-09-27T12:00:00+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Hurricane Nolo skirts Hawaii but could still unleash powerful winds and flash flooding",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/hurricane-nolo-expected-to-unleash-powerful-winds-and-flash-flooding-on-hawaii",
-      "topic": "Trending",
-      "published": "2026-09-26T21:36:55+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "At least 27 dead after two mass shootings in South Africa, police say",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town",
-      "topic": "Trending",
-      "published": "2026-09-27T08:19:24+00:00"
-    },
-    {
       "n": 10,
-      "headline": "Switzerland: Voters reject stricter view of neutrality",
+      "headline": "Avalanche in Nepal leaves 2 dead, several missing",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/switzerland-voters-reject-stricter-view-of-neutrality/a-79446996?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/avalanche-in-nepal-leaves-2-dead-several-missing/a-79450101?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-27T11:59:00+00:00"
+      "published": "2026-09-27T17:47:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Two mass shootings in South Africa leave 27 dead",
+      "headline": "Killer Christa Pike to be executed within days - but her defence say she's a victim too",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-27T10:00:36+00:00"
+      "published": "2026-09-26T23:04:08+00:00"
     },
     {
       "n": 12,
-      "headline": "Photos: These shepherds climb down a mountain to go to night school",
+      "headline": "As Congress debates college sports, athletes-turned-senators have a seat at the table",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/27/g-s1-143582/night-school-shepherds-lesotho",
-      "topic": "Trending",
-      "published": "2026-09-27T11:53:42+00:00"
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5978973/protect-college-sports-act-senators-athletes",
+      "topic": "Politics",
+      "published": "2026-09-27T12:06:24+00:00"
     },
     {
       "n": 13,
-      "headline": "Kennedy Center put off planned repairs despite known structural issues, former employees allege",
+      "headline": "UN speakers' go-to quotes: Ancient texts, modern greats and a little Talking Heads",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/kennedy-center-put-off-planned-repairs-despite-known-structural-issues-former-employees-allege",
-      "topic": "Trending",
-      "published": "2026-09-26T20:43:07+00:00"
+      "url": "https://www.pbs.org/newshour/world/un-speakers-go-to-quotes-ancient-texts-modern-greats-and-a-little-talking-heads",
+      "topic": "World",
+      "published": "2026-09-27T17:19:56+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Pope decries 'scourge' of sexual abuse during France visit",
+      "headline": "UK: 5 arrested after 'major incident' near Fairford air base",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pope-decries-scourge-of-sexual-abuse-during-france-visit/a-79449335?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/uk-5-arrested-after-major-incident-near-fairford-air-base/a-79447992?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-27T11:51:00+00:00"
+      "published": "2026-09-27T17:45:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Killer Christa Pike is to be executed within days but her defence say she's a victim too",
+      "headline": "Two bodies found after avalanche hits Himalayan climbing group",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-26T23:04:08+00:00"
+      "published": "2026-09-27T17:05:26+00:00"
     },
     {
       "n": 17,
-      "headline": "From professor to patient: One man's journey on the frontier of lung cancer treatment",
+      "headline": "Ohio governor's race: Ramaswamy and Acton clash in rare Democratic pickup opportunity",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/27/nx-s1-5981264/lung-cancer-treatment-mrna-affordability",
-      "topic": "Health",
-      "published": "2026-09-27T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5976743/ohio-governors-race-ramaswamy-and-acton-clash-in-rare-democratic-pickup-opportunity",
+      "topic": "Politics",
+      "published": "2026-09-27T12:06:23+00:00"
     }
   ]
 }
