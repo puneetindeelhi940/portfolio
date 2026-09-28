@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T03:17:01Z",
+  "generated_at": "2026-09-28T16:23:29Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,7 +8,7 @@
   "popular": [
     {
       "n": 1,
-      "claim": "AI-Enhanced Picture of Fairford Suspects NOT An Original Photograph -- Based On Blurry Viral Photo",
+      "claim": "AI-Enhanced Picture Of RAF Fairford Suspects Is NOT An Original Photograph -- Based On Blurry Viral Photo",
       "verdict": "FALSE",
       "source": "Lead Stories",
       "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-ai-enhanced-picture-of-fairford-suspects-not-original-photograph.html",
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Benjamin Netanyahu: 16 claims we've fact-checked",
+      "claim": "21 rumors involving the United Nations we've examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/benjamin-netanyahu-collection/",
+      "url": "https://www.snopes.com/collections/un-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Classic American Town Hosts Soft Core Smut Drag And Burlesque Show With Kids Present",
+      "claim": "Kash Patel’s Right-Hand Man Leaves FBI",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/26/oneonta-new-york-draglesque-festival-minor-children-burlesque",
+      "url": "https://dailycaller.com/2026/09/28/andrew-bailey-leaves-fbi-kash-patel-dan-bongino",
       "topic": "Trending"
     },
     {
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "BJP’s poll spending: Actor involved in Kolkata beef row admits to taking money, but claims it was not for the pub incident",
+      "claim": "Gwalior mobile snatcher falsely portrayed as ‘Muslim man posing as Hindu’ in viral posts",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bjps-poll-spending-actor-involved-in-kolkata-beef-row-admits-to-taking-money-but-claims-it-was-not-for-the-pub-incident/",
-      "topic": "Celebrity"
+      "url": "https://www.altnews.in/gwalior-mobile-snatcher-falsely-portrayed-as-muslim-man-posing-as-hindu-in-viral-posts/",
+      "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Morrisons isn’t giving away free food boxes to people who comment on Facebook posts",
+      "claim": "Japan has not introduced 'anti-Islam' laws",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/morrisons-isnt-giving-away-free-food-boxes-to-people-who-comment-on-facebook-posts/",
+      "url": "https://fullfact.org/world/Japan-anti-Islam-laws-false/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "10 rumors involving the Secret Service we've unraveled",
+      "claim": "Netanyahu compared Oct. 7 attack to '16 9/11s",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/secret-service-rumors/",
+      "url": "https://www.snopes.com/fact-check/netanyahu-oct-7-16-911s/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Pope Leo Takes On Assisted Death, Secularism, Education In Blunt Message To French Establishment",
+      "claim": "Classic American Town Hosts Soft Core Smut Drag And Burlesque Show With Kids Present",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/26/pope-leo-takes-on-assisted-dying-defends-catholic-schools-in-blunt-message-to-french-establishment",
+      "url": "https://dailycaller.com/2026/09/26/oneonta-new-york-draglesque-festival-minor-children-burlesque",
       "topic": "Trending"
     },
     {
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Churches vandalised, prayers disrupted, pastors beaten up: Christian groups in Bengal face Hindutva outfits’ ire",
+      "claim": "‘Pushed into no man’s land, waded through mud’: How Sahida Fakir was ‘deported’ to Bangladesh at midnight",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/churches-vandalised-prayers-disrupted-pastors-beaten-up-christian-groups-in-bengal-face-hindutva-outfits-ire/",
+      "url": "https://www.altnews.in/pushed-into-no-mans-land-waded-through-mud-how-sahida-fakir-was-deported-to-bangladesh-at-midnight/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Small boat crossings didn’t start after the Brexit referendum",
+      "claim": "Facebook posts wrong to claim former Makerfield MP is new head of No 10 policy unit",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/max-wilkinson-brexit-small-boats/",
+      "url": "https://fullfact.org/politics/claims-josh-simons-head-no-10-policy-unit-false/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "14 rumors we've investigated about US-China relations",
+      "claim": "9 times we've debunked fake Trump quotes",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/us-china-relationship-claims/",
-      "topic": "World"
+      "url": "https://www.snopes.com/collections/fake-trump-quotes/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -154,22 +154,62 @@
     },
     {
       "n": 2,
-      "headline": "Nantucket shipwreck uncovered by Nor'easter",
+      "headline": "The Trump administration weakens fuel efficiency standards for new cars",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/27/nx-s1-5982785/nantucket-shipwreck-uncovered-by-noreaster",
-      "topic": "Trending",
-      "published": "2026-09-28T00:30:26+00:00"
+      "url": "https://www.npr.org/2026/09/28/nx-s1-5918509/car-fuel-efficiency-cafe-standards-rollback",
+      "topic": "Politics",
+      "published": "2026-09-28T16:07:15+00:00"
     },
     {
       "n": 3,
-      "headline": "Civil rights enforcement cuts mean fewer staff, closed offices, longer waits for students with disabilities",
+      "headline": "Trump administration uses taxpayer money to air 2024 Trump campaign ad",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/education/civil-rights-enforcement-cuts-mean-fewer-staff-closed-offices-longer-waits-for-students-with-disabilities",
-      "topic": "Trending",
-      "published": "2026-09-27T21:47:33+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-administration-uses-taxpayer-money-to-air-2024-trump-campaign-ad",
+      "topic": "Politics",
+      "published": "2026-09-28T15:44:08+00:00"
     },
     {
       "n": 4,
+      "headline": "DRC politician beaten to death after radio appearance about Ebola outbreak",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/sep/28/drc-politician-beaten-death-radio-appearance-ebola",
+      "topic": "Trending",
+      "published": "2026-09-28T15:54:25+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Sicily: Mount Etna ash disrupts Catania flights again",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/sicily-mount-etna-ash-disrupts-catania-flights-again/a-79462773?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-28T15:13:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Trump-Xi summit: What wasn't said might matter the most",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-28T07:52:23+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "SpaceX's Starship launches on first orbital mission from Texas",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/28/nx-s1-5983418/spacex-starship-first-orbital-flight-14-nasa",
+      "topic": "Trending",
+      "published": "2026-09-28T13:15:29+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "UK police say 5 men arrested near a U.S.-run air base will be released on bail",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/uk-police-say-5-men-arrested-near-a-u-s-run-air-base-will-be-released-on-bail",
+      "topic": "Trending",
+      "published": "2026-09-28T15:07:19+00:00"
+    },
+    {
+      "n": 9,
       "headline": "At least 27 dead after two mass shootings in South Africa, police say",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town",
@@ -177,39 +217,39 @@
       "published": "2026-09-27T13:46:49+00:00"
     },
     {
-      "n": 5,
-      "headline": "Ukraine, South Korea relations sour over North Korean POWs",
+      "n": 10,
+      "headline": "SpaceX launches supersized Starship into orbit",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-south-korea-relations-sour-over-north-korean-pows/a-79451515?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/spacex-launches-supersized-starship-into-orbit/a-79462696?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-28T02:32:00+00:00"
+      "published": "2026-09-28T15:00:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Embattled Serbian president resigns, paving way for early elections",
+      "n": 11,
+      "headline": "Mexico's Pacific coast braces for Hurricane Polo",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-27T20:04:21+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Scientists discover two new species of sea spiders along Canadian coastline",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/27/nx-s1-5982026/new-sea-spider-species",
+      "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-27T22:31:16+00:00"
+      "published": "2026-09-28T11:05:49+00:00"
     },
     {
-      "n": 8,
-      "headline": "2 giant pandas arrive in Atlanta under a U.S.-China government agreement",
+      "n": 12,
+      "headline": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
+      "topic": "Trending",
+      "published": "2026-09-28T12:15:05+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Trump administration lowers fuel economy standards, critics say at a significant environmental cost",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/2-giant-pandas-arrive-in-atlanta-under-a-u-s-china-government-agreement",
-      "topic": "World",
-      "published": "2026-09-27T20:52:51+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-administration-lowers-fuel-economy-standards-critics-say-at-a-significant-environmental-cost",
+      "topic": "Politics",
+      "published": "2026-09-28T14:53:26+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "‘It’s hard to sell a house when it’s covered in baboon faeces’: Cape Town divided over plan to remove its monkeys",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/environment/2026/sep/27/baboons-cape-town-divided-over-plan-to-remove-its-monkeys-aoe",
@@ -217,68 +257,28 @@
       "published": "2026-09-27T11:00:03+00:00"
     },
     {
-      "n": 10,
-      "headline": "Israel strips Dutch diplomats of status in West Bank",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/israel-strips-dutch-diplomats-of-status-in-west-bank/a-79451271?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-28T00:00:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Two bodies found after avalanche hits Himalayan climbing group",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-27T17:05:26+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "South Africa reels from spate of mass shootings that killed 38 people in a week",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week",
-      "topic": "Trending",
-      "published": "2026-09-27T13:01:27+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "British PM Andy Burnham brings good vibes to his party's annual conference, but tough choices are coming",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/british-pm-andy-burnham-brings-good-vibes-to-his-partys-annual-conference-but-tough-choices-are-coming",
-      "topic": "Trending",
-      "published": "2026-09-27T20:40:45+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Rebel offensive against Ethiopian army stokes fears of return to civil war",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/sep/24/fears-return-to-war-tigray-rebels-launch-offensive-against-ethiopian-army",
-      "topic": "World",
-      "published": "2026-09-24T15:29:42+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Serbian President Aleksandar Vucic announces resignation",
+      "headline": "Turkey: Comedian convicted for 'insulting' Erdogan in show",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/serbian-president-aleksandar-vucic-announces-resignation/a-79450358?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-09-27T19:32:00+00:00"
+      "url": "https://www.dw.com/en/turkey-comedian-convicted-for-insulting-erdogan-in-show/a-79455759?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-28T14:51:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Two mass shootings in South Africa leave 27 dead",
+      "headline": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-27T14:09:22+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c8ly40xx0dr0o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-28T14:57:31+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump wants to remove a question about race in the census. We look back at the history",
+      "headline": "Trump aims to leave a physical legacy in D.C., bulldozing norms along the way",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/27/nx-s1-5966883/trump-wants-to-remove-a-question-about-race-in-the-census-we-look-back-at-the-history",
+      "url": "https://www.npr.org/2026/09/28/nx-s1-5930441/trump-construction-projects-legacy",
       "topic": "Politics",
-      "published": "2026-09-27T12:17:31+00:00"
+      "published": "2026-09-28T11:41:48+00:00"
     }
   ]
 }
