@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T16:23:29Z",
+  "generated_at": "2026-09-29T03:54:27Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "AI-Enhanced Picture Of RAF Fairford Suspects Is NOT An Original Photograph -- Based On Blurry Viral Photo",
+      "claim": "FAKE AI-Generated Video Shows Giorgia Meloni Wearing Palestinian Flag As Cape At UN",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-ai-enhanced-picture-of-fairford-suspects-not-original-photograph.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-shows-giorgia-meloni-wearing-palestinian-flag-as-cape-at-un.html",
+      "topic": "World"
     },
     {
       "n": 2,
-      "claim": "21 rumors involving the United Nations we've examined",
+      "claim": "Cornell 7' gang rape lawsuit: What we know about the allegations so far",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/un-rumors-collection/",
+      "url": "https://www.snopes.com/news/2026/09/28/cornell-7-gang-rape-lawsuit/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Kash Patel’s Right-Hand Man Leaves FBI",
+      "claim": "Senate Passes College Sports Bill As It Punts On Tackling AI, National Debt And Flock Before Midterms",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/28/andrew-bailey-leaves-fbi-kash-patel-dan-bongino",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/28/protect-college-sports-act-passes-senate-national-debt-rising-costs",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Screenshot Swaps Photo Of Real CNN Article 'Cuckolding Can Be Positive For Some Couples",
+      "claim": "Japan Did NOT Ban Israeli Tourists",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photo-used-real-cnn-article-cuckolding-positive-some-couples.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-japan-did-not-ban-israeli-tourists.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Netanyahu compared Oct. 7 attack to '16 9/11s",
+      "claim": "Bogus story claims Liz Cheney is getting divorced due to affair with Jamie Raskin",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/netanyahu-oct-7-16-911s/",
+      "url": "https://www.snopes.com/fact-check/liz-cheney-divorce-raskin-affair/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Classic American Town Hosts Soft Core Smut Drag And Burlesque Show With Kids Present",
+      "claim": "Trump Throws His China Ambassador Under The Bus, Denies Weapons Offer To Xi Jinping",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/26/oneonta-new-york-draglesque-festival-minor-children-burlesque",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/28/trump-xi-jinping-china-us-weapons-sales-david-perdue",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "Evidence Real Photo Shows Zelenskyy Wearing Platform Shoes At European Council Event",
-      "verdict": "UNPROVEN",
+      "claim": "FAKE Photo Shows Trump, Xi, Musk, Altman, Bezos And Others Toasting At Black-Tie Event",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-real-photo-shows-zelenskyy-wearing-platform-shoes.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-photo-shows-trump-xi-musk-altman-bezos-and-others-toasting-at-black-tie-event.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "9 times we've debunked fake Trump quotes",
+      "claim": "Did ICE detain Trump voter's Indian wife, as purported post claimed?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/fake-trump-quotes/",
+      "url": "https://www.snopes.com/news/2026/09/28/ice-detained-indian-wife/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Inside Yemen's front-line city as Houthis battle for control",
+      "headline": "OpenAI scraps rollout of new model over safety concerns",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-27T21:16:31+00:00"
+      "published": "2026-09-29T02:29:25+00:00"
     },
     {
       "n": 2,
-      "headline": "The Trump administration weakens fuel efficiency standards for new cars",
+      "headline": "The Senate passes the Protect College Sports Act, but the bill's future is unclear",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/28/nx-s1-5918509/car-fuel-efficiency-cafe-standards-rollback",
+      "url": "https://www.npr.org/2026/09/28/nx-s1-5977851/protect-college-sports-act-senate-bill-vote",
       "topic": "Politics",
-      "published": "2026-09-28T16:07:15+00:00"
+      "published": "2026-09-29T02:16:19+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump administration uses taxpayer money to air 2024 Trump campaign ad",
+      "headline": "What Trump's rollback of fuel economy standards means for drivers",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-administration-uses-taxpayer-money-to-air-2024-trump-campaign-ad",
+      "url": "https://www.pbs.org/newshour/show/what-trumps-rollback-of-fuel-economy-standards-means-for-drivers",
       "topic": "Politics",
-      "published": "2026-09-28T15:44:08+00:00"
+      "published": "2026-09-28T22:55:54+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Sicily: Mount Etna ash disrupts Catania flights again",
+      "headline": "OpenAI shelves new AI model amid safety concerns",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/sicily-mount-etna-ash-disrupts-catania-flights-again/a-79462773?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-28T15:13:00+00:00"
+      "url": "https://www.dw.com/en/openai-shelves-new-ai-model-amid-safety-concerns/a-79467841?maca=en-rss-en-all-1573-rdf",
+      "topic": "Tech / AI",
+      "published": "2026-09-29T03:50:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Trump-Xi summit: What wasn't said might matter the most",
+      "headline": "Inside Yemen's front-line city as Houthis battle for control",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-09-28T07:52:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-27T21:16:31+00:00"
     },
     {
       "n": 7,
-      "headline": "SpaceX's Starship launches on first orbital mission from Texas",
+      "headline": "Prosecutors are reopening a Cornell fraternity rape case. Here's what we know",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/28/nx-s1-5983418/spacex-starship-first-orbital-flight-14-nasa",
+      "url": "https://www.npr.org/2026/09/28/nx-s1-5983480/cornell-fraternity-rape-chi-phi-case-updates",
       "topic": "Trending",
-      "published": "2026-09-28T13:15:29+00:00"
+      "published": "2026-09-28T17:14:25+00:00"
     },
     {
       "n": 8,
-      "headline": "UK police say 5 men arrested near a U.S.-run air base will be released on bail",
+      "headline": "Powerful nor'easter batters parts of East Coast",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/uk-police-say-5-men-arrested-near-a-u-s-run-air-base-will-be-released-on-bail",
+      "url": "https://www.pbs.org/newshour/show/powerful-noreaster-batters-parts-of-east-coast",
       "topic": "Trending",
-      "published": "2026-09-28T15:07:19+00:00"
+      "published": "2026-09-28T22:53:29+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "SpaceX launches supersized Starship into orbit",
+      "headline": "France: Student protests over conditions at French high schools fuel political clashes",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/spacex-launches-supersized-starship-into-orbit/a-79462696?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/france-student-protests-over-conditions-at-french-high-schools-fuel-political-clashes/a-79467746?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-28T15:00:00+00:00"
+      "published": "2026-09-29T02:26:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Mexico's Pacific coast braces for Hurricane Polo",
+      "headline": "New York Times executive fatally shot allegedly by elderly in-laws",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cred737qdv2no?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-28T11:05:49+00:00"
+      "published": "2026-09-28T20:50:03+00:00"
     },
     {
       "n": 12,
-      "headline": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
+      "headline": "Trump's immigration push has largely spared farms. Idaho dairymen worry it won't last.",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
-      "topic": "Trending",
-      "published": "2026-09-28T12:15:05+00:00"
+      "url": "https://www.npr.org/2026/09/28/nx-s1-5976810/trumps-immigration-idaho-dairy-industry",
+      "topic": "Politics",
+      "published": "2026-09-28T16:27:30+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump administration lowers fuel economy standards, critics say at a significant environmental cost",
+      "headline": "News Wrap: UK police investigating possible plot targeting U.S. base",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-administration-lowers-fuel-economy-standards-critics-say-at-a-significant-environmental-cost",
-      "topic": "Politics",
-      "published": "2026-09-28T14:53:26+00:00"
+      "url": "https://www.pbs.org/newshour/show/news-wrap-uk-police-investigating-possible-plot-targeting-u-s-base",
+      "topic": "Trending",
+      "published": "2026-09-28T22:45:07+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Turkey: Comedian convicted for 'insulting' Erdogan in show",
+      "headline": "Israel's Netanyahu holds secret meeting with UAE president",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/turkey-comedian-convicted-for-insulting-erdogan-in-show/a-79455759?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-28T14:51:00+00:00"
+      "url": "https://www.dw.com/en/israel-s-netanyahu-holds-secret-meeting-with-uae-president/a-79467271?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-29T01:11:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Trump aims to leave a physical legacy in D.C., bulldozing norms along the way",
+      "headline": "The Trump administration weakens fuel efficiency standards for new cars",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/28/nx-s1-5930441/trump-construction-projects-legacy",
+      "url": "https://www.npr.org/2026/09/28/nx-s1-5918509/car-fuel-efficiency-cafe-standards-rollback",
       "topic": "Politics",
-      "published": "2026-09-28T11:41:48+00:00"
+      "published": "2026-09-28T16:07:15+00:00"
     }
   ]
 }
