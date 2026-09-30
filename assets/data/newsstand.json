@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T20:24:30Z",
+  "generated_at": "2026-09-30T03:42:13Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,35 +8,35 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Kamala Harris Will NOT Be Personally Responsible For Her Campaign's $39 Million Debt -- Claim Comes From Satire Site",
+      "claim": "Claiming Florida School Bus Beating Of 'Lily Trejo' By 'Jake Lynch' Is Partially AI-Generated -- Names Unverified, Photos From Unrelated Cases",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-kamala-harris-will-not-be-personally-responsible-39-million-campaign-debt-satire.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-florida-school-bus-beating-video-uses-images-from-other-cases-and-there-is-no-evidence-vi.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Benjamin Netanyahu: 16 claims we've fact-checked",
+      "claim": "Don't expect to look up and see a '2-moon night' on Sept. 29, 2026",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/benjamin-netanyahu-collection/",
+      "url": "https://www.snopes.com/fact-check/two-moon-night-sept-2026/",
       "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Paxton’s Uvalde Comment in Full Context",
+      "claim": "Experts Question the White House’s Defense of Taxpayer-Funded Ads",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/paxtons-uvalde-comment-in-full-context/",
+      "url": "https://www.factcheck.org/2026/09/experts-question-the-white-houses-defense-of-taxpayer-funded-ads/",
       "topic": "Trending"
     },
     {
       "n": 4,
-      "claim": "Eric Cantor Takes The Helm Of Drug Lobbying Giant PhRMA",
+      "claim": "Senate Blocks Dem-Led Resolution Calling For Israeli Settler Violence Probe",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/29/eric-cantor-phrma-president-ceo",
-      "topic": "Health"
+      "url": "https://dailycaller.com/2026/09/29/senate-blocks-dem-resolution-west-bank-killings",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -64,27 +64,27 @@
     },
     {
       "n": 8,
-      "claim": "'Lebensraum For Israel' Post DID Appear On Times Of Israel Blog In 2024 -- But Was Taken Down Later",
+      "claim": "Prebunk: Fake New York Post Headlines From Parody Rabbi Account Used To Bait Chatbot -- The '@Grok-Is-This-Jew?' Trick",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-post-about-lebensraum-for-israel-did-appear-on-times-of-israel-blog-platform.html",
-      "topic": "World"
+      "url": "https://leadstories.com/prebunk/2026/09/prebunk-fake-nypost-headlines-from-bogus-rabbi-used-to-provoke-chatbot-hey-grok.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Cornell 7' gang rape lawsuit: What we know about the allegations so far",
+      "claim": "Benjamin Netanyahu: 16 claims we've fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/28/cornell-7-gang-rape-lawsuit/",
+      "url": "https://www.snopes.com/collections/benjamin-netanyahu-collection/",
       "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Republican Ad Attacks Cooper with Misleading Claim About Rape Kits",
+      "claim": "Paxton’s Uvalde Comment in Full Context",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/republican-ad-attacks-cooper-with-misleading-claim-about-rape-kits/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/09/paxtons-uvalde-comment-in-full-context/",
+      "topic": "Trending"
     },
     {
       "n": 11,
@@ -120,27 +120,27 @@
     },
     {
       "n": 15,
-      "claim": "FAKE AI-Generated Video Shows Giorgia Meloni Wearing Palestinian Flag As Cape At UN",
+      "claim": "Kamala Harris Will NOT Be Personally Responsible For Her Campaign's $39 Million Debt -- Claim Comes From Satire Site",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-shows-giorgia-meloni-wearing-palestinian-flag-as-cape-at-un.html",
-      "topic": "World"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-kamala-harris-will-not-be-personally-responsible-39-million-campaign-debt-satire.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "12 rumors about Trump renaming things, examined",
+      "claim": "Cornell 7' gang rape lawsuit: What we know about the allegations so far",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-renaming-things-rumors-collections/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/09/28/cornell-7-gang-rape-lawsuit/",
+      "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "League of Conservation Voters",
+      "claim": "Republican Ad Attacks Cooper with Misleading Claim About Rape Kits",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/09/league-of-conservation-voters-5/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/09/republican-ad-attacks-cooper-with-misleading-claim-about-rape-kits/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "U.S. Supreme Court sides with Trump administration in third-country deportations",
+      "headline": "The federal law aimed at protecting college students from sexual abuse",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/29/g-s1-145266/supreme-court-trump-third-country-deportations",
-      "topic": "Politics",
-      "published": "2026-09-29T19:19:37+00:00"
+      "url": "https://www.npr.org/2026/09/29/nx-s1-5983779/investigating-sexual-abuse-on-campus",
+      "topic": "Trending",
+      "published": "2026-09-29T21:29:21+00:00"
     },
     {
       "n": 3,
-      "headline": "Bear 910 vs. Backpack: It's the final showdown for Alaska's Fat Bear Week",
+      "headline": "Who will be the UN's next secretary-general? What to know about the selection process",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/bear-910-vs-backpack-its-the-final-showdown-for-alaskas-fat-bear-week",
-      "topic": "Trending",
-      "published": "2026-09-29T20:18:55+00:00"
+      "url": "https://www.pbs.org/newshour/world/who-will-be-the-uns-next-secretary-general-what-to-know-about-the-selection-process",
+      "topic": "World",
+      "published": "2026-09-29T23:45:28+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Morocco: King appoints first woman prime minister",
+      "headline": "Trump says AI companies agree to 'self-police",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/morocco-king-appoints-first-woman-prime-minister/a-79479722?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/trump-says-ai-companies-agree-to-self-police/a-79480781?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-09-29T19:56:00+00:00"
+      "published": "2026-09-29T23:10:00+00:00"
     },
     {
       "n": 6,
-      "headline": "I was lured into a trap': Evan Gershkovich on moment that led to 16 months in Russian jail",
+      "headline": "Three takeaways from Trump's 'Super Intelligence' summit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck9qr8jy8ynyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-29T12:43:04+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cme30dz5vkzko?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-09-30T03:23:17+00:00"
     },
     {
       "n": 7,
-      "headline": "Lindsay Clancy's lawyer now questions whether she killed her 3 children",
+      "headline": "U.S. Supreme Court sides with Trump administration in third-country deportations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/29/g-s1-145539/lindsay-clancy-trial-hearing-lawyer",
-      "topic": "Trending",
-      "published": "2026-09-29T18:00:50+00:00"
+      "url": "https://www.npr.org/2026/09/29/g-s1-145266/supreme-court-trump-third-country-deportations",
+      "topic": "Politics",
+      "published": "2026-09-29T19:19:37+00:00"
     },
     {
       "n": 8,
-      "headline": "Supreme Court lets Trump continue deporting people to 3rd countries while justices consider policy",
+      "headline": "Morocco's king appoints Fatima Zahra Mansouri as country's 1st woman prime minister",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/supreme-court-lets-trump-continue-deporting-people-to-3rd-countries-while-justices-consider-policy",
+      "url": "https://www.pbs.org/newshour/world/moroccos-king-appoints-fatima-zahra-mansouri-as-countrys-1st-woman-prime-minister",
       "topic": "Politics",
-      "published": "2026-09-29T19:31:39+00:00"
+      "published": "2026-09-29T23:06:01+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Estonia blames Russia for arson attack on defense company",
+      "headline": "Morocco: King appoints first woman prime minister",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/estonia-blames-russia-for-arson-attack-on-defense-company/a-79478937?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-29T18:08:00+00:00"
+      "url": "https://www.dw.com/en/morocco-king-appoints-first-woman-prime-minister/a-79479722?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-09-29T19:56:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Israeli settlers attack West Bank village and block Palestinian family's return home",
+      "headline": "Chinese AI tool told researchers how to make bioweapons",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvlylj41egxgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-09-29T12:39:18+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmrergq3j7lgo?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-09-29T23:15:29+00:00"
     },
     {
       "n": 12,
-      "headline": "Potential Taiwan tension sparked 'last minute' change in Trump-Xi National Archives visit",
+      "headline": "Lindsay Clancy's lawyer now questions whether she killed her 3 children",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/29/nx-s1-5984989/digital-archives-trump-xi",
-      "topic": "Politics",
-      "published": "2026-09-29T17:17:04+00:00"
+      "url": "https://www.npr.org/2026/09/29/g-s1-145539/lindsay-clancy-trial-hearing-lawyer",
+      "topic": "Trending",
+      "published": "2026-09-29T18:00:50+00:00"
     },
     {
       "n": 13,
-      "headline": "Homeland Security spending $20M in taxpayer funds for pro-Trump ads",
+      "headline": "Self-regulation 'not enough' for AI safety, Gary Marcus says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/homeland-security-spending-20m-in-taxpayer-funds-for-pro-trump-ads",
-      "topic": "Politics",
-      "published": "2026-09-29T19:04:25+00:00"
+      "url": "https://www.pbs.org/newshour/show/self-regulation-not-enough-for-ai-safety-gary-marcus-says",
+      "topic": "Tech / AI",
+      "published": "2026-09-29T22:55:34+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany news: Bremerhaven port to receive defense boost",
+      "headline": "Estonia blames Russia for arson attack on defense company",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-bremerhaven-port-to-receive-defense-boost/live-79468663?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-29T17:28:00+00:00"
+      "url": "https://www.dw.com/en/estonia-blames-russia-for-arson-attack-on-defense-company/a-79478937?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-09-29T18:08:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Dutch police arrest suspected member of group that claimed FBI hack",
+      "headline": "South Africa to clean up high-risk areas after 12 women killed",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw5ym18znr0ro?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c51kx9ze1mdzo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-09-29T15:40:10+00:00"
+      "published": "2026-09-29T22:33:39+00:00"
     },
     {
       "n": 17,
-      "headline": "This startup wants to prove gene-editing embryos is safe for making healthy babies",
+      "headline": "Potential Taiwan tension sparked 'last minute' change in Trump-Xi National Archives visit",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/29/nx-s1-5950439/embryo-gene-editing-babies-biotech",
-      "topic": "Trending",
-      "published": "2026-09-29T17:00:08+00:00"
+      "url": "https://www.npr.org/2026/09/29/nx-s1-5984989/digital-archives-trump-xi",
+      "topic": "Politics",
+      "published": "2026-09-29T17:17:04+00:00"
     }
   ]
 }
