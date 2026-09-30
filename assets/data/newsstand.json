@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T14:31:53Z",
+  "generated_at": "2026-09-30T20:28:54Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Shows Airplane Spinning Wildly On Runway Accident -- It Is AI-Generated",
+      "claim": "Trump's 'Super Intelligence' Executive Order DID Misspell Country's Name As 'Unites States",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-airplane-spinning-wildly-runway-accident-ai-generated.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trumps-super-intelligence-accord-did-misspell-country's-name-as-unites-states.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "US national parks: 15 rumors we've investigated",
+      "claim": "Was Cornell 'dropped' from the Ivy League amid rape investigation?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/us-national-parks-rumors-collection/",
+      "url": "https://www.snopes.com/fact-check/cornell-dropped-ivy-league/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Senate Blocks Dem-Led Resolution Calling For Israeli Settler Violence Probe",
+      "claim": "EXCLUSIVE: Hegseth Announces New ‘Patriotic’ Officer Training Program In Partnership With Select Universities",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/29/senate-blocks-dem-resolution-west-bank-killings",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/09/30/pete-hegseth-officer-training-department-of-war-university",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "Claiming Florida School Bus Beating Of 'Lily Trejo' By 'Jake Lynch' Is Partially AI-Generated -- Names Unverified, Photos From Unrelated Cases",
+      "claim": "FAKE Video Labeled Eye Of Hurricane Polo Is AI-Generated -- Was Not Shot From A Plane",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-florida-school-bus-beating-video-uses-images-from-other-cases-and-there-is-no-evidence-vi.html",
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-labeled-eye-of-hurricane-polo-is-ai-generated-was-not-shot-from-plane.html",
       "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Does video show UK shoppers standing in lines separated by gender? We examined the footage",
+      "claim": "Were Flydubai pilots who caused emergency landing Russian, Ukrainian? We investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/30/video-uk-gender-lines/",
+      "url": "https://www.snopes.com/news/2026/09/30/flydubai-pilots-israel-russia-ukraine/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "EXCLUSIVE: Newly Released Records Undercut Jack Smith’s Account Of How Trump Classified Documents Probe Began",
+      "claim": "Republican Senator Backtracks After Slamming ICE Deportations",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/29/newly-released-records-undercut-jack-smiths-account-of-how-trump-classified-documents-probe-began",
+      "url": "https://dailycaller.com/2026/09/30/jim-justice-west-virginia-ice-agents-deportations-trump-illegal-immigration",
       "topic": "Politics"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "Prebunk: Fake New York Post Headlines From Parody Rabbi Account Used To Bait Chatbot -- The '@Grok-Is-This-Jew?' Trick",
-      "verdict": "FALSE",
+      "claim": "Trump Did NOT Admit 'I've Done A Shitty Job As President' -- Rest Of Speech Edited Away",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/prebunk/2026/09/prebunk-fake-nypost-headlines-from-bogus-rabbi-used-to-provoke-chatbot-hey-grok.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-admit-ive-done-a-shitty-job-as-president-rest-of-speech-edited-away.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Do videos show singer George Paul on 'America's Got Talent'?",
+      "claim": "Truck drivers are allegedly going on strike. There's no proof",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/george-paul-singer-americas-got-talent/",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/news/2026/09/30/truck-drivers-strike-oct-1/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,70 +146,110 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Russia launches largest attack on Ukraine energy infrastructure since spring",
+      "headline": "What we know about stabbing on Flydubai flight to Israel",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-09-30T12:42:34+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-30T17:51:49+00:00"
     },
     {
       "n": 2,
-      "headline": "A flight from Dubai to Tel Aviv diverts to Saudi Arabia after making distress call",
+      "headline": "Greetings from Syria, where time seems to melt as a glassmaker braves scorching temps",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5985806/flydubai-flight-dubai-tel-aviv-israel",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5983516/damascus-syria-glass",
       "topic": "Trending",
-      "published": "2026-09-30T13:35:11+00:00"
+      "published": "2026-09-30T17:51:42+00:00"
     },
     {
       "n": 3,
-      "headline": "U.S. military says its withdrawal of troops from Iraq for Islamic State fight is complete",
+      "headline": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/u-s-military-says-its-withdrawal-of-troops-from-iraq-for-islamic-state-fight-is-complete",
+      "url": "https://www.pbs.org/newshour/world/what-to-know-about-the-terrifying-flydubai-flight-forced-to-land-in-saudi-arabia",
       "topic": "Trending",
-      "published": "2026-09-30T14:07:39+00:00"
+      "published": "2026-09-30T20:00:22+00:00"
     },
     {
       "n": 4,
-      "headline": "South Africa urges men to take more responsibility for gender-based violence after series of killings",
+      "headline": "Trump administration diverts human rights funds to push far-right agenda abroad",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/sep/30/trump-state-department-human-rights-fund",
+      "topic": "Politics",
+      "published": "2026-09-30T19:51:24+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Five EU states plan first deportation center in Africa for 2027",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/five-eu-states-plan-first-deportation-center-in-africa-for-2027/a-79490162?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-30T19:16:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Six smugglers jailed for manslaughter over worst Channel small boats disaster",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6n8m33pn9djo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-30T17:14:03+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Police questioning can shape a sexual assault case. Their approach is often wrong",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5983868/cornell-rape-police-interview-investigation-victim-trauma-informed",
+      "topic": "Trending",
+      "published": "2026-09-30T17:19:24+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "WATCH LIVE: Data center bill falls short as Senate holds final votes before the midterms",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-data-center-bill-falls-short-as-senate-holds-final-votes-before-the-midterms",
+      "topic": "Politics",
+      "published": "2026-09-30T19:45:33+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "South African leader urges men to speak up on gender-based violence after series of killings",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/30/south-africa-gender-based-violence-women-killings",
       "topic": "Trending",
       "published": "2026-09-30T14:16:33+00:00"
     },
     {
-      "n": 5,
-      "headline": "Iran's nuclear program remains shrouded in mystery as the regime debates ditching non-proliferation",
+      "n": 10,
+      "headline": "Flydubai pilot investigated over possible attempt to crash Tel Aviv-bound flight",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-s-nuclear-program-remains-shrouded-in-mystery-as-the-regime-debates-ditching-non-proliferation/a-79488197?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-09-30T14:01:00+00:00"
+      "url": "https://www.dw.com/en/flydubai-pilot-investigated-over-possible-attempt-to-crash-tel-aviv-bound-flight/a-79484761?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-09-30T19:13:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Last UK and US troops leave Iraq as anti-Islamic State mission ends",
+      "n": 11,
+      "headline": "UK-France 'one in, one out' migrant scheme scrapped",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c65ym1dyn92mo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-30T11:36:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c64gvnv4eqylo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-09-30T17:11:08+00:00"
     },
     {
-      "n": 7,
-      "headline": "FBI hunting the hackers who stole its employees' sensitive data",
+      "n": 12,
+      "headline": "Trump officials changed forms for overseas voters amid a GOP push to restrict voting",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5985202/fbi-hack-shinyhunters",
-      "topic": "Trending",
-      "published": "2026-09-30T12:29:05+00:00"
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5978976/military-voter-registration-overseas-citizens-absentee-voting",
+      "topic": "Politics",
+      "published": "2026-09-30T16:32:12+00:00"
     },
     {
-      "n": 8,
-      "headline": "U.S. economy grew a solid 2.2% in the second quarter, government says, upgrading previous estimate",
+      "n": 13,
+      "headline": "Former Homeland Security Secretary Kristi Noem files for divorce from her husband of 34 years",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/u-s-economy-grew-a-solid-2-2-in-the-second-quarter-government-says-upgrading-previous-estimate",
+      "url": "https://www.pbs.org/newshour/politics/former-homeland-security-secretary-kristi-noem-files-for-divorce-from-her-husband-of-34-years",
       "topic": "Trending",
-      "published": "2026-09-30T13:52:27+00:00"
+      "published": "2026-09-30T19:33:32+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Burundi agrees to receive ‘third-country’ migrant deportees from US",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/sep/30/burundi-third-country-deportations-trump-immigration",
@@ -217,68 +257,28 @@
       "published": "2026-09-30T12:47:15+00:00"
     },
     {
-      "n": 10,
-      "headline": "The lawyer of Junaid Hafeez, a Fullbright scholar imprisoned for 13 years in a Pakistani jail, tells DW he is hopeful for his release",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/the-lawyer-of-junaid-hafeez-a-fullbright-scholar-imprisoned-for-13-years-in-a-pakistani-jail-tells-dw-he-is-hopeful-for-his-release/a-79490207?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-09-30T13:59:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Chinese AI tool told researchers how to make bioweapons",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmrergq3j7lgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-09-29T23:15:29+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "U.S. forces exit Iraq amid Iran war. And, SCOTUS revives Trump deportation policy",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/g-s1-145604/up-first-newsletter-iraq-us-troops-scotus-deportations-trump-ai",
-      "topic": "Politics",
-      "published": "2026-09-30T11:13:17+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Who will be the UN's next secretary-general? What to know about the selection process",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/who-will-be-the-uns-next-secretary-general-what-to-know-about-the-selection-process",
-      "topic": "World",
-      "published": "2026-09-29T23:45:28+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Top Trump figures push to direct human rights funding to rightwing causes",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/sep/30/trump-state-department-human-rights-fund",
-      "topic": "Politics",
-      "published": "2026-09-30T12:00:42+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Manchester City Premier League charges: What do they mean?",
+      "headline": "France's Macron, Spain's Sanchez welcome idea of UK rejoining EU after Burnham remarks",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/manchester-city-premier-league-charges-what-do-they-mean/a-79485638?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/france-s-macron-spain-s-sanchez-welcome-idea-of-uk-rejoining-eu-after-burnham-remarks/a-79493469?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-30T13:40:00+00:00"
+      "published": "2026-09-30T17:34:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Girl has multiple surgeries to control infections after strike in Gaza",
+      "headline": "Execution of US murderer Christa Pike halted shortly before it was due to happen",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c8n5d0e0n6wdo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-30T05:02:50+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw20vxxn876no?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-09-30T15:29:11+00:00"
     },
     {
       "n": 17,
-      "headline": "Travel plans? Here's what to know as measles exposures reach trains and games",
+      "headline": "How Ukrainians are coping with new, more deadly Russian attacks",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5978940/traveling-measles-exposure-vaccines-transportation",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5984948/how-ukrainians-are-coping-with-new-more-deadly-russian-attacks",
       "topic": "Trending",
-      "published": "2026-09-30T11:00:00+00:00"
+      "published": "2026-09-30T15:33:19+00:00"
     }
   ]
 }
