@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T20:28:54Z",
+  "generated_at": "2026-10-01T03:48:27Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Trump's 'Super Intelligence' Executive Order DID Misspell Country's Name As 'Unites States",
+      "claim": "Does NOT Show Arrest of Man Accused of Inappropriately Touching Influencer at Disneyland -- 2024 Footage",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trumps-super-intelligence-accord-did-misspell-country's-name-as-unites-states.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-video-does-not-show-arrest-of-man-accused-of-inappropriately-touching-influencer-at-disneyland-2024-footage.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Was Cornell 'dropped' from the Ivy League amid rape investigation?",
+      "claim": "Did Trump's AI tool say he lost the 2020 election, contradicting his claims that he won?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/cornell-dropped-ivy-league/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-ai-lost-2020-election/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: Hegseth Announces New ‘Patriotic’ Officer Training Program In Partnership With Select Universities",
+      "claim": "Senate Votes Down Stock Trading Ban Critics Say Doesn’t Go Far Enough",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/30/pete-hegseth-officer-training-department-of-war-university",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/09/30/stop-insider-trading-act-senate-vote",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -64,11 +64,11 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Video Labeled Eye Of Hurricane Polo Is AI-Generated -- Was Not Shot From A Plane",
+      "claim": "Franklin Graham and Pope Leo XIV Did NOT Have Live TV Discussion -- Story Is Spam From Vietnam",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-fake-video-labeled-eye-of-hurricane-polo-is-ai-generated-was-not-shot-from-plane.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-franklin-graham-and-pope-leo-xiv-did-not-have-live-tv-discussion-story-is-spam-from-vietnam.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "Trump Did NOT Admit 'I've Done A Shitty Job As President' -- Rest Of Speech Edited Away",
-      "verdict": "MISLEADING",
+      "claim": "Evidence Oprah Winfrey's Private Jet Was on Jeffrey Epstein's Island 11 Different Times -- Or at Any Time",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-trump-did-not-admit-ive-done-a-shitty-job-as-president-rest-of-speech-edited-away.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/09/fact-check-no-evidence-oprah-winfreys-private-jet-was-on-jeffrey-epstein-islands-11-different-times-or-at-any-time.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Truck drivers are allegedly going on strike. There's no proof",
+      "claim": "White House misspelled United States in 'super intelligence' accord",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/30/truck-drivers-strike-oct-1/",
+      "url": "https://www.snopes.com/fact-check/united-states-misspelled/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "What we know about stabbing on Flydubai flight to Israel",
+      "headline": "Too early to say who was behind Dubai-Tel Aviv flight attack, Israeli PM says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-09-30T17:51:49+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrm7xd8wyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-01T03:43:06+00:00"
     },
     {
       "n": 2,
-      "headline": "Greetings from Syria, where time seems to melt as a glassmaker braves scorching temps",
+      "headline": "Swiss glaciers suffer another year of record ice loss",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5983516/damascus-syria-glass",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5981403/swiss-glaciers-climate-change",
       "topic": "Trending",
-      "published": "2026-09-30T17:51:42+00:00"
+      "published": "2026-09-30T23:00:00+00:00"
     },
     {
       "n": 3,
-      "headline": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia",
+      "headline": "Woman accused of firing at Rihanna's home indicted on attempted murder with assault weapon",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/what-to-know-about-the-terrifying-flydubai-flight-forced-to-land-in-saudi-arabia",
+      "url": "https://www.pbs.org/newshour/nation/woman-accused-of-firing-at-rihannas-home-indicted-on-attempted-murder-with-assault-weapon",
       "topic": "Trending",
-      "published": "2026-09-30T20:00:22+00:00"
+      "published": "2026-09-30T23:54:09+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Five EU states plan first deportation center in Africa for 2027",
+      "headline": "Swiss glaciers lose of more than 5% in ice volume in 2026",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/five-eu-states-plan-first-deportation-center-in-africa-for-2027/a-79490162?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/swiss-glaciers-lose-of-more-than-5-in-ice-volume-in-2026/a-79495965?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-30T19:16:00+00:00"
+      "published": "2026-10-01T03:13:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Six smugglers jailed for manslaughter over worst Channel small boats disaster",
+      "headline": "What we know about stabbing on Flydubai flight to Israel",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n8m33pn9djo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-30T17:14:03+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-01T02:31:24+00:00"
     },
     {
       "n": 7,
-      "headline": "Police questioning can shape a sexual assault case. Their approach is often wrong",
+      "headline": "Leaning into culture war flashpoints, Hegseth says he has transformed U.S. military",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5983868/cornell-rape-police-interview-investigation-victim-trauma-informed",
-      "topic": "Trending",
-      "published": "2026-09-30T17:19:24+00:00"
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5986304/hegseth-troops-address",
+      "topic": "World",
+      "published": "2026-09-30T21:51:20+00:00"
     },
     {
       "n": 8,
-      "headline": "WATCH LIVE: Data center bill falls short as Senate holds final votes before the midterms",
+      "headline": "Federal oversight of Oakland Police Department ends after 23 years",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-data-center-bill-falls-short-as-senate-holds-final-votes-before-the-midterms",
-      "topic": "Politics",
-      "published": "2026-09-30T19:45:33+00:00"
+      "url": "https://www.pbs.org/newshour/nation/federal-oversight-of-oakland-police-department-ends-after-23-years",
+      "topic": "Trending",
+      "published": "2026-09-30T23:17:21+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Flydubai pilot investigated over possible attempt to crash Tel Aviv-bound flight",
+      "headline": "US military cuts generals, admirals by 20%, Hegseth says",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/flydubai-pilot-investigated-over-possible-attempt-to-crash-tel-aviv-bound-flight/a-79484761?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-military-cuts-generals-admirals-by-20-hegseth-says/a-79495683?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-30T19:13:00+00:00"
+      "published": "2026-10-01T01:45:00+00:00"
     },
     {
       "n": 11,
-      "headline": "UK-France 'one in, one out' migrant scheme scrapped",
+      "headline": "Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c64gvnv4eqylo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-09-30T17:11:08+00:00"
+      "published": "2026-09-30T23:10:06+00:00"
     },
     {
       "n": 12,
-      "headline": "Trump officials changed forms for overseas voters amid a GOP push to restrict voting",
+      "headline": "Greetings from Syria, where time seems to melt as a glassmaker braves scorching temps",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5978976/military-voter-registration-overseas-citizens-absentee-voting",
-      "topic": "Politics",
-      "published": "2026-09-30T16:32:12+00:00"
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5983516/damascus-syria-glass",
+      "topic": "Trending",
+      "published": "2026-09-30T17:51:42+00:00"
     },
     {
       "n": 13,
-      "headline": "Former Homeland Security Secretary Kristi Noem files for divorce from her husband of 34 years",
+      "headline": "Passengers describe stopping pilot's alleged attempt to crash Israel-bound flight",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/former-homeland-security-secretary-kristi-noem-files-for-divorce-from-her-husband-of-34-years",
-      "topic": "Trending",
-      "published": "2026-09-30T19:33:32+00:00"
+      "url": "https://www.pbs.org/newshour/show/assengers-describe-stopping-pilots-alleged-attempt-to-crash-israel-bound-flight",
+      "topic": "World",
+      "published": "2026-09-30T22:55:32+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "France's Macron, Spain's Sanchez welcome idea of UK rejoining EU after Burnham remarks",
+      "headline": "France: Hundreds arrested as student protests escalate",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-s-macron-spain-s-sanchez-welcome-idea-of-uk-rejoining-eu-after-burnham-remarks/a-79493469?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/france-hundreds-arrested-as-student-protests-escalate/a-79495633?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-30T17:34:00+00:00"
+      "published": "2026-09-30T23:02:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Execution of US murderer Christa Pike halted shortly before it was due to happen",
+      "headline": "US death row inmate Christa Pike taken to hospital after surviving two lethal injections, says lawyer",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw20vxxn876no?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-09-30T15:29:11+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq8r6rjdvlx6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-10-01T03:46:55+00:00"
     },
     {
       "n": 17,
-      "headline": "How Ukrainians are coping with new, more deadly Russian attacks",
+      "headline": "Police questioning can shape a sexual assault case. Their approach is often wrong",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5984948/how-ukrainians-are-coping-with-new-more-deadly-russian-attacks",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5983868/cornell-rape-police-interview-investigation-victim-trauma-informed",
       "topic": "Trending",
-      "published": "2026-09-30T15:33:19+00:00"
+      "published": "2026-09-30T17:19:24+00:00"
     }
   ]
 }
