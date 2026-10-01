@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T03:48:27Z",
+  "generated_at": "2026-10-01T15:01:53Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump's AI tool say he lost the 2020 election, contradicting his claims that he won?",
+      "claim": "Did John Wayne buy 1,200 foreclosed homes for homeless Vietnam veterans?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-ai-lost-2020-election/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/john-wayne-homes-veterans/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Senate Votes Down Stock Trading Ban Critics Say Doesn’t Go Far Enough",
+      "claim": "Tennessee Halts Executions After Infamous Killer Survived Multiple Lethal Injections",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/30/stop-insider-trading-act-senate-vote",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/01/tennessee-lethal-injection-execution-christa-gail-pike",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "Only 7 lakh deleted voters appealed in Bengal SIR tribunals? Suvendu Adhiakri’s claim false, shows EC data",
+      "claim": "Varanasi Police falsely claims viral video of cops recording dancers is AI-generated",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/only-7-lakh-deleted-voters-appealed-in-bengal-sir-tribunals-suvendu-adhiakris-claim-false-shows-ec-data/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/varanasi-police-falsely-claims-viral-video-of-cops-recording-dancers-is-ai-generated/",
+      "topic": "Tech / AI"
     },
     {
       "n": 7,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Were Flydubai pilots who caused emergency landing Russian, Ukrainian? We investigated",
+      "claim": "Did Australian man enter cannabis plant into tomato competition?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/09/30/flydubai-pilots-israel-russia-ukraine/",
+      "url": "https://www.snopes.com/fact-check/australian-man-cannabis-tomato/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Republican Senator Backtracks After Slamming ICE Deportations",
+      "claim": "Senate Leaves Town Without Addressing Major Issues Before Midterms",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/09/30/jim-justice-west-virginia-ice-agents-deportations-trump-illegal-immigration",
+      "url": "https://dailycaller.com/2026/10/01/senate-leaves-town-midterms-costs-surveillance-ai-ratepayer-protection",
       "topic": "Politics"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "In 24 Delhi constituencies, SIR draft roll has fewer names than 2025 voter turnout",
+      "claim": "Only 7 lakh deleted voters appealed in Bengal SIR tribunals? Suvendu Adhiakri’s claim false, shows EC data",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/in-24-delhi-constituencies-sir-draft-roll-has-fewer-names-than-2025-voter-turnout/",
+      "url": "https://www.altnews.in/only-7-lakh-deleted-voters-appealed-in-bengal-sir-tribunals-suvendu-adhiakris-claim-false-shows-ec-data/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "White House misspelled United States in 'super intelligence' accord",
+      "claim": "Is Florida the first state to bar welfare cash for 'nonessential' items?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/united-states-misspelled/",
+      "url": "https://www.snopes.com/fact-check/florida-nonessential-items-welfare/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Too early to say who was behind Dubai-Tel Aviv flight attack, Israeli PM says",
+      "headline": "US death row inmate survives execution attempt after two lethal injections",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqgmrm7xd8wyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cq8r6rjdvlx6o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-01T03:43:06+00:00"
+      "published": "2026-10-01T09:59:59+00:00"
     },
     {
       "n": 2,
-      "headline": "Swiss glaciers suffer another year of record ice loss",
+      "headline": "What a Pearly King taught me about Cockney rhyming slang and East London history",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5981403/swiss-glaciers-climate-change",
+      "url": "https://www.npr.org/2026/10/01/nx-s1-5928148/pearly-king-peckham-george-major-london-cockney",
       "topic": "Trending",
-      "published": "2026-09-30T23:00:00+00:00"
+      "published": "2026-10-01T14:13:38+00:00"
     },
     {
       "n": 3,
-      "headline": "Woman accused of firing at Rihanna's home indicted on attempted murder with assault weapon",
+      "headline": "Tennessee governor halts executions after Christa Gail Pike survives lethal injection attempt",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/woman-accused-of-firing-at-rihannas-home-indicted-on-attempted-murder-with-assault-weapon",
-      "topic": "Trending",
-      "published": "2026-09-30T23:54:09+00:00"
+      "url": "https://www.pbs.org/newshour/nation/tennessee-governor-halts-executions-after-christa-gail-pike-survives-lethal-injection-attempt",
+      "topic": "Politics",
+      "published": "2026-10-01T14:38:34+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Swiss glaciers lose of more than 5% in ice volume in 2026",
+      "headline": "Renee Good's family sues Trump admin over fatal ICE shooting",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/swiss-glaciers-lose-of-more-than-5-in-ice-volume-in-2026/a-79495965?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-01T03:13:00+00:00"
+      "url": "https://www.dw.com/en/renee-good-s-family-sues-trump-admin-over-fatal-ice-shooting/a-79504836?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-01T14:43:00+00:00"
     },
     {
       "n": 6,
-      "headline": "What we know about stabbing on Flydubai flight to Israel",
+      "headline": "What happened in failed execution of Christa Pike - and what next?",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-01T02:31:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckge4eql4q7eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-01T12:51:14+00:00"
     },
     {
       "n": 7,
-      "headline": "Leaning into culture war flashpoints, Hegseth says he has transformed U.S. military",
+      "headline": "Passengers recount chaos on Tel Aviv flight. And, FBI probes employee-data hack",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5986304/hegseth-troops-address",
-      "topic": "World",
-      "published": "2026-09-30T21:51:20+00:00"
+      "url": "https://www.npr.org/2026/10/01/g-s1-145879/up-first-newsletter-tel-aviv-flight-passengers-fbi-employee-data-hack",
+      "topic": "Trending",
+      "published": "2026-10-01T11:37:10+00:00"
     },
     {
       "n": 8,
-      "headline": "Federal oversight of Oakland Police Department ends after 23 years",
+      "headline": "Trump will hold a rally in Choctaw Nation, a rare presidential visit to Indian Country",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/federal-oversight-of-oakland-police-department-ends-after-23-years",
-      "topic": "Trending",
-      "published": "2026-09-30T23:17:21+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-will-hold-a-rally-in-choctaw-nation-a-rare-presidential-visit-to-indian-country",
+      "topic": "Politics",
+      "published": "2026-10-01T14:10:57+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "US military cuts generals, admirals by 20%, Hegseth says",
+      "headline": "Germany expresses optimism over Montenegro's EU ambitions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-military-cuts-generals-admirals-by-20-hegseth-says/a-79495683?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-expresses-optimism-over-montenegro-s-eu-ambitions/a-79504069?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-01T01:45:00+00:00"
+      "published": "2026-10-01T14:14:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
+      "headline": "Too early to say if Iran involved in Dubai-Tel Aviv flight attack, Israeli PM says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrm7xd8wyo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-09-30T23:10:06+00:00"
+      "published": "2026-10-01T11:26:46+00:00"
     },
     {
       "n": 12,
-      "headline": "Greetings from Syria, where time seems to melt as a glassmaker braves scorching temps",
+      "headline": "Picanha, prices and politics: What Brazil's favorite steak says about the election",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5983516/damascus-syria-glass",
-      "topic": "Trending",
-      "published": "2026-09-30T17:51:42+00:00"
+      "url": "https://www.npr.org/2026/10/01/nx-s1-5986079/picanha-election-brazil-economy",
+      "topic": "Politics",
+      "published": "2026-10-01T10:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Passengers describe stopping pilot's alleged attempt to crash Israel-bound flight",
+      "headline": "Woman accused of firing at Rihanna's home indicted on attempted murder with assault weapon",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/assengers-describe-stopping-pilots-alleged-attempt-to-crash-israel-bound-flight",
-      "topic": "World",
-      "published": "2026-09-30T22:55:32+00:00"
+      "url": "https://www.pbs.org/newshour/nation/woman-accused-of-firing-at-rihannas-home-indicted-on-attempted-murder-with-assault-weapon",
+      "topic": "Trending",
+      "published": "2026-09-30T23:54:09+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "France: Hundreds arrested as student protests escalate",
+      "headline": "North and South Korea trade accusations over landmines that injured three soldiers",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-hundreds-arrested-as-student-protests-escalate/a-79495633?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/north-and-south-korea-trade-accusations-over-landmines-that-injured-three-soldiers/a-79503854?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-09-30T23:02:00+00:00"
+      "published": "2026-10-01T13:57:00+00:00"
     },
     {
       "n": 16,
-      "headline": "US death row inmate Christa Pike taken to hospital after surviving two lethal injections, says lawyer",
+      "headline": "Russian dissident Garry Kasparov says US warned him of danger to his life",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8r6rjdvlx6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-10-01T03:46:55+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6y8z8kr5mk8o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-01T14:05:55+00:00"
     },
     {
       "n": 17,
-      "headline": "Police questioning can shape a sexual assault case. Their approach is often wrong",
+      "headline": "Along U.S. Route 1, Maine voters worry about heating oil, gas and Canadian tariffs",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5983868/cornell-rape-police-interview-investigation-victim-trauma-informed",
+      "url": "https://www.npr.org/2026/10/01/nx-s1-5969830/maine-senate-collins-jackson-aroostook-county",
       "topic": "Trending",
-      "published": "2026-09-30T17:19:24+00:00"
+      "published": "2026-10-01T09:00:00+00:00"
     }
   ]
 }
