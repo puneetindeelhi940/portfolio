@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T03:46:46Z",
+  "generated_at": "2026-10-02T14:24:09Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump say Iowans are 'really troubled people'?",
+      "claim": "Are Texas Muslims ordering businesses to remove haram products within 30 days? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-iowans-troubled-people/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/texas-muslims-businesses-haram-products/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Hegseth named Musk, Gingrich to lead 'Project Meridian.' Here's what we know about the plan",
+      "claim": "Was Trump's 'super intelligence' order a ploy to profit off .si domain names?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/01/hegseth-musk-gingrich-project-meridian/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/news/2026/10/01/trump-super-intelligence-order-domain-names/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Was Trump's 'super intelligence' order a ploy to profit off .si domain names?",
+      "claim": "Did water levels at Yellowstone Lake drop 11 feet overnight?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/01/trump-super-intelligence-order-domain-names/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/yellowstone-lake-drop/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+      "headline": "I was not going to let others die' - pilot of Flydubai flight describes cockpit attack by co-pilot",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-01T22:21:16+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c639m98gde00o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-02T09:08:06+00:00"
     },
     {
       "n": 2,
-      "headline": "The family of Renee Good files lawsuits over her death during Minneapolis ICE raids",
+      "headline": "The U.S. added only 29,000 jobs in September as job market lacks spark",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5986224/renee-good-ice-lawsuit-minneapolis",
-      "topic": "Trending",
-      "published": "2026-10-01T20:15:07+00:00"
+      "url": "https://www.npr.org/2026/10/02/nx-s1-5989140/jobs-labor-wages-federal-reserve",
+      "topic": "Money",
+      "published": "2026-10-02T13:54:18+00:00"
     },
     {
       "n": 3,
-      "headline": "A fact-checked guide to Trump's talking points and falsehoods at midterm rallies",
+      "headline": "Disappointing 29,000 jobs added in September as unemployment ticks up",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/a-fact-checked-guide-to-trumps-talking-points-and-falsehoods-at-midterm-rallies",
-      "topic": "Politics",
-      "published": "2026-10-01T23:41:57+00:00"
+      "url": "https://www.pbs.org/newshour/economy/disappointing-29000-jobs-added-in-september-as-unemployment-ticks-up",
+      "topic": "Trending",
+      "published": "2026-10-02T13:48:29+00:00"
     },
     {
       "n": 4,
+      "headline": "Row erupts over Cairo mural depicting Tutankhamun and Nefertiti with dark skin",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/oct/02/row-erupts-over-cairo-mural-depicting-tutankhamun-and-nefertiti-with-dark-skin",
+      "topic": "Trending",
+      "published": "2026-10-02T08:55:42+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Can there be solar for all, everywhere by 2030?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/can-there-be-solar-for-all-everywhere-by-2030/a-79517056?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-10-02T13:48:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Cornell students gather to voice anger over alleged gang rape",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm0e3ed1er1yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-02T10:00:24+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Cornell rape case gets special prosecutor. And, Renee Good's family sues the government",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/02/g-s1-146075/up-first-newsletter-cornell-assault-case-christa-pike-jobs-report-renee-good",
+      "topic": "Trending",
+      "published": "2026-10-02T11:22:38+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "WATCH: Cornell sexual assault investigation update with Gov. Hochul, NY Attorney General James",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/watch-live-cornell-sexual-assault-investigation-update-with-gov-hochul-ny-attorney-general-james",
+      "topic": "Trending",
+      "published": "2026-10-02T13:28:27+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Trump administration diverts human rights funds to push far-right agenda abroad",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/sep/30/trump-state-department-human-rights-fund",
@@ -177,39 +217,39 @@
       "published": "2026-09-30T19:51:24+00:00"
     },
     {
-      "n": 5,
-      "headline": "New crew makes the quickest US flight to ISS",
+      "n": 10,
+      "headline": "North and South Korea trade accusations over landmines that injured three soldiers",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/new-crew-makes-the-quickest-us-flight-to-iss/a-79509556?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/north-and-south-korea-trade-accusations-over-landmines-that-injured-three-soldiers/a-79503854?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-02T03:23:00+00:00"
+      "published": "2026-10-02T13:30:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Christa Pike in critical condition after surviving two lethal injections, lawyer says",
+      "n": 11,
+      "headline": "I've seen nearly 500 executions - but never one like Christa Pike's",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6d949gq47x9o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-01T22:28:45+00:00"
+      "published": "2026-10-02T14:01:09+00:00"
     },
     {
-      "n": 7,
-      "headline": "It's a nightmare.' Former refugee, professor on Trump's new Medicaid policy",
+      "n": 12,
+      "headline": "Why is diesel more expensive than regular gas?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5987948/trump-medicaid-health-insurance-disability-refugee",
-      "topic": "Politics",
-      "published": "2026-10-01T19:49:45+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Judge denies motion asking for Lindsay Clancy to be found not guilty due to lack of evidence",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/judge-denies-motion-asking-for-lindsay-clancy-to-be-found-not-guilty-due-to-lack-of-evidence",
+      "url": "https://www.npr.org/sections/planet-money/2026/10/02/nx-s1-5988075/why-is-diesel-more-expensive-than-regular-gas",
       "topic": "Trending",
-      "published": "2026-10-01T23:09:04+00:00"
+      "published": "2026-10-02T11:00:00+00:00"
     },
     {
-      "n": 9,
+      "n": 13,
+      "headline": "A fact-checked guide to Trump's talking points and falsehoods at midterm rallies",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/a-fact-checked-guide-to-trumps-talking-points-and-falsehoods-at-midterm-rallies",
+      "topic": "Politics",
+      "published": "2026-10-01T23:41:57+00:00"
+    },
+    {
+      "n": 14,
       "headline": "South African leader urges men to speak up on gender-based violence after series of killings",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/sep/30/south-africa-gender-based-violence-women-killings",
@@ -217,52 +257,12 @@
       "published": "2026-09-30T14:16:33+00:00"
     },
     {
-      "n": 10,
-      "headline": "EU ministers mull new ways to curb irregular migration",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/eu-ministers-mull-new-ways-to-curb-irregular-migration/a-79509375?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-02T00:54:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "NY's governor appoints special prosecutor in Cornell frat rape investigation",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr1585y0y90go?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-02T02:49:44+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "A new California law bans child marriage. What's the global outlook on the practice?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/01/g-s1-145998/child-marriage-ban-law-california-newsom",
-      "topic": "Trending",
-      "published": "2026-10-01T19:44:41+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "What we know about Tennessee's botched execution of Christa Pike",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-we-know-about-tennessees-botched-execution-of-christa-pike",
-      "topic": "Trending",
-      "published": "2026-10-01T22:55:43+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Burundi agrees to receive ‘third-country’ migrant deportees from US",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/sep/30/burundi-third-country-deportations-trump-immigration",
-      "topic": "World",
-      "published": "2026-09-30T12:47:15+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Klopp wins first game as Germany coach, without 'top dogs",
+      "headline": "Manchester City Premier League charges: What do they mean?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/klopp-wins-first-game-as-germany-coach-without-top-dogs/a-79508898?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/manchester-city-premier-league-charges-what-do-they-mean/a-79485638?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-01T22:23:00+00:00"
+      "published": "2026-10-02T11:59:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Google launches Project Suncatcher, a step towards AI data centers in space",
+      "headline": "San Francisco's car crime has plunged. How much credit does Flock deserve?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5983697/project-suncatcher-google-ai-data-center-space",
-      "topic": "Science",
-      "published": "2026-10-01T18:41:07+00:00"
+      "url": "https://www.npr.org/sections/planet-money/2026/10/02/g-s1-146060/san-franciscos-car-crime-has-plunged-how-much-credit-does-flock-deserve",
+      "topic": "Trending",
+      "published": "2026-10-02T10:30:00+00:00"
     }
   ]
 }
