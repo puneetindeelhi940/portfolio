@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T13:37:47Z",
+  "generated_at": "2026-10-04T18:58:38Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Does image show bison herd protecting hiker from wildfire?",
+      "claim": "17 claims involving the death penalty we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/bisons-hiker-wildfires-fake/",
+      "url": "https://www.snopes.com/collections/death-penalty-collection/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Was California teacher fired for forcing students to pledge allegiance to pride flag? Claim distorts facts",
+      "claim": "Does image show bison herd protecting hiker from wildfire?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/california-teacher-pledge-pride-flag/",
+      "url": "https://www.snopes.com/fact-check/bisons-hiker-wildfires-fake/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Dozens Of IRS Employees Snooped Through Celebrities, Other High-Profile Taxpayers’ Private Records, IG Report Finds",
+      "claim": "Chris Wright Claims Trump ‘Worked Ceaselessly’ To End Iran War He Started",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/04/dozens-internal-revenue-service-employees-snooped-celebrities-high-profile-taxpayers-private-records-treasury-inspector-general-tax-administration-report-finds",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/04/chris-wright-trump-iran-war-oil-prices-china-russia-tariffs",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "What has happened to 'Cornell 7' after lawsuit accused them of rape?",
+      "claim": "Was California teacher fired for forcing students to pledge allegiance to pride flag? Claim distorts facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/02/what-happened-cornell-7/",
+      "url": "https://www.snopes.com/fact-check/california-teacher-pledge-pride-flag/",
       "topic": "Trending"
     },
     {
@@ -154,22 +154,62 @@
     },
     {
       "n": 2,
-      "headline": "She died covering war for Fox News. Her parents blame the network — and a star reporter",
+      "headline": "Trump names national intelligence chief Jay Clayton as new AI czar",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5737621/fox-news-ukraine-deaths",
-      "topic": "World",
-      "published": "2026-10-04T10:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump",
+      "topic": "Politics",
+      "published": "2026-10-04T18:36:48+00:00"
     },
     {
       "n": 3,
-      "headline": "A $28 billion hemp THC industry is fighting to save itself from a looming federal ban",
+      "headline": "Search ongoing for missing medical flight from Bermuda to Boston as crews plan to scour ocean floor",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/a-28-billion-hemp-thc-industry-is-fighting-to-save-itself-from-a-looming-federal-ban",
+      "url": "https://www.pbs.org/newshour/nation/search-ongoing-for-missing-medical-flight-from-bermuda-to-boston-as-crews-plan-to-scour-ocean-floor",
       "topic": "Trending",
-      "published": "2026-10-03T22:06:17+00:00"
+      "published": "2026-10-04T17:53:51+00:00"
     },
     {
       "n": 4,
+      "headline": "Egyptian journalist faces terrorism charges after entire newsroom detained",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/04/egyptian-journalist-faces-terrorism-charges-entire-newsroom-detained-matsadaash-press-freedom",
+      "topic": "Trending",
+      "published": "2026-10-04T15:16:03+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Pakistan: Imran Khan supporters demand ex-PM's release",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/pakistan-imran-khan-supporters-demand-ex-pm-s-release/a-79539221?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-04T18:22:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Watch: What we know about Russian strikes on Kyiv bridges",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cmglwkyl9djyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-04T14:25:32+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Cornell president calls gang rape allegations 'deeply disturbing",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5990789/cornell-president-calls-gang-rape-allegations-deeply-disturbing",
+      "topic": "Politics",
+      "published": "2026-10-04T15:41:07+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Bosnia votes as pro-Russian politician looms large and ethnic tensions simmer",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/bosnia-votes-as-pro-russian-politician-looms-large-and-ethnic-tensions-simmer",
+      "topic": "Trending",
+      "published": "2026-10-04T16:42:31+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Libyan unity talks upended as warlord’s son linked to drone attacks on fuel facilities",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/03/libyan-unity-talks-warlord-son-linked-drone-attack-khalifa-haftar",
@@ -177,39 +217,39 @@
       "published": "2026-10-03T09:00:56+00:00"
     },
     {
-      "n": 5,
-      "headline": "Trump names AI czar to head White House task force",
+      "n": 10,
+      "headline": "Anthropic report: Is Russia using AI for disinformation in the Central African Republic and elsewhere?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-names-ai-czar-to-head-white-house-task-force/a-79537966?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-04T13:34:00+00:00"
+      "url": "https://www.dw.com/en/anthropic-report-is-russia-using-ai-for-disinformation-in-the-central-african-republic-and-elsewhere/a-79476947?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-04T17:15:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Australia investigating Flydubai co-pilot's links to country",
+      "n": 11,
+      "headline": "Yemen's government announces all-out war to reclaim land from Houthis",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-04T06:19:17+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-04T16:51:30+00:00"
     },
     {
-      "n": 7,
-      "headline": "Latter-day Saints women turn away from scandal-plagued Republican candidate in Arizona",
+      "n": 12,
+      "headline": "U.S. Marine arrested for alleged murder of a woman in Okinawa, Japan",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5950536/arizona-house-race-mark-lamb-lds-church",
-      "topic": "Politics",
-      "published": "2026-10-04T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5990790/us-marine-arrested-for-alleged-murder-woman-on-okinawa",
+      "topic": "Trending",
+      "published": "2026-10-04T15:15:09+00:00"
     },
     {
-      "n": 8,
-      "headline": "Trump rallies in Ohio to boost Jon Husted in a tight Senate race against Sherrod Brown",
+      "n": 13,
+      "headline": "Trump names national intelligence director Jay Clayton to lead a new federal AI task force",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-rallies-in-ohio-to-boost-jon-husted-in-a-tight-senate-race-against-sherrod-brown",
+      "url": "https://www.pbs.org/newshour/politics/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force",
       "topic": "Politics",
-      "published": "2026-10-03T20:53:07+00:00"
+      "published": "2026-10-04T16:31:42+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Row erupts over Cairo mural depicting Tutankhamun and Nefertiti with dark skin",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/oct/02/row-erupts-over-cairo-mural-depicting-tutankhamun-and-nefertiti-with-dark-skin",
@@ -217,68 +257,28 @@
       "published": "2026-10-02T08:55:42+00:00"
     },
     {
-      "n": 10,
-      "headline": "Torrential rain and flooding leave 2 dead and 1 missing in Spain's Catalonia region",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/torrential-rain-and-flooding-leave-2-dead-and-1-missing-in-spain-s-catalonia-region/a-79536990?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-04T11:36:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Tennessee prison chief to resign after Christa Pike's failed execution",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8zxl62yzxzxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-03T17:48:42+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Coast Guard finds debris from medical plane carrying 6 people",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/03/g-s1-146338/plane-missing-coast-guard-search-massachusetts",
-      "topic": "Trending",
-      "published": "2026-10-03T22:31:04+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/inside-the-study-for-a-remedy-to-fight-congos-deadliest-ebola-outbreak",
-      "topic": "Science",
-      "published": "2026-10-03T20:40:56+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Trump administration diverts human rights funds to push far-right agenda abroad",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/sep/30/trump-state-department-human-rights-fund",
-      "topic": "Politics",
-      "published": "2026-09-30T19:51:24+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Voting in Brazil's 2026 presidential election has begun, with polls showing Lula and Bolsonaro nearly tied",
+      "headline": "Germany's Merz visits Kyiv as Russia strikes bridge",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/voting-in-brazil-s-2026-presidential-election-has-begun-with-polls-showing-lula-and-bolsonaro-nearly-tied/a-79533857?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-04T11:28:00+00:00"
+      "url": "https://www.dw.com/en/germany-s-merz-visits-kyiv-as-russia-strikes-bridge/a-79534734?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-04T14:24:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Cornell president says university 'must do better' after frat house rape allegations",
+      "headline": "Ethiopian rebel forces withdraw from Tigray regional capital",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckly0leelnz4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-04T00:11:25+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-04T13:33:05+00:00"
     },
     {
       "n": 17,
-      "headline": "Can the Cornell lawsuit force changes that make students safer?",
+      "headline": "How the Cornell case is affecting women who have experienced sexual assault",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/03/nx-s1-5989313/can-the-cornell-lawsuit-force-changes-that-make-students-safer",
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5990232/how-the-cornell-case-is-affecting-women-who-have-experienced-sexual-assault",
       "topic": "Trending",
-      "published": "2026-10-03T21:57:34+00:00"
+      "published": "2026-10-04T14:51:27+00:00"
     }
   ]
 }
