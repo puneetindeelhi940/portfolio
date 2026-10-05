@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T18:58:38Z",
+  "generated_at": "2026-10-05T03:44:44Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "17 claims involving the death penalty we've investigated",
+      "claim": "Are there road signs in Japan warning drivers that cats may jump out into traffic?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/death-penalty-collection/",
+      "url": "https://www.snopes.com/fact-check/japan-cat-road-signs/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Overturning Roe V. Wade Required ‘Courage’ From Supreme Court Justices, Alito Reflects",
+      "claim": "‘Don’t Know’ Him: John Kennedy Does Not Say Yes When Asked If Ken Paxton ‘Has Character To Serve’ In Senate",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/03/samuel-alito-overturning-roe-v-wade-dobbs-jackson-womens-health-organization-decision-courage-supreme-court-justices-cbs-news",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/04/john-kennedy-ken-paxton-james-talarico-kristen-welker",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Does image show bison herd protecting hiker from wildfire?",
+      "claim": "17 claims involving the death penalty we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/bisons-hiker-wildfires-fake/",
+      "url": "https://www.snopes.com/collections/death-penalty-collection/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Chris Wright Claims Trump ‘Worked Ceaselessly’ To End Iran War He Started",
+      "claim": "Justice Alito Says COVID-19 Response Subjected Americans’ Constitutional Rights To ‘Stress Test’ … And Revealed Ugly Truth",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/04/chris-wright-trump-iran-war-oil-prices-china-russia-tariffs",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/04/supreme-court-samuel-alito-says-covid-19-americans-constitutional-rights-stress-test-fox-news-sunday-shannon-bream",
+      "topic": "Health"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Was California teacher fired for forcing students to pledge allegiance to pride flag? Claim distorts facts",
+      "claim": "Does image show bison herd protecting hiker from wildfire?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/california-teacher-pledge-pride-flag/",
+      "url": "https://www.snopes.com/fact-check/bisons-hiker-wildfires-fake/",
       "topic": "Trending"
     },
     {
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Trump names national intelligence chief Jay Clayton as new AI czar",
+      "headline": "Brazil's presidential race heads to Lula–Bolsonaro run-off as right gains ground",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump",
-      "topic": "Politics",
-      "published": "2026-10-04T18:36:48+00:00"
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5981181/brazil-presidential-lula-bolsonaro",
+      "topic": "Trending",
+      "published": "2026-10-05T00:17:35+00:00"
     },
     {
       "n": 3,
-      "headline": "Search ongoing for missing medical flight from Bermuda to Boston as crews plan to scour ocean floor",
+      "headline": "AP report: U.S. Air Force removes all bombers from British air base targeted by a suspected terror attack",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/search-ongoing-for-missing-medical-flight-from-bermuda-to-boston-as-crews-plan-to-scour-ocean-floor",
+      "url": "https://www.pbs.org/newshour/world/ap-report-u-s-air-force-removes-all-bombers-from-british-air-base-targeted-by-a-suspected-terror-attack",
       "topic": "Trending",
-      "published": "2026-10-04T17:53:51+00:00"
+      "published": "2026-10-04T21:37:37+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Pakistan: Imran Khan supporters demand ex-PM's release",
+      "headline": "US pulls bombers out of UK's Fairford airbase after arrests",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pakistan-imran-khan-supporters-demand-ex-pm-s-release/a-79539221?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-pulls-bombers-out-of-uk-s-fairford-airbase-after-arrests/a-79541731?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-04T18:22:00+00:00"
+      "published": "2026-10-05T01:58:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Cornell president calls gang rape allegations 'deeply disturbing",
+      "headline": "Brazil votes, with Lula facing Bolsonaro's son",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5990789/cornell-president-calls-gang-rape-allegations-deeply-disturbing",
-      "topic": "Politics",
-      "published": "2026-10-04T15:41:07+00:00"
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5981107/brazil-votes-with-lula-facing-bolsonaros-son",
+      "topic": "Trending",
+      "published": "2026-10-04T21:52:09+00:00"
     },
     {
       "n": 8,
-      "headline": "Bosnia votes as pro-Russian politician looms large and ethnic tensions simmer",
+      "headline": "Major oil exporters agree to keep production steady in November",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/bosnia-votes-as-pro-russian-politician-looms-large-and-ethnic-tensions-simmer",
+      "url": "https://www.pbs.org/newshour/world/major-oil-exporters-agree-to-keep-production-steady-in-november",
       "topic": "Trending",
-      "published": "2026-10-04T16:42:31+00:00"
+      "published": "2026-10-04T21:11:27+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Anthropic report: Is Russia using AI for disinformation in the Central African Republic and elsewhere?",
+      "headline": "Brazil election: Bolsonaro and Lula head to runoff",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/anthropic-report-is-russia-using-ai-for-disinformation-in-the-central-african-republic-and-elsewhere/a-79476947?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-04T17:15:00+00:00"
+      "url": "https://www.dw.com/en/brazil-election-bolsonaro-and-lula-head-to-runoff/a-79533857?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-05T00:27:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "U.S. Marine arrested for alleged murder of a woman in Okinawa, Japan",
+      "headline": "Trump names national intelligence chief Jay Clayton as new AI czar",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5990790/us-marine-arrested-for-alleged-murder-woman-on-okinawa",
-      "topic": "Trending",
-      "published": "2026-10-04T15:15:09+00:00"
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump",
+      "topic": "Politics",
+      "published": "2026-10-04T18:36:48+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump names national intelligence director Jay Clayton to lead a new federal AI task force",
+      "headline": "WATCH LIVE: Winner of the 2026 Nobel Prize in medicine is ...",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force",
-      "topic": "Politics",
-      "published": "2026-10-04T16:31:42+00:00"
+      "url": "https://www.pbs.org/newshour/health/watch-live-winner-of-the-2026-nobel-prize-in-medicine-is",
+      "topic": "Trending",
+      "published": "2026-10-04T21:00:47+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany's Merz visits Kyiv as Russia strikes bridge",
+      "headline": "Nationalists top Bosnia-Herzegovina's divisive election",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-s-merz-visits-kyiv-as-russia-strikes-bridge/a-79534734?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-04T14:24:00+00:00"
+      "url": "https://www.dw.com/en/nationalists-top-bosnia-herzegovina-s-divisive-election/a-79535336?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-04T22:55:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Ethiopian rebel forces withdraw from Tigray regional capital",
+      "headline": "Brazil election goes to run-off as right-wing Flávio Bolsonaro wins first round",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-04T13:33:05+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-05T03:16:16+00:00"
     },
     {
       "n": 17,
-      "headline": "How the Cornell case is affecting women who have experienced sexual assault",
+      "headline": "Cornell president calls gang rape allegations 'deeply disturbing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5990232/how-the-cornell-case-is-affecting-women-who-have-experienced-sexual-assault",
-      "topic": "Trending",
-      "published": "2026-10-04T14:51:27+00:00"
+      "url": "https://www.npr.org/2026/10/04/nx-s1-5990789/cornell-president-calls-gang-rape-allegations-deeply-disturbing",
+      "topic": "Politics",
+      "published": "2026-10-04T15:41:07+00:00"
     }
   ]
 }
