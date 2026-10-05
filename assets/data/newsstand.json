@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T03:44:44Z",
+  "generated_at": "2026-10-05T16:43:47Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Are there road signs in Japan warning drivers that cats may jump out into traffic?",
+      "claim": "Is video of monkey rescuing dog from floodwaters in Thailand real?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/japan-cat-road-signs/",
+      "url": "https://www.snopes.com/fact-check/video-monkey-dog-flood/",
       "topic": "Trending"
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Varanasi Police falsely claims viral video of cops recording dancers is AI-generated",
+      "claim": "Apple, Google remove Bitchat in India on govt order: Those determined to bypass it will, the ordinary user gets locked out",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/varanasi-police-falsely-claims-viral-video-of-cops-recording-dancers-is-ai-generated/",
+      "url": "https://www.altnews.in/apple-google-remove-bitchat-in-india-on-govt-order-those-determined-to-bypass-it-will-the-ordinary-user-gets-locked-out/",
       "topic": "Tech / AI"
     },
     {
       "n": 7,
-      "claim": "Government wrong to claim over 14.5 million children used free bus scheme",
+      "claim": "Reform did not have only one health policy in the 2024 election",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/heidi-alexander-free-bus-children/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/health/yvette-cooper-reform-health-policy-2024/",
+      "topic": "Health"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "17 claims involving the death penalty we've investigated",
+      "claim": "What has happened to 'Cornell 7' after lawsuit accused them of rape?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/death-penalty-collection/",
+      "url": "https://www.snopes.com/news/2026/10/02/what-happened-cornell-7/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Justice Alito Says COVID-19 Response Subjected Americans’ Constitutional Rights To ‘Stress Test’ … And Revealed Ugly Truth",
+      "claim": "Whistleblower Who Exposed Howard Lutnick’s Epstein Ties Found Dead",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/04/supreme-court-samuel-alito-says-covid-19-americans-constitutional-rights-stress-test-fox-news-sunday-shannon-bream",
-      "topic": "Health"
+      "url": "https://dailycaller.com/2026/10/05/whistleblower-simon-andriesz-exposed-howard-lutnicks-epstein-ties-found-dead",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Only 7 lakh deleted voters appealed in Bengal SIR tribunals? Suvendu Adhiakri’s claim false, shows EC data",
+      "claim": "Instagram takes down content critical of Vizag data centre projects, cites IT Act notices",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/only-7-lakh-deleted-voters-appealed-in-bengal-sir-tribunals-suvendu-adhiakris-claim-false-shows-ec-data/",
+      "url": "https://www.altnews.in/instagram-takes-down-content-critical-of-vizag-data-centre-projects-cites-it-act-notices/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "supposedly showing BBC News linking Indian passenger to Flydubai attack is a deepfake",
+      "claim": "What’s the harm? Fact checking reveals the true scale of AI fakery",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/flydubai-flight-bbc-presenter-deepfake/",
+      "url": "https://fullfact.org/technology/fact-checking-reveals-the-true-scale-of-ai-fakery/",
       "topic": "Tech / AI"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Does image show bison herd protecting hiker from wildfire?",
+      "claim": "17 claims involving the death penalty we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/bisons-hiker-wildfires-fake/",
+      "url": "https://www.snopes.com/collections/death-penalty-collection/",
       "topic": "Trending"
     },
     {
@@ -146,30 +146,110 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
+      "headline": "No10 insists UK military base RAF Fairford is safe after US withdraws bombers",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmy56yvv1kxxo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-04T12:09:04+00:00"
+      "published": "2026-10-05T16:13:35+00:00"
     },
     {
       "n": 2,
-      "headline": "Brazil's presidential race heads to Lula–Bolsonaro run-off as right gains ground",
+      "headline": "Dennis Hastert, longtime Republican House speaker who went to prison, dies at age 84",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5981181/brazil-presidential-lula-bolsonaro",
-      "topic": "Trending",
-      "published": "2026-10-05T00:17:35+00:00"
+      "url": "https://www.npr.org/2026/10/05/g-s1-146452/dennis-hastert-republican-house-speaker-dies-obit",
+      "topic": "Politics",
+      "published": "2026-10-05T14:24:31+00:00"
     },
     {
       "n": 3,
-      "headline": "AP report: U.S. Air Force removes all bombers from British air base targeted by a suspected terror attack",
+      "headline": "Former Prince Andrew files legal action challenging warrants that led to searches of his homes",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/ap-report-u-s-air-force-removes-all-bombers-from-british-air-base-targeted-by-a-suspected-terror-attack",
-      "topic": "Trending",
-      "published": "2026-10-04T21:37:37+00:00"
+      "url": "https://www.pbs.org/newshour/world/former-prince-andrew-files-legal-action-challenging-warrants-that-led-to-searches-of-his-homes",
+      "topic": "Celebrity",
+      "published": "2026-10-05T16:26:55+00:00"
     },
     {
       "n": 4,
+      "headline": "Guardian readers fund life-changing surgery for Somali boy injured in US airstrike",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/oct/05/guardian-readers-fundraising-somalian-boy-injured-in-us-strike-surgery-abdiqadir-salah",
+      "topic": "Trending",
+      "published": "2026-10-05T12:00:24+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Ukraine says Russian drones behind Turkish ship sinking",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/ukraine-says-russian-drones-behind-turkish-ship-sinking/a-79552387?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-05T15:49:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Flydubai co-pilot planned to crash plane into Tel Aviv airport or building, reports say",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm3691y79xp5o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-05T11:34:59+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Drones buzz overhead, troops hunker underground in Ukraine's hellish kill zone",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/05/nx-s1-5925803/drones-buzz-overhead-troops-hunker-underground-in-ukraines-hellish-kill-zone",
+      "topic": "Trending",
+      "published": "2026-10-05T12:33:20+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Supreme Court rejects Michigan woman's appeal over school's ban on 'Let's Go Brandon' sweatshirts",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/supreme-court-rejects-michigan-womans-appeal-over-schools-ban-on-lets-go-brandon-sweatshirts",
+      "topic": "Trending",
+      "published": "2026-10-05T16:04:05+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Skull fractures suggest servants of Egypt’s ancient kings were sacrificed",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/science/2026/oct/05/skull-fractures-suggest-servants-of-egypts-ancient-kings-were-sacrificed",
+      "topic": "Trending",
+      "published": "2026-10-05T04:00:48+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Australia, New Zealand probe Flydubai pilot's time there",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/australia-new-zealand-probe-flydubai-pilot-s-time-there/a-79551423?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-05T15:02:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Teenager's hand blown off during confrontation between France school protesters and police",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c9zrdmxp4vy6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-05T16:32:18+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "FBI arrests a woman accused of spying on Taiwan leader's family for China",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/05/g-s1-146410/fbi-arrests-a-woman-accused-of-spying-on-taiwan-leaders-family-for-china",
+      "topic": "World",
+      "published": "2026-10-05T11:47:36+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Former White House press secretary Karoline Leavitt lands her next gig as Fox News contributor",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/former-white-house-press-secretary-karoline-leavitt-lands-her-next-gig-as-fox-news-contributor",
+      "topic": "Trending",
+      "published": "2026-10-05T15:33:34+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Egyptian journalist faces terrorism charges after entire newsroom detained",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/04/egyptian-journalist-faces-terrorism-charges-entire-newsroom-detained-matsadaash-press-freedom",
@@ -177,108 +257,28 @@
       "published": "2026-10-04T15:16:03+00:00"
     },
     {
-      "n": 5,
-      "headline": "US pulls bombers out of UK's Fairford airbase after arrests",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-pulls-bombers-out-of-uk-s-fairford-airbase-after-arrests/a-79541731?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-05T01:58:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Watch: What we know about Russian strikes on Kyiv bridges",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cmglwkyl9djyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-04T14:25:32+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Brazil votes, with Lula facing Bolsonaro's son",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5981107/brazil-votes-with-lula-facing-bolsonaros-son",
-      "topic": "Trending",
-      "published": "2026-10-04T21:52:09+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Major oil exporters agree to keep production steady in November",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/major-oil-exporters-agree-to-keep-production-steady-in-november",
-      "topic": "Trending",
-      "published": "2026-10-04T21:11:27+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Libyan unity talks upended as warlord’s son linked to drone attacks on fuel facilities",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/03/libyan-unity-talks-warlord-son-linked-drone-attack-khalifa-haftar",
-      "topic": "Trending",
-      "published": "2026-10-03T09:00:56+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Brazil election: Bolsonaro and Lula head to runoff",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brazil-election-bolsonaro-and-lula-head-to-runoff/a-79533857?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-05T00:27:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Yemen's government announces all-out war to reclaim land from Houthis",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-04T16:51:30+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Trump names national intelligence chief Jay Clayton as new AI czar",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump",
-      "topic": "Politics",
-      "published": "2026-10-04T18:36:48+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "WATCH LIVE: Winner of the 2026 Nobel Prize in medicine is ...",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/watch-live-winner-of-the-2026-nobel-prize-in-medicine-is",
-      "topic": "Trending",
-      "published": "2026-10-04T21:00:47+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Row erupts over Cairo mural depicting Tutankhamun and Nefertiti with dark skin",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/oct/02/row-erupts-over-cairo-mural-depicting-tutankhamun-and-nefertiti-with-dark-skin",
-      "topic": "Trending",
-      "published": "2026-10-02T08:55:42+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Nationalists top Bosnia-Herzegovina's divisive election",
+      "headline": "Euro plummets against US dollar: has the next financial crisis begun?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nationalists-top-bosnia-herzegovina-s-divisive-election/a-79535336?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-04T22:55:00+00:00"
+      "url": "https://www.dw.com/en/euro-plummets-against-us-dollar-has-the-next-financial-crisis-begun/a-79549031?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-10-05T14:28:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Brazil election goes to run-off as right-wing Flávio Bolsonaro wins first round",
+      "headline": "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-05T03:16:16+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cr0j0w3p8453o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-05T15:17:23+00:00"
     },
     {
       "n": 17,
-      "headline": "Cornell president calls gang rape allegations 'deeply disturbing",
+      "headline": "Imran Khan supporters march in Pakistan to demand his release after talks failed",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/04/nx-s1-5990789/cornell-president-calls-gang-rape-allegations-deeply-disturbing",
-      "topic": "Politics",
-      "published": "2026-10-04T15:41:07+00:00"
+      "url": "https://www.npr.org/2026/10/05/g-s1-146408/imran-khan-supporters-march-in-pakistan-to-demand-his-release-after-talks-failed",
+      "topic": "Trending",
+      "published": "2026-10-05T11:38:26+00:00"
     }
   ]
 }
