@@ -1,9 +1,9 @@
 {
   "composite_index": {
     "current_value": 6.8,
-    "previous_value": 6.7,
-    "change_pct": 1.5,
-    "trend": "rising",
+    "previous_value": 6.8,
+    "change_pct": 0.0,
+    "trend": "stable",
     "ai_contribution_ppt": 1.1,
     "description": "AI contributed approximately 1.1 percentage points to technology inflation globally this quarter.",
     "period": "Q2 2026"
@@ -24,8 +24,8 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 4.7,
-      "trend": "rising",
+      "value": 4.6,
+      "trend": "falling",
       "drivers": [
         "GPU instance demand",
         "Data center expansion",
@@ -36,8 +36,8 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 12.8,
-      "trend": "stable",
+      "value": 13.0,
+      "trend": "rising",
       "drivers": [
         "Inference cost",
         "Model competition",
@@ -49,7 +49,7 @@
       "label": "Electricity & Energy",
       "weight": 0.2,
       "value": 8.1,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -61,7 +61,7 @@
       "label": "Consumer Electronics",
       "weight": 0.15,
       "value": 4.9,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.0,
+      "value": 6.1,
       "trend": "rising",
       "drivers": [
         "AI feature premiums",
@@ -84,8 +84,8 @@
     "infrastructure": {
       "label": "Infrastructure & Construction",
       "weight": 0.1,
-      "value": 3.2,
-      "trend": "rising",
+      "value": 3.1,
+      "trend": "falling",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-10-04T11:24:20Z",
+  "last_updated": "2026-10-05T12:48:44Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
