@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T04:32:34Z",
+  "generated_at": "2026-10-06T14:41:03Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump say he feels badly for 'Cornell 7' because they 'won't get a fair shake'?",
+      "claim": "Female Cornell employees coined term 'sexual harassment' in 1975",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-badly-cornell-7/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/sexual-harassment-coined-cornell/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Bengal bypolls: Facebook restricts local news pages covering Opposition campaign in Rejinagar",
+      "claim": "‘Namo Seva’: Students made to act in play glorifying Modi, chant ‘Modi hai toh mumkin hai’, ‘Jai Sri Ram’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bengal-bypolls-facebook-restricts-local-news-pages-covering-opposition-campaign-in-rejinagar/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/namo-seva-students-made-to-act-in-play-glorifying-modi-chant-modi-hai-toh-mumkin-hai-jai-sri-ram/",
+      "topic": "Politics"
     },
     {
       "n": 7,
-      "claim": "Reform did not have only one health policy in the 2024 election",
+      "claim": "of Elon Musk warning of water shortage deaths is a deepfake",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/yvette-cooper-reform-health-policy-2024/",
-      "topic": "Health"
+      "url": "https://fullfact.org/environment/elon-musk-warning-video-deepfake/",
+      "topic": "Tech / AI"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "12 rumors about Trump renaming things, examined",
+      "claim": "Why Endangered Species Act protections for monarch butterflies are in limbo under Trump",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-renaming-things-rumors-collections/",
+      "url": "https://www.snopes.com/fact-check/monarch-butterfly-protections-trump/",
       "topic": "Politics"
     },
     {
@@ -104,19 +104,19 @@
     },
     {
       "n": 13,
-      "claim": "Apple, Google remove Bitchat in India on govt order: Those determined to bypass it will, the ordinary user gets locked out",
+      "claim": "Bengal bypolls: Facebook restricts local news pages covering Opposition campaign in Rejinagar",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/apple-google-remove-bitchat-in-india-on-govt-order-those-determined-to-bypass-it-will-the-ordinary-user-gets-locked-out/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/bengal-bypolls-facebook-restricts-local-news-pages-covering-opposition-campaign-in-rejinagar/",
+      "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "What’s the harm? Fact checking reveals the true scale of AI fakery",
+      "claim": "Reform did not have only one health policy in the 2024 election",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/technology/fact-checking-reveals-the-true-scale-of-ai-fakery/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/health/yvette-cooper-reform-health-policy-2024/",
+      "topic": "Health"
     },
     {
       "n": 15,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump share post predicting Armageddon 'tonight'?",
+      "claim": "Did Buzz Aldrin say, 'The moon is not what you think'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-armageddon-post-fake/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/moon-not-what-you-think-buzz-aldrin/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,22 +146,102 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump says 'threat' led US to pull bombers from RAF Fairford",
+      "headline": "Former German spy chief arrested for espionage and treason",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwj3413e5m1lo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-06T04:25:22+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c58jzyer1kr0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-06T10:05:42+00:00"
     },
     {
       "n": 2,
-      "headline": "The iconic Arthur Read made his TV debut 30 years ago",
+      "headline": "Here are the finalists for the 2026 National Book Awards",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/05/g-s1-146052/arthur-read-tv-debut-30-anniversary",
+      "url": "https://www.npr.org/2026/10/06/nx-s1-5991463/2026-national-book-award-shortlist-finalists",
       "topic": "Trending",
-      "published": "2026-10-05T18:26:01+00:00"
+      "published": "2026-10-06T14:30:20+00:00"
     },
     {
       "n": 3,
+      "headline": "Alito says Supreme Court can't stem rise of emergency appeals, 'not pleased' with Trump's rhetoric",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/alito-says-supreme-court-cant-stem-rise-of-emergency-appeals-not-pleased-with-trumps-rhetoric",
+      "topic": "Politics",
+      "published": "2026-10-06T14:25:51+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Kenya confirms first Ebola case as virus ‘surges’ in DR Congo province",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/06/kenya-first-ebola-case-death-drc",
+      "topic": "Health",
+      "published": "2026-10-06T12:46:56+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Paramount and Warner Bros merge into one Hollywood giant",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/paramount-and-warner-bros-merge-into-one-hollywood-giant/a-79565762?maca=en-rss-en-all-1573-rdf",
+      "topic": "Celebrity",
+      "published": "2026-10-06T14:18:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Ship sinks and crew missing after Black Sea drone attack",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c8ly0v5r602eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-06T11:53:21+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "What to know about nationwide protests in India over voter list changes",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/06/g-s1-146636/what-to-know-about-nationwide-protests-in-india-over-voter-list-changes",
+      "topic": "Trending",
+      "published": "2026-10-06T11:44:06+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Cold War memories stir Rubio in Iceland as he champions diplomacy and downplays differences",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/cold-war-memories-stir-rubio-in-iceland-as-he-champions-diplomacy-and-downplays-differences",
+      "topic": "World",
+      "published": "2026-10-06T13:38:24+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Tigray rebel groups ‘forcibly recruiting boys as young as 15’ as fighting spreads",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/oct/06/ethiopia-tigray-conflict-tplf-rebels-forcibly-recruit-boys-war-crimes",
+      "topic": "Trending",
+      "published": "2026-10-06T05:00:02+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Spain court lifts Puigdemont arrest warrant, clearing way for his return home ahead of November elections",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/spain-court-lifts-puigdemont-arrest-warrant-clearing-way-for-his-return-home-ahead-of-november-elections/a-79565853?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-06T14:06:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Lawyer for one of Cornell 7 calls for special prosecutor to be removed over previous comments",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gxygvpg6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-06T13:36:46+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Vietnamese police arrest 12 suspected of prowling city streets at night, snatching cats for meat",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/06/g-s1-146634/vietnamese-police-arrest-12-suspected-of-prowling-city-streets-at-night-snatching-cats-for-meat",
+      "topic": "Trending",
+      "published": "2026-10-06T11:38:48+00:00"
+    },
+    {
+      "n": 13,
       "headline": "Helpful or harmful? When it comes to AI and young kids, experts have these tips for parents",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/education/helpful-or-harmful-when-it-comes-to-ai-and-young-kids-experts-have-these-tips-for-parents",
@@ -169,7 +249,7 @@
       "published": "2026-10-06T02:03:16+00:00"
     },
     {
-      "n": 4,
+      "n": 14,
       "headline": "Guardian readers fund life-changing surgery for Somali boy injured in US airstrike",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/oct/05/guardian-readers-fundraising-somalian-boy-injured-in-us-strike-surgery-abdiqadir-salah",
@@ -177,108 +257,28 @@
       "published": "2026-10-05T12:00:24+00:00"
     },
     {
-      "n": 5,
-      "headline": "Trump says taxpayers will no longer fund controversial TV ads after backlash",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-says-taxpayers-will-no-longer-fund-controversial-tv-ads-after-backlash/a-79557317?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-06T02:32:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "France braces for national day of school protests after injuries and mass arrests",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-05T21:18:10+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Dennis Hastert, longtime Republican House speaker who went to prison, dies at age 84",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/05/g-s1-146452/dennis-hastert-republican-house-speaker-dies-obit",
-      "topic": "Politics",
-      "published": "2026-10-05T14:24:31+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "What to know about Spain's housing protests sparked by an 87-year-old woman's eviction",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/what-to-know-about-spains-housing-protests-sparked-by-an-87-year-old-womans-eviction",
-      "topic": "Trending",
-      "published": "2026-10-06T00:12:30+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Skull fractures suggest servants of Egypt’s ancient kings were sacrificed",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/science/2026/oct/05/skull-fractures-suggest-servants-of-egypts-ancient-kings-were-sacrificed",
-      "topic": "Trending",
-      "published": "2026-10-05T04:00:48+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Measles cases are spreading in the US this year, with over 1,000 infections reported in Pennsylvania",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/measles-cases-are-spreading-in-the-us-this-year-with-over-1-000-infections-reported-in-pennsylvania/a-79557286?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-06T01:35:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Saudi Arabia urged to spare man sentenced to death over Facebook post",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq14d438vx24o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-05T22:28:02+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Drones buzz overhead, troops hunker underground in Ukraine's hellish kill zone",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/05/nx-s1-5925803/drones-buzz-overhead-troops-hunker-underground-in-ukraines-hellish-kill-zone",
-      "topic": "Trending",
-      "published": "2026-10-05T12:33:20+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "No arrests after Georgia block party shooting as police pursue who killed 2 and injured dozens",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/no-arrests-after-georgia-block-party-shooting-as-police-pursue-who-killed-2-and-injured-dozens",
-      "topic": "Trending",
-      "published": "2026-10-05T23:43:11+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Egyptian journalist faces terrorism charges after entire newsroom detained",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/04/egyptian-journalist-faces-terrorism-charges-entire-newsroom-detained-matsadaash-press-freedom",
-      "topic": "Trending",
-      "published": "2026-10-04T15:16:03+00:00"
-    },
-    {
       "n": 15,
-      "headline": "ICC unseals Taliban leaders' warrants over persecuting women",
+      "headline": "Southeast Asia's haze crisis: Have lessons been learned?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/icc-unseals-taliban-leaders-warrants-over-persecuting-women/a-79556631?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/southeast-asia-s-haze-crisis-have-lessons-been-learned/a-79564992?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-05T21:07:00+00:00"
+      "published": "2026-10-06T13:50:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
+      "headline": "Fort Hood shooter to be executed by firing squad - a first for US military since World War Two",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crly09gz7ew4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-06T02:37:46+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq8ezkkkrpy1o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-06T02:22:24+00:00"
     },
     {
       "n": 17,
-      "headline": "FBI arrests a woman accused of spying on Taiwan leader's family for China",
+      "headline": "Ex-spy chief is arrested in Germany on suspicion of trading state secrets and treason",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/05/g-s1-146410/fbi-arrests-a-woman-accused-of-spying-on-taiwan-leaders-family-for-china",
-      "topic": "World",
-      "published": "2026-10-05T11:47:36+00:00"
+      "url": "https://www.npr.org/2026/10/06/g-s1-146630/germany-ex-spy-chief-state-secrets",
+      "topic": "Trending",
+      "published": "2026-10-06T11:31:48+00:00"
     }
   ]
 }
