@@ -12,8 +12,8 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 7.7,
-      "trend": "stable",
+      "value": 7.4,
+      "trend": "falling",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -24,7 +24,7 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 4.6,
+      "value": 4.4,
       "trend": "falling",
       "drivers": [
         "GPU instance demand",
@@ -36,7 +36,7 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 13.0,
+      "value": 13.1,
       "trend": "rising",
       "drivers": [
         "Inference cost",
@@ -48,8 +48,8 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 8.1,
-      "trend": "stable",
+      "value": 8.2,
+      "trend": "rising",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -60,8 +60,8 @@
     "consumer_electronics": {
       "label": "Consumer Electronics",
       "weight": 0.15,
-      "value": 4.9,
-      "trend": "stable",
+      "value": 5.1,
+      "trend": "rising",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.1,
+      "value": 6.2,
       "trend": "rising",
       "drivers": [
         "AI feature premiums",
@@ -85,7 +85,7 @@
       "label": "Infrastructure & Construction",
       "weight": 0.1,
       "value": 3.1,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-10-05T12:48:44Z",
+  "last_updated": "2026-10-06T12:18:09Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
