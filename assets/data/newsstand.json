@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T03:58:36Z",
+  "generated_at": "2026-10-07T15:00:50Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump say of Iran, 'Let 'em take out' LA and San Diego?",
+      "claim": "Images allegedly show ancient Egyptian sculptures with cats ignoring personal space. Are they real?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-iran-take-out-la-san-diego/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/egyptian-sculptures-cats/",
+      "topic": "Science"
     },
     {
       "n": 3,
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "‘Namo Seva’: Students made to act in play glorifying Modi, chant ‘Modi hai toh mumkin hai’, ‘Jai Sri Ram’",
+      "claim": "‘They fear cartoons will demolish their narratives’: Satish Acharya on govt-ordered content restrictions",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/namo-seva-students-made-to-act-in-play-glorifying-modi-chant-modi-hai-toh-mumkin-hai-jai-sri-ram/",
-      "topic": "Politics"
+      "url": "https://www.altnews.in/they-fear-cartoons-will-demolish-their-narratives-satish-acharya-on-govt-ordered-content-restrictions/",
+      "topic": "Trending"
     },
     {
       "n": 7,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Trump say he has an IQ of 1,775?",
+      "claim": "Is Kennedy Center selling its Steinway pianos?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-iq-1775/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/kennedy-center-steinway-pianos/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Bengal bypolls: Facebook restricts local news pages covering Opposition campaign in Rejinagar",
+      "claim": "Bengal Christian body moves NHRC, minority commission over alleged attacks, intimidation",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bengal-bypolls-facebook-restricts-local-news-pages-covering-opposition-campaign-in-rejinagar/",
+      "url": "https://www.altnews.in/bengal-christian-body-moves-nhrc-minority-commission-over-alleged-attacks-intimidation/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "PETA euthanized 67% of animals it took in during 2024, data shows",
+      "claim": "Cornell rape allegations: 5 claims we've analyzed",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/peta-euthanized-animals-2024/",
+      "url": "https://www.snopes.com/collections/cornell-rape-case-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US death row inmate Christa Pike awake and speaking after failed execution, lawyers say",
+      "headline": "France halts use of stun grenades after boy's hand blown off in student protests",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8kgezxn54qko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqzjx7z2r4gko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-07T00:56:59+00:00"
+      "published": "2026-10-07T12:16:58+00:00"
     },
     {
       "n": 2,
-      "headline": "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
+      "headline": "Gut microbes followed migrating humans across continents, new study suggests",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/06/462030457/eva-marie-saint-on-the-waterfront-dead-102",
-      "topic": "Trending",
-      "published": "2026-10-06T22:45:00+00:00"
+      "url": "https://www.npr.org/2026/10/07/nx-s1-5987874/ancient-gut-microbiome-migration-evolution-hadza-tsimane",
+      "topic": "Science",
+      "published": "2026-10-07T15:00:47+00:00"
     },
     {
       "n": 3,
-      "headline": "Man living in Congo who went back to Kenya is country's 1st confirmed Ebola case and death",
+      "headline": "What happened in the first Maine Senate debate between Collins and Jackson",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/man-living-in-congo-who-went-back-to-kenya-is-countrys-1st-confirmed-ebola-case-and-death",
-      "topic": "Trending",
-      "published": "2026-10-06T23:58:07+00:00"
+      "url": "https://www.pbs.org/newshour/politics/what-happened-in-the-first-maine-senate-debate-between-collins-and-jackson",
+      "topic": "Politics",
+      "published": "2026-10-07T14:13:29+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Mali: Junta forces retake strategic town of Kidal from separatists",
+      "headline": "Why music in Iran is more than just entertainment",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/mali-junta-forces-retake-strategic-town-of-kidal-from-separatists/a-79570617?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-07T02:45:00+00:00"
+      "url": "https://www.dw.com/en/why-music-in-iran-is-more-than-just-entertainment/a-79583224?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-07T14:58:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Tear gas in Paris and Marseille as school protests grow across France",
+      "headline": "US death row inmate Christa Pike awake and speaking after failed execution, lawyers say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8x23706pvz3o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c8kgezxn54qko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-06T18:03:19+00:00"
+      "published": "2026-10-07T10:12:36+00:00"
     },
     {
       "n": 7,
-      "headline": "Cornell names former acting U.S. attorney general to review rape case",
+      "headline": "Greetings from Lahore, Pakistan, whose high court offers an oasis for chatter and chai",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/06/nx-s1-5992799/cornell-yates-rape-case-updates-review",
+      "url": "https://www.npr.org/2026/10/07/nx-s1-5992681/lahore-pakistan-high-court-square",
       "topic": "Trending",
-      "published": "2026-10-06T18:31:45+00:00"
+      "published": "2026-10-07T13:53:54+00:00"
     },
     {
       "n": 8,
-      "headline": "ABC and Trump's FCC battle in federal court over free speech and jurisdiction issues",
+      "headline": "LIVE MAP: Track the path of Tropical Storm Isaias",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/abc-and-trumps-fcc-battle-in-federal-court-over-free-speech-and-jurisdiction-issues",
-      "topic": "Politics",
-      "published": "2026-10-06T23:51:58+00:00"
+      "url": "https://www.pbs.org/newshour/nation/live-map-track-the-path-of-tropical-storm-isaias",
+      "topic": "Trending",
+      "published": "2026-10-07T13:20:40+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Football: Lionel Messi plays final game for Argentina",
+      "headline": "South Sudan's road to elections remains uncertain",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/football-lionel-messi-plays-final-game-for-argentina/a-79570608?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/south-sudan-s-road-to-elections-remains-uncertain/a-79563442?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-07T02:35:00+00:00"
+      "published": "2026-10-07T13:45:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Former German spy chief arrested for espionage and treason",
+      "headline": "Residents of kibbutz destroyed in 7 October Hamas-led attacks grapple with how to rebuild",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c58jzyer1kr0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqrmyz4mdn94o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-06T10:05:42+00:00"
+      "published": "2026-10-07T05:02:18+00:00"
     },
     {
       "n": 12,
-      "headline": "France's police fire tear gas and water cannons as school protests sweep the country",
+      "headline": "DIY fertilizer is a blessing as farmers face steep prices due to the Iran war",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/06/nx-s1-5992819/france-student-protests-schools",
-      "topic": "Trending",
-      "published": "2026-10-06T18:05:44+00:00"
+      "url": "https://www.npr.org/2026/10/07/g-s1-146541/fertilizer-diy-farmers-iran-war",
+      "topic": "World",
+      "published": "2026-10-07T13:32:37+00:00"
     },
     {
       "n": 13,
-      "headline": "WATCH LIVE: Winner of the 2026 Nobel Prize in chemistry is …",
+      "headline": "Man living in Congo who went back to Kenya is country's 1st confirmed Ebola case and death",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/watch-live-winner-of-the-2026-nobel-prize-in-chemistry-is",
+      "url": "https://www.pbs.org/newshour/health/man-living-in-congo-who-went-back-to-kenya-is-countrys-1st-confirmed-ebola-case-and-death",
       "topic": "Trending",
-      "published": "2026-10-06T22:58:45+00:00"
+      "published": "2026-10-06T23:58:07+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Christa Pike awake after failed Tennessee execution: lawyers",
+      "headline": "China's Golden Week reveals cautious consumer spending despite travel surge",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/christa-pike-awake-after-failed-tennessee-execution-lawyers/a-79569867?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-06T23:49:00+00:00"
+      "url": "https://www.dw.com/en/china-s-golden-week-reveals-cautious-consumer-spending-despite-travel-surge/a-79577254?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-07T13:18:00+00:00"
     },
     {
       "n": 16,
-      "headline": "A beautiful Himalayan bird is changing its voice due to human activity, research shows",
+      "headline": "Trump to speak to Putin about plague lab worker's death in Russia",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq9868z88rexo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-06T23:07:44+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-07T14:50:28+00:00"
     },
     {
       "n": 17,
-      "headline": "Here are the finalists for the 2026 National Book Awards",
+      "headline": "U.S. moves long-range bombers from U.K. And, Israel allegedly warned before Oct. 7",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/06/nx-s1-5991463/2026-national-book-award-shortlist-finalists",
-      "topic": "Trending",
-      "published": "2026-10-06T14:30:20+00:00"
+      "url": "https://www.npr.org/2026/10/07/g-s1-146853/up-first-newsletter-long-range-bombers-france-high-school-protest-germany-august-hanning-oct-7-memorial-day",
+      "topic": "World",
+      "published": "2026-10-07T10:52:58+00:00"
     }
   ]
 }
