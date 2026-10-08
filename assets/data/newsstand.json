@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T04:11:26Z",
+  "generated_at": "2026-10-08T15:09:09Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Amazon is sending Prime class action settlement payments. Are you eligible?",
+      "claim": "What has happened to 'Cornell 7' after lawsuit accused them of rape?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/amazon-prime-settlement-eligibility/",
-      "topic": "Money"
+      "url": "https://www.snopes.com/news/2026/10/02/what-happened-cornell-7/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "‘They fear cartoons will demolish their narratives’: Satish Acharya on govt-ordered content restrictions",
+      "claim": "College dance performance videos falsely linked to CJP protests against Gyanesh Kumar",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/they-fear-cartoons-will-demolish-their-narratives-satish-acharya-on-govt-ordered-content-restrictions/",
+      "url": "https://www.altnews.in/college-dance-performance-videos-falsely-linked-to-cjp-protests-against-gyanesh-kumar/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Do photos show gold statue of naked Trump at European Parliament?",
+      "claim": "Sam Altman said world needs to accept 'some bad things happening' for benefits of AI",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-gold-naked-statue/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/sam-altman-bad-things-benefits-ai/",
+      "topic": "Tech / AI"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "GOP Rep Virginia Foxx Holds Opioid And Coal Stocks Amid NC Overdose Crisis And Hundreds Of Mine Safety Penalties",
+      "claim": "EXCLUSIVE: Trump Admin Sends Out Nearly 21 Million Medicare Improvement Fund Payments",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/07/virginia-foxx-opioid-coal-stocks-overdose-crisis-mine-safety-penalties",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/08/exclusive-trump-21-million-medicare-improvement-fund-payments-midterms",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Bengal Christian body moves NHRC, minority commission over alleged attacks, intimidation",
+      "claim": "‘They fear cartoons will demolish their narratives’: Satish Acharya on govt-ordered content restrictions",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bengal-christian-body-moves-nhrc-minority-commission-over-alleged-attacks-intimidation/",
+      "url": "https://www.altnews.in/they-fear-cartoons-will-demolish-their-narratives-satish-acharya-on-govt-ordered-content-restrictions/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Are US stores selling 3D-printed meat?",
+      "claim": "Examining meme comparing Hegseth's speech backdrop to Hitler's eagle imagery",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/us-stores-3d-meat/",
+      "url": "https://www.snopes.com/news/2026/10/08/pete-hegseth-hitler-comparison/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Texas carries out first US execution since Christa Pike's botched lethal injections",
+      "headline": "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw4g1j2z5zvzo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-08T03:02:06+00:00"
+      "published": "2026-10-08T12:43:56+00:00"
     },
     {
       "n": 2,
-      "headline": "The WHO seeks more details on the death of a plague research lab employee in Russia",
+      "headline": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/07/nx-s1-5993873/russia-death-plague-research-institute",
-      "topic": "World",
-      "published": "2026-10-07T21:53:47+00:00"
+      "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute",
+      "topic": "Trending",
+      "published": "2026-10-08T12:13:54+00:00"
     },
     {
       "n": 3,
-      "headline": "Student loan borrowers have more time to reduce interest rates. Here's what to know",
+      "headline": "Cornell gang-rape accuser was 'misled' about criminal investigation, her lawyer says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/education/student-loan-borrowers-have-more-time-to-reduce-interest-rates-heres-what-to-know",
+      "url": "https://www.pbs.org/newshour/nation/cornell-gang-rape-accuser-was-misled-about-criminal-investigation-her-lawyer-says",
       "topic": "Trending",
-      "published": "2026-10-07T23:25:49+00:00"
+      "published": "2026-10-08T14:43:55+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US: Award-winning Kashmiri filmmaker detained",
+      "headline": "Nobel Prize winner Anne Carson: Where to start reading",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-award-winning-kashmiri-filmmaker-detained/a-79587046?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/nobel-prize-winner-anne-carson-where-to-start-reading/a-79598953?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-08T03:21:00+00:00"
+      "published": "2026-10-08T14:57:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Spanish pensioner whose eviction sparked nationwide protests dies, union says",
+      "headline": "US and Lebanon protecting wanted Syrian general, BBC finds",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6e3x21ev9wwo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c81dldewl5gwo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-08T00:09:17+00:00"
+      "published": "2026-10-08T05:00:44+00:00"
     },
     {
       "n": 7,
-      "headline": "What is the pneumonic plague?",
+      "headline": "South Korea test-flies its first domestically developed hypersonic weapon",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/07/g-s1-146952/pneumonic-plague-russia-siberia-lab-death",
+      "url": "https://www.npr.org/2026/10/08/g-s1-147113/south-korea-test-flies-its-first-domestically-developed-hypersonic-weapon",
       "topic": "Trending",
-      "published": "2026-10-07T21:06:31+00:00"
+      "published": "2026-10-08T12:01:34+00:00"
     },
     {
       "n": 8,
-      "headline": "Eva Marie Saint, star of 'On the Waterfront' and 'North by Northwest,' dies at 102",
+      "headline": "WATCH LIVE: Trump awards Elon Musk the National Medal of Science, among other awards for tech execs",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/arts/eva-marie-saint-star-of-on-the-waterfront-and-north-by-northwest-dies-at-102",
-      "topic": "Celebrity",
-      "published": "2026-10-07T23:19:57+00:00"
+      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-awards-elon-musk-the-national-medal-of-science-among-other-awards-for-tech-execs",
+      "topic": "Politics",
+      "published": "2026-10-08T14:29:55+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "IMF reaches tentative $1.21 billion bailout deal with Pakistan",
+      "headline": "EU envoy in Beijing for talks to calm trade tensions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/imf-reaches-tentative-1-21-billion-bailout-deal-with-pakistan/a-79587047?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/eu-envoy-in-beijing-for-talks-to-calm-trade-tensions/a-79598713?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-08T02:24:00+00:00"
+      "published": "2026-10-08T14:42:00+00:00"
     },
     {
       "n": 11,
-      "headline": "France's school protests: what lies behind the anger",
+      "headline": "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n9rgg80z94o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-08T03:38:46+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw33xd6vegnno?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-08T08:18:36+00:00"
     },
     {
       "n": 12,
-      "headline": "This surprising mammal fossil is giving scientists something to chew on",
+      "headline": "Isaias intensifies to hurricane. And, judge orders Pike execution evidence preserved",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/07/nx-s1-5991361/fossil-mammal-platypus-chew-swallow-suckle-earliest",
+      "url": "https://www.npr.org/2026/10/08/g-s1-147105/up-first-newsletter-hurricane-isaias-house-elections-christa-pike-nidal-hasan-cnn-ms-now-politico",
       "topic": "Trending",
-      "published": "2026-10-07T19:59:16+00:00"
+      "published": "2026-10-08T11:35:22+00:00"
     },
     {
       "n": 13,
-      "headline": "What the Cornell case reveals about how sexual assault allegations are handled",
+      "headline": "Russia's public health watchdog denies a second infection in suspected pneumonic plague case",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-the-cornell-case-reveals-about-how-sexual-assault-allegations-are-handled",
-      "topic": "Trending",
-      "published": "2026-10-07T22:55:29+00:00"
+      "url": "https://www.pbs.org/newshour/world/russias-public-health-watchdog-denies-a-second-infection-in-suspected-pneumonic-plague-case",
+      "topic": "Health",
+      "published": "2026-10-08T14:13:45+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Brazil: Thousands of students march against Bolsonaro",
+      "headline": "India faces water and power stress after weak monsoon",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brazil-thousands-of-students-march-against-bolsonaro/a-79586626?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/india-faces-water-and-power-stress-after-weak-monsoon/a-79599540?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-08T00:50:00+00:00"
+      "published": "2026-10-08T14:40:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Trump wants a new Camp David retreat at his posh Florida golf club",
+      "headline": "Christa Pike now walking after failed US execution, lawyer tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9gkvxjvl7v3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-08T03:00:50+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c60rln74yzvxo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-08T15:02:32+00:00"
     },
     {
       "n": 17,
-      "headline": "Judge orders that Christa Pike execution evidence be preserved",
+      "headline": "Strike on Ukrainian public bus leaves 30 dead as blackouts worsen in Kyiv",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/07/nx-s1-5993628/judge-orders-that-christa-pike-execution-evidence-be-preserved",
+      "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war",
       "topic": "Trending",
-      "published": "2026-10-07T19:53:10+00:00"
+      "published": "2026-10-08T11:25:28+00:00"
     }
   ]
 }
