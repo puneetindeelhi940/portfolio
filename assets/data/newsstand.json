@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T14:54:37Z",
+  "generated_at": "2026-10-09T20:30:12Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Shows Woman Rescuing White Baby Reindeer -- It's AI",
+      "claim": "FAKE Video Shows Princess Leonor Of Spain Wearing Yellow Mini Dress -- It's AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-woman-rescuing-white-baby-reindeer-ai.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-princess-leonor-spain-yellow-mini-dress-ai.html",
       "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Inspecting claim USPS is installing surveillance cameras on delivery trucks",
+      "claim": "Did Elon Musk say he has a 'plan' to prevent Democrats from winning midterms? Don't be fooled",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/12/usps-delivery-vehicle-cameras/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/musk-midterms-democrats/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "of 2020 market fire in UAE reshared as strike on Israel",
-      "verdict": "FALSE",
+      "claim": "evidence the PM is setting up an ‘Emergency Register’ of civilians fit to fight in a war",
+      "verdict": "UNPROVEN",
       "source": "Full Fact",
-      "url": "https://fullfact.org/conflict/2020-market-fire-uae-repeat-not-israel/",
+      "url": "https://fullfact.org/politics/war-register-claims-no-evidence/",
       "topic": "World"
     },
     {
       "n": 8,
-      "claim": "Iranian Officials Did NOT Promise To Release Audio Of Trump Begging Them To Open Strait Of Hormuz So Gas Prices Lower Before Midterms -- Satire Post",
+      "claim": "FAKE Video Shows Woman Rescuing White Baby Reindeer -- It's AI",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-iranian-officials-did-not-promise-to-release-audio-of-trump-begging-them-to-open-strait-of-hormuz.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-woman-rescuing-white-baby-reindeer-ai.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Are lab-grown eggs being sold in US stores? Here are the facts",
+      "claim": "Did Trump say he feels bad for 'Cornell 7' because they 'won't get a fair shake'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/lab-grown-eggs-stores/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-badly-cornell-7/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Americans Will Be Able To Watch Fort Hood Killer Face Firing Squad, Hegseth Says",
+      "claim": "Trump Offers Katie Zacharia White House Press Secretary Job",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/08/nidal-hasan-execution-will-be-public-hegseth-says",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/09/karoline-leavitt-katie-zacharia-dhs-white-house-press-secretary-donald-trump",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -112,26 +112,26 @@
     },
     {
       "n": 14,
-      "claim": "Old video of Israeli basketball player on plane shared with false claims it shows Flydubai attack aftermath",
+      "claim": "Early pandemic staged funeral procession video wrongly linked to Gaza",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/old-video-israel-basketball-player-shared-flydubai-incident/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/conflict/video-staged-funeral-wrongly-linked-gaza/",
+      "topic": "World"
     },
     {
       "n": 15,
-      "claim": "Bellingcat Did NOT Publish Report Stating That Germany's Merz Takes Quarter Of Every Ukraine Financial Aid Package",
+      "claim": "Iranian Officials Did NOT Promise To Release Audio Of Trump Begging Them To Open Strait Of Hormuz So Gas Prices Lower Before Midterms -- Satire Post",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-bellingcat-did-not-publish-report-stating-germanys-merz-takes-quarter-of-each-ukraine-financial-aid-package.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-iranian-officials-did-not-promise-to-release-audio-of-trump-begging-them-to-open-strait-of-hormuz.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Why vote count spikes are a normal part of elections",
+      "claim": "Uncovering the truth behind 16 Trump statue and sculpture claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/articles/474180/vote-count-spikes-elections/",
+      "url": "https://www.snopes.com/collections/trump-statue-fact-checks/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Firing squad execution to be livestreamed, Pentagon says",
+      "headline": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-09T12:24:58+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-09T20:13:23+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
+      "headline": "The U.S. last held a public execution in the 1930s. The Pentagon wants to change that",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/09/g-s1-147455/up-first-newsletter-hurricane-isaias-ukraine-russia-trump-iran-ice-shooting",
-      "topic": "Politics",
-      "published": "2026-10-09T11:37:04+00:00"
+      "url": "https://www.npr.org/2026/10/09/nx-s1-5996529/firing-squad-livestream-execution-fort-hood-shooter",
+      "topic": "Trending",
+      "published": "2026-10-09T18:55:38+00:00"
     },
     {
       "n": 3,
-      "headline": "ICE officer shoots a man while making an arrest in New York, officials say",
+      "headline": "Trump administration relaxes rules around political events for Blanche, other Senate-approved DOJ appointees",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/ice-officer-shoots-a-man-while-making-an-arrest-in-new-york-officials-say",
-      "topic": "Trending",
-      "published": "2026-10-09T14:23:42+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-administration-relaxes-rules-around-political-events-for-blanche-other-senate-approved-appointees",
+      "topic": "Politics",
+      "published": "2026-10-09T18:53:52+00:00"
     },
     {
       "n": 4,
@@ -174,39 +174,39 @@
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize",
       "topic": "Trending",
-      "published": "2026-10-09T11:24:10+00:00"
+      "published": "2026-10-09T16:30:09+00:00"
     },
     {
       "n": 5,
-      "headline": "Saudi coalition vows 'firm' response after airport attack kills 3",
+      "headline": "Schools crisis in France: Investment fails to inspire confidence",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/saudi-coalition-vows-firm-response-after-airport-attack-kills-3/a-79615437?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/schools-crisis-in-france-investment-fails-to-inspire-confidence/a-79621916?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-09T14:01:00+00:00"
+      "published": "2026-10-09T19:52:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Fort Hood survivor supports gunman's execution by firing squad but questions livestream",
+      "headline": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wvqw4lzdvo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-09T09:43:22+00:00"
+      "published": "2026-10-09T18:40:10+00:00"
     },
     {
       "n": 7,
-      "headline": "Why American investors love European defense startups",
+      "headline": "U.S. working to reverse an Egyptian man's third-country deportation to Africa",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
+      "url": "https://www.npr.org/2026/10/09/g-s1-147476/trump-third-country-deportation-africa-reverse",
       "topic": "Trending",
-      "published": "2026-10-09T11:00:00+00:00"
+      "published": "2026-10-09T17:49:28+00:00"
     },
     {
       "n": 8,
-      "headline": "Your child may be automatically enrolled in a Trump Account. Here's what to know",
+      "headline": "Time for term limits? Dems in majority could have familiar faces in key roles",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/your-child-may-be-automatically-enrolled-in-a-trump-account-heres-what-to-know",
-      "topic": "Politics",
-      "published": "2026-10-09T13:44:49+00:00"
+      "url": "https://www.pbs.org/newshour/politics/time-for-term-limits-dems-in-majority-could-have-familiar-faces-in-key-roles",
+      "topic": "Trending",
+      "published": "2026-10-09T18:05:30+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Is China seeking to restrict Taiwan's cultural presence?",
+      "headline": "Trump, Putin agree on deal to release Russian diesel to US, world markets",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-09T13:04:00+00:00"
+      "url": "https://www.dw.com/en/trump-putin-agree-on-deal-to-release-russian-diesel-to-us-world-markets/a-79623364?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-09T19:29:00+00:00"
     },
     {
       "n": 11,
-      "headline": "France promises 3,000 extra teachers in first step to calm student protests",
+      "headline": "JD Vance casts doubt on firing squad execution and says he will not watch it",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-09T11:35:00+00:00"
+      "published": "2026-10-09T18:40:05+00:00"
     },
     {
       "n": 12,
-      "headline": "Why we remember: One student's journey into memory",
+      "headline": "Did Russia play by the rules in reporting lab worker's death?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/09/nx-s1-5986352/memory-family-burger-king-grandfather",
-      "topic": "Trending",
-      "published": "2026-10-09T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/09/g-s1-147295/russia-lab-death-pneumonia-plague",
+      "topic": "World",
+      "published": "2026-10-09T16:43:45+00:00"
     },
     {
       "n": 13,
-      "headline": "Christa Pike's attorneys say she is walking with help and eating after failed execution attempt",
+      "headline": "Trump wants Talarico and Paxton to debate. Talarico couldn't be happier",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/christa-pikes-attorneys-say-she-is-walking-with-help-and-eating-after-failed-execution-attempt",
-      "topic": "Trending",
-      "published": "2026-10-09T00:35:13+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-wants-talarico-and-paxton-to-debate-talarico-couldnt-be-happier",
+      "topic": "Politics",
+      "published": "2026-10-09T17:33:54+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Art for freedom: Maria Kalesnikava in Bonn",
+      "headline": "Strong earthquake shakes Panama, prompting tsunami alert",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/art-for-freedom-maria-kalesnikava-in-bonn/a-79612009?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/strong-earthquake-shakes-panama-prompting-tsunami-alert/a-79623168?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-09T13:03:00+00:00"
+      "published": "2026-10-09T19:03:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Ethiopia warns Eritrea it will defend itself after troops cross border",
+      "headline": "Powerful magnitude 7.7 earthquake hits Panama, damaging buildings",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-09T13:31:07+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c620r39zdp9wo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-09T19:39:52+00:00"
     },
     {
       "n": 17,
-      "headline": "Republican congressman tries to outrun a potential blue wave in New York toss-up seat",
+      "headline": "How the oil industry is preparing for Hurricane Isaias",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/09/nx-s1-5986150/lawler-new-york-congress-trump",
-      "topic": "Politics",
-      "published": "2026-10-09T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/09/nx-s1-5995417/hurricane-isaias-oil-refineries-diesel-gasoline-prices",
+      "topic": "Trending",
+      "published": "2026-10-09T16:03:32+00:00"
     }
   ]
 }
