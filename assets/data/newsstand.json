@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T04:17:02Z",
+  "generated_at": "2026-10-09T14:54:37Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "doesn't show Arkansas farmers praying for 'more Mexicans.' Here's the truth",
+      "claim": "Inspecting claim USPS is installing surveillance cameras on delivery trucks",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/arkansas-farmers-mexicans-prayer/",
+      "url": "https://www.snopes.com/news/2026/10/12/usps-delivery-vehicle-cameras/",
       "topic": "Trending"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Americans Will Be Able To Watch Fort Hood Killer Face Firing Squad, Hegseth Says",
+      "claim": "EXCLUSIVE: Viral Meme Mocking MAGA Hardliners Was Made By America First Conservative",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/08/nidal-hasan-execution-will-be-public-hegseth-says",
+      "url": "https://dailycaller.com/2026/10/09/exclusive-the-viral-meme-mocking-maga-hardliners-was-made-by-a-conservative",
       "topic": "Trending"
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "College dance performance videos falsely linked to CJP protests against Gyanesh Kumar",
+      "claim": "CJP workers picked up by cops in Bengal, Abdul Hafeez ‘detained’ for over 13 hours",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/college-dance-performance-videos-falsely-linked-to-cjp-protests-against-gyanesh-kumar/",
+      "url": "https://www.altnews.in/cjp-workers-picked-up-by-cops-in-bengal-abdul-hafiz-detained-for-over-13-hours/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Old video of Israeli basketball player on plane shared with false claims it shows Flydubai attack aftermath",
+      "claim": "of 2020 market fire in UAE reshared as strike on Israel",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/old-video-israel-basketball-player-shared-flydubai-incident/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/conflict/2020-market-fire-uae-repeat-not-israel/",
+      "topic": "World"
     },
     {
       "n": 8,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Russian lab worker reportedly died of pneumonic plague. Here's what we know",
+      "claim": "Are lab-grown eggs being sold in US stores? Here are the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/05/russia-lab-worker-pneumonic-plague/",
-      "topic": "Celebrity"
+      "url": "https://www.snopes.com/fact-check/lab-grown-eggs-stores/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Lindsay Clancy-Style Horror Stories Pile Up As Moms Turn On Their Own Children",
+      "claim": "Americans Will Be Able To Watch Fort Hood Killer Face Firing Squad, Hegseth Says",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/08/lindsay-clancy-maternal-filicide-similar-cases-postpartum-psychosis",
+      "url": "https://dailycaller.com/2026/10/08/nidal-hasan-execution-will-be-public-hegseth-says",
       "topic": "Trending"
     },
     {
@@ -104,19 +104,19 @@
     },
     {
       "n": 13,
-      "claim": "‘They fear cartoons will demolish their narratives’: Satish Acharya on govt-ordered content restrictions",
+      "claim": "Bengal Governor’s office essay contest asks students to write on ‘fatal assault on civilisational Bharat’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/they-fear-cartoons-will-demolish-their-narratives-satish-acharya-on-govt-ordered-content-restrictions/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/bengal-governors-office-essay-contest-asks-students-to-write-on-fatal-assault-on-civilisational-bharat/",
+      "topic": "Politics"
     },
     {
       "n": 14,
-      "claim": "The Conservatives - not Labour - extended the Energy Profits Levy to 2028",
+      "claim": "Old video of Israeli basketball player on plane shared with false claims it shows Flydubai attack aftermath",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/kemi-badenoch-energy-profits-levy/",
-      "topic": "Science"
+      "url": "https://fullfact.org/world/old-video-israel-basketball-player-shared-flydubai-incident/",
+      "topic": "Trending"
     },
     {
       "n": 15,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump say of Iran, 'Let 'em take out' LA and San Diego?",
+      "claim": "Why vote count spikes are a normal part of elections",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-iran-take-out-la-san-diego/",
+      "url": "https://www.snopes.com/articles/474180/vote-count-spikes-elections/",
       "topic": "Politics"
     },
     {
@@ -146,22 +146,102 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Suspect linked to Monaco bomb attack on millionaire speaks to BBC from Ukrainian prison",
+      "headline": "Firing squad execution to be livestreamed, Pentagon says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-08T23:11:10+00:00"
+      "published": "2026-10-09T12:24:58+00:00"
     },
     {
       "n": 2,
-      "headline": "OpenAI caught Russians and Iranians using ChatGPT for influence campaigns",
+      "headline": "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/08/nx-s1-5995576/openai-russia-iran-influence-operations-chatgpt",
-      "topic": "Tech / AI",
-      "published": "2026-10-09T00:25:15+00:00"
+      "url": "https://www.npr.org/2026/10/09/g-s1-147455/up-first-newsletter-hurricane-isaias-ukraine-russia-trump-iran-ice-shooting",
+      "topic": "Politics",
+      "published": "2026-10-09T11:37:04+00:00"
     },
     {
       "n": 3,
+      "headline": "ICE officer shoots a man while making an arrest in New York, officials say",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/ice-officer-shoots-a-man-while-making-an-arrest-in-new-york-officials-say",
+      "topic": "Trending",
+      "published": "2026-10-09T14:23:42+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize",
+      "topic": "Trending",
+      "published": "2026-10-09T11:24:10+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Saudi coalition vows 'firm' response after airport attack kills 3",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/saudi-coalition-vows-firm-response-after-airport-attack-kills-3/a-79615437?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-09T14:01:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Fort Hood survivor supports gunman's execution by firing squad but questions livestream",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvqw4lzdvo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-09T09:43:22+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Why American investors love European defense startups",
+      "source": "NPR",
+      "url": "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
+      "topic": "Trending",
+      "published": "2026-10-09T11:00:00+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Your child may be automatically enrolled in a Trump Account. Here's what to know",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/your-child-may-be-automatically-enrolled-in-a-trump-account-heres-what-to-know",
+      "topic": "Politics",
+      "published": "2026-10-09T13:44:49+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Isaias strengthens to become first Atlantic hurricane of 2026 season",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/environment/2026/oct/09/isaias-strengthens-first-atlantic-hurricane-2026",
+      "topic": "Trending",
+      "published": "2026-10-09T09:59:06+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Is China seeking to restrict Taiwan's cultural presence?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-09T13:04:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "France promises 3,000 extra teachers in first step to calm student protests",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-09T11:35:00+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Why we remember: One student's journey into memory",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/09/nx-s1-5986352/memory-family-burger-king-grandfather",
+      "topic": "Trending",
+      "published": "2026-10-09T09:00:00+00:00"
+    },
+    {
+      "n": 13,
       "headline": "Christa Pike's attorneys say she is walking with help and eating after failed execution attempt",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/nation/christa-pikes-attorneys-say-she-is-walking-with-help-and-eating-after-failed-execution-attempt",
@@ -169,7 +249,7 @@
       "published": "2026-10-09T00:35:13+00:00"
     },
     {
-      "n": 4,
+      "n": 14,
       "headline": "Egyptian journalists plan weekend protest over detention of six colleagues",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/oct/09/egypt-six-journalists-matsadaash-protest-over-detentions",
@@ -177,108 +257,28 @@
       "published": "2026-10-09T04:00:38+00:00"
     },
     {
-      "n": 5,
-      "headline": "Ukraine, Europe, US to meet in Miami for talks on ending war",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-europe-us-to-meet-in-miami-for-talks-on-ending-war/a-79606735?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-09T03:07:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Fort Hood attacker's execution by firing squad will be livestreamed, Pentagon says",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-09T03:36:12+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "The long-deployed USS Lincoln returns home to San Diego Bay",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/08/nx-s1-5995911/the-long-deployed-uss-lincoln-returns-home-to-san-diego-bay",
-      "topic": "Trending",
-      "published": "2026-10-09T00:05:48+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Federal agents involved in shooting that wounded person in New York, police say",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/federal-agents-involved-in-shooting-that-wounded-person-in-new-york-police-say",
-      "topic": "Trending",
-      "published": "2026-10-09T00:07:40+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Scientists discover 180,000 giant tortoises on one Seychelles island",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/oct/08/researchers-find-180000-giant-tortoises-living-on-island-in-seychelles",
-      "topic": "Trending",
-      "published": "2026-10-08T20:20:31+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Man injured after New York shooting involving ICE",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/man-injured-after-new-york-shooting-involving-ice/a-79606159?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-09T00:16:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-08T16:31:29+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Suicide is up among Black Americans. We need to talk about it.",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/08/nx-s1-5963905/suicide-black-americans-discussion-analysis",
-      "topic": "Trending",
-      "published": "2026-10-08T18:37:02+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Long-deployed USS Abraham Lincoln returns home to San Diego Bay",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/long-deployed-uss-abraham-lincoln-returns-home-to-san-diego-bay",
-      "topic": "Trending",
-      "published": "2026-10-08T23:54:55+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Ethiopia launches drone attack against Eritrean troops who crossed into Tigray",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/08/ethiopia-drone-attack-against-eritrean-troops-in-tigray",
-      "topic": "Trending",
-      "published": "2026-10-08T16:11:32+00:00"
-    },
-    {
       "n": 15,
-      "headline": "US to livestream Fort Hood shooter's execution: Pentagon",
+      "headline": "Art for freedom: Maria Kalesnikava in Bonn",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-to-livestream-fort-hood-shooter-s-execution-pentagon/a-79606395?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/art-for-freedom-maria-kalesnikava-in-bonn/a-79612009?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-08T23:48:00+00:00"
+      "published": "2026-10-09T13:03:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Christa Pike now walking after failed US execution, lawyer tells BBC",
+      "headline": "Ethiopia warns Eritrea it will defend itself after troops cross border",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60rln74yzvxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-08T15:02:32+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-09T13:31:07+00:00"
     },
     {
       "n": 17,
-      "headline": "The long-deployed USS Lincoln is returning home to San Diego",
+      "headline": "Republican congressman tries to outrun a potential blue wave in New York toss-up seat",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/08/g-s1-147195/uss-lincoln-returning-san-diego",
-      "topic": "Trending",
-      "published": "2026-10-08T16:18:20+00:00"
+      "url": "https://www.npr.org/2026/10/09/nx-s1-5986150/lawler-new-york-congress-trump",
+      "topic": "Politics",
+      "published": "2026-10-09T09:00:00+00:00"
     }
   ]
 }
