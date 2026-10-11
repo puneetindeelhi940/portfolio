@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T14:34:49Z",
+  "generated_at": "2026-10-11T19:53:07Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Denzel Washington say he's 'never met anyone braver, smarter' than Trump?",
+      "claim": "6 claims about lab-grown and genetically modified foods we've fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-denzel-washington-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/lab-grown-genetically-modified-food/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Boomers, Elite Made Killing After Pandemic While Everyone Else Drowned",
+      "claim": "EXCLUSIVE: Ukraine Is Building Drones In Days. America’s Defense Bureaucracy Takes Years",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/10/boomers-elite-increased-wealth-covid-19-pandemic-federal-reserve-report-affordability-crisis",
+      "url": "https://dailycaller.com/2026/10/11/ukraine-drone-warfare-russia-us-daniel-balson-paul-schwennesen",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Matthew Ingalls, accused in Cornell rape case, flee to Dubai? What we know",
+      "claim": "Did Denzel Washington say he's 'never met anyone braver, smarter' than Trump?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/09/matthew-ingalls-cornell-flee-dubai/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-denzel-washington-quote/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "The Environmental Case For Thorium Is Real. The Commercial Fleet Isn’t.",
+      "claim": "Trump Announces ‘Energy Ceasefire’ Between Russia, Ukraine",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/11/thorium-nuclear-energy-uranium-enviromental-case",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/11/trump-energy-ceasefire-russia-ukraine",
+      "topic": "Science"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Hegseth says Pentagon plans to livestream Fort Hood shooter's execution. Is that legal?",
+      "claim": "Did Matthew Ingalls, accused in Cornell rape case, flee to Dubai? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/09/nidal-hasan-execution-livestream-legal/",
+      "url": "https://www.snopes.com/news/2026/10/09/matthew-ingalls-cornell-flee-dubai/",
       "topic": "Trending"
     },
     {
@@ -146,11 +146,11 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Ukraine strikes Yandex data centre in third attack on Russian tech giant",
+      "headline": "Saudi capital airport hit by second Houthi strike in two days",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-11T12:50:46+00:00"
+      "published": "2026-10-11T16:41:37+00:00"
     },
     {
       "n": 2,
@@ -162,11 +162,11 @@
     },
     {
       "n": 3,
-      "headline": "What to expect as Hurricane Isaias bears down on the Gulf Coast as a major storm",
+      "headline": "Leaders from India's 'Cockroach' movement released from detention, pledge to hold more protests",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-to-expect-as-hurricane-isaias-bears-down-on-the-gulf-coast-as-a-major-storm",
+      "url": "https://www.pbs.org/newshour/world/leaders-from-indias-cockroach-movement-released-from-detention-pledge-to-hold-more-protests",
       "topic": "Trending",
-      "published": "2026-10-09T22:55:07+00:00"
+      "published": "2026-10-11T19:08:28+00:00"
     },
     {
       "n": 4,
@@ -178,19 +178,19 @@
     },
     {
       "n": 5,
-      "headline": "Pope Leo XIV to undergo surgery to remove lump on lung",
+      "headline": "Air strikes kill dozens of gold miners on Sudan-Egypt border",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pope-leo-xiv-to-undergo-surgery-to-remove-lump-on-lung/a-79633735?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-11T11:49:00+00:00"
+      "url": "https://www.dw.com/en/air-strikes-kill-dozens-of-gold-miners-on-sudan-egypt-border/a-79634889?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-11T19:41:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Pope Leo to have surgery after lump found on lung",
+      "headline": "Ukraine strikes Yandex data centre in third attack on Russian tech giant",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-11T13:38:55+00:00"
+      "published": "2026-10-11T14:38:10+00:00"
     },
     {
       "n": 7,
@@ -202,11 +202,11 @@
     },
     {
       "n": 8,
-      "headline": "ICE shooting of man in New York with child in his car sparks outrage",
+      "headline": "Pope Leo to undergo surgery to remove nodule on his lung",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/ice-shooting-of-man-in-new-york-with-child-in-his-car-sparks-outrage",
+      "url": "https://www.pbs.org/newshour/world/pope-leo-to-undergo-surgery-to-remove-nodule-on-his-lung",
       "topic": "Trending",
-      "published": "2026-10-09T22:50:33+00:00"
+      "published": "2026-10-11T18:34:38+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "A migrant boat sank off the coast of Djibouti with the UN reporting over 200 people dead or missing",
+      "headline": "Saudi Arabia: Second strike hits Riyadh airport",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/a-migrant-boat-sank-off-the-coast-of-djibouti-with-the-un-reporting-over-200-people-dead-or-missing/a-79633644?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-11T11:35:00+00:00"
+      "url": "https://www.dw.com/en/saudi-arabia-second-strike-hits-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-11T16:24:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Homes and bridges swept away as fresh floods hit Nepal",
+      "headline": "Poland detains man suspected of planning assassination of PM Tusk",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck86zppejjw3o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-11T12:03:52+00:00"
+      "published": "2026-10-11T17:27:24+00:00"
     },
     {
       "n": 12,
-      "headline": "Don't be scared: Being afraid is outright fun, and maybe useful",
+      "headline": "Justice Department investigates TV networks, citing possible anti-trust violations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5973128/dont-be-scared-being-afraid-is-outright-fun-and-maybe-useful",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5997574/the-doj-is-investigating-5-tv-networks-for-suspending-pool-coverage-of-trump",
       "topic": "Trending",
-      "published": "2026-10-11T12:00:00+00:00"
+      "published": "2026-10-11T12:04:00+00:00"
     },
     {
       "n": 13,
-      "headline": "News Wrap: Trump announces diesel deal with Russia",
+      "headline": "At least 139 migrants dead, dozens missing after boat capsizes off Djibouti coast",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-trump-announces-diesel-deal-with-russia",
-      "topic": "Politics",
-      "published": "2026-10-09T22:45:13+00:00"
+      "url": "https://www.pbs.org/newshour/world/at-least-139-migrants-dead-dozens-missing-after-boat-capsizes-off-djibouti-coast",
+      "topic": "Trending",
+      "published": "2026-10-11T18:05:16+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Poland on alert amid possible attack on PM, defense minister",
+      "headline": "German 'lawfare': When lawsuits become a political weapon",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/poland-on-alert-amid-possible-attack-on-pm-defense-minister/a-79633128?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-11T10:48:00+00:00"
+      "url": "https://www.dw.com/en/german-lawfare-when-lawsuits-become-a-political-weapon/a-79615817?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-11T15:14:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Delhi sees more protests as freed 'cockroach' group's leaders vow to fight on",
+      "headline": "Homes and bridges swept away as fresh floods hit Nepal",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck86zppejjw3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-11T11:11:42+00:00"
+      "published": "2026-10-11T12:03:52+00:00"
     },
     {
       "n": 17,
-      "headline": "A heroic, 7-day bike ride made this teen a global star. Where is she now?",
+      "headline": "Don't be scared: Being afraid is outright fun, and maybe useful",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/g-s1-147267/bicycle-teenager-india-pandemic",
-      "topic": "Celebrity",
-      "published": "2026-10-11T11:28:15+00:00"
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5973128/dont-be-scared-being-afraid-is-outright-fun-and-maybe-useful",
+      "topic": "Trending",
+      "published": "2026-10-11T12:00:00+00:00"
     }
   ]
 }
