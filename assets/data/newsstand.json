@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T04:01:12Z",
+  "generated_at": "2026-10-12T17:17:17Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Shows Missile Striking Saudia Airliner At Airport In Riyadh -- Real Photos Show Only Aftermath",
+      "claim": "What We Know About A Claim That A Recording Proves Texas Senate Candidate James Talarico Was Treated At Ohio Mental Health Facility",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-a-missile-striking-a-saudia-airliner-at-riyadh-airport.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/what-we-know-about-claim-recording-proves-texas-senate-candidate-james-talarico-treated-ohio-mental-health-facility.html",
+      "topic": "Health"
     },
     {
       "n": 2,
-      "claim": "Did 163 Democrats use same Oklahoma address to vote for Biden in 2020? There's no proof",
+      "claim": "Did Megyn Kelly say Jane Doe in Cornell rape case 'made a decision to get it on' and 'enjoyed it'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/11/oklahoma-house-2020-election-biden/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/megyn-kelly-cornell-case-comments/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: Ukraine Is Building Drones In Days. America’s Defense Bureaucracy Takes Years",
+      "claim": "EXCLUSIVE: China Used Military-Linked Kindergarten To Cultivate Ties With Mitch McConnell’s Wife And In-Laws",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/11/ukraine-drone-warfare-russia-us-daniel-balson-paul-schwennesen",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/12/exclusive-elaine-chao-family-military-linked-kindergarten",
+      "topic": "World"
     },
     {
       "n": 5,
@@ -48,34 +48,34 @@
     },
     {
       "n": 6,
-      "claim": "Hindu Raksha Dal chief, son threaten CJP protesters in police presence; outfit member assaults protesters in Delhi streets",
+      "claim": "Despite Supreme Court directive, Delhi Police detains journalists on duty on second consecutive day",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/hindu-raksha-dal-chief-son-threaten-cjp-protesters-in-police-presence-outfit-member-assaults-protesters-in-delhi-streets/",
+      "url": "https://www.altnews.in/despite-supreme-court-directive-delhi-police-detains-journalists-on-duty-on-second-consecutive-day/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "evidence the PM is setting up an ‘Emergency Register’ of civilians fit to fight in a war",
-      "verdict": "UNPROVEN",
+      "claim": "Clip of Bill Gates discussing water shortages and ‘mass mortality event’ is a deepfake",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/politics/war-register-claims-no-evidence/",
-      "topic": "World"
+      "url": "https://fullfact.org/environment/video-bill-gates-water-shortages-mass-mortality-deepfake/",
+      "topic": "Tech / AI"
     },
     {
       "n": 8,
-      "claim": "Does NOT Show Muslim Passenger Being Removed After Threatening To Blow Up Nashville-Fort Lauderdale Flight In October 2026",
+      "claim": "FAKE Video Shows Missile Striking Saudia Airliner At Airport In Riyadh -- Real Photos Show Only Aftermath",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-muslim-passenger-being-removed-after-threatening-to-blow-up-nashville-fort-lauderdale-flight-in-october-2026.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-a-missile-striking-a-saudia-airliner-at-riyadh-airport.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "6 claims about lab-grown and genetically modified foods we've fact-checked",
+      "claim": "Did Einstein say, 'Learn from yesterday, live for today, hope for tomorrow'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/lab-grown-genetically-modified-food/",
+      "url": "https://www.snopes.com/fact-check/einstein-learn-from-yesterday/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "‘Think Of My Dad’: Abdul El-Sayed Defends Campaigning With Obama After Criticizing Him During Presidency",
+      "claim": "DHS Raids Ilhan Omar’s Home Amid Criminal Investigation",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/11/abdul-el-sayed-reverses-criticism-barack-obama-nbc-news-meet-press-kristen-welker",
+      "url": "https://dailycaller.com/2026/10/12/ilhan-omar-dhs-raid-doj-investigation-immigration-fraud-donald-trump-jd-vance",
       "topic": "Trending"
     },
     {
@@ -104,35 +104,35 @@
     },
     {
       "n": 13,
-      "claim": "Koi media nahi hai”: Journalists dragged, detained, demeaned in Delhi in dark day for world’s largest democracy",
+      "claim": "International media, rights bodies flag police excesses at Delhi protest",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/koi-media-nahi-hai-journalists-dragged-detained-demeaned-in-delhi-in-dark-day-for-worlds-largest-democracy/",
+      "url": "https://www.altnews.in/international-media-rights-bodies-flag-police-excesses-at-delhi-cjp-protest/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Early pandemic staged funeral procession video wrongly linked to Gaza",
-      "verdict": "FALSE",
+      "claim": "evidence the PM is setting up an ‘Emergency Register’ of civilians fit to fight in a war",
+      "verdict": "UNPROVEN",
       "source": "Full Fact",
-      "url": "https://fullfact.org/conflict/video-staged-funeral-wrongly-linked-gaza/",
+      "url": "https://fullfact.org/politics/war-register-claims-no-evidence/",
       "topic": "World"
     },
     {
       "n": 15,
-      "claim": "Prebunk: Stunt Running Videos Took An Off-Ramp From Reality -- Don't Jump To Gravity-Defying Conclusions",
+      "claim": "Does NOT Show Muslim Passenger Being Removed After Threatening To Blow Up Nashville-Fort Lauderdale Flight In October 2026",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/prebunk-stunt-running-videos-took-an-off-ramp-from-reality.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-muslim-passenger-being-removed-after-threatening-to-blow-up-nashville-fort-lauderdale-flight-in-october-2026.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Denzel Washington say he's 'never met anyone braver, smarter' than Trump?",
+      "claim": "Fake photo of Barack and Michelle Obama on boat was created using another AI image",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-denzel-washington-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/barack-michelle-obama-boat-ai/",
+      "topic": "Tech / AI"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
+      "headline": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
       "topic": "Science",
-      "published": "2026-10-11T21:36:40+00:00"
+      "published": "2026-10-12T16:53:00+00:00"
     },
     {
       "n": 2,
-      "headline": "Tropical Storm Rachel downgraded as high winds and rain turn inward",
+      "headline": "India's opposition parties march to top court as protests over voter lists escalate",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5998124/tropical-storm-rachel-downgraded-as-high-winds-and-rain-turn-inward",
+      "url": "https://www.npr.org/2026/10/12/nx-s1-5998831/india-opposition-protests",
       "topic": "Trending",
-      "published": "2026-10-11T23:54:21+00:00"
+      "published": "2026-10-12T16:01:54+00:00"
     },
     {
       "n": 3,
-      "headline": "Hurricane Simon hits Mexico's Pacific coast with damaging winds and rain",
+      "headline": "House Democratic leaders condemn the search of congresswoman's home as an 'abuse of power",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/hurricane-simon-hits-mexicos-pacific-coast",
+      "url": "https://www.pbs.org/newshour/politics/house-democratic-leaders-condemn-the-search-of-congresswomans-home-as-an-abuse-of-power",
       "topic": "Trending",
-      "published": "2026-10-11T22:01:56+00:00"
+      "published": "2026-10-12T16:56:33+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US judge orders halt to taxpayer-funded promo ads of Trump",
+      "headline": "Germany: Labor Minister's resignation puts a spotlight on cracks within the government",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-judge-orders-halt-to-taxpayer-funded-promo-ads-of-trump/a-79636117?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-labor-minister-s-resignation-puts-a-spotlight-on-cracks-within-the-government/a-79645823?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-10-12T03:59:00+00:00"
+      "published": "2026-10-12T17:08:00+00:00"
     },
     {
       "n": 6,
-      "headline": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
+      "headline": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-11T22:45:58+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-10-12T05:00:52+00:00"
     },
     {
       "n": 7,
-      "headline": "Pope Leo XIV to undergo lung surgery this week",
+      "headline": "DOJ launches antitrust probe of TV networks. And, Trump says Ukraine needs new leader",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5998027/pope-leo-xiv-to-undergo-lung-surgery-this-week",
-      "topic": "Trending",
-      "published": "2026-10-11T12:54:25+00:00"
+      "url": "https://www.npr.org/2026/10/12/g-s1-147772/up-first-newsletter-trump-ukraine-russia-antitrust-investigation-hurricane-isaias-saudi-airport",
+      "topic": "Politics",
+      "published": "2026-10-12T11:29:56+00:00"
     },
     {
       "n": 8,
-      "headline": "Iran calls latest U.S. proposal to end war 'insufficient' as Netanyahu's corruption trial resumes",
+      "headline": "Omar says she won't 'be silenced' after federal agents search her home, blasting Trump for 'intimidation' campaign",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/iran-calls-latest-u-s-proposal-to-end-war-insufficient-as-netanyahus-corruption-trial-resumes",
-      "topic": "World",
-      "published": "2026-10-11T21:43:11+00:00"
+      "url": "https://www.pbs.org/newshour/politics/omar-says-she-wont-be-silenced-after-federal-agents-search-her-home-blasting-trump-for-intimidation-campaign",
+      "topic": "Politics",
+      "published": "2026-10-12T16:35:15+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "North Korea fires missiles after Seoul's hypersonic test",
+      "headline": "Germany news: Merz says Trump's Russia diesel deal 'out of question' for Europe",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/north-korea-fires-missiles-after-seoul-s-hypersonic-test/a-79636110?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-12T03:24:00+00:00"
+      "url": "https://www.dw.com/en/germany-news-merz-says-trump-s-russia-diesel-deal-out-of-question-for-europe/live-79636427?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-12T16:01:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Poland detains man suspected of planning assassination of PM Tusk",
+      "headline": "Saudi minister vows 'serious response' to Houthi attacks on airports",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-11T17:27:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-12T14:00:03+00:00"
     },
     {
       "n": 12,
-      "headline": "Hurricane Simon nears Mexico with 155 mph winds and flooding fears",
+      "headline": "U.S. restrictions on Chinese drones are hurting cash-strapped police departments",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5998022/hurricane-simon-nears-mexico-155-mph-winds-flooding-fears",
+      "url": "https://www.npr.org/2026/10/12/nx-s1-5888604/police-chinese-drones-bans-costs",
       "topic": "Trending",
-      "published": "2026-10-11T12:10:54+00:00"
+      "published": "2026-10-12T09:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump claims Russia and Ukraine agree to 'energy ceasefire' despite continued attacks",
+      "headline": "AP report: Trump, Rubio weigh firing Kimberly Guilfoyle after mounting reports of improper conduct",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/trump-claims-russia-and-ukraine-agree-to-energy-ceasefire-despite-continued-attacks",
-      "topic": "Science",
-      "published": "2026-10-11T21:25:24+00:00"
+      "url": "https://www.pbs.org/newshour/world/ap-report-trump-rubio-weigh-firing-kimberly-guilfoyle-after-mounting-reports-of-improper-conduct",
+      "topic": "Politics",
+      "published": "2026-10-12T16:24:47+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Saudi Arabia: Second strike kills at least 1 at Riyadh airport",
+      "headline": "US federal agents search home of Trump critic Omar",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-11T22:59:00+00:00"
+      "url": "https://www.dw.com/en/us-federal-agents-search-home-of-trump-critic-omar/a-79643360?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-12T15:12:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
+      "headline": "South Africa's deputy police chief resigns after being charged with sexual offences",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-11T21:12:44+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c8wy9d940pyko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-12T16:46:49+00:00"
     },
     {
       "n": 17,
-      "headline": "Justice Department investigates TV networks, citing possible anti-trust violations",
+      "headline": "Here's what to know if you're unsure about your measles immunity status",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5997574/the-doj-is-investigating-5-tv-networks-for-suspending-pool-coverage-of-trump",
+      "url": "https://www.npr.org/2026/10/12/nx-s1-5991904/measles-vaccination-status-outbreak-extra-dose",
       "topic": "Trending",
-      "published": "2026-10-11T12:04:00+00:00"
+      "published": "2026-10-12T09:00:00+00:00"
     }
   ]
 }
