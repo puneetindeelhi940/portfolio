@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T19:53:07Z",
+  "generated_at": "2026-10-12T04:01:12Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "6 claims about lab-grown and genetically modified foods we've fact-checked",
+      "claim": "Did 163 Democrats use same Oklahoma address to vote for Biden in 2020? There's no proof",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/lab-grown-genetically-modified-food/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/10/11/oklahoma-house-2020-election-biden/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Denzel Washington say he's 'never met anyone braver, smarter' than Trump?",
+      "claim": "6 claims about lab-grown and genetically modified foods we've fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-denzel-washington-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/lab-grown-genetically-modified-food/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Trump Announces ‘Energy Ceasefire’ Between Russia, Ukraine",
+      "claim": "‘Think Of My Dad’: Abdul El-Sayed Defends Campaigning With Obama After Criticizing Him During Presidency",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/11/trump-energy-ceasefire-russia-ukraine",
-      "topic": "Science"
+      "url": "https://dailycaller.com/2026/10/11/abdul-el-sayed-reverses-criticism-barack-obama-nbc-news-meet-press-kristen-welker",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Matthew Ingalls, accused in Cornell rape case, flee to Dubai? What we know",
+      "claim": "Did Denzel Washington say he's 'never met anyone braver, smarter' than Trump?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/09/matthew-ingalls-cornell-flee-dubai/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-denzel-washington-quote/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Saudi capital airport hit by second Houthi strike in two days",
+      "headline": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-11T16:41:37+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-10-11T21:36:40+00:00"
     },
     {
       "n": 2,
-      "headline": "Pope Leo XIV to undergo lung surgery this week",
+      "headline": "Tropical Storm Rachel downgraded as high winds and rain turn inward",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5998027/pope-leo-xiv-to-undergo-lung-surgery-this-week",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5998124/tropical-storm-rachel-downgraded-as-high-winds-and-rain-turn-inward",
       "topic": "Trending",
-      "published": "2026-10-11T12:54:25+00:00"
+      "published": "2026-10-11T23:54:21+00:00"
     },
     {
       "n": 3,
-      "headline": "Leaders from India's 'Cockroach' movement released from detention, pledge to hold more protests",
+      "headline": "Hurricane Simon hits Mexico's Pacific coast with damaging winds and rain",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/leaders-from-indias-cockroach-movement-released-from-detention-pledge-to-hold-more-protests",
+      "url": "https://www.pbs.org/newshour/world/hurricane-simon-hits-mexicos-pacific-coast",
       "topic": "Trending",
-      "published": "2026-10-11T19:08:28+00:00"
+      "published": "2026-10-11T22:01:56+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Air strikes kill dozens of gold miners on Sudan-Egypt border",
+      "headline": "US judge orders halt to taxpayer-funded promo ads of Trump",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/air-strikes-kill-dozens-of-gold-miners-on-sudan-egypt-border/a-79634889?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-11T19:41:00+00:00"
+      "url": "https://www.dw.com/en/us-judge-orders-halt-to-taxpayer-funded-promo-ads-of-trump/a-79636117?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-12T03:59:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Ukraine strikes Yandex data centre in third attack on Russian tech giant",
+      "headline": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-11T14:38:10+00:00"
+      "published": "2026-10-11T22:45:58+00:00"
     },
     {
       "n": 7,
-      "headline": "Hurricane Simon nears Mexico with 155 mph winds and flooding fears",
+      "headline": "Pope Leo XIV to undergo lung surgery this week",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5998022/hurricane-simon-nears-mexico-155-mph-winds-flooding-fears",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5998027/pope-leo-xiv-to-undergo-lung-surgery-this-week",
       "topic": "Trending",
-      "published": "2026-10-11T12:10:54+00:00"
+      "published": "2026-10-11T12:54:25+00:00"
     },
     {
       "n": 8,
-      "headline": "Pope Leo to undergo surgery to remove nodule on his lung",
+      "headline": "Iran calls latest U.S. proposal to end war 'insufficient' as Netanyahu's corruption trial resumes",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/pope-leo-to-undergo-surgery-to-remove-nodule-on-his-lung",
-      "topic": "Trending",
-      "published": "2026-10-11T18:34:38+00:00"
+      "url": "https://www.pbs.org/newshour/world/iran-calls-latest-u-s-proposal-to-end-war-insufficient-as-netanyahus-corruption-trial-resumes",
+      "topic": "World",
+      "published": "2026-10-11T21:43:11+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Saudi Arabia: Second strike hits Riyadh airport",
+      "headline": "North Korea fires missiles after Seoul's hypersonic test",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/saudi-arabia-second-strike-hits-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/north-korea-fires-missiles-after-seoul-s-hypersonic-test/a-79636110?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-11T16:24:00+00:00"
+      "published": "2026-10-12T03:24:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "Justice Department investigates TV networks, citing possible anti-trust violations",
+      "headline": "Hurricane Simon nears Mexico with 155 mph winds and flooding fears",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5997574/the-doj-is-investigating-5-tv-networks-for-suspending-pool-coverage-of-trump",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5998022/hurricane-simon-nears-mexico-155-mph-winds-flooding-fears",
       "topic": "Trending",
-      "published": "2026-10-11T12:04:00+00:00"
+      "published": "2026-10-11T12:10:54+00:00"
     },
     {
       "n": 13,
-      "headline": "At least 139 migrants dead, dozens missing after boat capsizes off Djibouti coast",
+      "headline": "Trump claims Russia and Ukraine agree to 'energy ceasefire' despite continued attacks",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/at-least-139-migrants-dead-dozens-missing-after-boat-capsizes-off-djibouti-coast",
-      "topic": "Trending",
-      "published": "2026-10-11T18:05:16+00:00"
+      "url": "https://www.pbs.org/newshour/world/trump-claims-russia-and-ukraine-agree-to-energy-ceasefire-despite-continued-attacks",
+      "topic": "Science",
+      "published": "2026-10-11T21:25:24+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "German 'lawfare': When lawsuits become a political weapon",
+      "headline": "Saudi Arabia: Second strike kills at least 1 at Riyadh airport",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/german-lawfare-when-lawsuits-become-a-political-weapon/a-79615817?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-11T15:14:00+00:00"
+      "published": "2026-10-11T22:59:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Homes and bridges swept away as fresh floods hit Nepal",
+      "headline": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck86zppejjw3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-11T12:03:52+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-11T21:12:44+00:00"
     },
     {
       "n": 17,
-      "headline": "Don't be scared: Being afraid is outright fun, and maybe useful",
+      "headline": "Justice Department investigates TV networks, citing possible anti-trust violations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/11/nx-s1-5973128/dont-be-scared-being-afraid-is-outright-fun-and-maybe-useful",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5997574/the-doj-is-investigating-5-tv-networks-for-suspending-pool-coverage-of-trump",
       "topic": "Trending",
-      "published": "2026-10-11T12:00:00+00:00"
+      "published": "2026-10-11T12:04:00+00:00"
     }
   ]
 }
