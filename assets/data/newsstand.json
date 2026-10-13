@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T15:31:02Z",
+  "generated_at": "2026-10-13T20:57:18Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Evidence Jared Kushner Bought .si Domain Names Recently -- His Company Denies",
-      "verdict": "UNPROVEN",
+      "claim": "Nobel Peace Prize Committee Member Did NOT Write Post About Rejecting Trump's Bid -- Author Is A Self-Described Satirist",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-jared-kushner-is-not-one-of-the-people-who-recently-bought-si-domain-names.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-nobel-peace-prize-committee-member-did-not-write-post-about-rejecting-trumps-bid.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Did RFK Jr. say 'infertility is genetic'?",
+      "claim": "Ad targeting Maine Sen. Susan Collins' opponent Troy Jackson ran in wrong state. Who paid?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/rfk-jr-infertility-genetic-quote/",
+      "url": "https://www.snopes.com/fact-check/troy-jackson-maine-senate-ad-error/",
       "topic": "Trending"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: Dem Candidate Approved Tens Of Millions To His Wife’s Employer While In Office",
+      "claim": "EXCLUSIVE: Meet The GOP Candidate Who Came Out Of Nowhere To Pummel Letitia James In Viral Debate",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/12/david-crowley-wife-ericka-crowley-community-advocates-milwaukee-county-65-million-rental-assistance-wisconsin-governor",
+      "url": "https://dailycaller.com/2026/10/13/exclusive-saritha-komatireddy-interview-new-york-ag-race-letitia-james",
       "topic": "Trending"
     },
     {
@@ -56,18 +56,18 @@
     },
     {
       "n": 7,
-      "claim": "clip edited to misrepresent Obama’s views on democratic ideals",
-      "verdict": "MISLEADING",
+      "claim": "How does the employment rate under Labour compare to the Conservative years?",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/us/viral-obama-edited-speech-small-minded-people/",
+      "url": "https://fullfact.org/economy/pat-mcfadden-employment-rate/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "FAKE Image Of U.S. Troops Shooting 'Reptilians' Is NOT Real Photo",
+      "claim": "'Task & Purpose' Did NOT Publish Article About 'Sarah Miller' As 'First Executioner' In Nidal Hasan Case",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-image-of-us-troops-shooting-reptilians-is-not-real-photo.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-task-and-purpose-did-not-publish-article-about-sarah-miller-identified-first-executioner.html",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "White House Asks Scandal-Ridden Kimberly Guilfoyle To Resign",
+      "claim": "Black Man Arrested For Killing Philadelphia Police Officer Says He Targeted Victim For Being White: REPORT",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/13/kimberly-guilfoyle-resignation-donald-trump-katie-zacharia",
+      "url": "https://dailycaller.com/2026/10/13/black-man-arrested-killing-philadelphia-police-officer-white-eric-lewis-shane-seiber",
       "topic": "Trending"
     },
     {
@@ -112,26 +112,26 @@
     },
     {
       "n": 14,
-      "claim": "Clip of Bill Gates discussing water shortages and ‘mass mortality event’ is a deepfake",
-      "verdict": "FALSE",
+      "claim": "clip edited to misrepresent Obama’s views on democratic ideals",
+      "verdict": "MISLEADING",
       "source": "Full Fact",
-      "url": "https://fullfact.org/environment/video-bill-gates-water-shortages-mass-mortality-deepfake/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/us/viral-obama-edited-speech-small-minded-people/",
+      "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "Trump's Truth Social Account Did NOT Post 503 'Service Unavailable' Error From Yandex -- It Appeared On A Political Humor Account",
+      "claim": "Is NOT Real Time-Stamped Surveillance Camera Footage From James Talarico's House -- It Is Digitally Fabricated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-trumps-truth-social-account-did-not-post-a-503-service-unavailable-error-from-yandex-it-appeared-on-a-political-humor-account.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-image-is-not-real-time-stamped-surveillance-camera-footage-from-james-talaricos-house-it-is-digitally-fabricated.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Charlie Kirk say children could watch public executions as 'initiation' at 'certain age'?",
+      "claim": "Did RFK Jr. say 'infertility is genetic'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/charlie-kirk-public-executions-quote/",
+      "url": "https://www.snopes.com/fact-check/rfk-jr-infertility-genetic-quote/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Russia's offensive ability is broken, Kyiv's former top general tells BBC",
+      "headline": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9y7lgg2vdggo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-13T05:02:34+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-10-13T20:46:06+00:00"
     },
     {
       "n": 2,
-      "headline": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar's home",
+      "headline": "Bipartisan group of senators call on Trump to rescind Russian diesel deal",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/g-s1-147822/up-first-newsletter-trump-ads-funding-campaign-rallies-ilhan-omar",
+      "url": "https://www.npr.org/2026/10/13/g-s1-147871/trump-russia-diesel-deal-congressional-response",
       "topic": "Politics",
-      "published": "2026-10-13T11:08:14+00:00"
+      "published": "2026-10-13T19:52:52+00:00"
     },
     {
       "n": 3,
-      "headline": "Man killed on a Six Flags roller coaster was thrown from the ride and hit other patrons, police say",
+      "headline": "Trump heads to Alaska in a sign of how close its Senate race may be",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/police-investigate-mans-fatal-fall-off-six-flags-roller-coaster-in-georgia",
-      "topic": "Trending",
-      "published": "2026-10-13T14:49:56+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-heads-to-alaska-in-a-sign-of-how-close-its-senate-race-may-be",
+      "topic": "Politics",
+      "published": "2026-10-13T20:42:21+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "India: Can 'cockroaches' threaten Modi's political grip?",
+      "headline": "Vatican confirms Pope Leo underwent surgery for lung cancer",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-can-cockroaches-threaten-modi-s-political-grip/a-79649732?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-13T15:20:00+00:00"
+      "url": "https://www.dw.com/en/vatican-confirms-pope-leo-underwent-surgery-for-lung-cancer/a-79647264?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-10-13T19:50:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Breaking Bad actor RJ Mitte dies aged 34",
+      "headline": "MI5 chief warns of threats to UK from Russia, Iran and AI",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-10-13T08:03:34+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-13T15:52:15+00:00"
     },
     {
       "n": 7,
-      "headline": "Pakistan imposes emergency rule in former prime minister's stronghold",
+      "headline": "A judge blocks the government's tree-clearing spree at a municipal D.C. golf course",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-5998798/pakistan-imposes-emergency-rule-in-former-prime-ministers-stronghold",
-      "topic": "Politics",
-      "published": "2026-10-13T10:51:33+00:00"
+      "url": "https://www.npr.org/2026/10/13/nx-s1-6000055/east-potomac-golf-course-tree-clearing-judge",
+      "topic": "Trending",
+      "published": "2026-10-13T19:38:18+00:00"
     },
     {
       "n": 8,
-      "headline": "WATCH: Zacharia says White House has asked Kimberly Guilfoyle to resign",
+      "headline": "In first visit to Ceuta, Spain's king asks for 'good faith' from Morocco after migration crisis",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-zacharia-says-white-house-has-asked-kimberly-guilfoyle-to-resign",
+      "url": "https://www.pbs.org/newshour/world/in-first-visit-to-ceuta-spains-king-asks-for-good-faith-from-morocco-after-migration-crisis",
       "topic": "Trending",
-      "published": "2026-10-13T14:16:12+00:00"
+      "published": "2026-10-13T20:29:07+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "White House asks US Ambassador to Greece Kimberly Guilfoyle to step down amid misconduct allegations",
+      "headline": "Tupac Shakur murder trial: Former gang leader Duane Davis sentenced to 40 years",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/white-house-asks-us-ambassador-to-greece-kimberly-guilfoyle-to-step-down-amid-misconduct-allegations/a-79652952?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/tupac-shakur-murder-trial-former-gang-leader-duane-davis-sentenced-to-40-years/a-79655189?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-13T14:37:00+00:00"
+      "published": "2026-10-13T19:40:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Horrified witnesses recount fatal rollercoaster incident at Six Flags",
+      "headline": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-13T15:21:04+00:00"
+      "published": "2026-10-13T20:02:15+00:00"
     },
     {
       "n": 12,
-      "headline": "What ice cream has to do with this year's Nobel Prize in economics",
+      "headline": "Cornell University bans frat parties, vows to address 'disturbing' campus culture",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/10/13/g-s1-147816/what-ice-cream-has-to-do-with-this-years-nobel-prize-in-economics",
+      "url": "https://www.npr.org/2026/10/13/nx-s1-6000347/cornell-rape-ban-fraternity-parties",
       "topic": "Trending",
-      "published": "2026-10-13T10:30:00+00:00"
+      "published": "2026-10-13T19:23:57+00:00"
     },
     {
       "n": 13,
-      "headline": "WATCH LIVE: Trump campaigns for Sen. Dan Sullivan in Alaska",
+      "headline": "Congo's confirmed Ebola cases surpass 9,000 as containment efforts falter",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-campaigns-for-sen-dan-sullivan-in-alaska",
-      "topic": "Politics",
-      "published": "2026-10-13T13:49:14+00:00"
+      "url": "https://www.pbs.org/newshour/health/congos-confirmed-ebola-cases-surpass-9000-as-containment-efforts-falter",
+      "topic": "Trending",
+      "published": "2026-10-13T19:56:56+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Hungary's parliament votes to reverse anti-LGBTQ legislation from Orban era",
+      "headline": "Germany news: Left-leaning Berlin coalition talks break down",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/hungary-s-parliament-votes-to-reverse-anti-lgbtq-legislation-from-orban-era/a-79647826?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-13T13:47:00+00:00"
+      "url": "https://www.dw.com/en/germany-news-left-leaning-berlin-coalition-talks-break-down/live-79647092?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-13T19:22:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Watch: Emergency calls from botched Christa Pike execution released",
+      "headline": "Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cqpvgrkp0xpyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c60rln2jvv2zo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-13T12:03:51+00:00"
+      "published": "2026-10-13T19:51:14+00:00"
     },
     {
       "n": 17,
-      "headline": "One way to protect coral reefs? Bring back seabirds",
+      "headline": "The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-5901320/coral-reefs-palmyra-atoll-birds-restoration",
-      "topic": "Trending",
-      "published": "2026-10-13T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/13/nx-s1-6000051/ukraine-zelenskyy-npr-interview-russia-war",
+      "topic": "Politics",
+      "published": "2026-10-13T18:51:55+00:00"
     }
   ]
 }
