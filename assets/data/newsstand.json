@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T20:57:18Z",
+  "generated_at": "2026-10-14T03:16:42Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,27 +8,27 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Nobel Peace Prize Committee Member Did NOT Write Post About Rejecting Trump's Bid -- Author Is A Self-Described Satirist",
+      "claim": "FAKE Chart Shows Future AfD Bot Activity Drop After Ukraine Bombed Russian Data Centers -- Made-Up Data",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-nobel-peace-prize-committee-member-did-not-write-post-about-rejecting-trumps-bid.html",
-      "topic": "Politics"
-    },
-    {
-      "n": 2,
-      "claim": "Ad targeting Maine Sen. Susan Collins' opponent Troy Jackson ran in wrong state. Who paid?",
-      "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/troy-jackson-maine-senate-ad-error/",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-chart-shows-future-afd-bot-activity-drop-after-ukraine-bombed-russian-data-centers.html",
       "topic": "Trending"
     },
     {
+      "n": 2,
+      "claim": "Did 163 Democrats use same Oklahoma address to vote for Biden in 2020? There's no proof",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/news/2026/10/11/oklahoma-house-2020-election-biden/",
+      "topic": "Politics"
+    },
+    {
       "n": 3,
-      "claim": "Republican Ads Distort the Facts in Claiming Democratic Support for ‘Sex Changes’ for Kids",
+      "claim": "Talarico’s Campaign-Trail Absence Sparks False Rumor",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/republican-ads-distort-the-facts-in-claiming-democratic-support-for-sex-changes-for-kids/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/10/talaricos-campaign-trail-absence-sparks-false-rumor/",
+      "topic": "Trending"
     },
     {
       "n": 4,
@@ -64,34 +64,34 @@
     },
     {
       "n": 8,
-      "claim": "'Task & Purpose' Did NOT Publish Article About 'Sarah Miller' As 'First Executioner' In Nidal Hasan Case",
-      "verdict": "FALSE",
+      "claim": "FAKE Photo Shows Bush, Cheney, Rumsfeld And Bin Laden Together -- Edited Version Of Pentagon Image",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-task-and-purpose-did-not-publish-article-about-sarah-miller-identified-first-executioner.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-photo-shows-bush-cheney-rumsfeld-and-bin-laden-together-edited-version-of-pentagon-image.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Is your ballot disqualified if poll workers mark it? Here's the truth",
+      "claim": "Did Ukraine's strikes on Yandex servers take out Russian bots? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ballot-disqualified-poll-workers/",
+      "url": "https://www.snopes.com/news/2026/10/13/ukraine-yandex-strikes-russian-bots/",
       "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Republican Ads Attack El-Sayed for Past Comments, Positions on Policing and Prisons",
-      "verdict": "FALSE",
+      "claim": "Trump Officials Mislead About Electrical Grid Reliability",
+      "verdict": "MISLEADING",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/republican-ads-attack-el-sayed-for-past-comments-positions-on-policing-and-prisons/",
+      "url": "https://www.factcheck.org/2026/10/trump-officials-mislead-about-electrical-grid-reliability/",
       "topic": "Politics"
     },
     {
       "n": 11,
-      "claim": "Black Man Arrested For Killing Philadelphia Police Officer Says He Targeted Victim For Being White: REPORT",
+      "claim": "Cornell Bans All Fraternity Parties For The Rest Of Academic Year",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/13/black-man-arrested-killing-philadelphia-police-officer-white-eric-lewis-shane-seiber",
+      "url": "https://dailycaller.com/2026/10/13/cornell-bans-fraternity-parties-academic-year-gang-rape",
       "topic": "Trending"
     },
     {
@@ -120,27 +120,27 @@
     },
     {
       "n": 15,
-      "claim": "Is NOT Real Time-Stamped Surveillance Camera Footage From James Talarico's House -- It Is Digitally Fabricated",
+      "claim": "Nobel Peace Prize Committee Member Did NOT Write Post About Rejecting Trump's Bid -- Author Is A Self-Described Satirist",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-image-is-not-real-time-stamped-surveillance-camera-footage-from-james-talaricos-house-it-is-digitally-fabricated.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-nobel-peace-prize-committee-member-did-not-write-post-about-rejecting-trumps-bid.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Did RFK Jr. say 'infertility is genetic'?",
+      "claim": "Trump claims Russia and Ukraine agreed to 'energy ceasefire.' Is there proof?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/rfk-jr-infertility-genetic-quote/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/10/13/russia-ukraine-energy-ceasefire-trump/",
+      "topic": "Science"
     },
     {
       "n": 17,
-      "claim": "GOP Attacks Over Taxes on Tips, Overtime, Social Security",
+      "claim": "Republican Ads Distort the Facts in Claiming Democratic Support for ‘Sex Changes’ for Kids",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/misleading-gop-attacks-over-taxes-on-tips-overtime-social-security/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/10/republican-ads-distort-the-facts-in-claiming-democratic-support-for-sex-changes-for-kids/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
@@ -150,23 +150,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&at_campaign=rss",
       "topic": "Health",
-      "published": "2026-10-13T20:46:06+00:00"
+      "published": "2026-10-14T00:17:00+00:00"
     },
     {
       "n": 2,
-      "headline": "Bipartisan group of senators call on Trump to rescind Russian diesel deal",
+      "headline": "Pope Leo has lung cancer, the Vatican announces after surgery",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/g-s1-147871/trump-russia-diesel-deal-congressional-response",
-      "topic": "Politics",
-      "published": "2026-10-13T19:52:52+00:00"
+      "url": "https://www.npr.org/2026/10/13/g-s1-147968/pope-leo-has-lung-cancer-vatican-announces",
+      "topic": "Health",
+      "published": "2026-10-13T22:29:26+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump heads to Alaska in a sign of how close its Senate race may be",
+      "headline": "Does a Russian lab worker's death carry pandemic risk? Experts say it's unlikely, with one caveat",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-heads-to-alaska-in-a-sign-of-how-close-its-senate-race-may-be",
-      "topic": "Politics",
-      "published": "2026-10-13T20:42:21+00:00"
+      "url": "https://www.pbs.org/newshour/health/does-a-russian-lab-workers-death-carry-pandemic-risk-experts-say-its-unlikely-with-one-caveat",
+      "topic": "Trending",
+      "published": "2026-10-13T23:32:57+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Vatican confirms Pope Leo underwent surgery for lung cancer",
+      "headline": "Houthis launch fresh wave of missiles across Saudi Arabia",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/vatican-confirms-pope-leo-underwent-surgery-for-lung-cancer/a-79647264?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-10-13T19:50:00+00:00"
+      "url": "https://www.dw.com/en/houthis-launch-fresh-wave-of-missiles-across-saudi-arabia/live-79655805?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-14T00:50:00+00:00"
     },
     {
       "n": 6,
-      "headline": "MI5 chief warns of threats to UK from Russia, Iran and AI",
+      "headline": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-13T15:52:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-13T21:42:49+00:00"
     },
     {
       "n": 7,
-      "headline": "A judge blocks the government's tree-clearing spree at a municipal D.C. golf course",
+      "headline": "What an economics Nobel Prize winner knows about pricing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-6000055/east-potomac-golf-course-tree-clearing-judge",
+      "url": "https://www.npr.org/2026/10/13/nx-s1-5998849/what-an-economics-nobel-prize-winner-knows-about-pricing",
       "topic": "Trending",
-      "published": "2026-10-13T19:38:18+00:00"
+      "published": "2026-10-13T20:03:35+00:00"
     },
     {
       "n": 8,
-      "headline": "In first visit to Ceuta, Spain's king asks for 'good faith' from Morocco after migration crisis",
+      "headline": "White House press secretary's debut brings news of Guilfoyle's exit",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/in-first-visit-to-ceuta-spains-king-asks-for-good-faith-from-morocco-after-migration-crisis",
+      "url": "https://www.pbs.org/newshour/show/white-house-press-secretarys-debut-brings-news-of-guilfoyles-exit",
       "topic": "Trending",
-      "published": "2026-10-13T20:29:07+00:00"
+      "published": "2026-10-13T22:55:01+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Tupac Shakur murder trial: Former gang leader Duane Davis sentenced to 40 years",
+      "headline": "Cornell suspends frat parties after gang rape case",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/tupac-shakur-murder-trial-former-gang-leader-duane-davis-sentenced-to-40-years/a-79655189?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/cornell-suspends-frat-parties-after-gang-rape-case/a-79655735?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-13T19:40:00+00:00"
+      "published": "2026-10-13T22:58:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
+      "headline": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-13T20:02:15+00:00"
+      "published": "2026-10-13T23:42:22+00:00"
     },
     {
       "n": 12,
-      "headline": "Cornell University bans frat parties, vows to address 'disturbing' campus culture",
+      "headline": "Bipartisan group of senators call on Trump to rescind Russian diesel deal",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-6000347/cornell-rape-ban-fraternity-parties",
-      "topic": "Trending",
-      "published": "2026-10-13T19:23:57+00:00"
+      "url": "https://www.npr.org/2026/10/13/g-s1-147871/trump-russia-diesel-deal-congressional-response",
+      "topic": "Politics",
+      "published": "2026-10-13T19:52:52+00:00"
     },
     {
       "n": 13,
-      "headline": "Congo's confirmed Ebola cases surpass 9,000 as containment efforts falter",
+      "headline": "Saudi conflict with Houthis escalates with new strikes",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/congos-confirmed-ebola-cases-surpass-9000-as-containment-efforts-falter",
+      "url": "https://www.pbs.org/newshour/show/saudi-conflict-with-houthis-escalates-with-new-strikes",
       "topic": "Trending",
-      "published": "2026-10-13T19:56:56+00:00"
+      "published": "2026-10-13T22:50:36+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany news: Left-leaning Berlin coalition talks break down",
+      "headline": "OpenAI says employee caught planting listening device",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-left-leaning-berlin-coalition-talks-break-down/live-79647092?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/openai-says-employee-caught-planting-listening-device/a-79655491?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-13T19:22:00+00:00"
+      "published": "2026-10-13T21:24:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder",
+      "headline": "MI5 chief warns of threats to UK from Russia, Iran and AI",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60rln2jvv2zo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-13T19:51:14+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-13T15:52:15+00:00"
     },
     {
       "n": 17,
-      "headline": "The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR",
+      "headline": "A judge blocks the government's tree-clearing spree at a municipal D.C. golf course",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-6000051/ukraine-zelenskyy-npr-interview-russia-war",
-      "topic": "Politics",
-      "published": "2026-10-13T18:51:55+00:00"
+      "url": "https://www.npr.org/2026/10/13/nx-s1-6000055/east-potomac-golf-course-tree-clearing-judge",
+      "topic": "Trending",
+      "published": "2026-10-13T19:38:18+00:00"
     }
   ]
 }
