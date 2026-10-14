@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T03:16:42Z",
+  "generated_at": "2026-10-14T13:16:26Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did 163 Democrats use same Oklahoma address to vote for Biden in 2020? There's no proof",
+      "claim": "10 alleged Hegseth quotes, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/11/oklahoma-house-2020-election-biden/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/pete-hegseth-quotes-collection/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Despite Supreme Court directive, Delhi Police detains journalists on duty on second consecutive day",
+      "claim": "‘Aur Nahi Marenge’, they said, and then kicked, slapped and brutalised us inside a pitch-dark van fitted with cages’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/despite-supreme-court-directive-delhi-police-detains-journalists-on-duty-on-second-consecutive-day/",
+      "url": "https://www.altnews.in/aur-nahi-marenge-they-said-and-then-kicked-slapped-brutalised-us-inside-a-pitch-dark-van-fitted-with-cages/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Ukraine's strikes on Yandex servers take out Russian bots? What we know",
+      "claim": "Ad targeting Maine Sen. Susan Collins' opponent Troy Jackson ran in wrong state. Who paid?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/13/ukraine-yandex-strikes-russian-bots/",
+      "url": "https://www.snopes.com/fact-check/troy-jackson-maine-senate-ad-error/",
       "topic": "Trending"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "International media, rights bodies flag police excesses at Delhi protest",
+      "claim": "Despite Supreme Court directive, Delhi Police detains journalists on duty on second consecutive day",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/international-media-rights-bodies-flag-police-excesses-at-delhi-cjp-protest/",
+      "url": "https://www.altnews.in/despite-supreme-court-directive-delhi-police-detains-journalists-on-duty-on-second-consecutive-day/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Trump claims Russia and Ukraine agreed to 'energy ceasefire.' Is there proof?",
+      "claim": "Ilhan Omar: 18 rumors we've examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/13/russia-ukraine-energy-ceasefire-trump/",
-      "topic": "Science"
+      "url": "https://www.snopes.com/collections/ilhan-omar-rumors-collection/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
+      "headline": "Starlink restrictions affecting Ukraine's front line operations, Kyiv says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-10-14T00:17:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-14T13:11:17+00:00"
     },
     {
       "n": 2,
-      "headline": "Pope Leo has lung cancer, the Vatican announces after surgery",
+      "headline": "Hands-on with the Ocarina of Time remake, the most ornate Zelda game ever made",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/g-s1-147968/pope-leo-has-lung-cancer-vatican-announces",
-      "topic": "Health",
-      "published": "2026-10-13T22:29:26+00:00"
+      "url": "https://www.npr.org/2026/10/14/nx-s1-5961483/preview-zelda-ocarina-of-time-remake-switch-2",
+      "topic": "Trending",
+      "published": "2026-10-14T13:00:00+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "Controversial vaccine trial touted by RFK Jr gets go-ahead in Guinea-Bissau",
+      "headline": "Guinea-Bissau denies it has approved controversial vaccine trial in newborns",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/society/2026/oct/09/vaccine-trial-guinea-bissau-rfk-jr",
+      "url": "https://www.theguardian.com/world/2026/oct/14/guinea-bissau-vaccine-hepatitis-b-trial-denial",
       "topic": "Health",
-      "published": "2026-10-09T21:36:18+00:00"
+      "published": "2026-10-14T12:21:16+00:00"
     },
     {
       "n": 5,
-      "headline": "Houthis launch fresh wave of missiles across Saudi Arabia",
+      "headline": "Germany news: Merz sets out EU priorities after urging reforms",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/houthis-launch-fresh-wave-of-missiles-across-saudi-arabia/live-79655805?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-merz-sets-out-eu-priorities-after-urging-reforms/live-79656436?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-14T00:50:00+00:00"
+      "published": "2026-10-14T12:34:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "headline": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-13T21:42:49+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-10-14T11:17:51+00:00"
     },
     {
       "n": 7,
-      "headline": "What an economics Nobel Prize winner knows about pricing",
+      "headline": "Zelenskyy sits down with NPR. And, Pope Leo diagnosed with lung cancer",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-5998849/what-an-economics-nobel-prize-winner-knows-about-pricing",
-      "topic": "Trending",
-      "published": "2026-10-13T20:03:35+00:00"
+      "url": "https://www.npr.org/2026/10/14/g-s1-148040/up-first-newsletter-volodymyr-zelenskyy-pope-leo-kimberly-guilfoyle-media-free-speech",
+      "topic": "Health",
+      "published": "2026-10-14T11:38:51+00:00"
     },
     {
       "n": 8,
@@ -210,19 +210,19 @@
     },
     {
       "n": 9,
-      "headline": "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+      "headline": "Controversial vaccine trial touted by RFK Jr gets go-ahead in Guinea-Bissau",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize",
-      "topic": "Trending",
-      "published": "2026-10-09T16:30:09+00:00"
+      "url": "https://www.theguardian.com/society/2026/oct/09/vaccine-trial-guinea-bissau-rfk-jr",
+      "topic": "Health",
+      "published": "2026-10-09T21:36:18+00:00"
     },
     {
       "n": 10,
-      "headline": "Cornell suspends frat parties after gang rape case",
+      "headline": "China's influence in the gaming industry is growing",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/cornell-suspends-frat-parties-after-gang-rape-case/a-79655735?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-13T22:58:00+00:00"
+      "url": "https://www.dw.com/en/china-s-influence-in-the-gaming-industry-is-growing/a-79484755?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-14T11:48:00+00:00"
     },
     {
       "n": 11,
@@ -230,15 +230,15 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-13T23:42:22+00:00"
+      "published": "2026-10-14T12:27:00+00:00"
     },
     {
       "n": 12,
-      "headline": "Bipartisan group of senators call on Trump to rescind Russian diesel deal",
+      "headline": "These workers help train robots who could one day steal their jobs",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/g-s1-147871/trump-russia-diesel-deal-congressional-response",
-      "topic": "Politics",
-      "published": "2026-10-13T19:52:52+00:00"
+      "url": "https://www.npr.org/2026/10/14/g-s1-146907/these-workers-help-train-robots-who-could-one-day-steal-their-jobs",
+      "topic": "Trending",
+      "published": "2026-10-14T09:28:47+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "Isaias strengthens to become first Atlantic hurricane of 2026 season",
+      "headline": "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/oct/09/isaias-strengthens-first-atlantic-hurricane-2026",
+      "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize",
       "topic": "Trending",
-      "published": "2026-10-09T09:59:06+00:00"
+      "published": "2026-10-09T16:30:09+00:00"
     },
     {
       "n": 15,
-      "headline": "OpenAI says employee caught planting listening device",
+      "headline": "Nord Stream: Germany puts suspected Ukrainian pipeline saboteur on trial",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/openai-says-employee-caught-planting-listening-device/a-79655491?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/nord-stream-germany-puts-suspected-ukrainian-pipeline-saboteur-on-trial/a-79647617?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-13T21:24:00+00:00"
+      "published": "2026-10-14T11:40:00+00:00"
     },
     {
       "n": 16,
-      "headline": "MI5 chief warns of threats to UK from Russia, Iran and AI",
+      "headline": "Saudi employee charged with planting recording device in OpenAI office",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-13T15:52:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-13T21:42:49+00:00"
     },
     {
       "n": 17,
-      "headline": "A judge blocks the government's tree-clearing spree at a municipal D.C. golf course",
+      "headline": "Trump's ambassador to Greece, Kimberly Guilfoyle, resigns after allegations of improper conduct",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-6000055/east-potomac-golf-course-tree-clearing-judge",
-      "topic": "Trending",
-      "published": "2026-10-13T19:38:18+00:00"
+      "url": "https://www.npr.org/2026/10/14/g-s1-148027/trump-ambassador-greece-resignation",
+      "topic": "Politics",
+      "published": "2026-10-14T09:09:39+00:00"
     }
   ]
 }
