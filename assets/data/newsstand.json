@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T13:01:41Z",
+  "generated_at": "2026-10-15T19:39:28Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Animal Attack Videos Posted By Trump In Truth Social Montage -- 3 Of 5 Clips Are AI-Generated",
+      "claim": "Prebunk: Don't Let Sleeping Pods Put Your Critical Thinking To Sleep -- Homeless Clickbait Images Begging For Attention On Your Timeline",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-animal-attack-videos-posted-by-trump-in-truth-social-montage.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/10/prebunk-dont-let-sleeping-pods-put-your-critical-thinking-to-sleep.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "11 claims about data centers we've investigated",
+      "claim": "Voters have raised concerns about their ballots being lost in fires. Here are the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/data-center-rumors-collection/",
+      "url": "https://www.snopes.com/articles/474209/elections-ballots-fires/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Jack Smith’s FBI Probe Obtained Personal Data Of 640,000 Everyday Republicans, MAGA Hat Buyers",
+      "claim": "Boomers Get A Bigger Check While The Rest Of Us Pay The Price",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/14/jack-smith-fbi-probe-personal-date-republicans-maga-hat",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/15/social-security-administration-cost-of-living-adjustment-inflation-boomer-retirees",
+      "topic": "Money"
     },
     {
       "n": 5,
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "Small boat crossings predate Brexit",
+      "claim": "Fake image of wildlife park tiger attack circulates online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/small-boat-crossings-predate-brexit/",
+      "url": "https://fullfact.org/culture-and-society/fake-image-of-tiger-attack-shared/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Does NOT Show Man Standing Up On Six Flags Roller Coaster Before His Death In Atlanta -- 2024 Video From Arizona",
-      "verdict": "FALSE",
+      "claim": "FAKE Video Shows Woman Shooting Robbers From Her Car -- Footage Is Digitally Altered 2021 Road Rage Incident",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-man-standing-up-on-six-flags-roller-coaster-before-his-death-in-atlanta-2024-video-from-arizona.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-28-year-old-woman-shooting-robbers-from-her-car.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "NY Democrats are fining unvaccinated Amish children $2K per day distorts facts",
+      "claim": "Did Nobel Committee member 'Peter Girnus' write letter about why Trump didn't win Peace Prize?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/new-york-unvaccinated-amish-children/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/nobel-committee-peter-girnus-trump-letter/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "EXCLUSIVE: American Taxpayers Feed Yemen While Its Farmers Grow Drugs",
+      "claim": "Conflict Of Interest? Adelsons, Big Business Bankroll Trump’s Ballroom",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/14/american-tax-dollars-helping-yemen-grow-more-drugs-than-food",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/15/wapo-trump-ballroom-donors-adelson-apple-nvidia-singer-white-house",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -112,26 +112,26 @@
     },
     {
       "n": 14,
-      "claim": "Old and fake videos shared as Riyadh airport attacks",
+      "claim": "Minister repeats incorrect claim about Labour’s asylum hotels record",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/conflict/videos-riyadh-airport-attacks-altered-and-false/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/immigration/jo-white-asylum-hotels-labour/",
+      "topic": "Politics"
     },
     {
       "n": 15,
-      "claim": "FAKE Chart Shows Future AfD Bot Activity Drop After Ukraine Bombed Russian Data Centers -- Made-Up Data",
+      "claim": "Trump Did NOT Accuse Ukraine Of Midterm Election Interference After Russian Bot Farm Strikes -- It Is A Satire Website",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-chart-shows-future-afd-bot-activity-drop-after-ukraine-bombed-russian-data-centers.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/trump-did-not-accuse-ukraine-of-midterm-election-interference-after-russian-bot-farm-strikes-it-is-a-satire-website.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Why some Georgia DAs are pushing back against state law removing candidates' party affiliations from ballots",
+      "claim": "Hegseth said Pentagon planned to livestream Fort Hood shooter's execution. Is that legal?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/georgia-party-affiliation-law/",
+      "url": "https://www.snopes.com/news/2026/10/09/nidal-hasan-execution-livestream-legal/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+      "headline": "Trump calls off livestream of Fort Hood attacker's execution by firing squad",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-15T12:03:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-15T17:47:22+00:00"
     },
     {
       "n": 2,
-      "headline": "Social Security benefits to get a boost. And, Hasan Piker defends his rhetoric",
+      "headline": "U.S. historic preservation law faces the most serious threat in its 60-year history",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/15/g-s1-148199/up-first-newsletter-inflation-social-security-ukraine-russia-yemen-saudi-arabia",
+      "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
       "topic": "Trending",
-      "published": "2026-10-15T11:31:25+00:00"
+      "published": "2026-10-15T18:38:05+00:00"
     },
     {
       "n": 3,
-      "headline": "WATCH LIVE: Rep. Begich faces challenger Hill in a debate for Alaska's at-large House seat",
+      "headline": "FBI agents and analysts who were fired for working on Trump classified files probe sue to get their jobs back",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-rep-begich-faces-challenger-hill-in-a-debate-for-alaskas-at-large-house-seat",
-      "topic": "Trending",
-      "published": "2026-10-14T23:13:13+00:00"
+      "url": "https://www.pbs.org/newshour/politics/fbi-agents-and-analysts-who-were-fired-for-working-on-trump-classified-files-probe-sue-to-get-their-jobs-back",
+      "topic": "Politics",
+      "published": "2026-10-15T19:26:01+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Starlink: How Elon Musk's company influences geopolitics",
+      "headline": "Venezuela's Nicolas Maduro pleads not guilty to torture charges",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/starlink-how-elon-musk-s-company-influences-geopolitics/a-75963477?maca=en-rss-en-all-1573-rdf",
-      "topic": "Tech / AI",
-      "published": "2026-10-15T12:59:00+00:00"
+      "url": "https://www.dw.com/en/venezuela-s-nicolas-maduro-pleads-not-guilty-to-torture-charges/a-79673496?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-15T18:55:00+00:00"
     },
     {
       "n": 6,
-      "headline": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
+      "headline": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-15T12:28:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-15T17:18:49+00:00"
     },
     {
       "n": 7,
-      "headline": "After booting 760K off ACA health plans, the Trump administration adds some people back",
+      "headline": "Inside the race between Elon Musk and Jeff Bezos for control of outer space",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/15/nx-s1-6002957/aca-fraud-trump-health-insurance",
-      "topic": "Health",
-      "published": "2026-10-15T11:06:21+00:00"
+      "url": "https://www.npr.org/2026/10/15/nx-s1-6002922/inside-the-race-between-elon-musk-and-jeff-bezos-for-control-of-outer-space",
+      "topic": "Science",
+      "published": "2026-10-15T16:45:02+00:00"
     },
     {
       "n": 8,
-      "headline": "Economist breaks down new inflation report and what's driving prices higher",
+      "headline": "Democrats see voter enthusiasm in fundraising haul from small-dollar donors before the midterms",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/economist-breaks-down-new-inflation-report-and-whats-driving-prices-higher",
+      "url": "https://www.pbs.org/newshour/politics/democrats-see-voter-enthusiasm-in-fundraising-haul-from-small-dollar-donors-before-the-midterms",
       "topic": "Money",
-      "published": "2026-10-14T22:55:14+00:00"
+      "published": "2026-10-15T17:59:10+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Hypersonic missiles highlight arms race on Korean Peninsula",
+      "headline": "Self-replicating AI: Is your fridge a cybersecurity risk?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/hypersonic-missiles-highlight-arms-race-on-korean-peninsula/a-79667084?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-15T12:02:00+00:00"
+      "url": "https://www.dw.com/en/self-replicating-ai-is-your-fridge-a-cybersecurity-risk/a-79662958?maca=en-rss-en-all-1573-rdf",
+      "topic": "Tech / AI",
+      "published": "2026-10-15T18:52:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Two dead in Istanbul after heaviest rainfall in 84 years, governor says",
+      "headline": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq398x7j1lrwo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-15T10:05:29+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-15T16:50:18+00:00"
     },
     {
       "n": 12,
-      "headline": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+      "headline": "Social Security benefits to get a boost. And, Hasan Piker defends his rhetoric",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war",
+      "url": "https://www.npr.org/2026/10/15/g-s1-148199/up-first-newsletter-inflation-social-security-ukraine-russia-yemen-saudi-arabia",
       "topic": "Trending",
-      "published": "2026-10-15T10:05:58+00:00"
+      "published": "2026-10-15T11:31:25+00:00"
     },
     {
       "n": 13,
-      "headline": "News Wrap: Iran says cargo ship sank after hitting a mine in Strait of Hormuz",
+      "headline": "Medicare open enrollment starts now. These changes will arrive in 2027",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-iran-says-cargo-ship-sank-after-hitting-a-mine-in-strait-of-hormuz",
-      "topic": "World",
-      "published": "2026-10-14T22:50:43+00:00"
+      "url": "https://www.pbs.org/newshour/health/medicare-open-enrollment-starts-now-these-changes-will-arrive-in-2027",
+      "topic": "Trending",
+      "published": "2026-10-15T17:22:38+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done",
+      "headline": "Middle East updates: Houthis target Yemen government palace in Aden",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-we-re-done/a-79667757?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/middle-east-updates-houthis-target-yemen-government-palace-in-aden/live-79672880?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-15T11:32:00+00:00"
+      "published": "2026-10-15T17:44:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Eight crew missing after drone attack leaves tanker ablaze off Romania's coast",
+      "headline": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60qkgpp592yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-15T11:12:54+00:00"
+      "published": "2026-10-15T15:26:16+00:00"
     },
     {
       "n": 17,
-      "headline": "Greetings from Mexico City, where a bullfighting ban doesn't stop this matador training",
+      "headline": "After booting 760K off ACA health plans, the Trump administration adds some people back",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/15/nx-s1-6001550/mexico-city-bullfighting-ban-matador-training",
-      "topic": "Trending",
-      "published": "2026-10-15T10:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/15/nx-s1-6002957/aca-fraud-trump-health-insurance",
+      "topic": "Health",
+      "published": "2026-10-15T11:06:21+00:00"
     }
   ]
 }
