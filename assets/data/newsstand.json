@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T11:56:22Z",
+  "generated_at": "2026-10-17T18:06:52Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Voters have raised concerns about their ballots being lost in fires. Here are the facts",
+      "claim": "Denzel Washington: 19 rumors we've fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/articles/474209/elections-ballots-fires/",
+      "url": "https://www.snopes.com/collections/denzel-washington-rumors/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "12 claims about data centers we've investigated",
+      "claim": "Voters have raised concerns about their ballots being lost in fires. Here are the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/data-center-rumors-collection/",
+      "url": "https://www.snopes.com/articles/474209/elections-ballots-fires/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Flock CEO Faces Costumed Protesters Backed By Socialists, Raging Grannies",
+      "claim": "White House Taps FTC To Be The Bulldog For AI Enforcement",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/16/flock-ceo-garrett-langley-socialists-reem-suleiman-dsa-raging-grannies",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/17/trump-admin-ftc-andrew-ferguson-artificial-intelligence-enforcement",
+      "topic": "Tech / AI"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Ilhan Omar didn't flee to Morocco after federal agents' raid on her home",
+      "claim": "12 claims about data centers we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ilhan-omar-flee-morocco/",
+      "url": "https://www.snopes.com/collections/data-center-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Fraud, affordability and Trump policies drive friction in Minnesota Senate debate",
+      "headline": "Scuffles and fires break out as protesters rally across France, joining students",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-6004910/minn-us-senate-race",
-      "topic": "Politics",
-      "published": "2026-10-17T11:43:14+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+      "topic": "Trending",
+      "published": "2026-10-17T15:57:40+00:00"
     },
     {
       "n": 3,
-      "headline": "Fundraising to protect key natural sites falls short ahead of UN biodiversity summit",
+      "headline": "Zelenskyy urges support for new U.S. sanctions on Russia put on hold by Trump",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/fundraising-to-protect-key-natural-sites-falls-short-ahead-of-un-biodiversity-summit",
-      "topic": "World",
-      "published": "2026-10-16T23:58:48+00:00"
+      "url": "https://www.pbs.org/newshour/world/zelenskyy-urges-support-for-new-u-s-sanctions-on-russia-put-on-hold-by-trump",
+      "topic": "Politics",
+      "published": "2026-10-17T18:02:43+00:00"
     },
     {
       "n": 4,
@@ -178,15 +178,15 @@
     },
     {
       "n": 5,
-      "headline": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
+      "headline": "Romanian fighter jets shoot down 2 drones over Black Sea",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-17T11:34:00+00:00"
+      "url": "https://www.dw.com/en/romanian-fighter-jets-shoot-down-2-drones-over-black-sea/a-79689156?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-17T17:51:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times",
+      "headline": "Teacher fought US school attacker before armed dad shot suspect 'multiple times",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Decades after apartheid, South Africans seek justice for crimes of the past",
+      "headline": "Pope Leo XIV leaves hospital days after lung cancer surgery",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-5987671/south-africa-justice-sharpeville-apartheid",
-      "topic": "Trending",
-      "published": "2026-10-17T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
+      "topic": "Health",
+      "published": "2026-10-17T15:10:14+00:00"
     },
     {
       "n": 8,
-      "headline": "Israeli settlers attack Palestinians during West Bank olive harvest and beat U.S. photojournalist",
+      "headline": "How Alberta separatism went from fringe cause to referendum",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/israeli-settlers-attack-palestinians-during-west-bank-olive-harvest-and-beat-u-s-photojournalist",
-      "topic": "Money",
-      "published": "2026-10-16T23:46:15+00:00"
+      "url": "https://www.pbs.org/newshour/world/how-alberta-separatism-went-from-fringe-cause-to-referendum",
+      "topic": "Trending",
+      "published": "2026-10-17T17:35:55+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Germany news: Merz faces conservative youth wing in Bonn",
+      "headline": "Egypt's Ssisi says he'll defend Saudi Arabia, if asked",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-merz-faces-conservative-youth-wing-in-bonn/live-79686913?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/egypt-s-ssisi-says-he-ll-defend-saudi-arabia-if-asked/a-79689105?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-17T10:34:00+00:00"
+      "published": "2026-10-17T17:49:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "No Kings turns its focus to voting this weekend. Here's what we know",
+      "headline": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-6004887/no-kings-voting-trump",
-      "topic": "Trending",
-      "published": "2026-10-17T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
+      "topic": "Politics",
+      "published": "2026-10-17T14:25:10+00:00"
     },
     {
       "n": 13,
-      "headline": "DOJ says California officials who process ballots from suspected noncitizens risk prosecution",
+      "headline": "Masked settlers attack European diplomats in the occupied West Bank",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/doj-says-california-officials-who-process-ballots-from-suspected-noncitizens-risk-prosecution",
-      "topic": "Trending",
-      "published": "2026-10-16T23:30:20+00:00"
+      "url": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank",
+      "topic": "Money",
+      "published": "2026-10-17T16:28:11+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Mexico sentences killers of US, Australian surfers to 158 years each in prison",
+      "headline": "West Bank: Israeli settlers attack EU diplomats, French mayor",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/mexico-sentences-killers-of-us-australian-surfers-to-158-years-each-in-prison/a-79685975?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-17T08:19:00+00:00"
+      "url": "https://www.dw.com/en/west-bank-israeli-settlers-attack-eu-diplomats-french-mayor/a-79688819?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-10-17T16:29:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
+      "headline": "Perspective: Midterm money madness",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
-      "topic": "Health",
-      "published": "2026-10-17T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-5997474/perspective-midterm-money-madness",
+      "topic": "Trending",
+      "published": "2026-10-17T12:00:00+00:00"
     }
   ]
 }
