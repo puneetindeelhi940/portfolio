@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T02:44:12Z",
+  "generated_at": "2026-10-17T11:56:22Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "12 claims about data centers we've investigated",
+      "claim": "Voters have raised concerns about their ballots being lost in fires. Here are the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/data-center-rumors-collection/",
+      "url": "https://www.snopes.com/articles/474209/elections-ballots-fires/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Ilhan Omar didn't flee to Morocco after federal agents' raid on her home",
+      "claim": "12 claims about data centers we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ilhan-omar-flee-morocco/",
+      "url": "https://www.snopes.com/collections/data-center-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Trump didn't accuse Ukraine of election interference after strikes on Russian 'bot farms,' despite claims",
+      "claim": "Ilhan Omar didn't flee to Morocco after federal agents' raid on her home",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ukraine-russia-bot-farms-satire/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/ilhan-omar-flee-morocco/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+      "headline": "Trump waives several Russia sanctions as row with Zelensky intensifies",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-16T16:00:30+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-17T11:56:06+00:00"
     },
     {
       "n": 2,
-      "headline": "Katie Zacharia is out as press secretary, White House says",
+      "headline": "Fraud, affordability and Trump policies drive friction in Minnesota Senate debate",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/16/nx-s1-6005302/katie-zacharia-is-out-as-press-secretary-white-house-says",
-      "topic": "Trending",
-      "published": "2026-10-16T20:29:40+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6004910/minn-us-senate-race",
+      "topic": "Politics",
+      "published": "2026-10-17T11:43:14+00:00"
     },
     {
       "n": 3,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Trump puts new Russia sanctions on hold",
+      "headline": "Russia wants blackout in Ukraine as winter comes — Zelenskyy",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-puts-new-russia-sanctions-on-hold/a-79685002?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-17T02:09:00+00:00"
+      "url": "https://www.dw.com/en/russia-wants-blackout-in-ukraine-as-winter-comes-zelenskyy/a-79686703?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-17T11:34:00+00:00"
     },
     {
       "n": 6,
@@ -190,15 +190,15 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-17T01:19:04+00:00"
+      "published": "2026-10-17T09:58:17+00:00"
     },
     {
       "n": 7,
-      "headline": "Katie Zacharia is 'transitioning out' as press secretary, White House says",
+      "headline": "Decades after apartheid, South Africans seek justice for crimes of the past",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/16/nx-s1-6005317/trump-casts-doubt-on-press-secretarys-future",
+      "url": "https://www.npr.org/2026/10/17/nx-s1-5987671/south-africa-justice-sharpeville-apartheid",
       "topic": "Trending",
-      "published": "2026-10-16T18:08:33+00:00"
+      "published": "2026-10-17T11:00:00+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Brazil: Amazon deforestation lowest in nearly 40 years",
+      "headline": "Germany news: Merz faces conservative youth wing in Bonn",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brazil-amazon-deforestation-lowest-in-nearly-40-years/a-79684906?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-10-16T22:30:00+00:00"
+      "url": "https://www.dw.com/en/germany-news-merz-faces-conservative-youth-wing-in-bonn/live-79686913?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-17T10:34:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "headline": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-17T02:33:09+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-17T03:11:10+00:00"
     },
     {
       "n": 12,
-      "headline": "Hot flashes, night sweats, insomnia – OB-GYNS set new rules for menopause treatment",
+      "headline": "No Kings turns its focus to voting this weekend. Here's what we know",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/16/nx-s1-6005201/health-treatment-menopause-hot-flash-night-sweats-insomnia",
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6004887/no-kings-voting-trump",
       "topic": "Trending",
-      "published": "2026-10-16T17:45:16+00:00"
+      "published": "2026-10-17T09:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ukrainian President Zelenskyy speaks at EU summit amid spat with Donald Trump",
+      "headline": "Mexico sentences killers of US, Australian surfers to 158 years each in prison",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukrainian-president-zelenskyy-speaks-at-eu-summit-amid-spat-with-donald-trump/a-79684340?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-16T19:42:00+00:00"
+      "url": "https://www.dw.com/en/mexico-sentences-killers-of-us-australian-surfers-to-158-years-each-in-prison/a-79685975?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-17T08:19:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+      "headline": "Brazil sees record fall in Amazon deforestation as key election looms",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-10-16T14:31:04+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-17T02:33:09+00:00"
     },
     {
       "n": 17,
-      "headline": "Amid talk of public execution, public opinion on death penalty is split",
+      "headline": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/16/g-s1-148404/public-opinion-execution-death-penalty",
-      "topic": "Trending",
-      "published": "2026-10-16T16:28:00+00:00"
+      "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
+      "topic": "Health",
+      "published": "2026-10-17T09:00:00+00:00"
     }
   ]
 }
