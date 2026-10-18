@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T12:24:22Z",
+  "generated_at": "2026-10-18T18:25:14Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Kmart used to sell pet monkeys in the 1960s. It wasn't alone",
+      "claim": "16 claims about Hegseth we've debunked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/kmart-sell-monkeys-1960s/",
+      "url": "https://www.snopes.com/collections/pete-hegseth-false-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "White House Taps FTC To Be The Bulldog For AI Enforcement",
+      "claim": "EXCLUSIVE: The Iran War Is Going To Go Ballistic After Midterms",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/17/trump-admin-ftc-andrew-ferguson-artificial-intelligence-enforcement",
-      "topic": "Tech / AI"
+      "url": "https://dailycaller.com/2026/10/18/united-states-military-iran-war-escalation-midterm-elections-polling",
+      "topic": "World"
     },
     {
       "n": 5,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Denzel Washington: 19 rumors we've fact-checked",
+      "claim": "Kmart used to sell pet monkeys in the 1960s. It wasn't alone",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/denzel-washington-rumors/",
+      "url": "https://www.snopes.com/fact-check/kmart-sell-monkeys-1960s/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Half A Million Flood The Streets Of Allied Nation As President Vows To Punish Rioters",
+      "claim": "Youth Sports Families Allege Travel Company Threatened Their Kids’ Playing Status If They Didn’t Pay Lodging Fees",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/17/france-protests-macron-vows-punish-rioters",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/18/parents-sue-over-youth-sports-hotel-fees-and-booking-rules",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Voters have raised concerns about their ballots being lost in fires. Here are the facts",
+      "claim": "Denzel Washington: 19 rumors we've fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/articles/474209/elections-ballots-fires/",
+      "url": "https://www.snopes.com/collections/denzel-washington-rumors/",
       "topic": "Trending"
     },
     {
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "If you have the scratch, they have the scares",
+      "headline": "Noah Adams, longtime host of NPR's All Things Considered, has died",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-5985869/if-you-have-the-scratch-they-have-the-scares",
-      "topic": "Trending",
-      "published": "2026-10-18T12:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/18/nx-s1-5556931/noah-adams-all-things-considered-has-died",
+      "topic": "Celebrity",
+      "published": "2026-10-18T16:30:00+00:00"
     },
     {
       "n": 3,
-      "headline": "The Republican governor candidates walking back some of their abortion stances",
+      "headline": "Jackson doesn't regret telling Collins to 'shut up' after protester interrupted Maine Senate debate",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/the-republican-governor-candidates-walking-back-some-of-their-abortion-stances",
+      "url": "https://www.pbs.org/newshour/politics/jackson-doesnt-regret-telling-collins-to-shut-up-after-protester-interrupted-maine-senate-debate",
       "topic": "Politics",
-      "published": "2026-10-17T21:23:59+00:00"
+      "published": "2026-10-18T18:01:07+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Is Germany's eight-hour workday under threat?",
+      "headline": "Saudi Arabia sends skyscraper employees home amid Houthi threats",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/is-germany-s-eight-hour-workday-under-threat/a-79680984?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/saudi-arabia-sends-skyscraper-employees-home-amid-houthi-threats/a-79693225?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-18T10:28:00+00:00"
+      "published": "2026-10-18T16:34:00+00:00"
     },
     {
       "n": 6,
@@ -190,23 +190,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c3eweygrjzd7o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-18T11:57:49+00:00"
+      "published": "2026-10-18T15:46:10+00:00"
     },
     {
       "n": 7,
-      "headline": "With an ad aimed at Trump, this Republican exposed GOP angst about Latino voters",
+      "headline": "Pope Leo says he will gradually resume duties after cancer surgery",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-5978762/maria-elvira-salazar-immigration-trump",
-      "topic": "Politics",
-      "published": "2026-10-18T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/18/g-s1-148654/pope-leo-says-he-will-gradually-resume-duties-after-cancer-surgery",
+      "topic": "Health",
+      "published": "2026-10-18T12:55:01+00:00"
     },
     {
       "n": 8,
-      "headline": "Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength",
+      "headline": "Photographer attacked by settlers in the West Bank feels insulted by Netanyahu",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/houthi-strikes-on-saudi-arabia-show-the-yemeni-rebels-growing-strength",
-      "topic": "Trending",
-      "published": "2026-10-17T21:04:33+00:00"
+      "url": "https://www.pbs.org/newshour/world/photographer-attacked-by-settlers-in-the-west-bank-feels-insulted-by-netanyahu",
+      "topic": "Money",
+      "published": "2026-10-18T17:13:24+00:00"
     },
     {
       "n": 9,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "France reports more than 1,800 arrests after riots, looting and arson during cost-of-living protests",
+      "headline": "Meloni backs police after cost-of-living protests turn violent in Italian cities",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-reports-more-than-1-800-arrests-after-riots-looting-and-arson-during-cost-of-living-protests/a-79692322?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/meloni-backs-police-after-cost-of-living-protests-turn-violent-in-italian-cities/a-79692755?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-18T10:26:00+00:00"
+      "published": "2026-10-18T16:02:00+00:00"
     },
     {
       "n": 11,
@@ -234,19 +234,19 @@
     },
     {
       "n": 12,
-      "headline": "Major fire breaks out in Alberta after deadly incident at military base",
+      "headline": "Trump defers federal diesel taxes to help farmers, but states issue warnings",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base",
-      "topic": "Trending",
-      "published": "2026-10-18T07:56:08+00:00"
+      "url": "https://www.npr.org/2026/10/18/nx-s1-5996662/trump-suspends-federal-diesel-taxes-to-help-farmers-but-states-issue-warnings",
+      "topic": "Politics",
+      "published": "2026-10-18T12:00:57+00:00"
     },
     {
       "n": 13,
-      "headline": "Oregon father is the latest armed civilian to confront a gunman in a U.S. mass shooting",
+      "headline": "Trump says he will close historic D.C. golf course for 15 months of renovations",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/oregon-father-is-the-latest-armed-civilian-to-confront-a-gunman-in-a-u-s-mass-shooting",
-      "topic": "Trending",
-      "published": "2026-10-17T19:07:44+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-says-he-will-close-historic-d-c-golf-course-for-15-months-of-renovations",
+      "topic": "Politics",
+      "published": "2026-10-18T16:46:41+00:00"
     },
     {
       "n": 14,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Vietnam signs free trade deal with four European countries",
+      "headline": "Ukraine apologizes after a suspected drone crashes in Lithuania, damaging a moving car.",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/vietnam-signs-free-trade-deal-with-four-european-countries/a-79691812?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-apologizes-after-a-suspected-drone-crashes-in-lithuania-damaging-a-moving-car/a-79692905?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-18T09:19:00+00:00"
+      "published": "2026-10-18T14:20:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Oregon governor Tina Kotek reacts to Silver Rail Elementary school shooting",
+      "headline": "If you have the scratch, they have the scares",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-6005814/oregon-governor-tina-kotek-reacts-to-silver-rail-elementary-school-shooting",
-      "topic": "Politics",
-      "published": "2026-10-17T22:45:25+00:00"
+      "url": "https://www.npr.org/2026/10/18/nx-s1-5985869/if-you-have-the-scratch-they-have-the-scares",
+      "topic": "Trending",
+      "published": "2026-10-18T12:00:00+00:00"
     }
   ]
 }
