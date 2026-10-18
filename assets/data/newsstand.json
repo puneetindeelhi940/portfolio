@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:06:52Z",
+  "generated_at": "2026-10-18T02:45:55Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Denzel Washington: 19 rumors we've fact-checked",
+      "claim": "Kmart used to sell pet monkeys in the 1960s. It wasn't alone",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/denzel-washington-rumors/",
+      "url": "https://www.snopes.com/fact-check/kmart-sell-monkeys-1960s/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Don’t Count Out A Republican Overperformance In November",
+      "claim": "White House Taps FTC To Be The Bulldog For AI Enforcement",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/16/midterm-polls-republicans-voters-house-senate-trump",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/17/trump-admin-ftc-andrew-ferguson-artificial-intelligence-enforcement",
+      "topic": "Tech / AI"
     },
     {
       "n": 5,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Voters have raised concerns about their ballots being lost in fires. Here are the facts",
+      "claim": "Denzel Washington: 19 rumors we've fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/articles/474209/elections-ballots-fires/",
+      "url": "https://www.snopes.com/collections/denzel-washington-rumors/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "White House Taps FTC To Be The Bulldog For AI Enforcement",
+      "claim": "Half A Million Flood The Streets Of Allied Nation As President Vows To Punish Rioters",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/17/trump-admin-ftc-andrew-ferguson-artificial-intelligence-enforcement",
-      "topic": "Tech / AI"
+      "url": "https://dailycaller.com/2026/10/17/france-protests-macron-vows-punish-rioters",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "12 claims about data centers we've investigated",
+      "claim": "Voters have raised concerns about their ballots being lost in fires. Here are the facts",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/data-center-rumors-collection/",
+      "url": "https://www.snopes.com/articles/474209/elections-ballots-fires/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+      "headline": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-17T11:56:06+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-17T20:52:17+00:00"
     },
     {
       "n": 2,
-      "headline": "Scuffles and fires break out as protesters rally across France, joining students",
+      "headline": "Oregon governor Tina Kotek reacts to Silver Rail Elementary school shooting",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
-      "topic": "Trending",
-      "published": "2026-10-17T15:57:40+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6005814/oregon-governor-tina-kotek-reacts-to-silver-rail-elementary-school-shooting",
+      "topic": "Politics",
+      "published": "2026-10-17T22:45:25+00:00"
     },
     {
       "n": 3,
-      "headline": "Zelenskyy urges support for new U.S. sanctions on Russia put on hold by Trump",
+      "headline": "The Republican governor candidates walking back some of their abortion stances",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/zelenskyy-urges-support-for-new-u-s-sanctions-on-russia-put-on-hold-by-trump",
+      "url": "https://www.pbs.org/newshour/politics/the-republican-governor-candidates-walking-back-some-of-their-abortion-stances",
       "topic": "Politics",
-      "published": "2026-10-17T18:02:43+00:00"
+      "published": "2026-10-17T21:23:59+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Romanian fighter jets shoot down 2 drones over Black Sea",
+      "headline": "Canada: Major fire reported at military base in Alberta",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/romanian-fighter-jets-shoot-down-2-drones-over-black-sea/a-79689156?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/canada-major-fire-reported-at-military-base-in-alberta/a-79690515?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-17T17:51:00+00:00"
+      "published": "2026-10-18T02:08:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Teacher fought US school attacker before armed dad shot suspect 'multiple times",
+      "headline": "Trump waives several Russia sanctions as row with Zelensky intensifies",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-17T09:58:17+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-18T01:10:25+00:00"
     },
     {
       "n": 7,
-      "headline": "Pope Leo XIV leaves hospital days after lung cancer surgery",
+      "headline": "Scuffles and fires break out as protesters rally across France, joining students",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
-      "topic": "Health",
-      "published": "2026-10-17T15:10:14+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+      "topic": "Trending",
+      "published": "2026-10-17T15:57:40+00:00"
     },
     {
       "n": 8,
-      "headline": "How Alberta separatism went from fringe cause to referendum",
+      "headline": "Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/how-alberta-separatism-went-from-fringe-cause-to-referendum",
+      "url": "https://www.pbs.org/newshour/world/houthi-strikes-on-saudi-arabia-show-the-yemeni-rebels-growing-strength",
       "topic": "Trending",
-      "published": "2026-10-17T17:35:55+00:00"
+      "published": "2026-10-17T21:04:33+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Egypt's Ssisi says he'll defend Saudi Arabia, if asked",
+      "headline": "No Kings' rallies push early voting ahead of US midterm elections",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/egypt-s-ssisi-says-he-ll-defend-saudi-arabia-if-asked/a-79689105?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/no-kings-rallies-push-early-voting-ahead-of-us-midterm-elections/a-79690502?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-17T17:49:00+00:00"
+      "published": "2026-10-18T00:51:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
+      "headline": "European diplomats attacked by Israeli settlers in West Bank",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-17T03:11:10+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-10-17T23:52:38+00:00"
     },
     {
       "n": 12,
-      "headline": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
+      "headline": "Pope Leo XIV leaves hospital days after lung cancer surgery",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
-      "topic": "Politics",
-      "published": "2026-10-17T14:25:10+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
+      "topic": "Health",
+      "published": "2026-10-17T15:10:14+00:00"
     },
     {
       "n": 13,
-      "headline": "Masked settlers attack European diplomats in the occupied West Bank",
+      "headline": "Oregon father is the latest armed civilian to confront a gunman in a U.S. mass shooting",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank",
-      "topic": "Money",
-      "published": "2026-10-17T16:28:11+00:00"
+      "url": "https://www.pbs.org/newshour/nation/oregon-father-is-the-latest-armed-civilian-to-confront-a-gunman-in-a-u-s-mass-shooting",
+      "topic": "Trending",
+      "published": "2026-10-17T19:07:44+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "West Bank: Israeli settlers attack EU diplomats, French mayor",
+      "headline": "Ilhan Omar: The US Democrat targeted by Donald Trump",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/west-bank-israeli-settlers-attack-eu-diplomats-french-mayor/a-79688819?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-10-17T16:29:00+00:00"
+      "url": "https://www.dw.com/en/ilhan-omar-the-us-democrat-targeted-by-donald-trump/a-79688445?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-17T19:17:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "headline": "Anti-government protesters battle with police in Albania",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-17T02:33:09+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/crwydey50xeno?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-17T20:53:00+00:00"
     },
     {
       "n": 17,
-      "headline": "Perspective: Midterm money madness",
+      "headline": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-5997474/perspective-midterm-money-madness",
-      "topic": "Trending",
-      "published": "2026-10-17T12:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
+      "topic": "Politics",
+      "published": "2026-10-17T14:25:10+00:00"
     }
   ]
 }
