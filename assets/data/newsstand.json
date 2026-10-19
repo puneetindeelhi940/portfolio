@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T02:58:54Z",
+  "generated_at": "2026-10-19T15:13:52Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Trump can rename an ocean. But can he force people to use the new name?",
+      "claim": "10 rumors we've investigated involving Pope Leo XIV",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/18/trump-rename-ocean/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/pope-leo-xiv-rumors-collection/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Sale of books becomes latest political flashpoint in Bengal as Left stalls face attacks",
+      "claim": "Hans Raj College student alleges knife attack by teenage boy from Hindutva group at Delhi protest",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/sale-of-books-becomes-latest-political-flashpoint-in-bengal-as-left-stalls-face-attacks/",
+      "url": "https://www.altnews.in/hans-raj-college-student-alleges-knife-attack-by-teenage-boy-from-hindutva-group-at-delhi-protest/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "of woman being dragged by uniformed men does not show forced conscription in Ukraine",
+      "claim": "of protesters waving Palestinian flags outside the Eiffel Tower is AI-generated",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/conflict/video-does-not-show-forced-conscription-ukraine/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/world/viral-image-protesters-palestinian-flag-eiffel-tower-ai-generated/",
+      "topic": "Tech / AI"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "16 claims about Hegseth we've debunked",
+      "claim": "Are US stores selling 3D-printed salmon manufactured by Israeli company?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/pete-hegseth-false-rumors-collection/",
+      "url": "https://www.snopes.com/fact-check/3d-printed-salmon-israel/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Zelenskyy Would Halt Strikes On Russian Energy For US Targeting Help, GOP Senator Says",
+      "claim": "Homegrown Power Could Keep The Army Running If War Cuts Off Foreign Fuel",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/18/kevin-cramer-margaret-brennan-face-the-nation-volodymyr-zelenskyy-starshield-targeting-russian-energy-strikes-roger-wicker",
-      "topic": "Science"
+      "url": "https://dailycaller.com/2026/10/18/army-fuel-supply-gm-defense-epiq-hybrid-dla-energy-ausa-heven-new-use-energy-commando-fuels",
+      "topic": "World"
     },
     {
       "n": 12,
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "BJP leader shares fake, AI-generated image of Abhijeet Dipke’s ‘bail bond’",
+      "claim": "Sale of books becomes latest political flashpoint in Bengal as Left stalls face attacks",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/ai-generated-image-of-a-bond-with-dipkes-signature-is-being-falsely-shared-bu-bjp-leader/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/sale-of-books-becomes-latest-political-flashpoint-in-bengal-as-left-stalls-face-attacks/",
+      "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Fake image of wildlife park tiger attack circulates online",
+      "claim": "Old video shared as French student protests",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/fake-image-of-tiger-attack-shared/",
+      "url": "https://fullfact.org/world/2023-video-shared-as-recent-french-student-protests/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Kmart used to sell pet monkeys in the 1960s. It wasn't alone",
+      "claim": "7 rumors about Megyn Kelly we've examined",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/kmart-sell-monkeys-1960s/",
+      "url": "https://www.snopes.com/collections/megyn-kelly-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -146,30 +146,110 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Macron calls for 'calm and order' after riots across France",
+      "headline": "Australian MP critically injured after being hit by car in apparent attack",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwp9g43g2p07o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-18T20:33:21+00:00"
+      "published": "2026-10-19T14:09:54+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump to close and renovate D.C. golf course, despite legal battle",
+      "headline": "Australian prime minister says lawmaker critically injured by car is 'no accident",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-6007384/trump-to-close-and-renovate-d-c-golf-course-despite-legal-battle",
+      "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured",
       "topic": "Politics",
-      "published": "2026-10-19T02:09:43+00:00"
+      "published": "2026-10-19T11:38:43+00:00"
     },
     {
       "n": 3,
-      "headline": "Criminal networks threaten the Amazon. Indigenous leaders want the UN to act",
+      "headline": "Israeli police arrest 10 following weekend attacks by West Bank settlers on journalist and diplomats",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/criminal-networks-threaten-the-amazon-indigenous-leaders-want-the-un-to-act",
-      "topic": "World",
-      "published": "2026-10-18T21:40:14+00:00"
+      "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats",
+      "topic": "Money",
+      "published": "2026-10-19T14:39:39+00:00"
     },
     {
       "n": 4,
+      "headline": "Drone attack near market kills 80 in Sudan",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
+      "topic": "Money",
+      "published": "2026-10-19T14:45:53+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Canada: Alberta votes on holding independence referendum",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/canada-alberta-votes-on-holding-independence-referendum/a-79700283?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-19T15:09:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Kenya pastor accused of ordering parents to starve their children to death faces verdict",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-19T10:33:12+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "2026 midterms could be the most expensive on record. And, Macron condemns protests",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/19/g-s1-148733/up-first-newsletter-ukraine-russia-campaign-finances-france-protests",
+      "topic": "Trending",
+      "published": "2026-10-19T11:15:43+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "North Korea threatens to restart propaganda loudspeaker broadcasts and deploy more weapons at South Korea border",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/north-korea-threatens-to-restart-propaganda-loudspeaker-broadcasts-and-deploy-more-weapons-at-south-korea-border",
+      "topic": "World",
+      "published": "2026-10-19T14:15:40+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Ebola cases in Kenya highlight US failures amid Trump cuts to key services",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/19/ebola-cases-kenya-us-quarantine",
+      "topic": "Politics",
+      "published": "2026-10-19T14:11:08+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Can diplomacy prevent an Ethiopia-Eritrea war as Tigray gets a new administration?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/can-diplomacy-prevent-an-ethiopia-eritrea-war-as-tigray-gets-a-new-administration/a-79705435?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-19T15:02:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Alberta heads to polls to decide whether to hold vote on separation from Canada",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cxvgd0ymgzgyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-19T13:44:57+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "The real reason it's going to take a while to know who won in some midterm races",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/19/nx-s1-5982027/california-vote-counting-margins",
+      "topic": "Trending",
+      "published": "2026-10-19T09:00:00+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Musk pledges to give a share of his SpaceX company to 'every kid in America' next year",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/musk-pledges-to-give-a-share-of-his-spacex-company-to-every-kid-in-america-next-year",
+      "topic": "Tech / AI",
+      "published": "2026-10-19T13:55:29+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Hilarious quips and ‘100,000-volt’ energy: the hypemen (and women) redefining Afrobeats music",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/18/lagos-hypemen-redefining-afrobeats-music-afrohype",
@@ -177,92 +257,12 @@
       "published": "2026-10-18T09:00:55+00:00"
     },
     {
-      "n": 5,
-      "headline": "Trump defends Russia sanctions waivers, accuses Zelenskyy of 'prolonging war",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-defends-russia-sanctions-waivers-accuses-zelenskyy-of-prolonging-war/a-79694674?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-19T00:26:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Very upsetting': Residents in shock after historic French town hall set alight",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c9dr8kem27zeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-18T22:22:51+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "What does a White House press secretary do?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-6006807/what-does-a-white-house-press-secretary-do",
-      "topic": "Trending",
-      "published": "2026-10-19T01:41:24+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Latino voters helped put Trump back in the White House. What's their next move?",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/latino-voters-helped-put-trump-back-in-the-white-house-whats-their-next-move",
-      "topic": "Politics",
-      "published": "2026-10-18T20:46:52+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "An extraordinary life: descendant welcomes biography of woman ‘gifted’ to Queen Victoria",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/18/sarah-forbes-bonetta-biography-queen-victoria",
-      "topic": "Trending",
-      "published": "2026-10-18T07:00:53+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Canada: Fire at Alberta military Base kills four, leaves 19 in critical condition",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/canada-fire-at-alberta-military-base-kills-four-leaves-19-in-critical-condition/a-79690515?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-18T23:43:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Major fire at Canada military base leaves four dead, dozens injured",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxj0ly1m3q81o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-18T23:06:09+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Ukraine and the U.S. are at odds over Starshield. Here's what to know",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-6007382/ukraine-us-starshield-starlink-what-to-know-trump",
-      "topic": "Trending",
-      "published": "2026-10-18T18:38:49+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Rubio heads to Central Asia as some wonder if he's keeping the most pressing matters at a distance",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/rubio-heads-to-central-asia-as-some-wonder-if-hes-keeping-the-most-pressing-matters-at-a-distance",
-      "topic": "Trending",
-      "published": "2026-10-18T19:49:23+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "LGBTQ+ people go into hiding in Senegal as hundreds are arrested",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/oct/15/senegal-homosexuality-criminalised-anti-lgbtq-arrests-hiv-testing-human-rights-watch",
-      "topic": "Trending",
-      "published": "2026-10-15T08:00:25+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Ebola: Kenya cases rise to 8, spreads to 8th Congo province",
+      "headline": "Germany news: Emergency at Leipzig airport sparked by novice driver",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ebola-kenya-cases-rise-to-8-spreads-to-8th-congo-province/a-79694614?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-emergency-at-leipzig-airport-sparked-by-novice-driver/live-79695354?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-18T22:04:00+00:00"
+      "published": "2026-10-19T14:46:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Noah Adams, longtime host of NPR's All Things Considered, has died",
+      "headline": "A Kelvin wave raised sea levels on the West Coast. More are coming",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-5556931/noah-adams-all-things-considered-has-died",
-      "topic": "Celebrity",
-      "published": "2026-10-18T16:30:00+00:00"
+      "url": "https://www.npr.org/2026/10/19/nx-s1-6001744/el-nino-kelvin-wave-west-coast",
+      "topic": "Trending",
+      "published": "2026-10-19T09:00:00+00:00"
     }
   ]
 }
