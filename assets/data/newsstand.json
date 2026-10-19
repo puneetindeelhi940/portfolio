@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T15:13:52Z",
+  "generated_at": "2026-10-19T20:50:45Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Of AI Recruiter Job Interview With AI Agent Representing Applicant Is NOT Real -- It's A Staged Parody",
+      "claim": "FAKE Photo Shows Indiana Fan Who Looks Like Charlie Kirk At Ohio State Game -- It's AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-of-ai-job-interview-not-real-a-staged-parody.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-photo-shows-indiana-fan-looks-like-charlie-kirk-ohio-state-game-ai.html",
       "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "10 rumors we've investigated involving Pope Leo XIV",
+      "claim": "Why vote count spikes are a normal part of elections",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/pope-leo-xiv-rumors-collection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/articles/474180/vote-count-spikes-elections/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: The Iran War Is Going To Go Ballistic After Midterms",
+      "claim": "EXCLUSIVE: Inside The ‘Penal Platoon’ Hell Marines Found Themselves In After Refusing COVID Jab",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/18/united-states-military-iran-war-escalation-midterm-elections-polling",
-      "topic": "World"
+      "url": "https://dailycaller.com/2026/10/19/exclusive-marines-penal-platoon-covid-jab",
+      "topic": "Health"
     },
     {
       "n": 5,
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "Prebunk: AI-Generated Old-Price Supermarket Comparisons To Prove Inflation Do Not Add Up -- We Brought Receipts",
+      "claim": "Law Enforcement Did NOT Name Deputy Rachel Taylor As Suspect In The Fatal Wichita Stryker Car Ramming",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/prebunk-ai-generated-supermarket-old-price-comparisons-to-prove-inflation-dont-add-up.html",
-      "topic": "Money"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-law-enforcement-did-not-name-deputy-rachel-taylor-as-suspect-in-fatal-wichita-stryker-car-ramming.html",
+      "topic": "Celebrity"
     },
     {
       "n": 9,
-      "claim": "Are US stores selling 3D-printed salmon manufactured by Israeli company?",
+      "claim": "Is your ballot disqualified if poll workers mark it? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/3d-printed-salmon-israel/",
+      "url": "https://www.snopes.com/fact-check/ballot-disqualified-poll-workers/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Homegrown Power Could Keep The Army Running If War Cuts Off Foreign Fuel",
+      "claim": "Cattle Ranchers Are Getting Grilled 30 Days Into Trump’s Foreign Beef Blitz",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/18/army-fuel-supply-gm-defense-epiq-hybrid-dla-energy-ausa-heven-new-use-energy-commando-fuels",
-      "topic": "World"
+      "url": "https://dailycaller.com/2026/10/19/farm-action-report-cattle-ranchers-foreign-beer-imports-trump-administration-usda",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "Trump Did NOT Post A Truth Social Message That Included 'LEAVE THE REFINERIES ALONE' -- It Is A Fabricated Screenshot",
+      "claim": "FAKE Video Shows Palestinian And Jordanian Flags On Top Of The Eiffel Tower In Paris -- It Is Digitally Fabricated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/trump-did-not-post-truth-social-message-leave-refineries-alone-fabricated-screenshot.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-palestinian-and-jordanian-flags-on-top-of-the-eiffel-tower-in-paris-it-is-digitally-fabricated.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "7 rumors about Megyn Kelly we've examined",
+      "claim": "10 rumors we've investigated involving Pope Leo XIV",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/megyn-kelly-rumors-collection/",
+      "url": "https://www.snopes.com/collections/pope-leo-xiv-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -162,35 +162,35 @@
     },
     {
       "n": 3,
-      "headline": "Israeli police arrest 10 following weekend attacks by West Bank settlers on journalist and diplomats",
+      "headline": "Ex-OpenAI worker accused of bugging conference room planned to fly to Saudi Arabia, prosecutors say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats",
-      "topic": "Money",
-      "published": "2026-10-19T14:39:39+00:00"
+      "url": "https://www.pbs.org/newshour/world/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say",
+      "topic": "Trending",
+      "published": "2026-10-19T20:35:15+00:00"
     },
     {
       "n": 4,
-      "headline": "Drone attack near market kills 80 in Sudan",
+      "headline": "Kenyan starvation cult leader guilty of murder of 190 children and one adult",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
-      "topic": "Money",
-      "published": "2026-10-19T14:45:53+00:00"
+      "url": "https://www.theguardian.com/world/2026/oct/19/kenya-starvation-cult-leader-guilty-murder-190-children",
+      "topic": "Trending",
+      "published": "2026-10-19T16:08:14+00:00"
     },
     {
       "n": 5,
-      "headline": "Canada: Alberta votes on holding independence referendum",
+      "headline": "France: Curfews issued in Paris, Nice after unrest",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/canada-alberta-votes-on-holding-independence-referendum/a-79700283?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/france-curfews-issued-in-paris-nice-after-unrest/live-79707186?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-19T15:09:00+00:00"
+      "published": "2026-10-19T19:02:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Kenya pastor accused of ordering parents to starve their children to death faces verdict",
+      "headline": "Ukrainians dying because US restricting intelligence sharing, Zelensky adviser tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmj47yx572z5o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-19T10:33:12+00:00"
+      "published": "2026-10-19T20:49:00+00:00"
     },
     {
       "n": 7,
@@ -202,35 +202,35 @@
     },
     {
       "n": 8,
-      "headline": "North Korea threatens to restart propaganda loudspeaker broadcasts and deploy more weapons at South Korea border",
+      "headline": "A bitter Michigan Senate race rattles Jewish and Muslim voters already on edge over the war in Gaza",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/north-korea-threatens-to-restart-propaganda-loudspeaker-broadcasts-and-deploy-more-weapons-at-south-korea-border",
-      "topic": "World",
-      "published": "2026-10-19T14:15:40+00:00"
+      "url": "https://www.pbs.org/newshour/politics/a-bitter-michigan-senate-race-rattles-jewish-and-muslim-voters-already-on-edge-over-the-war-in-gaza",
+      "topic": "Politics",
+      "published": "2026-10-19T20:26:07+00:00"
     },
     {
       "n": 9,
-      "headline": "Ebola cases in Kenya highlight US failures amid Trump cuts to key services",
+      "headline": "Drone attack near market kills 80 in Sudan",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/19/ebola-cases-kenya-us-quarantine",
-      "topic": "Politics",
-      "published": "2026-10-19T14:11:08+00:00"
+      "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
+      "topic": "Money",
+      "published": "2026-10-19T14:45:53+00:00"
     },
     {
       "n": 10,
-      "headline": "Can diplomacy prevent an Ethiopia-Eritrea war as Tigray gets a new administration?",
+      "headline": "Bulgaria seeks suspects in Germany after Starlink sabotage",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/can-diplomacy-prevent-an-ethiopia-eritrea-war-as-tigray-gets-a-new-administration/a-79705435?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-19T15:02:00+00:00"
+      "url": "https://www.dw.com/en/bulgaria-seeks-suspects-in-germany-after-starlink-sabotage/a-79706745?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-19T18:45:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Alberta heads to polls to decide whether to hold vote on separation from Canada",
+      "headline": "Kenya cult leader who told parents to starve children guilty of 191 murders",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxvgd0ymgzgyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-19T13:44:57+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-19T17:18:04+00:00"
     },
     {
       "n": 12,
@@ -242,19 +242,19 @@
     },
     {
       "n": 13,
-      "headline": "Musk pledges to give a share of his SpaceX company to 'every kid in America' next year",
+      "headline": "Homeland Security grants temporary deportation reprieve for more than 100,000 Ukrainians and Sudanese",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/musk-pledges-to-give-a-share-of-his-spacex-company-to-every-kid-in-america-next-year",
-      "topic": "Tech / AI",
-      "published": "2026-10-19T13:55:29+00:00"
+      "url": "https://www.pbs.org/newshour/world/homeland-security-grants-temporary-deportation-reprieve-for-more-than-100000-ukrainians-and-sudanese",
+      "topic": "Trending",
+      "published": "2026-10-19T19:56:50+00:00"
     },
     {
       "n": 14,
-      "headline": "Hilarious quips and ‘100,000-volt’ energy: the hypemen (and women) redefining Afrobeats music",
+      "headline": "Ebola cases in Kenya highlight US failures amid Trump cuts to key services",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/18/lagos-hypemen-redefining-afrobeats-music-afrohype",
-      "topic": "Science",
-      "published": "2026-10-18T09:00:55+00:00"
+      "url": "https://www.theguardian.com/world/2026/oct/19/ebola-cases-kenya-us-quarantine",
+      "topic": "Politics",
+      "published": "2026-10-19T14:11:08+00:00"
     },
     {
       "n": 15,
@@ -262,15 +262,15 @@
       "source": "Deutsche Welle",
       "url": "https://www.dw.com/en/germany-news-emergency-at-leipzig-airport-sparked-by-novice-driver/live-79695354?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-19T14:46:00+00:00"
+      "published": "2026-10-19T17:26:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
+      "headline": "Ex-OpenAI worker accused of planting device had Saudi support says court filing",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-18T23:20:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-19T16:22:12+00:00"
     },
     {
       "n": 17,
