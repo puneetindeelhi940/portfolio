@@ -12,8 +12,8 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 7.7,
-      "trend": "rising",
+      "value": 7.5,
+      "trend": "falling",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -37,7 +37,7 @@
       "label": "AI Subscriptions",
       "weight": 0.1,
       "value": 12.5,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "Inference cost",
         "Model competition",
@@ -48,8 +48,8 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 8.4,
-      "trend": "stable",
+      "value": 8.5,
+      "trend": "rising",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -60,8 +60,8 @@
     "consumer_electronics": {
       "label": "Consumer Electronics",
       "weight": 0.15,
-      "value": 5.6,
-      "trend": "falling",
+      "value": 5.7,
+      "trend": "rising",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,7 +72,7 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 6.3,
+      "value": 6.4,
       "trend": "rising",
       "drivers": [
         "AI feature premiums",
@@ -85,7 +85,7 @@
       "label": "Infrastructure & Construction",
       "weight": 0.1,
       "value": 2.7,
-      "trend": "falling",
+      "trend": "stable",
       "drivers": [
         "Data center construction",
         "Power infrastructure",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-10-18T09:59:30Z",
+  "last_updated": "2026-10-19T11:22:37Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
