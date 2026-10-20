@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T20:50:45Z",
+  "generated_at": "2026-10-20T03:08:43Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Photo Shows Indiana Fan Who Looks Like Charlie Kirk At Ohio State Game -- It's AI-Generated",
+      "claim": "Denzel Washington Did NOT Say He 'Never Met Anyone Braver, Smarter Or Who Cares More About America Than Donald Trump",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-photo-shows-indiana-fan-looks-like-charlie-kirk-ohio-state-game-ai.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-denzel-washington-did-not-say-he-never-met-anyone-braver-smarter-or-who-cares-more-about-america-than-donald-trump.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Why vote count spikes are a normal part of elections",
+      "claim": "Did French rioters target synagogue and Jewish businesses, but spare Muslim ones?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/articles/474180/vote-count-spikes-elections/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/10/19/france-riots-synagogue-jewish-businesses/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "Law Enforcement Did NOT Name Deputy Rachel Taylor As Suspect In The Fatal Wichita Stryker Car Ramming",
+      "claim": "FAKE Image Of Elderly French Couple Robbed Of Clothing During Oct. 17 Riots -- AI Image Illustrates Unconfirmed Incident",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-law-enforcement-did-not-name-deputy-rachel-taylor-as-suspect-in-fatal-wichita-stryker-car-ramming.html",
-      "topic": "Celebrity"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-image-of-elderly-french-couple-robbed-of-clothing-during-oct-17-riots.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Is your ballot disqualified if poll workers mark it? Here's the truth",
+      "claim": "Why vote count spikes are a normal part of elections",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ballot-disqualified-poll-workers/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/articles/474180/vote-count-spikes-elections/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Cattle Ranchers Are Getting Grilled 30 Days Into Trump’s Foreign Beef Blitz",
+      "claim": "45 Seconds Into Softball Interview, Netanyahu Tells Mark Levin He Wants To Drag The US Even Deeper Into Iran War",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/19/farm-action-report-cattle-ranchers-foreign-beer-imports-trump-administration-usda",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/19/mark-levin-interview-benjamin-netanyahu-reelection-campaign-iran-war",
+      "topic": "World"
     },
     {
       "n": 12,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Video Shows Palestinian And Jordanian Flags On Top Of The Eiffel Tower In Paris -- It Is Digitally Fabricated",
+      "claim": "FAKE Photo Shows Indiana Fan Who Looks Like Charlie Kirk At Ohio State Game -- It's AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-shows-palestinian-and-jordanian-flags-on-top-of-the-eiffel-tower-in-paris-it-is-digitally-fabricated.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-photo-shows-indiana-fan-looks-like-charlie-kirk-ohio-state-game-ai.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "10 rumors we've investigated involving Pope Leo XIV",
+      "claim": "Is your ballot disqualified if poll workers mark it? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/pope-leo-xiv-rumors-collection/",
+      "url": "https://www.snopes.com/fact-check/ballot-disqualified-poll-workers/",
       "topic": "Trending"
     },
     {
@@ -146,43 +146,43 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Australian MP critically injured after being hit by car in apparent attack",
+      "headline": "Curfew imposed in parts of central Paris and other cities after rioting across France",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwp9g43g2p07o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-19T14:09:54+00:00"
+      "published": "2026-10-19T21:14:53+00:00"
     },
     {
       "n": 2,
-      "headline": "Australian prime minister says lawmaker critically injured by car is 'no accident",
+      "headline": "DOJ charges 28 in California with voting crimes as election tensions escalate",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured",
+      "url": "https://www.npr.org/2026/10/19/nx-s1-6007908/election-tensions-escalate-in-california-as-doj-charges-28-people-with-voting-crimes",
       "topic": "Politics",
-      "published": "2026-10-19T11:38:43+00:00"
+      "published": "2026-10-19T22:10:06+00:00"
     },
     {
       "n": 3,
-      "headline": "Ex-OpenAI worker accused of bugging conference room planned to fly to Saudi Arabia, prosecutors say",
+      "headline": "Trump escalates clash with Zelenskyy as Russia continues deadly attacks on Ukraine",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say",
-      "topic": "Trending",
-      "published": "2026-10-19T20:35:15+00:00"
+      "url": "https://www.pbs.org/newshour/show/trump-escalates-clash-with-zelenskyy-as-russia-continues-deadly-attacks-on-ukraine",
+      "topic": "Politics",
+      "published": "2026-10-19T22:55:00+00:00"
     },
     {
       "n": 4,
-      "headline": "Kenyan starvation cult leader guilty of murder of 190 children and one adult",
+      "headline": "US grants deportation reprieve to migrants from Ukraine and Sudan",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/19/kenya-starvation-cult-leader-guilty-murder-190-children",
+      "url": "https://www.theguardian.com/us-news/2026/oct/19/us-migrants-deportation-ukraine-sudan",
       "topic": "Trending",
-      "published": "2026-10-19T16:08:14+00:00"
+      "published": "2026-10-19T22:34:43+00:00"
     },
     {
       "n": 5,
-      "headline": "France: Curfews issued in Paris, Nice after unrest",
+      "headline": "Zelenskyy accuses US of delaying Patriot missile shipment",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-curfews-issued-in-paris-nice-after-unrest/live-79707186?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/zelenskyy-accuses-us-of-delaying-patriot-missile-shipment/a-79707951?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-19T19:02:00+00:00"
+      "published": "2026-10-20T02:15:00+00:00"
     },
     {
       "n": 6,
@@ -194,35 +194,35 @@
     },
     {
       "n": 7,
-      "headline": "2026 midterms could be the most expensive on record. And, Macron condemns protests",
+      "headline": "Judge chastises Trump administration plan to push ahead overhaul of DC golf course",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/19/g-s1-148733/up-first-newsletter-ukraine-russia-campaign-finances-france-protests",
-      "topic": "Trending",
-      "published": "2026-10-19T11:15:43+00:00"
+      "url": "https://www.npr.org/2026/10/19/nx-s1-6007746/golf-course-potomac-white-house-tree-removal",
+      "topic": "Politics",
+      "published": "2026-10-19T21:56:37+00:00"
     },
     {
       "n": 8,
-      "headline": "A bitter Michigan Senate race rattles Jewish and Muslim voters already on edge over the war in Gaza",
+      "headline": "U.S. must put pressure on Russia so Putin ends the war, Ukrainian official says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/a-bitter-michigan-senate-race-rattles-jewish-and-muslim-voters-already-on-edge-over-the-war-in-gaza",
-      "topic": "Politics",
-      "published": "2026-10-19T20:26:07+00:00"
+      "url": "https://www.pbs.org/newshour/show/u-s-must-put-pressure-on-russia-so-putin-ends-the-war-ukrainian-official-says",
+      "topic": "World",
+      "published": "2026-10-19T22:50:35+00:00"
     },
     {
       "n": 9,
-      "headline": "Drone attack near market kills 80 in Sudan",
+      "headline": "Kenyan starvation cult leader guilty of murder of 190 children and one adult",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
-      "topic": "Money",
-      "published": "2026-10-19T14:45:53+00:00"
+      "url": "https://www.theguardian.com/world/2026/oct/19/kenya-starvation-cult-leader-guilty-murder-190-children",
+      "topic": "Trending",
+      "published": "2026-10-19T16:08:14+00:00"
     },
     {
       "n": 10,
-      "headline": "Bulgaria seeks suspects in Germany after Starlink sabotage",
+      "headline": "At least four dead after flooding in eastern Spain",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/bulgaria-seeks-suspects-in-germany-after-starlink-sabotage/a-79706745?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/at-least-four-dead-after-flooding-in-eastern-spain/a-79707781?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-19T18:45:00+00:00"
+      "published": "2026-10-20T00:32:00+00:00"
     },
     {
       "n": 11,
@@ -234,51 +234,51 @@
     },
     {
       "n": 12,
-      "headline": "The real reason it's going to take a while to know who won in some midterm races",
+      "headline": "Schools struggle to measure how much AI experiments are helping",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/19/nx-s1-5982027/california-vote-counting-margins",
-      "topic": "Trending",
-      "published": "2026-10-19T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/19/nx-s1-5991881/schools-struggle-to-measure-how-much-ai-experiments-are-helping",
+      "topic": "Tech / AI",
+      "published": "2026-10-19T20:59:57+00:00"
     },
     {
       "n": 13,
-      "headline": "Homeland Security grants temporary deportation reprieve for more than 100,000 Ukrainians and Sudanese",
+      "headline": "French authorities impose curfews after weekend rioting",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/homeland-security-grants-temporary-deportation-reprieve-for-more-than-100000-ukrainians-and-sudanese",
+      "url": "https://www.pbs.org/newshour/show/french-authorities-impose-curfews-after-weekend-rioting",
       "topic": "Trending",
-      "published": "2026-10-19T19:56:50+00:00"
+      "published": "2026-10-19T22:45:22+00:00"
     },
     {
       "n": 14,
-      "headline": "Ebola cases in Kenya highlight US failures amid Trump cuts to key services",
+      "headline": "Drone attack near market kills 80 in Sudan",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/19/ebola-cases-kenya-us-quarantine",
-      "topic": "Politics",
-      "published": "2026-10-19T14:11:08+00:00"
+      "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
+      "topic": "Money",
+      "published": "2026-10-19T14:45:53+00:00"
     },
     {
       "n": 15,
-      "headline": "Germany news: Emergency at Leipzig airport sparked by novice driver",
+      "headline": "French authorities impose partial curfews in Paris, Nice",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-emergency-at-leipzig-airport-sparked-by-novice-driver/live-79695354?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/french-authorities-impose-partial-curfews-in-paris-nice/live-79707186?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-19T17:26:00+00:00"
+      "published": "2026-10-19T19:57:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Ex-OpenAI worker accused of planting device had Saudi support says court filing",
+      "headline": "Tennis star Svitolina says emotional toll of Ukraine war led to Monfils separation",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-19T16:22:12+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckd7qy12j148o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-19T21:02:33+00:00"
     },
     {
       "n": 17,
-      "headline": "A Kelvin wave raised sea levels on the West Coast. More are coming",
+      "headline": "Australian prime minister says lawmaker critically injured by car is 'no accident",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/19/nx-s1-6001744/el-nino-kelvin-wave-west-coast",
-      "topic": "Trending",
-      "published": "2026-10-19T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured",
+      "topic": "Politics",
+      "published": "2026-10-19T11:38:43+00:00"
     }
   ]
 }
