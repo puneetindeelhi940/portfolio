@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T03:03:00Z",
+  "generated_at": "2026-10-21T13:22:32Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump say 'everyone gets healthcare' if Democrats win?",
+      "claim": "allegedly shows Paris burning amid ongoing unrest. Is it real?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-healthcare-democrats-win-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/image-paris-burning-riots/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "Hans Raj College student alleges knife attack by teenage boy from Hindutva group at Delhi protest",
+      "claim": "Demolition of book stalls continues in Bengal: Locals resist bulldozer in night-long standoff in Jadavpur",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/hans-raj-college-student-alleges-knife-attack-by-teenage-boy-from-hindutva-group-at-delhi-protest/",
+      "url": "https://www.altnews.in/demolition-of-book-stalls-continue-in-bengal-locals-resist-bulldozer-in-night-long-standoff-in-jadavpur/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "of Palestine and Jordan flags flying from top of Eiffel Tower is AI-generated",
+      "claim": "of elderly French couple ‘stripped and robbed’ during riots is AI",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/palestine-and-jordan-flags-eiffel-tower-ai-generated/",
+      "url": "https://fullfact.org/world/photo-elderly-french-couple-stripped-ai/",
       "topic": "Tech / AI"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Ilhan Omar didn't flee to Morocco after federal agents' raid on her home",
+      "claim": "10 Kim Jong Un rumors we've investigated over the years",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ilhan-omar-flee-morocco/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/kim-jong-un-rumors/",
+      "topic": "World"
     },
     {
       "n": 10,
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Sale of books becomes latest political flashpoint in Bengal as Left stalls face attacks",
+      "claim": "Hans Raj College student alleges knife attack by teenage boy from Hindutva group at Delhi protest",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/sale-of-books-becomes-latest-political-flashpoint-in-bengal-as-left-stalls-face-attacks/",
+      "url": "https://www.altnews.in/hans-raj-college-student-alleges-knife-attack-by-teenage-boy-from-hindutva-group-at-delhi-protest/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "of protesters waving Palestinian flags outside the Eiffel Tower is AI-generated",
+      "claim": "of Palestine and Jordan flags flying from top of Eiffel Tower is AI-generated",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/viral-image-protesters-palestinian-flag-eiffel-tower-ai-generated/",
+      "url": "https://fullfact.org/world/palestine-and-jordan-flags-eiffel-tower-ai-generated/",
       "topic": "Tech / AI"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Uncovering the facts behind 13 rumors about Trump renaming things",
+      "claim": "Who ordered Starlink, Starshield slowdown in Ukraine? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-renaming-things-rumors-collection/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/10/21/starlink-starshield-slowdown-ukraine/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Zelensky says US intelligence sharing 'works now' after talks with Trump envoy in Oslo",
+      "headline": "US citizen Stephen Hubbard freed by Russia as Trump envoy meets Putin",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-10-20T21:27:39+00:00"
+      "published": "2026-10-21T12:32:01+00:00"
     },
     {
       "n": 2,
-      "headline": "Some on DOJ's 20,000 \"likely\" noncitizen list in Calif. appear to be U.S.-born",
+      "headline": "Trump leans into unprecedented power ahead of midterm elections",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/20/nx-s1-6009873/california-doj-voter-rolls-noncitizens",
-      "topic": "Trending",
-      "published": "2026-10-21T02:15:50+00:00"
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6009395/trump-power-midterm-elections",
+      "topic": "Politics",
+      "published": "2026-10-21T12:09:41+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Elon Musk ordered a slowdown of Starlink in Ukraine — report",
+      "headline": "Germany news: Nvidia CEO optimistic about EU's AI economy",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/elon-musk-ordered-a-slowdown-of-starlink-in-ukraine-report/a-79718899?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-nvidia-ceo-optimistic-about-eu-s-ai-economy/live-79719483?maca=en-rss-en-all-1573-rdf",
       "topic": "Tech / AI",
-      "published": "2026-10-21T03:00:00+00:00"
+      "published": "2026-10-21T13:14:00+00:00"
     },
     {
       "n": 6,
-      "headline": "France is divided over who to blame for and what to learn from weekend riots",
+      "headline": "Trump and Zelensky at loggerheads despite new optimism",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-21T01:22:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-20T20:00:57+00:00"
     },
     {
       "n": 7,
-      "headline": "Nigeria confirms an Ebola case in Abuja as a woman arriving from Uganda tests positive",
+      "headline": "DOJ's noncitizen voter list is unreliable, officials say. And, U.S. pollution rises",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/20/g-s1-148975/nigeria-confirms-ebola-case",
+      "url": "https://www.npr.org/2026/10/21/g-s1-149068/up-first-newsletter-california-voter-roll-united-nations-emissions-us-crimes-ukraine-russia",
       "topic": "Trending",
-      "published": "2026-10-20T20:19:16+00:00"
+      "published": "2026-10-21T11:46:59+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "UK fighter jets to protect Saudi Arabia from Houthi attacks",
+      "headline": "Pakistan-Taliban conflict: How India could benefit from shifting regional dynamics",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uk-fighter-jets-to-protect-saudi-arabia-from-houthi-attacks/a-79718467?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/pakistan-taliban-conflict-how-india-could-benefit-from-shifting-regional-dynamics/a-79721426?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-21T01:23:00+00:00"
+      "published": "2026-10-21T10:35:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Elon Musk says Tesla-SpaceX merger being considered",
+      "headline": "Katya Adler: France divided over who to blame for riots and what to learn from them",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-10-20T23:24:47+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-21T06:50:40+00:00"
     },
     {
       "n": 12,
-      "headline": "Vanessa Kerry is the new WHO envoy for health resilience. What's on her to-do list?",
+      "headline": "Russia releases imprisoned U.S. citizen Stephen Hubbard following Trump's request",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/20/g-s1-147952/vanessa-kerry-resilience-world-health-organization",
-      "topic": "Health",
-      "published": "2026-10-20T16:27:01+00:00"
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6009380/russia-releases-imprisoned-us-citizen",
+      "topic": "Politics",
+      "published": "2026-10-21T10:20:50+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Portugal housing protests continue after police clear camps",
+      "headline": "Russia frees jailed American Stephen Hubbard during Witkoff talks",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/portugal-housing-protests-continue-after-police-clear-camps/a-79717904?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-20T23:11:00+00:00"
+      "url": "https://www.dw.com/en/russia-frees-jailed-american-stephen-hubbard-during-witkoff-talks/a-79719452?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-21T09:42:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Man charged with attack on Australia MP to face court",
+      "headline": "Australian MP loses both legs after alleged car attack, husband says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c678pnn9mpgno?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ckwyqdqxw6d0o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-20T11:25:35+00:00"
+      "published": "2026-10-21T07:56:30+00:00"
     },
     {
       "n": 17,
-      "headline": "DOJ charges 28 with voting crimes. And, TikTok ignored staff's child safety concerns",
+      "headline": "Expecting a baby? 5 tips to help you prepare for pregnancy costs",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/20/g-s1-148877/up-first-newsletter-california-elections-doj-midterms-trump-tiktok",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-5996849/insurance-cost-baby-pregnancy",
       "topic": "Trending",
-      "published": "2026-10-20T11:04:49+00:00"
+      "published": "2026-10-21T09:00:00+00:00"
     }
   ]
 }
