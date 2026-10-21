@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T13:22:32Z",
+  "generated_at": "2026-10-21T19:53:30Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -24,19 +24,19 @@
     },
     {
       "n": 3,
-      "claim": "Ads in Maine Make Misleading Tax Claims About Jackson",
+      "claim": "Trump’s Numbers, October 2026 Update",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/ads-in-maine-make-misleading-tax-claims-about-jackson/",
-      "topic": "Money"
+      "url": "https://www.factcheck.org/2026/10/trumps-numbers-october-2026-update/",
+      "topic": "Politics"
     },
     {
       "n": 4,
-      "claim": "Enes Kanter Freedom And Royce White, Who Tried To Join WNBA, Are ‘Both Men,’ League Commissioner Tells Congress",
+      "claim": "The Daily Caller Was Discreetly Censored, Now Companies Are Playing The Blame Game",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/20/enes-kanter-freedom-royce-white-wnba-men-congress-cathy-engelbert",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/21/daily-caller-censored-first-amendment-purple-wifi-censorship-dnsfilter-burlington-airport",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "of elderly French couple ‘stripped and robbed’ during riots is AI",
+      "claim": "Google updates AI detector after Full Fact investigation finds it flagging apparently real images",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/photo-elderly-french-couple-stripped-ai/",
+      "url": "https://fullfact.org/toolkit/google-synthid-detector-flagging-apparently-real-images/",
       "topic": "Tech / AI"
     },
     {
@@ -80,19 +80,19 @@
     },
     {
       "n": 10,
-      "claim": "Democratic Ads Exaggerate GOP Law’s Impact on Medicare",
+      "claim": "Ads in Maine Make Misleading Tax Claims About Jackson",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/democratic-ads-exaggerate-gop-laws-impact-on-medicare/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/10/ads-in-maine-make-misleading-tax-claims-about-jackson/",
+      "topic": "Money"
     },
     {
       "n": 11,
-      "claim": "‘Stupid Smile’: Real Leftist Takes Out Branding Iron, Stamps Mamdani As Fake Revolutionary",
+      "claim": "Defense Giants Post Record Backlogs As Iran War Drains America’s Missile Stockpiles",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/20/new-york-city-mayor-zohran-mamdani-left-wing-critics-norman-finkelstein",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/20/defense-giants-cash-in-as-us-scrambles-to-rebuild-missile-stockpiles",
+      "topic": "World"
     },
     {
       "n": 12,
@@ -112,11 +112,11 @@
     },
     {
       "n": 14,
-      "claim": "of Palestine and Jordan flags flying from top of Eiffel Tower is AI-generated",
+      "claim": "How much of the fall in pensioner poverty is ‘thanks’ to the Conservatives?",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/palestine-and-jordan-flags-eiffel-tower-ai-generated/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/economy/helen-whately-conservatives-pensioner-poverty/",
+      "topic": "Trending"
     },
     {
       "n": 15,
@@ -136,40 +136,120 @@
     },
     {
       "n": 17,
-      "claim": "Alaska Ad Criticizing Sullivan’s Votes Leaves Out Context, Makes False Suggestion",
+      "claim": "Democratic Ads Exaggerate GOP Law’s Impact on Medicare",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/alaska-ad-criticizing-sullivans-votes-leaves-out-context-makes-false-suggestion/",
+      "url": "https://www.factcheck.org/2026/10/democratic-ads-exaggerate-gop-laws-impact-on-medicare/",
       "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "US citizen Stephen Hubbard freed by Russia as Trump envoy meets Putin",
+      "headline": "Russia says it is ready to resume talks with Ukraine and US to end war",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-21T12:32:01+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq3djn5nxx12o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-21T17:42:34+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump leans into unprecedented power ahead of midterm elections",
+      "headline": "How Trump's attacks on voting system integrity might affect upcoming elections",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6009395/trump-power-midterm-elections",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6010463/how-trumps-attacks-on-voting-system-integrity-might-affect-upcoming-elections",
       "topic": "Politics",
-      "published": "2026-10-21T12:09:41+00:00"
+      "published": "2026-10-21T16:01:44+00:00"
     },
     {
       "n": 3,
-      "headline": "Florida puts 77-year-old man to death, carrying out its 18th execution of the year",
+      "headline": "New Mexico attorney general sues Epstein's attorney and accountant, claiming abuse cover-up at ranch",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/florida-puts-77-year-old-man-to-death-carrying-out-its-18th-execution-of-the-year",
+      "url": "https://www.pbs.org/newshour/nation/new-mexico-attorney-general-sues-epsteins-attorney-and-accountant-claiming-abuse-cover-up-at-ranch",
       "topic": "Trending",
-      "published": "2026-10-21T00:20:44+00:00"
+      "published": "2026-10-21T19:09:22+00:00"
     },
     {
       "n": 4,
+      "headline": "Controversial US-backed vaccine trial in African newborns halted",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/21/us-vaccine-trial-african-newborns-hepatitis-b",
+      "topic": "Health",
+      "published": "2026-10-21T17:18:56+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Germany news: AfD's Weidel calls for major EU reforms",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/germany-news-afd-s-weidel-calls-for-major-eu-reforms/live-79719483?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-21T19:44:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Macron accuses foreign leaders of exploiting French riots",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckjrw044ggxgo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-21T14:04:28+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Why local officials are feeling 'on edge' as election day approaches",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6010517/why-local-officials-are-feeling-on-edge-as-election-day-approaches",
+      "topic": "Politics",
+      "published": "2026-10-21T16:01:17+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Ramaswamy campaign says it produced ad with Amy Acton's mother and will spend millions to promote it",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/ramaswamy-campaign-says-it-produced-ad-with-amy-actons-mother-and-will-spend-millions-to-promote-it",
+      "topic": "Trending",
+      "published": "2026-10-21T18:51:45+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Severely ill ICE detainees face imminent deportation to unknown African states, advocates say",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/oct/21/ice-detention-illness-deportation-florida",
+      "topic": "Trending",
+      "published": "2026-10-21T13:40:08+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Trump, Putin and Xi at one table, without Ukraine. What Moscow wants from the proposal and why Beijing might agree.",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/trump-putin-and-xi-at-one-table-without-ukraine-what-moscow-wants-from-the-proposal-and-why-beijing-might-agree/a-79726190?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-21T19:32:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Targeted' attack on much-loved MP leaves Australian town heartbroken",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmgr8q88r5eqo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-21T18:10:42+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Supreme Court upholds pause on Trump's anti-trans prison policy",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-5993878/supreme-court-trump-trans-prison-policy",
+      "topic": "Politics",
+      "published": "2026-10-21T15:46:27+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "WATCH: Vance says he's 'disgusted' by Republicans 'whining' about Ramaswamy attack ad",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/watch-vance-says-hes-disgusted-by-republicans-whining-about-ramaswamy-attack-ad",
+      "topic": "Trending",
+      "published": "2026-10-21T18:12:17+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Nigeria confirms Ebola case as outbreak spreads into western Africa",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest",
@@ -177,92 +257,12 @@
       "published": "2026-10-21T00:14:55+00:00"
     },
     {
-      "n": 5,
-      "headline": "Germany news: Nvidia CEO optimistic about EU's AI economy",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-nvidia-ceo-optimistic-about-eu-s-ai-economy/live-79719483?maca=en-rss-en-all-1573-rdf",
-      "topic": "Tech / AI",
-      "published": "2026-10-21T13:14:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Trump and Zelensky at loggerheads despite new optimism",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-20T20:00:57+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "DOJ's noncitizen voter list is unreliable, officials say. And, U.S. pollution rises",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/g-s1-149068/up-first-newsletter-california-voter-roll-united-nations-emissions-us-crimes-ukraine-russia",
-      "topic": "Trending",
-      "published": "2026-10-21T11:46:59+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Nigeria confirms Ebola case in its capital as woman who arrived from Uganda tests positive",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/nigeria-confirms-ebola-case-in-its-capital-as-woman-who-arrived-from-uganda-tests-positive",
-      "topic": "Trending",
-      "published": "2026-10-21T00:06:34+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "RFK Jr’s ‘deities of vaccine research’ raided by police in Guinea-Bissau",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/20/rfk-jr-vaccine-researchers-offices-raided-guinea-bissau",
-      "topic": "Health",
-      "published": "2026-10-20T19:18:03+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Pakistan-Taliban conflict: How India could benefit from shifting regional dynamics",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pakistan-taliban-conflict-how-india-could-benefit-from-shifting-regional-dynamics/a-79721426?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-21T10:35:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Katya Adler: France divided over who to blame for riots and what to learn from them",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-21T06:50:40+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Russia releases imprisoned U.S. citizen Stephen Hubbard following Trump's request",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6009380/russia-releases-imprisoned-us-citizen",
-      "topic": "Politics",
-      "published": "2026-10-21T10:20:50+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Zelenskyy seeks to mend ties with Trump ahead of Witkoff-Putin meeting",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/zelenskyy-seeks-to-mend-ties-with-trump-ahead-of-witkoff-putin-meeting",
-      "topic": "Politics",
-      "published": "2026-10-20T22:55:59+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "US grants deportation reprieve to migrants from Ukraine and Sudan",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/oct/19/us-migrants-deportation-ukraine-sudan",
-      "topic": "Trending",
-      "published": "2026-10-19T22:34:43+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Russia frees jailed American Stephen Hubbard during Witkoff talks",
+      "headline": "Meta ordered to pay $25 billion in Cambridge Analytica case",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russia-frees-jailed-american-stephen-hubbard-during-witkoff-talks/a-79719452?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-21T09:42:00+00:00"
+      "url": "https://www.dw.com/en/meta-ordered-to-pay-25-billion-in-cambridge-analytica-case/a-79726486?maca=en-rss-en-all-1573-rdf",
+      "topic": "Tech / AI",
+      "published": "2026-10-21T19:27:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "Expecting a baby? 5 tips to help you prepare for pregnancy costs",
+      "headline": "New human data hints at psychedelics' potential to combat inflammation",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-5996849/insurance-cost-baby-pregnancy",
+      "url": "https://www.npr.org/2026/10/21/nx-s1-6009441/psychedelics-brain-inflammation-immune-system",
       "topic": "Trending",
-      "published": "2026-10-21T09:00:00+00:00"
+      "published": "2026-10-21T15:33:18+00:00"
     }
   ]
 }
