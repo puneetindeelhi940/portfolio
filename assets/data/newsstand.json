@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T03:01:40Z",
+  "generated_at": "2026-10-22T13:23:14Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Are 'Texas Transgender Student Union' mailers from legitimate civil rights group? It's unlikely",
+      "claim": "Why do we carve pumpkins for Halloween? Tracing the history",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/21/texas-trans-mailers/",
+      "url": "https://www.snopes.com/news/2026/10/26/halloween-pumpkins-carving-history/",
       "topic": "Trending"
     },
     {
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Demolition of book stalls continues in Bengal: Locals resist bulldozer in night-long standoff in Jadavpur",
+      "claim": "‘Only Sanatanis can touch Durga idols,’ announces Suvendu Adhikari, claims it’s ‘nothing communal’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/demolition-of-book-stalls-continue-in-bengal-locals-resist-bulldozer-in-night-long-standoff-in-jadavpur/",
+      "url": "https://www.altnews.in/only-sanatanis-can-touch-durga-idols-announces-suvendu-adhikari-claims-its-nothing-communal/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Google updates AI detector after Full Fact investigation finds it flagging apparently real images",
+      "claim": "clip shows Bangladesh coast not ships stuck in Strait of Hormuz",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/toolkit/google-synthid-detector-flagging-apparently-real-images/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/world/viral-clip-ships-hormuz-false/",
+      "topic": "Trending"
     },
     {
       "n": 8,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Kim Jong Un death rumors are spreading again. Is there any evidence?",
+      "claim": "Watch out for these 8 claims about polling stations, ballots",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/21/kim-jong-un-death-rumors/",
-      "topic": "World"
+      "url": "https://www.snopes.com/collections/polling-stations-ballots-election-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -104,19 +104,19 @@
     },
     {
       "n": 13,
-      "claim": "Hans Raj College student alleges knife attack by teenage boy from Hindutva group at Delhi protest",
+      "claim": "Demolition of book stalls continues in Bengal: Locals resist bulldozer in night-long standoff in Jadavpur",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/hans-raj-college-student-alleges-knife-attack-by-teenage-boy-from-hindutva-group-at-delhi-protest/",
+      "url": "https://www.altnews.in/demolition-of-book-stalls-continue-in-bengal-locals-resist-bulldozer-in-night-long-standoff-in-jadavpur/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "How much of the fall in pensioner poverty is ‘thanks’ to the Conservatives?",
+      "claim": "Google updates AI detector after Full Fact investigation finds it flagging apparently real images",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/helen-whately-conservatives-pensioner-poverty/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/toolkit/google-synthid-detector-flagging-apparently-real-images/",
+      "topic": "Tech / AI"
     },
     {
       "n": 15,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Does video show Trump neglecting to salute US Marines after departing Marine One?",
+      "claim": "What update to Meta's terms for business accounts says about AI scraping",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-forgets-salute-marines/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/meta-business-accounts-ai-scraping/",
+      "topic": "Tech / AI"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Missiles hit Kyiv after Russia agrees to US call to resume Ukraine peace talks",
+      "headline": "Police investigate Married at First Sight Australia after 'inappropriate' allegations",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq3djn5nxx12o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-21T21:27:41+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cry83vyw3y4lo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-22T09:47:54+00:00"
     },
     {
       "n": 2,
-      "headline": "AIPAC halts endorsements and direct contributions to candidates",
+      "headline": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6011531/aipac-campaign-contributions-israel-democrats",
-      "topic": "Trending",
-      "published": "2026-10-22T00:22:48+00:00"
+      "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+      "topic": "World",
+      "published": "2026-10-22T11:28:24+00:00"
     },
     {
       "n": 3,
-      "headline": "American imprisoned by Russia released as Witkoff meets and praises Putin",
+      "headline": "AI discovered a software vulnerability that could impact 70% of websites worldwide. The rush is on to patch it",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/american-imprisoned-by-russia-released-as-witkoff-meets-and-praises-putin",
-      "topic": "World",
-      "published": "2026-10-21T22:55:40+00:00"
+      "url": "https://www.pbs.org/newshour/nation/ai-discovered-a-software-vulnerability-that-could-impact-70-of-websites-worldwide-the-rush-is-on-to-patch-it",
+      "topic": "Tech / AI",
+      "published": "2026-10-22T12:51:30+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Austrian, Swiss women kidnapped in Niger are freed — report",
+      "headline": "India news: Gandhi's nephew forced to pull protest photos",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/austrian-swiss-women-kidnapped-in-niger-are-freed-report/a-79727419?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/india-news-gandhi-s-nephew-forced-to-pull-protest-photos/live-79727462?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-22T02:54:00+00:00"
+      "published": "2026-10-22T12:58:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Rosenberg: US diplomatic push offers little hope for imminent Ukraine peace",
+      "headline": "At least four dead after storm brings flooding to southern France",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm98zn5j89kdo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm5ynl4v4wgwo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-21T19:58:06+00:00"
+      "published": "2026-10-22T11:23:16+00:00"
     },
     {
       "n": 7,
-      "headline": "The Justice Department begins notifying counties where it wants to monitor elections",
+      "headline": "5 simple ways to relieve the aches and pains of sitting at a desk all day",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6009896/justice-department-monitors",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6010506/5-simple-ways-to-relieve-the-aches-and-pains-of-sitting-at-a-desk-all-day",
       "topic": "Trending",
-      "published": "2026-10-22T00:18:47+00:00"
+      "published": "2026-10-22T09:01:00+00:00"
     },
     {
       "n": 8,
-      "headline": "How Elon Musk gained so much power over U.S. security interests",
+      "headline": "How Maine voters feel about the high-stakes Senate election",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/how-elon-musk-gained-so-much-power-over-u-s-security-interests",
-      "topic": "Tech / AI",
-      "published": "2026-10-21T22:50:42+00:00"
+      "url": "https://www.pbs.org/newshour/politics/how-maine-voters-feel-about-the-high-stakes-senate-election",
+      "topic": "Politics",
+      "published": "2026-10-22T12:26:24+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "US orders some diplomats to leave Saudi Arabia amid Houthi threat",
+      "headline": "France confirms first Shamonda virus infection in a human death of 'severely immunocompromised' individual",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-orders-some-diplomats-to-leave-saudi-arabia-amid-houthi-threat/a-79727353?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-22T01:48:00+00:00"
+      "url": "https://www.dw.com/en/france-confirms-first-shamonda-virus-infection-in-a-human-death-of-severely-immunocompromised-individual/a-79731991?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-10-22T12:46:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Macron accuses foreign leaders of exploiting French riots",
+      "headline": "El Salvador's president threatens Haitian gangs over military hostages",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckjrw044ggxgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-21T14:04:28+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq33xpjekve4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-22T10:17:48+00:00"
     },
     {
       "n": 12,
-      "headline": "Poll: Voters want Congress to be a check on Trump, trust Democrats more on issues",
+      "headline": "Farm country has beef with Trump as midterms approach",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-6011179/poll-democrats-republicans-trump-approval",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6011214/farm-country-has-beef-with-trump-as-midterms-approach",
       "topic": "Politics",
-      "published": "2026-10-21T20:56:07+00:00"
+      "published": "2026-10-22T09:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "A company says its polls were fake. Here's what happened",
+      "headline": "American imprisoned by Russia released as Witkoff meets and praises Putin",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/a-company-says-its-polls-were-fake-heres-what-happened",
-      "topic": "Trending",
-      "published": "2026-10-21T22:50:18+00:00"
+      "url": "https://www.pbs.org/newshour/show/american-imprisoned-by-russia-released-as-witkoff-meets-and-praises-putin",
+      "topic": "World",
+      "published": "2026-10-21T22:55:40+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Pope Leo will not need further cancer treatment — Vatican",
+      "headline": "Iran's Balochistan border region sees growing unrest",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pope-leo-will-not-need-further-cancer-treatment-vatican/a-79727154?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-10-21T23:47:00+00:00"
+      "url": "https://www.dw.com/en/iran-s-balochistan-border-region-sees-growing-unrest/a-79716399?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-22T11:48:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Pope does not need further treatment after lung cancer surgery",
+      "headline": "Two European women held captive for more than a year in Niger freed in Libya",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqrly2dg5xzzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-10-21T20:09:10+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq62y0v7434yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-22T13:22:39+00:00"
     },
     {
       "n": 17,
-      "headline": "Meet the people moving north to escape increasingly hot summers",
+      "headline": "Trump merchandise stores are closing: 'He has peaked",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/21/nx-s1-5977837/climate-uk-usa-housing",
-      "topic": "Trending",
-      "published": "2026-10-21T20:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6002970/trump-merchandise-stores-closing-maga-midterms",
+      "topic": "Politics",
+      "published": "2026-10-22T09:00:00+00:00"
     }
   ]
 }
