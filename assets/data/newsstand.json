@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T13:23:14Z",
+  "generated_at": "2026-10-22T19:42:11Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Does NOT Prove Trump Waved To Nobody Before Boarding Marine One -- People Are Outside Camera View",
+      "claim": "Does NOT Show Touchscreen Voting Machine Selecting Wrong Candidate From The 2026 Election -- Clips Are From 2014 And 2019",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-prove-trump-waved-to-nobody-before-boarding-marine-one-people-are-outside-camera-view.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-touchscreen-voting-machine-selecting-wrong-candidate-from-2026-election-clips-in-video-are-from-2014-and-2019.html",
       "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Why do we carve pumpkins for Halloween? Tracing the history",
+      "claim": "Are 'Texas Transgender Student Union' mailers from legitimate civil rights group? It's unlikely",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/26/halloween-pumpkins-carving-history/",
+      "url": "https://www.snopes.com/news/2026/10/21/texas-trans-mailers/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: They Haven’t Had Water For Years. An Influential Republican Politician May Be To Blame",
+      "claim": "‘I’ve Gotten Too Old To Not Be Greedy’: Feds Hit Louise Lucas With Pot-Fueled Racketeering Charges",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/21/cedar-lake-oklahoma-dam-wells-stream-water-drought-virgin-glenn-coffee-owrb",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/22/democrat-louise-lucas-virginia-senator-bribery-marijuana-scheme",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -56,26 +56,26 @@
     },
     {
       "n": 7,
-      "claim": "clip shows Bangladesh coast not ships stuck in Strait of Hormuz",
+      "claim": "France protests: fact checked",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/viral-clip-ships-hormuz-false/",
+      "url": "https://fullfact.org/world/france-unrest-protests-fact-checks/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "FAKE Images, Videos Show Pink Panther at Paris Protests",
+      "claim": "FAKE AI-Generated Charlie Hebdo Cover On French Protests Does NOT Show Oct. 21, 2026, Issue -- Or Any Other Issue",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-images-videos-show-pink-panther-at-paris-protests.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-charlie-hebdo-cover-does-not-show-real-october-2026-issue.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Watch out for these 8 claims about polling stations, ballots",
+      "claim": "Why do we carve pumpkins for Halloween? Tracing the history",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/polling-stations-ballots-election-rumors/",
+      "url": "https://www.snopes.com/news/2026/10/26/halloween-pumpkins-carving-history/",
       "topic": "Trending"
     },
     {
@@ -112,27 +112,27 @@
     },
     {
       "n": 14,
-      "claim": "Google updates AI detector after Full Fact investigation finds it flagging apparently real images",
+      "claim": "Has the government legislated to ‘adjust’ the state pension triple lock?",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/toolkit/google-synthid-detector-flagging-apparently-real-images/",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 15,
-      "claim": "Shows Madrid Street Vendors NOT Paris Looters -- Footage Predates Recent French Rioting",
-      "verdict": "FALSE",
-      "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-shows-vendors-in-spain-not-france-predates-recent-rioting-goods-could-not-be-from-paris-looting.html",
+      "url": "https://fullfact.org/government-tracker/adjusted-triple-lock/",
       "topic": "Trending"
     },
     {
+      "n": 15,
+      "claim": "Does NOT Prove Trump Waved To Nobody Before Boarding Marine One -- People Are Outside Camera View",
+      "verdict": "FALSE",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-prove-trump-waved-to-nobody-before-boarding-marine-one-people-are-outside-camera-view.html",
+      "topic": "Politics"
+    },
+    {
       "n": 16,
-      "claim": "What update to Meta's terms for business accounts says about AI scraping",
+      "claim": "Watch out for these 8 claims about polling stations, ballots",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/meta-business-accounts-ai-scraping/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/collections/polling-stations-ballots-election-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Police investigate Married at First Sight Australia after 'inappropriate' allegations",
+      "headline": "Newborn twins fight for survival as conflict fuels Yemen's hunger crisis",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cry83vyw3y4lo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cr5ynl63v0pyo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-22T09:47:54+00:00"
+      "published": "2026-10-22T15:56:36+00:00"
     },
     {
       "n": 2,
-      "headline": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
+      "headline": "Federal judge restricts DHS field operations looking for noncitizen voters",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
-      "topic": "World",
-      "published": "2026-10-22T11:28:24+00:00"
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6012682/judge-dhs-noncitizen-voting-operations",
+      "topic": "Trending",
+      "published": "2026-10-22T19:16:20+00:00"
     },
     {
       "n": 3,
-      "headline": "AI discovered a software vulnerability that could impact 70% of websites worldwide. The rush is on to patch it",
+      "headline": "U.S. jobless claims fell to 194,000 last week, lowest since July",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/ai-discovered-a-software-vulnerability-that-could-impact-70-of-websites-worldwide-the-rush-is-on-to-patch-it",
-      "topic": "Tech / AI",
-      "published": "2026-10-22T12:51:30+00:00"
+      "url": "https://www.pbs.org/newshour/economy/u-s-jobless-claims-fell-to-194000-last-week-lowest-since-july",
+      "topic": "Trending",
+      "published": "2026-10-22T17:55:35+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "India news: Gandhi's nephew forced to pull protest photos",
+      "headline": "Albania's student protests are only getting bigger",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-gandhi-s-nephew-forced-to-pull-protest-photos/live-79727462?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/albania-s-student-protests-are-only-getting-bigger/a-79735213?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-22T12:58:00+00:00"
+      "published": "2026-10-22T19:18:00+00:00"
     },
     {
       "n": 6,
-      "headline": "At least four dead after storm brings flooding to southern France",
+      "headline": "Race to update services' computer systems after cyber-security flaw found",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm5ynl4v4wgwo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-22T11:23:16+00:00"
+      "published": "2026-10-22T17:12:51+00:00"
     },
     {
       "n": 7,
-      "headline": "5 simple ways to relieve the aches and pains of sitting at a desk all day",
+      "headline": "Greetings from the Brazil-Argentina border, where waterfalls are flowing at near-record rates",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/nx-s1-6010506/5-simple-ways-to-relieve-the-aches-and-pains-of-sitting-at-a-desk-all-day",
-      "topic": "Trending",
-      "published": "2026-10-22T09:01:00+00:00"
+      "url": "https://www.npr.org/2026/10/22/g-s1-148553/argentina-brazil-iguazu-falls-waterfalls-super-el-nino",
+      "topic": "World",
+      "published": "2026-10-22T13:50:55+00:00"
     },
     {
       "n": 8,
-      "headline": "How Maine voters feel about the high-stakes Senate election",
+      "headline": "Judge orders Trump to sit for a deposition in his defamation lawsuit against the BBC by Dec. 11",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/how-maine-voters-feel-about-the-high-stakes-senate-election",
+      "url": "https://www.pbs.org/newshour/politics/judge-orders-trump-to-sit-for-a-deposition-in-his-defamation-lawsuit-against-the-bbc-by-dec-11",
       "topic": "Politics",
-      "published": "2026-10-22T12:26:24+00:00"
+      "published": "2026-10-22T17:40:42+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "France confirms first Shamonda virus infection in a human death of 'severely immunocompromised' individual",
+      "headline": "Lina Attalah: Mada Masr journalist sent for trial in Egypt",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-confirms-first-shamonda-virus-infection-in-a-human-death-of-severely-immunocompromised-individual/a-79731991?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-10-22T12:46:00+00:00"
+      "url": "https://www.dw.com/en/lina-attalah-mada-masr-journalist-sent-for-trial-in-egypt/a-79736647?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-22T19:17:00+00:00"
     },
     {
       "n": 11,
-      "headline": "El Salvador's president threatens Haitian gangs over military hostages",
+      "headline": "Trump ordered to answer questions under oath in BBC lawsuit",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq33xpjekve4o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-10-22T10:17:48+00:00"
+      "published": "2026-10-22T17:14:04+00:00"
     },
     {
       "n": 12,
-      "headline": "Farm country has beef with Trump as midterms approach",
+      "headline": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/nx-s1-6011214/farm-country-has-beef-with-trump-as-midterms-approach",
-      "topic": "Politics",
-      "published": "2026-10-22T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+      "topic": "World",
+      "published": "2026-10-22T11:28:24+00:00"
     },
     {
       "n": 13,
-      "headline": "American imprisoned by Russia released as Witkoff meets and praises Putin",
+      "headline": "WATCH: Blanche and Patel announce charges for Democratic Virginia lawmaker Lucas",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/american-imprisoned-by-russia-released-as-witkoff-meets-and-praises-putin",
-      "topic": "World",
-      "published": "2026-10-21T22:55:40+00:00"
+      "url": "https://www.pbs.org/newshour/politics/watch-blanche-and-patel-announce-charges-for-democratic-virginia-lawmaker-lucas",
+      "topic": "Trending",
+      "published": "2026-10-22T16:11:51+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Iran's Balochistan border region sees growing unrest",
+      "headline": "96% of world's coral reefs face critical risk of collapse, IUCN warns",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-s-balochistan-border-region-sees-growing-unrest/a-79716399?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-22T11:48:00+00:00"
+      "url": "https://www.dw.com/en/96-of-world-s-coral-reefs-face-critical-risk-of-collapse-iucn-warns/a-79736234?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-22T18:18:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Two European women held captive for more than a year in Niger freed in Libya",
+      "headline": "Crowd of 50 beats foreigner to death in South Africa",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq62y0v7434yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck5yn9z3vnego?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-22T13:22:39+00:00"
+      "published": "2026-10-22T16:15:25+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump merchandise stores are closing: 'He has peaked",
+      "headline": "Achy from sitting at a desk all day? Try doing this",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/nx-s1-6002970/trump-merchandise-stores-closing-maga-midterms",
-      "topic": "Politics",
-      "published": "2026-10-22T09:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6010506/5-simple-ways-to-relieve-the-aches-and-pains-of-sitting-at-a-desk-all-day",
+      "topic": "Trending",
+      "published": "2026-10-22T09:01:00+00:00"
     }
   ]
 }
