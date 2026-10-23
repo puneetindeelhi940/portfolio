@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T03:06:04Z",
+  "generated_at": "2026-10-23T13:01:53Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Voting machines aren't deliberately switching votes. Here's what's likely happening",
+      "claim": "Why James Carville said he'd rather GOP win close election than Democrats",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/voting-machines-switching-votes-midterms/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/carville-republicans-win-midterms/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "‘Only Sanatanis can touch Durga idols,’ announces Suvendu Adhikari, claims it’s ‘nothing communal’",
+      "claim": "Neha Bora did not call for Bangladesh-like situation in India; viral claim misses important context",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/only-sanatanis-can-touch-durga-idols-announces-suvendu-adhikari-claims-its-nothing-communal/",
+      "url": "https://www.altnews.in/no-neha-bora-did-not-call-for-bangladesh-like-situation-in-india-viral-claim-misses-important-context/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "France protests: fact checked",
-      "verdict": "FALSE",
+      "claim": "of French woman with ‘refugees welcome here’ sign has been edited",
+      "verdict": "MISLEADING",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/france-unrest-protests-fact-checks/",
+      "url": "https://fullfact.org/world/viral-image-french-woman-refugees-welcome-sign-edited/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Who ordered Starlink, Starshield slowdown in Ukraine? What we know",
+      "claim": "Did Mexico, NY, change its name to 'Epstein List' to avoid being renamed by Trump?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/21/starlink-starshield-slowdown-ukraine/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/mexico-ny-epstein-list-name-change/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -104,19 +104,19 @@
     },
     {
       "n": 13,
-      "claim": "Demolition of book stalls continues in Bengal: Locals resist bulldozer in night-long standoff in Jadavpur",
+      "claim": "‘Only Sanatanis can touch Durga idols,’ announces Suvendu Adhikari, claims it’s ‘nothing communal’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/demolition-of-book-stalls-continue-in-bengal-locals-resist-bulldozer-in-night-long-standoff-in-jadavpur/",
+      "url": "https://www.altnews.in/only-sanatanis-can-touch-durga-idols-announces-suvendu-adhikari-claims-its-nothing-communal/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Has the government legislated to ‘adjust’ the state pension triple lock?",
+      "claim": "imagery of Pink Panther protester in France is AI-generated",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/government-tracker/adjusted-triple-lock/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/world/pink-panther-french-protests-ai-generated/",
+      "topic": "Tech / AI"
     },
     {
       "n": 15,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Hegseth's team break one of Eisenhower's historic globes?",
+      "claim": "Trump admin chopping down trees: 4 claims, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/hegseth-eisenhower-globe/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/trump-admin-cutting-trees-rumor-collection/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Hospitals deliberately targeted by Sudan's RSF fighters, BBC investigation finds",
+      "headline": "Anti-terror police investigate as one person killed in shooting near Paris",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-22T23:16:16+00:00"
+      "published": "2026-10-23T12:47:01+00:00"
     },
     {
       "n": 2,
-      "headline": "Actor Tom Skerritt, who played dads, cops and commanding officers, has died",
+      "headline": "Authorities investigating whether first Kenyan and Nigerian Ebola cases crossed paths",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/981035400/tom-skerritt-dead",
-      "topic": "Celebrity",
-      "published": "2026-10-22T20:12:52+00:00"
+      "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+      "topic": "Trending",
+      "published": "2026-10-23T12:41:39+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Airbnb scraps guest checkout chores such as cleaning",
+      "headline": "Japan-Russia ties erode as journalist sits in Moscow jail",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/airbnb-scraps-guest-checkout-chores-such-as-cleaning/a-79738340?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-23T02:14:00+00:00"
+      "url": "https://www.dw.com/en/japan-russia-ties-erode-as-journalist-sits-in-moscow-jail/a-79742995?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-23T12:42:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Trump says Musk has restored access to Ukraine's Starlink network",
+      "headline": "Ukraine says Starlink still restricted after Trump says limits lifted",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-10-22T21:42:39+00:00"
+      "published": "2026-10-23T11:01:08+00:00"
     },
     {
       "n": 7,
-      "headline": "Federal judge restricts DHS field operations looking for noncitizen voters",
+      "headline": "Military reinforcements move to Mideast. And, millions of Americans vote early",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/nx-s1-6012682/judge-dhs-noncitizen-voting-operations",
-      "topic": "Trending",
-      "published": "2026-10-22T19:16:20+00:00"
+      "url": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
+      "topic": "Politics",
+      "published": "2026-10-23T11:22:25+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Tibet earthquake kills at least 16 people, injures dozens: state media",
+      "headline": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/tibet-earthquake-kills-at-least-16-people-injures-dozens-state-media/a-79738117?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-22T23:24:00+00:00"
+      "published": "2026-10-23T12:11:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Newborn twins fight for survival as conflict fuels Yemen's hunger crisis",
+      "headline": "Two Israeli soldiers killed in attack by suspected Palestinian gunmen in West Bank",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr5ynl63v0pyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-22T15:56:36+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-10-23T12:48:52+00:00"
     },
     {
       "n": 12,
-      "headline": "Greetings from the Brazil-Argentina border, where waterfalls are flowing at near-record rates",
+      "headline": "Why Meta is charging to post more hyperlinks",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/g-s1-148553/argentina-brazil-iguazu-falls-waterfalls-super-el-nino",
-      "topic": "World",
-      "published": "2026-10-22T13:50:55+00:00"
+      "url": "https://www.npr.org/sections/planet-money/2026/10/23/nx-s1-6012726/why-meta-is-charging-to-post-more-hyperlinks",
+      "topic": "Tech / AI",
+      "published": "2026-10-23T11:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Poland: Thousands protest for more abortion rights",
+      "headline": "Serbia: Hope, tension and apprehension as voters prepare to elect new parliament",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/poland-thousands-protest-for-more-abortion-rights/a-79737572?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-22T20:52:00+00:00"
+      "url": "https://www.dw.com/en/serbia-hope-tension-and-apprehension-as-voters-prepare-to-elect-new-parliament/a-79738102?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-23T11:43:00+00:00"
     },
     {
       "n": 16,
-      "headline": "L'Oreal says weight loss drugs are impacting beauty and skin care sales",
+      "headline": "Seven shot dead by gunmen at church funeral in Jordan, state media say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvglwgwpgrlpo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-22T22:27:53+00:00"
+      "published": "2026-10-23T12:55:19+00:00"
     },
     {
       "n": 17,
-      "headline": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
+      "headline": "Israel orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+      "url": "https://www.npr.org/2026/10/23/nx-s1-6013333/netanyahu-closure-west-bank",
       "topic": "World",
-      "published": "2026-10-22T11:28:24+00:00"
+      "published": "2026-10-23T09:40:32+00:00"
     }
   ]
 }
