@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T13:01:53Z",
+  "generated_at": "2026-10-23T19:44:11Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Prebunk: Houses on Stilts Lift You Above Reality -- Flood of AI-Generated Hydraulic Escape Systems",
+      "claim": "Anna Kelly Is NOT Officially Trump's Next White House Press Secretary -- No Successor Named",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/prebunk-houses-on-stilts-lift-you-above-reality-flood-of-ai-generated-hydraulic-escape-systems.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-anna-kelly-is-not-officially-the-next-white-house-press-secretary-for-president-trump.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Why James Carville said he'd rather GOP win close election than Democrats",
+      "claim": "Voting machines aren't deliberately switching votes. Here's what's likely happening",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/carville-republicans-win-midterms/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/voting-machines-switching-votes-midterms/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "The Deep State Is Leaking Trump’s Most Sensitive Undercover Operations To The Washington Post",
+      "claim": "Jared Kushner’s Phone Was Hacked — It Exposed An Alleged $2 Billion Foreign Money Web",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/22/anonymous-sources-pentagon-clandestine-espionage-china-washington-post",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/23/jared-kushner-phone-hacked-foreign-money-web-united-arab-emirates-saudi-matthew-cole",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -48,35 +48,35 @@
     },
     {
       "n": 6,
-      "claim": "Neha Bora did not call for Bangladesh-like situation in India; viral claim misses important context",
+      "claim": "Christian families in Bengal attacked, allege ‘rape and death’ threats by ‘Bajrang Dal’ members",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/no-neha-bora-did-not-call-for-bangladesh-like-situation-in-india-viral-claim-misses-important-context/",
+      "url": "https://www.altnews.in/christian-families-in-bengal-attacked-allege-rape-and-death-threats-by-bajrang-dal-members/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "of French woman with ‘refugees welcome here’ sign has been edited",
-      "verdict": "MISLEADING",
+      "claim": "Henry Nowak’s killer has been attacked in prison circulates online again",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/viral-image-french-woman-refugees-welcome-sign-edited/",
+      "url": "https://fullfact.org/crime/claims-vickrum-digwa-attacked-prison-again-false/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "What We Know About Claims That Early Voters' Ballots Were Switched in States Including Florida, Ohio, South Carolina, Tennessee, Texas",
+      "claim": "Prebunk: Houses on Stilts Lift You Above Reality -- Flood of AI-Generated Hydraulic Escape Systems",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-what-we-know-about-claims-that-early-voters-ballots-were-switched-in-states-including-florida-ohio-south-carolina-florida-ohio-tennessee-texas.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/prebunk-houses-on-stilts-lift-you-above-reality-flood-of-ai-generated-hydraulic-escape-systems.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Did Mexico, NY, change its name to 'Epstein List' to avoid being renamed by Trump?",
+      "claim": "Did Hegseth's team break one of Eisenhower's historic globes?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mexico-ny-epstein-list-name-change/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/hegseth-eisenhower-globe/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "DOJ Investigating Corey Lewandowski Over Alleged Profiteering At DHS",
+      "claim": "The Deep State Is Leaking Trump’s Most Sensitive Undercover Operations To The Washington Post",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/22/doj-investigating-corey-lewandowski-alleged-profiteering-dhs",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/22/anonymous-sources-pentagon-clandestine-espionage-china-washington-post",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -104,35 +104,35 @@
     },
     {
       "n": 13,
-      "claim": "‘Only Sanatanis can touch Durga idols,’ announces Suvendu Adhikari, claims it’s ‘nothing communal’",
+      "claim": "Neha Bora did not call for Bangladesh-like situation in India; viral claim misses important context",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/only-sanatanis-can-touch-durga-idols-announces-suvendu-adhikari-claims-its-nothing-communal/",
+      "url": "https://www.altnews.in/no-neha-bora-did-not-call-for-bangladesh-like-situation-in-india-viral-claim-misses-important-context/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "imagery of Pink Panther protester in France is AI-generated",
-      "verdict": "FALSE",
+      "claim": "of French woman with ‘refugees welcome here’ sign has been edited",
+      "verdict": "MISLEADING",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/pink-panther-french-protests-ai-generated/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/world/viral-image-french-woman-refugees-welcome-sign-edited/",
+      "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "FAKE Images Showing 'Satanic Rituals On Epstein Island' With Epstein, The Clintons, Bill Gates, And Stephen Hawking -- Made Or Edited With Google AI",
-      "verdict": "MISLEADING",
+      "claim": "What We Know About Claims That Early Voters' Ballots Were Switched in States Including Florida, Ohio, South Carolina, Tennessee, Texas",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-images-showing-satanic-rituals-on-epstein-island-with-epstein-the-clintons-bill-gates-and-stephen-hawking.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-what-we-know-about-claims-that-early-voters-ballots-were-switched-in-states-including-florida-ohio-south-carolina-florida-ohio-tennessee-texas.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Trump admin chopping down trees: 4 claims, investigated",
+      "claim": "Is Kroger planning to cut 3,000 jobs over 3 years and move some to India? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-admin-cutting-trees-rumor-collection/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/10/20/kroger-cutting-3000-jobs-india-ai/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Anti-terror police investigate as one person killed in shooting near Paris",
+      "headline": "Deadly shooting near Paris is a 'racist terrorist attack', Macron says",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-23T12:47:01+00:00"
+      "published": "2026-10-23T19:42:08+00:00"
     },
     {
       "n": 2,
-      "headline": "Authorities investigating whether first Kenyan and Nigerian Ebola cases crossed paths",
+      "headline": "The Pentagon's guidelines for \"responsible AI\" aren't always followed, report shows",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
-      "topic": "Trending",
-      "published": "2026-10-23T12:41:39+00:00"
+      "url": "https://www.npr.org/2026/10/23/nx-s1-6012296/ai-department-of-defense-war",
+      "topic": "Tech / AI",
+      "published": "2026-10-23T19:31:15+00:00"
     },
     {
       "n": 3,
-      "headline": "RFK Jr. adviser Calley Means resigns amid growing MAHA discontent over lack of progress",
+      "headline": "Trump administration stopped sharing evidence in Good and Pretti killings, Minnesota officials say",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/rfk-jr-adviser-calley-means-resigns-amid-growing-maha-discontent-over-lack-of-progress",
-      "topic": "Trending",
-      "published": "2026-10-23T00:51:44+00:00"
+      "url": "https://www.pbs.org/newshour/nation/trump-administration-stopped-sharing-evidence-in-good-and-pretti-killings-minnesota-officials-say",
+      "topic": "Politics",
+      "published": "2026-10-23T18:56:29+00:00"
     },
     {
       "n": 4,
+      "headline": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
+      "topic": "Health",
+      "published": "2026-10-23T13:57:11+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Russia's attacks on Ukraine's capital, Kyiv, are intensifying. DW asked people on the ground what life is like",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/russia-s-attacks-on-ukraine-s-capital-kyiv-are-intensifying-dw-asked-people-on-the-ground-what-life-is-like/a-79741090?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-23T19:08:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-23T18:10:56+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Ohio could decide control of the Senate. Its rural voters might decide the winner",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/23/nx-s1-6012809/ohio-senate-governor-election-rural-voters",
+      "topic": "Politics",
+      "published": "2026-10-23T18:30:00+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 34",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/gunmen-open-fire-at-a-church-during-a-funeral-in-jordan-killing-7-and-wounding-34",
+      "topic": "Trending",
+      "published": "2026-10-23T18:20:06+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Lewis Hamilton aims to extend career till early 2030s so he can race in African Grand Prix",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/sport/2026/oct/22/lewis-hamilton-aims-to-extend-career-till-early-2030s-so-he-can-race-in-african-grand-prix",
@@ -177,39 +217,39 @@
       "published": "2026-10-22T21:53:28+00:00"
     },
     {
-      "n": 5,
-      "headline": "Japan-Russia ties erode as journalist sits in Moscow jail",
+      "n": 10,
+      "headline": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/japan-russia-ties-erode-as-journalist-sits-in-moscow-jail/a-79742995?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-23T12:42:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Ukraine says Starlink still restricted after Trump says limits lifted",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-23T11:01:08+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Military reinforcements move to Mideast. And, millions of Americans vote early",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
-      "topic": "Politics",
-      "published": "2026-10-23T11:22:25+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "IV team warned Christa Pike's vein might have 'blown' during failed execution, court filing says",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/iv-team-warned-christa-pikes-vein-might-have-blown-during-failed-execution-court-filing-says",
+      "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-23T00:35:31+00:00"
+      "published": "2026-10-23T18:33:00+00:00"
     },
     {
-      "n": 9,
+      "n": 11,
+      "headline": "Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-23T15:37:07+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "A D.C. park was made 'for the pleasure of the people.' Trump's plan would change that",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/23/nx-s1-6010488/east-potomac-trump-golf-hains-point",
+      "topic": "Politics",
+      "published": "2026-10-23T17:35:14+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Vivek Ramaswamy defends ad featuring Amy Acton's estranged mother",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/vivek-ramaswamy-defends-ad-featuring-amy-actons-estranged-mother",
+      "topic": "Trending",
+      "published": "2026-10-23T18:07:34+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Controversial US-backed vaccine trial in African newborns halted",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/21/us-vaccine-trial-african-newborns-hepatitis-b",
@@ -217,68 +257,28 @@
       "published": "2026-10-21T17:18:56+00:00"
     },
     {
-      "n": 10,
-      "headline": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-23T12:11:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Two Israeli soldiers killed in attack by suspected Palestinian gunmen in West Bank",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-10-23T12:48:52+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Why Meta is charging to post more hyperlinks",
-      "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/10/23/nx-s1-6012726/why-meta-is-charging-to-post-more-hyperlinks",
-      "topic": "Tech / AI",
-      "published": "2026-10-23T11:00:00+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Rep. Ilhan Omar says she will move out of her Washington, DC, home after federal search",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/rep-ilhan-omar-says-she-will-move-out-of-her-washington-dc-home-after-federal-search",
-      "topic": "Trending",
-      "published": "2026-10-23T00:25:01+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Severely ill ICE detainees face imminent deportation to unknown African states, advocates say",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/oct/21/ice-detention-illness-deportation-florida",
-      "topic": "Trending",
-      "published": "2026-10-21T13:40:08+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Serbia: Hope, tension and apprehension as voters prepare to elect new parliament",
+      "headline": "Russia, Ukraine agree to US-brokered, 1 city ceasefire",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/serbia-hope-tension-and-apprehension-as-voters-prepare-to-elect-new-parliament/a-79738102?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-23T11:43:00+00:00"
+      "url": "https://www.dw.com/en/russia-ukraine-agree-to-us-brokered-1-city-ceasefire/a-79746723?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-23T18:17:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Seven shot dead by gunmen at church funeral in Jordan, state media say",
+      "headline": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-23T12:55:19+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-23T19:30:19+00:00"
     },
     {
       "n": 17,
-      "headline": "Israel orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
+      "headline": "Ex-FBI employees charged with lying to Congress over Hunter Biden inquiries",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/23/nx-s1-6013333/netanyahu-closure-west-bank",
-      "topic": "World",
-      "published": "2026-10-23T09:40:32+00:00"
+      "url": "https://www.npr.org/2026/10/23/g-s1-149534/justice-fbi-charged-hunter-biden-laptop",
+      "topic": "Politics",
+      "published": "2026-10-23T15:51:04+00:00"
     }
   ]
 }
