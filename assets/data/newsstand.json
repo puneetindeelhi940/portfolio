@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T12:54:56Z",
+  "generated_at": "2026-10-25T18:41:20Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Edited Video Does NOT Prove Sweden's King Refused To Shake Zelenskyy's Hand",
-      "verdict": "MISLEADING",
+      "claim": "JOKE CVE-2026-42069 'HTML2Shell' Issue NOT A Real Internet Security Vulnerability -- Programmer Humor",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-edited-video-does-not-prove-sweden-king-refused-to-shake-zelenskyy-hand.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-cve-2026-42069-html2shell-vulnerability.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Does video show Trump waving at, saluting nobody before boarding Marine One?",
+      "claim": "US-Israel relations: 20 claims we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-waving-nobody-helicopter/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/us-israel-relations-claims/",
+      "topic": "World"
     },
     {
       "n": 3,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Video Of Man Who Rescues, Raises, Releases Injured Polar Bear Cub -- It's From An AI Content Maker",
-      "verdict": "FALSE",
+      "claim": "Edited Video Does NOT Prove Sweden's King Refused To Shake Zelenskyy's Hand",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-of-man-who-rescues-raises-releases-injured-polar-bear-cub.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-edited-video-does-not-prove-sweden-king-refused-to-shake-zelenskyy-hand.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Protest imagery: 15 false, misleading claims we've debunked",
+      "claim": "Does video show Trump waving at, saluting nobody before boarding Marine One?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/fake-protest-collection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-waving-nobody-helicopter/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "‘AK Guy’ Roasts Dem Congressman Over Ad Supporting Massachusetts Gun Ban",
+      "claim": "‘Oh, Stop It!’: Todd Blanche Cuts Off Dana Bash’s Speculating How Trump’s Alaska Election Lawsuit Could Lead To Another Jan 6",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/24/ak-guy-texas-brandon-herrera-roasts-massachusetts-democrat-jake-auchincloss-gun-ban-ad-firearm-safety-laws",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/25/todd-blanche-rebukes-cnn-state-union-dana-bash-justice-department-lawsuit-alaska-election-dan-sullivan-january-6",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Video of Tesla Roadster Jumping Off Golden Gate Bridge Is AI-Generated -- Digital Aerobatics",
+      "claim": "FAKE Video Of Man Who Rescues, Raises, Releases Injured Polar Bear Cub -- It's From An AI Content Maker",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fake-video-tesla-roadster-jumping-off-golden-gate-bridge-ai-generated-digital-aerobatics.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-of-man-who-rescues-raises-releases-injured-polar-bear-cub.html",
       "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "Does video show Trump making strange noise during South Carolina rally?",
+      "claim": "Protest imagery: 15 false, misleading claims we've debunked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-makes-strange-noise-rally/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/fake-protest-collection/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "More than 1,300 arrested as clashes follow another day of mass protests across France",
+      "headline": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-25T10:38:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-10-25T09:00:00+00:00"
     },
     {
       "n": 2,
-      "headline": "The College of Magic turns ordinary kids into confident, top-hat wearing magicians",
+      "headline": "Blanche defends DOJ lawsuit blocking Alaska Senate results if Republican loses",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/g-s1-149089/magic-magicians-south-africa-school-students",
-      "topic": "Trending",
-      "published": "2026-10-25T11:24:58+00:00"
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016212/blanche-defends-doj-lawsuit-blocking-alaska-senate-results-if-republican-loses",
+      "topic": "Politics",
+      "published": "2026-10-25T17:50:35+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump casts his midterm ballot early in Florida",
+      "headline": "Blanche says Trump isn't trying to meddle with Alaska election results by suing over Senate race",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-casts-his-midterm-ballot-early-in-florida",
+      "url": "https://www.pbs.org/newshour/politics/blanche-says-trump-isnt-trying-to-meddle-with-alaska-election-results-by-suing-over-senate-race",
       "topic": "Politics",
-      "published": "2026-10-24T21:29:15+00:00"
+      "published": "2026-10-25T18:19:27+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "France: Hundreds arrested after nationwide protests",
+      "headline": "Protein shakes for teenagers: Good or bad idea?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-hundreds-arrested-after-nationwide-protests/live-79748223?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/protein-shakes-for-teenagers-good-or-bad-idea/a-79751929?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-25T12:05:00+00:00"
+      "published": "2026-10-25T16:12:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Israel to close West Bank crossings on election day as crackdown escalates",
+      "headline": "Venezuelan opposition leader María Machado returns after months in exile",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-25T05:15:52+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-25T18:29:00+00:00"
     },
     {
       "n": 7,
-      "headline": "When a teen posts a selfie, how much filter is 'too much' filter?",
+      "headline": "Venezuela's opposition leader María Corina Machado returns after months in exile",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6011190/meta-facebook-settlement-beauty-filters-ai",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016222/venezuela-maria-corina-machado-leader-returns-exile",
       "topic": "Trending",
-      "published": "2026-10-25T10:00:00+00:00"
+      "published": "2026-10-25T16:18:41+00:00"
     },
     {
       "n": 8,
-      "headline": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
+      "headline": "Venezuela's opposition leader Machado returns after months in exile",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/soldiers-guard-center-of-milan-as-thousands-of-protesters-march-in-cities-across-europe",
+      "url": "https://www.pbs.org/newshour/world/venezuelas-opposition-leader-machado-returns-after-months-in-exile",
       "topic": "Trending",
-      "published": "2026-10-24T19:50:31+00:00"
+      "published": "2026-10-25T16:58:58+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Brazil votes in tight runoff between leftist Lula and right-wing Flavio Bolsonaro",
+      "headline": "Brazil election: Lula, Bolsonaro cast votes in final bout",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brazil-votes-in-tight-runoff-between-leftist-lula-and-right-wing-flavio-bolsonaro/a-79753924?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-25T11:16:00+00:00"
+      "url": "https://www.dw.com/en/brazil-election-lula-bolsonaro-cast-votes-in-final-bout/live-79755630?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-25T14:13:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Voters in Brazil head to polls as Lula goes up against Bolsonaro's son",
+      "headline": "Early reports suggest record high turnout in Serbia elections",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxp8g21j4648o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6jdmj1ej715o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-25T11:54:16+00:00"
+      "published": "2026-10-25T16:05:15+00:00"
     },
     {
       "n": 12,
-      "headline": "More dads taking paid family leave for a new baby, sometimes as much as moms are",
+      "headline": "Israelis have changed. Will they change their leadership?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-5977810/paid-family-bonding-leave-dads-moms-california-colorado-washington-states",
+      "url": "https://www.npr.org/2026/10/25/g-s1-149563/israel-election-war-netanyahu",
       "topic": "Trending",
-      "published": "2026-10-25T09:00:00+00:00"
+      "published": "2026-10-25T16:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Republican billionaire Rick Jackson is walking a Trump tightrope in his quest to lead Georgia",
+      "headline": "New York's archdiocese and survivors of clergy abuse agree to $800 million legal settlement",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/republican-billionaire-rick-jackson-is-walking-a-trump-tightrope-in-his-quest-to-lead-georgia",
-      "topic": "Politics",
-      "published": "2026-10-24T19:04:00+00:00"
+      "url": "https://www.pbs.org/newshour/nation/new-yorks-archdiocese-and-survivors-of-clergy-abuse-agree-to-800-million-legal-settlement",
+      "topic": "Trending",
+      "published": "2026-10-25T16:45:08+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "India news: Rahul Gandhi urges protest against voter deletions, announces November 1 rally",
+      "headline": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-news-rahul-gandhi-urges-protest-against-voter-deletions-announces-november-1-rally/live-79748098?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-25T10:52:00+00:00"
+      "published": "2026-10-25T13:41:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+      "headline": "Suspect in deadly Paris suburb shooting sent for psychiatric observation",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-10-25T09:00:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6e3xek2457wo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-25T15:32:51+00:00"
     },
     {
       "n": 17,
-      "headline": "Independent candidates sense a moment. Some Democrats hope they're right.",
+      "headline": "What makes a good spine-tingler? Stephen Graham Jones says it's all in the ending",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-5995460/midterms-independent-candidates-nebraska-montana",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6007348/what-makes-a-good-spine-tingler-stephen-graham-jones-says-its-all-in-the-ending",
       "topic": "Trending",
-      "published": "2026-10-25T09:00:00+00:00"
+      "published": "2026-10-25T15:03:17+00:00"
     }
   ]
 }
