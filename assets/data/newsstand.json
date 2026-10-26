@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T02:54:22Z",
+  "generated_at": "2026-10-26T14:47:26Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Does Poland allow border guards to shoot at migrants? Here's what the law says",
+      "claim": "Who ordered Starlink, Starshield slowdown in Ukraine? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/poland-border-guards-migrants/",
-      "topic": "World"
+      "url": "https://www.snopes.com/news/2026/10/21/starlink-starshield-slowdown-ukraine/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "US-Israel relations: 20 claims we've investigated",
+      "claim": "Trump's political rallies: 15 rumors, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/us-israel-relations-claims/",
-      "topic": "World"
+      "url": "https://www.snopes.com/collections/trump-rally-collection/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "‘Oh, Stop It!’: Todd Blanche Cuts Off Dana Bash’s Speculating How Trump’s Alaska Election Lawsuit Could Lead To Another Jan 6",
+      "claim": "DOJ Charges Two Former FBI Officials With Lying To Congress About Hunter Biden Investigations",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/25/todd-blanche-rebukes-cnn-state-union-dana-bash-justice-department-lawsuit-alaska-election-dan-sullivan-january-6",
+      "url": "https://dailycaller.com/2026/10/24/doj-charges-former-fbi-officials-lying-congress-hunter-biden",
       "topic": "Politics"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Does video show Trump waving at, saluting nobody before boarding Marine One?",
+      "claim": "Did Tim Allen write Facebook post attacking Democrats?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-waving-nobody-helicopter/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/tim-allen-facebook-democrats/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,139 +146,139 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Elation across Serbia after veteran ruler Vučić concedes to student-led protest movement",
+      "headline": "Lula wins fourth term in dramatic Brazil election comeback",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-26T01:07:05+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-26T13:54:21+00:00"
     },
     {
       "n": 2,
-      "headline": "Brazil's left-wing President Lula elected for fourth term",
+      "headline": "AI giant Anthropic files for an IPO that could break records",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
-      "topic": "Politics",
-      "published": "2026-10-26T00:35:00+00:00"
+      "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
+      "topic": "Tech / AI",
+      "published": "2026-10-26T14:16:23+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump escalates rhetoric against El-Sayed as he tries to undermine Democrat in Michigan Senate race",
+      "headline": "Thousands of observers from the right and left will descend on polling places to monitor the vote on Election Day",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-escalates-rhetoric-against-el-sayed-as-he-tries-to-undermine-democrat-in-michigan-senate-race",
+      "url": "https://www.pbs.org/newshour/politics/thousands-of-observers-from-the-right-and-left-will-descend-on-polling-places-to-monitor-the-vote-on-election-day",
       "topic": "Politics",
-      "published": "2026-10-25T21:50:29+00:00"
+      "published": "2026-10-26T14:29:25+00:00"
     },
     {
       "n": 4,
-      "headline": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
+      "headline": "US forces accused of ‘weaponising’ Somalia’s floods by trapping women and children in the path of El Niño",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
-      "topic": "Health",
-      "published": "2026-10-23T13:57:11+00:00"
+      "url": "https://www.theguardian.com/global-development/2026/oct/26/us-forces-accused-of-weaponising-somalia-flood-el-nino",
+      "topic": "Trending",
+      "published": "2026-10-26T11:00:40+00:00"
     },
     {
       "n": 5,
-      "headline": "Brazilian leftist President Lula wins reelection against conservative challenger Flavio Bolsonaro",
+      "headline": "France: Macron vows 'strong measures' to combat protests",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brazilian-leftist-president-lula-wins-reelection-against-conservative-challenger-flavio-bolsonaro/live-79755630?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-26T02:46:00+00:00"
+      "url": "https://www.dw.com/en/france-macron-vows-strong-measures-to-combat-protests/a-79764224?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-26T13:52:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Deeply divided Israel braces for pivotal election",
+      "headline": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-10-25T22:11:13+00:00"
+      "published": "2026-10-26T14:34:52+00:00"
     },
     {
       "n": 7,
-      "headline": "U.S. measles cases more than double what they were last year as outbreak spreads",
+      "headline": "Australian judge rejects prisoner's human rights challenge to Vegemite ban",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016205/measles-outbreak-pennsylvania",
+      "url": "https://www.npr.org/2026/10/26/g-s1-149923/australian-judge-rejects-prisoners-human-rights-challenge-to-vegemite-ban",
       "topic": "Trending",
-      "published": "2026-10-25T20:35:35+00:00"
+      "published": "2026-10-26T13:25:33+00:00"
     },
     {
       "n": 8,
-      "headline": "Serbia's strongman leader Vucic concedes defeat to student-led movement in seismic political shift",
+      "headline": "Serbia's populist strongman Vucic outplayed all his opponents. Then the students came",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/serbias-strongman-leader-vucic-concedes-defeat-to-student-led-movement-in-seismic-political-shift",
+      "url": "https://www.pbs.org/newshour/world/serbias-populist-strongman-vucic-outplayed-all-his-opponents-then-the-students-came",
       "topic": "Trending",
-      "published": "2026-10-25T21:35:34+00:00"
+      "published": "2026-10-26T13:52:04+00:00"
     },
     {
       "n": 9,
-      "headline": "Lewis Hamilton aims to extend career till early 2030s so he can race in African Grand Prix",
+      "headline": "Sudan paramilitary drone strikes cause mass power cuts in eastern states",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/sport/2026/oct/22/lewis-hamilton-aims-to-extend-career-till-early-2030s-so-he-can-race-in-african-grand-prix",
+      "url": "https://www.theguardian.com/world/2026/oct/26/sudan-paramilitary-drone-strikes-rapid-support-forces-power-cuts-eastern-states",
       "topic": "Trending",
-      "published": "2026-10-22T21:53:28+00:00"
+      "published": "2026-10-26T09:59:27+00:00"
     },
     {
       "n": 10,
-      "headline": "Serbia election: Vucic concedes defeat to student-led movement",
+      "headline": "Germany's Merz heads to Asia as security issues loom large",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/serbia-election-vucic-concedes-defeat-to-student-led-movement/a-79753482?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-25T21:07:00+00:00"
+      "url": "https://www.dw.com/en/germany-s-merz-heads-to-asia-as-security-issues-loom-large/a-79764065?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-26T13:32:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Venezuelan opposition leader María Machado returns after months in exile",
+      "headline": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-25T23:33:14+00:00"
+      "published": "2026-10-26T14:41:45+00:00"
     },
     {
       "n": 12,
-      "headline": "Blanche defends DOJ lawsuit blocking Alaska Senate results if Republican loses",
+      "headline": "What to know about China's plenum as Xi seeks stronger party discipline",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016212/blanche-defends-doj-lawsuit-blocking-alaska-senate-results-if-republican-loses",
-      "topic": "Politics",
-      "published": "2026-10-25T17:50:35+00:00"
+      "url": "https://www.npr.org/2026/10/26/g-s1-149918/what-to-know-about-chinas-plenum-as-xi-seeks-stronger-party-discipline",
+      "topic": "World",
+      "published": "2026-10-26T13:20:38+00:00"
     },
     {
       "n": 13,
-      "headline": "Home sellers are lowering their prices and helping buyers to make a deal in a stagnant market",
+      "headline": "Incumbent Lula is declared winner of Brazil's election as Bolsonaro rejects results",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/home-sellers-are-lowering-their-prices-and-helping-buyers-to-make-a-deal-in-a-stagnant-market",
-      "topic": "Money",
-      "published": "2026-10-25T20:55:56+00:00"
+      "url": "https://www.pbs.org/newshour/world/incumbent-lula-is-declared-winner-of-brazils-election-as-bolsonaro-rejects-results",
+      "topic": "Politics",
+      "published": "2026-10-26T13:19:24+00:00"
     },
     {
       "n": 14,
-      "headline": "Controversial US-backed vaccine trial in African newborns halted",
+      "headline": "UK poised to miss reduced aid spending target of 0.3% of national income",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/21/us-vaccine-trial-african-newborns-hepatitis-b",
-      "topic": "Health",
-      "published": "2026-10-21T17:18:56+00:00"
+      "url": "https://www.theguardian.com/politics/2026/oct/26/uk-international-aid-target-spending-shortfall-budget-research",
+      "topic": "Trending",
+      "published": "2026-10-26T06:59:36+00:00"
     },
     {
       "n": 15,
-      "headline": "Protein shakes for teenagers: Good or bad idea?",
+      "headline": "Steinmeier in China: A major state visit in uncertain times",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/protein-shakes-for-teenagers-good-or-bad-idea/a-79751929?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-25T16:12:00+00:00"
+      "url": "https://www.dw.com/en/steinmeier-in-china-a-major-state-visit-in-uncertain-times/a-79764205?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-26T13:09:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+      "headline": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-10-25T09:00:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-26T14:16:09+00:00"
     },
     {
       "n": 17,
-      "headline": "Venezuela's opposition leader María Corina Machado returns after months in exile",
+      "headline": "Redistricting isn't playing out how the GOP hoped. And, Brazil's Lula wins 4th term",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016222/venezuela-maria-corina-machado-leader-returns-exile",
+      "url": "https://www.npr.org/2026/10/26/g-s1-149917/up-first-newsletter-republican-redistricting-france-serbia-protests-brazil-luiz-inacio-lula-da-silva",
       "topic": "Trending",
-      "published": "2026-10-25T16:18:41+00:00"
+      "published": "2026-10-26T11:11:00+00:00"
     }
   ]
 }
