@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T14:47:26Z",
+  "generated_at": "2026-10-26T20:51:31Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "JOKE CVE-2026-42069 'HTML2Shell' Issue NOT A Real Internet Security Vulnerability -- Programmer Humor",
+      "claim": "Man Did NOT Die While Taking Photo With Mechanical Dinosaur -- Photo Of Alleged Victim Is Of Unrelated Texas Man",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-cve-2026-42069-html2shell-vulnerability.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-man-did-not-die-while-taking-photo-with-mechanical-dinosaur-video-is-unrelated.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Who ordered Starlink, Starshield slowdown in Ukraine? What we know",
+      "claim": "19 claims about 2026 US midterm election candidates, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/21/starlink-starshield-slowdown-ukraine/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/midterm-candidates-fact-checks/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Mike Johnson Doubles Down On ‘Extraordinary Record’ As Affordability Crisis Threatens GOP’s House Majority",
+      "claim": "Businesses Warn Another Round Of Price Increases Could Be Coming",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/25/mike-johnson-defends-republicans-performance-congress-affordability-polls-midterms-fox-news-sunday-interview-shannon-bream",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/26/businesses-warn-another-round-of-price-increases-could-be-coming",
+      "topic": "Money"
     },
     {
       "n": 5,
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "Henry Nowak’s killer has been attacked in prison circulates online again",
+      "claim": "shows police attending a protest not seizing ‘immodest’ mannequin over complaints from Pakistani community",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/crime/claims-vickrum-digwa-attacked-prison-again-false/",
+      "url": "https://fullfact.org/culture-and-society/video-does-not-show-police-seizing-mannequin-over-Pakistani-complaints-repeat/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Edited Video Does NOT Prove Sweden's King Refused To Shake Zelenskyy's Hand",
-      "verdict": "MISLEADING",
+      "claim": "Does NOT Show Bolsonaro With Fewer Votes In Second Round Of 2026 Brazilian Presidential Election, Proving Fraud -- Vote Count Was Incomplete",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-edited-video-does-not-prove-sweden-king-refused-to-shake-zelenskyy-hand.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-bolsonaro-with-fewer-votes-in-second-round-of-2026-brazilian-presidential-election-proving-fraud-vote-count-incomplete.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Trump's political rallies: 15 rumors, investigated",
+      "claim": "SpaceX: 17 rumors we've explored",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/trump-rally-collection/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/spacex-rumors-collection/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "DOJ Charges Two Former FBI Officials With Lying To Congress About Hunter Biden Investigations",
+      "claim": "Hidden Cost Of War That Trickles Down To Your Grocery Bill Set To Explode In 2027",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/24/doj-charges-former-fbi-officials-lying-congress-hunter-biden",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/26/iran-war-shipping-costs-strait-of-hormuz-insurance",
+      "topic": "World"
     },
     {
       "n": 12,
@@ -112,26 +112,26 @@
     },
     {
       "n": 14,
-      "claim": "of French woman with ‘refugees welcome here’ sign has been edited",
-      "verdict": "MISLEADING",
+      "claim": "Henry Nowak’s killer has been attacked in prison circulates online again",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/viral-image-french-woman-refugees-welcome-sign-edited/",
+      "url": "https://fullfact.org/crime/claims-vickrum-digwa-attacked-prison-again-false/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "FAKE Video Of Man Who Rescues, Raises, Releases Injured Polar Bear Cub -- It's From An AI Content Maker",
+      "claim": "Greta Thunberg Was NOT Arrested In Rome For Throwing Confetti In Fountain At St. Peter's Square -- Photo Is From 2023 Sweden Arrest",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-of-man-who-rescues-raises-releases-injured-polar-bear-cub.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-greta-thunberg-was-not-arrested-in-rome.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did Tim Allen write Facebook post attacking Democrats?",
+      "claim": "Who ordered Starlink, Starshield slowdown in Ukraine? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/tim-allen-facebook-democrats/",
+      "url": "https://www.snopes.com/news/2026/10/21/starlink-starshield-slowdown-ukraine/",
       "topic": "Trending"
     },
     {
@@ -150,39 +150,39 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-10-26T13:54:21+00:00"
+      "published": "2026-10-26T20:00:30+00:00"
     },
     {
       "n": 2,
-      "headline": "AI giant Anthropic files for an IPO that could break records",
+      "headline": "Trump administration pushes for food assistance card upgrade to fight fraud",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
-      "topic": "Tech / AI",
-      "published": "2026-10-26T14:16:23+00:00"
+      "url": "https://www.npr.org/2026/10/26/nx-s1-6017810/snap-benefits-ebt-card-chip-usda-rule",
+      "topic": "Politics",
+      "published": "2026-10-26T18:41:43+00:00"
     },
     {
       "n": 3,
-      "headline": "Thousands of observers from the right and left will descend on polling places to monitor the vote on Election Day",
+      "headline": "1st confirmed Ebola patient in Nigeria evacuated to Switzerland",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/thousands-of-observers-from-the-right-and-left-will-descend-on-polling-places-to-monitor-the-vote-on-election-day",
-      "topic": "Politics",
-      "published": "2026-10-26T14:29:25+00:00"
+      "url": "https://www.pbs.org/newshour/world/1st-confirmed-ebola-patient-in-nigeria-evacuated-to-switzerland",
+      "topic": "Trending",
+      "published": "2026-10-26T20:46:14+00:00"
     },
     {
       "n": 4,
-      "headline": "US forces accused of ‘weaponising’ Somalia’s floods by trapping women and children in the path of El Niño",
+      "headline": "UK sanctions Sudanese military leaders implicated in El Fasher ‘campaign of rape’",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/oct/26/us-forces-accused-of-weaponising-somalia-flood-el-nino",
+      "url": "https://www.theguardian.com/global-development/2026/oct/26/uk-sanctions-sudanese-military-leaders-implicated-in-el-fasher-campaign-of",
       "topic": "Trending",
-      "published": "2026-10-26T11:00:40+00:00"
+      "published": "2026-10-26T15:07:23+00:00"
     },
     {
       "n": 5,
-      "headline": "France: Macron vows 'strong measures' to combat protests",
+      "headline": "A bad omen? Syria bans women from university courses",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-macron-vows-strong-measures-to-combat-protests/a-79764224?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/a-bad-omen-syria-bans-women-from-university-courses/a-79769348?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-26T13:52:00+00:00"
+      "published": "2026-10-26T20:07:00+00:00"
     },
     {
       "n": 6,
@@ -194,22 +194,62 @@
     },
     {
       "n": 7,
-      "headline": "Australian judge rejects prisoner's human rights challenge to Vegemite ban",
+      "headline": "Judge says DOJ illegally fired the daughter of former FBI director Comey",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/g-s1-149923/australian-judge-rejects-prisoners-human-rights-challenge-to-vegemite-ban",
+      "url": "https://www.npr.org/2026/10/26/g-s1-149960/judge-maurene-comey-illegal-dismissal",
       "topic": "Trending",
-      "published": "2026-10-26T13:25:33+00:00"
+      "published": "2026-10-26T18:38:01+00:00"
     },
     {
       "n": 8,
-      "headline": "Serbia's populist strongman Vucic outplayed all his opponents. Then the students came",
+      "headline": "France pledges new university admissions to quell student anger. But only after Macron leaves office",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/serbias-populist-strongman-vucic-outplayed-all-his-opponents-then-the-students-came",
+      "url": "https://www.pbs.org/newshour/world/france-pledges-new-university-admissions-to-quell-student-anger-but-only-after-macron-leaves-office",
       "topic": "Trending",
-      "published": "2026-10-26T13:52:04+00:00"
+      "published": "2026-10-26T20:32:27+00:00"
     },
     {
       "n": 9,
+      "headline": "US forces accused of ‘weaponising’ Somalia’s floods by trapping women and children in the path of El Niño",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/oct/26/us-forces-accused-of-weaponising-somalia-flood-el-nino",
+      "topic": "Trending",
+      "published": "2026-10-26T11:00:40+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "AI company Anthropic files its IPO in hopes of raising $100 billion",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/ai-company-anthropic-files-its-ipo-in-hopes-of-raising-100-billion/a-79768876?maca=en-rss-en-all-1573-rdf",
+      "topic": "Tech / AI",
+      "published": "2026-10-26T18:22:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Trump administration illegally fired James Comey's daughter, judge rules",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck78px6glw3lo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-26T19:27:21+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "AI giant Anthropic files for an IPO that could break records",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
+      "topic": "Tech / AI",
+      "published": "2026-10-26T14:16:23+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "After a flurry of ethics cases, sexual harassment rules for Congress are under review",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/after-a-flurry-of-ethics-cases-sexual-harassment-rules-for-congress-are-under-review",
+      "topic": "Politics",
+      "published": "2026-10-26T20:24:06+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Sudan paramilitary drone strikes cause mass power cuts in eastern states",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/26/sudan-paramilitary-drone-strikes-rapid-support-forces-power-cuts-eastern-states",
@@ -217,68 +257,28 @@
       "published": "2026-10-26T09:59:27+00:00"
     },
     {
-      "n": 10,
-      "headline": "Germany's Merz heads to Asia as security issues loom large",
+      "n": 15,
+      "headline": "German police probe cruise ship captain after Bremerhaven collision",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-s-merz-heads-to-asia-as-security-issues-loom-large/a-79764065?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/german-police-probe-cruise-ship-captain-after-bremerhaven-collision/a-79769346?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-26T13:32:00+00:00"
+      "published": "2026-10-26T17:00:00+00:00"
     },
     {
-      "n": 11,
+      "n": 16,
       "headline": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-26T14:41:45+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "What to know about China's plenum as Xi seeks stronger party discipline",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/g-s1-149918/what-to-know-about-chinas-plenum-as-xi-seeks-stronger-party-discipline",
-      "topic": "World",
-      "published": "2026-10-26T13:20:38+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Incumbent Lula is declared winner of Brazil's election as Bolsonaro rejects results",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/incumbent-lula-is-declared-winner-of-brazils-election-as-bolsonaro-rejects-results",
-      "topic": "Politics",
-      "published": "2026-10-26T13:19:24+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "UK poised to miss reduced aid spending target of 0.3% of national income",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/politics/2026/oct/26/uk-international-aid-target-spending-shortfall-budget-research",
-      "topic": "Trending",
-      "published": "2026-10-26T06:59:36+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "Steinmeier in China: A major state visit in uncertain times",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/steinmeier-in-china-a-major-state-visit-in-uncertain-times/a-79764205?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-26T13:09:00+00:00"
-    },
-    {
-      "n": 16,
-      "headline": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-26T14:16:09+00:00"
+      "published": "2026-10-26T16:27:17+00:00"
     },
     {
       "n": 17,
-      "headline": "Redistricting isn't playing out how the GOP hoped. And, Brazil's Lula wins 4th term",
+      "headline": "Australian judge rejects prisoner's human rights challenge to Vegemite ban",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/g-s1-149917/up-first-newsletter-republican-redistricting-france-serbia-protests-brazil-luiz-inacio-lula-da-silva",
+      "url": "https://www.npr.org/2026/10/26/g-s1-149923/australian-judge-rejects-prisoners-human-rights-challenge-to-vegemite-ban",
       "topic": "Trending",
-      "published": "2026-10-26T11:11:00+00:00"
+      "published": "2026-10-26T13:25:33+00:00"
     }
   ]
 }
