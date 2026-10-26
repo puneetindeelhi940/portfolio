@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T18:41:20Z",
+  "generated_at": "2026-10-26T02:54:22Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "US-Israel relations: 20 claims we've investigated",
+      "claim": "Does Poland allow border guards to shoot at migrants? Here's what the law says",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/us-israel-relations-claims/",
+      "url": "https://www.snopes.com/fact-check/poland-border-guards-migrants/",
       "topic": "World"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Military Boards Go Rogue On Hegseth’s Transgender Troop Ban",
+      "claim": "Mike Johnson Doubles Down On ‘Extraordinary Record’ As Affordability Crisis Threatens GOP’s House Majority",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/24/military-leaders-disobeying-hegseths-transgender-ban",
+      "url": "https://dailycaller.com/2026/10/25/mike-johnson-defends-republicans-performance-congress-affordability-polls-midterms-fox-news-sunday-interview-shannon-bream",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Does video show Trump waving at, saluting nobody before boarding Marine One?",
+      "claim": "US-Israel relations: 20 claims we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-waving-nobody-helicopter/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/us-israel-relations-claims/",
+      "topic": "World"
     },
     {
       "n": 10,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Protest imagery: 15 false, misleading claims we've debunked",
+      "claim": "Does video show Trump waving at, saluting nobody before boarding Marine One?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/fake-protest-collection/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-waving-nobody-helicopter/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+      "headline": "Elation across Serbia after veteran ruler Vučić concedes to student-led protest movement",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-10-25T09:00:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-26T01:07:05+00:00"
     },
     {
       "n": 2,
-      "headline": "Blanche defends DOJ lawsuit blocking Alaska Senate results if Republican loses",
+      "headline": "Brazil's left-wing President Lula elected for fourth term",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016212/blanche-defends-doj-lawsuit-blocking-alaska-senate-results-if-republican-loses",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
       "topic": "Politics",
-      "published": "2026-10-25T17:50:35+00:00"
+      "published": "2026-10-26T00:35:00+00:00"
     },
     {
       "n": 3,
-      "headline": "Blanche says Trump isn't trying to meddle with Alaska election results by suing over Senate race",
+      "headline": "Trump escalates rhetoric against El-Sayed as he tries to undermine Democrat in Michigan Senate race",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/blanche-says-trump-isnt-trying-to-meddle-with-alaska-election-results-by-suing-over-senate-race",
+      "url": "https://www.pbs.org/newshour/politics/trump-escalates-rhetoric-against-el-sayed-as-he-tries-to-undermine-democrat-in-michigan-senate-race",
       "topic": "Politics",
-      "published": "2026-10-25T18:19:27+00:00"
+      "published": "2026-10-25T21:50:29+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Protein shakes for teenagers: Good or bad idea?",
+      "headline": "Brazilian leftist President Lula wins reelection against conservative challenger Flavio Bolsonaro",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/protein-shakes-for-teenagers-good-or-bad-idea/a-79751929?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-25T16:12:00+00:00"
+      "url": "https://www.dw.com/en/brazilian-leftist-president-lula-wins-reelection-against-conservative-challenger-flavio-bolsonaro/live-79755630?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-26T02:46:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Venezuelan opposition leader María Machado returns after months in exile",
+      "headline": "Deeply divided Israel braces for pivotal election",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-25T18:29:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-25T22:11:13+00:00"
     },
     {
       "n": 7,
-      "headline": "Venezuela's opposition leader María Corina Machado returns after months in exile",
+      "headline": "U.S. measles cases more than double what they were last year as outbreak spreads",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016222/venezuela-maria-corina-machado-leader-returns-exile",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016205/measles-outbreak-pennsylvania",
       "topic": "Trending",
-      "published": "2026-10-25T16:18:41+00:00"
+      "published": "2026-10-25T20:35:35+00:00"
     },
     {
       "n": 8,
-      "headline": "Venezuela's opposition leader Machado returns after months in exile",
+      "headline": "Serbia's strongman leader Vucic concedes defeat to student-led movement in seismic political shift",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/venezuelas-opposition-leader-machado-returns-after-months-in-exile",
+      "url": "https://www.pbs.org/newshour/world/serbias-strongman-leader-vucic-concedes-defeat-to-student-led-movement-in-seismic-political-shift",
       "topic": "Trending",
-      "published": "2026-10-25T16:58:58+00:00"
+      "published": "2026-10-25T21:35:34+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Brazil election: Lula, Bolsonaro cast votes in final bout",
+      "headline": "Serbia election: Vucic concedes defeat to student-led movement",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brazil-election-lula-bolsonaro-cast-votes-in-final-bout/live-79755630?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/serbia-election-vucic-concedes-defeat-to-student-led-movement/a-79753482?maca=en-rss-en-all-1573-rdf",
       "topic": "Politics",
-      "published": "2026-10-25T14:13:00+00:00"
+      "published": "2026-10-25T21:07:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Early reports suggest record high turnout in Serbia elections",
+      "headline": "Venezuelan opposition leader María Machado returns after months in exile",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6jdmj1ej715o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-25T16:05:15+00:00"
+      "published": "2026-10-25T23:33:14+00:00"
     },
     {
       "n": 12,
-      "headline": "Israelis have changed. Will they change their leadership?",
+      "headline": "Blanche defends DOJ lawsuit blocking Alaska Senate results if Republican loses",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/g-s1-149563/israel-election-war-netanyahu",
-      "topic": "Trending",
-      "published": "2026-10-25T16:00:00+00:00"
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016212/blanche-defends-doj-lawsuit-blocking-alaska-senate-results-if-republican-loses",
+      "topic": "Politics",
+      "published": "2026-10-25T17:50:35+00:00"
     },
     {
       "n": 13,
-      "headline": "New York's archdiocese and survivors of clergy abuse agree to $800 million legal settlement",
+      "headline": "Home sellers are lowering their prices and helping buyers to make a deal in a stagnant market",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/new-yorks-archdiocese-and-survivors-of-clergy-abuse-agree-to-800-million-legal-settlement",
-      "topic": "Trending",
-      "published": "2026-10-25T16:45:08+00:00"
+      "url": "https://www.pbs.org/newshour/economy/home-sellers-are-lowering-their-prices-and-helping-buyers-to-make-a-deal-in-a-stagnant-market",
+      "topic": "Money",
+      "published": "2026-10-25T20:55:56+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+      "headline": "Protein shakes for teenagers: Good or bad idea?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/protein-shakes-for-teenagers-good-or-bad-idea/a-79751929?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-25T13:41:00+00:00"
+      "published": "2026-10-25T16:12:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Suspect in deadly Paris suburb shooting sent for psychiatric observation",
+      "headline": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6e3xek2457wo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-25T15:32:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-10-25T09:00:00+00:00"
     },
     {
       "n": 17,
-      "headline": "What makes a good spine-tingler? Stephen Graham Jones says it's all in the ending",
+      "headline": "Venezuela's opposition leader María Corina Machado returns after months in exile",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6007348/what-makes-a-good-spine-tingler-stephen-graham-jones-says-its-all-in-the-ending",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016222/venezuela-maria-corina-machado-leader-returns-exile",
       "topic": "Trending",
-      "published": "2026-10-25T15:03:17+00:00"
+      "published": "2026-10-25T16:18:41+00:00"
     }
   ]
 }
