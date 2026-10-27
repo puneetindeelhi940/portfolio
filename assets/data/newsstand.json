@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T03:27:26Z",
+  "generated_at": "2026-10-27T13:53:03Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Is video of baby born with mustache real or fake?",
+      "claim": "Did priest killed by falling crucifix steal $2M in church funds? There's no proof",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/baby-born-mustache-video/",
+      "url": "https://www.snopes.com/news/2026/10/27/priest-killed-falling-cross-theft/",
       "topic": "Trending"
     },
     {
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "Do Left parties in Bengal set up bookstalls during Christmas and Eid? Yes, they do",
+      "claim": "Did Neha Bora go to Mandir Marg police station in her luxury car? No, the vehicle belongs to her lawyer",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/do-left-parties-in-bengal-set-up-bookstalls-during-christmas-and-eid-yes-they-do/",
+      "url": "https://www.altnews.in/did-neha-bora-go-to-mandir-marg-police-station-in-her-luxury-car-no-the-vehicle-belongs-to-her-lawyer/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "shows police attending a protest not seizing ‘immodest’ mannequin over complaints from Pakistani community",
+      "claim": "shows dead goat being dragged behind vehicle, not human body",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/video-does-not-show-police-seizing-mannequin-over-Pakistani-complaints-repeat/",
+      "url": "https://fullfact.org/world/video-shows-lifeless-body-dragged-behind-vehicle-goat-misleading/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "What we know about Pentagon's FORTRESS initiative to keep military bases running off-grid",
+      "claim": "Are election volunteers preparing for federal agents potentially intimidating voters at polling sites?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/pentagon-fortress-initiative-90-days/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/election-volunteers-federal-agents/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "‘I’ve Got Six Shots And The High Ground’: Political Candidate Posts Live Updates While In Shoot-Out With Police Officers",
+      "claim": "DUKE: Silicon Valley Is Playing God While AI Plays The Devil",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/26/ive-got-six-shots-high-ground-libertarian-standoff",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/27/duke-artificial-intelligence-chad-ripperger-catholic-faith-spiritual-leaders-god",
+      "topic": "Tech / AI"
     },
     {
       "n": 12,
@@ -104,19 +104,19 @@
     },
     {
       "n": 13,
-      "claim": "Christian families in Bengal attacked, allege ‘rape and death’ threats by ‘Bajrang Dal’ members",
+      "claim": "Do Left parties in Bengal set up bookstalls during Christmas and Eid? Yes, they do",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/christian-families-in-bengal-attacked-allege-rape-and-death-threats-by-bajrang-dal-members/",
+      "url": "https://www.altnews.in/do-left-parties-in-bengal-set-up-bookstalls-during-christmas-and-eid-yes-they-do/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Henry Nowak’s killer has been attacked in prison circulates online again",
+      "claim": "of people collecting iPhone boxes in the Strait of Hormuz is AI-generated",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/crime/claims-vickrum-digwa-attacked-prison-again-false/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/world/video-people-collecting-iPhones-Strait-Hormuz-ai-generated/",
+      "topic": "Tech / AI"
     },
     {
       "n": 15,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Has voting by dead people ever swayed US elections?",
+      "claim": "Unmasking the truth behind 9 tales of historical horrors this Halloween",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dead-people-voting-elections/",
+      "url": "https://www.snopes.com/collections/historical-halloween-horrors/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Lula wins fourth term in dramatic Brazil election comeback",
+      "headline": "Turnout so far highest in decades as Israelis vote in pivotal election",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c3j47l4kdez4o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-10-26T21:02:47+00:00"
+      "published": "2026-10-27T11:11:33+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump administration attempting to prosecute former FBI Director James Comey again",
+      "headline": "Democrats have a midterm edge, poll shows. And, Israelis vote in high-stakes election",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6018628/trump-administration-attempting-to-prosecute-former-fbi-director-james-comey-again",
+      "url": "https://www.npr.org/2026/10/27/g-s1-150052/up-first-newsletter-midterms-polling-data-voter-fraud-israel-prime-minister-elections",
       "topic": "Politics",
-      "published": "2026-10-27T00:31:45+00:00"
+      "published": "2026-10-27T11:39:52+00:00"
     },
     {
       "n": 3,
-      "headline": "Candidates enter final week of campaigning with control of Congress at stake",
+      "headline": "Israelis are voting on whether to oust Netanyahu in first election since Oct. 7 attack",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/candidates-enter-final-week-of-campaigning-with-control-of-congress-at-stake",
+      "url": "https://www.pbs.org/newshour/world/israelis-are-voting-on-whether-to-oust-netanyahu-in-first-election-since-oct-7-attack",
       "topic": "Politics",
-      "published": "2026-10-26T22:55:02+00:00"
+      "published": "2026-10-27T13:40:49+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US seeks new charges against former FBI chief James Comey",
+      "headline": "Will Israel elections change its Iran approach?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-seeks-new-charges-against-former-fbi-chief-james-comey/a-79771256?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-27T01:39:00+00:00"
+      "url": "https://www.dw.com/en/will-israel-elections-change-its-iran-approach/a-79776122?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-27T13:31:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Ex-FBI chief James Comey faces federal charges for third time",
+      "headline": "Norway and Finland leaders hold rare call with Putin",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckly0xqjnlwvo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-27T02:01:27+00:00"
+      "published": "2026-10-27T13:12:24+00:00"
     },
     {
       "n": 7,
-      "headline": "Trump administration pushes for food assistance card upgrade to fight fraud",
+      "headline": "How Aldi is pushing down grocery prices",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6017810/snap-benefits-ebt-card-chip-usda-rule",
-      "topic": "Politics",
-      "published": "2026-10-26T18:41:43+00:00"
+      "url": "https://www.npr.org/sections/planet-money/2026/10/27/g-s1-149358/how-aldi-is-pushing-down-grocery-prices",
+      "topic": "Trending",
+      "published": "2026-10-27T10:30:00+00:00"
     },
     {
       "n": 8,
-      "headline": "News Wrap: AI giant Anthropic preparing for initial public offering",
+      "headline": "What our final poll before Election Day says about midterms and Trump",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-ai-giant-anthropic-preparing-for-initial-public-offering",
-      "topic": "Tech / AI",
-      "published": "2026-10-26T22:50:40+00:00"
+      "url": "https://www.pbs.org/newshour/politics/poll-likely-voters-favor-democrats-as-trump-disapproval-drives-early-turnout",
+      "topic": "Politics",
+      "published": "2026-10-27T09:00:33+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "England and Bayern Munich striker Harry Kane wins Ballon d'Or",
+      "headline": "Denmark's Frederiksen criticizes Finland and Norway for calling Putin without coordinating with allies, despite consultation with Ukraine",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/england-and-bayern-munich-striker-harry-kane-wins-ballon-d-or/a-79771067?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/denmark-s-frederiksen-criticizes-finland-and-norway-for-calling-putin-without-coordinating-with-allies-despite-consultation-with-ukraine/a-79776208?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-26T23:06:00+00:00"
+      "published": "2026-10-27T12:54:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Jay-Z to perform at Super Bowl half-time show",
+      "headline": "Truce begins in Ukraine city where residents ate weeds to survive",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezg4364epo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck20wjnv3w0jo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-27T03:10:55+00:00"
+      "published": "2026-10-27T11:53:57+00:00"
     },
     {
       "n": 12,
-      "headline": "Judge says DOJ illegally fired the daughter of former FBI director Comey",
+      "headline": "Can Black voting power and Trump fatigue break Mississippi's red wall?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/g-s1-149960/judge-maurene-comey-illegal-dismissal",
-      "topic": "Trending",
-      "published": "2026-10-26T18:38:01+00:00"
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6018592/mississippi-senate-trump-colom-black-voter-turnout",
+      "topic": "Politics",
+      "published": "2026-10-27T09:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Netanyahu faces Israeli voters in first election since Oct. 7 and Gaza war",
+      "headline": "Candidates enter final week of campaigning with control of Congress at stake",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/netanyahu-faces-israeli-voters-in-first-election-since-oct-7-and-gaza-war",
+      "url": "https://www.pbs.org/newshour/show/candidates-enter-final-week-of-campaigning-with-control-of-congress-at-stake",
       "topic": "Politics",
-      "published": "2026-10-26T22:45:37+00:00"
+      "published": "2026-10-26T22:55:02+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Jordan says its military struck 'militant hideouts' in Syria after deadly church attack",
+      "headline": "Jordan acknowledges civilian casualties in Syria airstrike against 'Islamic State",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/jordan-says-its-military-struck-militant-hideouts-in-syria-after-deadly-church-attack/a-79760441?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/jordan-acknowledges-civilian-casualties-in-syria-airstrike-against-islamic-state/a-79775653?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-26T22:15:00+00:00"
+      "published": "2026-10-27T12:24:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Jordan says 'terrorists' killed in Syria in retaliatory strike over church attack",
+      "headline": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezg6dy6xlo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-27T02:40:17+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq62yg6rggj0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-27T01:46:38+00:00"
     },
     {
       "n": 17,
-      "headline": "AI giant Anthropic files for an IPO that could break records",
+      "headline": "Polymarket has investigated 'dozens' of election-related cases",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
-      "topic": "Tech / AI",
-      "published": "2026-10-26T14:16:23+00:00"
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6012304/polymarket-election-betting-surveillance",
+      "topic": "Politics",
+      "published": "2026-10-27T09:00:00+00:00"
     }
   ]
 }
