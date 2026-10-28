@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T03:43:35Z",
+  "generated_at": "2026-10-28T14:47:49Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Trump post 'Why are we wasting time counting ballots?' Don't be fooled",
+      "claim": "Did Ilhan Omar marry her brother? Name dispute revives unfounded rumor",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-wasting-time-ballots-post/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/10/27/ilhan-omar-married-brother-name-dispute/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Jamia cracks down on students as hunger strike, police action and campus shutdown deepen crisis",
+      "claim": "Another attack on a Christian family in Bengal: Woman alleges mob assault, desecration of Bible",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/jamia-cracks-down-on-students-as-hunger-strike-police-action-and-campus-shutdown-deepen-crisis/",
+      "url": "https://www.altnews.in/another-attack-on-a-christian-family-in-bengal-woman-alleges-mob-assault-desecration-of-bible/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Melania Trump or Pope Leo XIV broker Russia-Ukraine ceasefire? What we know",
+      "claim": "claiming to share Social Security 'history lesson' gets it mostly wrong. Here's how",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/27/melania-trump-pope-ukraine-ceasefire/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/social-security-history-lesson-post/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "’60 Minutes’ Under Fire After Full DHS Interview Reveals What Was Left On Cutting Room Floor",
+      "claim": "‘Back Up, Ambassador. Back Away!’: Mike Waltz Says Cuban Foreign Minister Tried To Intimidate Him Mid-Speech",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/27/cbs-dhs-interview-james-percival-gianna-toboni",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/28/mike-waltz-shouting-cuba-foreign-minister-bruno-rodriguez-parrilla-corruption-united-nations-general-assembly-floor-speech",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Did Neha Bora go to Mandir Marg police station in her luxury car? No, the vehicle belongs to her lawyer",
+      "claim": "Jamia cracks down on students as hunger strike, police action and campus shutdown deepen crisis",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/did-neha-bora-go-to-mandir-marg-police-station-in-her-luxury-car-no-the-vehicle-belongs-to-her-lawyer/",
+      "url": "https://www.altnews.in/jamia-cracks-down-on-students-as-hunger-strike-police-action-and-campus-shutdown-deepen-crisis/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Ilhan Omar marry her brother? Name dispute revives unfounded rumor",
+      "claim": "Did Trump post 'Why are we wasting time counting ballots'? Don't be fooled",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/27/ilhan-omar-married-brother-name-dispute/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-wasting-time-ballots-post/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,22 +146,62 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Norway and Finland leaders hold rare call with Putin",
+      "headline": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-27T18:28:23+00:00"
+      "published": "2026-10-28T10:31:22+00:00"
     },
     {
       "n": 2,
-      "headline": "Partnerships between ICE and local police surge, report finds",
+      "headline": "What's gone up even faster than gas or rent? The cost of caregiving",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6014746/287g-local-police-immigration-ice",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6019319/caregiving-costs-aarp-affordability",
       "topic": "Trending",
-      "published": "2026-10-28T03:19:32+00:00"
+      "published": "2026-10-28T13:05:33+00:00"
     },
     {
       "n": 3,
+      "headline": "WATCH LIVE: Fed chair Warsh holds briefing after latest interest rate decision",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/economy/watch-live-fed-chair-warsh-holds-briefing-after-latest-interest-rate-decision",
+      "topic": "Money",
+      "published": "2026-10-28T14:14:27+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/28/egypt-lina-attalah-mada-masr-press-freedom-clampdown",
+      "topic": "Trending",
+      "published": "2026-10-28T14:16:24+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Is Iran headed to war or peace after Mecca alliance meeting?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/is-iran-headed-to-war-or-peace-after-mecca-alliance-meeting/a-79788256?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-28T14:20:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Serbian shot dead after attacking officer outside Israeli embassy, minister says",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynj4eeyj2o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-28T10:17:54+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Israel's election too close to call. And, the Ebola outbreak reaches grim milestone",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/28/g-s1-150313/up-first-newsletter-midterm-campaign-trump-israel-elections-federal-reserve-ebola-outbreak",
+      "topic": "Politics",
+      "published": "2026-10-28T11:28:55+00:00"
+    },
+    {
+      "n": 8,
       "headline": "Projections show no clear winner in Israel's election",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/show/projections-show-no-clear-winner-in-israels-election",
@@ -169,39 +209,39 @@
       "published": "2026-10-27T22:55:25+00:00"
     },
     {
-      "n": 4,
-      "headline": "UK sanctions Sudanese military leaders implicated in El Fasher ‘campaign of rape’",
+      "n": 9,
+      "headline": "Africa’s ‘unprecedented’ Ebola outbreak could reach UK, says top health official",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/oct/26/uk-sanctions-sudanese-military-leaders-implicated-in-el-fasher-campaign-of",
-      "topic": "Trending",
-      "published": "2026-10-26T15:07:23+00:00"
+      "url": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
+      "topic": "Health",
+      "published": "2026-10-28T09:37:49+00:00"
     },
     {
-      "n": 5,
-      "headline": "Israel election: Exit polls show no clear winner, with Netanyahu's fate unclear",
+      "n": 10,
+      "headline": "Gen Z protests in Germany: Is France-style violence looming?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/israel-election-exit-polls-show-no-clear-winner-with-netanyahu-s-fate-unclear/live-79713839?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-28T02:53:00+00:00"
+      "url": "https://www.dw.com/en/gen-z-protests-in-germany-is-france-style-violence-looming/a-79788050?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-28T13:43:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Ceasefire extended across Ukraine's Kherson region, officials say",
+      "n": 11,
+      "headline": "Tanzania celebrates first natural gas discovery in more than 10 years",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c5m2dry2xwwvo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-27T22:11:08+00:00"
+      "published": "2026-10-28T10:18:40+00:00"
     },
     {
-      "n": 7,
-      "headline": "U.S. to issue visas to Flávio Bolsonaro as his whereabouts remain unclear",
+      "n": 12,
+      "headline": "Dozens are dead in a high-speed train crash in Spain",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6019678/u-s-to-issue-visas-to-flavio-bolsonaro-as-his-whereabouts-remain-unclear",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6020217/spain-train-disaster",
       "topic": "Trending",
-      "published": "2026-10-28T01:58:08+00:00"
+      "published": "2026-10-28T10:09:46+00:00"
     },
     {
-      "n": 8,
+      "n": 13,
       "headline": "Democrats put economy and affordability at center of final campaign push",
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/show/democrats-put-economy-and-affordability-at-center-of-final-campaign-push",
@@ -209,76 +249,36 @@
       "published": "2026-10-27T22:50:38+00:00"
     },
     {
-      "n": 9,
-      "headline": "US forces accused of ‘weaponising’ Somalia’s floods by trapping women and children in the path of El Niño",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/oct/26/us-forces-accused-of-weaponising-somalia-flood-el-nino",
-      "topic": "Trending",
-      "published": "2026-10-26T11:00:40+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Experts urge 'global health emergency' as climate harms accelerate",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/experts-urge-global-health-emergency-as-climate-harms-accelerate/a-79773232?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-10-28T00:05:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Mbappé sorry for 'ill-judged' Mao remark after backlash in China",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cv62yg0erp8zo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-27T13:25:54+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Southwest flood damage estimates are hundreds of millions for New Mexico alone",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6019352/southwest-flood-damage-estimates-are-hundreds-of-millions-for-new-mexico-alone",
-      "topic": "Trending",
-      "published": "2026-10-27T21:17:57+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Poll gauges voter enthusiasm for both parties a week before election",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/poll-gauges-voter-enthusiasm-for-both-parties-a-week-before-election",
-      "topic": "Politics",
-      "published": "2026-10-27T22:45:04+00:00"
-    },
-    {
       "n": 14,
-      "headline": "Sudan paramilitary drone strikes cause mass power cuts in eastern states",
+      "headline": "UK sanctions Sudanese military leaders implicated in El Fasher ‘campaign of rape’",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/oct/26/sudan-paramilitary-drone-strikes-rapid-support-forces-power-cuts-eastern-states",
+      "url": "https://www.theguardian.com/global-development/2026/oct/26/uk-sanctions-sudanese-military-leaders-implicated-in-el-fasher-campaign-of",
       "topic": "Trending",
-      "published": "2026-10-26T09:59:27+00:00"
+      "published": "2026-10-26T15:07:23+00:00"
     },
     {
       "n": 15,
-      "headline": "Egypt orders closure of independent news site Mada Masr",
+      "headline": "Death toll in Spain train crash rises to at least 64, with rescue and recovery operations ongoing",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/egypt-orders-closure-of-independent-news-site-mada-masr/a-79781842?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/death-toll-in-spain-train-crash-rises-to-at-least-64-with-rescue-and-recovery-operations-ongoing/live-79785087?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-27T23:16:00+00:00"
+      "published": "2026-10-28T13:12:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
+      "headline": "Anger in Kenya over extradition hearing delay for ex-British soldier accused of murdering woman",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq62yg6rggj0o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-27T01:46:38+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmly073ql392o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-28T08:28:39+00:00"
     },
     {
       "n": 17,
-      "headline": "Israel's voter turnout soars as Netanyahu faces a tight election",
+      "headline": "How a lifelong Republican came to lead the data center battle in Ohio",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6019276/data-centers-ai-midterms-ohio",
       "topic": "Politics",
-      "published": "2026-10-27T20:45:39+00:00"
+      "published": "2026-10-28T09:00:00+00:00"
     }
   ]
 }
