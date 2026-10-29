@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T20:44:03Z",
+  "generated_at": "2026-10-29T04:04:36Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Secret Service Agents Were NOT Placed On Leave After Tampering With Air Defense Systems At Mar-a-Lago -- It Is Satire",
+      "claim": "Does NOT Show Attack On Netanyahu In October 2026 -- Footage Of Unrelated Incident In Bulgaria",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-secret-service-agents-were-not-placed-leave-after-tampering-air-defense-systems-mar-a-lago-satire.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-attack-on-netanyahu-in-october-2026-footage-of-unrelated-incident-in-bulgaria.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Court records prove Amy Acton accurately described abusive childhood",
+      "claim": "Did Trump say Nicki Minaj has 'beautiful' butt during campaign rally?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/amy-acton-mom-ad/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-nicki-minaj-beautiful-butt/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Secret Scheme To Sabotage GOP Senator Revealed After Democrat Denied Involvement: REPORT",
+      "claim": "Not Everyone At Fed Was Gung-Ho About Keeping Rates Steady: Here’s Why 2 Dissenters Bucked The Crowd.",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/28/mary-peltola-campaign-secret-scheme-dan-sullivan-report",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/10/28/not-everyone-at-fed-was-gung-ho-about-keeping-rates-steady-heres-why-2-dissenters-bucked-the-crowd",
+      "topic": "Money"
     },
     {
       "n": 5,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "Does NOT Show Flávio Bolsonaro Arriving In The U.S. -- It Predates His Post-Defeat Landing In Florida",
+      "claim": "PROOF Human-Chimpanzee 12-Year-Old Son 'Augusto Dembo' Is Real",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-flavio-bolsonaro-arriving-to-us.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-no-proof-human-chimpanzee-12-year-old-son-augusto-dembo-is-real.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Is USPS stationing 'armed guards' at post offices ahead of 2026 midterms? There's no proof",
+      "claim": "Trump is accused of raping former Miss Switzerland contestant in 1993. Here's what we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/28/usps-armed-guards-election/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/10/28/trump-miss-switzerland-rape-allegation/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Amy Acton, ‘Ohio’s Anthony Fauci,’ Has Only Published One Research Paper. It’s About Horseback Riding",
+      "claim": "Secret Scheme To Sabotage GOP Senator Revealed After Democrat Denied Involvement: REPORT",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/28/ohios-anthony-fauci-amy-acton-one-research-paper-horses",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/28/mary-peltola-campaign-secret-scheme-dan-sullivan-report",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "Dozens of Pennsylvania Election Workers Did NOT Say Tom Wolf And Kathy Boockvar Ordered Them To Destroy Trump Ballots",
+      "claim": "FAKE Photos Show Sasha Obama With Baby Bump -- Images Are OpenAI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-dozens-of-pennsylvania-election-workers-did-not-say-tom-wolf-and-kathy-boockvar-ordered-them-to-destroy-trump-ballots.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-photos-show-sasha-obama-with-baby-bump-images-are-openai-generated.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "6 claims about lab-grown and genetically modified foods we've fact-checked",
-      "verdict": "FALSE",
+      "claim": "Unpacking edited video behind Hasan Piker's $72.5M defamation lawsuit against Scott Jennings",
+      "verdict": "MISLEADING",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/lab-grown-genetically-modified-food/",
+      "url": "https://www.snopes.com/news/2026/10/28/hasan-piker-scott-jennings-lawsuit/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Flávio Bolsonaro lands in Miami after defeat in Brazil's presidential election",
+      "headline": "High-speed train crash kills at least 68 people in Spain",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-28T20:22:49+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-28T21:38:54+00:00"
     },
     {
       "n": 2,
-      "headline": "New book revisits the 2023 killing of an unhoused man in crisis on the NYC subway",
+      "headline": "Hackers expose the identities of more than 40,000 DHS employees",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6019370/jordan-neely-daniel-penny-anand-giridharadas-man-in-the-mirror",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6021497/dhs-hack-ice",
       "topic": "Trending",
-      "published": "2026-10-28T18:07:33+00:00"
+      "published": "2026-10-29T03:28:50+00:00"
     },
     {
       "n": 3,
-      "headline": "American taxpayers' bill for Iran war grows to estimated $47.1 billion",
+      "headline": "King Charles III can't escape Britain's role in slavery as he tours Caribbean nations",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/american-taxpayers-bill-for-iran-war-grows-to-estimated-47-1-billion",
-      "topic": "World",
-      "published": "2026-10-28T19:40:33+00:00"
+      "url": "https://www.pbs.org/newshour/world/king-charles-iii-cant-escape-britains-role-in-slavery-as-he-tours-caribbean-nations",
+      "topic": "Trending",
+      "published": "2026-10-28T23:49:14+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "How do the US midterms work, and why are they so important for Trump's presidency?",
+      "headline": "US: Department of Homeland Security data leak exposes details of more than 40,000 employees",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/how-do-the-us-midterms-work-and-why-are-they-so-important-for-trump-s-presidency/a-79789932?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-28T19:02:00+00:00"
+      "url": "https://www.dw.com/en/us-department-of-homeland-security-data-leak-exposes-details-of-more-than-40-000-employees/a-79791765?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-29T03:21:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
+      "headline": "Bloodied, dazed and angry - how passengers' rail journey turned to disaster in Spain",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-28T20:24:39+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzd47ng98o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-28T21:24:41+00:00"
     },
     {
       "n": 7,
-      "headline": "Fed holds interest rates steady even as inflation remains stubborn",
+      "headline": "Forecasters are predicting a warmer and wetter winter. Here's how El Niño will affect your region.",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6020425/federal-reserve-interest-rates-inflation",
-      "topic": "Money",
-      "published": "2026-10-28T18:04:42+00:00"
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6009547/el-nino-forecast-us-winter",
+      "topic": "Trending",
+      "published": "2026-10-29T02:20:45+00:00"
     },
     {
       "n": 8,
-      "headline": "WATCH LIVE: Obama stumps for Ossoff and Bottoms at Georgia midterm rally",
+      "headline": "Russell Brand denies all charges as he testifies at his rape and sex assault trial",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-obama-stumps-for-ossoff-and-bottoms-at-georgia-midterm-rally",
+      "url": "https://www.pbs.org/newshour/world/russell-brand-denies-all-charges-as-he-testifies-at-his-rape-and-sex-assault-trial",
       "topic": "Trending",
-      "published": "2026-10-28T19:22:59+00:00"
+      "published": "2026-10-28T23:35:56+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Evacuation from Oleshky: How are preparations going?",
+      "headline": "EU countries block Canada's 'associate membership' plan",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/evacuation-from-oleshky-how-are-preparations-going/a-79790001?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/eu-countries-block-canada-s-associate-membership-plan/a-79791601?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-28T17:04:00+00:00"
+      "published": "2026-10-29T00:49:00+00:00"
     },
     {
       "n": 11,
-      "headline": "How could Israel break election deadlock? Here are four scenarios",
+      "headline": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-28T14:30:31+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-29T01:14:01+00:00"
     },
     {
       "n": 12,
-      "headline": "Dolores Huerta, influential labor leader, feminist and civil rights icon, dies at 96",
+      "headline": "Judge denies the Justice Department's bid to stop processing California ballots",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6020543/dolores-huerta-dies",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6021478/doj-california-ballots-denied",
       "topic": "Trending",
-      "published": "2026-10-28T16:10:43+00:00"
+      "published": "2026-10-29T00:52:50+00:00"
     },
     {
       "n": 13,
-      "headline": "WATCH LIVE: Trump rallies voters in Ohio after divisive Ramaswamy campaign ad",
+      "headline": "Trump calls for prosecution of Alaska Senate candidate Peltola over Sullivan name controversy",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-rallies-voters-in-ohio-after-divisive-ramaswamy-campaign-ad",
+      "url": "https://www.pbs.org/newshour/politics/trump-calls-for-prosecution-of-alaska-senate-candidate-peltola-over-sullivan-name-controversy",
       "topic": "Politics",
-      "published": "2026-10-28T17:22:30+00:00"
+      "published": "2026-10-28T23:29:24+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "One year on, families seek justice after election violence",
+      "headline": "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/one-year-on-families-seek-justice-after-election-violence/a-79779105?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-28T16:30:00+00:00"
+      "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-28T22:26:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
+      "headline": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-28T10:31:22+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-28T20:24:39+00:00"
     },
     {
       "n": 17,
-      "headline": "What's gone up even faster than gas or rent? The cost of caregiving",
+      "headline": "Trump administration will allow pharmacies to make popular peptides",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6019319/caregiving-costs-aarp-affordability",
-      "topic": "Trending",
-      "published": "2026-10-28T13:05:33+00:00"
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6021030/peptides-compounding-enforcement",
+      "topic": "Politics",
+      "published": "2026-10-28T22:26:48+00:00"
     }
   ]
 }
