@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T04:04:36Z",
+  "generated_at": "2026-10-29T14:53:49Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Another attack on a Christian family in Bengal: Woman alleges mob assault, desecration of Bible",
+      "claim": "Delhi Police deletes firecracker awareness video within hours of posting on X",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/another-attack-on-a-christian-family-in-bengal-woman-alleges-mob-assault-desecration-of-bible/",
+      "url": "https://www.altnews.in/delhi-police-deletes-firecracker-awareness-video-within-hours-of-posting-on-x/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Budget 2026: fact checked",
-      "verdict": "FALSE",
+      "claim": "evidence Donald Trump’s mother said he’d be a ‘disaster’ for the United States",
+      "verdict": "UNPROVEN",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/budget-2026-fact-checked/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/us/trump-mother-quote-fake-reshared/",
+      "topic": "Politics"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Trump is accused of raping former Miss Switzerland contestant in 1993. Here's what we know",
+      "claim": "Did Trump recognize White House janitor's retirement after 22 years of service?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/28/trump-miss-switzerland-rape-allegation/",
+      "url": "https://www.snopes.com/fact-check/trump-white-house-janitor/",
       "topic": "Politics"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Secret Scheme To Sabotage GOP Senator Revealed After Democrat Denied Involvement: REPORT",
+      "claim": "Midterm Races That Could Decide Whether Your Vote Counts The Same In 2028",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/28/mary-peltola-campaign-secret-scheme-dan-sullivan-report",
+      "url": "https://dailycaller.com/2026/10/29/battleground-states-midterms-electoral-college-integrity-hepa-voting-reform-pennsylvania-michigan-arizona",
       "topic": "Politics"
     },
     {
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Jamia cracks down on students as hunger strike, police action and campus shutdown deepen crisis",
+      "claim": "posted by Piyush Goyal of crowd at Air Force event in Varanasi is not old",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/jamia-cracks-down-on-students-as-hunger-strike-police-action-and-campus-shutdown-deepen-crisis/",
+      "url": "https://www.altnews.in/no-image-posted-by-piyush-goyal-of-crowd-at-air-force-event-in-varanasi-is-not-old/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Andy Burnham makes incorrect claim about Robert Jenrick’s small boats record",
+      "claim": "Budget 2026: fact checked",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/burnham-jenrick-small-boat-crossings/",
+      "url": "https://fullfact.org/economy/budget-2026-fact-checked/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Unpacking edited video behind Hasan Piker's $72.5M defamation lawsuit against Scott Jennings",
-      "verdict": "MISLEADING",
+      "claim": "Why we wear costumes to celebrate Halloween",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/28/hasan-piker-scott-jennings-lawsuit/",
+      "url": "https://www.snopes.com/articles/474321/halloween-costume-history/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "High-speed train crash kills at least 68 people in Spain",
+      "headline": "Audio reveals exchanges between control centre and drivers before deadly Spain train crash",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmqxnl312v34o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-28T21:38:54+00:00"
+      "published": "2026-10-29T11:07:35+00:00"
     },
     {
       "n": 2,
-      "headline": "Hackers expose the identities of more than 40,000 DHS employees",
+      "headline": "Greetings from Baghdad, where Agatha Christie's old home presents its own mystery",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6021497/dhs-hack-ice",
+      "url": "https://www.npr.org/2026/10/29/g-s1-150319/agatha-christie-baghdad-home",
       "topic": "Trending",
-      "published": "2026-10-29T03:28:50+00:00"
+      "published": "2026-10-29T14:52:11+00:00"
     },
     {
       "n": 3,
-      "headline": "King Charles III can't escape Britain's role in slavery as he tours Caribbean nations",
+      "headline": "Alaska's governor orders a probe into Peltola's Senate campaign over spoiler candidate controversy",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/king-charles-iii-cant-escape-britains-role-in-slavery-as-he-tours-caribbean-nations",
-      "topic": "Trending",
-      "published": "2026-10-28T23:49:14+00:00"
+      "url": "https://www.pbs.org/newshour/politics/alaskas-governor-orders-a-probe-into-peltolas-senate-campaign-over-spoiler-candidate-controversy",
+      "topic": "Politics",
+      "published": "2026-10-29T14:46:36+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US: Department of Homeland Security data leak exposes details of more than 40,000 employees",
+      "headline": "Germany seeks new head of state",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-department-of-homeland-security-data-leak-exposes-details-of-more-than-40-000-employees/a-79791765?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-seeks-new-head-of-state/a-79797794?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-29T03:21:00+00:00"
+      "published": "2026-10-29T14:27:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Bloodied, dazed and angry - how passengers' rail journey turned to disaster in Spain",
+      "headline": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzd47ng98o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-28T21:24:41+00:00"
+      "published": "2026-10-29T01:14:01+00:00"
     },
     {
       "n": 7,
-      "headline": "Forecasters are predicting a warmer and wetter winter. Here's how El Niño will affect your region.",
+      "headline": "A stress-free guide to organizing important paperwork and documents",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6009547/el-nino-forecast-us-winter",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6020623/a-stress-free-guide-to-organizing-important-paperwork-and-documents",
       "topic": "Trending",
-      "published": "2026-10-29T02:20:45+00:00"
+      "published": "2026-10-29T14:38:32+00:00"
     },
     {
       "n": 8,
-      "headline": "Russell Brand denies all charges as he testifies at his rape and sex assault trial",
+      "headline": "King Charles III can't escape Britain's role in slavery as he tours Caribbean nations",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/russell-brand-denies-all-charges-as-he-testifies-at-his-rape-and-sex-assault-trial",
+      "url": "https://www.pbs.org/newshour/world/king-charles-iii-cant-escape-britains-role-in-slavery-as-he-tours-caribbean-nations",
       "topic": "Trending",
-      "published": "2026-10-28T23:35:56+00:00"
+      "published": "2026-10-28T23:49:14+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "EU countries block Canada's 'associate membership' plan",
+      "headline": "Human trafficking victims stranded in Guinea-Bissau",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/eu-countries-block-canada-s-associate-membership-plan/a-79791601?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/human-trafficking-victims-stranded-in-guinea-bissau/a-79785558?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-29T00:49:00+00:00"
+      "published": "2026-10-29T14:20:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+      "headline": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-29T01:14:01+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-29T13:49:04+00:00"
     },
     {
       "n": 12,
-      "headline": "Judge denies the Justice Department's bid to stop processing California ballots",
+      "headline": "With days to go before the midterms, data shows the U.S. economy is doing well",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6021478/doj-california-ballots-denied",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6021008/economy-gdp-inflation-midterms-voters-affordability",
       "topic": "Trending",
-      "published": "2026-10-29T00:52:50+00:00"
+      "published": "2026-10-29T13:05:03+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump calls for prosecution of Alaska Senate candidate Peltola over Sullivan name controversy",
+      "headline": "Russell Brand denies all charges as he testifies at his rape and sex assault trial",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-calls-for-prosecution-of-alaska-senate-candidate-peltola-over-sullivan-name-controversy",
-      "topic": "Politics",
-      "published": "2026-10-28T23:29:24+00:00"
+      "url": "https://www.pbs.org/newshour/world/russell-brand-denies-all-charges-as-he-testifies-at-his-rape-and-sex-assault-trial",
+      "topic": "Trending",
+      "published": "2026-10-28T23:35:56+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+      "headline": "Can EU and India work together to secure Indo-Pacific?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/can-eu-and-india-work-together-to-secure-indo-pacific/a-79796195?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-28T22:26:00+00:00"
+      "published": "2026-10-29T13:26:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
+      "headline": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-28T20:24:39+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-29T14:17:35+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump administration will allow pharmacies to make popular peptides",
+      "headline": "GDP report to give insight before Election Day. And, Israel's election is deadlocked",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/28/nx-s1-6021030/peptides-compounding-enforcement",
+      "url": "https://www.npr.org/2026/10/29/g-s1-150614/up-first-newsletter-midterm-elections-gdp-inflation-israel-department-of-education-lawsuit",
       "topic": "Politics",
-      "published": "2026-10-28T22:26:48+00:00"
+      "published": "2026-10-29T11:34:30+00:00"
     }
   ]
 }
