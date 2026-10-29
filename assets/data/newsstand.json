@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T14:53:49Z",
+  "generated_at": "2026-10-29T20:48:31Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Does NOT Show Attack On Netanyahu In October 2026 -- Footage Of Unrelated Incident In Bulgaria",
+      "claim": "8 Million Brazilians Did NOT Vote Without ID After Polls Closed -- Election Court Says Claim Is False",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-attack-on-netanyahu-in-october-2026-footage-of-unrelated-incident-in-bulgaria.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-official-data-do-not-support-claim-that-8-million-voted-in-brazil-without-id-after-polls-were-scheduled-to-close.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Did Trump say Nicki Minaj has 'beautiful' butt during campaign rally?",
+      "claim": "Is Pentagon investing $41M in 'ketamine wafers' from Singaporean pharmaceutical company?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-nicki-minaj-beautiful-butt/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/pentagon-ketamine-wafers/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,7 +32,7 @@
     },
     {
       "n": 4,
-      "claim": "Not Everyone At Fed Was Gung-Ho About Keeping Rates Steady: Here’s Why 2 Dissenters Bucked The Crowd.",
+      "claim": "Not Everyone At Fed Was Gung-Ho About Keeping Rates Steady: Here’s Why 2 Dissenters Bucked The Crowd",
       "verdict": "FALSE",
       "source": "Check Your Fact",
       "url": "https://dailycaller.com/2026/10/28/not-everyone-at-fed-was-gung-ho-about-keeping-rates-steady-heres-why-2-dissenters-bucked-the-crowd",
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "evidence Donald Trump’s mother said he’d be a ‘disaster’ for the United States",
-      "verdict": "UNPROVEN",
+      "claim": "shows street vendors in Spain, not people selling items looted in France",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/us/trump-mother-quote-fake-reshared/",
-      "topic": "Politics"
+      "url": "https://fullfact.org/world/video-street-vendors-spain-not-items-looted-france/",
+      "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "PROOF Human-Chimpanzee 12-Year-Old Son 'Augusto Dembo' Is Real",
+      "claim": "Does NOT Show Moments Before 2026 Train Crash In Urda, Spain -- Was Originally Posted In 2020",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-no-proof-human-chimpanzee-12-year-old-son-augusto-dembo-is-real.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-moments-before-2026-train-crash-in-urda-spain-was-originally-posted-in-2020.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Did Trump recognize White House janitor's retirement after 22 years of service?",
+      "claim": "Why voters receiving multiple ballots doesn't mean multiple votes",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-white-house-janitor/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/10/29/multiple-ballots-votes-elections/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -112,27 +112,27 @@
     },
     {
       "n": 14,
-      "claim": "Budget 2026: fact checked",
+      "claim": "AI mushroom cloud video shared with false claims it shows Ukraine",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/budget-2026-fact-checked/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/conflict/ai-video-ukrainian-fighter-jets-destroyed/",
+      "topic": "Tech / AI"
     },
     {
       "n": 15,
-      "claim": "FAKE Photos Show Sasha Obama With Baby Bump -- Images Are OpenAI-Generated",
+      "claim": "FAKE WABI-TV 5 Video Falsely Claims Troy Jackson Threatened To Cut Staff In Half With An Axe",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-photos-show-sasha-obama-with-baby-bump-images-are-openai-generated.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-imitates-wabi-tv-5-report-troy-jackson-threatened-to-cut-staff-in-half-with-axe.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Why we wear costumes to celebrate Halloween",
+      "claim": "Did Trump say Nicki Minaj has 'beautiful' butt during campaign rally?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/articles/474321/halloween-costume-history/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-nicki-minaj-beautiful-butt/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,7 +146,7 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Audio reveals exchanges between control centre and drivers before deadly Spain train crash",
+      "headline": "Audio reveals exchanges between Spain train operators and drivers moments before deadly crash",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmqxnl312v34o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Greetings from Baghdad, where Agatha Christie's old home presents its own mystery",
+      "headline": "Patrick Stewart, a perceptive patriarch in 'Star Trek' and 'X-Men,' dies at 86",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/g-s1-150319/agatha-christie-baghdad-home",
-      "topic": "Trending",
-      "published": "2026-10-29T14:52:11+00:00"
+      "url": "https://www.npr.org/2026/10/29/1230906945/patrick-stewart-dead",
+      "topic": "Celebrity",
+      "published": "2026-10-29T20:29:13+00:00"
     },
     {
       "n": 3,
-      "headline": "Alaska's governor orders a probe into Peltola's Senate campaign over spoiler candidate controversy",
+      "headline": "Patrick Stewart, star of stage and 'Star Trek,' dies at 86",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/alaskas-governor-orders-a-probe-into-peltolas-senate-campaign-over-spoiler-candidate-controversy",
-      "topic": "Politics",
-      "published": "2026-10-29T14:46:36+00:00"
+      "url": "https://www.pbs.org/newshour/arts/patrick-stewart-star-of-stage-and-star-trek-dies-at-86",
+      "topic": "Celebrity",
+      "published": "2026-10-29T20:02:17+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Germany seeks new head of state",
+      "headline": "Iraq: Life sentences for 3 French 'Islamic State' suspects",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-seeks-new-head-of-state/a-79797794?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/iraq-life-sentences-for-3-french-islamic-state-suspects/a-79802390?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-29T14:27:00+00:00"
+      "published": "2026-10-29T20:34:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+      "headline": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-29T01:14:01+00:00"
+      "published": "2026-10-29T14:17:35+00:00"
     },
     {
       "n": 7,
-      "headline": "A stress-free guide to organizing important paperwork and documents",
+      "headline": "What killed 500-plus penguins? How scientists solved the mystery",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6020623/a-stress-free-guide-to-organizing-important-paperwork-and-documents",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6020451/avian-flu-penguins-pathogen-antarctica-cholera",
       "topic": "Trending",
-      "published": "2026-10-29T14:38:32+00:00"
+      "published": "2026-10-29T20:03:26+00:00"
     },
     {
       "n": 8,
-      "headline": "King Charles III can't escape Britain's role in slavery as he tours Caribbean nations",
+      "headline": "Judge blocks Trump administration's Medicaid work requirement rule forcing proof of medical frailty",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/king-charles-iii-cant-escape-britains-role-in-slavery-as-he-tours-caribbean-nations",
-      "topic": "Trending",
-      "published": "2026-10-28T23:49:14+00:00"
+      "url": "https://www.pbs.org/newshour/politics/judge-blocks-trump-administrations-medicaid-work-requirement-rule-forcing-proof-of-medical-frailty",
+      "topic": "Politics",
+      "published": "2026-10-29T19:53:52+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Human trafficking victims stranded in Guinea-Bissau",
+      "headline": "EU seeks 'highest level' ties with Canada in Montreal summit",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/human-trafficking-victims-stranded-in-guinea-bissau/a-79785558?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/eu-seeks-highest-level-ties-with-canada-in-montreal-summit/a-79800299?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-29T14:20:00+00:00"
+      "published": "2026-10-29T18:50:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
+      "headline": "Flávio Bolsonaro calls himself 'leader of Brazil' after election loss",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c3x2w4109pj8o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-10-29T13:49:04+00:00"
+      "published": "2026-10-29T14:58:28+00:00"
     },
     {
       "n": 12,
-      "headline": "With days to go before the midterms, data shows the U.S. economy is doing well",
+      "headline": "Lost your spark? The \"silent sister\" of depression, and a quiz to spot her",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6021008/economy-gdp-inflation-midterms-voters-affordability",
+      "url": "https://www.npr.org/2026/10/29/nx-s1-5996687/anhedonia-quiz-high-functioning-depression",
       "topic": "Trending",
-      "published": "2026-10-29T13:05:03+00:00"
+      "published": "2026-10-29T20:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Russell Brand denies all charges as he testifies at his rape and sex assault trial",
+      "headline": "How Trump's immigration crackdown sparked a backlash that could undermine Republicans' campaigns",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/russell-brand-denies-all-charges-as-he-testifies-at-his-rape-and-sex-assault-trial",
-      "topic": "Trending",
-      "published": "2026-10-28T23:35:56+00:00"
+      "url": "https://www.pbs.org/newshour/politics/how-trumps-immigration-crackdown-sparked-a-backlash-that-could-undermine-republicans-campaigns",
+      "topic": "Politics",
+      "published": "2026-10-29T19:23:23+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Can EU and India work together to secure Indo-Pacific?",
+      "headline": "Israel election: Authorities dispute Netanyahu’s fraud claims",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/can-eu-and-india-work-together-to-secure-indo-pacific/a-79796195?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-29T13:26:00+00:00"
+      "url": "https://www.dw.com/en/israel-election-authorities-dispute-netanyahu-s-fraud-claims/a-79799574?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-29T17:32:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+      "headline": "Philippine police obtain warrant to search Thomas Markle's devices",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm0j06y3pn75o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-29T14:17:35+00:00"
+      "published": "2026-10-29T13:25:07+00:00"
     },
     {
       "n": 17,
-      "headline": "GDP report to give insight before Election Day. And, Israel's election is deadlocked",
+      "headline": "Even birds get jet lagged, study shows",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/g-s1-150614/up-first-newsletter-midterm-elections-gdp-inflation-israel-department-of-education-lawsuit",
-      "topic": "Politics",
-      "published": "2026-10-29T11:34:30+00:00"
+      "url": "https://www.npr.org/2026/10/29/nx-s1-6019228/manx-shearwater-jet-lag-birds",
+      "topic": "Science",
+      "published": "2026-10-29T18:00:00+00:00"
     }
   ]
 }
