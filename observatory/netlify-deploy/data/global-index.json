@@ -12,8 +12,8 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 8.8,
-      "trend": "rising",
+      "value": 8.6,
+      "trend": "falling",
       "drivers": [
         "GPU demand",
         "HBM memory shortage",
@@ -24,8 +24,8 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 4.2,
-      "trend": "falling",
+      "value": 4.3,
+      "trend": "rising",
       "drivers": [
         "GPU instance demand",
         "Data center expansion",
@@ -37,7 +37,7 @@
       "label": "AI Subscriptions",
       "weight": 0.1,
       "value": 12.8,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Inference cost",
         "Model competition",
@@ -60,7 +60,7 @@
     "consumer_electronics": {
       "label": "Consumer Electronics",
       "weight": 0.15,
-      "value": 6.4,
+      "value": 6.7,
       "trend": "rising",
       "drivers": [
         "Component allocation to AI",
@@ -73,7 +73,7 @@
       "label": "Enterprise Software",
       "weight": 0.1,
       "value": 6.4,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "AI feature premiums",
         "Copilot add-ons",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-10-28T11:43:40Z",
+  "last_updated": "2026-10-29T11:52:04Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
