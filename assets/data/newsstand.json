@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T14:46:02Z",
+  "generated_at": "2026-10-30T20:19:59Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,35 +8,35 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Pat McAfee Did NOT Say He Would Join ESPN's GameDay By Zoom Due To Security Concerns",
+      "claim": "FAKE FOCUS Online News Report About 'Eco Sanitation Act' Limiting Toilet Flushing In Germany By 2027 -- AI-Generated Audio",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-pat-mcafee-did-not-say-he-would-join-espns-gameday-by-zoom-due-to-security-concerns.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-focus-online-report-about-eco-sanitation-act-limiting-toilet-flushing-in-germany-by-2027.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Halloween: 7 rumors to get in the spooky spirit",
+      "claim": "Did Ian McKellen write heartfelt tribute to Patrick Stewart?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/halloween-rumors-collection/",
+      "url": "https://www.snopes.com/fact-check/patrick-stewart-ian-mckellen-tribute/",
       "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Data Centers and Electricity Prices: It’s Not as Simple as Voters May Think",
+      "claim": "Explaining the Case of the Two Dan Sullivans on Alaska’s Ballot",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/data-centers-and-electricity-prices-its-not-as-simple-as-voters-may-think/",
+      "url": "https://www.factcheck.org/2026/10/explaining-the-case-of-the-two-dan-sullivans-on-alaskas-ballot/",
       "topic": "Trending"
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: ICE Reveals Fresh Lineup Of Foreign Nationals Accused Of Voter Fraud",
+      "claim": "EXCLUSIVE: DOJ Reviewing Felony Charges Against James O’Keefe, Cam Higby Over Undercover Election Sting",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/29/ice-immigrants-accused-voter-fraud-dhs-election-investigations",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/10/30/james-okeefe-cam-higby-doj-felony-election-sting-unlawful-voting",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -56,43 +56,43 @@
     },
     {
       "n": 7,
-      "claim": "Airlines are not banning vaccinated people from flying",
+      "claim": "Baseless claim that Henry Kissinger gave a WHO speech about ‘mandatory forcible’ vaccinations recirculates",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/airlines-ban-vaccinated-people-flying-false-repeat/",
+      "url": "https://fullfact.org/health/henry-kissinger-WHO-speech-on-forcible-vaccinations-baseless/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "FAKE Video of Susan Dell Dancing Was AI-Generated",
+      "claim": "OMITS 'Lock On The Door' From James Talarico's 'Welcome Mat' Border Quote",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-of-susan-dell-dancing-was-ai-generated.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-posts-drop-second-half-of-james-talaricos-quote-about-welcome-mat.html",
+      "topic": "World"
     },
     {
       "n": 9,
-      "claim": "Does video show Trump saying he has a husband?",
+      "claim": "Are 'Texas Transgender Student Union' mailers from legitimate civil rights group? It's unlikely",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/video-trump-husband/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/10/21/texas-trans-mailers/",
+      "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Dispelling Unfounded Claims About Voting Machine Issues",
+      "claim": "NH Ad Distorts the Facts in Claiming Pappas Grew Rich in Office",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/dispelling-unfounded-claims-about-voting-machine-issues/",
+      "url": "https://www.factcheck.org/2026/10/nh-ad-distorts-the-facts-in-claiming-pappas-grew-rich-in-office/",
       "topic": "Trending"
     },
     {
       "n": 11,
-      "claim": "Millions Of Residents Exposed To Toxic Metals From LA Fires, Study Shows",
+      "claim": "EXCLUSIVE: ICE Reveals Fresh Lineup Of Foreign Nationals Accused Of Voter Fraud",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/29/millions-residents-exposed-toxic-metals-los-angeles-fires",
-      "topic": "Science"
+      "url": "https://dailycaller.com/2026/10/29/ice-immigrants-accused-voter-fraud-dhs-election-investigations",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -112,61 +112,61 @@
     },
     {
       "n": 14,
-      "claim": "Income tax and national debt both existed 100 years ago",
+      "claim": "Airlines are not banning vaccinated people from flying",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/income-tax-national-debt-100-years-ago/",
-      "topic": "Money"
+      "url": "https://fullfact.org/health/airlines-ban-vaccinated-people-flying-false-repeat/",
+      "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "Does NOT Show C-17 Globemaster's Real Emergency Landing",
+      "claim": "Benjamin Netanyahu Did NOT Threaten Spain with 'Sudden Power Outages And Train Accidents",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-c17-globemasters-real-emergency-landing.html",
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-netanyahu-did-not-threaten-spain-with-sudden-power-outages-and-train-accidents.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Did White House Halloween post include image of sombrero carved into pumpkin?",
+      "claim": "Halloween: 7 rumors to get in the spooky spirit",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/white-house-sombrero-pumpkin/",
+      "url": "https://www.snopes.com/collections/halloween-rumors-collection/",
       "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "Claims from Trump’s Midterm Rallies",
+      "claim": "Data Centers and Electricity Prices: It’s Not as Simple as Voters May Think",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/10/factchecking-claims-from-trumps-midterm-rallies/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/10/data-centers-and-electricity-prices-its-not-as-simple-as-voters-may-think/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
+      "headline": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-30T14:19:43+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-10-30T20:10:56+00:00"
     },
     {
       "n": 2,
-      "headline": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+      "headline": "ICE activity is surging ahead of midterms. So is voter turnout.",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6023331/ice-activity-surge-midterms",
       "topic": "Trending",
-      "published": "2026-10-30T13:01:22+00:00"
+      "published": "2026-10-30T17:45:27+00:00"
     },
     {
       "n": 3,
-      "headline": "Binance flags 'potential security issue,' says approximately $6.3 billion impacted",
+      "headline": "Canada is taking steps toward becoming European Union's first associate member",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/binance-flags-potential-security-issue-says-approximately-6-3-billion-impacted",
+      "url": "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member",
       "topic": "Trending",
-      "published": "2026-10-30T14:25:58+00:00"
+      "published": "2026-10-30T19:25:06+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Seoul fears being slighted as US reaches out to North Korea",
+      "headline": "Ukraine: Oleshky residents evacuate war-ravaged city",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/seoul-fears-being-slighted-as-us-reaches-out-to-north-korea/a-79808098?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-30T14:08:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-oleshky-residents-evacuate-war-ravaged-city/a-79812327?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-10-30T20:09:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
+      "headline": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-30T12:25:53+00:00"
+      "published": "2026-10-30T17:07:19+00:00"
     },
     {
       "n": 7,
-      "headline": "Why is the Cheesecake Factory at the center of the latest culture war?",
+      "headline": "NPR special: 5 takeaways from a year of listening to swing voters",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/30/nx-s1-6023106/cheesecake-factory-culture-war-affordability-trump-obama",
-      "topic": "World",
-      "published": "2026-10-30T12:00:31+00:00"
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6008113/npr-special-swing-voter-focus-groups",
+      "topic": "Trending",
+      "published": "2026-10-30T15:00:00+00:00"
     },
     {
       "n": 8,
-      "headline": "Peltola denies knowing about Alaska spoiler candidate as Justice Department escalates investigation",
+      "headline": "2 Trump attempts to change the D.C. landscape play out in the courts as midterms near",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/peltola-denies-knowing-about-alaska-spoiler-candidate-as-justice-department-escalates-investigation",
-      "topic": "Trending",
-      "published": "2026-10-30T13:45:06+00:00"
+      "url": "https://www.pbs.org/newshour/politics/2-trump-attempts-to-change-the-d-c-landscape-play-out-in-the-courts-as-midterms-near",
+      "topic": "Politics",
+      "published": "2026-10-30T18:34:47+00:00"
     },
     {
       "n": 9,
@@ -218,30 +218,38 @@
     },
     {
       "n": 10,
-      "headline": "Bollywood and the underworld — together in the spotlight?",
+      "headline": "Smuggling, power, profit: Irregular migration out of eastern Libya",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/bollywood-and-the-underworld-together-in-the-spotlight/a-79806129?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/smuggling-power-profit-irregular-migration-out-of-eastern-libya/a-79808822?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-30T14:00:00+00:00"
+      "published": "2026-10-30T18:06:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Prominent Russian newspaper shuts down under pressure from authorities",
+      "headline": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-30T11:23:06+00:00"
+      "published": "2026-10-30T16:26:11+00:00"
     },
     {
       "n": 12,
-      "headline": "Aid operation and evacuations in Oleshky amid brief truce agreed to by Russia and Ukraine",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/aid-operation-and-evacuations-in-oleshky-amid-brief-truce-agreed-to-by-russia-and-ukraine",
-      "topic": "World",
-      "published": "2026-10-30T13:31:02+00:00"
+      "headline": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+      "topic": "Trending",
+      "published": "2026-10-30T13:01:22+00:00"
     },
     {
       "n": 13,
+      "headline": "WATCH: Rubio welcomes G20 foreign ministers to Atlanta at 'critical moment",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/watch-rubio-welcomes-g20-foreign-ministers-to-atlanta-at-critical-moment",
+      "topic": "Trending",
+      "published": "2026-10-30T18:10:01+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/28/egypt-lina-attalah-mada-masr-press-freedom-clampdown",
@@ -249,36 +257,28 @@
       "published": "2026-10-28T14:16:24+00:00"
     },
     {
-      "n": 14,
-      "headline": "Bayern Munich's Kenya friendly highlights Africa's growing pull for global sport",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/bayern-munich-s-kenya-friendly-highlights-africa-s-growing-pull-for-global-sport/a-79796753?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-30T13:19:00+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Spain transport minister says he won't resign over high-speed rail disaster",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-30T13:03:34+00:00"
+      "headline": "Tennessee woman Christa Pike describes pain after failed execution",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/tennessee-woman-christa-pike-describes-pain-after-failed-execution/a-79810735?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-30T16:51:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/30/g-s1-150889/up-first-newsletter-midterm-elections-iran-war-veteran-affairs-loans",
-      "topic": "Politics",
-      "published": "2026-10-30T11:20:26+00:00"
+      "headline": "Prominent Russian newspaper shuts down under pressure from authorities",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-30T11:23:06+00:00"
     },
     {
       "n": 17,
-      "headline": "Netanyahu's party claims Israeli election 'stolen' as results show him losing majority",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/netanyahus-party-claims-israeli-election-stolen-as-results-show-him-losing-majority",
-      "topic": "Politics",
-      "published": "2026-10-30T00:44:24+00:00"
+      "headline": "Why is the Cheesecake Factory at the center of the latest culture war?",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6023106/cheesecake-factory-culture-war-affordability-trump-obama",
+      "topic": "World",
+      "published": "2026-10-30T12:00:31+00:00"
     }
   ]
 }
