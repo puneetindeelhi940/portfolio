@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T04:05:24Z",
+  "generated_at": "2026-10-30T14:46:02Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did White House Halloween post include image of sombrero carved into pumpkin?",
+      "claim": "Halloween: 7 rumors to get in the spooky spirit",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/white-house-sombrero-pumpkin/",
+      "url": "https://www.snopes.com/collections/halloween-rumors-collection/",
       "topic": "Trending"
     },
     {
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "shows street vendors in Spain, not people selling items looted in France",
+      "claim": "Airlines are not banning vaccinated people from flying",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/world/video-street-vendors-spain-not-items-looted-france/",
+      "url": "https://fullfact.org/health/airlines-ban-vaccinated-people-flying-false-repeat/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Is Pentagon investing $41M in 'ketamine wafers' from Singaporean pharmaceutical company?",
+      "claim": "Does video show Trump saying he has a husband?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/pentagon-ketamine-wafers/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/video-trump-husband/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -112,11 +112,11 @@
     },
     {
       "n": 14,
-      "claim": "AI mushroom cloud video shared with false claims it shows Ukraine",
+      "claim": "Income tax and national debt both existed 100 years ago",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/conflict/ai-video-ukrainian-fighter-jets-destroyed/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/economy/income-tax-national-debt-100-years-ago/",
+      "topic": "Money"
     },
     {
       "n": 15,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Why voters receiving multiple ballots doesn't mean multiple votes",
+      "claim": "Did White House Halloween post include image of sombrero carved into pumpkin?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/29/multiple-ballots-votes-elections/",
+      "url": "https://www.snopes.com/fact-check/white-house-sombrero-pumpkin/",
       "topic": "Trending"
     },
     {
@@ -146,30 +146,102 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+      "headline": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-10-29T20:21:54+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-30T14:19:43+00:00"
     },
     {
       "n": 2,
-      "headline": "Justice Department issues subpoenas to California election workers",
+      "headline": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6022560/doj-subpoenas-california-election",
-      "topic": "Politics",
-      "published": "2026-10-30T01:35:54+00:00"
+      "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+      "topic": "Trending",
+      "published": "2026-10-30T13:01:22+00:00"
     },
     {
       "n": 3,
-      "headline": "Netanyahu's party claims Israeli election 'stolen' as results show him losing majority",
+      "headline": "Binance flags 'potential security issue,' says approximately $6.3 billion impacted",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/netanyahus-party-claims-israeli-election-stolen-as-results-show-him-losing-majority",
-      "topic": "Politics",
-      "published": "2026-10-30T00:44:24+00:00"
+      "url": "https://www.pbs.org/newshour/economy/binance-flags-potential-security-issue-says-approximately-6-3-billion-impacted",
+      "topic": "Trending",
+      "published": "2026-10-30T14:25:58+00:00"
     },
     {
       "n": 4,
+      "headline": "Sinkholes, scarred land and scapegoats: the scourge of illegal gold mining in Johannesburg",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/business/2026/oct/30/sinkholes-scarred-land-scapegoats-illegal-gold-mining-johannesburg",
+      "topic": "Trending",
+      "published": "2026-10-30T05:00:45+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Seoul fears being slighted as US reaches out to North Korea",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/seoul-fears-being-slighted-as-us-reaches-out-to-north-korea/a-79808098?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-30T14:08:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-30T12:25:53+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Why is the Cheesecake Factory at the center of the latest culture war?",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6023106/cheesecake-factory-culture-war-affordability-trump-obama",
+      "topic": "World",
+      "published": "2026-10-30T12:00:31+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Peltola denies knowing about Alaska spoiler candidate as Justice Department escalates investigation",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/peltola-denies-knowing-about-alaska-spoiler-candidate-as-justice-department-escalates-investigation",
+      "topic": "Trending",
+      "published": "2026-10-30T13:45:06+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Sudanese diaspora and human rights groups denounce UAE nominee for UN top job",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/oct/30/sudanese-diaspora-human-rights-groups-denounce-uae-nominee-un-top-job",
+      "topic": "World",
+      "published": "2026-10-30T05:00:45+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "Bollywood and the underworld — together in the spotlight?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/bollywood-and-the-underworld-together-in-the-spotlight/a-79806129?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-30T14:00:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "Prominent Russian newspaper shuts down under pressure from authorities",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-30T11:23:06+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "Aid operation and evacuations in Oleshky amid brief truce agreed to by Russia and Ukraine",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/aid-operation-and-evacuations-in-oleshky-amid-brief-truce-agreed-to-by-russia-and-ukraine",
+      "topic": "World",
+      "published": "2026-10-30T13:31:02+00:00"
+    },
+    {
+      "n": 13,
       "headline": "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/oct/28/egypt-lina-attalah-mada-masr-press-freedom-clampdown",
@@ -177,108 +249,36 @@
       "published": "2026-10-28T14:16:24+00:00"
     },
     {
-      "n": 5,
-      "headline": "Venezuela: Opposition leader Maria Corina Machado says US backs 2027 election",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/venezuela-opposition-leader-maria-corina-machado-says-us-backs-2027-election/a-79803426?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-30T03:08:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Audio reveals exchanges between Spain train operators and drivers moments before deadly crash",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmqxnl312v34o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-29T11:07:35+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Alaska's all-important Senate race is roiled by a report on alleged spoiler candidate",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-6022069/alaskas-all-important-senate-race-is-roiled-by-report-on-alleged-spoiler-candidate",
-      "topic": "Politics",
-      "published": "2026-10-29T22:23:38+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "WATCH: Trumps host Halloween celebration at the White House",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-trumps-host-halloween-celebration-at-the-white-house",
-      "topic": "Trending",
-      "published": "2026-10-29T23:53:45+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Africa’s ‘unprecedented’ Ebola outbreak could reach UK, says top health official",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
-      "topic": "Health",
-      "published": "2026-10-28T09:37:49+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "Bayer wins Roundup cancer trial after Supreme Court ruling",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/bayer-wins-roundup-cancer-trial-after-supreme-court-ruling/a-79803301?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-10-30T02:40:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "The city is alive': A brief peace in Kherson, but residents fear what comes next",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-29T20:05:57+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Patrick Stewart, a perceptive patriarch in 'Star Trek' and 'X-Men,' dies at 86",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/1230906945/patrick-stewart-dead",
-      "topic": "Celebrity",
-      "published": "2026-10-29T20:29:13+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "WATCH: Trump calls reporter 'disgusting' when questioned about not traveling to Kansas",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-trump-calls-reporter-disgusting-when-questioned-about-not-traveling-to-kansas",
-      "topic": "Politics",
-      "published": "2026-10-29T23:49:01+00:00"
-    },
-    {
       "n": 14,
-      "headline": "UK sanctions Sudanese military leaders implicated in El Fasher ‘campaign of rape’",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/global-development/2026/oct/26/uk-sanctions-sudanese-military-leaders-implicated-in-el-fasher-campaign-of",
+      "headline": "Bayern Munich's Kenya friendly highlights Africa's growing pull for global sport",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/bayern-munich-s-kenya-friendly-highlights-africa-s-growing-pull-for-global-sport/a-79796753?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-26T15:07:23+00:00"
+      "published": "2026-10-30T13:19:00+00:00"
     },
     {
       "n": 15,
-      "headline": "Binance crypto platform suspends trades amid suspected hack",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/binance-crypto-platform-suspends-trades-amid-suspected-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-10-30T00:55:00+00:00"
+      "headline": "Spain transport minister says he won't resign over high-speed rail disaster",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-10-30T13:03:34+00:00"
     },
     {
       "n": 16,
-      "headline": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-29T14:17:35+00:00"
+      "headline": "Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/10/30/g-s1-150889/up-first-newsletter-midterm-elections-iran-war-veteran-affairs-loans",
+      "topic": "Politics",
+      "published": "2026-10-30T11:20:26+00:00"
     },
     {
       "n": 17,
-      "headline": "Some rural Republicans in California say redistricting has left them without a voice",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/10/29/nx-s1-5902139/some-rural-republicans-in-california-say-redistricting-has-left-them-without-a-voice",
-      "topic": "Trending",
-      "published": "2026-10-29T20:19:31+00:00"
+      "headline": "Netanyahu's party claims Israeli election 'stolen' as results show him losing majority",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/netanyahus-party-claims-israeli-election-stolen-as-results-show-him-losing-majority",
+      "topic": "Politics",
+      "published": "2026-10-30T00:44:24+00:00"
     }
   ]
 }
