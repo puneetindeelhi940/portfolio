@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T14:14:47Z",
+  "generated_at": "2026-10-31T19:40:23Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Gadi Eisenkot Was NOT Declared New Israel PM, As Of October 30, 2026 -- Country Still Deadlocked",
+      "claim": "Trump Did NOT Walk 'Old Woman' Home After Iowa Rally -- Image Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-gadi-eisenkot-was-not-declared-new-israel-pm-as-of-oct-30-2026.html",
-      "topic": "World"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-trump-did-not-walk-elderly-woman-home-after-iowa-rally-oct-22-2026.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Were 3 Democratic women running for Congress in car crashes ahead of the midterms?",
+      "claim": "Texas showdown: 12 claims involving Talarico and Paxton, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/democrat-women-congress-car-crashes/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/talarico-paxton-fact-checks/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "FAKE FOCUS Online News Report About 'Eco Sanitation Act' Limiting Toilet Flushing In Germany By 2027 -- AI-Generated Audio",
+      "claim": "Gadi Eisenkot Was NOT Declared New Israel PM, As Of October 30, 2026 -- Country Still Deadlocked",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-focus-online-report-about-eco-sanitation-act-limiting-toilet-flushing-in-germany-by-2027.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-gadi-eisenkot-was-not-declared-new-israel-pm-as-of-oct-30-2026.html",
+      "topic": "World"
     },
     {
       "n": 9,
-      "claim": "Katie Couric wrote open letter criticizing Trump, but edited version is circulating",
-      "verdict": "MISLEADING",
+      "claim": "Were 3 Democratic women running for Congress in car crashes ahead of the midterms?",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/katie-couric-open-letter-trump/",
+      "url": "https://www.snopes.com/fact-check/democrat-women-congress-car-crashes/",
       "topic": "Politics"
     },
     {
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "OMITS 'Lock On The Door' From James Talarico's 'Welcome Mat' Border Quote",
+      "claim": "FAKE FOCUS Online News Report About 'Eco Sanitation Act' Limiting Toilet Flushing In Germany By 2027 -- AI-Generated Audio",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-posts-drop-second-half-of-james-talaricos-quote-about-welcome-mat.html",
-      "topic": "World"
+      "url": "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-focus-online-report-about-eco-sanitation-act-limiting-toilet-flushing-in-germany-by-2027.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "What is ballot-stacking and is it illegal? Alaska Senate race controversy, explained",
-      "verdict": "FALSE",
+      "claim": "Katie Couric wrote open letter criticizing Trump, but edited version is circulating",
+      "verdict": "MISLEADING",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/10/30/ballot-stacking-alaska-senate-race/",
+      "url": "https://www.snopes.com/fact-check/katie-couric-open-letter-trump/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
+      "headline": "We came back from hell', say Ukrainians after years in Russia-occupied frontline city",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-10-31T13:45:34+00:00"
+      "published": "2026-10-31T19:22:26+00:00"
     },
     {
       "n": 2,
-      "headline": "Justice Department seeks to isolate Alaska ballots amid criminal probe over Senate candidate",
+      "headline": "France seethes again as youth-led protests sweep Europe",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate",
-      "topic": "Politics",
-      "published": "2026-10-31T13:50:58+00:00"
+      "url": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
+      "topic": "Trending",
+      "published": "2026-10-31T19:30:19+00:00"
     },
     {
       "n": 3,
-      "headline": "For many, striped bass fishing is a way of life. But the iconic species could face collapse",
+      "headline": "Virginia and D.C. sue over Trump's arch, adding to legal challenges as government wants work to begin",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/for-many-striped-bass-fishing-is-a-way-of-life-but-the-iconic-species-could-face-collapse",
-      "topic": "Trending",
-      "published": "2026-10-31T00:01:16+00:00"
+      "url": "https://www.pbs.org/newshour/politics/virginia-and-d-c-sue-over-trumps-arch-adding-to-legal-challenges-as-government-wants-work-to-begin",
+      "topic": "Politics",
+      "published": "2026-10-31T18:29:25+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Germany news: Merkel calls for first female president",
+      "headline": "More than 290 arrested in France as some weekend protests turn violent",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-merkel-calls-for-first-female-president/live-79814961?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-31T11:18:00+00:00"
+      "url": "https://www.dw.com/en/more-than-290-arrested-in-france-as-some-weekend-protests-turn-violent/a-79818138?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-31T18:49:00+00:00"
     },
     {
       "n": 6,
-      "headline": "US approves sale of 500 Patriot missiles to Ukraine",
+      "headline": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-31T12:21:25+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-31T17:53:35+00:00"
     },
     {
       "n": 7,
-      "headline": "Perspective: Forget the ballroom, we're headed to Cheesecake Factory!",
+      "headline": "Anti-corruption and party discipline: takeaways from from this week's key political meeting in Beijing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6015466/perspective-forget-the-ballroom-were-headed-to-cheesecake-factory",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
       "topic": "Trending",
-      "published": "2026-10-31T12:00:00+00:00"
+      "published": "2026-10-31T18:42:33+00:00"
     },
     {
       "n": 8,
-      "headline": "Judge orders 3 taxpayer-funded Trump administration ads to be pulled from TV, social media",
+      "headline": "A third weekend of protests in France as youth-led rallies sweep Europe",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/judge-orders-3-taxpayer-funded-trump-administration-ads-to-be-pulled-from-tv-social-media",
-      "topic": "Politics",
-      "published": "2026-10-30T22:57:18+00:00"
+      "url": "https://www.pbs.org/newshour/world/a-third-weekend-of-protests-in-france-as-youth-led-rallies-sweep-europe",
+      "topic": "Trending",
+      "published": "2026-10-31T17:14:30+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Massive Gen Z protests set to sweep cities across Germany",
+      "headline": "Gen Z protests sweep cities across Germany",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/massive-gen-z-protests-set-to-sweep-cities-across-germany/live-79814694?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/gen-z-protests-sweep-cities-across-germany/live-79814694?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-31T09:47:00+00:00"
+      "published": "2026-10-31T16:00:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+      "headline": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-31T02:12:19+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-10-31T16:32:08+00:00"
     },
     {
       "n": 12,
-      "headline": "Drone photo award winners: Far-out landscapes. Ship recycling. Rugs, rugs rugs!",
+      "headline": "A simple explainer of the massive $6.3 billion crypto heist at Binance",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/g-s1-150698/drone-photo-award-winners",
-      "topic": "Trending",
-      "published": "2026-10-31T11:56:10+00:00"
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea",
+      "topic": "Money",
+      "published": "2026-10-31T18:11:02+00:00"
     },
     {
       "n": 13,
-      "headline": "Candidates make final midterm stops as early voting surges",
+      "headline": "When will we know 2026 midterm election results? It may take some time, but that's normal",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/candidates-make-final-midterm-stops-as-early-voting-surges",
-      "topic": "Trending",
-      "published": "2026-10-30T22:55:00+00:00"
+      "url": "https://www.pbs.org/newshour/politics/when-will-we-know-2026-midterm-election-results-it-may-take-some-time-but-thats-normal",
+      "topic": "Politics",
+      "published": "2026-10-31T17:02:17+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Bollywood and the underworld — together in the spotlight?",
+      "headline": "Ukraine news: Evacuees from Russian-occupied Oleshky reach Kyiv-controlled territory",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/bollywood-and-the-underworld-together-in-the-spotlight/a-79806129?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-news-evacuees-from-russian-occupied-oleshky-reach-kyiv-controlled-territory/live-79815409?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-31T07:26:00+00:00"
+      "published": "2026-10-31T15:47:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Police deployed during stand-off over control of top Poland court",
+      "headline": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-10-31T01:11:43+00:00"
+      "published": "2026-10-31T15:16:20+00:00"
     },
     {
       "n": 17,
-      "headline": "Do you have seasonal affective disorder? How to tell — and what to do about it",
+      "headline": "Justice Department seeks to isolate Alaska ballots amid criminal probe over Senate candidate",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6023200/do-you-have-seasonal-affective-disorder-how-to-tell-and-what-to-do-about-it",
-      "topic": "Trending",
-      "published": "2026-10-31T09:01:00+00:00"
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate",
+      "topic": "Politics",
+      "published": "2026-10-31T13:50:58+00:00"
     }
   ]
 }
