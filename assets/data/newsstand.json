@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T03:49:36Z",
+  "generated_at": "2026-10-31T14:14:47Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Delhi Police deletes firecracker awareness video within hours of posting on X",
+      "claim": "Media misreport: Akhilesh Yadav put on a red turban at Lucknow press meet, not saffron",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/delhi-police-deletes-firecracker-awareness-video-within-hours-of-posting-on-x/",
+      "url": "https://www.altnews.in/media-misreport-ani-ndtv-times-now-navbharat-falsely-claim-akhilesh-yadav-wears-saffron-turban/",
       "topic": "Trending"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "posted by Piyush Goyal of crowd at Air Force event in Varanasi is not old",
+      "claim": "Delhi Police deletes firecracker awareness video within hours of posting on X",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/no-image-posted-by-piyush-goyal-of-crowd-at-air-force-event-in-varanasi-is-not-old/",
+      "url": "https://www.altnews.in/delhi-police-deletes-firecracker-awareness-video-within-hours-of-posting-on-x/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US approves sale of 500 Patriot missiles to Ukraine",
+      "headline": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-31T00:40:43+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-31T13:45:34+00:00"
     },
     {
       "n": 2,
-      "headline": "Despite concerns, the Trump administration still sends pregnant migrant minors to south Texas",
+      "headline": "Justice Department seeks to isolate Alaska ballots amid criminal probe over Senate candidate",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/30/nx-s1-6022578/minors-pregnant-migrant-texas-trump",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate",
       "topic": "Politics",
-      "published": "2026-10-30T22:06:18+00:00"
+      "published": "2026-10-31T13:50:58+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "European diplomats shun Russia at G20 gathering in the US",
+      "headline": "Germany news: Merkel calls for first female president",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/european-diplomats-shun-russia-at-g20-gathering-in-the-us/a-79813925?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-10-31T01:56:00+00:00"
+      "url": "https://www.dw.com/en/germany-news-merkel-calls-for-first-female-president/live-79814961?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-10-31T11:18:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "headline": "US approves sale of 500 Patriot missiles to Ukraine",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-10-30T21:13:14+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-10-31T12:21:25+00:00"
     },
     {
       "n": 7,
-      "headline": "Judge orders an inquiry into potential DOJ misconduct in Trump's golf course case",
+      "headline": "Perspective: Forget the ballroom, we're headed to Cheesecake Factory!",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/30/nx-s1-6023328/east-potomac-reyes-misconduct-inquiry-doj",
-      "topic": "Politics",
-      "published": "2026-10-30T21:56:52+00:00"
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6015466/perspective-forget-the-ballroom-were-headed-to-cheesecake-factory",
+      "topic": "Trending",
+      "published": "2026-10-31T12:00:00+00:00"
     },
     {
       "n": 8,
@@ -218,11 +218,11 @@
     },
     {
       "n": 10,
-      "headline": "Poland: Protesters clash with police over sacked court chief",
+      "headline": "Massive Gen Z protests set to sweep cities across Germany",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/poland-protesters-clash-with-police-over-sacked-court-chief/a-79813882?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/massive-gen-z-protests-set-to-sweep-cities-across-germany/live-79814694?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-30T23:22:00+00:00"
+      "published": "2026-10-31T09:47:00+00:00"
     },
     {
       "n": 11,
@@ -234,11 +234,11 @@
     },
     {
       "n": 12,
-      "headline": "ICE activity is surging ahead of midterms. So is voter turnout.",
+      "headline": "Drone photo award winners: Far-out landscapes. Ship recycling. Rugs, rugs rugs!",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/30/nx-s1-6023331/ice-activity-surge-midterms",
+      "url": "https://www.npr.org/2026/10/31/g-s1-150698/drone-photo-award-winners",
       "topic": "Trending",
-      "published": "2026-10-30T17:45:27+00:00"
+      "published": "2026-10-31T11:56:10+00:00"
     },
     {
       "n": 13,
@@ -258,11 +258,11 @@
     },
     {
       "n": 15,
-      "headline": "Canadian PM Mark Carney discusses talks with the EU, overdependence on the US and how to deal with Donald Trump in a DW interview.",
+      "headline": "Bollywood and the underworld — together in the spotlight?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/canadian-pm-mark-carney-discusses-talks-with-the-eu-overdependence-on-the-us-and-how-to-deal-with-donald-trump-in-a-dw-interview/a-79811469?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-10-30T20:55:00+00:00"
+      "url": "https://www.dw.com/en/bollywood-and-the-underworld-together-in-the-spotlight/a-79806129?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-10-31T07:26:00+00:00"
     },
     {
       "n": 16,
@@ -274,11 +274,11 @@
     },
     {
       "n": 17,
-      "headline": "NPR special: 5 takeaways from a year of listening to swing voters",
+      "headline": "Do you have seasonal affective disorder? How to tell — and what to do about it",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/30/nx-s1-6008113/npr-special-swing-voter-focus-groups",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6023200/do-you-have-seasonal-affective-disorder-how-to-tell-and-what-to-do-about-it",
       "topic": "Trending",
-      "published": "2026-10-30T15:00:00+00:00"
+      "published": "2026-10-31T09:01:00+00:00"
     }
   ]
 }
