@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T14:40:52Z",
+  "generated_at": "2026-11-01T20:05:56Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Patrick Stewart say Trump put America on edge of 'very bad flu infection'?",
+      "claim": "Press play on these Nicki Minaj rumors we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/patrick-stewart-trump-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/nicki-minaj-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Texas showdown: 12 claims involving Talarico and Paxton, fact-checked",
+      "claim": "Did Patrick Stewart say Trump put America on edge of 'very bad flu infection'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/talarico-paxton-fact-checks/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/patrick-stewart-trump-quote/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Could Massachusetts Voters Sink New Gun Control Bill?",
+      "claim": "Democrat Senator Chris Murphy Hospitalized After Suffering A Stroke",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/01/massachusetts-voters-referendum-gun-control-restrictions-bill",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/01/democrat-senator-chris-murphy-hospitalized-stroke-connecticut",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Were 3 Democratic women running for Congress in car crashes ahead of the midterms?",
+      "claim": "Texas showdown: 12 claims involving Talarico and Paxton, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/democrat-women-congress-car-crashes/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/talarico-paxton-fact-checks/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Shops looted as German cost-of-living protests turn violent",
+      "headline": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire to end within hours",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-01T11:57:48+00:00"
+      "published": "2026-11-01T19:48:17+00:00"
     },
     {
       "n": 2,
-      "headline": "Living with high prices in Virginia's 1st Congressional District",
+      "headline": "Haley Stevens endorses GOP candidate in Michigan Senate race, spurning Abdul El-Sayed",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-5945628/living-with-high-prices-in-virginias-1st-congressional-district",
-      "topic": "Trending",
-      "published": "2026-11-01T13:00:00+00:00"
+      "url": "https://www.npr.org/2026/11/01/nx-s1-6020993/michigan-senate-race-abdul-el-sayed-haley-stevens-mike-rogers",
+      "topic": "Politics",
+      "published": "2026-11-01T19:49:15+00:00"
     },
     {
       "n": 3,
-      "headline": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible",
+      "headline": "Israeli officials say elections won't be undermined, and suspects in bribery case are freed",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
-      "topic": "Politics",
-      "published": "2026-10-31T23:22:29+00:00"
+      "url": "https://www.pbs.org/newshour/world/israeli-officials-say-elections-wont-be-undermined-and-suspects-in-bribery-case-are-freed",
+      "topic": "Trending",
+      "published": "2026-11-01T19:57:09+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Ukraine: Russian attacks leave tens of thousands without power",
+      "headline": "Serbia: Police chief arrested after election for abuse of office",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-russian-attacks-leave-tens-of-thousands-without-power/live-79815409?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-01T14:13:00+00:00"
+      "url": "https://www.dw.com/en/serbia-police-chief-arrested-after-election-for-abuse-of-office/a-79823382?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-01T17:16:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Judge dismisses Trump's lawsuit against Wall Street Journal over Epstein birthday book",
+      "headline": "Israeli strikes in Gaza kill eight including child, hospitals say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwr5yj2lj9myo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-01T00:41:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-01T17:06:32+00:00"
     },
     {
       "n": 7,
-      "headline": "It's ACA open enrollment time. Here are the changes for health insurance shoppers",
+      "headline": "Connecticut Senator Chris Murphy is hospitalized with a stroke",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-6023423/aca-open-enrollment-health-insurance",
-      "topic": "Health",
-      "published": "2026-11-01T12:00:00+00:00"
+      "url": "https://www.npr.org/2026/11/01/nx-s1-6025467/chris-murphy-stroke",
+      "topic": "Trending",
+      "published": "2026-11-01T19:00:58+00:00"
     },
     {
       "n": 8,
-      "headline": "Paxton and Talarico tussle for Texas Senate seat as Trump campaigns virtually",
+      "headline": "WATCH LIVE: Trump rallies in Iowa as part of final push before Election Day",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/paxton-and-talarico-tussle-for-texas-senate-seat-as-trump-campaigns-virtually",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-rallies-in-iowa-as-part-of-final-push-before-election-day",
       "topic": "Politics",
-      "published": "2026-10-31T23:14:59+00:00"
+      "published": "2026-11-01T19:12:43+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Ethnic Germans in Kazakhstan face legacy of the Soviet Union",
+      "headline": "France opens attempted murder probe after protest attack",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ethnic-germans-in-kazakhstan-face-legacy-of-the-soviet-union/a-79754048?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/france-opens-attempted-murder-probe-after-protest-attack/a-79822853?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-01T13:00:00+00:00"
+      "published": "2026-11-01T14:50:00+00:00"
     },
     {
       "n": 11,
-      "headline": "India's opposition holds mega rally seeking election chief's resignation",
+      "headline": "University of Cambridge scientist among those who died in Spanish train crash",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-01T07:00:55+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&at_campaign=rss",
+      "topic": "Celebrity",
+      "published": "2026-11-01T17:05:18+00:00"
     },
     {
       "n": 12,
-      "headline": "How Gen Z Republicans running for Congress are thinking about the future of the party",
+      "headline": "How to think about the midterms — and the political moment the country is in",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-5946869/midterm-elections-gen-z-republicans",
-      "topic": "Politics",
-      "published": "2026-11-01T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/11/01/g-s1-151146/how-to-think-about-the-midterms-and-the-political-moment-the-country-is-in",
+      "topic": "Trending",
+      "published": "2026-11-01T18:27:06+00:00"
     },
     {
       "n": 13,
-      "headline": "Judge dismisses Trump suit against Wall Street Journal over Epstein birthday letter",
+      "headline": "Canadian Prime Minister Carney reports progress in trade talks with Trump days before U.S. midterms",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/judge-dismisses-trump-suit-against-wall-street-journal-over-epstein-birthday-letter",
+      "url": "https://www.pbs.org/newshour/world/canadian-prime-minister-carney-reports-progress-in-trade-talks-with-trump-days-before-u-s-midterms",
       "topic": "Politics",
-      "published": "2026-10-31T22:32:54+00:00"
+      "published": "2026-11-01T18:00:43+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany news: Gen Z group calls for new protests",
+      "headline": "Ukraine: Russian attacks leave tens of thousands without power",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-gen-z-group-calls-for-new-protests/live-79814961?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-russian-attacks-leave-tens-of-thousands-without-power/live-79815409?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-01T12:26:00+00:00"
+      "published": "2026-11-01T14:13:00+00:00"
     },
     {
       "n": 16,
-      "headline": "We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+      "headline": "Shops looted as German cost-of-living protests turn violent",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-31T19:22:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-01T11:57:48+00:00"
     },
     {
       "n": 17,
-      "headline": "Here's how to watch election night as the polls close, hour-by-hour",
+      "headline": "Judge tosses Trump's attempt to block Alaska Senate results if GOP incumbent loses",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/g-s1-149978/midterms-election-night",
+      "url": "https://www.npr.org/2026/11/01/nx-s1-6023766/doj-alaska-lawsuit-senate-race-dan-sullivan",
       "topic": "Politics",
-      "published": "2026-11-01T09:00:00+00:00"
+      "published": "2026-11-01T18:00:37+00:00"
     }
   ]
 }
