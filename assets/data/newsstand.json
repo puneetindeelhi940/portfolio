@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T19:40:23Z",
+  "generated_at": "2026-11-01T03:58:50Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Texas showdown: 12 claims involving Talarico and Paxton, fact-checked",
+      "claim": "Did Patrick Stewart say Trump put America on edge of 'very bad flu infection'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/talarico-paxton-fact-checks/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/patrick-stewart-trump-quote/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Were 3 Democratic women running for Congress in car crashes ahead of the midterms?",
+      "claim": "Texas showdown: 12 claims involving Talarico and Paxton, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/democrat-women-congress-car-crashes/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/talarico-paxton-fact-checks/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Katie Couric wrote open letter criticizing Trump, but edited version is circulating",
-      "verdict": "MISLEADING",
+      "claim": "Were 3 Democratic women running for Congress in car crashes ahead of the midterms?",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/katie-couric-open-letter-trump/",
+      "url": "https://www.snopes.com/fact-check/democrat-women-congress-car-crashes/",
       "topic": "Politics"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "We came back from hell', say Ukrainians after years in Russia-occupied frontline city",
+      "headline": "Shops looted as German cost of living protests turn violent",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-31T19:22:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-01T01:59:57+00:00"
     },
     {
       "n": 2,
-      "headline": "France seethes again as youth-led protests sweep Europe",
+      "headline": "Virginia and D.C. sue to block construction of Trump arch",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
-      "topic": "Trending",
-      "published": "2026-10-31T19:30:19+00:00"
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024694/virginia-dc-sue-trump-arch",
+      "topic": "Politics",
+      "published": "2026-10-31T22:48:51+00:00"
     },
     {
       "n": 3,
-      "headline": "Virginia and D.C. sue over Trump's arch, adding to legal challenges as government wants work to begin",
+      "headline": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/virginia-and-d-c-sue-over-trumps-arch-adding-to-legal-challenges-as-government-wants-work-to-begin",
+      "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
       "topic": "Politics",
-      "published": "2026-10-31T18:29:25+00:00"
+      "published": "2026-10-31T22:22:29+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "More than 290 arrested in France as some weekend protests turn violent",
+      "headline": "Trump grants visa for mother of Ghanaian boy killed in NYC — Mamdani",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/more-than-290-arrested-in-france-as-some-weekend-protests-turn-violent/a-79818138?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-31T18:49:00+00:00"
+      "url": "https://www.dw.com/en/trump-grants-visa-for-mother-of-ghanaian-boy-killed-in-nyc-mamdani/a-79820019?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-01T03:12:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
+      "headline": "We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-10-31T17:53:35+00:00"
+      "published": "2026-10-31T19:22:26+00:00"
     },
     {
       "n": 7,
-      "headline": "Anti-corruption and party discipline: takeaways from from this week's key political meeting in Beijing",
+      "headline": "Mixed economic forecast weighs heavy ahead of midterms",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6022285/mixed-economic-forecast-weighs-heavy-ahead-of-midterms",
       "topic": "Trending",
-      "published": "2026-10-31T18:42:33+00:00"
+      "published": "2026-10-31T21:14:35+00:00"
     },
     {
       "n": 8,
-      "headline": "A third weekend of protests in France as youth-led rallies sweep Europe",
+      "headline": "Paxton and Talarico tussle for Texas Senate seat as Trump campaigns virtually",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/a-third-weekend-of-protests-in-france-as-youth-led-rallies-sweep-europe",
-      "topic": "Trending",
-      "published": "2026-10-31T17:14:30+00:00"
+      "url": "https://www.pbs.org/newshour/politics/paxton-and-talarico-tussle-for-texas-senate-seat-as-trump-campaigns-virtually",
+      "topic": "Politics",
+      "published": "2026-10-31T22:14:59+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Gen Z protests sweep cities across Germany",
+      "headline": "FBI says North Korea behind $6 billion Binance crypto theft",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/gen-z-protests-sweep-cities-across-germany/live-79814694?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-10-31T16:00:00+00:00"
+      "url": "https://www.dw.com/en/fbi-says-north-korea-behind-6-billion-binance-crypto-theft/a-79819998?maca=en-rss-en-all-1573-rdf",
+      "topic": "Money",
+      "published": "2026-11-01T01:53:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "headline": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-10-31T16:32:08+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-31T17:53:35+00:00"
     },
     {
       "n": 12,
-      "headline": "A simple explainer of the massive $6.3 billion crypto heist at Binance",
+      "headline": "France seethes again as youth-led protests sweep Europe",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea",
-      "topic": "Money",
-      "published": "2026-10-31T18:11:02+00:00"
+      "url": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
+      "topic": "Trending",
+      "published": "2026-10-31T19:30:19+00:00"
     },
     {
       "n": 13,
-      "headline": "When will we know 2026 midterm election results? It may take some time, but that's normal",
+      "headline": "Judge dismisses Trump suit against Wall Street Journal over Epstein birthday letter",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/when-will-we-know-2026-midterm-election-results-it-may-take-some-time-but-thats-normal",
+      "url": "https://www.pbs.org/newshour/politics/judge-dismisses-trump-suit-against-wall-street-journal-over-epstein-birthday-letter",
       "topic": "Politics",
-      "published": "2026-10-31T17:02:17+00:00"
+      "published": "2026-10-31T21:32:54+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ukraine news: Evacuees from Russian-occupied Oleshky reach Kyiv-controlled territory",
+      "headline": "Serbia after Vucic: The winners are losing patience",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-news-evacuees-from-russian-occupied-oleshky-reach-kyiv-controlled-territory/live-79815409?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/serbia-after-vucic-the-winners-are-losing-patience/a-79817586?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-31T15:47:00+00:00"
+      "published": "2026-10-31T19:49:00+00:00"
     },
     {
       "n": 16,
-      "headline": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
+      "headline": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-10-31T15:16:20+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-10-31T22:11:45+00:00"
     },
     {
       "n": 17,
-      "headline": "Justice Department seeks to isolate Alaska ballots amid criminal probe over Senate candidate",
+      "headline": "Key takeaways from this week's political meeting in Beijing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate",
-      "topic": "Politics",
-      "published": "2026-10-31T13:50:58+00:00"
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
+      "topic": "Trending",
+      "published": "2026-10-31T18:42:33+00:00"
     }
   ]
 }
