@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T03:58:50Z",
+  "generated_at": "2026-11-01T14:40:52Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Turns Out AI Is Taking Sledgehammer To Job Gains After All",
+      "claim": "Midterm Election Watch Guide: When GOP Will Know If It’s Time To Hit Panic Button Or Reach For Champagne",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/30/goldman-sachs-finds-ai-linked-to-higher-unemployment-as-impact-spreads-beyond-tech",
-      "topic": "Tech / AI"
+      "url": "https://dailycaller.com/2026/11/01/midterm-elections-races-republicans-democrats-polls",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Criminal Investigator Swarms Trigger New Fraud Takedowns In Minnesota, Officials Announce",
+      "claim": "Could Massachusetts Voters Sink New Gun Control Bill?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/10/30/minnesota-fraud-update-st-cloud-kash-patel-dr-oz-scott-bessent",
+      "url": "https://dailycaller.com/2026/11/01/massachusetts-voters-referendum-gun-control-restrictions-bill",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Shops looted as German cost of living protests turn violent",
+      "headline": "Shops looted as German cost-of-living protests turn violent",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-01T01:59:57+00:00"
+      "published": "2026-11-01T11:57:48+00:00"
     },
     {
       "n": 2,
-      "headline": "Virginia and D.C. sue to block construction of Trump arch",
+      "headline": "Living with high prices in Virginia's 1st Congressional District",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6024694/virginia-dc-sue-trump-arch",
-      "topic": "Politics",
-      "published": "2026-10-31T22:48:51+00:00"
+      "url": "https://www.npr.org/2026/11/01/nx-s1-5945628/living-with-high-prices-in-virginias-1st-congressional-district",
+      "topic": "Trending",
+      "published": "2026-11-01T13:00:00+00:00"
     },
     {
       "n": 3,
@@ -166,7 +166,7 @@
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/politics/attorneys-for-alaska-say-meritless-trump-demand-to-set-aside-senate-ballots-not-even-possible",
       "topic": "Politics",
-      "published": "2026-10-31T22:22:29+00:00"
+      "published": "2026-10-31T23:22:29+00:00"
     },
     {
       "n": 4,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "Trump grants visa for mother of Ghanaian boy killed in NYC — Mamdani",
+      "headline": "Ukraine: Russian attacks leave tens of thousands without power",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-grants-visa-for-mother-of-ghanaian-boy-killed-in-nyc-mamdani/a-79820019?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-01T03:12:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-russian-attacks-leave-tens-of-thousands-without-power/live-79815409?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-01T14:13:00+00:00"
     },
     {
       "n": 6,
-      "headline": "We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+      "headline": "Judge dismisses Trump's lawsuit against Wall Street Journal over Epstein birthday book",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-31T19:22:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwr5yj2lj9myo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-01T00:41:24+00:00"
     },
     {
       "n": 7,
-      "headline": "Mixed economic forecast weighs heavy ahead of midterms",
+      "headline": "It's ACA open enrollment time. Here are the changes for health insurance shoppers",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6022285/mixed-economic-forecast-weighs-heavy-ahead-of-midterms",
-      "topic": "Trending",
-      "published": "2026-10-31T21:14:35+00:00"
+      "url": "https://www.npr.org/2026/11/01/nx-s1-6023423/aca-open-enrollment-health-insurance",
+      "topic": "Health",
+      "published": "2026-11-01T12:00:00+00:00"
     },
     {
       "n": 8,
@@ -206,7 +206,7 @@
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/politics/paxton-and-talarico-tussle-for-texas-senate-seat-as-trump-campaigns-virtually",
       "topic": "Politics",
-      "published": "2026-10-31T22:14:59+00:00"
+      "published": "2026-10-31T23:14:59+00:00"
     },
     {
       "n": 9,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "FBI says North Korea behind $6 billion Binance crypto theft",
+      "headline": "Ethnic Germans in Kazakhstan face legacy of the Soviet Union",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/fbi-says-north-korea-behind-6-billion-binance-crypto-theft/a-79819998?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-11-01T01:53:00+00:00"
+      "url": "https://www.dw.com/en/ethnic-germans-in-kazakhstan-face-legacy-of-the-soviet-union/a-79754048?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-01T13:00:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
+      "headline": "India's opposition holds mega rally seeking election chief's resignation",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-10-31T17:53:35+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-01T07:00:55+00:00"
     },
     {
       "n": 12,
-      "headline": "France seethes again as youth-led protests sweep Europe",
+      "headline": "How Gen Z Republicans running for Congress are thinking about the future of the party",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
-      "topic": "Trending",
-      "published": "2026-10-31T19:30:19+00:00"
+      "url": "https://www.npr.org/2026/11/01/nx-s1-5946869/midterm-elections-gen-z-republicans",
+      "topic": "Politics",
+      "published": "2026-11-01T11:00:00+00:00"
     },
     {
       "n": 13,
@@ -246,7 +246,7 @@
       "source": "PBS NewsHour",
       "url": "https://www.pbs.org/newshour/politics/judge-dismisses-trump-suit-against-wall-street-journal-over-epstein-birthday-letter",
       "topic": "Politics",
-      "published": "2026-10-31T21:32:54+00:00"
+      "published": "2026-10-31T22:32:54+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Serbia after Vucic: The winners are losing patience",
+      "headline": "Germany news: Gen Z group calls for new protests",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/serbia-after-vucic-the-winners-are-losing-patience/a-79817586?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/germany-news-gen-z-group-calls-for-new-protests/live-79814961?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-10-31T19:49:00+00:00"
+      "published": "2026-11-01T12:26:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "headline": "We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-10-31T22:11:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-10-31T19:22:26+00:00"
     },
     {
       "n": 17,
-      "headline": "Key takeaways from this week's political meeting in Beijing",
+      "headline": "Here's how to watch election night as the polls close, hour-by-hour",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
-      "topic": "Trending",
-      "published": "2026-10-31T18:42:33+00:00"
+      "url": "https://www.npr.org/2026/11/01/g-s1-149978/midterms-election-night",
+      "topic": "Politics",
+      "published": "2026-11-01T09:00:00+00:00"
     }
   ]
 }
