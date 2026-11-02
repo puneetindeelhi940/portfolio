@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T20:05:56Z",
+  "generated_at": "2026-11-02T04:01:51Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Press play on these Nicki Minaj rumors we've investigated",
+      "claim": "Did Trump say he wanted to rename Montana to 'Mountain'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/nicki-minaj-rumors/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-montana-mountain-post/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Midterm Election Watch Guide: When GOP Will Know If It’s Time To Hit Panic Button Or Reach For Champagne",
+      "claim": "Dem Rep Haley Stevens, Fresh From Split With Abdul El-Sayed, Endorses Republican Challenger Mike Rogers Two Days Before Midterms",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/01/midterm-elections-races-republicans-democrats-polls",
+      "url": "https://dailycaller.com/2026/11/01/michigan-democrat-haley-stevens-endorses-republican-senate-nominee-mike-rogers-abdul-el-sayed",
       "topic": "Politics"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did Patrick Stewart say Trump put America on edge of 'very bad flu infection'?",
+      "claim": "Press play on these Nicki Minaj rumors we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/patrick-stewart-trump-quote/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/nicki-minaj-rumors/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Democrat Senator Chris Murphy Hospitalized After Suffering A Stroke",
+      "claim": "Obama-Appointed Judge Says Dan Sullivan Running Against Dan Sullivan Doesn’t Confuse Voters",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/01/democrat-senator-chris-murphy-hospitalized-stroke-connecticut",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/01/federal-judge-blocks-justice-department-lawsuit-alaska-dan-sullivan-senate-candidate",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Texas showdown: 12 claims involving Talarico and Paxton, fact-checked",
+      "claim": "Did Patrick Stewart say Trump put America on edge of 'very bad flu infection'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/talarico-paxton-fact-checks/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/patrick-stewart-trump-quote/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire to end within hours",
+      "headline": "Ukraine air raid app apparently hacked as users receive false radiation threat, Air Force says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-01T19:48:17+00:00"
+      "published": "2026-11-02T01:18:27+00:00"
     },
     {
       "n": 2,
-      "headline": "Haley Stevens endorses GOP candidate in Michigan Senate race, spurning Abdul El-Sayed",
+      "headline": "Do you know signs of a stroke? BE FAST are the words to remember",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-6020993/michigan-senate-race-abdul-el-sayed-haley-stevens-mike-rogers",
-      "topic": "Politics",
-      "published": "2026-11-01T19:49:15+00:00"
+      "url": "https://www.npr.org/2026/11/01/nx-s1-6025502/stroke-acronym-be-fast",
+      "topic": "Trending",
+      "published": "2026-11-01T22:22:12+00:00"
     },
     {
       "n": 3,
-      "headline": "Israeli officials say elections won't be undermined, and suspects in bribery case are freed",
+      "headline": "Justice Department urges sanctions for database analysis critical of its noncitizen voting claims",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/israeli-officials-say-elections-wont-be-undermined-and-suspects-in-bribery-case-are-freed",
+      "url": "https://www.pbs.org/newshour/politics/justice-department-urges-sanctions-for-database-analysis-critical-of-its-noncitizen-voting-claims",
       "topic": "Trending",
-      "published": "2026-11-01T19:57:09+00:00"
+      "published": "2026-11-01T23:18:16+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Serbia: Police chief arrested after election for abuse of office",
+      "headline": "Ukraine, Russia report hacking attacks on emergency alert apps",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/serbia-police-chief-arrested-after-election-for-abuse-of-office/a-79823382?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-01T17:16:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-russia-report-hacking-attacks-on-emergency-alert-apps/live-79825079?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-02T02:48:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Israeli strikes in Gaza kill eight including child, hospitals say",
+      "headline": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-01T17:06:32+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-01T21:55:01+00:00"
     },
     {
       "n": 7,
-      "headline": "Connecticut Senator Chris Murphy is hospitalized with a stroke",
+      "headline": "Haley Stevens endorses GOP candidate in Michigan Senate race, spurning Abdul El-Sayed",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-6025467/chris-murphy-stroke",
-      "topic": "Trending",
-      "published": "2026-11-01T19:00:58+00:00"
+      "url": "https://www.npr.org/2026/11/01/nx-s1-6020993/michigan-senate-race-abdul-el-sayed-haley-stevens-mike-rogers",
+      "topic": "Politics",
+      "published": "2026-11-01T19:49:15+00:00"
     },
     {
       "n": 8,
-      "headline": "WATCH LIVE: Trump rallies in Iowa as part of final push before Election Day",
+      "headline": "All 9 people aboard a jet that crashed in Florida have died, transportation secretary says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-rallies-in-iowa-as-part-of-final-push-before-election-day",
-      "topic": "Politics",
-      "published": "2026-11-01T19:12:43+00:00"
+      "url": "https://www.pbs.org/newshour/nation/all-9-people-aboard-a-jet-that-crashed-in-florida-have-died-transportation-secretary-says",
+      "topic": "Celebrity",
+      "published": "2026-11-01T22:05:03+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "France opens attempted murder probe after protest attack",
+      "headline": "German police investigating after needles found in Halloween candy",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-opens-attempted-murder-probe-after-protest-attack/a-79822853?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/german-police-investigating-after-needles-found-in-halloween-candy/a-79825051?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-01T14:50:00+00:00"
+      "published": "2026-11-02T01:16:00+00:00"
     },
     {
       "n": 11,
-      "headline": "University of Cambridge scientist among those who died in Spanish train crash",
+      "headline": "Democrat endorses Republican candidate in key Michigan Senate race as party spat erupts",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-11-01T17:05:18+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-02T01:45:42+00:00"
     },
     {
       "n": 12,
-      "headline": "How to think about the midterms — and the political moment the country is in",
+      "headline": "Connecticut Senator Chris Murphy is hospitalized with a stroke",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/g-s1-151146/how-to-think-about-the-midterms-and-the-political-moment-the-country-is-in",
+      "url": "https://www.npr.org/2026/11/01/nx-s1-6025467/chris-murphy-stroke",
       "topic": "Trending",
-      "published": "2026-11-01T18:27:06+00:00"
+      "published": "2026-11-01T19:00:58+00:00"
     },
     {
       "n": 13,
-      "headline": "Canadian Prime Minister Carney reports progress in trade talks with Trump days before U.S. midterms",
+      "headline": "Connecticut Sen. Chris Murphy is in the hospital after having a stroke, his office says",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/canadian-prime-minister-carney-reports-progress-in-trade-talks-with-trump-days-before-u-s-midterms",
-      "topic": "Politics",
-      "published": "2026-11-01T18:00:43+00:00"
+      "url": "https://www.pbs.org/newshour/politics/connecticut-sen-chris-murphy-is-in-the-hospital-after-having-a-stroke-his-office-says",
+      "topic": "Health",
+      "published": "2026-11-01T21:20:25+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ukraine: Russian attacks leave tens of thousands without power",
+      "headline": "Russia's giant new radar in Kaliningrad raises alarm in NATO",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-russian-attacks-leave-tens-of-thousands-without-power/live-79815409?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-01T14:13:00+00:00"
+      "url": "https://www.dw.com/en/russia-s-giant-new-radar-in-kaliningrad-raises-alarm-in-nato/a-79797815?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-01T20:34:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Shops looted as German cost-of-living protests turn violent",
+      "headline": "Israeli strikes in Gaza kill eight including child, hospitals say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-01T11:57:48+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-01T17:06:32+00:00"
     },
     {
       "n": 17,
-      "headline": "Judge tosses Trump's attempt to block Alaska Senate results if GOP incumbent loses",
+      "headline": "How to think about the midterms — and the political moment the country is in",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/01/nx-s1-6023766/doj-alaska-lawsuit-senate-race-dan-sullivan",
-      "topic": "Politics",
-      "published": "2026-11-01T18:00:37+00:00"
+      "url": "https://www.npr.org/2026/11/01/g-s1-151146/how-to-think-about-the-midterms-and-the-political-moment-the-country-is-in",
+      "topic": "Trending",
+      "published": "2026-11-01T18:27:06+00:00"
     }
   ]
 }
