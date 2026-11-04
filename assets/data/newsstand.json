@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T04:36:23Z",
+  "generated_at": "2026-11-04T15:55:17Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Maine law allows interpreters to help voters mark ballots, despite fraud claims",
-      "verdict": "FALSE",
+      "claim": "Vivek Ramaswamy was 'booed off stage' after making remark about millennials is missing context",
+      "verdict": "MISLEADING",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/03/maine-interpreters-ballots-somali/",
+      "url": "https://www.snopes.com/fact-check/ramaswamy-booed-off-stage/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Abdul El-Sayed vs. Mike Rogers: 8 claims about Michigan's Senate candidates, examined",
+      "claim": "Trump said he'd become Israeli prime minister 'if people ever get tired of me in the US",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/el-sayed-rogers-michigan-senate-race/",
+      "url": "https://www.snopes.com/fact-check/trump-israel-prime-minister/",
       "topic": "Politics"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "James Talarico Flips Texas Senate Seat Blue For First Time In Nearly 4 Decades",
+      "claim": "Trump Brought Back America First — The Daily Caller Is Taking On The Establishment Trying To Hijack It",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/03/james-talarico-texas-senate-race-ken-paxton",
+      "url": "https://dailycaller.com/2026/11/04/duke-daily-caller-america-first-donald-trump",
       "topic": "Politics"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "FBI didn't find more than 20K fraudulent Democratic ballots in Houston raid",
+      "claim": "Did Trump say he wanted to rename Montana to 'Mountain'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/fbi-fraudulent-ballots-houston-raid/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-montana-mountain-post/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Democratic rising star Ossoff projected to hold Georgia seat",
+      "headline": "This is a disaster': Angry Republicans blame Trump for midterms defeat",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqwyrmm2k4mpo?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-11-04T02:38:07+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-04T13:33:30+00:00"
     },
     {
       "n": 2,
-      "headline": "Democrat David Crowley will be Wisconsin's first Black governor",
+      "headline": "Abdul El-Sayed welcomes Trump's plan to cut Israel aid, calls for end to arms sales",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/03/g-s1-151235/democrat-david-crowley-will-be-wisconsins-first-black-governor",
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6028702/abdul-el-sayed-michigan-senate-israel-aid",
       "topic": "Politics",
-      "published": "2026-11-04T04:28:24+00:00"
+      "published": "2026-11-04T13:38:09+00:00"
     },
     {
       "n": 3,
-      "headline": "Democrat Rob Sand wins election to be Iowa's next governor",
+      "headline": "The U.S. political map? Anyone's guess after Democratic wave",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democrat-rob-sand-wins-election-to-be-iowas-next-governor",
-      "topic": "Politics",
-      "published": "2026-11-04T04:30:52+00:00"
+      "url": "https://www.pbs.org/newshour/politics/the-u-s-political-map-anyones-guess-after-democratic-wave",
+      "topic": "Trending",
+      "published": "2026-11-04T15:14:00+00:00"
     },
     {
       "n": 4,
@@ -174,39 +174,39 @@
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
       "topic": "Politics",
-      "published": "2026-11-04T04:00:23+00:00"
+      "published": "2026-11-04T14:50:47+00:00"
     },
     {
       "n": 5,
-      "headline": "US midterm election results: How Americans voted and what the data tells us",
+      "headline": "Gold for Palestine: Karate's Mariam Bsharat a rare sporting success",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-midterm-election-results-how-americans-voted-and-what-the-data-tells-us/a-79841886?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-04T04:17:00+00:00"
+      "url": "https://www.dw.com/en/gold-for-palestine-karate-s-mariam-bsharat-a-rare-sporting-success/a-79851806?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-04T15:40:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Spanish transport minister resigns days after deadly train crash",
+      "headline": "James Talarico becomes first Democrat to win Texas Senate seat since 1988",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6wydqd4yxdyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-11-03T22:45:59+00:00"
+      "published": "2026-11-04T14:17:58+00:00"
     },
     {
       "n": 7,
-      "headline": "Adam Hamilton becomes the first Democratic senator from Kansas in nearly a century",
+      "headline": "The world is reacting to the Democrats' sweeping midterm elections victory",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/03/g-s1-151587/kansas-senate-race-hamilton-marshall",
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6028664/world-reacts-midterm-elections",
       "topic": "Trending",
-      "published": "2026-11-04T04:25:28+00:00"
+      "published": "2026-11-04T12:34:35+00:00"
     },
     {
       "n": 8,
-      "headline": "Democrat Gina Hinojosa wins election for governor in Texas",
+      "headline": "Democrats win governorships in Texas and other GOP-controlled states in rebuke to Republicans",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democrat-gina-hinojosa-wins-election-for-governor-in-texas",
-      "topic": "Politics",
-      "published": "2026-11-04T04:26:33+00:00"
+      "url": "https://www.pbs.org/newshour/politics/democrats-win-governorships-in-texas-and-other-gop-controlled-states-in-rebuke-to-republicans",
+      "topic": "Trending",
+      "published": "2026-11-04T12:51:32+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "US midterms: Democrat Talarico wins Texas Senate seat",
+      "headline": "Africa's shifting role in the global drug trade",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-midterms-democrat-talarico-wins-texas-senate-seat/live-79829440?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-04T04:12:00+00:00"
+      "url": "https://www.dw.com/en/africa-s-shifting-role-in-the-global-drug-trade/a-79847720?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-11-04T15:18:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Seven flights across Europe targeted by suspected bomb threats",
+      "headline": "Left-wing Democrat Abdul El-Sayed wins in Michigan to become first Muslim senator",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2wd4v04eeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-03T20:42:47+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c893z55pxrewo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-04T10:03:19+00:00"
     },
     {
       "n": 12,
-      "headline": "Missourians reject ballot proposal that would have re-imposed an abortion ban",
+      "headline": "Democrats seize full control of Congress. And, which candidates made history last night",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/03/g-s1-151063/missouri-abortion-ban-transgender",
-      "topic": "Trending",
-      "published": "2026-11-04T04:25:05+00:00"
+      "url": "https://www.npr.org/2026/11/04/g-s1-151745/up-first-newsletter-midterms-democrats-congress-control",
+      "topic": "Politics",
+      "published": "2026-11-04T12:18:39+00:00"
     },
     {
       "n": 13,
-      "headline": "WATCH: Pennsylvania Gov. Josh Shapiro speaks after winning reelection",
+      "headline": "Democrat Abdul El-Sayed wins election to U.S. Senate from Michigan",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-pennsylvania-gov-josh-shapiro-speaks-after-winning-reelection",
-      "topic": "Trending",
-      "published": "2026-11-04T04:13:36+00:00"
+      "url": "https://www.pbs.org/newshour/politics/democrat-abdul-el-sayed-wins-election-to-u-s-senate-from-michigan",
+      "topic": "Politics",
+      "published": "2026-11-04T12:22:33+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "US to cut nearly $4 billion in Israel military aid, Trump says",
+      "headline": "Harry Potter films turns 25 ahead of new TV series' release",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-to-cut-nearly-4-billion-in-israel-military-aid-trump-says/a-79848860?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-04T00:21:00+00:00"
+      "url": "https://www.dw.com/en/harry-potter-films-turns-25-ahead-of-new-tv-series-release/a-79856130?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-04T15:14:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+      "headline": "Iran's chief negotiator says Americans voted 'no to war",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-11-03T16:19:29+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-04T12:21:21+00:00"
     },
     {
       "n": 17,
-      "headline": "Democrat Gina Hinojosa wins race for Texas governor, ousting Greg Abbott",
+      "headline": "6 takeaways from Democrats' big wave on election night",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/03/g-s1-150844/gina-hinojosa-texas-governor-abbott",
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6022216/midterms-democrats-trump-republicans-analysis",
       "topic": "Politics",
-      "published": "2026-11-04T04:19:12+00:00"
+      "published": "2026-11-04T12:02:38+00:00"
     }
   ]
 }
