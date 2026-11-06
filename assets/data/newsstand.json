@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T04:50:36Z",
+  "generated_at": "2026-11-06T15:36:45Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Massie said he'll bring back impeachment articles against Hegseth. Here's what would happen next",
+      "claim": "of Trump, Epstein and Beyoncé on private jet is fake. Here's how we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/massie-hegseth-impeachment/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-epstein-beyonce-photo-fake/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "Russian foreign minister Sergey Lavrov dismissed India’s diplomatic standing? No, viral video is a deepfake",
+      "claim": "Takedown notices against IFF, SFLC sent by impostor, not Delhi Police, X tells Delhi high court",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/russian-foreign-minister-sergey-lavrov-dismissed-indias-diplomatic-standing-no-viral-video-is-a-deepfake/",
-      "topic": "Politics"
+      "url": "https://www.altnews.in/takedown-notices-against-iff-sflc-sent-by-impostor-not-delhi-police-x-tells-delhi-high-court/",
+      "topic": "Trending"
     },
     {
       "n": 7,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Can Democrats effectively abolish Electoral College after midterm wins?",
+      "claim": "Has Texas data center caused every calf birthed on nearby ranch to be stillborn?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/05/democrats-abolish-electoral-college/",
+      "url": "https://www.snopes.com/news/2026/11/08/stillborn-calves-data-center/",
       "topic": "Trending"
     },
     {
@@ -104,11 +104,11 @@
     },
     {
       "n": 13,
-      "claim": "Bengal content creators critical of BJP government face police action; 3 arrested, 1 still in custody",
+      "claim": "Russian foreign minister Sergey Lavrov dismissed India’s diplomatic standing? No, viral video is a deepfake",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bengal-content-creators-critical-of-bjp-government-face-police-action-3-arrested-1-still-in-custody/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/russian-foreign-minister-sergey-lavrov-dismissed-indias-diplomatic-standing-no-viral-video-is-a-deepfake/",
+      "topic": "Politics"
     },
     {
       "n": 14,
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Does photo show Trump being carried by Secret Service agents after fainting over GOP midterm losses?",
+      "claim": "Did Trump post about 'consequences' after midterm losses?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-photo-fainting-midterms/",
+      "url": "https://www.snopes.com/fact-check/trump-truth-social-election-meltdown/",
       "topic": "Politics"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Global tech stocks plunge as US midterms add to AI slowdown fears",
+      "headline": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-11-06T02:57:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-06T02:08:57+00:00"
     },
     {
       "n": 2,
-      "headline": "Fears of an AI crackdown after midterms spark $2 trillion rout in tech stocks",
+      "headline": "European air traffic is targeted by new threats after a week of hoaxes",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/05/nx-s1-6031987/stock-markets-ai-midterm-elections",
-      "topic": "Tech / AI",
-      "published": "2026-11-06T00:16:53+00:00"
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes",
+      "topic": "Trending",
+      "published": "2026-11-06T15:21:31+00:00"
     },
     {
       "n": 3,
@@ -170,35 +170,35 @@
     },
     {
       "n": 4,
-      "headline": "British healthcare worker with Ebola evacuated from DR Congo to UK",
+      "headline": "Kenyan doomsday sect leader jailed for 200 years over 191 murders",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
+      "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
       "topic": "Trending",
-      "published": "2026-11-04T18:18:37+00:00"
+      "published": "2026-11-06T15:08:43+00:00"
     },
     {
       "n": 5,
-      "headline": "Asian stocks slump after US tech rout amid AI jitters",
+      "headline": "Fact check: Three viral Iran war posts debunked",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/asian-stocks-slump-after-us-tech-rout-amid-ai-jitters/a-79871504?maca=en-rss-en-all-1573-rdf",
-      "topic": "Tech / AI",
-      "published": "2026-11-06T02:41:00+00:00"
+      "url": "https://www.dw.com/en/fact-check-three-viral-iran-war-posts-debunked/a-79867353?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-06T15:29:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Trump signs order preventing future presidents from changing Oval Office",
+      "headline": "Trump signs order to preserve Oval Office as national monument",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmy0eeg101djo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-11-06T04:29:25+00:00"
+      "published": "2026-11-06T09:19:57+00:00"
     },
     {
       "n": 7,
-      "headline": "These are the races in the House and Senate that haven't been called yet",
+      "headline": "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/05/g-s1-152127/house-senate-uncalled-races",
-      "topic": "Politics",
-      "published": "2026-11-06T00:03:45+00:00"
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6032593/kenya-cult-leader-paul-mackenzie-sentenced-murder",
+      "topic": "Trending",
+      "published": "2026-11-06T14:53:46+00:00"
     },
     {
       "n": 8,
@@ -210,35 +210,35 @@
     },
     {
       "n": 9,
-      "headline": "ANC faces anger over poor services as South Africans vote in local elections",
+      "headline": "ANC faces bruising defeat in South African local elections with 80% of ballots counted",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
-      "topic": "Politics",
-      "published": "2026-11-04T14:50:47+00:00"
+      "url": "https://www.theguardian.com/world/2026/nov/06/anc-faces-defeat-south-african-local-elections",
+      "topic": "Trending",
+      "published": "2026-11-06T12:48:37+00:00"
     },
     {
       "n": 10,
-      "headline": "Trump raises prospect of 'big, beautiful' Russia-Ukraine deal",
+      "headline": "Protests and reforms: France's rising debt costs threaten stability",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-raises-prospect-of-big-beautiful-russia-ukraine-deal/a-79871394?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-05T23:32:00+00:00"
+      "url": "https://www.dw.com/en/protests-and-reforms-france-s-rising-debt-costs-threaten-stability/a-79865654?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-06T14:37:00+00:00"
     },
     {
       "n": 11,
-      "headline": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
+      "headline": "Two dead after bus crashes in France, officials say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-06T02:08:57+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-06T15:33:52+00:00"
     },
     {
       "n": 12,
-      "headline": "Melania Trump touts rare agreement she brokered between Russia and Ukraine",
+      "headline": "Ex-lawmaker gets 12.5 years in Macao's first national security case",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/05/nx-s1-6030662/melania-trump-touts-rare-agreement-she-brokered-between-russia-and-ukraine",
-      "topic": "Politics",
-      "published": "2026-11-05T23:52:48+00:00"
+      "url": "https://www.npr.org/2026/11/06/g-s1-152217/ex-lawmaker-gets-12-5-years-in-macaos-first-national-security-case",
+      "topic": "Trending",
+      "published": "2026-11-06T13:56:43+00:00"
     },
     {
       "n": 13,
@@ -250,35 +250,35 @@
     },
     {
       "n": 14,
-      "headline": "Sinkholes, scarred land and scapegoats: the scourge of illegal gold mining in Johannesburg",
+      "headline": "British healthcare worker with Ebola evacuated from DR Congo to UK",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/business/2026/oct/30/sinkholes-scarred-land-scapegoats-illegal-gold-mining-johannesburg",
+      "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
       "topic": "Trending",
-      "published": "2026-10-30T05:00:45+00:00"
+      "published": "2026-11-04T18:18:37+00:00"
     },
     {
       "n": 15,
-      "headline": "Austrian tycoon Rene Benko sentenced to 2 years in prison for fraud",
+      "headline": "Czech arms makers set sights on space defense in bid to sustain Ukraine-driven arms boom",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/austrian-tycoon-rene-benko-sentenced-to-2-years-in-prison-for-fraud/a-79870056?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-05T20:38:00+00:00"
+      "url": "https://www.dw.com/en/czech-arms-makers-set-sights-on-space-defense-in-bid-to-sustain-ukraine-driven-arms-boom/a-79876035?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-11-06T14:00:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Pope begins lengthy trip to Latin America weeks after lung cancer surgery",
+      "headline": "Kenyan doomsday cult leader given life sentence for murdering 191 people",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-11-06T00:02:57+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cm5yne5984l0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-06T14:46:03+00:00"
     },
     {
       "n": 17,
-      "headline": "How North Carolina Democrats flipped several House seats in historically GOP districts",
+      "headline": "Hiring jumps: The economy added 165,000 jobs last month",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/05/nx-s1-6031719/north-carolina-democrats-flip-house-seats-republican-districts",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6030867/jobs-labor-market-economy-wages-inflation",
       "topic": "Trending",
-      "published": "2026-11-05T23:34:36+00:00"
+      "published": "2026-11-06T13:49:21+00:00"
     }
   ]
 }
