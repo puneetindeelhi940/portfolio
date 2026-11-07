@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T14:37:21Z",
+  "generated_at": "2026-11-07T19:49:17Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did US Space Force take over FAA's air traffic control systems?",
+      "claim": "Time magazine published this Trump cover after Republicans' midterm losses",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/space-force-take-over-faa/",
-      "topic": "Science"
+      "url": "https://www.snopes.com/fact-check/time-magazine-trump-cover-midterms/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Trump Taps Top Immigration Adviser As New Chief Of Staff",
+      "claim": "Secret Service Arrests Man Near White House After Allegedly Saying He Wanted To Kill Trump",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/06/trump-stephen-miller-chief-of-staff-susie-wiles",
+      "url": "https://dailycaller.com/2026/11/07/secret-service-arrest-illegal-alien-white-house-trump-threat-guanipa-chrinos",
       "topic": "Politics"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump accuse Democrats of using 'witchcraft and satanism' to win midterms? Don't be fooled",
+      "claim": "Did US Space Force take over FAA's air traffic control systems?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-witchcraft-satanism-democrats/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/space-force-take-over-faa/",
+      "topic": "Science"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "With Stephen Miller pick, Trump readies for a battle",
+      "headline": "What we know about Krakow mass shooting so far",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-06T23:24:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-07T19:40:10+00:00"
     },
     {
       "n": 2,
-      "headline": "Democrats plan to widen their probes of fatal ICE shootings",
+      "headline": "Gunman opens fire in Polish city of Krakow, killing 6 people and injuring 15",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6029659/democrats-investigate-fatal-ice-shootings",
+      "url": "https://www.npr.org/2026/11/07/g-s1-152532/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15",
       "topic": "Trending",
-      "published": "2026-11-07T13:19:09+00:00"
+      "published": "2026-11-07T18:37:36+00:00"
     },
     {
       "n": 3,
-      "headline": "What Trump picking Stephen Miller for chief of staff signals about his agenda",
+      "headline": "Melania Trump and LSU announce a scholarship program for students who were in foster care",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-trump-picking-stephen-miller-for-chief-of-staff-signals-about-his-agenda",
+      "url": "https://www.pbs.org/newshour/politics/melania-trump-and-lsu-announce-a-scholarship-program-for-students-who-were-in-foster-care",
       "topic": "Politics",
-      "published": "2026-11-06T23:55:50+00:00"
+      "published": "2026-11-07T19:35:15+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "After victory in the midterms, what next for US Democrats?",
+      "headline": "Trump offers White House press secretary role to Dana White",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/after-victory-in-the-midterms-what-next-for-us-democrats/a-79884957?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-07T14:15:00+00:00"
+      "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-07T19:46:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Paraguay's president impeached and under house arrest after bank collapse",
+      "headline": "No clear winner after tight New Zealand general election",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-11-07T07:20:00+00:00"
+      "published": "2026-11-07T15:56:28+00:00"
     },
     {
       "n": 7,
-      "headline": "Perspective: Simon Winchester was here to tell a story",
+      "headline": "Ousted Paraguayan president appears before prosecutors",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6023225/perspective-simon-winchester-was-here-to-tell-a-story",
-      "topic": "Trending",
-      "published": "2026-11-07T13:00:00+00:00"
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6033373/paraguay-president-ousted-bank-collapse",
+      "topic": "Politics",
+      "published": "2026-11-07T17:14:36+00:00"
     },
     {
       "n": 8,
-      "headline": "News Wrap: Judge blocks construction of Trump's triumphal arch for now",
+      "headline": "Judge wants former U.S. attorney to investigate whether the government misled her in Trump golf case",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-judge-blocks-construction-of-trumps-triumphal-arch-for-now",
+      "url": "https://www.pbs.org/newshour/politics/judge-wants-former-u-s-attorney-to-investigate-whether-the-government-misled-her-in-trump-golf-case",
       "topic": "Politics",
-      "published": "2026-11-06T23:50:18+00:00"
+      "published": "2026-11-07T18:34:30+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Italy's Meloni blames pro-Russian hackers for cyberattack on minister",
+      "headline": "Armenia's selective prosecution: A threat to EU relations?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/italy-s-meloni-blames-pro-russian-hackers-for-cyberattack-on-minister/a-79885200?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-07T14:07:00+00:00"
+      "url": "https://www.dw.com/en/armenia-s-selective-prosecution-a-threat-to-eu-relations/a-79878159?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-07T18:36:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
+      "headline": "US offers $20m reward for information about Iran's nuclear programme",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-07T12:49:36+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-07T18:14:38+00:00"
     },
     {
       "n": 12,
-      "headline": "This teen boy set out to get people talking about periods. He's now a Diana honoree",
+      "headline": "A promising new medicine against heart disease fails unexpectedly",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/g-s1-152225/princess-diana-honor-menstruation-stigma",
-      "topic": "Trending",
-      "published": "2026-11-07T11:50:21+00:00"
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack",
+      "topic": "Health",
+      "published": "2026-11-07T14:50:00+00:00"
     },
     {
       "n": 13,
-      "headline": "What to know about a better-than-expected jobs report amid AI bubble concerns",
+      "headline": "With an ode to mate, Pope Leo urges faithful in Uruguay to build bridges of fraternity and faith",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-to-know-about-a-better-than-expected-jobs-report-amid-ai-bubble-concerns",
-      "topic": "Tech / AI",
-      "published": "2026-11-06T23:45:56+00:00"
+      "url": "https://www.pbs.org/newshour/world/with-an-ode-to-mate-pope-leo-urges-faithful-in-uruguay-to-build-bridges-of-fraternity-and-faith",
+      "topic": "Trending",
+      "published": "2026-11-07T18:14:13+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Yemen: 22 killed in strike near Sanaa, Houthis say",
+      "headline": "South Africa's ANC facing worst-ever performance in local elections",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/yemen-22-killed-in-strike-near-sanaa-houthis-say/a-79885177?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/south-africa-s-anc-facing-worst-ever-performance-in-local-elections/a-79887482?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-07T13:50:00+00:00"
+      "published": "2026-11-07T18:07:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Pope in 'pretty good health' as he starts Latin America tour",
+      "headline": "Houthis say at least 25 killed in Saudi air strike",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c60e0001ve9wo?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-11-07T06:59:48+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-07T17:09:24+00:00"
     },
     {
       "n": 17,
-      "headline": "An unexpected activist emerged to help block a $5 billion data center in Maryland",
+      "headline": "Democrats plan to widen their probes of fatal ICE shootings",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6007770/data-centers-activist-moratorium",
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6029659/democrats-investigate-fatal-ice-shootings",
       "topic": "Trending",
-      "published": "2026-11-07T10:00:00+00:00"
+      "published": "2026-11-07T13:19:09+00:00"
     }
   ]
 }
