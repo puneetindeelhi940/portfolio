@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:42:58Z",
+  "generated_at": "2026-11-08T20:06:41Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Nicki Minaj Did NOT Delete Instagram Account Following Midterm Elections In November 2026 -- Her Account Hasn't Been Available Since 2025",
+      "claim": "Uniform '15% Band' Formula Mapping Trump's 2024 Result Exactly Onto 2026 Senate Race -- Results Show Variations",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-nicki-minaj-did-not-delete-instagram-account-following-2026-midterms-since-2025.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-15-percent-band-trump-senate-2022-2024.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Did Trump propose 'new rules' restricting Congress members' privileges? Here's the truth",
+      "claim": "Did Apple Maps replace satellite imagery of Gaza destruction with old photos? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-new-rules-congress-privileges/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/11/08/apple-maps-gaza-outdated/",
+      "topic": "World"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "GOP’s Spending Blowout On Political Ads Could Not Save It From Voters’ Frustrations With Party",
+      "claim": "Voters Most Worried About Power Bills Backed Democrats 2-To-1. Here is What Their Win Means For Energy",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/07/republicans-record-ad-spending-failed-midterms",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/08/democrats-midterms-permitting-bill-nuclear-nrc-martin-heinrich-sheldon-whitehouse-frank-pallone",
+      "topic": "Science"
     },
     {
       "n": 5,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Image Showing Capture Of Wilson Joseph Was Made With Google AI -- No Reports Haitian 400 Mawozo Gang Leader Captured",
+      "claim": "Nicki Minaj Did NOT Delete Instagram Account Following Midterm Elections In November 2026 -- Her Account Hasn't Been Available Since 2025",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-image-showing-capture-of-wilson-joseph-was-made-with-google-ai.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-nicki-minaj-did-not-delete-instagram-account-following-2026-midterms-since-2025.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Did Virginia legalize abortion up to birth? Claim misrepresents Question 1",
+      "claim": "Did Trump propose 'new rules' restricting Congress members' privileges? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/virginia-legalize-abortion-birth/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-new-rules-congress-privileges/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Bureaucrats Are Trying To ‘Subvert’ The Trump Administration, Former Adviser Alleges",
+      "claim": "Trump Activist Laura Loomer Reportedly Received Thousands For Online Support",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/07/casey-means-joe-rogan-experience-podcast-bureaucrats-subvert-donald-trump-administration",
+      "url": "https://dailycaller.com/2026/11/08/influencer-laura-loomer-received-thousands-donations-commission-social-media-x-washington-post-report",
       "topic": "Politics"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "Trump Did NOT Post On Truth Social The 'CLARITY Act' Is Canceled Alongside The Strategic Bitcoin Reserve",
+      "claim": "FAKE Image Showing Capture Of Wilson Joseph Was Made With Google AI -- No Reports Haitian 400 Mawozo Gang Leader Captured",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-trump-did-not-post-clarity-act-canceled-strategic-bitcoin-reserve.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-image-showing-capture-of-wilson-joseph-was-made-with-google-ai.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "Time magazine published this Trump cover after Republicans' midterm losses",
+      "claim": "Did Virginia legalize abortion up to birth? Claim misrepresents Question 1",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/time-magazine-trump-cover-midterms/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/virginia-legalize-abortion-birth/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "What we know so far after Krakow gun attack",
+      "headline": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-08T14:32:52+00:00"
+      "published": "2026-11-08T18:22:53+00:00"
     },
     {
       "n": 2,
-      "headline": "Climate change is altering the colors we see in the world: an illustrated journey",
+      "headline": "Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/08/nx-s1-5393776/color-climate-change-coral-lakes",
-      "topic": "Science",
-      "published": "2026-11-08T11:00:00+00:00"
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia",
+      "topic": "Trending",
+      "published": "2026-11-08T19:25:30+00:00"
     },
     {
       "n": 3,
-      "headline": "What is Diwali, the Festival of Lights, and how is it celebrated?",
+      "headline": "Poles mourn rare mass killing as authorities say attacker had far-right views",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/what-is-diwali-the-festival-of-lights-and-how-is-it-celebrated",
+      "url": "https://www.pbs.org/newshour/world/poles-mourn-rare-mass-killing-as-authorities-say-attacker-had-far-right-views",
       "topic": "Trending",
-      "published": "2026-11-07T23:01:43+00:00"
+      "published": "2026-11-08T20:02:39+00:00"
     },
     {
       "n": 4,
+      "headline": "Collision of two trains in Egypt kills at least seven",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
+      "topic": "Trending",
+      "published": "2026-11-08T17:51:17+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Germany news: Merz to nominate Aigner for president",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/germany-news-merz-to-nominate-aigner-for-president/live-79883533?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-08T19:43:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Seven dead and more than 100 injured after trains collide in Egypt",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-08T19:58:02+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "No clear winner in New Zealand election, as leaders prepare for weeks of talks",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6033999/no-clear-winner-in-new-zealand-election-as-leaders-prepare-for-weeks-of-talks",
+      "topic": "Politics",
+      "published": "2026-11-08T16:46:15+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "The midterms energized a powerful political constituency: abuse survivors",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/the-midterms-energized-a-powerful-political-constituency-abuse-survivors",
+      "topic": "Trending",
+      "published": "2026-11-08T18:41:30+00:00"
+    },
+    {
+      "n": 9,
       "headline": "How African philosophies inspired a new approach to staging film festivals in Manchester",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/news/2026/nov/08/african-philosophies-see-my-world-film-festival-manchester",
@@ -177,39 +217,39 @@
       "published": "2026-11-08T12:00:39+00:00"
     },
     {
-      "n": 5,
-      "headline": "At least 21 killed after migrant boat sinks off Senegal",
+      "n": 10,
+      "headline": "Dozens killed after migrant boat sinks off Senegal",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/at-least-21-killed-after-migrant-boat-sinks-off-senegal/a-79890883?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/dozens-killed-after-migrant-boat-sinks-off-senegal/a-79890883?maca=en-rss-en-all-1573-rdf",
       "topic": "World",
-      "published": "2026-11-08T13:48:00+00:00"
+      "published": "2026-11-08T19:12:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Houthis say at least 33 killed in Saudi air strike",
+      "n": 11,
+      "headline": "Homes and temples glow across India to mark Diwali",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-08T04:03:12+00:00"
+      "published": "2026-11-08T14:42:09+00:00"
     },
     {
-      "n": 7,
-      "headline": "In Maine, a new approach to practicing medicine in the sky",
+      "n": 12,
+      "headline": "After a successful trip to Uruguay, Pope Leo heads to Argentina",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/08/nx-s1-6017801/air-ambulance-service-rural-healthcare-staffing",
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6033992/after-a-successful-trip-to-uruguay-pope-leo-heads-to-argentina",
       "topic": "Trending",
-      "published": "2026-11-08T11:00:00+00:00"
+      "published": "2026-11-08T16:30:16+00:00"
     },
     {
-      "n": 8,
-      "headline": "Sen. Chris Murphy's stroke at 53 highlights a trend: Strokes among younger adults have risen",
+      "n": 13,
+      "headline": "AP sources: Staff at U.S. center for AI safety are reporting to the White House, raising independence concerns",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/sen-chris-murphys-stroke-at-53-highlights-a-trend-strokes-among-younger-adults-have-risen",
-      "topic": "Trending",
-      "published": "2026-11-07T21:14:44+00:00"
+      "url": "https://www.pbs.org/newshour/politics/staff-at-u-s-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns",
+      "topic": "Tech / AI",
+      "published": "2026-11-08T18:05:01+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
@@ -217,68 +257,28 @@
       "published": "2026-11-06T15:08:43+00:00"
     },
     {
-      "n": 10,
-      "headline": "Iran: US strikes ship after Hormuz blockade breach",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/iran-us-strikes-ship-after-hormuz-blockade-breach/a-79890434?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-08T13:00:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-07T21:36:16+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/08/nx-s1-6023812/chile-desert-el-nino",
-      "topic": "Trending",
-      "published": "2026-11-08T11:00:00+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Trump says he's asked UFC's Dana White to be his press secretary",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-says-hes-asked-ufcs-dana-white-to-be-his-press-secretary",
-      "topic": "Politics",
-      "published": "2026-11-07T20:55:40+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "ANC faces bruising defeat in South African local elections with 80% of ballots counted",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/06/anc-faces-defeat-south-african-local-elections",
-      "topic": "Trending",
-      "published": "2026-11-06T12:48:37+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Gaza: Rains add misery to humanitarian catastrophe",
+      "headline": "South Africa elections: ANC marks its worst-ever performance",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/gaza-rains-add-misery-to-humanitarian-catastrophe/a-79889580?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-08T10:58:00+00:00"
+      "url": "https://www.dw.com/en/south-africa-elections-anc-marks-its-worst-ever-performance/a-79887482?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-08T17:35:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Israel's president tasks opposition leader Eisenkot with forming government",
+      "headline": "Iran executes three men for 'armed unrest' after January protests",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-07T22:19:59+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-08T13:37:50+00:00"
     },
     {
       "n": 17,
-      "headline": "How Gen Z voters helped fuel a blue wave for Democrats",
+      "headline": "Russell Brand to learn sentence after being found guilty of rape and sexual assault",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6033957/russell-brand-learn-sentence-found-guilty-rape-sexual-assault",
       "topic": "Trending",
-      "published": "2026-11-08T10:00:00+00:00"
+      "published": "2026-11-08T15:07:15+00:00"
     }
   ]
 }
