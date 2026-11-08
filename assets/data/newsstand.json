@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T19:49:17Z",
+  "generated_at": "2026-11-08T04:03:30Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Time magazine published this Trump cover after Republicans' midterm losses",
+      "claim": "Did Trump propose 'new rules' restricting Congress members' privileges? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/time-magazine-trump-cover-midterms/",
+      "url": "https://www.snopes.com/fact-check/trump-new-rules-congress-privileges/",
       "topic": "Politics"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "EXCLUSIVE: DC Workers Pay For Ridiculous Amount Of Porn On Job, GPS Data Suggests",
+      "claim": "GOP’s Spending Blowout On Political Ads Could Not Save It From Voters’ Frustrations With Party",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/06/onlyfans-dc-workers-watch-a-ridiculous-amount-of-premium-porn-on-the-job",
+      "url": "https://dailycaller.com/2026/11/07/republicans-record-ad-spending-failed-midterms",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Abdul El-Sayed won't force Michigan students to learn Arabic numerals. They already do",
+      "claim": "Did Virginia legalize abortion up to birth? Claim misrepresents Question 1",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/abdul-el-sayed-arabic-numerals/",
+      "url": "https://www.snopes.com/fact-check/virginia-legalize-abortion-birth/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Secret Service Arrests Man Near White House After Allegedly Saying He Wanted To Kill Trump",
+      "claim": "Bureaucrats Are Trying To ‘Subvert’ The Trump Administration, Former Adviser Alleges",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/07/secret-service-arrest-illegal-alien-white-house-trump-threat-guanipa-chrinos",
+      "url": "https://dailycaller.com/2026/11/07/casey-means-joe-rogan-experience-podcast-bureaucrats-subvert-donald-trump-administration",
       "topic": "Politics"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did US Space Force take over FAA's air traffic control systems?",
+      "claim": "Time magazine published this Trump cover after Republicans' midterm losses",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/space-force-take-over-faa/",
-      "topic": "Science"
+      "url": "https://www.snopes.com/fact-check/time-magazine-trump-cover-midterms/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "What we know about Krakow mass shooting so far",
+      "headline": "What we know so far after Krakow gun attack",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-07T19:40:10+00:00"
+      "published": "2026-11-08T01:47:41+00:00"
     },
     {
       "n": 2,
-      "headline": "Gunman opens fire in Polish city of Krakow, killing 6 people and injuring 15",
+      "headline": "Homelessness in the U.S. saw its largest drop in more than a decade last year",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/g-s1-152532/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15",
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6033491/homelessness-in-the-u-s-saw-its-largest-drop-in-more-than-a-decade-last-year",
       "topic": "Trending",
-      "published": "2026-11-07T18:37:36+00:00"
+      "published": "2026-11-08T00:19:52+00:00"
     },
     {
       "n": 3,
-      "headline": "Melania Trump and LSU announce a scholarship program for students who were in foster care",
+      "headline": "What is Diwali, the Festival of Lights, and how is it celebrated?",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/melania-trump-and-lsu-announce-a-scholarship-program-for-students-who-were-in-foster-care",
-      "topic": "Politics",
-      "published": "2026-11-07T19:35:15+00:00"
+      "url": "https://www.pbs.org/newshour/world/what-is-diwali-the-festival-of-lights-and-how-is-it-celebrated",
+      "topic": "Trending",
+      "published": "2026-11-07T23:01:43+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Trump offers White House press secretary role to Dana White",
+      "headline": "Poland: Gunman kills 6 in Krakow main square",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-07T19:46:00+00:00"
+      "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square/a-79886489?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-07T21:34:00+00:00"
     },
     {
       "n": 6,
-      "headline": "No clear winner after tight New Zealand general election",
+      "headline": "Israel's president tasks opposition leader Eisenkot with forming government",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-11-07T15:56:28+00:00"
+      "published": "2026-11-07T22:19:59+00:00"
     },
     {
       "n": 7,
-      "headline": "Ousted Paraguayan president appears before prosecutors",
+      "headline": "The surprising and often forgotten history of economic populism in Texas",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6033373/paraguay-president-ousted-bank-collapse",
-      "topic": "Politics",
-      "published": "2026-11-07T17:14:36+00:00"
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6030759/the-surprising-and-often-forgotten-history-of-texas-tradition-of-economic-populism",
+      "topic": "Trending",
+      "published": "2026-11-07T22:12:07+00:00"
     },
     {
       "n": 8,
-      "headline": "Judge wants former U.S. attorney to investigate whether the government misled her in Trump golf case",
+      "headline": "Sen. Chris Murphy's stroke at 53 highlights a trend: Strokes among younger adults have risen",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/judge-wants-former-u-s-attorney-to-investigate-whether-the-government-misled-her-in-trump-golf-case",
-      "topic": "Politics",
-      "published": "2026-11-07T18:34:30+00:00"
+      "url": "https://www.pbs.org/newshour/health/sen-chris-murphys-stroke-at-53-highlights-a-trend-strokes-among-younger-adults-have-risen",
+      "topic": "Trending",
+      "published": "2026-11-07T21:14:44+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Armenia's selective prosecution: A threat to EU relations?",
+      "headline": "Ebola: Why is there still no vaccine?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/armenia-s-selective-prosecution-a-threat-to-eu-relations/a-79878159?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-07T18:36:00+00:00"
+      "url": "https://www.dw.com/en/ebola-why-is-there-still-no-vaccine/a-79888134?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-11-07T21:03:00+00:00"
     },
     {
       "n": 11,
-      "headline": "US offers $20m reward for information about Iran's nuclear programme",
+      "headline": "No clear winner after tight New Zealand general election",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-07T18:14:38+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-07T15:56:28+00:00"
     },
     {
       "n": 12,
-      "headline": "A promising new medicine against heart disease fails unexpectedly",
+      "headline": "Israel's president taps opposition candidate, not Netanyahu, to form a government",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack",
-      "topic": "Health",
-      "published": "2026-11-07T14:50:00+00:00"
+      "url": "https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog",
+      "topic": "Politics",
+      "published": "2026-11-07T20:18:18+00:00"
     },
     {
       "n": 13,
-      "headline": "With an ode to mate, Pope Leo urges faithful in Uruguay to build bridges of fraternity and faith",
+      "headline": "Trump says he's asked UFC's Dana White to be his press secretary",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/with-an-ode-to-mate-pope-leo-urges-faithful-in-uruguay-to-build-bridges-of-fraternity-and-faith",
-      "topic": "Trending",
-      "published": "2026-11-07T18:14:13+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-says-hes-asked-ufcs-dana-white-to-be-his-press-secretary",
+      "topic": "Politics",
+      "published": "2026-11-07T20:55:40+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "South Africa's ANC facing worst-ever performance in local elections",
+      "headline": "Israeli president tasks Gadi Eisenkot with forming government",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/south-africa-s-anc-facing-worst-ever-performance-in-local-elections/a-79887482?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-07T18:07:00+00:00"
+      "url": "https://www.dw.com/en/israeli-president-tasks-gadi-eisenkot-with-forming-government/a-79888288?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-07T19:56:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Houthis say at least 25 killed in Saudi air strike",
+      "headline": "US offers $20m reward for information about Iran's nuclear programme",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-07T17:09:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-07T18:14:38+00:00"
     },
     {
       "n": 17,
-      "headline": "Democrats plan to widen their probes of fatal ICE shootings",
+      "headline": "Polish gunman who killed 6 people in Krakow has 'ultranationalistic' views, authorities say",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6029659/democrats-investigate-fatal-ice-shootings",
+      "url": "https://www.npr.org/2026/11/07/g-s1-152532/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15",
       "topic": "Trending",
-      "published": "2026-11-07T13:19:09+00:00"
+      "published": "2026-11-07T18:37:36+00:00"
     }
   ]
 }
