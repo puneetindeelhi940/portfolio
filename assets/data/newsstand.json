@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T15:47:42Z",
+  "generated_at": "2026-11-11T22:26:13Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Maine Secretary of State NOT Caught With Box of 250 Ballots In Office -- Discovered In Amazon Package in 2025",
+      "claim": "Gina Hinojosa Did NOT Apologize To Elon Musk In 'Open Letter' -- Image Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-maine-secretary-of-state-not-caught-with-box-of-250-ballots-and-incident-was-in-2025-not-2026.html",
-      "topic": "Money"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-gina-hinojosa-did-not-write-open-letter-of-apology-to-elon-musk.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Muslim-majority city in Michigan legalized religious animal sacrifice is missing key context",
+      "claim": "Jan. 6 rioter Jake Lang crashed Seattle cat convention to condemn furries",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/muslim-michigan-city-animal-sacrifice/",
+      "url": "https://www.snopes.com/fact-check/jake-lang-cat-convention-furries/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "House GOP Blocks Thomas Massie’s Attempt To Impeach Pete Hegseth",
+      "claim": "EXCLUSIVE: Mass Murderer Whose Death Sentence Was Commuted Urges Newsom To Run For President, Others Question Dem Governor’s Motives",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/10/house-gop-tables-impeachment-pete-hegseth-thomas-massie",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/11/california-govenor-gavin-newsom-death-row-endorse-president-murder",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -56,26 +56,26 @@
     },
     {
       "n": 7,
-      "claim": "Andy Burnham has not just announced the UK is rejoining the EU",
+      "claim": "Facebook ad offers fake Tesco grocery package giveaway",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/europe/andy-burnham-announcement-uk-rejoin-eu-false/",
+      "url": "https://fullfact.org/shopping/facebook-ad-fake-tesco-grocery-package-giveaway/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Trump Did NOT Make Post Calling JD Vance 'Judas Disloyal Vance' on Truth Social After 2026 Midterm Elections",
+      "claim": "Musk Did NOT Call Texas Gov.-Elect Gina Hinojosa 'A Puppet Of Barack Obama And Kamala Harris",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-trump-did-not-make-post-calling-jd-vance-judas-disloyal-vance-after-2026-midterm-elections.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-elon-musk-did-not-call-gina-hinojosa-puppet.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Facts behind 10 rumors about Stephen Miller",
+      "claim": "Jan. 6 rioter Jake Lang is organizing Capitol protest against midterm results. Here's what we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/stephen-miller-rumors/",
+      "url": "https://www.snopes.com/news/2026/11/11/capitol-christian-crusader-protest/",
       "topic": "Trending"
     },
     {
@@ -112,26 +112,26 @@
     },
     {
       "n": 14,
-      "claim": "Videos of tradesmen supporting van driver told to remove England flag are AI-generated",
+      "claim": "Andy Burnham has not just announced the UK is rejoining the EU",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/videos-tradesmen-supporting-van-driver-England-flag-ai/",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 15,
-      "claim": "Dave Chappelle Did NOT Snub James Talarico During SNL Closing Credits",
-      "verdict": "FALSE",
-      "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-dave-chappelle-did-not-snub-james-talarico-snl.html",
+      "url": "https://fullfact.org/europe/andy-burnham-announcement-uk-rejoin-eu-false/",
       "topic": "Trending"
     },
     {
-      "n": 16,
-      "claim": "make misleading claims about Wisconsin registered voter numbers and Texas fraud arrests",
+      "n": 15,
+      "claim": "Maine Secretary of State NOT Caught With Box of 250 Ballots In Office -- Discovered In Amazon Package in 2025",
       "verdict": "FALSE",
+      "source": "Lead Stories",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-maine-secretary-of-state-not-caught-with-box-of-250-ballots-and-incident-was-in-2025-not-2026.html",
+      "topic": "Money"
+    },
+    {
+      "n": 16,
+      "claim": "Unpacking edited video behind Hasan Piker's $72.5M defamation lawsuit against Scott Jennings",
+      "verdict": "MISLEADING",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/11/wisconsin-texas-voter-fraud/",
+      "url": "https://www.snopes.com/news/2026/10/28/hasan-piker-scott-jennings-lawsuit/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Spain sees widespread disruption in first general strike for 14 years",
+      "headline": "Clashes erupt in Barcelona after thousands join Spain general strike",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-11T14:06:27+00:00"
+      "published": "2026-11-11T22:07:37+00:00"
     },
     {
       "n": 2,
-      "headline": "Following big Democratic wins, these swing voters are looking for results",
+      "headline": "Why is gasoline suddenly under $4 a gallon?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/11/nx-s1-6036790/swing-voters-swing-states-democrats-congress",
+      "url": "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
       "topic": "Trending",
-      "published": "2026-11-11T14:19:42+00:00"
+      "published": "2026-11-11T19:59:14+00:00"
     },
     {
       "n": 3,
-      "headline": "WATCH LIVE: Trump marks Veterans Day with wreath laying, remarks at Arlington National Cemetery",
+      "headline": "Biden says he wouldn't have run for a second term in 2024 if he knew he had cancer",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-trump-marks-veterans-day-with-wreath-laying-remarks-at-arlington-national-cemetery",
-      "topic": "Politics",
-      "published": "2026-11-11T15:06:19+00:00"
+      "url": "https://www.pbs.org/newshour/politics/biden-says-he-wouldnt-have-run-for-a-second-term-in-2024-if-he-knew-he-had-cancer",
+      "topic": "Health",
+      "published": "2026-11-11T22:04:11+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Brazil electoral court fines Meta, sees no deliberate election bias",
+      "headline": "Spain: Housing crisis prompts general strike, mass nighttime protests",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/brazil-electoral-court-fines-meta-sees-no-deliberate-election-bias/a-79920780?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-11T15:17:00+00:00"
+      "url": "https://www.dw.com/en/spain-housing-crisis-prompts-general-strike-mass-nighttime-protests/a-79915208?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-11T21:58:00+00:00"
     },
     {
       "n": 6,
@@ -190,23 +190,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-11-11T15:05:11+00:00"
+      "published": "2026-11-11T18:04:58+00:00"
     },
     {
       "n": 7,
-      "headline": "Russia and Ukraine agree to a large exchange of prisoners of war, officials say",
+      "headline": "Greetings from Senegal, where breakdancers are competing in the Youth Olympics",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks",
-      "topic": "World",
-      "published": "2026-11-11T13:30:00+00:00"
+      "url": "https://www.npr.org/2026/11/11/g-s1-150228/senegal-youth-olympic-games-breakdancing",
+      "topic": "Trending",
+      "published": "2026-11-11T17:23:10+00:00"
     },
     {
       "n": 8,
-      "headline": "House rejects Hegseth impeachment as GOP selects Jordan and Thune as leaders",
+      "headline": "Judge allows Trump defamation case against BBC to proceed but tosses 1 claim",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/house-rejects-hegseth-impeachment-as-gop-selects-jordan-and-thune-as-leaders",
-      "topic": "Trending",
-      "published": "2026-11-10T23:55:40+00:00"
+      "url": "https://www.pbs.org/newshour/politics/judge-allows-trump-defamation-case-against-bbc-to-proceed-but-tosses-1-claim",
+      "topic": "Politics",
+      "published": "2026-11-11T21:32:56+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Is AIIB's complaint mechanism failing affected communities?",
+      "headline": "Fears of rising antisemitism in Europe",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/is-aiib-s-complaint-mechanism-failing-affected-communities/a-79919917?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/fears-of-rising-antisemitism-in-europe/a-79921783?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-11T15:12:00+00:00"
+      "published": "2026-11-11T20:37:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+      "headline": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-11T14:51:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-11T16:45:11+00:00"
     },
     {
       "n": 12,
-      "headline": "House effectively ends Hegseth impeachment. And, 3 men accused of plotting U.K. attacks",
+      "headline": "Kennedy relatives join the fight against Trump's arch, alleging harm to JFK's grave",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/11/g-s1-152949/up-first-newsletter-pete-hegseth-jim-jordan-iran-backed-trio-us-bases",
-      "topic": "Trending",
-      "published": "2026-11-11T12:21:59+00:00"
+      "url": "https://www.npr.org/2026/11/11/nx-s1-6037372/kennedys-trump-arch-lawsuit-jfk-grave-arlington-cemetery",
+      "topic": "Politics",
+      "published": "2026-11-11T16:59:32+00:00"
     },
     {
       "n": 13,
-      "headline": "A breakdown of the impeachment articles filed against Pete Hegseth",
+      "headline": "Trump says the towering arch he wants to be build might be dedicated to military veterans",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/a-breakdown-of-the-impeachment-articles-filed-against-pete-hegseth",
-      "topic": "Trending",
-      "published": "2026-11-10T23:50:33+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-says-the-towering-arch-he-wants-to-be-build-might-be-dedicated-to-military-veterans",
+      "topic": "Politics",
+      "published": "2026-11-11T21:11:02+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Wael Mohya could make German football history at 17",
+      "headline": "VW scraps production modernization plan citing tough financial straits",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/wael-mohya-could-make-german-football-history-at-17/a-79919787?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/vw-scraps-production-modernization-plan-citing-tough-financial-straits/a-79923597?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-11T15:00:00+00:00"
+      "published": "2026-11-11T19:06:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Hundreds of Italian schools hit by threats in suspected bomb hoax",
+      "headline": "Schools in Italy, Scotland and Northern Ireland hit by threats in suspected bomb hoax",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-11T12:30:29+00:00"
+      "published": "2026-11-11T18:38:45+00:00"
     },
     {
       "n": 17,
-      "headline": "Iran-backed trio accused of plotting attacks on U.K. base hosting U.S. jets",
+      "headline": "What's behind democratic socialists' historic victories in the midterms?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/10/nx-s1-6036786/uk-iran-airbase-russia-spy",
-      "topic": "World",
-      "published": "2026-11-11T10:02:54+00:00"
+      "url": "https://www.npr.org/2026/11/11/nx-s1-6037432/whats-behind-democratic-socialists-historic-victories-in-the-midterms",
+      "topic": "Trending",
+      "published": "2026-11-11T16:41:48+00:00"
     }
   ]
 }
