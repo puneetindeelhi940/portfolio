@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T05:30:20Z",
+  "generated_at": "2026-11-12T16:30:58Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Is this image of flooded tents in Gaza real?",
+      "claim": "Is this a real image of Trump, Russell Brand, Conor McGregor and other public figures?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/gaza-flooding-tents-image/",
-      "topic": "World"
+      "url": "https://www.snopes.com/fact-check/trump-russell-brand-tate-conor-mcgregor-mike-tyson-taylor/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -48,19 +48,19 @@
     },
     {
       "n": 6,
-      "claim": "Toxic air, firecracker menace, severe noise pollution: Newspapers chronicle Diwali fallout",
+      "claim": "Homes razed, families displaced: Himanta celebrates Assam eviction drive as ‘Ghar ki Safai’",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/toxic-air-firecracker-menace-severe-noise-pollution-newspapers-chronicle-diwali-fallout/",
+      "url": "https://www.altnews.in/homes-razed-families-displaced-himanta-celebrates-assam-eviction-drive-as-ghar-ki-safai/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Facebook ad offers fake Tesco grocery package giveaway",
+      "claim": "AI-generated video of England flag hung on building works shared online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/facebook-ad-fake-tesco-grocery-package-giveaway/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/culture-and-society/massive-england-flag-building-works-AI-generated/",
+      "topic": "Tech / AI"
     },
     {
       "n": 8,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Jan. 6 rioter Jake Lang crashed Seattle cat convention to condemn furries",
+      "claim": "Did Erika Kirk plug Charlie Kirk's hot sauce brand through tears on Fox News?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/jake-lang-cat-convention-furries/",
+      "url": "https://www.snopes.com/fact-check/erika-kirk-charlie-hot-sauce/",
       "topic": "Trending"
     },
     {
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Suvendu calls firecracker critics communists as Kolkata chokes on Diwali pollution",
+      "claim": "Mother, should I trust the government? The worst Diwali air in Delhi never made it to CPCB record",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/suvendu-calls-firecracker-critics-communists-as-kolkata-chokes-on-diwali-pollution/",
+      "url": "https://www.altnews.in/mother-should-i-trust-the-government-the-worst-diwali-air-in-delhi-never-made-it-to-cpcb-record/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Andy Burnham has not just announced the UK is rejoining the EU",
+      "claim": "Facebook ad offers fake Tesco grocery package giveaway",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/europe/andy-burnham-announcement-uk-rejoin-eu-false/",
+      "url": "https://fullfact.org/shopping/facebook-ad-fake-tesco-grocery-package-giveaway/",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Jan. 6 rioter Jake Lang is organizing Capitol protest against midterm results. Here's what we know",
+      "claim": "Thomas Massie: 6 claims we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/11/capitol-christian-crusader-protest/",
+      "url": "https://www.snopes.com/collections/thomas-massie/",
       "topic": "Trending"
     },
     {
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Democrat Scott Colom seals historic win in Mississippi Senate race",
+      "headline": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-12T04:00:30+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-12T15:16:39+00:00"
     },
     {
       "n": 2,
-      "headline": "World's fastest ocean liner is sunk to break another record: largest artificial reef",
+      "headline": "The SS United States takes its final voyage to the bottom of the Gulf of Mexico",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/11/nx-s1-6030853/ss-united-states-artificial-reef-sinking",
+      "url": "https://www.npr.org/2026/11/12/g-s1-153219/the-deliberate-sinking-of-the-ss-united-states",
       "topic": "Trending",
-      "published": "2026-11-12T03:10:32+00:00"
+      "published": "2026-11-12T16:20:04+00:00"
     },
     {
       "n": 3,
-      "headline": "Indictment sheds light on alleged Iran-backed plots across U.S. and Europe",
+      "headline": "Suspected gunman shoots 5 people in D.C., killing 1, before dying by suicide",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/indictment-sheds-light-on-alleged-iran-backed-plots-across-u-s-and-europe",
-      "topic": "World",
-      "published": "2026-11-11T23:55:44+00:00"
+      "url": "https://www.pbs.org/newshour/nation/suspected-gunman-shoots-5-people-in-d-c-killing-1-before-dying-by-suicide",
+      "topic": "Trending",
+      "published": "2026-11-12T16:26:29+00:00"
     },
     {
       "n": 4,
+      "headline": "Zimbabwean author Simbarashe Kundizeza cleared of using AI to write prize-winning story",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/books/2026/nov/12/zimbabwean-author-simbarashe-kundizeza-cleared-ai-caine-prize-winning-story",
+      "topic": "Tech / AI",
+      "published": "2026-11-12T13:14:38+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Hungary eases abortion rules",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/hungary-eases-abortion-rules/a-79931614?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-12T16:13:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "We've got to run': Inside ruined Ukraine power plant under constant drone threat",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-12T13:02:46+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "DC shooting leaves 1 person killed, 4 injured. Gunman dead",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/12/nx-s1-6038860/dc-logan-circle-shooting",
+      "topic": "Trending",
+      "published": "2026-11-12T16:12:53+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Sharp swings for Nvidia and oil prices weigh on Wall Street",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/economy/sharp-swings-for-nvidia-and-oil-prices-weigh-on-wall-street",
+      "topic": "Trending",
+      "published": "2026-11-12T16:05:41+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Lewis Hamilton visits Egypt’s Rafah crossing and Gaza aid facilities",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/10/lewis-hamilton-egypt-rafah-crossing-gaza-aid-facilities",
@@ -177,39 +217,39 @@
       "published": "2026-11-10T15:39:26+00:00"
     },
     {
-      "n": 5,
-      "headline": "Pope Leo XIV returns to Peru to a big welcome, calls it his 'homeland",
+      "n": 10,
+      "headline": "Sri Lanka: Rights groups sound alarm over proposed anti-terror law",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pope-leo-xiv-returns-to-peru-to-a-big-welcome-calls-it-his-homeland/a-79925466?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/sri-lanka-rights-groups-sound-alarm-over-proposed-anti-terror-law/a-79932227?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-12T04:42:00+00:00"
+      "published": "2026-11-12T15:40:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Israeli strike on hospital kills at least five Palestinians, Gaza civil defence agency says",
+      "n": 11,
+      "headline": "Suspected bomb hoax threats force fresh evacuations of Italian schools",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-11-12T05:06:27+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cr894w453e90o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-12T12:39:39+00:00"
     },
     {
-      "n": 7,
-      "headline": "Democrat Scott Colom wins the closest Senate race in the country",
+      "n": 12,
+      "headline": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/11/nx-s1-6037840/democrat-scott-colom-wins-the-closest-senate-race-in-the-country",
-      "topic": "Politics",
-      "published": "2026-11-11T23:33:59+00:00"
+      "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
+      "topic": "Trending",
+      "published": "2026-11-12T15:26:34+00:00"
     },
     {
-      "n": 8,
-      "headline": "News Wrap: Democrat Scott Colom defeats Mississippi Sen. Cindy Hyde-Smith",
+      "n": 13,
+      "headline": "Nvidia CEO Jensen Huang resigns after his affair raises national security concerns",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-democrat-scott-colom-defeats-mississippi-sen-cindy-hyde-smith",
-      "topic": "Politics",
-      "published": "2026-11-11T23:50:05+00:00"
+      "url": "https://www.pbs.org/newshour/economy/nvidia-ceo-jensen-huang-resigns-after-his-affair-raises-national-security-concerns",
+      "topic": "Trending",
+      "published": "2026-11-12T14:10:01+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Collision of two trains in Egypt kills at least seven",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
@@ -217,68 +257,28 @@
       "published": "2026-11-08T17:51:17+00:00"
     },
     {
-      "n": 10,
-      "headline": "Nvidia board reportedly weighs ousting Huang amid alleged affairs with exec and suspected Chinese spy",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nvidia-board-reportedly-weighs-ousting-huang-amid-alleged-affairs-with-exec-and-suspected-chinese-spy/a-79925002?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-12T00:01:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "New York building collapse kills at least two, officials say",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8zx964glvwxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-12T05:12:56+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Democrat Scott Colom wins Mississippi Senate race",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/11/g-s1-151688/mississippi-senate-race-scott-colom",
-      "topic": "Politics",
-      "published": "2026-11-11T23:04:51+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "White House threatens Democrats over plans to investigate Trump officials",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/white-house-threatens-democrats-over-plans-to-investigate-trump-officials",
-      "topic": "Politics",
-      "published": "2026-11-11T23:45:49+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "How African philosophies inspired a new approach to staging film festivals in Manchester",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/news/2026/nov/08/african-philosophies-see-my-world-film-festival-manchester",
-      "topic": "Trending",
-      "published": "2026-11-08T12:00:39+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Mississippi Senate race: Democrat Scott Colom defeats Republican Cindy Hyde-Smith",
+      "headline": "UK court convicts 2 Iranian men of spying on journalists",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/mississippi-senate-race-democrat-scott-colom-defeats-republican-cindy-hyde-smith/a-79924938?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-11T23:33:00+00:00"
+      "url": "https://www.dw.com/en/uk-court-convicts-2-iranian-men-of-spying-on-journalists/a-79931583?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-12T15:23:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Clashes erupt in Barcelona after thousands join Spain general strike",
+      "headline": "Democrat Scott Colom makes history as Mississippi's first black senator since 19th Century",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-11T22:07:37+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-12T12:56:55+00:00"
     },
     {
       "n": 17,
-      "headline": "Why is gasoline suddenly under $4 a gallon?",
+      "headline": "Indonesia's VP resigns as his eligibility and academic credentials are questioned",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
+      "url": "https://www.npr.org/2026/11/12/g-s1-153190/indonesias-vp-resigns-as-his-eligibility-and-academic-credentials-are-questioned",
       "topic": "Trending",
-      "published": "2026-11-11T19:59:14+00:00"
+      "published": "2026-11-12T14:22:50+00:00"
     }
   ]
 }
