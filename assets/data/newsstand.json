@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T04:47:26Z",
+  "generated_at": "2026-11-13T15:52:47Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Bill Clinton help homeless veteran outside Kennedy Center?",
+      "claim": "Did Japan warn that Israel was planning to 'nuke' 2 US cities and blame Iran?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/bill-clinton-homeless-veteran/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/japan-israel-nuke-us-iran/",
+      "topic": "World"
     },
     {
       "n": 3,
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "Wes Streeting did not wear skirt to remembrance ceremony",
+      "claim": "Not everyone on NHS waiting lists is ‘not able to work properly’",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/politics/wes-streeting-skirt-remembrance-ceremony-altered/",
+      "url": "https://fullfact.org/health/lucy-powell-waiting-list-work/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Hakeem Jeffries threaten to withhold committee assignments from those against his bid for House speaker?",
+      "claim": "Does video show Hegseth's group being reprimanded for talking, laughing at Tomb of the Unknown Soldier?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/12/jeffries-withhold-committee/",
+      "url": "https://www.snopes.com/fact-check/hegseth-tomb-of-the-unknown-soldier-video/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Former Vice President Mike Pence Threatens To Run For President Again",
+      "claim": "STATE OF FRIDAY: The Swamp’s Last Hurrah",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/12/former-vice-president-mike-pence-suggests-president-for-president-donald-trump",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/13/state-of-friday-congress-fisa-reconciliation-iran-war-glenn-thompson",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -112,15 +112,15 @@
     },
     {
       "n": 14,
-      "claim": "AI-generated video of England flag hung on building works shared online",
+      "claim": "Wes Streeting did not wear skirt to remembrance ceremony",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/massive-england-flag-building-works-AI-generated/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/politics/wes-streeting-skirt-remembrance-ceremony-altered/",
+      "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "of AOC Is AI FACESWAP, Not Real Footage of Her with Bare Feet on Desk",
+      "claim": "FAKE AOC Bare Feet On Desk Video Is AI Faceswap -- Original By Adult Content Creator",
       "verdict": "FALSE",
       "source": "Lead Stories",
       "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-video-of-aoc-is-not-real-footage-of-her-with-bare-feet-on-desk.html",
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "allegedly shows Muslim NYPD officers taking away woman's dog for Shariah. Here's what we know",
+      "claim": "Did Texas 'find' 20M votes that flipped state blue? Here's the truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/12/muslim-nypd-dog-shariah/",
+      "url": "https://www.snopes.com/fact-check/texas-midterms-votes/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+      "headline": "Why is the Microsoft outage lasting so long?",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-13T03:57:01+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-13T14:21:26+00:00"
     },
     {
       "n": 2,
-      "headline": "Chris Van Hollen says he will challenge Chuck Schumer for Senate majority leader",
+      "headline": "Remembering singer and actor Peggy King",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6039357/chris-van-hollen-chuck-schumer-senate-majority-leader",
-      "topic": "Politics",
-      "published": "2026-11-13T03:52:25+00:00"
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6038917/remembering-singer-and-actor-peggy-king",
+      "topic": "Celebrity",
+      "published": "2026-11-13T13:35:22+00:00"
     },
     {
       "n": 3,
-      "headline": "Senators probe RFK Jr.'s reason for Samoa trip after letter refuting his testimony published",
+      "headline": "Trump's Justice Department faces a new era of scrutiny under a Democratic-led Congress",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/senators-probe-rfk-jr-s-reason-for-samoa-trip-after-letter-refuting-his-testimony-published",
-      "topic": "Trending",
-      "published": "2026-11-13T00:50:18+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trumps-justice-department-faces-a-new-era-of-scrutiny-under-a-democratic-led-congress",
+      "topic": "Politics",
+      "published": "2026-11-13T15:29:23+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "US disrupts North Korea's $400 million crypto scam, FBI says",
+      "headline": "Why does El Salvador's Bukele have troops in Haiti?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-disrupts-north-korea-s-400-million-crypto-scam-fbi-says/a-79935957?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-11-13T04:19:00+00:00"
+      "url": "https://www.dw.com/en/why-does-el-salvador-s-bukele-have-troops-in-haiti/a-79940771?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-13T15:37:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+      "headline": "Watch: How a server outage took down Microsoft Teams and Outlook",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-13T02:01:35+00:00"
+      "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-13T11:43:27+00:00"
     },
     {
       "n": 7,
-      "headline": "Is Outlook down? Widespread outage hits Microsoft email and other apps",
+      "headline": "Manchester United names USMNT coach Mauricio Pochettino as its manager",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6039343/is-outlook-down-widespread-outage-hits-microsoft-email-and-other-apps",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6038932/mauricio-pochettino-usmnt-manchester-united",
       "topic": "Trending",
-      "published": "2026-11-13T01:26:24+00:00"
+      "published": "2026-11-13T13:32:23+00:00"
     },
     {
       "n": 8,
-      "headline": "What to know about dengue fever as Florida reports more than 500 cases this year",
+      "headline": "Ukraine fires nearly 1,200 drones at Russia as U.S.-led talks consider wider European security",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/what-to-know-about-dengue-fever-as-florida-reports-more-than-500-cases-this-year",
-      "topic": "Trending",
-      "published": "2026-11-13T00:31:23+00:00"
+      "url": "https://www.pbs.org/newshour/world/ukraine-fires-nearly-1200-drones-at-russia-as-u-s-led-talks-consider-wider-european-security",
+      "topic": "World",
+      "published": "2026-11-13T14:58:55+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Microsoft works to restore Outlook and Teams after global outage",
+      "headline": "Iran targeted US radar system in Bahrain",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-13T03:51:00+00:00"
+      "url": "https://www.dw.com/en/iran-targeted-us-radar-system-in-bahrain/a-79942640?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-13T15:32:00+00:00"
     },
     {
       "n": 11,
-      "headline": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
+      "headline": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-11-13T02:48:29+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-13T03:57:01+00:00"
     },
     {
       "n": 12,
-      "headline": "Cindy Holscher wins in Kansas, holding governor's office for Democrats",
+      "headline": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/12/g-s1-151239/kansas-governor-midterms-holscher-masterson",
-      "topic": "Politics",
-      "published": "2026-11-12T23:36:19+00:00"
+      "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+      "topic": "Trending",
+      "published": "2026-11-13T12:07:12+00:00"
     },
     {
       "n": 13,
-      "headline": "What Huang's resignation means for chipmakers, AI and U.S. national security",
+      "headline": "Van Hollen to challenge Schumer for Senate Democratic leader",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-huangs-resignation-mean-for-chipmakers-ai-and-u-s-national-security",
-      "topic": "Tech / AI",
-      "published": "2026-11-12T23:55:39+00:00"
+      "url": "https://www.pbs.org/newshour/politics/van-hollen-to-challenge-schumer-for-senate-democratic-leader",
+      "topic": "Politics",
+      "published": "2026-11-13T14:26:31+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Darth Vader strikes back at auction as his lightsaber from two original Star Wars films reclaims the record from Luke Skywalker's prop",
+      "headline": "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/darth-vader-strikes-back-at-auction-as-his-lightsaber-from-two-original-star-wars-films-reclaims-the-record-from-luke-skywalker-s-prop/a-79935960?maca=en-rss-en-all-1573-rdf",
-      "topic": "Celebrity",
-      "published": "2026-11-13T02:27:00+00:00"
+      "url": "https://www.dw.com/en/beijing-faces-its-russia-dilemma-amid-talk-of-xi-trump-putin-summit/a-79942427?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-13T15:28:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+      "headline": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-12T20:09:16+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-13T02:01:35+00:00"
     },
     {
       "n": 17,
-      "headline": "New York building collapse kills 8, including 2 children",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/new-york-building-collapse-kills-8-including-2-children",
+      "headline": "Happy World Kindness Day! Check out our kind photos of kindness to humans -- and cats",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/13/g-s1-153274/world-kindness-day-altruism-generosity",
       "topic": "Trending",
-      "published": "2026-11-12T23:50:06+00:00"
+      "published": "2026-11-13T12:06:28+00:00"
     }
   ]
 }
