@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T21:46:36Z",
+  "generated_at": "2026-11-14T04:41:21Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Of Gosport Anti-Immigration Protest Is AI-Generated",
-      "verdict": "FALSE",
+      "claim": "Evidence 90,000 Drop In Votes In Nevada District 2 House Race Was Fraud -- An AP Typo",
+      "verdict": "UNPROVEN",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-of-gosport-anti-immigration-protests-ai.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-no-evidence-vote-drop-was-fraud-in-nv-house-dist-2-race.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Apple release 'Live Listen' update that lets someone else remotely access your phone?",
+      "claim": "Did Dunkin' ban word 'Christmas' after celebrating Ramadan and Pride Month in 2026?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/apple-live-listen-update/",
+      "url": "https://www.snopes.com/fact-check/dunkin-ban-christmas-ramadan-pride/",
       "topic": "Trending"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Ex-CIA Director John Brennan’s Son Arrested On Child Porn Charges",
+      "claim": "FAA Issues Nationwide Ground Stop, Halting All US Flight Departures",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/13/cia-john-brennan-son-kyle-arrested-child-pornoraphy-charges-eastern-district-virginia-fbi",
+      "url": "https://dailycaller.com/2026/11/13/faa-nationwide-ground-stop-us-flight-departures-sean-duffy",
       "topic": "Trending"
     },
     {
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "Washington Examiner Did NOT Report McKinsey Supports Édouard Philippe -- Story Is From Fake Website",
+      "claim": "Trump DID 'Dump' Up To $1 Million In Nvidia Stock -- But Also Bought Up To $1.6 Million",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-washington-examiner-did-not-report-mckinsey-supports-philippe.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-trump-did-dump-as-much-as-1-million-nvidia-stock-few-weeks-before-jensen-huang-affair-story-broke-also-bought-as-much-as-1-6-million-same-onth.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Is Air Force holding Maj. Jason Watson in solitary confinement? What we know",
+      "claim": "Unfounded rumor claims Hegseth awarded medal to Tomb of the Unknown Soldier guard's body double",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/10/air-force-jason-watson-solitary/",
+      "url": "https://www.snopes.com/news/2026/11/13/hegseth-medal-soldier-body-double/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Zombie Amnesty Plan Shambles On In Lame Duck Congress Amid Trump Floating Deal With Democrats",
+      "claim": "Lauren Boebert Loses Reelection Bid Years After Fleeing To Redder District",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/13/amnesty-push-lives-on-in-lame-duck-congress-as-trump-floats-deal-with-democrats-glenn-thompson-mullin-illegal-immigrants-agriculture",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/13/lauren-boebert-loses-eileen-laubacher-colorado",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "Evidence Texas Opened Major Investigation Into 30,000 Cases Of Voter Fraud After Midterms",
-      "verdict": "UNPROVEN",
+      "claim": "FAKE Video Of Gosport Anti-Immigration Protest Is AI-Generated",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-no-evidence-texas-opened-major-investigation-into-30000-cases-of-voter-fraud.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-of-gosport-anti-immigration-protests-ai.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "Did Japan warn that Israel was planning to 'nuke' 2 US cities and blame Iran?",
+      "claim": "Were some Democrats who missed Hegseth impeachment vote at AIPAC event?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/japan-israel-nuke-us-iran/",
-      "topic": "World"
+      "url": "https://www.snopes.com/news/2026/11/13/democrats-missed-hegseth-vote-aipac/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
+      "headline": "Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-13T21:14:22+00:00"
+      "published": "2026-11-13T23:40:45+00:00"
     },
     {
       "n": 2,
-      "headline": "What's Trump's strategy now with Iran? To keep things as they are",
+      "headline": "DHS head Markwayne Mullin says there is not a threat to the U.S. amid FAA ground stop",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
-      "topic": "Politics",
-      "published": "2026-11-13T19:02:04+00:00"
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6040418/dhs-head-markwayne-mullin-says-there-is-not-a-threat-to-the-u-s-amid-faa-ground-stop",
+      "topic": "Trending",
+      "published": "2026-11-13T22:36:46+00:00"
     },
     {
       "n": 3,
-      "headline": "FAA grounds all flights at U.S. airports due to air traffic control communications problems",
+      "headline": "SpaceX's Starship soars into orbit after booster malfunction thwarts double catch attempt",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems",
+      "url": "https://www.pbs.org/newshour/science/spacexs-starship-soars-into-orbit-after-booster-malfunction-thwarts-double-catch-attempt",
       "topic": "Trending",
-      "published": "2026-11-13T21:41:27+00:00"
+      "published": "2026-11-14T00:20:20+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Tanker collides with cruise ship on Mississippi near New Orleans",
+      "headline": "Senegal Youth Olympics in Dakar end on high note",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/tanker-collides-with-cruise-ship-on-mississippi-near-new-orleans/a-79945080?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/senegal-youth-olympics-in-dakar-end-on-high-note/a-79944820?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-13T21:31:00+00:00"
+      "published": "2026-11-14T04:25:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Why is Microsoft's outage lasting so long and will emails be lost?",
+      "headline": "Microsoft 'deeply sorry' for global outage as it reports broad recovery",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-13T18:36:57+00:00"
+      "published": "2026-11-13T21:14:22+00:00"
     },
     {
       "n": 7,
-      "headline": "The Trump administration's voter roll crusade could continue",
+      "headline": "Stuck on the tarmac without information: Travelers share their ground stop experiences",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/13/nx-s1-6034016/voter-fraud-search-trump-california",
-      "topic": "Politics",
-      "published": "2026-11-13T17:00:00+00:00"
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6040397/stuck-on-the-tarmac-without-information-travelers-share-their-ground-stop-experiences",
+      "topic": "Trending",
+      "published": "2026-11-13T22:36:45+00:00"
     },
     {
       "n": 8,
-      "headline": "GOP Rep. Lauren Boebert of Colorado loses U.S. House seat to Democrat Eileen Laubacher",
+      "headline": "FAA issues rare nationwide ground stop due to 'extraordinary circumstances",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/gop-rep-lauren-boebert-of-colorado-loses-u-s-house-seat-to-democrat-eileen-laubacher",
-      "topic": "Politics",
-      "published": "2026-11-13T21:32:51+00:00"
+      "url": "https://www.pbs.org/newshour/show/faa-issues-rare-nationwide-ground-stop-due-to-extraordinary-circumstances",
+      "topic": "Trending",
+      "published": "2026-11-13T23:56:33+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "FAA issues US national ground stop on all flights",
+      "headline": "Trump to meet Xi, Putin for three-way huddle on nuclear arms talks",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/faa-issues-us-national-ground-stop-on-all-flights/a-79945062?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-13T21:16:00+00:00"
+      "url": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-14T04:11:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Watch: How a server outage took down Microsoft Teams and Outlook",
+      "headline": "Why is Microsoft's outage lasting so long and will emails be lost?",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-13T11:43:27+00:00"
+      "published": "2026-11-13T18:36:57+00:00"
     },
     {
       "n": 12,
-      "headline": "Does Europe regret its bet on U.S. defense?",
+      "headline": "What we know about the FAA nationwide ground stop",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6040388/what-we-know-about-the-faa-nationwide-ground-stop",
       "topic": "Trending",
-      "published": "2026-11-13T16:17:43+00:00"
+      "published": "2026-11-13T22:27:38+00:00"
     },
     {
       "n": 13,
-      "headline": "Rescues operations underway in New Orleans after tanker hits river cruise boat",
+      "headline": "News Wrap: Tanker crashes into river cruise boat in New Orleans",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/rescues-operations-underway-in-new-orleans-after-tanker-hits-river-cruise-boat",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-tanker-crashes-into-river-cruise-boat-in-new-orleans",
       "topic": "Trending",
-      "published": "2026-11-13T21:00:35+00:00"
+      "published": "2026-11-13T23:55:45+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ukraine updates: EU to send united front to potential peace talks",
+      "headline": "SpaceX launches Starship rocket, fails to recover booster",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-updates-eu-to-send-united-front-to-potential-peace-talks/live-79937459?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-13T19:39:00+00:00"
+      "published": "2026-11-14T02:24:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
+      "headline": "Watch: How a server outage took down Microsoft Teams and Outlook",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-13T16:40:31+00:00"
+      "published": "2026-11-13T11:43:27+00:00"
     },
     {
       "n": 17,
-      "headline": "How Sen. Chris Van Hollen plans to flex Democratic power on the foreign aid front",
+      "headline": "GOP state officials push to revive Trump's mail voting restrictions for 2028 election",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/13/g-s1-153350/senator-chris-van-hollen-global-health-development-aid",
-      "topic": "Trending",
-      "published": "2026-11-13T15:46:35+00:00"
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6040409/trump-mail-in-voting",
+      "topic": "Politics",
+      "published": "2026-11-13T22:18:55+00:00"
     }
   ]
 }
