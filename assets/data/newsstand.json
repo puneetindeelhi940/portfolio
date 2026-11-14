@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T14:43:04Z",
+  "generated_at": "2026-11-14T20:20:08Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Dunkin' ban word 'Christmas' after celebrating Ramadan and Pride Month in 2026?",
+      "claim": "11 fact checks about Muslim Americans in Michigan reveals history of fearmongering claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dunkin-ban-christmas-ramadan-pride/",
+      "url": "https://www.snopes.com/collections/muslim-americans-michigan/",
       "topic": "Trending"
     },
     {
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "FAA Issues Nationwide Ground Stop, Halting All US Flight Departures",
+      "claim": "Blue Tsunami Tore Through State Capitols: Here’s How Dems Could Remake American Life Beyond The Beltway",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/13/faa-nationwide-ground-stop-us-flight-departures-sean-duffy",
+      "url": "https://dailycaller.com/2026/11/14/democrat-gains-state-legislatures-midterms",
       "topic": "Trending"
     },
     {
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "29 posts in 12 days by Union environment minister, not one on pollution: Bhupender Yadav’s Diwali silence",
-      "verdict": "FALSE",
+      "claim": "‘False flag operations’: Columnist Sushant Singh’s video doctored with AI; Singh misidentified as Pravin Sawhney",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/29-posts-in-12-days-by-union-environment-minister-not-one-on-pollution-bhupender-yadavs-diwali-silence/",
-      "topic": "Politics"
+      "url": "https://www.altnews.in/false-flag-operations-columnist-sushant-singhs-video-doctored-with-ai-singh-misidentified-as-pravin-sawhney/",
+      "topic": "Tech / AI"
     },
     {
       "n": 7,
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Unfounded rumor claims Hegseth awarded medal to Tomb of the Unknown Soldier guard's body double",
+      "claim": "Did Dunkin' ban word 'Christmas' after celebrating Ramadan and Pride Month in 2026?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/13/hegseth-medal-soldier-body-double/",
+      "url": "https://www.snopes.com/fact-check/dunkin-ban-christmas-ramadan-pride/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Lauren Boebert Loses Reelection Bid Years After Fleeing To Redder District",
+      "claim": "Congress Probes Disturbing String Of Suicides At NSA, Cyber Command",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/13/lauren-boebert-loses-eileen-laubacher-colorado",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/14/congress-suicides-nsa-cyber-command-japan-times",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -104,11 +104,11 @@
     },
     {
       "n": 13,
-      "claim": "Homes razed, families displaced: Himanta celebrates Assam eviction drive as ‘Ghar ki Safai’",
+      "claim": "29 posts in 12 days by Union environment minister, not one on pollution: Bhupender Yadav’s Diwali silence",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/homes-razed-families-displaced-himanta-celebrates-assam-eviction-drive-as-ghar-ki-safai/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/29-posts-in-12-days-by-union-environment-minister-not-one-on-pollution-bhupender-yadavs-diwali-silence/",
+      "topic": "Politics"
     },
     {
       "n": 14,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Were some Democrats who missed Hegseth impeachment vote at AIPAC event?",
+      "claim": "Unfounded rumor claims Hegseth awarded medal to Tomb of the Unknown Soldier guard's body double",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/13/democrats-missed-hegseth-vote-aipac/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/11/13/hegseth-medal-soldier-body-double/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "What we know about the ground stop and what to do if you're affected",
+      "headline": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-14T14:20:57+00:00"
+      "published": "2026-11-14T19:12:25+00:00"
     },
     {
       "n": 2,
-      "headline": "Alaska voters aren't ditching ranked choice voting, top-four primaries",
+      "headline": "Bomb found near ethanol plant in central Illinois forces evacuations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6034952/alaska-results-ranked-choice-voting-nonpartisan-primary",
+      "url": "https://www.npr.org/2026/11/14/g-s1-153781/bomb-ethanol-plant-peoria-illinois-evacuations",
       "topic": "Trending",
-      "published": "2026-11-14T13:08:05+00:00"
+      "published": "2026-11-14T20:12:34+00:00"
     },
     {
       "n": 3,
-      "headline": "SpaceX's Starship soars into orbit after booster malfunction thwarts double catch attempt",
+      "headline": "New Orleans port sues to get control of tanker that crashed into cruise ship on Mississippi River",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/spacexs-starship-soars-into-orbit-after-booster-malfunction-thwarts-double-catch-attempt",
+      "url": "https://www.pbs.org/newshour/nation/new-orleans-port-sues-to-get-control-of-tanker-that-crashed-into-cruise-ship-on-mississippi-river",
       "topic": "Trending",
-      "published": "2026-11-14T00:20:20+00:00"
+      "published": "2026-11-14T20:09:17+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Ukraine: Zelenskyy says security deal could go to referendum",
+      "headline": "Italy slaps Meta with €805mn fine over access to Android photos",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-zelenskyy-says-security-deal-could-go-to-referendum/a-79947535?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-14T11:40:00+00:00"
+      "url": "https://www.dw.com/en/italy-slaps-meta-with-€805mn-fine-over-access-to-android-photos/a-79949032?maca=en-rss-en-all-1573-rdf",
+      "topic": "Tech / AI",
+      "published": "2026-11-14T18:41:00+00:00"
     },
     {
       "n": 6,
@@ -190,23 +190,23 @@
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-11-14T11:41:20+00:00"
+      "published": "2026-11-14T19:21:10+00:00"
     },
     {
       "n": 7,
-      "headline": "Perspective: A new kind of White House press secretary",
+      "headline": "We can't let them down' -- After midterm wins, Democrats turn to charting path ahead",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6028743/perspective-a-new-kind-of-white-house-press-secretary",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6037777/democrats-midterms-whats-next-conference",
       "topic": "Trending",
-      "published": "2026-11-14T13:00:00+00:00"
+      "published": "2026-11-14T19:13:54+00:00"
     },
     {
       "n": 8,
-      "headline": "FAA issues rare nationwide ground stop due to 'extraordinary circumstances",
+      "headline": "Alaska voters reject ballot measure seeking to repeal open primaries and ranked voting system",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/faa-issues-rare-nationwide-ground-stop-due-to-extraordinary-circumstances",
+      "url": "https://www.pbs.org/newshour/politics/alaska-voters-reject-ballot-measure-seeking-to-repeal-open-primaries-and-ranked-voting-system",
       "topic": "Trending",
-      "published": "2026-11-13T23:56:33+00:00"
+      "published": "2026-11-14T18:43:07+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "New facilities in Laos and Cambodia: Is China expanding its military presence in Southeast Asia?",
+      "headline": "COP31: Protesters, UN urge swift climate deal",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/new-facilities-in-laos-and-cambodia-is-china-expanding-its-military-presence-in-southeast-asia/a-79944798?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-14T11:24:00+00:00"
+      "url": "https://www.dw.com/en/cop31-protesters-un-urge-swift-climate-deal/a-79948501?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-11-14T17:19:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+      "headline": "Italy fines Meta €805m over accessing users' photos",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-14T05:52:31+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-11-14T18:28:06+00:00"
     },
     {
       "n": 12,
-      "headline": "As Democrats win big, thirst traps of male candidates take social media by storm",
+      "headline": "FAA blames Friday's ground stop on 'equipment issue' during telecoms network upgrade",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
       "topic": "Trending",
-      "published": "2026-11-14T10:00:00+00:00"
+      "published": "2026-11-14T16:53:04+00:00"
     },
     {
       "n": 13,
-      "headline": "News Wrap: Tanker crashes into river cruise boat in New Orleans",
+      "headline": "What to know about flights after the U.S. nationwide ground stop",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-tanker-crashes-into-river-cruise-boat-in-new-orleans",
+      "url": "https://www.pbs.org/newshour/nation/what-to-know-about-flights-after-the-u-s-nationwide-ground-stop",
       "topic": "Trending",
-      "published": "2026-11-13T23:55:45+00:00"
+      "published": "2026-11-14T18:32:01+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Germany news: Solar power production approaches record high",
+      "headline": "Werner Holzer Prize awarded to Katja Gloger and DW's Jaafar Abdul Karim",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/germany-news-solar-power-production-approaches-record-high/live-79947500?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-11-14T11:22:00+00:00"
+      "url": "https://www.dw.com/en/werner-holzer-prize-awarded-to-katja-gloger-and-dw-s-jaafar-abdul-karim/a-79946916?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-14T15:24:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+      "headline": "Philippines wins first Eurovision Song Contest Asia",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-13T23:40:45+00:00"
+      "published": "2026-11-14T18:17:58+00:00"
     },
     {
       "n": 17,
-      "headline": "An organ transplant controversy tests 'the dead donor rule",
+      "headline": "Fuel crisis and protests pressure Chile's far-right president",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
-      "topic": "Trending",
-      "published": "2026-11-14T10:00:00+00:00"
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
+      "topic": "Politics",
+      "published": "2026-11-14T16:05:12+00:00"
     }
   ]
 }
