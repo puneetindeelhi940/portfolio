@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:14:52Z",
+  "generated_at": "2026-11-15T20:45:21Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "Did Texas have more registered voters for 2026 midterm elections than adult citizens?",
+      "claim": "All our fact checks about Hakeem Jeffries",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/texas-more-votes-citizens/",
+      "url": "https://www.snopes.com/collections/hakeem-jeffries-rumors/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "11 fact checks about Muslim Americans in Michigan reveals history of fearmongering claims",
+      "claim": "Did Texas have more registered voters for 2026 midterm elections than adult citizens?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/muslim-americans-michigan/",
+      "url": "https://www.snopes.com/fact-check/texas-more-votes-citizens/",
       "topic": "Trending"
     },
     {
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Marine Vet Explains How He Started ‘Good Guy With A Gun’ Stories",
+      "claim": "Rural California Utility Asks To Raise Power Rates By More Than Half As Wildfire Costs Pile Up In Newsom’s State",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/15/marine-vet-explains-how-he-started-good-guy-with-a-gun-stories",
+      "url": "https://dailycaller.com/2026/11/15/pacific-power-57-percent-rate-hike-wildfire-costs-gavin-newsom",
       "topic": "Trending"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Did Dunkin' ban word 'Christmas' after celebrating Ramadan and Pride Month in 2026?",
+      "claim": "11 fact checks about Muslim Americans in Michigan reveals history of fearmongering claims",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/dunkin-ban-christmas-ramadan-pride/",
+      "url": "https://www.snopes.com/collections/muslim-americans-michigan/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Iran targets US military base in Bahrain with drone attack",
+      "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-15T13:42:58+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-11-15T19:32:39+00:00"
     },
     {
       "n": 2,
-      "headline": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
+      "headline": "New Orleans port sues owners of tanker involved in Mississippi crash",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6041677/new-orleans-port-sues-miracle-mississippi-cruise-ship",
       "topic": "Trending",
-      "published": "2026-11-15T10:00:00+00:00"
+      "published": "2026-11-15T17:45:27+00:00"
     },
     {
       "n": 3,
-      "headline": "Why a problem on the ground can affect flights thousands of miles away among other issues",
+      "headline": "Pope crosses Peru in the finale of a trip home to visit flock high in Andes and deep in Amazon",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/why-a-problem-on-the-ground-can-affect-flights-thousands-of-miles-away-among-other-issues",
-      "topic": "Trending",
-      "published": "2026-11-14T22:35:29+00:00"
+      "url": "https://www.pbs.org/newshour/world/pope-crosses-peru-in-the-finale-of-a-trip-home-to-visit-flock-high-in-andes-and-deep-in-amazon",
+      "topic": "Money",
+      "published": "2026-11-15T19:57:37+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Polish activists face opposition as they make abortion more accessible",
+      "headline": "Zelenskyy urges removal of Starshield limits on Ukraine",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/polish-activists-face-opposition-as-they-make-abortion-more-accessible/a-79943914?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/zelenskyy-urges-removal-of-starshield-limits-on-ukraine/a-79953300?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-15T14:40:00+00:00"
+      "published": "2026-11-15T20:39:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Three men sentenced to death in Jordan over fatal church mass shooting",
+      "headline": "Iran targets US military base in Bahrain with drone attack",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-15T11:06:32+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-15T13:42:58+00:00"
     },
     {
       "n": 7,
-      "headline": "Midterm voters ended the long-running GOP dominance in state legislatures",
+      "headline": "Laws limiting coal miners' exposure to toxic dust are in danger of being rolled back",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6039311/laws-limiting-coal-miners-exposure-to-toxic-dust-are-in-danger-of-being-rolled-back",
       "topic": "Trending",
-      "published": "2026-11-15T10:00:00+00:00"
+      "published": "2026-11-15T13:11:30+00:00"
     },
     {
       "n": 8,
-      "headline": "SpaceX's Starship returns from orbit and is captured by launch pad arms in a dramatic first",
+      "headline": "Zelenskyy says Starshield restrictions threaten Ukraine's energy defenses ahead of winter",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/spacexs-starship-returns-from-orbit-and-is-captured-by-launch-pad-arms-in-a-dramatic-first",
-      "topic": "Trending",
-      "published": "2026-11-14T21:56:15+00:00"
+      "url": "https://www.pbs.org/newshour/world/zelenskyy-says-starshield-restrictions-threaten-ukraines-energy-defenses-ahead-of-winter",
+      "topic": "Science",
+      "published": "2026-11-15T18:40:21+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
+      "headline": "Czechia: Scores protest against public media reform",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/asean-offers-myanmar-s-sidelined-leaders-a-path-back-to-summits-but-says-restrictions-will-stay-until-there-is-meaningful-progress-on-its-peace-plan/a-79951878?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/czechia-scores-protest-against-public-media-reform/a-79953057?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-15T12:26:00+00:00"
+      "published": "2026-11-15T19:12:00+00:00"
     },
     {
       "n": 11,
-      "headline": "South Korea's top scorer in tax accountancy exam admits cheating",
+      "headline": "Three men sentenced to death in Jordan over fatal church mass shooting",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckvg2ezvpe08o?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-11-15T13:37:45+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-15T11:06:32+00:00"
     },
     {
       "n": 12,
-      "headline": "A new generation of disability rights activists carry on Judy Heumann's legacy",
+      "headline": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6002935/being-heumann-new-generation-disability-rights",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
       "topic": "Trending",
       "published": "2026-11-15T10:00:00+00:00"
     },
     {
       "n": 13,
-      "headline": "With shifting Iran rhetoric following U.S. elections, Trump leaves Middle East in limbo about path ahead",
+      "headline": "Trump blasts judge's 2-week halt to his Washington golf project and says administration will appeal",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/with-shifting-iran-rhetoric-following-u-s-elections-trump-leaves-middle-east-in-limbo-about-path-ahead",
+      "url": "https://www.pbs.org/newshour/politics/trump-blasts-judges-2-week-halt-to-his-washington-golf-project-and-says-administration-will-appeal",
       "topic": "Politics",
-      "published": "2026-11-14T21:17:42+00:00"
+      "published": "2026-11-15T17:39:22+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Macron urges unity as Francophonie summit opens in Cambodia",
+      "headline": "Estonia closes border to Russia after suspected drone factory arson",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/macron-urges-unity-as-francophonie-summit-opens-in-cambodia/a-79951201?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-15T08:12:00+00:00"
+      "url": "https://www.dw.com/en/estonia-closes-border-to-russia-after-suspected-drone-factory-arson/a-79953115?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-15T18:29:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+      "headline": "South Korea's top scorer in tax accountancy exam admits cheating",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-15T14:56:21+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckvg2ezvpe08o?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-11-15T13:37:45+00:00"
     },
     {
       "n": 17,
-      "headline": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
+      "headline": "Midterm voters ended the long-running GOP dominance in state legislatures",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
-      "topic": "Politics",
-      "published": "2026-11-15T04:28:45+00:00"
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+      "topic": "Trending",
+      "published": "2026-11-15T10:00:00+00:00"
     }
   ]
 }
