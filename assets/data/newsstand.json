@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T04:28:38Z",
+  "generated_at": "2026-11-16T17:50:41Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,27 +16,27 @@
     },
     {
       "n": 2,
-      "claim": "All our fact checks about Hakeem Jeffries",
+      "claim": "11 claims about training AI models, investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/hakeem-jeffries-rumors/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/collections/ai-training-models/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
-      "claim": "Florida’s Surgeon General Spins State COVID-19 Vaccine Comparison Study",
+      "claim": "Our Annual Fundraising Drive",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/floridas-surgeon-general-spins-state-covid-19-vaccine-comparison-study/",
-      "topic": "Health"
+      "url": "https://www.factcheck.org/2026/11/our-annual-fundraising-drive/",
+      "topic": "Trending"
     },
     {
       "n": 4,
-      "claim": "Trump’s White House Counsel Draws Line Against Dems’ Potential Abuse Of Oversight Power After Congress Flips Blue",
+      "claim": "What Jensen Huang’s Exit Could Mean For Washington’s Chip Controls",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/15/william-scharf-robert-garcia-democrat-congress-oversight-abuse-fox-news-sunday-shannon-bream",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/16/jensing-huang-nvidia-chip-controls",
+      "topic": "Trending"
     },
     {
       "n": 5,
@@ -48,11 +48,11 @@
     },
     {
       "n": 6,
-      "claim": "‘False flag operations’: Columnist Sushant Singh’s video doctored with AI; Singh misidentified as Pravin Sawhney",
-      "verdict": "MISLEADING",
+      "claim": "Bangladesh video falsely viral as RSS workers vandalising restaurant in West Bengal",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/false-flag-operations-columnist-sushant-singhs-video-doctored-with-ai-singh-misidentified-as-pravin-sawhney/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/bangladesh-video-falsely-viral-as-rss-workers-vandalising-restaurant-in-west-bengal/",
+      "topic": "Trending"
     },
     {
       "n": 7,
@@ -72,19 +72,19 @@
     },
     {
       "n": 9,
-      "claim": "Did Texas have more registered voters for 2026 midterm elections than adult citizens?",
+      "claim": "Warning about 'Trump was arrested' text is longstanding hoax",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/texas-more-votes-citizens/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-arrested-scam-text-alert/",
+      "topic": "Politics"
     },
     {
       "n": 10,
-      "claim": "Trump’s Post-Election ‘60 Minutes’ Interview",
+      "claim": "Florida’s Surgeon General Spins State COVID-19 Vaccine Comparison Study",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/factchecking-trumps-post-election-60-minutes-interview/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/11/floridas-surgeon-general-spins-state-covid-19-vaccine-comparison-study/",
+      "topic": "Health"
     },
     {
       "n": 11,
@@ -104,11 +104,11 @@
     },
     {
       "n": 13,
-      "claim": "29 posts in 12 days by Union environment minister, not one on pollution: Bhupender Yadav’s Diwali silence",
-      "verdict": "FALSE",
+      "claim": "‘False flag operations’: Columnist Sushant Singh’s video doctored with AI; Singh misidentified as Pravin Sawhney",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/29-posts-in-12-days-by-union-environment-minister-not-one-on-pollution-bhupender-yadavs-diwali-silence/",
-      "topic": "Politics"
+      "url": "https://www.altnews.in/false-flag-operations-columnist-sushant-singhs-video-doctored-with-ai-singh-misidentified-as-pravin-sawhney/",
+      "topic": "Tech / AI"
     },
     {
       "n": 14,
@@ -128,157 +128,157 @@
     },
     {
       "n": 16,
-      "claim": "11 fact checks about Muslim Americans in Michigan reveals history of fearmongering claims",
+      "claim": "Is Trump planning to use 1950s immigration act to ban Muslims from public office?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/muslim-americans-michigan/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-ban-muslims-public-office/",
+      "topic": "Politics"
     },
     {
       "n": 17,
-      "claim": "Explaining the U.S. Defense Agreement with Greenland and Denmark",
+      "claim": "Trump’s Post-Election ‘60 Minutes’ Interview",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/explaining-the-u-s-defense-agreement-with-greenland-and-denmark/",
-      "topic": "Trending"
+      "url": "https://www.factcheck.org/2026/11/factchecking-trumps-post-election-60-minutes-interview/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history",
+      "headline": "Five EU countries announce migrant deportation centre in Rwanda",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-11-15T19:32:39+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-16T16:27:24+00:00"
     },
     {
       "n": 2,
-      "headline": "Flight disruptions expected to last into Monday",
+      "headline": "Nearly two million people are behind bars in the US. How did we get here?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6041683/flight-disruptions-expected-to-last-into-monday",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042432/nearly-two-million-people-are-behind-bars-in-the-us-how-did-we-get-here",
       "topic": "Trending",
-      "published": "2026-11-16T01:19:28+00:00"
+      "published": "2026-11-16T17:34:07+00:00"
     },
     {
       "n": 3,
-      "headline": "Officials say a tanker's steering failed before it crashed into a cruise ship in New Orleans",
+      "headline": "Preliminary study finds a clue in the quest to help diagnose CTE in the living",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/officials-say-a-tankers-steering-failed-before-it-crashed-into-a-cruise-ship-in-new-orleans",
-      "topic": "Trending",
-      "published": "2026-11-15T23:02:00+00:00"
+      "url": "https://www.pbs.org/newshour/science/preliminary-study-finds-a-clue-in-the-quest-to-help-diagnose-cte-in-the-living",
+      "topic": "Science",
+      "published": "2026-11-16T17:14:11+00:00"
     },
     {
       "n": 4,
-      "headline": "Zimbabwean author Simbarashe Kundizeza cleared of using AI to write prize-winning story",
+      "headline": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/books/2026/nov/12/zimbabwean-author-simbarashe-kundizeza-cleared-ai-caine-prize-winning-story",
-      "topic": "Tech / AI",
-      "published": "2026-11-12T13:14:38+00:00"
+      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
+      "topic": "Trending",
+      "published": "2026-11-16T16:21:40+00:00"
     },
     {
       "n": 5,
-      "headline": "Rocket from Boeing-Lockheed firm fails mid-flight, destroys payload of Amazon satellites",
+      "headline": "NASA's Voyager 1 reaches a light-day away from Earth",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-11-16T04:27:00+00:00"
+      "url": "https://www.dw.com/en/nasa-s-voyager-1-reaches-a-light-day-away-from-earth/a-79961817?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-11-16T17:24:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Yemeni forces' retreat leaves Houthis in control of key Red Sea waterway",
+      "headline": "Yemeni forces retreat to defend port city from Houthis",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-16T03:08:31+00:00"
+      "published": "2026-11-16T11:09:38+00:00"
     },
     {
       "n": 7,
-      "headline": "Far from home. Voyager 1 is now farther than anything man has sent into space",
+      "headline": "Lindsay Clancy to face a new trial in spring of 2027 over children's killing",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6041716/a-long-long-ways-from-home-voyager-1-is-now-farther-than-anything-man-has-sent-into-space",
-      "topic": "Science",
-      "published": "2026-11-15T22:41:22+00:00"
+      "url": "https://www.npr.org/2026/11/16/nx-s1-5983473/clancy-trial-retrial-murder-charges",
+      "topic": "Trending",
+      "published": "2026-11-16T16:28:19+00:00"
     },
     {
       "n": 8,
-      "headline": "Trump's handpicked party chair faces a rebellion as midterm losses challenge president's grip on GOP",
+      "headline": "Coalition to move away from fossil fuels presses ahead without Colombia, its original champion",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trumps-handpicked-party-chair-faces-a-rebellion-as-midterm-losses-challenge-presidents-grip-on-gop",
-      "topic": "Politics",
-      "published": "2026-11-15T22:43:07+00:00"
+      "url": "https://www.pbs.org/newshour/world/coalition-to-move-away-from-fossil-fuels-presses-ahead-without-colombia-its-original-champion",
+      "topic": "Trending",
+      "published": "2026-11-16T16:50:19+00:00"
     },
     {
       "n": 9,
-      "headline": "Lewis Hamilton visits Egypt’s Rafah crossing and Gaza aid facilities",
+      "headline": "US basketball player arrested with 75lb of marijuana at Nigerian airport, say authorities",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/10/lewis-hamilton-egypt-rafah-crossing-gaza-aid-facilities",
-      "topic": "World",
-      "published": "2026-11-10T15:39:26+00:00"
+      "url": "https://www.theguardian.com/sport/2026/nov/16/us-basketball-player-arrested-with-75lb-of-marijuana-at-nigerian-airport-say-authorities",
+      "topic": "Trending",
+      "published": "2026-11-16T13:16:36+00:00"
     },
     {
       "n": 10,
-      "headline": "Yemen: Anti-Houthi forces pull back as rebels advance",
+      "headline": "What has changed in James Bond films over the decades",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/yemen-anti-houthi-forces-pull-back-as-rebels-advance/a-79953692?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/what-has-changed-in-james-bond-films-over-the-decades/a-63332001?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-15T23:29:00+00:00"
+      "published": "2026-11-16T17:07:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+      "headline": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-16T01:47:57+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-16T17:07:55+00:00"
     },
     {
       "n": 12,
-      "headline": "Who makes Sydney Sweeney's American Eagle jeans — and under what conditions?",
+      "headline": "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry",
-      "topic": "Trending",
-      "published": "2026-11-15T22:07:55+00:00"
+      "url": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip",
+      "topic": "Politics",
+      "published": "2026-11-16T12:08:14+00:00"
     },
     {
       "n": 13,
-      "headline": "2 planes collide on the ground in Miami, only minor injuries reported",
+      "headline": "EU accuses Russia of stalling Ukraine peace talks to target power plants as winter nears",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/2-planes-collide-on-the-ground-in-miami-only-minor-injuries-reported",
-      "topic": "Trending",
-      "published": "2026-11-15T22:16:01+00:00"
+      "url": "https://www.pbs.org/newshour/world/eu-accuses-russia-of-stalling-ukraine-peace-talks-to-target-power-plants-as-winter-nears",
+      "topic": "World",
+      "published": "2026-11-16T16:07:35+00:00"
     },
     {
       "n": 14,
-      "headline": "Collision of two trains in Egypt kills at least seven",
+      "headline": "Relocation of Cape Town baboons to sanctuary ignites heated protests",
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
+      "url": "https://www.theguardian.com/world/2026/nov/16/cape-town-baboons-relocation-protests",
       "topic": "Trending",
-      "published": "2026-11-08T17:51:17+00:00"
+      "published": "2026-11-16T10:19:08+00:00"
     },
     {
       "n": 15,
-      "headline": "Goodbye, overtourism? Sustainable travel gains ground",
+      "headline": "Nvidia scandal: China's chips dilemma, US rivalry shape AI race",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/goodbye-overtourism-sustainable-travel-gains-ground/a-79934295?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-15T20:57:00+00:00"
+      "url": "https://www.dw.com/en/nvidia-scandal-china-s-chips-dilemma-us-rivalry-shape-ai-race/a-79961766?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-16T16:32:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack",
+      "headline": "Man sentenced over 'horrific' attempted murder of three children",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-11-16T03:09:49+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cr0qj0nzwj34o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-16T12:27:15+00:00"
     },
     {
       "n": 17,
-      "headline": "New Orleans port sues owners of tanker involved in Mississippi crash",
+      "headline": "Chris Van Hollen says he can beat Chuck Schumer. Here's his case",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/15/nx-s1-6041677/new-orleans-port-sues-miracle-mississippi-cruise-ship",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6041687/chris-van-hollen-chuck-schumer-senate-leader",
       "topic": "Trending",
-      "published": "2026-11-15T17:45:27+00:00"
+      "published": "2026-11-16T11:39:14+00:00"
     }
   ]
 }
