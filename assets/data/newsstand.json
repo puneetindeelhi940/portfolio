@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T06:14:33Z",
+  "generated_at": "2026-11-17T17:18:57Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "Not everyone on NHS waiting lists is ‘not able to work properly’",
+      "claim": "Fake National Grid warning about ‘major blackout’ shared online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/lucy-powell-waiting-list-work/",
+      "url": "https://fullfact.org/hoaxes/national-grid-warning-major-UK-blackout-outage-fake/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Trump shared AI images of him comforting Markwayne Mullin's son after brain injury. Is the story real?",
+      "claim": "Did Erika Kirk plug Charlie Kirk's hot sauce brand through tears on Fox News?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/16/trump-mullin-son-brain-injury/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/erika-kirk-charlie-hot-sauce/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Mamdani Scraps NYPD Protest Unit, Here’s How Similar Moves Fueled BLM And Antifa Takeovers In Other Blue Cities",
+      "claim": "Deep State Fingerprints Are All Over The Iranian ‘Dirty Bomb’ Leak",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/16/mayor-zohran-mamdani-scraps-nypd-blm-antifa-strategic-response-group-andy-ngo-portland-seattle",
+      "url": "https://dailycaller.com/2026/11/17/cnn-report-iran-dirty-bomb-plot-dc-deep-state-israel-natasha-bertrand",
       "topic": "Trending"
     },
     {
@@ -112,10 +112,10 @@
     },
     {
       "n": 14,
-      "claim": "Wes Streeting did not wear skirt to remembrance ceremony",
+      "claim": "Was Alan Milburn right to claim 93% of fit note ‘applications’ are ‘signed off automatically’?",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/politics/wes-streeting-skirt-remembrance-ceremony-altered/",
+      "url": "https://fullfact.org/health/alan-milburn-fit-notes/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did AI company tied to Sean Duffy's son-in-law cause FAA shutdown? What we know",
+      "claim": "Is video of massive wave hitting container ship real?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/16/duffy-son-in-law-company-faa/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/fact-check/video-wave-hitting-ship/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Two major Kyiv bridges hit in Russian attack, mayor says",
+      "headline": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-17T05:57:38+00:00"
+      "published": "2026-11-17T16:56:38+00:00"
     },
     {
       "n": 2,
-      "headline": "California sues OpenAI over hacking risks",
+      "headline": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
-      "topic": "Trending",
-      "published": "2026-11-16T22:06:22+00:00"
+      "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy",
+      "topic": "Politics",
+      "published": "2026-11-17T12:20:57+00:00"
     },
     {
       "n": 3,
-      "headline": "Trump appeals to state and federal courts to erase hush money criminal conviction",
+      "headline": "WATCH LIVE: Senate Armed Services Committee confirmation hearing for Hung Cao as Navy secretary",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-appeals-to-state-and-federal-courts-to-erase-hush-money-criminal-conviction",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-senate-armed-services-committee-confirmation-hearing-for-hung-cao-as-navy-secretary",
       "topic": "Politics",
-      "published": "2026-11-17T00:48:19+00:00"
+      "published": "2026-11-17T14:21:52+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Mongolian President Khurelsukh to resign amid corruption allegations",
+      "headline": "Saudi Arabia: Rights groups raise alarm over rising number of executions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/mongolian-president-khurelsukh-to-resign-amid-corruption-allegations/a-79964717?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-17T05:55:00+00:00"
+      "url": "https://www.dw.com/en/saudi-arabia-rights-groups-raise-alarm-over-rising-number-of-executions/a-79970773?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-17T17:02:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
+      "headline": "How the attack on Crimean Bridge unfolded",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-17T05:59:01+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-17T15:38:10+00:00"
     },
     {
       "n": 7,
-      "headline": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
+      "headline": "Sen. Jack Reed says FAA needs a real plan, not just more money",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
-      "topic": "Tech / AI",
-      "published": "2026-11-16T18:49:26+00:00"
+      "url": "https://www.npr.org/2026/11/17/nx-s1-6042514/jack-reed-faa-oversight-ground-stop-funding",
+      "topic": "Trending",
+      "published": "2026-11-17T11:58:42+00:00"
     },
     {
       "n": 8,
-      "headline": "Judge sets March retrial date for Lindsay Clancy in deaths of her 3 children",
+      "headline": "Trump appeals to state and federal courts to erase hush money criminal conviction",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/judge-sets-march-retrial-date-for-lindsay-clancy-in-deaths-of-her-3-children",
-      "topic": "Trending",
-      "published": "2026-11-17T00:23:23+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-appeals-to-state-and-federal-courts-to-erase-hush-money-criminal-conviction",
+      "topic": "Politics",
+      "published": "2026-11-17T00:48:19+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Japan scrambles jets to counter suspected Russian aircraft",
+      "headline": "US and Mexico lose measles-free status",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/japan-scrambles-jets-to-counter-suspected-russian-aircraft/a-79964537?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-and-mexico-lose-measles-free-status/a-79973966?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-17T03:29:00+00:00"
+      "published": "2026-11-17T16:40:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Imran Khan seeks urgent medical care fearing he 'may not return alive",
+      "headline": "Jensen Huang pushes Nvidia comeback after board rejects pressure to reinstate ex-boss",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr894xq5yeyko?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-17T01:26:01+00:00"
+      "published": "2026-11-17T17:09:32+00:00"
     },
     {
       "n": 12,
-      "headline": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
+      "headline": "Can Google win the AI race without killing its cash cow?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
+      "url": "https://www.npr.org/sections/planet-money/2026/11/17/g-s1-153933/can-google-win-the-ai-race-without-killing-its-cash-cow",
       "topic": "Tech / AI",
-      "published": "2026-11-16T18:04:50+00:00"
+      "published": "2026-11-17T11:30:00+00:00"
     },
     {
       "n": 13,
-      "headline": "Pope bids 'hasta luego' to Peru as he wraps up marathon South America trip",
+      "headline": "Judge sets March retrial date for Lindsay Clancy in deaths of her 3 children",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/pope-bids-hasta-luego-to-peru-as-he-wraps-up-marathon-south-america-trip",
+      "url": "https://www.pbs.org/newshour/nation/judge-sets-march-retrial-date-for-lindsay-clancy-in-deaths-of-her-3-children",
       "topic": "Trending",
-      "published": "2026-11-17T00:09:49+00:00"
+      "published": "2026-11-17T00:23:23+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Ukraine: Russian strikes hit bridges in Kyiv, mayor says",
+      "headline": "Back to 1997: Russia wants NATO to roll back its eastern expansion",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-russian-strikes-hit-bridges-in-kyiv-mayor-says/live-79964446?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-17T02:28:00+00:00"
+      "url": "https://www.dw.com/en/back-to-1997-russia-wants-nato-to-roll-back-its-eastern-expansion/a-79970289?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-17T16:20:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
+      "headline": "Trump lands in Asia ahead of talks with Russian and Chinese presidents",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/crq5vlxxx32no?at_medium=RSS&at_campaign=rss",
       "topic": "Politics",
-      "published": "2026-11-17T02:37:53+00:00"
+      "published": "2026-11-17T12:54:32+00:00"
     },
     {
       "n": 17,
-      "headline": "Nearly two million people are behind bars in the US. How did we get here?",
+      "headline": "I'm a human doctor with human intelligence. But I sure do like my AI notetaker",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042432/nearly-two-million-people-are-behind-bars-in-the-us-how-did-we-get-here",
-      "topic": "Trending",
-      "published": "2026-11-16T17:34:07+00:00"
+      "url": "https://www.npr.org/2026/11/17/nx-s1-6037556/medicine-ai-doctor-notetaker-scribe",
+      "topic": "Tech / AI",
+      "published": "2026-11-17T11:00:00+00:00"
     }
   ]
 }
