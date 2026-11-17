@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T17:50:41Z",
+  "generated_at": "2026-11-17T06:14:33Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Of People Sleeping In US Airport During Ground Stop Is NOT Real -- AI Made It",
+      "claim": "FAKE Video From 'SUETA' Shows Damage To Kerch Strait Bridge After Ukrainian Drone Attack -- Video Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-viral-clip-does-not-show-real-footage-of-american-airport-during-ground-stop.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-from-sueta-shows-damage-to-kerch-strait-bridge-after-ukrainian-drone-attack-video-is-ai-generated.html",
       "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "11 claims about training AI models, investigated",
+      "claim": "Is 90-day blackout beginning Nov. 17? Why unfounded rumor is spreading",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/ai-training-models/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/news/2026/11/16/nationwide-90-day-blackout/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "What Jensen Huang’s Exit Could Mean For Washington’s Chip Controls",
+      "claim": "Never Trumpers Turn On Each Other As Their Reason For Existing Begins To Evaporate",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/16/jensing-huang-nvidia-chip-controls",
+      "url": "https://dailycaller.com/2026/11/16/never-trumpers-turn-on-each-other-sarah-longwell-jonah-goldberg-frank-fleming",
       "topic": "Trending"
     },
     {
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "Evidence 90,000 Drop In Votes In Nevada District 2 House Race Was Fraud -- An AP Typo",
-      "verdict": "UNPROVEN",
+      "claim": "King Charles III Did NOT Make Urgent Announcement About His Son",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-no-evidence-vote-drop-was-fraud-in-nv-house-dist-2-race.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-king-charles-did-not-make-urgent-announcement-about-his-son.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Warning about 'Trump was arrested' text is longstanding hoax",
+      "claim": "Trump shared AI images of him comforting Markwayne Mullin's son after brain injury. Is the story real?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-arrested-scam-text-alert/",
+      "url": "https://www.snopes.com/news/2026/11/16/trump-mullin-son-brain-injury/",
       "topic": "Politics"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Dem Challenging Schumer For Senate Leadership ‘Not Worried About The Threat’ Of Socialists Cannibalizing Party",
+      "claim": "Mamdani Scraps NYPD Protest Unit, Here’s How Similar Moves Fueled BLM And Antifa Takeovers In Other Blue Cities",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/15/chris-van-hollen-dismisses-democratic-socialists-america-canabalize-democratic-party-fox-news-sunday-shannon-bream",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/16/mayor-zohran-mamdani-scraps-nypd-blm-antifa-strategic-response-group-andy-ngo-portland-seattle",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "Trump DID 'Dump' Up To $1 Million In Nvidia Stock -- But Also Bought Up To $1.6 Million",
+      "claim": "FAKE Photo Shows Netanyahu with His Arms Around Hakeem Jeffries and Chuck Schumer -- Created by OpenAI Tool",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-trump-did-dump-as-much-as-1-million-nvidia-stock-few-weeks-before-jensen-huang-affair-story-broke-also-bought-as-much-as-1-6-million-same-onth.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-photo-shows-netanyahu-with-his-arms-around-hakeem-jeffries-and-chuck-schumer-created-by-openai-tool.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Is Trump planning to use 1950s immigration act to ban Muslims from public office?",
+      "claim": "Did AI company tied to Sean Duffy's son-in-law cause FAA shutdown? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-ban-muslims-public-office/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/11/16/duffy-son-in-law-company-faa/",
+      "topic": "Tech / AI"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Five EU countries announce migrant deportation centre in Rwanda",
+      "headline": "Two major Kyiv bridges hit in Russian attack, mayor says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-16T16:27:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-17T05:57:38+00:00"
     },
     {
       "n": 2,
-      "headline": "Nearly two million people are behind bars in the US. How did we get here?",
+      "headline": "California sues OpenAI over hacking risks",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6042432/nearly-two-million-people-are-behind-bars-in-the-us-how-did-we-get-here",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042920/california-sues-openai-hugging-face-hacking-incident",
       "topic": "Trending",
-      "published": "2026-11-16T17:34:07+00:00"
+      "published": "2026-11-16T22:06:22+00:00"
     },
     {
       "n": 3,
-      "headline": "Preliminary study finds a clue in the quest to help diagnose CTE in the living",
+      "headline": "Trump appeals to state and federal courts to erase hush money criminal conviction",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/science/preliminary-study-finds-a-clue-in-the-quest-to-help-diagnose-cte-in-the-living",
-      "topic": "Science",
-      "published": "2026-11-16T17:14:11+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-appeals-to-state-and-federal-courts-to-erase-hush-money-criminal-conviction",
+      "topic": "Politics",
+      "published": "2026-11-17T00:48:19+00:00"
     },
     {
       "n": 4,
@@ -174,39 +174,39 @@
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
       "topic": "Trending",
-      "published": "2026-11-16T16:21:40+00:00"
+      "published": "2026-11-17T01:10:59+00:00"
     },
     {
       "n": 5,
-      "headline": "NASA's Voyager 1 reaches a light-day away from Earth",
+      "headline": "Mongolian President Khurelsukh to resign amid corruption allegations",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nasa-s-voyager-1-reaches-a-light-day-away-from-earth/a-79961817?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-11-16T17:24:00+00:00"
+      "url": "https://www.dw.com/en/mongolian-president-khurelsukh-to-resign-amid-corruption-allegations/a-79964717?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-17T05:55:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Yemeni forces retreat to defend port city from Houthis",
+      "headline": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-16T11:09:38+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-17T05:59:01+00:00"
     },
     {
       "n": 7,
-      "headline": "Lindsay Clancy to face a new trial in spring of 2027 over children's killing",
+      "headline": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-5983473/clancy-trial-retrial-murder-charges",
-      "topic": "Trending",
-      "published": "2026-11-16T16:28:19+00:00"
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+      "topic": "Tech / AI",
+      "published": "2026-11-16T18:49:26+00:00"
     },
     {
       "n": 8,
-      "headline": "Coalition to move away from fossil fuels presses ahead without Colombia, its original champion",
+      "headline": "Judge sets March retrial date for Lindsay Clancy in deaths of her 3 children",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/coalition-to-move-away-from-fossil-fuels-presses-ahead-without-colombia-its-original-champion",
+      "url": "https://www.pbs.org/newshour/nation/judge-sets-march-retrial-date-for-lindsay-clancy-in-deaths-of-her-3-children",
       "topic": "Trending",
-      "published": "2026-11-16T16:50:19+00:00"
+      "published": "2026-11-17T00:23:23+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "What has changed in James Bond films over the decades",
+      "headline": "Japan scrambles jets to counter suspected Russian aircraft",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/what-has-changed-in-james-bond-films-over-the-decades/a-63332001?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/japan-scrambles-jets-to-counter-suspected-russian-aircraft/a-79964537?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-16T17:07:00+00:00"
+      "published": "2026-11-17T03:29:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
+      "headline": "Imran Khan seeks urgent medical care fearing he 'may not return alive",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-16T17:07:55+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cr894xq5yeyko?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-17T01:26:01+00:00"
     },
     {
       "n": 12,
-      "headline": "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia",
+      "headline": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip",
-      "topic": "Politics",
-      "published": "2026-11-16T12:08:14+00:00"
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
+      "topic": "Tech / AI",
+      "published": "2026-11-16T18:04:50+00:00"
     },
     {
       "n": 13,
-      "headline": "EU accuses Russia of stalling Ukraine peace talks to target power plants as winter nears",
+      "headline": "Pope bids 'hasta luego' to Peru as he wraps up marathon South America trip",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/eu-accuses-russia-of-stalling-ukraine-peace-talks-to-target-power-plants-as-winter-nears",
-      "topic": "World",
-      "published": "2026-11-16T16:07:35+00:00"
+      "url": "https://www.pbs.org/newshour/world/pope-bids-hasta-luego-to-peru-as-he-wraps-up-marathon-south-america-trip",
+      "topic": "Trending",
+      "published": "2026-11-17T00:09:49+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Nvidia scandal: China's chips dilemma, US rivalry shape AI race",
+      "headline": "Ukraine: Russian strikes hit bridges in Kyiv, mayor says",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nvidia-scandal-china-s-chips-dilemma-us-rivalry-shape-ai-race/a-79961766?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-16T16:32:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-russian-strikes-hit-bridges-in-kyiv-mayor-says/live-79964446?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-17T02:28:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Man sentenced over 'horrific' attempted murder of three children",
+      "headline": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr0qj0nzwj34o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-16T12:27:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-17T02:37:53+00:00"
     },
     {
       "n": 17,
-      "headline": "Chris Van Hollen says he can beat Chuck Schumer. Here's his case",
+      "headline": "Nearly two million people are behind bars in the US. How did we get here?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6041687/chris-van-hollen-chuck-schumer-senate-leader",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042432/nearly-two-million-people-are-behind-bars-in-the-us-how-did-we-get-here",
       "topic": "Trending",
-      "published": "2026-11-16T11:39:14+00:00"
+      "published": "2026-11-16T17:34:07+00:00"
     }
   ]
 }
