@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T05:41:31Z",
+  "generated_at": "2026-11-18T16:54:05Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Is US Army planning to detonate massive amount of lead azide in Middletown, Iowa?",
+      "claim": "Did Elon Musk pay Haley Stevens $2M to endorse Mike Rogers? There's no proof",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/lead-azide-detonation-army-iowa/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/11/03/musk-pay-haley-stevens-endorsement/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "Bangladesh video falsely viral as RSS workers vandalising restaurant in West Bengal",
+      "claim": "Bangladesh video falsely shared as demolition of Muslim homes in Tripura",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bangladesh-video-falsely-viral-as-rss-workers-vandalising-restaurant-in-west-bengal/",
+      "url": "https://www.altnews.in/bangladesh-video-falsely-shared-as-demolition-of-muslim-homes-in-tripura/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "Fake National Grid warning about ‘major blackout’ shared online",
+      "claim": "of red lights in the sky predates suspected drone incident at RAF Lakenheath",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/hoaxes/national-grid-warning-major-UK-blackout-outage-fake/",
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Does video show Sean Duffy shifting stance on need for FAA funding from 2023 to 2026?",
+      "claim": "Were some Democrats who missed Hegseth impeachment vote at AIPAC event?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/sean-duffy-faa-funding/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/11/13/democrats-missed-hegseth-vote-aipac/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Pentagon Can’t Pass An Audit, Wants $1.5 Trillion From Taxpayers",
+      "claim": "STATE OF WEDNESDAY: The Pentagon Failed Another Audit. Now It Wants More Money",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/17/pentagon-fails-audit-pete-hegseth-requests-trillion-increase",
+      "url": "https://dailycaller.com/2026/11/18/state-of-wednesday-pentagon-audit-defense-budget-congress-reconciliation",
       "topic": "Trending"
     },
     {
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "‘False flag operations’: Columnist Sushant Singh’s video doctored with AI; Singh misidentified as Pravin Sawhney",
-      "verdict": "MISLEADING",
+      "claim": "Bangladesh video falsely viral as RSS workers vandalising restaurant in West Bengal",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/false-flag-operations-columnist-sushant-singhs-video-doctored-with-ai-singh-misidentified-as-pravin-sawhney/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/bangladesh-video-falsely-viral-as-rss-workers-vandalising-restaurant-in-west-bengal/",
+      "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Was Alan Milburn right to claim 93% of fit note ‘applications’ are ‘signed off automatically’?",
+      "claim": "Fake National Grid warning about ‘major blackout’ shared online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/health/alan-milburn-fit-notes/",
+      "url": "https://fullfact.org/hoaxes/national-grid-warning-major-UK-blackout-outage-fake/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did NATO cancel summits until Trump leaves office over fears he'll share intel with Putin?",
+      "claim": "How much money does Hakeem Jeffries get from AIPAC? What we know",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/17/nato-cancel-summits-trump-putin/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/hakeem-jeffries-aipac-money/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+      "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-17T21:24:35+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-18T16:10:44+00:00"
     },
     {
       "n": 2,
-      "headline": "Mary Peltola flips Alaska's Senate seat into Democrats' column",
+      "headline": "Democrats formally nominate Hakeem Jeffries for speaker of the House",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/17/g-s1-151567/alaska-senate-results-peltola-sullivan",
-      "topic": "Politics",
-      "published": "2026-11-18T03:27:23+00:00"
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6043183/hakeem-jeffries-house-democrats-leadership-votes",
+      "topic": "Trending",
+      "published": "2026-11-18T15:56:30+00:00"
     },
     {
       "n": 3,
-      "headline": "What a string of tech problems reveals about America's digital vulnerabilities",
+      "headline": "Democrats nominate Hakeem Jeffries to become House speaker, a historic first",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-a-string-of-tech-problems-reveals-about-americas-digital-vulnerabilities",
+      "url": "https://www.pbs.org/newshour/politics/democrats-nominate-hakeem-jeffries-to-become-house-speaker-a-historic-first",
       "topic": "Trending",
-      "published": "2026-11-17T23:55:05+00:00"
+      "published": "2026-11-18T15:55:05+00:00"
     },
     {
       "n": 4,
+      "headline": "Fears grow that US will impose sanctions on ICJ judges ahead of Myanmar genocide ruling",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+      "topic": "Trending",
+      "published": "2026-11-18T09:58:28+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "US House Democrats nominate Hakeem Jeffries for speaker",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/us-house-democrats-nominate-hakeem-jeffries-for-speaker/a-79983827?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-18T15:46:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "William and Kate reflect on 'enduring' UK-India ties with Modi",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-18T16:44:23+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "House Democrat warns 13 Trump allies to save their records for upcoming investigations",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/18/g-s1-154147/robert-garcia-house-democrats-investigations-trump-administration",
+      "topic": "Politics",
+      "published": "2026-11-18T15:01:32+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "WATCH LIVE: DHS Secretary Mullin testifies on worldwide threats amid tech outages, Iran warnings",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/watch-live-dhs-secretary-mullin-testifies-on-worldwide-threats-amid-tech-outages-iran-warnings",
+      "topic": "World",
+      "published": "2026-11-18T14:56:22+00:00"
+    },
+    {
+      "n": 9,
       "headline": "European Commission accused of sugarcoating figures to release funds to Egypt",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/18/european-commission-accused-sugarcoating-figures-egypt-loans",
@@ -177,39 +217,39 @@
       "published": "2026-11-18T05:00:32+00:00"
     },
     {
-      "n": 5,
-      "headline": "APEC summit: What Trump, Xi and Putin want",
+      "n": 10,
+      "headline": "Borussia Dortmund bows to fan pressure and end Rheinmetall deal",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-18T05:39:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "How the attack on Crimean Bridge unfolded",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.dw.com/en/borussia-dortmund-bows-to-fan-pressure-and-end-rheinmetall-deal/a-79980121?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-17T15:38:10+00:00"
+      "published": "2026-11-18T15:39:00+00:00"
     },
     {
-      "n": 7,
-      "headline": "Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet",
+      "n": 11,
+      "headline": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-18T13:04:48+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "The off-and-on switch for U.S. aid leads to a cliffhanger for Zambia and Zimbabwe",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain",
-      "topic": "World",
-      "published": "2026-11-17T18:34:31+00:00"
+      "url": "https://www.npr.org/2026/11/18/g-s1-153872/u-s-foreign-aid-memorandum-understanding-zambia-zimbabwe",
+      "topic": "Trending",
+      "published": "2026-11-18T13:03:38+00:00"
     },
     {
-      "n": 8,
-      "headline": "A look at China's technology industry amid AI race with the U.S.",
+      "n": 13,
+      "headline": "Democrat Mary Peltola wins Alaska Senate seat, beating Republican incumbent Dan Sullivan",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/a-look-at-chinas-technology-industry-amid-ai-race-with-the-u-s",
-      "topic": "World",
-      "published": "2026-11-17T23:50:29+00:00"
+      "url": "https://www.pbs.org/newshour/politics/democrat-mary-peltola-wins-alaska-senate-seat-beating-republican-incumbent-dan-sullivan",
+      "topic": "Politics",
+      "published": "2026-11-18T14:25:22+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
@@ -217,68 +257,28 @@
       "published": "2026-11-17T01:10:59+00:00"
     },
     {
-      "n": 10,
-      "headline": "Pakistani man gets 27 years for foiled plot to kill Trump, Biden",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/pakistani-man-gets-27-years-for-foiled-plot-to-kill-trump-biden/a-79976086?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-18T04:03:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Nvidia says it won't reinstate Huang as firm reports bumper results",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-18T01:18:18+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Nvidia board says it does not intend to reinstate Jensen Huang as CEO",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/17/nx-s1-6044213/jensen-huang-nvidia-congress",
-      "topic": "Trending",
-      "published": "2026-11-17T17:36:31+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "News Wrap: U.S. no longer considered a measles-free nation",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-u-s-no-longer-considered-a-measles-free-nation",
-      "topic": "Trending",
-      "published": "2026-11-17T23:45:34+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "US basketball player arrested with 75lb of marijuana at Nigerian airport, say authorities",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/sport/2026/nov/16/us-basketball-player-arrested-with-75lb-of-marijuana-at-nigerian-airport-say-authorities",
-      "topic": "Trending",
-      "published": "2026-11-16T13:16:36+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Slovakia: Thousands protest against pro-Kremlin leader Robert Fico",
+      "headline": "North Korea expanded uranium enrichment plant, says IAEA head",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/slovakia-thousands-protest-against-pro-kremlin-leader-robert-fico/a-79976078?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/north-korea-expanded-uranium-enrichment-plant-says-iaea-head/a-79982758?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-18T03:06:00+00:00"
+      "published": "2026-11-18T15:15:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Philippines police ask prosecutors to charge Thomas Markle over child sex abuse material",
+      "headline": "Grand Theft Auto 6 is a masterpiece, say critics",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckg5ry8m49ggo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cw8r75xm8v4po?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-17T22:44:15+00:00"
+      "published": "2026-11-18T14:57:56+00:00"
     },
     {
       "n": 17,
-      "headline": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
+      "headline": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy",
+      "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai",
       "topic": "Politics",
-      "published": "2026-11-17T12:20:57+00:00"
+      "published": "2026-11-18T12:14:28+00:00"
     }
   ]
 }
