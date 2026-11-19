@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T16:54:05Z",
+  "generated_at": "2026-11-19T05:40:22Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,34 +8,34 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Palantir Ad Shows Margaret Qualley, Madelyn Cline, Sabrina Carpenter",
+      "claim": "3,330 'Solid Red' Counties Did NOT Vote Democrat in 2026 Midterms -- There Are Only 3,069 Counties in U.S.",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-palantir-ad-shows-margaret-qualley-madelyn-cline-sabrina-carpenter.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-3330-solid-red-counties-did-not-vote-Democrat-in-2026-midterms-there-are-only-3069-counties-in-US.html",
+      "topic": "Politics"
     },
     {
       "n": 2,
-      "claim": "Did Elon Musk pay Haley Stevens $2M to endorse Mike Rogers? There's no proof",
+      "claim": "9 rumors involving DHS Secretary Markwayne Mullin, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/03/musk-pay-haley-stevens-endorsement/",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 3,
-      "claim": "Unpacking the Partisan Finger-Pointing Over FAA Funding",
-      "verdict": "FALSE",
-      "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/unpacking-the-partisan-finger-pointing-over-faa-funding/",
+      "url": "https://www.snopes.com/collections/markwayne-mullin-stories/",
       "topic": "Trending"
     },
     {
+      "n": 3,
+      "claim": "Trump Makes False and Misleading Claims About Funding for HBCUs",
+      "verdict": "FALSE",
+      "source": "FactCheck.org",
+      "url": "https://www.factcheck.org/2026/11/trump-makes-false-and-misleading-claims-about-funding-for-hbcus/",
+      "topic": "Politics"
+    },
+    {
       "n": 4,
-      "claim": "MAHA Rejoices After White House Drops Controversial FDA Nomination",
+      "claim": "Where Do Lutnick’s Business Interests End — And His Government Role Begin?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/18/trump-administration-drops-heidi-overton-food-drug-administration-nominee",
+      "url": "https://dailycaller.com/2026/11/18/howard-lutnick-cantor-fitzgerald-kyle-brandon-nvidia-chips-trump-administration-china-scott-bessent",
       "topic": "Trending"
     },
     {
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Bangladesh video falsely shared as demolition of Muslim homes in Tripura",
+      "claim": "Amid rising attacks on Christians, Bengal BJP chief warns missionary schools, Bishop seeks CM intervention",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bangladesh-video-falsely-shared-as-demolition-of-muslim-homes-in-tripura/",
+      "url": "https://www.altnews.in/amid-rising-attacks-on-christians-bengal-bjp-chief-warns-missionary-schools-calcutta-bishop-seeks-cm-intervention/",
       "topic": "Trending"
     },
     {
@@ -64,35 +64,35 @@
     },
     {
       "n": 8,
-      "claim": "Evidence Video Confirms U.S. Is Withdrawing Troops from Qatar, Bahrain, Kuwait, Iraq, Jordan, UAE, Syria, Other Gulf Countries",
-      "verdict": "UNPROVEN",
+      "claim": "Trans Actress Hunter Schafer Has NOT Been Announced As Next Bond Girl With Robert Pattinson",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-no-evidence-video-confirms-us-is-withdrawing-troops-from-qatar-bahrain-kuwait-iraq-jordan-uae-syria-other-gulf-countries.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-trans-actress-hunter-schafer-has-not-been-announced-next-bond-girl-with-robert-pattinson.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Were some Democrats who missed Hegseth impeachment vote at AIPAC event?",
+      "claim": "Did Hakeem Jeffries say Jerusalem is '6th borough' of NYC?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/13/democrats-missed-hegseth-vote-aipac/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/hakeem-jeffries-jerusalem-new-york/",
+      "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Our Annual Fundraising Drive",
+      "claim": "Unpacking the Partisan Finger-Pointing Over FAA Funding",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/our-annual-fundraising-drive/",
+      "url": "https://www.factcheck.org/2026/11/unpacking-the-partisan-finger-pointing-over-faa-funding/",
       "topic": "Trending"
     },
     {
       "n": 11,
-      "claim": "STATE OF WEDNESDAY: The Pentagon Failed Another Audit. Now It Wants More Money",
+      "claim": "Democrats’ Boycott Goes Bust, Trump’s FCC Pick Advances",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/18/state-of-wednesday-pentagon-audit-defense-budget-congress-reconciliation",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/18/democrats-boycott-trump-fcc-pick",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "Bangladesh video falsely viral as RSS workers vandalising restaurant in West Bengal",
+      "claim": "Bangladesh video falsely shared as demolition of Muslim homes in Tripura",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bangladesh-video-falsely-viral-as-rss-workers-vandalising-restaurant-in-west-bengal/",
+      "url": "https://www.altnews.in/bangladesh-video-falsely-shared-as-demolition-of-muslim-homes-in-tripura/",
       "topic": "Trending"
     },
     {
@@ -120,96 +120,136 @@
     },
     {
       "n": 15,
-      "claim": "FAKE UNN Video of Kerch Strait Bridge Is NOT Real Footage of Its Collapse",
+      "claim": "FAKE Video Shows Cristiano Ronaldo Draped In Palestinian Flag At Ballon d'Or Awards -- Made With AI",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-unn-video-of-kerch-strait-bridge-is-not-real-footage-of-its-collapse.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-cristians-ronaldo-draped-in-palestinian-flag-at-balon-dor-awards.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 16,
-      "claim": "How much money does Hakeem Jeffries get from AIPAC? What we know",
+      "claim": "Did Sean Duffy vote against FAA funding in 2019?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/hakeem-jeffries-aipac-money/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/faa-vote-2019-sean-duffy/",
+      "topic": "Politics"
     },
     {
       "n": 17,
-      "claim": "Florida’s Surgeon General Spins State COVID-19 Vaccine Comparison Study",
+      "claim": "Our Annual Fundraising Drive",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/floridas-surgeon-general-spins-state-covid-19-vaccine-comparison-study/",
-      "topic": "Health"
+      "url": "https://www.factcheck.org/2026/11/our-annual-fundraising-drive/",
+      "topic": "Trending"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+      "headline": "This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-18T16:10:44+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-19T04:42:52+00:00"
     },
     {
       "n": 2,
-      "headline": "Democrats formally nominate Hakeem Jeffries for speaker of the House",
+      "headline": "Win a trip to go behind the news with NPR",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6043183/hakeem-jeffries-house-democrats-leadership-votes",
+      "url": "https://www.npr.org/2026/11/19/g-s1-153851/npr-newsroom-giveaway",
       "topic": "Trending",
-      "published": "2026-11-18T15:56:30+00:00"
+      "published": "2026-11-19T05:01:00+00:00"
     },
     {
       "n": 3,
-      "headline": "Democrats nominate Hakeem Jeffries to become House speaker, a historic first",
+      "headline": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democrats-nominate-hakeem-jeffries-to-become-house-speaker-a-historic-first",
-      "topic": "Trending",
-      "published": "2026-11-18T15:55:05+00:00"
+      "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion",
+      "topic": "Tech / AI",
+      "published": "2026-11-19T00:54:39+00:00"
     },
     {
       "n": 4,
-      "headline": "Fears grow that US will impose sanctions on ICJ judges ahead of Myanmar genocide ruling",
+      "headline": "One in four women globally unable to refuse sex within marriage, says UN",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa",
+      "topic": "World",
+      "published": "2026-11-19T04:00:16+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Crimean Bridge has been attacked again, Russian official says",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/crimean-bridge-has-been-attacked-again-russian-official-says/a-79986700?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-19T03:43:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-18T17:00:40+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Anthropic IPO raises record $81.3 billion on strong AI demand",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6046212/anthropic-record-ipo-price",
+      "topic": "Tech / AI",
+      "published": "2026-11-18T23:54:56+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Rainfall supercharged by El Niño causes road flooding, synagogue roof collapse in South Florida",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/rainfall-supercharged-by-el-nino-causes-road-flooding-synagogue-roof-collapse-in-south-florida",
+      "topic": "Trending",
+      "published": "2026-11-19T00:46:37+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
       "topic": "Trending",
       "published": "2026-11-18T09:58:28+00:00"
     },
     {
-      "n": 5,
-      "headline": "US House Democrats nominate Hakeem Jeffries for speaker",
+      "n": 10,
+      "headline": "Ukraine's allies gather in Berlin for 'Coalition of the Willing' summit",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-house-democrats-nominate-hakeem-jeffries-for-speaker/a-79983827?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/ukraine-s-allies-gather-in-berlin-for-coalition-of-the-willing-summit/live-79986520?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-18T15:46:00+00:00"
+      "published": "2026-11-19T02:46:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "William and Kate reflect on 'enduring' UK-India ties with Modi",
+      "n": 11,
+      "headline": "Myanmar faces historic genocide verdict at UN court over Rohingya massacres",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-18T16:44:23+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "House Democrat warns 13 Trump allies to save their records for upcoming investigations",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/18/g-s1-154147/robert-garcia-house-democrats-investigations-trump-administration",
-      "topic": "Politics",
-      "published": "2026-11-18T15:01:32+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "WATCH LIVE: DHS Secretary Mullin testifies on worldwide threats amid tech outages, Iran warnings",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-live-dhs-secretary-mullin-testifies-on-worldwide-threats-amid-tech-outages-iran-warnings",
+      "url": "https://www.bbc.co.uk/news/articles/c5m2l90ez144o?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-11-18T14:56:22+00:00"
+      "published": "2026-11-18T23:04:06+00:00"
     },
     {
-      "n": 9,
+      "n": 12,
+      "headline": "The law releasing the Epstein files passed one year ago. What do his victims say?",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6041708/the-law-releasing-the-epstein-files-passed-one-year-ago-what-do-his-victims-say",
+      "topic": "Trending",
+      "published": "2026-11-18T22:27:43+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/iran-widens-gulf-attacks-by-targeting-u-s-air-base-in-kuwait-and-sites-in-bahrain",
+      "topic": "World",
+      "published": "2026-11-19T00:36:03+00:00"
+    },
+    {
+      "n": 14,
       "headline": "European Commission accused of sugarcoating figures to release funds to Egypt",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/18/european-commission-accused-sugarcoating-figures-egypt-loans",
@@ -217,68 +257,28 @@
       "published": "2026-11-18T05:00:32+00:00"
     },
     {
-      "n": 10,
-      "headline": "Borussia Dortmund bows to fan pressure and end Rheinmetall deal",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/borussia-dortmund-bows-to-fan-pressure-and-end-rheinmetall-deal/a-79980121?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-18T15:39:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-18T13:04:48+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "The off-and-on switch for U.S. aid leads to a cliffhanger for Zambia and Zimbabwe",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/18/g-s1-153872/u-s-foreign-aid-memorandum-understanding-zambia-zimbabwe",
-      "topic": "Trending",
-      "published": "2026-11-18T13:03:38+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Democrat Mary Peltola wins Alaska Senate seat, beating Republican incumbent Dan Sullivan",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/democrat-mary-peltola-wins-alaska-senate-seat-beating-republican-incumbent-dan-sullivan",
-      "topic": "Politics",
-      "published": "2026-11-18T14:25:22+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
-      "topic": "Trending",
-      "published": "2026-11-17T01:10:59+00:00"
-    },
-    {
       "n": 15,
-      "headline": "North Korea expanded uranium enrichment plant, says IAEA head",
+      "headline": "Almost 1 in 4 children live in conflict zones — report",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/north-korea-expanded-uranium-enrichment-plant-says-iaea-head/a-79982758?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/almost-1-in-4-children-live-in-conflict-zones-report/a-79979203?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-18T15:15:00+00:00"
+      "published": "2026-11-19T00:34:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Grand Theft Auto 6 is a masterpiece, say critics",
+      "headline": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw8r75xm8v4po?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-18T14:57:56+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-11-19T02:20:15+00:00"
     },
     {
       "n": 17,
-      "headline": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
+      "headline": "Why the Nvidia scandal is a national security issue",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai",
-      "topic": "Politics",
-      "published": "2026-11-18T12:14:28+00:00"
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6044275/why-the-nvidia-scandal-is-a-national-security-issue",
+      "topic": "Trending",
+      "published": "2026-11-18T22:12:56+00:00"
     }
   ]
 }
