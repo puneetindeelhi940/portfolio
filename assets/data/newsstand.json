@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T05:40:22Z",
+  "generated_at": "2026-11-19T16:59:59Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "9 rumors involving DHS Secretary Markwayne Mullin, fact-checked",
+      "claim": "Do guards at Tomb of the Unknown Soldier follow these strict rules?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/markwayne-mullin-stories/",
+      "url": "https://www.snopes.com/fact-check/tomb-unknown-soldier-guards-rules/",
       "topic": "Trending"
     },
     {
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "Amid rising attacks on Christians, Bengal BJP chief warns missionary schools, Bishop seeks CM intervention",
+      "claim": "ABVP, SFI clash at Kolkata’s College Street, crude bomb hurled at Left book stall",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/amid-rising-attacks-on-christians-bengal-bjp-chief-warns-missionary-schools-calcutta-bishop-seeks-cm-intervention/",
+      "url": "https://www.altnews.in/abvp-sfi-clash-at-kolkatas-college-street-crude-bomb-hurled-at-left-book-stall/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "of red lights in the sky predates suspected drone incident at RAF Lakenheath",
+      "claim": "falsely claim judicial review on state pension age change set for June",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
+      "url": "https://fullfact.org/economy/judicial-review-over-change-in-state-pension-age-to-67-false/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did Hakeem Jeffries say Jerusalem is '6th borough' of NYC?",
+      "claim": "Did Muslim-majority city Hamtramck, Michigan, ban pride flags?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/hakeem-jeffries-jerusalem-new-york/",
+      "url": "https://www.snopes.com/fact-check/muslim-michigan-ban-pride-flag/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Democrats’ Boycott Goes Bust, Trump’s FCC Pick Advances",
+      "claim": "Outgoing GOP Senator Thom Tillis Blocks Bill That Would Ban Former Senators From Lobbying",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/18/democrats-boycott-trump-fcc-pick",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/19/thom-tillis-blocks-bill-banning-former-members-from-lobbying",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Bangladesh video falsely shared as demolition of Muslim homes in Tripura",
+      "claim": "Amid rising attacks on Christians, Bengal BJP chief warns missionary schools, Bishop seeks CM intervention",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/bangladesh-video-falsely-shared-as-demolition-of-muslim-homes-in-tripura/",
+      "url": "https://www.altnews.in/amid-rising-attacks-on-christians-bengal-bjp-chief-warns-missionary-schools-calcutta-bishop-seeks-cm-intervention/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Fake National Grid warning about ‘major blackout’ shared online",
+      "claim": "Old warning about alleged Christmas postal ‘scam’ reshared online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/hoaxes/national-grid-warning-major-UK-blackout-outage-fake/",
+      "url": "https://fullfact.org/crime/2005-christmas-postal-scam-reshared/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Sean Duffy vote against FAA funding in 2019?",
+      "claim": "shows Muslims in Dearborn marching, but not to demand Shariah",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/faa-vote-2019-sean-duffy/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/muslims-marching-in-dearborn-michigan/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls",
+      "headline": "Myanmar committed genocide against Rohingya minority, top UN court rules",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-11-19T04:42:52+00:00"
+      "published": "2026-11-19T16:55:57+00:00"
     },
     {
       "n": 2,
-      "headline": "Win a trip to go behind the news with NPR",
+      "headline": "The midterms were the largest win for either party in 50 years",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/19/g-s1-153851/npr-newsroom-giveaway",
+      "url": "https://www.npr.org/2026/11/19/nx-s1-6045916/democrats-midterm-house-majority",
       "topic": "Trending",
-      "published": "2026-11-19T05:01:00+00:00"
+      "published": "2026-11-19T15:55:05+00:00"
     },
     {
       "n": 3,
-      "headline": "Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion",
+      "headline": "For Putin, sharing a spotlight with Trump and Xi boosts his profile on the global stage",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion",
-      "topic": "Tech / AI",
-      "published": "2026-11-19T00:54:39+00:00"
+      "url": "https://www.pbs.org/newshour/world/for-putin-sharing-a-spotlight-with-trump-and-xi-boosts-his-profile-on-the-global-stage",
+      "topic": "Politics",
+      "published": "2026-11-19T16:51:50+00:00"
     },
     {
       "n": 4,
+      "headline": "Race to replant five South African baobabs after export blocked",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe",
+      "topic": "Trending",
+      "published": "2026-11-19T11:03:24+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "No mention of fossil fuels in latest COP31 draft deal",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/no-mention-of-fossil-fuels-in-latest-cop31-draft-deal/a-79992394?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-19T16:03:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-19T15:23:34+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Top U.N. court rules Myanmar committed genocide against the Rohingya",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154340/un-court-myanmar-genocide-rohingya",
+      "topic": "Trending",
+      "published": "2026-11-19T12:29:41+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Republican Rep. Nick Begich wins reelection for Alaska House seat",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/republican-rep-nick-begich-wins-reelection-for-alaska-house-seat",
+      "topic": "Politics",
+      "published": "2026-11-19T16:16:28+00:00"
+    },
+    {
+      "n": 9,
       "headline": "One in four women globally unable to refuse sex within marriage, says UN",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa",
@@ -177,39 +217,39 @@
       "published": "2026-11-19T04:00:16+00:00"
     },
     {
-      "n": 5,
-      "headline": "Crimean Bridge has been attacked again, Russian official says",
+      "n": 10,
+      "headline": "Anthropic trading tests investors' appetite for AI",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/crimean-bridge-has-been-attacked-again-russian-official-says/a-79986700?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-19T03:43:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-18T17:00:40+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "Anthropic IPO raises record $81.3 billion on strong AI demand",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6046212/anthropic-record-ipo-price",
+      "url": "https://www.dw.com/en/anthropic-trading-tests-investors-appetite-for-ai/a-79993163?maca=en-rss-en-all-1573-rdf",
       "topic": "Tech / AI",
-      "published": "2026-11-18T23:54:56+00:00"
+      "published": "2026-11-19T15:52:00+00:00"
     },
     {
-      "n": 8,
-      "headline": "Rainfall supercharged by El Niño causes road flooding, synagogue roof collapse in South Florida",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/rainfall-supercharged-by-el-nino-causes-road-flooding-synagogue-roof-collapse-in-south-florida",
+      "n": 11,
+      "headline": "Dozens missing after boat carrying migrants sinks off Senegal's coast",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-19T00:46:37+00:00"
+      "published": "2026-11-19T15:52:26+00:00"
     },
     {
-      "n": 9,
+      "n": 12,
+      "headline": "World Toilet Day is a funny idea with a serious goal: A world awash in toilets",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154159/world-toilet-day-gender-equality-menstruation",
+      "topic": "Trending",
+      "published": "2026-11-19T12:26:31+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "UN's highest court finds Myanmar responsible for genocide in historic ruling",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/uns-highest-court-finds-myanmar-responsible-for-genocide-in-historic-ruling",
+      "topic": "World",
+      "published": "2026-11-19T16:01:50+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
@@ -217,68 +257,28 @@
       "published": "2026-11-18T09:58:28+00:00"
     },
     {
-      "n": 10,
-      "headline": "Ukraine's allies gather in Berlin for 'Coalition of the Willing' summit",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-s-allies-gather-in-berlin-for-coalition-of-the-willing-summit/live-79986520?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-19T02:46:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Myanmar faces historic genocide verdict at UN court over Rohingya massacres",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c5m2l90ez144o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-18T23:04:06+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "The law releasing the Epstein files passed one year ago. What do his victims say?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6041708/the-law-releasing-the-epstein-files-passed-one-year-ago-what-do-his-victims-say",
-      "topic": "Trending",
-      "published": "2026-11-18T22:27:43+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/iran-widens-gulf-attacks-by-targeting-u-s-air-base-in-kuwait-and-sites-in-bahrain",
-      "topic": "World",
-      "published": "2026-11-19T00:36:03+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "European Commission accused of sugarcoating figures to release funds to Egypt",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/18/european-commission-accused-sugarcoating-figures-egypt-loans",
-      "topic": "Trending",
-      "published": "2026-11-18T05:00:32+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Almost 1 in 4 children live in conflict zones — report",
+      "headline": "Alexander Zverev faces fresh lawsuit from ex-girlfriend",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/almost-1-in-4-children-live-in-conflict-zones-report/a-79979203?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/alexander-zverev-faces-fresh-lawsuit-from-ex-girlfriend/a-79990005?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-19T00:34:00+00:00"
+      "published": "2026-11-19T15:18:00+00:00"
     },
     {
       "n": 16,
-      "headline": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
+      "headline": "Venezuela signs military deal with US less than a year after Maduro's removal",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-11-19T02:20:15+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-19T13:31:23+00:00"
     },
     {
       "n": 17,
-      "headline": "Why the Nvidia scandal is a national security issue",
+      "headline": "Anthropic raises more than $100B in IPO. And, Dems nominate Jeffries for House speaker",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6044275/why-the-nvidia-scandal-is-a-national-security-issue",
+      "url": "https://www.npr.org/2026/11/19/g-s1-154344/up-first-newsletter-house-democrats-trump-xi-putin-anthropic",
       "topic": "Trending",
-      "published": "2026-11-18T22:12:56+00:00"
+      "published": "2026-11-19T12:26:01+00:00"
     }
   ]
 }
