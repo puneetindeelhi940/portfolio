@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T05:28:42Z",
+  "generated_at": "2026-11-20T16:38:17Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,10 +16,10 @@
     },
     {
       "n": 2,
-      "claim": "6 stories about Transportation Secretary Sean Duffy",
+      "claim": "Is US Army planning to detonate massive amount of lead azide in Middletown, Iowa?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/transportation-sean-duffy-fact-check/",
+      "url": "https://www.snopes.com/fact-check/lead-azide-detonation-army-iowa/",
       "topic": "Trending"
     },
     {
@@ -40,10 +40,10 @@
     },
     {
       "n": 5,
-      "claim": "YouTube and TikTok rarely act on climate misinformation, even when it breaks their own rules",
+      "claim": "The reality of solar geoengineering: science against the conspiracy theories",
       "verdict": "FALSE",
       "source": "Science Feedback",
-      "url": "https://science.feedback.org/youtube-tiktok-rarely-act-climate-misinformation-breaks-their-own-rules/",
+      "url": "https://science.feedback.org/the-reality-of-solar-geoengineering/",
       "topic": "Science"
     },
     {
@@ -56,10 +56,10 @@
     },
     {
       "n": 7,
-      "claim": "falsely claim judicial review on state pension age change set for June",
+      "claim": "The National Wealth Fund committed £1 billion for offshore wind off the coast of Norfolk, not Scotland",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/judicial-review-over-change-in-state-pension-age-to-67-false/",
+      "url": "https://fullfact.org/environment/andy-burnham-national-wealth-fund-scotland/",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Did DOGE lay off 400 FAA technicians responsible for maintaining critical navigational systems?",
+      "claim": "12 rumors about the Federal Aviation Administration we grounded in truth",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/doge-cuts-to-faa/",
+      "url": "https://www.snopes.com/collections/faa-rumors/",
       "topic": "Trending"
     },
     {
@@ -96,11 +96,11 @@
     },
     {
       "n": 12,
-      "claim": "Shedding light on sunscreen myths",
+      "claim": "YouTube and TikTok rarely act on climate misinformation, even when it breaks their own rules",
       "verdict": "FALSE",
       "source": "Science Feedback",
-      "url": "https://science.feedback.org/shedding-light-on-sunscreen-myths/",
-      "topic": "Trending"
+      "url": "https://science.feedback.org/youtube-tiktok-rarely-act-climate-misinformation-breaks-their-own-rules/",
+      "topic": "Science"
     },
     {
       "n": 13,
@@ -112,10 +112,10 @@
     },
     {
       "n": 14,
-      "claim": "Old warning about alleged Christmas postal ‘scam’ reshared online",
+      "claim": "Work and pensions secretary corrects comparison of Labour and Conservative records on employment",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/crime/2005-christmas-postal-scam-reshared/",
+      "url": "https://fullfact.org/economy/work-and-pensions-secretary-corrects-comparison-of-labour-and-conservative-records-on-employment/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Trump ally order Russian flag to be displayed in Atlanta? What we know",
+      "claim": "Can the 'pink salt trick' help with weight loss?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/19/trump-ally-russian-flag-atlanta/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/pink-salt-weight-loss-trick/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "UK and EU to agree youth mobility scheme, BBC understands",
+      "headline": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-20T04:35:51+00:00"
+      "published": "2026-11-20T13:52:04+00:00"
     },
     {
       "n": 2,
-      "headline": "Judges have put Trump's arch and golf course on hold, but only for a matter of days",
+      "headline": "How Orchestra Noir turned classical music into a cultural movement",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/19/nx-s1-6047151/trump-arch-golf-course-judge-orders",
-      "topic": "Politics",
-      "published": "2026-11-19T19:46:27+00:00"
+      "url": "https://www.npr.org/2026/11/20/g-s1-154644/orchestra-noir-black-musical-tour-classical-music",
+      "topic": "Trending",
+      "published": "2026-11-20T16:12:18+00:00"
     },
     {
       "n": 3,
-      "headline": "Do you need a measles booster shot now that the U.S. has lost its elimination status?",
+      "headline": "Myanmar is the first state found responsible for genocide. Here's how the ICJ ruled in other cases",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/do-you-need-a-measles-booster-shot-now-that-the-u-s-has-lost-its-elimination-status",
+      "url": "https://www.pbs.org/newshour/world/myanmar-is-the-first-state-found-responsible-for-genocide-heres-how-the-icj-ruled-in-other-cases",
       "topic": "Trending",
-      "published": "2026-11-20T00:10:07+00:00"
+      "published": "2026-11-20T16:03:40+00:00"
     },
     {
       "n": 4,
+      "headline": "California’s coastal communities on alert as biggest waves in years hit state",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state",
+      "topic": "Trending",
+      "published": "2026-11-20T09:03:20+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Can German auto manufacturing recover after Mercedes and VW cuts?",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/can-german-auto-manufacturing-recover-after-mercedes-and-vw-cuts/a-79946928?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-20T15:36:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-20T13:01:16+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Trump to hold press conference after meeting with Xi and Putin",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/20/nx-s1-6047594/trump-asia-trip-xi-putin-press-conference",
+      "topic": "Politics",
+      "published": "2026-11-20T15:00:00+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Iran war has permanently reshaped energy priorities, IEA report says",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/iran-war-has-permanently-reshaped-energy-priorities-iea-report-says",
+      "topic": "Science",
+      "published": "2026-11-20T15:28:46+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Race to replant five South African baobabs after export blocked",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe",
@@ -177,39 +217,39 @@
       "published": "2026-11-19T11:03:24+00:00"
     },
     {
-      "n": 5,
-      "headline": "White House replaces cyber security chief after tech outages",
+      "n": 10,
+      "headline": "Measles in America: Here's a constructive approach to beating the highly contagious disease, based on Brazil's experience",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/white-house-replaces-cyber-security-chief-after-tech-outages/a-79998531?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-20T04:21:00+00:00"
+      "url": "https://www.dw.com/en/measles-in-america-here-s-a-constructive-approach-to-beating-the-highly-contagious-disease-based-on-brazil-s-experience/a-79990626?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-11-20T15:14:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Anthropic becomes one of world's most valuable public companies in stock market debut",
+      "n": 11,
+      "headline": "Anthropic shares fall a day after blockbuster opening",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-11-19T23:33:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-20T16:27:47+00:00"
     },
     {
-      "n": 7,
-      "headline": "The 'Magic Six': How to strengthen your marriage in midlife",
+      "n": 12,
+      "headline": "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/19/nx-s1-5996688/magic-6-marriage-tips-nina-totenberg-relationships",
+      "url": "https://www.npr.org/2026/11/20/nx-s1-6048461/texas-execution-dennes-moaned-pain",
       "topic": "Trending",
-      "published": "2026-11-19T18:28:23+00:00"
+      "published": "2026-11-20T12:24:40+00:00"
     },
     {
-      "n": 8,
-      "headline": "FCC votes to allow state prisons to jam signals from contraband cellphones",
+      "n": 13,
+      "headline": "WATCH LIVE: U.S. Capitol Christmas tree arrives in D.C.",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/fcc-votes-to-allow-state-prisons-to-jam-signals-from-contraband-cellphones",
+      "url": "https://www.pbs.org/newshour/nation/watch-live-u-s-capitol-christmas-tree-arrives-in-d-c",
       "topic": "Trending",
-      "published": "2026-11-20T00:02:08+00:00"
+      "published": "2026-11-20T15:02:37+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "One in four women globally unable to refuse sex within marriage, says UN",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa",
@@ -217,68 +257,28 @@
       "published": "2026-11-19T04:00:16+00:00"
     },
     {
-      "n": 10,
-      "headline": "New Ukraine talks including Europe to be held 'soon' — Merz",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/new-ukraine-talks-including-europe-to-be-held-soon-merz/a-79997961?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-20T01:27:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "I tell my son it's just fireworks': People inside besieged Yemeni city speak to BBC",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-20T00:13:21+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Bigger than Barack Obama's election': Scholars reflect on Mississippi Senate race",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/19/nx-s1-6047338/bigger-than-barack-obamas-election-scholars-reflect-on-mississippi-senate-race",
-      "topic": "Politics",
-      "published": "2026-11-19T17:03:11+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Inside the historic summit between Trump, Xi and Putin",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/inside-the-historic-summit-between-trump-xi-and-putin",
-      "topic": "Politics",
-      "published": "2026-11-19T23:55:57+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
-      "topic": "Trending",
-      "published": "2026-11-18T09:58:28+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Cincinnati's famous hippo Fiona dies after eating visitor's hat",
+      "headline": "Is Pakistan backing anti-Taliban groups in Afghanistan?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/cincinnati-s-famous-hippo-fiona-dies-after-eating-visitor-s-hat/a-79998371?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/is-pakistan-backing-anti-taliban-groups-in-afghanistan/a-80004814?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-20T01:03:00+00:00"
+      "published": "2026-11-20T15:02:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Myanmar committed genocide against Rohingya minority, top UN court rules",
+      "headline": "Nearly 600 women killed in South Africa within three months",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-19T20:07:02+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c69vwyjp0339o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-20T15:55:16+00:00"
     },
     {
       "n": 17,
-      "headline": "The midterms were the largest win for either party in 50 years",
+      "headline": "Dems aim to block Iran war funding. And, Army delays lead azide detonation in Iowa",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/19/nx-s1-6045916/democrats-midterm-house-majority",
-      "topic": "Trending",
-      "published": "2026-11-19T15:55:05+00:00"
+      "url": "https://www.npr.org/2026/11/20/g-s1-154582/up-first-newsletter-democrats-iran-war-trump-xi-jinping-iowa-army",
+      "topic": "World",
+      "published": "2026-11-20T12:04:57+00:00"
     }
   ]
 }
