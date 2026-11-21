@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T15:52:07Z",
+  "generated_at": "2026-11-21T21:24:46Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did DOGE lay off 400 FAA technicians responsible for maintaining critical navigational systems?",
+      "claim": "Did Elon Musk once describe himself as 'dark, gothic MAGA'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/doge-cuts-to-faa/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/elon-musk-dark-gothic-maga/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Washington Cleared $128 Billion In Tariff Refunds — But Some Companies Are Still Waiting For Theirs",
+      "claim": "National Crime Database Reportedly Hacked, Prompting FBI Investigation Of Potential Cyberattack",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/20/washington-cleared-128-billion-in-tariff-refunds-whos-still-waiting",
+      "url": "https://dailycaller.com/2026/11/21/national-crime-database-hack-federal-bureau-investigation-probe-cyberattack",
       "topic": "Trending"
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "n": 9,
-      "claim": "Is the Pentagon unable to account for $2T in taxpayer money? Breaking down its annual audit",
+      "claim": "Did DOGE lay off 400 FAA technicians responsible for maintaining critical navigational systems?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/20/pentagon-2-trillion-taxpayer-money/",
+      "url": "https://www.snopes.com/fact-check/doge-cuts-to-faa/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "EXCLUSIVE: Voters Want To Pump The Brakes On AI, Chip Sales To China, New Poll Shows",
+      "claim": "Trump Admin Keeps Michigan Coal Plant Open Into 2027 After Court Tossed Its First Order",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/21/exclusive-poll-americans-ai-chip-sales-nvidia-china",
-      "topic": "World"
+      "url": "https://dailycaller.com/2026/11/21/chris-wright-campbell-coal-plant-michigan-emergency-order-2027",
+      "topic": "Politics"
     },
     {
       "n": 12,
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Do Senate Democrats want to take away Trump's power to pardon himself?",
+      "claim": "Is the Pentagon unable to account for $2T in taxpayer money? Breaking down its annual audit",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/senate-democrats-president-pardon/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/news/2026/11/20/pentagon-2-trillion-taxpayer-money/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
+      "headline": "Bayer reaches Roundup settlement that could cost the company billions",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6049684/roundup-bayer-hodgkins-settlement",
       "topic": "Trending",
-      "published": "2026-11-21T14:18:17+00:00"
+      "published": "2026-11-21T20:37:35+00:00"
     },
     {
       "n": 3,
-      "headline": "Rights groups urge sanctions after ICJ finds Myanmar guilty of genocide against Rohingya",
+      "headline": "AP source: FBI investigating apparent hack of its key national criminal justice database",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/rights-groups-urge-sanctions-after-icj-finds-myanmar-guilty-of-genocide-against-rohingya",
+      "url": "https://www.pbs.org/newshour/politics/ap-source-fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database",
       "topic": "Trending",
-      "published": "2026-11-21T00:28:54+00:00"
+      "published": "2026-11-21T20:55:22+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "EU and Indonesia sign trade deal",
+      "headline": "Getting rid of antibiotic resistance: Challenges and possible solutions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/eu-and-indonesia-sign-trade-deal/a-80010099?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/getting-rid-of-antibiotic-resistance-challenges-and-possible-solutions/a-80010693?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-21T15:21:00+00:00"
+      "published": "2026-11-21T18:39:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Tech stock sell-off drags markets down as Anthropic shares slide",
+      "headline": "Russia-bound ship attacked in Gulf of Finland",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-11-20T22:42:47+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-21T19:20:22+00:00"
     },
     {
       "n": 7,
-      "headline": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+      "headline": "Storms expected on both coasts threatens Thanksgiving travel",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6049625/palisades-fire-conviction",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
       "topic": "Trending",
-      "published": "2026-11-21T13:58:33+00:00"
+      "published": "2026-11-21T18:22:46+00:00"
     },
     {
       "n": 8,
-      "headline": "Federal jury convicts man of starting deadly 2025 Palisades Fire in Los Angeles",
+      "headline": "A doctor's guide to surviving — and enjoying — holiday feasting while on GLP‑1 medication",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/federal-jury-convicts-man-of-starting-deadly-2025-palisades-fire-in-los-angeles",
+      "url": "https://www.pbs.org/newshour/health/a-doctors-guide-to-surviving-and-enjoying-holiday-feasting-while-on-glp%e2%80%911-medication",
       "topic": "Trending",
-      "published": "2026-11-21T00:01:50+00:00"
+      "published": "2026-11-21T19:46:19+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "New EU budget proposal aims at tax gobal tech giants",
+      "headline": "Mexican special forces arrest drug kingpin 'Chapo Isidro",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/new-eu-budget-proposal-aims-at-tax-gobal-tech-giants/a-80009255?maca=en-rss-en-all-1573-rdf",
-      "topic": "Money",
-      "published": "2026-11-21T14:58:00+00:00"
+      "url": "https://www.dw.com/en/mexican-special-forces-arrest-drug-kingpin-chapo-isidro/a-80010745?maca=en-rss-en-all-1573-rdf",
+      "topic": "Health",
+      "published": "2026-11-21T18:30:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "headline": "Tech stock sell-off drags markets down as Anthropic shares slide",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-21T14:54:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+      "topic": "Money",
+      "published": "2026-11-20T22:42:47+00:00"
     },
     {
       "n": 12,
-      "headline": "Perspective: Defining 'human",
+      "headline": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6041585/perspective-defining-human",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
       "topic": "Trending",
-      "published": "2026-11-21T13:00:00+00:00"
+      "published": "2026-11-21T18:08:55+00:00"
     },
     {
       "n": 13,
-      "headline": "What Trump addressed during his lengthy White House news conference",
+      "headline": "Trump orders federal contractors to check with White House before responding to Congress",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/what-trump-addressed-during-his-lengthy-white-house-news-conference",
+      "url": "https://www.pbs.org/newshour/politics/trump-orders-federal-contractors-to-check-with-white-house-before-responding-to-congress",
       "topic": "Politics",
-      "published": "2026-11-20T23:55:30+00:00"
+      "published": "2026-11-21T19:29:23+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Russia strikes Zelenskyy's hometown, killing 2",
+      "headline": "Russian helicopter suspected of violating Finnish airspace",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russia-strikes-zelenskyy-s-hometown-killing-2/a-80009458?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-21T14:44:00+00:00"
+      "url": "https://www.dw.com/en/russian-helicopter-suspected-of-violating-finnish-airspace/a-80010133?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-21T17:08:00+00:00"
     },
     {
       "n": 16,
-      "headline": "FBI reportedly investigating apparent hack of its criminal database",
+      "headline": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-21T09:34:20+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-11-21T19:33:49+00:00"
     },
     {
       "n": 17,
-      "headline": "Senate permitting bill speeds up renewables, divides greens over oil and gas",
+      "headline": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6046482/senate-permitting-bill-speeds-up-renewables-divides-greens-over-oil-and-gas",
-      "topic": "Politics",
-      "published": "2026-11-21T12:40:17+00:00"
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
+      "topic": "Trending",
+      "published": "2026-11-21T14:18:17+00:00"
     }
   ]
 }
