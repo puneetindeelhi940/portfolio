@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T21:24:46Z",
+  "generated_at": "2026-11-22T04:47:06Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Did Elon Musk once describe himself as 'dark, gothic MAGA'?",
+      "claim": "Did US join Russia in abstaining from vote on UN resolution to protect women and girls?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/elon-musk-dark-gothic-maga/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/fact-check/us-russia-un-womens-rights-resolution/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did DOGE lay off 400 FAA technicians responsible for maintaining critical navigational systems?",
+      "claim": "Did Elon Musk once describe himself as 'dark, gothic MAGA'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/doge-cuts-to-faa/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/elon-musk-dark-gothic-maga/",
+      "topic": "Tech / AI"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Trump Admin Keeps Michigan Coal Plant Open Into 2027 After Court Tossed Its First Order",
+      "claim": "GOP Megadonor Linked To Donation To Dem AG Who Openly Floated Killings Of Republican Colleague’s Children",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/21/chris-wright-campbell-coal-plant-michigan-emergency-order-2027",
+      "url": "https://dailycaller.com/2026/11/21/republican-megadonor-miriam-adelson-company-las-vegas-sands-corporation-donated-virginia-democrat-jay-jones",
       "topic": "Politics"
     },
     {
@@ -128,10 +128,10 @@
     },
     {
       "n": 16,
-      "claim": "Is the Pentagon unable to account for $2T in taxpayer money? Breaking down its annual audit",
+      "claim": "Did DOGE lay off 400 FAA technicians responsible for maintaining critical navigational systems?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/20/pentagon-2-trillion-taxpayer-money/",
+      "url": "https://www.snopes.com/fact-check/doge-cuts-to-faa/",
       "topic": "Trending"
     },
     {
@@ -154,19 +154,19 @@
     },
     {
       "n": 2,
-      "headline": "Bayer reaches Roundup settlement that could cost the company billions",
+      "headline": "Trump orders federal contractors to check with White House before responding to Congress",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6049684/roundup-bayer-hodgkins-settlement",
-      "topic": "Trending",
-      "published": "2026-11-21T20:37:35+00:00"
+      "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
+      "topic": "Politics",
+      "published": "2026-11-21T22:40:36+00:00"
     },
     {
       "n": 3,
-      "headline": "AP source: FBI investigating apparent hack of its key national criminal justice database",
+      "headline": "Why do people believe recent tech failures must be connected?",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/ap-source-fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database",
+      "url": "https://www.pbs.org/newshour/nation/why-do-people-believe-recent-tech-failures-must-be-connected",
       "topic": "Trending",
-      "published": "2026-11-21T20:55:22+00:00"
+      "published": "2026-11-21T23:14:57+00:00"
     },
     {
       "n": 4,
@@ -178,11 +178,11 @@
     },
     {
       "n": 5,
-      "headline": "Getting rid of antibiotic resistance: Challenges and possible solutions",
+      "headline": "COP31: UN Climate summit runs into second day of overtime",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/getting-rid-of-antibiotic-resistance-challenges-and-possible-solutions/a-80010693?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-21T18:39:00+00:00"
+      "url": "https://www.dw.com/en/cop31-un-climate-summit-runs-into-second-day-of-overtime/live-79999516?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-11-22T01:12:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Storms expected on both coasts threatens Thanksgiving travel",
+      "headline": "Google employees protest AI in schools policy",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
-      "topic": "Trending",
-      "published": "2026-11-21T18:22:46+00:00"
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6048599/google-employees-protest-ai-in-schools-policy",
+      "topic": "Tech / AI",
+      "published": "2026-11-21T22:01:40+00:00"
     },
     {
       "n": 8,
-      "headline": "A doctor's guide to surviving — and enjoying — holiday feasting while on GLP‑1 medication",
+      "headline": "For families of the fallen, Trump's proposed arch casts a shadow over Arlington National Cemetery",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/health/a-doctors-guide-to-surviving-and-enjoying-holiday-feasting-while-on-glp%e2%80%911-medication",
-      "topic": "Trending",
-      "published": "2026-11-21T19:46:19+00:00"
+      "url": "https://www.pbs.org/newshour/politics/for-families-of-the-fallen-trumps-proposed-arch-casts-a-shadow-over-arlington-national-cemetery",
+      "topic": "Politics",
+      "published": "2026-11-21T22:52:03+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Mexican special forces arrest drug kingpin 'Chapo Isidro",
+      "headline": "Nigeria: At least 24 dead after boat capsizes",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/mexican-special-forces-arrest-drug-kingpin-chapo-isidro/a-80010745?maca=en-rss-en-all-1573-rdf",
-      "topic": "Health",
-      "published": "2026-11-21T18:30:00+00:00"
+      "url": "https://www.dw.com/en/nigeria-at-least-24-dead-after-boat-capsizes/a-80011248?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-21T23:52:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Tech stock sell-off drags markets down as Anthropic shares slide",
+      "headline": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
-      "topic": "Money",
-      "published": "2026-11-20T22:42:47+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-11-21T22:19:43+00:00"
     },
     {
       "n": 12,
-      "headline": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence",
+      "headline": "Highlights and challenges from covering an historic month in South America",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
       "topic": "Trending",
-      "published": "2026-11-21T18:08:55+00:00"
+      "published": "2026-11-21T22:01:35+00:00"
     },
     {
       "n": 13,
-      "headline": "Trump orders federal contractors to check with White House before responding to Congress",
+      "headline": "Trump vows to work with Democrats to cap credit card interest rates at 10%",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-orders-federal-contractors-to-check-with-white-house-before-responding-to-congress",
+      "url": "https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10",
       "topic": "Politics",
-      "published": "2026-11-21T19:29:23+00:00"
+      "published": "2026-11-21T21:20:34+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Russian helicopter suspected of violating Finnish airspace",
+      "headline": "Getting rid of antibiotic resistance: Challenges and possible solutions",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/russian-helicopter-suspected-of-violating-finnish-airspace/a-80010133?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/getting-rid-of-antibiotic-resistance-challenges-and-possible-solutions/a-80010693?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-21T17:08:00+00:00"
+      "published": "2026-11-21T18:39:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "headline": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-21T19:33:49+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-11-22T01:25:03+00:00"
     },
     {
       "n": 17,
-      "headline": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
+      "headline": "Bayer reaches Roundup settlement that could cost the company billions",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6049684/roundup-bayer-hodgkins-settlement",
       "topic": "Trending",
-      "published": "2026-11-21T14:18:17+00:00"
+      "published": "2026-11-21T20:37:35+00:00"
     }
   ]
 }
