@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T04:47:06Z",
+  "generated_at": "2026-11-22T15:51:49Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "What did UP SIR achieve? Final voter roll riddled with anomalies",
-      "verdict": "FALSE",
+      "claim": "Slain J&K policemen carried in dumper: Top CRPF official’s video doctored",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/what-did-up-sir-achieve-final-voter-roll-riddled-with-anomalies/",
+      "url": "https://www.altnews.in/slain-jk-policemen-carried-in-dumper-top-crpf-officials-video-doctored/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "GOP Megadonor Linked To Donation To Dem AG Who Openly Floated Killings Of Republican Colleague’s Children",
+      "claim": "Here’s Why Some Say OpenAI’s Latest Model Is ‘Unusable,’ ‘Uneven’ And ‘Insufferable To Work With’",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/21/republican-megadonor-miriam-adelson-company-las-vegas-sands-corporation-donated-virginia-democrat-jay-jones",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/22/openai-chatgpt-astra-model-critics-usability",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "ABVP, SFI clash at Kolkata’s College Street, crude bomb hurled at Left book stall",
+      "claim": "What did UP SIR achieve? Final voter roll riddled with anomalies",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/abvp-sfi-clash-at-kolkatas-college-street-crude-bomb-hurled-at-left-book-stall/",
+      "url": "https://www.altnews.in/what-did-up-sir-achieve-final-voter-roll-riddled-with-anomalies/",
       "topic": "Trending"
     },
     {
@@ -146,19 +146,19 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "headline": "South Korea education minister resigns over exam cheating scandal",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-21T13:17:38+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-22T09:20:45+00:00"
     },
     {
       "n": 2,
-      "headline": "Trump orders federal contractors to check with White House before responding to Congress",
+      "headline": "Medicare looks a bit different in 2027, so don't miss open enrollment",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
-      "topic": "Politics",
-      "published": "2026-11-21T22:40:36+00:00"
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6036735/medicare-open-enrollment-2027",
+      "topic": "Trending",
+      "published": "2026-11-22T13:11:04+00:00"
     },
     {
       "n": 3,
@@ -178,27 +178,27 @@
     },
     {
       "n": 5,
-      "headline": "COP31: UN Climate summit runs into second day of overtime",
+      "headline": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/cop31-un-climate-summit-runs-into-second-day-of-overtime/live-79999516?maca=en-rss-en-all-1573-rdf",
-      "topic": "Science",
-      "published": "2026-11-22T01:12:00+00:00"
+      "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-22T15:09:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Russia-bound ship attacked in Gulf of Finland",
+      "headline": "Russia-bound ship still on fire after attack in Gulf of Finland",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
       "topic": "World",
-      "published": "2026-11-21T19:20:22+00:00"
+      "published": "2026-11-22T11:25:14+00:00"
     },
     {
       "n": 7,
-      "headline": "Google employees protest AI in schools policy",
+      "headline": "NPR's Senior Podcast Challenge: Early entries we love",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6048599/google-employees-protest-ai-in-schools-policy",
-      "topic": "Tech / AI",
-      "published": "2026-11-21T22:01:40+00:00"
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
+      "topic": "Trending",
+      "published": "2026-11-22T10:00:00+00:00"
     },
     {
       "n": 8,
@@ -218,27 +218,27 @@
     },
     {
       "n": 10,
-      "headline": "Nigeria: At least 24 dead after boat capsizes",
+      "headline": "COP31 climate talks end without consensus on how to fund vulnerable countries or move the world away from coal, oil and gas use",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/nigeria-at-least-24-dead-after-boat-capsizes/a-80011248?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-21T23:52:00+00:00"
+      "url": "https://www.dw.com/en/cop31-climate-talks-end-without-consensus-on-how-to-fund-vulnerable-countries-or-move-the-world-away-from-coal-oil-and-gas-use/a-80003610?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-11-22T13:18:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "headline": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-21T22:19:43+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
+      "topic": "Health",
+      "published": "2026-11-22T01:25:03+00:00"
     },
     {
       "n": 12,
-      "headline": "Highlights and challenges from covering an historic month in South America",
+      "headline": "He expected a small-business loan. He got a 7-year nightmare",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
+      "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
       "topic": "Trending",
-      "published": "2026-11-21T22:01:35+00:00"
+      "published": "2026-11-22T10:00:00+00:00"
     },
     {
       "n": 13,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Getting rid of antibiotic resistance: Challenges and possible solutions",
+      "headline": "COP31: Climate deal 'not adopted,' summit president says",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/getting-rid-of-antibiotic-resistance-challenges-and-possible-solutions/a-80010693?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-21T18:39:00+00:00"
+      "url": "https://www.dw.com/en/cop31-climate-deal-not-adopted-summit-president-says/live-79999516?maca=en-rss-en-all-1573-rdf",
+      "topic": "Science",
+      "published": "2026-11-22T12:39:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+      "headline": "Three killed and dozens missing after fire at Indonesian factory",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-      "topic": "Health",
-      "published": "2026-11-22T01:25:03+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-22T14:05:20+00:00"
     },
     {
       "n": 17,
-      "headline": "Bayer reaches Roundup settlement that could cost the company billions",
+      "headline": "Trump orders federal contractors to check with White House before responding to Congress",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6049684/roundup-bayer-hodgkins-settlement",
-      "topic": "Trending",
-      "published": "2026-11-21T20:37:35+00:00"
+      "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
+      "topic": "Politics",
+      "published": "2026-11-21T22:40:36+00:00"
     }
   ]
 }
