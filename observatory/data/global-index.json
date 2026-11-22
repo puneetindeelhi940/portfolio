@@ -12,7 +12,7 @@
     "technology_hardware": {
       "label": "Technology Hardware",
       "weight": 0.2,
-      "value": 7.6,
+      "value": 7.4,
       "trend": "falling",
       "drivers": [
         "GPU demand",
@@ -24,8 +24,8 @@
     "cloud_services": {
       "label": "Cloud Computing",
       "weight": 0.15,
-      "value": 4.5,
-      "trend": "stable",
+      "value": 4.6,
+      "trend": "rising",
       "drivers": [
         "GPU instance demand",
         "Data center expansion",
@@ -36,7 +36,7 @@
     "ai_subscriptions": {
       "label": "AI Subscriptions",
       "weight": 0.1,
-      "value": 13.4,
+      "value": 13.2,
       "trend": "falling",
       "drivers": [
         "Inference cost",
@@ -48,8 +48,8 @@
     "electricity": {
       "label": "Electricity & Energy",
       "weight": 0.2,
-      "value": 8.9,
-      "trend": "falling",
+      "value": 9.2,
+      "trend": "rising",
       "drivers": [
         "Data center demand",
         "Grid strain",
@@ -61,7 +61,7 @@
       "label": "Consumer Electronics",
       "weight": 0.15,
       "value": 6.9,
-      "trend": "rising",
+      "trend": "stable",
       "drivers": [
         "Component allocation to AI",
         "Memory prices",
@@ -72,8 +72,8 @@
     "enterprise_software": {
       "label": "Enterprise Software",
       "weight": 0.1,
-      "value": 5.2,
-      "trend": "rising",
+      "value": 5.1,
+      "trend": "falling",
       "drivers": [
         "AI feature premiums",
         "Copilot add-ons",
@@ -84,7 +84,7 @@
     "infrastructure": {
       "label": "Infrastructure & Construction",
       "weight": 0.1,
-      "value": 3.1,
+      "value": 3.2,
       "trend": "rising",
       "drivers": [
         "Data center construction",
@@ -124,7 +124,7 @@
       "source": "IDC, Gartner"
     }
   ],
-  "last_updated": "2026-11-21T13:47:32Z",
+  "last_updated": "2026-11-22T13:40:47Z",
   "methodology_version": "1.0",
   "sources_summary": "Composite index weighted from BLS, IEA, Synergy Research, SIA, IDC, Gartner, company pricing data, and national statistics offices."
 }
