@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T05:25:56Z",
+  "generated_at": "2026-11-23T19:45:52Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "Does new Etsy policy allow AI training on artists' work?",
+      "claim": "Does meme accurately compare ages of actors when they were cast as James Bond?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/23/etsy-ai-policy-artists/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/fact-check/ages-actors-james-bond/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Christian Persecution Worsens Across Globe With Churches Destroyed, Worshippers Slaughtered",
+      "claim": "Nvidia Reinstates Jensen Huang As CEO",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/22/christian-persecution-worsens-africa-asia-latin-america-middle-east-aid-church-need-report",
+      "url": "https://dailycaller.com/2026/11/23/nvidia-reinstates-jensen-huang-ceo-china",
       "topic": "Trending"
     },
     {
@@ -48,18 +48,18 @@
     },
     {
       "n": 6,
-      "claim": "Gems of UP SSR: 1.1 lakh voters whose parent is younger to them or of same age",
+      "claim": "Movie clip falsely shared as footage of woman ‘manufacturing’ molestation case",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/gems-of-up-ssr-1-1-lakh-voters-whose-parent-is-younger-to-them-or-of-same-age/",
+      "url": "https://www.altnews.in/movie-clip-falsely-shared-as-footage-of-woman-manufacturing-molestation-case/",
       "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "The National Wealth Fund committed £1 billion for offshore wind off the coast of Norfolk, not Scotland",
+      "claim": "Aldi isn’t giving away free ‘sample packs’ of groceries",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/environment/andy-burnham-national-wealth-fund-scotland/",
+      "url": "https://fullfact.org/shopping/facebook-fake-ad-aldi-sample-pack-giveaway/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "25 rumors about hacks and cyberattacks, fact-checked",
+      "claim": "Did White House post image of Trump wearing British Revolutionary War uniform?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/coverage-hacking-cyberattacks/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-white-house-revolutionary-war-uniform/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Reactor Permits Pile Up Under Trump As Democrats Prepare To Take Over Nuclear Oversight",
+      "claim": "Both Sides Of Congress Upset Trump Put Thumb On Scale To Reinstate Jensen Huang As Nvidia CEO",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/22/nrc-reactor-permits-long-mott-dow-texas-democrats-congress-nuclear-oversight",
+      "url": "https://dailycaller.com/2026/11/23/jensen-huang-congress-reinstated-nvidia",
       "topic": "Politics"
     },
     {
@@ -104,18 +104,18 @@
     },
     {
       "n": 13,
-      "claim": "Slain J&K policemen carried in dumper: Top CRPF official’s video doctored",
-      "verdict": "MISLEADING",
+      "claim": "Gems of UP SSR: 1.1 lakh voters whose parent is younger to them or of same age",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/slain-jk-policemen-carried-in-dumper-top-crpf-officials-video-doctored/",
+      "url": "https://www.altnews.in/gems-of-up-ssr-1-1-lakh-voters-whose-parent-is-younger-to-them-or-of-same-age/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "Work and pensions secretary corrects comparison of Labour and Conservative records on employment",
+      "claim": "The National Wealth Fund committed £1 billion for offshore wind off the coast of Norfolk, not Scotland",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/work-and-pensions-secretary-corrects-comparison-of-labour-and-conservative-records-on-employment/",
+      "url": "https://fullfact.org/environment/andy-burnham-national-wealth-fund-scotland/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did US join Russia in abstaining from vote on UN resolution to protect women and girls?",
+      "claim": "doesn't show supposed Muslim group 'Soldiers of Allah' demanding Shariah in Manchester",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/us-russia-un-womens-rights-resolution/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/shariah-law-manchester-video/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
+      "headline": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-23T05:15:06+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-23T15:41:23+00:00"
     },
     {
       "n": 2,
-      "headline": "Do not feed the animals. Vets explain why hats, coins and shoes can be deadly.",
+      "headline": "Medicare for all' is back on the drawing board. Does it stand a better chance this time?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6049723/do-not-feed-the-animals-vets-explain-why-hats-coins-and-shoes-can-be-deadly",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6047706/health-medicare-for-all-chances",
       "topic": "Trending",
-      "published": "2026-11-23T01:53:48+00:00"
+      "published": "2026-11-23T16:00:49+00:00"
     },
     {
       "n": 3,
-      "headline": "Lawyer: Father and daughter detained by ICE at Seattle airport were traveling to family baptism",
+      "headline": "Airline glitches and storms could make Thanksgiving travel messy",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/lawyer-father-and-daughter-detained-by-ice-at-seattle-airport-were-traveling-to-family-baptism",
+      "url": "https://www.pbs.org/newshour/nation/airline-glitches-and-storms-could-make-thanksgiving-travel-messy",
       "topic": "Trending",
-      "published": "2026-11-22T23:46:56+00:00"
+      "published": "2026-11-23T19:36:11+00:00"
     },
     {
       "n": 4,
+      "headline": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
+      "topic": "Trending",
+      "published": "2026-11-23T11:42:51+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Tajikistan follows US call, withdraws from ICC",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/tajikistan-follows-us-call-withdraws-from-icc/a-80023903?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-23T18:40:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Iranian authorities flog singer who performed without hijab, lawyers say",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss",
+      "topic": "Celebrity",
+      "published": "2026-11-23T18:04:20+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "Trump claims credit as Jensen Huang returns to Nvidia",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
+      "topic": "Politics",
+      "published": "2026-11-23T14:53:41+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Trump says Army will not detonate bomb-making chemicals in Iowa without court approval",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/trump-says-army-will-not-detonate-bomb-making-chemicals-in-iowa-without-court-approval",
+      "topic": "Politics",
+      "published": "2026-11-23T19:25:48+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
@@ -177,39 +217,39 @@
       "published": "2026-11-22T21:33:44+00:00"
     },
     {
-      "n": 5,
-      "headline": "Turkey: Thousands protest closure of critical media outlets",
+      "n": 10,
+      "headline": "US and UK to host Women's World Cups in 2031 and 2035",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-and-uk-to-host-women-s-world-cups-in-2031-and-2035/a-80023786?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-22T21:31:00+00:00"
+      "published": "2026-11-23T16:19:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "What's next after no deal at COP31 climate talks?",
+      "n": 11,
+      "headline": "I want to destroy capitalism, not France': On the streets with the French ultra left",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-22T18:57:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-23T13:09:52+00:00"
     },
     {
-      "n": 7,
-      "headline": "What it's like at a climate conference as talks collapse",
+      "n": 12,
+      "headline": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6050248/what-its-like-at-a-climate-conference-as-talks-collapse",
-      "topic": "Science",
-      "published": "2026-11-22T22:40:23+00:00"
+      "url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31",
+      "topic": "Trending",
+      "published": "2026-11-23T12:42:03+00:00"
     },
     {
-      "n": 8,
-      "headline": "In their own words: Leaders at UN climate talks discuss why negotiations ended without deal",
+      "n": 13,
+      "headline": "Senate leadership vote tests newly elected Democrats' promise of change",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/in-their-own-words-leaders-at-un-climate-talks-discuss-why-negotiations-ended-without-deal",
-      "topic": "Science",
-      "published": "2026-11-22T23:00:37+00:00"
+      "url": "https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change",
+      "topic": "Politics",
+      "published": "2026-11-23T19:14:35+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "California’s coastal communities on alert as biggest waves in years hit state",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state",
@@ -217,68 +257,28 @@
       "published": "2026-11-20T09:03:20+00:00"
     },
     {
-      "n": 10,
-      "headline": "Sudan: Drones hit UN building, residential area in Khartoum",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-22T19:25:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-23T04:44:00+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Philly festival-goers say pickles are a real big dill",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6038939/philly-festival-goers-say-pickles-are-a-real-big-dill",
-      "topic": "Trending",
-      "published": "2026-11-22T22:40:19+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Automation system problem at Delta causes flight delays as Americans travel for Thanksgiving",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/automation-system-problem-at-delta-causes-flight-delays-as-americans-travel-for-thanksgiving",
-      "topic": "Trending",
-      "published": "2026-11-22T22:40:06+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Race to replant five South African baobabs after export blocked",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe",
-      "topic": "Trending",
-      "published": "2026-11-19T11:03:24+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Libya: Suspected drone attack hits Russian ship in Benghazi",
+      "headline": "Turkey: Authorities search for lioness on the loose in Istanbul",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/libya-suspected-drone-attack-hits-russian-ship-in-benghazi/a-80014545?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/turkey-authorities-search-for-lioness-on-the-loose-in-istanbul/a-80020913?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-22T16:50:00+00:00"
+      "published": "2026-11-23T16:05:00+00:00"
     },
     {
       "n": 16,
-      "headline": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
+      "headline": "What failure of COP31 reveals about a divided world",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss",
-      "topic": "Tech / AI",
-      "published": "2026-11-23T00:08:00+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-23T17:24:25+00:00"
     },
     {
       "n": 17,
-      "headline": "Lebanese villagers return to wrecked homes as the Israeli army pulls back",
+      "headline": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6048710/lebanon-israel-army-conflict-homes",
+      "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
       "topic": "Trending",
-      "published": "2026-11-22T17:44:52+00:00"
+      "published": "2026-11-23T10:16:33+00:00"
     }
   ]
 }
