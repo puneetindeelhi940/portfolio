@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T21:27:57Z",
+  "generated_at": "2026-11-23T05:25:56Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -16,11 +16,11 @@
     },
     {
       "n": 2,
-      "claim": "25 rumors about hacks and cyberattacks, fact-checked",
+      "claim": "Does new Etsy policy allow AI training on artists' work?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/coverage-hacking-cyberattacks/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/11/23/etsy-ai-policy-artists/",
+      "topic": "Tech / AI"
     },
     {
       "n": 3,
@@ -48,10 +48,10 @@
     },
     {
       "n": 6,
-      "claim": "Slain J&K policemen carried in dumper: Top CRPF official’s video doctored",
-      "verdict": "MISLEADING",
+      "claim": "Gems of UP SSR: 1.1 lakh voters whose parent is younger to them or of same age",
+      "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/slain-jk-policemen-carried-in-dumper-top-crpf-officials-video-doctored/",
+      "url": "https://www.altnews.in/gems-of-up-ssr-1-1-lakh-voters-whose-parent-is-younger-to-them-or-of-same-age/",
       "topic": "Trending"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "n": 9,
-      "claim": "Did US join Russia in abstaining from vote on UN resolution to protect women and girls?",
+      "claim": "25 rumors about hacks and cyberattacks, fact-checked",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/us-russia-un-womens-rights-resolution/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/coverage-hacking-cyberattacks/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -104,10 +104,10 @@
     },
     {
       "n": 13,
-      "claim": "What did UP SIR achieve? Final voter roll riddled with anomalies",
-      "verdict": "FALSE",
+      "claim": "Slain J&K policemen carried in dumper: Top CRPF official’s video doctored",
+      "verdict": "MISLEADING",
       "source": "Alt News",
-      "url": "https://www.altnews.in/what-did-up-sir-achieve-final-voter-roll-riddled-with-anomalies/",
+      "url": "https://www.altnews.in/slain-jk-policemen-carried-in-dumper-top-crpf-officials-video-doctored/",
       "topic": "Trending"
     },
     {
@@ -128,11 +128,11 @@
     },
     {
       "n": 16,
-      "claim": "Did Elon Musk once describe himself as 'dark, gothic MAGA'?",
+      "claim": "Did US join Russia in abstaining from vote on UN resolution to protect women and girls?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/elon-musk-dark-gothic-maga/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/fact-check/us-russia-un-womens-rights-resolution/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,43 +146,43 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "COP31 fails to reach major climate deal as talks expose deep divisions",
+      "headline": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
       "topic": "Science",
-      "published": "2026-11-22T18:17:59+00:00"
+      "published": "2026-11-23T05:15:06+00:00"
     },
     {
       "n": 2,
-      "headline": "Lebanese villagers return to wrecked homes as the Israeli army pulls back",
+      "headline": "Do not feed the animals. Vets explain why hats, coins and shoes can be deadly.",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6048710/lebanon-israel-army-conflict-homes",
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6049723/do-not-feed-the-animals-vets-explain-why-hats-coins-and-shoes-can-be-deadly",
       "topic": "Trending",
-      "published": "2026-11-22T17:44:52+00:00"
+      "published": "2026-11-23T01:53:48+00:00"
     },
     {
       "n": 3,
-      "headline": "Appeals court says federal law requiring accommodations for pregnant workers is unconstitutional",
+      "headline": "Lawyer: Father and daughter detained by ICE at Seattle airport were traveling to family baptism",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/appeals-court-says-federal-law-requiring-accommodations-for-pregnant-workers-is-unconstitutional",
+      "url": "https://www.pbs.org/newshour/nation/lawyer-father-and-daughter-detained-by-ice-at-seattle-airport-were-traveling-to-family-baptism",
       "topic": "Trending",
-      "published": "2026-11-22T21:21:26+00:00"
+      "published": "2026-11-22T23:46:56+00:00"
     },
     {
       "n": 4,
-      "headline": "Russian ship hit in Benghazi by suspected Ukrainian drone attack, say Libyan officials",
+      "headline": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
       "topic": "Trending",
-      "published": "2026-11-22T18:50:56+00:00"
+      "published": "2026-11-22T21:33:44+00:00"
     },
     {
       "n": 5,
-      "headline": "Sudan: Drones hit UN building, residential area in Khartoum",
+      "headline": "Turkey: Thousands protest closure of critical media outlets",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-22T19:25:00+00:00"
+      "url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-22T21:31:00+00:00"
     },
     {
       "n": 6,
@@ -194,19 +194,19 @@
     },
     {
       "n": 7,
-      "headline": "Meet the young authors! A literacy program inspires kids in South Africa",
+      "headline": "What it's like at a climate conference as talks collapse",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/g-s1-154387/books-children-authors-south-africa-literacy",
-      "topic": "Trending",
-      "published": "2026-11-22T17:34:20+00:00"
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6050248/what-its-like-at-a-climate-conference-as-talks-collapse",
+      "topic": "Science",
+      "published": "2026-11-22T22:40:23+00:00"
     },
     {
       "n": 8,
-      "headline": "U.S. Army plans to invoke emergency provisions to detonate bomb-making chemicals in Iowa",
+      "headline": "In their own words: Leaders at UN climate talks discuss why negotiations ended without deal",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/u-s-army-plans-to-invoke-emergency-provisions-to-detonate-bomb-making-chemicals-in-iowa",
-      "topic": "Trending",
-      "published": "2026-11-22T20:18:46+00:00"
+      "url": "https://www.pbs.org/newshour/world/in-their-own-words-leaders-at-un-climate-talks-discuss-why-negotiations-ended-without-deal",
+      "topic": "Science",
+      "published": "2026-11-22T23:00:37+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "Libya: Suspected drone attack hits Russian ship in Benghazi",
+      "headline": "Sudan: Drones hit UN building, residential area in Khartoum",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/libya-suspected-drone-attack-hits-russian-ship-in-benghazi/a-80014545?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-22T16:50:00+00:00"
+      "url": "https://www.dw.com/en/sudan-drones-hit-un-building-residential-area-in-khartoum/a-80015122?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-22T19:25:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+      "headline": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-22T20:28:09+00:00"
+      "published": "2026-11-23T04:44:00+00:00"
     },
     {
       "n": 12,
-      "headline": "Climate change talks fall apart in final hours over fossil fuels",
+      "headline": "Philly festival-goers say pickles are a real big dill",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment",
-      "topic": "Science",
-      "published": "2026-11-22T16:33:22+00:00"
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6038939/philly-festival-goers-say-pickles-are-a-real-big-dill",
+      "topic": "Trending",
+      "published": "2026-11-22T22:40:19+00:00"
     },
     {
       "n": 13,
-      "headline": "Poland says Russia allegedly twice tried to kill a Ukrainian American rapper",
+      "headline": "Automation system problem at Delta causes flight delays as Americans travel for Thanksgiving",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/poland-says-russia-allegedly-twice-tried-to-kill-a-ukrainian-american-rapper",
-      "topic": "World",
-      "published": "2026-11-22T19:58:16+00:00"
+      "url": "https://www.pbs.org/newshour/nation/automation-system-problem-at-delta-causes-flight-delays-as-americans-travel-for-thanksgiving",
+      "topic": "Trending",
+      "published": "2026-11-22T22:40:06+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
+      "headline": "Libya: Suspected drone attack hits Russian ship in Benghazi",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-22T15:09:00+00:00"
+      "url": "https://www.dw.com/en/libya-suspected-drone-attack-hits-russian-ship-in-benghazi/a-80014545?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-22T16:50:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
+      "headline": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-22T17:57:43+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-11-23T00:08:00+00:00"
     },
     {
       "n": 17,
-      "headline": "Medicare looks a bit different in 2027, so don't miss open enrollment",
+      "headline": "Lebanese villagers return to wrecked homes as the Israeli army pulls back",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/22/nx-s1-6036735/medicare-open-enrollment-2027",
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6048710/lebanon-israel-army-conflict-homes",
       "topic": "Trending",
-      "published": "2026-11-22T13:11:04+00:00"
+      "published": "2026-11-22T17:44:52+00:00"
     }
   ]
 }
