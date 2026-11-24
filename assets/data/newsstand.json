@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T19:45:52Z",
+  "generated_at": "2026-11-24T08:04:54Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,18 +8,18 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Showing Nazis Refusing To Shake LGBTQ+ Activists' Hands Is AI-Generated",
+      "claim": "FAKE Video Shows 'Powerful Waves' Hitting Gordon's Bay, South Africa -- It Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-nazis-refusing-to-shake-lgbtq-activists-hands-ai-generated.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-gordons-bay-being-flooded-by-powerful-waves-ai.html",
       "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Does meme accurately compare ages of actors when they were cast as James Bond?",
+      "claim": "Did Chicago HSI send inaccurate warning about Apple's 'Live Listen' feature?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/ages-actors-james-bond/",
+      "url": "https://www.snopes.com/fact-check/homeland-security-live-listen-warning/",
       "topic": "Trending"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Nvidia Reinstates Jensen Huang As CEO",
+      "claim": "Democrat Jimmy Gomez Announces Resignation After House Ethics Committee Finds He Made ‘Unwelcome Sexual Advances’ Toward Former Staffer",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/23/nvidia-reinstates-jensen-huang-ceo-china",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/23/house-ethics-committee-jimmy-gomez-sexual-advances",
+      "topic": "Politics"
     },
     {
       "n": 5,
@@ -64,19 +64,19 @@
     },
     {
       "n": 8,
-      "claim": "FAKE Image Of Trump, Xi Seated Together At APEC Summit Banquet As Putin Looks On From Another Table -- It's AI-Generated",
+      "claim": "Male Prostitute Was NOT Found Dead At Bernie Sanders' Home -- Burlington Police Say 'No Factual Basis",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-image-of-trump-xi-seated-together-at-apec-summit-banquet-as-putin-looks-on-from-another-table-ai.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-a-male-prostitute-was-not-found-dead-at-bernie-sanders-home-story-came-from-comedy-account.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Did White House post image of Trump wearing British Revolutionary War uniform?",
+      "claim": "Are US banks warning customers they could be responsible for AI agents' errors?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-white-house-revolutionary-war-uniform/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/banks-ai-agents-customer-responsible/",
+      "topic": "Tech / AI"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Both Sides Of Congress Upset Trump Put Thumb On Scale To Reinstate Jensen Huang As Nvidia CEO",
+      "claim": "Investment Firm Controlled By Trump Commerce Sec’s Sons Celebrates Jensen Huang’s Reinstatement As Nvidia CEO",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/23/jensen-huang-congress-reinstated-nvidia",
+      "url": "https://dailycaller.com/2026/11/23/howard-lutnick-cantor-fitzgerald-jensen-huang-nvidia",
       "topic": "Politics"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "n": 15,
-      "claim": "FAKE Photo of Trump, Putin and Xi Resembles FAKE Picture of Hitler, Mussolini and Hirohito",
+      "claim": "Prebunk: Fight FAKE Robots Turning Your Feed Into An Arena -- AI-Generated Bot Battles Are At War Over Your Attention",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-photo-trumo-putin-xi-resembles-fake-picture-hitler-mussolini-hirohito.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/prebunk-fight-fake-robots-turning-your-feed-into-an-arena-ai-generated-bot-battles-are-at-war-for-your-attention.html",
+      "topic": "World"
     },
     {
       "n": 16,
-      "claim": "doesn't show supposed Muslim group 'Soldiers of Allah' demanding Shariah in Manchester",
+      "claim": "Did Trump post meme of Jensen Huang holding red bra in Butler rally photo?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/shariah-law-manchester-video/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/trump-huang-red-bra-image/",
+      "topic": "Politics"
     },
     {
       "n": 17,
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+      "headline": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-23T15:41:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-24T04:36:31+00:00"
     },
     {
       "n": 2,
-      "headline": "Medicare for all' is back on the drawing board. Does it stand a better chance this time?",
+      "headline": "California Democrat Rep. Gomez resigns following ethics report on sexual misconduct allegations",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/nx-s1-6047706/health-medicare-for-all-chances",
-      "topic": "Trending",
-      "published": "2026-11-23T16:00:49+00:00"
+      "url": "https://www.npr.org/2026/11/23/g-s1-155142/california-democrat-rep-gomez-resigns-following-ethics-report-on-sexual-misconduct-allegations",
+      "topic": "Politics",
+      "published": "2026-11-23T22:29:53+00:00"
     },
     {
       "n": 3,
-      "headline": "Airline glitches and storms could make Thanksgiving travel messy",
+      "headline": "Why Trump pushed for Jensen Huang's return to Nvidia",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/airline-glitches-and-storms-could-make-thanksgiving-travel-messy",
-      "topic": "Trending",
-      "published": "2026-11-23T19:36:11+00:00"
+      "url": "https://www.pbs.org/newshour/show/why-trump-pushed-for-jensen-huangs-return-to-nvidia",
+      "topic": "Politics",
+      "published": "2026-11-23T23:55:49+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "Tajikistan follows US call, withdraws from ICC",
+      "headline": "Exiled leader Sheikh Hasina plans to return to Bangladesh on Dec. 16",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/tajikistan-follows-us-call-withdraws-from-icc/a-80023903?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/exiled-leader-sheikh-hasina-plans-to-return-to-bangladesh-on-dec-16/a-80028083?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-23T18:40:00+00:00"
+      "published": "2026-11-24T07:32:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Iranian authorities flog singer who performed without hijab, lawyers say",
+      "headline": "What China's Xi could take away from Jensen Huang's return to Nvidia",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss",
-      "topic": "Celebrity",
-      "published": "2026-11-23T18:04:20+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-24T07:26:27+00:00"
     },
     {
       "n": 7,
-      "headline": "Trump claims credit as Jensen Huang returns to Nvidia",
+      "headline": "They attended Trump's controversial meme coin dinner. It didn't go well",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6045883/they-attended-trumps-controversial-meme-coin-dinner-it-didnt-go-well",
       "topic": "Politics",
-      "published": "2026-11-23T14:53:41+00:00"
+      "published": "2026-11-23T22:17:59+00:00"
     },
     {
       "n": 8,
-      "headline": "Trump says Army will not detonate bomb-making chemicals in Iowa without court approval",
+      "headline": "Experts weigh national security implications of Huang's return to Nvidia",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/trump-says-army-will-not-detonate-bomb-making-chemicals-in-iowa-without-court-approval",
-      "topic": "Politics",
-      "published": "2026-11-23T19:25:48+00:00"
+      "url": "https://www.pbs.org/newshour/show/experts-weigh-national-security-implications-of-huangs-return-to-nvidia",
+      "topic": "Trending",
+      "published": "2026-11-23T23:50:21+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "US and UK to host Women's World Cups in 2031 and 2035",
+      "headline": "Weapons, war and wavering trust: Germans want to see more restraint in foreign policy",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-and-uk-to-host-women-s-world-cups-in-2031-and-2035/a-80023786?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-23T16:19:00+00:00"
+      "url": "https://www.dw.com/en/weapons-war-and-wavering-trust-germans-want-to-see-more-restraint-in-foreign-policy/a-80026254?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-24T05:59:00+00:00"
     },
     {
       "n": 11,
-      "headline": "I want to destroy capitalism, not France': On the streets with the French ultra left",
+      "headline": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-23T13:09:52+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-11-24T02:15:59+00:00"
     },
     {
       "n": 12,
-      "headline": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
+      "headline": "Some women in tech have concerns about Huang's return",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6045799/how-some-women-in-tech-are-responding-to-jensen-huangs-return-to-nvidia",
       "topic": "Trending",
-      "published": "2026-11-23T12:42:03+00:00"
+      "published": "2026-11-23T22:03:57+00:00"
     },
     {
       "n": 13,
-      "headline": "Senate leadership vote tests newly elected Democrats' promise of change",
+      "headline": "News Wrap: Storms threaten Thanksgiving travel as airlines rebound from tech failures",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change",
-      "topic": "Politics",
-      "published": "2026-11-23T19:14:35+00:00"
+      "url": "https://www.pbs.org/newshour/show/news-wrap-storms-threaten-thanksgiving-travel-as-airlines-rebound-from-tech-failures",
+      "topic": "Trending",
+      "published": "2026-11-23T23:45:23+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Turkey: Authorities search for lioness on the loose in Istanbul",
+      "headline": "India: Report warns of deepening authoritarianism under Modi",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/turkey-authorities-search-for-lioness-on-the-loose-in-istanbul/a-80020913?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-23T16:05:00+00:00"
+      "url": "https://www.dw.com/en/india-report-warns-of-deepening-authoritarianism-under-modi/live-80027405?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-24T04:33:00+00:00"
     },
     {
       "n": 16,
-      "headline": "What failure of COP31 reveals about a divided world",
+      "headline": "India's 'cockroach' party leader says he was stopped from flying to UK",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-23T17:24:25+00:00"
+      "published": "2026-11-24T05:33:07+00:00"
     },
     {
       "n": 17,
-      "headline": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+      "headline": "Mending relationships over the holidays? Considering a truce? NPR wants to know",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+      "url": "https://www.npr.org/2026/11/23/g-s1-155085/holidays-relationships-politics-dispute",
       "topic": "Trending",
-      "published": "2026-11-23T10:16:33+00:00"
+      "published": "2026-11-23T20:53:12+00:00"
     }
   ]
 }
