@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T08:04:54Z",
+  "generated_at": "2026-11-25T00:17:35Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,34 +8,34 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Shows 'Powerful Waves' Hitting Gordon's Bay, South Africa -- It Is AI-Generated",
+      "claim": "Map Does NOT Show Projected Lead Fallout from Iowa Army Ammunition Plant Explosion -- Snowfall Accumulation Prediction",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-gordons-bay-being-flooded-by-powerful-waves-ai.html",
-      "topic": "Tech / AI"
-    },
-    {
-      "n": 2,
-      "claim": "Did Chicago HSI send inaccurate warning about Apple's 'Live Listen' feature?",
-      "verdict": "FALSE",
-      "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/homeland-security-live-listen-warning/",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-map-does-not-show-projected-lead-fallout-from-iowa-army-ammunition-plant-explosion-snowfall-accumulation-prediction.html",
       "topic": "Trending"
     },
     {
+      "n": 2,
+      "claim": "Investigating claims Trump and Epstein spent Thanksgiving 2017 together",
+      "verdict": "FALSE",
+      "source": "Snopes",
+      "url": "https://www.snopes.com/news/2026/11/24/epstein-trump-thanksgiving/",
+      "topic": "Politics"
+    },
+    {
       "n": 3,
-      "claim": "Trump’s Misguided Claim That ‘They’ Waited to Lower Gas Prices Until After the Midterms",
+      "claim": "Trump’s Auto Plants Claims",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/trumps-misguided-claim-that-they-waited-to-lower-gas-prices-until-after-the-midterms/",
+      "url": "https://www.factcheck.org/2026/11/factchecking-trumps-auto-plants-claims/",
       "topic": "Politics"
     },
     {
       "n": 4,
-      "claim": "Democrat Jimmy Gomez Announces Resignation After House Ethics Committee Finds He Made ‘Unwelcome Sexual Advances’ Toward Former Staffer",
+      "claim": "Trump Admin Set A Goal Of 1 Million Deportations In 2025. New Data Analysis Suggests They Didn’t Even Get Close",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/23/house-ethics-committee-jimmy-gomez-sexual-advances",
+      "url": "https://dailycaller.com/2026/11/24/trump-admin-1-million-deportations-in-2025-data-suggest-dhs-ice-oversight-project",
       "topic": "Politics"
     },
     {
@@ -48,51 +48,51 @@
     },
     {
       "n": 6,
-      "claim": "Movie clip falsely shared as footage of woman ‘manufacturing’ molestation case",
+      "claim": "AI-manipulated video falsely shared as Muslim man attacking woman in US for not wearing burqa",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/movie-clip-falsely-shared-as-footage-of-woman-manufacturing-molestation-case/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/ai-manipulated-video-falsely-shared-as-muslim-man-attacking-woman-in-us-for-not-wearing-burqa/",
+      "topic": "Tech / AI"
     },
     {
       "n": 7,
-      "claim": "Aldi isn’t giving away free ‘sample packs’ of groceries",
+      "claim": "from Paris shows French royalist march",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/shopping/facebook-fake-ad-aldi-sample-pack-giveaway/",
+      "url": "https://fullfact.org/europe/Paris-French-royalist-march/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Male Prostitute Was NOT Found Dead At Bernie Sanders' Home -- Burlington Police Say 'No Factual Basis",
+      "claim": "Texas Primaries Did NOT Show Voter ID Numbers, Ballots Vanishing and Reappearing As Proof of Fraud",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-a-male-prostitute-was-not-found-dead-at-bernie-sanders-home-story-came-from-comedy-account.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-texas-primaries-did-not-show-voter-id-numbers-ballots-vanishing-and-reappearing-as-proof-of-fraud.html",
       "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Are US banks warning customers they could be responsible for AI agents' errors?",
+      "claim": "Can wasps remember human faces?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/banks-ai-agents-customer-responsible/",
-      "topic": "Tech / AI"
+      "url": "https://www.snopes.com/fact-check/wasps-remember-faces/",
+      "topic": "Trending"
     },
     {
       "n": 10,
-      "claim": "Former Trump Administration Health Adviser Misleads About mRNA Flu Vaccine",
+      "claim": "Trump’s Misguided Claim That ‘They’ Waited to Lower Gas Prices Until After the Midterms",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/former-trump-administration-health-adviser-misleads-about-mrna-flu-vaccine/",
-      "topic": "Health"
+      "url": "https://www.factcheck.org/2026/11/trumps-misguided-claim-that-they-waited-to-lower-gas-prices-until-after-the-midterms/",
+      "topic": "Politics"
     },
     {
       "n": 11,
-      "claim": "Investment Firm Controlled By Trump Commerce Sec’s Sons Celebrates Jensen Huang’s Reinstatement As Nvidia CEO",
+      "claim": "STATE OF TUESDAY: Washington Is Setting Off A Toxic Explosion In Rural America",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/23/howard-lutnick-cantor-fitzgerald-jensen-huang-nvidia",
-      "topic": "Politics"
+      "url": "https://dailycaller.com/2026/11/24/state-of-tuesday-iowa-toxic-lead-azide-army",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -104,72 +104,112 @@
     },
     {
       "n": 13,
-      "claim": "Gems of UP SSR: 1.1 lakh voters whose parent is younger to them or of same age",
+      "claim": "From 2000 on Nov 1 to 4.16 lakh on Nov 22: UP sees massive surge in Form 6 applications after SSR draft roll",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/gems-of-up-ssr-1-1-lakh-voters-whose-parent-is-younger-to-them-or-of-same-age/",
+      "url": "https://www.altnews.in/from-2000-on-nov-1-to-4-16-lakh-on-nov-22-up-sees-massive-surge-in-form-6-applications-after-ssr-draft-roll/",
       "topic": "Trending"
     },
     {
       "n": 14,
-      "claim": "The National Wealth Fund committed £1 billion for offshore wind off the coast of Norfolk, not Scotland",
+      "claim": "of Asda ‘Diwali Tree’ is fake",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/environment/andy-burnham-national-wealth-fund-scotland/",
+      "url": "https://fullfact.org/culture-and-society/asda-diwali-tree-image-fake/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "Prebunk: Fight FAKE Robots Turning Your Feed Into An Arena -- AI-Generated Bot Battles Are At War Over Your Attention",
+      "claim": "FAKE Photo Shows Donald Trump With Dark Hair Arriving In Kansas City For Chiefs-Cardinals Game -- It Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/prebunk-fight-fake-robots-turning-your-feed-into-an-arena-ai-generated-bot-battles-are-at-war-for-your-attention.html",
-      "topic": "World"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-ai-generated-image-shows-trump-with-dark-hair-arriving-chiefs-cardinals-game.html",
+      "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Did Trump post meme of Jensen Huang holding red bra in Butler rally photo?",
+      "claim": "19 rumors about insider trading, prediction markets we've investigated",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/trump-huang-red-bra-image/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/insider-trading-prediction-markets-collection/",
+      "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "Trump Makes False and Misleading Claims About Funding for HBCUs",
+      "claim": "Former Trump Administration Health Adviser Misleads About mRNA Flu Vaccine",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/trump-makes-false-and-misleading-claims-about-funding-for-hbcus/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/11/former-trump-administration-health-adviser-misleads-about-mrna-flu-vaccine/",
+      "topic": "Health"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+      "headline": "US attorney general dodges questions about Nvidia investigation",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-24T04:36:31+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-24T21:19:42+00:00"
     },
     {
       "n": 2,
-      "headline": "California Democrat Rep. Gomez resigns following ethics report on sexual misconduct allegations",
+      "headline": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/g-s1-155142/california-democrat-rep-gomez-resigns-following-ethics-report-on-sexual-misconduct-allegations",
-      "topic": "Politics",
-      "published": "2026-11-23T22:29:53+00:00"
+      "url": "https://www.npr.org/sections/the-picture-show/2026/11/24/g-s1-154620/how-high-costs-are-squeezing-apple-producers",
+      "topic": "Trending",
+      "published": "2026-11-24T21:09:29+00:00"
     },
     {
       "n": 3,
-      "headline": "Why Trump pushed for Jensen Huang's return to Nvidia",
+      "headline": "How Trump may have profited from Huang's return to Nvidia",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/why-trump-pushed-for-jensen-huangs-return-to-nvidia",
+      "url": "https://www.pbs.org/newshour/show/how-trump-may-have-profited-from-huangs-return-to-nvidia",
       "topic": "Politics",
-      "published": "2026-11-23T23:55:49+00:00"
+      "published": "2026-11-24T23:55:53+00:00"
     },
     {
       "n": 4,
+      "headline": "More than 300 Russians killed as Moscow props up Mali’s junta, leaked data reveals",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/nov/24/russian-fighters-killed-in-mali-africa-leaked-data",
+      "topic": "Trending",
+      "published": "2026-11-24T16:00:50+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Scientists discover quasar formed 630 million years after the Big Bang",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/scientists-discover-quasar-formed-630-million-years-after-the-big-bang/a-80041882?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-24T22:34:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
+      "topic": "Politics",
+      "published": "2026-11-24T16:49:07+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "The U.S. government is investigating Iranian ties to as many as 50 hacked commercial vessels",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/24/nx-s1-6052994/hack-commercial-vessels-iran",
+      "topic": "Trending",
+      "published": "2026-11-24T21:04:50+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "What's next for Nvidia and Jensen Huang after Trump's intervention",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/whats-next-for-nvidia-and-jensen-huang-after-trumps-intervention",
+      "topic": "Politics",
+      "published": "2026-11-24T23:50:24+00:00"
+    },
+    {
+      "n": 9,
       "headline": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
@@ -177,39 +217,39 @@
       "published": "2026-11-23T11:42:51+00:00"
     },
     {
-      "n": 5,
-      "headline": "Exiled leader Sheikh Hasina plans to return to Bangladesh on Dec. 16",
+      "n": 10,
+      "headline": "European court finds states can turn back migrants in some cases",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/exiled-leader-sheikh-hasina-plans-to-return-to-bangladesh-on-dec-16/a-80028083?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/european-court-finds-states-can-turn-back-migrants-in-some-cases/a-80038352?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-24T07:32:00+00:00"
+      "published": "2026-11-24T17:43:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "What China's Xi could take away from Jensen Huang's return to Nvidia",
+      "n": 11,
+      "headline": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-24T07:26:27+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "They attended Trump's controversial meme coin dinner. It didn't go well",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/nx-s1-6045883/they-attended-trumps-controversial-meme-coin-dinner-it-didnt-go-well",
-      "topic": "Politics",
-      "published": "2026-11-23T22:17:59+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "Experts weigh national security implications of Huang's return to Nvidia",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/experts-weigh-national-security-implications-of-huangs-return-to-nvidia",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-23T23:50:21+00:00"
+      "published": "2026-11-24T18:07:46+00:00"
     },
     {
-      "n": 9,
+      "n": 12,
+      "headline": "Who really owns the Albanian land Jared Kushner wants to turn into a 5-star resort?",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
+      "topic": "Celebrity",
+      "published": "2026-11-24T14:24:04+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "News Wrap: California's king tides could be biggest in 4 decades",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-californias-king-tides-could-be-biggest-in-4-decades",
+      "topic": "Trending",
+      "published": "2026-11-24T23:45:38+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
@@ -217,68 +257,28 @@
       "published": "2026-11-22T21:33:44+00:00"
     },
     {
-      "n": 10,
-      "headline": "Weapons, war and wavering trust: Germans want to see more restraint in foreign policy",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/weapons-war-and-wavering-trust-germans-want-to-see-more-restraint-in-foreign-policy/a-80026254?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-24T05:59:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-24T02:15:59+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Some women in tech have concerns about Huang's return",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/nx-s1-6045799/how-some-women-in-tech-are-responding-to-jensen-huangs-return-to-nvidia",
-      "topic": "Trending",
-      "published": "2026-11-23T22:03:57+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "News Wrap: Storms threaten Thanksgiving travel as airlines rebound from tech failures",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-storms-threaten-thanksgiving-travel-as-airlines-rebound-from-tech-failures",
-      "topic": "Trending",
-      "published": "2026-11-23T23:45:23+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "California’s coastal communities on alert as biggest waves in years hit state",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state",
-      "topic": "Trending",
-      "published": "2026-11-20T09:03:20+00:00"
-    },
-    {
       "n": 15,
-      "headline": "India: Report warns of deepening authoritarianism under Modi",
+      "headline": "Ukraine: Zelenskyy and Hungary's Magyar meet amid thaw in ties",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/india-report-warns-of-deepening-authoritarianism-under-modi/live-80027405?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-24T04:33:00+00:00"
+      "url": "https://www.dw.com/en/ukraine-zelenskyy-and-hungary-s-magyar-meet-amid-thaw-in-ties/a-80036546?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-24T16:28:00+00:00"
     },
     {
       "n": 16,
-      "headline": "India's 'cockroach' party leader says he was stopped from flying to UK",
+      "headline": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-24T05:33:07+00:00"
+      "published": "2026-11-24T22:24:23+00:00"
     },
     {
       "n": 17,
-      "headline": "Mending relationships over the holidays? Considering a truce? NPR wants to know",
+      "headline": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/23/g-s1-155085/holidays-relationships-politics-dispute",
+      "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
       "topic": "Trending",
-      "published": "2026-11-23T20:53:12+00:00"
+      "published": "2026-11-24T12:12:25+00:00"
     }
   ]
 }
