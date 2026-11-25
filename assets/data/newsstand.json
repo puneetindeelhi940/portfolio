@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T00:17:35Z",
+  "generated_at": "2026-11-25T18:21:53Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,34 +8,34 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Map Does NOT Show Projected Lead Fallout from Iowa Army Ammunition Plant Explosion -- Snowfall Accumulation Prediction",
+      "claim": "FAKE Story Says Plane Missing 13 Years Found In Ozark Cave -- It Originated On A Satire Page",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-map-does-not-show-projected-lead-fallout-from-iowa-army-ammunition-plant-explosion-snowfall-accumulation-prediction.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-story-about-ozark-cave-discovery-of-plane-that-vanished-13-years-ago-carrying-212-people.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Investigating claims Trump and Epstein spent Thanksgiving 2017 together",
+      "claim": "Real video of NYC lawmaker Jordan Wright's eye roll fuels lizard conspiracy theory",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/24/epstein-trump-thanksgiving/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/nyc-assemblyman-eye-roll-lizard/",
+      "topic": "Trending"
     },
     {
       "n": 3,
-      "claim": "Trump’s Auto Plants Claims",
+      "claim": "Trump Officials Overstate Role in Drug-Death Decline",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/factchecking-trumps-auto-plants-claims/",
-      "topic": "Politics"
+      "url": "https://www.factcheck.org/2026/11/trump-officials-overstate-role-in-drug-death-decline/",
+      "topic": "Health"
     },
     {
       "n": 4,
-      "claim": "Trump Admin Set A Goal Of 1 Million Deportations In 2025. New Data Analysis Suggests They Didn’t Even Get Close",
+      "claim": "Rare Opportunities Emerge For Congress To Actually Help Americans As Cracks Form In Status Quo",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/24/trump-admin-1-million-deportations-in-2025-data-suggest-dhs-ice-oversight-project",
+      "url": "https://dailycaller.com/2026/11/25/democrats-republicans-congress-bipartisan-issues",
       "topic": "Politics"
     },
     {
@@ -56,19 +56,19 @@
     },
     {
       "n": 7,
-      "claim": "from Paris shows French royalist march",
+      "claim": "Fake video of attack on Saudi Arabian tower shared online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/europe/Paris-French-royalist-march/",
+      "url": "https://fullfact.org/conflict/fake-video-saudi-arabia-tower-attack/",
       "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Texas Primaries Did NOT Show Voter ID Numbers, Ballots Vanishing and Reappearing As Proof of Fraud",
+      "claim": "FAKE Composite Image Shows Donald Trump Having 'Diaper-Related Incident' In Front Of Natalie Harp",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-texas-primaries-did-not-show-voter-id-numbers-ballots-vanishing-and-reappearing-as-proof-of-fraud.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-composite-image-shows-trump-having-diaper-related-incident.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
@@ -80,18 +80,18 @@
     },
     {
       "n": 10,
-      "claim": "Trump’s Misguided Claim That ‘They’ Waited to Lower Gas Prices Until After the Midterms",
+      "claim": "Trump’s Auto Plants Claims",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/trumps-misguided-claim-that-they-waited-to-lower-gas-prices-until-after-the-midterms/",
+      "url": "https://www.factcheck.org/2026/11/factchecking-trumps-auto-plants-claims/",
       "topic": "Politics"
     },
     {
       "n": 11,
-      "claim": "STATE OF TUESDAY: Washington Is Setting Off A Toxic Explosion In Rural America",
+      "claim": "Ghost Of Susie Wiles Lives On In New White House Budget",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/24/state-of-tuesday-iowa-toxic-lead-azide-army",
+      "url": "https://dailycaller.com/2026/11/25/susie-wiles-hemp-industry-ban-thc-gas-station-products-white-house-budget-congress-tom-cotton",
       "topic": "Trending"
     },
     {
@@ -112,64 +112,144 @@
     },
     {
       "n": 14,
-      "claim": "of Asda ‘Diwali Tree’ is fake",
+      "claim": "Does the UK have the ‘joint fastest’ growth in the G7?",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/asda-diwali-tree-image-fake/",
+      "url": "https://fullfact.org/economy/andy-burnham-joint-fastest-g7-growth/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "FAKE Photo Shows Donald Trump With Dark Hair Arriving In Kansas City For Chiefs-Cardinals Game -- It Is AI-Generated",
+      "claim": "Bluetooth2Shell CVE-2026-9001 Security Advisory Is NOT Real -- Page Carried Satire Disclaimer",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-ai-generated-image-shows-trump-with-dark-hair-arriving-chiefs-cardinals-game.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-bluetooth2shell-security-advisory-is-not-real.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "19 rumors about insider trading, prediction markets we've investigated",
+      "claim": "doesn't show supposed Muslim group 'Soldiers of Allah' demanding Shariah in Manchester",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/insider-trading-prediction-markets-collection/",
+      "url": "https://www.snopes.com/fact-check/shariah-law-manchester-video/",
       "topic": "Trending"
     },
     {
       "n": 17,
-      "claim": "Former Trump Administration Health Adviser Misleads About mRNA Flu Vaccine",
+      "claim": "Trump’s Misguided Claim That ‘They’ Waited to Lower Gas Prices Until After the Midterms",
       "verdict": "FALSE",
       "source": "FactCheck.org",
-      "url": "https://www.factcheck.org/2026/11/former-trump-administration-health-adviser-misleads-about-mrna-flu-vaccine/",
-      "topic": "Health"
+      "url": "https://www.factcheck.org/2026/11/trumps-misguided-claim-that-they-waited-to-lower-gas-prices-until-after-the-midterms/",
+      "topic": "Politics"
     }
   ],
   "reliable": [
     {
       "n": 1,
-      "headline": "US attorney general dodges questions about Nvidia investigation",
+      "headline": "Russia's own figures show it has lost nearly 500,000 people in Ukraine war",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-24T21:19:42+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-25T12:21:49+00:00"
     },
     {
       "n": 2,
-      "headline": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+      "headline": "Group of Senate Democrats push to add freshman to leadership",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/the-picture-show/2026/11/24/g-s1-154620/how-high-costs-are-squeezing-apple-producers",
-      "topic": "Trending",
-      "published": "2026-11-24T21:09:29+00:00"
+      "url": "https://www.npr.org/2026/11/25/g-s1-155518/senate-democrats-freshman-leadership-schumer-van-hollen",
+      "topic": "Politics",
+      "published": "2026-11-25T17:30:47+00:00"
     },
     {
       "n": 3,
-      "headline": "How Trump may have profited from Huang's return to Nvidia",
+      "headline": "State Department reports downplay violence and corruption in countries that asylum seekers are fleeing",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/how-trump-may-have-profited-from-huangs-return-to-nvidia",
-      "topic": "Politics",
-      "published": "2026-11-24T23:55:53+00:00"
+      "url": "https://www.pbs.org/newshour/nation/state-department-reports-downplay-violence-and-corruption-in-countries-that-asylum-seekers-are-fleeing",
+      "topic": "Trending",
+      "published": "2026-11-25T18:07:48+00:00"
     },
     {
       "n": 4,
+      "headline": "Swiss tourist killed and British and Americans injured by elephants in Cameroon",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/environment/2026/nov/25/swiss-tourist-killed-british-americans-injured-elephants-cameroon",
+      "topic": "Trending",
+      "published": "2026-11-25T14:03:18+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Spain: Canary Islands witness 1-day migration record",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/spain-canary-islands-witness-1-day-migration-record/a-80052770?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-25T18:00:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "My family were killed in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-25T00:54:13+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "How American Thanksgiving took root -- and evolved -- in Liberia",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer",
+      "topic": "Trending",
+      "published": "2026-11-25T14:14:34+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Inflation remains stubbornly high, despite a drop in gas prices",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/economy/inflation-remains-stubbornly-high-despite-a-drop-in-gas-prices",
+      "topic": "Money",
+      "published": "2026-11-25T17:01:18+00:00"
+    },
+    {
+      "n": 9,
+      "headline": "Sri Lankan asylum seeker killed himself after being sent by UK to Eswatini",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/25/sri-lanka-asylum-seeker-convicted-sexual-assault-uk-kills-himself-eswatini",
+      "topic": "Trending",
+      "published": "2026-11-25T11:28:05+00:00"
+    },
+    {
+      "n": 10,
+      "headline": "€561 Billion and Still Not Enough: Germany's 2027 Budget Exposes a Coalition on the Brink",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/€561-billion-and-still-not-enough-germany-s-2027-budget-exposes-a-coalition-on-the-brink/a-80052664?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-25T16:06:00+00:00"
+    },
+    {
+      "n": 11,
+      "headline": "US stocks fall further as fears over AI intensify",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+      "topic": "Tech / AI",
+      "published": "2026-11-25T17:48:09+00:00"
+    },
+    {
+      "n": 12,
+      "headline": "What to know before using AI agents for Black Friday shopping",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6048524/what-to-know-before-using-ai-agents-for-black-friday-shopping",
+      "topic": "Tech / AI",
+      "published": "2026-11-25T13:51:56+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "WATCH: Army offers update after detonating lead azide stockpile in Iowa",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/watch-live-army-offers-update-after-detonating-lead-azide-stockpile-in-iowa",
+      "topic": "Trending",
+      "published": "2026-11-25T16:59:36+00:00"
+    },
+    {
+      "n": 14,
       "headline": "More than 300 Russians killed as Moscow props up Mali’s junta, leaked data reveals",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/24/russian-fighters-killed-in-mali-africa-leaked-data",
@@ -177,108 +257,28 @@
       "published": "2026-11-24T16:00:50+00:00"
     },
     {
-      "n": 5,
-      "headline": "Scientists discover quasar formed 630 million years after the Big Bang",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/scientists-discover-quasar-formed-630-million-years-after-the-big-bang/a-80041882?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-24T22:34:00+00:00"
-    },
-    {
-      "n": 6,
-      "headline": "French ex-President Sarkozy and wife Carla Bruni to face trial",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-24T16:49:07+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "The U.S. government is investigating Iranian ties to as many as 50 hacked commercial vessels",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/24/nx-s1-6052994/hack-commercial-vessels-iran",
-      "topic": "Trending",
-      "published": "2026-11-24T21:04:50+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "What's next for Nvidia and Jensen Huang after Trump's intervention",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/whats-next-for-nvidia-and-jensen-huang-after-trumps-intervention",
-      "topic": "Politics",
-      "published": "2026-11-24T23:50:24+00:00"
-    },
-    {
-      "n": 9,
-      "headline": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
-      "topic": "Trending",
-      "published": "2026-11-23T11:42:51+00:00"
-    },
-    {
-      "n": 10,
-      "headline": "European court finds states can turn back migrants in some cases",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/european-court-finds-states-can-turn-back-migrants-in-some-cases/a-80038352?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-24T17:43:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-24T18:07:46+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "Who really owns the Albanian land Jared Kushner wants to turn into a 5-star resort?",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
-      "topic": "Celebrity",
-      "published": "2026-11-24T14:24:04+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "News Wrap: California's king tides could be biggest in 4 decades",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-californias-king-tides-could-be-biggest-in-4-decades",
-      "topic": "Trending",
-      "published": "2026-11-24T23:45:38+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya",
-      "topic": "Trending",
-      "published": "2026-11-22T21:33:44+00:00"
-    },
-    {
       "n": 15,
-      "headline": "Ukraine: Zelenskyy and Hungary's Magyar meet amid thaw in ties",
+      "headline": "US Army detonates unstable lead-based explosives in Iowa",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/ukraine-zelenskyy-and-hungary-s-magyar-meet-amid-thaw-in-ties/a-80036546?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/us-army-detonates-unstable-lead-based-explosives-in-iowa/a-80043319?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-24T16:28:00+00:00"
+      "published": "2026-11-25T15:38:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "headline": "Images of asteroid targeted to test Earth's defences reveal stadium-sized crater",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-24T22:24:23+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-11-25T17:30:16+00:00"
     },
     {
       "n": 17,
-      "headline": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
+      "headline": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
+      "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
       "topic": "Trending",
-      "published": "2026-11-24T12:12:25+00:00"
+      "published": "2026-11-25T12:18:09+00:00"
     }
   ]
 }
