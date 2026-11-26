@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T06:34:30Z",
+  "generated_at": "2026-11-26T18:03:37Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Video Shows Harry Shoving Meghan Markle While Holding Lilibet Is AI-Generated -- No Reports of Public Conflict",
+      "claim": "Frontières DID Not Publish Interview With Five Illegal Migrants Accusing Raphaël Glucksmann Allies Of Ordering Riots -- Fake Website",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-harry-shoving-meghan-markle-while-holding-lilibet-is-ai-generated-no-reports-of-public-conflict.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-raphael-glucksmann-five-illegal-immigrants-frontieres-inerview.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Alleged footage of children locked in cages isn't from Epstein files",
-      "verdict": "FALSE",
+      "claim": "Why unproven claim KGB recruited Trump in 1987 continues circulating",
+      "verdict": "UNPROVEN",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/video-children-cages-epstein-files/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/11/26/trump-kgb-asset-krasnov/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -56,26 +56,26 @@
     },
     {
       "n": 7,
-      "claim": "Fake video of attack on Saudi Arabian tower shared online",
+      "claim": "of large anti-immigration protest in London is AI",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/conflict/fake-video-saudi-arabia-tower-attack/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/immigration/video-large-immigration-protest-london-ai/",
+      "topic": "Tech / AI"
     },
     {
       "n": 8,
-      "claim": "Document Did NOT Claim WiFi Signal Definitely Came From Martin Township Election Equipment -- Author Later Confirmed It Was TV Dongle",
+      "claim": "FAKE Video Shows Harry Shoving Meghan Markle While Holding Lilibet Is AI-Generated -- No Reports of Public Conflict",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-wifi-signal-martin-township-michigan-renkchip-tabulator.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-harry-shoving-meghan-markle-while-holding-lilibet-is-ai-generated-no-reports-of-public-conflict.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Did Army plan to detonate chemicals other than lead azide in Iowa?",
+      "claim": "Is Islam the fastest growing religion in the US? We checked the data",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/25/redacted-memo-lead-azide-iowa/",
+      "url": "https://www.snopes.com/fact-check/islam-us-growth/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Treasury Watchdog That Tracks Suspicious Bank Transactions Takes Systems Offline After Breach",
+      "claim": "Junk Food Giants Could Be Hiding Behind Disabled Americans to Protect Their Taxpayer-Funded Cash Cow",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/25/treasury-watchdog-that-tracks-suspicious-bank-transactions-takes-systems-offline-after-breach",
-      "topic": "Money"
+      "url": "https://dailycaller.com/2026/11/26/junk-food-giants-disabled-americans-ebt-welfare-lawsuit-usda",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -112,27 +112,27 @@
     },
     {
       "n": 14,
-      "claim": "Does the UK have the ‘joint fastest’ growth in the G7?",
+      "claim": "Fake video of British Army convoy on UK street shared on social media",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/economy/andy-burnham-joint-fastest-g7-growth/",
+      "url": "https://fullfact.org/culture-and-society/fake-british-army-convoy-video/",
       "topic": "Trending"
     },
     {
       "n": 15,
-      "claim": "Pinal, Yavapai And Gila Counties DO Show Ballots Cast In Arizona's 2026 Governor's Race -- Official Canvass Confirms",
+      "claim": "Document Did NOT Claim WiFi Signal Definitely Came From Martin Township Election Equipment -- Author Later Confirmed It Was TV Dongle",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-pinal-yavapai-and-gila-counties-do-show-ballots-cast-in-arizonas-2026-governors-race.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-wifi-signal-martin-township-michigan-renkchip-tabulator.html",
       "topic": "Politics"
     },
     {
       "n": 16,
-      "claim": "Did Trump invest $3M in Nvidia before it reinstated Jensen Huang?",
+      "claim": "15 shopping-related rumors just in time for Black Friday",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/25/trump-nvidia-jensen-huang/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/collections/retail-shopping-collection/",
+      "topic": "Trending"
     },
     {
       "n": 17,
@@ -146,30 +146,70 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US announces new tariffs on host of countries including China",
+      "headline": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-26T04:10:58+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-26T05:00:24+00:00"
     },
     {
       "n": 2,
-      "headline": "Steelers cut Aaron Rodgers after the QB rips coach Mike McCarthy on TV",
+      "headline": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/26/nx-s1-6054760/steelers-cut-aaron-rodgers",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
       "topic": "Trending",
-      "published": "2026-11-26T06:26:03+00:00"
+      "published": "2026-11-26T13:47:09+00:00"
     },
     {
       "n": 3,
-      "headline": "Small plane crash off Mississippi coast kills extended family of 6 on fishing trip",
+      "headline": "Trump heads to Arizona next week for a high-stakes expansion of TSMC's computer chip factories",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/small-plane-crash-off-mississippi-coast-kills-extended-family-of-6-on-fishing-trip",
-      "topic": "Trending",
-      "published": "2026-11-26T00:02:17+00:00"
+      "url": "https://www.pbs.org/newshour/politics/trump-heads-to-arizona-next-week-for-a-high-stakes-expansion-of-tsmcs-computer-chip-factories",
+      "topic": "Politics",
+      "published": "2026-11-26T17:52:23+00:00"
     },
     {
       "n": 4,
+      "headline": "‘I’m no longer a UAE official’: UN hopeful Lana Nusseibeh tries to shake off Sudan record",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/nov/26/lana-nusseibeh-uae-sudan-un-secretary-general",
+      "topic": "World",
+      "published": "2026-11-26T12:37:42+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "Trial of Berlin woman accused of spying for Russia begins after delay",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/trial-of-berlin-woman-accused-of-spying-for-russia-begins-after-delay/a-80057677?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-26T17:44:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/cvglrz5yr79go?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-26T05:00:27+00:00"
+    },
+    {
+      "n": 7,
+      "headline": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+      "topic": "Politics",
+      "published": "2026-11-26T13:31:28+00:00"
+    },
+    {
+      "n": 8,
+      "headline": "Zelenskyy warns of imminent major Russian attack on Ukraine's power grid",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/zelenskyy-warns-of-imminent-major-russian-attack-on-ukraines-power-grid",
+      "topic": "Trending",
+      "published": "2026-11-26T17:24:27+00:00"
+    },
+    {
+      "n": 9,
       "headline": "At least 31 killed as fuel tanker crash ignites large fire on Cairo highway",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway",
@@ -177,39 +217,39 @@
       "published": "2026-11-26T00:39:10+00:00"
     },
     {
-      "n": 5,
-      "headline": "How Chinese companies circumvent chips sanctions in Southeast Asia",
+      "n": 10,
+      "headline": "Saudi pop music is thriving — but for the right reasons?",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/how-chinese-companies-circumvent-chips-sanctions-in-southeast-asia/a-80041002?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/saudi-pop-music-is-thriving-but-for-the-right-reasons/a-80036013?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-26T06:11:00+00:00"
+      "published": "2026-11-26T17:37:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Images of asteroid targeted to test Earth's defences reveal stadium-sized crater",
+      "n": 11,
+      "headline": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-25T17:30:16+00:00"
-    },
-    {
-      "n": 7,
-      "headline": "U.S. Judge rules FCC violated ABC's free speech rights to please Trump",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr",
-      "topic": "Politics",
-      "published": "2026-11-26T05:23:18+00:00"
-    },
-    {
-      "n": 8,
-      "headline": "WATCH: Vance defends Iowa lead azide detonation as he visits Air Force troops in Ohio",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/watch-vance-defends-iowa-lead-azide-detonation-as-he-visits-air-force-troops-in-ohio",
+      "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-25T23:51:49+00:00"
+      "published": "2026-11-26T15:17:18+00:00"
     },
     {
-      "n": 9,
+      "n": 12,
+      "headline": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+      "topic": "Trending",
+      "published": "2026-11-26T12:24:29+00:00"
+    },
+    {
+      "n": 13,
+      "headline": "Trump calls GDP figures 'fake' and demands an investigation of Commerce Department",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department",
+      "topic": "Politics",
+      "published": "2026-11-26T16:36:06+00:00"
+    },
+    {
+      "n": 14,
       "headline": "Swiss tourist killed and British and Americans injured by elephants in Cameroon",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/environment/2026/nov/25/swiss-tourist-killed-british-americans-injured-elephants-cameroon",
@@ -217,68 +257,28 @@
       "published": "2026-11-25T14:03:18+00:00"
     },
     {
-      "n": 10,
-      "headline": "Can Rassvet, 'Russia's Starlink' change the course of the war in Ukraine?",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/can-rassvet-russia-s-starlink-change-the-course-of-the-war-in-ukraine/a-80052579?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-26T05:45:00+00:00"
-    },
-    {
-      "n": 11,
-      "headline": "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-25T22:18:06+00:00"
-    },
-    {
-      "n": 12,
-      "headline": "At this Little Free Bakery in Austin, neighbors come for the pastries and stay for community connection",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/25/nx-s1-6005522/little-free-bakery-austin-community-connection",
-      "topic": "Trending",
-      "published": "2026-11-25T21:02:58+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "How Trump's newest tariffs could impact Americans and the economy",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/how-trumps-newest-tariffs-could-impact-americans-and-the-economy",
-      "topic": "Politics",
-      "published": "2026-11-25T23:50:40+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Sri Lankan asylum seeker killed himself after being sent by UK to Eswatini",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/uk-news/2026/nov/25/sri-lanka-asylum-seeker-convicted-sexual-assault-uk-kills-himself-eswatini",
-      "topic": "Trending",
-      "published": "2026-11-25T11:28:05+00:00"
-    },
-    {
       "n": 15,
-      "headline": "US court blocks regulator's early review of ABC's broadcast licenses",
+      "headline": "On his last Africa trip, Steinmeier urges German firms to invest and take risks as China pushes ahead",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/us-court-blocks-regulator-s-early-review-of-abc-s-broadcast-licenses/a-80056181?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-26T04:36:00+00:00"
+      "url": "https://www.dw.com/en/on-his-last-africa-trip-steinmeier-urges-german-firms-to-invest-and-take-risks-as-china-pushes-ahead/a-80067717?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-26T17:23:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Has global jihadism failed, or is it simply changing shape?",
+      "headline": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmx2x4e0n5jro?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-26T00:22:18+00:00"
+      "published": "2026-11-26T14:44:26+00:00"
     },
     {
       "n": 17,
-      "headline": "Group of Senate Democrats push to add freshman to leadership",
+      "headline": "Memories of a Good Meal': How food made a difference during WWII",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/25/g-s1-155518/senate-democrats-freshman-leadership-schumer-van-hollen",
-      "topic": "Politics",
-      "published": "2026-11-25T17:30:47+00:00"
+      "url": "https://www.npr.org/2026/11/26/nx-s1-6028781/memories-of-a-good-meal-cookbook-chef-alon-shaya",
+      "topic": "Trending",
+      "published": "2026-11-26T10:00:00+00:00"
     }
   ]
 }
