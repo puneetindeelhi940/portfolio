@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T18:03:37Z",
+  "generated_at": "2026-11-27T06:24:32Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "Frontières DID Not Publish Interview With Five Illegal Migrants Accusing Raphaël Glucksmann Allies Of Ordering Riots -- Fake Website",
+      "claim": "COMEDIAN Posted Hundreds Of Thousands Of 2020 Ballots In Georgia Were Counted Twice -- NO Actual News Reports",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-raphael-glucksmann-five-illegal-immigrants-frontieres-inerview.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-georgia-hundreds-of-thousands-double-counted-ballots.html",
       "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Why unproven claim KGB recruited Trump in 1987 continues circulating",
-      "verdict": "UNPROVEN",
+      "claim": "Does photo show Nobel Prize-winning physicists Albert Einstein and Marie Curie talking?",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/26/trump-kgb-asset-krasnov/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/einstein-marie-curie-photo/",
+      "topic": "Trending"
     },
     {
       "n": 3,
@@ -32,10 +32,10 @@
     },
     {
       "n": 4,
-      "claim": "Macy’s Thanksgiving Parade Postponed For First Time Ever",
+      "claim": "Intel Agencies Pushed USAID To Partner With Censorship NGO That Targeted Daily Caller, Other Conservative And Independent Outlets",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/25/macys-thanksgiving-parade-postponed-noreaster-new-york-city",
+      "url": "https://dailycaller.com/2026/11/26/usaid-censorship-ngo-targeted-conservative-outlets",
       "topic": "Trending"
     },
     {
@@ -56,27 +56,27 @@
     },
     {
       "n": 7,
-      "claim": "of large anti-immigration protest in London is AI",
-      "verdict": "FALSE",
+      "claim": "of large anti-immigration protest in London was made or edited with AI",
+      "verdict": "MISLEADING",
       "source": "Full Fact",
       "url": "https://fullfact.org/immigration/video-large-immigration-protest-london-ai/",
       "topic": "Tech / AI"
     },
     {
       "n": 8,
-      "claim": "FAKE Video Shows Harry Shoving Meghan Markle While Holding Lilibet Is AI-Generated -- No Reports of Public Conflict",
-      "verdict": "FALSE",
+      "claim": "Of Russell Brand Being Assaulted In Jail Is Fake -- AI Altered Another Video",
+      "verdict": "MISLEADING",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-harry-shoving-meghan-markle-while-holding-lilibet-is-ai-generated-no-reports-of-public-conflict.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-video-of-russell-brand-assaulted-in-jail-is-fake.html",
       "topic": "Tech / AI"
     },
     {
       "n": 9,
-      "claim": "Is Islam the fastest growing religion in the US? We checked the data",
-      "verdict": "FALSE",
+      "claim": "Why unproven claim KGB recruited Trump in 1987 continues circulating",
+      "verdict": "UNPROVEN",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/islam-us-growth/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/news/2026/11/26/trump-kgb-asset-krasnov/",
+      "topic": "Politics"
     },
     {
       "n": 10,
@@ -88,10 +88,10 @@
     },
     {
       "n": 11,
-      "claim": "Junk Food Giants Could Be Hiding Behind Disabled Americans to Protect Their Taxpayer-Funded Cash Cow",
+      "claim": "Holiday Scammers Are On The Hunt",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/26/junk-food-giants-disabled-americans-ebt-welfare-lawsuit-usda",
+      "url": "https://dailycaller.com/2026/11/26/holiday-scammers-beware",
       "topic": "Trending"
     },
     {
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "Document Did NOT Claim WiFi Signal Definitely Came From Martin Township Election Equipment -- Author Later Confirmed It Was TV Dongle",
+      "claim": "Frontières DID Not Publish Interview With 5 Illegal Migrants Accusing Raphaël Glucksmann Allies of Ordering Riots -- Fake Website",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-wifi-signal-martin-township-michigan-renkchip-tabulator.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-raphael-glucksmann-five-illegal-immigrants-frontieres-inerview.html",
+      "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "15 shopping-related rumors just in time for Black Friday",
+      "claim": "Is Islam the fastest growing religion in the US? We checked the data",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/collections/retail-shopping-collection/",
+      "url": "https://www.snopes.com/fact-check/islam-us-growth/",
       "topic": "Trending"
     },
     {
@@ -146,14 +146,54 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
+      "headline": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-26T05:00:24+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+      "topic": "World",
+      "published": "2026-11-26T22:49:27+00:00"
     },
     {
       "n": 2,
+      "headline": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit",
+      "topic": "Celebrity",
+      "published": "2026-11-27T06:12:45+00:00"
+    },
+    {
+      "n": 3,
+      "headline": "Stormy Thanksgiving weather causes delays and damages for many Americans",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/stormy-thanksgiving-weather-causes-delays-and-damages-for-many-americans",
+      "topic": "Science",
+      "published": "2026-11-26T23:55:26+00:00"
+    },
+    {
+      "n": 4,
+      "headline": "Mad about mara: the DIY dance movement helping young Nigerians escape the daily grind",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/nov/27/mad-about-mara-the-diy-dance-movement-helping-young-nigerians-escape-the-daily-grind",
+      "topic": "Trending",
+      "published": "2026-11-27T06:00:56+00:00"
+    },
+    {
+      "n": 5,
+      "headline": "New Zealand election ends in hung parliament",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/new-zealand-election-ends-in-hung-parliament/a-80070240?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-27T03:13:00+00:00"
+    },
+    {
+      "n": 6,
+      "headline": "Major Thanksgiving storm brings flooding, flight delays across US",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-27T05:15:26+00:00"
+    },
+    {
+      "n": 7,
       "headline": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
       "source": "NPR",
       "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
@@ -161,15 +201,15 @@
       "published": "2026-11-26T13:47:09+00:00"
     },
     {
-      "n": 3,
-      "headline": "Trump heads to Arizona next week for a high-stakes expansion of TSMC's computer chip factories",
+      "n": 8,
+      "headline": "News Wrap: EPA reports 'zero' airborne lead in Iowa",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-heads-to-arizona-next-week-for-a-high-stakes-expansion-of-tsmcs-computer-chip-factories",
-      "topic": "Politics",
-      "published": "2026-11-26T17:52:23+00:00"
+      "url": "https://www.pbs.org/newshour/show/news-wrap-epa-reports-zero-airborne-lead-in-iowa",
+      "topic": "Trending",
+      "published": "2026-11-26T23:50:47+00:00"
     },
     {
-      "n": 4,
+      "n": 9,
       "headline": "‘I’m no longer a UAE official’: UN hopeful Lana Nusseibeh tries to shake off Sudan record",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/26/lana-nusseibeh-uae-sudan-un-secretary-general",
@@ -177,23 +217,23 @@
       "published": "2026-11-26T12:37:42+00:00"
     },
     {
-      "n": 5,
-      "headline": "Trial of Berlin woman accused of spying for Russia begins after delay",
+      "n": 10,
+      "headline": "At odds over the EU budget, European leaders cut summit short",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/trial-of-berlin-woman-accused-of-spying-for-russia-begins-after-delay/a-80057677?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-26T17:44:00+00:00"
+      "url": "https://www.dw.com/en/at-odds-over-the-eu-budget-european-leaders-cut-summit-short/live-80056415?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-26T21:47:00+00:00"
     },
     {
-      "n": 6,
-      "headline": "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
+      "n": 11,
+      "headline": "Watch: Roofs torn off and streets under water as severe weather hits US",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cvglrz5yr79go?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-26T05:00:27+00:00"
+      "url": "https://www.bbc.co.uk/news/videos/cq808d704m22o?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-11-26T19:26:16+00:00"
     },
     {
-      "n": 7,
+      "n": 12,
       "headline": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
       "source": "NPR",
       "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
@@ -201,15 +241,15 @@
       "published": "2026-11-26T13:31:28+00:00"
     },
     {
-      "n": 8,
-      "headline": "Zelenskyy warns of imminent major Russian attack on Ukraine's power grid",
+      "n": 13,
+      "headline": "Despite political divide, Americans often 'speak in one voice",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/world/zelenskyy-warns-of-imminent-major-russian-attack-on-ukraines-power-grid",
+      "url": "https://www.pbs.org/newshour/show/despite-political-divide-americans-often-speak-in-one-voice",
       "topic": "Trending",
-      "published": "2026-11-26T17:24:27+00:00"
+      "published": "2026-11-26T23:45:13+00:00"
     },
     {
-      "n": 9,
+      "n": 14,
       "headline": "At least 31 killed as fuel tanker crash ignites large fire on Cairo highway",
       "source": "The Guardian",
       "url": "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway",
@@ -217,68 +257,28 @@
       "published": "2026-11-26T00:39:10+00:00"
     },
     {
-      "n": 10,
-      "headline": "Saudi pop music is thriving — but for the right reasons?",
+      "n": 15,
+      "headline": "Albania's youth are protesting in Flamingo Revolution, not leaving the country anymore",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/saudi-pop-music-is-thriving-but-for-the-right-reasons/a-80036013?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/albania-s-youth-are-protesting-in-flamingo-revolution-not-leaving-the-country-anymore/a-80068939?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-26T17:37:00+00:00"
+      "published": "2026-11-26T20:44:00+00:00"
     },
     {
-      "n": 11,
-      "headline": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+      "n": 16,
+      "headline": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-26T15:17:18+00:00"
+      "published": "2026-11-27T03:28:15+00:00"
     },
     {
-      "n": 12,
+      "n": 17,
       "headline": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
       "source": "NPR",
       "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
       "topic": "Trending",
       "published": "2026-11-26T12:24:29+00:00"
-    },
-    {
-      "n": 13,
-      "headline": "Trump calls GDP figures 'fake' and demands an investigation of Commerce Department",
-      "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department",
-      "topic": "Politics",
-      "published": "2026-11-26T16:36:06+00:00"
-    },
-    {
-      "n": 14,
-      "headline": "Swiss tourist killed and British and Americans injured by elephants in Cameroon",
-      "source": "The Guardian",
-      "url": "https://www.theguardian.com/environment/2026/nov/25/swiss-tourist-killed-british-americans-injured-elephants-cameroon",
-      "topic": "Trending",
-      "published": "2026-11-25T14:03:18+00:00"
-    },
-    {
-      "n": 15,
-      "headline": "On his last Africa trip, Steinmeier urges German firms to invest and take risks as China pushes ahead",
-      "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/on-his-last-africa-trip-steinmeier-urges-german-firms-to-invest-and-take-risks-as-china-pushes-ahead/a-80067717?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-26T17:23:00+00:00"
-    },
-    {
-      "n": 16,
-      "headline": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-26T14:44:26+00:00"
-    },
-    {
-      "n": 17,
-      "headline": "Memories of a Good Meal': How food made a difference during WWII",
-      "source": "NPR",
-      "url": "https://www.npr.org/2026/11/26/nx-s1-6028781/memories-of-a-good-meal-cookbook-chef-alon-shaya",
-      "topic": "Trending",
-      "published": "2026-11-26T10:00:00+00:00"
     }
   ]
 }
