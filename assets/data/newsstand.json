@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T06:24:32Z",
+  "generated_at": "2026-11-27T17:47:19Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "COMEDIAN Posted Hundreds Of Thousands Of 2020 Ballots In Georgia Were Counted Twice -- NO Actual News Reports",
+      "claim": "FAKE Image Shows Inflatable ICE Agents Chasing Dora the Explorer in Macy's Thanksgiving Day Parade -- It Is AI-Generated",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-georgia-hundreds-of-thousands-double-counted-ballots.html",
-      "topic": "Trending"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-image-shows-inflatable-ice-agents-chasing-dora-the-explorer-in-macys-thanksgiving-day-parade-it-is-ai-generated.html",
+      "topic": "Tech / AI"
     },
     {
       "n": 2,
-      "claim": "Does photo show Nobel Prize-winning physicists Albert Einstein and Marie Curie talking?",
+      "claim": "Did Mamdani administration close migrant shelter where ICE sought names of residents?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/einstein-marie-curie-photo/",
-      "topic": "Trending"
+      "url": "https://www.snopes.com/fact-check/mamdani-migrant-shelter-ice/",
+      "topic": "World"
     },
     {
       "n": 3,
@@ -48,35 +48,35 @@
     },
     {
       "n": 6,
-      "claim": "AI-manipulated video falsely shared as Muslim man attacking woman in US for not wearing burqa",
+      "claim": "of scattered currency notes is not from Anant Singh daughter’s wedding",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/ai-manipulated-video-falsely-shared-as-muslim-man-attacking-woman-in-us-for-not-wearing-burqa/",
-      "topic": "Tech / AI"
+      "url": "https://www.altnews.in/old-video-shared-as-media-outlets-claim-money-was-swept-at-anant-singhs-daughters-wedding/",
+      "topic": "Trending"
     },
     {
       "n": 7,
-      "claim": "of large anti-immigration protest in London was made or edited with AI",
-      "verdict": "MISLEADING",
+      "claim": "King Charles hasn’t welcomed a ‘new global order’ and a ‘single global government’ based in Tel Aviv",
+      "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/immigration/video-large-immigration-protest-london-ai/",
-      "topic": "Tech / AI"
+      "url": "https://fullfact.org/culture-and-society/king-charles-hasnt-welcomed-single-global-government/",
+      "topic": "Trending"
     },
     {
       "n": 8,
-      "claim": "Of Russell Brand Being Assaulted In Jail Is Fake -- AI Altered Another Video",
-      "verdict": "MISLEADING",
+      "claim": "AI Watermarks In Pictures Of Trump, Natalie Harp On 'Intimate Thanksgiving Getaway' On Golf Course",
+      "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-video-of-russell-brand-assaulted-in-jail-is-fake.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-breaking-president-trump-80-caught-on-an-intimate-thanksgiving-getaway-with-35-year-old-a.html",
+      "topic": "Politics"
     },
     {
       "n": 9,
-      "claim": "Why unproven claim KGB recruited Trump in 1987 continues circulating",
-      "verdict": "UNPROVEN",
+      "claim": "Does wrapping your doorknob in foil keep you safe if alone at night?",
+      "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/news/2026/11/26/trump-kgb-asset-krasnov/",
-      "topic": "Politics"
+      "url": "https://www.snopes.com/fact-check/foil-doorknob-alone-night/",
+      "topic": "Trending"
     },
     {
       "n": 10,
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "Holiday Scammers Are On The Hunt",
+      "claim": "STATE OF FRIDAY: A Pardon For The Price Of A Stock Rally?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/26/holiday-scammers-beware",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/27/state-of-friday-donald-trump-nvidia-jensen-huang-pardon-china-chips",
+      "topic": "Money"
     },
     {
       "n": 12,
@@ -104,34 +104,34 @@
     },
     {
       "n": 13,
-      "claim": "From 2000 on Nov 1 to 4.16 lakh on Nov 22: UP sees massive surge in Form 6 applications after SSR draft roll",
+      "claim": "5000 passengers missed trains due to Oct 8 Congress protest? Railways has no such data, reveals RTI",
       "verdict": "FALSE",
       "source": "Alt News",
-      "url": "https://www.altnews.in/from-2000-on-nov-1-to-4-16-lakh-on-nov-22-up-sees-massive-surge-in-form-6-applications-after-ssr-draft-roll/",
-      "topic": "Trending"
+      "url": "https://www.altnews.in/did-5000-passengers-miss-trains-due-to-congress-protest-railway-has-no-such-data/",
+      "topic": "Politics"
     },
     {
       "n": 14,
-      "claim": "Fake video of British Army convoy on UK street shared on social media",
+      "claim": "AI-generated protest video shared thousands of times online",
       "verdict": "FALSE",
       "source": "Full Fact",
-      "url": "https://fullfact.org/culture-and-society/fake-british-army-convoy-video/",
-      "topic": "Trending"
+      "url": "https://fullfact.org/politics/ai-generated-march-video/",
+      "topic": "Tech / AI"
     },
     {
       "n": 15,
-      "claim": "Frontières DID Not Publish Interview With 5 Illegal Migrants Accusing Raphaël Glucksmann Allies of Ordering Riots -- Fake Website",
+      "claim": "COMEDIAN Posted Hundreds Of Thousands Of 2020 Ballots In Georgia Were Counted Twice -- NO Actual News Reports",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-raphael-glucksmann-five-illegal-immigrants-frontieres-inerview.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-georgia-hundreds-of-thousands-double-counted-ballots.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "Is Islam the fastest growing religion in the US? We checked the data",
+      "claim": "doesn't show supposed Muslim group 'Soldiers of Allah' demanding Shariah in Manchester",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/islam-us-growth/",
+      "url": "https://www.snopes.com/fact-check/shariah-law-manchester-video/",
       "topic": "Trending"
     },
     {
@@ -146,27 +146,27 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
+      "headline": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
       "source": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-      "topic": "World",
-      "published": "2026-11-26T22:49:27+00:00"
+      "topic": "Politics",
+      "published": "2026-11-27T09:07:48+00:00"
     },
     {
       "n": 2,
-      "headline": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+      "headline": "Thanksgiving storm batters East Coast. And, Black Friday sales to hit record levels",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit",
-      "topic": "Celebrity",
-      "published": "2026-11-27T06:12:45+00:00"
+      "url": "https://www.npr.org/2026/11/27/g-s1-156004/up-first-newsletter-thanksgiving-storm-black-friday-shopping-asylum-supreme-court",
+      "topic": "Trending",
+      "published": "2026-11-27T11:59:02+00:00"
     },
     {
       "n": 3,
-      "headline": "Stormy Thanksgiving weather causes delays and damages for many Americans",
+      "headline": "NFL's Thanksgiving tripleheader has impressive comebacks and fantastic finishes",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/stormy-thanksgiving-weather-causes-delays-and-damages-for-many-americans",
-      "topic": "Science",
-      "published": "2026-11-26T23:55:26+00:00"
+      "url": "https://www.pbs.org/newshour/nation/nfls-thanksgiving-tripleheader-has-impressive-comebacks-and-fantastic-finishes",
+      "topic": "Trending",
+      "published": "2026-11-27T17:03:28+00:00"
     },
     {
       "n": 4,
@@ -178,35 +178,35 @@
     },
     {
       "n": 5,
-      "headline": "New Zealand election ends in hung parliament",
+      "headline": "France seeks German man in Channel migrant boat probe",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/new-zealand-election-ends-in-hung-parliament/a-80070240?maca=en-rss-en-all-1573-rdf",
-      "topic": "Politics",
-      "published": "2026-11-27T03:13:00+00:00"
+      "url": "https://www.dw.com/en/france-seeks-german-man-in-channel-migrant-boat-probe/a-80078069?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-27T16:53:00+00:00"
     },
     {
       "n": 6,
-      "headline": "Major Thanksgiving storm brings flooding, flight delays across US",
+      "headline": "John Simpson: Ukraine is bowed but still unbroken as freezing weather sets in",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
-      "topic": "Trending",
-      "published": "2026-11-27T05:15:26+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&at_campaign=rss",
+      "topic": "Science",
+      "published": "2026-11-27T15:18:51+00:00"
     },
     {
       "n": 7,
-      "headline": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
+      "headline": "French cinema star Gérard Depardieu ordered to stand trial for rape and sexual assault",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
-      "topic": "Trending",
-      "published": "2026-11-26T13:47:09+00:00"
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
+      "topic": "Celebrity",
+      "published": "2026-11-27T11:49:50+00:00"
     },
     {
       "n": 8,
-      "headline": "News Wrap: EPA reports 'zero' airborne lead in Iowa",
+      "headline": "Republicans rethink tariffs, giving Democrats an opening to challenge Trump",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/news-wrap-epa-reports-zero-airborne-lead-in-iowa",
-      "topic": "Trending",
-      "published": "2026-11-26T23:50:47+00:00"
+      "url": "https://www.pbs.org/newshour/politics/republicans-rethink-tariffs-giving-democrats-an-opening-to-challenge-trump",
+      "topic": "Politics",
+      "published": "2026-11-27T16:51:50+00:00"
     },
     {
       "n": 9,
@@ -218,35 +218,35 @@
     },
     {
       "n": 10,
-      "headline": "At odds over the EU budget, European leaders cut summit short",
+      "headline": "Divisions deepen between EU member states after tense budget summit",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/at-odds-over-the-eu-budget-european-leaders-cut-summit-short/live-80056415?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/divisions-deepen-between-eu-member-states-after-tense-budget-summit/a-80078599?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-26T21:47:00+00:00"
+      "published": "2026-11-27T16:51:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Watch: Roofs torn off and streets under water as severe weather hits US",
+      "headline": "Marching bands scramble to cover costs after Thanksgiving parade rearranged",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/videos/cq808d704m22o?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-26T19:26:16+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-27T15:15:19+00:00"
     },
     {
       "n": 12,
-      "headline": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "headline": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
-      "topic": "Politics",
-      "published": "2026-11-26T13:31:28+00:00"
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+      "topic": "Science",
+      "published": "2026-11-27T10:59:36+00:00"
     },
     {
       "n": 13,
-      "headline": "Despite political divide, Americans often 'speak in one voice",
+      "headline": "As Google threatens to cut schools' search access, Los Angeles blocks AI features",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/show/despite-political-divide-americans-often-speak-in-one-voice",
-      "topic": "Trending",
-      "published": "2026-11-26T23:45:13+00:00"
+      "url": "https://www.pbs.org/newshour/education/as-google-threatens-to-cut-schools-search-access-los-angeles-blocks-ai-features",
+      "topic": "Tech / AI",
+      "published": "2026-11-27T16:20:17+00:00"
     },
     {
       "n": 14,
@@ -258,27 +258,27 @@
     },
     {
       "n": 15,
-      "headline": "Albania's youth are protesting in Flamingo Revolution, not leaving the country anymore",
+      "headline": "Kanal-Centre Pompidou, Brussels' most anticipated new museum, opens its doors",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/albania-s-youth-are-protesting-in-flamingo-revolution-not-leaving-the-country-anymore/a-80068939?maca=en-rss-en-all-1573-rdf",
+      "url": "https://www.dw.com/en/kanal-centre-pompidou-brussels-most-anticipated-new-museum-opens-its-doors/a-80001444?maca=en-rss-en-all-1573-rdf",
       "topic": "Trending",
-      "published": "2026-11-26T20:44:00+00:00"
+      "published": "2026-11-27T16:15:00+00:00"
     },
     {
       "n": 16,
-      "headline": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
+      "headline": "Kenyan doomsday cult leader convicted over further 123 deaths",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49de4xx1zo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-27T03:28:15+00:00"
+      "published": "2026-11-27T17:19:31+00:00"
     },
     {
       "n": 17,
-      "headline": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+      "headline": "Can luxury save Macy's?",
       "source": "NPR",
-      "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+      "url": "https://www.npr.org/2026/11/27/nx-s1-6026486/macys-tries-to-reinvent-with-luxury",
       "topic": "Trending",
-      "published": "2026-11-26T12:24:29+00:00"
+      "published": "2026-11-27T10:01:00+00:00"
     }
   ]
 }
