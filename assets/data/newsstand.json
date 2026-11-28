@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:47:19Z",
+  "generated_at": "2026-11-28T06:00:17Z",
   "refresh_hours": 8,
   "counts": {
     "popular": 17,
@@ -8,19 +8,19 @@
   "popular": [
     {
       "n": 1,
-      "claim": "FAKE Image Shows Inflatable ICE Agents Chasing Dora the Explorer in Macy's Thanksgiving Day Parade -- It Is AI-Generated",
+      "claim": "Does NOT Show That Church In Europe Became Gym -- Spinning Club Fundraiser To Restore Church Organ",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-image-shows-inflatable-ice-agents-chasing-dora-the-explorer-in-macys-thanksgiving-day-parade-it-is-ai-generated.html",
-      "topic": "Tech / AI"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-video-does-not-show-church-in-europe-became-gym-spinning-fundraiser-to-restore-church-organ.html",
+      "topic": "Trending"
     },
     {
       "n": 2,
-      "claim": "Did Mamdani administration close migrant shelter where ICE sought names of residents?",
+      "claim": "Did Trump offer press secretary job to wrong Dana White?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/mamdani-migrant-shelter-ice/",
-      "topic": "World"
+      "url": "https://www.snopes.com/news/2026/11/09/trump-press-secretary-dana-white/",
+      "topic": "Politics"
     },
     {
       "n": 3,
@@ -32,11 +32,11 @@
     },
     {
       "n": 4,
-      "claim": "Intel Agencies Pushed USAID To Partner With Censorship NGO That Targeted Daily Caller, Other Conservative And Independent Outlets",
+      "claim": "GOP Senator Deb Fischer’s Late Husband Died By Suicide",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/26/usaid-censorship-ngo-targeted-conservative-outlets",
-      "topic": "Trending"
+      "url": "https://dailycaller.com/2026/11/27/deb-fischer-husband-bruce-died-suicide",
+      "topic": "Celebrity"
     },
     {
       "n": 5,
@@ -64,18 +64,18 @@
     },
     {
       "n": 8,
-      "claim": "AI Watermarks In Pictures Of Trump, Natalie Harp On 'Intimate Thanksgiving Getaway' On Golf Course",
+      "claim": "Does NOT Show Real Human Carcasses Being Roasted On Spit",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-breaking-president-trump-80-caught-on-an-intimate-thanksgiving-getaway-with-35-year-old-a.html",
-      "topic": "Politics"
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-video-does-not-show-real-human-carcasses-being-roasted-on-spit-ai.html",
+      "topic": "Trending"
     },
     {
       "n": 9,
-      "claim": "Does wrapping your doorknob in foil keep you safe if alone at night?",
+      "claim": "Did Katie Miller say car seat mandates would 'kill the birth rate'?",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/foil-doorknob-alone-night/",
+      "url": "https://www.snopes.com/fact-check/kate-miller-car-seats/",
       "topic": "Trending"
     },
     {
@@ -88,11 +88,11 @@
     },
     {
       "n": 11,
-      "claim": "STATE OF FRIDAY: A Pardon For The Price Of A Stock Rally?",
+      "claim": "Will The Blue Wave Be Followed By A Green Wave?",
       "verdict": "FALSE",
       "source": "Check Your Fact",
-      "url": "https://dailycaller.com/2026/11/27/state-of-friday-donald-trump-nvidia-jensen-huang-pardon-china-chips",
-      "topic": "Money"
+      "url": "https://dailycaller.com/2026/11/27/opinion-democrats-midterms-green-wave-bonner-cohen",
+      "topic": "Trending"
     },
     {
       "n": 12,
@@ -120,18 +120,18 @@
     },
     {
       "n": 15,
-      "claim": "COMEDIAN Posted Hundreds Of Thousands Of 2020 Ballots In Georgia Were Counted Twice -- NO Actual News Reports",
+      "claim": "FAKE UK 'Notice Of Compulsory Military Service' Orders Recruits To Play Call Of Duty And Watch Saving Private Ryan In Preparation -- Made With OpenAI",
       "verdict": "FALSE",
       "source": "Lead Stories",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-georgia-hundreds-of-thousands-double-counted-ballots.html",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-uk-notice-of-compulsory-military-service-orders-recruits-to-play-call-of-duty-and-watch-saving-private-ryan-in-preparation-ai.html",
       "topic": "Trending"
     },
     {
       "n": 16,
-      "claim": "doesn't show supposed Muslim group 'Soldiers of Allah' demanding Shariah in Manchester",
+      "claim": "Real video of NYC lawmaker Jordan Wright's eye roll fuels lizard conspiracy theory",
       "verdict": "FALSE",
       "source": "Snopes",
-      "url": "https://www.snopes.com/fact-check/shariah-law-manchester-video/",
+      "url": "https://www.snopes.com/fact-check/nyc-assemblyman-eye-roll-lizard/",
       "topic": "Trending"
     },
     {
@@ -146,11 +146,11 @@
   "reliable": [
     {
       "n": 1,
-      "headline": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+      "headline": "Spanish PM and rivals rally supporters in final pitch for votes",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-      "topic": "Politics",
-      "published": "2026-11-27T09:07:48+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/c8wy5p4gdnwvo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-27T21:55:53+00:00"
     },
     {
       "n": 2,
@@ -162,11 +162,11 @@
     },
     {
       "n": 3,
-      "headline": "NFL's Thanksgiving tripleheader has impressive comebacks and fantastic finishes",
+      "headline": "News Wrap: Crews work to restore power for thousands after Thanksgiving storm",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/nation/nfls-thanksgiving-tripleheader-has-impressive-comebacks-and-fantastic-finishes",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-crews-work-to-restore-power-for-thousands-after-thanksgiving-storm",
       "topic": "Trending",
-      "published": "2026-11-27T17:03:28+00:00"
+      "published": "2026-11-27T23:55:12+00:00"
     },
     {
       "n": 4,
@@ -178,19 +178,19 @@
     },
     {
       "n": 5,
-      "headline": "France seeks German man in Channel migrant boat probe",
+      "headline": "Polls open in Taiwan's closely watched local elections",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/france-seeks-german-man-in-channel-migrant-boat-probe/a-80078069?maca=en-rss-en-all-1573-rdf",
-      "topic": "World",
-      "published": "2026-11-27T16:53:00+00:00"
+      "url": "https://www.dw.com/en/polls-open-in-taiwan-s-closely-watched-local-elections/a-80083086?maca=en-rss-en-all-1573-rdf",
+      "topic": "Trending",
+      "published": "2026-11-28T02:37:00+00:00"
     },
     {
       "n": 6,
-      "headline": "John Simpson: Ukraine is bowed but still unbroken as freezing weather sets in",
+      "headline": "Turkish officials 'destroyed' pro-opposition TV channel, owner tells BBC",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&at_campaign=rss",
-      "topic": "Science",
-      "published": "2026-11-27T15:18:51+00:00"
+      "url": "https://www.bbc.co.uk/news/articles/cq36gk151xkdo?at_medium=RSS&at_campaign=rss",
+      "topic": "Trending",
+      "published": "2026-11-28T04:13:45+00:00"
     },
     {
       "n": 7,
@@ -202,11 +202,11 @@
     },
     {
       "n": 8,
-      "headline": "Republicans rethink tariffs, giving Democrats an opening to challenge Trump",
+      "headline": "American consumers face pitfalls with rise of 'buy now, pay later",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/politics/republicans-rethink-tariffs-giving-democrats-an-opening-to-challenge-trump",
-      "topic": "Politics",
-      "published": "2026-11-27T16:51:50+00:00"
+      "url": "https://www.pbs.org/newshour/show/american-consumers-face-pitfalls-with-rise-of-buy-now-pay-later",
+      "topic": "Trending",
+      "published": "2026-11-27T23:50:12+00:00"
     },
     {
       "n": 9,
@@ -218,19 +218,19 @@
     },
     {
       "n": 10,
-      "headline": "Divisions deepen between EU member states after tense budget summit",
+      "headline": "Spain's Sanchez makes final appeal to voters before election",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/divisions-deepen-between-eu-member-states-after-tense-budget-summit/a-80078599?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-27T16:51:00+00:00"
+      "url": "https://www.dw.com/en/spain-s-sanchez-makes-final-appeal-to-voters-before-election/a-80082783?maca=en-rss-en-all-1573-rdf",
+      "topic": "Politics",
+      "published": "2026-11-28T00:51:00+00:00"
     },
     {
       "n": 11,
-      "headline": "Marching bands scramble to cover costs after Thanksgiving parade rearranged",
+      "headline": "Eight killed in Peruvian military helicopter crash",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cwp9d85mlp88o?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-27T15:15:19+00:00"
+      "published": "2026-11-28T04:19:16+00:00"
     },
     {
       "n": 12,
@@ -242,11 +242,11 @@
     },
     {
       "n": 13,
-      "headline": "As Google threatens to cut schools' search access, Los Angeles blocks AI features",
+      "headline": "How online gambling is changing the game and impacting athletes",
       "source": "PBS NewsHour",
-      "url": "https://www.pbs.org/newshour/education/as-google-threatens-to-cut-schools-search-access-los-angeles-blocks-ai-features",
-      "topic": "Tech / AI",
-      "published": "2026-11-27T16:20:17+00:00"
+      "url": "https://www.pbs.org/newshour/show/how-online-gambling-is-changing-the-game-and-impacting-athletes",
+      "topic": "Trending",
+      "published": "2026-11-27T23:45:13+00:00"
     },
     {
       "n": 14,
@@ -258,19 +258,19 @@
     },
     {
       "n": 15,
-      "headline": "Kanal-Centre Pompidou, Brussels' most anticipated new museum, opens its doors",
+      "headline": "US disables ship in Gulf of Oman under Iran blockade",
       "source": "Deutsche Welle",
-      "url": "https://www.dw.com/en/kanal-centre-pompidou-brussels-most-anticipated-new-museum-opens-its-doors/a-80001444?maca=en-rss-en-all-1573-rdf",
-      "topic": "Trending",
-      "published": "2026-11-27T16:15:00+00:00"
+      "url": "https://www.dw.com/en/us-disables-ship-in-gulf-of-oman-under-iran-blockade/a-80082950?maca=en-rss-en-all-1573-rdf",
+      "topic": "World",
+      "published": "2026-11-27T23:17:00+00:00"
     },
     {
       "n": 16,
-      "headline": "Kenyan doomsday cult leader convicted over further 123 deaths",
+      "headline": "Poison seller' Kenneth Law apologises in court to the families of his victims",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmy49de4xx1zo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2898wq2qjo?at_medium=RSS&at_campaign=rss",
       "topic": "Trending",
-      "published": "2026-11-27T17:19:31+00:00"
+      "published": "2026-11-28T00:56:55+00:00"
     },
     {
       "n": 17,
